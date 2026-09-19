@@ -150,3 +150,46 @@ python -m scripts.analyze_eight_runner_replacement
 A targeted literature check also found an August 2026 preprint devoted to single-speed modifications, including an uncovered-interval method [S8](SOURCES.md). Its broader claims and computational census have not been independently audited; our fixed-case explanation does not depend on those claims.
 
 **Next useful question:** does the same interval-coverage explanation clarify the known two-speed eight-runner case `{1,4,5,6,7,11,13}`? It replaces relative speeds 2 and 3 by 11 and 13 together. Track whether two replacements close openings cooperatively even when a single change does not, and check whether the touch-time pattern survives. This is a proposed bounded next step, not a classification claim.
+
+## Follow-up: must the special runner be the slowest?
+
+Vance asked whether only the slowest runner is exactly tight in other examples, then suggested the particular runner might differ from the slowest and could be part of the puzzle. Exact all-reference checks support that distinction. The speed rank is not intrinsic to tightness.
+
+The new [script](../scripts/compare_reference_runners.py) and [results](../experiments/reference_runner_roles.json) check all 96 reference runners in 13 explicit configurations. Each maximum is crosschecked with the interval method. This is a selected comparison, not a census or an estimate of prevalence.
+
+| Actual speeds (all start together) | Exactly tight runners |
+| --- | --- |
+| 1,2,3,4,5,6,7,8 | Speeds 1 and 8; both have maximum 1/8 |
+| 1,2,3,4,5,6,8,13 (original uneven case) | Only speed 1; maximum 1/8 |
+| 1,2,3,4,8,9,11,16 | Only speed 4, fourth in speed order; maximum 1/8 |
+| 1,6,8,9,10,11,12,13 | Only speed 13, the fastest; maximum 1/8 |
+| 1,2,4,8,16,32,64,128 | None; even the smallest best gap is 32/127, greater than 1/8 |
+
+Additional comparisons: actual speeds `{1,2,4,5,8}` have two tight runners, speeds 1 and 4, each at 1/5. The nonconsecutive six-runner, second eight-runner, and fourteen-runner examples in the data each have only their slowest runner tight. These examples show that neither uniqueness nor the slowest-speed position should be assumed.
+
+### Why the identity can move
+
+**Reverse the entire speed order.** Replace every actual speed v in the original eight-runner case by `14-v` and sort. Every pairwise relative speed changes sign, so every corresponding circular distance is unchanged at every time. The former slowest runner becomes the fastest while retaining exactly the same distance history. The checker verifies the corresponding maxima and times for all eight runners.
+
+**Move the selected runner into the middle.** In the original example its positive relative speeds are `{1,2,3,4,5,7,12}`. Change the first three to `-1,-2,-3` and choose actual reference speed 4. This gives actual speeds `{1,2,3,4,8,9,11,16}`. Since `||-ut||=||ut||`, the speed-4 runner has the same seven distance curves as the old speed-1 runner. Its tight times remain `1/8,3/8,5/8,7/8`. Other runners' pairwise distances can change under independent sign changes, so their maxima were recomputed; all seven exceed 1/8.
+
+More generally, independent relative sign choices can put a selected runner at any speed rank while preserving that runner's entire distance function. Add a sufficiently large common speed to keep every actual velocity positive. This observation does not by itself preserve the other runners' results or prove uniqueness; those require separate checks.
+
+### A useful precise version of the proposed role
+
+For our integer-speed experiments, first let every runner choose its own best moment:
+
+```
+L_i = max over t in [0,1] of min over j != i of ||(v_j-v_i)t||.
+G(V) = min over runners i of L_i.
+```
+
+The runners attaining G have the smallest best achievable gap: they are the most constrained in this sense. At least one exists, and ties are possible. The conjecture in this setting asks for `G(V)>=1/n`. The order of operations matters: these best moments need not be simultaneous.
+
+An **exactly tight** runner has `L_i=1/n`. A **most constrained** runner minimizes L_i, whether or not that minimum equals the threshold. For the powers-of-two eight-runner control, the speed-2 runner is the unique most constrained one, with `L_i=32/127`; all runners have extra room. No runner is exactly tight. Thus “every configuration has a most constrained runner” is automatic from a finite minimum; “every configuration has an exactly tight runner” is false.
+
+For fixed velocities, this comparison is over complete cycles; it assigns a fixed set of minimizing runners. The identity of a nearest neighbor at a particular instant can still change repeatedly. These are separate roles.
+
+The next interval-coverage comparison should retain the full per-runner profile rather than assuming that the initially selected slowest runner represents every runner. No novelty claim is made for these standard symmetries or the minimum-of-maxima formulation.
+
+Reproduce this follow-up with `python -m scripts.compare_reference_runners`. The JSON records the checker hash, all maxima and attaining times, speed ranks, tight flags, most-constrained identities, and the symmetry checks. The previously saved experiments are unchanged.
