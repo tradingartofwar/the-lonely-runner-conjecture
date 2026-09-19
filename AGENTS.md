@@ -10,6 +10,7 @@ Read [HANDOFF.md](HANDOFF.md), then [RESEARCH_PLAN.md](RESEARCH_PLAN.md), and co
 - Vance contributes curiosity, intuition, direction, and recognition of interesting structure. AI contributes its own ideas, mathematical explanation, literature checking, implementation, testing, and continuity. These are complementary contributions, not rigid restrictions.
 - Give Vance concrete objects to think with: examples, motion, competing explanations, and small questions. Do not require advanced notation before showing the idea.
 - Develop intuitions into statements that can fail. Preserve both a promising shape and the evidence that corrects it.
+- Vance's September 19 direction: throughout the investigation, actively notice striking patterns, anomalies, and exceptions. Record the exact observation, test a nearby case that could break it, and distinguish a general explanation from a bounded pattern. This is a standing research habit during active work, not authorization for background monitoring or an unlimited search.
 - Carry routine technical detail on the AI side; report the useful finding and the uncertainty plainly.
 
 ## Evidence discipline

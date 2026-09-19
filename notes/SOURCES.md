@@ -61,6 +61,16 @@ Jaan Allikvere, *Fourteen lonely runners*, arXiv:2609.02604v1, September 2, 2026
 
 Inspected the abstract and introduction. The preprint reports a computer-assisted proof for 14 total runners, extending S3's finite-checking framework. Its code, certificates, proof, and review status have not been independently audited here. This corrects the earlier provisional frontier note; it has no role in certifying our 4/8/12 example calculations.
 
+## S8 — Single-speed modifications and uncovered intervals
+
+Yuhan Zhang, *Single-speed modifications of the tight Lonely Runner instance: an effective bound and the complete classification for r = 2*, arXiv:2608.13599v1. The inspected HTML is dated August 1, 2026.
+
+[Versioned HTML](https://arxiv.org/html/2608.13599v1)
+
+Inspected the abstract, Section 1.1 (restating Goddyn–Wong's acceleration criterion), the divisibility observation, and the interval setup. The preprint reports classifications and exact censuses beyond our study; these have not been independently audited. Its use of uncovered intervals is directly relevant to our speed-6 deletion. We derived and checked that fixed eight-runner calculation ourselves. The paper uses `n` total runners, matching our convention.
+
+The original Goddyn–Wong article is *Tight Instances of the Lonely Runner*, Integers 6 (2006), A38, DOI 10.5281/zenodo.8275490. The journal's [volume index](https://math.colgate.edu/~integers/vol6.html) was inspected, but direct PDF retrieval failed. The acceleration criterion was read in S8 and cross-checked against S1, not independently rederived in its generality. No source is being used to support a novelty claim.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.

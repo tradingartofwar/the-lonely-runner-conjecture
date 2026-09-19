@@ -27,6 +27,8 @@ The proposed sequence is: one understandable example -> exact checker with indep
 
 Vance supplies direction, intuitive questions, and reactions to what becomes visible; AI contributes its own reasoning and carries the mathematical and technical work. Neither intuition nor a confident AI answer is a proof. Keep it playful and let examples correct us.
 
+Standing direction from Vance: during the entire active investigation, watch for striking patterns, anomalies, and exceptions. Preserve them with exact evidence, test nearby counterexamples, and explain what the pattern does and does not establish. His observation about consistent touch-time spacing led to the latest continuation below.
+
 ## Research baseline and limits
 
 The original frontier source in notes/SOURCES.md reports a computer-assisted result through 13 total runners. A later source check found a September 2 preprint reporting 14 total runners (S7). We have not independently audited either proof or run their code. Frontier computation is not the current assignment.
@@ -43,6 +45,7 @@ Start all runners together: shifted-start variants are different. Use exact rati
 - `notes/CHECKER_VALIDATION.md`: commands, results, limits, and the starting comparison.
 
 - `scripts/compare_tight_cases.py`, `experiments/tight_cases_4_8_12.json`, and `notes/TIGHT_CASES_4_8_12.md`: exact comparison of 4, 8, and 12 runners, including 179 specified single-speed changes. Four selected-reference tight cases were crosschecked with the independent maximum method. Inline conversation plots also show distance curves; the original offline demo is unchanged.
+- `scripts/analyze_eight_runner_replacement.py` and `experiments/eight_runner_replacement.json`: exact interval explanation of the 6-to-12 replacement, controls 11/13/18, touch-time spacing, and a fixed-case argument excluding all other faster integer replacements for the deleted speed 6. The explanation and pattern/exception record extend the same research note.
 
 **Not built or run:** arbitrary-speed editing in the browser, an exhaustive atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 regression inputs and the new 182-input research comparison are separate bounded checks.
 
@@ -77,4 +80,8 @@ September 19, 2026: Vance asked to record threshold-touching cases and double/tr
 
 Shared observation: at every recorded tight peak, one runner's distance is increasing while another's is decreasing; the two limiting relative speeds sum to `n`. The uneven eight-runner example has the same peak times and limiting pairs as the consecutive case, so equal speed spacing is not necessary. A handoff also occurs at non-tight peaks, so it is not sufficient to characterize tightness.
 
-Next useful action: compare the exact allowed-time intervals for relative speed 6 versus 12 in the eight-runner case, and connect the preservation of tightness to the known acceleration criterion. Do not expand the search or claim a general classification from this bounded result. Git history retains earlier stopping points.
+Continuation completed: omitting relative speed 6 leaves exactly two open opportunities for exceeding 1/8, `(9/56,7/40)` and its reflection, besides four isolated equality times. Speed 12 stays too close throughout both openings while preserving the four equality times. Any tight integer replacement `w>7` must be divisible by 6 (check time 1/6) and at most 15 (coverage width), so only 12 works for this fixed deletion. This elementary explanation reproduces known structure; it is not a new general theorem. Replacements 11 and 13 reach 1/6; 18 reaches 3/23 despite meeting the reference at the same critical instants. All retain the old equality times, showing why that pattern alone is insufficient.
+
+Vance's spacing observation: consecutive-speed cases have global touch times `q/n` with `gcd(q,n)=1`. Four and eight runners have equal cyclic gaps; twelve alternates 1/3 and 1/6. Sixteen provides another power-of-two check with equal 1/8 gaps. Reflection symmetry is shared by every integer-speed case, including non-tight ones. A directly relevant August preprint was found and logged as S8; its broader claims were not audited.
+
+Next useful action: examine the known two-speed eight-runner relative set `{1,4,5,6,7,11,13}`, obtained by replacing 2 and 3 by 11 and 13 together. Ask whether the two replacements cover openings cooperatively, and whether the touch-time schedule survives. Keep the next comparison bounded and exact. Git history retains earlier stopping points.

@@ -65,6 +65,88 @@ python -m scripts.compare_tight_cases
 - Peak identities, directions of distance change, positions, and exact polygon vertices are saved. The polygon uses the same piecewise-linear construction as Method B; it is display data, not a third independent proof method. Browser coordinates round these exact fractions for drawing only.
 - `python -m unittest discover -s tests -q`: all 25 existing checker tests passed after this addition. These remain separate regression coverage. No paid compute, random sampling, large search, or external proof audit was used.
 
-## Next useful question
+## Follow-up question selected
 
 Why does accelerating relative speed `6` to `12` preserve every bottleneck in the eight-runner case, when the other 178 tested changes create room above the threshold? Compare its allowed-time intervals directly with the original speed-6 intervals, then relate that difference to the known acceleration criterion of Goddyn and Wong cited in S1. Do not infer that matching a few peak times is by itself sufficient to preserve the global maximum.
+
+## Continuation: the two openings and the replacement that covers them
+
+Vance asked to preserve the work, investigate that question, and watch for anomalies and patterns throughout the process. The following is an exact elementary explanation for this fixed case, consistent with known work. It is not a new general theorem or a proof of the full conjecture.
+
+All speeds in this section are **relative to the chosen runner**. The actual chosen speed remains 1, so relative 6, 12, and 18 correspond to actual 7, 13, and 19. Temporarily omit the speed-6 constraint, leaving `C={1,2,3,4,5,7}`, but retain the original eight-runner threshold `1/8`.
+
+The complete set of times when every constraint in C is at least `1/8` consists of the four isolated points `1/8,3/8,5/8,7/8`, plus two closed intervals:
+
+```
+J1 = [9/56, 7/40]
+J2 = [33/40, 47/56] = 1 - J1.
+```
+
+The interior of each interval is strictly above the threshold. Thus these are the only places where the omitted runner needs to prevent an improvement. J1 contains `1/6`; J2 contains `5/6`. These are not intervals around `1/3`: the still-present speed 3 prevents separation there.
+
+At `1/6`, all six remaining distances are at least `1/6`. Relative speeds 6 and 12 both meet the chosen runner at that instant. More importantly, they remain within `1/8` throughout the **entire** opening. On J1, speed 6 never exceeds distance `1/20`, and speed 12 never exceeds `1/10`; both are strictly less than `1/8`. The reflected statement holds on J2. Meanwhile, speed 12 is half a lap away at each of the four original touch times, so those times survive unchanged.
+
+This accounts for all times in the cycle: outside the two openings the common constraints already cap separation at `1/8`; inside them the replacement supplies the cap; at the four surviving points equality is attained.
+
+### Why 12 is the only faster integer replacement for this deleted speed
+
+This improves the earlier bounded observation for **the fixed eight-runner deletion of relative speed 6**. Let the inserted relative speed be an integer `w>7`.
+
+1. At `t=1/6`, tightness requires `||w/6||<=1/8`. This distance is a multiple of `1/6`, so it must be zero: **6 divides w**.
+2. A continuous interval on which this replacement stays within `1/8` of the origin must lie within a single neighborhood of one meeting time. Around `1/6`, that neighborhood has half-width `1/(8w)`.
+3. The right side of J1 extends `7/40 - 1/6 = 1/120` past the meeting. Covering the entire opening therefore requires `1/(8w)>=1/120`, or **w<=15**.
+4. The only multiple of 6 with `7<w<=15` is **12**, and the direct calculation above verifies that it works.
+
+This is an argument over every eligible integer w, not an extrapolation from a finite list. It does not classify replacements of other deleted speeds, multiple simultaneous replacements, irrational inputs, or arbitrary tight configurations. Independent external review has not been performed; no originality claim is made.
+
+### Controls that distinguish timing from coverage
+
+| Inserted relative speed | Exact full-cycle maximum | Global peak times | Explanation |
+| --- | --- | --- | --- |
+| 6 (original) | 1/8 | 1/8,3/8,5/8,7/8 | Covers both openings |
+| 11 | 1/6 | 1/6,5/6 | Misses the critical meetings |
+| 12 | 1/8 | 1/8,3/8,5/8,7/8 | Same critical meetings; coverage still wide enough |
+| 13 | 1/6 | 1/6,5/6 | Misses the critical meetings |
+| 18 | 3/23 | 4/23,19/23 | Meets at the right instants, but passes too quickly to cover the whole opening |
+
+All five cases still have distance exactly `1/8` at the four original touch times. In the non-tight cases, new, higher peaks appear elsewhere. Consequently, **preserving the visible touch schedule is insufficient to preserve tightness**. Even being a multiple of the removed speed is insufficient: 18 meets the chosen runner at `1/6` but its blocking neighborhood ends at `25/144`, before J1 ends at `7/40`.
+
+## The spacing pattern Vance noticed
+
+For the consecutive relative-speed family, the exact times are `q/n` with `1<=q<n` and `gcd(q,n)=1`, as derived above. That arithmetic restriction produces regular structure, but does not always produce equal gaps.
+
+| Total runners | Cyclic gaps between successive global touch times, including the next cycle |
+| --- | --- |
+| 4 | 1/2, 1/2 |
+| 8 | 1/4, 1/4, 1/4, 1/4 |
+| 12 | 1/3, 1/6, 1/3, 1/6 |
+| 16 (additional check) | Eight gaps, each 1/8 |
+
+For powers of two, the allowable numerators are exactly the odd integers, so the gap is uniformly `2/n`. For twelve, numerators divisible by 2 or 3 are excluded, leaving `1,5,7,11`; the gaps therefore alternate. In this consecutive family, a candidate `q/n` excluded by a common divisor produces a collision with the reference: relative speed `n/gcd(q,n)` is present and has completed an integer number of laps.
+
+There is also a broader reflection symmetry: for any integer relative speeds, `f(1-t)=f(t)`. It explains mirrored times, including J1/J2 and the non-tight peaks `4/23,19/23`. It is not special evidence of tightness. Nor should a repeating pattern among peak times be confused with a smaller period of the full distance curve.
+
+## Pattern and exception record
+
+| Observation or proposed explanation | Evidence and limit |
+| --- | --- |
+| All touch times are equally spaced | False in the twelve-runner example; arithmetic regularity survives |
+| Consecutive tight times use coprime numerators | Derived for that entire family; do not silently generalize to every tight set |
+| Reflection about half a cycle | Exact for integer speeds, tight or not |
+| Preserving the old touch times preserves tightness | False for replacements 11, 13, and 18 |
+| Matching meeting times is sufficient | False for 18; coverage width also matters |
+| The successful doubling is tied to runner count | Known acceleration criterion gives `n=8,14,20,...` for this particular family; checked 4,8,12,14 below |
+
+For the family replacing relative speed `n-2` by `2(n-2)`, the known Goddyn–Wong criterion, restated in [S8](SOURCES.md), requires that `n-2` share a factor with both 2 and 3. Thus, for `n>=4`, this family is tight exactly when `n` is 2 modulo 6. Our exact checks reproduce success at 8 and 14, and failure at 4 and 12, whose maxima are `2/7` and `2/23`, respectively. The family rule comes from the cited result; four checks alone would not prove it.
+
+## Continuation evidence and next step
+
+```bash
+python -m scripts.analyze_eight_runner_replacement
+```
+
+[Script](../scripts/analyze_eight_runner_replacement.py) · [rational evidence](../experiments/eight_runner_replacement.json). The output records the source revision and checker hash, complete core intervals, strict-opening checks, blocking neighborhoods, five replacement cases, four spacing checks, four acceleration-family checks, and exact vertices for a zoomed plot. All 13 full-case checks use the independent maximum and interval methods. Plotting uses rounded display coordinates only. The earlier experiment and its 179 replacement results remain preserved unchanged.
+
+A targeted literature check also found an August 2026 preprint devoted to single-speed modifications, including an uncovered-interval method [S8](SOURCES.md). Its broader claims and computational census have not been independently audited; our fixed-case explanation does not depend on those claims.
+
+**Next useful question:** does the same interval-coverage explanation clarify the known two-speed eight-runner case `{1,4,5,6,7,11,13}`? It replaces relative speeds 2 and 3 by 11 and 13 together. Track whether two replacements close openings cooperatively even when a single change does not, and check whether the touch-time pattern survives. This is a proposed bounded next step, not a classification claim.

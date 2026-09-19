@@ -64,6 +64,8 @@ The [threshold-touching study](notes/TIGHT_CASES_4_8_12.md) follows Vance's requ
 python -m scripts.compare_tight_cases
 ```
 
-The [rational output](experiments/tight_cases_4_8_12.json) includes the search domain, all results, exact peak times and limiting runners, all-reference summaries for the four tight configurations, and polygon data for the comparison plots. The current next question is why the eight-runner replacement of relative speed 6 by 12 preserves tightness.
+The [rational output](experiments/tight_cases_4_8_12.json) includes the search domain, all results, exact peak times and limiting runners, all-reference summaries for the four tight configurations, and polygon data for the comparison plots.
+
+The continuation in the same note explains the speed-6-to-12 replacement through exact interval coverage, records the spacing pattern and its twelve-runner exception, and tests nearby replacements. Reproduce it with `python -m scripts.analyze_eight_runner_replacement`; [continuation evidence](experiments/eight_runner_replacement.json) preserves the calculations. The next proposed comparison is the known eight-runner example where two speeds change together.
 
 This repository owns this exploration. It does not change Mission Control, Performance, any other project, or the earlier decision against adding new operating systems. No recurring tasks or background processes are established.
