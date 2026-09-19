@@ -1,0 +1,880 @@
+{
+  "schema": 1,
+  "cases": [
+    {
+      "key": "2",
+      "velocities": [
+        "0",
+        "1",
+        "2"
+      ],
+      "references": [
+        {
+          "velocities": [
+            "0",
+            "1",
+            "2"
+          ],
+          "reference_index": 0,
+          "reference_velocity": "0",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "1",
+              "2"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              1,
+              2
+            ],
+            "constraint_speeds": [
+              1,
+              2
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/3",
+              "1/3"
+            ],
+            [
+              "2/3",
+              "2/3"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/3",
+              "1/3"
+            ],
+            [
+              "2/3",
+              "2/3"
+            ]
+          ],
+          "witness_original": "1/3",
+          "maximum": {
+            "separation": "1/3",
+            "excess_over_conjecture_threshold": "0",
+            "tight": true,
+            "times_normalized": [
+              "1/3",
+              "2/3"
+            ],
+            "times_original": [
+              "1/3",
+              "2/3"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/3",
+                "distances": [
+                  {
+                    "runner_index": 1,
+                    "distance": "1/3"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/3"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "time_original": "2/3",
+                "distances": [
+                  {
+                    "runner_index": 1,
+                    "distance": "1/3"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/3"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "candidate_count": 7,
+            "crosschecked_with_intervals": true
+          }
+        },
+        {
+          "velocities": [
+            "0",
+            "1",
+            "2"
+          ],
+          "reference_index": 1,
+          "reference_velocity": "1",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "-1",
+              "1"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              -1,
+              1
+            ],
+            "constraint_speeds": [
+              1
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/3",
+              "2/3"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/3",
+              "2/3"
+            ]
+          ],
+          "witness_original": "1/3",
+          "maximum": {
+            "separation": "1/2",
+            "excess_over_conjecture_threshold": "1/6",
+            "tight": false,
+            "times_normalized": [
+              "1/2"
+            ],
+            "times_original": [
+              "1/2"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/2",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "1/2"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/2"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "candidate_count": 3,
+            "crosschecked_with_intervals": true
+          }
+        },
+        {
+          "velocities": [
+            "0",
+            "1",
+            "2"
+          ],
+          "reference_index": 2,
+          "reference_velocity": "2",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "-2",
+              "-1"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              -2,
+              -1
+            ],
+            "constraint_speeds": [
+              1,
+              2
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/3",
+              "1/3"
+            ],
+            [
+              "2/3",
+              "2/3"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/3",
+              "1/3"
+            ],
+            [
+              "2/3",
+              "2/3"
+            ]
+          ],
+          "witness_original": "1/3",
+          "maximum": {
+            "separation": "1/3",
+            "excess_over_conjecture_threshold": "0",
+            "tight": true,
+            "times_normalized": [
+              "1/3",
+              "2/3"
+            ],
+            "times_original": [
+              "1/3",
+              "2/3"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/3",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "1/3"
+                  },
+                  {
+                    "runner_index": 1,
+                    "distance": "1/3"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "time_original": "2/3",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "1/3"
+                  },
+                  {
+                    "runner_index": 1,
+                    "distance": "1/3"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "candidate_count": 7,
+            "crosschecked_with_intervals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "3",
+      "velocities": [
+        "0",
+        "1",
+        "3"
+      ],
+      "references": [
+        {
+          "velocities": [
+            "0",
+            "1",
+            "3"
+          ],
+          "reference_index": 0,
+          "reference_velocity": "0",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "1",
+              "3"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              1,
+              3
+            ],
+            "constraint_speeds": [
+              1,
+              3
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "4/9",
+              "5/9"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "4/9",
+              "5/9"
+            ]
+          ],
+          "witness_original": "4/9",
+          "maximum": {
+            "separation": "1/2",
+            "excess_over_conjecture_threshold": "1/6",
+            "tight": false,
+            "times_normalized": [
+              "1/2"
+            ],
+            "times_original": [
+              "1/2"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/2",
+                "distances": [
+                  {
+                    "runner_index": 1,
+                    "distance": "1/2"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/2"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "candidate_count": 9,
+            "crosschecked_with_intervals": true
+          }
+        },
+        {
+          "velocities": [
+            "0",
+            "1",
+            "3"
+          ],
+          "reference_index": 1,
+          "reference_velocity": "1",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "-1",
+              "2"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              -1,
+              2
+            ],
+            "constraint_speeds": [
+              1,
+              2
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/3",
+              "1/3"
+            ],
+            [
+              "2/3",
+              "2/3"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/3",
+              "1/3"
+            ],
+            [
+              "2/3",
+              "2/3"
+            ]
+          ],
+          "witness_original": "1/3",
+          "maximum": {
+            "separation": "1/3",
+            "excess_over_conjecture_threshold": "0",
+            "tight": true,
+            "times_normalized": [
+              "1/3",
+              "2/3"
+            ],
+            "times_original": [
+              "1/3",
+              "2/3"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/3",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "1/3"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/3"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "time_original": "2/3",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "1/3"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/3"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "candidate_count": 7,
+            "crosschecked_with_intervals": true
+          }
+        },
+        {
+          "velocities": [
+            "0",
+            "1",
+            "3"
+          ],
+          "reference_index": 2,
+          "reference_velocity": "3",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "-3",
+              "-2"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              -3,
+              -2
+            ],
+            "constraint_speeds": [
+              2,
+              3
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/6",
+              "2/9"
+            ],
+            [
+              "7/9",
+              "5/6"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/6",
+              "2/9"
+            ],
+            [
+              "7/9",
+              "5/6"
+            ]
+          ],
+          "witness_original": "1/6",
+          "maximum": {
+            "separation": "2/5",
+            "excess_over_conjecture_threshold": "1/15",
+            "tight": false,
+            "times_normalized": [
+              "1/5",
+              "4/5"
+            ],
+            "times_original": [
+              "1/5",
+              "4/5"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/5",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "2/5"
+                  },
+                  {
+                    "runner_index": 1,
+                    "distance": "2/5"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "time_original": "4/5",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "2/5"
+                  },
+                  {
+                    "runner_index": 1,
+                    "distance": "2/5"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "candidate_count": 13,
+            "crosschecked_with_intervals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "4",
+      "velocities": [
+        "0",
+        "1",
+        "4"
+      ],
+      "references": [
+        {
+          "velocities": [
+            "0",
+            "1",
+            "4"
+          ],
+          "reference_index": 0,
+          "reference_velocity": "0",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "1",
+              "4"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              1,
+              4
+            ],
+            "constraint_speeds": [
+              1,
+              4
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/3",
+              "5/12"
+            ],
+            [
+              "7/12",
+              "2/3"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/3",
+              "5/12"
+            ],
+            [
+              "7/12",
+              "2/3"
+            ]
+          ],
+          "witness_original": "1/3",
+          "maximum": {
+            "separation": "2/5",
+            "excess_over_conjecture_threshold": "1/15",
+            "tight": false,
+            "times_normalized": [
+              "2/5",
+              "3/5"
+            ],
+            "times_original": [
+              "2/5",
+              "3/5"
+            ],
+            "witness_details": [
+              {
+                "time_original": "2/5",
+                "distances": [
+                  {
+                    "runner_index": 1,
+                    "distance": "2/5"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "2/5"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "time_original": "3/5",
+                "distances": [
+                  {
+                    "runner_index": 1,
+                    "distance": "2/5"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "2/5"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "candidate_count": 15,
+            "crosschecked_with_intervals": true
+          }
+        },
+        {
+          "velocities": [
+            "0",
+            "1",
+            "4"
+          ],
+          "reference_index": 1,
+          "reference_velocity": "1",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "-1",
+              "3"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              -1,
+              3
+            ],
+            "constraint_speeds": [
+              1,
+              3
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "4/9",
+              "5/9"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "4/9",
+              "5/9"
+            ]
+          ],
+          "witness_original": "4/9",
+          "maximum": {
+            "separation": "1/2",
+            "excess_over_conjecture_threshold": "1/6",
+            "tight": false,
+            "times_normalized": [
+              "1/2"
+            ],
+            "times_original": [
+              "1/2"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/2",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "1/2"
+                  },
+                  {
+                    "runner_index": 2,
+                    "distance": "1/2"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "candidate_count": 9,
+            "crosschecked_with_intervals": true
+          }
+        },
+        {
+          "velocities": [
+            "0",
+            "1",
+            "4"
+          ],
+          "reference_index": 2,
+          "reference_velocity": "4",
+          "n": 3,
+          "conjecture_threshold": "1/3",
+          "threshold": "1/3",
+          "normalization": {
+            "relative_velocities": [
+              "-4",
+              "-3"
+            ],
+            "denominator_lcm": 1,
+            "integer_gcd": 1,
+            "signed_integer_speeds": [
+              -4,
+              -3
+            ],
+            "constraint_speeds": [
+              3,
+              4
+            ],
+            "original_time_per_normalized_unit": "1"
+          },
+          "period_original": "1",
+          "feasible": true,
+          "intervals_normalized": [
+            [
+              "1/9",
+              "1/6"
+            ],
+            [
+              "5/6",
+              "8/9"
+            ]
+          ],
+          "intervals_original": [
+            [
+              "1/9",
+              "1/6"
+            ],
+            [
+              "5/6",
+              "8/9"
+            ]
+          ],
+          "witness_original": "1/9",
+          "maximum": {
+            "separation": "3/7",
+            "excess_over_conjecture_threshold": "2/21",
+            "tight": false,
+            "times_normalized": [
+              "1/7",
+              "6/7"
+            ],
+            "times_original": [
+              "1/7",
+              "6/7"
+            ],
+            "witness_details": [
+              {
+                "time_original": "1/7",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "3/7"
+                  },
+                  {
+                    "runner_index": 1,
+                    "distance": "3/7"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "time_original": "6/7",
+                "distances": [
+                  {
+                    "runner_index": 0,
+                    "distance": "3/7"
+                  },
+                  {
+                    "runner_index": 1,
+                    "distance": "3/7"
+                  }
+                ],
+                "limiting_runner_indices": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "candidate_count": 19,
+            "crosschecked_with_intervals": true
+          }
+        }
+      ]
+    }
+  ]
+}

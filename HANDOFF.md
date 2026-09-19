@@ -35,22 +35,23 @@ Start all runners together: shifted-start variants are different. Use exact rati
 
 ## What exists now
 
-- Repository overview and AI working instructions.
-- Proposed research stages and success criteria.
-- Mathematical notation, normalization rules, two exact-checking designs, and expected test fixtures.
-- Versioned source pointers with explicit verification limits.
-- This new-thread handoff.
+- Repository overview, working instructions, research plan, and versioned source pointers.
+- `lonely_runner/checker.py`: exact rational normalization, Method A closed-interval feasibility, and Method B piecewise-linear maximum with an interval crosscheck.
+- `python -m lonely_runner`: readable or JSON output for one or all reference runners, original-time witnesses, feasible intervals, and exact peaks.
+- `tests/test_checker.py`: 25 tests, including the documented fixtures, original-coordinate normalization checks, and 162 bounded speed-set comparisons at/below/above the maximum.
+- `demo/index.html`: offline interactive demonstration of `(0,1,2)`, `(0,1,3)`, and `(0,1,4)`, with all reference runners, play/pause, time scrubbing, and exact-peak stepping. `demo/cases.json` contains the nine exact checker outputs. `scripts/build_demo.py` regenerates them and the display.
+- `notes/CHECKER_VALIDATION.md`: commands, results, limits, and the starting comparison.
 
-**Not built or run:** the research checker, visual laboratory, atlas, frontier computation, or any new mathematical result. No article has been submitted and no researcher has been contacted. Plan text is not implementation evidence.
+**Not built or run:** arbitrary-speed editing in the browser, distance-curve plots, an atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 cases are regression coverage, not the proposed research atlas.
 
-Document QA checked relative links and spot-checked the baseline's small examples using temporary exact-rational calculations. This is not a completed research implementation or a new result.
+Vance approved implementation in the current thread after the proposal to build the exact checker and a minimal demonstration. This does not authorize a large search or wider project expansion.
 
 ## Resume without asking Vance to reconstruct the context
 
 1. Inspect live `main`, read AGENTS.md and this handoff, then RESEARCH_PLAN.md. Read the mathematical baseline before coding; consult Sources for current claims.
 2. Check whether newer commits have changed the status below. Preserve existing work.
 3. Briefly recover the purpose, show one concrete example, and follow Vance's present request.
-4. If he chooses implementation, build the smallest exact checker and fixture tests first. Do not launch a large search or polished website by default.
+4. The smallest checker and demonstration are built. Use their results and follow Vance's present direction; do not rebuild them or launch a large search by default.
 
 If GitHub is unavailable, say what cannot be verified and continue from this file as a dated handoff; do not pretend to have read current repository state.
 
@@ -62,7 +63,7 @@ From there, ask: **Which runners take turns preventing the reference runner from
 
 ## Opening message for the new thread
 
-> We are continuing our Lonely Runner exploration for fun. Use the GitHub repository https://github.com/tradingartofwar/the-lonely-runner-conjecture. Read AGENTS.md and HANDOFF.md, then RESEARCH_PLAN.md and the mathematical baseline. Recover the live state without asking me to retell the history. Start by making the first small example understandable; we will choose the next step together. Keep published results, our experiments, and proof claims distinct.
+> We are continuing our Lonely Runner exploration for fun. Use the GitHub repository https://github.com/tradingartofwar/the-lonely-runner-conjecture. Read AGENTS.md and HANDOFF.md, then the validation note and mathematical baseline. Recover the live state without asking me to retell the history. We now have an exact checker and a three-case visual demonstration. Start from those examples; we will choose the next step together. Keep published results, our experiments, and proof claims distinct.
 
 ## Optional project instructions
 
@@ -70,4 +71,6 @@ From there, ask: **Which runners take turns preventing the reference runner from
 
 ## Current stopping point
 
-Foundation documents prepared; exploration remains at Stage 1. Next action is to open this handoff in the new thread and examine the small example. At future meaningful pauses, replace this section with completed work, evidence pointers, unresolved questions, and one next action. Git history retains earlier versions.
+September 19, 2026: Stage 2 is implemented; a minimal Stage 3 demonstration is ready. See `notes/CHECKER_VALIDATION.md` for verification and reproduction commands. For stationary reference A, the three cases have exact maxima `1/3`, `1/2`, and `2/5`, respectively. The first attaining times are 20, 30, and 24 seconds when speeds are laps/minute. Every runner in all three cases passes its `1/3` requirement, sometimes at different times.
+
+Unresolved exploration: what explains the change in which runner limits isolation when C's speed changes? Next action: explore the demo together, particularly `(0,1,4)` around 24 seconds, and formulate one small question from what Vance notices. No broader search or full visual lab is selected yet. Git history retains earlier stopping points.

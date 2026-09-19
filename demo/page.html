@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Lonely Runner — first three cases</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: light-dark(#fff, #181a1e);
+      --foreground: light-dark(#20252b, #e9ebef);
+      --muted-foreground: light-dark(#545b66, #b0b7c1);
+      --border: light-dark(#cdd2d8, #59616b);
+      --primary: light-dark(#252a32, #e4e8ee);
+      --primary-foreground: light-dark(#fff, #20242b);
+      --viz-series-1: light-dark(#2768b4, #83b8ff);
+      --viz-series-2: light-dark(#b95120, #ffa46e);
+      --viz-series-3: light-dark(#16856a, #6ed0b0);
+      --font-size-base: 14px;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; padding: 24px; max-width: 784px; font: 400 14px/1.5 system-ui,sans-serif; background: var(--background); color: var(--foreground); }
+    h3 { font-size: 20px; font-weight: 500; margin: 0 0 20px; }
+    .viz-controls { display: flex; flex-wrap: wrap; gap: 12px; }
+    .form-label { display: flex; flex-direction: column; gap: 6px; flex: 1 1 220px; }
+    .viz-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .btn, .form-select { font: inherit; color: var(--foreground); background: var(--background); border: 1px solid var(--border); border-radius: 7px; padding: 8px 12px; }
+    .btn { cursor: pointer; }
+    .btn-primary { background: var(--primary); color: var(--primary-foreground); border-color: var(--primary); }
+    .form-range { width: 100%; margin: 12px 0; accent-color: var(--primary); }
+    .text-small { font-size: 12px; }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+    .page-note { color: var(--muted-foreground); }
+    @media (max-width: 420px) { body { padding: 16px; } }
+    @media (pointer: coarse) { .btn, .form-select { min-height: 44px; } .form-select { font-size: 16px; } }
+  </style>
+</head>
+<body>
+__FRAGMENT__
+<p class="page-note">Shaded track: at least 1/3 lap from the watched runner. Ring: watched runner. Coincident dots are offset radially for visibility. Motion is approximate; exact peaks come from two checked rational methods. Speeds start together; each runner can have its own best time.</p>
+</body>
+</html>

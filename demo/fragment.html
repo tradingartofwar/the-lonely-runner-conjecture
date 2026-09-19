@@ -1,0 +1,194 @@
+<div id="lonely-runner-demo">
+  <style>
+    #lonely-runner-demo { color: var(--foreground); }
+    #lonely-runner-demo .lr-track { display: block; width: 100%; }
+    #lonely-runner-demo .lr-track text { fill: var(--foreground); font-weight: 400; }
+    #lonely-runner-demo .lr-controls { margin-bottom: 12px; }
+    #lonely-runner-demo .lr-legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 8px 0 16px; }
+    #lonely-runner-demo .lr-legend span { display: inline-flex; align-items: center; gap: 6px; }
+    #lonely-runner-demo .lr-swatch { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+    #lonely-runner-demo .lr-time { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 12px; }
+    #lonely-runner-demo .lr-state { margin-top: 12px; min-height: 42px; }
+  </style>
+  <h3>Three runners, one changing speed</h3>
+  <div class="viz-controls lr-controls">
+    <label class="form-label">Runner C speed
+      <select class="form-select" data-control="speed" aria-label="Runner C speed">
+        <option value="2">2 laps / minute</option>
+        <option value="3">3 laps / minute</option>
+        <option value="4">4 laps / minute</option>
+      </select>
+    </label>
+    <label class="form-label">Watch runner
+      <select class="form-select" data-control="reference" aria-label="Watch runner">
+        <option value="0">A · 0 laps / minute</option>
+        <option value="1">B · 1 lap / minute</option>
+        <option value="2">C · 2 laps / minute</option>
+      </select>
+    </label>
+  </div>
+  <div class="viz-row">
+    <button type="button" class="btn" data-control="play">Play</button>
+    <button type="button" class="btn btn-primary" data-control="peak">Next exact peak</button>
+    <span class="text-small">Shaded arc: gap ≥ 1/3 lap</span>
+  </div>
+  <svg class="lr-track" role="img" aria-label="Circular track with three runners and the allowed region opposite the selected runner"></svg>
+  <div class="lr-legend" aria-label="Runner speeds"></div>
+  <div class="lr-time tabular-nums">
+    <label for="lr-time" data-time-label>Time</label>
+    <span class="text-small" data-period></span>
+  </div>
+  <input id="lr-time" class="form-range" data-control="time" type="range" min="0" max="1000" step="1" aria-label="Time within one relative-distance period">
+  <div class="lr-state tabular-nums" data-state aria-live="polite"></div>
+  <script type="application/json" data-cases>__RUNNER_DATA__</script>
+  <script>
+  (() => {
+    const root = document.getElementById('lonely-runner-demo');
+    const data = JSON.parse(root.querySelector('[data-cases]').textContent);
+    const by = name => root.querySelector(`[data-control="${name}"]`);
+    const svg = root.querySelector('.lr-track');
+    const state = root.querySelector('[data-state]');
+    const letters = ['A', 'B', 'C'];
+    const colors = ['var(--viz-series-1)', 'var(--viz-series-2)', 'var(--viz-series-3)'];
+    const ns = 'http://www.w3.org/2000/svg';
+    const number = value => {
+      const [a, b = '1'] = String(value).split('/');
+      return Number(a) / Number(b);
+    };
+    const seconds = value => {
+      const [a, b = '1'] = value.split('/');
+      let n = BigInt(a) * 60n, d = BigInt(b);
+      const gcd = (x, y) => y ? gcd(y, x % y) : x;
+      const g = gcd(n, d); n /= g; d /= g;
+      return d === 1n ? String(n) : `${n}/${d}`;
+    };
+    const phase = value => ((value % 1) + 1) % 1;
+    const distance = value => Math.min(phase(value), 1 - phase(value));
+    let activeCase, result, velocities, t = 0, exactPeak = 0;
+    let playing = false, previousFrame = null, request = null;
+
+    function element(tag, attrs, text) {
+      const node = document.createElementNS(ns, tag);
+      Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+      if (text !== undefined) node.textContent = text;
+      svg.appendChild(node);
+      return node;
+    }
+
+    function draw() {
+      const width = Math.max(260, svg.getBoundingClientRect().width);
+      const height = 302, cx = width / 2, cy = 150;
+      const radius = Math.min(103, width / 2 - 40);
+      svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+      svg.setAttribute('height', height);
+      svg.replaceChildren();
+      const point = (p, r = radius) => [cx + r * Math.sin(2 * Math.PI * p), cy - r * Math.cos(2 * Math.PI * p)];
+      const ref = result.reference_index;
+      const referencePhase = phase(velocities[ref] * t);
+      const start = referencePhase + 1 / 3, end = referencePhase + 2 / 3;
+      const [ox1, oy1] = point(start, radius + 10), [ox2, oy2] = point(end, radius + 10);
+      const [ix1, iy1] = point(start, radius - 10), [ix2, iy2] = point(end, radius - 10);
+      element('path', {d: `M ${ox1} ${oy1} A ${radius + 10} ${radius + 10} 0 0 1 ${ox2} ${oy2} L ${ix2} ${iy2} A ${radius - 10} ${radius - 10} 0 0 0 ${ix1} ${iy1} Z`, fill: 'var(--viz-series-1)', opacity: '.16'});
+      element('circle', {cx, cy, r: radius, fill: 'none', stroke: 'var(--border)', 'stroke-width': 2});
+      for (const boundary of [start, end]) {
+        const [x1, y1] = point(boundary, radius - 13), [x2, y2] = point(boundary, radius + 13);
+        element('line', {x1, y1, x2, y2, stroke: 'var(--foreground)', 'stroke-width': 1});
+      }
+      element('text', {x: cx, y: cy - 9, 'text-anchor': 'middle'}, `Watching ${letters[ref]}`);
+      element('text', {x: cx, y: cy + 15, 'text-anchor': 'middle'}, `Best gap: ${result.maximum.separation} lap`);
+      const phases = velocities.map(v => phase(v * t));
+      phases.forEach((p, i) => {
+        // Radial offsets separate coincident dots; the small anchor stays on-track.
+        const cluster = phases.map((q, j) => distance(q - p) < .018 ? j : -1).filter(j => j >= 0);
+        const offset = (cluster.indexOf(i) - (cluster.length - 1) / 2) * 20;
+        const [x, y] = point(p, radius + offset), [anchorX, anchorY] = point(p);
+        if (cluster.length > 1) {
+          element('line', {x1: anchorX, y1: anchorY, x2: x, y2: y, stroke: colors[i], 'stroke-width': 1});
+        }
+        element('circle', {cx: x, cy: y, r: i === ref ? 9 : 7, fill: colors[i]});
+        if (i === ref) element('circle', {cx: x, cy: y, r: 13, fill: 'none', stroke: 'var(--foreground)', 'stroke-width': 1});
+        const [labelX, labelY] = point(p, radius + offset + (offset < 0 ? -20 : 21));
+        element('text', {x: labelX, y: labelY + 4, 'text-anchor': 'middle'}, letters[i]);
+      });
+      const desc = element('desc', {}, `At ${t * 60} seconds, watching runner ${letters[ref]}. Shaded arc is at least one-third lap from that runner. All runners share the same starting point.`);
+      svg.prepend(desc);
+      by('time').value = Math.round(t / number(result.period_original) * 1000);
+      const exactTime = exactPeak === null ? null : result.maximum.times_original[exactPeak];
+      root.querySelector('[data-time-label]').textContent = exactTime
+        ? `Time: ${seconds(exactTime)} seconds (exact)`
+        : `Time: ≈ ${(t * 60).toFixed(2)} seconds`;
+      root.querySelector('[data-period]').textContent = `One relative-distance period: ${seconds(result.period_original)} s`;
+      if (exactPeak !== null) {
+        const detail = result.maximum.witness_details[exactPeak];
+        state.textContent = `Verified peak · nearest gap ${result.maximum.separation} lap · limited by ${detail.limiting_runner_indices.map(i => letters[i]).join(' + ')}`;
+      } else {
+        const nearest = Math.min(...velocities.filter((_, i) => i !== ref).map(v => distance((v - velocities[ref]) * t)));
+        state.textContent = `Motion preview · nearest gap ≈ ${nearest.toFixed(4)} lap`;
+      }
+    }
+
+    function stop() {
+      playing = false;
+      if (request !== null) cancelAnimationFrame(request);
+      request = null; previousFrame = null;
+      by('play').textContent = 'Play';
+      state.setAttribute('aria-live', 'polite');
+    }
+
+    function load() {
+      stop();
+      activeCase = data.cases.find(item => item.key === by('speed').value);
+      result = activeCase.references[Number(by('reference').value)];
+      velocities = activeCase.velocities.map(number);
+      by('reference').options[2].textContent = `C · ${by('speed').value} laps / minute`;
+      exactPeak = 0; t = number(result.maximum.times_original[0]);
+      const legend = root.querySelector('.lr-legend');
+      legend.replaceChildren();
+      velocities.forEach((v, i) => {
+        const item = document.createElement('span');
+        const swatch = document.createElement('i');
+        swatch.className = 'lr-swatch'; swatch.style.background = colors[i];
+        swatch.setAttribute('aria-hidden', 'true');
+        item.append(swatch, `${letters[i]} · ${v} ${v === 1 ? 'lap' : 'laps'}/min`);
+        legend.appendChild(item);
+      });
+      draw();
+    }
+
+    function frame(now) {
+      if (!playing) return;
+      const period = number(result.period_original);
+      if (previousFrame !== null) t += Math.min(now - previousFrame, 100) / 1000 * period / 12;
+      previousFrame = now;
+      if (t >= period) { t = period; stop(); draw(); return; }
+      draw(); request = requestAnimationFrame(frame);
+    }
+
+    by('speed').addEventListener('change', load);
+    by('reference').addEventListener('change', load);
+    by('time').addEventListener('input', () => {
+      stop(); exactPeak = null;
+      t = Number(by('time').value) / 1000 * number(result.period_original);
+      draw();
+    });
+    by('peak').addEventListener('click', () => {
+      stop();
+      const times = result.maximum.times_original;
+      exactPeak = exactPeak === null ? times.findIndex(value => number(value) > t + 1e-12) : (exactPeak + 1) % times.length;
+      if (exactPeak < 0) exactPeak = 0;
+      t = number(times[exactPeak]); draw();
+    });
+    by('play').addEventListener('click', () => {
+      if (playing) { stop(); draw(); return; }
+      if (t >= number(result.period_original)) t = 0;
+      exactPeak = null; playing = true; previousFrame = null;
+      state.setAttribute('aria-live', 'off');
+      by('play').textContent = 'Pause';
+      request = requestAnimationFrame(frame);
+    });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+    new ResizeObserver(draw).observe(svg);
+    load();
+  })();
+  </script>
+</div>

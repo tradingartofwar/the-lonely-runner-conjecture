@@ -1,6 +1,6 @@
 # Mathematical baseline and checker specification
 
-**Status:** Standard formulation plus proposed exact-checking design. No production checker or research dataset has been implemented in this repository.
+**Status:** Standard formulation and the design now implemented by [the small reference checker](../lonely_runner/checker.py). [Validation](CHECKER_VALIDATION.md) records bounded checks; this is not a frontier-scale or externally audited implementation.
 
 ## Fix the notation
 
@@ -56,7 +56,7 @@ Why this is complete: between corners and pairwise crossings, the ordering of al
 
 The naive method grows with the sum of speeds and the number of constraints. It is a correctness oracle for small cases, not an assumed frontier-scale algorithm. Agreement with Method A at, below, and above its computed maximum is a required crosscheck.
 
-## Planned regression fixtures
+## Implemented regression fixtures
 
 Here `V` contains the relative speeds; `n` is stated independently.
 
@@ -71,7 +71,7 @@ Here `V` contains the relative speeds; `n` is stated independently.
 | Original `(0,1,2)`, reference speed `1` | Relative `(-1,1)`, `L=1/2`, target still `1/3` | Reference change and duplicate constraints |
 | `V=(1,2)`, artificial `delta=2/5` | Empty feasible set | Negative test, not a conjecture counterexample |
 
-Also test input rejection, permutations, sign changes, rational scaling, all reference runners, and exact-threshold neighbors. During document QA on September 19, temporary exact-rational calculations checked the listed maxima, the two singleton equality times, and the artificial infeasible threshold. The repository's production checker and regression suite have not been built; this spot check is not a research search.
+The regression suite also checks input rejection, permutations, sign changes, rational scaling, all reference runners, and exact-threshold neighbors. The initial September 19 document spot checks have now been followed by executable tests in [tests/test_checker.py](../tests/test_checker.py), including independent-method comparisons over 162 small speed sets. This is implementation verification, not a research search or a general proof.
 
 ## What an output would establish
 

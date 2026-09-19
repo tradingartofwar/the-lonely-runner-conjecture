@@ -1,7 +1,8 @@
 # Research plan and strategy
 
 **Created:** September 19, 2026  
-**Status:** Proposed exploration; foundation documents only  
+**Status:** Stage 2 implemented and checked September 19, 2026; a minimal Stage 3 demonstration exists. Broader stages remain proposals.
+
 **Team:** Vance + AI, with no automatic agent team or background work
 
 ## Purpose
@@ -25,6 +26,8 @@ Moving between these representations may reveal a useful pattern. That is a prop
 Do not make the first assignment an exhaustive 14-runner search. According to the frontier source inspected, that is the next case beyond its reported result, not a tractability guarantee. Before committing to it, audit the reduction, code, certificates, memory needs, and runtime [S3](notes/SOURCES.md).
 
 ## Proposed stages
+
+Implementation evidence: [checker validation](notes/CHECKER_VALIDATION.md), [exact checker](lonely_runner/checker.py), and [three-case demonstration](demo/index.html). The stage descriptions below remain the design; the demo currently has three presets and no distance-curve plot or arbitrary-speed editor.
 
 ### 1. See and understand one example
 

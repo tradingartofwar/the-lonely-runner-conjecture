@@ -22,8 +22,38 @@ Our first research question: **What structure makes a collection of speeds barel
 
 ## Status — September 19, 2026
 
-Planning and handoff only. No research software, visual lab, experiment dataset, new theorem, or counterexample has been produced here. Proposed implementations in the plan are not completed work.
+The first exact checker and a minimal three-case visual demonstration are implemented. Python's standard-library `Fraction` certifies closed feasible intervals (including isolated equality times) and exact maximum separation. Two independently structured algorithms crosscheck the answers. This is a small reference implementation, not a general proof or a frontier search.
 
-Start with small, comprehensible examples and an exact checker; then study tight configurations. The frontier research is recorded in Sources, with reported results separated from our own verification. Do not assume that an arbitrary bounded search proves a fixed-runner case.
+The tests cover the planned fixtures, normalization and reference changes, rejected inputs, and method agreement across 162 bounded speed sets. [Validation and scope](notes/CHECKER_VALIDATION.md) records the commands and what these checks establish.
+
+## Try it
+
+Python 3.10 or later, with no third-party packages required:
+
+```bash
+python -m lonely_runner --velocities 0 1 2
+python -m lonely_runner --velocities 0 1 4 --all-references
+python -m lonely_runner --velocities=-1/2,0,1/2 --reference 1 --json
+python -m unittest discover -s tests -v
+```
+
+`--reference` is the zero-based index in the supplied velocity list. Inputs are exact integers or fractions such as `3/2`; floats and decimal strings are rejected. A custom `--threshold 2/5` changes the requested separation, while the output retains the original conjecture threshold `1/n`. `--feasibility-only` skips maximum calculation. Large normalized inputs fail with an explicit resource-limit error, not a false counterexample.
+
+JSON output includes the original runner count, signed relative speeds, denominator/gcd normalization, complete time-scaling map, all closed feasible intervals over one relative-distance period, a witness, and maximum-separation times with limiting runner identities. All rational quantities are strings.
+
+## Visual demonstration
+
+Open [demo/index.html](demo/index.html) locally in a browser after downloading or cloning the repository; GitHub's file view shows source. It works offline, without a server or installation. Change runner C between 2, 3, and 4 laps/minute, watch any runner, play/pause, scrub time, or step through exact peaks. The demo starts paused at a verified peak. Playback stops after one relative-distance period; it does not run in the background.
+
+The three preset cases have all nine reference-runner results precomputed by the Python checker in [demo/cases.json](demo/cases.json). Ordinary motion is labeled approximate; exact peak labels use those checked rational results. Coincident dots are offset radially for visibility. The shaded arc is the part of the track at least `1/3` lap from the watched runner.
+
+```bash
+python -m scripts.build_demo
+python -m scripts.build_demo --check
+```
+
+The browser currently offers these three presets, not arbitrary speed entry. The exact CLI supports general rational configurations within its small-case limits. Distance-curve plots, a bounded atlas, and frontier computation remain unbuilt. Optional browser smoke checks are described in the validation note.
+
+Our next exploration: why does `(0,1,4)` reach `2/5` for the stationary runner, between the first two examples' `1/3` and `1/2`? The frontier research remains recorded separately in Sources.
 
 This repository owns this exploration. It does not change Mission Control, Performance, any other project, or the earlier decision against adding new operating systems. No recurring tasks or background processes are established.
