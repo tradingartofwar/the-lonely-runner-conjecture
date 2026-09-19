@@ -27,7 +27,7 @@ Touch Sungkawichai and Tanupat Trakulthongchai, *Eleven, twelve, and thirteen lo
 
 Theorem 1.3 states the result for `k<=12` moving speeds: 13 total runners in our notation. Inspected the theorem, implementation discussion, and proof conclusion. The paper describes modular sieving, symmetry reduction, and supporting computations.
 
-Working frontier: `k=13`, or 14 total runners, is beyond that reported theorem. A targeted search did not establish a later full resolution; absence from that search is not conclusive. Do not call the result independently reproduced, peer-review status verified, or the next case tractable. The linked code and logs have not been audited here. Refresh this entry before choosing frontier work.
+Fourteen total runners is beyond this paper's theorem, but a later source check in the same conversation found S7 reporting that case. Do not call either result independently reproduced, peer-review status verified, or the next case tractable. The linked code and logs have not been audited here. Refresh the literature before choosing frontier work.
 
 ## S4 — A second account of the standard formulation
 
@@ -52,6 +52,14 @@ Francesco Cordella, *Odd denominators in the Lonely Runner spectrum for six spee
 [Research lead](https://arxiv.org/abs/2609.03444)
 
 Direct abstract and HTML retrieval failed in this session. Treat it as an unverified lead, not as a relied-upon theorem. Obtain and inspect the paper before making claims about unclassified near-tight values for six speeds. No findings or counts from its search snippet are adopted here.
+
+## S7 — Later source check: reported fourteen-runner result
+
+Jaan Allikvere, *Fourteen lonely runners*, arXiv:2609.02604v1, September 2, 2026.
+
+[Versioned PDF](https://arxiv.org/pdf/2609.02604v1)
+
+Inspected the abstract and introduction. The preprint reports a computer-assisted proof for 14 total runners, extending S3's finite-checking framework. Its code, certificates, proof, and review status have not been independently audited here. This corrects the earlier provisional frontier note; it has no role in certifying our 4/8/12 example calculations.
 
 ## Source discipline
 

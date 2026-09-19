@@ -29,7 +29,7 @@ Vance supplies direction, intuitive questions, and reactions to what becomes vis
 
 ## Research baseline and limits
 
-The frontier source in notes/SOURCES.md reports a computer-assisted result through 13 total runners. We have not independently audited that proof or run its code. Treat 14 total runners as a provisional frontier target to reassess, not the first assignment.
+The original frontier source in notes/SOURCES.md reports a computer-assisted result through 13 total runners. A later source check found a September 2 preprint reporting 14 total runners (S7). We have not independently audited either proof or run their code. Frontier computation is not the current assignment.
 
 Start all runners together: shifted-start variants are different. Use exact rational arithmetic for certification. A plot, time grid, or large batch of passing examples cannot prove the general conjecture. A valid equality time can be an isolated point, invisible to a coarse animation.
 
@@ -42,7 +42,9 @@ Start all runners together: shifted-start variants are different. Use exact rati
 - `demo/index.html`: offline interactive demonstration of `(0,1,2)`, `(0,1,3)`, and `(0,1,4)`, with all reference runners, play/pause, time scrubbing, and exact-peak stepping. `demo/cases.json` contains the nine exact checker outputs. `scripts/build_demo.py` regenerates them and the display.
 - `notes/CHECKER_VALIDATION.md`: commands, results, limits, and the starting comparison.
 
-**Not built or run:** arbitrary-speed editing in the browser, distance-curve plots, an atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 cases are regression coverage, not the proposed research atlas.
+- `scripts/compare_tight_cases.py`, `experiments/tight_cases_4_8_12.json`, and `notes/TIGHT_CASES_4_8_12.md`: exact comparison of 4, 8, and 12 runners, including 179 specified single-speed changes. Four selected-reference tight cases were crosschecked with the independent maximum method. Inline conversation plots also show distance curves; the original offline demo is unchanged.
+
+**Not built or run:** arbitrary-speed editing in the browser, an exhaustive atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 regression inputs and the new 182-input research comparison are separate bounded checks.
 
 Vance approved implementation in the current thread after the proposal to build the exact checker and a minimal demonstration. This does not authorize a large search or wider project expansion.
 
@@ -71,6 +73,8 @@ From there, ask: **Which runners take turns preventing the reference runner from
 
 ## Current stopping point
 
-September 19, 2026: Stage 2 is implemented; a minimal Stage 3 demonstration is ready. See `notes/CHECKER_VALIDATION.md` for verification and reproduction commands. For stationary reference A, the three cases have exact maxima `1/3`, `1/2`, and `2/5`, respectively. The first attaining times are 20, 30, and 24 seconds when speeds are laps/minute. Every runner in all three cases passes its `1/3` requirement, sometimes at different times.
+September 19, 2026: Vance asked to record threshold-touching cases and double/triple the four-runner example. We compared 4, 8, and 12 total runners with the slowest runner (speed 1) selected. Consecutive actual speeds `1,...,n` give exact maxima `1/n`. Of 179 bounded single-relative-speed replacements, one remains tight: eight-runner relative speeds `{1,2,3,4,5,7,12}` (actual speeds `{1,2,3,4,5,6,8,13}`). This is a known example reproduced here, not a discovery. See `notes/TIGHT_CASES_4_8_12.md` and its script/data links for exact times, the search domain, controls, and all-reference checks.
 
-Unresolved exploration: what explains the change in which runner limits isolation when C's speed changes? Next action: explore the demo together, particularly `(0,1,4)` around 24 seconds, and formulate one small question from what Vance notices. No broader search or full visual lab is selected yet. Git history retains earlier stopping points.
+Shared observation: at every recorded tight peak, one runner's distance is increasing while another's is decreasing; the two limiting relative speeds sum to `n`. The uneven eight-runner example has the same peak times and limiting pairs as the consecutive case, so equal speed spacing is not necessary. A handoff also occurs at non-tight peaks, so it is not sufficient to characterize tightness.
+
+Next useful action: compare the exact allowed-time intervals for relative speed 6 versus 12 in the eight-runner case, and connect the preservation of tightness to the known acceleration criterion. Do not expand the search or claim a general classification from this bounded result. Git history retains earlier stopping points.

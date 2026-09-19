@@ -54,6 +54,16 @@ python -m scripts.build_demo --check
 
 The browser currently offers these three presets, not arbitrary speed entry. The exact CLI supports general rational configurations within its small-case limits. Distance-curve plots, a bounded atlas, and frontier computation remain unbuilt. Optional browser smoke checks are described in the validation note.
 
-Our next exploration: why does `(0,1,4)` reach `2/5` for the stationary runner, between the first two examples' `1/3` and `1/2`? The frontier research remains recorded separately in Sources.
+The original demonstration explores why `(0,1,4)` reaches `2/5` for the stationary runner, between the first two examples' `1/3` and `1/2`. The current comparison is below; frontier research remains recorded separately in Sources.
+
+## Exact comparison: 4, 8, and 12 runners
+
+The [threshold-touching study](notes/TIGHT_CASES_4_8_12.md) follows Vance's request to double and triple the four-runner example. It records three consecutive-speed tight cases, reproduces a known uneven eight-runner case, and checks 179 specified single-speed changes with exact interval arithmetic. The scope is bounded; this is not a new proof or a classification of all tight cases.
+
+```bash
+python -m scripts.compare_tight_cases
+```
+
+The [rational output](experiments/tight_cases_4_8_12.json) includes the search domain, all results, exact peak times and limiting runners, all-reference summaries for the four tight configurations, and polygon data for the comparison plots. The current next question is why the eight-runner replacement of relative speed 6 by 12 preserves tightness.
 
 This repository owns this exploration. It does not change Mission Control, Performance, any other project, or the earlier decision against adding new operating systems. No recurring tasks or background processes are established.
