@@ -193,3 +193,86 @@ For fixed velocities, this comparison is over complete cycles; it assigns a fixe
 The next interval-coverage comparison should retain the full per-runner profile rather than assuming that the initially selected slowest runner represents every runner. No novelty claim is made for these standard symmetries or the minimum-of-maxima formulation.
 
 Reproduce this follow-up with `python -m scripts.compare_reference_runners`. The JSON records the checker hash, all maxima and attaining times, speed ranks, tight flags, most-constrained identities, and the symmetry checks. The previously saved experiments are unchanged.
+
+## September 20: cooperative blocking and a changing tight runner
+
+The next comparison is complete. [Script](../scripts/analyze_cooperative_blocking.py) and [exact data](../experiments/cooperative_blocking.json) examine seven specified eight-runner configurations, all 56 reference runners, and three constraint deletions at the fixed original target `1/8`. Each maximum is crosschecked by the interval method. This is a bounded comparison of known examples and controls, not a new classification.
+
+### Six openings, with two runners sharing the coverage
+
+Start with relative speeds `{1,2,3,4,5,6,7}`. Temporarily omit 2 and 3, retaining the original eight-runner target. The remaining constraints are `C={1,4,5,6,7}`. They permit strict extra room in six open intervals: the three below and their reflections under `t -> 1-t`. They also permit two isolated threshold times, `1/8` and `7/8`.
+
+| First-half opening, with endpoints excluded | What inserted relative speeds 11 and 13 do |
+| --- | --- |
+| `(17/56,5/16)` | 13 blocks the whole opening |
+| `(17/48,3/8)` | 11 blocks the whole opening |
+| `(25/56,15/32)` | 11 blocks the earlier part; 13 blocks the later part; their coverage overlaps |
+
+“Blocks” means the inserted runner is strictly closer than `1/8` to the reference. For the third opening, the relevant open blocking intervals are
+
+```
+11: (39/88,41/88), centered at 5/11
+13: (47/104,49/104), centered at 6/13.
+```
+
+Their overlap has length `2/143`. Together they cover the entire third opening; neither does so alone. The script partitions all six openings at every blocking threshold endpoint and checks each resulting subinterval with constant blocking status and every internal boundary with exact fractions. Thus this conclusion covers the whole intervals, not a sampled set of times.
+
+Three convenient witnesses inside the third opening make the cooperation visible:
+
+| Time | Smallest gap from the five retained constraints | Distance of 11 | Distance of 13 |
+| --- | --- | --- | --- |
+| `9/20` | `3/20` | `1/20`: blocks | `3/20`: permits |
+| `6/13` | `2/13` | `1/13`: blocks | `0`: blocks |
+| `7/15` | `2/15` | `2/15`: permits | `1/15`: blocks |
+
+The complete set `{1,4,5,6,7,11,13}` leaves exactly `1/8,3/8,5/8,7/8` as acceptable times. Some endpoints of the core openings are removed by the inserted constraints; all endpoints are included in the full closed-interval check. This explains the known double-replacement example through cooperation in coverage.
+
+### An exception to the earlier limiting-pair pattern
+
+At `t=3/8`, relative speeds 5, 11, and 13 all have distance `1/8`. Their local distance slopes are respectively `-5,+11,-13`. Just before the peak, 11 gives the smallest distance; just after it, 13 does. Speed 5 touches the threshold but does not control the nearest-distance envelope on either adjacent side.
+
+For `|h|<=1/10000`, the exact local formula is
+
+```
+f(3/8+h) = 1/8 + 11h  for h <= 0,
+f(3/8+h) = 1/8 - 13h  for h >= 0.
+```
+
+The script checks that each distance curve is affine throughout these neighborhoods, bounds it against the proposed envelope at the endpoints, and identifies an attaining curve. Thus the handoff assertion is more than a close-time sample.
+
+The controlling relative speeds sum to `24=3*8`, **not 8**. The earlier sum-equals-runner-count observation does not generalize. A weaker conditional arithmetic statement follows: if a threshold contact occurs at `q/n` with `gcd(q,n)=1`, and active relative speeds `a,b` have phases `1/n` and `1-1/n`, then `a q=1 mod n` and `b q=-1 mod n`, hence `n` divides `a+b`. This condition concerns that specified contact time; it does not establish all peak times or global tightness.
+
+Deleting speed 5 nevertheless raises the best gap to `1/5` at the original fixed target comparison. So a constraint can be non-controlling near one peak and still essential elsewhere. Deleting 11 or 13 raises the best gap to `2/11` or `2/13` respectively. Earlier speed 12 illustrated the other direction: a runner can be essential while never touching the final threshold at a peak.
+
+### Identical touch snapshots can conceal extra room
+
+Keep the five core relative speeds fixed, and vary the two other ones:
+
+| Added relative speeds | Selected reference's maximum | Global peak times |
+| --- | --- | --- |
+| `11,13` | `1/8` | `1/8,3/8,5/8,7/8` |
+| `19,13` | `4/25` | `9/25,16/25` |
+| `11,21` | `2/13` | `4/13,9/13` |
+
+Changing one speed by 8 preserves its phase at every `q/8`. Consequently these three configurations have **identical labeled phase vectors** at all four original touch times, not merely the same minimum distance. The latter two have larger gaps between those snapshots. Their all-reference checks show no exactly tight runner anywhere. Congruences at the contact times capture some structure; the intervening trajectory and coverage remain necessary.
+
+### The tight role moves under a one-speed change
+
+This is a separate control. Express all runners in actual, positive speeds:
+
+| Actual speeds | Unique tight runner | Speed-1 runner's best gap | Speed-8 runner's best gap |
+| --- | --- | --- | --- |
+| `{1,2,5,6,7,8,12,14}` | Speed 1 | `1/8` | `1/5` |
+| `{1,2,5,6,7,8,12,13}` | Speed 8 | `2/13` | `1/8` |
+
+Slowing the fastest runner from 14 to 13 transfers the unique tight role to a runner whose own speed is unchanged. Relative to actual speed 8, the new signed differences are `{-7,-6,-3,-2,-1,4,5}`. Their magnitudes are exactly `{1,2,3,4,5,6,7}`. The selected distance function is therefore identical to the ordinary consecutive tight example, by sign symmetry. This gives an exact explanation of the role change; the other seven references were separately checked.
+
+Accordingly, the relative set `{1,4,5,6,7,11,12}` is **non-tight for the initially selected reference**, while the full eight-runner configuration still has a tight runner. Do not label the whole configuration non-tight from one reference's result.
+
+### Simple relationship counts also fail as an explanation
+
+Count relations `a+b=c` with `a<=b`, allowing `a=b`, among positive relative speeds. The consecutive, single-replacement, and double-replacement tight cases have respectively 12, 9, and 6 such relations. Controls `{1,4,5,6,7,11,12}` and `{1,4,5,6,7,12,13}` have 8 and 7, yet their selected-reference maxima exceed `1/8`. Thus more of these short relations does not monotonically mean tighter separation. Every set also contains a shortest nonzero integer relation of coefficient absolute-sum 3; that minimum alone cannot distinguish them. This tests one simple statistic, not all ways to characterize the relation lattice.
+
+**Pattern record:** same touch times is insufficient; even identical touch configurations are insufficient; a threshold tie is not always a controlling constraint; more short additive relations is not a tightness criterion; and a one-speed change can move the unique tight role to another runner. Each statement above has an explicit exact control.
+
+**Next useful question:** group tight reference runners by their normalized absolute relative speeds before comparing configurations. Then ask whether any remaining differences in their full-cycle coverage require a new explanation, rather than counting disguised copies of an already-understood case as new patterns.

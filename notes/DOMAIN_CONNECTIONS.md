@@ -95,4 +95,6 @@ For the known tight eight-runner cases and their non-tight controls, compare the
 
 Then resume the parked double-replacement example `(1,4,5,6,7,11,13)`, asking how arithmetic relations and cooperative interval coverage fit together. This is a bounded next investigation, not a large scan.
 
+**Completed later September 20:** [the cooperative-blocking continuation](TIGHT_CASES_4_8_12.md#september-20-cooperative-blocking-and-a-changing-tight-runner) checks seven configurations and all 56 reference runners. It explains the shared coverage, corrects the earlier pair-sum pattern, and supplies equal-snapshot controls with different maxima. A one-speed change also transfers the unique tight role to another runner whose absolute relative speeds form the consecutive set. The next comparison should group such equivalent reference descriptions before treating them as different structures.
+
 Vance's idea about distributed intelligence is retained as a methodological hypothesis: different people, tools, and disciplines may supply different useful representations. Success here would be an explicit translation that explains a previously unexplained observation or certifies a new case. The present mathematics neither establishes a universal intelligence law nor shows that a missing concept is the only obstacle to solving LRC.

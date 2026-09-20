@@ -1,0 +1,2202 @@
+{
+  "date": "2026-09-20",
+  "base_commit": "79d88a4df75ee86d113c65d49670da6e83600f96",
+  "checker_sha256": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971",
+  "scope": "7 specified eight-runner configurations, all 56 references, and 3 fixed-target deletions",
+  "threshold": "1/8",
+  "core": [
+    1,
+    4,
+    5,
+    6,
+    7
+  ],
+  "core_closed_allowed_intervals": [
+    [
+      "1/8",
+      "1/8"
+    ],
+    [
+      "17/56",
+      "5/16"
+    ],
+    [
+      "17/48",
+      "3/8"
+    ],
+    [
+      "25/56",
+      "15/32"
+    ],
+    [
+      "17/32",
+      "31/56"
+    ],
+    [
+      "5/8",
+      "31/48"
+    ],
+    [
+      "11/16",
+      "39/56"
+    ],
+    [
+      "7/8",
+      "7/8"
+    ]
+  ],
+  "coverage": [
+    {
+      "core_open_window": [
+        "17/56",
+        "5/16"
+      ],
+      "cells": [
+        {
+          "open_interval": [
+            "17/56",
+            "5/16"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        }
+      ],
+      "internal_boundaries_checked": []
+    },
+    {
+      "core_open_window": [
+        "17/48",
+        "3/8"
+      ],
+      "cells": [
+        {
+          "open_interval": [
+            "17/48",
+            "3/8"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        }
+      ],
+      "internal_boundaries_checked": []
+    },
+    {
+      "core_open_window": [
+        "25/56",
+        "15/32"
+      ],
+      "cells": [
+        {
+          "open_interval": [
+            "25/56",
+            "47/104"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "47/104",
+            "41/88"
+          ],
+          "strict_blockers": [
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/88",
+            "15/32"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        }
+      ],
+      "internal_boundaries_checked": [
+        "47/104",
+        "41/88"
+      ]
+    },
+    {
+      "core_open_window": [
+        "17/32",
+        "31/56"
+      ],
+      "cells": [
+        {
+          "open_interval": [
+            "17/32",
+            "47/88"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "47/88",
+            "57/104"
+          ],
+          "strict_blockers": [
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "57/104",
+            "31/56"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        }
+      ],
+      "internal_boundaries_checked": [
+        "47/88",
+        "57/104"
+      ]
+    },
+    {
+      "core_open_window": [
+        "5/8",
+        "31/48"
+      ],
+      "cells": [
+        {
+          "open_interval": [
+            "5/8",
+            "31/48"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        }
+      ],
+      "internal_boundaries_checked": []
+    },
+    {
+      "core_open_window": [
+        "11/16",
+        "39/56"
+      ],
+      "cells": [
+        {
+          "open_interval": [
+            "11/16",
+            "39/56"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        }
+      ],
+      "internal_boundaries_checked": []
+    }
+  ],
+  "third_window_blocking_intervals": {
+    "11": [
+      "39/88",
+      "41/88"
+    ],
+    "13": [
+      "47/104",
+      "49/104"
+    ]
+  },
+  "third_window_strict_overlap": "2/143",
+  "third_window_witnesses": [
+    {
+      "time": "9/20",
+      "core_gap": "3/20",
+      "distance_11": "1/20",
+      "distance_13": "3/20"
+    },
+    {
+      "time": "6/13",
+      "core_gap": "2/13",
+      "distance_11": "1/13",
+      "distance_13": "0"
+    },
+    {
+      "time": "7/15",
+      "core_gap": "2/15",
+      "distance_11": "2/15",
+      "distance_13": "1/15"
+    }
+  ],
+  "cases": [
+    {
+      "label": "consecutive",
+      "relative_speeds_in_label_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reference_speed": 1,
+      "maximum": "1/8",
+      "tight": true,
+      "peak_times": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8"
+        ],
+        [
+          "3/8",
+          "3/4",
+          "1/8",
+          "1/2",
+          "7/8",
+          "1/4",
+          "5/8"
+        ],
+        [
+          "5/8",
+          "1/4",
+          "7/8",
+          "1/2",
+          "1/8",
+          "3/4",
+          "3/8"
+        ],
+        [
+          "7/8",
+          "3/4",
+          "5/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "1/8",
+            "7": "7/8"
+          },
+          "active_slopes": {
+            "1": 1,
+            "7": -7
+          },
+          "left_controller": 1,
+          "right_controller": 7,
+          "left_slope": 1,
+          "right_slope": -7
+        },
+        {
+          "time": "3/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "1/8",
+            "5": "7/8"
+          },
+          "active_slopes": {
+            "3": 3,
+            "5": -5
+          },
+          "left_controller": 3,
+          "right_controller": 5,
+          "left_slope": 3,
+          "right_slope": -5
+        },
+        {
+          "time": "5/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "7/8",
+            "5": "1/8"
+          },
+          "active_slopes": {
+            "3": -3,
+            "5": 5
+          },
+          "left_controller": 5,
+          "right_controller": 3,
+          "left_slope": 5,
+          "right_slope": -3
+        },
+        {
+          "time": "7/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "7/8",
+            "7": "1/8"
+          },
+          "active_slopes": {
+            "1": -1,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 1,
+          "left_slope": 7,
+          "right_slope": -1
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          3,
+          3,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ]
+      ],
+      "triad_count": 12,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "1/8",
+          "tight": true,
+          "peak_times": [
+            "1/8",
+            "3/8",
+            "5/8",
+            "7/8"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "1/7",
+          "tight": false,
+          "peak_times": [
+            "1/7",
+            "2/7",
+            "3/7",
+            "4/7",
+            "5/7",
+            "6/7"
+          ]
+        },
+        {
+          "actual_speed": 3,
+          "maximum": "1/6",
+          "tight": false,
+          "peak_times": [
+            "1/6",
+            "5/6"
+          ]
+        },
+        {
+          "actual_speed": 4,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "1/6",
+          "tight": false,
+          "peak_times": [
+            "1/6",
+            "5/6"
+          ]
+        },
+        {
+          "actual_speed": 7,
+          "maximum": "1/7",
+          "tight": false,
+          "peak_times": [
+            "1/7",
+            "2/7",
+            "3/7",
+            "4/7",
+            "5/7",
+            "6/7"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "1/8",
+          "tight": true,
+          "peak_times": [
+            "1/8",
+            "3/8",
+            "5/8",
+            "7/8"
+          ]
+        }
+      ],
+      "tight_actual_speeds": [
+        1,
+        8
+      ]
+    },
+    {
+      "label": "single_replacement",
+      "relative_speeds_in_label_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        12
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        13
+      ],
+      "reference_speed": 1,
+      "maximum": "1/8",
+      "tight": true,
+      "peak_times": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/2",
+          "5/8",
+          "7/8",
+          "1/2"
+        ],
+        [
+          "3/8",
+          "3/4",
+          "1/8",
+          "1/2",
+          "7/8",
+          "5/8",
+          "1/2"
+        ],
+        [
+          "5/8",
+          "1/4",
+          "7/8",
+          "1/2",
+          "1/8",
+          "3/8",
+          "1/2"
+        ],
+        [
+          "7/8",
+          "3/4",
+          "5/8",
+          "1/2",
+          "3/8",
+          "1/8",
+          "1/2"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "1/8",
+            "7": "7/8"
+          },
+          "active_slopes": {
+            "1": 1,
+            "7": -7
+          },
+          "left_controller": 1,
+          "right_controller": 7,
+          "left_slope": 1,
+          "right_slope": -7
+        },
+        {
+          "time": "3/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "1/8",
+            "5": "7/8"
+          },
+          "active_slopes": {
+            "3": 3,
+            "5": -5
+          },
+          "left_controller": 3,
+          "right_controller": 5,
+          "left_slope": 3,
+          "right_slope": -5
+        },
+        {
+          "time": "5/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "7/8",
+            "5": "1/8"
+          },
+          "active_slopes": {
+            "3": -3,
+            "5": 5
+          },
+          "left_controller": 5,
+          "right_controller": 3,
+          "left_slope": 5,
+          "right_slope": -3
+        },
+        {
+          "time": "7/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "7/8",
+            "7": "1/8"
+          },
+          "active_slopes": {
+            "1": -1,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 1,
+          "left_slope": 7,
+          "right_slope": -1
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          5,
+          7,
+          12
+        ]
+      ],
+      "triad_count": 9,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "1/8",
+          "tight": true,
+          "peak_times": [
+            "1/8",
+            "3/8",
+            "5/8",
+            "7/8"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed": 4,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "1/6",
+          "tight": false,
+          "peak_times": [
+            "1/6",
+            "5/6"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "2/9",
+          "tight": false,
+          "peak_times": [
+            "1/9",
+            "8/9"
+          ]
+        },
+        {
+          "actual_speed": 13,
+          "maximum": "5/17",
+          "tight": false,
+          "peak_times": [
+            "1/17",
+            "16/17"
+          ]
+        }
+      ],
+      "tight_actual_speeds": [
+        1
+      ]
+    },
+    {
+      "label": "double_replacement",
+      "relative_speeds_in_label_order": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        14
+      ],
+      "reference_speed": 1,
+      "maximum": "1/8",
+      "tight": true,
+      "peak_times": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "3/8",
+          "5/8"
+        ],
+        [
+          "3/8",
+          "1/2",
+          "7/8",
+          "1/4",
+          "5/8",
+          "1/8",
+          "7/8"
+        ],
+        [
+          "5/8",
+          "1/2",
+          "1/8",
+          "3/4",
+          "3/8",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "5/8",
+          "3/8"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "1/8",
+            "7": "7/8"
+          },
+          "active_slopes": {
+            "1": 1,
+            "7": -7
+          },
+          "left_controller": 1,
+          "right_controller": 7,
+          "left_slope": 1,
+          "right_slope": -7
+        },
+        {
+          "time": "3/8",
+          "active_speeds": [
+            5,
+            11,
+            13
+          ],
+          "active_phases": {
+            "5": "7/8",
+            "11": "1/8",
+            "13": "7/8"
+          },
+          "active_slopes": {
+            "5": -5,
+            "11": 11,
+            "13": -13
+          },
+          "left_controller": 11,
+          "right_controller": 13,
+          "left_slope": 11,
+          "right_slope": -13
+        },
+        {
+          "time": "5/8",
+          "active_speeds": [
+            5,
+            11,
+            13
+          ],
+          "active_phases": {
+            "5": "1/8",
+            "11": "7/8",
+            "13": "1/8"
+          },
+          "active_slopes": {
+            "5": 5,
+            "11": -11,
+            "13": 13
+          },
+          "left_controller": 13,
+          "right_controller": 11,
+          "left_slope": 13,
+          "right_slope": -11
+        },
+        {
+          "time": "7/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "7/8",
+            "7": "1/8"
+          },
+          "active_slopes": {
+            "1": -1,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 1,
+          "left_slope": 7,
+          "right_slope": -1
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          11
+        ],
+        [
+          5,
+          6,
+          11
+        ],
+        [
+          6,
+          7,
+          13
+        ]
+      ],
+      "triad_count": 6,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "1/8",
+          "tight": true,
+          "peak_times": [
+            "1/8",
+            "3/8",
+            "5/8",
+            "7/8"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "2/9",
+          "tight": false,
+          "peak_times": [
+            "4/9",
+            "5/9"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "3/10",
+            "7/10"
+          ]
+        },
+        {
+          "actual_speed": 7,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 12,
+          "maximum": "3/17",
+          "tight": false,
+          "peak_times": [
+            "2/17",
+            "15/17"
+          ]
+        },
+        {
+          "actual_speed": 14,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        }
+      ],
+      "tight_actual_speeds": [
+        1
+      ]
+    },
+    {
+      "label": "control_11_12",
+      "relative_speeds_in_label_order": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13
+      ],
+      "reference_speed": 1,
+      "maximum": "2/13",
+      "tight": false,
+      "peak_times": [
+        "4/13",
+        "9/13"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "41/88",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "47/88"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "3/8",
+          "1/2"
+        ],
+        [
+          "3/8",
+          "1/2",
+          "7/8",
+          "1/4",
+          "5/8",
+          "1/8",
+          "1/2"
+        ],
+        [
+          "5/8",
+          "1/2",
+          "1/8",
+          "3/4",
+          "3/8",
+          "7/8",
+          "1/2"
+        ],
+        [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "5/8",
+          "1/2"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "4/13",
+          "active_speeds": [
+            6,
+            7
+          ],
+          "active_phases": {
+            "6": "11/13",
+            "7": "2/13"
+          },
+          "active_slopes": {
+            "6": -6,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 6,
+          "left_slope": 7,
+          "right_slope": -6
+        },
+        {
+          "time": "9/13",
+          "active_speeds": [
+            6,
+            7
+          ],
+          "active_phases": {
+            "6": "2/13",
+            "7": "11/13"
+          },
+          "active_slopes": {
+            "6": 6,
+            "7": -7
+          },
+          "left_controller": 6,
+          "right_controller": 7,
+          "left_slope": 6,
+          "right_slope": -7
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          1,
+          11,
+          12
+        ],
+        [
+          4,
+          7,
+          11
+        ],
+        [
+          5,
+          6,
+          11
+        ],
+        [
+          5,
+          7,
+          12
+        ],
+        [
+          6,
+          6,
+          12
+        ]
+      ],
+      "triad_count": 8,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "2/13",
+          "tight": false,
+          "peak_times": [
+            "4/13",
+            "9/13"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "3/16",
+          "tight": false,
+          "peak_times": [
+            "7/16",
+            "9/16"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "4/11",
+            "7/11"
+          ]
+        },
+        {
+          "actual_speed": 7,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "2/7",
+            "5/7"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "1/8",
+          "tight": true,
+          "peak_times": [
+            "1/8",
+            "3/8",
+            "5/8",
+            "7/8"
+          ]
+        },
+        {
+          "actual_speed": 12,
+          "maximum": "2/15",
+          "tight": false,
+          "peak_times": [
+            "7/15",
+            "8/15"
+          ]
+        },
+        {
+          "actual_speed": 13,
+          "maximum": "3/17",
+          "tight": false,
+          "peak_times": [
+            "8/17",
+            "9/17"
+          ]
+        }
+      ],
+      "tight_actual_speeds": [
+        8
+      ]
+    },
+    {
+      "label": "control_12_13",
+      "relative_speeds_in_label_order": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14
+      ],
+      "reference_speed": 1,
+      "maximum": "2/11",
+      "tight": false,
+      "peak_times": [
+        "4/11",
+        "7/11"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/48",
+          "3/8"
+        ],
+        [
+          "25/56",
+          "47/104"
+        ],
+        [
+          "57/104",
+          "31/56"
+        ],
+        [
+          "5/8",
+          "31/48"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "1/2",
+          "5/8"
+        ],
+        [
+          "3/8",
+          "1/2",
+          "7/8",
+          "1/4",
+          "5/8",
+          "1/2",
+          "7/8"
+        ],
+        [
+          "5/8",
+          "1/2",
+          "1/8",
+          "3/4",
+          "3/8",
+          "1/2",
+          "1/8"
+        ],
+        [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "1/2",
+          "3/8"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "4/11",
+          "active_speeds": [
+            5,
+            6
+          ],
+          "active_phases": {
+            "5": "9/11",
+            "6": "2/11"
+          },
+          "active_slopes": {
+            "5": -5,
+            "6": 6
+          },
+          "left_controller": 6,
+          "right_controller": 5,
+          "left_slope": 6,
+          "right_slope": -5
+        },
+        {
+          "time": "7/11",
+          "active_speeds": [
+            5,
+            6
+          ],
+          "active_phases": {
+            "5": "2/11",
+            "6": "9/11"
+          },
+          "active_slopes": {
+            "5": 5,
+            "6": -6
+          },
+          "left_controller": 5,
+          "right_controller": 6,
+          "left_slope": 5,
+          "right_slope": -6
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          1,
+          12,
+          13
+        ],
+        [
+          5,
+          7,
+          12
+        ],
+        [
+          6,
+          6,
+          12
+        ],
+        [
+          6,
+          7,
+          13
+        ]
+      ],
+      "triad_count": 7,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "4/11",
+            "7/11"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "3/16",
+          "tight": false,
+          "peak_times": [
+            "7/16",
+            "9/16"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed": 7,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed": 13,
+          "maximum": "3/17",
+          "tight": false,
+          "peak_times": [
+            "8/17",
+            "9/17"
+          ]
+        },
+        {
+          "actual_speed": 14,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        }
+      ],
+      "tight_actual_speeds": []
+    },
+    {
+      "label": "same_phases_19_13",
+      "relative_speeds_in_label_order": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        19,
+        13
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        20,
+        14
+      ],
+      "reference_speed": 1,
+      "maximum": "4/25",
+      "tight": false,
+      "peak_times": [
+        "9/25",
+        "16/25"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/48",
+          "55/152"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "25/56",
+          "47/104"
+        ],
+        [
+          "57/104",
+          "31/56"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "97/152",
+          "31/48"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "3/8",
+          "5/8"
+        ],
+        [
+          "3/8",
+          "1/2",
+          "7/8",
+          "1/4",
+          "5/8",
+          "1/8",
+          "7/8"
+        ],
+        [
+          "5/8",
+          "1/2",
+          "1/8",
+          "3/4",
+          "3/8",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "5/8",
+          "3/8"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "9/25",
+          "active_speeds": [
+            6,
+            19
+          ],
+          "active_phases": {
+            "6": "4/25",
+            "19": "21/25"
+          },
+          "active_slopes": {
+            "6": 6,
+            "19": -19
+          },
+          "left_controller": 6,
+          "right_controller": 19,
+          "left_slope": 6,
+          "right_slope": -19
+        },
+        {
+          "time": "16/25",
+          "active_speeds": [
+            6,
+            19
+          ],
+          "active_phases": {
+            "6": "21/25",
+            "19": "4/25"
+          },
+          "active_slopes": {
+            "6": -6,
+            "19": 19
+          },
+          "left_controller": 19,
+          "right_controller": 6,
+          "left_slope": 19,
+          "right_slope": -6
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          6,
+          7,
+          13
+        ],
+        [
+          6,
+          13,
+          19
+        ]
+      ],
+      "triad_count": 5,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "4/25",
+          "tight": false,
+          "peak_times": [
+            "9/25",
+            "16/25"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "5/11",
+            "6/11"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "3/16",
+          "tight": false,
+          "peak_times": [
+            "3/16",
+            "13/16"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed": 7,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "3/13",
+            "10/13"
+          ]
+        },
+        {
+          "actual_speed": 20,
+          "maximum": "6/25",
+          "tight": false,
+          "peak_times": [
+            "1/25",
+            "24/25"
+          ]
+        },
+        {
+          "actual_speed": 14,
+          "maximum": "6/19",
+          "tight": false,
+          "peak_times": [
+            "1/19",
+            "18/19"
+          ]
+        }
+      ],
+      "tight_actual_speeds": []
+    },
+    {
+      "label": "same_phases_11_21",
+      "relative_speeds_in_label_order": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        21
+      ],
+      "actual_speeds_in_label_order": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        12,
+        22
+      ],
+      "reference_speed": 1,
+      "maximum": "2/13",
+      "tight": false,
+      "peak_times": [
+        "4/13",
+        "9/13"
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "41/88",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "47/88"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "old_touch_phases": [
+        [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "3/8",
+          "5/8"
+        ],
+        [
+          "3/8",
+          "1/2",
+          "7/8",
+          "1/4",
+          "5/8",
+          "1/8",
+          "7/8"
+        ],
+        [
+          "5/8",
+          "1/2",
+          "1/8",
+          "3/4",
+          "3/8",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "5/8",
+          "3/8"
+        ]
+      ],
+      "peak_faces": [
+        {
+          "time": "4/13",
+          "active_speeds": [
+            6,
+            7
+          ],
+          "active_phases": {
+            "6": "11/13",
+            "7": "2/13"
+          },
+          "active_slopes": {
+            "6": -6,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 6,
+          "left_slope": 7,
+          "right_slope": -6
+        },
+        {
+          "time": "9/13",
+          "active_speeds": [
+            6,
+            7
+          ],
+          "active_phases": {
+            "6": "2/13",
+            "7": "11/13"
+          },
+          "active_slopes": {
+            "6": 6,
+            "7": -7
+          },
+          "left_controller": 6,
+          "right_controller": 7,
+          "left_slope": 6,
+          "right_slope": -7
+        }
+      ],
+      "additive_triads": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          4,
+          7,
+          11
+        ],
+        [
+          5,
+          6,
+          11
+        ]
+      ],
+      "triad_count": 5,
+      "all_references": [
+        {
+          "actual_speed": 1,
+          "maximum": "2/13",
+          "tight": false,
+          "peak_times": [
+            "4/13",
+            "9/13"
+          ]
+        },
+        {
+          "actual_speed": 2,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "11/25",
+            "14/25"
+          ]
+        },
+        {
+          "actual_speed": 5,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 6,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "3/10",
+            "7/10"
+          ]
+        },
+        {
+          "actual_speed": 7,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "2/7",
+            "5/7"
+          ]
+        },
+        {
+          "actual_speed": 8,
+          "maximum": "1/5",
+          "tight": false,
+          "peak_times": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ]
+        },
+        {
+          "actual_speed": 12,
+          "maximum": "4/15",
+          "tight": false,
+          "peak_times": [
+            "1/15",
+            "14/15"
+          ]
+        },
+        {
+          "actual_speed": 22,
+          "maximum": "10/31",
+          "tight": false,
+          "peak_times": [
+            "1/31",
+            "30/31"
+          ]
+        }
+      ],
+      "tight_actual_speeds": []
+    }
+  ],
+  "deletions": [
+    {
+      "omitted_relative_speed": 5,
+      "fixed_original_target": "1/8",
+      "maximum": "1/5",
+      "peak_times": [
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5"
+      ]
+    },
+    {
+      "omitted_relative_speed": 11,
+      "fixed_original_target": "1/8",
+      "maximum": "2/11",
+      "peak_times": [
+        "4/11",
+        "7/11"
+      ]
+    },
+    {
+      "omitted_relative_speed": 13,
+      "fixed_original_target": "1/8",
+      "maximum": "2/13",
+      "peak_times": [
+        "4/13",
+        "9/13"
+      ]
+    }
+  ],
+  "role_transfer": {
+    "actual_speed_change": [
+      14,
+      13
+    ],
+    "old_unique_tight_speed": 1,
+    "new_unique_tight_speed": 8,
+    "new_reference_absolute_differences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "old_speed_8_maximum": "1/5",
+    "new_speed_8_maximum": "1/8"
+  },
+  "limitations": "Known tight examples, bounded controls, exact explanations; no novelty or general proof claim"
+}
