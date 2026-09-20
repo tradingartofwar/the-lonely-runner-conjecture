@@ -1,6 +1,7 @@
 # Lonely Runner — new-thread handoff
 
-**Prepared:** September 19, 2026  
+**Prepared:** September 20, 2026
+
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
 **Suggested ChatGPT project/thread title:** Lonely Runner — Vance + AI
@@ -47,6 +48,7 @@ Start all runners together: shifted-start variants are different. Use exact rati
 - `scripts/compare_tight_cases.py`, `experiments/tight_cases_4_8_12.json`, and `notes/TIGHT_CASES_4_8_12.md`: exact comparison of 4, 8, and 12 runners, including 179 specified single-speed changes. Four selected-reference tight cases were crosschecked with the independent maximum method. Inline conversation plots also show distance curves; the original offline demo is unchanged.
 - `scripts/analyze_eight_runner_replacement.py` and `experiments/eight_runner_replacement.json`: exact interval explanation of the 6-to-12 replacement, controls 11/13/18, touch-time spacing, and a fixed-case argument excluding all other faster integer replacements for the deleted speed 6. The explanation and pattern/exception record extend the same research note.
 - `scripts/compare_reference_runners.py` and `experiments/reference_runner_roles.json`: all 96 reference runners in 13 explicit configurations, with exact maxima and symmetry checks. The same research note now distinguishes a most-constrained runner from an exactly tight runner.
+- `notes/DOMAIN_CONNECTIONS.md`: September 20 map of algebra, number theory, geometry, dynamics, waves, quantum phase notation, and log coordinates. `scripts/check_phase_space_examples.py` and `experiments/phase_space_examples.json` certify three small geometric comparisons. S9–S10 record the newly inspected relation and polyhedron papers.
 
 **Not built or run:** arbitrary-speed editing in the browser, an exhaustive atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 regression inputs and the new 182-input research comparison are separate bounded checks.
 
@@ -87,4 +89,8 @@ Vance's spacing observation: consecutive-speed cases have global touch times `q/
 
 Latest follow-up: Vance suggested the particularly constrained runner might occupy a different speed rank. The exact comparison confirms this. Actual speeds `{1,2,3,4,8,9,11,16}` have only speed 4 tight at 1/8. Reflecting the original uneven case via `v -> 14-v` makes only the fastest runner tight. Consecutive examples have both extremes tight. The control `{1,2,4,8,16,32,64,128}` has no tight runner; its most-constrained runner (speed 2) still achieves 32/127 > 1/8. Record the distinction: minimize each runner's best full-cycle separation to identify the most constrained; equality with 1/n is a separate property. Independent relative sign changes preserve the selected runner's distances, so its speed rank is not intrinsic. Other references must be rechecked after such changes.
 
-Next useful action: examine the known two-speed eight-runner relative set `{1,4,5,6,7,11,13}`, obtained by replacing 2 and 3 by 11 and 13 together. Ask whether the two replacements cover openings cooperatively, and whether the touch-time schedule survives. Keep full per-runner profiles in view rather than assuming the slowest runner is always special. Keep the next comparison bounded and exact. Git history retains earlier stopping points.
+September 20 direction: Vance asked to explore other domains for clues, then more dimensions. The completed first map identifies integer relations among relative speeds as a common object in number theory, geometry, and wave notation. The state is one point in an `(n-1)`-coordinate torus, and loneliness means meeting a closed central box. Ambient dimension and orbit-closure dimension differ: integer examples still follow closed one-dimensional paths. Exact three-runner comparisons demonstrate touching the box, entering it, and missing an artificially strengthened target. Zero allowed duration can still contain valid equality times.
+
+S9 reports a short odd-sum integer relation as a necessary condition for tightness or a counterexample; it is not sufficient. The tight 6-to-12 replacement and non-tight 6-to-11 control already share a short relation, providing a countercheck. The earlier Class C paper explicitly calls its broad universality statements conjectures. Quantum phase equations share a formal representation, but no quantum theorem or physical mechanism was transferred. No universal law or new LRC theorem is claimed.
+
+Next useful action: compare short integer relations, target faces touched, and exact interval coverage for the tight eight-runner cases and the known non-tight controls. Then examine cooperative coverage in `{1,4,5,6,7,11,13}`, obtained by replacing 2 and 3 by 11 and 13 together. Keep per-runner profiles, original runner counts, and equality endpoints. Keep the comparison bounded and exact. Git history retains earlier stopping points.

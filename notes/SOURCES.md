@@ -1,6 +1,7 @@
 # Research sources and frontier check
 
-**Checked:** September 19, 2026  
+**Checked:** September 20, 2026
+
 **Scope:** Targeted source check for project planning, not an exhaustive literature review or independent proof audit.
 
 ## S1 — Orientation and tight examples
@@ -70,6 +71,24 @@ Yuhan Zhang, *Single-speed modifications of the tight Lonely Runner instance: an
 Inspected the abstract, Section 1.1 (restating Goddyn–Wong's acceleration criterion), the divisibility observation, and the interval setup. The preprint reports classifications and exact censuses beyond our study; these have not been independently audited. Its use of uncovered intervals is directly relevant to our speed-6 deletion. We derived and checked that fixed eight-runner calculation ourselves. The paper uses `n` total runners, matching our convention.
 
 The original Goddyn–Wong article is *Tight Instances of the Lonely Runner*, Integers 6 (2006), A38, DOI 10.5281/zenodo.8275490. The journal's [volume index](https://math.colgate.edu/~integers/vol6.html) was inspected, but direct PDF retrieval failed. The acceleration criterion was read in S8 and cross-checked against S1, not independently rederived in its generality. No source is being used to support a novelty claim.
+
+## S9 — Short relations, Fourier analysis, and geometry
+
+Matthias Beck and Samuel Everett, *Lonely Runner Relations*, arXiv:2609.06259v1, submitted September 5, 2026 (manuscript dated September 4).
+
+[Versioned HTML](https://arxiv.org/html/2609.06259v1)
+
+Read Theorems 1–2, the Fourier proof, Proposition 4, and open questions. Relevant necessary condition recorded in [the domain map](DOMAIN_CONNECTIONS.md). The paper uses `k` moving speeds, so our total is `n=k+1`. No independent proof audit.
+
+## S10 — Original polyhedral formulation
+
+Matthias Beck, Serkan Hoşten, and Matthias Schymura, *Lonely Runner Polyhedra*, Integers 19 (2019), A29, published June 3, 2019.
+
+[Journal PDF](https://math.colgate.edu/~integers/t29/t29.pdf)
+
+Read the abstract, introduction, Section 2, and Proposition 1. They connect a line meeting translated closed cubes with integer points in a polyhedron and with projected zonotopes. These provide established precedents for our phase-space explanation; the formulation is not our discovery. Its `k` equals our `n-1`.
+
+September 20 additions also consulted S1 on connections and rational independence, and S4 on interval coverage. The Class C document was read solely to check the scope of Vance's prior hypothesis; it supplies no proof of a Lonely Runner claim.
 
 ## Source discipline
 
