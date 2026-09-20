@@ -98,3 +98,43 @@ Then resume the parked double-replacement example `(1,4,5,6,7,11,13)`, asking ho
 **Completed later September 20:** [the cooperative-blocking continuation](TIGHT_CASES_4_8_12.md#september-20-cooperative-blocking-and-a-changing-tight-runner) checks seven configurations and all 56 reference runners. It explains the shared coverage, corrects the earlier pair-sum pattern, and supplies equal-snapshot controls with different maxima. A one-speed change also transfers the unique tight role to another runner whose absolute relative speeds form the consecutive set. The next comparison should group such equivalent reference descriptions before treating them as different structures.
 
 Vance's idea about distributed intelligence is retained as a methodological hypothesis: different people, tools, and disciplines may supply different useful representations. Success here would be an explicit translation that explains a previously unexplained observation or certifies a new case. The present mathematics neither establishes a universal intelligence law nor shows that a missing concept is the only obstacle to solving LRC.
+
+## Models not yet used systematically: a prioritized follow-up
+
+After the [Fibonacci check](FIBONACCI_CHECK.md), Vance asked which additional modeling languages could reveal structure. The distinction is between a field we have mentioned and a specific representation we have actually used to explain or certify something.
+
+| Priority | Representation | Status and concrete question |
+| --- | --- | --- |
+| 1 | Discrete dynamics and recurrence matrices | Continuous-time phase motion was already examined. A recurrence advancing through Fibonacci **runner indices** has not been used to explain the maxima. Can its allowed trajectories explain the plateaus? |
+| 2 | Continued fractions | Fractions and residues were used, but not the hierarchy of rational approximations to an irrational number. Why do the observed maximizing times occupy particular levels of this hierarchy? |
+| 3 | Graphs of blocking intervals | Interval coverage was computed exactly; a graph-based certificate has not been constructed. Which intervals form a small covering chain, and which runners are essential away from peaks? |
+| 4 | Integer-lattice geometry | Polyhedra and zonotopes were read about and mapped, but not constructed for our examples. Can an integer-point or width argument explain feasibility or boundary-only contact? |
+
+Graph-coloring and lattice-geometric connections are established parts of the literature, as described in S1 Sections 3.3–3.5 and S10. Our proposed interval-overlap graph is a particular construction to investigate; it is not asserted to be identical to the survey's distance-graph coloring formulation. Any coverage graph must retain interval positions and open/closed endpoint information: overlap adjacency alone loses valid isolated contacts.
+
+### A small exact preview of the first two models
+
+For Fibonacci relative speeds at a **fixed physical time** t, two consecutive phases determine the next one:
+
+$$T(x,y)=(y,x+y\pmod1),\qquad
+A=\begin{pmatrix}0&1\\1&1\end{pmatrix}.$$
+
+The distinct positive speed list begins 1,2, so the initial phase pair is `(t,2t mod 1)`. Iterating T advances through the speed list; it does **not** advance physical time. A prefix meets a target delta exactly when all its phase coordinates stay in the closed interval `[delta,1-delta]`. The initial pair is restricted to that one-parameter line; it is not an arbitrary point of the two-dimensional torus.
+
+Direct integer multiplication gives
+
+$$A^5=\begin{pmatrix}3&5\\5&8\end{pmatrix},\quad
+A^7=\begin{pmatrix}8&13\\13&21\end{pmatrix},\quad
+A^9=\begin{pmatrix}21&34\\34&55\end{pmatrix}.$$
+
+Their diagonal sums are 11,29,76, the observed Lucas denominators, and their diagonal entries are the corresponding two observed peak-time numerators. This suggests examining how the recurrence and its admissible phase trajectories generate extremal times. The matrix identities alone do not show that these times are admissible or maximizing.
+
+Separately, exact continued-fraction evaluation confirms that `3/11,8/29,21/76` are alternating convergents (indices 4,6,8, with the initial 0 indexed as 0) of
+
+$$\alpha=[0;3,1,1,1,\ldots]
+=\frac{1}{2+\varphi}=\frac{5-\sqrt5}{10},\qquad
+\varphi=\frac{1+\sqrt5}{2}.$$
+
+For example, `[0;3,1,1,1]=3/11`; adding two more trailing 1s gives 8/29, and two further 1s gives 21/76. These exact arithmetic identities re-express the observed finite Fibonacci/Lucas pattern. They are not independent evidence that the maximum formula continues, nor a proof that actual maximizing times converge to alpha. Those require controlling the full prefix constraints.
+
+Recommended next investigation: combine the two-coordinate recurrence with the continued-fraction candidates, seeking an upper bound and a matching feasible witness. No new speed-set computation, graph construction, or lattice construction was performed for this shortlist. The only new checks here were the three matrix powers and three continued-fraction evaluations.
