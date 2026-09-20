@@ -276,3 +276,55 @@ Count relations `a+b=c` with `a<=b`, allowing `a=b`, among positive relative spe
 **Pattern record:** same touch times is insufficient; even identical touch configurations are insufficient; a threshold tie is not always a controlling constraint; more short additive relations is not a tightness criterion; and a one-speed change can move the unique tight role to another runner. Each statement above has an explicit exact control.
 
 **Next useful question:** group tight reference runners by their normalized absolute relative speeds before comparing configurations. Then ask whether any remaining differences in their full-cycle coverage require a new explanation, rather than counting disguised copies of an already-understood case as new patterns.
+
+## Further patterns: equal blocking time, equivalent references, and peak width
+
+September 20 follow-up to Vance's question about other patterns. [Script](../scripts/analyze_reference_patterns.py) and [exact results](../experiments/reference_patterns.json) reuse the existing reference data and certify three selected near-peak distance curves. No larger speed search was run.
+
+### Every competitor has the same fraction of blocking time
+
+For integer relative speed `v>0`, each of its `v` complete laps during `[0,1]` spends a fraction `2*delta` at circular distance strictly less than `delta`, where `0<delta<=1/2`. Consequently the total blocking duration is `2*delta`, independently of `v`. At `delta=1/n` this is `2/n`; in our eight-runner cases it is exactly `1/4`.
+
+This follows from the forbidden arc of length `delta` in each direction. Equivalently, the allowed intervals each have length `(1-2*delta)/v` and there are `v` of them. The script checks the value against the interval checker for every individual relative speed used in the seven latest configurations. Sign reversal gives the same circular distances. Rational speeds admit a common rescaling; arbitrary real speeds have the same fraction on each competitor's own relative lap, without assuming a shared repeating cycle.
+
+Thus faster speeds divide the same total blocking time into more, shorter visits. In the eight-runner integer setting, the seven blocking-time fractions sum to `7/4` when overlaps are counted repeatedly. This is not a union duration and gives no contradiction to either complete or incomplete coverage. The overlap and placement of the visits matter. Valid equality points can have zero total duration, so this average alone cannot settle the conjecture.
+
+### Seven tight references reduce to three displayed patterns
+
+Merging the earlier role comparison with the cooperative-blocking comparison gives ten distinct eight-runner configurations (deduplicated by their actual speed sets). Among their eighty references, seven are tight. Sorting absolute relative speeds and dividing by their gcd groups those seven into exactly three keys:
+
+| Normalized relative speed set | Tight references in these data |
+| --- | --- |
+| `{1,2,3,4,5,6,7}` | 3: both extremes in the consecutive case, and speed 8 after the 14-to-13 change |
+| `{1,2,3,4,5,7,12}` | 3: the original slowest, reflected fastest, and middle-reference examples |
+| `{1,4,5,6,7,11,13}` | 1: the double-replacement example |
+
+The full set of circular-distance constraints is identical within each key, with the recorded clock rescaling if needed; the original total runner count is retained. The grouping is limited to the selected data. It is not an exhaustive classification, nor a claim that this key detects every possible way two lower-envelope functions could coincide.
+
+### Equal peak height can conceal unequal timing tolerance
+
+The three sets all have maximum `1/8` and peaks at `1/8,3/8,5/8,7/8`. Their local slopes differ:
+
+| Set | Left/right slopes at `1/8` | Left/right slopes at `3/8` |
+| --- | --- | --- |
+| Consecutive | `+1,-7` | `+3,-5` |
+| Single replacement | `+1,-7` | `+3,-5` |
+| Double replacement | `+1,-7` | `+11,-13` |
+
+Reflection gives the other two peaks. For a peak at `t0` with slopes `+a,-b`, lowering the diagnostic threshold by a small positive `epsilon` yields the nearby allowed interval
+
+```
+[t0-epsilon/a, t0+epsilon/b], width = epsilon*(1/a+1/b).
+```
+
+For these three selected sets this description holds throughout `0<epsilon<=1/800`. The script checks the entire allowed set at `epsilon=1/800` and certifies the distance-envelope formulas on every resulting interval by partitioning each distance curve at all its corners. Those local affine formulas and monotonicity of the allowed sets then establish the smaller-epsilon range. A second exact comparison at `epsilon=1/8000` provides a direct crosscheck.
+
+At the 1% relaxation of the original gap (`1/8` to `99/800`), the opening around `3/8` has width `1/1500` of a cycle in the first two sets, versus `3/14300` in the double replacement. The ratio is `45/143`, about 31.5%. Thus the third case has a substantially narrower middle opening despite exactly the same peak height and peak times. The two outer openings have the same width in all three. The relaxed threshold is a diagnostic; the conjecture's `1/8` rule is unchanged.
+
+The total allowed duration is `(352/105)*epsilon` in the first two sets and `(2624/1001)*epsilon` in the third throughout this certified range.
+
+### Whole neighborhoods can look the same while the rest differs
+
+The consecutive and single-replacement distance envelopes agree on all four near-peak intervals just certified, not only at four isolated times. Yet at `t=1/12` their nearest gaps are respectively `1/12` and `0`; the inserted relative-speed-12 runner meets the reference then. Matching peak times, heights, slopes, and entire small neighborhoods therefore still does not identify the whole distance curve.
+
+These observations sharpen the distinction between a runner's fixed total blocking duration, the schedule of its visits, and the complete union of all runners' blocking intervals. The next useful extension would examine which overlaps are structurally forced, while preserving zero-duration boundary contacts; raw overlap totals alone cannot distinguish touching from missing a target.

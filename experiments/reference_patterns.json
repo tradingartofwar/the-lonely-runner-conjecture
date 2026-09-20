@@ -1,0 +1,681 @@
+{
+  "date": "2026-09-20",
+  "base_commit": "c2e78cd515141dfdf75e29fa90826ad0585168e3",
+  "scope": "Existing data for 10 distinct eight-runner configurations; 3 selected tight distance curves",
+  "distinct_configurations": 10,
+  "tight_references": 7,
+  "groups": [
+    {
+      "primitive_absolute_relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "members": [
+        {
+          "configuration": "consecutive",
+          "actual_speeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "reference_speed": 1,
+          "gcd": 1,
+          "original_n": 8
+        },
+        {
+          "configuration": "consecutive",
+          "actual_speeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "reference_speed": 8,
+          "gcd": 1,
+          "original_n": 8
+        },
+        {
+          "configuration": "control_11_12",
+          "actual_speeds": [
+            1,
+            2,
+            5,
+            6,
+            7,
+            8,
+            12,
+            13
+          ],
+          "reference_speed": 8,
+          "gcd": 1,
+          "original_n": 8
+        }
+      ]
+    },
+    {
+      "primitive_absolute_relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        12
+      ],
+      "members": [
+        {
+          "configuration": "single_replacement",
+          "actual_speeds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            13
+          ],
+          "reference_speed": 1,
+          "gcd": 1,
+          "original_n": 8
+        },
+        {
+          "configuration": "reflected_8",
+          "actual_speeds": [
+            1,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "reference_speed": 13,
+          "gcd": 1,
+          "original_n": 8
+        },
+        {
+          "configuration": "middle_tight_8",
+          "actual_speeds": [
+            1,
+            2,
+            3,
+            4,
+            8,
+            9,
+            11,
+            16
+          ],
+          "reference_speed": 4,
+          "gcd": 1,
+          "original_n": 8
+        }
+      ]
+    },
+    {
+      "primitive_absolute_relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "members": [
+        {
+          "configuration": "double_replacement",
+          "actual_speeds": [
+            1,
+            2,
+            5,
+            6,
+            7,
+            8,
+            12,
+            14
+          ],
+          "reference_speed": 1,
+          "gcd": 1,
+          "original_n": 8
+        }
+      ]
+    }
+  ],
+  "near_peak_windows": [
+    {
+      "label": "consecutive",
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "peak_faces": [
+        {
+          "time": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "1/8",
+            "7": "7/8"
+          },
+          "active_slopes": {
+            "1": 1,
+            "7": -7
+          },
+          "left_controller": 1,
+          "right_controller": 7,
+          "left_slope": 1,
+          "right_slope": -7
+        },
+        {
+          "time": "3/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "1/8",
+            "5": "7/8"
+          },
+          "active_slopes": {
+            "3": 3,
+            "5": -5
+          },
+          "left_controller": 3,
+          "right_controller": 5,
+          "left_slope": 3,
+          "right_slope": -5
+        },
+        {
+          "time": "5/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "7/8",
+            "5": "1/8"
+          },
+          "active_slopes": {
+            "3": -3,
+            "5": 5
+          },
+          "left_controller": 5,
+          "right_controller": 3,
+          "left_slope": 5,
+          "right_slope": -3
+        },
+        {
+          "time": "7/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "7/8",
+            "7": "1/8"
+          },
+          "active_slopes": {
+            "1": -1,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 1,
+          "left_slope": 7,
+          "right_slope": -1
+        }
+      ],
+      "relaxations": [
+        {
+          "epsilon": "1/800",
+          "threshold": "99/800",
+          "intervals": [
+            [
+              "99/800",
+              "701/5600"
+            ],
+            [
+              "899/2400",
+              "1501/4000"
+            ],
+            [
+              "2499/4000",
+              "1501/2400"
+            ],
+            [
+              "4899/5600",
+              "701/800"
+            ]
+          ],
+          "widths": [
+            "1/700",
+            "1/1500",
+            "1/1500",
+            "1/700"
+          ],
+          "total_width": "11/2625",
+          "total_width_over_epsilon": "352/105"
+        },
+        {
+          "epsilon": "1/8000",
+          "threshold": "999/8000",
+          "intervals": [
+            [
+              "999/8000",
+              "7001/56000"
+            ],
+            [
+              "8999/24000",
+              "15001/40000"
+            ],
+            [
+              "24999/40000",
+              "15001/24000"
+            ],
+            [
+              "48999/56000",
+              "7001/8000"
+            ]
+          ],
+          "widths": [
+            "1/7000",
+            "1/15000",
+            "1/15000",
+            "1/7000"
+          ],
+          "total_width": "11/26250",
+          "total_width_over_epsilon": "352/105"
+        }
+      ]
+    },
+    {
+      "label": "single_replacement",
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        12
+      ],
+      "peak_faces": [
+        {
+          "time": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "1/8",
+            "7": "7/8"
+          },
+          "active_slopes": {
+            "1": 1,
+            "7": -7
+          },
+          "left_controller": 1,
+          "right_controller": 7,
+          "left_slope": 1,
+          "right_slope": -7
+        },
+        {
+          "time": "3/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "1/8",
+            "5": "7/8"
+          },
+          "active_slopes": {
+            "3": 3,
+            "5": -5
+          },
+          "left_controller": 3,
+          "right_controller": 5,
+          "left_slope": 3,
+          "right_slope": -5
+        },
+        {
+          "time": "5/8",
+          "active_speeds": [
+            3,
+            5
+          ],
+          "active_phases": {
+            "3": "7/8",
+            "5": "1/8"
+          },
+          "active_slopes": {
+            "3": -3,
+            "5": 5
+          },
+          "left_controller": 5,
+          "right_controller": 3,
+          "left_slope": 5,
+          "right_slope": -3
+        },
+        {
+          "time": "7/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "7/8",
+            "7": "1/8"
+          },
+          "active_slopes": {
+            "1": -1,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 1,
+          "left_slope": 7,
+          "right_slope": -1
+        }
+      ],
+      "relaxations": [
+        {
+          "epsilon": "1/800",
+          "threshold": "99/800",
+          "intervals": [
+            [
+              "99/800",
+              "701/5600"
+            ],
+            [
+              "899/2400",
+              "1501/4000"
+            ],
+            [
+              "2499/4000",
+              "1501/2400"
+            ],
+            [
+              "4899/5600",
+              "701/800"
+            ]
+          ],
+          "widths": [
+            "1/700",
+            "1/1500",
+            "1/1500",
+            "1/700"
+          ],
+          "total_width": "11/2625",
+          "total_width_over_epsilon": "352/105"
+        },
+        {
+          "epsilon": "1/8000",
+          "threshold": "999/8000",
+          "intervals": [
+            [
+              "999/8000",
+              "7001/56000"
+            ],
+            [
+              "8999/24000",
+              "15001/40000"
+            ],
+            [
+              "24999/40000",
+              "15001/24000"
+            ],
+            [
+              "48999/56000",
+              "7001/8000"
+            ]
+          ],
+          "widths": [
+            "1/7000",
+            "1/15000",
+            "1/15000",
+            "1/7000"
+          ],
+          "total_width": "11/26250",
+          "total_width_over_epsilon": "352/105"
+        }
+      ]
+    },
+    {
+      "label": "double_replacement",
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "peak_faces": [
+        {
+          "time": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "1/8",
+            "7": "7/8"
+          },
+          "active_slopes": {
+            "1": 1,
+            "7": -7
+          },
+          "left_controller": 1,
+          "right_controller": 7,
+          "left_slope": 1,
+          "right_slope": -7
+        },
+        {
+          "time": "3/8",
+          "active_speeds": [
+            5,
+            11,
+            13
+          ],
+          "active_phases": {
+            "5": "7/8",
+            "11": "1/8",
+            "13": "7/8"
+          },
+          "active_slopes": {
+            "5": -5,
+            "11": 11,
+            "13": -13
+          },
+          "left_controller": 11,
+          "right_controller": 13,
+          "left_slope": 11,
+          "right_slope": -13
+        },
+        {
+          "time": "5/8",
+          "active_speeds": [
+            5,
+            11,
+            13
+          ],
+          "active_phases": {
+            "5": "1/8",
+            "11": "7/8",
+            "13": "1/8"
+          },
+          "active_slopes": {
+            "5": 5,
+            "11": -11,
+            "13": 13
+          },
+          "left_controller": 13,
+          "right_controller": 11,
+          "left_slope": 13,
+          "right_slope": -11
+        },
+        {
+          "time": "7/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "active_phases": {
+            "1": "7/8",
+            "7": "1/8"
+          },
+          "active_slopes": {
+            "1": -1,
+            "7": 7
+          },
+          "left_controller": 7,
+          "right_controller": 1,
+          "left_slope": 7,
+          "right_slope": -1
+        }
+      ],
+      "relaxations": [
+        {
+          "epsilon": "1/800",
+          "threshold": "99/800",
+          "intervals": [
+            [
+              "99/800",
+              "701/5600"
+            ],
+            [
+              "3299/8800",
+              "3901/10400"
+            ],
+            [
+              "6499/10400",
+              "5501/8800"
+            ],
+            [
+              "4899/5600",
+              "701/800"
+            ]
+          ],
+          "widths": [
+            "1/700",
+            "3/14300",
+            "3/14300",
+            "1/700"
+          ],
+          "total_width": "82/25025",
+          "total_width_over_epsilon": "2624/1001"
+        },
+        {
+          "epsilon": "1/8000",
+          "threshold": "999/8000",
+          "intervals": [
+            [
+              "999/8000",
+              "7001/56000"
+            ],
+            [
+              "32999/88000",
+              "39001/104000"
+            ],
+            [
+              "64999/104000",
+              "55001/88000"
+            ],
+            [
+              "48999/56000",
+              "7001/8000"
+            ]
+          ],
+          "widths": [
+            "1/7000",
+            "3/143000",
+            "3/143000",
+            "1/7000"
+          ],
+          "total_width": "41/125125",
+          "total_width_over_epsilon": "2624/1001"
+        }
+      ]
+    }
+  ],
+  "middle_window_width_ratio_double_to_consecutive": "45/143",
+  "different_away_from_peaks": {
+    "time": "1/12",
+    "consecutive_gap": "1/12",
+    "single_replacement_gap": "0"
+  },
+  "individual_blocking_fractions": [
+    {
+      "relative_speed": 1,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 2,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 3,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 4,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 5,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 6,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 7,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 11,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 12,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 13,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 19,
+      "blocked_fraction": "1/4"
+    },
+    {
+      "relative_speed": 21,
+      "blocked_fraction": "1/4"
+    }
+  ],
+  "limitations": "Grouping is within the selected data; equal normalization is sufficient, not asserted necessary, for curve equivalence. No complete tight-instance classification."
+}
