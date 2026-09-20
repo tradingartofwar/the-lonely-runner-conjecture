@@ -4,6 +4,8 @@
 
 **Conclusion:** the general speed-sum condition does not require Fibonacci numbers. Deliberately choosing a whole Fibonacci speed family does produce exact additive constraints and a striking finite pattern of maxima and peak times. Neither establishes a Fibonacci explanation of the general conjecture or of all tight cases.
 
+**Later September 20 update:** [the recurrence continuation](FIBONACCI_RECURRENCE.md) extends our certificates through 21 total runners and resolves the literature search: the general plateau formula is already established in Zhuravleva (2011), with a related modular witness in Pandey (2013), now Sources S11–S12. The finite evidence limits below describe this original experiment; the continuation supersedes its unresolved formula question.
+
 Reproduce with `python -m scripts.check_fibonacci_patterns`. [Script](../scripts/check_fibonacci_patterns.py) · [Exact data](../experiments/fibonacci_patterns.json).
 
 ## Inputs and scope

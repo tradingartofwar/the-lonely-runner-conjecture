@@ -1,0 +1,660 @@
+{
+  "date": "2026-09-20",
+  "base_commit": "3b9990a478d719c7a3faffa74dcc0b61dcb26d3c",
+  "checker_sha256": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971",
+  "scope": "Four prescribed sparse subsets; exact maxima crosschecked with intervals; full-prefix witnesses certify selected reference for n=6..21; eight last-speed controls.",
+  "status": "Reproduced finite certificates. General plateau values are known from Zhuravleva (2011), Theorem 1; our written reconstruction has not had independent review.",
+  "limitations": "Only reference speed 0. No all-reference extension, exhaustive speed-set search, novelty claim, or general Lonely Runner proof.",
+  "stages": [
+    {
+      "stage": 2,
+      "total_runner_range": [
+        6,
+        9
+      ],
+      "selected_reference_speed": 0,
+      "maximum": "2/11",
+      "peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "critical_speed": 8,
+      "critical_meeting_count": 2,
+      "upper_bound_subset": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "maximum_candidate_count": 63,
+      "interval_crosscheck": [
+        [
+          "3/11",
+          "3/11"
+        ],
+        [
+          "8/11",
+          "8/11"
+        ]
+      ],
+      "diagnostic_threshold": "113/638",
+      "diagnostic_intervals": [
+        [
+          "1389/5104",
+          "175/638"
+        ],
+        [
+          "463/638",
+          "3715/5104"
+        ]
+      ],
+      "induction_overlap_ratio": null,
+      "full_prefix_witness": [
+        {
+          "index": 2,
+          "speed": 1,
+          "phase": "3/11",
+          "distance": "3/11"
+        },
+        {
+          "index": 3,
+          "speed": 2,
+          "phase": "6/11",
+          "distance": "5/11"
+        },
+        {
+          "index": 4,
+          "speed": 3,
+          "phase": "9/11",
+          "distance": "2/11"
+        },
+        {
+          "index": 5,
+          "speed": 5,
+          "phase": "4/11",
+          "distance": "4/11"
+        },
+        {
+          "index": 6,
+          "speed": 8,
+          "phase": "2/11",
+          "distance": "2/11"
+        },
+        {
+          "index": 7,
+          "speed": 13,
+          "phase": "6/11",
+          "distance": "5/11"
+        },
+        {
+          "index": 8,
+          "speed": 21,
+          "phase": "8/11",
+          "distance": "3/11"
+        },
+        {
+          "index": 9,
+          "speed": 34,
+          "phase": "3/11",
+          "distance": "3/11"
+        }
+      ],
+      "next_fibonacci_speed": 55,
+      "next_speed_distances_at_old_peaks": [
+        "0",
+        "0"
+      ],
+      "minus_one_control": {
+        "old_speed": 34,
+        "new_speed": 33,
+        "height_feasible_intervals": [],
+        "conclusion": "maximum strictly below old height; new maximum not computed"
+      },
+      "plus_one_control": {
+        "old_speed": 34,
+        "new_speed": 35,
+        "maximum": "2/11",
+        "peak_times": [
+          "3/11",
+          "8/11"
+        ]
+      },
+      "continued_fraction_terms": [
+        0,
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "stage": 3,
+      "total_runner_range": [
+        10,
+        13
+      ],
+      "selected_reference_speed": 0,
+      "maximum": "5/29",
+      "peak_times": [
+        "8/29",
+        "21/29"
+      ],
+      "critical_speed": 55,
+      "critical_meeting_count": 15,
+      "upper_bound_subset": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        55
+      ],
+      "maximum_candidate_count": 613,
+      "interval_crosscheck": [
+        [
+          "8/29",
+          "8/29"
+        ],
+        [
+          "21/29",
+          "21/29"
+        ]
+      ],
+      "diagnostic_threshold": "757/4408",
+      "diagnostic_intervals": [
+        [
+          "66877/242440",
+          "1217/4408"
+        ],
+        [
+          "3191/4408",
+          "175563/242440"
+        ]
+      ],
+      "induction_overlap_ratio": "10/63",
+      "full_prefix_witness": [
+        {
+          "index": 2,
+          "speed": 1,
+          "phase": "8/29",
+          "distance": "8/29"
+        },
+        {
+          "index": 3,
+          "speed": 2,
+          "phase": "16/29",
+          "distance": "13/29"
+        },
+        {
+          "index": 4,
+          "speed": 3,
+          "phase": "24/29",
+          "distance": "5/29"
+        },
+        {
+          "index": 5,
+          "speed": 5,
+          "phase": "11/29",
+          "distance": "11/29"
+        },
+        {
+          "index": 6,
+          "speed": 8,
+          "phase": "6/29",
+          "distance": "6/29"
+        },
+        {
+          "index": 7,
+          "speed": 13,
+          "phase": "17/29",
+          "distance": "12/29"
+        },
+        {
+          "index": 8,
+          "speed": 21,
+          "phase": "23/29",
+          "distance": "6/29"
+        },
+        {
+          "index": 9,
+          "speed": 34,
+          "phase": "11/29",
+          "distance": "11/29"
+        },
+        {
+          "index": 10,
+          "speed": 55,
+          "phase": "5/29",
+          "distance": "5/29"
+        },
+        {
+          "index": 11,
+          "speed": 89,
+          "phase": "16/29",
+          "distance": "13/29"
+        },
+        {
+          "index": 12,
+          "speed": 144,
+          "phase": "21/29",
+          "distance": "8/29"
+        },
+        {
+          "index": 13,
+          "speed": 233,
+          "phase": "8/29",
+          "distance": "8/29"
+        }
+      ],
+      "next_fibonacci_speed": 377,
+      "next_speed_distances_at_old_peaks": [
+        "0",
+        "0"
+      ],
+      "minus_one_control": {
+        "old_speed": 233,
+        "new_speed": 232,
+        "height_feasible_intervals": [],
+        "conclusion": "maximum strictly below old height; new maximum not computed"
+      },
+      "plus_one_control": {
+        "old_speed": 233,
+        "new_speed": 234,
+        "maximum": "5/29",
+        "peak_times": [
+          "8/29",
+          "21/29"
+        ]
+      },
+      "continued_fraction_terms": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "stage": 4,
+      "total_runner_range": [
+        14,
+        17
+      ],
+      "selected_reference_speed": 0,
+      "maximum": "13/76",
+      "peak_times": [
+        "21/76",
+        "55/76"
+      ],
+      "critical_speed": 377,
+      "critical_meeting_count": 104,
+      "upper_bound_subset": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        55,
+        377
+      ],
+      "maximum_candidate_count": 5375,
+      "interval_crosscheck": [
+        [
+          "21/76",
+          "21/76"
+        ],
+        [
+          "55/76",
+          "55/76"
+        ]
+      ],
+      "diagnostic_threshold": "5171/30248",
+      "diagnostic_intervals": [
+        [
+          "3150963/11403496",
+          "8359/30248"
+        ],
+        [
+          "21889/30248",
+          "8252533/11403496"
+        ]
+      ],
+      "induction_overlap_ratio": "65/432",
+      "full_prefix_witness": [
+        {
+          "index": 2,
+          "speed": 1,
+          "phase": "21/76",
+          "distance": "21/76"
+        },
+        {
+          "index": 3,
+          "speed": 2,
+          "phase": "21/38",
+          "distance": "17/38"
+        },
+        {
+          "index": 4,
+          "speed": 3,
+          "phase": "63/76",
+          "distance": "13/76"
+        },
+        {
+          "index": 5,
+          "speed": 5,
+          "phase": "29/76",
+          "distance": "29/76"
+        },
+        {
+          "index": 6,
+          "speed": 8,
+          "phase": "4/19",
+          "distance": "4/19"
+        },
+        {
+          "index": 7,
+          "speed": 13,
+          "phase": "45/76",
+          "distance": "31/76"
+        },
+        {
+          "index": 8,
+          "speed": 21,
+          "phase": "61/76",
+          "distance": "15/76"
+        },
+        {
+          "index": 9,
+          "speed": 34,
+          "phase": "15/38",
+          "distance": "15/38"
+        },
+        {
+          "index": 10,
+          "speed": 55,
+          "phase": "15/76",
+          "distance": "15/76"
+        },
+        {
+          "index": 11,
+          "speed": 89,
+          "phase": "45/76",
+          "distance": "31/76"
+        },
+        {
+          "index": 12,
+          "speed": 144,
+          "phase": "15/19",
+          "distance": "4/19"
+        },
+        {
+          "index": 13,
+          "speed": 233,
+          "phase": "29/76",
+          "distance": "29/76"
+        },
+        {
+          "index": 14,
+          "speed": 377,
+          "phase": "13/76",
+          "distance": "13/76"
+        },
+        {
+          "index": 15,
+          "speed": 610,
+          "phase": "21/38",
+          "distance": "17/38"
+        },
+        {
+          "index": 16,
+          "speed": 987,
+          "phase": "55/76",
+          "distance": "21/76"
+        },
+        {
+          "index": 17,
+          "speed": 1597,
+          "phase": "21/76",
+          "distance": "21/76"
+        }
+      ],
+      "next_fibonacci_speed": 2584,
+      "next_speed_distances_at_old_peaks": [
+        "0",
+        "0"
+      ],
+      "minus_one_control": {
+        "old_speed": 1597,
+        "new_speed": 1596,
+        "height_feasible_intervals": [],
+        "conclusion": "maximum strictly below old height; new maximum not computed"
+      },
+      "plus_one_control": {
+        "old_speed": 1597,
+        "new_speed": 1598,
+        "maximum": "13/76",
+        "peak_times": [
+          "21/76",
+          "55/76"
+        ]
+      },
+      "continued_fraction_terms": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "stage": 5,
+      "total_runner_range": [
+        18,
+        21
+      ],
+      "selected_reference_speed": 0,
+      "maximum": "34/199",
+      "peak_times": [
+        "55/199",
+        "144/199"
+      ],
+      "critical_speed": 2584,
+      "critical_meeting_count": 714,
+      "upper_bound_subset": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        55,
+        377,
+        2584
+      ],
+      "maximum_candidate_count": 44715,
+      "interval_crosscheck": [
+        [
+          "55/199",
+          "55/199"
+        ],
+        [
+          "144/199",
+          "144/199"
+        ]
+      ],
+      "diagnostic_threshold": "35425/207358",
+      "diagnostic_intervals": [
+        [
+          "148089037/535813072",
+          "57311/207358"
+        ],
+        [
+          "150047/207358",
+          "387724035/535813072"
+        ]
+      ],
+      "induction_overlap_ratio": "442/2961",
+      "full_prefix_witness": [
+        {
+          "index": 2,
+          "speed": 1,
+          "phase": "55/199",
+          "distance": "55/199"
+        },
+        {
+          "index": 3,
+          "speed": 2,
+          "phase": "110/199",
+          "distance": "89/199"
+        },
+        {
+          "index": 4,
+          "speed": 3,
+          "phase": "165/199",
+          "distance": "34/199"
+        },
+        {
+          "index": 5,
+          "speed": 5,
+          "phase": "76/199",
+          "distance": "76/199"
+        },
+        {
+          "index": 6,
+          "speed": 8,
+          "phase": "42/199",
+          "distance": "42/199"
+        },
+        {
+          "index": 7,
+          "speed": 13,
+          "phase": "118/199",
+          "distance": "81/199"
+        },
+        {
+          "index": 8,
+          "speed": 21,
+          "phase": "160/199",
+          "distance": "39/199"
+        },
+        {
+          "index": 9,
+          "speed": 34,
+          "phase": "79/199",
+          "distance": "79/199"
+        },
+        {
+          "index": 10,
+          "speed": 55,
+          "phase": "40/199",
+          "distance": "40/199"
+        },
+        {
+          "index": 11,
+          "speed": 89,
+          "phase": "119/199",
+          "distance": "80/199"
+        },
+        {
+          "index": 12,
+          "speed": 144,
+          "phase": "159/199",
+          "distance": "40/199"
+        },
+        {
+          "index": 13,
+          "speed": 233,
+          "phase": "79/199",
+          "distance": "79/199"
+        },
+        {
+          "index": 14,
+          "speed": 377,
+          "phase": "39/199",
+          "distance": "39/199"
+        },
+        {
+          "index": 15,
+          "speed": 610,
+          "phase": "118/199",
+          "distance": "81/199"
+        },
+        {
+          "index": 16,
+          "speed": 987,
+          "phase": "157/199",
+          "distance": "42/199"
+        },
+        {
+          "index": 17,
+          "speed": 1597,
+          "phase": "76/199",
+          "distance": "76/199"
+        },
+        {
+          "index": 18,
+          "speed": 2584,
+          "phase": "34/199",
+          "distance": "34/199"
+        },
+        {
+          "index": 19,
+          "speed": 4181,
+          "phase": "110/199",
+          "distance": "89/199"
+        },
+        {
+          "index": 20,
+          "speed": 6765,
+          "phase": "144/199",
+          "distance": "55/199"
+        },
+        {
+          "index": 21,
+          "speed": 10946,
+          "phase": "55/199",
+          "distance": "55/199"
+        }
+      ],
+      "next_fibonacci_speed": 17711,
+      "next_speed_distances_at_old_peaks": [
+        "0",
+        "0"
+      ],
+      "minus_one_control": {
+        "old_speed": 10946,
+        "new_speed": 10945,
+        "height_feasible_intervals": [],
+        "conclusion": "maximum strictly below old height; new maximum not computed"
+      },
+      "plus_one_control": {
+        "old_speed": 10946,
+        "new_speed": 10947,
+        "maximum": "34/199",
+        "peak_times": [
+          "55/199",
+          "144/199"
+        ]
+      },
+      "continued_fraction_terms": [
+        0,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

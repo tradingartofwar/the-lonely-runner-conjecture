@@ -90,7 +90,23 @@ Read the abstract, introduction, Section 2, and Proposition 1. They connect a li
 
 September 20 additions also consulted S1 on connections and rational independence, and S4 on interval coverage. The Class C document was read solely to check the scope of Vance's prior hypothesis; it supplies no proof of a Lonely Runner claim.
 
-The September 20 Fibonacci follow-up re-opened S1 Section 7.3 on lacunary sequences and its displayed successive-doubling theorem. Fibonacci speeds fit the broader lacunary definition but not that doubling hypothesis. Targeted searches did not locate a primary source for our observed finite Fibonacci/Lucas prefix pattern; results were often irrelevant, so no absence or novelty conclusion follows. See [the bounded check](FIBONACCI_CHECK.md).
+The initial September 20 Fibonacci follow-up re-opened S1 Section 7.3 on lacunary sequences and its displayed successive-doubling theorem. Fibonacci speeds fit the broader lacunary definition but not that doubling hypothesis. Its unsuccessful targeted searches were superseded by the recurrence continuation: S11–S12 directly address the pattern. See [the original bounded check](FIBONACCI_CHECK.md) and [the continuation](FIBONACCI_RECURRENCE.md).
+
+## S11 — Exact Fibonacci-prefix maxima
+
+Victoria Zhuravleva, *Diophantine approximations with Fibonacci numbers*, arXiv:1112.6142v1, December 28, 2011.
+
+[Versioned paper](https://arxiv.org/abs/1112.6142v1) · [HTML](https://arxiv.org/html/1112.6142v1)
+
+Inspected Theorems 1–2, Corollary 1, Table 1, and the proof structure; no complete independent audit. Her largest index `N` equals our total runner count `n`: removing duplicate `F_1=F_2` leaves `N-1` moving speeds. Her stage index is our `m-1`. The exact plateau formula and limiting optimum match our reconstruction. This resolves the earlier source gap; these results are not ours.
+
+## S12 — A modular Fibonacci witness
+
+Ram Krishna Pandey, *On Some Magnified Fibonacci Numbers Modulo a Lucas Number*, Journal of Integer Sequences 16 (2013), Article 13.1.7, published January 26, 2013.
+
+[Journal page](https://cs.uwaterloo.ca/journals/JIS/VOL16/Pandey/pandey7.html) · [PDF](https://cs.uwaterloo.ca/journals/JIS/VOL16/Pandey/pandey7.pdf)
+
+Inspected the introduction, congruence lemmas, and Theorem 5; no complete independent audit. His index `t` is our total `n`; his stage `n` is our `m-1`. The theorem supplies the witness lower bound, not alone the global maximum. Its listed endpoint order appears reversed; our note gives the exact `mod 11` check. The bound itself matches the calculations.
 
 ## Source discipline
 
