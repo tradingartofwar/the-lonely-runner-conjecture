@@ -90,6 +90,8 @@ Read the abstract, introduction, Section 2, and Proposition 1. They connect a li
 
 September 20 additions also consulted S1 on connections and rational independence, and S4 on interval coverage. The Class C document was read solely to check the scope of Vance's prior hypothesis; it supplies no proof of a Lonely Runner claim.
 
+The September 20 Fibonacci follow-up re-opened S1 Section 7.3 on lacunary sequences and its displayed successive-doubling theorem. Fibonacci speeds fit the broader lacunary definition but not that doubling hypothesis. Targeted searches did not locate a primary source for our observed finite Fibonacci/Lucas prefix pattern; results were often irrelevant, so no absence or novelty conclusion follows. See [the bounded check](FIBONACCI_CHECK.md).
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.

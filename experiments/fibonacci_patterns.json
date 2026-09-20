@@ -1,0 +1,2129 @@
+{
+  "date": "2026-09-20",
+  "base_commit": "9d0c1ad083e843d73409f883126870a10b2674e0",
+  "checker_sha256": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971",
+  "scope": "12 prescribed Fibonacci prefixes (n=3..14), all references for n<=10; 4 eight-runner controls with all references; 7 selected-reference Fibonacci pairs.",
+  "reference_evaluations": 95,
+  "repeated_evaluation_note": "The selected reference of (0,1,2) appears in both prefix and pair comparisons.",
+  "fibonacci_prefixes": [
+    {
+      "label": "prefix_2",
+      "n": 3,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2
+      ],
+      "target": "1/3",
+      "selected_maximum": "1/3",
+      "selected_peak_times": [
+        "1/3",
+        "2/3"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "1/3",
+          "active_speeds": [
+            1,
+            2
+          ],
+          "active_phases": {
+            "1": "1/3",
+            "2": "2/3"
+          },
+          "active_slopes": {
+            "1": 1,
+            "2": -2
+          },
+          "left_controller": 1,
+          "right_controller": 2,
+          "left_slope": 1,
+          "right_slope": -2
+        },
+        {
+          "time": "2/3",
+          "active_speeds": [
+            1,
+            2
+          ],
+          "active_phases": {
+            "1": "2/3",
+            "2": "1/3"
+          },
+          "active_slopes": {
+            "1": -1,
+            "2": 2
+          },
+          "left_controller": 2,
+          "right_controller": 1,
+          "left_slope": 2,
+          "right_slope": -1
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "1/3",
+          "tight": true,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/2",
+          "tight": false,
+          "peak_times": [
+            "1/2"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/3",
+          "tight": true,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "1/3",
+      "tight_reference_speeds": [
+        0,
+        2
+      ]
+    },
+    {
+      "label": "prefix_3",
+      "n": 4,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3
+      ],
+      "target": "1/4",
+      "selected_maximum": "1/4",
+      "selected_peak_times": [
+        "1/4",
+        "3/4"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "1/4",
+          "active_speeds": [
+            1,
+            3
+          ],
+          "active_phases": {
+            "1": "1/4",
+            "3": "3/4"
+          },
+          "active_slopes": {
+            "1": 1,
+            "3": -3
+          },
+          "left_controller": 1,
+          "right_controller": 3,
+          "left_slope": 1,
+          "right_slope": -3
+        },
+        {
+          "time": "3/4",
+          "active_speeds": [
+            1,
+            3
+          ],
+          "active_phases": {
+            "1": "3/4",
+            "3": "1/4"
+          },
+          "active_slopes": {
+            "1": -1,
+            "3": 3
+          },
+          "left_controller": 3,
+          "right_controller": 1,
+          "left_slope": 3,
+          "right_slope": -1
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "1/4",
+          "tight": true,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": true,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "1/4",
+      "tight_reference_speeds": [
+        0,
+        3
+      ]
+    },
+    {
+      "label": "prefix_4",
+      "n": 5,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "target": "1/5",
+      "selected_maximum": "1/4",
+      "selected_peak_times": [
+        "1/4",
+        "3/4"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "1/4",
+          "active_speeds": [
+            1,
+            3,
+            5
+          ],
+          "active_phases": {
+            "1": "1/4",
+            "3": "3/4",
+            "5": "1/4"
+          },
+          "active_slopes": {
+            "1": 1,
+            "3": -3,
+            "5": 5
+          },
+          "left_controller": 5,
+          "right_controller": 3,
+          "left_slope": 5,
+          "right_slope": -3
+        },
+        {
+          "time": "3/4",
+          "active_speeds": [
+            1,
+            3,
+            5
+          ],
+          "active_phases": {
+            "1": "3/4",
+            "3": "1/4",
+            "5": "3/4"
+          },
+          "active_slopes": {
+            "1": -1,
+            "3": 3,
+            "5": -5
+          },
+          "left_controller": 3,
+          "right_controller": 5,
+          "left_slope": 3,
+          "right_slope": -5
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "1/7",
+            "6/7"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "1/4",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "prefix_5",
+      "n": 6,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "target": "1/6",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8
+          },
+          "left_controller": 8,
+          "right_controller": 3,
+          "left_slope": 8,
+          "right_slope": -3
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8
+          },
+          "left_controller": 3,
+          "right_controller": 8,
+          "left_slope": 3,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "1/7",
+            "6/7"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "3/11",
+          "tight": false,
+          "peak_times": [
+            "1/11",
+            "10/11"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "prefix_6",
+      "n": 7,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13
+      ],
+      "target": "1/7",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8
+          },
+          "left_controller": 8,
+          "right_controller": 3,
+          "left_slope": 8,
+          "right_slope": -3
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8
+          },
+          "left_controller": 3,
+          "right_controller": 8,
+          "left_slope": 3,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "5/14",
+            "9/14"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "2/13",
+            "11/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "3/11",
+          "tight": false,
+          "peak_times": [
+            "1/11",
+            "10/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 13,
+          "maximum": "5/18",
+          "tight": false,
+          "peak_times": [
+            "1/18",
+            "17/18"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "prefix_7",
+      "n": 8,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "target": "1/8",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8
+          },
+          "left_controller": 8,
+          "right_controller": 3,
+          "left_slope": 8,
+          "right_slope": -3
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8
+          },
+          "left_controller": 3,
+          "right_controller": 8,
+          "left_slope": 3,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "3/11",
+          "tight": false,
+          "peak_times": [
+            "4/11",
+            "7/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "2/13",
+            "11/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "5/21",
+          "tight": false,
+          "peak_times": [
+            "2/21",
+            "19/21"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 13,
+          "maximum": "5/18",
+          "tight": false,
+          "peak_times": [
+            "1/18",
+            "17/18"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 21,
+          "maximum": "8/29",
+          "tight": false,
+          "peak_times": [
+            "1/29",
+            "28/29"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "prefix_8",
+      "n": 9,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34
+      ],
+      "target": "1/9",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8
+          },
+          "left_controller": 8,
+          "right_controller": 3,
+          "left_slope": 8,
+          "right_slope": -3
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8
+          },
+          "left_controller": 3,
+          "right_controller": 8,
+          "left_slope": 3,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "9/35",
+          "tight": false,
+          "peak_times": [
+            "13/35",
+            "22/35"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "8/33",
+          "tight": false,
+          "peak_times": [
+            "8/33",
+            "25/33"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "2/13",
+            "11/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "5/21",
+          "tight": false,
+          "peak_times": [
+            "2/21",
+            "19/21"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 13,
+          "maximum": "4/17",
+          "tight": false,
+          "peak_times": [
+            "1/17",
+            "16/17"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 21,
+          "maximum": "8/29",
+          "tight": false,
+          "peak_times": [
+            "1/29",
+            "28/29"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 34,
+          "maximum": "13/47",
+          "tight": false,
+          "peak_times": [
+            "1/47",
+            "46/47"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "prefix_9",
+      "n": 10,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55
+      ],
+      "target": "1/10",
+      "selected_maximum": "5/29",
+      "selected_peak_times": [
+        "8/29",
+        "21/29"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "8/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "24/29",
+            "55": "5/29"
+          },
+          "active_slopes": {
+            "3": -3,
+            "55": 55
+          },
+          "left_controller": 55,
+          "right_controller": 3,
+          "left_slope": 55,
+          "right_slope": -3
+        },
+        {
+          "time": "21/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "5/29",
+            "55": "24/29"
+          },
+          "active_slopes": {
+            "3": 3,
+            "55": -55
+          },
+          "left_controller": 3,
+          "right_controller": 55,
+          "left_slope": 3,
+          "right_slope": -55
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "5/29",
+          "tight": false,
+          "peak_times": [
+            "8/29",
+            "21/29"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "3/8",
+            "5/8"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "13/54",
+          "tight": false,
+          "peak_times": [
+            "13/54",
+            "41/54"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "13/57",
+          "tight": false,
+          "peak_times": [
+            "14/57",
+            "43/57"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "2/13",
+            "11/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "5/21",
+          "tight": false,
+          "peak_times": [
+            "2/21",
+            "19/21"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 13,
+          "maximum": "4/17",
+          "tight": false,
+          "peak_times": [
+            "1/17",
+            "16/17"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 21,
+          "maximum": "13/55",
+          "tight": false,
+          "peak_times": [
+            "2/55",
+            "53/55"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 34,
+          "maximum": "13/47",
+          "tight": false,
+          "peak_times": [
+            "1/47",
+            "46/47"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 55,
+          "maximum": "21/76",
+          "tight": false,
+          "peak_times": [
+            "1/76",
+            "75/76"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "5/29",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "prefix_10",
+      "n": 11,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "target": "1/11",
+      "selected_maximum": "5/29",
+      "selected_peak_times": [
+        "8/29",
+        "21/29"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "8/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "24/29",
+            "55": "5/29"
+          },
+          "active_slopes": {
+            "3": -3,
+            "55": 55
+          },
+          "left_controller": 55,
+          "right_controller": 3,
+          "left_slope": 55,
+          "right_slope": -3
+        },
+        {
+          "time": "21/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "5/29",
+            "55": "24/29"
+          },
+          "active_slopes": {
+            "3": 3,
+            "55": -55
+          },
+          "left_controller": 3,
+          "right_controller": 55,
+          "left_slope": 3,
+          "right_slope": -55
+        }
+      ],
+      "all_references_checked": false,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "5/29",
+          "tight": false,
+          "peak_times": [
+            "8/29",
+            "21/29"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": null,
+      "tight_reference_speeds": null
+    },
+    {
+      "label": "prefix_11",
+      "n": 12,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144
+      ],
+      "target": "1/12",
+      "selected_maximum": "5/29",
+      "selected_peak_times": [
+        "8/29",
+        "21/29"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "8/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "24/29",
+            "55": "5/29"
+          },
+          "active_slopes": {
+            "3": -3,
+            "55": 55
+          },
+          "left_controller": 55,
+          "right_controller": 3,
+          "left_slope": 55,
+          "right_slope": -3
+        },
+        {
+          "time": "21/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "5/29",
+            "55": "24/29"
+          },
+          "active_slopes": {
+            "3": 3,
+            "55": -55
+          },
+          "left_controller": 3,
+          "right_controller": 55,
+          "left_slope": 3,
+          "right_slope": -55
+        }
+      ],
+      "all_references_checked": false,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "5/29",
+          "tight": false,
+          "peak_times": [
+            "8/29",
+            "21/29"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": null,
+      "tight_reference_speeds": null
+    },
+    {
+      "label": "prefix_12",
+      "n": 13,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144,
+        233
+      ],
+      "target": "1/13",
+      "selected_maximum": "5/29",
+      "selected_peak_times": [
+        "8/29",
+        "21/29"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "8/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "24/29",
+            "55": "5/29"
+          },
+          "active_slopes": {
+            "3": -3,
+            "55": 55
+          },
+          "left_controller": 55,
+          "right_controller": 3,
+          "left_slope": 55,
+          "right_slope": -3
+        },
+        {
+          "time": "21/29",
+          "active_speeds": [
+            3,
+            55
+          ],
+          "active_phases": {
+            "3": "5/29",
+            "55": "24/29"
+          },
+          "active_slopes": {
+            "3": 3,
+            "55": -55
+          },
+          "left_controller": 3,
+          "right_controller": 55,
+          "left_slope": 3,
+          "right_slope": -55
+        }
+      ],
+      "all_references_checked": false,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "5/29",
+          "tight": false,
+          "peak_times": [
+            "8/29",
+            "21/29"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": null,
+      "tight_reference_speeds": null
+    },
+    {
+      "label": "prefix_13",
+      "n": 14,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144,
+        233,
+        377
+      ],
+      "target": "1/14",
+      "selected_maximum": "13/76",
+      "selected_peak_times": [
+        "21/76",
+        "55/76"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "21/76",
+          "active_speeds": [
+            3,
+            377
+          ],
+          "active_phases": {
+            "3": "63/76",
+            "377": "13/76"
+          },
+          "active_slopes": {
+            "3": -3,
+            "377": 377
+          },
+          "left_controller": 377,
+          "right_controller": 3,
+          "left_slope": 377,
+          "right_slope": -3
+        },
+        {
+          "time": "55/76",
+          "active_speeds": [
+            3,
+            377
+          ],
+          "active_phases": {
+            "3": "13/76",
+            "377": "63/76"
+          },
+          "active_slopes": {
+            "3": 3,
+            "377": -377
+          },
+          "left_controller": 3,
+          "right_controller": 377,
+          "left_slope": 3,
+          "right_slope": -377
+        }
+      ],
+      "all_references_checked": false,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "13/76",
+          "tight": false,
+          "peak_times": [
+            "21/76",
+            "55/76"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": null,
+      "tight_reference_speeds": null
+    }
+  ],
+  "nearby_controls": [
+    {
+      "label": "21_to_20",
+      "n": 8,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        20
+      ],
+      "target": "1/8",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8
+          },
+          "left_controller": 8,
+          "right_controller": 3,
+          "left_slope": 8,
+          "right_slope": -3
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8
+          },
+          "left_controller": 3,
+          "right_controller": 8,
+          "left_slope": 3,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "8/31",
+          "tight": false,
+          "peak_times": [
+            "11/31",
+            "20/31"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "2/13",
+            "11/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "6/13",
+            "7/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 13,
+          "maximum": "5/18",
+          "tight": false,
+          "peak_times": [
+            "1/18",
+            "17/18"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 20,
+          "maximum": "7/27",
+          "tight": false,
+          "peak_times": [
+            "1/27",
+            "26/27"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "21_to_22",
+      "n": 8,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        22
+      ],
+      "target": "1/8",
+      "selected_maximum": "1/6",
+      "selected_peak_times": [
+        "1/6",
+        "5/6"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "1/6",
+          "active_speeds": [
+            1,
+            5,
+            13
+          ],
+          "active_phases": {
+            "1": "1/6",
+            "5": "5/6",
+            "13": "1/6"
+          },
+          "active_slopes": {
+            "1": 1,
+            "5": -5,
+            "13": 13
+          },
+          "left_controller": 13,
+          "right_controller": 5,
+          "left_slope": 13,
+          "right_slope": -5
+        },
+        {
+          "time": "5/6",
+          "active_speeds": [
+            1,
+            5,
+            13
+          ],
+          "active_phases": {
+            "1": "5/6",
+            "5": "1/6",
+            "13": "5/6"
+          },
+          "active_slopes": {
+            "1": -1,
+            "5": 5,
+            "13": -13
+          },
+          "left_controller": 5,
+          "right_controller": 13,
+          "left_slope": 5,
+          "right_slope": -13
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "1/6",
+          "tight": false,
+          "peak_times": [
+            "1/6",
+            "5/6"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "5/14",
+            "9/14"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "5/21",
+          "tight": false,
+          "peak_times": [
+            "5/21",
+            "16/21"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "2/13",
+            "11/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "3/11",
+          "tight": false,
+          "peak_times": [
+            "1/11",
+            "10/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 13,
+          "maximum": "5/18",
+          "tight": false,
+          "peak_times": [
+            "1/18",
+            "17/18"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 22,
+          "maximum": "9/31",
+          "tight": false,
+          "peak_times": [
+            "1/31",
+            "30/31"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "1/6",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "13_to_12",
+      "n": 8,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        12,
+        21
+      ],
+      "target": "1/8",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8
+          },
+          "left_controller": 8,
+          "right_controller": 3,
+          "left_slope": 8,
+          "right_slope": -3
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8
+          },
+          "left_controller": 3,
+          "right_controller": 8,
+          "left_slope": 3,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "2/9",
+          "tight": false,
+          "peak_times": [
+            "1/9",
+            "8/9"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "5/21",
+          "tight": false,
+          "peak_times": [
+            "2/21",
+            "19/21"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 12,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/16",
+            "15/16"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 21,
+          "maximum": "3/10",
+          "tight": false,
+          "peak_times": [
+            "1/30",
+            "29/30"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    },
+    {
+      "label": "13_to_14",
+      "n": 8,
+      "selected_reference_speed": 0,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        14,
+        21
+      ],
+      "target": "1/8",
+      "selected_maximum": "2/11",
+      "selected_peak_times": [
+        "3/11",
+        "8/11"
+      ],
+      "selected_peak_faces": [
+        {
+          "time": "3/11",
+          "active_speeds": [
+            3,
+            8,
+            14
+          ],
+          "active_phases": {
+            "3": "9/11",
+            "8": "2/11",
+            "14": "9/11"
+          },
+          "active_slopes": {
+            "3": -3,
+            "8": 8,
+            "14": -14
+          },
+          "left_controller": 8,
+          "right_controller": 14,
+          "left_slope": 8,
+          "right_slope": -14
+        },
+        {
+          "time": "8/11",
+          "active_speeds": [
+            3,
+            8,
+            14
+          ],
+          "active_phases": {
+            "3": "2/11",
+            "8": "9/11",
+            "14": "2/11"
+          },
+          "active_slopes": {
+            "3": 3,
+            "8": -8,
+            "14": 14
+          },
+          "left_controller": 14,
+          "right_controller": 8,
+          "left_slope": 14,
+          "right_slope": -8
+        }
+      ],
+      "all_references_checked": true,
+      "reference_results": [
+        {
+          "actual_speed_in_reference_frame": 0,
+          "maximum": "2/11",
+          "tight": false,
+          "peak_times": [
+            "3/11",
+            "8/11"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 1,
+          "maximum": "1/3",
+          "tight": false,
+          "peak_times": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 2,
+          "maximum": "3/13",
+          "tight": false,
+          "peak_times": [
+            "3/13",
+            "10/13"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 3,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 5,
+          "maximum": "2/7",
+          "tight": false,
+          "peak_times": [
+            "1/7",
+            "6/7"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 8,
+          "maximum": "5/21",
+          "tight": false,
+          "peak_times": [
+            "2/21",
+            "19/21"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 14,
+          "maximum": "3/10",
+          "tight": false,
+          "peak_times": [
+            "1/20",
+            "19/20"
+          ]
+        },
+        {
+          "actual_speed_in_reference_frame": 21,
+          "maximum": "1/4",
+          "tight": false,
+          "peak_times": [
+            "1/28",
+            "27/28"
+          ]
+        }
+      ],
+      "minimum_over_all_reference_maxima": "2/11",
+      "tight_reference_speeds": []
+    }
+  ],
+  "pair_comparisons": [
+    {
+      "speeds": [
+        1,
+        2
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "1/3",
+      "peak_times": [
+        "1/3",
+        "2/3"
+      ]
+    },
+    {
+      "speeds": [
+        2,
+        3
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "2/5",
+      "peak_times": [
+        "1/5",
+        "4/5"
+      ]
+    },
+    {
+      "speeds": [
+        3,
+        5
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "1/2",
+      "peak_times": [
+        "1/2"
+      ]
+    },
+    {
+      "speeds": [
+        5,
+        8
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "6/13",
+      "peak_times": [
+        "4/13",
+        "9/13"
+      ]
+    },
+    {
+      "speeds": [
+        8,
+        13
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "10/21",
+      "peak_times": [
+        "4/21",
+        "17/21"
+      ]
+    },
+    {
+      "speeds": [
+        13,
+        21
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "1/2",
+      "peak_times": [
+        "1/2"
+      ]
+    },
+    {
+      "speeds": [
+        21,
+        34
+      ],
+      "n": 3,
+      "target": "1/3",
+      "maximum": "27/55",
+      "peak_times": [
+        "17/55",
+        "38/55"
+      ]
+    }
+  ],
+  "additive_triad_checks": [
+    {
+      "speeds": [
+        1,
+        2,
+        3
+      ],
+      "opposite_equal_distance_contacts_blocked": 2
+    },
+    {
+      "speeds": [
+        2,
+        3,
+        5
+      ],
+      "opposite_equal_distance_contacts_blocked": 4
+    },
+    {
+      "speeds": [
+        3,
+        5,
+        8
+      ],
+      "opposite_equal_distance_contacts_blocked": 7
+    },
+    {
+      "speeds": [
+        5,
+        8,
+        13
+      ],
+      "opposite_equal_distance_contacts_blocked": 12
+    },
+    {
+      "speeds": [
+        8,
+        13,
+        21
+      ],
+      "opposite_equal_distance_contacts_blocked": 20
+    },
+    {
+      "speeds": [
+        13,
+        21,
+        34
+      ],
+      "opposite_equal_distance_contacts_blocked": 33
+    },
+    {
+      "speeds": [
+        21,
+        34,
+        55
+      ],
+      "opposite_equal_distance_contacts_blocked": 54
+    },
+    {
+      "speeds": [
+        34,
+        55,
+        89
+      ],
+      "opposite_equal_distance_contacts_blocked": 88
+    },
+    {
+      "speeds": [
+        55,
+        89,
+        144
+      ],
+      "opposite_equal_distance_contacts_blocked": 143
+    },
+    {
+      "speeds": [
+        89,
+        144,
+        233
+      ],
+      "opposite_equal_distance_contacts_blocked": 232
+    },
+    {
+      "speeds": [
+        144,
+        233,
+        377
+      ],
+      "opposite_equal_distance_contacts_blocked": 376
+    },
+    {
+      "speeds": [
+        4,
+        7,
+        11
+      ],
+      "opposite_equal_distance_contacts_blocked": 10
+    }
+  ],
+  "snapshot_3_8": [
+    {
+      "relative_speed": 3,
+      "phase": "1/8",
+      "distance": "1/8"
+    },
+    {
+      "relative_speed": 5,
+      "phase": "7/8",
+      "distance": "1/8"
+    },
+    {
+      "relative_speed": 8,
+      "phase": "0",
+      "distance": "0"
+    }
+  ],
+  "plateau_breaks": [
+    {
+      "old_peak_time": "3/11",
+      "added_fibonacci_speed": 55,
+      "laps_at_old_time": "15",
+      "distance": "0"
+    },
+    {
+      "old_peak_time": "8/29",
+      "added_fibonacci_speed": 377,
+      "laps_at_old_time": "104",
+      "distance": "0"
+    }
+  ],
+  "fibonacci_lucas_matches": [
+    {
+      "m": 2,
+      "first_n": 6,
+      "height": "2/11",
+      "times": [
+        "3/11",
+        "8/11"
+      ],
+      "F_numerator_index": 3,
+      "Lucas_denominator_index": 5
+    },
+    {
+      "m": 3,
+      "first_n": 10,
+      "height": "5/29",
+      "times": [
+        "8/29",
+        "21/29"
+      ],
+      "F_numerator_index": 5,
+      "Lucas_denominator_index": 7
+    },
+    {
+      "m": 4,
+      "first_n": 14,
+      "height": "13/76",
+      "times": [
+        "21/76",
+        "55/76"
+      ],
+      "F_numerator_index": 7,
+      "Lucas_denominator_index": 9
+    }
+  ],
+  "limitations": "No general Fibonacci-prefix maximum formula proved; the third four-case plateau is checked only at its first case n=14. Not all references were checked for n=11..14. No novelty or general LRC proof claim."
+}
