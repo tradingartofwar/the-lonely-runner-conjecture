@@ -1,0 +1,7875 @@
+{
+  "date": "2026-09-20",
+  "base_commit": "03f950b65b1544c99a085b15ddf82d47381caf64",
+  "source_sha256": "861c3250001c3bd5951a547d07c10ac3c0c3668c472b4706dce161a8adf8c83d",
+  "scope": "Seven existing selected-reference schedules; three local views of the same 11/13 pair. No new speed-set search.",
+  "original_n": 8,
+  "threshold": "1/8",
+  "local_pair_examples": [
+    {
+      "label": "overlap",
+      "speeds": [
+        11,
+        13
+      ],
+      "meeting_numerators": [
+        5,
+        6
+      ],
+      "meeting_times": [
+        "5/11",
+        "6/13"
+      ],
+      "blocking_windows": [
+        [
+          "39/88",
+          "41/88"
+        ],
+        [
+          "47/104",
+          "49/104"
+        ]
+      ],
+      "determinant": 1,
+      "signed_gap": "-2/143",
+      "relation": "overlap"
+    },
+    {
+      "label": "touch",
+      "speeds": [
+        11,
+        13
+      ],
+      "meeting_numerators": [
+        4,
+        5
+      ],
+      "meeting_times": [
+        "4/11",
+        "5/13"
+      ],
+      "blocking_windows": [
+        [
+          "31/88",
+          "3/8"
+        ],
+        [
+          "3/8",
+          "41/104"
+        ]
+      ],
+      "determinant": 3,
+      "signed_gap": "0",
+      "relation": "touch",
+      "all_seven_clear_at": "3/8"
+    },
+    {
+      "label": "gap_covered_elsewhere",
+      "speeds": [
+        11,
+        13
+      ],
+      "meeting_numerators": [
+        3,
+        4
+      ],
+      "meeting_times": [
+        "3/11",
+        "4/13"
+      ],
+      "blocking_windows": [
+        [
+          "23/88",
+          "25/88"
+        ],
+        [
+          "31/104",
+          "33/104"
+        ]
+      ],
+      "determinant": 5,
+      "signed_gap": "2/143",
+      "relation": "gap",
+      "gap_covered_by_speed": 7,
+      "covering_window": [
+        "15/56",
+        "17/56"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "label": "consecutive",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_maximum": "1/8",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "0",
+        "1": "949/1680",
+        "2": "521/1680",
+        "3": "1/16",
+        "4": "1/80",
+        "5": "1/120",
+        "6": "1/168",
+        "7": "1/28"
+      },
+      "safe_duration": "0",
+      "extra_blocking_duration": "3/4",
+      "summed_pair_overlap": "157/105",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            2
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            1,
+            3
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            2,
+            3
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            2,
+            4
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            2,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            2,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            2,
+            7
+          ],
+          "both_blocking_duration": "3/56"
+        },
+        {
+          "speeds": [
+            3,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            3,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            3,
+            6
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            3,
+            7
+          ],
+          "both_blocking_duration": "5/84"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "both_blocking_duration": "1/15"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "both_blocking_duration": "11/168"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "3/8",
+          "blocking_ends": [
+            3
+          ],
+          "blocking_starts": [
+            5
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "5/8",
+          "blocking_ends": [
+            5
+          ],
+          "blocking_starts": [
+            3
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/48"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "1/48",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "1/24"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "1/24",
+            "1/16"
+          ],
+          "strict_blockers": [
+            1,
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "1/16",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "7/48"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/48",
+            "9/56"
+          ],
+          "strict_blockers": [
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "7/40"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "3/16"
+          ],
+          "strict_blockers": [
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "3/16",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "7/24"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/24",
+            "17/56"
+          ],
+          "strict_blockers": [
+            3,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "5/16"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "5/16",
+            "17/48"
+          ],
+          "strict_blockers": [
+            3,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "17/48",
+            "3/8"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "7/16"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/16",
+            "25/56"
+          ],
+          "strict_blockers": [
+            2,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "15/32"
+          ],
+          "strict_blockers": [
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "23/48"
+          ],
+          "strict_blockers": [
+            2,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/48",
+            "25/48"
+          ],
+          "strict_blockers": [
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "25/48",
+            "17/32"
+          ],
+          "strict_blockers": [
+            2,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "31/56"
+          ],
+          "strict_blockers": [
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "9/16"
+          ],
+          "strict_blockers": [
+            2,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/16",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "31/48"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "31/48",
+            "11/16"
+          ],
+          "strict_blockers": [
+            3,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "11/16",
+            "39/56"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "17/24"
+          ],
+          "strict_blockers": [
+            3,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/24",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "13/16"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "13/16",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "47/56"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "41/48"
+          ],
+          "strict_blockers": [
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "41/48",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "15/16"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "15/16",
+            "23/24"
+          ],
+          "strict_blockers": [
+            1,
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "23/24",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "47/48"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "47/48",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "label": "single_replacement",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        12
+      ],
+      "selected_maximum": "1/8",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "0",
+        "1": "309/560",
+        "2": "53/168",
+        "3": "59/840",
+        "4": "1/80",
+        "5": "1/70",
+        "6": "5/336",
+        "7": "1/48"
+      },
+      "safe_duration": "0",
+      "extra_blocking_duration": "3/4",
+      "summed_pair_overlap": "59/42",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            2
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            1,
+            3
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            1,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            2,
+            3
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            2,
+            4
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            2,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            2,
+            7
+          ],
+          "both_blocking_duration": "3/56"
+        },
+        {
+          "speeds": [
+            2,
+            12
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            3,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            3,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            3,
+            7
+          ],
+          "both_blocking_duration": "5/84"
+        },
+        {
+          "speeds": [
+            3,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            12
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            5,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            7,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "3/8",
+          "blocking_ends": [
+            3
+          ],
+          "blocking_starts": [
+            5
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "5/8",
+          "blocking_ends": [
+            5
+          ],
+          "blocking_starts": [
+            3
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/96"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "1/96",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "1/24"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "1/24",
+            "1/16"
+          ],
+          "strict_blockers": [
+            1,
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "1/16",
+            "7/96"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/96",
+            "3/32"
+          ],
+          "strict_blockers": [
+            1,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "3/32",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "5/32"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "5/32",
+            "9/56"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "7/40"
+          ],
+          "strict_blockers": [
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "17/96"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "17/96",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "23/96"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/96",
+            "25/96"
+          ],
+          "strict_blockers": [
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "25/96",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "7/24"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/24",
+            "17/56"
+          ],
+          "strict_blockers": [
+            3,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "31/96"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "31/96",
+            "11/32"
+          ],
+          "strict_blockers": [
+            3,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "11/32",
+            "3/8"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "13/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "13/32",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "41/96"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "41/96",
+            "7/16"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/16",
+            "25/56"
+          ],
+          "strict_blockers": [
+            2,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "15/32"
+          ],
+          "strict_blockers": [
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "47/96"
+          ],
+          "strict_blockers": [
+            2,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "47/96",
+            "49/96"
+          ],
+          "strict_blockers": [
+            2,
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "49/96",
+            "17/32"
+          ],
+          "strict_blockers": [
+            2,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "31/56"
+          ],
+          "strict_blockers": [
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "9/16"
+          ],
+          "strict_blockers": [
+            2,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/16",
+            "55/96"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "55/96",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "19/32"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "19/32",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "21/32"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "21/32",
+            "65/96"
+          ],
+          "strict_blockers": [
+            3,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "65/96",
+            "39/56"
+          ],
+          "strict_blockers": [
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "17/24"
+          ],
+          "strict_blockers": [
+            3,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/24",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "71/96"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "71/96",
+            "73/96"
+          ],
+          "strict_blockers": [
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "73/96",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "79/96"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "79/96",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "47/56"
+          ],
+          "strict_blockers": [
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "27/32"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "27/32",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "29/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "29/32",
+            "89/96"
+          ],
+          "strict_blockers": [
+            1,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "89/96",
+            "15/16"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "15/16",
+            "23/24"
+          ],
+          "strict_blockers": [
+            1,
+            2
+          ]
+        },
+        {
+          "open_interval": [
+            "23/24",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "95/96"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "95/96",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "label": "double_replacement",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "selected_maximum": "1/8",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "0",
+        "1": "3219/6160",
+        "2": "4868/15015",
+        "3": "26801/240240",
+        "4": "1/168",
+        "5": "1/77",
+        "6": "1/286",
+        "7": "1/52"
+      },
+      "safe_duration": "0",
+      "extra_blocking_duration": "3/4",
+      "summed_pair_overlap": "307691/240240",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            1,
+            11
+          ],
+          "both_blocking_duration": "3/44"
+        },
+        {
+          "speeds": [
+            1,
+            13
+          ],
+          "both_blocking_duration": "3/52"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            11
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            13
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "both_blocking_duration": "1/15"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            5,
+            11
+          ],
+          "both_blocking_duration": "13/220"
+        },
+        {
+          "speeds": [
+            5,
+            13
+          ],
+          "both_blocking_duration": "17/260"
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "both_blocking_duration": "11/168"
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "both_blocking_duration": "2/33"
+        },
+        {
+          "speeds": [
+            6,
+            13
+          ],
+          "both_blocking_duration": "5/78"
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "both_blocking_duration": "19/308"
+        },
+        {
+          "speeds": [
+            7,
+            13
+          ],
+          "both_blocking_duration": "23/364"
+        },
+        {
+          "speeds": [
+            11,
+            13
+          ],
+          "both_blocking_duration": "35/572"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "3/8",
+          "blocking_ends": [
+            11
+          ],
+          "blocking_starts": [
+            5,
+            13
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "5/8",
+          "blocking_ends": [
+            5,
+            13
+          ],
+          "blocking_starts": [
+            11
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/104"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "1/104",
+            "1/88"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "1/88",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "1/48",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "7/104"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/104",
+            "7/88"
+          ],
+          "strict_blockers": [
+            1,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "7/88",
+            "9/104"
+          ],
+          "strict_blockers": [
+            1,
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/104",
+            "9/88"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "9/88",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "15/104"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "15/104",
+            "7/48"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "7/48",
+            "9/56"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "17/104"
+          ],
+          "strict_blockers": [
+            6,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/104",
+            "15/88"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "15/88",
+            "7/40"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "3/16"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "3/16",
+            "17/88"
+          ],
+          "strict_blockers": [
+            5,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "17/88",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "23/104"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/104",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "25/104"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "25/104",
+            "23/88"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/88",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "25/88"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "25/88",
+            "31/104"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "31/104",
+            "17/56"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "5/16"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "5/16",
+            "33/104"
+          ],
+          "strict_blockers": [
+            6,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "33/104",
+            "31/88"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "31/88",
+            "17/48"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "17/48",
+            "3/8"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "41/104"
+          ],
+          "strict_blockers": [
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/104",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "39/88"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "39/88",
+            "25/56"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "47/104"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "47/104",
+            "41/88"
+          ],
+          "strict_blockers": [
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/88",
+            "15/32"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "49/104"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "49/104",
+            "23/48"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/48",
+            "25/48"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "25/48",
+            "55/104"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "55/104",
+            "17/32"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "47/88"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "47/88",
+            "57/104"
+          ],
+          "strict_blockers": [
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "57/104",
+            "31/56"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "49/88"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "49/88",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "63/104"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "63/104",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "31/48"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/48",
+            "57/88"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "57/88",
+            "71/104"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "71/104",
+            "11/16"
+          ],
+          "strict_blockers": [
+            6,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "11/16",
+            "39/56"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "73/104"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "73/104",
+            "63/88"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "63/88",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "65/88"
+          ],
+          "strict_blockers": [
+            4,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "65/88",
+            "79/104"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "79/104",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "81/104"
+          ],
+          "strict_blockers": [
+            4,
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "81/104",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "71/88"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "71/88",
+            "13/16"
+          ],
+          "strict_blockers": [
+            5,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "13/16",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "73/88"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "73/88",
+            "87/104"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "87/104",
+            "47/56"
+          ],
+          "strict_blockers": [
+            6,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "41/48"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/48",
+            "89/104"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "89/104",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "79/88"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "79/88",
+            "95/104"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "95/104",
+            "81/88"
+          ],
+          "strict_blockers": [
+            1,
+            11,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "81/88",
+            "97/104"
+          ],
+          "strict_blockers": [
+            1,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "97/104",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "47/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "47/48",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "87/88"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "87/88",
+            "103/104"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "103/104",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "label": "control_11_12",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "selected_maximum": "2/13",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "29/1232",
+        "1": "1619/3080",
+        "2": "4679/18480",
+        "3": "17/112",
+        "4": "17/1680",
+        "5": "1/77",
+        "6": "1/528",
+        "7": "1/48"
+      },
+      "safe_duration": "29/1232",
+      "extra_blocking_duration": "953/1232",
+      "summed_pair_overlap": "12613/9240",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            1,
+            11
+          ],
+          "both_blocking_duration": "3/44"
+        },
+        {
+          "speeds": [
+            1,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            11
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            12
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "both_blocking_duration": "1/15"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            5,
+            11
+          ],
+          "both_blocking_duration": "13/220"
+        },
+        {
+          "speeds": [
+            5,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "both_blocking_duration": "11/168"
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "both_blocking_duration": "2/33"
+        },
+        {
+          "speeds": [
+            6,
+            12
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "both_blocking_duration": "19/308"
+        },
+        {
+          "speeds": [
+            7,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            11,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "41/88",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "47/88"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "3/8",
+          "blocking_ends": [
+            11
+          ],
+          "blocking_starts": [
+            5
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "5/8",
+          "blocking_ends": [
+            5
+          ],
+          "blocking_starts": [
+            11
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/96"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "1/96",
+            "1/88"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "1/88",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "1/48",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "7/96"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/96",
+            "7/88"
+          ],
+          "strict_blockers": [
+            1,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "7/88",
+            "3/32"
+          ],
+          "strict_blockers": [
+            1,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "3/32",
+            "9/88"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "9/88",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "7/48"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/48",
+            "5/32"
+          ],
+          "strict_blockers": [
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "5/32",
+            "9/56"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "15/88"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "15/88",
+            "7/40"
+          ],
+          "strict_blockers": [
+            6,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "17/96"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "17/96",
+            "3/16"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "3/16",
+            "17/88"
+          ],
+          "strict_blockers": [
+            5,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "17/88",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "23/96"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/96",
+            "25/96"
+          ],
+          "strict_blockers": [
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "25/96",
+            "23/88"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/88",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "25/88"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "25/88",
+            "17/56"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "5/16"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "5/16",
+            "31/96"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "31/96",
+            "11/32"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "11/32",
+            "31/88"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "31/88",
+            "17/48"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "17/48",
+            "3/8"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "13/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "13/32",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "41/96"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "41/96",
+            "39/88"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "39/88",
+            "25/56"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "41/88"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "41/88",
+            "15/32"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "23/48"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/48",
+            "47/96"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "47/96",
+            "49/96"
+          ],
+          "strict_blockers": [
+            4,
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "49/96",
+            "25/48"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "25/48",
+            "17/32"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "47/88"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "47/88",
+            "31/56"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "49/88"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "49/88",
+            "55/96"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "55/96",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "19/32"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "19/32",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "31/48"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/48",
+            "57/88"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "57/88",
+            "21/32"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "21/32",
+            "65/96"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "65/96",
+            "11/16"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "11/16",
+            "39/56"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "63/88"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "63/88",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "65/88"
+          ],
+          "strict_blockers": [
+            4,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "65/88",
+            "71/96"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "71/96",
+            "73/96"
+          ],
+          "strict_blockers": [
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "73/96",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "71/88"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "71/88",
+            "13/16"
+          ],
+          "strict_blockers": [
+            5,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "13/16",
+            "79/96"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "79/96",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "73/88"
+          ],
+          "strict_blockers": [
+            6,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "73/88",
+            "47/56"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "27/32"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "27/32",
+            "41/48"
+          ],
+          "strict_blockers": [
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "41/48",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "79/88"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "79/88",
+            "29/32"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "29/32",
+            "81/88"
+          ],
+          "strict_blockers": [
+            1,
+            11,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "81/88",
+            "89/96"
+          ],
+          "strict_blockers": [
+            1,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "89/96",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "47/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "47/48",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "87/88"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "87/88",
+            "95/96"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "95/96",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "label": "control_12_13",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13
+      ],
+      "selected_maximum": "2/11",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "115/2184",
+        "1": "25/56",
+        "2": "237/728",
+        "3": "545/4368",
+        "4": "5/336",
+        "5": "5/336",
+        "6": "1/624",
+        "7": "1/52"
+      },
+      "safe_duration": "115/2184",
+      "extra_blocking_duration": "1753/2184",
+      "summed_pair_overlap": "2983/2184",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            1,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            13
+          ],
+          "both_blocking_duration": "3/52"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            12
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            13
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "both_blocking_duration": "1/15"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            5,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            5,
+            13
+          ],
+          "both_blocking_duration": "17/260"
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "both_blocking_duration": "11/168"
+        },
+        {
+          "speeds": [
+            6,
+            12
+          ],
+          "both_blocking_duration": "1/8"
+        },
+        {
+          "speeds": [
+            6,
+            13
+          ],
+          "both_blocking_duration": "5/78"
+        },
+        {
+          "speeds": [
+            7,
+            12
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            7,
+            13
+          ],
+          "both_blocking_duration": "23/364"
+        },
+        {
+          "speeds": [
+            12,
+            13
+          ],
+          "both_blocking_duration": "1/16"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/48",
+          "3/8"
+        ],
+        [
+          "25/56",
+          "47/104"
+        ],
+        [
+          "57/104",
+          "31/56"
+        ],
+        [
+          "5/8",
+          "31/48"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/104"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "1/104",
+            "1/96"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "1/96",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "1/48",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "7/104"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/104",
+            "7/96"
+          ],
+          "strict_blockers": [
+            1,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "7/96",
+            "9/104"
+          ],
+          "strict_blockers": [
+            1,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/104",
+            "3/32"
+          ],
+          "strict_blockers": [
+            1,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "3/32",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "15/104"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "15/104",
+            "7/48"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "7/48",
+            "5/32"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "5/32",
+            "9/56"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "17/104"
+          ],
+          "strict_blockers": [
+            6,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/104",
+            "7/40"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "17/96"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "17/96",
+            "3/16"
+          ],
+          "strict_blockers": [
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "3/16",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "23/104"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/104",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "23/96"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "23/96",
+            "25/104"
+          ],
+          "strict_blockers": [
+            4,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "25/104",
+            "25/96"
+          ],
+          "strict_blockers": [
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "25/96",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "31/104"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "31/104",
+            "17/56"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "5/16"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "5/16",
+            "33/104"
+          ],
+          "strict_blockers": [
+            6,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "33/104",
+            "31/96"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "31/96",
+            "11/32"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "11/32",
+            "17/48"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "17/48",
+            "3/8"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "41/104"
+          ],
+          "strict_blockers": [
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/104",
+            "13/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "13/32",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "41/96"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "41/96",
+            "25/56"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "47/104"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "47/104",
+            "15/32"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "49/104"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "49/104",
+            "23/48"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/48",
+            "47/96"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "47/96",
+            "49/96"
+          ],
+          "strict_blockers": [
+            4,
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "49/96",
+            "25/48"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "25/48",
+            "55/104"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "55/104",
+            "17/32"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "57/104"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "57/104",
+            "31/56"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "55/96"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "55/96",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "19/32"
+          ],
+          "strict_blockers": [
+            5,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "19/32",
+            "63/104"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "63/104",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "31/48"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "31/48",
+            "21/32"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "21/32",
+            "65/96"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "65/96",
+            "71/104"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "71/104",
+            "11/16"
+          ],
+          "strict_blockers": [
+            6,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "11/16",
+            "39/56"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "73/104"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "73/104",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "71/96"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "71/96",
+            "79/104"
+          ],
+          "strict_blockers": [
+            4,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "79/104",
+            "73/96"
+          ],
+          "strict_blockers": [
+            4,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "73/96",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "81/104"
+          ],
+          "strict_blockers": [
+            4,
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "81/104",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "13/16"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "13/16",
+            "79/96"
+          ],
+          "strict_blockers": [
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "79/96",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "87/104"
+          ],
+          "strict_blockers": [
+            6,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "87/104",
+            "47/56"
+          ],
+          "strict_blockers": [
+            6,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "27/32"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "27/32",
+            "41/48"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/48",
+            "89/104"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "89/104",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "29/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "29/32",
+            "95/104"
+          ],
+          "strict_blockers": [
+            1,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "95/104",
+            "89/96"
+          ],
+          "strict_blockers": [
+            1,
+            12,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "89/96",
+            "97/104"
+          ],
+          "strict_blockers": [
+            1,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "97/104",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "47/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "47/48",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "95/96"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "95/96",
+            "103/104"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "open_interval": [
+            "103/104",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "label": "same_phases_19_13",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        19,
+        13
+      ],
+      "selected_maximum": "4/25",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "1093/41496",
+        "1": "190991/414960",
+        "2": "26213/69160",
+        "3": "30671/414960",
+        "4": "79/3192",
+        "5": "3/182",
+        "6": "3/494",
+        "7": "1/76"
+      },
+      "safe_duration": "1093/41496",
+      "extra_blocking_duration": "32215/41496",
+      "summed_pair_overlap": "177257/138320",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            1,
+            13
+          ],
+          "both_blocking_duration": "3/52"
+        },
+        {
+          "speeds": [
+            1,
+            19
+          ],
+          "both_blocking_duration": "5/76"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            13
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            19
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "both_blocking_duration": "1/15"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            5,
+            13
+          ],
+          "both_blocking_duration": "17/260"
+        },
+        {
+          "speeds": [
+            5,
+            19
+          ],
+          "both_blocking_duration": "23/380"
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "both_blocking_duration": "11/168"
+        },
+        {
+          "speeds": [
+            6,
+            13
+          ],
+          "both_blocking_duration": "5/78"
+        },
+        {
+          "speeds": [
+            6,
+            19
+          ],
+          "both_blocking_duration": "7/114"
+        },
+        {
+          "speeds": [
+            7,
+            13
+          ],
+          "both_blocking_duration": "23/364"
+        },
+        {
+          "speeds": [
+            7,
+            19
+          ],
+          "both_blocking_duration": "33/532"
+        },
+        {
+          "speeds": [
+            13,
+            19
+          ],
+          "both_blocking_duration": "61/988"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/48",
+          "55/152"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "25/56",
+          "47/104"
+        ],
+        [
+          "57/104",
+          "31/56"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "97/152",
+          "31/48"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "3/8",
+          "blocking_ends": [
+            19
+          ],
+          "blocking_starts": [
+            5,
+            13
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "5/8",
+          "blocking_ends": [
+            5,
+            13
+          ],
+          "blocking_starts": [
+            19
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/152"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "1/152",
+            "1/104"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "1/104",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "1/48",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "7/152"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/152",
+            "9/152"
+          ],
+          "strict_blockers": [
+            1,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "9/152",
+            "7/104"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/104",
+            "9/104"
+          ],
+          "strict_blockers": [
+            1,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/104",
+            "15/152"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "15/152",
+            "17/152"
+          ],
+          "strict_blockers": [
+            1,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "17/152",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "15/104"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "15/104",
+            "7/48"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "7/48",
+            "23/152"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "23/152",
+            "9/56"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "17/104"
+          ],
+          "strict_blockers": [
+            6,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "17/104",
+            "25/152"
+          ],
+          "strict_blockers": [
+            6,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "25/152",
+            "7/40"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "3/16"
+          ],
+          "strict_blockers": [
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "3/16",
+            "31/152"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "31/152",
+            "33/152"
+          ],
+          "strict_blockers": [
+            5,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "33/152",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "23/104"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/104",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "25/104"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "25/104",
+            "39/152"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/152",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "41/152"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "41/152",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "31/104"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "31/104",
+            "17/56"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "47/152"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "47/152",
+            "5/16"
+          ],
+          "strict_blockers": [
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "5/16",
+            "33/104"
+          ],
+          "strict_blockers": [
+            6,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "33/104",
+            "49/152"
+          ],
+          "strict_blockers": [
+            6,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "49/152",
+            "17/48"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "17/48",
+            "55/152"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "55/152",
+            "3/8"
+          ],
+          "strict_blockers": [
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "41/104"
+          ],
+          "strict_blockers": [
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/104",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "63/152"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "63/152",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "65/152"
+          ],
+          "strict_blockers": [
+            7,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "65/152",
+            "25/56"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "47/104"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "47/104",
+            "71/152"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "71/152",
+            "15/32"
+          ],
+          "strict_blockers": [
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "49/104"
+          ],
+          "strict_blockers": [
+            4,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "49/104",
+            "23/48"
+          ],
+          "strict_blockers": [
+            4,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "23/48",
+            "73/152"
+          ],
+          "strict_blockers": [
+            4,
+            6,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "73/152",
+            "79/152"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "79/152",
+            "25/48"
+          ],
+          "strict_blockers": [
+            4,
+            6,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "25/48",
+            "55/104"
+          ],
+          "strict_blockers": [
+            4,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "55/104",
+            "17/32"
+          ],
+          "strict_blockers": [
+            4,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "81/152"
+          ],
+          "strict_blockers": [
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "81/152",
+            "57/104"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "57/104",
+            "31/56"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "87/152"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "87/152",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "89/152"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "89/152",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "63/104"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "63/104",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "97/152"
+          ],
+          "strict_blockers": [
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "97/152",
+            "31/48"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "31/48",
+            "103/152"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "103/152",
+            "71/104"
+          ],
+          "strict_blockers": [
+            6,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "71/104",
+            "11/16"
+          ],
+          "strict_blockers": [
+            6,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "11/16",
+            "105/152"
+          ],
+          "strict_blockers": [
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "105/152",
+            "39/56"
+          ],
+          "strict_blockers": [
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "73/104"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "73/104",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "111/152"
+          ],
+          "strict_blockers": [
+            4,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "111/152",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "113/152"
+          ],
+          "strict_blockers": [
+            4,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "113/152",
+            "79/104"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "79/104",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "81/104"
+          ],
+          "strict_blockers": [
+            4,
+            5,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "81/104",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "119/152"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "119/152",
+            "121/152"
+          ],
+          "strict_blockers": [
+            5,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "121/152",
+            "13/16"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "13/16",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "127/152"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "127/152",
+            "87/104"
+          ],
+          "strict_blockers": [
+            6,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "87/104",
+            "47/56"
+          ],
+          "strict_blockers": [
+            6,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "129/152"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "129/152",
+            "41/48"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "41/48",
+            "89/104"
+          ],
+          "strict_blockers": [
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "89/104",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "135/152"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "135/152",
+            "137/152"
+          ],
+          "strict_blockers": [
+            1,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "137/152",
+            "95/104"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "95/104",
+            "97/104"
+          ],
+          "strict_blockers": [
+            1,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "97/104",
+            "143/152"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "143/152",
+            "145/152"
+          ],
+          "strict_blockers": [
+            1,
+            19
+          ]
+        },
+        {
+          "open_interval": [
+            "145/152",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "47/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "47/48",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "103/104"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "103/104",
+            "151/152"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "open_interval": [
+            "151/152",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            13,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "label": "same_phases_11_21",
+      "original_n": 8,
+      "reference_speed": 1,
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        21
+      ],
+      "selected_maximum": "2/13",
+      "all_reference_evidence": "cooperative_blocking.json",
+      "histogram_duration_by_number_blocking": {
+        "0": "29/1232",
+        "1": "8929/18480",
+        "2": "1543/4620",
+        "3": "287/2640",
+        "4": "5/336",
+        "5": "1/77",
+        "6": "5/462",
+        "7": "1/84"
+      },
+      "safe_duration": "29/1232",
+      "extra_blocking_duration": "953/1232",
+      "summed_pair_overlap": "23869/18480",
+      "pair_overlaps": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "both_blocking_duration": "1/20"
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "both_blocking_duration": "1/24"
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "both_blocking_duration": "1/28"
+        },
+        {
+          "speeds": [
+            1,
+            11
+          ],
+          "both_blocking_duration": "3/44"
+        },
+        {
+          "speeds": [
+            1,
+            21
+          ],
+          "both_blocking_duration": "5/84"
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            11
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            4,
+            21
+          ],
+          "both_blocking_duration": "1/16"
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "both_blocking_duration": "1/15"
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            5,
+            11
+          ],
+          "both_blocking_duration": "13/220"
+        },
+        {
+          "speeds": [
+            5,
+            21
+          ],
+          "both_blocking_duration": "9/140"
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "both_blocking_duration": "11/168"
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "both_blocking_duration": "2/33"
+        },
+        {
+          "speeds": [
+            6,
+            21
+          ],
+          "both_blocking_duration": "3/56"
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "both_blocking_duration": "19/308"
+        },
+        {
+          "speeds": [
+            7,
+            21
+          ],
+          "both_blocking_duration": "1/12"
+        },
+        {
+          "speeds": [
+            11,
+            21
+          ],
+          "both_blocking_duration": "19/308"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "41/88",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "47/88"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "opposite_boundary_contacts": [
+        {
+          "time": "1/8",
+          "blocking_ends": [
+            1
+          ],
+          "blocking_starts": [
+            7
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "3/8",
+          "blocking_ends": [
+            11
+          ],
+          "blocking_starts": [
+            5,
+            21
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "5/8",
+          "blocking_ends": [
+            5,
+            21
+          ],
+          "blocking_starts": [
+            11
+          ],
+          "strict_blockers": []
+        },
+        {
+          "time": "7/8",
+          "blocking_ends": [
+            7
+          ],
+          "blocking_starts": [
+            1
+          ],
+          "strict_blockers": []
+        }
+      ],
+      "schedule_cells": [
+        {
+          "open_interval": [
+            "0",
+            "1/168"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "1/168",
+            "1/88"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "1/88",
+            "1/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "1/56",
+            "1/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "1/48",
+            "1/40"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "1/40",
+            "1/32"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "1/32",
+            "1/24"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/24",
+            "3/56"
+          ],
+          "strict_blockers": [
+            1,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "3/56",
+            "7/88"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "7/88",
+            "5/56"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "5/56",
+            "17/168"
+          ],
+          "strict_blockers": [
+            1,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "17/168",
+            "9/88"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "9/88",
+            "1/8"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "1/8",
+            "23/168"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "23/168",
+            "7/48"
+          ],
+          "strict_blockers": [
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "7/48",
+            "25/168"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "25/168",
+            "9/56"
+          ],
+          "strict_blockers": [
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "9/56",
+            "15/88"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "15/88",
+            "7/40"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "7/40",
+            "31/168"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/168",
+            "3/16"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "3/16",
+            "17/88"
+          ],
+          "strict_blockers": [
+            5,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "17/88",
+            "11/56"
+          ],
+          "strict_blockers": [
+            5,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "11/56",
+            "7/32"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "7/32",
+            "9/40"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "9/40",
+            "13/56"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "13/56",
+            "41/168"
+          ],
+          "strict_blockers": [
+            4,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "41/168",
+            "23/88"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "23/88",
+            "15/56"
+          ],
+          "strict_blockers": [
+            4,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "15/56",
+            "47/168"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "47/168",
+            "9/32"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "9/32",
+            "25/88"
+          ],
+          "strict_blockers": [
+            7,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "25/88",
+            "7/24"
+          ],
+          "strict_blockers": [
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "7/24",
+            "17/56"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/56",
+            "5/16"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "5/16",
+            "55/168"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/168",
+            "19/56"
+          ],
+          "strict_blockers": [
+            6,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "19/56",
+            "31/88"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "31/88",
+            "17/48"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "17/48",
+            "3/8"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "3/8",
+            "65/168"
+          ],
+          "strict_blockers": [
+            5,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "65/168",
+            "23/56"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "23/56",
+            "71/168"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "71/168",
+            "17/40"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "17/40",
+            "73/168"
+          ],
+          "strict_blockers": [
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "73/168",
+            "39/88"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "39/88",
+            "25/56"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "25/56",
+            "41/88"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "41/88",
+            "15/32"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "15/32",
+            "79/168"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "79/168",
+            "23/48"
+          ],
+          "strict_blockers": [
+            4,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "23/48",
+            "27/56"
+          ],
+          "strict_blockers": [
+            4,
+            6,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "27/56",
+            "29/56"
+          ],
+          "strict_blockers": [
+            4,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "29/56",
+            "25/48"
+          ],
+          "strict_blockers": [
+            4,
+            6,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "25/48",
+            "89/168"
+          ],
+          "strict_blockers": [
+            4,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "89/168",
+            "17/32"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "17/32",
+            "47/88"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "47/88",
+            "31/56"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/56",
+            "49/88"
+          ],
+          "strict_blockers": [
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "49/88",
+            "95/168"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "95/168",
+            "23/40"
+          ],
+          "strict_blockers": [
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "23/40",
+            "97/168"
+          ],
+          "strict_blockers": [
+            5,
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "97/168",
+            "33/56"
+          ],
+          "strict_blockers": [
+            5,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "33/56",
+            "103/168"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "103/168",
+            "5/8"
+          ],
+          "strict_blockers": [
+            5,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "5/8",
+            "31/48"
+          ],
+          "strict_blockers": [
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "31/48",
+            "57/88"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "57/88",
+            "37/56"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "37/56",
+            "113/168"
+          ],
+          "strict_blockers": [
+            6,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "113/168",
+            "11/16"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "11/16",
+            "39/56"
+          ],
+          "strict_blockers": []
+        },
+        {
+          "open_interval": [
+            "39/56",
+            "17/24"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "17/24",
+            "63/88"
+          ],
+          "strict_blockers": [
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "63/88",
+            "23/32"
+          ],
+          "strict_blockers": [
+            7,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "23/32",
+            "121/168"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "121/168",
+            "41/56"
+          ],
+          "strict_blockers": [
+            4,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "41/56",
+            "65/88"
+          ],
+          "strict_blockers": [
+            4,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "65/88",
+            "127/168"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "127/168",
+            "43/56"
+          ],
+          "strict_blockers": [
+            4,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "43/56",
+            "31/40"
+          ],
+          "strict_blockers": [
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "31/40",
+            "25/32"
+          ],
+          "strict_blockers": [
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "25/32",
+            "45/56"
+          ],
+          "strict_blockers": [
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "45/56",
+            "71/88"
+          ],
+          "strict_blockers": [
+            5,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "71/88",
+            "13/16"
+          ],
+          "strict_blockers": [
+            5,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "13/16",
+            "137/168"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "137/168",
+            "33/40"
+          ],
+          "strict_blockers": [
+            5,
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "33/40",
+            "73/88"
+          ],
+          "strict_blockers": [
+            6,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "73/88",
+            "47/56"
+          ],
+          "strict_blockers": [
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "47/56",
+            "143/168"
+          ],
+          "strict_blockers": [
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "143/168",
+            "41/48"
+          ],
+          "strict_blockers": [
+            6,
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "41/48",
+            "145/168"
+          ],
+          "strict_blockers": [
+            7,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "145/168",
+            "7/8"
+          ],
+          "strict_blockers": [
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "7/8",
+            "79/88"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "79/88",
+            "151/168"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "151/168",
+            "51/56"
+          ],
+          "strict_blockers": [
+            1,
+            11,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "51/56",
+            "81/88"
+          ],
+          "strict_blockers": [
+            1,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "81/88",
+            "53/56"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "53/56",
+            "23/24"
+          ],
+          "strict_blockers": [
+            1,
+            21
+          ]
+        },
+        {
+          "open_interval": [
+            "23/24",
+            "31/32"
+          ],
+          "strict_blockers": [
+            1
+          ]
+        },
+        {
+          "open_interval": [
+            "31/32",
+            "39/40"
+          ],
+          "strict_blockers": [
+            1,
+            4
+          ]
+        },
+        {
+          "open_interval": [
+            "39/40",
+            "47/48"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "open_interval": [
+            "47/48",
+            "55/56"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "open_interval": [
+            "55/56",
+            "87/88"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "open_interval": [
+            "87/88",
+            "167/168"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "open_interval": [
+            "167/168",
+            "1"
+          ],
+          "strict_blockers": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11,
+            21
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": "Durations ignore isolated endpoints. Closed allowed intervals are retained and independently crosschecked. Pair-overlap totals are not a tightness classification; no novelty or general LRC proof claim."
+}
