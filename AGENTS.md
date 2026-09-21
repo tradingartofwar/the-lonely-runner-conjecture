@@ -31,3 +31,15 @@ The founding request authorizes repository planning, strategy, and handoff docum
 Keep changes small and inspectable. Preserve unrelated user work; use fast-forward updates and verify remote files after publishing. Respect any protected review workflow. Do not copy private family, business, health, or unrelated research records into this repository.
 
 At a meaningful pause, update the compact status in HANDOFF.md with what was actually done, exact evidence pointers, unresolved questions, and one useful next action. Do not create a document or process for every conversational turn.
+
+## Collaboration learning for Performance — September 21, 2026
+
+Vance asked for Performance to see more of our shared work. During already-authorized work in this repository, preserve a brief account when a discovery, correction, failed attempt, useful contribution, or consequential outcome would otherwise be lost. Prefer an existing eligible handoff or revision note if it already records the episode; do not duplicate it merely for review.
+
+If a separate account is useful, save `collaboration/learning/YYYY-MM-DD-short-topic.md` on the default branch through the project's normal review/publication path. Include event date and capture date; purpose; what Vance and AI each contributed (unknown if not recorded); what changed; the actual result or pending outcome; a source/version or honest conversation locator; uncertainty; and when the lesson might matter again. Distinguish inspected evidence, participant reports, and AI interpretation. Keep later corrections with the original episode.
+
+These notes are eligible for Performance's bounded read-only review under its [source catalog](https://github.com/tradingartofwar/performance/blob/main/REVIEW_SOURCES.md). They are source accounts, not independent corroboration. Omit private participant conversations, personal assessments, clinical records, source financial records, identifiers, credentials, and sensitive case facts. Do not retrieve more material just to manufacture a note. If useful context cannot be safely separated, keep the episode in its owning project and leave a coverage gap.
+
+No per-session or daily quota; no personality grades, fixed roles, new background job, outside contact, or authority to implement Performance's suggestions. This instruction applies when a working session reads this repository; it does not make past or unseen chats visible. Verify saved notes and mention a useful capture naturally in the work closeout.
+
+Existing eligible account: HANDOFF.md. Preserve mathematical scope, counterexamples, and known-result status; the reviewer must not treat a handoff's computational claims as its own rerun.
