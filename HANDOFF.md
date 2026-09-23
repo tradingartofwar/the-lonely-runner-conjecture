@@ -1,6 +1,6 @@
 # Lonely Runner — new-thread handoff
 
-**Prepared:** September 20, 2026
+**Prepared:** September 23, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
@@ -54,6 +54,7 @@ Start all runners together: shifted-start variants are different. Use exact rati
 - `notes/BLOCKING_OVERLAPS.md`, `scripts/analyze_blocking_overlaps.py`, and `experiments/blocking_overlaps.json`: exact overlap/touch/gap arithmetic, complete blocking schedules for the seven existing configurations, 147 pair-duration crosschecks, and a blocking-count identity.
 - `notes/FIBONACCI_CHECK.md`, `scripts/check_fibonacci_patterns.py`, and `experiments/fibonacci_patterns.json`: prescribed Fibonacci prefixes, nearby controls, an additive collision constraint, and a finite Fibonacci/Lucas pattern in maxima and peak times.
 - `notes/FIBONACCI_RECURRENCE.md`, `scripts/analyze_fibonacci_recurrence.py`, and `experiments/fibonacci_recurrence.json`: small upper-bound subsets, full-prefix witnesses through 21 total runners, eight speed controls, and an unreviewed explanatory reconstruction of the now-located known formula (Sources S11–S12).
+- `notes/BLOCKING_CHAINS.md`, `scripts/analyze_blocking_chains.py`, and `experiments/blocking_chains.json`: minimum open-window chains for eight prescribed configurations, 46 graph/greedy comparisons, 21 sole-blocker witnesses, and a 13-to-8 control that blocks all denominators up to 8 while allowing time 4/13.
 
 **Not built or run:** arbitrary-speed editing in the browser, an exhaustive atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 regression inputs and the new 182-input research comparison are separate bounded checks.
 
@@ -130,4 +131,12 @@ The renewed source search found a direct match: Zhuravleva (2011), Theorem 1, al
 
 Eight exact nearby controls show that at each plateau's final prefix, lowering its largest speed by 1 destroys the old maximum, while raising it by 1 preserves the value and both peak times. The new smaller maxima were not computed. A reversed endpoint ordering in S12 was also noticed and checked on residues modulo 11; it does not affect the interval bound. See `notes/FIBONACCI_RECURRENCE.md` for scope, calculations, and the draft reconstruction.
 
-Next useful action: test whether small interval-coverage certificates explain our existing non-Fibonacci tight eight-runner cases. The special Fibonacci formula is now a known-result reproduction, not an unresolved conjecture in this project. Graph and lattice implementations remain unbuilt. Follow Vance's direction; no broad scan or independent reviewer contact is authorized. Git history retains earlier stopping points.
+September 23 direction: Vance does not want Fibonacci to limit the investigation and favors the question, "What prevents the runners from collectively blocking every possible moment?" The Fibonacci detour is complete for current purposes. We applied the small-certificate idea to seven existing non-Fibonacci eight-runner cases and one new nearby control, with the selected reference only.
+
+The three tight schedules require minimum covers of 18,18,26 blocking windows, down from 28,34,47 total visits. Greedy chains agree with graph shortest paths across all 46 blocked components in the eight inputs. Exact witnesses show every one of the seven competitors is individually necessary in each tight case, at the fixed original target 1/8; the compression removes visits, not whole runners. Non-tight cases can have the same minimum window count as tight ones, so this statistic is not a classification.
+
+The comparison exposed a shared shortcut: none of the old seven inputs has a relative speed divisible by 8, so odd-eighth times are immediately valid by modular arithmetic. To remove that shortcut, change `{1,4,5,6,7,11,13}` to `{1,4,5,6,7,8,11}`. Speed 8 collides at all four old lonely times. In fact every reduced denominator at most 8 is blocked by a divisible speed. Yet the new maximum is exactly 2/13 at 4/13 and 9/13, independently crosschecked by the two existing methods.
+
+The first new allowed window is `[17/56,5/16]`, width 1/112, between the blocking periods of speeds 7 and 6. Speed 13 used to cover it; speed 8 stays clear. Removing `13=6+7` frees the new handoff while adding `8=1+7` blocks the old one. This uses the general additive collision rule without requiring Fibonacci speeds. The new case's four allowed intervals equal the positive-length intervals of the old 13-to-12 control, with the four old singleton witnesses now absent. The full calculation and scope are in `notes/BLOCKING_CHAINS.md`. No general noncoverage theorem or novelty is claimed.
+
+Next useful question: when every reduced denominator up to the total runner count is blocked, what constrains the schedule so a different valid time remains? The new 13-to-8 case is a concrete starting point. Interval-graph certificates are now implemented; lattice certificates are not. Follow Vance's direction; no broad scan or independent reviewer contact is authorized. Git history retains earlier stopping points.
