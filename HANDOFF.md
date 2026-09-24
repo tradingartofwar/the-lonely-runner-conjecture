@@ -1,18 +1,16 @@
-# Lonely Runner — new-thread handoff
+# Lonely Runner — research handoff
 
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
-**Suggested ChatGPT project/thread title:** Lonely Runner — Vance + AI
-
-This file is intended to stand alone when opened in a new conversation or uploaded to a project folder. The live repository remains authoritative if this copy becomes old. Creating the repository documents does not itself create a ChatGPT project or attach its files.
+This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
 ## Why we are here
 
 Vance asked whether there were well-known unsolved problems that he and AI could work on together, just for fun. The Lonely Runner Conjecture appealed because it offers concrete motion, rhythm, and phase relationships alongside exact mathematics and computational experiments. Vance then created this repository and asked for a plan, strategy, and handoff.
 
-This is a chosen place for exploration, not a promise to solve the conjecture. It does not activate the parked observation-as-intervention design or create a new Mission Control system. No recurring schedule or external coordination is established.
+This is a chosen place for exploration, not a promise to solve the conjecture. No recurring computation, external coordination, or publication claim is established merely by a note in this repository.
 
 ## The problem in ordinary language
 
@@ -26,7 +24,7 @@ Start by understanding the configurations that only barely meet the bound. Use a
 
 The proposed sequence is: one understandable example -> exact checker with independent crosschecks -> small visual lab -> bounded atlas -> one evidence-led research question. The full strategy is in RESEARCH_PLAN.md.
 
-Vance supplies direction, intuitive questions, and reactions to what becomes visible; AI contributes its own reasoning and carries the mathematical and technical work. Neither intuition nor a confident AI answer is a proof. Keep it playful and let examples correct us.
+The founding workflow combines human direction and intuitive questions with AI-supported mathematical, technical, and literature work. Neither intuition nor a confident AI answer is a proof. Outside contributors are invited to challenge, reproduce, simplify, or extend the work under the same evidence standard.
 
 Standing direction from Vance: during the entire active investigation, watch for striking patterns, anomalies, and exceptions. Preserve them with exact evidence, test nearby counterexamples, and explain what the pattern does and does not establish. His observation about consistent touch-time spacing led to the latest continuation below.
 
