@@ -153,3 +153,17 @@ The public repository is a scientific record, not a general conversation archive
 A pull request is a proposal. Maintainers decide what enters `main`.
 
 Rejected or revised contributions may still be scientifically useful. The goal is not consensus at all costs; it is a correctable record that stays in contact with the evidence.
+
+
+## Contribution licensing
+
+By submitting a contribution for inclusion in this repository, you agree that
+your contribution may be distributed under the license applicable to the
+material you contribute:
+
+- code and software under the MIT License;
+- research writing, notes, figures, diagrams, and data under CC BY 4.0.
+
+If a contribution contains third-party material, identify it clearly and state
+its source and applicable license or permission. Do not submit material that
+you do not have the right to contribute.

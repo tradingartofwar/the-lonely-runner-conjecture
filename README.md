@@ -110,3 +110,12 @@ Especially welcome:
 `main` is intended to represent the best current organized research record, not an assertion that every idea in the repository is correct. Failed approaches, corrections, and counterexamples are part of the scientific history and should be preserved when they remain informative.
 
 > **Anyone may question. Anyone may investigate. Anyone may contribute. Canonical claims change only when the evidence earns the change.**
+
+
+## License
+
+Code and software are licensed under the [MIT License](LICENSE-CODE).
+Research writing, notes, figures, diagrams, and data are licensed under
+[Creative Commons Attribution 4.0 International](LICENSE-CONTENT.md) unless
+otherwise noted. See [LICENSE](LICENSE) for the repository-wide licensing
+boundary and third-party-material notice.
