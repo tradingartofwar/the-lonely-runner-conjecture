@@ -145,3 +145,102 @@ The useful correction to our previous framing is that a short full repetition pe
 **Next question:** for a relation `B-mA=r`, how do m, r, and the location of a fixed-runner opening determine whether its overlap can exceed E? A bounded next comparison would change the residual r from 1 to 2 or 3 while retaining the same threshold and a tight control. This is a proposed next step, not a result already obtained.
 
 Vance directed us to retain the overlap question, seek patterns and counterexamples, and continue the small-gcd investigation. The AI supplied the local derivation, implementation, source comparison, and diagnostic checks. This record contains the research contribution and its limitations; it does not constitute independent corroboration.
+
+## 6. Continuation: residual differences 2 and 3
+
+**September 24, 2026. Status:** OBSERVED for nine prescribed configurations; HYPOTHESIS/proof candidate for the general elementary phase derivation below; arbitrary coverage remains OPEN. Vance approved the bounded comparison of residuals 1,2,3. No new uniform speed cutoff is claimed for residual 2 or 3.
+
+Keep the same core `{1,4,5}`, target 1/8, and interval J. For a pair A=q, B=2q+r, simultaneous blocking gives integers j,k and signed errors
+
+$$x=qt-j,\quad y=(2q+r)t-k,\qquad |x|,|y|<1/8.$$
+
+Writing `m=k-2j`, the residual obeys
+
+$$rt-m=y-2x,\qquad \|rt\|\leq |y-2x|<3/8. \tag{8}$$
+
+Thus **`||rt||<3/8` is necessary for pair overlap**, independently of q. It is not sufficient: the actual fast phase x must also satisfy both blocking inequalities. More generally, for a positive integer multiplier h and `B-hA=r`, simultaneous blocking at threshold delta requires `||rt||<(h+1)delta`. The condition becomes uninformative when its upper bound exceeds the maximum circular distance. This is an elementary norm inequality, not a novelty claim.
+
+### Where overlap is possible
+
+For a fixed t, temporarily allow x to vary through `(-1/8,1/8)`. The length of the x-values satisfying the second blocking condition is
+
+$$K_r(t)=\operatorname{length}\{x\in(-1/8,1/8):\|2x+rt\|<1/8\}
+=\min\left(\frac18,\max\left(0,\frac{3/8-\|rt\|}{2}\right)\right). \tag{9}$$
+
+To derive it, choose the nearest integer m to rt when `||rt||<3/8`; there is only one relevant integer because the permitted range has total length 3/4<1. Intersect `(-1/8,1/8)` with `((-1/8-(rt-m))/2,(1/8-(rt-m))/2)`. The overlap grows linearly, has a central plateau, and then declines. This is the same elementary interval-overlap geometry used in the published pair-correlation framework [S13](SOURCES.md), not an independently new principle.
+
+**K is a width in phase space, not a fraction of actual time at that instant.** The trajectory has one particular x, fixed by qt. At `t=1/3`, for example, K_3=1/8, yet both 56 and 115 are distance 1/3 from the reference and neither blocks. A permissible phase region can be missed at a particular time.
+
+On our J, the three profiles are:
+
+| Residual r | Necessary permitted times within J | Possible fast-phase width K_r(t) |
+| --- | --- | --- |
+| 1 | `[9/32,3/8)` | `(3/8-t)/2`, decreasing to zero |
+| 2 | `(5/16,3/8]` | zero through 5/16; then `t-5/16`, increasing |
+| 3 | all of J | `(3t-5/8)/2` through 7/24; then constant 1/8 |
+
+For r=2, the residual passes near half a lap at the beginning of J, so the two runners cannot both be within 1/8 of the reference. For r=3, the residual passes through the whole number 1 at t=1/3, allowing a much wider range of simultaneous-blocking fast phases. A repeating permissible region with period 1/r does not imply that the actual pair's blocking schedule has period 1/r.
+
+### Exact windows and a visual comparison
+
+The affine relation constructs every positive-width overlap interval directly:
+
+$$J\cap\left(\frac{j-1/8}{q},\frac{j+1/8}{q}\right)
+\cap\left(\frac{2j+m-1/8}{2q+r},\frac{2j+m+1/8}{2q+r}\right). \tag{10}$$
+
+Only integer j and m whose windows reach J need consideration. This examines explicit meeting windows, not a sampled time grid. Endpoints in the JSON are used for durations; blocking inequalities remain strict.
+
+For q=56, the patterns are exact:
+
+- r=1: six shrinking widths `(41,33,25,17,9,1)/50624`, as before.
+- r=2: three growing widths `(5,13,21)/25536`. They all occur after 5/16; none can occur earlier in J.
+- r=3: one width `107/51520`, followed by five equal widths `1/460`. These matching windows for the faster runner fit wholly inside the slower runner's blocking windows, except for the first partial intersection.
+
+![Exact pair-overlap intervals for residuals 1, 2, and 3](../figures/residual_overlap.svg)
+
+The purple bands show simultaneous blocking. They are not the all-seven clear intervals. No area or width has been enlarged to make a tiny interval visible.
+
+### Does the overlap force room?
+
+Keep the other two added speeds at 64 and 72. Recall `E=T-|J|`; the selected-pair bound is `U_J>=O-E`.
+
+| Pair | Pair overlap O in J | Excess E | One-pair clear lower bound | Actual clear duration |
+| --- | --- | --- | --- | --- |
+| 56,113 | 9/3616 | 1045/911232 | 1223/911232 | 6193/260352 |
+| 56,114 | 13/8512 | -109/153216 | 49/21888 | 7117/306432 |
+| 56,115 | 29/2240 | 671/927360 | 2267/185472 | 2729/88320 |
+
+All three lower bounds are positive. But the residual-2 case has **E<0**: its four individual durations already total less than |J|. The ordinary union bound alone certifies at least `109/153216` clear duration, even without using pair overlap. This corrects any interpretation that every local opening needs overlap to explain it.
+
+Residual 3 has much more local overlap here, but clear duration is not proportional to this selected pair's overlap. The other blockers, their concentration, and additional pair or higher-order overlaps still affect the final total.
+
+### Nearby and tight counterchecks
+
+Change q from 56 to 57 while keeping u=64,v=72 and the same three residuals. The order between residuals 1 and 2 reverses:
+
+| q | O for r=1 | O for r=2 | Ordering |
+| --- | --- | --- | --- |
+| 56 | 9/3616 | 13/8512 | r=1 is larger |
+| 57 | 5/2622 | 1/456 | r=2 is larger |
+
+The K profiles are unchanged because they depend only on r and t. Actual overlap also depends on which fast phases the trajectory visits. This is a countercheck against ranking actual overlap by the phase profile alone. Residual 3 still has the largest overlap among the three in both prescribed fast examples; this is a bounded observation, not a universal ranking.
+
+For the smaller q=6, keep u=7,v=11:
+
+| Pair | Selected-pair bound O-E | Actual clear duration in J |
+| --- | --- | --- |
+| 6,13 | -983/96096 | 0; t=3/8 remains valid |
+| 6,14 | -13/616 | 1/112 |
+| 6,15 | 31/7392 | 1/112 |
+
+Both last cases have the same allowed set in J: `[17/56,5/16]` together with `{3/8}`. The chosen pair certifies the 6,15 case but not the 6,14 case. This is another explicit reminder that a failed sufficient bound is not complete coverage. The tight first case preserves the distinction between zero duration and no valid time.
+
+### Reproduction and next question
+
+Run `python -m scripts.analyze_residual_overlap`. The standard-library analysis writes [exact certificates](../experiments/residual_overlap.json). Add `--figure` to regenerate the SVG with Matplotlib; rendering is separate from certification. The core checker still has no plotting dependency.
+
+Nine prescribed inputs are the Cartesian product of residuals `{1,2,3}` with `(q,u,v)` equal to `(56,64,72)`, `(57,64,72)`, or `(6,7,11)`. All nine affine window constructions match direct interval intersections; all 36 endpoint durations match clipping; all nine allowed durations match an independent boundary-cell partition. Eight positive-width witness intervals have direct affine certificates. All three small-q cases preserve the valid endpoint 3/8. No broad scan, all-reference check, or new unbounded cutoff for r=2 or r=3 was attempted.
+
+The geometric derivation in S13 was re-opened for comparison. The local residual argument is recorded with AI provenance and pending independent review; no novelty is asserted. The existing q>=310 proof candidate concerns r=1 and is not silently extended to other residuals.
+
+**Next useful question:** can we bound how far actual overlap deviates from the area under K_r(t), using q and r? The exact auxiliary areas are `9/4096`, `1/512`, and `143/12288` for r=1,2,3; these are not the finite-q overlap durations. An explicit error bound could convert the phase picture into speed conditions, while the q=56-to-57 ordering reversal would be a necessary countercheck. The general question of sufficient overlap remains OPEN.
