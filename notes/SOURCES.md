@@ -134,13 +134,13 @@ Noah Kravitz, *Barely lonely runners and very lonely runners: a refined approach
 
 Inspected Proposition 6.1 and its proof on printed pages 12–13 on September 24, 2026. It preserves a safe interval for slower runners while one sufficiently fast runner moves through it. This is an established precedent for the time-perturbation argument in FAST_CLUSTER.md. The four-runner common-rotation construction is not claimed to be this proposition verbatim or to be new. The paper's n counts moving speeds in its technical formulation, so our total is n+1. No audit of the wider spectrum results.
 
-## S16 — Relative spectra and two-dimensional subtori: follow-up lead
+## S16 — Relative spectra and two-dimensional subtori
 
-Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026.
+Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026. Inspected preprint: arXiv:2411.12684v2, December 9, 2024.
 
-[Published PDF](https://escholarship.org/content/qt3mx8w3js/qt3mx8w3js_noSplash_9e8150c4b1543e5d1d9da402dec3a64a.pdf)
+[Journal record](https://escholarship.org/uc/item/3mx8w3js) · [Versioned HTML](https://arxiv.org/html/2411.12684v2) · [Published PDF](https://escholarship.org/content/qt3mx8w3js/qt3mx8w3js_noSplash_9e8150c4b1543e5d1d9da402dec3a64a.pdf)
 
-Located on September 24. The primary-source search excerpt for Section 1.4 describes an extension of the one-fast-runner study to general two-dimensional subtori; the journal PDF verifies the title, authors, and publication date. This is a relevant lead for the auxiliary (t,x) representation in FAST_CLUSTER.md. The theorem statements and proofs have not been audited, and this source is not being used to establish our restricted-family claim. Comparing the precise statements is a next reading task, not a completed novelty check. The S1 HTML could not be retrieved during this continuation; no fresh claims were inferred from that failure.
+September 24 follow-up: read definitions, Theorem 1.1, Section 1.4, and the Section 2.1 proof outline. Their n counts our n-1 moving coordinates. This upgrades the earlier search-excerpt lead; the full proof remains unaudited. FAST_CLUSTER.md Section 7 gives the comparison and our own mapping. We do not attribute our Fourier argument, threshold guarantee, or novelty to this source.
 
 ## Source discipline
 

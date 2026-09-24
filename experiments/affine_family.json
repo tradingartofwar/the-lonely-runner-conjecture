@@ -1,0 +1,2708 @@
+{
+  "date": "2026-09-24",
+  "base_commit": "89087ffb3b3371567a8a415fa9a59bb9ef5d0e5c",
+  "scope": "n=8, common start, reference 0; fixed positive integer core triple; four fixed distinct pairs (b_i,a_i), positive integer b_i, integer a_i; extras b_i*q+a_i for sufficiently large integer q.",
+  "claim_status": {
+    "general_argument": "HYPOTHESIS/proof candidate; AI-generated, independent review outstanding, no novelty claim.",
+    "finite_checks": "OBSERVED, exact rational computations.",
+    "all_seven_speeds_growing_forces_strictness": "DISPROVEN by common scaling of 1,...,7.",
+    "arbitrary_seven_speed_method": "OPEN in this investigation."
+  },
+  "source_sha256": {
+    "scripts/analyze_affine_family.py": "02502d5e7617c0865b69d5d4cb91872757acc9f6a3fd31a04ff4aef10e434d6d",
+    "scripts/analyze_core_transfer.py": "2c4600cd2e631c51127e7b748f9cae5220b1f8a3c174874a1c7b108e5356456f",
+    "scripts/analyze_local_overlap.py": "62f21072b99bd66cb558cb84101e145afde4da3a8067c801f0339e85681dacb4",
+    "scripts/analyze_blocking_overlaps.py": "bf5e0339a69f83055c5e1f12908769ceb0598643a9dc88467b93fc26e454c7e4",
+    "scripts/analyze_overlap_placement.py": "3fdd49d97de4e6e7f52bc13e5b92df229c7641e10078cffc793fa4f4dc199636",
+    "scripts/analyze_phase_discrepancy.py": "13fc159a9da8431076445f317d17155560096da8c352bfe5b1c754507fdb7cbb",
+    "scripts/analyze_two_variable_speeds.py": "b7bc07d114afcc4bb49edefe3f0ca8b5110af7d68dfb2969baf249a1d211569a",
+    "lonely_runner/checker.py": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971"
+  },
+  "profiles": [
+    {
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "terms_b_a": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "core_component": [
+        "9/32",
+        "3/8"
+      ],
+      "slow_time_t0": "21/64",
+      "phase_x0": "875/1536",
+      "core_margin": "3/16",
+      "fast_margin": "115/512",
+      "frozen_phase": {
+        "terms_b_a": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            7
+          ]
+        ],
+        "slow_time": "21/64",
+        "allowed_phases": [
+          [
+            "53/256",
+            "35/128"
+          ],
+          [
+            "95/192",
+            "165/256"
+          ],
+          [
+            "181/256",
+            "143/192"
+          ]
+        ],
+        "clear_phase_duration": "65/256",
+        "redundant_blocking": "65/256",
+        "blocking_count_histogram": [
+          "65/256",
+          "127/256",
+          "63/256",
+          "1/256",
+          "0"
+        ],
+        "individual_blocked_durations": [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        "minimum_winding": 1,
+        "minimum_winding_offsets": [
+          0
+        ],
+        "minimum_winding_phases": [
+          "0"
+        ],
+        "exact_real_phasor_sum": 1,
+        "unique_minimum_winding": true
+      },
+      "strict_q_bounds": {
+        "above_core": "12",
+        "fast_distinctness": "14",
+        "core_drift": "40/3",
+        "offset_drift": "1792/115",
+        "inside_core_component": "32/3"
+      },
+      "strict_q_bound": "1792/115",
+      "sufficient_integer_q": 16,
+      "checks": [
+        {
+          "q": 15,
+          "in_guaranteed_range": false,
+          "speeds": [
+            1,
+            4,
+            5,
+            15,
+            31,
+            50,
+            67
+          ],
+          "rounded_integer": 4,
+          "witness_time": "7019/23040",
+          "time_shift": "-541/23040",
+          "distances": {
+            "1": "7019/23040",
+            "4": "1259/5760",
+            "5": "2197/4608",
+            "15": "661/1536",
+            "31": "10229/23040",
+            "50": "535/2304",
+            "67": "9473/23040"
+          },
+          "minimum_distance": "1259/5760",
+          "core_lower_bound": "7/48",
+          "fast_lower_bound": "893/7680",
+          "complete_allowed_summary": {
+            "component_count": 30,
+            "sha256_json_string_endpoints": "ba0fb630255ce5de718f020224af3bd557ec0c367c2e5349f64c3db67d794ebf",
+            "first_component": [
+              "1/8",
+              "1/8"
+            ],
+            "last_component": [
+              "7/8",
+              "7/8"
+            ]
+          },
+          "clear_duration": "10439/83080",
+          "isolated_contacts": [
+            {
+              "time": "1/8",
+              "blocking_ends": [
+                1
+              ],
+              "blocking_starts": [
+                15,
+                31
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 1,
+                  "incoming": 15,
+                  "integers": [
+                    "0",
+                    "2"
+                  ],
+                  "sum_over_8": "2"
+                },
+                {
+                  "outgoing": 1,
+                  "incoming": 31,
+                  "integers": [
+                    "0",
+                    "4"
+                  ],
+                  "sum_over_8": "4"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "blocking_ends": [
+                67
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 67,
+                  "incoming": 5,
+                  "integers": [
+                    "25",
+                    "2"
+                  ],
+                  "sum_over_8": "9"
+                }
+              ]
+            },
+            {
+              "time": "5/8",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                67
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 67,
+                  "integers": [
+                    "3",
+                    "42"
+                  ],
+                  "sum_over_8": "9"
+                }
+              ]
+            },
+            {
+              "time": "7/8",
+              "blocking_ends": [
+                15,
+                31
+              ],
+              "blocking_starts": [
+                1
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 15,
+                  "incoming": 1,
+                  "integers": [
+                    "13",
+                    "1"
+                  ],
+                  "sum_over_8": "2"
+                },
+                {
+                  "outgoing": 31,
+                  "incoming": 1,
+                  "integers": [
+                    "27",
+                    "1"
+                  ],
+                  "sum_over_8": "4"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "93839/308736",
+            "157117/514560"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "93839/308736",
+              "phase_right": "157117/514560"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "16655/77184",
+              "phase_right": "28477/128640"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "160459/308736",
+              "phase_right": "54205/102912"
+            },
+            {
+              "speed": 15,
+              "integer_part": 4,
+              "phase_left": "57547/102912",
+              "phase_right": "19901/34304"
+            },
+            {
+              "speed": 31,
+              "integer_part": 9,
+              "phase_left": "130385/308736",
+              "phase_right": "239587/514560"
+            },
+            {
+              "speed": 50,
+              "integer_part": 15,
+              "phase_left": "30455/154368",
+              "phase_right": "13745/51456"
+            },
+            {
+              "speed": 67,
+              "integer_part": 20,
+              "phase_left": "1679/4608",
+              "phase_right": "3517/7680"
+            }
+          ]
+        },
+        {
+          "q": 16,
+          "in_guaranteed_range": true,
+          "speeds": [
+            1,
+            4,
+            5,
+            16,
+            33,
+            53,
+            71
+          ],
+          "rounded_integer": 5,
+          "witness_time": "8555/24576",
+          "time_shift": "491/24576",
+          "distances": {
+            "1": "8555/24576",
+            "4": "2411/6144",
+            "5": "6377/24576",
+            "16": "661/1536",
+            "33": "3993/8192",
+            "53": "11047/24576",
+            "71": "6995/24576"
+          },
+          "minimum_distance": "6377/24576",
+          "core_lower_bound": "5/32",
+          "fast_lower_bound": "67/512",
+          "complete_allowed_summary": {
+            "component_count": 26,
+            "sha256_json_string_endpoints": "660d0e2755500b8c264e7ab9dea2e9b349201235734dd8cf60603c55bea2dfd1",
+            "first_component": [
+              "57/424",
+              "79/568"
+            ],
+            "last_component": [
+              "489/568",
+              "367/424"
+            ]
+          },
+          "clear_duration": "2390779/19868640",
+          "isolated_contacts": [],
+          "interval": [
+            "403835/1163264",
+            "1218115/3489792"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "403835/1163264",
+              "phase_right": "1218115/3489792"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "113019/290816",
+              "phase_right": "345667/872448"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "855911/1163264",
+              "phase_right": "2600783/3489792"
+            },
+            {
+              "speed": 16,
+              "integer_part": 5,
+              "phase_left": "40315/72704",
+              "phase_right": "127555/218112"
+            },
+            {
+              "speed": 33,
+              "integer_part": 11,
+              "phase_left": "530651/1163264",
+              "phase_right": "603361/1163264"
+            },
+            {
+              "speed": 53,
+              "integer_part": 18,
+              "phase_left": "464503/1163264",
+              "phase_right": "1743839/3489792"
+            },
+            {
+              "speed": 71,
+              "integer_part": 24,
+              "phase_left": "10619/16384",
+              "phase_right": "38467/49152"
+            }
+          ]
+        },
+        {
+          "q": 17,
+          "in_guaranteed_range": true,
+          "speeds": [
+            1,
+            4,
+            5,
+            17,
+            35,
+            56,
+            75
+          ],
+          "rounded_integer": 5,
+          "witness_time": "8555/26112",
+          "time_shift": "-13/26112",
+          "distances": {
+            "1": "8555/26112",
+            "4": "2027/6528",
+            "5": "9449/26112",
+            "17": "661/1536",
+            "35": "12193/26112",
+            "56": "1133/3264",
+            "75": "3725/8704"
+          },
+          "minimum_distance": "2027/6528",
+          "core_lower_bound": "45/272",
+          "fast_lower_bound": "1251/8704",
+          "complete_allowed_summary": {
+            "component_count": 30,
+            "sha256_json_string_endpoints": "9eae6cf22cc839bfe33dc9b172bbd761f6720bba534713ef4769b8bd37307ead",
+            "first_component": [
+              "57/448",
+              "79/600"
+            ],
+            "last_component": [
+              "521/600",
+              "391/448"
+            ]
+          },
+          "clear_duration": "1891/16800",
+          "isolated_contacts": [
+            {
+              "time": "17/40",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                35,
+                75
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 35,
+                  "integers": [
+                    "2",
+                    "15"
+                  ],
+                  "sum_over_8": "5"
+                },
+                {
+                  "outgoing": 5,
+                  "incoming": 75,
+                  "integers": [
+                    "2",
+                    "32"
+                  ],
+                  "sum_over_8": "10"
+                }
+              ]
+            },
+            {
+              "time": "23/40",
+              "blocking_ends": [
+                35,
+                75
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 35,
+                  "incoming": 5,
+                  "integers": [
+                    "20",
+                    "3"
+                  ],
+                  "sum_over_8": "5"
+                },
+                {
+                  "outgoing": 75,
+                  "incoming": 5,
+                  "integers": [
+                    "43",
+                    "3"
+                  ],
+                  "sum_over_8": "10"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "639203/1958400",
+            "644047/1958400"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "639203/1958400",
+              "phase_right": "644047/1958400"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "149603/489600",
+              "phase_right": "154447/489600"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "247523/391680",
+              "phase_right": "252367/391680"
+            },
+            {
+              "speed": 17,
+              "integer_part": 5,
+              "phase_left": "63203/115200",
+              "phase_right": "68047/115200"
+            },
+            {
+              "speed": 35,
+              "integer_part": 11,
+              "phase_left": "165941/391680",
+              "phase_right": "199849/391680"
+            },
+            {
+              "speed": 56,
+              "integer_part": 18,
+              "phase_left": "68021/244800",
+              "phase_right": "101929/244800"
+            },
+            {
+              "speed": 75,
+              "integer_part": 24,
+              "phase_left": "12515/26112",
+              "phase_right": "17359/26112"
+            }
+          ]
+        },
+        {
+          "q": 32,
+          "in_guaranteed_range": true,
+          "speeds": [
+            1,
+            4,
+            5,
+            32,
+            65,
+            101,
+            135
+          ],
+          "rounded_integer": 10,
+          "witness_time": "16235/49152",
+          "time_shift": "107/49152",
+          "distances": {
+            "1": "16235/49152",
+            "4": "3947/12288",
+            "5": "17129/49152",
+            "32": "661/1536",
+            "65": "23083/49152",
+            "101": "17719/49152",
+            "135": "6705/16384"
+          },
+          "minimum_distance": "3947/12288",
+          "core_lower_bound": "15/64",
+          "fast_lower_bound": "123/512",
+          "complete_allowed_summary": {
+            "component_count": 52,
+            "sha256_json_string_endpoints": "bddedf2b2c1d98216cb9432ff025c0a25d30c49567f5f22cb84753ed5a3d04c9",
+            "first_component": [
+              "105/808",
+              "143/1080"
+            ],
+            "last_component": [
+              "937/1080",
+              "703/808"
+            ]
+          },
+          "clear_duration": "127681/1134432",
+          "isolated_contacts": [
+            {
+              "time": "13/40",
+              "blocking_ends": [
+                65
+              ],
+              "blocking_starts": [
+                135
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 65,
+                  "incoming": 135,
+                  "integers": [
+                    "21",
+                    "44"
+                  ],
+                  "sum_over_8": "25"
+                }
+              ]
+            },
+            {
+              "time": "27/40",
+              "blocking_ends": [
+                135
+              ],
+              "blocking_starts": [
+                65
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 135,
+                  "incoming": 65,
+                  "integers": [
+                    "91",
+                    "44"
+                  ],
+                  "sum_over_8": "25"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "2186903/6635520",
+            "2196547/6635520"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "2186903/6635520",
+              "phase_right": "2196547/6635520"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "528023/1658880",
+              "phase_right": "537667/1658880"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "859799/1327104",
+              "phase_right": "869443/1327104"
+            },
+            {
+              "speed": 32,
+              "integer_part": 10,
+              "phase_left": "113303/207360",
+              "phase_right": "122947/207360"
+            },
+            {
+              "speed": 65,
+              "integer_part": 21,
+              "phase_left": "560555/1327104",
+              "phase_right": "685927/1327104"
+            },
+            {
+              "speed": 101,
+              "integer_part": 33,
+              "phase_left": "1905043/6635520",
+              "phase_right": "2879087/6635520"
+            },
+            {
+              "speed": 135,
+              "integer_part": 44,
+              "phase_left": "24215/49152",
+              "phase_right": "33859/49152"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "terms_b_a": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "core_component": [
+        "9/32",
+        "3/8"
+      ],
+      "slow_time_t0": "21/64",
+      "phase_x0": "23/128",
+      "core_margin": "3/16",
+      "fast_margin": "7/128",
+      "frozen_phase": {
+        "terms_b_a": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "slow_time": "21/64",
+        "allowed_phases": [
+          [
+            "1/8",
+            "15/64"
+          ],
+          [
+            "31/64",
+            "35/64"
+          ],
+          [
+            "53/64",
+            "7/8"
+          ]
+        ],
+        "clear_phase_duration": "7/32",
+        "redundant_blocking": "7/32",
+        "blocking_count_histogram": [
+          "7/32",
+          "9/16",
+          "7/32",
+          "0",
+          "0"
+        ],
+        "individual_blocked_durations": [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        "minimum_winding": 1,
+        "minimum_winding_offsets": [
+          0,
+          1,
+          5,
+          7
+        ],
+        "minimum_winding_phases": [
+          "0",
+          "21/64",
+          "41/64",
+          "19/64"
+        ],
+        "exact_real_phasor_sum": null,
+        "unique_minimum_winding": false
+      },
+      "strict_q_bounds": {
+        "above_core": "12",
+        "fast_distinctness": "14",
+        "core_drift": "40/3",
+        "offset_drift": "64",
+        "inside_core_component": "32/3"
+      },
+      "strict_q_bound": "64",
+      "sufficient_integer_q": 65,
+      "checks": [
+        {
+          "q": 64,
+          "in_guaranteed_range": false,
+          "speeds": [
+            1,
+            4,
+            5,
+            64,
+            65,
+            69,
+            71
+          ],
+          "rounded_integer": 21,
+          "witness_time": "2711/8192",
+          "time_shift": "23/8192",
+          "distances": {
+            "1": "2711/8192",
+            "4": "663/2048",
+            "5": "2829/8192",
+            "64": "23/128",
+            "65": "4009/8192",
+            "69": "1357/8192",
+            "71": "4065/8192"
+          },
+          "minimum_distance": "1357/8192",
+          "core_lower_bound": "35/128",
+          "fast_lower_bound": "1/8",
+          "complete_allowed_summary": {
+            "component_count": 46,
+            "sha256_json_string_endpoints": "a59db3f901556d6e63b2284105292851b3bf029f333384366010444b5aa8ffb6",
+            "first_component": [
+              "73/568",
+              "71/552"
+            ],
+            "last_component": [
+              "481/552",
+              "495/568"
+            ]
+          },
+          "clear_duration": "8233399/81519360",
+          "isolated_contacts": [],
+          "interval": [
+            "384629/1163264",
+            "385295/1163264"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "384629/1163264",
+              "phase_right": "385295/1163264"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "93813/290816",
+              "phase_right": "94479/290816"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "759881/1163264",
+              "phase_right": "763211/1163264"
+            },
+            {
+              "speed": 64,
+              "integer_part": 21,
+              "phase_left": "2933/18176",
+              "phase_right": "3599/18176"
+            },
+            {
+              "speed": 65,
+              "integer_part": 21,
+              "phase_left": "572341/1163264",
+              "phase_right": "615631/1163264"
+            },
+            {
+              "speed": 69,
+              "integer_part": 22,
+              "phase_left": "947593/1163264",
+              "phase_right": "993547/1163264"
+            },
+            {
+              "speed": 71,
+              "integer_part": 23,
+              "phase_left": "7797/16384",
+              "phase_right": "8463/16384"
+            }
+          ]
+        },
+        {
+          "q": 65,
+          "in_guaranteed_range": true,
+          "speeds": [
+            1,
+            4,
+            5,
+            65,
+            66,
+            70,
+            72
+          ],
+          "rounded_integer": 21,
+          "witness_time": "2711/8320",
+          "time_shift": "-19/8320",
+          "distances": {
+            "1": "2711/8320",
+            "4": "631/2080",
+            "5": "617/1664",
+            "65": "23/128",
+            "66": "2057/4160",
+            "70": "159/832",
+            "72": "479/1040"
+          },
+          "minimum_distance": "23/128",
+          "core_lower_bound": "57/208",
+          "fast_lower_bound": "1047/8320",
+          "complete_allowed_summary": {
+            "component_count": 48,
+            "sha256_json_string_endpoints": "956cda4b666b340e78df5cc0d5c7bcf30dc923acd5072e428fddeda5cce06289",
+            "first_component": [
+              "73/576",
+              "71/560"
+            ],
+            "last_component": [
+              "489/560",
+              "503/576"
+            ]
+          },
+          "clear_duration": "418/4095",
+          "isolated_contacts": [],
+          "interval": [
+            "389929/1198080",
+            "390839/1198080"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "389929/1198080",
+              "phase_right": "390839/1198080"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "90409/299520",
+              "phase_right": "91319/299520"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "150313/239616",
+              "phase_right": "151223/239616"
+            },
+            {
+              "speed": 65,
+              "integer_part": 21,
+              "phase_left": "2857/18432",
+              "phase_right": "3767/18432"
+            },
+            {
+              "speed": 66,
+              "integer_part": 21,
+              "phase_left": "95939/199680",
+              "phase_right": "105949/199680"
+            },
+            {
+              "speed": 70,
+              "integer_part": 22,
+              "phase_left": "93727/119808",
+              "phase_right": "100097/119808"
+            },
+            {
+              "speed": 72,
+              "integer_part": 23,
+              "phase_left": "7209/16640",
+              "phase_right": "8119/16640"
+            }
+          ]
+        },
+        {
+          "q": 66,
+          "in_guaranteed_range": true,
+          "speeds": [
+            1,
+            4,
+            5,
+            66,
+            67,
+            71,
+            73
+          ],
+          "rounded_integer": 21,
+          "witness_time": "2711/8448",
+          "time_shift": "-61/8448",
+          "distances": {
+            "1": "2711/8448",
+            "4": "599/2112",
+            "5": "3341/8448",
+            "66": "23/128",
+            "67": "4219/8448",
+            "71": "1823/8448",
+            "73": "3599/8448"
+          },
+          "minimum_distance": "23/128",
+          "core_lower_bound": "145/528",
+          "fast_lower_bound": "535/4224",
+          "complete_allowed_summary": {
+            "component_count": 48,
+            "sha256_json_string_endpoints": "ed3ba261c90ae29b8194c20251b87fda89d2a213e61d4980fbaa4de314cec1ba",
+            "first_component": [
+              "1/8",
+              "1/8"
+            ],
+            "last_component": [
+              "7/8",
+              "7/8"
+            ]
+          },
+          "clear_duration": "23245391/229192260",
+          "isolated_contacts": [
+            {
+              "time": "1/8",
+              "blocking_ends": [
+                1,
+                73
+              ],
+              "blocking_starts": [
+                71
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 1,
+                  "incoming": 71,
+                  "integers": [
+                    "0",
+                    "9"
+                  ],
+                  "sum_over_8": "9"
+                },
+                {
+                  "outgoing": 73,
+                  "incoming": 71,
+                  "integers": [
+                    "9",
+                    "9"
+                  ],
+                  "sum_over_8": "18"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "blocking_ends": [
+                67
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 67,
+                  "incoming": 5,
+                  "integers": [
+                    "25",
+                    "2"
+                  ],
+                  "sum_over_8": "9"
+                }
+              ]
+            },
+            {
+              "time": "5/8",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                67
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 67,
+                  "integers": [
+                    "3",
+                    "42"
+                  ],
+                  "sum_over_8": "9"
+                }
+              ]
+            },
+            {
+              "time": "7/8",
+              "blocking_ends": [
+                71
+              ],
+              "blocking_starts": [
+                1,
+                73
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 71,
+                  "incoming": 1,
+                  "integers": [
+                    "62",
+                    "1"
+                  ],
+                  "sum_over_8": "9"
+                },
+                {
+                  "outgoing": 71,
+                  "incoming": 73,
+                  "integers": [
+                    "62",
+                    "64"
+                  ],
+                  "sum_over_8": "18"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "24709/77088",
+            "99067/308352"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "24709/77088",
+              "phase_right": "99067/308352"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "5437/19272",
+              "phase_right": "21979/77088"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "46457/77088",
+              "phase_right": "186983/308352"
+            },
+            {
+              "speed": 66,
+              "integer_part": 21,
+              "phase_left": "181/1168",
+              "phase_right": "955/4672"
+            },
+            {
+              "speed": 67,
+              "integer_part": 21,
+              "phase_left": "36655/77088",
+              "phase_right": "162097/308352"
+            },
+            {
+              "speed": 71,
+              "integer_part": 22,
+              "phase_left": "58403/77088",
+              "phase_right": "250013/308352"
+            },
+            {
+              "speed": 73,
+              "integer_part": 23,
+              "phase_left": "421/1056",
+              "phase_right": "1915/4224"
+            }
+          ]
+        },
+        {
+          "q": 130,
+          "in_guaranteed_range": true,
+          "speeds": [
+            1,
+            4,
+            5,
+            130,
+            131,
+            135,
+            137
+          ],
+          "rounded_integer": 42,
+          "witness_time": "5399/16640",
+          "time_shift": "-61/16640",
+          "distances": {
+            "1": "5399/16640",
+            "4": "1239/4160",
+            "5": "1257/3328",
+            "130": "23/128",
+            "131": "8251/16640",
+            "135": "659/3328",
+            "137": "7503/16640"
+          },
+          "minimum_distance": "23/128",
+          "core_lower_bound": "61/208",
+          "fast_lower_bound": "1271/8320",
+          "complete_allowed_summary": {
+            "component_count": 94,
+            "sha256_json_string_endpoints": "5dd4c9dcfa93221a3bff7891e1041548ead2aeed1412c295fa2ce47710b0afb2",
+            "first_component": [
+              "1/8",
+              "1/8"
+            ],
+            "last_component": [
+              "7/8",
+              "7/8"
+            ]
+          },
+          "clear_duration": "1701937/16798392",
+          "isolated_contacts": [
+            {
+              "time": "1/8",
+              "blocking_ends": [
+                1,
+                137
+              ],
+              "blocking_starts": [
+                135
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 1,
+                  "incoming": 135,
+                  "integers": [
+                    "0",
+                    "17"
+                  ],
+                  "sum_over_8": "17"
+                },
+                {
+                  "outgoing": 137,
+                  "incoming": 135,
+                  "integers": [
+                    "17",
+                    "17"
+                  ],
+                  "sum_over_8": "34"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "blocking_ends": [
+                131
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 131,
+                  "incoming": 5,
+                  "integers": [
+                    "49",
+                    "2"
+                  ],
+                  "sum_over_8": "17"
+                }
+              ]
+            },
+            {
+              "time": "5/8",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                131
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 131,
+                  "integers": [
+                    "3",
+                    "82"
+                  ],
+                  "sum_over_8": "17"
+                }
+              ]
+            },
+            {
+              "time": "7/8",
+              "blocking_ends": [
+                135
+              ],
+              "blocking_starts": [
+                1,
+                137
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 135,
+                  "incoming": 1,
+                  "integers": [
+                    "118",
+                    "1"
+                  ],
+                  "sum_over_8": "17"
+                },
+                {
+                  "outgoing": 135,
+                  "incoming": 137,
+                  "integers": [
+                    "118",
+                    "120"
+                  ],
+                  "sum_over_8": "34"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "92401/284960",
+            "370059/1139840"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 1,
+              "integer_part": 0,
+              "phase_left": "92401/284960",
+              "phase_right": "370059/1139840"
+            },
+            {
+              "speed": 4,
+              "integer_part": 1,
+              "phase_left": "21161/71240",
+              "phase_right": "85099/284960"
+            },
+            {
+              "speed": 5,
+              "integer_part": 1,
+              "phase_left": "35409/56992",
+              "phase_right": "142091/227968"
+            },
+            {
+              "speed": 130,
+              "integer_part": 42,
+              "phase_left": "337/2192",
+              "phase_right": "1803/8768"
+            },
+            {
+              "speed": 131,
+              "integer_part": 42,
+              "phase_left": "136211/284960",
+              "phase_right": "604449/1139840"
+            },
+            {
+              "speed": 135,
+              "integer_part": 43,
+              "phase_left": "44171/56992",
+              "phase_right": "188969/227968"
+            },
+            {
+              "speed": 137,
+              "integer_part": 44,
+              "phase_left": "881/2080",
+              "phase_right": "3979/8320"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "terms_b_a": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "core_component": [
+        "1/16",
+        "7/40"
+      ],
+      "slow_time_t0": "13/100",
+      "phase_x0": "487/800",
+      "core_margin": "27/200",
+      "fast_margin": "3/800",
+      "frozen_phase": {
+        "terms_b_a": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "slow_time": "13/100",
+        "allowed_phases": [
+          [
+            "19/80",
+            "97/400"
+          ],
+          [
+            "121/200",
+            "49/80"
+          ],
+          [
+            "59/80",
+            "297/400"
+          ],
+          [
+            "347/400",
+            "7/8"
+          ]
+        ],
+        "clear_phase_duration": "1/40",
+        "redundant_blocking": "1/40",
+        "blocking_count_histogram": [
+          "1/40",
+          "19/20",
+          "1/40",
+          "0",
+          "0"
+        ],
+        "individual_blocked_durations": [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        "minimum_winding": 1,
+        "minimum_winding_offsets": [
+          0,
+          4
+        ],
+        "minimum_winding_phases": [
+          "0",
+          "13/25"
+        ],
+        "exact_real_phasor_sum": null,
+        "unique_minimum_winding": false
+      },
+      "strict_q_bounds": {
+        "above_core": "10",
+        "fast_distinctness": "10",
+        "core_drift": "500/27",
+        "offset_drift": "2000/3",
+        "inside_core_component": "100/9"
+      },
+      "strict_q_bound": "2000/3",
+      "sufficient_integer_q": 667,
+      "checks": [
+        {
+          "q": 666,
+          "in_guaranteed_range": false,
+          "speeds": [
+            2,
+            3,
+            5,
+            666,
+            670,
+            1335,
+            1337
+          ],
+          "rounded_integer": 86,
+          "witness_time": "69287/532800",
+          "time_shift": "23/532800",
+          "distances": {
+            "2": "69287/266400",
+            "3": "69287/177600",
+            "5": "37273/106560",
+            "666": "313/800",
+            "670": "6869/53280",
+            "1335": "13937/35520",
+            "1337": "70481/532800"
+          },
+          "minimum_distance": "6869/53280",
+          "core_lower_bound": "8533/33300",
+          "fast_lower_bound": "33299/266400",
+          "complete_allowed_summary": {
+            "component_count": 740,
+            "sha256_json_string_endpoints": "062b6a01a253085b2d03e06c5c3d33a2f5ab1603ea1c5cf8bebc2950fe36a14a",
+            "first_component": [
+              "1/16",
+              "1/16"
+            ],
+            "last_component": [
+              "15/16",
+              "15/16"
+            ]
+          },
+          "clear_duration": "26093331/294983647",
+          "isolated_contacts": [
+            {
+              "time": "1/16",
+              "blocking_ends": [
+                2
+              ],
+              "blocking_starts": [
+                670
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 2,
+                  "incoming": 670,
+                  "integers": [
+                    "0",
+                    "42"
+                  ],
+                  "sum_over_8": "84"
+                }
+              ]
+            },
+            {
+              "time": "1/8",
+              "blocking_ends": [
+                1337
+              ],
+              "blocking_starts": [
+                1335
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 1337,
+                  "incoming": 1335,
+                  "integers": [
+                    "167",
+                    "167"
+                  ],
+                  "sum_over_8": "334"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "blocking_ends": [
+                3
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 3,
+                  "incoming": 5,
+                  "integers": [
+                    "1",
+                    "2"
+                  ],
+                  "sum_over_8": "1"
+                }
+              ]
+            },
+            {
+              "time": "5/8",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                3
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 3,
+                  "integers": [
+                    "3",
+                    "2"
+                  ],
+                  "sum_over_8": "1"
+                }
+              ]
+            },
+            {
+              "time": "7/8",
+              "blocking_ends": [
+                1335
+              ],
+              "blocking_starts": [
+                1337
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 1335,
+                  "incoming": 1337,
+                  "integers": [
+                    "1168",
+                    "1170"
+                  ],
+                  "sum_over_8": "334"
+                }
+              ]
+            },
+            {
+              "time": "15/16",
+              "blocking_ends": [
+                670
+              ],
+              "blocking_starts": [
+                2
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 670,
+                  "incoming": 2,
+                  "integers": [
+                    "628",
+                    "2"
+                  ],
+                  "sum_over_8": "84"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "15439279/118725600",
+            "23159441/178088400"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 2,
+              "integer_part": 0,
+              "phase_left": "15439279/59362800",
+              "phase_right": "23159441/89044200"
+            },
+            {
+              "speed": 3,
+              "integer_part": 0,
+              "phase_left": "15439279/39575200",
+              "phase_right": "23159441/59362800"
+            },
+            {
+              "speed": 5,
+              "integer_part": 0,
+              "phase_left": "15439279/23745120",
+              "phase_right": "23159441/35617680"
+            },
+            {
+              "speed": 666,
+              "integer_part": 86,
+              "phase_left": "325037/534800",
+              "phase_right": "163041/267400"
+            },
+            {
+              "speed": 670,
+              "integer_part": 87,
+              "phase_left": "1518973/11872560",
+              "phase_right": "2313467/17808840"
+            },
+            {
+              "speed": 1335,
+              "integer_part": 173,
+              "phase_left": "4793911/7915040",
+              "phase_right": "7237369/11872560"
+            },
+            {
+              "speed": 1337,
+              "integer_part": 173,
+              "phase_left": "76879/88800",
+              "phase_right": "115841/133200"
+            }
+          ]
+        },
+        {
+          "q": 667,
+          "in_guaranteed_range": true,
+          "speeds": [
+            2,
+            3,
+            5,
+            667,
+            671,
+            1337,
+            1339
+          ],
+          "rounded_integer": 86,
+          "witness_time": "69287/533600",
+          "time_shift": "-81/533600",
+          "distances": {
+            "2": "69287/266800",
+            "3": "207861/533600",
+            "5": "37433/106720",
+            "667": "313/800",
+            "671": "68377/533600",
+            "1337": "209681/533600",
+            "1339": "71107/533600"
+          },
+          "minimum_distance": "68377/533600",
+          "core_lower_bound": "4273/16675",
+          "fast_lower_bound": "66701/533600",
+          "complete_allowed_summary": {
+            "component_count": 740,
+            "sha256_json_string_endpoints": "7f77abbee8519366e0aba71c88ddefcf19f746065f0dcb0a2401adb724c49d09",
+            "first_component": [
+              "337/5336",
+              "679/10712"
+            ],
+            "last_component": [
+              "10033/10712",
+              "4999/5336"
+            ]
+          },
+          "clear_duration": "168421611/1876430413",
+          "isolated_contacts": [
+            {
+              "time": "1/8",
+              "blocking_ends": [
+                1337
+              ],
+              "blocking_starts": [
+                671
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 1337,
+                  "incoming": 671,
+                  "integers": [
+                    "167",
+                    "84"
+                  ],
+                  "sum_over_8": "251"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "blocking_ends": [
+                3,
+                667,
+                1339
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 3,
+                  "incoming": 5,
+                  "integers": [
+                    "1",
+                    "2"
+                  ],
+                  "sum_over_8": "1"
+                },
+                {
+                  "outgoing": 667,
+                  "incoming": 5,
+                  "integers": [
+                    "250",
+                    "2"
+                  ],
+                  "sum_over_8": "84"
+                },
+                {
+                  "outgoing": 1339,
+                  "incoming": 5,
+                  "integers": [
+                    "502",
+                    "2"
+                  ],
+                  "sum_over_8": "168"
+                }
+              ]
+            },
+            {
+              "time": "5/8",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                3,
+                667,
+                1339
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 3,
+                  "integers": [
+                    "3",
+                    "2"
+                  ],
+                  "sum_over_8": "1"
+                },
+                {
+                  "outgoing": 5,
+                  "incoming": 667,
+                  "integers": [
+                    "3",
+                    "417"
+                  ],
+                  "sum_over_8": "84"
+                },
+                {
+                  "outgoing": 5,
+                  "incoming": 1339,
+                  "integers": [
+                    "3",
+                    "837"
+                  ],
+                  "sum_over_8": "168"
+                }
+              ]
+            },
+            {
+              "time": "7/8",
+              "blocking_ends": [
+                671
+              ],
+              "blocking_starts": [
+                1337
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 671,
+                  "incoming": 1337,
+                  "integers": [
+                    "587",
+                    "1170"
+                  ],
+                  "sum_over_8": "251"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "14272993/109921600",
+            "14273251/109921600"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 2,
+              "integer_part": 0,
+              "phase_left": "14272993/54960800",
+              "phase_right": "14273251/54960800"
+            },
+            {
+              "speed": 3,
+              "integer_part": 0,
+              "phase_left": "42818979/109921600",
+              "phase_right": "42819753/109921600"
+            },
+            {
+              "speed": 5,
+              "integer_part": 0,
+              "phase_left": "14272993/21984320",
+              "phase_right": "14273251/21984320"
+            },
+            {
+              "speed": 667,
+              "integer_part": 86,
+              "phase_left": "100193/164800",
+              "phase_right": "100451/164800"
+            },
+            {
+              "speed": 671,
+              "integer_part": 87,
+              "phase_left": "13999103/109921600",
+              "phase_right": "14172221/109921600"
+            },
+            {
+              "speed": 1337,
+              "integer_part": 173,
+              "phase_left": "66554841/109921600",
+              "phase_right": "66899787/109921600"
+            },
+            {
+              "speed": 1339,
+              "integer_part": 173,
+              "phase_left": "923309/1067200",
+              "phase_right": "926663/1067200"
+            }
+          ]
+        },
+        {
+          "q": 668,
+          "in_guaranteed_range": true,
+          "speeds": [
+            2,
+            3,
+            5,
+            668,
+            672,
+            1339,
+            1341
+          ],
+          "rounded_integer": 86,
+          "witness_time": "69287/534400",
+          "time_shift": "-37/106880",
+          "distances": {
+            "2": "69287/267200",
+            "3": "207861/534400",
+            "5": "37593/106880",
+            "668": "313/800",
+            "672": "2127/16700",
+            "1339": "210307/534400",
+            "1341": "71733/534400"
+          },
+          "minimum_distance": "2127/16700",
+          "core_lower_bound": "8559/33400",
+          "fast_lower_bound": "16701/133600",
+          "complete_allowed_summary": {
+            "component_count": 742,
+            "sha256_json_string_endpoints": "351303a3540a90f0b4243bf9d9309d08057ad2c90b36315ea50263a25c06c39e",
+            "first_component": [
+              "337/5344",
+              "679/10728"
+            ],
+            "last_component": [
+              "10049/10728",
+              "5007/5344"
+            ]
+          },
+          "clear_duration": "39876665119/447798449280",
+          "isolated_contacts": [],
+          "interval": [
+            "18582647/143326080",
+            "92914499/716630400"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 2,
+              "integer_part": 0,
+              "phase_left": "18582647/71663040",
+              "phase_right": "92914499/358315200"
+            },
+            {
+              "speed": 3,
+              "integer_part": 0,
+              "phase_left": "18582647/47775360",
+              "phase_right": "92914499/238876800"
+            },
+            {
+              "speed": 5,
+              "integer_part": 0,
+              "phase_left": "18582647/28665216",
+              "phase_right": "92914499/143326080"
+            },
+            {
+              "speed": 668,
+              "integer_part": 86,
+              "phase_left": "130487/214560",
+              "phase_right": "653699/1072800"
+            },
+            {
+              "speed": 672,
+              "integer_part": 87,
+              "phase_left": "189269/1492980",
+              "phase_right": "955193/7464900"
+            },
+            {
+              "speed": 1339,
+              "integer_part": 173,
+              "phase_left": "86752493/143326080",
+              "phase_right": "435454961/716630400"
+            },
+            {
+              "speed": 1341,
+              "integer_part": 173,
+              "phase_left": "92407/106880",
+              "phase_right": "463299/534400"
+            }
+          ]
+        },
+        {
+          "q": 1334,
+          "in_guaranteed_range": true,
+          "speeds": [
+            2,
+            3,
+            5,
+            1334,
+            1338,
+            2671,
+            2673
+          ],
+          "rounded_integer": 173,
+          "witness_time": "138887/1067200",
+          "time_shift": "151/1067200",
+          "distances": {
+            "2": "138887/533600",
+            "3": "416661/1067200",
+            "5": "74553/213440",
+            "1334": "313/800",
+            "1338": "69003/533600",
+            "2671": "418423/1067200",
+            "2673": "140649/1067200"
+          },
+          "minimum_distance": "69003/533600",
+          "core_lower_bound": "17217/66700",
+          "fast_lower_bound": "67701/533600",
+          "complete_allowed_summary": {
+            "component_count": 1474,
+            "sha256_json_string_endpoints": "c49f14139af204050a3ee3fad37849a10bb791c0c337e86b445909056fd89a7c",
+            "first_component": [
+              "1337/21368",
+              "671/10704"
+            ],
+            "last_component": [
+              "10033/10704",
+              "20031/21368"
+            ]
+          },
+          "clear_duration": "1891832421991/21238974300060",
+          "isolated_contacts": [
+            {
+              "time": "1/8",
+              "blocking_ends": [
+                2673
+              ],
+              "blocking_starts": [
+                2671
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 2673,
+                  "incoming": 2671,
+                  "integers": [
+                    "334",
+                    "334"
+                  ],
+                  "sum_over_8": "668"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "blocking_ends": [
+                3
+              ],
+              "blocking_starts": [
+                5
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 3,
+                  "incoming": 5,
+                  "integers": [
+                    "1",
+                    "2"
+                  ],
+                  "sum_over_8": "1"
+                }
+              ]
+            },
+            {
+              "time": "5/8",
+              "blocking_ends": [
+                5
+              ],
+              "blocking_starts": [
+                3
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 5,
+                  "incoming": 3,
+                  "integers": [
+                    "3",
+                    "2"
+                  ],
+                  "sum_over_8": "1"
+                }
+              ]
+            },
+            {
+              "time": "7/8",
+              "blocking_ends": [
+                2671
+              ],
+              "blocking_starts": [
+                2673
+              ],
+              "strict_blockers": [],
+              "pairs": [
+                {
+                  "outgoing": 2671,
+                  "incoming": 2673,
+                  "integers": [
+                    "2337",
+                    "2339"
+                  ],
+                  "sum_over_8": "668"
+                }
+              ]
+            }
+          ],
+          "interval": [
+            "46405331/356578200",
+            "185623627/1426312800"
+          ],
+          "affine_certificate": [
+            {
+              "speed": 2,
+              "integer_part": 0,
+              "phase_left": "46405331/178289100",
+              "phase_right": "185623627/713156400"
+            },
+            {
+              "speed": 3,
+              "integer_part": 0,
+              "phase_left": "46405331/118859400",
+              "phase_right": "185623627/475437600"
+            },
+            {
+              "speed": 5,
+              "integer_part": 0,
+              "phase_left": "46405331/71315640",
+              "phase_right": "185623627/285262560"
+            },
+            {
+              "speed": 1334,
+              "integer_part": 173,
+              "phase_left": "162431/267300",
+              "phase_right": "652027/1069200"
+            },
+            {
+              "speed": 1338,
+              "integer_part": 174,
+              "phase_left": "7621013/59429700",
+              "phase_right": "30997621/237718800"
+            },
+            {
+              "speed": 2671,
+              "integer_part": 347,
+              "phase_left": "216003701/356578200",
+              "phase_right": "870166117/1426312800"
+            },
+            {
+              "speed": 2673,
+              "integer_part": 347,
+              "phase_left": "115531/133400",
+              "phase_right": "464427/533600"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frozen_controls": [
+    {
+      "terms_b_a": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "slow_time": "1/8",
+      "allowed_phases": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "1/4",
+          "1/4"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "3/4",
+          "3/4"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "clear_phase_duration": "0",
+      "redundant_blocking": "0",
+      "blocking_count_histogram": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "individual_blocked_durations": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "minimum_winding": 1,
+      "minimum_winding_offsets": [
+        0,
+        4
+      ],
+      "minimum_winding_phases": [
+        "0",
+        "1/2"
+      ],
+      "exact_real_phasor_sum": 0,
+      "unique_minimum_winding": false
+    },
+    {
+      "terms_b_a": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "slow_time": "13/100",
+      "allowed_phases": [
+        [
+          "19/80",
+          "97/400"
+        ],
+        [
+          "121/200",
+          "49/80"
+        ],
+        [
+          "59/80",
+          "297/400"
+        ],
+        [
+          "347/400",
+          "7/8"
+        ]
+      ],
+      "clear_phase_duration": "1/40",
+      "redundant_blocking": "1/40",
+      "blocking_count_histogram": [
+        "1/40",
+        "19/20",
+        "1/40",
+        "0",
+        "0"
+      ],
+      "individual_blocked_durations": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "minimum_winding": 1,
+      "minimum_winding_offsets": [
+        0,
+        4
+      ],
+      "minimum_winding_phases": [
+        "0",
+        "13/25"
+      ],
+      "exact_real_phasor_sum": null,
+      "unique_minimum_winding": false
+    },
+    {
+      "terms_b_a": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "slow_time": "1/8",
+      "allowed_phases": [
+        [
+          "3/16",
+          "1/4"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "11/16",
+          "3/4"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "clear_phase_duration": "1/8",
+      "redundant_blocking": "1/8",
+      "blocking_count_histogram": [
+        "1/8",
+        "3/4",
+        "1/8",
+        "0",
+        "0"
+      ],
+      "individual_blocked_durations": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "minimum_winding": 1,
+      "minimum_winding_offsets": [
+        0,
+        4
+      ],
+      "minimum_winding_phases": [
+        "0",
+        "1/2"
+      ],
+      "exact_real_phasor_sum": 0,
+      "unique_minimum_winding": false
+    }
+  ],
+  "small_q_control": {
+    "q": 6,
+    "in_guaranteed_range": false,
+    "speeds": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      11,
+      13
+    ],
+    "rounded_integer": 2,
+    "witness_time": "93/256",
+    "time_shift": "9/256",
+    "distances": {
+      "1": "93/256",
+      "4": "29/64",
+      "5": "47/256",
+      "6": "23/128",
+      "7": "117/256",
+      "11": "1/256",
+      "13": "71/256"
+    },
+    "minimum_distance": "1/256",
+    "core_lower_bound": "-5/48",
+    "fast_lower_bound": "-155/384",
+    "complete_allowed_summary": {
+      "component_count": 4,
+      "sha256_json_string_endpoints": "aa42a9c92c9e637cf2f44afdd20d0e58a2fa922245f32bd0a780fca9ef477684",
+      "first_component": [
+        "1/8",
+        "1/8"
+      ],
+      "last_component": [
+        "7/8",
+        "7/8"
+      ]
+    },
+    "clear_duration": "0",
+    "isolated_contacts": [
+      {
+        "time": "1/8",
+        "blocking_ends": [
+          1
+        ],
+        "blocking_starts": [
+          7
+        ],
+        "strict_blockers": [],
+        "pairs": [
+          {
+            "outgoing": 1,
+            "incoming": 7,
+            "integers": [
+              "0",
+              "1"
+            ],
+            "sum_over_8": "1"
+          }
+        ]
+      },
+      {
+        "time": "3/8",
+        "blocking_ends": [
+          11
+        ],
+        "blocking_starts": [
+          5,
+          13
+        ],
+        "strict_blockers": [],
+        "pairs": [
+          {
+            "outgoing": 11,
+            "incoming": 5,
+            "integers": [
+              "4",
+              "2"
+            ],
+            "sum_over_8": "2"
+          },
+          {
+            "outgoing": 11,
+            "incoming": 13,
+            "integers": [
+              "4",
+              "5"
+            ],
+            "sum_over_8": "3"
+          }
+        ]
+      },
+      {
+        "time": "5/8",
+        "blocking_ends": [
+          5,
+          13
+        ],
+        "blocking_starts": [
+          11
+        ],
+        "strict_blockers": [],
+        "pairs": [
+          {
+            "outgoing": 5,
+            "incoming": 11,
+            "integers": [
+              "3",
+              "7"
+            ],
+            "sum_over_8": "2"
+          },
+          {
+            "outgoing": 13,
+            "incoming": 11,
+            "integers": [
+              "8",
+              "7"
+            ],
+            "sum_over_8": "3"
+          }
+        ]
+      },
+      {
+        "time": "7/8",
+        "blocking_ends": [
+          7
+        ],
+        "blocking_starts": [
+          1
+        ],
+        "strict_blockers": [],
+        "pairs": [
+          {
+            "outgoing": 7,
+            "incoming": 1,
+            "integers": [
+              "6",
+              "1"
+            ],
+            "sum_over_8": "1"
+          }
+        ]
+      }
+    ],
+    "complete_allowed_set": [
+      [
+        "1/8",
+        "1/8"
+      ],
+      [
+        "3/8",
+        "3/8"
+      ],
+      [
+        "5/8",
+        "5/8"
+      ],
+      [
+        "7/8",
+        "7/8"
+      ]
+    ]
+  },
+  "common_scaling_controls": [
+    {
+      "q": 1,
+      "speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "complete_allowed_set": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "clear_duration": "0"
+    },
+    {
+      "q": 2,
+      "speeds": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "complete_allowed_set": [
+        [
+          "1/16",
+          "1/16"
+        ],
+        [
+          "3/16",
+          "3/16"
+        ],
+        [
+          "5/16",
+          "5/16"
+        ],
+        [
+          "7/16",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "9/16"
+        ],
+        [
+          "11/16",
+          "11/16"
+        ],
+        [
+          "13/16",
+          "13/16"
+        ],
+        [
+          "15/16",
+          "15/16"
+        ]
+      ],
+      "clear_duration": "0"
+    },
+    {
+      "q": 3,
+      "speeds": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "complete_allowed_set": [
+        [
+          "1/24",
+          "1/24"
+        ],
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "5/24",
+          "5/24"
+        ],
+        [
+          "7/24",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "11/24",
+          "11/24"
+        ],
+        [
+          "13/24",
+          "13/24"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "17/24"
+        ],
+        [
+          "19/24",
+          "19/24"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ],
+        [
+          "23/24",
+          "23/24"
+        ]
+      ],
+      "clear_duration": "0"
+    }
+  ],
+  "verification_counts": {
+    "profiles": 3,
+    "witness_checks": 12,
+    "guaranteed_witness_checks": 9,
+    "below_cutoff_checks": 3,
+    "affine_interval_certificates": 12,
+    "frozen_phase_reconstructions": 6,
+    "complete_boundary_reconstructions": 16,
+    "explicit_frozen_controls": 3,
+    "small_q_failure_controls": 1,
+    "common_scaling_controls": 3
+  },
+  "limits": "Only these inputs are computed. Complete positive-duration allowed unions are reconstructed and compared in memory; the output keeps their SHA-256, counts, duration, and first/last components, alongside explicit witness interval certificates. Zero-duration allowed sets are retained in full. The Fourier nonvanishing and infinite-q implication come from the written proof candidate, not numerical Fourier estimates or these finite checks. All three profiles use nonnegative offsets; the written argument allows fixed negative offsets via absolute-value bounds. Fixed core and coefficients are essential to the stated uniform guarantee. No independent mathematical review."
+}
