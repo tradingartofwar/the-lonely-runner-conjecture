@@ -479,3 +479,5 @@ The useful pattern is that a single q fixes several endpoint corrections togethe
 S14 Lemma 4.1 and its fractional-part/Bernoulli framework were re-opened for context. The endpoint machinery has established precedents; this source is not asserted to prove our local finite classification or cutoffs. The derivation and implementation here are materially AI-generated. Independent review and novelty status remain unresolved, and no novelty is claimed.
 
 **Next useful question:** the two unspecified runners still contribute the coarse allowance 3/(8q). Can their exact 32-class endpoint corrections, together with distinctness, replace that allowance by a smaller uniform bound for all u,v>=q? This refinement has not been attempted. The current result remains a restricted selected-reference family, and arbitrary four-speed coverage remains OPEN.
+
+**Research direction update, September 24:** after reviewing how this helps the overall goal, Vance approved testing different fixed cores and isolated equality times. That continuation is recorded in [CORE_TRANSFER.md](CORE_TRANSFER.md). Further cutoff polishing is parked.

@@ -1,0 +1,6462 @@
+{
+  "date": "2026-09-24",
+  "base_commit": "a5bddc35a9e74b5397e11cb762642bd4b0ab68c5",
+  "claim_status": {
+    "finite_cases": "OBSERVED",
+    "general_transfer_and_boundary_lemmas": "HYPOTHESIS: AI-generated complete arguments awaiting independent review",
+    "arbitrary_seven_speeds": "OPEN"
+  },
+  "scope": "Eight common-start runners; reference 0; positive distinct integer relative speeds; threshold retained at 1/8 for every subgroup.",
+  "source_sha256": {
+    "scripts/analyze_core_transfer.py": "2c4600cd2e631c51127e7b748f9cae5220b1f8a3c174874a1c7b108e5356456f",
+    "scripts/analyze_phase_discrepancy.py": "13fc159a9da8431076445f317d17155560096da8c352bfe5b1c754507fdb7cbb",
+    "scripts/analyze_overlap_placement.py": "3fdd49d97de4e6e7f52bc13e5b92df229c7641e10078cffc793fa4f4dc199636",
+    "scripts/analyze_local_overlap.py": "62f21072b99bd66cb558cb84101e145afde4da3a8067c801f0339e85681dacb4",
+    "scripts/analyze_blocking_overlaps.py": "bf5e0339a69f83055c5e1f12908769ceb0598643a9dc88467b93fc26e454c7e4",
+    "scripts/analyze_two_variable_speeds.py": "b7bc07d114afcc4bb49edefe3f0ca8b5110af7d68dfb2969baf249a1d211569a",
+    "lonely_runner/checker.py": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971"
+  },
+  "profiles": [
+    {
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "residual": 1,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/32",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "23/32"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "3/8",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "1/8",
+            "7/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "9/1600"
+        },
+        {
+          "interval": [
+            "9/32",
+            "3/8"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "9/4096"
+        },
+        {
+          "interval": [
+            "5/8",
+            "23/32"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/4096"
+        },
+        {
+          "interval": [
+            "33/40",
+            "7/8"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/1600"
+        }
+      ],
+      "phase_area_I": "801/51200",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "79/16",
+      "coarse_sufficient_q": 316,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "residual": 2,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/32",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "23/32"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "3/8",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 8,
+      "pieces": [
+        {
+          "interval": [
+            "1/8",
+            "7/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "1/16"
+          ],
+          "phase_area": "3/1600"
+        },
+        {
+          "interval": [
+            "5/16",
+            "3/8"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/512"
+        },
+        {
+          "interval": [
+            "17/40",
+            "7/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "19/12800"
+        },
+        {
+          "interval": [
+            "7/16",
+            "15/32"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "17/32",
+            "9/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "9/16",
+            "23/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "19/12800"
+        },
+        {
+          "interval": [
+            "5/8",
+            "11/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/512"
+        },
+        {
+          "interval": [
+            "33/40",
+            "7/8"
+          ],
+          "lower": [
+            "-1",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "3/1600"
+        }
+      ],
+      "phase_area_I": "59/3200",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "95/16",
+      "coarse_sufficient_q": 323,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "residual": 3,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/32",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "23/32"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "3/8",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 6,
+      "pieces": [
+        {
+          "interval": [
+            "9/32",
+            "7/24"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "5/4096"
+        },
+        {
+          "interval": [
+            "7/24",
+            "3/8"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/96"
+        },
+        {
+          "interval": [
+            "17/40",
+            "11/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/1200"
+        },
+        {
+          "interval": [
+            "13/24",
+            "23/40"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/1200"
+        },
+        {
+          "interval": [
+            "5/8",
+            "17/24"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/96"
+        },
+        {
+          "interval": [
+            "17/24",
+            "23/32"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "5/4096"
+        }
+      ],
+      "phase_area_I": "1277/51200",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "87/16",
+      "coarse_sufficient_q": 219,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        3,
+        5
+      ],
+      "residual": 1,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 5,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "1/8",
+            "7/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "9/1600"
+        },
+        {
+          "interval": [
+            "9/40",
+            "7/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "7/1800"
+        },
+        {
+          "interval": [
+            "17/24",
+            "31/40"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "7/1800"
+        },
+        {
+          "interval": [
+            "33/40",
+            "7/8"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/1600"
+        }
+      ],
+      "phase_area_I": "137/7200",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "137/32",
+      "coarse_sufficient_q": 226,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        3,
+        5
+      ],
+      "residual": 2,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 5,
+      "phase_pieces_m": 5,
+      "pieces": [
+        {
+          "interval": [
+            "1/8",
+            "7/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "1/16"
+          ],
+          "phase_area": "3/1600"
+        },
+        {
+          "interval": [
+            "17/40",
+            "7/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "19/12800"
+        },
+        {
+          "interval": [
+            "7/16",
+            "9/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/64"
+        },
+        {
+          "interval": [
+            "9/16",
+            "23/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "19/12800"
+        },
+        {
+          "interval": [
+            "33/40",
+            "7/8"
+          ],
+          "lower": [
+            "-1",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "3/1600"
+        }
+      ],
+      "phase_area_I": "143/6400",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "145/32",
+      "coarse_sufficient_q": 203,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        3,
+        5
+      ],
+      "residual": 3,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 5,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "9/40",
+            "7/24"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/200"
+        },
+        {
+          "interval": [
+            "17/40",
+            "11/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/1200"
+        },
+        {
+          "interval": [
+            "13/24",
+            "23/40"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/1200"
+        },
+        {
+          "interval": [
+            "17/24",
+            "31/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/200"
+        }
+      ],
+      "phase_area_I": "7/600",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "137/32",
+      "coarse_sufficient_q": 367,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        4,
+        8
+      ],
+      "residual": 1,
+      "core_allowed": [
+        [
+          "9/64",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "23/64"
+        ],
+        [
+          "25/64",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "39/64"
+        ],
+        [
+          "41/64",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "55/64"
+        ]
+      ],
+      "core_allowed_duration": "15/32",
+      "core_duration_lower_bound": "5/16",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "9/64",
+            "7/32"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "125/16384"
+        },
+        {
+          "interval": [
+            "9/32",
+            "23/64"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "35/16384"
+        },
+        {
+          "interval": [
+            "41/64",
+            "23/32"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "35/16384"
+        },
+        {
+          "interval": [
+            "25/32",
+            "55/64"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "125/16384"
+        }
+      ],
+      "phase_area_I": "5/256",
+      "phase_area_lower_bound": "1/4096",
+      "uniform_error_constant": "79/16",
+      "coarse_sufficient_q": 253,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        4,
+        8
+      ],
+      "residual": 2,
+      "core_allowed": [
+        [
+          "9/64",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "23/64"
+        ],
+        [
+          "25/64",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "39/64"
+        ],
+        [
+          "41/64",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "55/64"
+        ]
+      ],
+      "core_allowed_duration": "15/32",
+      "core_duration_lower_bound": "5/16",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 8,
+      "pieces": [
+        {
+          "interval": [
+            "9/64",
+            "3/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "1/16"
+          ],
+          "phase_area": "9/8192"
+        },
+        {
+          "interval": [
+            "5/16",
+            "23/64"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/8192"
+        },
+        {
+          "interval": [
+            "25/64",
+            "7/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "39/8192"
+        },
+        {
+          "interval": [
+            "7/16",
+            "15/32"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "17/32",
+            "9/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "9/16",
+            "39/64"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "39/8192"
+        },
+        {
+          "interval": [
+            "41/64",
+            "11/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "9/8192"
+        },
+        {
+          "interval": [
+            "13/16",
+            "55/64"
+          ],
+          "lower": [
+            "-1",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/8192"
+        }
+      ],
+      "phase_area_I": "89/4096",
+      "phase_area_lower_bound": "1/4096",
+      "uniform_error_constant": "95/16",
+      "coarse_sufficient_q": 274,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        4,
+        8
+      ],
+      "residual": 3,
+      "core_allowed": [
+        [
+          "9/64",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "23/64"
+        ],
+        [
+          "25/64",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "39/64"
+        ],
+        [
+          "41/64",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "55/64"
+        ]
+      ],
+      "core_allowed_duration": "15/32",
+      "core_duration_lower_bound": "5/16",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 8,
+      "pieces": [
+        {
+          "interval": [
+            "5/24",
+            "7/32"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/12288"
+        },
+        {
+          "interval": [
+            "9/32",
+            "7/24"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "5/4096"
+        },
+        {
+          "interval": [
+            "7/24",
+            "23/64"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "13/1536"
+        },
+        {
+          "interval": [
+            "25/64",
+            "11/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "169/49152"
+        },
+        {
+          "interval": [
+            "13/24",
+            "39/64"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "169/49152"
+        },
+        {
+          "interval": [
+            "41/64",
+            "17/24"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "13/1536"
+        },
+        {
+          "interval": [
+            "17/24",
+            "23/32"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "5/4096"
+        },
+        {
+          "interval": [
+            "25/32",
+            "19/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/12288"
+        }
+      ],
+      "phase_area_I": "649/24576",
+      "phase_area_lower_bound": "1/4096",
+      "uniform_error_constant": "95/16",
+      "coarse_sufficient_q": 225,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "residual": 1,
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 6,
+      "pieces": [
+        {
+          "interval": [
+            "1/16",
+            "1/8"
+          ],
+          "lower": [
+            "-1/2",
+            "-1/16"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "1/128"
+        },
+        {
+          "interval": [
+            "1/8",
+            "7/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "9/1600"
+        },
+        {
+          "interval": [
+            "9/40",
+            "7/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "7/1800"
+        },
+        {
+          "interval": [
+            "17/24",
+            "31/40"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "7/1800"
+        },
+        {
+          "interval": [
+            "33/40",
+            "7/8"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/1600"
+        },
+        {
+          "interval": [
+            "7/8",
+            "15/16"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "-1/2",
+            "9/16"
+          ],
+          "phase_area": "1/128"
+        }
+      ],
+      "phase_area_I": "499/14400",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "87/16",
+      "coarse_sufficient_q": 157,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "residual": 2,
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "1/16",
+            "7/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "1/16"
+          ],
+          "phase_area": "99/12800"
+        },
+        {
+          "interval": [
+            "17/40",
+            "7/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "19/12800"
+        },
+        {
+          "interval": [
+            "9/16",
+            "23/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "19/12800"
+        },
+        {
+          "interval": [
+            "33/40",
+            "15/16"
+          ],
+          "lower": [
+            "-1",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "99/12800"
+        }
+      ],
+      "phase_area_I": "59/3200",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "79/16",
+      "coarse_sufficient_q": 268,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "residual": 3,
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 6,
+      "pieces": [
+        {
+          "interval": [
+            "1/16",
+            "1/8"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "1/16"
+          ],
+          "phase_area": "3/1024"
+        },
+        {
+          "interval": [
+            "9/40",
+            "7/24"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/200"
+        },
+        {
+          "interval": [
+            "17/40",
+            "7/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "13/25600"
+        },
+        {
+          "interval": [
+            "9/16",
+            "23/40"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "13/25600"
+        },
+        {
+          "interval": [
+            "17/24",
+            "31/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/200"
+        },
+        {
+          "interval": [
+            "7/8",
+            "15/16"
+          ],
+          "lower": [
+            "-3/2",
+            "23/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "3/1024"
+        }
+      ],
+      "phase_area_I": "27/1600",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "87/16",
+      "coarse_sufficient_q": 323,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        2,
+        4
+      ],
+      "residual": 1,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "1/2",
+      "core_duration_lower_bound": "3/8",
+      "positive_core_components_k": 4,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "1/8",
+            "7/32"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "39/4096"
+        },
+        {
+          "interval": [
+            "9/32",
+            "3/8"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "9/4096"
+        },
+        {
+          "interval": [
+            "5/8",
+            "23/32"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "9/4096"
+        },
+        {
+          "interval": [
+            "25/32",
+            "7/8"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "39/4096"
+        }
+      ],
+      "phase_area_I": "3/128",
+      "phase_area_lower_bound": "1/1024",
+      "uniform_error_constant": "29/8",
+      "coarse_sufficient_q": 155,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        2,
+        4
+      ],
+      "residual": 2,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "1/2",
+      "core_duration_lower_bound": "3/8",
+      "positive_core_components_k": 4,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "1/8",
+            "3/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "1/16"
+          ],
+          "phase_area": "1/512"
+        },
+        {
+          "interval": [
+            "5/16",
+            "7/16"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/128"
+        },
+        {
+          "interval": [
+            "9/16",
+            "11/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "1/128"
+        },
+        {
+          "interval": [
+            "13/16",
+            "7/8"
+          ],
+          "lower": [
+            "-1",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/512"
+        }
+      ],
+      "phase_area_I": "5/256",
+      "phase_area_lower_bound": "1/1024",
+      "uniform_error_constant": "29/8",
+      "coarse_sufficient_q": 186,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        2,
+        4
+      ],
+      "residual": 3,
+      "core_allowed": [
+        [
+          "1/8",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "1/2",
+      "core_duration_lower_bound": "3/8",
+      "positive_core_components_k": 4,
+      "phase_pieces_m": 8,
+      "pieces": [
+        {
+          "interval": [
+            "5/24",
+            "7/32"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/12288"
+        },
+        {
+          "interval": [
+            "9/32",
+            "7/24"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "5/4096"
+        },
+        {
+          "interval": [
+            "7/24",
+            "3/8"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/96"
+        },
+        {
+          "interval": [
+            "3/8",
+            "7/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "5/1024"
+        },
+        {
+          "interval": [
+            "9/16",
+            "5/8"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "5/1024"
+        },
+        {
+          "interval": [
+            "5/8",
+            "17/24"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/96"
+        },
+        {
+          "interval": [
+            "17/24",
+            "23/32"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "5/4096"
+        },
+        {
+          "interval": [
+            "25/32",
+            "19/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/12288"
+        }
+      ],
+      "phase_area_I": "17/512",
+      "phase_area_lower_bound": "1/1024",
+      "uniform_error_constant": "37/8",
+      "coarse_sufficient_q": 140,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        6,
+        7
+      ],
+      "residual": 1,
+      "core_allowed": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/16",
+          "15/56"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "17/48",
+          "23/56"
+        ],
+        [
+          "25/56",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "31/56"
+        ],
+        [
+          "33/56",
+          "31/48"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "41/56",
+          "13/16"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "5/14",
+      "core_duration_lower_bound": "9/28",
+      "positive_core_components_k": 8,
+      "phase_pieces_m": 6,
+      "pieces": [
+        {
+          "interval": [
+            "3/16",
+            "15/56"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "297/50176"
+        },
+        {
+          "interval": [
+            "17/56",
+            "5/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "15/50176"
+        },
+        {
+          "interval": [
+            "17/48",
+            "3/8"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1/2",
+            "1/16"
+          ],
+          "phase_area": "1/9216"
+        },
+        {
+          "interval": [
+            "5/8",
+            "31/48"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/9216"
+        },
+        {
+          "interval": [
+            "11/16",
+            "39/56"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "15/50176"
+        },
+        {
+          "interval": [
+            "41/56",
+            "13/16"
+          ],
+          "lower": [
+            "-1/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "297/50176"
+        }
+      ],
+      "phase_area_I": "2857/225792",
+      "phase_area_lower_bound": "1/3136",
+      "uniform_error_constant": "27/4",
+      "coarse_sufficient_q": 534,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        6,
+        7
+      ],
+      "residual": 2,
+      "core_allowed": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/16",
+          "15/56"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "17/48",
+          "23/56"
+        ],
+        [
+          "25/56",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "31/56"
+        ],
+        [
+          "33/56",
+          "31/48"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "41/56",
+          "13/16"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "5/14",
+      "core_duration_lower_bound": "9/28",
+      "positive_core_components_k": 8,
+      "phase_pieces_m": 4,
+      "pieces": [
+        {
+          "interval": [
+            "17/48",
+            "23/56"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "893/225792"
+        },
+        {
+          "interval": [
+            "25/56",
+            "23/48"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "11/2688"
+        },
+        {
+          "interval": [
+            "25/48",
+            "31/56"
+          ],
+          "lower": [
+            "-1",
+            "7/16"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "11/2688"
+        },
+        {
+          "interval": [
+            "33/56",
+            "31/48"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-1",
+            "9/16"
+          ],
+          "phase_area": "893/225792"
+        }
+      ],
+      "phase_area_I": "1817/112896",
+      "phase_area_lower_bound": "1/3136",
+      "uniform_error_constant": "25/4",
+      "coarse_sufficient_q": 389,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        1,
+        6,
+        7
+      ],
+      "residual": 3,
+      "core_allowed": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/16",
+          "15/56"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "17/48",
+          "23/56"
+        ],
+        [
+          "25/56",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "31/56"
+        ],
+        [
+          "33/56",
+          "31/48"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "41/56",
+          "13/16"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "5/14",
+      "core_duration_lower_bound": "9/28",
+      "positive_core_components_k": 8,
+      "phase_pieces_m": 10,
+      "pieces": [
+        {
+          "interval": [
+            "5/24",
+            "15/56"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "25/9408"
+        },
+        {
+          "interval": [
+            "17/56",
+            "5/16"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/896"
+        },
+        {
+          "interval": [
+            "17/48",
+            "3/8"
+          ],
+          "lower": [
+            "-3/2",
+            "7/16"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/384"
+        },
+        {
+          "interval": [
+            "3/8",
+            "23/56"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "11/3136"
+        },
+        {
+          "interval": [
+            "25/56",
+            "11/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "9/16"
+          ],
+          "phase_area": "1/9408"
+        },
+        {
+          "interval": [
+            "13/24",
+            "31/56"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/9408"
+        },
+        {
+          "interval": [
+            "33/56",
+            "5/8"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "11/3136"
+        },
+        {
+          "interval": [
+            "5/8",
+            "31/48"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/384"
+        },
+        {
+          "interval": [
+            "11/16",
+            "39/56"
+          ],
+          "lower": [
+            "-3/2",
+            "15/16"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "1/896"
+        },
+        {
+          "interval": [
+            "41/56",
+            "19/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-3/2",
+            "17/16"
+          ],
+          "phase_area": "25/9408"
+        }
+      ],
+      "phase_area_I": "47/2352",
+      "phase_area_lower_bound": "1/3136",
+      "uniform_error_constant": "31/4",
+      "coarse_sufficient_q": 388,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "residual": 5,
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 8,
+      "pieces": [
+        {
+          "interval": [
+            "1/16",
+            "3/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-5/2",
+            "1/16"
+          ],
+          "phase_area": "1/5120"
+        },
+        {
+          "interval": [
+            "1/8",
+            "7/40"
+          ],
+          "lower": [
+            "-5/2",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/320"
+        },
+        {
+          "interval": [
+            "9/40",
+            "11/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-5/2",
+            "9/16"
+          ],
+          "phase_area": "1/320"
+        },
+        {
+          "interval": [
+            "17/40",
+            "7/16"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-5/2",
+            "17/16"
+          ],
+          "phase_area": "7/5120"
+        },
+        {
+          "interval": [
+            "9/16",
+            "23/40"
+          ],
+          "lower": [
+            "-5/2",
+            "23/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "7/5120"
+        },
+        {
+          "interval": [
+            "29/40",
+            "31/40"
+          ],
+          "lower": [
+            "-5/2",
+            "31/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/320"
+        },
+        {
+          "interval": [
+            "33/40",
+            "7/8"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-5/2",
+            "33/16"
+          ],
+          "phase_area": "1/320"
+        },
+        {
+          "interval": [
+            "37/40",
+            "15/16"
+          ],
+          "lower": [
+            "-5/2",
+            "39/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/5120"
+        }
+      ],
+      "phase_area_I": "1/64",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "95/16",
+      "coarse_sufficient_q": 381,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    },
+    {
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "residual": 8,
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "core_duration_lower_bound": "7/20",
+      "positive_core_components_k": 6,
+      "phase_pieces_m": 12,
+      "pieces": [
+        {
+          "interval": [
+            "5/64",
+            "7/64"
+          ],
+          "lower": [
+            "-4",
+            "7/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/512"
+        },
+        {
+          "interval": [
+            "7/64",
+            "9/64"
+          ],
+          "lower": [
+            "-4",
+            "7/16"
+          ],
+          "upper": [
+            "-4",
+            "9/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "9/64",
+            "11/64"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-4",
+            "9/16"
+          ],
+          "phase_area": "1/512"
+        },
+        {
+          "interval": [
+            "9/40",
+            "15/64"
+          ],
+          "lower": [
+            "-4",
+            "15/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "51/51200"
+        },
+        {
+          "interval": [
+            "15/64",
+            "17/64"
+          ],
+          "lower": [
+            "-4",
+            "15/16"
+          ],
+          "upper": [
+            "-4",
+            "17/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "17/64",
+            "7/24"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-4",
+            "17/16"
+          ],
+          "phase_area": "35/18432"
+        },
+        {
+          "interval": [
+            "17/24",
+            "47/64"
+          ],
+          "lower": [
+            "-4",
+            "47/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "35/18432"
+        },
+        {
+          "interval": [
+            "47/64",
+            "49/64"
+          ],
+          "lower": [
+            "-4",
+            "47/16"
+          ],
+          "upper": [
+            "-4",
+            "49/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "49/64",
+            "31/40"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-4",
+            "49/16"
+          ],
+          "phase_area": "51/51200"
+        },
+        {
+          "interval": [
+            "53/64",
+            "55/64"
+          ],
+          "lower": [
+            "-4",
+            "55/16"
+          ],
+          "upper": [
+            "0",
+            "1/8"
+          ],
+          "phase_area": "1/512"
+        },
+        {
+          "interval": [
+            "55/64",
+            "57/64"
+          ],
+          "lower": [
+            "-4",
+            "55/16"
+          ],
+          "upper": [
+            "-4",
+            "57/16"
+          ],
+          "phase_area": "1/256"
+        },
+        {
+          "interval": [
+            "57/64",
+            "59/64"
+          ],
+          "lower": [
+            "0",
+            "-1/8"
+          ],
+          "upper": [
+            "-4",
+            "57/16"
+          ],
+          "phase_area": "1/512"
+        }
+      ],
+      "phase_area_I": "3367/115200",
+      "phase_area_lower_bound": "1/1600",
+      "uniform_error_constant": "111/16",
+      "coarse_sufficient_q": 238,
+      "scope": "Core and residual fixed; q and both other speeds grow with u,v>=q; all distinct. Cutoff is not sharp."
+    }
+  ],
+  "profile_pair_checks": [
+    {
+      "q": 56,
+      "r": 1,
+      "phase_area": "801/51200",
+      "endpoint_correction": "-108791/40499200",
+      "actual_overlap": "41/3164",
+      "error_bound": "225/12656",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 2,
+      "phase_area": "59/3200",
+      "endpoint_correction": "37/182400",
+      "actual_overlap": "17/912",
+      "error_bound": "451/12768",
+      "piece_count": 8
+    },
+    {
+      "q": 56,
+      "r": 3,
+      "phase_area": "1277/51200",
+      "endpoint_correction": "27683/8243200",
+      "actual_overlap": "729/25760",
+      "error_bound": "339/12880",
+      "piece_count": 6
+    },
+    {
+      "q": 56,
+      "r": 1,
+      "phase_area": "137/7200",
+      "endpoint_correction": "-15217/5695200",
+      "actual_overlap": "207/12656",
+      "error_bound": "225/12656",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 2,
+      "phase_area": "143/6400",
+      "endpoint_correction": "-457/2553600",
+      "actual_overlap": "283/12768",
+      "error_bound": "47/2128",
+      "piece_count": 5
+    },
+    {
+      "q": 56,
+      "r": 3,
+      "phase_area": "7/600",
+      "endpoint_correction": "341/193200",
+      "actual_overlap": "173/12880",
+      "error_bound": "227/12880",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 1,
+      "phase_area": "5/256",
+      "endpoint_correction": "605/202496",
+      "actual_overlap": "285/12656",
+      "error_bound": "225/12656",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 2,
+      "phase_area": "89/4096",
+      "endpoint_correction": "6089/1634304",
+      "actual_overlap": "325/12768",
+      "error_bound": "451/12768",
+      "piece_count": 8
+    },
+    {
+      "q": 56,
+      "r": 3,
+      "phase_area": "649/24576",
+      "endpoint_correction": "81203/19783680",
+      "actual_overlap": "393/12880",
+      "error_bound": "181/5152",
+      "piece_count": 8
+    },
+    {
+      "q": 56,
+      "r": 1,
+      "phase_area": "499/14400",
+      "endpoint_correction": "-6809/11390400",
+      "actual_overlap": "431/12656",
+      "error_bound": "337/12656",
+      "piece_count": 6
+    },
+    {
+      "q": 56,
+      "r": 2,
+      "phase_area": "59/3200",
+      "endpoint_correction": "1559/1276800",
+      "actual_overlap": "251/12768",
+      "error_bound": "113/6384",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 3,
+      "phase_area": "27/1600",
+      "endpoint_correction": "3/1600",
+      "actual_overlap": "3/160",
+      "error_bound": "681/25760",
+      "piece_count": 6
+    },
+    {
+      "q": 56,
+      "r": 1,
+      "phase_area": "3/128",
+      "endpoint_correction": "-89/101248",
+      "actual_overlap": "571/25312",
+      "error_bound": "225/12656",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 2,
+      "phase_area": "5/256",
+      "endpoint_correction": "-59/102144",
+      "actual_overlap": "121/6384",
+      "error_bound": "113/6384",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 3,
+      "phase_area": "17/512",
+      "endpoint_correction": "379/412160",
+      "actual_overlap": "879/25760",
+      "error_bound": "181/5152",
+      "piece_count": 8
+    },
+    {
+      "q": 56,
+      "r": 1,
+      "phase_area": "2857/225792",
+      "endpoint_correction": "14839/25514496",
+      "actual_overlap": "335/25312",
+      "error_bound": "675/25312",
+      "piece_count": 6
+    },
+    {
+      "q": 56,
+      "r": 2,
+      "phase_area": "1817/112896",
+      "endpoint_correction": "-1763/2145024",
+      "actual_overlap": "65/4256",
+      "error_bound": "75/4256",
+      "piece_count": 4
+    },
+    {
+      "q": 56,
+      "r": 3,
+      "phase_area": "47/2352",
+      "endpoint_correction": "1433/540960",
+      "actual_overlap": "583/25760",
+      "error_bound": "1129/25760",
+      "piece_count": 10
+    },
+    {
+      "q": 56,
+      "r": 5,
+      "phase_area": "1/64",
+      "endpoint_correction": "61/52416",
+      "actual_overlap": "55/3276",
+      "error_bound": "229/6552",
+      "piece_count": 8
+    },
+    {
+      "q": 56,
+      "r": 8,
+      "phase_area": "3367/115200",
+      "endpoint_correction": "911/806400",
+      "actual_overlap": "17/560",
+      "error_bound": "43/840",
+      "piece_count": 12
+    }
+  ],
+  "cases": [
+    {
+      "label": "core_1_4_5_fast",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "extra": [
+        56,
+        113,
+        64,
+        72
+      ],
+      "full_relative_speeds": [
+        1,
+        4,
+        5,
+        56,
+        64,
+        72,
+        113
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/32",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "23/32"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "3/8",
+      "pair": {
+        "q": 56,
+        "r": 1,
+        "phase_area": "801/51200",
+        "endpoint_correction": "-108791/40499200",
+        "actual_overlap": "41/3164",
+        "error_bound": "225/12656",
+        "piece_count": 4
+      },
+      "T": "426191/1139040",
+      "E": "-949/1139040",
+      "R": "14185/151872",
+      "U": "214673/2278080",
+      "one_pair_lower_bound": "15709/1139040",
+      "histogram": {
+        "0": "214673/2278080",
+        "1": "303613/1518720",
+        "2": "1945/28476",
+        "3": "11435/911232",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "57/448",
+            "119/904"
+          ],
+          [
+            "121/904",
+            "79/576"
+          ],
+          [
+            "65/448",
+            "135/904"
+          ],
+          [
+            "73/448",
+            "95/576"
+          ],
+          [
+            "153/904",
+            "87/512"
+          ],
+          [
+            "89/512",
+            "7/40"
+          ],
+          [
+            "129/448",
+            "167/576"
+          ],
+          [
+            "169/576",
+            "151/512"
+          ],
+          [
+            "153/512",
+            "271/904"
+          ],
+          [
+            "59/192",
+            "279/904"
+          ],
+          [
+            "161/512",
+            "287/904"
+          ],
+          [
+            "145/448",
+            "167/512"
+          ],
+          [
+            "169/512",
+            "191/576"
+          ],
+          [
+            "193/576",
+            "303/904"
+          ],
+          [
+            "153/448",
+            "175/512"
+          ],
+          [
+            "67/192",
+            "319/904"
+          ],
+          [
+            "329/904",
+            "335/904"
+          ],
+          [
+            "385/904",
+            "191/448"
+          ],
+          [
+            "83/192",
+            "391/904"
+          ],
+          [
+            "393/904",
+            "223/512"
+          ],
+          [
+            "225/512",
+            "399/904"
+          ],
+          [
+            "201/448",
+            "407/904"
+          ],
+          [
+            "233/512",
+            "263/576"
+          ],
+          [
+            "417/904",
+            "207/448"
+          ],
+          [
+            "209/448",
+            "239/512"
+          ],
+          [
+            "273/512",
+            "239/448"
+          ],
+          [
+            "241/448",
+            "487/904"
+          ],
+          [
+            "313/576",
+            "279/512"
+          ],
+          [
+            "497/904",
+            "247/448"
+          ],
+          [
+            "505/904",
+            "287/512"
+          ],
+          [
+            "289/512",
+            "511/904"
+          ],
+          [
+            "513/904",
+            "109/192"
+          ],
+          [
+            "257/448",
+            "519/904"
+          ],
+          [
+            "569/904",
+            "575/904"
+          ],
+          [
+            "585/904",
+            "125/192"
+          ],
+          [
+            "337/512",
+            "295/448"
+          ],
+          [
+            "601/904",
+            "383/576"
+          ],
+          [
+            "385/576",
+            "343/512"
+          ],
+          [
+            "345/512",
+            "303/448"
+          ],
+          [
+            "617/904",
+            "351/512"
+          ],
+          [
+            "625/904",
+            "133/192"
+          ],
+          [
+            "633/904",
+            "359/512"
+          ],
+          [
+            "361/512",
+            "407/576"
+          ],
+          [
+            "409/576",
+            "319/448"
+          ],
+          [
+            "33/40",
+            "423/512"
+          ],
+          [
+            "425/512",
+            "751/904"
+          ],
+          [
+            "481/576",
+            "375/448"
+          ],
+          [
+            "769/904",
+            "383/448"
+          ],
+          [
+            "497/576",
+            "783/904"
+          ],
+          [
+            "785/904",
+            "391/448"
+          ]
+        ],
+        "boundary_count": 614,
+        "positive_cell_count": 50,
+        "isolated_contact_certificates": [],
+        "rejected_contact_count": 16,
+        "rejected_old_odd_eighth_contacts": []
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "329/904",
+          "phase_right": "335/904"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "103/226",
+          "phase_right": "109/226"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "741/904",
+          "phase_right": "771/904"
+        },
+        {
+          "speed": 56,
+          "integer_part": 20,
+          "phase_left": "43/113",
+          "phase_right": "85/113"
+        },
+        {
+          "speed": 64,
+          "integer_part": 23,
+          "phase_left": "33/113",
+          "phase_right": "81/113"
+        },
+        {
+          "speed": 72,
+          "integer_part": 26,
+          "phase_left": "23/113",
+          "phase_right": "77/113"
+        },
+        {
+          "speed": 113,
+          "integer_part": 41,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        }
+      ],
+      "certified_interval": [
+        "329/904",
+        "335/904"
+      ]
+    },
+    {
+      "label": "core_1_4_5_slow",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "extra": [
+        6,
+        13,
+        7,
+        11
+      ],
+      "full_relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/32",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "23/32"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "3/8",
+      "pair": {
+        "q": 6,
+        "r": 1,
+        "phase_area": "801/51200",
+        "endpoint_correction": "58361/1996800",
+        "actual_overlap": "7/156",
+        "error_bound": "25/156",
+        "piece_count": 4
+      },
+      "T": "124169/240240",
+      "E": "34079/240240",
+      "R": "34079/240240",
+      "U": "0",
+      "one_pair_lower_bound": "-23299/240240",
+      "histogram": {
+        "0": "0",
+        "1": "9023/34320",
+        "2": "6593/80080",
+        "3": "5/168",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "1/8",
+            "1/8"
+          ],
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "5/8",
+            "5/8"
+          ],
+          [
+            "7/8",
+            "7/8"
+          ]
+        ],
+        "boundary_count": 90,
+        "positive_cell_count": 0,
+        "isolated_contact_certificates": [
+          {
+            "time": "1/8",
+            "blocking_ends": [
+              1
+            ],
+            "blocking_starts": [
+              7
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 1,
+                "incoming": 7,
+                "integers": [
+                  "0",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              11
+            ],
+            "blocking_starts": [
+              5,
+              13
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 11,
+                "incoming": 5,
+                "integers": [
+                  "4",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 13,
+                "integers": [
+                  "4",
+                  "5"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5,
+              13
+            ],
+            "blocking_starts": [
+              11
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 11,
+                "integers": [
+                  "3",
+                  "7"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 13,
+                "incoming": 11,
+                "integers": [
+                  "8",
+                  "7"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "7/8",
+            "blocking_ends": [
+              7
+            ],
+            "blocking_starts": [
+              1
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 7,
+                "incoming": 1,
+                "integers": [
+                  "6",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ],
+        "rejected_contact_count": 0,
+        "rejected_old_odd_eighth_contacts": []
+      }
+    },
+    {
+      "label": "core_1_3_5_fast",
+      "core": [
+        1,
+        3,
+        5
+      ],
+      "extra": [
+        56,
+        113,
+        64,
+        72
+      ],
+      "full_relative_speeds": [
+        1,
+        3,
+        5,
+        56,
+        64,
+        72,
+        113
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "pair": {
+        "q": 56,
+        "r": 1,
+        "phase_area": "137/7200",
+        "endpoint_correction": "-15217/5695200",
+        "actual_overlap": "207/12656",
+        "error_bound": "225/12656",
+        "piece_count": 4
+      },
+      "T": "8957/23730",
+      "E": "-93/15820",
+      "R": "33953/303744",
+      "U": "178693/1518720",
+      "one_pair_lower_bound": "201/9040",
+      "histogram": {
+        "0": "178693/1518720",
+        "1": "1635653/9112320",
+        "2": "28169/455616",
+        "3": "6011/260352",
+        "4": "41/32544"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "57/448",
+            "119/904"
+          ],
+          [
+            "121/904",
+            "79/576"
+          ],
+          [
+            "65/448",
+            "135/904"
+          ],
+          [
+            "73/448",
+            "95/576"
+          ],
+          [
+            "153/904",
+            "87/512"
+          ],
+          [
+            "89/512",
+            "7/40"
+          ],
+          [
+            "9/40",
+            "207/904"
+          ],
+          [
+            "217/904",
+            "223/904"
+          ],
+          [
+            "113/448",
+            "231/904"
+          ],
+          [
+            "233/904",
+            "151/576"
+          ],
+          [
+            "121/448",
+            "247/904"
+          ],
+          [
+            "249/904",
+            "53/192"
+          ],
+          [
+            "129/448",
+            "167/576"
+          ],
+          [
+            "385/904",
+            "191/448"
+          ],
+          [
+            "83/192",
+            "391/904"
+          ],
+          [
+            "393/904",
+            "223/512"
+          ],
+          [
+            "225/512",
+            "399/904"
+          ],
+          [
+            "201/448",
+            "407/904"
+          ],
+          [
+            "233/512",
+            "263/576"
+          ],
+          [
+            "417/904",
+            "207/448"
+          ],
+          [
+            "209/448",
+            "239/512"
+          ],
+          [
+            "91/192",
+            "431/904"
+          ],
+          [
+            "433/904",
+            "215/448"
+          ],
+          [
+            "281/576",
+            "447/904"
+          ],
+          [
+            "449/904",
+            "223/448"
+          ],
+          [
+            "225/448",
+            "455/904"
+          ],
+          [
+            "457/904",
+            "295/576"
+          ],
+          [
+            "233/448",
+            "471/904"
+          ],
+          [
+            "473/904",
+            "101/192"
+          ],
+          [
+            "273/512",
+            "239/448"
+          ],
+          [
+            "241/448",
+            "487/904"
+          ],
+          [
+            "313/576",
+            "279/512"
+          ],
+          [
+            "497/904",
+            "247/448"
+          ],
+          [
+            "505/904",
+            "287/512"
+          ],
+          [
+            "289/512",
+            "511/904"
+          ],
+          [
+            "513/904",
+            "109/192"
+          ],
+          [
+            "257/448",
+            "519/904"
+          ],
+          [
+            "409/576",
+            "319/448"
+          ],
+          [
+            "139/192",
+            "655/904"
+          ],
+          [
+            "657/904",
+            "327/448"
+          ],
+          [
+            "425/576",
+            "671/904"
+          ],
+          [
+            "673/904",
+            "335/448"
+          ],
+          [
+            "681/904",
+            "687/904"
+          ],
+          [
+            "697/904",
+            "31/40"
+          ],
+          [
+            "33/40",
+            "423/512"
+          ],
+          [
+            "425/512",
+            "751/904"
+          ],
+          [
+            "481/576",
+            "375/448"
+          ],
+          [
+            "769/904",
+            "383/448"
+          ],
+          [
+            "497/576",
+            "783/904"
+          ],
+          [
+            "785/904",
+            "391/448"
+          ]
+        ],
+        "boundary_count": 610,
+        "positive_cell_count": 50,
+        "isolated_contact_certificates": [],
+        "rejected_contact_count": 18,
+        "rejected_old_odd_eighth_contacts": [
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              3
+            ],
+            "blocking_starts": [
+              5
+            ],
+            "strict_blockers": [
+              56,
+              64,
+              72
+            ],
+            "pairs": [
+              {
+                "outgoing": 3,
+                "incoming": 5,
+                "integers": [
+                  "1",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5
+            ],
+            "blocking_starts": [
+              3
+            ],
+            "strict_blockers": [
+              56,
+              64,
+              72
+            ],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 3,
+                "integers": [
+                  "3",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "217/904",
+          "phase_right": "223/904"
+        },
+        {
+          "speed": 3,
+          "integer_part": 0,
+          "phase_left": "651/904",
+          "phase_right": "669/904"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "181/904",
+          "phase_right": "211/904"
+        },
+        {
+          "speed": 56,
+          "integer_part": 13,
+          "phase_left": "50/113",
+          "phase_right": "92/113"
+        },
+        {
+          "speed": 64,
+          "integer_part": 15,
+          "phase_left": "41/113",
+          "phase_right": "89/113"
+        },
+        {
+          "speed": 72,
+          "integer_part": 17,
+          "phase_left": "32/113",
+          "phase_right": "86/113"
+        },
+        {
+          "speed": 113,
+          "integer_part": 27,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        }
+      ],
+      "certified_interval": [
+        "217/904",
+        "223/904"
+      ]
+    },
+    {
+      "label": "core_1_3_5_slow",
+      "core": [
+        1,
+        3,
+        5
+      ],
+      "extra": [
+        6,
+        13,
+        7,
+        11
+      ],
+      "full_relative_speeds": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "pair": {
+        "q": 6,
+        "r": 1,
+        "phase_area": "137/7200",
+        "endpoint_correction": "1519/93600",
+        "actual_overlap": "11/312",
+        "error_bound": "25/156",
+        "piece_count": 4
+      },
+      "T": "641/1365",
+      "E": "157/1820",
+      "R": "17327/120120",
+      "U": "199/3432",
+      "one_pair_lower_bound": "-557/10920",
+      "histogram": {
+        "0": "199/3432",
+        "1": "8443/40040",
+        "2": "10177/120120",
+        "3": "5/168",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "1/8",
+            "1/8"
+          ],
+          [
+            "25/104",
+            "23/88"
+          ],
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "49/104",
+            "23/48"
+          ],
+          [
+            "25/48",
+            "55/104"
+          ],
+          [
+            "5/8",
+            "5/8"
+          ],
+          [
+            "65/88",
+            "79/104"
+          ],
+          [
+            "7/8",
+            "7/8"
+          ]
+        ],
+        "boundary_count": 86,
+        "positive_cell_count": 4,
+        "isolated_contact_certificates": [
+          {
+            "time": "1/8",
+            "blocking_ends": [
+              1
+            ],
+            "blocking_starts": [
+              7
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 1,
+                "incoming": 7,
+                "integers": [
+                  "0",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              3,
+              11
+            ],
+            "blocking_starts": [
+              5,
+              13
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 3,
+                "incoming": 5,
+                "integers": [
+                  "1",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              },
+              {
+                "outgoing": 3,
+                "incoming": 13,
+                "integers": [
+                  "1",
+                  "5"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 5,
+                "integers": [
+                  "4",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 13,
+                "integers": [
+                  "4",
+                  "5"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5,
+              13
+            ],
+            "blocking_starts": [
+              3,
+              11
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 3,
+                "integers": [
+                  "3",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              },
+              {
+                "outgoing": 5,
+                "incoming": 11,
+                "integers": [
+                  "3",
+                  "7"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 13,
+                "incoming": 3,
+                "integers": [
+                  "8",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 13,
+                "incoming": 11,
+                "integers": [
+                  "8",
+                  "7"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "7/8",
+            "blocking_ends": [
+              7
+            ],
+            "blocking_starts": [
+              1
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 7,
+                "incoming": 1,
+                "integers": [
+                  "6",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ],
+        "rejected_contact_count": 0,
+        "rejected_old_odd_eighth_contacts": []
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "25/104",
+          "phase_right": "23/88"
+        },
+        {
+          "speed": 3,
+          "integer_part": 0,
+          "phase_left": "75/104",
+          "phase_right": "69/88"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "21/104",
+          "phase_right": "27/88"
+        },
+        {
+          "speed": 6,
+          "integer_part": 1,
+          "phase_left": "23/52",
+          "phase_right": "25/44"
+        },
+        {
+          "speed": 7,
+          "integer_part": 1,
+          "phase_left": "71/104",
+          "phase_right": "73/88"
+        },
+        {
+          "speed": 11,
+          "integer_part": 2,
+          "phase_left": "67/104",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 13,
+          "integer_part": 3,
+          "phase_left": "1/8",
+          "phase_right": "35/88"
+        }
+      ],
+      "certified_interval": [
+        "25/104",
+        "23/88"
+      ]
+    },
+    {
+      "label": "core_1_4_8_fast",
+      "core": [
+        1,
+        4,
+        8
+      ],
+      "extra": [
+        56,
+        113,
+        64,
+        72
+      ],
+      "full_relative_speeds": [
+        1,
+        4,
+        8,
+        56,
+        64,
+        72,
+        113
+      ],
+      "core_allowed": [
+        [
+          "9/64",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "23/64"
+        ],
+        [
+          "25/64",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "39/64"
+        ],
+        [
+          "41/64",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "55/64"
+        ]
+      ],
+      "core_allowed_duration": "15/32",
+      "pair": {
+        "q": 56,
+        "r": 1,
+        "phase_area": "5/256",
+        "endpoint_correction": "605/202496",
+        "actual_overlap": "285/12656",
+        "error_bound": "225/12656",
+        "piece_count": 4
+      },
+      "T": "143279/303744",
+      "E": "899/303744",
+      "R": "16333/151872",
+      "U": "10589/101248",
+      "one_pair_lower_bound": "5941/303744",
+      "histogram": {
+        "0": "10589/101248",
+        "1": "8629/32544",
+        "2": "10307/113904",
+        "3": "7771/911232",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "65/448",
+            "135/904"
+          ],
+          [
+            "73/448",
+            "95/576"
+          ],
+          [
+            "153/904",
+            "87/512"
+          ],
+          [
+            "89/512",
+            "159/904"
+          ],
+          [
+            "35/192",
+            "167/904"
+          ],
+          [
+            "97/512",
+            "37/192"
+          ],
+          [
+            "89/448",
+            "103/512"
+          ],
+          [
+            "105/512",
+            "119/576"
+          ],
+          [
+            "121/576",
+            "191/904"
+          ],
+          [
+            "97/448",
+            "111/512"
+          ],
+          [
+            "129/448",
+            "167/576"
+          ],
+          [
+            "169/576",
+            "151/512"
+          ],
+          [
+            "153/512",
+            "271/904"
+          ],
+          [
+            "59/192",
+            "279/904"
+          ],
+          [
+            "161/512",
+            "287/904"
+          ],
+          [
+            "145/448",
+            "167/512"
+          ],
+          [
+            "169/512",
+            "191/576"
+          ],
+          [
+            "193/576",
+            "303/904"
+          ],
+          [
+            "153/448",
+            "175/512"
+          ],
+          [
+            "67/192",
+            "319/904"
+          ],
+          [
+            "177/448",
+            "359/904"
+          ],
+          [
+            "361/904",
+            "77/192"
+          ],
+          [
+            "209/512",
+            "183/448"
+          ],
+          [
+            "185/448",
+            "375/904"
+          ],
+          [
+            "241/576",
+            "215/512"
+          ],
+          [
+            "385/904",
+            "191/448"
+          ],
+          [
+            "83/192",
+            "391/904"
+          ],
+          [
+            "393/904",
+            "223/512"
+          ],
+          [
+            "225/512",
+            "399/904"
+          ],
+          [
+            "201/448",
+            "407/904"
+          ],
+          [
+            "233/512",
+            "263/576"
+          ],
+          [
+            "417/904",
+            "207/448"
+          ],
+          [
+            "209/448",
+            "239/512"
+          ],
+          [
+            "273/512",
+            "239/448"
+          ],
+          [
+            "241/448",
+            "487/904"
+          ],
+          [
+            "313/576",
+            "279/512"
+          ],
+          [
+            "497/904",
+            "247/448"
+          ],
+          [
+            "505/904",
+            "287/512"
+          ],
+          [
+            "289/512",
+            "511/904"
+          ],
+          [
+            "513/904",
+            "109/192"
+          ],
+          [
+            "257/448",
+            "519/904"
+          ],
+          [
+            "297/512",
+            "335/576"
+          ],
+          [
+            "529/904",
+            "263/448"
+          ],
+          [
+            "265/448",
+            "303/512"
+          ],
+          [
+            "115/192",
+            "543/904"
+          ],
+          [
+            "545/904",
+            "271/448"
+          ],
+          [
+            "585/904",
+            "125/192"
+          ],
+          [
+            "337/512",
+            "295/448"
+          ],
+          [
+            "601/904",
+            "383/576"
+          ],
+          [
+            "385/576",
+            "343/512"
+          ],
+          [
+            "345/512",
+            "303/448"
+          ],
+          [
+            "617/904",
+            "351/512"
+          ],
+          [
+            "625/904",
+            "133/192"
+          ],
+          [
+            "633/904",
+            "359/512"
+          ],
+          [
+            "361/512",
+            "407/576"
+          ],
+          [
+            "409/576",
+            "319/448"
+          ],
+          [
+            "401/512",
+            "351/448"
+          ],
+          [
+            "713/904",
+            "455/576"
+          ],
+          [
+            "457/576",
+            "407/512"
+          ],
+          [
+            "409/512",
+            "359/448"
+          ],
+          [
+            "155/192",
+            "415/512"
+          ],
+          [
+            "737/904",
+            "157/192"
+          ],
+          [
+            "745/904",
+            "423/512"
+          ],
+          [
+            "425/512",
+            "751/904"
+          ],
+          [
+            "481/576",
+            "375/448"
+          ],
+          [
+            "769/904",
+            "383/448"
+          ]
+        ],
+        "boundary_count": 604,
+        "positive_cell_count": 66,
+        "isolated_contact_certificates": [],
+        "rejected_contact_count": 16,
+        "rejected_old_odd_eighth_contacts": []
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "65/448",
+          "phase_right": "135/904"
+        },
+        {
+          "speed": 4,
+          "integer_part": 0,
+          "phase_left": "65/112",
+          "phase_right": "135/226"
+        },
+        {
+          "speed": 8,
+          "integer_part": 1,
+          "phase_left": "9/56",
+          "phase_right": "22/113"
+        },
+        {
+          "speed": 56,
+          "integer_part": 8,
+          "phase_left": "1/8",
+          "phase_right": "41/113"
+        },
+        {
+          "speed": 64,
+          "integer_part": 9,
+          "phase_left": "2/7",
+          "phase_right": "63/113"
+        },
+        {
+          "speed": 72,
+          "integer_part": 10,
+          "phase_left": "25/56",
+          "phase_right": "85/113"
+        },
+        {
+          "speed": 113,
+          "integer_part": 16,
+          "phase_left": "177/448",
+          "phase_right": "7/8"
+        }
+      ],
+      "certified_interval": [
+        "65/448",
+        "135/904"
+      ]
+    },
+    {
+      "label": "core_1_4_8_slow",
+      "core": [
+        1,
+        4,
+        8
+      ],
+      "extra": [
+        6,
+        13,
+        7,
+        11
+      ],
+      "full_relative_speeds": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "core_allowed": [
+        [
+          "9/64",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "23/64"
+        ],
+        [
+          "25/64",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "39/64"
+        ],
+        [
+          "41/64",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "55/64"
+        ]
+      ],
+      "core_allowed_duration": "15/32",
+      "pair": {
+        "q": 6,
+        "r": 1,
+        "phase_area": "5/256",
+        "endpoint_correction": "253/9984",
+        "actual_overlap": "7/156",
+        "error_bound": "25/156",
+        "piece_count": 4
+      },
+      "T": "7571/13728",
+      "E": "71/858",
+      "R": "8017/48048",
+      "U": "1347/16016",
+      "one_pair_lower_bound": "-5/132",
+      "histogram": {
+        "0": "1347/16016",
+        "1": "23789/96096",
+        "2": "1719/16016",
+        "3": "5/168",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "17/88",
+            "7/32"
+          ],
+          [
+            "41/104",
+            "23/56"
+          ],
+          [
+            "33/56",
+            "63/104"
+          ],
+          [
+            "25/32",
+            "71/88"
+          ]
+        ],
+        "boundary_count": 98,
+        "positive_cell_count": 4,
+        "isolated_contact_certificates": [],
+        "rejected_contact_count": 4,
+        "rejected_old_odd_eighth_contacts": [
+          {
+            "time": "1/8",
+            "blocking_ends": [
+              1
+            ],
+            "blocking_starts": [
+              7
+            ],
+            "strict_blockers": [
+              8
+            ],
+            "pairs": [
+              {
+                "outgoing": 1,
+                "incoming": 7,
+                "integers": [
+                  "0",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              11
+            ],
+            "blocking_starts": [
+              13
+            ],
+            "strict_blockers": [
+              8
+            ],
+            "pairs": [
+              {
+                "outgoing": 11,
+                "incoming": 13,
+                "integers": [
+                  "4",
+                  "5"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              13
+            ],
+            "blocking_starts": [
+              11
+            ],
+            "strict_blockers": [
+              8
+            ],
+            "pairs": [
+              {
+                "outgoing": 13,
+                "incoming": 11,
+                "integers": [
+                  "8",
+                  "7"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "7/8",
+            "blocking_ends": [
+              7
+            ],
+            "blocking_starts": [
+              1
+            ],
+            "strict_blockers": [
+              8
+            ],
+            "pairs": [
+              {
+                "outgoing": 7,
+                "incoming": 1,
+                "integers": [
+                  "6",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "17/88",
+          "phase_right": "7/32"
+        },
+        {
+          "speed": 4,
+          "integer_part": 0,
+          "phase_left": "17/22",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 6,
+          "integer_part": 1,
+          "phase_left": "7/44",
+          "phase_right": "5/16"
+        },
+        {
+          "speed": 7,
+          "integer_part": 1,
+          "phase_left": "31/88",
+          "phase_right": "17/32"
+        },
+        {
+          "speed": 8,
+          "integer_part": 1,
+          "phase_left": "6/11",
+          "phase_right": "3/4"
+        },
+        {
+          "speed": 11,
+          "integer_part": 2,
+          "phase_left": "1/8",
+          "phase_right": "13/32"
+        },
+        {
+          "speed": 13,
+          "integer_part": 2,
+          "phase_left": "45/88",
+          "phase_right": "27/32"
+        }
+      ],
+      "certified_interval": [
+        "17/88",
+        "7/32"
+      ]
+    },
+    {
+      "label": "core_2_3_5_fast",
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "extra": [
+        56,
+        113,
+        64,
+        72
+      ],
+      "full_relative_speeds": [
+        2,
+        3,
+        5,
+        56,
+        64,
+        72,
+        113
+      ],
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "pair": {
+        "q": 56,
+        "r": 1,
+        "phase_area": "499/14400",
+        "endpoint_correction": "-6809/11390400",
+        "actual_overlap": "431/12656",
+        "error_bound": "337/12656",
+        "piece_count": 6
+      },
+      "T": "35933/94920",
+      "E": "-151/31640",
+      "R": "112051/911232",
+      "U": "581999/4556160",
+      "one_pair_lower_bound": "351/9040",
+      "histogram": {
+        "0": "581999/4556160",
+        "1": "1491733/9112320",
+        "2": "29863/455616",
+        "3": "5627/260352",
+        "4": "77/16272"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "33/512",
+            "13/192"
+          ],
+          [
+            "33/448",
+            "39/512"
+          ],
+          [
+            "73/904",
+            "47/576"
+          ],
+          [
+            "49/576",
+            "39/448"
+          ],
+          [
+            "41/448",
+            "47/512"
+          ],
+          [
+            "19/192",
+            "47/448"
+          ],
+          [
+            "65/576",
+            "103/904"
+          ],
+          [
+            "105/904",
+            "55/448"
+          ],
+          [
+            "57/448",
+            "119/904"
+          ],
+          [
+            "121/904",
+            "79/576"
+          ],
+          [
+            "65/448",
+            "135/904"
+          ],
+          [
+            "73/448",
+            "95/576"
+          ],
+          [
+            "153/904",
+            "87/512"
+          ],
+          [
+            "89/512",
+            "7/40"
+          ],
+          [
+            "9/40",
+            "207/904"
+          ],
+          [
+            "217/904",
+            "223/904"
+          ],
+          [
+            "113/448",
+            "231/904"
+          ],
+          [
+            "233/904",
+            "151/576"
+          ],
+          [
+            "121/448",
+            "247/904"
+          ],
+          [
+            "249/904",
+            "53/192"
+          ],
+          [
+            "129/448",
+            "167/576"
+          ],
+          [
+            "385/904",
+            "191/448"
+          ],
+          [
+            "83/192",
+            "391/904"
+          ],
+          [
+            "393/904",
+            "223/512"
+          ],
+          [
+            "289/512",
+            "511/904"
+          ],
+          [
+            "513/904",
+            "109/192"
+          ],
+          [
+            "257/448",
+            "519/904"
+          ],
+          [
+            "409/576",
+            "319/448"
+          ],
+          [
+            "139/192",
+            "655/904"
+          ],
+          [
+            "657/904",
+            "327/448"
+          ],
+          [
+            "425/576",
+            "671/904"
+          ],
+          [
+            "673/904",
+            "335/448"
+          ],
+          [
+            "681/904",
+            "687/904"
+          ],
+          [
+            "697/904",
+            "31/40"
+          ],
+          [
+            "33/40",
+            "423/512"
+          ],
+          [
+            "425/512",
+            "751/904"
+          ],
+          [
+            "481/576",
+            "375/448"
+          ],
+          [
+            "769/904",
+            "383/448"
+          ],
+          [
+            "497/576",
+            "783/904"
+          ],
+          [
+            "785/904",
+            "391/448"
+          ],
+          [
+            "393/448",
+            "799/904"
+          ],
+          [
+            "801/904",
+            "511/576"
+          ],
+          [
+            "401/448",
+            "173/192"
+          ],
+          [
+            "465/512",
+            "407/448"
+          ],
+          [
+            "409/448",
+            "527/576"
+          ],
+          [
+            "529/576",
+            "831/904"
+          ],
+          [
+            "473/512",
+            "415/448"
+          ],
+          [
+            "179/192",
+            "479/512"
+          ]
+        ],
+        "boundary_count": 614,
+        "positive_cell_count": 48,
+        "isolated_contact_certificates": [],
+        "rejected_contact_count": 18,
+        "rejected_old_odd_eighth_contacts": [
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              3
+            ],
+            "blocking_starts": [
+              5
+            ],
+            "strict_blockers": [
+              56,
+              64,
+              72
+            ],
+            "pairs": [
+              {
+                "outgoing": 3,
+                "incoming": 5,
+                "integers": [
+                  "1",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5
+            ],
+            "blocking_starts": [
+              3
+            ],
+            "strict_blockers": [
+              56,
+              64,
+              72
+            ],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 3,
+                "integers": [
+                  "3",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 2,
+          "integer_part": 0,
+          "phase_left": "217/452",
+          "phase_right": "223/452"
+        },
+        {
+          "speed": 3,
+          "integer_part": 0,
+          "phase_left": "651/904",
+          "phase_right": "669/904"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "181/904",
+          "phase_right": "211/904"
+        },
+        {
+          "speed": 56,
+          "integer_part": 13,
+          "phase_left": "50/113",
+          "phase_right": "92/113"
+        },
+        {
+          "speed": 64,
+          "integer_part": 15,
+          "phase_left": "41/113",
+          "phase_right": "89/113"
+        },
+        {
+          "speed": 72,
+          "integer_part": 17,
+          "phase_left": "32/113",
+          "phase_right": "86/113"
+        },
+        {
+          "speed": 113,
+          "integer_part": 27,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        }
+      ],
+      "certified_interval": [
+        "217/904",
+        "223/904"
+      ]
+    },
+    {
+      "label": "core_2_3_5_slow",
+      "core": [
+        2,
+        3,
+        5
+      ],
+      "extra": [
+        6,
+        13,
+        7,
+        11
+      ],
+      "full_relative_speeds": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "core_allowed": [
+        [
+          "1/16",
+          "7/40"
+        ],
+        [
+          "9/40",
+          "7/24"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "17/40",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/40"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "17/24",
+          "31/40"
+        ],
+        [
+          "33/40",
+          "15/16"
+        ]
+      ],
+      "core_allowed_duration": "23/60",
+      "pair": {
+        "q": 6,
+        "r": 1,
+        "phase_area": "499/14400",
+        "endpoint_correction": "113/187200",
+        "actual_overlap": "11/312",
+        "error_bound": "37/156",
+        "piece_count": 6
+      },
+      "T": "2239/5460",
+      "E": "73/2730",
+      "R": "14867/120120",
+      "U": "111/1144",
+      "one_pair_lower_bound": "31/3640",
+      "histogram": {
+        "0": "111/1144",
+        "1": "23099/120120",
+        "2": "7717/120120",
+        "3": "5/168",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "1/16",
+            "7/104"
+          ],
+          [
+            "9/88",
+            "1/8"
+          ],
+          [
+            "25/104",
+            "23/88"
+          ],
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "5/8",
+            "5/8"
+          ],
+          [
+            "65/88",
+            "79/104"
+          ],
+          [
+            "7/8",
+            "79/88"
+          ],
+          [
+            "97/104",
+            "15/16"
+          ]
+        ],
+        "boundary_count": 90,
+        "positive_cell_count": 6,
+        "isolated_contact_certificates": [
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              3,
+              11
+            ],
+            "blocking_starts": [
+              5,
+              13
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 3,
+                "incoming": 5,
+                "integers": [
+                  "1",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              },
+              {
+                "outgoing": 3,
+                "incoming": 13,
+                "integers": [
+                  "1",
+                  "5"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 5,
+                "integers": [
+                  "4",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 13,
+                "integers": [
+                  "4",
+                  "5"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5,
+              13
+            ],
+            "blocking_starts": [
+              3,
+              11
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 3,
+                "integers": [
+                  "3",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              },
+              {
+                "outgoing": 5,
+                "incoming": 11,
+                "integers": [
+                  "3",
+                  "7"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 13,
+                "incoming": 3,
+                "integers": [
+                  "8",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 13,
+                "incoming": 11,
+                "integers": [
+                  "8",
+                  "7"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          }
+        ],
+        "rejected_contact_count": 0,
+        "rejected_old_odd_eighth_contacts": []
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 2,
+          "integer_part": 0,
+          "phase_left": "9/44",
+          "phase_right": "1/4"
+        },
+        {
+          "speed": 3,
+          "integer_part": 0,
+          "phase_left": "27/88",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 5,
+          "integer_part": 0,
+          "phase_left": "45/88",
+          "phase_right": "5/8"
+        },
+        {
+          "speed": 6,
+          "integer_part": 0,
+          "phase_left": "27/44",
+          "phase_right": "3/4"
+        },
+        {
+          "speed": 7,
+          "integer_part": 0,
+          "phase_left": "63/88",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 11,
+          "integer_part": 1,
+          "phase_left": "1/8",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 13,
+          "integer_part": 1,
+          "phase_left": "29/88",
+          "phase_right": "5/8"
+        }
+      ],
+      "certified_interval": [
+        "9/88",
+        "1/8"
+      ]
+    },
+    {
+      "label": "consecutive_tight",
+      "core": [
+        1,
+        2,
+        4
+      ],
+      "extra": [
+        3,
+        7,
+        5,
+        6
+      ],
+      "full_relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "1/2",
+      "pair": {
+        "q": 3,
+        "r": 1,
+        "phase_area": "3/128",
+        "endpoint_correction": "1/2688",
+        "actual_overlap": "1/42",
+        "error_bound": "13/42",
+        "piece_count": 4
+      },
+      "T": "29/42",
+      "E": "4/21",
+      "R": "4/21",
+      "U": "0",
+      "one_pair_lower_bound": "-1/6",
+      "histogram": {
+        "0": "0",
+        "1": "13/42",
+        "2": "4/21",
+        "3": "0",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "1/8",
+            "1/8"
+          ],
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "5/8",
+            "5/8"
+          ],
+          [
+            "7/8",
+            "7/8"
+          ]
+        ],
+        "boundary_count": 54,
+        "positive_cell_count": 0,
+        "isolated_contact_certificates": [
+          {
+            "time": "1/8",
+            "blocking_ends": [
+              1
+            ],
+            "blocking_starts": [
+              7
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 1,
+                "incoming": 7,
+                "integers": [
+                  "0",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              3
+            ],
+            "blocking_starts": [
+              5
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 3,
+                "incoming": 5,
+                "integers": [
+                  "1",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5
+            ],
+            "blocking_starts": [
+              3
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 3,
+                "integers": [
+                  "3",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "7/8",
+            "blocking_ends": [
+              7
+            ],
+            "blocking_starts": [
+              1
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 7,
+                "incoming": 1,
+                "integers": [
+                  "6",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ],
+        "rejected_contact_count": 0,
+        "rejected_old_odd_eighth_contacts": []
+      }
+    },
+    {
+      "label": "consecutive_7_to_8",
+      "core": [
+        1,
+        2,
+        4
+      ],
+      "extra": [
+        3,
+        8,
+        5,
+        6
+      ],
+      "full_relative_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "7/32"
+        ],
+        [
+          "9/32",
+          "7/16"
+        ],
+        [
+          "9/16",
+          "23/32"
+        ],
+        [
+          "25/32",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "1/2",
+      "pair": {
+        "q": 3,
+        "r": 2,
+        "phase_area": "5/256",
+        "endpoint_correction": "3/256",
+        "actual_overlap": "1/32",
+        "error_bound": "7/24",
+        "piece_count": 4
+      },
+      "T": "59/96",
+      "E": "11/96",
+      "R": "41/240",
+      "U": "9/160",
+      "one_pair_lower_bound": "-1/12",
+      "histogram": {
+        "0": "9/160",
+        "1": "131/480",
+        "2": "41/240",
+        "3": "0",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "9/64",
+            "7/48"
+          ],
+          [
+            "9/32",
+            "7/24"
+          ],
+          [
+            "17/40",
+            "7/16"
+          ],
+          [
+            "9/16",
+            "23/40"
+          ],
+          [
+            "17/24",
+            "23/32"
+          ],
+          [
+            "41/48",
+            "55/64"
+          ]
+        ],
+        "boundary_count": 58,
+        "positive_cell_count": 6,
+        "isolated_contact_certificates": [],
+        "rejected_contact_count": 2,
+        "rejected_old_odd_eighth_contacts": [
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              3
+            ],
+            "blocking_starts": [
+              5
+            ],
+            "strict_blockers": [
+              8
+            ],
+            "pairs": [
+              {
+                "outgoing": 3,
+                "incoming": 5,
+                "integers": [
+                  "1",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5
+            ],
+            "blocking_starts": [
+              3
+            ],
+            "strict_blockers": [
+              8
+            ],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 3,
+                "integers": [
+                  "3",
+                  "2"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "positive_interval_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "17/40",
+          "phase_right": "7/16"
+        },
+        {
+          "speed": 2,
+          "integer_part": 0,
+          "phase_left": "17/20",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 3,
+          "integer_part": 1,
+          "phase_left": "11/40",
+          "phase_right": "5/16"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "7/10",
+          "phase_right": "3/4"
+        },
+        {
+          "speed": 5,
+          "integer_part": 2,
+          "phase_left": "1/8",
+          "phase_right": "3/16"
+        },
+        {
+          "speed": 6,
+          "integer_part": 2,
+          "phase_left": "11/20",
+          "phase_right": "5/8"
+        },
+        {
+          "speed": 8,
+          "integer_part": 3,
+          "phase_left": "2/5",
+          "phase_right": "1/2"
+        }
+      ],
+      "certified_interval": [
+        "17/40",
+        "7/16"
+      ]
+    },
+    {
+      "label": "same_tight_set_regrouped",
+      "core": [
+        1,
+        6,
+        7
+      ],
+      "extra": [
+        4,
+        11,
+        5,
+        13
+      ],
+      "full_relative_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "core_allowed": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/16",
+          "15/56"
+        ],
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "17/48",
+          "23/56"
+        ],
+        [
+          "25/56",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "31/56"
+        ],
+        [
+          "33/56",
+          "31/48"
+        ],
+        [
+          "11/16",
+          "39/56"
+        ],
+        [
+          "41/56",
+          "13/16"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "core_allowed_duration": "5/14",
+      "pair": {
+        "q": 4,
+        "r": 3,
+        "phase_area": "47/2352",
+        "endpoint_correction": "-181/25872",
+        "actual_overlap": "1/77",
+        "error_bound": "89/176",
+        "piece_count": 10
+      },
+      "T": "2521/5005",
+      "E": "1467/10010",
+      "R": "1467/10010",
+      "U": "0",
+      "one_pair_lower_bound": "-191/1430",
+      "histogram": {
+        "0": "0",
+        "1": "437/2002",
+        "2": "101/770",
+        "3": "1/130",
+        "4": "0"
+      },
+      "boundary_certificate": {
+        "complete_allowed_set": [
+          [
+            "1/8",
+            "1/8"
+          ],
+          [
+            "3/8",
+            "3/8"
+          ],
+          [
+            "5/8",
+            "5/8"
+          ],
+          [
+            "7/8",
+            "7/8"
+          ]
+        ],
+        "boundary_count": 90,
+        "positive_cell_count": 0,
+        "isolated_contact_certificates": [
+          {
+            "time": "1/8",
+            "blocking_ends": [
+              1
+            ],
+            "blocking_starts": [
+              7
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 1,
+                "incoming": 7,
+                "integers": [
+                  "0",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          },
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              11
+            ],
+            "blocking_starts": [
+              5,
+              13
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 11,
+                "incoming": 5,
+                "integers": [
+                  "4",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 13,
+                "integers": [
+                  "4",
+                  "5"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "5/8",
+            "blocking_ends": [
+              5,
+              13
+            ],
+            "blocking_starts": [
+              11
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 5,
+                "incoming": 11,
+                "integers": [
+                  "3",
+                  "7"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 13,
+                "incoming": 11,
+                "integers": [
+                  "8",
+                  "7"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          },
+          {
+            "time": "7/8",
+            "blocking_ends": [
+              7
+            ],
+            "blocking_starts": [
+              1
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 7,
+                "incoming": 1,
+                "integers": [
+                  "6",
+                  "1"
+                ],
+                "sum_over_8": "1"
+              }
+            ]
+          }
+        ],
+        "rejected_contact_count": 0,
+        "rejected_old_odd_eighth_contacts": []
+      }
+    }
+  ],
+  "verification_counts": {
+    "core_residual_profiles": 20,
+    "profile_pair_checks": 20,
+    "full_decompositions": 11,
+    "distinct_full_speed_sets": 10,
+    "full_pair_endpoint_checks": 11,
+    "full_individual_endpoint_checks": 44,
+    "full_pair_duration_crosschecks": 66,
+    "complete_allowed_set_reconstructions": 11,
+    "additional_zero_phase_area_local_control": 1,
+    "additional_zero_duration_endpoint_controls": 2,
+    "positive_interval_certificates": 8,
+    "isolated_contact_certificates": 18
+  },
+  "zero_phase_area_local_control": {
+    "core": [
+      1,
+      3,
+      5
+    ],
+    "region": [
+      [
+        "17/40",
+        "23/40"
+      ]
+    ],
+    "pair": {
+      "q": 56,
+      "r": 1,
+      "phase_area": "0",
+      "endpoint_correction": "0",
+      "actual_overlap": "0",
+      "error_bound": "0",
+      "piece_count": 0
+    },
+    "accounting": {
+      "region": [
+        [
+          "17/40",
+          "23/40"
+        ]
+      ],
+      "length": "3/20",
+      "individual_blocking": {
+        "56": "9/224",
+        "113": "21/565",
+        "64": "9/256",
+        "72": "11/288"
+      },
+      "total_individual_blocking_T": "1373203/9112320",
+      "excess_over_local_average_E": "1271/1822464",
+      "redundant_blocking_R": "70499/1822464",
+      "clear_duration_U": "1923/50624",
+      "histogram": {
+        "0": "1923/50624",
+        "1": "1591/20340",
+        "2": "5853/202496",
+        "3": "1273/260352",
+        "4": "0"
+      },
+      "pair_overlaps": [
+        {
+          "speeds": [
+            56,
+            64
+          ],
+          "overlap_duration": "1/128"
+        },
+        {
+          "speeds": [
+            56,
+            72
+          ],
+          "overlap_duration": "23/2016"
+        },
+        {
+          "speeds": [
+            56,
+            113
+          ],
+          "overlap_duration": "0"
+        },
+        {
+          "speeds": [
+            64,
+            72
+          ],
+          "overlap_duration": "1/128"
+        },
+        {
+          "speeds": [
+            64,
+            113
+          ],
+          "overlap_duration": "121/14464"
+        },
+        {
+          "speeds": [
+            72,
+            113
+          ],
+          "overlap_duration": "133/16272"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "385/904",
+          "191/448"
+        ],
+        [
+          "83/192",
+          "391/904"
+        ],
+        [
+          "393/904",
+          "223/512"
+        ],
+        [
+          "225/512",
+          "399/904"
+        ],
+        [
+          "201/448",
+          "407/904"
+        ],
+        [
+          "233/512",
+          "263/576"
+        ],
+        [
+          "417/904",
+          "207/448"
+        ],
+        [
+          "209/448",
+          "239/512"
+        ],
+        [
+          "91/192",
+          "431/904"
+        ],
+        [
+          "433/904",
+          "215/448"
+        ],
+        [
+          "281/576",
+          "447/904"
+        ],
+        [
+          "449/904",
+          "223/448"
+        ],
+        [
+          "225/448",
+          "455/904"
+        ],
+        [
+          "457/904",
+          "295/576"
+        ],
+        [
+          "233/448",
+          "471/904"
+        ],
+        [
+          "473/904",
+          "101/192"
+        ],
+        [
+          "273/512",
+          "239/448"
+        ],
+        [
+          "241/448",
+          "487/904"
+        ],
+        [
+          "313/576",
+          "279/512"
+        ],
+        [
+          "497/904",
+          "247/448"
+        ],
+        [
+          "505/904",
+          "287/512"
+        ],
+        [
+          "289/512",
+          "511/904"
+        ],
+        [
+          "513/904",
+          "109/192"
+        ],
+        [
+          "257/448",
+          "519/904"
+        ]
+      ],
+      "complete_partition_cells": 91
+    }
+  },
+  "zero_duration_empty_versus_singleton": [
+    {
+      "region": [
+        [
+          "9/32",
+          "1/3"
+        ]
+      ],
+      "length": "5/96",
+      "individual_blocking": {
+        "6": "1/48",
+        "13": "1/52",
+        "7": "5/224",
+        "11": "1/352"
+      },
+      "total_individual_blocking_T": "1567/24024",
+      "excess_over_local_average_E": "421/32032",
+      "redundant_blocking_R": "421/32032",
+      "clear_duration_U": "0",
+      "histogram": {
+        "0": "0",
+        "1": "1871/48048",
+        "2": "421/32032",
+        "3": "0",
+        "4": "0"
+      },
+      "pair_overlaps": [
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "overlap_duration": "0"
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "overlap_duration": "0"
+        },
+        {
+          "speeds": [
+            6,
+            13
+          ],
+          "overlap_duration": "1/208"
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "overlap_duration": "1/352"
+        },
+        {
+          "speeds": [
+            7,
+            13
+          ],
+          "overlap_duration": "1/182"
+        },
+        {
+          "speeds": [
+            11,
+            13
+          ],
+          "overlap_duration": "0"
+        }
+      ],
+      "allowed_intervals": [],
+      "complete_partition_cells": 6
+    },
+    {
+      "region": [
+        [
+          "9/32",
+          "3/8"
+        ]
+      ],
+      "length": "3/32",
+      "individual_blocking": {
+        "6": "1/24",
+        "13": "1/52",
+        "7": "5/224",
+        "11": "9/352"
+      },
+      "total_individual_blocking_T": "5227/48048",
+      "excess_over_local_average_E": "1445/96096",
+      "redundant_blocking_R": "1445/96096",
+      "clear_duration_U": "0",
+      "histogram": {
+        "0": "0",
+        "1": "1891/24024",
+        "2": "1445/96096",
+        "3": "0",
+        "4": "0"
+      },
+      "pair_overlaps": [
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "overlap_duration": "0"
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "overlap_duration": "1/528"
+        },
+        {
+          "speeds": [
+            6,
+            13
+          ],
+          "overlap_duration": "1/208"
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "overlap_duration": "1/352"
+        },
+        {
+          "speeds": [
+            7,
+            13
+          ],
+          "overlap_duration": "1/182"
+        },
+        {
+          "speeds": [
+            11,
+            13
+          ],
+          "overlap_duration": "0"
+        }
+      ],
+      "allowed_intervals": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "complete_partition_cells": 8
+    }
+  ],
+  "general_candidate": "For any fixed positive integer core triple and fixed positive integer r, phase area I>0; U>=I-(8m+21k)/(32q) when the four extras are q,2q+r,u,v with u,v>=q and all speeds distinct. k counts positive core components, m their positive affine phase pieces.",
+  "isolated_point_candidate": "At delta=1/8 a valid interior time is isolated exactly when some speed has fractional phase 1/8 and another has 7/8. All other constraints must still be checked.",
+  "limitations": "No general existence proof for arbitrary seven speeds, no all-reference check, no independent mathematical review or novelty claim. Positive phase area is not finite-q occupancy. Durations do not determine singleton existence."
+}
