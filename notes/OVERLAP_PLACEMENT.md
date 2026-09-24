@@ -1,6 +1,6 @@
 # Local overlap from a slowly changing phase relation
 
-**Date:** September 24, 2026. **Claim status:** OBSERVED for the explicitly listed finite diagnostics; HYPOTHESIS (proof candidate) for the unbounded arguments in Sections 4, 6, and 7; OPEN for arbitrary four added speeds. The derivation is materially AI-generated and awaits independent review. No novelty claim.
+**Date:** September 24, 2026. **Claim status:** OBSERVED for the explicitly listed finite diagnostics; HYPOTHESIS (proof candidate) for the unbounded arguments in Sections 4, 6, 7, and 8; OPEN for arbitrary four added speeds. The derivation is materially AI-generated and awaits independent review. No novelty claim.
 
 ## 1. The missing local information
 
@@ -354,3 +354,128 @@ The fifteen diagnostics check arithmetic and preserve counterpressure; they are 
 For literature context, S13's pair-correlation setup and S14's Lemma 4.1 and Bernoulli-polynomial derivation were re-opened on September 24. Here $P=(B_2(\{z\})-1/6)/2$; this is established mathematical machinery. Their full-period formulas are not being cited as proofs of our local cutoffs. No novelty search for these specific sufficient constants is complete, and no novelty is asserted.
 
 **Next useful question:** how much of the conservative error allowance is actually possible at our rational endpoints? Formula (14) suggests organizing its numerator phases by q modulo 32 for r=1, modulo 16 for r=2, and modulo 96 for r=3 (the common denominators of the relevant time endpoints). The reciprocals still depend on q, so the overlap itself is not periodic in q. A finite residue-class argument might sharpen the sufficient conditions without simulating ever larger speeds. That refinement has not been carried out. Arbitrary four-speed coverage and independent proof review remain OPEN.
+
+## 8. Continuation: finite endpoint classes and the individual blocking budget
+
+**September 24, 2026. Status:** OBSERVED for the exact finite certificates and diagnostics; HYPOTHESIS/proof candidate for their reduction and unbounded implications, awaiting independent review. Vance approved classifying the rational endpoint phases to tighten the estimates.
+
+The earlier error bounds allowed separate worst cases for quantities whose phases are linked. Keeping those links yields stronger sufficient cutoffs:
+
+| Residual r in pair q,2q+r | Previous best cutoff | Exact overlap classes, same coarse excess budget | Exact overlap and individual pair durations |
+| --- | --- | --- | --- |
+| 1 | 310 | 303 | **242** |
+| 2 | 464 | 345 | **263** |
+| 3 | 78 | 62 | **36** |
+
+Each column concerns the same eight-runner family: distinct positive integer relative speeds $\{1,4,5,q,2q+r,u,v\}$, selected stationary reference 0, common start, threshold 1/8, and u,v>=q. The conclusion is positive clear duration in J. These are sufficient conditions for this family, not thresholds at which loneliness first appears.
+
+### A finite formula for infinitely many q
+
+Every term in (14) has denominator q or $(2q+r)/2$. Collecting terms gives
+
+$$O_J(q,2q+r)=I_r+\frac{A_s}{q}+\frac{B_s}{2q+r}. \tag{16}$$
+
+The coefficients are finite sums of the periodic primitive P evaluated at the relevant endpoints. They depend only on $s=q\bmod p_r$, with valid periods
+
+$$p_1=32,\qquad p_2=16,\qquad p_3=96.$$
+
+To prove this reduction, add p_r to q inside an endpoint argument $(q-slope)t-offset$. The argument increases by $p_rt$, an integer for every endpoint in that residual's table. P therefore does not change. The common endpoint denominators are 32 for r=1; 16 for r=2; and lcm(32,24,8)=96 for r=3. These are sufficient coefficient periods; no minimal-period claim is needed. The denominators in (16) still grow, so actual overlap is not periodic in q.
+
+The script obtains A_s by summing the signed P differences for slope-zero endpoints. For the endpoints of slope -r/2, it sums twice the signed P differences to obtain B_s. Upper endpoints have positive sign and lower endpoints negative sign, exactly as in (14). The full 144-class coefficient table is preserved in the JSON.
+
+Retaining the earlier excess bound gives
+
+$$U_J\geq G_r(q):=I_r+
+\frac{A_s-9/16}{q}+\frac{B_s-3/16}{2q+r}. \tag{17}$$
+
+The finite sign certificates below give cutoffs 303,345,62 for this estimate. This answers the originally proposed overlap-classification question.
+
+### The same endpoints also determine individual blocking
+
+We already know the pair's two speeds, so their individual blocking durations need not each be replaced by a worst-case allowance. Write
+
+$$h(z)=C(z)-z/4
+=\min(\{z\},1/8)+\max(0,\{z\}-7/8)-\{z\}/4,$$
+
+where C is the cumulative blocking primitive in (2), and set
+
+$$e(w)=h(w\beta)-h(w\alpha),\qquad
+D_w=L/4+\frac{e(w)}w. \tag{18}$$
+
+The piecewise-linear h has range $[-3/32,3/32]$, so $|e(w)|\leq3/16$. For integer w, e(w+32)=e(w), because $32\alpha=9$ and $32\beta=12$ are integers.
+
+Use these exact corrections for q and 2q+r. Continue to bound only the two unspecified speeds u and v by $D_w\leq L/4+3/(16w)$. Since u,v>=q,
+
+$$E\leq\frac{e(q)}q+\frac{e(2q+r)}{2q+r}+\frac3{8q}.$$
+
+Combining this with exact overlap gives the stronger uniform bound
+
+$$U_J\geq H_r(q):=I_r+
+\frac{A_s-e(q)-3/8}{q}
++\frac{B_s-e(2q+r)}{2q+r}. \tag{19}$$
+
+Termwise, $H_r(q)\geq G_r(q)$ since each e is at most 3/16.
+
+The combined coefficient periods are now **32,32,96**, giving 160 classes. Residual 2 is a useful exception: its overlap coefficients repeat every 16, but the individual q-runner blocking correction requires a valid period of 32. The overlap information alone does not encode the whole budget.
+
+### Certifying every member of each class
+
+For either (17) or (19), freeze a residue class and write its bound as
+
+$$F(q)=I_r+\frac aq+\frac b{2q+r}.$$
+
+In both cases a<0. Indeed $|A_s|\leq1/8$: for residual 3 the slope-zero contribution is the one P difference between alpha and the slope-change time; the other two residuals also have one such difference. For (19),
+
+$$a=A_s-e(q)-3/8\leq1/8+3/16-3/8=-1/16<0.$$
+
+The corresponding inequality for (17) is even stronger. Multiplying by the positive denominator gives
+
+$$q(2q+r)F(q)=
+2I_rq^2+(rI_r+2a+b)q+ra. \tag{20}$$
+
+This quadratic has positive leading coefficient and negative constant. Its two real roots therefore have opposite signs. Consequently there is exactly one positive root, and F(q) is positive for every q above that root within the class. This does not assert that F is increasing when q moves to a different residue class.
+
+For every class, the JSON gives its coefficients, the first positive integer member, and the preceding member and its nonpositive value when that preceding member is positive. These sign brackets, together with (20), certify the entire infinite class. The earlier Section 7 bounds provide a finite upper limit for finding these brackets; the script is not an unbounded search.
+
+For the stronger bound H, the classes containing the largest failures are:
+
+| r | Coefficient period | Residue of q | Last nonpositive class member | Next class member, with positive H |
+| --- | --- | --- | --- | --- |
+| 1 | 32 | 17 | 241 | 273 |
+| 2 | 32 | 6 | 262 | 294 |
+| 3 | 96 | 35 | 35 | 131 |
+
+The full class table shows that every other class has a smaller last failure or none. Hence the first integers beyond the largest failures are **242,263,36**. The long step to the next member in the final column is a residue-class step, not a claim that all intervening q fail.
+
+For clarity, exact values at the resulting global boundary are:
+
+| r | H at the last failure | H at the cutoff |
+| --- | --- | --- |
+| 1 | $H_1(241)=-25/323904$ | $H_1(242)=4793/3755840$ |
+| 2 | $H_2(262)=-47/2204992$ | $H_2(263)=203/370304$ |
+| 3 | $H_3(35)=-13/4672$ | $H_3(36)=3/1600$ |
+
+The all-larger-q conclusion rests on all class certificates, not merely these six values. These are the smallest uniform cutoffs for positivity of the stated H test. They are not the smallest sufficient cutoffs obtainable by other methods, or by the exact allowed-time calculation.
+
+### Patterns, counterchecks, and reproduction
+
+Run **python -m scripts.analyze_phase_residues**. [Code](../scripts/analyze_phase_residues.py) and [exact output](../experiments/phase_residues.json) preserve coefficients, every sign certificate, dependency hashes, and the following bounded checks.
+
+For each of the 160 combined classes, two pair-only diagnostics use q=p+s and q=2p+s, where p is the period and $0\leq s<p$. Thus q ranges from 32 through 95 for r=1,2, and from 96 through 287 for r=3. All 320 endpoint overlap formulas match both affine meeting windows and direct interval intersections. All 640 individual pair durations match direct clipping and the centered endpoint formula. These are independent arithmetic checks; the period reduction itself is the argument above.
+
+Seventeen full configurations reuse the nine Section 6 controls and add (q,r,u,v) equal to:
+
+(241,1,242,243), (242,1,243,244), (262,2,263,264), (263,2,264,265), (35,3,36,37), (36,3,37,38), (33,3,34,35), (34,3,35,36).
+
+All seventeen allowed durations match the separate boundary-cell calculation; all 68 individual durations match clipping. Sixteen positive-width intervals have direct affine certificates. The tight q=6,r=1 case retains its singleton 3/8 and zero clear duration. The previous q=56-to-57 overlap reversal remains in the controls.
+
+Two observations prevent overreading the improved cutoffs:
+
+- The three configurations immediately below the cutoffs all have positive actual clear duration, although H is negative. For example, q=35,r=3,u=36,v=37 has actual clear duration 39709/2268840.
+- The residual-3 bound passes, passes, fails, then passes as q runs through 33,34,35,36: its values are 31/16192, 79/77248, -13/4672, 3/1600. This is a phase effect in the estimate, not evidence that loneliness disappears at 35. It rules out inferring an all-larger-q result from a single successful speed without accounting for residue classes.
+
+The useful pattern is that a single q fixes several endpoint corrections together. Treating every correction as an unrelated worst case loses information. Preserving those relationships improved all three sufficient conditions without changing the runner count or the fixed core.
+
+S14 Lemma 4.1 and its fractional-part/Bernoulli framework were re-opened for context. The endpoint machinery has established precedents; this source is not asserted to prove our local finite classification or cutoffs. The derivation and implementation here are materially AI-generated. Independent review and novelty status remain unresolved, and no novelty is claimed.
+
+**Next useful question:** the two unspecified runners still contribute the coarse allowance 3/(8q). Can their exact 32-class endpoint corrections, together with distinctness, replace that allowance by a smaller uniform bound for all u,v>=q? This refinement has not been attempted. The current result remains a restricted selected-reference family, and arbitrary four-speed coverage remains OPEN.
