@@ -126,6 +126,22 @@ Alathea Jensen, *Mixed thresholds in the Lonely Runner Conjecture*, arXiv:2605.2
 
 Inspected the introduction, Lemma 4.1, its Fourier derivation, and the following unsafe-set remark on September 24, 2026. Specializing both thresholds to 1/8 gives our fractional-part formula exactly, since B2(x)=1/6-x(1-x). Jensen identifies S13 as the equal-threshold predecessor. Her k is our n-1. This source led us to S13; no claim to have audited the full mixed-threshold theory or its frontier statements.
 
+## S15 — One very fast runner and time perturbation
+
+Noah Kravitz, *Barely lonely runners and very lonely runners: a refined approach to the Lonely Runner Problem*, Combinatorial Theory 1 (2021), paper 17, published December 15, 2021. DOI 10.5070/C61055383.
+
+[Journal record](https://escholarship.org/uc/item/3wx931fh) · [Published PDF](https://escholarship.org/content/qt3wx931fh/qt3wx931fh.pdf)
+
+Inspected Proposition 6.1 and its proof on printed pages 12–13 on September 24, 2026. It preserves a safe interval for slower runners while one sufficiently fast runner moves through it. This is an established precedent for the time-perturbation argument in FAST_CLUSTER.md. The four-runner common-rotation construction is not claimed to be this proposition verbatim or to be new. The paper's n counts moving speeds in its technical formulation, so our total is n+1. No audit of the wider spectrum results.
+
+## S16 — Relative spectra and two-dimensional subtori: follow-up lead
+
+Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026.
+
+[Published PDF](https://escholarship.org/content/qt3mx8w3js/qt3mx8w3js_noSplash_9e8150c4b1543e5d1d9da402dec3a64a.pdf)
+
+Located on September 24. The primary-source search excerpt for Section 1.4 describes an extension of the one-fast-runner study to general two-dimensional subtori; the journal PDF verifies the title, authors, and publication date. This is a relevant lead for the auxiliary (t,x) representation in FAST_CLUSTER.md. The theorem statements and proofs have not been audited, and this source is not being used to establish our restricted-family claim. Comparing the precise statements is a next reading task, not a completed novelty check. The S1 HTML could not be retrieved during this continuation; no fresh claims were inferred from that failure.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.
