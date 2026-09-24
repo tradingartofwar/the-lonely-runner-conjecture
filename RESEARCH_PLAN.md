@@ -3,13 +3,13 @@
 **Created:** September 19, 2026  
 **Status:** Stage 2 implemented and checked September 19, 2026; a minimal Stage 3 demonstration exists. Broader stages remain proposals.
 
-**Team:** Vance + AI, with no automatic agent team or background work
+**Founding team:** Vance + AI. Public contributions are welcome through reviewable pull requests; no automatic agent team or background work.
 
 ## Purpose
 
 Have fun working on a genuine mathematical question. Learn its structure well enough to ask a smaller question that matters. A useful explanation, a tested failed idea, or a reproducible computational observation is a worthwhile outcome; none automatically constitutes research novelty.
 
-The quantum-observation conversation prompted the search for an enjoyable open problem. It is origin context, not a mathematical connection or a proposed quantum mechanism. The fit we want to explore is Vance's interest in rhythm, phase, and structure combined with AI's ability to formulate and test precise questions.
+The project began from a search for an enjoyable open problem suited to intuition, multiple representations, exact mathematics, and computation. Any broader origin conversation is context only, not a mathematical connection or proposed physical mechanism.
 
 ## Strategic choice
 
@@ -79,7 +79,7 @@ The first three are exploratory proposals and may rediscover known work. Search 
 
 ## Working loop
 
-Notice something -> state a testable proposition -> try hard to break it -> compare with known work -> explain what survives. Vance and AI can each introduce and challenge ideas. Maintain room for detours and enjoyment.
+Notice something -> state a testable proposition -> try hard to break it -> compare with known work -> explain what survives. Human and AI collaborators may each introduce and challenge ideas. Maintain room for detours and enjoyment.
 
 A useful experiment note needs only: question, exact assumptions, source/code revision, bounds or seed, command, result, counterchecks, and what changes next. Create `experiments/` and code folders only when they have actual content; do not prebuild a workflow platform.
 
