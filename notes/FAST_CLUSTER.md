@@ -1,5 +1,7 @@
 # Four fast runners sharing an integer clock
 
+For a self-contained statement and proposed proof of the affine-family extension, start with [the review note](REVIEW_AFFINE_FAMILY.md). The development history and broader diagnostics remain below.
+
 **Date:** September 24, 2026. **Status:** HYPOTHESIS/proof candidate for the general argument; OBSERVED for the exact diagnostics; DISPROVEN for the specific necessity claim tested below. AI materially generated the argument and implementation. Independent mathematical review remains outstanding. No novelty claim.
 
 Vance approved continuing the pair-selection question: what arithmetic structure forces enough useful overlap? Sections 1–6 check a tempting local pattern and develop a fixed-offset argument. Sections 7–11 extend it to different integer winding rates, including speed differences that grow with the common parameter. Neither continuation expands a speed-set search or optimizes another cutoff.
