@@ -144,6 +144,14 @@ Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial 
 
 September 24 follow-up: read definitions, Theorem 1.1, Section 1.4, and the Section 2.1 proof outline. Their n counts our n-1 moving coordinates. This upgrades the earlier search-excerpt lead; the full proof remains unaudited. FAST_CLUSTER.md Section 7 gives the comparison and our own mapping. We do not attribute our Fourier argument, threshold guarantee, or novelty to this source.
 
+## S17 — Two exceptional runners under a pre-jump
+
+Ho Tin Fan and Alec Sun, *Amending the Lonely Runner Spectrum Conjecture*, Electronic Journal of Combinatorics 33(1) (2026), P1.38, published February 27, 2026.
+
+[Published PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v33i1p38/pdf/)
+
+Inspected Lemma 23 and its proof (printed pages 12–13), and the Section 5.3 case split, September 24, 2026. Related modular method; its 1/4-target lemma excludes equal/opposite residues. Our ±1 family has that excluded relation. See TWO_PERTURBATIONS.md for the distinct counting argument. No full-paper audit or novelty conclusion.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.
