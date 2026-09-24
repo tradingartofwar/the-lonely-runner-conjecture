@@ -116,6 +116,8 @@ Guillem Perarnau and Oriol Serra, *Correlation Among Runners and Some Results on
 
 Inspected the pair-intersection derivation, Propositions 7–8, and Corollary 9 on September 24, 2026. Their n counts moving speeds, so our total is n+1 in their notation; the pair formula uses an independently chosen threshold delta. Proposition 8 matches our ratio calculation at delta=1/8. The journal's stated threshold range includes this value. No audit of the paper's other theorems. See [SPEED_RATIOS.md](SPEED_RATIOS.md) for our reconstruction and local application.
 
+Additional bounded reading on September 24: Lemma 13, equation (12), and the following maximum-tree selection sentence. The authors attribute the tree inequality to Hunter. It bounds the probability of avoiding all events using individual event probabilities and the pair intersections on any spanning tree. Restricting time to a positive-length core opening gives the local tree certificate in CORE_TRANSFER.md Sections 6–8. The tree idea and maximizing its pair weight are established in this source; no novelty is claimed. This reading is not an audit of Lemma 14 or the paper's resulting general bounds.
+
 ## S14 — Bernoulli-polynomial form and unequal thresholds
 
 Alathea Jensen, *Mixed thresholds in the Lonely Runner Conjecture*, arXiv:2605.27941v1, May 27, 2026.

@@ -152,4 +152,102 @@ All checks passed. Their finite scope does not replace the written unbounded arg
 
 S13, Perarnau–Serra's pair-correlation setup and geometric intersection argument, was re-opened. The proof uses established interval counting, fractional parts, and endpoint primitives; no originality is asserted. Equation (5) was already recorded in our [blocking-overlap note](BLOCKING_OVERLAPS.md). The newly documented contribution is the scoped synthesis and its explicit counterchecks, not an established new result on the general conjecture.
 
-The useful next question is **how to select useful blocking relationships from the configuration itself**. The zero-phase-area opening shows why selecting one pair in advance can miss the explanation. A bounded next step could compare which pair certifies each existing core opening, retaining endpoint contacts where no positive-duration certificate is possible. No such systematic selection study has been run. Arbitrary seven-speed coverage and independent mathematical review remain OPEN.
+The resulting next question was **how to select useful blocking relationships from the configuration itself**. The zero-phase-area opening shows why selecting one pair in advance can miss the explanation. Sections 6–8 carry out the subsequently authorized bounded study, retaining endpoint contacts where no positive-duration certificate is possible. Arbitrary seven-speed coverage and independent mathematical review remain OPEN.
+
+## 6. Selecting pairs from the configuration
+
+**Continuation, September 24:** Vance approved the proposed selection study. We reused the eleven decompositions above (ten distinct full speed sets), without adding any speeds or scanning new configurations. Every closed core component was retained, including singleton components. The [selection script](../scripts/analyze_pair_selection.py) and [exact output](../experiments/pair_selection.json) record the six pair overlaps on each component.
+
+For a component J, choose a pair maximizing its overlap O inside J. Since the excess E is the same for all six choices, this also maximizes O-E. Selection uses the local individual and pair durations; the full allowed set is computed separately to check the result.
+
+The 72 core components consist of 62 positive-width intervals and ten singletons. Their outcomes are:
+
+| Outcome or certificate | Number of components |
+| --- | ---: |
+| Actual positive clear duration | 38 |
+| Certified by individual durations alone, -E>0 | 16 |
+| Certified by the previously preferred pair | 22 |
+| Certified by the best of all six pairs | 32 |
+| Certified by the best tree of pair overlaps | 38 |
+| Only isolated valid times | 18 |
+| No valid time | 16 |
+
+The certificate rows are nested, not disjoint categories. Counts include reflection partners and the deliberately regrouped tight configuration; they are not counts of independent random examples. The last two outcome rows together with the first partition all 72 components. Each of the eighteen isolated-only components happens to contain one valid time in these cases.
+
+The useful pair changes with the opening. For the same extras {56,64,72,113} and core {1,4,5}, the unique largest-overlap pairs are:
+
+| Core component in the first half-period | Best pair |
+| --- | --- |
+| [1/8,7/40] | 56,113 |
+| [9/32,3/8] | 72,113 |
+| [17/40,15/32] | 56,72 |
+
+The reflected components have exactly the same overlaps, as expected from integer-speed symmetry under t -> 1-t. This explains the repeated pattern; it is not a separate empirical coincidence.
+
+Choosing the best single pair still misses six positive-duration components. They are three reflection pairs: the outer components for core {1,4,8} with small extras, the outer components for core {2,3,5} with small extras, and the inner components of the consecutive 7-to-8 control. A single exceptional pair is therefore not a sufficient explanation even for our existing examples.
+
+## 7. Several pairs can supply the certificate together
+
+A known inequality provides a disciplined way to combine overlaps. Put the four extra speeds at the vertices of a graph, and choose a spanning tree T: three connections joining all four vertices without a cycle. Give each edge ij weight O_ij, its pair overlap duration inside J. Then
+
+$$U_J\geq \sum_{ij\in T}O_{ij}-E_J. \tag{6}$$
+
+This is **Hunter's tree inequality**, stated and used for Lonely Runner in S13, Perarnau–Serra, Lemma 13, equation (12). Their next sentence explicitly proposes maximizing the tree's total pair weight. For positive-length J, apply that known inequality to the uniform probability measure on J and multiply by |J|. No new inequality or literature novelty is claimed.
+
+The counting reason is short. At a time when m blockers are active, their induced subgraph in a tree is a forest, with at most m-1 edges if m>0. Those edges therefore count no more than the m-1 redundant copies of blocking. Integrating gives the tree's total weight at most R; using U=R-E gives (6). Adding all six pairs would be unsafe: four simultaneous blockers give six pair overlaps but only three redundant copies.
+
+There are sixteen labeled spanning trees on four vertices. The script checks all sixteen and independently compares their maximum weight with Kruskal's greedy maximum-tree algorithm. One tree is fixed over each entire core component; it is not chosen afresh on every interval of constant blocking status.
+
+### An exact example where every single pair fails
+
+Take core {1,2,4}, extras {3,5,6,8}, and
+
+$$J=[9/32,7/16],\qquad E=1/20.$$
+
+The largest individual overlap is O_3,6=1/24, so even the best pair bound is
+
+$$1/24-1/20=-1/120.$$
+
+The following three overlaps connect all four blockers in a tree:
+
+| Tree edge | Overlap inside J |
+| --- | --- |
+| 3,6 | 1/24 |
+| 3,8 | 1/64 |
+| 5,8 | 1/64 |
+| Sum | 7/96 |
+
+Together they give
+
+$$U_J\geq 7/96-1/20=11/480>0.$$
+
+Here the lower bound is exact. The complete valid set in J is
+
+$$[9/32,7/24]\ \cup\ [17/40,7/16],$$
+
+whose total length is 11/480. Enough duplicate blocking is distributed across several relationships, even though no individual relationship supplies enough.
+
+### Exactly what the tree leaves uncounted
+
+Let S(t) be the active blockers and let c_T(S) count connected components of the induced graph T[S], including its isolated active vertices. For S nonempty, a forest has |S|-c_T(S) edges. Thus
+
+$$R_J-\sum_{ij\in T}O_{ij}
+=\int_{J:\,S(t)\ne\varnothing}\bigl(c_T(S(t))-1\bigr)\,dt. \tag{7}$$
+
+This is our elementary local accounting derivation, marked **HYPOTHESIS/proof candidate pending independent review**, not a claim of originality. It identifies precisely the loss in the tree certificate. The bound is exact if, apart from zero-duration boundary instants, the active blockers always form a connected induced subtree whenever any are active.
+
+The best tree gives the exact clear duration in seventeen of the 38 positive-duration components. The other 21 have positive uncounted overlap, so “the tree always captures all redundancy” is false even here.
+
+For a concrete countercheck, use core {2,3,5}, small extras {6,7,11,13}, and J=[1/16,7/40]. The maximizing tree has edges {6,13},{7,13},{11,13}. Its bound is 263/11440; the actual duration is 63/2288. Their difference is exactly 1/220, the duration for which just blockers 6 and 11 are active. Their tree connection goes through inactive vertex 13, so the induced active graph is disconnected. This explains the missing amount without introducing a new physical variable.
+
+## 8. Boundary contacts and the unresolved step
+
+Trees combine duration information. They cannot establish a singleton. For example, with core {1,4,5} and small extras, the best-tree bound is zero both on [1/8,7/40], which retains {1/8}, and on [17/40,15/32], which retains nothing. Both bounds even equal the actual duration zero.
+
+We therefore kept the complete boundary reconstruction and the opposing-contact certificates from Section 3. All eighteen valid isolated contacts survive the selection study. Some contacts involve core runners, so restricting the boundary test to the four extras would be incorrect.
+
+**Verification:** all 432 component pair durations agree with direct interval intersections; all 1,152 tree weights have the exact status-partition gap in (7); 72 exhaustive/greedy maximum-tree comparisons agree. Eleven full boundary reconstructions match the prior complete allowed sets. Each of the 38 components with positive duration has a separate affine interval certificate. Component sums reproduce the earlier E,R,U values, and every reflection partner matches exactly. Run **python -m scripts.analyze_pair_selection** to regenerate the JSON.
+
+This is a finite diagnostic result, not a universal tree-selection theorem. Exact overlap weights still require arithmetic work, and we have not derived speed-only conditions forcing their maximum tree weight above E in some opening. Nor have we shown that a valid opposing boundary contact must exist when no such strict bound is positive. A negative or zero lower bound by itself is inconclusive.
+
+The next useful question is: **what arithmetic condition forces a sufficiently heavy overlap tree in at least one core opening, or a valid boundary contact when only equality is possible?** The observed success of trees suggests a specific candidate mechanism to study; it does not show that this mechanism handles arbitrary configurations. Avoid restarting a speed-set sweep or returning to cutoff polishing without a new discriminating question. Independent mathematical review remains outstanding.
