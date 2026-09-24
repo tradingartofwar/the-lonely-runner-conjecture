@@ -108,6 +108,22 @@ Ram Krishna Pandey, *On Some Magnified Fibonacci Numbers Modulo a Lucas Number*,
 
 Inspected the introduction, congruence lemmas, and Theorem 5; no complete independent audit. His index `t` is our total `n`; his stage `n` is our `m-1`. The theorem supplies the witness lower bound, not alone the global maximum. Its listed endpoint order appears reversed; our note gives the exact `mod 11` check. The bound itself matches the calculations.
 
+## S13 — Exact pairwise blocking correlations
+
+Guillem Perarnau and Oriol Serra, *Correlation Among Runners and Some Results on the Lonely Runner Conjecture*, Electronic Journal of Combinatorics 23(1) (2016), P1.50, published March 18, 2016. Preprint arXiv:1407.3381v3, September 12, 2015.
+
+[Journal page](https://www.combinatorics.org/ojs/index.php/eljc/article/view/v23i1p50) · [Journal PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v23i1p50/pdf/) · [Versioned preprint](https://arxiv.org/abs/1407.3381v3)
+
+Inspected the pair-intersection derivation, Propositions 7–8, and Corollary 9 on September 24, 2026. Their n counts moving speeds, so our total is n+1 in their notation; the pair formula uses an independently chosen threshold delta. Proposition 8 matches our ratio calculation at delta=1/8. The journal's stated threshold range includes this value. No audit of the paper's other theorems. See [SPEED_RATIOS.md](SPEED_RATIOS.md) for our reconstruction and local application.
+
+## S14 — Bernoulli-polynomial form and unequal thresholds
+
+Alathea Jensen, *Mixed thresholds in the Lonely Runner Conjecture*, arXiv:2605.27941v1, May 27, 2026.
+
+[Versioned preprint](https://arxiv.org/abs/2605.27941v1) · [HTML](https://arxiv.org/html/2605.27941v1)
+
+Inspected the introduction, Lemma 4.1, its Fourier derivation, and the following unsafe-set remark on September 24, 2026. Specializing both thresholds to 1/8 gives our fractional-part formula exactly, since B2(x)=1/6-x(1-x). Jensen identifies S13 as the equal-threshold predecessor. Her k is our n-1. This source led us to S13; no claim to have audited the full mixed-threshold theory or its frontier statements.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.

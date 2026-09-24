@@ -1,0 +1,1379 @@
+{
+  "date": "2026-09-24",
+  "base_commit": "c740a21549dce1dd2eb40c224b2a9aacc8986b4f",
+  "source_sha256": {
+    "scripts/analyze_speed_ratios.py": "36a46ed8a6ca77a887d34015c1ec8b1677600dbc85881d52739d71baafc7b5c4",
+    "lonely_runner/checker.py": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971",
+    "scripts/analyze_blocking_overlaps.py": "bf5e0339a69f83055c5e1f12908769ceb0598643a9dc88467b93fc26e454c7e4",
+    "scripts/analyze_local_overlap.py": "62f21072b99bd66cb558cb84101e145afde4da3a8067c801f0339e85681dacb4",
+    "scripts/analyze_two_variable_speeds.py": "b7bc07d114afcc4bb49edefe3f0ca8b5110af7d68dfb2969baf249a1d211569a"
+  },
+  "scope": "Eight total runners, common start, selected stationary reference, positive distinct integer relative speeds, threshold fixed at 1/8.",
+  "core": [
+    1,
+    4,
+    5
+  ],
+  "interval_J": [
+    "9/32",
+    "3/8"
+  ],
+  "length_J": "3/32",
+  "core_phase_certificate": [
+    {
+      "speed": 1,
+      "integer_part": 0,
+      "phase_left": "9/32",
+      "phase_right": "3/8"
+    },
+    {
+      "speed": 4,
+      "integer_part": 1,
+      "phase_left": "1/8",
+      "phase_right": "1/2"
+    },
+    {
+      "speed": 5,
+      "integer_part": 1,
+      "phase_left": "13/32",
+      "phase_right": "7/8"
+    }
+  ],
+  "prescribed_ratios": [
+    {
+      "reduced_pair": [
+        1,
+        2
+      ],
+      "overlap_fraction": "1/8",
+      "union_fraction": "3/8",
+      "strict_g_cutoff_if_u_v_at_least_g": "52",
+      "first_sufficient_integer_g": 53,
+      "geometric_formula": "1/8",
+      "direct_interval_overlap": "1/8",
+      "perarnau_serra_formula": "1/8"
+    },
+    {
+      "reduced_pair": [
+        1,
+        3
+      ],
+      "overlap_fraction": "1/12",
+      "union_fraction": "5/12",
+      "strict_g_cutoff_if_u_v_at_least_g": "712/9",
+      "first_sufficient_integer_g": 80,
+      "geometric_formula": "1/12",
+      "direct_interval_overlap": "1/12",
+      "perarnau_serra_formula": "1/12"
+    },
+    {
+      "reduced_pair": [
+        1,
+        4
+      ],
+      "overlap_fraction": "1/16",
+      "union_fraction": "7/16",
+      "strict_g_cutoff_if_u_v_at_least_g": "106",
+      "first_sufficient_integer_g": 107,
+      "geometric_formula": "1/16",
+      "direct_interval_overlap": "1/16",
+      "perarnau_serra_formula": "1/16"
+    },
+    {
+      "reduced_pair": [
+        1,
+        5
+      ],
+      "overlap_fraction": "1/20",
+      "union_fraction": "9/20",
+      "strict_g_cutoff_if_u_v_at_least_g": "664/5",
+      "first_sufficient_integer_g": 133,
+      "geometric_formula": "1/20",
+      "direct_interval_overlap": "1/20",
+      "perarnau_serra_formula": "1/20"
+    },
+    {
+      "reduced_pair": [
+        1,
+        6
+      ],
+      "overlap_fraction": "1/24",
+      "union_fraction": "11/24",
+      "strict_g_cutoff_if_u_v_at_least_g": "1436/9",
+      "first_sufficient_integer_g": 160,
+      "geometric_formula": "1/24",
+      "direct_interval_overlap": "1/24",
+      "perarnau_serra_formula": "1/24"
+    },
+    {
+      "reduced_pair": [
+        1,
+        7
+      ],
+      "overlap_fraction": "1/28",
+      "union_fraction": "13/28",
+      "strict_g_cutoff_if_u_v_at_least_g": "1304/7",
+      "first_sufficient_integer_g": 187,
+      "geometric_formula": "1/28",
+      "direct_interval_overlap": "1/28",
+      "perarnau_serra_formula": "1/28"
+    },
+    {
+      "reduced_pair": [
+        1,
+        8
+      ],
+      "overlap_fraction": "1/16",
+      "union_fraction": "7/16",
+      "strict_g_cutoff_if_u_v_at_least_g": "106",
+      "first_sufficient_integer_g": 107,
+      "geometric_formula": "1/16",
+      "direct_interval_overlap": "1/16",
+      "perarnau_serra_formula": "1/16"
+    },
+    {
+      "reduced_pair": [
+        1,
+        9
+      ],
+      "overlap_fraction": "1/12",
+      "union_fraction": "5/12",
+      "strict_g_cutoff_if_u_v_at_least_g": "712/9",
+      "first_sufficient_integer_g": 80,
+      "geometric_formula": "1/12",
+      "direct_interval_overlap": "1/12",
+      "perarnau_serra_formula": "1/12"
+    },
+    {
+      "reduced_pair": [
+        2,
+        3
+      ],
+      "overlap_fraction": "1/12",
+      "union_fraction": "5/12",
+      "strict_g_cutoff_if_u_v_at_least_g": "712/9",
+      "first_sufficient_integer_g": 80,
+      "geometric_formula": "1/12",
+      "direct_interval_overlap": "1/12",
+      "perarnau_serra_formula": "1/12"
+    },
+    {
+      "reduced_pair": [
+        3,
+        5
+      ],
+      "overlap_fraction": "1/20",
+      "union_fraction": "9/20",
+      "strict_g_cutoff_if_u_v_at_least_g": "664/5",
+      "first_sufficient_integer_g": 133,
+      "geometric_formula": "1/20",
+      "direct_interval_overlap": "1/20",
+      "perarnau_serra_formula": "1/20"
+    },
+    {
+      "reduced_pair": [
+        56,
+        113
+      ],
+      "overlap_fraction": "1/16",
+      "union_fraction": "7/16",
+      "strict_g_cutoff_if_u_v_at_least_g": "106",
+      "first_sufficient_integer_g": 107,
+      "geometric_formula": "1/16",
+      "direct_interval_overlap": "1/16",
+      "perarnau_serra_formula": "1/16"
+    }
+  ],
+  "uniform_pair_overlap_argument": {
+    "finite_remainder_ab_less_than_10": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "minimum_fraction": "1/28",
+    "unique_reduced_minimizer": [
+      1,
+      7
+    ],
+    "ab_at_least_10_lower_bound": "3/80"
+  },
+  "general_local_bound": "rho*L-(1/4-rho^2)/g-3/(16u)-3/(16v)",
+  "ratio_free_sufficient_family": {
+    "conditions": "gcd(A,B)>=187 and u,v>=187; all seven speeds 1,4,5,A,B,u,v distinct",
+    "uniform_clear_duration_lower_bound": "15/1172864"
+  },
+  "prescribed_full_configurations": [
+    {
+      "label": "doubled",
+      "pair": [
+        56,
+        112
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        56,
+        112,
+        64,
+        72
+      ],
+      "gcd": 56,
+      "reduced_pair": [
+        1,
+        2
+      ],
+      "joint_pattern_period": "1/56",
+      "global_pair_overlap": "1/8",
+      "pair_overlap_in_J": "11/896",
+      "pair_union_in_J": "1/28",
+      "pair_union_upper_bound": "141/3584",
+      "other_blocking_in_J": {
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "clear_lower_bound": "43/21504",
+      "actual_clear_duration_in_J": "53/1792",
+      "allowed_intervals_in_J": [
+        [
+          "145/512",
+          "127/448"
+        ],
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "263/896"
+        ],
+        [
+          "153/512",
+          "135/448"
+        ],
+        [
+          "59/192",
+          "159/512"
+        ],
+        [
+          "161/512",
+          "61/192"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "297/896",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "151/448"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "313/896",
+          "159/448"
+        ],
+        [
+          "209/576",
+          "327/896"
+        ],
+        [
+          "47/128",
+          "167/448"
+        ]
+      ],
+      "witness_interval": [
+        "313/896",
+        "159/448"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "313/896",
+          "phase_right": "159/448"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "89/224",
+          "phase_right": "47/112"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "669/896",
+          "phase_right": "347/448"
+        },
+        {
+          "speed": 56,
+          "integer_part": 19,
+          "phase_left": "9/16",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 112,
+          "integer_part": 39,
+          "phase_left": "1/8",
+          "phase_right": "3/4"
+        },
+        {
+          "speed": 64,
+          "integer_part": 22,
+          "phase_left": "5/14",
+          "phase_right": "5/7"
+        },
+        {
+          "speed": 72,
+          "integer_part": 25,
+          "phase_left": "17/112",
+          "phase_right": "31/56"
+        }
+      ],
+      "witness": {
+        "time": "631/1792",
+        "distances": {
+          "1": "631/1792",
+          "4": "183/448",
+          "5": "429/1792",
+          "56": "9/32",
+          "112": "7/16",
+          "64": "13/28",
+          "72": "79/224"
+        },
+        "minimum": "429/1792"
+      },
+      "old_time_6_17_minimum": "4/17"
+    },
+    {
+      "label": "triple",
+      "pair": [
+        80,
+        240
+      ],
+      "other_two": [
+        88,
+        96
+      ],
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        80,
+        240,
+        88,
+        96
+      ],
+      "gcd": 80,
+      "reduced_pair": [
+        1,
+        3
+      ],
+      "joint_pattern_period": "1/80",
+      "global_pair_overlap": "1/12",
+      "pair_overlap_in_J": "1/128",
+      "pair_union_in_J": "5/128",
+      "pair_union_upper_bound": "97/2304",
+      "other_blocking_in_J": {
+        "88": "17/704",
+        "96": "3/128"
+      },
+      "clear_lower_bound": "35/50688",
+      "actual_clear_duration_in_J": "1153/42240",
+      "allowed_intervals_in_J": [
+        [
+          "217/768",
+          "199/704"
+        ],
+        [
+          "201/704",
+          "183/640"
+        ],
+        [
+          "37/128",
+          "223/768"
+        ],
+        [
+          "75/256",
+          "207/704"
+        ],
+        [
+          "19/64",
+          "191/640"
+        ],
+        [
+          "233/768",
+          "583/1920"
+        ],
+        [
+          "39/128",
+          "215/704"
+        ],
+        [
+          "593/1920",
+          "199/640"
+        ],
+        [
+          "201/640",
+          "607/1920"
+        ],
+        [
+          "225/704",
+          "41/128"
+        ],
+        [
+          "617/1920",
+          "247/768"
+        ],
+        [
+          "209/640",
+          "21/64"
+        ],
+        [
+          "233/704",
+          "85/256"
+        ],
+        [
+          "257/768",
+          "43/128"
+        ],
+        [
+          "217/640",
+          "239/704"
+        ],
+        [
+          "241/704",
+          "263/768"
+        ],
+        [
+          "265/768",
+          "221/640"
+        ],
+        [
+          "133/384",
+          "223/640"
+        ],
+        [
+          "91/256",
+          "229/640"
+        ],
+        [
+          "689/1920",
+          "231/640"
+        ],
+        [
+          "281/768",
+          "703/1920"
+        ],
+        [
+          "47/128",
+          "237/640"
+        ],
+        [
+          "713/1920",
+          "239/640"
+        ]
+      ],
+      "witness_interval": [
+        "47/128",
+        "237/640"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "47/128",
+          "phase_right": "237/640"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "15/32",
+          "phase_right": "77/160"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "107/128",
+          "phase_right": "109/128"
+        },
+        {
+          "speed": 80,
+          "integer_part": 29,
+          "phase_left": "3/8",
+          "phase_right": "5/8"
+        },
+        {
+          "speed": 240,
+          "integer_part": 88,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 88,
+          "integer_part": 32,
+          "phase_left": "5/16",
+          "phase_right": "47/80"
+        },
+        {
+          "speed": 96,
+          "integer_part": 35,
+          "phase_left": "1/4",
+          "phase_right": "11/20"
+        }
+      ],
+      "witness": {
+        "time": "59/160",
+        "distances": {
+          "1": "59/160",
+          "4": "19/40",
+          "5": "5/32",
+          "80": "1/2",
+          "240": "1/2",
+          "88": "9/20",
+          "96": "2/5"
+        },
+        "minimum": "5/32"
+      },
+      "old_time_6_17_minimum": "1/17"
+    },
+    {
+      "label": "three_to_two",
+      "pair": [
+        160,
+        240
+      ],
+      "other_two": [
+        88,
+        96
+      ],
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        160,
+        240,
+        88,
+        96
+      ],
+      "gcd": 80,
+      "reduced_pair": [
+        2,
+        3
+      ],
+      "joint_pattern_period": "1/80",
+      "global_pair_overlap": "1/12",
+      "pair_overlap_in_J": "1/128",
+      "pair_union_in_J": "5/128",
+      "pair_union_upper_bound": "97/2304",
+      "other_blocking_in_J": {
+        "88": "17/704",
+        "96": "3/128"
+      },
+      "clear_lower_bound": "35/50688",
+      "actual_clear_duration_in_J": "613/21120",
+      "allowed_intervals_in_J": [
+        [
+          "217/768",
+          "199/704"
+        ],
+        [
+          "201/704",
+          "367/1280"
+        ],
+        [
+          "369/1280",
+          "223/768"
+        ],
+        [
+          "75/256",
+          "75/256"
+        ],
+        [
+          "19/64",
+          "383/1280"
+        ],
+        [
+          "77/256",
+          "77/256"
+        ],
+        [
+          "233/768",
+          "583/1920"
+        ],
+        [
+          "39/128",
+          "215/704"
+        ],
+        [
+          "593/1920",
+          "239/768"
+        ],
+        [
+          "241/768",
+          "607/1920"
+        ],
+        [
+          "225/704",
+          "41/128"
+        ],
+        [
+          "617/1920",
+          "247/768"
+        ],
+        [
+          "83/256",
+          "83/256"
+        ],
+        [
+          "417/1280",
+          "21/64"
+        ],
+        [
+          "85/256",
+          "85/256"
+        ],
+        [
+          "257/768",
+          "431/1280"
+        ],
+        [
+          "433/1280",
+          "239/704"
+        ],
+        [
+          "241/704",
+          "263/768"
+        ],
+        [
+          "265/768",
+          "221/640"
+        ],
+        [
+          "133/384",
+          "447/1280"
+        ],
+        [
+          "449/1280",
+          "247/704"
+        ],
+        [
+          "91/256",
+          "91/256"
+        ],
+        [
+          "457/1280",
+          "229/640"
+        ],
+        [
+          "689/1920",
+          "463/1280"
+        ],
+        [
+          "281/768",
+          "703/1920"
+        ],
+        [
+          "47/128",
+          "471/1280"
+        ],
+        [
+          "473/1280",
+          "237/640"
+        ],
+        [
+          "713/1920",
+          "263/704"
+        ]
+      ],
+      "witness_interval": [
+        "133/384",
+        "447/1280"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "133/384",
+          "phase_right": "447/1280"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "37/96",
+          "phase_right": "127/320"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "281/384",
+          "phase_right": "191/256"
+        },
+        {
+          "speed": 160,
+          "integer_part": 55,
+          "phase_left": "5/12",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 240,
+          "integer_part": 83,
+          "phase_left": "1/8",
+          "phase_right": "13/16"
+        },
+        {
+          "speed": 88,
+          "integer_part": 30,
+          "phase_left": "23/48",
+          "phase_right": "117/160"
+        },
+        {
+          "speed": 96,
+          "integer_part": 33,
+          "phase_left": "1/4",
+          "phase_right": "21/40"
+        }
+      ],
+      "witness": {
+        "time": "2671/7680",
+        "distances": {
+          "1": "2671/7680",
+          "4": "751/1920",
+          "5": "401/1536",
+          "160": "17/48",
+          "240": "15/32",
+          "88": "379/960",
+          "96": "31/80"
+        },
+        "minimum": "401/1536"
+      },
+      "old_time_6_17_minimum": "1/17"
+    },
+    {
+      "label": "minimum_overlap_ratio",
+      "pair": [
+        192,
+        1344
+      ],
+      "other_two": [
+        200,
+        208
+      ],
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        192,
+        1344,
+        200,
+        208
+      ],
+      "gcd": 192,
+      "reduced_pair": [
+        1,
+        7
+      ],
+      "joint_pattern_period": "1/192",
+      "global_pair_overlap": "1/28",
+      "pair_overlap_in_J": "3/896",
+      "pair_union_in_J": "39/896",
+      "pair_union_upper_bound": "2249/50176",
+      "other_blocking_in_J": {
+        "200": "37/1600",
+        "208": "3/128"
+      },
+      "clear_lower_bound": "3487/16307200",
+      "actual_clear_duration_in_J": "86543/3494400",
+      "allowed_intervals_in_J": [
+        [
+          "433/1536",
+          "433/1536"
+        ],
+        [
+          "1011/3584",
+          "1013/3584"
+        ],
+        [
+          "3041/10752",
+          "471/1664"
+        ],
+        [
+          "1019/3584",
+          "91/320"
+        ],
+        [
+          "439/1536",
+          "439/1536"
+        ],
+        [
+          "147/512",
+          "147/512"
+        ],
+        [
+          "3089/10752",
+          "3095/10752"
+        ],
+        [
+          "37/128",
+          "1037/3584"
+        ],
+        [
+          "93/320",
+          "3127/10752"
+        ],
+        [
+          "149/512",
+          "149/512"
+        ],
+        [
+          "449/1536",
+          "449/1536"
+        ],
+        [
+          "3145/10752",
+          "487/1664"
+        ],
+        [
+          "3161/10752",
+          "471/1600"
+        ],
+        [
+          "473/1600",
+          "1061/3584"
+        ],
+        [
+          "455/1536",
+          "455/1536"
+        ],
+        [
+          "497/1664",
+          "3215/10752"
+        ],
+        [
+          "3217/10752",
+          "479/1600"
+        ],
+        [
+          "3233/10752",
+          "3239/10752"
+        ],
+        [
+          "463/1536",
+          "463/1536"
+        ],
+        [
+          "3265/10752",
+          "3271/10752"
+        ],
+        [
+          "489/1600",
+          "3287/10752"
+        ],
+        [
+          "3289/10752",
+          "3295/10752"
+        ],
+        [
+          "157/512",
+          "157/512"
+        ],
+        [
+          "513/1664",
+          "3319/10752"
+        ],
+        [
+          "1107/3584",
+          "99/320"
+        ],
+        [
+          "497/1600",
+          "3343/10752"
+        ],
+        [
+          "1115/3584",
+          "1117/3584"
+        ],
+        [
+          "479/1536",
+          "479/1536"
+        ],
+        [
+          "481/1536",
+          "481/1536"
+        ],
+        [
+          "1123/3584",
+          "1125/3584"
+        ],
+        [
+          "3377/10752",
+          "503/1600"
+        ],
+        [
+          "101/320",
+          "1133/3584"
+        ],
+        [
+          "3401/10752",
+          "527/1664"
+        ],
+        [
+          "163/512",
+          "163/512"
+        ],
+        [
+          "3425/10752",
+          "3431/10752"
+        ],
+        [
+          "3433/10752",
+          "511/1600"
+        ],
+        [
+          "3449/10752",
+          "3455/10752"
+        ],
+        [
+          "497/1536",
+          "497/1536"
+        ],
+        [
+          "3481/10752",
+          "3487/10752"
+        ],
+        [
+          "521/1600",
+          "3503/10752"
+        ],
+        [
+          "3505/10752",
+          "543/1664"
+        ],
+        [
+          "505/1536",
+          "505/1536"
+        ],
+        [
+          "1179/3584",
+          "527/1600"
+        ],
+        [
+          "529/1600",
+          "3559/10752"
+        ],
+        [
+          "553/1664",
+          "3575/10752"
+        ],
+        [
+          "511/1536",
+          "511/1536"
+        ],
+        [
+          "171/512",
+          "171/512"
+        ],
+        [
+          "3593/10752",
+          "107/320"
+        ],
+        [
+          "1203/3584",
+          "43/128"
+        ],
+        [
+          "3625/10752",
+          "3631/10752"
+        ],
+        [
+          "173/512",
+          "173/512"
+        ],
+        [
+          "521/1536",
+          "521/1536"
+        ],
+        [
+          "109/320",
+          "1221/3584"
+        ],
+        [
+          "569/1664",
+          "3679/10752"
+        ],
+        [
+          "1227/3584",
+          "1229/3584"
+        ],
+        [
+          "527/1536",
+          "527/1536"
+        ],
+        [
+          "1243/3584",
+          "1245/3584"
+        ],
+        [
+          "3737/10752",
+          "3743/10752"
+        ],
+        [
+          "535/1536",
+          "535/1536"
+        ],
+        [
+          "45/128",
+          "1261/3584"
+        ],
+        [
+          "3785/10752",
+          "3791/10752"
+        ],
+        [
+          "3793/10752",
+          "3799/10752"
+        ],
+        [
+          "181/512",
+          "181/512"
+        ],
+        [
+          "3833/10752",
+          "3839/10752"
+        ],
+        [
+          "3841/10752",
+          "3847/10752"
+        ],
+        [
+          "1283/3584",
+          "1285/3584"
+        ],
+        [
+          "551/1536",
+          "551/1536"
+        ],
+        [
+          "601/1664",
+          "3887/10752"
+        ],
+        [
+          "3889/10752",
+          "3895/10752"
+        ],
+        [
+          "1299/3584",
+          "1301/3584"
+        ],
+        [
+          "3905/10752",
+          "3911/10752"
+        ],
+        [
+          "559/1536",
+          "559/1536"
+        ],
+        [
+          "3937/10752",
+          "3943/10752"
+        ],
+        [
+          "1315/3584",
+          "1317/3584"
+        ],
+        [
+          "3953/10752",
+          "3959/10752"
+        ],
+        [
+          "3961/10752",
+          "3967/10752"
+        ],
+        [
+          "189/512",
+          "189/512"
+        ],
+        [
+          "617/1664",
+          "3991/10752"
+        ],
+        [
+          "1331/3584",
+          "1333/3584"
+        ],
+        [
+          "4001/10752",
+          "4007/10752"
+        ],
+        [
+          "4009/10752",
+          "4015/10752"
+        ],
+        [
+          "1339/3584",
+          "1341/3584"
+        ],
+        [
+          "575/1536",
+          "575/1536"
+        ]
+      ],
+      "witness_interval": [
+        "1011/3584",
+        "1013/3584"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "1011/3584",
+          "phase_right": "1013/3584"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "115/896",
+          "phase_right": "117/896"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "1471/3584",
+          "phase_right": "1481/3584"
+        },
+        {
+          "speed": 192,
+          "integer_part": 54,
+          "phase_left": "9/56",
+          "phase_right": "15/56"
+        },
+        {
+          "speed": 1344,
+          "integer_part": 379,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 200,
+          "integer_part": 56,
+          "phase_left": "187/448",
+          "phase_right": "237/448"
+        },
+        {
+          "speed": 208,
+          "integer_part": 58,
+          "phase_left": "151/224",
+          "phase_right": "177/224"
+        }
+      ],
+      "witness": {
+        "time": "253/896",
+        "distances": {
+          "1": "253/896",
+          "4": "29/224",
+          "5": "369/896",
+          "192": "3/14",
+          "1344": "1/2",
+          "200": "53/112",
+          "208": "15/56"
+        },
+        "minimum": "29/224"
+      },
+      "old_time_6_17_minimum": "4/17"
+    },
+    {
+      "label": "perturbed_double",
+      "pair": [
+        56,
+        113
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "relative_speeds": [
+        1,
+        4,
+        5,
+        56,
+        113,
+        64,
+        72
+      ],
+      "gcd": 1,
+      "reduced_pair": [
+        56,
+        113
+      ],
+      "joint_pattern_period": "1",
+      "global_pair_overlap": "1/16",
+      "pair_overlap_in_J": "9/3616",
+      "pair_union_in_J": "2349/50624",
+      "pair_union_upper_bound": "147/512",
+      "other_blocking_in_J": {
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "clear_lower_bound": "-755/3072",
+      "actual_clear_duration_in_J": "6193/260352",
+      "allowed_intervals_in_J": [
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "151/512"
+        ],
+        [
+          "153/512",
+          "271/904"
+        ],
+        [
+          "59/192",
+          "279/904"
+        ],
+        [
+          "161/512",
+          "287/904"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "303/904"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "67/192",
+          "319/904"
+        ],
+        [
+          "329/904",
+          "335/904"
+        ]
+      ],
+      "witness_interval": [
+        "329/904",
+        "335/904"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "329/904",
+          "phase_right": "335/904"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "103/226",
+          "phase_right": "109/226"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "741/904",
+          "phase_right": "771/904"
+        },
+        {
+          "speed": 56,
+          "integer_part": 20,
+          "phase_left": "43/113",
+          "phase_right": "85/113"
+        },
+        {
+          "speed": 113,
+          "integer_part": 41,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 64,
+          "integer_part": 23,
+          "phase_left": "33/113",
+          "phase_right": "81/113"
+        },
+        {
+          "speed": 72,
+          "integer_part": 26,
+          "phase_left": "23/113",
+          "phase_right": "77/113"
+        }
+      ],
+      "witness": {
+        "time": "83/226",
+        "distances": {
+          "1": "83/226",
+          "4": "53/113",
+          "5": "37/226",
+          "56": "49/113",
+          "113": "1/2",
+          "64": "56/113",
+          "72": "50/113"
+        },
+        "minimum": "37/226"
+      },
+      "old_time_6_17_minimum": "2/17"
+    }
+  ],
+  "verification_counts": {
+    "reduced_ratio_crosschecks": 11,
+    "finite_remainder_pairs": 9,
+    "full_configuration_checks": 5,
+    "affine_interval_certificates_including_core": 6
+  },
+  "limitations": "Known pairwise formula reproduced. Local-family argument is unreviewed, with no novelty claim. Insufficient lower bounds do not imply coverage; zero duration does not exclude valid equality points. No general four-blocker or all-reference conclusion."
+}
