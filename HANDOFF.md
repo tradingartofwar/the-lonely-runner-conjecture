@@ -28,6 +28,8 @@ The founding workflow combines human direction and intuitive questions with AI-s
 
 Standing direction from Vance: during the entire active investigation, watch for striking patterns, anomalies, and exceptions. Preserve them with exact evidence, test nearby counterexamples, and explain what the pattern does and does not establish. His observation about consistent touch-time spacing led to the latest continuation below.
 
+Significance reporting, September 24: Vance explicitly asks to be told when something significant emerges during the active investigation. Surface findings that materially change our understanding or prospects, including important patterns, counterexamples, proof gaps, review findings, and literature connections. Explain promptly what changed, why it matters for the goal, and the scope and strength of the evidence. Flag promising ideas with their uncertainty clearly labeled; keep significance for this investigation distinct from an established contribution to mathematics.
+
 ## Research baseline and limits
 
 The original frontier source in notes/SOURCES.md reports a computer-assisted result through 13 total runners. A later source check found a September 2 preprint reporting 14 total runners (S7). We have not independently audited either proof or run their code. Frontier computation is not the current assignment.
