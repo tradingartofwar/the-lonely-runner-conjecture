@@ -1,6 +1,6 @@
 # Local overlap from a slowly changing phase relation
 
-**Date:** September 24, 2026. **Claim status:** OBSERVED for the seven exact configurations; HYPOTHESIS (proof candidate) for the unbounded family in Section 4; OPEN for arbitrary four added speeds. The derivation is materially AI-generated and awaits independent review. No novelty claim.
+**Date:** September 24, 2026. **Claim status:** OBSERVED for the explicitly listed finite diagnostics; HYPOTHESIS (proof candidate) for the unbounded arguments in Sections 4, 6, and 7; OPEN for arbitrary four added speeds. The derivation is materially AI-generated and awaits independent review. No novelty claim.
 
 ## 1. The missing local information
 
@@ -244,3 +244,113 @@ Nine prescribed inputs are the Cartesian product of residuals `{1,2,3}` with `(q
 The geometric derivation in S13 was re-opened for comparison. The local residual argument is recorded with AI provenance and pending independent review; no novelty is asserted. The existing q>=310 proof candidate concerns r=1 and is not silently extended to other residuals.
 
 **Next useful question:** can we bound how far actual overlap deviates from the area under K_r(t), using q and r? The exact auxiliary areas are `9/4096`, `1/512`, and `143/12288` for r=1,2,3; these are not the finite-q overlap durations. An explicit error bound could convert the phase picture into speed conditions, while the q=56-to-57 ordering reversal would be a necessary countercheck. The general question of sufficient overlap remains OPEN.
+
+## 7. Continuation: an exact endpoint correction and sufficient cutoffs
+
+**September 24, 2026. Status:** HYPOTHESIS/proof candidate for the formulas and infinite implications below, awaiting independent review; OBSERVED for fifteen prescribed exact diagnostics. Vance approved deriving a discrepancy bound and testing its consequences. This section answers the preceding local question without asserting a general-conjecture result.
+
+The phase area and actual time occupancy are different quantities, but their difference can be written exactly. Put
+
+$$I_1=\frac9{4096},\qquad I_2=\frac1{512},\qquad I_3=\frac{143}{12288}.$$
+
+For every positive integer q and $r\in\{1,2,3\}$, the argument below gives
+
+$$\left|O_J(q,2q+r)-I_r\right|
+\leq\frac1{8q}+\frac1{4(2q+r)}. \tag{11}$$
+
+Thus the actual pair overlap tends to the positive phase area as q increases with r fixed. This is an integral statement over J, not a claim of pointwise occupancy or statistical independence. The fixed core and time interval stay fixed; this is not merely rescaling all the runners' speeds.
+
+### Writing the permitted phase as two moving endpoints
+
+On each time piece below, pair blocking is equivalent to the existence of an integer j with $a(t)<qt-j<b(t)$. Outside the listed pieces there is no pair overlap, apart from immaterial duration endpoints.
+
+| r | Time piece | a(t) | b(t) |
+| --- | --- | --- | --- |
+| 1 | $[9/32,3/8]$ | $-1/8$ | $1/16-t/2$ |
+| 2 | $[5/16,3/8]$ | $7/16-t$ | $1/8$ |
+| 3 | $[9/32,7/24]$ | $7/16-3t/2$ | $1/8$ |
+| 3 | $[7/24,3/8]$ | $7/16-3t/2$ | $9/16-3t/2$ |
+
+These follow by intersecting the signed q-phase interval $(-1/8,1/8)$ with the second blocking interval. Residual 1 uses m=0 in (10); residuals 2 and 3 use m=1. The width b-a is K on each piece. All widths are less than 1, so at most one j contributes at a time.
+
+Except when an endpoint is an integer, the blocking indicator is
+
+$$\lfloor qt-a(t)\rfloor-\lfloor qt-b(t)\rfloor
+=(b(t)-a(t))+\{qt-b(t)\}-\{qt-a(t)\}. \tag{12}$$
+
+The excluded times are finite on J: each relevant affine phase has positive slope. They do not change any duration. This convention does not remove valid equality times from the separate closed feasibility calculation.
+
+Define the continuous periodic function
+
+$$P(z)=\tfrac12\{z\}(\{z\}-1),\qquad -1/8\leq P(z)\leq0.$$
+
+Away from integers its derivative is $\{z\}-1/2$. For an affine endpoint $h(t)=st+d$ and time piece $[A,B]$, let
+
+$$W_q(h;A,B)=
+\frac{P((q-s)B-d)-P((q-s)A-d)}{q-s}. \tag{13}$$
+
+All slopes s in the table are nonpositive, so q-s>0. Integrating (12) gives the exact formula
+
+$$O_J=I_r+\sum_{\text{time pieces}}
+\bigl(W_q(b;A,B)-W_q(a;A,B)\bigr). \tag{14}$$
+
+Only endpoints and the one slope-change time are evaluated; no time grid or list of every fast cycle is required.
+
+### Bounding the correction, including the slope change
+
+For one affine endpoint, the range of P immediately gives
+
+$$|W_q(h;A,B)|\leq\frac1{8(q-s)}.$$
+
+For r=1 or r=2, the two frequencies are q and $c=q+r/2$, yielding (11).
+
+For r=3, the lower endpoint is affine over all J, so its correction has absolute value at most $1/(8c)$. The upper endpoint changes slope at $\tau=7/24$, with frequencies q before tau and c afterward. The phase $qt-b(t)$ is continuous there. Writing its values at the three time endpoints as $z_\alpha,z_\tau,z_\beta$, the total upper correction is
+
+$$\frac{P(z_\beta)}c-\frac{P(z_\alpha)}q
++\left(\frac1q-\frac1c\right)P(z_\tau).$$
+
+The coefficients sum to zero. Their positive coefficients total 1/q and their negative coefficients total -1/q. Because P lies in an interval of width 1/8, this expression lies between $-1/(8q)$ and $1/(8q)$. Adding the lower-endpoint error proves (11) for r=3 as well. This step matters: simply bounding the two upper pieces separately would give a weaker constant.
+
+### Turning the overlap bound into clear time
+
+Retain eight common-start runners with distinct speeds
+
+$$\{0,1,4,5,q,2q+r,u,v\},\qquad u,v\geq q.$$
+
+The selected reference is 0. All seven nonzero speeds are positive integers. The earlier one-speed estimate gives
+
+$$E\leq\frac3{16}\left(\frac3q+\frac1{2q+r}\right).$$
+
+Combining this with (1) and (11) yields
+
+$$U_J\geq F_r(q):=I_r-\frac{11}{16q}-\frac7{16(2q+r)}. \tag{15}$$
+
+For positive q, each subtracted reciprocal decreases strictly as q increases. Consequently F_r is strictly increasing, and checking positivity at a cutoff proves positivity for every larger integer q. These are exact sign brackets:
+
+| r | Cutoff Q from (15) | F_r(Q-1) | F_r(Q) |
+| --- | --- | --- | --- |
+| 1 | 413 | $-601/348057600$ | $5031/1398992896$ |
+| 2 | 464 | $-11/3437312$ | $7/6904320$ |
+| 3 | 78 | $-1051/13504512$ | $607/8466432$ |
+
+The **earlier r=1 cutoff 310 remains stronger** and is retained. The added sufficient families are r=2 with q>=464 and r=3 with q>=78. The cutoffs describe these estimates, not the first speeds with clear time. They also do not rank all possible residual configurations.
+
+This gives a partial answer to “what forces enough overlap?” In this fixed-core family, the phase area remains positive while both the overlap discrepancy and the excess blocking allowance shrink like 1/q. Eventually even the worst permitted corrections cannot use up that positive area. The necessary relation alone was insufficient; its quantitative occupancy bound supplies the missing step for this family.
+
+### Counterchecks, exact evidence, and the remaining question
+
+Run **python -m scripts.analyze_phase_discrepancy**. The [script](../scripts/analyze_phase_discrepancy.py) and [exact certificates](../experiments/phase_discrepancy.json) use rational arithmetic throughout. The fifteen prescribed inputs consist of Section 6's nine controls plus (q,r,u,v) equal to:
+
+(412,1,413,414), (413,1,414,415), (463,2,464,465), (464,2,465,466), (77,3,78,79), (78,3,79,80).
+
+- All fifteen endpoint formulas match the separately constructed affine windows and direct blocking-interval intersections.
+- All sixty individual endpoint durations match interval clipping. All fifteen complete allowed durations match a separate boundary partition with strict blocking predicates.
+- Fourteen positive-width allowed intervals have direct affine certificates. The tight q=6,r=1 control still has zero clear duration and retains the valid equality time 3/8.
+- All three immediately-below-cutoff cases have positive actual clear duration despite negative F_r. They directly disprove interpreting these sufficient cutoffs as exact transitions.
+- At q=56 the corrections for r=1 and r=2 are respectively 135/462848 and -29/68096; at q=57 they are -1559/5369856 and 7/29184. Their changed signs explain the previously observed ordering reversal. The phase areas themselves did not change.
+
+The fifteen diagnostics check arithmetic and preserve counterpressure; they are not the proof of the unbounded implication. That implication depends on the derivation above, which is materially AI-generated and not independently reviewed.
+
+For literature context, S13's pair-correlation setup and S14's Lemma 4.1 and Bernoulli-polynomial derivation were re-opened on September 24. Here $P=(B_2(\{z\})-1/6)/2$; this is established mathematical machinery. Their full-period formulas are not being cited as proofs of our local cutoffs. No novelty search for these specific sufficient constants is complete, and no novelty is asserted.
+
+**Next useful question:** how much of the conservative error allowance is actually possible at our rational endpoints? Formula (14) suggests organizing its numerator phases by q modulo 32 for r=1, modulo 16 for r=2, and modulo 96 for r=3 (the common denominators of the relevant time endpoints). The reciprocals still depend on q, so the overlap itself is not periodic in q. A finite residue-class argument might sharpen the sufficient conditions without simulating ever larger speeds. That refinement has not been carried out. Arbitrary four-speed coverage and independent proof review remain OPEN.
