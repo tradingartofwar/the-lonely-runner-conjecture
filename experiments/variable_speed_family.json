@@ -1,0 +1,358 @@
+{
+  "date": "2026-09-24",
+  "base_commit": "71f3c8b4929aa703d394d9816fc015bbe4374f5f",
+  "checker_sha256": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971",
+  "script_sha256": "ce272420b9f8ddaf201fafbc92309a01f34ef45dc9f9814043ea3a3d78d6b329",
+  "status": "Elementary argument with exact certificates; independent proof review outstanding; no novelty claim",
+  "scope": {
+    "n": 8,
+    "selected_reference_speed": 0,
+    "core_relative_speeds": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      11
+    ],
+    "variable_speed": "any positive integer w not in CORE",
+    "threshold": "1/8",
+    "starts": "all at the same position"
+  },
+  "core_allowed_intervals": [
+    [
+      "1/8",
+      "1/8"
+    ],
+    [
+      "17/56",
+      "5/16"
+    ],
+    [
+      "3/8",
+      "3/8"
+    ],
+    [
+      "41/88",
+      "15/32"
+    ],
+    [
+      "17/32",
+      "47/88"
+    ],
+    [
+      "5/8",
+      "5/8"
+    ],
+    [
+      "11/16",
+      "39/56"
+    ],
+    [
+      "7/8",
+      "7/8"
+    ]
+  ],
+  "certified_interval": {
+    "left": "17/56",
+    "right": "5/16",
+    "width": "1/112",
+    "phase_endpoint_certificate": [
+      {
+        "speed": 1,
+        "integer_cell": 0,
+        "phase_left": "17/56",
+        "phase_right": "5/16"
+      },
+      {
+        "speed": 4,
+        "integer_cell": 1,
+        "phase_left": "3/14",
+        "phase_right": "1/4"
+      },
+      {
+        "speed": 5,
+        "integer_cell": 1,
+        "phase_left": "29/56",
+        "phase_right": "9/16"
+      },
+      {
+        "speed": 6,
+        "integer_cell": 1,
+        "phase_left": "23/28",
+        "phase_right": "7/8"
+      },
+      {
+        "speed": 7,
+        "integer_cell": 2,
+        "phase_left": "1/8",
+        "phase_right": "3/16"
+      },
+      {
+        "speed": 11,
+        "integer_cell": 3,
+        "phase_left": "19/56",
+        "phase_right": "7/16"
+      }
+    ]
+  },
+  "finite_reduction": {
+    "necessary_divisor": 8,
+    "necessary_strict_upper_bound": "28",
+    "remaining_candidates": [
+      8,
+      16,
+      24
+    ],
+    "checks": [
+      {
+        "w": 8,
+        "time": "17/56",
+        "branch": "seventh_residue_at_left",
+        "distances": {
+          "1": "17/56",
+          "4": "3/14",
+          "5": "27/56",
+          "6": "5/28",
+          "7": "1/8",
+          "11": "19/56",
+          "8": "3/7"
+        },
+        "minimum": "1/8",
+        "interval_crosscheck": true
+      },
+      {
+        "w": 16,
+        "time": "17/56",
+        "branch": "seventh_residue_at_left",
+        "distances": {
+          "1": "17/56",
+          "4": "3/14",
+          "5": "27/56",
+          "6": "5/28",
+          "7": "1/8",
+          "11": "19/56",
+          "16": "1/7"
+        },
+        "minimum": "1/8",
+        "interval_crosscheck": true
+      },
+      {
+        "w": 24,
+        "time": "17/56",
+        "branch": "seventh_residue_at_left",
+        "distances": {
+          "1": "17/56",
+          "4": "3/14",
+          "5": "27/56",
+          "6": "5/28",
+          "7": "1/8",
+          "11": "19/56",
+          "24": "2/7"
+        },
+        "minimum": "1/8",
+        "interval_crosscheck": true
+      }
+    ],
+    "unbounded_step": "A connected closed interval cannot be covered by disjoint open blocking windows unless one window strictly contains it"
+  },
+  "sharper_reduction": {
+    "modulo8_distances": [
+      "0",
+      "1/8",
+      "1/4",
+      "3/8",
+      "1/2",
+      "3/8",
+      "1/4",
+      "1/8"
+    ],
+    "modulo7_distances_at_left_for_w_8m": [
+      "0",
+      "3/7",
+      "1/7",
+      "2/7",
+      "2/7",
+      "1/7",
+      "3/7"
+    ],
+    "necessary_divisor_to_block_both_times": 56,
+    "largest_exit_delay_after_left": "1/448",
+    "witness_formula": [
+      "8 does not divide w: t=1/8",
+      "8 divides w but 56 does not: t=17/56",
+      "56 divides w: t=17/56+1/(8w)"
+    ]
+  },
+  "counterchecks": {
+    "w13_covers_entire_interval": [
+      "31/104",
+      "33/104"
+    ],
+    "w13_still_allows_old_eighth": true,
+    "w112_blocks_both_endpoints": [
+      "0",
+      "0"
+    ],
+    "w112_interior_witness": {
+      "w": 112,
+      "time": "39/128",
+      "branch": "exit_after_left_collision",
+      "distances": {
+        "1": "39/128",
+        "4": "7/32",
+        "5": "61/128",
+        "6": "11/64",
+        "7": "17/128",
+        "11": "45/128",
+        "112": "1/8"
+      },
+      "minimum": "1/8"
+    },
+    "four_fixed_rational_times": [
+      "1/8",
+      "17/56",
+      "5/16",
+      "4/13"
+    ],
+    "speed_colliding_at_all_four": 1456
+  },
+  "prescribed_examples": [
+    {
+      "w": 2,
+      "time": "1/8",
+      "branch": "old_eighth",
+      "distances": {
+        "1": "1/8",
+        "4": "1/2",
+        "5": "3/8",
+        "6": "1/4",
+        "7": "1/8",
+        "11": "3/8",
+        "2": "1/4"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 8,
+      "time": "17/56",
+      "branch": "seventh_residue_at_left",
+      "distances": {
+        "1": "17/56",
+        "4": "3/14",
+        "5": "27/56",
+        "6": "5/28",
+        "7": "1/8",
+        "11": "19/56",
+        "8": "3/7"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 16,
+      "time": "17/56",
+      "branch": "seventh_residue_at_left",
+      "distances": {
+        "1": "17/56",
+        "4": "3/14",
+        "5": "27/56",
+        "6": "5/28",
+        "7": "1/8",
+        "11": "19/56",
+        "16": "1/7"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 24,
+      "time": "17/56",
+      "branch": "seventh_residue_at_left",
+      "distances": {
+        "1": "17/56",
+        "4": "3/14",
+        "5": "27/56",
+        "6": "5/28",
+        "7": "1/8",
+        "11": "19/56",
+        "24": "2/7"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 32,
+      "time": "17/56",
+      "branch": "seventh_residue_at_left",
+      "distances": {
+        "1": "17/56",
+        "4": "3/14",
+        "5": "27/56",
+        "6": "5/28",
+        "7": "1/8",
+        "11": "19/56",
+        "32": "2/7"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 56,
+      "time": "137/448",
+      "branch": "exit_after_left_collision",
+      "distances": {
+        "1": "137/448",
+        "4": "25/112",
+        "5": "211/448",
+        "6": "37/224",
+        "7": "9/64",
+        "11": "163/448",
+        "56": "1/8"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 112,
+      "time": "39/128",
+      "branch": "exit_after_left_collision",
+      "distances": {
+        "1": "39/128",
+        "4": "7/32",
+        "5": "61/128",
+        "6": "11/64",
+        "7": "17/128",
+        "11": "45/128",
+        "112": "1/8"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 1456,
+      "time": "3537/11648",
+      "branch": "exit_after_left_collision",
+      "distances": {
+        "1": "3537/11648",
+        "4": "625/2912",
+        "5": "5611/11648",
+        "6": "1037/5824",
+        "7": "209/1664",
+        "11": "3963/11648",
+        "1456": "1/8"
+      },
+      "minimum": "1/8"
+    },
+    {
+      "w": 56000000000000,
+      "time": "136000000000001/448000000000000",
+      "branch": "exit_after_left_collision",
+      "distances": {
+        "1": "136000000000001/448000000000000",
+        "4": "24000000000001/112000000000000",
+        "5": "43199999999999/89600000000000",
+        "6": "39999999999997/224000000000000",
+        "7": "8000000000001/64000000000000",
+        "11": "152000000000011/448000000000000",
+        "56000000000000": "1/8"
+      },
+      "minimum": "1/8"
+    }
+  ],
+  "limitations": "Selected reference only; integer one-parameter family; no general LRC, real-speed family, all-reference, maximal-separation, or tightness classification claim"
+}

@@ -1,6 +1,6 @@
 # Lonely Runner — new-thread handoff
 
-**Prepared:** September 23, 2026
+**Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
@@ -55,6 +55,7 @@ Start all runners together: shifted-start variants are different. Use exact rati
 - `notes/FIBONACCI_CHECK.md`, `scripts/check_fibonacci_patterns.py`, and `experiments/fibonacci_patterns.json`: prescribed Fibonacci prefixes, nearby controls, an additive collision constraint, and a finite Fibonacci/Lucas pattern in maxima and peak times.
 - `notes/FIBONACCI_RECURRENCE.md`, `scripts/analyze_fibonacci_recurrence.py`, and `experiments/fibonacci_recurrence.json`: small upper-bound subsets, full-prefix witnesses through 21 total runners, eight speed controls, and an unreviewed explanatory reconstruction of the now-located known formula (Sources S11–S12).
 - `notes/BLOCKING_CHAINS.md`, `scripts/analyze_blocking_chains.py`, and `experiments/blocking_chains.json`: minimum open-window chains for eight prescribed configurations, 46 graph/greedy comparisons, 21 sole-blocker witnesses, and a 13-to-8 control that blocks all denominators up to 8 while allowing time 4/13.
+- `notes/VARIABLE_SPEED_FAMILY.md`, `scripts/analyze_variable_speed_family.py`, and `experiments/variable_speed_family.json`: an elementary argument for every positive integer seventh speed added to `{1,4,5,6,7,11}`, an explicit witness formula, exact certificates, and endpoint counterchecks. Selected reference only; independent proof review remains outstanding.
 
 **Not built or run:** arbitrary-speed editing in the browser, an exhaustive atlas, frontier computation, or a new mathematical result. No article has been submitted and no researcher has been contacted. The 162 regression inputs and the new 182-input research comparison are separate bounded checks.
 
@@ -139,4 +140,10 @@ The comparison exposed a shared shortcut: none of the old seven inputs has a rel
 
 The first new allowed window is `[17/56,5/16]`, width 1/112, between the blocking periods of speeds 7 and 6. Speed 13 used to cover it; speed 8 stays clear. Removing `13=6+7` frees the new handoff while adding `8=1+7` blocks the old one. This uses the general additive collision rule without requiring Fibonacci speeds. The new case's four allowed intervals equal the positive-length intervals of the old 13-to-12 control, with the four old singleton witnesses now absent. The full calculation and scope are in `notes/BLOCKING_CHAINS.md`. No general noncoverage theorem or novelty is claimed.
 
-Next useful question: when every reduced denominator up to the total runner count is blocked, what constrains the schedule so a different valid time remains? The new 13-to-8 case is a concrete starting point. Interval-graph certificates are now implemented; lattice certificates are not. Follow Vance's direction; no broad scan or independent reviewer contact is authorized. Git history retains earlier stopping points.
+September 24 continuation: Vance approved fixing the six relative speeds `{1,4,5,6,7,11}` and allowing a seventh distinct positive integer speed w with no upper bound. The AI developed the proposed finite reduction and found a sharper modular explanation. To block `t=1/8`, w must be divisible by 8. The six fixed runners are clear throughout `I=[17/56,5/16]`, width 1/112. Covering this connected closed interval with one runner's disjoint open blocking windows requires `1/(4w)>1/112`, so w<28. Only 8,16,24 remain, and all allow `t=17/56`. Exact interval and affine-phase certificates support the argument; no scan over an unbounded range was used.
+
+The sharper pattern removes even those exceptions: with w=8m, the phase at `17/56` is `17m/7`, so blocking both selected times requires `56|w`. Then `t=17/56+1/(8w)` is still inside I and the added runner is exactly 1/8 away. Together with `t=1/8` when `8` does not divide w and `t=17/56` when `8|w` but `56` does not divide w, this gives an explicit witness for every admissible w. The argument is for the selected reference only, has not received independent proof review, and carries no novelty claim. See `notes/VARIABLE_SPEED_FAMILY.md` for the full derivation and exact certificates.
+
+Counterchecks: speed 13 covers the whole interval but cannot block the old eighth time; speed 112 blocks both interval endpoints but leaves the interior witness `39/128`. No fixed finite list of rational times can work for all integer w: a sufficiently large common denominator multiple collides at them all. The formula therefore adapts the witness to w. Nine prescribed inputs include a very large speed to demonstrate direct arithmetic, not to establish the infinite statement. The previous divisibility-plus-width method from the 6-to-12 explanation was reused, then simplified; Fibonacci is not assumed.
+
+Next useful question: what changes when two variable runners can share the blocking duty? Their windows can overlap and cover one another's gaps, so this single-variable argument does not directly extend. Follow Vance's direction before expanding scope; no broad scan or independent reviewer contact is authorized. Interval-graph certificates are implemented; lattice certificates are not. Git history retains earlier stopping points.
