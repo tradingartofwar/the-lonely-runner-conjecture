@@ -6,6 +6,14 @@
 **Canonical branch:** `main`  
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
+## Current resumption — LR 2, September 25
+
+Begin with [LR2_HANDOFF.md](LR2_HANDOFF.md) for the compact current state, the public draft PR #3 publication map, preservation audit, and next question. The latest mathematical baseline recovered from LR 1 is `cc4328c68671540284dd9796931103b43a845b1b`, on `research/near-doubling-overlap-2026-09-24`; it has not been merged into `main`.
+
+All six Ultra reports, verification artifacts, and the final six-window/triple-exclusion correction are preserved. LR 2 checked all 139 remote files, the review manifest hashes, and reran all seven read-only verification groups successfully. No substantive Ultra artifact was found missing. Conversation retrieval was partial, so this is not a claim of complete verbatim transcript recovery.
+
+The current next internal question is what additional runner geometry makes an overlap certificate sufficient, keeping local opening recovery, core/window selection, and isolated equality distinct. The versioned affine Steps A–D note remains the focused outside-review candidate. Earlier next-step paragraphs below are chronological history and may have been superseded by the Ultra review and its follow-up.
+
 ## Why we are here
 
 Vance asked whether there were well-known unsolved problems that he and AI could work on together, just for fun. The Lonely Runner Conjecture appealed because it offers concrete motion, rhythm, and phase relationships alongside exact mathematics and computational experiments. Vance then created this repository and asked for a plan, strategy, and handoff.
