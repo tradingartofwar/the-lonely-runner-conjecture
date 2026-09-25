@@ -8,6 +8,8 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — LR 2, September 25
 
+The latest [LTCM thought-experiment continuation](notes/LAP_LABELLED_CONSTRAINTS.md) identifies lost lap-occurrence information in the runner-level overlap graph. Restoring individual blocking intervals gives exact forest certificates for all five existing local controls; the artificial triple requires incompatible lap occurrences. The next question is a sparse arithmetic selection rule, with equality retained. See [DOMAIN_CONNECTIONS.md](notes/DOMAIN_CONNECTIONS.md#september-25-ltcms-and-runner-thought-experiments) for Vance's LTCM framing and the conceptual scope. This is a representation/certificate refinement, not a general existence proof.
+
 The subsequent [priority review](notes/LR2_REVIEW_PRIORITIES.md) distinguishes a useful graph/window selection theorem from unrestricted subdivision, records a known graph-sieve extension with triple-overlap corrections, and preserves five exact nearby controls. Equality and coefficient quantifiers remain explicit.
 
 Begin with [LR2_HANDOFF.md](LR2_HANDOFF.md) for the compact current state, the public draft PR #3 publication map, preservation audit, and next question. The latest mathematical baseline recovered from LR 1 is `cc4328c68671540284dd9796931103b43a845b1b`, on `research/near-doubling-overlap-2026-09-24`; it has not been merged into `main`.

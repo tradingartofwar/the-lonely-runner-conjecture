@@ -176,6 +176,22 @@ Klaus Dohmen, *Improved Inclusion-Exclusion Identities and Bonferroni Inequaliti
 
 Inspected September 25, 2026: Section 4.3, printed pp. 45–47, Theorem 4.3.1, its displayed proofs, and Corollary 4.3.3 with its tree-selection remarks. This supplies established context for the triangle-with-leaf overlap bound in LR2_REVIEW_PRIORITIES.md. Our 16-state check is self-contained. No full-thesis audit or novelty determination. Direct Project Euclid attempts exposed only an iframe; no full-paper reading is claimed from those attempts.
 
+## S19 — Multivariate information and synergy
+
+Paul L. Williams and Randall D. Beer, *Nonnegative Decomposition of Multivariate Information*, arXiv:1004.2515v1, April 14, 2010.
+
+[Versioned source](https://arxiv.org/abs/1004.2515v1)
+
+Inspected the abstract and version metadata September 25, 2026, with introductory HTML consulted during the LTCM discussion. The paper develops a partial information decomposition distinguishing redundancy and synergy about a target variable. This is a possible representational direction, not an applied result for our runner data. No full-paper audit, numerical decomposition, or assessment of competing definitions has been performed. Pair-marginal insufficiency is not by itself a measured partial-information quantity.
+
+## S20 — Interval-graph terminology
+
+Chun-Hung Liu, *Lecture notes for Mar 25, 2024: Chordal graphs*, Texas A&M University.
+
+[Author-hosted notes](https://people.tamu.edu/~chliu/teaching/spring24math662/2024_03_25.pdf)
+
+Inspected the interval-graph definition and adjacent discussion on printed page 4, September 25, 2026. This identifies standard intersection-graph terminology and the interval/chordal connection. LAP_LABELLED_CONSTRAINTS.md supplies its own elementary maximum-overlap forest argument; that identity is not attributed to these lecture notes. Our edges require positive overlap duration, with equality endpoints checked separately; the lecture's definition uses intersecting closed intervals. No historical novelty search or full-note proof audit is claimed.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.
