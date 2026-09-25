@@ -112,6 +112,59 @@ def tree_check():
             "same_single_and_pair_moments": True}
 
 
+def all_core_windows_check():
+    """Post-review discussion: local certificate failure is not global failure."""
+    core, extras = (1,4,5), (6,7,11,16)
+    edges = list(combinations(range(4),2))
+    trees = []
+    for chosen in combinations(edges,3):
+        reached = {0}
+        for _ in range(4):
+            for i,j in chosen:
+                if i in reached or j in reached:
+                    reached.update((i,j))
+        if len(reached) == 4:
+            trees.append(chosen)
+    assert len(trees) == 16
+    result = []
+    for lo,hi in allowed_components(core,F(0),F(1)):
+        assert lo < hi
+        cuts = partition(extras,lo,hi)
+        atoms = {mask:F(0) for mask in range(16)}
+        for a,b in zip(cuts,cuts[1:]):
+            mask = sum(1<<i for i,v in enumerate(extras)
+                       if distance(v*(a+b)/2) < D)
+            atoms[mask] += b-a
+        singles = sum(mask.bit_count()*length for mask,length in atoms.items())
+        pairs = {e:sum(length for mask,length in atoms.items()
+                       if all(mask & (1<<i) for i in e)) for e in edges}
+        triples = sum(len(list(combinations(range(mask.bit_count()),3)))*length
+                      for mask,length in atoms.items())
+        quad = atoms[15]
+        bound = hi-lo-singles+max(sum(pairs[e] for e in t) for t in trees)
+        actual = allowed_components((*core,*extras),lo,hi)
+        clear = sum((b-a for a,b in actual),F(0))
+        assert clear == atoms[0] == hi-lo-singles+sum(pairs.values())-triples+quad
+        result.append({"window":(lo,hi),"tree_bound":bound,"actual_allowed":actual,
+                       "clear_duration":clear,"triple_sum":triples,"quadruple":quad})
+    assert len(result) == 6
+    assert [r["tree_bound"] for r in result] == [F(0),-F(23,29568),F(1,352),F(1,352),-F(23,29568),F(0)]
+    assert result[2]["actual_allowed"] == [(F(41,88),F(15,32))]
+    assert result[3]["actual_allowed"] == [(F(17,32),F(47,88))]
+    # The only positive triangle in the missed window is 6,11,16.
+    # Their triple overlap is excluded by exact affine phase bounds.
+    common = (max((F(2)-D)/6,(F(4)-D)/11),
+              min((F(2)+D)/6,(F(4)+D)/11))
+    assert common == (F(31,88),F(17,48))
+    assert (F(3)+D)/11 < (F(2)-D)/6
+    phases = tuple(16*t-5 for t in common)
+    assert phases == (F(7,11),F(2,3)) and D < min(phases) <= max(phases) < 1-D
+    assert result[1]["triple_sum"] == result[1]["quadruple"] == 0
+    return {"core":core,"extras":extras,"windows":result,
+            "positive_tree_windows":2,"missed_window_triangle_pair_interval":common,
+            "speed16_phases_on_pair_interval":phases}
+
+
 def boundary_contacts_check():
     examples = [((4,-8,11,-11),21,F(5,8),"starts"),
                 ((5,-19,20,-32),23,F(1,16),"ends"),
@@ -156,5 +209,6 @@ def ten_runner_witness():
 
 if __name__ == "__main__":
     print(json.dumps({"core_partition":core_check(),"tree_limitation":tree_check(),
+                      "post_review_all_core_windows":all_core_windows_check(),
                       "core_boundary_contacts":boundary_contacts_check(),
                       "ten_runner_witness":ten_runner_witness()},indent=2,default=str))

@@ -153,3 +153,27 @@ The most focused external correctness/prior-art request remains the pinned [affi
 For the next internal mathematical question, the tree counterexample is more discriminating than further cutoff polishing: **which information about overlap placement or higher intersections rules out the abstract complete-cover arrangement while respecting actual runner speeds?** An alternative is to ask whether a different core or a finer time subdivision must yield a certificate. Those are distinct conjectures, and the present review proves neither.
 
 The useful progress is a more precise map of what survives scrutiny, what can be generalized, and what information our current methods lose. Independent external correctness and novelty review remain open.
+
+
+## 7. Post-review discussion: a local failure and a successful whole-configuration certificate
+
+September 25 follow-up by the root, after Vance asked what else we had not considered. This is a new bounded check, not a finding attributed retrospectively to the six reviewers.
+
+The exact counterexample concerned one selected core component. Checking all six positive-length components for the same core {1,4,5} and extras {6,7,11,16} gives:
+
+| Core window | Best tree lower bound | Actual clear duration |
+| --- | --- | --- |
+| [1/8,7/40] | 0 | 0 |
+| [9/32,3/8] | -23/29568 | 1/896 |
+| [17/40,15/32] | 1/352 | 1/352 |
+| [17/32,23/40] | 1/352 | 1/352 |
+| [5/8,23/32] | -23/29568 | 1/896 |
+| [33/40,7/8] | 0 | 0 |
+
+The tree bound therefore **does certify loneliness for this configuration**, using either of the two middle windows. Their exact allowed intervals are [41/88,15/32] and [17/32,47/88]. Its local loss in the earlier window remains real, but does not disprove the possibility that a suitable choice of core/window may suffice more generally. That broader selection question remains open here, with isolated equality cases requiring separate treatment.
+
+The missed local opening also needs only a small additional piece of information. For four blocking sets, inclusion-exclusion gives U=L-S1+S2-S3+S4, where Sj sums j-fold intersection durations. All triple intersections vanish in the missed window, so adding **all six** pair overlaps is exact and returns U=1/896. This does not contradict the pair-data obstruction: absence of triple intersections is information beyond the single/pair totals.
+
+For a direct arithmetic certificate, the simultaneous block by 6 and 11 occurs only in (31/88,17/48). Throughout its closure, speed 16 has phase between 7/11 and 2/3, strictly inside [1/8,7/8]. Hence 6,11,16 cannot all block together. The zero overlaps of 7 with 6 and 16 exclude the other triples. Thus the abstract complete-cover alteration requires a triple intersection that this actual speed geometry forbids.
+
+The independent root verifier now checks all six windows, all sixteen trees per window, the inclusion-exclusion identities, and these exact phase bounds. Reproduce with `python reviews/2026-09-25-ultra/verify.py root`. The original reviewer reports are unchanged. This sharpens the next question: determine which small amount of extra geometric information is sufficient, while distinguishing recovery of every local opening from finding at least one valid time.
