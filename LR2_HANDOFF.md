@@ -30,7 +30,7 @@ Thus the Ultra work was made available on GitHub for inspection. The repository 
 
 The live tree at `cc4328c68671540284dd9796931103b43a845b1b` contains 139 files. LR 2 reconstructed and checked all 139 against their Git blob hashes. The old working directory matched 129 directly; the remaining ten were missing or stale governance, licensing, and overview files retrieved from the pinned remote revision. No research or Ultra artifact was missing from the remote tree.
 
-The Ultra directory contains 20 files: six reports, eight Python verification/runner files, five JSON results, and the manifest. All 19 artifact SHA-256 entries in the manifest, plus its consolidated-report hash, matched. Comparing the original reviewer output directory with the public package found preserved mathematical reports and results, with portable path substitutions where needed. The root verifier/output additionally contains the documented post-review correction. Its earlier versions remain in Git history.
+At the initial recovery, the Ultra directory contained 20 files: six reports, eight Python verification/runner files, five JSON results, and the manifest. All 19 artifact SHA-256 entries in the manifest, plus its consolidated-report hash, matched. Comparing the original reviewer output directory with the public package found preserved mathematical reports and results, with portable path substitutions where needed. The root verifier/output additionally contains the documented post-review correction. Its earlier versions remain in Git history.
 
 | Reviewer assignment | Preserved report | Main contribution |
 | --- | --- | --- |
@@ -66,6 +66,8 @@ The subsequent all-window check is essential: two other windows for this same co
 **Package limitations.** Four historical selected-source manifests omit the transitive `scripts/analyze_residual_overlap.py` dependency; the full pinned commit preserves it. This is a provenance-completeness issue, not a demonstrated wrong calculation. Preserve historical outputs. Future manifests should record the dependency closure or explicitly describe their selection. The dated literature update and reading limits are in [SOURCES.md](notes/SOURCES.md); LR 2 has not conducted another literature audit.
 
 ## Next useful work
+
+**September 25 priority review:** [LR2_REVIEW_PRIORITIES.md](notes/LR2_REVIEW_PRIORITIES.md) sharpens the proposal: use established graph inequalities and speed-derived bounds on necessary triple intersections; require a useful selection rule; retain equality certificates. It includes five exact nearby controls and identifies underemphasized Ultra deductions. The two successful LR 1 windows are reflections. A referenced original tiling console trace was also restored; its substantive content was already preserved.
 
 The current internal question is: **What small amount of additional runner geometry lets an overlap certificate detect a real opening?** Start from the exact triple-exclusion certificate already obtained for `{0,1,4,5,6,7,11,16}` and formulate a statement that could fail in a nearby case.
 

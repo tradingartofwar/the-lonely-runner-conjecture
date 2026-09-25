@@ -168,6 +168,14 @@ Ho Tin Fan and Alec Sun, *Amending the Lonely Runner Spectrum Conjecture*, Elect
 
 Inspected Lemma 23 and its proof (printed pages 12–13), and the Section 5.3 case split, September 24, 2026. Related modular method; its 1/4-target lemma excludes equal/opposite residues. Our ±1 family has that excluded relation. See TWO_PERTURBATIONS.md for the distinct counting argument. No full-paper audit or novelty conclusion.
 
+## S18 — Graph sieves beyond trees
+
+Klaus Dohmen, *Improved Inclusion-Exclusion Identities and Bonferroni Inequalities with Applications to Reliability Analysis of Coherent Systems*, Humboldt-Universitaet zu Berlin, habilitation dated May 16, 2000; qualification recorded February 5, 2001.
+
+[University-hosted text](https://edoc.hu-berlin.de/bitstreams/21a4438c-82b7-4974-9340-9de83b634791/download)
+
+Inspected September 25, 2026: Section 4.3, printed pp. 45–47, Theorem 4.3.1, its displayed proofs, and Corollary 4.3.3 with its tree-selection remarks. This supplies established context for the triangle-with-leaf overlap bound in LR2_REVIEW_PRIORITIES.md. Our 16-state check is self-contained. No full-thesis audit or novelty determination. Direct Project Euclid attempts exposed only an iframe; no full-paper reading is claimed from those attempts.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.
