@@ -138,6 +138,8 @@ September 24 scaled-perturbation follow-up: inspected Section 2, printed page 5,
 
 September 24 four-perturbation follow-up: revisited the Section 2 pre-jump paragraph. FOUR_PERTURBATIONS.md keeps the core phase fixed and explicitly rounds an auxiliary opening onto actual times. Its fifth-grid argument and finite remainder are our unreviewed specialization; this source is methodological precedent, not a novelty certificate.
 
+September 25 unequal-offset follow-up: revisited the same Section 2 pre-jump paragraph. UNEQUAL_PERTURBATIONS.md uses exact phase intervals and midpoint rounding for one doubled offset. Its tiling divisibility lemma and 44-case finite remainder are our unreviewed synthesis; no novelty or wider literature-audit claim.
+
 ## S16 — Relative spectra and two-dimensional subtori
 
 Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026. Inspected preprint: arXiv:2411.12684v2, December 9, 2024.
