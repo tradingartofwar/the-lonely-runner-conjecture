@@ -1,0 +1,1494 @@
+{
+  "date": "2026-09-24",
+  "base_commit": "77663f45fe7991b613b3d37244c589bf8e24b70b",
+  "claim_status": {
+    "finite_cases": "OBSERVED",
+    "general_phase_derivation": "HYPOTHESIS: elementary argument awaiting independent review",
+    "arbitrary_coverage": "OPEN"
+  },
+  "source_sha256": {
+    "scripts/analyze_residual_overlap.py": "fd0bdff300f11f175512523fc0fa6ebdda614b4318833ca6da79e16fc0831af9",
+    "scripts/analyze_overlap_placement.py": "3fdd49d97de4e6e7f52bc13e5b92df229c7641e10078cffc793fa4f4dc199636",
+    "scripts/analyze_local_overlap.py": "62f21072b99bd66cb558cb84101e145afde4da3a8067c801f0339e85681dacb4",
+    "scripts/analyze_blocking_overlaps.py": "bf5e0339a69f83055c5e1f12908769ceb0598643a9dc88467b93fc26e454c7e4",
+    "scripts/analyze_two_variable_speeds.py": "b7bc07d114afcc4bb49edefe3f0ca8b5110af7d68dfb2969baf249a1d211569a",
+    "lonely_runner/checker.py": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971"
+  },
+  "scope": "Eight total common-start runners; selected reference 0; positive distinct integer speeds; target 1/8.",
+  "fixed_core": [
+    1,
+    4,
+    5
+  ],
+  "J": [
+    "9/32",
+    "3/8"
+  ],
+  "length_J": "3/32",
+  "necessary_overlap_condition": "||(B-2A)t|| < 3/8",
+  "phase_slice_width": "min(1/8,max(0,(3/8-||rt||)/2)); possible fast-phase width, not actual time occupancy",
+  "phase_slice_profiles": {
+    "1": [
+      [
+        "9/32",
+        "3/64"
+      ],
+      [
+        "3/8",
+        "0"
+      ]
+    ],
+    "2": [
+      [
+        "9/32",
+        "0"
+      ],
+      [
+        "5/16",
+        "0"
+      ],
+      [
+        "3/8",
+        "1/16"
+      ]
+    ],
+    "3": [
+      [
+        "9/32",
+        "7/64"
+      ],
+      [
+        "7/24",
+        "1/8"
+      ],
+      [
+        "3/8",
+        "1/8"
+      ]
+    ]
+  },
+  "reference_slice_areas_not_actual_time_durations": {
+    "1": "9/4096",
+    "2": "1/512",
+    "3": "143/12288"
+  },
+  "cases": [
+    {
+      "q": 56,
+      "residual_r": 1,
+      "pair": [
+        56,
+        113
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "pair_gcd": 1,
+      "affine_overlap_windows": [
+        {
+          "j": 16,
+          "m": 0,
+          "interval": [
+            "127/448",
+            "257/904"
+          ],
+          "width": "41/50624"
+        },
+        {
+          "j": 17,
+          "m": 0,
+          "interval": [
+            "135/448",
+            "273/904"
+          ],
+          "width": "33/50624"
+        },
+        {
+          "j": 18,
+          "m": 0,
+          "interval": [
+            "143/448",
+            "289/904"
+          ],
+          "width": "25/50624"
+        },
+        {
+          "j": 19,
+          "m": 0,
+          "interval": [
+            "151/448",
+            "305/904"
+          ],
+          "width": "17/50624"
+        },
+        {
+          "j": 20,
+          "m": 0,
+          "interval": [
+            "159/448",
+            "321/904"
+          ],
+          "width": "9/50624"
+        },
+        {
+          "j": 21,
+          "m": 0,
+          "interval": [
+            "167/448",
+            "337/904"
+          ],
+          "width": "1/50624"
+        }
+      ],
+      "pair_overlap_duration": "9/3616",
+      "individual_blocking_durations": {
+        "56": "11/448",
+        "113": "11/452",
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "excess_E": "1045/911232",
+      "single_duration_only_lower_bound": "-1045/911232",
+      "one_pair_lower_bound": "1223/911232",
+      "actual_clear_duration": "6193/260352",
+      "allowed_intervals": [
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "151/512"
+        ],
+        [
+          "153/512",
+          "271/904"
+        ],
+        [
+          "59/192",
+          "279/904"
+        ],
+        [
+          "161/512",
+          "287/904"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "303/904"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "67/192",
+          "319/904"
+        ],
+        [
+          "329/904",
+          "335/904"
+        ]
+      ],
+      "blocking_histogram": [
+        "6193/260352",
+        "24721/520704",
+        "2029/101248",
+        "991/404992",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "329/904",
+        "335/904"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "329/904",
+          "phase_right": "335/904"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "103/226",
+          "phase_right": "109/226"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "741/904",
+          "phase_right": "771/904"
+        },
+        {
+          "speed": 56,
+          "integer_part": 20,
+          "phase_left": "43/113",
+          "phase_right": "85/113"
+        },
+        {
+          "speed": 113,
+          "integer_part": 41,
+          "phase_left": "1/8",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 64,
+          "integer_part": 23,
+          "phase_left": "33/113",
+          "phase_right": "81/113"
+        },
+        {
+          "speed": 72,
+          "integer_part": 26,
+          "phase_left": "23/113",
+          "phase_right": "77/113"
+        }
+      ],
+      "witness": {
+        "time": "83/226",
+        "distances": {
+          "1": "83/226",
+          "4": "53/113",
+          "5": "37/226",
+          "56": "49/113",
+          "113": "1/2",
+          "64": "56/113",
+          "72": "50/113"
+        },
+        "minimum": "37/226"
+      }
+    },
+    {
+      "q": 56,
+      "residual_r": 2,
+      "pair": [
+        56,
+        114
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "pair_gcd": 2,
+      "affine_overlap_windows": [
+        {
+          "j": 18,
+          "m": 1,
+          "interval": [
+            "295/912",
+            "145/448"
+          ],
+          "width": "5/25536"
+        },
+        {
+          "j": 19,
+          "m": 1,
+          "interval": [
+            "311/912",
+            "153/448"
+          ],
+          "width": "13/25536"
+        },
+        {
+          "j": 20,
+          "m": 1,
+          "interval": [
+            "109/304",
+            "23/64"
+          ],
+          "width": "1/1216"
+        }
+      ],
+      "pair_overlap_duration": "13/8512",
+      "individual_blocking_durations": {
+        "56": "11/448",
+        "114": "41/1824",
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "excess_E": "-109/153216",
+      "single_duration_only_lower_bound": "109/153216",
+      "one_pair_lower_bound": "49/21888",
+      "actual_clear_duration": "7117/306432",
+      "allowed_intervals": [
+        [
+          "145/512",
+          "127/448"
+        ],
+        [
+          "129/448",
+          "263/912"
+        ],
+        [
+          "169/576",
+          "151/512"
+        ],
+        [
+          "91/304",
+          "135/448"
+        ],
+        [
+          "281/912",
+          "159/512"
+        ],
+        [
+          "161/512",
+          "287/912"
+        ],
+        [
+          "289/912",
+          "61/192"
+        ],
+        [
+          "99/304",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "151/448"
+        ],
+        [
+          "67/192",
+          "319/912"
+        ],
+        [
+          "107/304",
+          "159/448"
+        ],
+        [
+          "209/576",
+          "335/912"
+        ],
+        [
+          "337/912",
+          "167/448"
+        ]
+      ],
+      "blocking_histogram": [
+        "7117/306432",
+        "3979/76608",
+        "499/34048",
+        "43/10944",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "209/576",
+        "335/912"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "209/576",
+          "phase_right": "335/912"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "65/144",
+          "phase_right": "107/228"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "469/576",
+          "phase_right": "763/912"
+        },
+        {
+          "speed": 56,
+          "integer_part": 20,
+          "phase_left": "23/72",
+          "phase_right": "65/114"
+        },
+        {
+          "speed": 114,
+          "integer_part": 41,
+          "phase_left": "35/96",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 64,
+          "integer_part": 23,
+          "phase_left": "2/9",
+          "phase_right": "29/57"
+        },
+        {
+          "speed": 72,
+          "integer_part": 26,
+          "phase_left": "1/8",
+          "phase_right": "17/38"
+        }
+      ],
+      "witness": {
+        "time": "7991/21888",
+        "distances": {
+          "1": "7991/21888",
+          "4": "2519/5472",
+          "5": "3821/21888",
+          "56": "1217/2736",
+          "114": "73/192",
+          "64": "125/342",
+          "72": "87/304"
+        },
+        "minimum": "3821/21888"
+      }
+    },
+    {
+      "q": 56,
+      "residual_r": 3,
+      "pair": [
+        56,
+        115
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "pair_gcd": 1,
+      "affine_overlap_windows": [
+        {
+          "j": 16,
+          "m": 1,
+          "interval": [
+            "263/920",
+            "129/448"
+          ],
+          "width": "107/51520"
+        },
+        {
+          "j": 17,
+          "m": 1,
+          "interval": [
+            "279/920",
+            "281/920"
+          ],
+          "width": "1/460"
+        },
+        {
+          "j": 18,
+          "m": 1,
+          "interval": [
+            "59/184",
+            "297/920"
+          ],
+          "width": "1/460"
+        },
+        {
+          "j": 19,
+          "m": 1,
+          "interval": [
+            "311/920",
+            "313/920"
+          ],
+          "width": "1/460"
+        },
+        {
+          "j": 20,
+          "m": 1,
+          "interval": [
+            "327/920",
+            "329/920"
+          ],
+          "width": "1/460"
+        },
+        {
+          "j": 21,
+          "m": 1,
+          "interval": [
+            "343/920",
+            "3/8"
+          ],
+          "width": "1/460"
+        }
+      ],
+      "pair_overlap_duration": "29/2240",
+      "individual_blocking_durations": {
+        "56": "11/448",
+        "115": "11/460",
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "excess_E": "671/927360",
+      "single_duration_only_lower_bound": "-671/927360",
+      "one_pair_lower_bound": "2267/185472",
+      "actual_clear_duration": "2729/88320",
+      "allowed_intervals": [
+        [
+          "145/512",
+          "127/448"
+        ],
+        [
+          "53/184",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "271/920"
+        ],
+        [
+          "153/512",
+          "135/448"
+        ],
+        [
+          "59/192",
+          "159/512"
+        ],
+        [
+          "161/512",
+          "61/192"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "61/184",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "151/448"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "67/192",
+          "159/448"
+        ],
+        [
+          "209/576",
+          "67/184"
+        ],
+        [
+          "337/920",
+          "167/448"
+        ]
+      ],
+      "blocking_histogram": [
+        "2729/88320",
+        "13817/370944",
+        "39541/1854720",
+        "15/5888",
+        "1/576"
+      ],
+      "certified_clear_interval": [
+        "337/920",
+        "167/448"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "337/920",
+          "phase_right": "167/448"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "107/230",
+          "phase_right": "55/112"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "153/184",
+          "phase_right": "387/448"
+        },
+        {
+          "speed": 56,
+          "integer_part": 20,
+          "phase_left": "59/115",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 115,
+          "integer_part": 42,
+          "phase_left": "1/8",
+          "phase_right": "389/448"
+        },
+        {
+          "speed": 64,
+          "integer_part": 23,
+          "phase_left": "51/115",
+          "phase_right": "6/7"
+        },
+        {
+          "speed": 72,
+          "integer_part": 26,
+          "phase_left": "43/115",
+          "phase_right": "47/56"
+        }
+      ],
+      "witness": {
+        "time": "38077/103040",
+        "distances": {
+          "1": "38077/103040",
+          "4": "12317/25760",
+          "5": "3139/20608",
+          "56": "563/1840",
+          "115": "445/896",
+          "64": "563/1610",
+          "72": "5067/12880"
+        },
+        "minimum": "3139/20608"
+      }
+    },
+    {
+      "q": 57,
+      "residual_r": 1,
+      "pair": [
+        57,
+        115
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "pair_gcd": 1,
+      "affine_overlap_windows": [
+        {
+          "j": 17,
+          "m": 0,
+          "interval": [
+            "45/152",
+            "273/920"
+          ],
+          "width": "3/4370"
+        },
+        {
+          "j": 18,
+          "m": 0,
+          "interval": [
+            "143/456",
+            "289/920"
+          ],
+          "width": "7/13110"
+        },
+        {
+          "j": 19,
+          "m": 0,
+          "interval": [
+            "151/456",
+            "61/184"
+          ],
+          "width": "1/2622"
+        },
+        {
+          "j": 20,
+          "m": 0,
+          "interval": [
+            "53/152",
+            "321/920"
+          ],
+          "width": "1/4370"
+        },
+        {
+          "j": 21,
+          "m": 0,
+          "interval": [
+            "167/456",
+            "337/920"
+          ],
+          "width": "1/13110"
+        }
+      ],
+      "pair_overlap_duration": "5/2622",
+      "individual_blocking_durations": {
+        "57": "43/1824",
+        "115": "11/460",
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "excess_E": "-643/2517120",
+      "single_duration_only_lower_bound": "643/2517120",
+      "one_pair_lower_bound": "5443/2517120",
+      "actual_clear_duration": "63169/2517120",
+      "allowed_intervals": [
+        [
+          "145/512",
+          "263/920"
+        ],
+        [
+          "53/184",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "271/920"
+        ],
+        [
+          "137/456",
+          "279/920"
+        ],
+        [
+          "59/192",
+          "159/512"
+        ],
+        [
+          "297/920",
+          "167/512"
+        ],
+        [
+          "51/152",
+          "311/920"
+        ],
+        [
+          "313/920",
+          "175/512"
+        ],
+        [
+          "161/456",
+          "327/920"
+        ],
+        [
+          "209/576",
+          "67/184"
+        ],
+        [
+          "169/456",
+          "343/920"
+        ]
+      ],
+      "blocking_histogram": [
+        "63169/2517120",
+        "118303/2517120",
+        "4649/251712",
+        "211/66240",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "297/920",
+        "167/512"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "297/920",
+          "phase_right": "167/512"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "67/230",
+          "phase_right": "39/128"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "113/184",
+          "phase_right": "323/512"
+        },
+        {
+          "speed": 57,
+          "integer_part": 18,
+          "phase_left": "369/920",
+          "phase_right": "303/512"
+        },
+        {
+          "speed": 115,
+          "integer_part": 37,
+          "phase_left": "1/8",
+          "phase_right": "261/512"
+        },
+        {
+          "speed": 64,
+          "integer_part": 20,
+          "phase_left": "76/115",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 72,
+          "integer_part": 23,
+          "phase_left": "28/115",
+          "phase_right": "31/64"
+        }
+      ],
+      "witness": {
+        "time": "38213/117760",
+        "distances": {
+          "1": "38213/117760",
+          "4": "8773/29440",
+          "5": "8891/23552",
+          "57": "58461/117760",
+          "115": "325/1024",
+          "64": "427/1840",
+          "72": "5357/14720"
+        },
+        "minimum": "427/1840"
+      }
+    },
+    {
+      "q": 57,
+      "residual_r": 2,
+      "pair": [
+        57,
+        116
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "pair_gcd": 1,
+      "affine_overlap_windows": [
+        {
+          "j": 18,
+          "m": 1,
+          "interval": [
+            "295/928",
+            "145/456"
+          ],
+          "width": "5/52896"
+        },
+        {
+          "j": 19,
+          "m": 1,
+          "interval": [
+            "311/928",
+            "51/152"
+          ],
+          "width": "7/17632"
+        },
+        {
+          "j": 20,
+          "m": 1,
+          "interval": [
+            "327/928",
+            "161/456"
+          ],
+          "width": "37/52896"
+        },
+        {
+          "j": 21,
+          "m": 1,
+          "interval": [
+            "343/928",
+            "169/456"
+          ],
+          "width": "53/52896"
+        }
+      ],
+      "pair_overlap_duration": "1/456",
+      "individual_blocking_durations": {
+        "57": "43/1824",
+        "116": "11/464",
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "excess_E": "-293/634752",
+      "single_duration_only_lower_bound": "293/634752",
+      "one_pair_lower_bound": "1685/634752",
+      "actual_clear_duration": "66871/2539008",
+      "allowed_intervals": [
+        [
+          "145/512",
+          "263/928"
+        ],
+        [
+          "265/928",
+          "167/576"
+        ],
+        [
+          "273/928",
+          "151/512"
+        ],
+        [
+          "137/456",
+          "279/928"
+        ],
+        [
+          "281/928",
+          "175/576"
+        ],
+        [
+          "59/192",
+          "287/928"
+        ],
+        [
+          "185/576",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "151/456"
+        ],
+        [
+          "313/928",
+          "175/512"
+        ],
+        [
+          "329/928",
+          "183/512"
+        ],
+        [
+          "337/928",
+          "167/456"
+        ],
+        [
+          "345/928",
+          "191/512"
+        ]
+      ],
+      "blocking_histogram": [
+        "66871/2539008",
+        "26777/634752",
+        "62407/2539008",
+        "823/1269504",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "185/576",
+        "167/512"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "185/576",
+          "phase_right": "167/512"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "41/144",
+          "phase_right": "39/128"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "349/576",
+          "phase_right": "323/512"
+        },
+        {
+          "speed": 57,
+          "integer_part": 18,
+          "phase_left": "59/192",
+          "phase_right": "303/512"
+        },
+        {
+          "speed": 116,
+          "integer_part": 37,
+          "phase_left": "37/144",
+          "phase_right": "107/128"
+        },
+        {
+          "speed": 64,
+          "integer_part": 20,
+          "phase_left": "5/9",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 72,
+          "integer_part": 23,
+          "phase_left": "1/8",
+          "phase_right": "31/64"
+        }
+      ],
+      "witness": {
+        "time": "2983/9216",
+        "distances": {
+          "1": "2983/9216",
+          "4": "679/2304",
+          "5": "3517/9216",
+          "57": "1381/3072",
+          "116": "1045/2304",
+          "64": "41/144",
+          "72": "39/128"
+        },
+        "minimum": "41/144"
+      }
+    },
+    {
+      "q": 57,
+      "residual_r": 3,
+      "pair": [
+        57,
+        117
+      ],
+      "other_two": [
+        64,
+        72
+      ],
+      "pair_gcd": 3,
+      "affine_overlap_windows": [
+        {
+          "j": 16,
+          "m": 1,
+          "interval": [
+            "9/32",
+            "43/152"
+          ],
+          "width": "1/608"
+        },
+        {
+          "j": 17,
+          "m": 1,
+          "interval": [
+            "31/104",
+            "281/936"
+          ],
+          "width": "1/468"
+        },
+        {
+          "j": 18,
+          "m": 1,
+          "interval": [
+            "295/936",
+            "33/104"
+          ],
+          "width": "1/468"
+        },
+        {
+          "j": 19,
+          "m": 1,
+          "interval": [
+            "311/936",
+            "313/936"
+          ],
+          "width": "1/468"
+        },
+        {
+          "j": 20,
+          "m": 1,
+          "interval": [
+            "109/312",
+            "329/936"
+          ],
+          "width": "1/468"
+        },
+        {
+          "j": 21,
+          "m": 1,
+          "interval": [
+            "343/936",
+            "115/312"
+          ],
+          "width": "1/468"
+        }
+      ],
+      "pair_overlap_duration": "877/71136",
+      "individual_blocking_durations": {
+        "57": "43/1824",
+        "117": "29/1248",
+        "64": "3/128",
+        "72": "13/576"
+      },
+      "excess_E": "-265/284544",
+      "single_duration_only_lower_bound": "265/284544",
+      "one_pair_lower_bound": "3773/284544",
+      "actual_clear_duration": "315/9728",
+      "allowed_intervals": [
+        [
+          "145/512",
+          "271/936"
+        ],
+        [
+          "169/576",
+          "151/512"
+        ],
+        [
+          "137/456",
+          "175/576"
+        ],
+        [
+          "289/936",
+          "159/512"
+        ],
+        [
+          "185/576",
+          "101/312"
+        ],
+        [
+          "305/936",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "151/456"
+        ],
+        [
+          "51/152",
+          "319/936"
+        ],
+        [
+          "161/456",
+          "183/512"
+        ],
+        [
+          "209/576",
+          "167/456"
+        ],
+        [
+          "169/456",
+          "191/512"
+        ]
+      ],
+      "blocking_histogram": [
+        "315/9728",
+        "39973/1138176",
+        "23957/1138176",
+        "1973/379392",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "145/512",
+        "271/936"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "145/512",
+          "phase_right": "271/936"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "17/128",
+          "phase_right": "37/234"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "213/512",
+          "phase_right": "419/936"
+        },
+        {
+          "speed": 57,
+          "integer_part": 16,
+          "phase_left": "73/512",
+          "phase_right": "157/312"
+        },
+        {
+          "speed": 117,
+          "integer_part": 33,
+          "phase_left": "69/512",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 64,
+          "integer_part": 18,
+          "phase_left": "1/8",
+          "phase_right": "62/117"
+        },
+        {
+          "speed": 72,
+          "integer_part": 20,
+          "phase_left": "25/64",
+          "phase_right": "11/13"
+        }
+      ],
+      "witness": {
+        "time": "34309/119808",
+        "distances": {
+          "1": "34309/119808",
+          "4": "4357/29952",
+          "5": "51737/119808",
+          "57": "12895/39936",
+          "117": "507/1024",
+          "64": "613/1872",
+          "72": "635/1664"
+        },
+        "minimum": "4357/29952"
+      }
+    },
+    {
+      "q": 6,
+      "residual_r": 1,
+      "pair": [
+        6,
+        13
+      ],
+      "other_two": [
+        7,
+        11
+      ],
+      "pair_gcd": 1,
+      "affine_overlap_windows": [
+        {
+          "j": 2,
+          "m": 0,
+          "interval": [
+            "5/16",
+            "33/104"
+          ],
+          "width": "1/208"
+        }
+      ],
+      "pair_overlap_duration": "1/208",
+      "individual_blocking_durations": {
+        "6": "1/24",
+        "13": "1/52",
+        "7": "5/224",
+        "11": "9/352"
+      },
+      "excess_E": "1445/96096",
+      "single_duration_only_lower_bound": "-1445/96096",
+      "one_pair_lower_bound": "-983/96096",
+      "actual_clear_duration": "0",
+      "allowed_intervals": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "blocking_histogram": [
+        "0",
+        "1891/24024",
+        "1445/96096",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "q": 6,
+      "residual_r": 2,
+      "pair": [
+        6,
+        14
+      ],
+      "other_two": [
+        7,
+        11
+      ],
+      "pair_gcd": 2,
+      "affine_overlap_windows": [
+        {
+          "j": 2,
+          "m": 1,
+          "interval": [
+            "39/112",
+            "17/48"
+          ],
+          "width": "1/168"
+        }
+      ],
+      "pair_overlap_duration": "1/168",
+      "individual_blocking_durations": {
+        "6": "1/24",
+        "14": "1/32",
+        "7": "5/224",
+        "11": "9/352"
+      },
+      "excess_E": "25/924",
+      "single_duration_only_lower_bound": "-25/924",
+      "one_pair_lower_bound": "-13/616",
+      "actual_clear_duration": "1/112",
+      "allowed_intervals": [
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "blocking_histogram": [
+        "1/112",
+        "3/56",
+        "7/264",
+        "5/1056",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "17/56",
+        "5/16"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "17/56",
+          "phase_right": "5/16"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "3/14",
+          "phase_right": "1/4"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "29/56",
+          "phase_right": "9/16"
+        },
+        {
+          "speed": 6,
+          "integer_part": 1,
+          "phase_left": "23/28",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 14,
+          "integer_part": 4,
+          "phase_left": "1/4",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 7,
+          "integer_part": 2,
+          "phase_left": "1/8",
+          "phase_right": "3/16"
+        },
+        {
+          "speed": 11,
+          "integer_part": 3,
+          "phase_left": "19/56",
+          "phase_right": "7/16"
+        }
+      ],
+      "witness": {
+        "time": "69/224",
+        "distances": {
+          "1": "69/224",
+          "4": "13/56",
+          "5": "103/224",
+          "6": "17/112",
+          "14": "5/16",
+          "7": "5/32",
+          "11": "87/224"
+        },
+        "minimum": "17/112"
+      }
+    },
+    {
+      "q": 6,
+      "residual_r": 3,
+      "pair": [
+        6,
+        15
+      ],
+      "other_two": [
+        7,
+        11
+      ],
+      "pair_gcd": 3,
+      "affine_overlap_windows": [
+        {
+          "j": 2,
+          "m": 1,
+          "interval": [
+            "13/40",
+            "41/120"
+          ],
+          "width": "1/60"
+        }
+      ],
+      "pair_overlap_duration": "1/60",
+      "individual_blocking_durations": {
+        "6": "1/24",
+        "15": "1/60",
+        "7": "5/224",
+        "11": "9/352"
+      },
+      "excess_E": "461/36960",
+      "single_duration_only_lower_bound": "-461/36960",
+      "one_pair_lower_bound": "31/7392",
+      "actual_clear_duration": "1/112",
+      "allowed_intervals": [
+        [
+          "17/56",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "blocking_histogram": [
+        "1/112",
+        "293/4620",
+        "113/5280",
+        "0",
+        "0"
+      ],
+      "certified_clear_interval": [
+        "17/56",
+        "5/16"
+      ],
+      "affine_phase_certificate": [
+        {
+          "speed": 1,
+          "integer_part": 0,
+          "phase_left": "17/56",
+          "phase_right": "5/16"
+        },
+        {
+          "speed": 4,
+          "integer_part": 1,
+          "phase_left": "3/14",
+          "phase_right": "1/4"
+        },
+        {
+          "speed": 5,
+          "integer_part": 1,
+          "phase_left": "29/56",
+          "phase_right": "9/16"
+        },
+        {
+          "speed": 6,
+          "integer_part": 1,
+          "phase_left": "23/28",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 15,
+          "integer_part": 4,
+          "phase_left": "31/56",
+          "phase_right": "11/16"
+        },
+        {
+          "speed": 7,
+          "integer_part": 2,
+          "phase_left": "1/8",
+          "phase_right": "3/16"
+        },
+        {
+          "speed": 11,
+          "integer_part": 3,
+          "phase_left": "19/56",
+          "phase_right": "7/16"
+        }
+      ],
+      "witness": {
+        "time": "69/224",
+        "distances": {
+          "1": "69/224",
+          "4": "13/56",
+          "5": "103/224",
+          "6": "17/112",
+          "15": "85/224",
+          "7": "5/32",
+          "11": "87/224"
+        },
+        "minimum": "17/112"
+      }
+    }
+  ],
+  "verification_counts": {
+    "prescribed_configurations": 9,
+    "affine_overlap_crosschecks": 9,
+    "single_duration_crosschecks": 36,
+    "independent_full_duration_checks": 9,
+    "positive_clear_interval_certificates": 8,
+    "small_q_endpoint_checks": 3
+  },
+  "limitations": "No new uniform cutoff for r=2 or r=3. Phase availability does not force trajectory occupancy. Bound failures are inconclusive. Equality points retained. No all-reference or novelty claim."
+}

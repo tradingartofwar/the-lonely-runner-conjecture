@@ -1,0 +1,5489 @@
+{
+  "date": "2026-09-24",
+  "base_commit": "ff422cbc30ef0625c04b5af5c1961ab41df9da59",
+  "scope": "Eight common-start runners, selected reference 0, speeds 0,q,2q,...,6q,7q+s; integer q>=2, s=-1,0,1. Finite checks only for the listed q values.",
+  "time_convention": "Every allowed set and peak list is on original t in [0,1]. Normalized speeds divide by q, and normalized time is u=q*t. Baseline repeats q times in this window; perturbed configurations have period 1 in t.",
+  "selection": "Initial controls q=2,3,4,7,14; q=9,11,29,37 added specifically to check the four remaining endpoint-congruence classes. No broad scan.",
+  "claim_status": {
+    "finite_computation": "OBSERVED: exact rational checks.",
+    "all_q_formulas": "HYPOTHESIS/proof candidate: complete elementary derivations, independent review outstanding.",
+    "pre_jump_mechanism": "KNOWN technique, Kravitz 2021 Section 2 (S15). Our specialization is not claimed new."
+  },
+  "source_sha256": {
+    "scripts/analyze_scaled_perturbation.py": "ce09abc28d4ce479f2f70138e09f187eec84265364f00b7f55e7159d72759cfa",
+    "lonely_runner/checker.py": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971",
+    "scripts/analyze_core_transfer.py": "2c4600cd2e631c51127e7b748f9cae5220b1f8a3c174874a1c7b108e5356456f",
+    "scripts/analyze_local_overlap.py": "62f21072b99bd66cb558cb84101e145afde4da3a8067c801f0339e85681dacb4",
+    "scripts/analyze_blocking_overlaps.py": "bf5e0339a69f83055c5e1f12908769ceb0598643a9dc88467b93fc26e454c7e4",
+    "scripts/analyze_overlap_placement.py": "3fdd49d97de4e6e7f52bc13e5b92df229c7641e10078cffc793fa4f4dc199636",
+    "scripts/analyze_phase_discrepancy.py": "13fc159a9da8431076445f317d17155560096da8c352bfe5b1c754507fdb7cbb",
+    "scripts/analyze_residual_overlap.py": "fd0bdff300f11f175512523fc0fa6ebdda614b4318833ca6da79e16fc0831af9",
+    "scripts/analyze_two_variable_speeds.py": "b7bc07d114afcc4bb49edefe3f0ca8b5110af7d68dfb2969baf249a1d211569a"
+  },
+  "core_allowed_phases": [
+    [
+      "1/8",
+      "7/48"
+    ],
+    [
+      "9/32",
+      "7/24"
+    ],
+    [
+      "3/8",
+      "3/8"
+    ],
+    [
+      "17/40",
+      "7/16"
+    ],
+    [
+      "9/16",
+      "23/40"
+    ],
+    [
+      "5/8",
+      "5/8"
+    ],
+    [
+      "17/24",
+      "23/32"
+    ],
+    [
+      "41/48",
+      "7/8"
+    ]
+  ],
+  "cases": [
+    {
+      "q": 2,
+      "s": -1,
+      "relative_speeds": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        13
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "3/14",
+        "2/7",
+        "5/14",
+        "3/7",
+        "4/7",
+        "9/14",
+        "5/7",
+        "11/14",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "2/7",
+      "old_touch_classification": {
+        "blocked": [
+          "5/16",
+          "11/16"
+        ],
+        "isolated": [
+          "3/16",
+          "13/16"
+        ],
+        "opens_left": [
+          "7/16",
+          "15/16"
+        ],
+        "opens_right": [
+          "1/16",
+          "9/16"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 2,
+        "isolated": 2,
+        "opens_left": 2,
+        "opens_right": 2
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 12,
+        "isolated_components": 2,
+        "clear_duration": "19/260",
+        "new_positive_components_without_old_touch": 8,
+        "first_new_positive_component": [
+          "9/64",
+          "15/104"
+        ],
+        "sha256_json_string_endpoints": "ea60d97513934e0a89a1a32278ec5b62d6a427e7cad5ee03a0560480f462a5d9",
+        "boundary_count": 108
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "2": "2/7",
+          "4": "3/7",
+          "6": "1/7",
+          "8": "1/7",
+          "10": "3/7",
+          "12": "2/7",
+          "13": "1/7"
+        },
+        "interval": [
+          "207/1456",
+          "209/1456"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 2,
+            "integer_part": 0,
+            "phase_left": "207/728",
+            "phase_right": "209/728"
+          },
+          {
+            "speed": 4,
+            "integer_part": 0,
+            "phase_left": "207/364",
+            "phase_right": "209/364"
+          },
+          {
+            "speed": 6,
+            "integer_part": 0,
+            "phase_left": "621/728",
+            "phase_right": "627/728"
+          },
+          {
+            "speed": 8,
+            "integer_part": 1,
+            "phase_left": "25/182",
+            "phase_right": "27/182"
+          },
+          {
+            "speed": 10,
+            "integer_part": 1,
+            "phase_left": "307/728",
+            "phase_right": "317/728"
+          },
+          {
+            "speed": 12,
+            "integer_part": 1,
+            "phase_left": "257/364",
+            "phase_right": "263/364"
+          },
+          {
+            "speed": 13,
+            "integer_part": 1,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 2,
+      "s": 0,
+      "relative_speeds": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/16",
+        "3/16",
+        "5/16",
+        "7/16",
+        "9/16",
+        "11/16",
+        "13/16",
+        "15/16"
+      ],
+      "earliest_maximum_t": "1/16",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/16",
+          "3/16",
+          "5/16",
+          "7/16",
+          "9/16",
+          "11/16",
+          "13/16",
+          "15/16"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 8,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 8,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "a95930040ec46bce4d835abe5dac72f724b9f766ce11f28704b0eb84b65febbc",
+        "boundary_count": 106
+      }
+    },
+    {
+      "q": 2,
+      "s": 1,
+      "relative_speeds": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        15
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "3/14",
+        "2/7",
+        "5/14",
+        "3/7",
+        "4/7",
+        "9/14",
+        "5/7",
+        "11/14",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "2/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/16",
+          "15/16"
+        ],
+        "isolated": [
+          "3/16",
+          "5/16",
+          "11/16",
+          "13/16"
+        ],
+        "opens_left": [
+          "7/16"
+        ],
+        "opens_right": [
+          "9/16"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 2,
+        "isolated": 4,
+        "opens_left": 1,
+        "opens_right": 1
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 10,
+        "isolated_components": 4,
+        "clear_duration": "31/480",
+        "new_positive_components_without_old_touch": 8,
+        "first_new_positive_component": [
+          "17/120",
+          "7/48"
+        ],
+        "sha256_json_string_endpoints": "ed8e669926edfe729588bdeb3157d539187c679cdd5a99a8f07883ad4680e039",
+        "boundary_count": 112
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "2": "2/7",
+          "4": "3/7",
+          "6": "1/7",
+          "8": "1/7",
+          "10": "3/7",
+          "12": "2/7",
+          "15": "1/7"
+        },
+        "interval": [
+          "239/1680",
+          "241/1680"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 2,
+            "integer_part": 0,
+            "phase_left": "239/840",
+            "phase_right": "241/840"
+          },
+          {
+            "speed": 4,
+            "integer_part": 0,
+            "phase_left": "239/420",
+            "phase_right": "241/420"
+          },
+          {
+            "speed": 6,
+            "integer_part": 0,
+            "phase_left": "239/280",
+            "phase_right": "241/280"
+          },
+          {
+            "speed": 8,
+            "integer_part": 1,
+            "phase_left": "29/210",
+            "phase_right": "31/210"
+          },
+          {
+            "speed": 10,
+            "integer_part": 1,
+            "phase_left": "71/168",
+            "phase_right": "73/168"
+          },
+          {
+            "speed": 12,
+            "integer_part": 1,
+            "phase_left": "99/140",
+            "phase_right": "101/140"
+          },
+          {
+            "speed": 15,
+            "integer_part": 2,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 3,
+      "s": -1,
+      "relative_speeds": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        20
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "4/21",
+        "5/21",
+        "2/7",
+        "8/21",
+        "3/7",
+        "10/21",
+        "11/21",
+        "4/7",
+        "13/21",
+        "5/7",
+        "16/21",
+        "17/21",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "3/7",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/8",
+          "5/24",
+          "11/24",
+          "13/24",
+          "19/24",
+          "7/8"
+        ],
+        "opens_left": [
+          "7/24",
+          "5/8",
+          "23/24"
+        ],
+        "opens_right": [
+          "1/24",
+          "3/8",
+          "17/24"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 6,
+        "opens_left": 3,
+        "opens_right": 3
+      },
+      "new_isolated_contacts": [
+        {
+          "time": "3/32",
+          "blocking_ends": [
+            12
+          ],
+          "blocking_starts": [
+            20
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 12,
+              "incoming": 20,
+              "integers": [
+                "1",
+                "2"
+              ],
+              "sum_over_8": "4"
+            }
+          ]
+        },
+        {
+          "time": "29/32",
+          "blocking_ends": [
+            20
+          ],
+          "blocking_starts": [
+            12
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 20,
+              "incoming": 12,
+              "integers": [
+                "18",
+                "11"
+              ],
+              "sum_over_8": "4"
+            }
+          ]
+        }
+      ],
+      "allowed_summary": {
+        "positive_components": 16,
+        "isolated_components": 8,
+        "clear_duration": "1/15",
+        "new_positive_components_without_old_touch": 10,
+        "first_new_positive_component": [
+          "17/120",
+          "23/160"
+        ],
+        "sha256_json_string_endpoints": "db222cae5ea4a88f7a7282870a3f906d63354827da0acbeac463b455abb2c0b7",
+        "boundary_count": 154
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "3": "3/7",
+          "6": "1/7",
+          "9": "2/7",
+          "12": "2/7",
+          "15": "1/7",
+          "18": "3/7",
+          "20": "1/7"
+        },
+        "interval": [
+          "319/2240",
+          "321/2240"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 3,
+            "integer_part": 0,
+            "phase_left": "957/2240",
+            "phase_right": "963/2240"
+          },
+          {
+            "speed": 6,
+            "integer_part": 0,
+            "phase_left": "957/1120",
+            "phase_right": "963/1120"
+          },
+          {
+            "speed": 9,
+            "integer_part": 1,
+            "phase_left": "631/2240",
+            "phase_right": "649/2240"
+          },
+          {
+            "speed": 12,
+            "integer_part": 1,
+            "phase_left": "397/560",
+            "phase_right": "403/560"
+          },
+          {
+            "speed": 15,
+            "integer_part": 2,
+            "phase_left": "61/448",
+            "phase_right": "67/448"
+          },
+          {
+            "speed": 18,
+            "integer_part": 2,
+            "phase_left": "631/1120",
+            "phase_right": "649/1120"
+          },
+          {
+            "speed": 20,
+            "integer_part": 2,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 3,
+      "s": 0,
+      "relative_speeds": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/24",
+        "1/8",
+        "5/24",
+        "7/24",
+        "3/8",
+        "11/24",
+        "13/24",
+        "5/8",
+        "17/24",
+        "19/24",
+        "7/8",
+        "23/24"
+      ],
+      "earliest_maximum_t": "1/24",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/24",
+          "1/8",
+          "5/24",
+          "7/24",
+          "3/8",
+          "11/24",
+          "13/24",
+          "5/8",
+          "17/24",
+          "19/24",
+          "7/8",
+          "23/24"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 12,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 12,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "2cb554b70ae437e229a1b87ab5d23825d9683d41362d2f112c9c767940fe3548",
+        "boundary_count": 158
+      }
+    },
+    {
+      "q": 3,
+      "s": 1,
+      "relative_speeds": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        22
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "4/21",
+        "5/21",
+        "2/7",
+        "8/21",
+        "3/7",
+        "10/21",
+        "11/21",
+        "4/7",
+        "13/21",
+        "5/7",
+        "16/21",
+        "17/21",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "3/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/24",
+          "11/24",
+          "13/24",
+          "23/24"
+        ],
+        "isolated": [
+          "1/8",
+          "5/24",
+          "19/24",
+          "7/8"
+        ],
+        "opens_left": [
+          "7/24",
+          "5/8"
+        ],
+        "opens_right": [
+          "3/8",
+          "17/24"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 4,
+        "isolated": 4,
+        "opens_left": 2,
+        "opens_right": 2
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 16,
+        "isolated_components": 4,
+        "clear_duration": "133/1980",
+        "new_positive_components_without_old_touch": 12,
+        "first_new_positive_component": [
+          "17/176",
+          "7/72"
+        ],
+        "sha256_json_string_endpoints": "fd681408a40ec796cdf2345a27a2481c250e61342c280ca2fcd57eb7aaba1664",
+        "boundary_count": 162
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "3": "3/7",
+          "6": "1/7",
+          "9": "2/7",
+          "12": "2/7",
+          "15": "1/7",
+          "18": "3/7",
+          "22": "1/7"
+        },
+        "interval": [
+          "351/2464",
+          "353/2464"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 3,
+            "integer_part": 0,
+            "phase_left": "1053/2464",
+            "phase_right": "1059/2464"
+          },
+          {
+            "speed": 6,
+            "integer_part": 0,
+            "phase_left": "1053/1232",
+            "phase_right": "1059/1232"
+          },
+          {
+            "speed": 9,
+            "integer_part": 1,
+            "phase_left": "695/2464",
+            "phase_right": "713/2464"
+          },
+          {
+            "speed": 12,
+            "integer_part": 1,
+            "phase_left": "437/616",
+            "phase_right": "443/616"
+          },
+          {
+            "speed": 15,
+            "integer_part": 2,
+            "phase_left": "337/2464",
+            "phase_right": "367/2464"
+          },
+          {
+            "speed": 18,
+            "integer_part": 2,
+            "phase_left": "695/1232",
+            "phase_right": "713/1232"
+          },
+          {
+            "speed": 22,
+            "integer_part": 3,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "s": -1,
+      "relative_speeds": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        27
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "5/28",
+        "3/14",
+        "2/7",
+        "9/28",
+        "5/14",
+        "11/28",
+        "3/7",
+        "13/28",
+        "15/28",
+        "4/7",
+        "17/28",
+        "9/14",
+        "19/28",
+        "5/7",
+        "11/14",
+        "23/28",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "4/7",
+      "old_touch_classification": {
+        "blocked": [
+          "7/32",
+          "13/32",
+          "19/32",
+          "25/32"
+        ],
+        "isolated": [
+          "3/32",
+          "5/32",
+          "11/32",
+          "21/32",
+          "27/32",
+          "29/32"
+        ],
+        "opens_left": [
+          "15/32",
+          "23/32",
+          "31/32"
+        ],
+        "opens_right": [
+          "1/32",
+          "9/32",
+          "17/32"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 4,
+        "isolated": 6,
+        "opens_left": 3,
+        "opens_right": 3
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 22,
+        "isolated_components": 6,
+        "clear_duration": "21/320",
+        "new_positive_components_without_old_touch": 16,
+        "first_new_positive_component": [
+          "17/160",
+          "23/216"
+        ],
+        "sha256_json_string_endpoints": "37f060ddebee8f913efa3bed39a6e39fafc01c7b67e0bb6b0905af927950ab12",
+        "boundary_count": 216
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "4": "3/7",
+          "8": "1/7",
+          "12": "2/7",
+          "16": "2/7",
+          "20": "1/7",
+          "24": "3/7",
+          "27": "1/7"
+        },
+        "interval": [
+          "431/3024",
+          "433/3024"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 4,
+            "integer_part": 0,
+            "phase_left": "431/756",
+            "phase_right": "433/756"
+          },
+          {
+            "speed": 8,
+            "integer_part": 1,
+            "phase_left": "53/378",
+            "phase_right": "55/378"
+          },
+          {
+            "speed": 12,
+            "integer_part": 1,
+            "phase_left": "179/252",
+            "phase_right": "181/252"
+          },
+          {
+            "speed": 16,
+            "integer_part": 2,
+            "phase_left": "53/189",
+            "phase_right": "55/189"
+          },
+          {
+            "speed": 20,
+            "integer_part": 2,
+            "phase_left": "643/756",
+            "phase_right": "653/756"
+          },
+          {
+            "speed": 24,
+            "integer_part": 3,
+            "phase_left": "53/126",
+            "phase_right": "55/126"
+          },
+          {
+            "speed": 27,
+            "integer_part": 3,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "s": 0,
+      "relative_speeds": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/32",
+        "3/32",
+        "5/32",
+        "7/32",
+        "9/32",
+        "11/32",
+        "13/32",
+        "15/32",
+        "17/32",
+        "19/32",
+        "21/32",
+        "23/32",
+        "25/32",
+        "27/32",
+        "29/32",
+        "31/32"
+      ],
+      "earliest_maximum_t": "1/32",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/32",
+          "3/32",
+          "5/32",
+          "7/32",
+          "9/32",
+          "11/32",
+          "13/32",
+          "15/32",
+          "17/32",
+          "19/32",
+          "21/32",
+          "23/32",
+          "25/32",
+          "27/32",
+          "29/32",
+          "31/32"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 16,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 16,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "14ed1ac5df0526efb08b9895d8849045e13b7fe7bd50a6a899bf4299e80bbe89",
+        "boundary_count": 210
+      }
+    },
+    {
+      "q": 4,
+      "s": 1,
+      "relative_speeds": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        29
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "5/28",
+        "3/14",
+        "2/7",
+        "9/28",
+        "5/14",
+        "11/28",
+        "3/7",
+        "13/28",
+        "15/28",
+        "4/7",
+        "17/28",
+        "9/14",
+        "19/28",
+        "5/7",
+        "11/14",
+        "23/28",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "4/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/32",
+          "11/32",
+          "21/32",
+          "31/32"
+        ],
+        "isolated": [
+          "3/32",
+          "5/32",
+          "13/32",
+          "19/32",
+          "27/32",
+          "29/32"
+        ],
+        "opens_left": [
+          "7/32",
+          "15/32",
+          "23/32"
+        ],
+        "opens_right": [
+          "9/32",
+          "17/32",
+          "25/32"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 4,
+        "isolated": 6,
+        "opens_left": 3,
+        "opens_right": 3
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 20,
+        "isolated_components": 6,
+        "clear_duration": "21/320",
+        "new_positive_components_without_old_touch": 14,
+        "first_new_positive_component": [
+          "25/232",
+          "7/64"
+        ],
+        "sha256_json_string_endpoints": "e343a081a3441ebb8ab6d926ff74bfa46ae02864d65d49c58b040ca9a399790d",
+        "boundary_count": 220
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "4": "3/7",
+          "8": "1/7",
+          "12": "2/7",
+          "16": "2/7",
+          "20": "1/7",
+          "24": "3/7",
+          "29": "1/7"
+        },
+        "interval": [
+          "463/3248",
+          "465/3248"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 4,
+            "integer_part": 0,
+            "phase_left": "463/812",
+            "phase_right": "465/812"
+          },
+          {
+            "speed": 8,
+            "integer_part": 1,
+            "phase_left": "57/406",
+            "phase_right": "59/406"
+          },
+          {
+            "speed": 12,
+            "integer_part": 1,
+            "phase_left": "577/812",
+            "phase_right": "583/812"
+          },
+          {
+            "speed": 16,
+            "integer_part": 2,
+            "phase_left": "57/203",
+            "phase_right": "59/203"
+          },
+          {
+            "speed": 20,
+            "integer_part": 2,
+            "phase_left": "691/812",
+            "phase_right": "701/812"
+          },
+          {
+            "speed": 24,
+            "integer_part": 3,
+            "phase_left": "171/406",
+            "phase_right": "177/406"
+          },
+          {
+            "speed": 29,
+            "integer_part": 4,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 7,
+      "s": -1,
+      "relative_speeds": [
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        48
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "8/49",
+        "9/49",
+        "10/49",
+        "11/49",
+        "12/49",
+        "13/49",
+        "15/49",
+        "16/49",
+        "17/49",
+        "18/49",
+        "19/49",
+        "20/49",
+        "22/49",
+        "23/49",
+        "24/49",
+        "25/49",
+        "26/49",
+        "27/49",
+        "29/49",
+        "30/49",
+        "31/49",
+        "32/49",
+        "33/49",
+        "34/49",
+        "36/49",
+        "37/49",
+        "38/49",
+        "39/49",
+        "40/49",
+        "41/49"
+      ],
+      "earliest_maximum_t": "8/49",
+      "earliest_maximum_u": "8/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/8",
+          "3/8",
+          "5/8",
+          "7/8"
+        ],
+        "isolated": [
+          "3/56",
+          "5/56",
+          "11/56",
+          "13/56",
+          "19/56",
+          "27/56",
+          "29/56",
+          "37/56",
+          "43/56",
+          "45/56",
+          "51/56",
+          "53/56"
+        ],
+        "opens_left": [
+          "15/56",
+          "23/56",
+          "31/56",
+          "39/56",
+          "47/56",
+          "55/56"
+        ],
+        "opens_right": [
+          "1/56",
+          "9/56",
+          "17/56",
+          "25/56",
+          "33/56",
+          "41/56"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 4,
+        "isolated": 12,
+        "opens_left": 6,
+        "opens_right": 6
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 38,
+        "isolated_components": 12,
+        "clear_duration": "11/168",
+        "new_positive_components_without_old_touch": 26,
+        "first_new_positive_component": [
+          "9/112",
+          "31/384"
+        ],
+        "sha256_json_string_endpoints": "4b058548289da574d6938c9e09c4bc93f0a8494cf63aed89edf85a97c9718180",
+        "boundary_count": 378
+      },
+      "strict_witness": {
+        "time": "8/49",
+        "distances": {
+          "7": "1/7",
+          "14": "2/7",
+          "21": "3/7",
+          "28": "3/7",
+          "35": "2/7",
+          "42": "1/7",
+          "48": "8/49"
+        },
+        "interval": [
+          "6137/37632",
+          "6151/37632"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 7,
+            "integer_part": 1,
+            "phase_left": "761/5376",
+            "phase_right": "775/5376"
+          },
+          {
+            "speed": 14,
+            "integer_part": 2,
+            "phase_left": "761/2688",
+            "phase_right": "775/2688"
+          },
+          {
+            "speed": 21,
+            "integer_part": 3,
+            "phase_left": "761/1792",
+            "phase_right": "775/1792"
+          },
+          {
+            "speed": 28,
+            "integer_part": 4,
+            "phase_left": "761/1344",
+            "phase_right": "775/1344"
+          },
+          {
+            "speed": 35,
+            "integer_part": 5,
+            "phase_left": "3805/5376",
+            "phase_right": "3875/5376"
+          },
+          {
+            "speed": 42,
+            "integer_part": 6,
+            "phase_left": "761/896",
+            "phase_right": "775/896"
+          },
+          {
+            "speed": 48,
+            "integer_part": 7,
+            "phase_left": "649/784",
+            "phase_right": "663/784"
+          }
+        ]
+      }
+    },
+    {
+      "q": 7,
+      "s": 0,
+      "relative_speeds": [
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/56",
+        "3/56",
+        "5/56",
+        "1/8",
+        "9/56",
+        "11/56",
+        "13/56",
+        "15/56",
+        "17/56",
+        "19/56",
+        "3/8",
+        "23/56",
+        "25/56",
+        "27/56",
+        "29/56",
+        "31/56",
+        "33/56",
+        "5/8",
+        "37/56",
+        "39/56",
+        "41/56",
+        "43/56",
+        "45/56",
+        "47/56",
+        "7/8",
+        "51/56",
+        "53/56",
+        "55/56"
+      ],
+      "earliest_maximum_t": "1/56",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/56",
+          "3/56",
+          "5/56",
+          "1/8",
+          "9/56",
+          "11/56",
+          "13/56",
+          "15/56",
+          "17/56",
+          "19/56",
+          "3/8",
+          "23/56",
+          "25/56",
+          "27/56",
+          "29/56",
+          "31/56",
+          "33/56",
+          "5/8",
+          "37/56",
+          "39/56",
+          "41/56",
+          "43/56",
+          "45/56",
+          "47/56",
+          "7/8",
+          "51/56",
+          "53/56",
+          "55/56"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 28,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 28,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "0d670c41e81d28cf1b805339e9ecb268c78bbede58174211f165f134c78c0e54",
+        "boundary_count": 366
+      }
+    },
+    {
+      "q": 7,
+      "s": 1,
+      "relative_speeds": [
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        50
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "8/49",
+        "9/49",
+        "10/49",
+        "11/49",
+        "12/49",
+        "13/49",
+        "15/49",
+        "16/49",
+        "17/49",
+        "18/49",
+        "19/49",
+        "20/49",
+        "22/49",
+        "23/49",
+        "24/49",
+        "25/49",
+        "26/49",
+        "27/49",
+        "29/49",
+        "30/49",
+        "31/49",
+        "32/49",
+        "33/49",
+        "34/49",
+        "36/49",
+        "37/49",
+        "38/49",
+        "39/49",
+        "40/49",
+        "41/49"
+      ],
+      "earliest_maximum_t": "8/49",
+      "earliest_maximum_u": "8/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/56",
+          "9/56",
+          "19/56",
+          "27/56",
+          "29/56",
+          "37/56",
+          "47/56",
+          "55/56"
+        ],
+        "isolated": [
+          "3/56",
+          "5/56",
+          "11/56",
+          "13/56",
+          "3/8",
+          "5/8",
+          "43/56",
+          "45/56",
+          "51/56",
+          "53/56"
+        ],
+        "opens_left": [
+          "1/8",
+          "15/56",
+          "23/56",
+          "31/56",
+          "39/56"
+        ],
+        "opens_right": [
+          "17/56",
+          "25/56",
+          "33/56",
+          "41/56",
+          "7/8"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 8,
+        "isolated": 10,
+        "opens_left": 5,
+        "opens_right": 5
+      },
+      "new_isolated_contacts": [
+        {
+          "time": "1/16",
+          "blocking_ends": [
+            50
+          ],
+          "blocking_starts": [
+            14
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 50,
+              "incoming": 14,
+              "integers": [
+                "3",
+                "1"
+              ],
+              "sum_over_8": "8"
+            }
+          ]
+        },
+        {
+          "time": "15/16",
+          "blocking_ends": [
+            14
+          ],
+          "blocking_starts": [
+            50
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 14,
+              "incoming": 50,
+              "integers": [
+                "13",
+                "47"
+              ],
+              "sum_over_8": "8"
+            }
+          ]
+        }
+      ],
+      "allowed_summary": {
+        "positive_components": 34,
+        "isolated_components": 12,
+        "clear_duration": "9/140",
+        "new_positive_components_without_old_touch": 24,
+        "first_new_positive_component": [
+          "41/400",
+          "23/224"
+        ],
+        "sha256_json_string_endpoints": "7d9fa2d66c5f51459b4dcf887d6af3478f637ce609ce4c72a9ceb37ab518fb71",
+        "boundary_count": 378
+      },
+      "strict_witness": {
+        "time": "8/49",
+        "distances": {
+          "7": "1/7",
+          "14": "2/7",
+          "21": "3/7",
+          "28": "3/7",
+          "35": "2/7",
+          "42": "1/7",
+          "50": "8/49"
+        },
+        "interval": [
+          "6393/39200",
+          "6407/39200"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 7,
+            "integer_part": 1,
+            "phase_left": "793/5600",
+            "phase_right": "807/5600"
+          },
+          {
+            "speed": 14,
+            "integer_part": 2,
+            "phase_left": "793/2800",
+            "phase_right": "807/2800"
+          },
+          {
+            "speed": 21,
+            "integer_part": 3,
+            "phase_left": "2379/5600",
+            "phase_right": "2421/5600"
+          },
+          {
+            "speed": 28,
+            "integer_part": 4,
+            "phase_left": "793/1400",
+            "phase_right": "807/1400"
+          },
+          {
+            "speed": 35,
+            "integer_part": 5,
+            "phase_left": "793/1120",
+            "phase_right": "807/1120"
+          },
+          {
+            "speed": 42,
+            "integer_part": 6,
+            "phase_left": "2379/2800",
+            "phase_right": "2421/2800"
+          },
+          {
+            "speed": 50,
+            "integer_part": 8,
+            "phase_left": "121/784",
+            "phase_right": "135/784"
+          }
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "s": -1,
+      "relative_speeds": [
+        9,
+        18,
+        27,
+        36,
+        45,
+        54,
+        62
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "10/63",
+        "11/63",
+        "4/21",
+        "13/63",
+        "5/21",
+        "16/63",
+        "17/63",
+        "2/7",
+        "19/63",
+        "20/63",
+        "22/63",
+        "23/63",
+        "8/21",
+        "25/63",
+        "26/63",
+        "3/7",
+        "29/63",
+        "10/21",
+        "31/63",
+        "32/63",
+        "11/21",
+        "34/63",
+        "4/7",
+        "37/63",
+        "38/63",
+        "13/21",
+        "40/63",
+        "41/63",
+        "43/63",
+        "44/63",
+        "5/7",
+        "46/63",
+        "47/63",
+        "16/21",
+        "50/63",
+        "17/21",
+        "52/63",
+        "53/63",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "9/7",
+      "old_touch_classification": {
+        "blocked": [
+          "7/72",
+          "5/24",
+          "7/24",
+          "29/72",
+          "43/72",
+          "17/24",
+          "19/24",
+          "65/72"
+        ],
+        "isolated": [
+          "1/24",
+          "5/72",
+          "11/72",
+          "13/72",
+          "19/72",
+          "3/8",
+          "35/72",
+          "37/72",
+          "5/8",
+          "53/72",
+          "59/72",
+          "61/72",
+          "67/72",
+          "23/24"
+        ],
+        "opens_left": [
+          "23/72",
+          "31/72",
+          "13/24",
+          "47/72",
+          "55/72",
+          "7/8",
+          "71/72"
+        ],
+        "opens_right": [
+          "1/72",
+          "1/8",
+          "17/72",
+          "25/72",
+          "11/24",
+          "41/72",
+          "49/72"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 8,
+        "isolated": 14,
+        "opens_left": 7,
+        "opens_right": 7
+      },
+      "new_isolated_contacts": [
+        {
+          "time": "1/16",
+          "blocking_ends": [
+            18
+          ],
+          "blocking_starts": [
+            62
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 18,
+              "incoming": 62,
+              "integers": [
+                "1",
+                "4"
+              ],
+              "sum_over_8": "10"
+            }
+          ]
+        },
+        {
+          "time": "15/16",
+          "blocking_ends": [
+            62
+          ],
+          "blocking_starts": [
+            18
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 62,
+              "incoming": 18,
+              "integers": [
+                "58",
+                "17"
+              ],
+              "sum_over_8": "10"
+            }
+          ]
+        }
+      ],
+      "allowed_summary": {
+        "positive_components": 44,
+        "isolated_components": 16,
+        "clear_duration": "161/2480",
+        "new_positive_components_without_old_touch": 30,
+        "first_new_positive_component": [
+          "41/288",
+          "71/496"
+        ],
+        "sha256_json_string_endpoints": "6f561b6f716cebd685fc1da1a94b6e7a532fb4c0424380f74bfebdd6642556d5",
+        "boundary_count": 482
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "9": "2/7",
+          "18": "3/7",
+          "27": "1/7",
+          "36": "1/7",
+          "45": "3/7",
+          "54": "2/7",
+          "62": "1/7"
+        },
+        "interval": [
+          "991/6944",
+          "993/6944"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 9,
+            "integer_part": 1,
+            "phase_left": "1975/6944",
+            "phase_right": "1993/6944"
+          },
+          {
+            "speed": 18,
+            "integer_part": 2,
+            "phase_left": "1975/3472",
+            "phase_right": "1993/3472"
+          },
+          {
+            "speed": 27,
+            "integer_part": 3,
+            "phase_left": "5925/6944",
+            "phase_right": "5979/6944"
+          },
+          {
+            "speed": 36,
+            "integer_part": 5,
+            "phase_left": "239/1736",
+            "phase_right": "257/1736"
+          },
+          {
+            "speed": 45,
+            "integer_part": 6,
+            "phase_left": "2931/6944",
+            "phase_right": "3021/6944"
+          },
+          {
+            "speed": 54,
+            "integer_part": 7,
+            "phase_left": "2453/3472",
+            "phase_right": "2507/3472"
+          },
+          {
+            "speed": 62,
+            "integer_part": 8,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "s": 0,
+      "relative_speeds": [
+        9,
+        18,
+        27,
+        36,
+        45,
+        54,
+        63
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/72",
+        "1/24",
+        "5/72",
+        "7/72",
+        "1/8",
+        "11/72",
+        "13/72",
+        "5/24",
+        "17/72",
+        "19/72",
+        "7/24",
+        "23/72",
+        "25/72",
+        "3/8",
+        "29/72",
+        "31/72",
+        "11/24",
+        "35/72",
+        "37/72",
+        "13/24",
+        "41/72",
+        "43/72",
+        "5/8",
+        "47/72",
+        "49/72",
+        "17/24",
+        "53/72",
+        "55/72",
+        "19/24",
+        "59/72",
+        "61/72",
+        "7/8",
+        "65/72",
+        "67/72",
+        "23/24",
+        "71/72"
+      ],
+      "earliest_maximum_t": "1/72",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/72",
+          "1/24",
+          "5/72",
+          "7/72",
+          "1/8",
+          "11/72",
+          "13/72",
+          "5/24",
+          "17/72",
+          "19/72",
+          "7/24",
+          "23/72",
+          "25/72",
+          "3/8",
+          "29/72",
+          "31/72",
+          "11/24",
+          "35/72",
+          "37/72",
+          "13/24",
+          "41/72",
+          "43/72",
+          "5/8",
+          "47/72",
+          "49/72",
+          "17/24",
+          "53/72",
+          "55/72",
+          "19/24",
+          "59/72",
+          "61/72",
+          "7/8",
+          "65/72",
+          "67/72",
+          "23/24",
+          "71/72"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 36,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 36,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "d8f23eece1583d619f45b073f7f4202b8791e228056d065c0652d5f505fdcfef",
+        "boundary_count": 470
+      }
+    },
+    {
+      "q": 9,
+      "s": 1,
+      "relative_speeds": [
+        9,
+        18,
+        27,
+        36,
+        45,
+        54,
+        64
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "10/63",
+        "11/63",
+        "4/21",
+        "13/63",
+        "5/21",
+        "16/63",
+        "17/63",
+        "2/7",
+        "19/63",
+        "20/63",
+        "22/63",
+        "23/63",
+        "8/21",
+        "25/63",
+        "26/63",
+        "3/7",
+        "29/63",
+        "10/21",
+        "31/63",
+        "32/63",
+        "11/21",
+        "34/63",
+        "4/7",
+        "37/63",
+        "38/63",
+        "13/21",
+        "40/63",
+        "41/63",
+        "43/63",
+        "44/63",
+        "5/7",
+        "46/63",
+        "47/63",
+        "16/21",
+        "50/63",
+        "17/21",
+        "52/63",
+        "53/63",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "9/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/72",
+          "1/8",
+          "17/72",
+          "19/72",
+          "3/8",
+          "35/72",
+          "37/72",
+          "5/8",
+          "53/72",
+          "55/72",
+          "7/8",
+          "71/72"
+        ],
+        "isolated": [
+          "1/24",
+          "5/72",
+          "11/72",
+          "13/72",
+          "7/24",
+          "29/72",
+          "43/72",
+          "17/24",
+          "59/72",
+          "61/72",
+          "67/72",
+          "23/24"
+        ],
+        "opens_left": [
+          "7/72",
+          "5/24",
+          "23/72",
+          "31/72",
+          "13/24",
+          "47/72"
+        ],
+        "opens_right": [
+          "25/72",
+          "11/24",
+          "41/72",
+          "49/72",
+          "19/24",
+          "65/72"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 12,
+        "isolated": 12,
+        "opens_left": 6,
+        "opens_right": 6
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 44,
+        "isolated_components": 12,
+        "clear_duration": "253/3840",
+        "new_positive_components_without_old_touch": 32,
+        "first_new_positive_component": [
+          "65/512",
+          "55/432"
+        ],
+        "sha256_json_string_endpoints": "9f4fecb0b7f980aa44212b997e77ba65191c0c2a3216ee6ce9976aa27ff8a449",
+        "boundary_count": 490
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "9": "2/7",
+          "18": "3/7",
+          "27": "1/7",
+          "36": "1/7",
+          "45": "3/7",
+          "54": "2/7",
+          "64": "1/7"
+        },
+        "interval": [
+          "1023/7168",
+          "1025/7168"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 9,
+            "integer_part": 1,
+            "phase_left": "2039/7168",
+            "phase_right": "2057/7168"
+          },
+          {
+            "speed": 18,
+            "integer_part": 2,
+            "phase_left": "2039/3584",
+            "phase_right": "2057/3584"
+          },
+          {
+            "speed": 27,
+            "integer_part": 3,
+            "phase_left": "6117/7168",
+            "phase_right": "6171/7168"
+          },
+          {
+            "speed": 36,
+            "integer_part": 5,
+            "phase_left": "247/1792",
+            "phase_right": "265/1792"
+          },
+          {
+            "speed": 45,
+            "integer_part": 6,
+            "phase_left": "3027/7168",
+            "phase_right": "3117/7168"
+          },
+          {
+            "speed": 54,
+            "integer_part": 7,
+            "phase_left": "2533/3584",
+            "phase_right": "2587/3584"
+          },
+          {
+            "speed": 64,
+            "integer_part": 9,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 11,
+      "s": -1,
+      "relative_speeds": [
+        11,
+        22,
+        33,
+        44,
+        55,
+        66,
+        76
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "12/77",
+        "13/77",
+        "15/77",
+        "16/77",
+        "17/77",
+        "18/77",
+        "19/77",
+        "20/77",
+        "2/7",
+        "23/77",
+        "24/77",
+        "25/77",
+        "26/77",
+        "27/77",
+        "29/77",
+        "30/77",
+        "31/77",
+        "32/77",
+        "3/7",
+        "34/77",
+        "36/77",
+        "37/77",
+        "38/77",
+        "39/77",
+        "40/77",
+        "41/77",
+        "43/77",
+        "4/7",
+        "45/77",
+        "46/77",
+        "47/77",
+        "48/77",
+        "50/77",
+        "51/77",
+        "52/77",
+        "53/77",
+        "54/77",
+        "5/7",
+        "57/77",
+        "58/77",
+        "59/77",
+        "60/77",
+        "61/77",
+        "62/77",
+        "64/77",
+        "65/77",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "11/7",
+      "old_touch_classification": {
+        "blocked": [
+          "7/88",
+          "15/88",
+          "29/88",
+          "37/88",
+          "51/88",
+          "59/88",
+          "73/88",
+          "81/88"
+        ],
+        "isolated": [
+          "3/88",
+          "5/88",
+          "1/8",
+          "13/88",
+          "19/88",
+          "21/88",
+          "27/88",
+          "35/88",
+          "43/88",
+          "45/88",
+          "53/88",
+          "61/88",
+          "67/88",
+          "69/88",
+          "75/88",
+          "7/8",
+          "83/88",
+          "85/88"
+        ],
+        "opens_left": [
+          "23/88",
+          "31/88",
+          "39/88",
+          "47/88",
+          "5/8",
+          "63/88",
+          "71/88",
+          "79/88",
+          "87/88"
+        ],
+        "opens_right": [
+          "1/88",
+          "9/88",
+          "17/88",
+          "25/88",
+          "3/8",
+          "41/88",
+          "49/88",
+          "57/88",
+          "65/88"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 8,
+        "isolated": 18,
+        "opens_left": 9,
+        "opens_right": 9
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 56,
+        "isolated_components": 18,
+        "clear_duration": "1099/16720",
+        "new_positive_components_without_old_touch": 38,
+        "first_new_positive_component": [
+          "41/352",
+          "71/608"
+        ],
+        "sha256_json_string_endpoints": "fc45430db7be5927fc1213607d26bd5242c5c69dded1352cbb0e7101f0e0fa44",
+        "boundary_count": 586
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "11": "3/7",
+          "22": "1/7",
+          "33": "2/7",
+          "44": "2/7",
+          "55": "1/7",
+          "66": "3/7",
+          "76": "1/7"
+        },
+        "interval": [
+          "1215/8512",
+          "1217/8512"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 11,
+            "integer_part": 1,
+            "phase_left": "4853/8512",
+            "phase_right": "4875/8512"
+          },
+          {
+            "speed": 22,
+            "integer_part": 3,
+            "phase_left": "597/4256",
+            "phase_right": "619/4256"
+          },
+          {
+            "speed": 33,
+            "integer_part": 4,
+            "phase_left": "6047/8512",
+            "phase_right": "6113/8512"
+          },
+          {
+            "speed": 44,
+            "integer_part": 6,
+            "phase_left": "597/2128",
+            "phase_right": "619/2128"
+          },
+          {
+            "speed": 55,
+            "integer_part": 7,
+            "phase_left": "7241/8512",
+            "phase_right": "7351/8512"
+          },
+          {
+            "speed": 66,
+            "integer_part": 9,
+            "phase_left": "1791/4256",
+            "phase_right": "1857/4256"
+          },
+          {
+            "speed": 76,
+            "integer_part": 10,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 11,
+      "s": 0,
+      "relative_speeds": [
+        11,
+        22,
+        33,
+        44,
+        55,
+        66,
+        77
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/88",
+        "3/88",
+        "5/88",
+        "7/88",
+        "9/88",
+        "1/8",
+        "13/88",
+        "15/88",
+        "17/88",
+        "19/88",
+        "21/88",
+        "23/88",
+        "25/88",
+        "27/88",
+        "29/88",
+        "31/88",
+        "3/8",
+        "35/88",
+        "37/88",
+        "39/88",
+        "41/88",
+        "43/88",
+        "45/88",
+        "47/88",
+        "49/88",
+        "51/88",
+        "53/88",
+        "5/8",
+        "57/88",
+        "59/88",
+        "61/88",
+        "63/88",
+        "65/88",
+        "67/88",
+        "69/88",
+        "71/88",
+        "73/88",
+        "75/88",
+        "7/8",
+        "79/88",
+        "81/88",
+        "83/88",
+        "85/88",
+        "87/88"
+      ],
+      "earliest_maximum_t": "1/88",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/88",
+          "3/88",
+          "5/88",
+          "7/88",
+          "9/88",
+          "1/8",
+          "13/88",
+          "15/88",
+          "17/88",
+          "19/88",
+          "21/88",
+          "23/88",
+          "25/88",
+          "27/88",
+          "29/88",
+          "31/88",
+          "3/8",
+          "35/88",
+          "37/88",
+          "39/88",
+          "41/88",
+          "43/88",
+          "45/88",
+          "47/88",
+          "49/88",
+          "51/88",
+          "53/88",
+          "5/8",
+          "57/88",
+          "59/88",
+          "61/88",
+          "63/88",
+          "65/88",
+          "67/88",
+          "69/88",
+          "71/88",
+          "73/88",
+          "75/88",
+          "7/8",
+          "79/88",
+          "81/88",
+          "83/88",
+          "85/88",
+          "87/88"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 44,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 44,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "fd8dd20170840a84e76030acb9e63506258885e32960ba703e3d08c7ead9d954",
+        "boundary_count": 574
+      }
+    },
+    {
+      "q": 11,
+      "s": 1,
+      "relative_speeds": [
+        11,
+        22,
+        33,
+        44,
+        55,
+        66,
+        78
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "12/77",
+        "13/77",
+        "15/77",
+        "16/77",
+        "17/77",
+        "18/77",
+        "19/77",
+        "20/77",
+        "2/7",
+        "23/77",
+        "24/77",
+        "25/77",
+        "26/77",
+        "27/77",
+        "29/77",
+        "30/77",
+        "31/77",
+        "32/77",
+        "3/7",
+        "34/77",
+        "36/77",
+        "37/77",
+        "38/77",
+        "39/77",
+        "40/77",
+        "41/77",
+        "43/77",
+        "4/7",
+        "45/77",
+        "46/77",
+        "47/77",
+        "48/77",
+        "50/77",
+        "51/77",
+        "52/77",
+        "53/77",
+        "54/77",
+        "5/7",
+        "57/77",
+        "58/77",
+        "59/77",
+        "60/77",
+        "61/77",
+        "62/77",
+        "64/77",
+        "65/77",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "11/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/88",
+          "9/88",
+          "17/88",
+          "27/88",
+          "35/88",
+          "43/88",
+          "45/88",
+          "53/88",
+          "61/88",
+          "71/88",
+          "79/88",
+          "87/88"
+        ],
+        "isolated": [
+          "3/88",
+          "5/88",
+          "1/8",
+          "13/88",
+          "19/88",
+          "21/88",
+          "29/88",
+          "37/88",
+          "51/88",
+          "59/88",
+          "67/88",
+          "69/88",
+          "75/88",
+          "7/8",
+          "83/88",
+          "85/88"
+        ],
+        "opens_left": [
+          "7/88",
+          "15/88",
+          "23/88",
+          "31/88",
+          "39/88",
+          "47/88",
+          "5/8",
+          "63/88"
+        ],
+        "opens_right": [
+          "25/88",
+          "3/8",
+          "41/88",
+          "49/88",
+          "57/88",
+          "65/88",
+          "73/88",
+          "81/88"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 12,
+        "isolated": 16,
+        "opens_left": 8,
+        "opens_right": 8
+      },
+      "new_isolated_contacts": [
+        {
+          "time": "5/48",
+          "blocking_ends": [
+            78
+          ],
+          "blocking_starts": [
+            66
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 78,
+              "incoming": 66,
+              "integers": [
+                "8",
+                "7"
+              ],
+              "sum_over_8": "18"
+            }
+          ]
+        },
+        {
+          "time": "43/48",
+          "blocking_ends": [
+            66
+          ],
+          "blocking_starts": [
+            78
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 66,
+              "incoming": 78,
+              "integers": [
+                "59",
+                "70"
+              ],
+              "sum_over_8": "18"
+            }
+          ]
+        }
+      ],
+      "allowed_summary": {
+        "positive_components": 54,
+        "isolated_components": 18,
+        "clear_duration": "17/260",
+        "new_positive_components_without_old_touch": 38,
+        "first_new_positive_component": [
+          "73/624",
+          "31/264"
+        ],
+        "sha256_json_string_endpoints": "89b34ed41066bc4582d75b4a6e4fe8f3e81ba97f25d07959e5ff74553ceb58b1",
+        "boundary_count": 586
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "11": "3/7",
+          "22": "1/7",
+          "33": "2/7",
+          "44": "2/7",
+          "55": "1/7",
+          "66": "3/7",
+          "78": "1/7"
+        },
+        "interval": [
+          "1247/8736",
+          "1249/8736"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 11,
+            "integer_part": 1,
+            "phase_left": "4981/8736",
+            "phase_right": "5003/8736"
+          },
+          {
+            "speed": 22,
+            "integer_part": 3,
+            "phase_left": "613/4368",
+            "phase_right": "635/4368"
+          },
+          {
+            "speed": 33,
+            "integer_part": 4,
+            "phase_left": "2069/2912",
+            "phase_right": "2091/2912"
+          },
+          {
+            "speed": 44,
+            "integer_part": 6,
+            "phase_left": "613/2184",
+            "phase_right": "635/2184"
+          },
+          {
+            "speed": 55,
+            "integer_part": 7,
+            "phase_left": "7433/8736",
+            "phase_right": "7543/8736"
+          },
+          {
+            "speed": 66,
+            "integer_part": 9,
+            "phase_left": "613/1456",
+            "phase_right": "635/1456"
+          },
+          {
+            "speed": 78,
+            "integer_part": 11,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 14,
+      "s": -1,
+      "relative_speeds": [
+        14,
+        28,
+        42,
+        56,
+        70,
+        84,
+        97
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "15/98",
+        "8/49",
+        "17/98",
+        "9/49",
+        "19/98",
+        "10/49",
+        "11/49",
+        "23/98",
+        "12/49",
+        "25/98",
+        "13/49",
+        "27/98",
+        "29/98",
+        "15/49",
+        "31/98",
+        "16/49",
+        "33/98",
+        "17/49",
+        "18/49",
+        "37/98",
+        "19/49",
+        "39/98",
+        "20/49",
+        "41/98",
+        "43/98",
+        "22/49",
+        "45/98",
+        "23/49",
+        "47/98",
+        "24/49",
+        "25/49",
+        "51/98",
+        "26/49",
+        "53/98",
+        "27/49",
+        "55/98",
+        "57/98",
+        "29/49",
+        "59/98",
+        "30/49",
+        "61/98",
+        "31/49",
+        "32/49",
+        "65/98",
+        "33/49",
+        "67/98",
+        "34/49",
+        "69/98",
+        "71/98",
+        "36/49",
+        "73/98",
+        "37/49",
+        "75/98",
+        "38/49",
+        "39/49",
+        "79/98",
+        "40/49",
+        "81/98",
+        "41/49",
+        "83/98"
+      ],
+      "earliest_maximum_t": "15/98",
+      "earliest_maximum_u": "15/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/16",
+          "15/112",
+          "23/112",
+          "29/112",
+          "37/112",
+          "45/112",
+          "53/112",
+          "59/112",
+          "67/112",
+          "75/112",
+          "83/112",
+          "89/112",
+          "97/112",
+          "15/16"
+        ],
+        "isolated": [
+          "3/112",
+          "5/112",
+          "11/112",
+          "13/112",
+          "19/112",
+          "3/16",
+          "27/112",
+          "5/16",
+          "43/112",
+          "51/112",
+          "61/112",
+          "69/112",
+          "11/16",
+          "85/112",
+          "13/16",
+          "93/112",
+          "99/112",
+          "101/112",
+          "107/112",
+          "109/112"
+        ],
+        "opens_left": [
+          "31/112",
+          "39/112",
+          "47/112",
+          "55/112",
+          "9/16",
+          "71/112",
+          "79/112",
+          "87/112",
+          "95/112",
+          "103/112",
+          "111/112"
+        ],
+        "opens_right": [
+          "1/112",
+          "9/112",
+          "17/112",
+          "25/112",
+          "33/112",
+          "41/112",
+          "7/16",
+          "57/112",
+          "65/112",
+          "73/112",
+          "81/112"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 14,
+        "isolated": 20,
+        "opens_left": 11,
+        "opens_right": 11
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 72,
+        "isolated_components": 20,
+        "clear_duration": "2669/40740",
+        "new_positive_components_without_old_touch": 50,
+        "first_new_positive_component": [
+          "57/560",
+          "79/776"
+        ],
+        "sha256_json_string_endpoints": "280a87867afd0739a11791dcab0e89c10503649bd79791c2d63c3621a54d061a",
+        "boundary_count": 756
+      },
+      "strict_witness": {
+        "time": "15/98",
+        "distances": {
+          "14": "1/7",
+          "28": "2/7",
+          "42": "3/7",
+          "56": "3/7",
+          "70": "2/7",
+          "84": "1/7",
+          "97": "15/98"
+        },
+        "interval": [
+          "11633/76048",
+          "11647/76048"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 14,
+            "integer_part": 2,
+            "phase_left": "769/5432",
+            "phase_right": "783/5432"
+          },
+          {
+            "speed": 28,
+            "integer_part": 4,
+            "phase_left": "769/2716",
+            "phase_right": "783/2716"
+          },
+          {
+            "speed": 42,
+            "integer_part": 6,
+            "phase_left": "2307/5432",
+            "phase_right": "2349/5432"
+          },
+          {
+            "speed": 56,
+            "integer_part": 8,
+            "phase_left": "769/1358",
+            "phase_right": "783/1358"
+          },
+          {
+            "speed": 70,
+            "integer_part": 10,
+            "phase_left": "3845/5432",
+            "phase_right": "3915/5432"
+          },
+          {
+            "speed": 84,
+            "integer_part": 12,
+            "phase_left": "2307/2716",
+            "phase_right": "2349/2716"
+          },
+          {
+            "speed": 97,
+            "integer_part": 14,
+            "phase_left": "657/784",
+            "phase_right": "671/784"
+          }
+        ]
+      }
+    },
+    {
+      "q": 14,
+      "s": 0,
+      "relative_speeds": [
+        14,
+        28,
+        42,
+        56,
+        70,
+        84,
+        98
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/112",
+        "3/112",
+        "5/112",
+        "1/16",
+        "9/112",
+        "11/112",
+        "13/112",
+        "15/112",
+        "17/112",
+        "19/112",
+        "3/16",
+        "23/112",
+        "25/112",
+        "27/112",
+        "29/112",
+        "31/112",
+        "33/112",
+        "5/16",
+        "37/112",
+        "39/112",
+        "41/112",
+        "43/112",
+        "45/112",
+        "47/112",
+        "7/16",
+        "51/112",
+        "53/112",
+        "55/112",
+        "57/112",
+        "59/112",
+        "61/112",
+        "9/16",
+        "65/112",
+        "67/112",
+        "69/112",
+        "71/112",
+        "73/112",
+        "75/112",
+        "11/16",
+        "79/112",
+        "81/112",
+        "83/112",
+        "85/112",
+        "87/112",
+        "89/112",
+        "13/16",
+        "93/112",
+        "95/112",
+        "97/112",
+        "99/112",
+        "101/112",
+        "103/112",
+        "15/16",
+        "107/112",
+        "109/112",
+        "111/112"
+      ],
+      "earliest_maximum_t": "1/112",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/112",
+          "3/112",
+          "5/112",
+          "1/16",
+          "9/112",
+          "11/112",
+          "13/112",
+          "15/112",
+          "17/112",
+          "19/112",
+          "3/16",
+          "23/112",
+          "25/112",
+          "27/112",
+          "29/112",
+          "31/112",
+          "33/112",
+          "5/16",
+          "37/112",
+          "39/112",
+          "41/112",
+          "43/112",
+          "45/112",
+          "47/112",
+          "7/16",
+          "51/112",
+          "53/112",
+          "55/112",
+          "57/112",
+          "59/112",
+          "61/112",
+          "9/16",
+          "65/112",
+          "67/112",
+          "69/112",
+          "71/112",
+          "73/112",
+          "75/112",
+          "11/16",
+          "79/112",
+          "81/112",
+          "83/112",
+          "85/112",
+          "87/112",
+          "89/112",
+          "13/16",
+          "93/112",
+          "95/112",
+          "97/112",
+          "99/112",
+          "101/112",
+          "103/112",
+          "15/16",
+          "107/112",
+          "109/112",
+          "111/112"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 56,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 56,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "2d02d011713c51ee775efa167a23f1c58ba6884f01b8589f602c26ccbb8ad903",
+        "boundary_count": 730
+      }
+    },
+    {
+      "q": 14,
+      "s": 1,
+      "relative_speeds": [
+        14,
+        28,
+        42,
+        56,
+        70,
+        84,
+        99
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "15/98",
+        "8/49",
+        "17/98",
+        "9/49",
+        "19/98",
+        "10/49",
+        "11/49",
+        "23/98",
+        "12/49",
+        "25/98",
+        "13/49",
+        "27/98",
+        "29/98",
+        "15/49",
+        "31/98",
+        "16/49",
+        "33/98",
+        "17/49",
+        "18/49",
+        "37/98",
+        "19/49",
+        "39/98",
+        "20/49",
+        "41/98",
+        "43/98",
+        "22/49",
+        "45/98",
+        "23/49",
+        "47/98",
+        "24/49",
+        "25/49",
+        "51/98",
+        "26/49",
+        "53/98",
+        "27/49",
+        "55/98",
+        "57/98",
+        "29/49",
+        "59/98",
+        "30/49",
+        "61/98",
+        "31/49",
+        "32/49",
+        "65/98",
+        "33/49",
+        "67/98",
+        "34/49",
+        "69/98",
+        "71/98",
+        "36/49",
+        "73/98",
+        "37/49",
+        "75/98",
+        "38/49",
+        "39/49",
+        "79/98",
+        "40/49",
+        "81/98",
+        "41/49",
+        "83/98"
+      ],
+      "earliest_maximum_t": "15/98",
+      "earliest_maximum_u": "15/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/112",
+          "9/112",
+          "17/112",
+          "25/112",
+          "5/16",
+          "43/112",
+          "51/112",
+          "61/112",
+          "69/112",
+          "11/16",
+          "87/112",
+          "95/112",
+          "103/112",
+          "111/112"
+        ],
+        "isolated": [
+          "3/112",
+          "5/112",
+          "11/112",
+          "13/112",
+          "19/112",
+          "3/16",
+          "27/112",
+          "29/112",
+          "37/112",
+          "45/112",
+          "53/112",
+          "59/112",
+          "67/112",
+          "75/112",
+          "83/112",
+          "85/112",
+          "13/16",
+          "93/112",
+          "99/112",
+          "101/112",
+          "107/112",
+          "109/112"
+        ],
+        "opens_left": [
+          "1/16",
+          "15/112",
+          "23/112",
+          "31/112",
+          "39/112",
+          "47/112",
+          "55/112",
+          "9/16",
+          "71/112",
+          "79/112"
+        ],
+        "opens_right": [
+          "33/112",
+          "41/112",
+          "7/16",
+          "57/112",
+          "65/112",
+          "73/112",
+          "81/112",
+          "89/112",
+          "97/112",
+          "15/16"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 14,
+        "isolated": 22,
+        "opens_left": 10,
+        "opens_right": 10
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 72,
+        "isolated_components": 22,
+        "clear_duration": "7283/110880",
+        "new_positive_components_without_old_touch": 52,
+        "first_new_positive_component": [
+          "73/792",
+          "31/336"
+        ],
+        "sha256_json_string_endpoints": "2860e9c8b70694b841117db05beefeb1b01c2f2d8ee9e95dabc57e52b18c7514",
+        "boundary_count": 760
+      },
+      "strict_witness": {
+        "time": "15/98",
+        "distances": {
+          "14": "1/7",
+          "28": "2/7",
+          "42": "3/7",
+          "56": "3/7",
+          "70": "2/7",
+          "84": "1/7",
+          "99": "15/98"
+        },
+        "interval": [
+          "11873/77616",
+          "11887/77616"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 14,
+            "integer_part": 2,
+            "phase_left": "785/5544",
+            "phase_right": "799/5544"
+          },
+          {
+            "speed": 28,
+            "integer_part": 4,
+            "phase_left": "785/2772",
+            "phase_right": "799/2772"
+          },
+          {
+            "speed": 42,
+            "integer_part": 6,
+            "phase_left": "785/1848",
+            "phase_right": "799/1848"
+          },
+          {
+            "speed": 56,
+            "integer_part": 8,
+            "phase_left": "785/1386",
+            "phase_right": "799/1386"
+          },
+          {
+            "speed": 70,
+            "integer_part": 10,
+            "phase_left": "3925/5544",
+            "phase_right": "3995/5544"
+          },
+          {
+            "speed": 84,
+            "integer_part": 12,
+            "phase_left": "785/924",
+            "phase_right": "799/924"
+          },
+          {
+            "speed": 99,
+            "integer_part": 15,
+            "phase_left": "113/784",
+            "phase_right": "127/784"
+          }
+        ]
+      }
+    },
+    {
+      "q": 29,
+      "s": -1,
+      "relative_speeds": [
+        29,
+        58,
+        87,
+        116,
+        145,
+        174,
+        202
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "30/203",
+        "31/203",
+        "32/203",
+        "33/203",
+        "34/203",
+        "36/203",
+        "37/203",
+        "38/203",
+        "39/203",
+        "40/203",
+        "41/203",
+        "43/203",
+        "44/203",
+        "45/203",
+        "46/203",
+        "47/203",
+        "48/203",
+        "50/203",
+        "51/203",
+        "52/203",
+        "53/203",
+        "54/203",
+        "55/203",
+        "57/203",
+        "2/7",
+        "59/203",
+        "60/203",
+        "61/203",
+        "62/203",
+        "64/203",
+        "65/203",
+        "66/203",
+        "67/203",
+        "68/203",
+        "69/203",
+        "71/203",
+        "72/203",
+        "73/203",
+        "74/203",
+        "75/203",
+        "76/203",
+        "78/203",
+        "79/203",
+        "80/203",
+        "81/203",
+        "82/203",
+        "83/203",
+        "85/203",
+        "86/203",
+        "3/7",
+        "88/203",
+        "89/203",
+        "90/203",
+        "92/203",
+        "93/203",
+        "94/203",
+        "95/203",
+        "96/203",
+        "97/203",
+        "99/203",
+        "100/203",
+        "101/203",
+        "102/203",
+        "103/203",
+        "104/203",
+        "106/203",
+        "107/203",
+        "108/203",
+        "109/203",
+        "110/203",
+        "111/203",
+        "113/203",
+        "114/203",
+        "115/203",
+        "4/7",
+        "117/203",
+        "118/203",
+        "120/203",
+        "121/203",
+        "122/203",
+        "123/203",
+        "124/203",
+        "125/203",
+        "127/203",
+        "128/203",
+        "129/203",
+        "130/203",
+        "131/203",
+        "132/203",
+        "134/203",
+        "135/203",
+        "136/203",
+        "137/203",
+        "138/203",
+        "139/203",
+        "141/203",
+        "142/203",
+        "143/203",
+        "144/203",
+        "5/7",
+        "146/203",
+        "148/203",
+        "149/203",
+        "150/203",
+        "151/203",
+        "152/203",
+        "153/203",
+        "155/203",
+        "156/203",
+        "157/203",
+        "158/203",
+        "159/203",
+        "160/203",
+        "162/203",
+        "163/203",
+        "164/203",
+        "165/203",
+        "166/203",
+        "167/203",
+        "169/203",
+        "170/203",
+        "171/203",
+        "172/203",
+        "173/203",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "29/7",
+      "old_touch_classification": {
+        "blocked": [
+          "7/232",
+          "15/232",
+          "23/232",
+          "31/232",
+          "39/232",
+          "47/232",
+          "55/232",
+          "61/232",
+          "69/232",
+          "77/232",
+          "85/232",
+          "93/232",
+          "101/232",
+          "109/232",
+          "123/232",
+          "131/232",
+          "139/232",
+          "147/232",
+          "155/232",
+          "163/232",
+          "171/232",
+          "177/232",
+          "185/232",
+          "193/232",
+          "201/232",
+          "209/232",
+          "217/232",
+          "225/232"
+        ],
+        "isolated": [
+          "3/232",
+          "5/232",
+          "11/232",
+          "13/232",
+          "19/232",
+          "21/232",
+          "27/232",
+          "1/8",
+          "35/232",
+          "37/232",
+          "43/232",
+          "45/232",
+          "51/232",
+          "53/232",
+          "59/232",
+          "67/232",
+          "75/232",
+          "83/232",
+          "91/232",
+          "99/232",
+          "107/232",
+          "115/232",
+          "117/232",
+          "125/232",
+          "133/232",
+          "141/232",
+          "149/232",
+          "157/232",
+          "165/232",
+          "173/232",
+          "179/232",
+          "181/232",
+          "187/232",
+          "189/232",
+          "195/232",
+          "197/232",
+          "7/8",
+          "205/232",
+          "211/232",
+          "213/232",
+          "219/232",
+          "221/232",
+          "227/232",
+          "229/232"
+        ],
+        "opens_left": [
+          "63/232",
+          "71/232",
+          "79/232",
+          "3/8",
+          "95/232",
+          "103/232",
+          "111/232",
+          "119/232",
+          "127/232",
+          "135/232",
+          "143/232",
+          "151/232",
+          "159/232",
+          "167/232",
+          "175/232",
+          "183/232",
+          "191/232",
+          "199/232",
+          "207/232",
+          "215/232",
+          "223/232",
+          "231/232"
+        ],
+        "opens_right": [
+          "1/232",
+          "9/232",
+          "17/232",
+          "25/232",
+          "33/232",
+          "41/232",
+          "49/232",
+          "57/232",
+          "65/232",
+          "73/232",
+          "81/232",
+          "89/232",
+          "97/232",
+          "105/232",
+          "113/232",
+          "121/232",
+          "129/232",
+          "137/232",
+          "5/8",
+          "153/232",
+          "161/232",
+          "169/232"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 28,
+        "isolated": 44,
+        "opens_left": 22,
+        "opens_right": 22
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 148,
+        "isolated_components": 44,
+        "clear_duration": "23081/351480",
+        "new_positive_components_without_old_touch": 104,
+        "first_new_positive_component": [
+          "41/464",
+          "143/1616"
+        ],
+        "sha256_json_string_endpoints": "f177066f0ccfad88492bd036841415d346136f0844879cd2f81281af5d27ffd7",
+        "boundary_count": 1562
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "29": "1/7",
+          "58": "2/7",
+          "87": "3/7",
+          "116": "3/7",
+          "145": "2/7",
+          "174": "1/7",
+          "202": "1/7"
+        },
+        "interval": [
+          "3231/22624",
+          "3233/22624"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 29,
+            "integer_part": 4,
+            "phase_left": "3203/22624",
+            "phase_right": "3261/22624"
+          },
+          {
+            "speed": 58,
+            "integer_part": 8,
+            "phase_left": "3203/11312",
+            "phase_right": "3261/11312"
+          },
+          {
+            "speed": 87,
+            "integer_part": 12,
+            "phase_left": "9609/22624",
+            "phase_right": "9783/22624"
+          },
+          {
+            "speed": 116,
+            "integer_part": 16,
+            "phase_left": "3203/5656",
+            "phase_right": "3261/5656"
+          },
+          {
+            "speed": 145,
+            "integer_part": 20,
+            "phase_left": "16015/22624",
+            "phase_right": "16305/22624"
+          },
+          {
+            "speed": 174,
+            "integer_part": 24,
+            "phase_left": "9609/11312",
+            "phase_right": "9783/11312"
+          },
+          {
+            "speed": 202,
+            "integer_part": 28,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 29,
+      "s": 0,
+      "relative_speeds": [
+        29,
+        58,
+        87,
+        116,
+        145,
+        174,
+        203
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/232",
+        "3/232",
+        "5/232",
+        "7/232",
+        "9/232",
+        "11/232",
+        "13/232",
+        "15/232",
+        "17/232",
+        "19/232",
+        "21/232",
+        "23/232",
+        "25/232",
+        "27/232",
+        "1/8",
+        "31/232",
+        "33/232",
+        "35/232",
+        "37/232",
+        "39/232",
+        "41/232",
+        "43/232",
+        "45/232",
+        "47/232",
+        "49/232",
+        "51/232",
+        "53/232",
+        "55/232",
+        "57/232",
+        "59/232",
+        "61/232",
+        "63/232",
+        "65/232",
+        "67/232",
+        "69/232",
+        "71/232",
+        "73/232",
+        "75/232",
+        "77/232",
+        "79/232",
+        "81/232",
+        "83/232",
+        "85/232",
+        "3/8",
+        "89/232",
+        "91/232",
+        "93/232",
+        "95/232",
+        "97/232",
+        "99/232",
+        "101/232",
+        "103/232",
+        "105/232",
+        "107/232",
+        "109/232",
+        "111/232",
+        "113/232",
+        "115/232",
+        "117/232",
+        "119/232",
+        "121/232",
+        "123/232",
+        "125/232",
+        "127/232",
+        "129/232",
+        "131/232",
+        "133/232",
+        "135/232",
+        "137/232",
+        "139/232",
+        "141/232",
+        "143/232",
+        "5/8",
+        "147/232",
+        "149/232",
+        "151/232",
+        "153/232",
+        "155/232",
+        "157/232",
+        "159/232",
+        "161/232",
+        "163/232",
+        "165/232",
+        "167/232",
+        "169/232",
+        "171/232",
+        "173/232",
+        "175/232",
+        "177/232",
+        "179/232",
+        "181/232",
+        "183/232",
+        "185/232",
+        "187/232",
+        "189/232",
+        "191/232",
+        "193/232",
+        "195/232",
+        "197/232",
+        "199/232",
+        "201/232",
+        "7/8",
+        "205/232",
+        "207/232",
+        "209/232",
+        "211/232",
+        "213/232",
+        "215/232",
+        "217/232",
+        "219/232",
+        "221/232",
+        "223/232",
+        "225/232",
+        "227/232",
+        "229/232",
+        "231/232"
+      ],
+      "earliest_maximum_t": "1/232",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/232",
+          "3/232",
+          "5/232",
+          "7/232",
+          "9/232",
+          "11/232",
+          "13/232",
+          "15/232",
+          "17/232",
+          "19/232",
+          "21/232",
+          "23/232",
+          "25/232",
+          "27/232",
+          "1/8",
+          "31/232",
+          "33/232",
+          "35/232",
+          "37/232",
+          "39/232",
+          "41/232",
+          "43/232",
+          "45/232",
+          "47/232",
+          "49/232",
+          "51/232",
+          "53/232",
+          "55/232",
+          "57/232",
+          "59/232",
+          "61/232",
+          "63/232",
+          "65/232",
+          "67/232",
+          "69/232",
+          "71/232",
+          "73/232",
+          "75/232",
+          "77/232",
+          "79/232",
+          "81/232",
+          "83/232",
+          "85/232",
+          "3/8",
+          "89/232",
+          "91/232",
+          "93/232",
+          "95/232",
+          "97/232",
+          "99/232",
+          "101/232",
+          "103/232",
+          "105/232",
+          "107/232",
+          "109/232",
+          "111/232",
+          "113/232",
+          "115/232",
+          "117/232",
+          "119/232",
+          "121/232",
+          "123/232",
+          "125/232",
+          "127/232",
+          "129/232",
+          "131/232",
+          "133/232",
+          "135/232",
+          "137/232",
+          "139/232",
+          "141/232",
+          "143/232",
+          "5/8",
+          "147/232",
+          "149/232",
+          "151/232",
+          "153/232",
+          "155/232",
+          "157/232",
+          "159/232",
+          "161/232",
+          "163/232",
+          "165/232",
+          "167/232",
+          "169/232",
+          "171/232",
+          "173/232",
+          "175/232",
+          "177/232",
+          "179/232",
+          "181/232",
+          "183/232",
+          "185/232",
+          "187/232",
+          "189/232",
+          "191/232",
+          "193/232",
+          "195/232",
+          "197/232",
+          "199/232",
+          "201/232",
+          "7/8",
+          "205/232",
+          "207/232",
+          "209/232",
+          "211/232",
+          "213/232",
+          "215/232",
+          "217/232",
+          "219/232",
+          "221/232",
+          "223/232",
+          "225/232",
+          "227/232",
+          "229/232",
+          "231/232"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 116,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 116,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "880a9b5d98c04c19cfbf223f21a396183eff59bad7cf242fa29c51ef817f0b70",
+        "boundary_count": 1510
+      }
+    },
+    {
+      "q": 29,
+      "s": 1,
+      "relative_speeds": [
+        29,
+        58,
+        87,
+        116,
+        145,
+        174,
+        204
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "30/203",
+        "31/203",
+        "32/203",
+        "33/203",
+        "34/203",
+        "36/203",
+        "37/203",
+        "38/203",
+        "39/203",
+        "40/203",
+        "41/203",
+        "43/203",
+        "44/203",
+        "45/203",
+        "46/203",
+        "47/203",
+        "48/203",
+        "50/203",
+        "51/203",
+        "52/203",
+        "53/203",
+        "54/203",
+        "55/203",
+        "57/203",
+        "2/7",
+        "59/203",
+        "60/203",
+        "61/203",
+        "62/203",
+        "64/203",
+        "65/203",
+        "66/203",
+        "67/203",
+        "68/203",
+        "69/203",
+        "71/203",
+        "72/203",
+        "73/203",
+        "74/203",
+        "75/203",
+        "76/203",
+        "78/203",
+        "79/203",
+        "80/203",
+        "81/203",
+        "82/203",
+        "83/203",
+        "85/203",
+        "86/203",
+        "3/7",
+        "88/203",
+        "89/203",
+        "90/203",
+        "92/203",
+        "93/203",
+        "94/203",
+        "95/203",
+        "96/203",
+        "97/203",
+        "99/203",
+        "100/203",
+        "101/203",
+        "102/203",
+        "103/203",
+        "104/203",
+        "106/203",
+        "107/203",
+        "108/203",
+        "109/203",
+        "110/203",
+        "111/203",
+        "113/203",
+        "114/203",
+        "115/203",
+        "4/7",
+        "117/203",
+        "118/203",
+        "120/203",
+        "121/203",
+        "122/203",
+        "123/203",
+        "124/203",
+        "125/203",
+        "127/203",
+        "128/203",
+        "129/203",
+        "130/203",
+        "131/203",
+        "132/203",
+        "134/203",
+        "135/203",
+        "136/203",
+        "137/203",
+        "138/203",
+        "139/203",
+        "141/203",
+        "142/203",
+        "143/203",
+        "144/203",
+        "5/7",
+        "146/203",
+        "148/203",
+        "149/203",
+        "150/203",
+        "151/203",
+        "152/203",
+        "153/203",
+        "155/203",
+        "156/203",
+        "157/203",
+        "158/203",
+        "159/203",
+        "160/203",
+        "162/203",
+        "163/203",
+        "164/203",
+        "165/203",
+        "166/203",
+        "167/203",
+        "169/203",
+        "170/203",
+        "171/203",
+        "172/203",
+        "173/203",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "29/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/232",
+          "9/232",
+          "17/232",
+          "25/232",
+          "33/232",
+          "41/232",
+          "49/232",
+          "57/232",
+          "59/232",
+          "67/232",
+          "75/232",
+          "83/232",
+          "91/232",
+          "99/232",
+          "107/232",
+          "115/232",
+          "117/232",
+          "125/232",
+          "133/232",
+          "141/232",
+          "149/232",
+          "157/232",
+          "165/232",
+          "173/232",
+          "175/232",
+          "183/232",
+          "191/232",
+          "199/232",
+          "207/232",
+          "215/232",
+          "223/232",
+          "231/232"
+        ],
+        "isolated": [
+          "3/232",
+          "5/232",
+          "11/232",
+          "13/232",
+          "19/232",
+          "21/232",
+          "27/232",
+          "1/8",
+          "35/232",
+          "37/232",
+          "43/232",
+          "45/232",
+          "51/232",
+          "53/232",
+          "61/232",
+          "69/232",
+          "77/232",
+          "85/232",
+          "93/232",
+          "101/232",
+          "109/232",
+          "123/232",
+          "131/232",
+          "139/232",
+          "147/232",
+          "155/232",
+          "163/232",
+          "171/232",
+          "179/232",
+          "181/232",
+          "187/232",
+          "189/232",
+          "195/232",
+          "197/232",
+          "7/8",
+          "205/232",
+          "211/232",
+          "213/232",
+          "219/232",
+          "221/232",
+          "227/232",
+          "229/232"
+        ],
+        "opens_left": [
+          "7/232",
+          "15/232",
+          "23/232",
+          "31/232",
+          "39/232",
+          "47/232",
+          "55/232",
+          "63/232",
+          "71/232",
+          "79/232",
+          "3/8",
+          "95/232",
+          "103/232",
+          "111/232",
+          "119/232",
+          "127/232",
+          "135/232",
+          "143/232",
+          "151/232",
+          "159/232",
+          "167/232"
+        ],
+        "opens_right": [
+          "65/232",
+          "73/232",
+          "81/232",
+          "89/232",
+          "97/232",
+          "105/232",
+          "113/232",
+          "121/232",
+          "129/232",
+          "137/232",
+          "5/8",
+          "153/232",
+          "161/232",
+          "169/232",
+          "177/232",
+          "185/232",
+          "193/232",
+          "201/232",
+          "209/232",
+          "217/232",
+          "225/232"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 32,
+        "isolated": 42,
+        "opens_left": 21,
+        "opens_right": 21
+      },
+      "new_isolated_contacts": [
+        {
+          "time": "3/32",
+          "blocking_ends": [
+            204
+          ],
+          "blocking_starts": [
+            116
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 204,
+              "incoming": 116,
+              "integers": [
+                "19",
+                "11"
+              ],
+              "sum_over_8": "40"
+            }
+          ]
+        },
+        {
+          "time": "29/32",
+          "blocking_ends": [
+            116
+          ],
+          "blocking_starts": [
+            204
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 116,
+              "incoming": 204,
+              "integers": [
+                "105",
+                "185"
+              ],
+              "sum_over_8": "40"
+            }
+          ]
+        }
+      ],
+      "allowed_summary": {
+        "positive_components": 146,
+        "isolated_components": 44,
+        "clear_duration": "647/9860",
+        "new_positive_components_without_old_touch": 104,
+        "first_new_positive_component": [
+          "137/1632",
+          "39/464"
+        ],
+        "sha256_json_string_endpoints": "e96b02e4facd9d6eaf0029743fd2ce76267fa5d5abc0e6659e162cc961c3f0e8",
+        "boundary_count": 1562
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "29": "1/7",
+          "58": "2/7",
+          "87": "3/7",
+          "116": "3/7",
+          "145": "2/7",
+          "174": "1/7",
+          "204": "1/7"
+        },
+        "interval": [
+          "3263/22848",
+          "3265/22848"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 29,
+            "integer_part": 4,
+            "phase_left": "3235/22848",
+            "phase_right": "3293/22848"
+          },
+          {
+            "speed": 58,
+            "integer_part": 8,
+            "phase_left": "3235/11424",
+            "phase_right": "3293/11424"
+          },
+          {
+            "speed": 87,
+            "integer_part": 12,
+            "phase_left": "3235/7616",
+            "phase_right": "3293/7616"
+          },
+          {
+            "speed": 116,
+            "integer_part": 16,
+            "phase_left": "3235/5712",
+            "phase_right": "3293/5712"
+          },
+          {
+            "speed": 145,
+            "integer_part": 20,
+            "phase_left": "16175/22848",
+            "phase_right": "16465/22848"
+          },
+          {
+            "speed": 174,
+            "integer_part": 24,
+            "phase_left": "3235/3808",
+            "phase_right": "3293/3808"
+          },
+          {
+            "speed": 204,
+            "integer_part": 29,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 37,
+      "s": -1,
+      "relative_speeds": [
+        37,
+        74,
+        111,
+        148,
+        185,
+        222,
+        258
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "38/259",
+        "39/259",
+        "40/259",
+        "41/259",
+        "43/259",
+        "44/259",
+        "45/259",
+        "46/259",
+        "47/259",
+        "48/259",
+        "50/259",
+        "51/259",
+        "52/259",
+        "53/259",
+        "54/259",
+        "55/259",
+        "57/259",
+        "58/259",
+        "59/259",
+        "60/259",
+        "61/259",
+        "62/259",
+        "64/259",
+        "65/259",
+        "66/259",
+        "67/259",
+        "68/259",
+        "69/259",
+        "71/259",
+        "72/259",
+        "73/259",
+        "2/7",
+        "75/259",
+        "76/259",
+        "78/259",
+        "79/259",
+        "80/259",
+        "81/259",
+        "82/259",
+        "83/259",
+        "85/259",
+        "86/259",
+        "87/259",
+        "88/259",
+        "89/259",
+        "90/259",
+        "92/259",
+        "93/259",
+        "94/259",
+        "95/259",
+        "96/259",
+        "97/259",
+        "99/259",
+        "100/259",
+        "101/259",
+        "102/259",
+        "103/259",
+        "104/259",
+        "106/259",
+        "107/259",
+        "108/259",
+        "109/259",
+        "110/259",
+        "3/7",
+        "113/259",
+        "114/259",
+        "115/259",
+        "116/259",
+        "117/259",
+        "118/259",
+        "120/259",
+        "121/259",
+        "122/259",
+        "123/259",
+        "124/259",
+        "125/259",
+        "127/259",
+        "128/259",
+        "129/259",
+        "130/259",
+        "131/259",
+        "132/259",
+        "134/259",
+        "135/259",
+        "136/259",
+        "137/259",
+        "138/259",
+        "139/259",
+        "141/259",
+        "142/259",
+        "143/259",
+        "144/259",
+        "145/259",
+        "146/259",
+        "4/7",
+        "149/259",
+        "150/259",
+        "151/259",
+        "152/259",
+        "153/259",
+        "155/259",
+        "156/259",
+        "157/259",
+        "158/259",
+        "159/259",
+        "160/259",
+        "162/259",
+        "163/259",
+        "164/259",
+        "165/259",
+        "166/259",
+        "167/259",
+        "169/259",
+        "170/259",
+        "171/259",
+        "172/259",
+        "173/259",
+        "174/259",
+        "176/259",
+        "177/259",
+        "178/259",
+        "179/259",
+        "180/259",
+        "181/259",
+        "183/259",
+        "184/259",
+        "5/7",
+        "186/259",
+        "187/259",
+        "188/259",
+        "190/259",
+        "191/259",
+        "192/259",
+        "193/259",
+        "194/259",
+        "195/259",
+        "197/259",
+        "198/259",
+        "199/259",
+        "200/259",
+        "201/259",
+        "202/259",
+        "204/259",
+        "205/259",
+        "206/259",
+        "207/259",
+        "208/259",
+        "209/259",
+        "211/259",
+        "212/259",
+        "213/259",
+        "214/259",
+        "215/259",
+        "216/259",
+        "218/259",
+        "219/259",
+        "220/259",
+        "221/259",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "37/7",
+      "old_touch_classification": {
+        "blocked": [
+          "7/296",
+          "15/296",
+          "23/296",
+          "31/296",
+          "39/296",
+          "47/296",
+          "55/296",
+          "63/296",
+          "71/296",
+          "77/296",
+          "85/296",
+          "93/296",
+          "101/296",
+          "109/296",
+          "117/296",
+          "125/296",
+          "133/296",
+          "141/296",
+          "155/296",
+          "163/296",
+          "171/296",
+          "179/296",
+          "187/296",
+          "195/296",
+          "203/296",
+          "211/296",
+          "219/296",
+          "225/296",
+          "233/296",
+          "241/296",
+          "249/296",
+          "257/296",
+          "265/296",
+          "273/296",
+          "281/296",
+          "289/296"
+        ],
+        "isolated": [
+          "3/296",
+          "5/296",
+          "11/296",
+          "13/296",
+          "19/296",
+          "21/296",
+          "27/296",
+          "29/296",
+          "35/296",
+          "1/8",
+          "43/296",
+          "45/296",
+          "51/296",
+          "53/296",
+          "59/296",
+          "61/296",
+          "67/296",
+          "69/296",
+          "75/296",
+          "83/296",
+          "91/296",
+          "99/296",
+          "107/296",
+          "115/296",
+          "123/296",
+          "131/296",
+          "139/296",
+          "147/296",
+          "149/296",
+          "157/296",
+          "165/296",
+          "173/296",
+          "181/296",
+          "189/296",
+          "197/296",
+          "205/296",
+          "213/296",
+          "221/296",
+          "227/296",
+          "229/296",
+          "235/296",
+          "237/296",
+          "243/296",
+          "245/296",
+          "251/296",
+          "253/296",
+          "7/8",
+          "261/296",
+          "267/296",
+          "269/296",
+          "275/296",
+          "277/296",
+          "283/296",
+          "285/296",
+          "291/296",
+          "293/296"
+        ],
+        "opens_left": [
+          "79/296",
+          "87/296",
+          "95/296",
+          "103/296",
+          "3/8",
+          "119/296",
+          "127/296",
+          "135/296",
+          "143/296",
+          "151/296",
+          "159/296",
+          "167/296",
+          "175/296",
+          "183/296",
+          "191/296",
+          "199/296",
+          "207/296",
+          "215/296",
+          "223/296",
+          "231/296",
+          "239/296",
+          "247/296",
+          "255/296",
+          "263/296",
+          "271/296",
+          "279/296",
+          "287/296",
+          "295/296"
+        ],
+        "opens_right": [
+          "1/296",
+          "9/296",
+          "17/296",
+          "25/296",
+          "33/296",
+          "41/296",
+          "49/296",
+          "57/296",
+          "65/296",
+          "73/296",
+          "81/296",
+          "89/296",
+          "97/296",
+          "105/296",
+          "113/296",
+          "121/296",
+          "129/296",
+          "137/296",
+          "145/296",
+          "153/296",
+          "161/296",
+          "169/296",
+          "177/296",
+          "5/8",
+          "193/296",
+          "201/296",
+          "209/296",
+          "217/296"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 36,
+        "isolated": 56,
+        "opens_left": 28,
+        "opens_right": 28
+      },
+      "new_isolated_contacts": [
+        {
+          "time": "5/48",
+          "blocking_ends": [
+            222
+          ],
+          "blocking_starts": [
+            258
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 222,
+              "incoming": 258,
+              "integers": [
+                "23",
+                "27"
+              ],
+              "sum_over_8": "60"
+            }
+          ]
+        },
+        {
+          "time": "43/48",
+          "blocking_ends": [
+            258
+          ],
+          "blocking_starts": [
+            222
+          ],
+          "strict_blockers": [],
+          "pairs": [
+            {
+              "outgoing": 258,
+              "incoming": 222,
+              "integers": [
+                "231",
+                "199"
+              ],
+              "sum_over_8": "60"
+            }
+          ]
+        }
+      ],
+      "allowed_summary": {
+        "positive_components": 188,
+        "isolated_components": 58,
+        "clear_duration": "8353/127280",
+        "new_positive_components_without_old_touch": 132,
+        "first_new_positive_component": [
+          "41/592",
+          "143/2064"
+        ],
+        "sha256_json_string_endpoints": "d44272623b0f88e825abdaff4dd6151d546e69a1ada4d36f5af26c2a757944c8",
+        "boundary_count": 1986
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "37": "2/7",
+          "74": "3/7",
+          "111": "1/7",
+          "148": "1/7",
+          "185": "3/7",
+          "222": "2/7",
+          "258": "1/7"
+        },
+        "interval": [
+          "4127/28896",
+          "4129/28896"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 37,
+            "integer_part": 5,
+            "phase_left": "8219/28896",
+            "phase_right": "8293/28896"
+          },
+          {
+            "speed": 74,
+            "integer_part": 10,
+            "phase_left": "8219/14448",
+            "phase_right": "8293/14448"
+          },
+          {
+            "speed": 111,
+            "integer_part": 15,
+            "phase_left": "8219/9632",
+            "phase_right": "8293/9632"
+          },
+          {
+            "speed": 148,
+            "integer_part": 21,
+            "phase_left": "995/7224",
+            "phase_right": "1069/7224"
+          },
+          {
+            "speed": 185,
+            "integer_part": 26,
+            "phase_left": "12199/28896",
+            "phase_right": "12569/28896"
+          },
+          {
+            "speed": 222,
+            "integer_part": 31,
+            "phase_left": "3403/4816",
+            "phase_right": "3477/4816"
+          },
+          {
+            "speed": 258,
+            "integer_part": 36,
+            "phase_left": "95/112",
+            "phase_right": "97/112"
+          }
+        ]
+      }
+    },
+    {
+      "q": 37,
+      "s": 0,
+      "relative_speeds": [
+        37,
+        74,
+        111,
+        148,
+        185,
+        222,
+        259
+      ],
+      "maximum": "1/8",
+      "all_maximizing_times": [
+        "1/296",
+        "3/296",
+        "5/296",
+        "7/296",
+        "9/296",
+        "11/296",
+        "13/296",
+        "15/296",
+        "17/296",
+        "19/296",
+        "21/296",
+        "23/296",
+        "25/296",
+        "27/296",
+        "29/296",
+        "31/296",
+        "33/296",
+        "35/296",
+        "1/8",
+        "39/296",
+        "41/296",
+        "43/296",
+        "45/296",
+        "47/296",
+        "49/296",
+        "51/296",
+        "53/296",
+        "55/296",
+        "57/296",
+        "59/296",
+        "61/296",
+        "63/296",
+        "65/296",
+        "67/296",
+        "69/296",
+        "71/296",
+        "73/296",
+        "75/296",
+        "77/296",
+        "79/296",
+        "81/296",
+        "83/296",
+        "85/296",
+        "87/296",
+        "89/296",
+        "91/296",
+        "93/296",
+        "95/296",
+        "97/296",
+        "99/296",
+        "101/296",
+        "103/296",
+        "105/296",
+        "107/296",
+        "109/296",
+        "3/8",
+        "113/296",
+        "115/296",
+        "117/296",
+        "119/296",
+        "121/296",
+        "123/296",
+        "125/296",
+        "127/296",
+        "129/296",
+        "131/296",
+        "133/296",
+        "135/296",
+        "137/296",
+        "139/296",
+        "141/296",
+        "143/296",
+        "145/296",
+        "147/296",
+        "149/296",
+        "151/296",
+        "153/296",
+        "155/296",
+        "157/296",
+        "159/296",
+        "161/296",
+        "163/296",
+        "165/296",
+        "167/296",
+        "169/296",
+        "171/296",
+        "173/296",
+        "175/296",
+        "177/296",
+        "179/296",
+        "181/296",
+        "183/296",
+        "5/8",
+        "187/296",
+        "189/296",
+        "191/296",
+        "193/296",
+        "195/296",
+        "197/296",
+        "199/296",
+        "201/296",
+        "203/296",
+        "205/296",
+        "207/296",
+        "209/296",
+        "211/296",
+        "213/296",
+        "215/296",
+        "217/296",
+        "219/296",
+        "221/296",
+        "223/296",
+        "225/296",
+        "227/296",
+        "229/296",
+        "231/296",
+        "233/296",
+        "235/296",
+        "237/296",
+        "239/296",
+        "241/296",
+        "243/296",
+        "245/296",
+        "247/296",
+        "249/296",
+        "251/296",
+        "253/296",
+        "255/296",
+        "257/296",
+        "7/8",
+        "261/296",
+        "263/296",
+        "265/296",
+        "267/296",
+        "269/296",
+        "271/296",
+        "273/296",
+        "275/296",
+        "277/296",
+        "279/296",
+        "281/296",
+        "283/296",
+        "285/296",
+        "287/296",
+        "289/296",
+        "291/296",
+        "293/296",
+        "295/296"
+      ],
+      "earliest_maximum_t": "1/296",
+      "earliest_maximum_u": "1/8",
+      "old_touch_classification": {
+        "blocked": [],
+        "isolated": [
+          "1/296",
+          "3/296",
+          "5/296",
+          "7/296",
+          "9/296",
+          "11/296",
+          "13/296",
+          "15/296",
+          "17/296",
+          "19/296",
+          "21/296",
+          "23/296",
+          "25/296",
+          "27/296",
+          "29/296",
+          "31/296",
+          "33/296",
+          "35/296",
+          "1/8",
+          "39/296",
+          "41/296",
+          "43/296",
+          "45/296",
+          "47/296",
+          "49/296",
+          "51/296",
+          "53/296",
+          "55/296",
+          "57/296",
+          "59/296",
+          "61/296",
+          "63/296",
+          "65/296",
+          "67/296",
+          "69/296",
+          "71/296",
+          "73/296",
+          "75/296",
+          "77/296",
+          "79/296",
+          "81/296",
+          "83/296",
+          "85/296",
+          "87/296",
+          "89/296",
+          "91/296",
+          "93/296",
+          "95/296",
+          "97/296",
+          "99/296",
+          "101/296",
+          "103/296",
+          "105/296",
+          "107/296",
+          "109/296",
+          "3/8",
+          "113/296",
+          "115/296",
+          "117/296",
+          "119/296",
+          "121/296",
+          "123/296",
+          "125/296",
+          "127/296",
+          "129/296",
+          "131/296",
+          "133/296",
+          "135/296",
+          "137/296",
+          "139/296",
+          "141/296",
+          "143/296",
+          "145/296",
+          "147/296",
+          "149/296",
+          "151/296",
+          "153/296",
+          "155/296",
+          "157/296",
+          "159/296",
+          "161/296",
+          "163/296",
+          "165/296",
+          "167/296",
+          "169/296",
+          "171/296",
+          "173/296",
+          "175/296",
+          "177/296",
+          "179/296",
+          "181/296",
+          "183/296",
+          "5/8",
+          "187/296",
+          "189/296",
+          "191/296",
+          "193/296",
+          "195/296",
+          "197/296",
+          "199/296",
+          "201/296",
+          "203/296",
+          "205/296",
+          "207/296",
+          "209/296",
+          "211/296",
+          "213/296",
+          "215/296",
+          "217/296",
+          "219/296",
+          "221/296",
+          "223/296",
+          "225/296",
+          "227/296",
+          "229/296",
+          "231/296",
+          "233/296",
+          "235/296",
+          "237/296",
+          "239/296",
+          "241/296",
+          "243/296",
+          "245/296",
+          "247/296",
+          "249/296",
+          "251/296",
+          "253/296",
+          "255/296",
+          "257/296",
+          "7/8",
+          "261/296",
+          "263/296",
+          "265/296",
+          "267/296",
+          "269/296",
+          "271/296",
+          "273/296",
+          "275/296",
+          "277/296",
+          "279/296",
+          "281/296",
+          "283/296",
+          "285/296",
+          "287/296",
+          "289/296",
+          "291/296",
+          "293/296",
+          "295/296"
+        ],
+        "opens_left": [],
+        "opens_right": []
+      },
+      "old_touch_counts": {
+        "blocked": 0,
+        "isolated": 148,
+        "opens_left": 0,
+        "opens_right": 0
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 0,
+        "isolated_components": 148,
+        "clear_duration": "0",
+        "new_positive_components_without_old_touch": 0,
+        "first_new_positive_component": null,
+        "sha256_json_string_endpoints": "1e495101daad4b7b670cb266883fece9c8dc16fdd63d0e1417b73aadac8ad500",
+        "boundary_count": 1926
+      }
+    },
+    {
+      "q": 37,
+      "s": 1,
+      "relative_speeds": [
+        37,
+        74,
+        111,
+        148,
+        185,
+        222,
+        260
+      ],
+      "maximum": "1/7",
+      "all_maximizing_times": [
+        "1/7",
+        "38/259",
+        "39/259",
+        "40/259",
+        "41/259",
+        "43/259",
+        "44/259",
+        "45/259",
+        "46/259",
+        "47/259",
+        "48/259",
+        "50/259",
+        "51/259",
+        "52/259",
+        "53/259",
+        "54/259",
+        "55/259",
+        "57/259",
+        "58/259",
+        "59/259",
+        "60/259",
+        "61/259",
+        "62/259",
+        "64/259",
+        "65/259",
+        "66/259",
+        "67/259",
+        "68/259",
+        "69/259",
+        "71/259",
+        "72/259",
+        "73/259",
+        "2/7",
+        "75/259",
+        "76/259",
+        "78/259",
+        "79/259",
+        "80/259",
+        "81/259",
+        "82/259",
+        "83/259",
+        "85/259",
+        "86/259",
+        "87/259",
+        "88/259",
+        "89/259",
+        "90/259",
+        "92/259",
+        "93/259",
+        "94/259",
+        "95/259",
+        "96/259",
+        "97/259",
+        "99/259",
+        "100/259",
+        "101/259",
+        "102/259",
+        "103/259",
+        "104/259",
+        "106/259",
+        "107/259",
+        "108/259",
+        "109/259",
+        "110/259",
+        "3/7",
+        "113/259",
+        "114/259",
+        "115/259",
+        "116/259",
+        "117/259",
+        "118/259",
+        "120/259",
+        "121/259",
+        "122/259",
+        "123/259",
+        "124/259",
+        "125/259",
+        "127/259",
+        "128/259",
+        "129/259",
+        "130/259",
+        "131/259",
+        "132/259",
+        "134/259",
+        "135/259",
+        "136/259",
+        "137/259",
+        "138/259",
+        "139/259",
+        "141/259",
+        "142/259",
+        "143/259",
+        "144/259",
+        "145/259",
+        "146/259",
+        "4/7",
+        "149/259",
+        "150/259",
+        "151/259",
+        "152/259",
+        "153/259",
+        "155/259",
+        "156/259",
+        "157/259",
+        "158/259",
+        "159/259",
+        "160/259",
+        "162/259",
+        "163/259",
+        "164/259",
+        "165/259",
+        "166/259",
+        "167/259",
+        "169/259",
+        "170/259",
+        "171/259",
+        "172/259",
+        "173/259",
+        "174/259",
+        "176/259",
+        "177/259",
+        "178/259",
+        "179/259",
+        "180/259",
+        "181/259",
+        "183/259",
+        "184/259",
+        "5/7",
+        "186/259",
+        "187/259",
+        "188/259",
+        "190/259",
+        "191/259",
+        "192/259",
+        "193/259",
+        "194/259",
+        "195/259",
+        "197/259",
+        "198/259",
+        "199/259",
+        "200/259",
+        "201/259",
+        "202/259",
+        "204/259",
+        "205/259",
+        "206/259",
+        "207/259",
+        "208/259",
+        "209/259",
+        "211/259",
+        "212/259",
+        "213/259",
+        "214/259",
+        "215/259",
+        "216/259",
+        "218/259",
+        "219/259",
+        "220/259",
+        "221/259",
+        "6/7"
+      ],
+      "earliest_maximum_t": "1/7",
+      "earliest_maximum_u": "37/7",
+      "old_touch_classification": {
+        "blocked": [
+          "1/296",
+          "9/296",
+          "17/296",
+          "25/296",
+          "33/296",
+          "41/296",
+          "49/296",
+          "57/296",
+          "65/296",
+          "73/296",
+          "75/296",
+          "83/296",
+          "91/296",
+          "99/296",
+          "107/296",
+          "115/296",
+          "123/296",
+          "131/296",
+          "139/296",
+          "147/296",
+          "149/296",
+          "157/296",
+          "165/296",
+          "173/296",
+          "181/296",
+          "189/296",
+          "197/296",
+          "205/296",
+          "213/296",
+          "221/296",
+          "223/296",
+          "231/296",
+          "239/296",
+          "247/296",
+          "255/296",
+          "263/296",
+          "271/296",
+          "279/296",
+          "287/296",
+          "295/296"
+        ],
+        "isolated": [
+          "3/296",
+          "5/296",
+          "11/296",
+          "13/296",
+          "19/296",
+          "21/296",
+          "27/296",
+          "29/296",
+          "35/296",
+          "1/8",
+          "43/296",
+          "45/296",
+          "51/296",
+          "53/296",
+          "59/296",
+          "61/296",
+          "67/296",
+          "69/296",
+          "77/296",
+          "85/296",
+          "93/296",
+          "101/296",
+          "109/296",
+          "117/296",
+          "125/296",
+          "133/296",
+          "141/296",
+          "155/296",
+          "163/296",
+          "171/296",
+          "179/296",
+          "187/296",
+          "195/296",
+          "203/296",
+          "211/296",
+          "219/296",
+          "227/296",
+          "229/296",
+          "235/296",
+          "237/296",
+          "243/296",
+          "245/296",
+          "251/296",
+          "253/296",
+          "7/8",
+          "261/296",
+          "267/296",
+          "269/296",
+          "275/296",
+          "277/296",
+          "283/296",
+          "285/296",
+          "291/296",
+          "293/296"
+        ],
+        "opens_left": [
+          "7/296",
+          "15/296",
+          "23/296",
+          "31/296",
+          "39/296",
+          "47/296",
+          "55/296",
+          "63/296",
+          "71/296",
+          "79/296",
+          "87/296",
+          "95/296",
+          "103/296",
+          "3/8",
+          "119/296",
+          "127/296",
+          "135/296",
+          "143/296",
+          "151/296",
+          "159/296",
+          "167/296",
+          "175/296",
+          "183/296",
+          "191/296",
+          "199/296",
+          "207/296",
+          "215/296"
+        ],
+        "opens_right": [
+          "81/296",
+          "89/296",
+          "97/296",
+          "105/296",
+          "113/296",
+          "121/296",
+          "129/296",
+          "137/296",
+          "145/296",
+          "153/296",
+          "161/296",
+          "169/296",
+          "177/296",
+          "5/8",
+          "193/296",
+          "201/296",
+          "209/296",
+          "217/296",
+          "225/296",
+          "233/296",
+          "241/296",
+          "249/296",
+          "257/296",
+          "265/296",
+          "273/296",
+          "281/296",
+          "289/296"
+        ]
+      },
+      "old_touch_counts": {
+        "blocked": 40,
+        "isolated": 54,
+        "opens_left": 27,
+        "opens_right": 27
+      },
+      "new_isolated_contacts": [],
+      "allowed_summary": {
+        "positive_components": 190,
+        "isolated_components": 54,
+        "clear_duration": "631/9620",
+        "new_positive_components_without_old_touch": 136,
+        "first_new_positive_component": [
+          "137/2080",
+          "39/592"
+        ],
+        "sha256_json_string_endpoints": "f387be430eeb53549120c898fedc822f7ec21ac6e633e30910a0763432c496a4",
+        "boundary_count": 2002
+      },
+      "strict_witness": {
+        "time": "1/7",
+        "distances": {
+          "37": "2/7",
+          "74": "3/7",
+          "111": "1/7",
+          "148": "1/7",
+          "185": "3/7",
+          "222": "2/7",
+          "260": "1/7"
+        },
+        "interval": [
+          "4159/29120",
+          "4161/29120"
+        ],
+        "affine_certificate": [
+          {
+            "speed": 37,
+            "integer_part": 5,
+            "phase_left": "8283/29120",
+            "phase_right": "8357/29120"
+          },
+          {
+            "speed": 74,
+            "integer_part": 10,
+            "phase_left": "8283/14560",
+            "phase_right": "8357/14560"
+          },
+          {
+            "speed": 111,
+            "integer_part": 15,
+            "phase_left": "24849/29120",
+            "phase_right": "25071/29120"
+          },
+          {
+            "speed": 148,
+            "integer_part": 21,
+            "phase_left": "1003/7280",
+            "phase_right": "1077/7280"
+          },
+          {
+            "speed": 185,
+            "integer_part": 26,
+            "phase_left": "2459/5824",
+            "phase_right": "2533/5824"
+          },
+          {
+            "speed": 222,
+            "integer_part": 31,
+            "phase_left": "10289/14560",
+            "phase_right": "10511/14560"
+          },
+          {
+            "speed": 260,
+            "integer_part": 37,
+            "phase_left": "15/112",
+            "phase_right": "17/112"
+          }
+        ]
+      }
+    }
+  ],
+  "verification_counts": {
+    "configurations": 27,
+    "maximum_and_peak_set_crosschecks": 27,
+    "complete_boundary_reconstructions": 27,
+    "old_touch_classifications": 1392,
+    "strict_interval_certificates": 18,
+    "new_isolated_contact_classes": 6,
+    "new_isolated_contact_certificates": 12
+  },
+  "limits": "Positive-duration allowed unions are reconstructed in memory by two methods; summaries retain exact duration, component counts, and endpoint hashes. Every maximum time and old-touch classification is retained, plus all new isolated-contact and strict-witness certificates. The infinite-family conclusion follows from the written argument, not these checks. No all-reference conclusion or novelty claim; no independent review."
+}

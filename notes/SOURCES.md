@@ -1,6 +1,6 @@
 # Research sources and frontier check
 
-**Checked:** September 20, 2026
+**Initial check:** September 20, 2026. **Latest targeted update:** September 25, 2026.
 
 **Scope:** Targeted source check for project planning, not an exhaustive literature review or independent proof audit.
 
@@ -62,6 +62,14 @@ Jaan Allikvere, *Fourteen lonely runners*, arXiv:2609.02604v1, September 2, 2026
 
 Inspected the abstract and introduction. The preprint reports a computer-assisted proof for 14 total runners, extending S3's finite-checking framework. Its code, certificates, proof, and review status have not been independently audited here. This corrects the earlier provisional frontier note; it has no role in certifying our 4/8/12 example calculations.
 
+### September 25 update: version 2 reports fifteen total runners
+
+Jaan Allikvere, *Fourteen and fifteen lonely runners*, arXiv:2609.02604v2, revised September 24, 2026, 11:58:42 UTC.
+
+[Versioned abstract and history](https://arxiv.org/abs/2609.02604v2)
+
+During the Ultra review, a separate reviewer and the root reviewer each opened the versioned primary record. The revised abstract reports proofs for fourteen and fifteen total runners; the comments identify the fifteen-runner addition and public code/certificate archives. We inspected the abstract, comments, and version history only. We did not audit the revised proof, download or rerun its computation, establish peer-review status, or claim independent reproduction. The v1 entry above remains the record of the earlier reading. This updates project orientation and does not certify or invalidate our structured-family arguments.
+
 ## S8 — Single-speed modifications and uncovered intervals
 
 Yuhan Zhang, *Single-speed modifications of the tight Lonely Runner instance: an effective bound and the complete classification for r = 2*, arXiv:2608.13599v1. The inspected HTML is dated August 1, 2026.
@@ -116,6 +124,8 @@ Guillem Perarnau and Oriol Serra, *Correlation Among Runners and Some Results on
 
 Inspected the pair-intersection derivation, Propositions 7–8, and Corollary 9 on September 24, 2026. Their n counts moving speeds, so our total is n+1 in their notation; the pair formula uses an independently chosen threshold delta. Proposition 8 matches our ratio calculation at delta=1/8. The journal's stated threshold range includes this value. No audit of the paper's other theorems. See [SPEED_RATIOS.md](SPEED_RATIOS.md) for our reconstruction and local application.
 
+Additional bounded reading on September 24: Lemma 13, equation (12), and the following maximum-tree selection sentence. The authors attribute the tree inequality to Hunter. It bounds the probability of avoiding all events using individual event probabilities and the pair intersections on any spanning tree. Restricting time to a positive-length core opening gives the local tree certificate in CORE_TRANSFER.md Sections 6–8. The tree idea and maximizing its pair weight are established in this source; no novelty is claimed. This reading is not an audit of Lemma 14 or the paper's resulting general bounds.
+
 ## S14 — Bernoulli-polynomial form and unequal thresholds
 
 Alathea Jensen, *Mixed thresholds in the Lonely Runner Conjecture*, arXiv:2605.27941v1, May 27, 2026.
@@ -123,6 +133,64 @@ Alathea Jensen, *Mixed thresholds in the Lonely Runner Conjecture*, arXiv:2605.2
 [Versioned preprint](https://arxiv.org/abs/2605.27941v1) · [HTML](https://arxiv.org/html/2605.27941v1)
 
 Inspected the introduction, Lemma 4.1, its Fourier derivation, and the following unsafe-set remark on September 24, 2026. Specializing both thresholds to 1/8 gives our fractional-part formula exactly, since B2(x)=1/6-x(1-x). Jensen identifies S13 as the equal-threshold predecessor. Her k is our n-1. This source led us to S13; no claim to have audited the full mixed-threshold theory or its frontier statements.
+
+## S15 — One very fast runner and time perturbation
+
+Noah Kravitz, *Barely lonely runners and very lonely runners: a refined approach to the Lonely Runner Problem*, Combinatorial Theory 1 (2021), paper 17, published December 15, 2021. DOI 10.5070/C61055383.
+
+[Journal record](https://escholarship.org/uc/item/3wx931fh) · [Published PDF](https://escholarship.org/content/qt3wx931fh/qt3wx931fh.pdf)
+
+Inspected Proposition 6.1 and its proof on printed pages 12–13 on September 24, 2026. It preserves a safe interval for slower runners while one sufficiently fast runner moves through it. This is an established precedent for the time-perturbation argument in FAST_CLUSTER.md. The four-runner common-rotation construction is not claimed to be this proposition verbatim or to be new. The paper's n counts moving speeds in its technical formulation, so our total is n+1. No audit of the wider spectrum results.
+
+September 24 scaled-perturbation follow-up: inspected Section 2, printed page 5, on pre-jumps, and the common-factor opening of Theorem 5.2's proof on printed page 10. Time increments j/q fix the q-divisible runners and adjust the others. SCALED_PERTURBATION.md applies this known mechanism to a six-runner core and a coprime exceptional speed; no novelty claim or full-paper audit.
+
+September 24 four-perturbation follow-up: revisited the Section 2 pre-jump paragraph. FOUR_PERTURBATIONS.md keeps the core phase fixed and explicitly rounds an auxiliary opening onto actual times. Its fifth-grid argument and finite remainder are our unreviewed specialization; this source is methodological precedent, not a novelty certificate.
+
+September 25 unequal-offset follow-up: revisited the same Section 2 pre-jump paragraph. UNEQUAL_PERTURBATIONS.md uses exact phase intervals and midpoint rounding for one doubled offset. Its tiling divisibility lemma and 44-case finite remainder are our unreviewed synthesis; no novelty or wider literature-audit claim.
+
+September 25 two-doubled-offset follow-up: revisited Section 2, printed page 5, on core-preserving pre-jumps. TWO_DOUBLED_OFFSETS.md combines this known time-grid method with our proposed tiling criterion and parity obstruction. The changed-coefficient control preserves the limits of the specialization. No broader literature or novelty audit.
+
+September 25 local-tiling follow-up: read Section 2, Proposition 2.1 and the adjacent discussion on printed pages 4–5, and revisited the pre-jump paragraph on page 5. These supply established context for opposing threshold contacts and core-preserving time increments. LOCAL_TILING_RULE.md derives a conditional local escape rule and uniform q>=8 construction for a positive-coefficient tiling class. Its cyclic boundary-velocity identity, denominator bounds, and exact examples are our unreviewed synthesis, not claims attributed to this source. No wider literature or novelty audit.
+
+## S16 — Relative spectra and two-dimensional subtori
+
+Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026. Inspected preprint: arXiv:2411.12684v2, December 9, 2024.
+
+[Journal record](https://escholarship.org/uc/item/3mx8w3js) · [Versioned HTML](https://arxiv.org/html/2411.12684v2) · [Published PDF](https://escholarship.org/content/qt3mx8w3js/qt3mx8w3js_noSplash_9e8150c4b1543e5d1d9da402dec3a64a.pdf)
+
+September 24 follow-up: read definitions, Theorem 1.1, Section 1.4, and the Section 2.1 proof outline. Their n counts our n-1 moving coordinates. This upgrades the earlier search-excerpt lead; the full proof remains unaudited. FAST_CLUSTER.md Section 7 gives the comparison and our own mapping. We do not attribute our Fourier argument, threshold guarantee, or novelty to this source.
+
+## S17 — Two exceptional runners under a pre-jump
+
+Ho Tin Fan and Alec Sun, *Amending the Lonely Runner Spectrum Conjecture*, Electronic Journal of Combinatorics 33(1) (2026), P1.38, published February 27, 2026.
+
+[Published PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v33i1p38/pdf/)
+
+Inspected Lemma 23 and its proof (printed pages 12–13), and the Section 5.3 case split, September 24, 2026. Related modular method; its 1/4-target lemma excludes equal/opposite residues. Our ±1 family has that excluded relation. See TWO_PERTURBATIONS.md for the distinct counting argument. No full-paper audit or novelty conclusion.
+
+## S18 — Graph sieves beyond trees
+
+Klaus Dohmen, *Improved Inclusion-Exclusion Identities and Bonferroni Inequalities with Applications to Reliability Analysis of Coherent Systems*, Humboldt-Universitaet zu Berlin, habilitation dated May 16, 2000; qualification recorded February 5, 2001.
+
+[University-hosted text](https://edoc.hu-berlin.de/bitstreams/21a4438c-82b7-4974-9340-9de83b634791/download)
+
+Inspected September 25, 2026: Section 4.3, printed pp. 45–47, Theorem 4.3.1, its displayed proofs, and Corollary 4.3.3 with its tree-selection remarks. This supplies established context for the triangle-with-leaf overlap bound in LR2_REVIEW_PRIORITIES.md. Our 16-state check is self-contained. No full-thesis audit or novelty determination. Direct Project Euclid attempts exposed only an iframe; no full-paper reading is claimed from those attempts.
+
+## S19 — Multivariate information and synergy
+
+Paul L. Williams and Randall D. Beer, *Nonnegative Decomposition of Multivariate Information*, arXiv:1004.2515v1, April 14, 2010.
+
+[Versioned source](https://arxiv.org/abs/1004.2515v1)
+
+Inspected the abstract and version metadata September 25, 2026, with introductory HTML consulted during the LTCM discussion. The paper develops a partial information decomposition distinguishing redundancy and synergy about a target variable. This is a possible representational direction, not an applied result for our runner data. No full-paper audit, numerical decomposition, or assessment of competing definitions has been performed. Pair-marginal insufficiency is not by itself a measured partial-information quantity.
+
+## S20 — Interval-graph terminology
+
+Chun-Hung Liu, *Lecture notes for Mar 25, 2024: Chordal graphs*, Texas A&M University.
+
+[Author-hosted notes](https://people.tamu.edu/~chliu/teaching/spring24math662/2024_03_25.pdf)
+
+Inspected the interval-graph definition and adjacent discussion on printed page 4, September 25, 2026. This identifies standard intersection-graph terminology and the interval/chordal connection. LAP_LABELLED_CONSTRAINTS.md supplies its own elementary maximum-overlap forest argument; that identity is not attributed to these lecture notes. Our edges require positive overlap duration, with equality endpoints checked separately; the lecture's definition uses intersecting closed intervals. No historical novelty search or full-note proof audit is claimed.
 
 ## Source discipline
 

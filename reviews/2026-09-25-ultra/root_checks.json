@@ -1,0 +1,322 @@
+{
+  "core_partition": {
+    "allowed_core": [
+      [
+        "1/8",
+        "7/24"
+      ],
+      [
+        "3/8",
+        "7/16"
+      ],
+      [
+        "9/16",
+        "5/8"
+      ],
+      [
+        "17/24",
+        "7/8"
+      ]
+    ],
+    "minimum_component_width": "1/16",
+    "active_constraints_per_endpoint": 1
+  },
+  "tree_limitation": {
+    "core": [
+      1,
+      4,
+      5
+    ],
+    "extras": [
+      6,
+      7,
+      11,
+      16
+    ],
+    "window": [
+      "9/32",
+      "3/8"
+    ],
+    "single_block_durations": [
+      "1/24",
+      "5/224",
+      "9/352",
+      "3/128"
+    ],
+    "pair_overlaps": {
+      "(6, 7)": "0",
+      "(6, 11)": "1/528",
+      "(6, 16)": "1/128",
+      "(7, 11)": "1/352",
+      "(7, 16)": "0",
+      "(11, 16)": "1/128"
+    },
+    "trees_checked": 16,
+    "best_edges": [
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        11,
+        16
+      ]
+    ],
+    "tree_bound": "-23/29568",
+    "actual_allowed": [
+      [
+        "17/56",
+        "39/128"
+      ]
+    ],
+    "actual_duration": "1/896",
+    "actual_atom_durations": {
+      "0": "1/896",
+      "1": "45/1408",
+      "2": "3/154",
+      "3": "0",
+      "4": "5/384",
+      "5": "1/528",
+      "6": "1/352",
+      "7": "0",
+      "8": "1/128",
+      "9": "1/128",
+      "10": "0",
+      "11": "0",
+      "12": "1/128",
+      "13": "0",
+      "14": "0",
+      "15": "0"
+    },
+    "abstract_alternative_atoms": {
+      "0": "0",
+      "1": "163/4928",
+      "2": "3/154",
+      "3": "0",
+      "4": "19/1344",
+      "5": "23/29568",
+      "6": "1/352",
+      "7": "0",
+      "8": "1/112",
+      "9": "3/448",
+      "10": "0",
+      "11": "0",
+      "12": "3/448",
+      "13": "1/896",
+      "14": "0",
+      "15": "0"
+    },
+    "same_single_and_pair_moments": true
+  },
+  "post_review_all_core_windows": {
+    "core": [
+      1,
+      4,
+      5
+    ],
+    "extras": [
+      6,
+      7,
+      11,
+      16
+    ],
+    "windows": [
+      {
+        "window": [
+          "1/8",
+          "7/40"
+        ],
+        "tree_bound": "0",
+        "actual_allowed": [],
+        "clear_duration": "0",
+        "triple_sum": "0",
+        "quadruple": "0"
+      },
+      {
+        "window": [
+          "9/32",
+          "3/8"
+        ],
+        "tree_bound": "-23/29568",
+        "actual_allowed": [
+          [
+            "17/56",
+            "39/128"
+          ]
+        ],
+        "clear_duration": "1/896",
+        "triple_sum": "0",
+        "quadruple": "0"
+      },
+      {
+        "window": [
+          "17/40",
+          "15/32"
+        ],
+        "tree_bound": "1/352",
+        "actual_allowed": [
+          [
+            "41/88",
+            "15/32"
+          ]
+        ],
+        "clear_duration": "1/352",
+        "triple_sum": "3/1408",
+        "quadruple": "0"
+      },
+      {
+        "window": [
+          "17/32",
+          "23/40"
+        ],
+        "tree_bound": "1/352",
+        "actual_allowed": [
+          [
+            "17/32",
+            "47/88"
+          ]
+        ],
+        "clear_duration": "1/352",
+        "triple_sum": "3/1408",
+        "quadruple": "0"
+      },
+      {
+        "window": [
+          "5/8",
+          "23/32"
+        ],
+        "tree_bound": "-23/29568",
+        "actual_allowed": [
+          [
+            "89/128",
+            "39/56"
+          ]
+        ],
+        "clear_duration": "1/896",
+        "triple_sum": "0",
+        "quadruple": "0"
+      },
+      {
+        "window": [
+          "33/40",
+          "7/8"
+        ],
+        "tree_bound": "0",
+        "actual_allowed": [],
+        "clear_duration": "0",
+        "triple_sum": "0",
+        "quadruple": "0"
+      }
+    ],
+    "positive_tree_windows": 2,
+    "missed_window_triangle_pair_interval": [
+      "31/88",
+      "17/48"
+    ],
+    "speed16_phases_on_pair_interval": [
+      "7/11",
+      "2/3"
+    ]
+  },
+  "core_boundary_contacts": [
+    {
+      "speeds": [
+        21,
+        42,
+        63,
+        85,
+        167,
+        233,
+        229
+      ],
+      "q": 21,
+      "time": "5/8",
+      "active": [
+        21,
+        85,
+        229
+      ],
+      "kind": "starts"
+    },
+    {
+      "speeds": [
+        23,
+        46,
+        69,
+        116,
+        436,
+        462,
+        734
+      ],
+      "q": 23,
+      "time": "1/16",
+      "active": [
+        46,
+        462,
+        734
+      ],
+      "kind": "ends"
+    },
+    {
+      "speeds": [
+        17,
+        34,
+        51,
+        69,
+        137,
+        189,
+        223
+      ],
+      "q": 17,
+      "time": "1/8",
+      "active": [
+        17,
+        137,
+        223
+      ],
+      "kind": "isolated"
+    },
+    {
+      "speeds": [
+        35,
+        70,
+        105,
+        141,
+        1119,
+        807,
+        1923
+      ],
+      "q": 35,
+      "time": "5/24",
+      "active": [
+        105,
+        1119,
+        807
+      ],
+      "kind": "isolated"
+    }
+  ],
+  "ten_runner_witness": {
+    "total_runners": 10,
+    "q": 50,
+    "speeds_including_reference": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      50,
+      101,
+      153,
+      207,
+      261
+    ],
+    "time": "41/200",
+    "minimum": "9/50",
+    "target": "1/10"
+  }
+}

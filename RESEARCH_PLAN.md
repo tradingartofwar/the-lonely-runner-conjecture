@@ -23,7 +23,7 @@ Use three complementary representations of exactly the same input:
 
 Moving between these representations may reveal a useful pattern. That is a proposed method, not a claim that our perspective is unique.
 
-Do not make the first assignment an exhaustive 14-runner search. According to the frontier source inspected, that is the next case beyond its reported result, not a tractability guarantee. Before committing to it, audit the reduction, code, certificates, memory needs, and runtime [S3](notes/SOURCES.md).
+Frontier computation is not the current assignment. The September 25 source check found a September 24 preprint revision reporting fourteen and fifteen total runners [S7](notes/SOURCES.md); its proof and computation have not been audited here. Before choosing any frontier-scale reproduction or search, refresh the literature and audit the reduction, code, certificates, memory needs, and runtime. A reported runner-count frontier is not a tractability guarantee.
 
 ## Proposed stages
 

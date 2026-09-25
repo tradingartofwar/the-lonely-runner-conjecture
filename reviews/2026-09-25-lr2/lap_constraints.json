@@ -1,0 +1,1459 @@
+{
+  "date": "2026-09-25",
+  "research_baseline": "3817153be1a6bd892c33a5b9019deb9ae6571ec4",
+  "status": "Five exact local cases; no general successful-window selection theorem or novelty claim.",
+  "script_sha256": "7784ebf5c548bbfd8411e808356295d112e42c688c511916f4f2ccd7a2322278",
+  "core": [
+    1,
+    4,
+    5
+  ],
+  "window": [
+    "9/32",
+    "3/8"
+  ],
+  "threshold": "1/8",
+  "artificial_distribution": {
+    "same_total_single_pair_marginals": true,
+    "clear_duration": "0",
+    "forbidden_triple_mass": "1/896",
+    "speed_16_laps_overlapping_each_neighbor": {
+      "6": [
+        5
+      ],
+      "11": [
+        6
+      ]
+    },
+    "no_consistent_speed_16_lap_for_triple": true
+  },
+  "cases": [
+    {
+      "replacement": 13,
+      "episodes": [
+        {
+          "speed": 11,
+          "lap": 3,
+          "left": "9/32",
+          "right": "25/88"
+        },
+        {
+          "speed": 7,
+          "lap": 2,
+          "left": "9/32",
+          "right": "17/56"
+        },
+        {
+          "speed": 13,
+          "lap": 4,
+          "left": "31/104",
+          "right": "33/104"
+        },
+        {
+          "speed": 6,
+          "lap": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "speed": 11,
+          "lap": 4,
+          "left": "31/88",
+          "right": "3/8"
+        }
+      ],
+      "positive_pair_edges": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              7,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "duration": "1/182"
+        },
+        {
+          "episodes": [
+            [
+              13,
+              4
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "duration": "1/208"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "maximum_weight_forest": [
+        {
+          "episodes": [
+            [
+              7,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "duration": "1/182"
+        },
+        {
+          "episodes": [
+            [
+              13,
+              4
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "duration": "1/208"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "sweep_forest": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              7,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "duration": "1/182"
+        },
+        {
+          "episodes": [
+            [
+              13,
+              4
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "duration": "1/208"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "all_episode_pairs_form_forest": true,
+      "triple_intersections": [],
+      "single_duration_sum": "5227/48048",
+      "forest_overlap_sum": "1445/96096",
+      "forest_clear_certificate": "0",
+      "direct_clear_duration": "0",
+      "clear_cells_closures": [],
+      "valid_threshold_boundaries": [
+        "3/8"
+      ],
+      "direct_state_masses": [
+        {
+          "active": [],
+          "duration": "0"
+        },
+        {
+          "active": [
+            6
+          ],
+          "duration": "5/143"
+        },
+        {
+          "active": [
+            6,
+            11
+          ],
+          "duration": "1/528"
+        },
+        {
+          "active": [
+            6,
+            13
+          ],
+          "duration": "1/208"
+        },
+        {
+          "active": [
+            7
+          ],
+          "duration": "2/143"
+        },
+        {
+          "active": [
+            7,
+            11
+          ],
+          "duration": "1/352"
+        },
+        {
+          "active": [
+            7,
+            13
+          ],
+          "duration": "1/182"
+        },
+        {
+          "active": [
+            11
+          ],
+          "duration": "1/48"
+        },
+        {
+          "active": [
+            13
+          ],
+          "duration": "1/112"
+        }
+      ]
+    },
+    {
+      "replacement": 14,
+      "episodes": [
+        {
+          "speed": 11,
+          "lap": 3,
+          "left": "9/32",
+          "right": "25/88"
+        },
+        {
+          "speed": 14,
+          "lap": 4,
+          "left": "9/32",
+          "right": "33/112"
+        },
+        {
+          "speed": 7,
+          "lap": 2,
+          "left": "9/32",
+          "right": "17/56"
+        },
+        {
+          "speed": 6,
+          "lap": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "speed": 14,
+          "lap": 5,
+          "left": "39/112",
+          "right": "41/112"
+        },
+        {
+          "speed": 11,
+          "lap": 4,
+          "left": "31/88",
+          "right": "3/8"
+        }
+      ],
+      "positive_pair_edges": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              14,
+              4
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              14,
+              4
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "3/224"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              14,
+              5
+            ]
+          ],
+          "duration": "1/168"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        },
+        {
+          "episodes": [
+            [
+              14,
+              5
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "17/1232"
+        }
+      ],
+      "maximum_weight_forest": [
+        {
+          "episodes": [
+            [
+              14,
+              5
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "17/1232"
+        },
+        {
+          "episodes": [
+            [
+              14,
+              4
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "3/224"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              14,
+              5
+            ]
+          ],
+          "duration": "1/168"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              14,
+              4
+            ]
+          ],
+          "duration": "1/352"
+        }
+      ],
+      "sweep_forest": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              14,
+              4
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              14,
+              4
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "3/224"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              14,
+              5
+            ]
+          ],
+          "duration": "1/168"
+        },
+        {
+          "episodes": [
+            [
+              14,
+              5
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "17/1232"
+        }
+      ],
+      "all_episode_pairs_form_forest": false,
+      "triple_intersections": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "interval": [
+            "9/32",
+            "25/88"
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "interval": [
+            "31/88",
+            "17/48"
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "single_duration_sum": "893/7392",
+      "forest_overlap_sum": "19/528",
+      "forest_clear_certificate": "1/112",
+      "direct_clear_duration": "1/112",
+      "clear_cells_closures": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "valid_threshold_boundaries": [
+        "17/56",
+        "5/16",
+        "3/8"
+      ],
+      "direct_state_masses": [
+        {
+          "active": [],
+          "duration": "1/112"
+        },
+        {
+          "active": [
+            6
+          ],
+          "duration": "1/28"
+        },
+        {
+          "active": [
+            6,
+            11,
+            14
+          ],
+          "duration": "1/528"
+        },
+        {
+          "active": [
+            6,
+            14
+          ],
+          "duration": "5/1232"
+        },
+        {
+          "active": [
+            7
+          ],
+          "duration": "1/112"
+        },
+        {
+          "active": [
+            7,
+            11,
+            14
+          ],
+          "duration": "1/352"
+        },
+        {
+          "active": [
+            7,
+            14
+          ],
+          "duration": "13/1232"
+        },
+        {
+          "active": [
+            11
+          ],
+          "duration": "1/112"
+        },
+        {
+          "active": [
+            11,
+            14
+          ],
+          "duration": "1/84"
+        }
+      ]
+    },
+    {
+      "replacement": 15,
+      "episodes": [
+        {
+          "speed": 11,
+          "lap": 3,
+          "left": "9/32",
+          "right": "25/88"
+        },
+        {
+          "speed": 7,
+          "lap": 2,
+          "left": "9/32",
+          "right": "17/56"
+        },
+        {
+          "speed": 6,
+          "lap": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "speed": 15,
+          "lap": 5,
+          "left": "13/40",
+          "right": "41/120"
+        },
+        {
+          "speed": 11,
+          "lap": 4,
+          "left": "31/88",
+          "right": "3/8"
+        }
+      ],
+      "positive_pair_edges": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              15,
+              5
+            ]
+          ],
+          "duration": "1/60"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "maximum_weight_forest": [
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              15,
+              5
+            ]
+          ],
+          "duration": "1/60"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "sweep_forest": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              15,
+              5
+            ]
+          ],
+          "duration": "1/60"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "all_episode_pairs_form_forest": true,
+      "triple_intersections": [],
+      "single_duration_sum": "1963/18480",
+      "forest_overlap_sum": "113/5280",
+      "forest_clear_certificate": "1/112",
+      "direct_clear_duration": "1/112",
+      "clear_cells_closures": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "valid_threshold_boundaries": [
+        "17/56",
+        "5/16",
+        "3/8"
+      ],
+      "direct_state_masses": [
+        {
+          "active": [],
+          "duration": "1/112"
+        },
+        {
+          "active": [
+            6
+          ],
+          "duration": "61/2640"
+        },
+        {
+          "active": [
+            6,
+            11
+          ],
+          "duration": "1/528"
+        },
+        {
+          "active": [
+            6,
+            15
+          ],
+          "duration": "1/60"
+        },
+        {
+          "active": [
+            7
+          ],
+          "duration": "3/154"
+        },
+        {
+          "active": [
+            7,
+            11
+          ],
+          "duration": "1/352"
+        },
+        {
+          "active": [
+            11
+          ],
+          "duration": "1/48"
+        }
+      ]
+    },
+    {
+      "replacement": 16,
+      "episodes": [
+        {
+          "speed": 11,
+          "lap": 3,
+          "left": "9/32",
+          "right": "25/88"
+        },
+        {
+          "speed": 7,
+          "lap": 2,
+          "left": "9/32",
+          "right": "17/56"
+        },
+        {
+          "speed": 16,
+          "lap": 5,
+          "left": "39/128",
+          "right": "41/128"
+        },
+        {
+          "speed": 6,
+          "lap": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "speed": 11,
+          "lap": 4,
+          "left": "31/88",
+          "right": "3/8"
+        },
+        {
+          "speed": 16,
+          "lap": 6,
+          "left": "47/128",
+          "right": "3/8"
+        }
+      ],
+      "positive_pair_edges": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              16,
+              5
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "duration": "1/128"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              4
+            ],
+            [
+              16,
+              6
+            ]
+          ],
+          "duration": "1/128"
+        }
+      ],
+      "maximum_weight_forest": [
+        {
+          "episodes": [
+            [
+              16,
+              5
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "duration": "1/128"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              4
+            ],
+            [
+              16,
+              6
+            ]
+          ],
+          "duration": "1/128"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "sweep_forest": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              16,
+              5
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "duration": "1/128"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              4
+            ],
+            [
+              16,
+              6
+            ]
+          ],
+          "duration": "1/128"
+        }
+      ],
+      "all_episode_pairs_form_forest": true,
+      "triple_intersections": [],
+      "single_duration_sum": "3341/29568",
+      "forest_overlap_sum": "43/2112",
+      "forest_clear_certificate": "1/896",
+      "direct_clear_duration": "1/896",
+      "clear_cells_closures": [
+        [
+          "17/56",
+          "39/128"
+        ]
+      ],
+      "valid_threshold_boundaries": [
+        "17/56",
+        "39/128"
+      ],
+      "direct_state_masses": [
+        {
+          "active": [],
+          "duration": "1/896"
+        },
+        {
+          "active": [
+            6
+          ],
+          "duration": "45/1408"
+        },
+        {
+          "active": [
+            6,
+            11
+          ],
+          "duration": "1/528"
+        },
+        {
+          "active": [
+            6,
+            16
+          ],
+          "duration": "1/128"
+        },
+        {
+          "active": [
+            7
+          ],
+          "duration": "3/154"
+        },
+        {
+          "active": [
+            7,
+            11
+          ],
+          "duration": "1/352"
+        },
+        {
+          "active": [
+            11
+          ],
+          "duration": "5/384"
+        },
+        {
+          "active": [
+            11,
+            16
+          ],
+          "duration": "1/128"
+        },
+        {
+          "active": [
+            16
+          ],
+          "duration": "1/128"
+        }
+      ]
+    },
+    {
+      "replacement": 17,
+      "episodes": [
+        {
+          "speed": 11,
+          "lap": 3,
+          "left": "9/32",
+          "right": "25/88"
+        },
+        {
+          "speed": 7,
+          "lap": 2,
+          "left": "9/32",
+          "right": "17/56"
+        },
+        {
+          "speed": 17,
+          "lap": 5,
+          "left": "39/136",
+          "right": "41/136"
+        },
+        {
+          "speed": 6,
+          "lap": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "speed": 17,
+          "lap": 6,
+          "left": "47/136",
+          "right": "49/136"
+        },
+        {
+          "speed": 11,
+          "lap": 4,
+          "left": "31/88",
+          "right": "3/8"
+        }
+      ],
+      "positive_pair_edges": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              7,
+              2
+            ],
+            [
+              17,
+              5
+            ]
+          ],
+          "duration": "1/68"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              17,
+              6
+            ]
+          ],
+          "duration": "7/816"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "1/528"
+        },
+        {
+          "episodes": [
+            [
+              17,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "3/374"
+        }
+      ],
+      "maximum_weight_forest": [
+        {
+          "episodes": [
+            [
+              7,
+              2
+            ],
+            [
+              17,
+              5
+            ]
+          ],
+          "duration": "1/68"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              17,
+              6
+            ]
+          ],
+          "duration": "7/816"
+        },
+        {
+          "episodes": [
+            [
+              17,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "3/374"
+        },
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        }
+      ],
+      "sweep_forest": [
+        {
+          "episodes": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "duration": "1/352"
+        },
+        {
+          "episodes": [
+            [
+              7,
+              2
+            ],
+            [
+              17,
+              5
+            ]
+          ],
+          "duration": "1/68"
+        },
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              17,
+              6
+            ]
+          ],
+          "duration": "7/816"
+        },
+        {
+          "episodes": [
+            [
+              17,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "duration": "3/374"
+        }
+      ],
+      "all_episode_pairs_form_forest": false,
+      "triple_intersections": [
+        {
+          "episodes": [
+            [
+              6,
+              2
+            ],
+            [
+              17,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "interval": [
+            "31/88",
+            "17/48"
+          ],
+          "duration": "1/528"
+        }
+      ],
+      "single_duration_sum": "7475/62832",
+      "forest_overlap_sum": "613/17952",
+      "forest_clear_certificate": "1/112",
+      "direct_clear_duration": "1/112",
+      "clear_cells_closures": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "valid_threshold_boundaries": [
+        "17/56",
+        "5/16",
+        "3/8"
+      ],
+      "direct_state_masses": [
+        {
+          "active": [],
+          "duration": "1/112"
+        },
+        {
+          "active": [
+            6
+          ],
+          "duration": "9/272"
+        },
+        {
+          "active": [
+            6,
+            11,
+            17
+          ],
+          "duration": "1/528"
+        },
+        {
+          "active": [
+            6,
+            17
+          ],
+          "duration": "5/748"
+        },
+        {
+          "active": [
+            7
+          ],
+          "duration": "25/5236"
+        },
+        {
+          "active": [
+            7,
+            11
+          ],
+          "duration": "1/352"
+        },
+        {
+          "active": [
+            7,
+            17
+          ],
+          "duration": "1/68"
+        },
+        {
+          "active": [
+            11
+          ],
+          "duration": "1/68"
+        },
+        {
+          "active": [
+            11,
+            17
+          ],
+          "duration": "5/816"
+        }
+      ]
+    }
+  ]
+}
