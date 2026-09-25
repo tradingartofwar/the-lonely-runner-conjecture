@@ -142,6 +142,8 @@ September 25 unequal-offset follow-up: revisited the same Section 2 pre-jump par
 
 September 25 two-doubled-offset follow-up: revisited Section 2, printed page 5, on core-preserving pre-jumps. TWO_DOUBLED_OFFSETS.md combines this known time-grid method with our proposed tiling criterion and parity obstruction. The changed-coefficient control preserves the limits of the specialization. No broader literature or novelty audit.
 
+September 25 local-tiling follow-up: read Section 2, Proposition 2.1 and the adjacent discussion on printed pages 4–5, and revisited the pre-jump paragraph on page 5. These supply established context for opposing threshold contacts and core-preserving time increments. LOCAL_TILING_RULE.md derives a conditional local escape rule and uniform q>=8 construction for a positive-coefficient tiling class. Its cyclic boundary-velocity identity, denominator bounds, and exact examples are our unreviewed synthesis, not claims attributed to this source. No wider literature or novelty audit.
+
 ## S16 — Relative spectra and two-dimensional subtori
 
 Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026. Inspected preprint: arXiv:2411.12684v2, December 9, 2024.
