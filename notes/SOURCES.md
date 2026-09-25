@@ -140,6 +140,8 @@ September 24 four-perturbation follow-up: revisited the Section 2 pre-jump parag
 
 September 25 unequal-offset follow-up: revisited the same Section 2 pre-jump paragraph. UNEQUAL_PERTURBATIONS.md uses exact phase intervals and midpoint rounding for one doubled offset. Its tiling divisibility lemma and 44-case finite remainder are our unreviewed synthesis; no novelty or wider literature-audit claim.
 
+September 25 two-doubled-offset follow-up: revisited Section 2, printed page 5, on core-preserving pre-jumps. TWO_DOUBLED_OFFSETS.md combines this known time-grid method with our proposed tiling criterion and parity obstruction. The changed-coefficient control preserves the limits of the specialization. No broader literature or novelty audit.
+
 ## S16 — Relative spectra and two-dimensional subtori
 
 Vanshika Jain and Noah Kravitz, *Relative Lonely Runner spectra*, Combinatorial Theory 6(1) (2026), paper 1, published April 20, 2026. Inspected preprint: arXiv:2411.12684v2, December 9, 2024.
