@@ -175,3 +175,5 @@ The finite ranges and controls overlap and are not independent proof replication
 The method now has a concrete information-to-computation bridge: a shared-clock restriction keeps a useful cycle, and fixed residuals allow its pair weights to be evaluated without speed-dependent occurrence lists. The full general polyhedral model and an arbitrary-speed successful-window theorem remain unimplemented/open.
 
 **Next useful question:** replace the special offset +8 by the adjacent +7 or +9 controls and retain their nonzero triple correction. Can the same finite affine-strip representation bound that correction and preserve useful slack for arbitrary v>=q? Compare with existing one-pair and tree bounds, and preserve genuine failures. This tests the quantitative mechanism beyond an exact exclusion instead of optimizing the present cutoff further.
+
+**Direction update:** Vance subsequently requested a [distinction audit](DISTINCTION_AUDIT_2026_09_25.md). The +7/+9 extension is parked while the audit's matched-summary, boundary-information, and constraint-value questions take priority. The candidate and its evidence above are unchanged.
