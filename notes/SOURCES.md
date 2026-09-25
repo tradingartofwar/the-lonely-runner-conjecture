@@ -1,6 +1,6 @@
 # Research sources and frontier check
 
-**Checked:** September 20, 2026
+**Initial check:** September 20, 2026. **Latest targeted update:** September 25, 2026.
 
 **Scope:** Targeted source check for project planning, not an exhaustive literature review or independent proof audit.
 
@@ -61,6 +61,14 @@ Jaan Allikvere, *Fourteen lonely runners*, arXiv:2609.02604v1, September 2, 2026
 [Versioned PDF](https://arxiv.org/pdf/2609.02604v1)
 
 Inspected the abstract and introduction. The preprint reports a computer-assisted proof for 14 total runners, extending S3's finite-checking framework. Its code, certificates, proof, and review status have not been independently audited here. This corrects the earlier provisional frontier note; it has no role in certifying our 4/8/12 example calculations.
+
+### September 25 update: version 2 reports fifteen total runners
+
+Jaan Allikvere, *Fourteen and fifteen lonely runners*, arXiv:2609.02604v2, revised September 24, 2026, 11:58:42 UTC.
+
+[Versioned abstract and history](https://arxiv.org/abs/2609.02604v2)
+
+During the Ultra review, a separate reviewer and the root reviewer each opened the versioned primary record. The revised abstract reports proofs for fourteen and fifteen total runners; the comments identify the fifteen-runner addition and public code/certificate archives. We inspected the abstract, comments, and version history only. We did not audit the revised proof, download or rerun its computation, establish peer-review status, or claim independent reproduction. The v1 entry above remains the record of the earlier reading. This updates project orientation and does not certify or invalidate our structured-family arguments.
 
 ## S8 — Single-speed modifications and uncovered intervals
 
