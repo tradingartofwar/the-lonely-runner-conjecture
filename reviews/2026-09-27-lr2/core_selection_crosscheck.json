@@ -1,0 +1,787 @@
+{
+  "baseline": "5c6e7dee3fd096101e5ce759b4a0c84838d0a932",
+  "method": "Independent threshold-event state sweep; product grid; 16-state masses; Kruskal trees; direct signed-velocity witness checks",
+  "script_sha256": "c37a3289416a87ea10a4aebdc9a8f3704b90aad8932ed23027a5094040308534",
+  "input_sha256": {
+    "core_selection/tree16.json": "8a138cf32dbe72437f04355ee7df39e8e096a99df1665f7aaffcb8ef06fd25fd",
+    "core_selection/contact13.json": "5aefa317bb369a572196f2a94002d08f7023665de0efecea3e982a7ba7b82777",
+    "core_selection/moment45.json": "a77bca70be1ad0a827d422d804b1001b814d8edeaa3a2c7ef49fd58878517b41",
+    "core_selection/moment90.json": "207ecddb193c4f9fb17384111f17c80bf6a06b60e251d04d34ccd005b46f03bf",
+    "core_selection/gcd266.json": "319444c3409932f8abf8f38749b3b899380d52db7a8b4d3201748d5290f6365a",
+    "core_selection/gcd532.json": "f9725ac92c80f7d8cac1b7c79755f49071d06d7db06dbe652acc19e1771ef4cd",
+    "core_selection/cycle112.json": "3af57d32fc65e7414637121262c91d0469788d45d9bce488e22460362ce7df85",
+    "core_selection/cycle113.json": "02ee2018bb40957c1b740fa411793ab26ee1018723a0d353214f3b0555bf34ef",
+    "core_selection/local1680.json": "941ea76f975747cf2eef687e6807310503b139ddecfe94533d2f72e454133bfd",
+    "core_selection/local3360.json": "9d465960d9475bcceb813c03c609def008412333759d05be061ec02f01970655",
+    "core_selection/consecutive.json": "bd2a8e78941533100b56b09fce4812f125e23f5f9d1456f7caa589fbf7d7485b"
+  },
+  "configurations": 11,
+  "references": 88,
+  "labelled_cores": 3080,
+  "core_components": 778145,
+  "strict_references": 85,
+  "all_distinct_references": 53,
+  "strict_all_core_failures": 0,
+  "successful_core_choices": 2974,
+  "cases": [
+    {
+      "case": "tree16",
+      "references": [
+        {
+          "reference": 0,
+          "components": 438,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 422,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 290,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 280,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 274,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 290,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 412,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 696,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "contact13",
+      "references": [
+        {
+          "reference": 0,
+          "components": 410,
+          "successful_cores": 0,
+          "strict": false,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 367,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 256,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 251,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 254,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 253,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 399,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 517,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "moment45",
+      "references": [
+        {
+          "reference": 0,
+          "components": 662,
+          "successful_cores": 34,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 641,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 532,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 507,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 546,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 535,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 667,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 2379,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "moment90",
+      "references": [
+        {
+          "reference": 0,
+          "components": 1082,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 1030,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 928,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 914,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 940,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 920,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 1046,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 5066,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "gcd266",
+      "references": [
+        {
+          "reference": 0,
+          "components": 2574,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 2562,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 2478,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 2462,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 2494,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 2462,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 2558,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 15506,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "gcd532",
+      "references": [
+        {
+          "reference": 0,
+          "components": 4798,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 4810,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 4796,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 4814,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 4854,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 4754,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 4816,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 31258,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "cycle112",
+      "references": [
+        {
+          "reference": 0,
+          "components": 2644,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 2654,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 2618,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 2536,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 2416,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 2646,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 2926,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 4846,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "cycle113",
+      "references": [
+        {
+          "reference": 0,
+          "components": 2677,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 2638,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 2573,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 2540,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 2499,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 2623,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 2873,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 4990,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "local1680",
+      "references": [
+        {
+          "reference": 0,
+          "components": 14669,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 15002,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 15088,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 14895,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 14938,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 14881,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 15231,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 98843,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "local3360",
+      "references": [
+        {
+          "reference": 0,
+          "components": 28783,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 29616,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 29826,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 29525,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 29534,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 29315,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 29555,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 197957,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    },
+    {
+      "case": "consecutive",
+      "references": [
+        {
+          "reference": 0,
+          "components": 256,
+          "successful_cores": 0,
+          "strict": false,
+          "all_distinct": true,
+          "strict_failure": false
+        },
+        {
+          "reference": 1,
+          "components": 216,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 2,
+          "components": 176,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 3,
+          "components": 146,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 4,
+          "components": 146,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 5,
+          "components": 176,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 6,
+          "components": 216,
+          "successful_cores": 35,
+          "strict": true,
+          "all_distinct": false,
+          "strict_failure": false
+        },
+        {
+          "reference": 7,
+          "components": 256,
+          "successful_cores": 0,
+          "strict": false,
+          "all_distinct": true,
+          "strict_failure": false
+        }
+      ]
+    }
+  ]
+}

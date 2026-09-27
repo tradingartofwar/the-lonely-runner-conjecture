@@ -41,6 +41,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 27, 2026
 
+The [all-core selection experiment](notes/ALL_CORE_SELECTION_2026_09_27.md) checks eleven named configurations at every reference. Every strict reference has a successful tree certificate somewhere. One core fails across all its windows but is repaired by a stronger inequality using the same pair data. This is a bounded result, independently reconstructed, with equality-only controls retained.
+
 The [September 27 Ultra review](notes/ULTRA_REVIEW_2026_09_27.md) assesses the distinction audit through six separate mathematical and literature scopes. It preserves exact examples of information lost by overlap summaries, a conditional contact selector, and threshold-response and global-witness deductions. Its unbounded implications remain proof candidates; the next question is how to select a useful certificate for a configuration.
 
 The repository contains:
