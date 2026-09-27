@@ -32,6 +32,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | File | Purpose |
 | --- | --- |
 | [HANDOFF.md](HANDOFF.md) | Detailed current research state, evidence pointers, and next questions |
+| [Broader inquiries](notes/inquiries/README.md) | Reflections, thought experiments, and possible connections to other problems |
 | [RESEARCH_PLAN.md](RESEARCH_PLAN.md) | Strategy and research method |
 | [CLAIM_STATUS.md](CLAIM_STATUS.md) | Evidence/status vocabulary used throughout the project |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to investigate, challenge, reproduce, and submit work |
