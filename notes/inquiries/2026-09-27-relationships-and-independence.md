@@ -189,3 +189,49 @@ There is an essential counterweight: the x=19,y=45 example succeeds without the 
 **The objects, the relationships, the context, and the question jointly determine what information matters.** Changing any one of those can change which distinctions we must preserve.
 
 Our evidence makes that concrete in this mathematical setting. The larger inquiry is whether we can turn it into a reliable method for choosing representations in other problems. This remains a question for further discussion and testing.
+
+## Follow-up direction — map the runners' relationships
+
+September 27, 2026, during the discussion of the second idea. Vance suggested beginning by learning the relationships among the runners, using Bob and Sam's availability as an analogy, and asking whether those relationships could reveal the deeper answers. He requested that this direction be preserved. **Status: proposed investigation; no new experiment has been run.**
+
+### The intuition behind the proposal
+
+Vance observed that the “hidden” truth we seek may have been in front of us all along. In the runner example, the complete description already implies the containment relationship; recognizing and expressing it makes its consequence usable.
+
+The discussion distinguished three meanings of hidden:
+
+- **Unobserved:** additional evidence is needed.
+- **Omitted:** a summary discarded a consequential distinction.
+- **Unrecognized:** sufficient information is present, but the useful implication has not been derived.
+
+These call for different next moves: gathering evidence, restoring detail, or changing the representation or reasoning. LTCMs—Languages That Carry Models—can help expose consequences that are difficult to recognize in another representation. An implication can be difficult to discover even when it has a short expression once found.
+
+### Keep three availability relationships distinct
+
+| Relationship within the specified period | What follows |
+| --- | --- |
+| Bob and Sam have exactly the same busy times | Either person's availability determines the other's. |
+| Sam is busy only when Bob is busy | Bob being available guarantees Sam is available; the reverse need not hold. |
+| Both are busy on one observed day or occasion | An overlap has been observed; neither equivalence nor a general one-way guarantee follows from that alone. |
+
+For the runners, the relevant period is a specified window. A relationship that holds there may fail elsewhere.
+
+### The proposed investigation
+
+Build a map of guaranteed relationships and ask:
+
+1. **Which safety conditions are equivalent?** Either check would give the same answer within the specified window.
+2. **Which safety conditions imply others?** One check would automatically satisfy additional requirements.
+3. **Which conditions add a new restriction?** They exclude candidate times that the other conditions leave available.
+
+Record the window and the exact implication in each case. For example, on our selected J, “runner 7 safe implies runner x safe” is the same statement as `B_x intersect J subset B_7 intersect J`. If arrows are used, explicitly identify whether they mean safety implication or blocking containment: those two conventions reverse the direction.
+
+Then test whether this map helps select windows and certify lonely moments. Begin with the existing examples and compare its predictions with exact surviving sets and tree bounds. Retain x=19,y=45 as a countercontrol: absence of the containment does not prevent a successful tree. After examining pair relationships, ask which useful restrictions require three or more runners together.
+
+The focused question is:
+
+> Which relationships change what we must check to establish a lonely moment?
+
+This turns the broader proposal to learn the runners' relationships into a testable objective. A possible deeper explanation would identify which apparent obstacles add restrictions and which are already accounted for by the surrounding configuration. Whether this yields a reliable selection method remains open.
+
+This proposal connects directly to the pending selector experiment in [FIXED_WINDOW_CONTAINMENT_2026_09_27.md](../FIXED_WINDOW_CONTAINMENT_2026_09_27.md). The discussion remains on the second of the six ideas; the third has not yet been discussed individually.
