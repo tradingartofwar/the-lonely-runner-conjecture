@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | Exact local examples motivate OPEN questions about effective complexity, shared freedoms, and useful compression. Applications to other systems remain proposed. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | Includes the initial reflection and a six-part follow-up on independent obstacles, usable relational information, constrained freedoms, purpose-specific equivalence, sufficient summaries, and choosing useful regions. Applications to other systems remain OPEN. |
 
 ## How to continue this collection
 
