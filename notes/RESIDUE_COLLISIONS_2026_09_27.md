@@ -189,6 +189,8 @@ No old source, checker behavior, or historical output changed. The existing draf
 
 ## 8. Next discriminating question
 
+**Follow-up completed later September 27:** [CONTACT_MOMENTS_2026_09_27.md](CONTACT_MOMENTS_2026_09_27.md) preserves the result. The fixed 6/7/3 family rules out the proposed match: the reduced denominator of D_y alone identifies safety at 3/8. Its full-moment 336/672 control does lose left-endpoint safety, masked by runner 7. Changing the fixed triple to 3/10/28 makes that loss decisive: y=1680 and 3360 have identical complete moments, exact-state durations, and all pair gcds among the seven nonzero relative speeds, but F_J={9/32} versus empty. All y=1680h share those statistics while local existence alternates with h's parity. The question below is retained as the prompt that led to this completed follow-up.
+
 The duration-loss question now has a physical answer, including a blocker-gcd control and infinite families. Do not repeat a wider speed scan for that purpose.
 
 The next unresolved distinction is **existence at zero measure**. Use the previously identified x=3 branch: its fixed-runner allowed set in J is `{3/8}`, and adding y removes it exactly when 8 divides y. Ask whether two actual configurations can match **all joint duration moments** while landing on opposite sides of that endpoint test. An exact residue reduction can either find a physical empty/contact pair or show why this restricted family rules one out. The 16-state constraint-value experiment remains another option, now with physical matched-duration controls available.
