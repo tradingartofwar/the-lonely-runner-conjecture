@@ -8,6 +8,20 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — LR 2, September 27
 
+**Latest — fixed-window containment classified, with a lattice certificate.** Read [FIXED_WINDOW_CONTAINMENT_2026_09_27.md](notes/FIXED_WINDOW_CONTAINMENT_2026_09_27.md). The approved x-replacement task is complete. Keep eight distinct common-start speeds `{0,1,4,5,6,7,x,y}`, reference 0, threshold 1/8, core 1/4/6, J=[9/32,5/16], and S=[17/56,5/16]. The exact containment condition is that x is safe throughout S. It is equivalent to one integer lap m satisfying `17x-56m>=7` and `5x-16m<=14`. Nonnegative integer slacks p=17x-56m-7 and q=16m+14-5x obey `2p+7q=84-x`, providing the finite bound x<=84 and retaining lap alignment. Checking endpoint distances separately is insufficient: 85 has safe endpoints but collides at 26/85 inside S.
+
+There are 35 safe integer values before exclusions, including all five fixed moving speeds. The 30 admissible replacements are `2,8,9,11,12,14,15,17,18,21,22,24,25,27,28,31,34,37,38,40,41,44,47,50,54,57,60,63,70,73`. The actual maximum is 73. The endpoint contacts x=22,38,54,63,70 are valid and remain included. Distinct original speeds and n=8 must be retained; y cannot equal x or a fixed speed.
+
+For each listed x the same star tree `(5,7),(7,x),(7,y)` is exact: `T_J=U_J=1/112-|B_y intersect S|` for every admissible y. The whole allowed set on J is independent of listed x. The previous primitive bound gives `U_J>=3/448-3/(16y)>0` for y>=29. These are supplied general arguments/proof candidates, not newly established literature results or new family coverage. All 30 y=29 checks give `[17/56,71/232]`, duration 1/406, and strict witness 495/1624.
+
+For arbitrary x,y, the same tree's slack is exactly `U_J-T_J=|B_x intersect B_y intersect S|`. Containment is therefore a uniform-exactness mechanism, not a necessary condition for a positive tree on a particular pair. The explicit control x=19,y=45 fails containment but gives tree bound 47/31920>0, actual duration 1/210, and slack 1/304. Conversely, any failing x admits some sufficiently large admissible y with positive slack, by choosing y to collide at a rational time in x's blocked part of S. This last statement is part of the supplied argument, not a bounded-scan extrapolation.
+
+Two independently structured exact implementations agree on x=1..84 plus the 85 control and 35 local certificates. Read-only commands: `python -B reviews/2026-09-27-lr2/check_fixed_containment.py --check` and `python -B reviews/2026-09-27-lr2/crosscheck_fixed_containment.py --check`. Data: fixed_containment.json and fixed_containment_crosscheck.json in the same directory. Original checkers and earlier evidence are unchanged; no broad regression or all-core scan was repeated.
+
+**Next proposed step, not yet performed:** on the existing named controls, test a window selector based on conditional blocker containments and vanished blockers. Compare its predictions with exact tree slack; include x=19,y=45 so absence of a containment is not mistaken for failure. This is a small mechanism test before any broader search. The +7/+9 extension remains parked.
+
+### Earlier September 27 — neighboring speeds
+
 **Latest — neighboring speeds reveal an exact core-exchange mechanism.** Read [CORE_EXCHANGE_NEIGHBORS_2026_09_27.md](notes/CORE_EXCHANGE_NEIGHBORS_2026_09_27.md). The requested y=44 and 46 controls, alongside y=45, retain `{0,1,4,5,6,7,11,y}`, reference 0, and threshold 1/8. All eight components of cores 1/5/6 and 1/4/6 were evaluated: 48 exact pair-moment LP optima and complete component calculations. A separate interval-intersection/Boolean-inversion/event-cell implementation agrees, including all equality points and direct witnesses.
 
 On the original core's I=[9/40,5/16], tree bounds at y=44,45,46 are 1/308,-1/1260,-3/5152; optimal pair bounds are 1/112,1/1260,3/8096; actual durations are 1/112,1/210,1/184. The same signed-cycle inequality is optimal on these three inputs. Original-core trees fail across every component at 45 and 46, but the cycle succeeds on I and its reflection. At 44 trees already succeed somewhere.

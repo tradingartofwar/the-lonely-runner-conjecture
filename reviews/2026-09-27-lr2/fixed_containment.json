@@ -1,0 +1,3242 @@
+{
+  "baseline_commit": "9831bbee22c0e226911eac99e65a0c9624bef963",
+  "reference": 0,
+  "total_runners": 8,
+  "threshold": "1/8",
+  "fixed_speeds": [
+    1,
+    4,
+    5,
+    6,
+    7
+  ],
+  "core": [
+    1,
+    4,
+    6
+  ],
+  "J": [
+    "9/32",
+    "5/16"
+  ],
+  "S": [
+    "17/56",
+    "5/16"
+  ],
+  "exhaustive_finite_domain": [
+    1,
+    84
+  ],
+  "extra_failure_control": 85,
+  "raw_safe_speeds": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    21,
+    22,
+    24,
+    25,
+    27,
+    28,
+    31,
+    34,
+    37,
+    38,
+    40,
+    41,
+    44,
+    47,
+    50,
+    54,
+    57,
+    60,
+    63,
+    70,
+    73
+  ],
+  "admissible_replacements": [
+    2,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    21,
+    22,
+    24,
+    25,
+    27,
+    28,
+    31,
+    34,
+    37,
+    38,
+    40,
+    41,
+    44,
+    47,
+    50,
+    54,
+    57,
+    60,
+    63,
+    70,
+    73
+  ],
+  "classification": [
+    {
+      "x": 1,
+      "lap_lower": 0,
+      "lap_upper": 0,
+      "safe_on_S": true,
+      "repeated_fixed_speed": true,
+      "admissible": false,
+      "blocked_duration_S": "0",
+      "lap": 0,
+      "integer_slacks": [
+        10,
+        9
+      ],
+      "phase_margins": [
+        "5/28",
+        "9/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 2,
+      "lap_lower": 0,
+      "lap_upper": 0,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 0,
+      "integer_slacks": [
+        27,
+        4
+      ],
+      "phase_margins": [
+        "27/56",
+        "1/4"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 3,
+      "lap_lower": 1,
+      "lap_upper": 0,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/112",
+      "violating_time": "69/224",
+      "violating_distance": "17/224"
+    },
+    {
+      "x": 4,
+      "lap_lower": 1,
+      "lap_upper": 1,
+      "safe_on_S": true,
+      "repeated_fixed_speed": true,
+      "admissible": false,
+      "blocked_duration_S": "0",
+      "lap": 1,
+      "integer_slacks": [
+        5,
+        10
+      ],
+      "phase_margins": [
+        "5/56",
+        "5/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 5,
+      "lap_lower": 1,
+      "lap_upper": 1,
+      "safe_on_S": true,
+      "repeated_fixed_speed": true,
+      "admissible": false,
+      "blocked_duration_S": "0",
+      "lap": 1,
+      "integer_slacks": [
+        22,
+        5
+      ],
+      "phase_margins": [
+        "11/28",
+        "5/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 6,
+      "lap_lower": 1,
+      "lap_upper": 1,
+      "safe_on_S": true,
+      "repeated_fixed_speed": true,
+      "admissible": false,
+      "blocked_duration_S": "0",
+      "lap": 1,
+      "integer_slacks": [
+        39,
+        0
+      ],
+      "phase_margins": [
+        "39/56",
+        "0"
+      ],
+      "threshold_endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 7,
+      "lap_lower": 2,
+      "lap_upper": 2,
+      "safe_on_S": true,
+      "repeated_fixed_speed": true,
+      "admissible": false,
+      "blocked_duration_S": "0",
+      "lap": 2,
+      "integer_slacks": [
+        0,
+        11
+      ],
+      "phase_margins": [
+        "0",
+        "11/16"
+      ],
+      "threshold_endpoints": [
+        "left"
+      ]
+    },
+    {
+      "x": 8,
+      "lap_lower": 2,
+      "lap_upper": 2,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 2,
+      "integer_slacks": [
+        17,
+        6
+      ],
+      "phase_margins": [
+        "17/56",
+        "3/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 9,
+      "lap_lower": 2,
+      "lap_upper": 2,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 2,
+      "integer_slacks": [
+        34,
+        1
+      ],
+      "phase_margins": [
+        "17/28",
+        "1/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 10,
+      "lap_lower": 3,
+      "lap_upper": 2,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/112",
+      "violating_time": "69/224",
+      "violating_distance": "9/112"
+    },
+    {
+      "x": 11,
+      "lap_lower": 3,
+      "lap_upper": 3,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 3,
+      "integer_slacks": [
+        12,
+        7
+      ],
+      "phase_margins": [
+        "3/14",
+        "7/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 12,
+      "lap_lower": 3,
+      "lap_upper": 3,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 3,
+      "integer_slacks": [
+        29,
+        2
+      ],
+      "phase_margins": [
+        "29/56",
+        "1/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 13,
+      "lap_lower": 4,
+      "lap_upper": 3,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/112",
+      "violating_time": "69/224",
+      "violating_distance": "1/224"
+    },
+    {
+      "x": 14,
+      "lap_lower": 4,
+      "lap_upper": 4,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 4,
+      "integer_slacks": [
+        7,
+        8
+      ],
+      "phase_margins": [
+        "1/8",
+        "1/2"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 15,
+      "lap_lower": 4,
+      "lap_upper": 4,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 4,
+      "integer_slacks": [
+        24,
+        3
+      ],
+      "phase_margins": [
+        "3/7",
+        "3/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 16,
+      "lap_lower": 5,
+      "lap_upper": 4,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/128",
+      "violating_time": "79/256",
+      "violating_distance": "1/16"
+    },
+    {
+      "x": 17,
+      "lap_lower": 5,
+      "lap_upper": 5,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 5,
+      "integer_slacks": [
+        2,
+        9
+      ],
+      "phase_margins": [
+        "1/28",
+        "9/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 18,
+      "lap_lower": 5,
+      "lap_upper": 5,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 5,
+      "integer_slacks": [
+        19,
+        4
+      ],
+      "phase_margins": [
+        "19/56",
+        "1/4"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 19,
+      "lap_lower": 6,
+      "lap_upper": 5,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/304",
+      "violating_time": "189/608",
+      "violating_distance": "3/32"
+    },
+    {
+      "x": 20,
+      "lap_lower": 6,
+      "lap_upper": 5,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "3/1120",
+      "violating_time": "683/2240",
+      "violating_distance": "11/112"
+    },
+    {
+      "x": 21,
+      "lap_lower": 6,
+      "lap_upper": 6,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 6,
+      "integer_slacks": [
+        14,
+        5
+      ],
+      "phase_margins": [
+        "1/4",
+        "5/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 22,
+      "lap_lower": 6,
+      "lap_upper": 6,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 6,
+      "integer_slacks": [
+        31,
+        0
+      ],
+      "phase_margins": [
+        "31/56",
+        "0"
+      ],
+      "threshold_endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 23,
+      "lap_lower": 7,
+      "lap_upper": 6,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/161",
+      "violating_time": "395/1288",
+      "violating_distance": "3/56"
+    },
+    {
+      "x": 24,
+      "lap_lower": 7,
+      "lap_upper": 7,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 7,
+      "integer_slacks": [
+        9,
+        6
+      ],
+      "phase_margins": [
+        "9/56",
+        "3/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 25,
+      "lap_lower": 7,
+      "lap_upper": 7,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 7,
+      "integer_slacks": [
+        26,
+        1
+      ],
+      "phase_margins": [
+        "13/28",
+        "1/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 26,
+      "lap_lower": 8,
+      "lap_upper": 7,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/112",
+      "violating_time": "69/224",
+      "violating_distance": "1/112"
+    },
+    {
+      "x": 27,
+      "lap_lower": 8,
+      "lap_upper": 8,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 8,
+      "integer_slacks": [
+        4,
+        7
+      ],
+      "phase_margins": [
+        "1/14",
+        "7/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 28,
+      "lap_lower": 8,
+      "lap_upper": 8,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 8,
+      "integer_slacks": [
+        21,
+        2
+      ],
+      "phase_margins": [
+        "3/8",
+        "1/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 29,
+      "lap_lower": 9,
+      "lap_upper": 8,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "3/464",
+      "violating_time": "287/928",
+      "violating_distance": "1/32"
+    },
+    {
+      "x": 30,
+      "lap_lower": 9,
+      "lap_upper": 8,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/1680",
+      "violating_time": "1021/3360",
+      "violating_distance": "13/112"
+    },
+    {
+      "x": 31,
+      "lap_lower": 9,
+      "lap_upper": 9,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 9,
+      "integer_slacks": [
+        16,
+        3
+      ],
+      "phase_margins": [
+        "2/7",
+        "3/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 32,
+      "lap_lower": 10,
+      "lap_upper": 9,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/256",
+      "violating_time": "159/512",
+      "violating_distance": "1/16"
+    },
+    {
+      "x": 33,
+      "lap_lower": 10,
+      "lap_upper": 9,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/308",
+      "violating_time": "47/154",
+      "violating_distance": "1/14"
+    },
+    {
+      "x": 34,
+      "lap_lower": 10,
+      "lap_upper": 10,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 10,
+      "integer_slacks": [
+        11,
+        4
+      ],
+      "phase_margins": [
+        "11/56",
+        "1/4"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 35,
+      "lap_lower": 11,
+      "lap_upper": 10,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/560",
+      "violating_time": "349/1120",
+      "violating_distance": "3/32"
+    },
+    {
+      "x": 36,
+      "lap_lower": 11,
+      "lap_upper": 10,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "11/2016",
+      "violating_time": "1235/4032",
+      "violating_distance": "3/112"
+    },
+    {
+      "x": 37,
+      "lap_lower": 11,
+      "lap_upper": 11,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 11,
+      "integer_slacks": [
+        6,
+        5
+      ],
+      "phase_margins": [
+        "3/28",
+        "5/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 38,
+      "lap_lower": 11,
+      "lap_upper": 11,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 11,
+      "integer_slacks": [
+        23,
+        0
+      ],
+      "phase_margins": [
+        "23/56",
+        "0"
+      ],
+      "threshold_endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 39,
+      "lap_lower": 12,
+      "lap_upper": 11,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/156",
+      "violating_time": "4/13",
+      "violating_distance": "0"
+    },
+    {
+      "x": 40,
+      "lap_lower": 12,
+      "lap_upper": 12,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 12,
+      "integer_slacks": [
+        1,
+        6
+      ],
+      "phase_margins": [
+        "1/56",
+        "3/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 41,
+      "lap_lower": 12,
+      "lap_upper": 12,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 12,
+      "integer_slacks": [
+        18,
+        1
+      ],
+      "phase_margins": [
+        "9/28",
+        "1/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 42,
+      "lap_lower": 13,
+      "lap_upper": 12,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/168",
+      "violating_time": "13/42",
+      "violating_distance": "0"
+    },
+    {
+      "x": 43,
+      "lap_lower": 13,
+      "lap_upper": 12,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/602",
+      "violating_time": "733/2408",
+      "violating_distance": "5/56"
+    },
+    {
+      "x": 44,
+      "lap_lower": 13,
+      "lap_upper": 13,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 13,
+      "integer_slacks": [
+        13,
+        2
+      ],
+      "phase_margins": [
+        "13/56",
+        "1/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 45,
+      "lap_lower": 14,
+      "lap_upper": 13,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/240",
+      "violating_time": "149/480",
+      "violating_distance": "1/32"
+    },
+    {
+      "x": 46,
+      "lap_lower": 14,
+      "lap_upper": 13,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "9/2576",
+      "violating_time": "1573/5152",
+      "violating_distance": "5/112"
+    },
+    {
+      "x": 47,
+      "lap_lower": 14,
+      "lap_upper": 14,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 14,
+      "integer_slacks": [
+        8,
+        3
+      ],
+      "phase_margins": [
+        "1/7",
+        "3/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 48,
+      "lap_lower": 15,
+      "lap_upper": 14,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/384",
+      "violating_time": "239/768",
+      "violating_distance": "1/16"
+    },
+    {
+      "x": 49,
+      "lap_lower": 15,
+      "lap_upper": 14,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/196",
+      "violating_time": "15/49",
+      "violating_distance": "0"
+    },
+    {
+      "x": 50,
+      "lap_lower": 15,
+      "lap_upper": 15,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 15,
+      "integer_slacks": [
+        3,
+        4
+      ],
+      "phase_margins": [
+        "3/56",
+        "1/4"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 51,
+      "lap_lower": 16,
+      "lap_upper": 15,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/816",
+      "violating_time": "509/1632",
+      "violating_distance": "3/32"
+    },
+    {
+      "x": 52,
+      "lap_lower": 16,
+      "lap_upper": 15,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/208",
+      "violating_time": "4/13",
+      "violating_distance": "0"
+    },
+    {
+      "x": 53,
+      "lap_lower": 16,
+      "lap_upper": 15,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/1484",
+      "violating_time": "451/1484",
+      "violating_distance": "3/28"
+    },
+    {
+      "x": 54,
+      "lap_lower": 16,
+      "lap_upper": 16,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 16,
+      "integer_slacks": [
+        15,
+        0
+      ],
+      "phase_margins": [
+        "15/56",
+        "0"
+      ],
+      "threshold_endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 55,
+      "lap_lower": 17,
+      "lap_upper": 16,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/220",
+      "violating_time": "17/55",
+      "violating_distance": "0"
+    },
+    {
+      "x": 56,
+      "lap_lower": 17,
+      "lap_upper": 16,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/448",
+      "violating_time": "39/128",
+      "violating_distance": "1/16"
+    },
+    {
+      "x": 57,
+      "lap_lower": 17,
+      "lap_upper": 17,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 17,
+      "integer_slacks": [
+        10,
+        1
+      ],
+      "phase_margins": [
+        "5/28",
+        "1/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 58,
+      "lap_lower": 18,
+      "lap_upper": 17,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/232",
+      "violating_time": "9/29",
+      "violating_distance": "0"
+    },
+    {
+      "x": 59,
+      "lap_lower": 18,
+      "lap_upper": 17,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "3/826",
+      "violating_time": "1009/3304",
+      "violating_distance": "1/56"
+    },
+    {
+      "x": 60,
+      "lap_lower": 18,
+      "lap_upper": 18,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 18,
+      "integer_slacks": [
+        5,
+        2
+      ],
+      "phase_margins": [
+        "5/56",
+        "1/8"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 61,
+      "lap_lower": 19,
+      "lap_upper": 18,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "3/976",
+      "violating_time": "607/1952",
+      "violating_distance": "1/32"
+    },
+    {
+      "x": 62,
+      "lap_lower": 19,
+      "lap_upper": 18,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/248",
+      "violating_time": "19/62",
+      "violating_distance": "0"
+    },
+    {
+      "x": 63,
+      "lap_lower": 19,
+      "lap_upper": 19,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 19,
+      "integer_slacks": [
+        0,
+        3
+      ],
+      "phase_margins": [
+        "0",
+        "3/16"
+      ],
+      "threshold_endpoints": [
+        "left"
+      ]
+    },
+    {
+      "x": 64,
+      "lap_lower": 20,
+      "lap_upper": 19,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/512",
+      "violating_time": "319/1024",
+      "violating_distance": "1/16"
+    },
+    {
+      "x": 65,
+      "lap_lower": 20,
+      "lap_upper": 19,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/260",
+      "violating_time": "4/13",
+      "violating_distance": "0"
+    },
+    {
+      "x": 66,
+      "lap_lower": 20,
+      "lap_upper": 19,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "5/3696",
+      "violating_time": "2249/7392",
+      "violating_distance": "9/112"
+    },
+    {
+      "x": 67,
+      "lap_lower": 21,
+      "lap_upper": 20,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/1072",
+      "violating_time": "669/2144",
+      "violating_distance": "3/32"
+    },
+    {
+      "x": 68,
+      "lap_lower": 21,
+      "lap_upper": 20,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/272",
+      "violating_time": "21/68",
+      "violating_distance": "0"
+    },
+    {
+      "x": 69,
+      "lap_lower": 21,
+      "lap_upper": 20,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "5/1932",
+      "violating_time": "589/1932",
+      "violating_distance": "1/28"
+    },
+    {
+      "x": 70,
+      "lap_lower": 21,
+      "lap_upper": 21,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 21,
+      "integer_slacks": [
+        7,
+        0
+      ],
+      "phase_margins": [
+        "1/8",
+        "0"
+      ],
+      "threshold_endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 71,
+      "lap_lower": 22,
+      "lap_upper": 21,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/284",
+      "violating_time": "22/71",
+      "violating_distance": "0"
+    },
+    {
+      "x": 72,
+      "lap_lower": 22,
+      "lap_upper": 21,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/288",
+      "violating_time": "11/36",
+      "violating_distance": "0"
+    },
+    {
+      "x": 73,
+      "lap_lower": 22,
+      "lap_upper": 22,
+      "safe_on_S": true,
+      "repeated_fixed_speed": false,
+      "admissible": true,
+      "blocked_duration_S": "0",
+      "lap": 22,
+      "integer_slacks": [
+        2,
+        1
+      ],
+      "phase_margins": [
+        "1/28",
+        "1/16"
+      ],
+      "threshold_endpoints": []
+    },
+    {
+      "x": 74,
+      "lap_lower": 23,
+      "lap_upper": 22,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/296",
+      "violating_time": "23/74",
+      "violating_distance": "0"
+    },
+    {
+      "x": 75,
+      "lap_lower": 23,
+      "lap_upper": 22,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/300",
+      "violating_time": "23/75",
+      "violating_distance": "0"
+    },
+    {
+      "x": 76,
+      "lap_lower": 23,
+      "lap_upper": 22,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "3/4256",
+      "violating_time": "2587/8512",
+      "violating_distance": "11/112"
+    },
+    {
+      "x": 77,
+      "lap_lower": 24,
+      "lap_upper": 23,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "3/1232",
+      "violating_time": "767/2464",
+      "violating_distance": "1/32"
+    },
+    {
+      "x": 78,
+      "lap_lower": 24,
+      "lap_upper": 23,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/312",
+      "violating_time": "4/13",
+      "violating_distance": "0"
+    },
+    {
+      "x": 79,
+      "lap_lower": 24,
+      "lap_upper": 23,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/553",
+      "violating_time": "1347/4424",
+      "violating_distance": "3/56"
+    },
+    {
+      "x": 80,
+      "lap_lower": 25,
+      "lap_upper": 24,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/640",
+      "violating_time": "399/1280",
+      "violating_distance": "1/16"
+    },
+    {
+      "x": 81,
+      "lap_lower": 25,
+      "lap_upper": 24,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/324",
+      "violating_time": "25/81",
+      "violating_distance": "0"
+    },
+    {
+      "x": 82,
+      "lap_lower": 25,
+      "lap_upper": 24,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "13/4592",
+      "violating_time": "2801/9184",
+      "violating_distance": "1/112"
+    },
+    {
+      "x": 83,
+      "lap_lower": 26,
+      "lap_upper": 25,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/1328",
+      "violating_time": "829/2656",
+      "violating_distance": "3/32"
+    },
+    {
+      "x": 84,
+      "lap_lower": 26,
+      "lap_upper": 25,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/336",
+      "violating_time": "13/42",
+      "violating_distance": "0"
+    },
+    {
+      "x": 85,
+      "lap_lower": 26,
+      "lap_upper": 25,
+      "safe_on_S": false,
+      "repeated_fixed_speed": false,
+      "admissible": false,
+      "blocked_duration_S": "1/340",
+      "violating_time": "26/85",
+      "violating_distance": "0"
+    }
+  ],
+  "certificates": [
+    {
+      "x": 2,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        2,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "0",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "317/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 8,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        8,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "0",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "89/203",
+        "9/56"
+      ]
+    },
+    {
+      "x": 9,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        9,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "0",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "417/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 11,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        11,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/352",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/352",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "573/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 12,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        12,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "0",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "139/406",
+        "9/56"
+      ]
+    },
+    {
+      "x": 14,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        14,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "3/224",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "3/224",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "31/116",
+        "9/56"
+      ]
+    },
+    {
+      "x": 15,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        15,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "0",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "695/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 17,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        17,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/68",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/68",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "295/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 18,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        18,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/288",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/288",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "395/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 21,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        21,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/96",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/96",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "93/232",
+        "9/56"
+      ]
+    },
+    {
+      "x": 22,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        22,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          22
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "0",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "239/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 24,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        24,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          24
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/96",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/96",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "64/203",
+        "9/56"
+      ]
+    },
+    {
+      "x": 25,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        25,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          25
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "3/800",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "3/800",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "617/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 27,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        27,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          27
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/108",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/108",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "373/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 28,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        28,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          28
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/112",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/112",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "27/58",
+        "9/56"
+      ]
+    },
+    {
+      "x": 31,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        31,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          31
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/124",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/124",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "729/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 34,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        34,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          34
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/136",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/136",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "295/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 37,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        37,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          37
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/148",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/148",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "451/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 38,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        38,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          38
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/152",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/152",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "339/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 40,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        40,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          40
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/160",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/160",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "39/203",
+        "9/56"
+      ]
+    },
+    {
+      "x": 41,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        41,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          41
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/164",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/164",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "807/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 44,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        44,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          44
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/176",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/176",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "167/406",
+        "9/56"
+      ]
+    },
+    {
+      "x": 47,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        47,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          47
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/188",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/188",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "529/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 50,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        50,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          50
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/160",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/160",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "195/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 54,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        54,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          54
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/216",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/216",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "373/812",
+        "9/56"
+      ]
+    },
+    {
+      "x": 57,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        57,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          57
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "11/1824",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "11/1824",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "607/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 60,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        60,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          60
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/120",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/120",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "117/406",
+        "9/56"
+      ]
+    },
+    {
+      "x": 63,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        63,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          63
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/126",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/126",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "47/232",
+        "9/56"
+      ]
+    },
+    {
+      "x": 70,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        70,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          70
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/140",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/140",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "39/116",
+        "9/56"
+      ]
+    },
+    {
+      "x": 73,
+      "y": 29,
+      "residual": [
+        5,
+        7,
+        73,
+        29
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          73
+        ],
+        [
+          7,
+          29
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/146",
+        "3/464"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/146",
+        "0"
+      ],
+      "tree_bound": "1/406",
+      "actual_duration": "1/406",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "71/232"
+        ]
+      ],
+      "strict_witness": "495/1624",
+      "witness_distances": [
+        "495/1624",
+        "89/406",
+        "773/1624",
+        "139/812",
+        "31/232",
+        "407/1624",
+        "9/56"
+      ]
+    },
+    {
+      "x": 11,
+      "y": 28,
+      "residual": [
+        5,
+        7,
+        11,
+        28
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          28
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/352",
+        "1/112"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/352",
+        "1/112"
+      ],
+      "tree_bound": "1/112",
+      "actual_duration": "1/112",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "strict_witness": "69/224",
+      "witness_distances": [
+        "69/224",
+        "13/56",
+        "103/224",
+        "17/112",
+        "5/32",
+        "87/224",
+        "3/8"
+      ]
+    },
+    {
+      "x": 11,
+      "y": 44,
+      "residual": [
+        5,
+        7,
+        11,
+        44
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          44
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/352",
+        "1/176"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/352",
+        "1/176"
+      ],
+      "tree_bound": "1/112",
+      "actual_duration": "1/112",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "strict_witness": "69/224",
+      "witness_distances": [
+        "69/224",
+        "13/56",
+        "103/224",
+        "17/112",
+        "5/32",
+        "87/224",
+        "25/56"
+      ]
+    },
+    {
+      "x": 11,
+      "y": 45,
+      "residual": [
+        5,
+        7,
+        11,
+        45
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          45
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/352",
+        "7/720"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/352",
+        "1/180"
+      ],
+      "tree_bound": "1/210",
+      "actual_duration": "1/210",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "37/120"
+        ]
+      ],
+      "strict_witness": "257/840",
+      "witness_distances": [
+        "257/840",
+        "47/210",
+        "79/168",
+        "23/140",
+        "17/120",
+        "307/840",
+        "13/56"
+      ]
+    },
+    {
+      "x": 11,
+      "y": 46,
+      "residual": [
+        5,
+        7,
+        11,
+        46
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          46
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/352",
+        "7/736"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "1/352",
+        "31/5152"
+      ],
+      "tree_bound": "1/184",
+      "actual_duration": "1/184",
+      "tree_slack": "0",
+      "allowed_on_J": [
+        [
+          "113/368",
+          "5/16"
+        ]
+      ],
+      "strict_witness": "57/184",
+      "witness_distances": [
+        "57/184",
+        "11/46",
+        "83/184",
+        "13/92",
+        "31/184",
+        "75/184",
+        "1/4"
+      ]
+    },
+    {
+      "x": 19,
+      "y": 45,
+      "residual": [
+        5,
+        7,
+        19,
+        45
+      ],
+      "tree_edges": [
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          19
+        ],
+        [
+          7,
+          45
+        ]
+      ],
+      "single_durations": [
+        "0",
+        "5/224",
+        "1/304",
+        "7/720"
+      ],
+      "edge_overlap_durations": [
+        "0",
+        "0",
+        "1/180"
+      ],
+      "tree_bound": "47/31920",
+      "actual_duration": "1/210",
+      "tree_slack": "1/304",
+      "allowed_on_J": [
+        [
+          "17/56",
+          "37/120"
+        ]
+      ],
+      "strict_witness": "257/840",
+      "witness_distances": [
+        "257/840",
+        "47/210",
+        "79/168",
+        "23/140",
+        "17/120",
+        "157/840",
+        "13/56"
+      ]
+    }
+  ],
+  "primitive_correction_vertices": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1/8",
+      "3/32"
+    ],
+    [
+      "7/8",
+      "-3/32"
+    ],
+    [
+      "1",
+      "0"
+    ]
+  ],
+  "claim_status": "OBSERVED / REPRODUCED finite evidence; unbounded completeness and tail remain proof candidates."
+}

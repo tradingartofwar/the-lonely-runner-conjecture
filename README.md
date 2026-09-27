@@ -41,6 +41,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 27, 2026
 
+The [fixed-window containment classification](notes/FIXED_WINDOW_CONTAINMENT_2026_09_27.md) finds 30 distinct-speed replacements for 11 that preserve the exact tree on the selected opening. A two-coordinate integer-lattice certificate bounds the search by 84; the largest feasible replacement is 73. Separate exact implementations retain all endpoint contacts and check 35 local certificates. The supplied all-parameter argument gives the same positive bound for y>=29, while a countercontrol shows that containment is sufficient but not necessary for a successful tree.
+
 The [44/45/46 follow-up](notes/CORE_EXCHANGE_NEIGHBORS_2026_09_27.md) identifies why a core exchange works: one residual blocker disappears and another is contained in a third on the selected window. The resulting tree is exact, with a proposed uniform positive bound for the existing family's variable speed y>=29. Exact finite calculations and a separate reconstruction accompany the argument.
 
 The [all-core selection experiment](notes/ALL_CORE_SELECTION_2026_09_27.md) checks eleven named configurations at every reference. Every strict reference has a successful tree certificate somewhere. One core fails across all its windows but is repaired by a stronger inequality using the same pair data. This is a bounded result, independently reconstructed, with equality-only controls retained.

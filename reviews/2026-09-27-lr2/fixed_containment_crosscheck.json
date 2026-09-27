@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "independently_reconstructed_classifications": 85,
+  "lattice_points": 35,
+  "admissible_count": 30,
+  "largest_admissible": 73,
+  "admissible_endpoint_contacts": [
+    {
+      "x": 22,
+      "endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 38,
+      "endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 54,
+      "endpoints": [
+        "right"
+      ]
+    },
+    {
+      "x": 63,
+      "endpoints": [
+        "left"
+      ]
+    },
+    {
+      "x": 70,
+      "endpoints": [
+        "right"
+      ]
+    }
+  ],
+  "local_certificates_checked": 35,
+  "containment_failure_but_positive_tree": {
+    "x": 19,
+    "y": 45,
+    "tree_bound": "47/31920",
+    "actual_duration": "1/210",
+    "slack": "1/304"
+  },
+  "methods": [
+    "integer lattice enumeration",
+    "exact threshold vertices and cells",
+    "strict-set containment probes",
+    "interval intersections for moments"
+  ],
+  "scope_limit": "Finite replay plus checks of algebraic ingredients; no external proof certification."
+}
