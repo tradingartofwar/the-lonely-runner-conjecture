@@ -235,6 +235,8 @@ This answers the relational possibility precisely at the level supported by evid
 
 ### Priority 1: classify physical collisions in a deliberately small family
 
+**September 27 follow-up:** the proposed x=11 classification is completed in [RESIDUE_COLLISIONS_2026_09_27.md](RESIDUE_COLLISIONS_2026_09_27.md). Actual y=45/90 matches preserve all single/pair durations but change U by 1/720. The 266/532 control also preserves all blocker-pair gcds and changes U by 1/2128. A finite residue reduction gives an unbounded classification with 62 unequal-duration collision families. The older y<=80 result below is unchanged; 90 was outside that domain. All new matches have positive U, so the proposed x=3 complete-moment empty/contact test remains the next separate question.
+
 Keep the four matching pairs above as controls, including the now-explained duration sufficiency for x=2,8,21. Use x=11 as a next nontrivial anchor, where the original excluded-triangle example lives. With x fixed, each y-dependent moment is a constant leading term plus an endpoint-residue coefficient divided by y. The relevant rational endpoints permit a residue-based classification rather than a blind expansion of a speed scan.
 
 Ask whether identical single/pair data can give different U. For the separate zero-duration question, use the x=3 branch: before adding y its only allowed point is 3/8, and y removes that point exactly when 8 divides y. Test whether complete moment collisions can cross that residue distinction. Preserve role labels, core/window/threshold, and common start. Exclude whole-configuration scaling as an explanation.

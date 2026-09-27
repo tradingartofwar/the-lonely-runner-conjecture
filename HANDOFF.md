@@ -1,12 +1,26 @@
 # Lonely Runner — research handoff
 
-**Prepared:** September 25, 2026
+**Prepared:** September 27, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
-## Current resumption — LR 2, September 25
+## Current resumption — LR 2, September 27
+
+The first distinction-audit follow-up has a decisive physical result. Read [RESIDUE_COLLISIONS_2026_09_27.md](notes/RESIDUE_COLLISIONS_2026_09_27.md). In `{0,1,4,5,6,7,11,y}` on the same J, y=45 and y=90 have identical labelled single/pair blocking durations but U=1/210 and 31/5040. Their difference 1/720 is exactly the triple correction: T6,11,45=1/720 whereas every triple vanishes for y=90. Both retain isolated equality points. This closes the physical-realizability gap left by the abstract altered state distribution. Speed 90 is outside the older y<=80 scan, so the prior bounded result remains correct.
+
+The y=266/532 control also matches every pair gcd among the four extra blockers, yet U=13/2128 versus 1/152, a difference of 1/2128. Do not say all arithmetic data match: gcd with core speed 4 differs, as do reduced ratios. The failed summary is local single/pair durations, even augmented by blocker-pair repetition frequencies.
+
+The exact periodic endpoint formula reduces every positive integer y to 7392 residue rows. The proposed complete classification has 118 nonzero residue-pair collision families: 62 change U, 56 preserve it; 46 preserve blocker gcds, including eight that change U. A separate zero-vector class consists of all positive multiples of 3696, with U=3/448. The simplest families are y=45+7392m versus 2y, with difference 1/(16y), and y=266+7392m versus 2y, with difference 1/(8y). All actual matches have positive duration; this does not separate existence from nonexistence. Concrete cases and the table are exact OBSERVED evidence; the unbounded classification is a proof candidate pending independent review, with no novelty claim.
+
+Two equivalent one-scalar repairs recover U in this family: H=T6,11,y+T7,11,y, or y's blocked duration inside the simultaneous fixed-runner opening S=[17/56,5/16]. U=1/112-|B_y intersect S|. This is explicit configuration information. It does not recover isolated contacts or imply that arbitrary fixed-runner openings have small complexity.
+
+Reproduce with `python -B reviews/2026-09-27-lr2/check_residue_collisions.py --check` and `python -B reviews/2026-09-27-lr2/crosscheck_residue_controls.py --check`. The first archives all 118 families, coefficients' digest, eight physical controls, and the small equality checks. The existing safe-interval checker independently agrees on all 12 archived control/equality component lists. Source/dependency hashes are recorded. Older evidence remains unchanged; the draft branch remains unmerged.
+
+**Next:** test the separate empty-versus-contact question in the x=3 branch, whose fixed opening is only {3/8}. Can complete joint-duration matches cross the y mod 8 condition that removes this point? A finite residue classification can establish either outcome. The optional 16-state constraint-value investigation now has physical controls. Do not repeat a wider speed scan to establish duration-summary insufficiency, and keep the +7/+9 family extension parked.
+
+## Previous resumption — LR 2, September 25
 
 Vance changed the immediate objective to a **distinction audit**, pausing the proposed +7/+9 family extension. Start with [DISTINCTION_AUDIT_2026_09_25.md](notes/DISTINCTION_AUDIT_2026_09_25.md). In the existing 2775-input x/y domain, four physical pairs share every single/pair duration; three also share every higher joint duration, yet their allowed components differ. The 2/25 and 2/75 pair changes three intervals into four plus the isolated point 3/8. All four matches have equal positive duration; no physical same-pair-data/different-duration or different-existence example was found in this domain. The earlier zero-clear alteration remains an abstract event model.
 
