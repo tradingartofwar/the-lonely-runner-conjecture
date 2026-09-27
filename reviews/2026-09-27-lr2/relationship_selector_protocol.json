@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "6c66a3d7727b6ff3ce03d46d58faee86ebac52b5",
+  "date": "2026-09-27",
+  "status": "Protocol written before the new maps and selector outcomes are calculated. Existing controls informed the design; this is not a held-out or externally preregistered study.",
+  "reference": 0,
+  "total_runners": 8,
+  "threshold": "1/8",
+  "fixed_speeds": [1, 4, 5, 6, 7],
+  "cases": [
+    {"id": "tight_11_13", "x": 11, "y": 13},
+    {"id": "containment_11_44", "x": 11, "y": 44},
+    {"id": "containment_11_45", "x": 11, "y": 45},
+    {"id": "containment_11_46", "x": 11, "y": 46},
+    {"id": "no_containment_19_45", "x": 19, "y": 45}
+  ],
+  "cores": [[1, 5, 6], [1, 4, 6]],
+  "windows": "Every complete closed core-safe component in [0,1], including any singleton; no selected subintervals or additional cores.",
+  "residual_roles": ["the remaining fixed speed 4 or 5", "7", "x", "y"],
+  "relationship_map": {
+    "edges": "Ordered pairs (i,j) mean strict blocking set B_i intersect W is contained in B_j intersect W. Self edges omitted. Equivalently j safe implies i safe. Check event vertices as well as open cells.",
+    "vanished": "All roles with empty strict blocking set on the closed W.",
+    "retained": "Keep one smallest-index representative from each inclusion-maximal nonempty equivalence class; discard other roles. Their union must equal the original union pointwise.",
+    "ae_diagnostic": "Separately record measure-only containments D_i=O_ij; never silently substitute them for the pointwise map."
+  },
+  "selectors": {
+    "G": "Rank all positive-length candidate windows by increasing retained count, decreasing window length, lexicographic numerical core tuple, then increasing left endpoint. Choose the first window without using moments or actual allowed times. Evaluate its reduced-tree certificate afterward.",
+    "Q": "Compute reduced-tree bound on every positive-length window. Rank by decreasing bound, then the same tie-breakers as G. Use retained single and pair durations only; no actual uncovered duration or allowed-set information enters selection.",
+    "reduced_tree_bound": "If r=0 use L. Otherwise use L minus retained single durations plus maximum spanning tree overlap weight (zero tree sum for r=1). Exhaust finite labelled trees exactly.",
+    "contact_fallback": "If Q has no positive bound, test the sorted distinct endpoints of all complete core components directly against all seven moving speeds. Report contact/strict witness if found; otherwise inconclusive. Never equate a nonpositive duration bound with absence of lonely time."
+  },
+  "benchmarks": [
+    "Compare reduced and unreduced maximum-tree bounds.",
+    "Reconstruct the exact full allowed set and local allowed sets only as verification targets.",
+    "Every claimed witness must pass direct substitution into all seven original constraints at the unchanged threshold."
+  ],
+  "matched_summaries": {
+    "comparison_scope": "Same numerical core, same exact window, same corresponding residual roles across different cases. Numeric x,y remain source inputs but are deliberately omitted from the summary being tested.",
+    "levels": ["pointwise map plus vanished roles", "that map plus every single duration", "that map plus every single and pair duration"],
+    "differences_to_record": ["actual clear duration", "empty versus nonempty allowed set", "isolated contacts versus positive-length components", "complete allowed-set placement"]
+  },
+  "required_countercontrol": "x=19,y=45: lack of the specific B_x subset B_7 containment is not failure of a positive tree.",
+  "success_and_failure": "Return a bounded working selection rule with explicit inputs and costs, or an exact failure identifying missing information. Qualitative simplicity is not presumed to imply success. No speed-uniform efficiency or arbitrary-configuration theorem follows from this batch.",
+  "verification": "A separately structured exact implementation must reconstruct maps, removals, moments, tree optima, choices, contacts and matched-summary claims. No changes to prior checkers or broad regression rerun."
+}

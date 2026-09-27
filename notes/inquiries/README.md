@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | Initial reflection, six-part explanation, and the proposed map of runner relationships. Preserves equivalence versus one-way implication versus observed overlap, and unobserved versus omitted versus unrecognized information. The relationship-map experiment remains unrun; discussion is on idea 2. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. The first relationship-map experiment is complete: maps simplify constraints but can miss local existence; quantitative selection succeeds on the bounded controls. Includes the source result and the limits of transfer. |
 
 ## How to continue this collection
 

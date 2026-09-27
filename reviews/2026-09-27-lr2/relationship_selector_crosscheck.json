@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "0e2d4a37dcd2c0276ca8d7dd68938d1bfe7bdbf1a32012a19a8ac15e39ae7dfb",
+  "summary": {
+    "configurations": 5,
+    "windows": 80,
+    "positive_actual_windows": 30,
+    "positive_tree_windows": 16,
+    "reduced_count_histogram": {
+      "0": 0,
+      "1": 40,
+      "2": 10,
+      "3": 2,
+      "4": 28
+    },
+    "reduced_moment_count": 362,
+    "unreduced_moment_count": 800,
+    "pointwise_ae_map_disagreements": 0,
+    "G_positive_cases": 0,
+    "Q_positive_cases": 4,
+    "Q_endpoint_fallback_cases": 1,
+    "matches": {
+      "map": {
+        "different_duration": 8,
+        "different_existence": 6,
+        "different_status": 8,
+        "different_allowed_set": 8,
+        "groups": 16
+      },
+      "map_singles": {
+        "different_duration": 0,
+        "different_existence": 0,
+        "different_status": 0,
+        "different_allowed_set": 0,
+        "groups": 4
+      },
+      "map_singles_pairs": {
+        "different_duration": 0,
+        "different_existence": 0,
+        "different_status": 0,
+        "different_allowed_set": 0,
+        "groups": 4
+      }
+    }
+  },
+  "methods": [
+    "strict interval intersections with endpoint flags",
+    "all-subset intersections and Boolean inversion",
+    "exhaustive minimal dominating representative subsets",
+    "Kruskal maximum trees",
+    "threshold vertices and cells for complete allowed sets",
+    "direct pairwise summary matching"
+  ],
+  "limits": "Five named configurations at reference 0 and two specified cores. No original checker or primary script imported. No general correctness or efficiency claim for selection."
+}

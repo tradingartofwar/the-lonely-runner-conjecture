@@ -235,3 +235,19 @@ The focused question is:
 This turns the broader proposal to learn the runners' relationships into a testable objective. A possible deeper explanation would identify which apparent obstacles add restrictions and which are already accounted for by the surrounding configuration. Whether this yields a reliable selection method remains open.
 
 This proposal connects directly to the pending selector experiment in [FIXED_WINDOW_CONTAINMENT_2026_09_27.md](../FIXED_WINDOW_CONTAINMENT_2026_09_27.md). The discussion remains on the second of the six ideas; the third has not yet been discussed individually.
+
+## Subsequent discussion and the first test of the relationship map
+
+September 27, 2026. The individual discussion of all six ideas was completed. Vance noted that something previously invisible might seem familiar or obvious after we see it. The resulting distinction was between knowing a general principle, recognizing where it applies, and establishing its applicability with boundaries and exceptions checked. Discovering a relationship can require much more work than understanding it once stated. Familiarity after discovery does not measure either the difficulty of finding it or its importance.
+
+We also clarified the project's status: verified specific cases and restricted-family proof candidates do not establish a percentage of completion of Lonely Runner. A general guarantee for arbitrary required configurations and external novelty assessment remain missing. The six interpretations do not change that status.
+
+Vance then authorized the proposed experiment. [RELATIONSHIP_SELECTOR_2026_09_27.md](../RELATIONSHIP_SELECTOR_2026_09_27.md) records its protocol, exact evidence, independent reconstruction, and scope. Five existing configurations, two cores, and 80 complete windows were examined. The earlier statements that the experiment was unrun are historical.
+
+Three findings now sharpen the inquiry:
+
+1. **A relationship map can preserve a simplification while losing the answer to another question.** On the same J, the y=13 and y=45 configurations at x=11 have the same nontrivial containment map. One J is empty; the other has positive lonely duration. Quantities describing the remaining blocking separate them.
+2. **Fewer remaining obstacles does not guarantee a better place to look.** The frozen qualitative rule chooses one residual blocker that covers its entire selected window in every case. The quantitative rule finds a strict certificate in all four strict cases, with a separate equality fallback for the tight input. This is a bounded observation, not a general selection theorem.
+3. **Failure to find one relationship does not establish absence of every useful relationship.** The x=19,y=45 control lacks the earlier B19 subset B7 containment, but the fuller map reveals B19 subset B45. Using that relationship makes the tree exact on J.
+
+The central lesson is now testable and qualified: relationships tell us which requirements are redundant; the remaining coverage still determines whether an opening survives. All five complete inputs already had a simple valid time, so this test contributes explanation and certificate selection rather than new existence coverage. The next proposed transfer, to the existing speed-16 control without retuning the quantitative rule, has not been run.
