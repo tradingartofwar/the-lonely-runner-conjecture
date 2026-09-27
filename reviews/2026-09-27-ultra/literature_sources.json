@@ -1,0 +1,92 @@
+{
+  "review_date": "2026-09-27",
+  "baseline": "e94a87f650264826569cae63412c43a5175f5ae4",
+  "scope": "Focused primary-source mechanism search; no full-paper or computational-proof audit; no novelty conclusion",
+  "sources": [
+    {
+      "id": "L1",
+      "title": "Lonely Runner Polyhedra",
+      "authors": ["Matthias Beck", "Serkan Hosten", "Matthias Schymura"],
+      "version_date": "Published 2019-06-03, Integers 19 A29",
+      "url": "https://math.colgate.edu/~integers/t29/t29.pdf",
+      "web_refs": ["turn15view2"],
+      "read": "Section 2, printed pp.2-4, equation (5), Proposition 1",
+      "verification": "Elementary closed-cube/polyhedron equivalence checked; other proofs not audited"
+    },
+    {
+      "id": "L2",
+      "title": "Coloopless zonotopes and counterexamples to the Shifted Lonely Runner Conjecture",
+      "authors": ["Monica Blanco", "Francisco Criado", "Francisco Santos"],
+      "version_date": "arXiv:2603.24784v2, 2026-04-27",
+      "url": "https://arxiv.org/html/2603.24784v2",
+      "web_refs": ["turn13view1", "turn16view5"],
+      "read": "Abstract; Section 1 definitions, Lemma1.4, Proposition1.7, Proposition1.11, Corollary1.14; Sections2.1-2.2 definitions",
+      "verification": "Statements and elementary distance identity inspected; no full-paper proof audit"
+    },
+    {
+      "id": "L3",
+      "title": "Linearly exponential checking is enough for the lonely runner conjecture and some of its variants",
+      "authors": ["Romanos Diogenes Malikiosis", "Francisco Santos", "Matthias Schymura"],
+      "version_date": "Published 2025-10-01, Forum of Mathematics Sigma 13 e164",
+      "url": "https://doi.org/10.1017/fms.2025.10107",
+      "retrieval_url": "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/linearly-exponential-checking-is-enough-for-the-lonely-runner-conjecture-and-some-of-its-variants/A51A991DE89B8C9C2E2FF13FBD4501DA",
+      "web_refs": ["turn21view0", "turn22view0"],
+      "read": "Section1.2 construction, Section2.1 Corollary2.3 and displayed proof",
+      "verification": "Construction and lattice-point formula inspected; full finite reduction not audited"
+    },
+    {
+      "id": "L4",
+      "title": "Relative Lonely Runner spectra",
+      "authors": ["Vanshika Jain", "Noah Kravitz"],
+      "version_date": "arXiv:2411.12684v2, 2024-12-09; published Combinatorial Theory 6(1), 2026, paper1",
+      "url": "https://arxiv.org/html/2411.12684v2",
+      "web_refs": ["turn15view3", "turn17view0", "turn17view1", "turn20view2"],
+      "read": "Sections1.1-1.2, Section2.3 Lemmas2.4-2.5 and proofs, Proposition2.6 statement, Section7 opening and Proposition7.1 statement",
+      "verification": "Relevant proof mechanisms read, no full independent paper audit"
+    },
+    {
+      "id": "L5",
+      "title": "Barely lonely runners and very lonely runners: a refined approach to the Lonely Runner Problem",
+      "authors": ["Noah Kravitz"],
+      "version_date": "Published 2021-12-15, Combinatorial Theory1 paper17",
+      "url": "https://escholarship.org/content/qt3wx931fh/qt3wx931fh.pdf",
+      "web_refs": ["turn16view0", "turn17view4"],
+      "read": "Section2 Proposition2.1 and adjacent discussion pp4-5; Section3 opening and Theorem3.1 proof pp5-6",
+      "verification": "Relevant statements/elementary argument read; no full audit"
+    },
+    {
+      "id": "L6",
+      "title": "Fourteen and fifteen lonely runners",
+      "authors": ["Jaan Allikvere"],
+      "version_date": "arXiv:2609.02604v2, 2026-09-24 11:58:42 UTC",
+      "url": "https://arxiv.org/abs/2609.02604v2",
+      "html_url": "https://arxiv.org/html/2609.02604v2",
+      "web_refs": ["turn15view0", "turn16view1", "turn17view2", "turn20view3", "turn19view0"],
+      "read": "Current abstract, version history, Section1 Theorem1.1; Section2 Definition2.1 and Lemma2.2 argument; Section4.1 statement",
+      "verification": "Current preprint claim/version checked; code/certificates, full proof and peer-review status not audited"
+    },
+    {
+      "id": "L7",
+      "title": "Odd denominators in the Lonely Runner spectrum for six speeds",
+      "authors": ["Francesco Cordella"],
+      "version_date": "arXiv:2609.03444, 2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03444",
+      "web_refs": ["turn18academia46"],
+      "failed_web_refs": ["turn20view0", "turn20view1"],
+      "read": "Primary abstract returned by search; direct versioned pages failed",
+      "verification": "Lead only; no theorem proof checked"
+    }
+  ],
+  "bounded_experiment": {
+    "family": "(1,3,4,5,10,28,1680h), h=1,2,3,4",
+    "J": ["9/32", "3/8"],
+    "method": "Exact pair-sum maxima candidates plus J endpoints; separately exact feasible_intervals at threshold1/8-1/1000000",
+    "results": [
+      {"h":1, "maximum":"1/8", "witness":"9/32", "relaxed_duration":"1/28000000"},
+      {"h":2, "maximum":"140/1121", "witness":"1261/3363", "relaxed_duration":"0"},
+      {"h":3, "maximum":"1/8", "witness":"9/32", "relaxed_duration":"1/28000000"},
+      {"h":4, "maximum":"280/2241", "witness":"2521/6723", "relaxed_duration":"0"}
+    ],
+    "status": "OBSERVED four-case check; unbounded formula remains a falsifiable candidate"
+  }
+}

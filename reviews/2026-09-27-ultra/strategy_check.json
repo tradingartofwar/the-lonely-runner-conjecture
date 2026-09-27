@@ -1,0 +1,178 @@
+{
+  "baseline": "e94a87f650264826569cae63412c43a5175f5ae4",
+  "scope": "Finite exact controls plus separately written analytic arguments",
+  "sha256": {
+    "reviews/2026-09-27-ultra/strategy_check.py": "00f726e3d381bdaa24bfde23a21bd5ae1764a127ad2ea31cc87bab77cfc8ab22",
+    "lonely_runner/checker.py": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971"
+  },
+  "adaptive_global_witnesses": [
+    {
+      "h": 1,
+      "y": 1680,
+      "witness": "577/3360",
+      "minimum": "95/672",
+      "lower_bound": "127/960"
+    },
+    {
+      "h": 2,
+      "y": 3360,
+      "witness": "11/64",
+      "minimum": "9/64",
+      "lower_bound": "131/960"
+    },
+    {
+      "h": 3,
+      "y": 5040,
+      "witness": "1733/10080",
+      "minimum": "283/2016",
+      "lower_bound": "397/2880"
+    },
+    {
+      "h": 4,
+      "y": 6720,
+      "witness": "2311/13440",
+      "minimum": "377/2688",
+      "lower_bound": "133/960"
+    },
+    {
+      "h": 5,
+      "y": 8400,
+      "witness": "2887/16800",
+      "minimum": "473/3360",
+      "lower_bound": "667/4800"
+    },
+    {
+      "h": 10,
+      "y": 16800,
+      "witness": "11/64",
+      "minimum": "9/64",
+      "lower_bound": "671/4800"
+    },
+    {
+      "h": 100,
+      "y": 168000,
+      "witness": "57751/336000",
+      "minimum": "9449/67200",
+      "lower_bound": "3373/24000"
+    },
+    {
+      "h": 1000000000000,
+      "y": 1680000000000000,
+      "witness": "577500000000001/3360000000000000",
+      "minimum": "94499999999999/672000000000000",
+      "lower_bound": "16874999999999/120000000000000"
+    }
+  ],
+  "fixed_menu": {
+    "times": [
+      "9/32",
+      "3/8",
+      "11/64"
+    ],
+    "killer_speed": 6720
+  },
+  "rational_perturbations": [
+    {
+      "N": 1,
+      "speed": "3",
+      "half_lap_witness": "1/2",
+      "maximum": "1/2",
+      "necessary_time_for_gap_2_5": "1/15"
+    },
+    {
+      "N": 3,
+      "speed": "7/3",
+      "half_lap_witness": "3/2",
+      "maximum": "1/2",
+      "necessary_time_for_gap_2_5": "1/5"
+    },
+    {
+      "N": 5,
+      "speed": "11/5",
+      "half_lap_witness": "5/2",
+      "maximum": "1/2",
+      "necessary_time_for_gap_2_5": "1/3"
+    },
+    {
+      "N": 11,
+      "speed": "23/11",
+      "half_lap_witness": "11/2",
+      "maximum": "1/2",
+      "necessary_time_for_gap_2_5": "11/15"
+    },
+    {
+      "N": 101,
+      "speed": "203/101",
+      "half_lap_witness": "101/2",
+      "maximum": "1/2",
+      "necessary_time_for_gap_2_5": "101/15"
+    }
+  ],
+  "limiting_maximum": "1/3",
+  "reference_change": [
+    {
+      "reference": 0,
+      "maximum": "1/3",
+      "constraint_speeds": [
+        1,
+        2
+      ],
+      "threshold": "1/3"
+    },
+    {
+      "reference": 1,
+      "maximum": "1/2",
+      "constraint_speeds": [
+        1
+      ],
+      "threshold": "1/3"
+    },
+    {
+      "reference": 2,
+      "maximum": "1/3",
+      "constraint_speeds": [
+        1,
+        2
+      ],
+      "threshold": "1/3"
+    }
+  ],
+  "coefficient_diagonal": [
+    {
+      "q": 8,
+      "offsets": [
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "A": 4,
+      "satisfies_q_greater_than_2A": false
+    },
+    {
+      "q": 100,
+      "offsets": [
+        -96,
+        -95,
+        -94,
+        -93
+      ],
+      "A": 96,
+      "satisfies_q_greater_than_2A": false
+    },
+    {
+      "q": 1000000000000,
+      "offsets": [
+        -999999999996,
+        -999999999995,
+        -999999999994,
+        -999999999993
+      ],
+      "A": 999999999996,
+      "satisfies_q_greater_than_2A": false
+    }
+  ],
+  "diagonal_maximum": "1/8",
+  "short_relation_budget": 17,
+  "slow_relation_cancellation_bound": 448
+}

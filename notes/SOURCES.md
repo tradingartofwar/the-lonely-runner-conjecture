@@ -192,6 +192,25 @@ Chun-Hung Liu, *Lecture notes for Mar 25, 2024: Chordal graphs*, Texas A&M Unive
 
 Inspected the interval-graph definition and adjacent discussion on printed page 4, September 25, 2026. This identifies standard intersection-graph terminology and the interval/chordal connection. LAP_LABELLED_CONSTRAINTS.md supplies its own elementary maximum-overlap forest argument; that identity is not attributed to these lecture notes. Our edges require positive overlap duration, with equality endpoints checked separately; the lecture's definition uses intersecting closed intervals. No historical novelty search or full-note proof audit is claimed.
 
+## September 27 Ultra reading update
+
+The [focused literature report](../reviews/2026-09-27-ultra/literature.md) and [source archive](../reviews/2026-09-27-ultra/literature_sources.json) record precise versions, sections, retrieval limits, and seven primary-source entries. These are targeted readings, not full-paper audits or an exhaustive novelty search.
+
+- S10: inspected Section 2, equation (5), Proposition 1. Our time-window restriction keeps the closed integer-point fiber; the restriction is our direct adaptation.
+- S5: inspected central minimum versus shifted covering radius, especially Proposition 1.7; do not substitute the shifted target for common-start loneliness.
+- S16: read Lemmas 2.4–2.5 and proofs, Proposition 2.6 statement, and Section 7's opening/Proposition 7.1 statement. Rational contacts, one-sided slopes, and residue errors motivate the local threshold-profile calculation. Its local family formula is derived in the review, not attributed verbatim to this paper.
+- S15: revisited Proposition 2.1 and the adjacent pair-sum candidate discussion; read Section 3's opening and Theorem 3.1 proof. These are precedents for opposing contacts and fast runners removing equality times.
+- S7: primary record reopened September 27; arXiv:2609.02604v2 remains dated September 24, titled *Fourteen and fifteen lonely runners*. Read Section 2's grid-witness definition and short prime-divisibility argument, plus Section 4.1's covering-search statement. Full proof, implementation, and certificate archive were not audited.
+- S6: primary abstract appeared in current search; direct versioned pages failed. It remains a lead, not a proof-checked classification.
+
+## S21 — Zonotope arithmetic and finite reduction
+
+Romanos Diogenes Malikiosis, Francisco Santos, Matthias Schymura, *Linearly exponential checking is enough for the lonely runner conjecture and some of its variants*, Forum of Mathematics, Sigma 13 (2025), e164, published online October 1, 2025.
+
+[Publisher / DOI](https://doi.org/10.1017/fms.2025.10107).
+
+Inspected Section 1.2's LR-zonotope construction and Section 2.1, Corollary 2.3 and its displayed argument, September 27. The lattice-point formula includes singleton-speed terms. Our 1680/3360 pair therefore does not match this invariant even though all nonsingleton subset gcds agree; the formula's counts differ by 1680. This is a deduction from the formula, not a separately enumerated zonotope census. The paper's full finite-reduction proof was not audited.
+
 ## Source discipline
 
 Record exactly what was read, what a paper claims, and what we independently checked. Prior assistant recommendations are motivation, not sources. Finding a preprint is not validating its proof; reproducing a toy case is not reproducing its full computation. Cite original results when developing an argument, and check corrections or newer versions before relying on a research frontier.

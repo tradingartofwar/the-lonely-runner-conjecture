@@ -1,0 +1,300 @@
+{
+  "baseline_commit": "e94a87f650264826569cae63412c43a5175f5ae4",
+  "fixed_speeds": [
+    1,
+    3,
+    4,
+    5,
+    10,
+    28
+  ],
+  "fixed_allowed_set": [
+    [
+      "1/8",
+      "31/224"
+    ],
+    [
+      "33/224",
+      "39/224"
+    ],
+    [
+      "9/32",
+      "9/32"
+    ],
+    [
+      "3/8",
+      "3/8"
+    ],
+    [
+      "97/224",
+      "103/224"
+    ],
+    [
+      "15/32",
+      "15/32"
+    ],
+    [
+      "17/32",
+      "17/32"
+    ],
+    [
+      "121/224",
+      "127/224"
+    ],
+    [
+      "5/8",
+      "5/8"
+    ],
+    [
+      "23/32",
+      "23/32"
+    ],
+    [
+      "185/224",
+      "191/224"
+    ],
+    [
+      "193/224",
+      "7/8"
+    ]
+  ],
+  "fixed_allowed_duration": "15/112",
+  "window": [
+    "9/32",
+    "3/8"
+  ],
+  "threshold": "1/8",
+  "cases": [
+    {
+      "h": 1,
+      "y": 1680,
+      "global_duration": "45/448",
+      "global_positive_components": 230,
+      "global_isolated_components": 4,
+      "local_maximum": "1/8",
+      "local_maximizer": "9/32",
+      "threshold_profile": [
+        {
+          "epsilon": "0",
+          "threshold": "1/8",
+          "components": [
+            [
+              "9/32",
+              "9/32"
+            ]
+          ],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/8976",
+          "threshold": "1121/8976",
+          "components": [
+            [
+              "9/32",
+              "70687/251328"
+            ]
+          ],
+          "duration": "1/251328"
+        },
+        {
+          "epsilon": "1/4488",
+          "threshold": "70/561",
+          "components": [
+            [
+              "9/32",
+              "2209/7854"
+            ],
+            [
+              "631/1683",
+              "631/1683"
+            ]
+          ],
+          "duration": "1/125664"
+        },
+        {
+          "epsilon": "1/2244",
+          "threshold": "559/4488",
+          "components": [
+            [
+              "9/32",
+              "35345/125664"
+            ],
+            [
+              "5047/13464",
+              "2826881/7539840"
+            ]
+          ],
+          "duration": "227/2513280"
+        }
+      ],
+      "adaptive_global_witness": "577/3360",
+      "actual_witness_margin": "11/672",
+      "certified_margin": "7/960"
+    },
+    {
+      "h": 2,
+      "y": 3360,
+      "global_duration": "45/448",
+      "global_positive_components": 450,
+      "global_isolated_components": 0,
+      "local_maximum": "140/1121",
+      "local_maximizer": "1261/3363",
+      "threshold_profile": [
+        {
+          "epsilon": "0",
+          "threshold": "1/8",
+          "components": [],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/17936",
+          "threshold": "2241/17936",
+          "components": [],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/8968",
+          "threshold": "140/1121",
+          "components": [
+            [
+              "1261/3363",
+              "1261/3363"
+            ]
+          ],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/4484",
+          "threshold": "1119/8968",
+          "components": [
+            [
+              "10087/26904",
+              "3766187/10044160"
+            ]
+          ],
+          "duration": "1/26880"
+        }
+      ],
+      "adaptive_global_witness": "11/64",
+      "actual_witness_margin": "1/64",
+      "certified_margin": "11/960"
+    },
+    {
+      "h": 3,
+      "y": 5040,
+      "global_duration": "45/448",
+      "global_positive_components": 680,
+      "global_isolated_components": 4,
+      "local_maximum": "1/8",
+      "local_maximizer": "9/32",
+      "threshold_profile": [
+        {
+          "epsilon": "0",
+          "threshold": "1/8",
+          "components": [
+            [
+              "9/32",
+              "9/32"
+            ]
+          ],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/26896",
+          "threshold": "3361/26896",
+          "components": [
+            [
+              "9/32",
+              "211807/753088"
+            ]
+          ],
+          "duration": "1/753088"
+        },
+        {
+          "epsilon": "1/13448",
+          "threshold": "210/1681",
+          "components": [
+            [
+              "9/32",
+              "6619/23534"
+            ],
+            [
+              "1891/5043",
+              "1891/5043"
+            ]
+          ],
+          "duration": "1/376544"
+        },
+        {
+          "epsilon": "1/6724",
+          "threshold": "1679/13448",
+          "components": [
+            [
+              "9/32",
+              "105905/376544"
+            ],
+            [
+              "15127/40344",
+              "25415041/67777920"
+            ]
+          ],
+          "duration": "2041/67777920"
+        }
+      ],
+      "adaptive_global_witness": "1733/10080",
+      "actual_witness_margin": "31/2016",
+      "certified_margin": "37/2880"
+    },
+    {
+      "h": 4,
+      "y": 6720,
+      "global_duration": "45/448",
+      "global_positive_components": 900,
+      "global_isolated_components": 0,
+      "local_maximum": "280/2241",
+      "local_maximizer": "2521/6723",
+      "threshold_profile": [
+        {
+          "epsilon": "0",
+          "threshold": "1/8",
+          "components": [],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/35856",
+          "threshold": "4481/35856",
+          "components": [],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/17928",
+          "threshold": "280/2241",
+          "components": [
+            [
+              "2521/6723",
+              "2521/6723"
+            ]
+          ],
+          "duration": "0"
+        },
+        {
+          "epsilon": "1/8964",
+          "threshold": "2239/17928",
+          "components": [
+            [
+              "20167/53784",
+              "45176321/120476160"
+            ]
+          ],
+          "duration": "1/53760"
+        }
+      ],
+      "adaptive_global_witness": "2311/13440",
+      "actual_witness_margin": "41/2688",
+      "certified_margin": "13/960"
+    }
+  ],
+  "scope": "Four exact checker controls. The accompanying synthesis gives the all-h proof, rather than extrapolating these cases.",
+  "source_sha256": "21cf1f5ae6b98c185d41180554a9deba4e533dde4fc856b9d2d2fcf78598dcc9",
+  "checker_sha256": "ba240664c273d254d0ab8d2da053dc1248dd0b0a88cd5f1c4ed35a3f6c579971"
+}

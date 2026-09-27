@@ -39,7 +39,9 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [notes/SOURCES.md](notes/SOURCES.md) | Dated literature starting points and verification limits |
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
-## Current state — September 24, 2026
+## Current state — September 27, 2026
+
+The [September 27 Ultra review](notes/ULTRA_REVIEW_2026_09_27.md) assesses the distinction audit through six separate mathematical and literature scopes. It preserves exact examples of information lost by overlap summaries, a conditional contact selector, and threshold-response and global-witness deductions. Its unbounded implications remain proof candidates; the next question is how to select a useful certificate for a configuration.
 
 The repository contains:
 

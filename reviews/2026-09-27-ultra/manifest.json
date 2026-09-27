@@ -1,0 +1,141 @@
+{
+  "baseline_commit": "e94a87f650264826569cae63412c43a5175f5ae4",
+  "baseline_tree": "35972f1b0b37a90bb3162947438f70ee4b67243d",
+  "review_date": "2026-09-27",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "pull_request": 3,
+  "reviewers": [
+    "arithmetic",
+    "geometry",
+    "optimization",
+    "rigor",
+    "literature",
+    "strategy"
+  ],
+  "provenance": "Six fresh-context GPT-6 Astra Ultra assignments, plus coordinating synthesis. AI-assisted evidence, not external certification.",
+  "verification": {
+    "command": "python -B reviews/2026-09-27-ultra/verify.py",
+    "status": "PASS",
+    "groups": [
+      "arithmetic",
+      "geometry",
+      "optimization",
+      "rigor",
+      "strategy",
+      "root"
+    ],
+    "archives_rewritten": false,
+    "scope": "Bounded exact evidence and archived certificates; unbounded proofs and literature not mechanically certified."
+  },
+  "input_hash_note": "rigor_check.json input_sha256 records the reviewed baseline; updated governance files intentionally have different publication hashes below.",
+  "files": {
+    "HANDOFF.md": {
+      "sha256": "0fcc8c87c99b8c4d553c325019ea7b788457b6ea80aaf7f5c254dde2f251175f",
+      "bytes": 126965
+    },
+    "LR2_HANDOFF.md": {
+      "sha256": "35139418f4be06ed6a61955c889208d4ac2a9c94b661ec956c0b17fd60e4aec9",
+      "bytes": 33144
+    },
+    "README.md": {
+      "sha256": "7252cf1ca70a8db6248c8b0cb690de8e843c2e129673e16b970b73dbc80197c1",
+      "bytes": 6293
+    },
+    "notes/SOURCES.md": {
+      "sha256": "47ab9e967213f323f99f2c85aa0ab15bf8252ea6e9a0ea2931085d332cc161ad",
+      "bytes": 21992
+    },
+    "notes/ULTRA_REVIEW_2026_09_27.md": {
+      "sha256": "63288a6305f500ebf863fc3a89af02f56617d0fe068da7482ddefa8a8e1ef85b",
+      "bytes": 23280
+    },
+    "reviews/2026-09-27-ultra/arithmetic.md": {
+      "sha256": "1ad60aa09edbf14f996272d15664fecaba13dbbb9bcaca5986cf03bffee4e32f",
+      "bytes": 15923
+    },
+    "reviews/2026-09-27-ultra/arithmetic_check.json": {
+      "sha256": "3f9483633c4eb2e2527160f06fc57c47995bb056023414da75bd9b9fb3bdcbe0",
+      "bytes": 12645
+    },
+    "reviews/2026-09-27-ultra/arithmetic_check.py": {
+      "sha256": "e553b7b6860163ace382618fbd35b4e96544d0298a5d5ff5eed0fce0b6523a4a",
+      "bytes": 5946
+    },
+    "reviews/2026-09-27-ultra/geometry.md": {
+      "sha256": "680fd6c3efbefec94319b8560de4f814f9175092660b93281d2eddacda7b36d9",
+      "bytes": 15122
+    },
+    "reviews/2026-09-27-ultra/geometry_check.json": {
+      "sha256": "5a6408bd58e49f5a18a3b36473a9338704ea86436a6e9720803bc9f97a06be6d",
+      "bytes": 21281
+    },
+    "reviews/2026-09-27-ultra/geometry_check.py": {
+      "sha256": "98c68949588fa65e9736f27c7a0a4f1dd1d79f3034240c55a33fef0669f918ee",
+      "bytes": 7843
+    },
+    "reviews/2026-09-27-ultra/literature.md": {
+      "sha256": "076d6e2408b8782025cbf296ce5d916e0f11bf3c1a6fa3c2174f893237a96773",
+      "bytes": 14668
+    },
+    "reviews/2026-09-27-ultra/literature_sources.json": {
+      "sha256": "911bd9a51200774c577292a92df911b6f9d684a98d09e6f2210daca0fe284bdd",
+      "bytes": 5200
+    },
+    "reviews/2026-09-27-ultra/optimization.json": {
+      "sha256": "7ec531517ad6a9cf395929cbba6ecdf598dedc0b74b661cf606f4ddd99487abe",
+      "bytes": 247334
+    },
+    "reviews/2026-09-27-ultra/optimization.md": {
+      "sha256": "4eefbb7f9dee9bb66bf94379fa1a339de7aa47e9b3f2a23edc05c236c9997cc9",
+      "bytes": 12778
+    },
+    "reviews/2026-09-27-ultra/optimization_check.py": {
+      "sha256": "b0861e39a1085ad8f78698edbaf3a8f1e5b928f6e0153465dbe440f5e42dcc4f",
+      "bytes": 10114
+    },
+    "reviews/2026-09-27-ultra/rigor.md": {
+      "sha256": "7eb611e3efd56d1e4afa3261a03765be4fa27c9bb58c5018ac21bc079e7941bf",
+      "bytes": 15246
+    },
+    "reviews/2026-09-27-ultra/rigor_check.json": {
+      "sha256": "659f387c9d6b5eaa85d88684d37e5605e3574d91ac01a193679b6529eb3acea1",
+      "bytes": 46557
+    },
+    "reviews/2026-09-27-ultra/rigor_check.py": {
+      "sha256": "adc168fa276994b181c95ac7bec40ace06db72e9afb3ddd5663ba60230a6bff2",
+      "bytes": 13653
+    },
+    "reviews/2026-09-27-ultra/root_check.py": {
+      "sha256": "21cf1f5ae6b98c185d41180554a9deba4e533dde4fc856b9d2d2fcf78598dcc9",
+      "bytes": 3575
+    },
+    "reviews/2026-09-27-ultra/root_checks.json": {
+      "sha256": "289c86942fc2f5d20a57e6f3be3ee4a81e2e9a1cff7c4b3d26cae37de3db5861",
+      "bytes": 6362
+    },
+    "reviews/2026-09-27-ultra/strategy.md": {
+      "sha256": "2c2fb87988b9aea24e0ff4454831db17f8f95945e16e4800a79dc375b955da57",
+      "bytes": 15645
+    },
+    "reviews/2026-09-27-ultra/strategy_check.json": {
+      "sha256": "3875417719bd0aa8d7b596a473571ac19ff5557a7b5cf24032d6d2f24882b6ee",
+      "bytes": 3641
+    },
+    "reviews/2026-09-27-ultra/strategy_check.py": {
+      "sha256": "00f726e3d381bdaa24bfde23a21bd5ae1764a127ad2ea31cc87bab77cfc8ab22",
+      "bytes": 4334
+    },
+    "reviews/2026-09-27-ultra/verify.py": {
+      "sha256": "d8e621e02a0f64cc295c60168f93097e9a55e3b25f77f5e8b2b1a4718ab72600",
+      "bytes": 2449
+    }
+  },
+  "limits": [
+    "No novelty claim",
+    "No general LRC proof",
+    "No human referee certification",
+    "No main merge",
+    "No external outreach"
+  ]
+}
