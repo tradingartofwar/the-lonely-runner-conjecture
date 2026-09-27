@@ -41,6 +41,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 27, 2026
 
+The [44/45/46 follow-up](notes/CORE_EXCHANGE_NEIGHBORS_2026_09_27.md) identifies why a core exchange works: one residual blocker disappears and another is contained in a third on the selected window. The resulting tree is exact, with a proposed uniform positive bound for the existing family's variable speed y>=29. Exact finite calculations and a separate reconstruction accompany the argument.
+
 The [all-core selection experiment](notes/ALL_CORE_SELECTION_2026_09_27.md) checks eleven named configurations at every reference. Every strict reference has a successful tree certificate somewhere. One core fails across all its windows but is repaired by a stronger inequality using the same pair data. This is a bounded result, independently reconstructed, with equality-only controls retained.
 
 The [September 27 Ultra review](notes/ULTRA_REVIEW_2026_09_27.md) assesses the distinction audit through six separate mathematical and literature scopes. It preserves exact examples of information lost by overlap summaries, a conditional contact selector, and threshold-response and global-witness deductions. Its unbounded implications remain proof candidates; the next question is how to select a useful certificate for a configuration.
