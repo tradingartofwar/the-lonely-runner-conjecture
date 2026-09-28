@@ -1,0 +1,27 @@
+{
+  "baseline": "c1e88837c8d48954b0de217d857d0bd6ac9cbccf",
+  "frozen_before_calculation": true,
+  "question": "Can pair-moment complete-cover obligations choose one consequential higher-order query?",
+  "assumptions": "Eight common-start runners; reference 0; threshold 1/8; equality valid; core [1,4,5]; J=[9/32,3/8].",
+  "controls": [
+    {"name":"strict_16","extras":[6,7,11,16]},
+    {"name":"doubling_112","extras":[56,64,72,112]},
+    {"name":"tight_13","extras":[6,7,11,13]}
+  ],
+  "input_contract": "Supplied L, four singles and all six pair durations, plus speeds and J. Pair evaluation is separately charged; this exceeds the prior one-pair contract.",
+  "rule": [
+    "Use 16 nonnegative exact-state masses, fixed total/singles/pairs, to minimize empty-state mass. Require exact primal and dual certificates.",
+    "If optimum positive, report pair-only success and do not request geometry.",
+    "Otherwise impose empty-state mass zero and minimize each of the four inclusive triple masses. Require exact primal/dual certificates for all four minima.",
+    "Choose the largest strictly positive forced triple minimum, ties by sorted physical speed triple. If no positive minimum, report no individually forced triple; do not retune.",
+    "Evaluate only that selected triple by intersecting its three blocking schedules; compare its exact duration (a valid upper bound) with the forced minimum. Preserve interval/phase evidence and cost counts.",
+    "If actual upper bound is below the minimum, rule out ALL abstract full-cover distributions matching pair totals and this bound; reoptimize minimum empty mass with that one upper bound.",
+    "If unrepaired, test only right endpoint 3/8, preserving singleton versus interval. No second query or window."
+  ],
+  "diagnostic_after_selection": "Existing archived higher-order moments may be read for comparison and independent verifier may reconstruct all states on these THREE windows only. Never feed those data to selection. Preserve nonzero triple/four-way overlaps in doubling_112.",
+  "falsification": "A selected triple whose physical duration is not below its forced covering minimum is a retained failure of strict-duration repair. No mandatory positive triple is also a retained failure. Pair-only positive controls do not validate escalation. Invalid exact LP certificates invalidate computation.",
+  "scope": "Three named controls only; at most 3 baseline LPs, 8 cover triple LPs, 2 one-bound repair LPs, 2 selected geometric triple evaluations, 2 endpoints. No new speeds, broad scans, all-reference tests, alternate windows, +7/+9, outreach or main merge.",
+  "cost": "Count LP solves, logical states, selected interval lists and intersection comparisons. Floating optimization may propose certificates only; acceptance requires exact rational primal/dual feasibility and equal objective. No uniform runtime claim.",
+  "prior_work": ["notes/SPARSE_OVERLAP_SELECTION.md","notes/TWO_SPEED_SPARSE_TRANSFER.md","notes/FOUR_BLOCKER_CYCLE_CORRECTIONS.md","notes/ONE_PAIR_SELECTION_2026_09_28.md"],
+  "status": "Finite diagnostics OBSERVED/REPRODUCED; general implications HYPOTHESIS/proof candidates. No novelty, independent human certification, arbitrary-speed existence or new family coverage."
+}
