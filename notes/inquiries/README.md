@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Relationship maps simplify constraints but can miss local existence. The six-agent follow-up supplies fastest-core exactness: choosing context can make a previously insufficient duration formula exact. Shared-lap pair constraints preserve different information from pair-overlap totals. Existence remains separate. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Fastest-core conditioning makes duration exact; later phase experiments preserve individual inventories while changing joint outcomes. A configuration-level phase set distinguishes exact blocking alignment from phase spread that guarantees an opening in two restricted families. General existence remains open. |
 
 ## How to continue this collection
 

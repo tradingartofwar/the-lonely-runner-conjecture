@@ -1,0 +1,40 @@
+{
+  "title": "Fastest-lap coverage chains, contacts, and shared arithmetic alignment",
+  "date": "2026-09-27 America/Los_Angeles",
+  "baseline_commit": "f362f54b8f5077f12579076e815d505bf81cf9a6",
+  "status": "Frozen before new lap-chain calculations; existing global behavior of these controls is known",
+  "cases": [
+    {"id":"tight13","velocities":[0,1,4,5,6,7,11,13]},
+    {"id":"strict16","velocities":[0,1,4,5,6,7,11,16]}
+  ],
+  "reference_index": 0,
+  "n": 8,
+  "threshold": "1/8",
+  "time_interval": ["0","1"],
+  "core": "Only the fastest relative runner V, original label 7",
+  "windows": "All V closed safe laps W_m=[(8m+1)/(8V),(8m+7)/(8V)], m=0,...,V-1; 29 total",
+  "residual_speeds": [1,4,5,6,7,11],
+  "primary_measurements": [
+    "Exact strict residual blocker interval (or empty) on every W_m, including endpoint membership and collision lap integer",
+    "Exact allowed components, positive duration, isolated contacts, active endpoint controllers and direct rational witnesses",
+    "Six single and fifteen pair durations; maximum spanning tree, exact tree bound and union equality",
+    "Deterministic interval-cover scan sorted by left endpoint, then decreasing right endpoint, then original label; record advancing right envelope, overlap/touch/gap junctions and which touching points actually survive all blockers",
+    "Normalized phase u=V*t-m and integer residues r_v(m)=v*m mod V for every lap",
+    "Full allowed set of the six fixed residual speeds alone, then its intersections with fastest safety; separate local chains from relationships across laps",
+    "Group laps by a declared qualitative blocker ordering/containment summary; record any equal summaries with different exact status, without assuming such a collision exists"
+  ],
+  "independent_check": "Separate event-state reconstruction, separate tree algorithm, direct witness/contact tests, independent closed-safe intersections and comparisons of every lap record",
+  "bounded_thought_experiment": {
+    "scope": "For each of the same V=13,16, shift ONLY speed11's normalized blocker pattern from lap m+s mod V into lap m, for every s=0,...,V-1; 29 shifted pattern arrangements total",
+    "preservation": "The multiset of normalized within-lap patterns and durations for every individual runner is unchanged over the V laps",
+    "physical_interpretation": "This is a shifted-start comparison with speed11 initial phase 11*s/V modulo1; only s=0 is the original common-start configuration. It is not a Lonely Runner counterexample or an assertion that pair moments are preserved",
+    "control": "Shifting ALL residual patterns together by the same lap offset only permutes lap records; require invariant total duration and contact count",
+    "report": "All outcomes and earliest nonzero offset changing duration or allowed-set status, if any; preserve negative result if none"
+  },
+  "hypotheses": [
+    "A simple cross-lap relationship among the shared residues can explain a contact or gap; every proposed rule needs an exact sufficiency argument or an explicit failure",
+    "Unlabelled per-runner inventories may discard decisive alignment; the fixed shifted-start thought experiment tests this narrower claim",
+    "All residual intervals on a fastest lap admit an exact tree, but duration alone does not distinguish complete coverage from isolated contacts"
+  ],
+  "limits": "Only the two fixed speed lists and the explicitly labelled finite phase-shift thought experiment. No new speed configurations, all-reference scan, unbounded search, paid compute, outside contact, or novelty claim. General implications remain proof candidates. Changing starting phases must never be silently used to answer the common-start conjecture."
+}

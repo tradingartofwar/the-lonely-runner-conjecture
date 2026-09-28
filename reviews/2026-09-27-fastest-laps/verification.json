@@ -1,0 +1,368 @@
+{
+  "status": "REPRODUCED exact bounded common-start calculations and separately labelled shifted-start comparisons",
+  "protocol_sha256": "f1d4772133a47a3090c5f9f5f3aa6389b378917c0744a80e3df728790e397d7d",
+  "source_results_sha256": "00134824c5136a893657895cbbd5c686909a7c54cfe320b3fcaab770a84ffcc4",
+  "source_phase_results_sha256": "612cd4320fc3083476b352f8ce058e345cf2f88a418a36e87228cdbad29c8692",
+  "primary_script_sha256": "3a7ae25a6c46c847ae8664114833d7136269775c9badb8f6614b7d3a23fae715",
+  "phase_script_sha256": "6a29ff38ebf05732aa34a4715fe7b561ba0be8da6c721832a5c1eee5783a3ee7",
+  "verifier_script_sha256": "d56ef9ff8e2655a9be9f4a40dd3b330ee51868540b67c5834e4b856bea77ba2b",
+  "methods": [
+    "direct phase threshold equations and integer product-denominator event-state sweep",
+    "strict point and open-cell membership, with all event points directly checked",
+    "64 residual-state duration masses; six singles and fifteen pairs",
+    "Kruskal maximum spanning trees and active-subgraph slack identity",
+    "direct witnesses and endpoint controllers; deterministic cover scans",
+    "fixed-six closed-safe intersections and complete common-start lap record digests",
+    "direct physical phase arrangements for all29 speed11 offsets and all29 all-residual controls"
+  ],
+  "common_start_configurations": 2,
+  "common_start_laps": 29,
+  "shifted_start_offset_arrangements": 29,
+  "shifted_start_lap_records": 425,
+  "all_residual_shift_controls": 29,
+  "common_start_cases": [
+    {
+      "id": "tight13",
+      "V": 13,
+      "lap_records_sha256": "84f2a60ec0261fa9524ae5977feee064f9ee6c58ff1e91b3db09d04c3a72f2ae",
+      "full_allowed_components": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "full_allowed_duration": "0",
+      "full_isolated_points": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "summary": {
+        "laps": 13,
+        "covered_laps": 9,
+        "contact_only_laps": 4,
+        "strict_laps": 0,
+        "positive_tree_laps": 0,
+        "exact_tree_laps": 13,
+        "isolated_point_count": 4,
+        "positive_component_count": 0,
+        "touch_junction_count": 2,
+        "surviving_touch_count": 2,
+        "maximum_tree_slack": "0"
+      }
+    },
+    {
+      "id": "strict16",
+      "V": 16,
+      "lap_records_sha256": "6a94f4f65993c3f53dd81837504d5917ed9c2eed79130fa827bd166f4ca7f1b8",
+      "full_allowed_components": [
+        [
+          "17/56",
+          "39/128"
+        ],
+        [
+          "41/88",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "47/88"
+        ],
+        [
+          "89/128",
+          "39/56"
+        ]
+      ],
+      "full_allowed_duration": "39/4928",
+      "full_isolated_points": [],
+      "summary": {
+        "laps": 16,
+        "covered_laps": 12,
+        "contact_only_laps": 0,
+        "strict_laps": 4,
+        "positive_tree_laps": 4,
+        "exact_tree_laps": 16,
+        "isolated_point_count": 0,
+        "positive_component_count": 4,
+        "touch_junction_count": 0,
+        "surviving_touch_count": 0,
+        "maximum_tree_slack": "0"
+      }
+    }
+  ],
+  "fixed_safe_components": [
+    [
+      "1/8",
+      "1/8"
+    ],
+    [
+      "17/56",
+      "5/16"
+    ],
+    [
+      "3/8",
+      "3/8"
+    ],
+    [
+      "41/88",
+      "15/32"
+    ],
+    [
+      "17/32",
+      "47/88"
+    ],
+    [
+      "5/8",
+      "5/8"
+    ],
+    [
+      "11/16",
+      "39/56"
+    ],
+    [
+      "7/8",
+      "7/8"
+    ]
+  ],
+  "fixed_safe_duration": "29/1232",
+  "summary": {
+    "laps": 29,
+    "covered_laps": 21,
+    "contact_only_laps": 4,
+    "strict_laps": 4,
+    "positive_tree_laps": 4,
+    "exact_tree_laps": 29,
+    "isolated_point_count": 4,
+    "positive_component_count": 4,
+    "touch_junction_count": 2,
+    "surviving_touch_count": 2,
+    "maximum_tree_slack": "0",
+    "qualitative_groups": 21,
+    "qualitative_status_collision_groups": 4
+  },
+  "phase_cases": [
+    {
+      "id": "tight13",
+      "arrangements": 13,
+      "shifted_laps": 169,
+      "direct_all_residual_shift_controls": 13,
+      "offset_records_sha256": "562a027231ca6f842f2fb56fe79a9e763e1fc99ceaee8aefd2ca9da00d0f8b9d",
+      "all_shift_control_records_sha256": "1632fd1f3bb766c43d87a4247bf73ed7c84e2c9e61eb92f46f6d9288ab43bf1a",
+      "earliest_nonzero_changes": {
+        "total_duration": 1,
+        "local_existence": 1,
+        "local_three_way_status": 1,
+        "global_existence": null,
+        "global_three_way_status": 1,
+        "isolated_contact_count": 1
+      },
+      "outcomes": [
+        [
+          0,
+          "0",
+          4,
+          "contacts_only"
+        ],
+        [
+          1,
+          "1517/48048",
+          3,
+          "positive_duration"
+        ],
+        [
+          2,
+          "115/2184",
+          1,
+          "positive_duration"
+        ],
+        [
+          3,
+          "115/2184",
+          1,
+          "positive_duration"
+        ],
+        [
+          4,
+          "115/2184",
+          1,
+          "positive_duration"
+        ],
+        [
+          5,
+          "1223/24024",
+          2,
+          "positive_duration"
+        ],
+        [
+          6,
+          "761/48048",
+          2,
+          "positive_duration"
+        ],
+        [
+          7,
+          "761/48048",
+          2,
+          "positive_duration"
+        ],
+        [
+          8,
+          "1223/24024",
+          2,
+          "positive_duration"
+        ],
+        [
+          9,
+          "115/2184",
+          1,
+          "positive_duration"
+        ],
+        [
+          10,
+          "115/2184",
+          1,
+          "positive_duration"
+        ],
+        [
+          11,
+          "115/2184",
+          1,
+          "positive_duration"
+        ],
+        [
+          12,
+          "1517/48048",
+          3,
+          "positive_duration"
+        ]
+      ]
+    },
+    {
+      "id": "strict16",
+      "arrangements": 16,
+      "shifted_laps": 256,
+      "direct_all_residual_shift_controls": 16,
+      "offset_records_sha256": "447d106c224aedf13b9c08ee1d80841b8c0c0f5af5593a664595b290b012187a",
+      "all_shift_control_records_sha256": "2b233a7b611feab170e1e65218e09a33e345961fbd8624c0c0ad9ffab0b3b123",
+      "earliest_nonzero_changes": {
+        "total_duration": 1,
+        "local_existence": 1,
+        "local_three_way_status": 1,
+        "global_existence": null,
+        "global_three_way_status": null,
+        "isolated_contact_count": null
+      },
+      "outcomes": [
+        [
+          0,
+          "39/4928",
+          0,
+          "positive_duration"
+        ],
+        [
+          1,
+          "193/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          2,
+          "193/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          3,
+          "251/14784",
+          0,
+          "positive_duration"
+        ],
+        [
+          4,
+          "2039/29568",
+          0,
+          "positive_duration"
+        ],
+        [
+          5,
+          "193/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          6,
+          "101/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          7,
+          "215/3696",
+          0,
+          "positive_duration"
+        ],
+        [
+          8,
+          "7/96",
+          0,
+          "positive_duration"
+        ],
+        [
+          9,
+          "215/3696",
+          0,
+          "positive_duration"
+        ],
+        [
+          10,
+          "101/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          11,
+          "193/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          12,
+          "2039/29568",
+          0,
+          "positive_duration"
+        ],
+        [
+          13,
+          "251/14784",
+          0,
+          "positive_duration"
+        ],
+        [
+          14,
+          "193/2688",
+          0,
+          "positive_duration"
+        ],
+        [
+          15,
+          "193/2688",
+          0,
+          "positive_duration"
+        ]
+      ]
+    }
+  ]
+}
