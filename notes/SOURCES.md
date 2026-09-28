@@ -1,8 +1,10 @@
 # Research sources and frontier check
 
-**Initial check:** September 20, 2026. **Latest targeted update:** September 25, 2026.
+**Initial check:** September 20, 2026. **Latest targeted update:** September 27, 2026 (latest team sources retrieved September 28 UTC).
 
 **Scope:** Targeted source check for project planning, not an exhaustive literature review or independent proof audit.
+
+**September 27 team update (retrieved September 28 UTC):** [Targeted tree/pair/lattice literature review](../reviews/2026-09-27-team/literature.md) gives five primary sources and exact reading limits. Hunter's 1976 tree union bound is the established framework. The earlier signed four-cycle minus one diagonal is explicitly present in Prékopa–Vizvári–Regős–Gao, RUTCOR Report 4-2001, Lemma 7.3, printed p.30, equation (58); its form is KNOWN, without asserting that report's priority. The [fastest-core argument](FASTEST_CORE_CERTIFICATES_2026_09_27.md) is supplied with a complete derivation and remains a proof candidate; this targeted search does not establish its novelty. This update does not audit the whole LRC frontier.
 
 ## S1 — Orientation and tight examples
 

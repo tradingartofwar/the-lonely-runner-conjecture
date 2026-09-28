@@ -1,0 +1,40 @@
+{
+  "title": "Six-case transfer test of some-core tree certificates",
+  "date": "2026-09-27",
+  "baseline": "910a26b044d6ea093a0d22aa678304a02e7e2642",
+  "status": "Protocol fixed before calculating these six outcomes; internally recorded, not externally preregistered",
+  "n": 8,
+  "reference_index": 0,
+  "threshold": "1/8",
+  "time_interval": ["0", "1"],
+  "cases": [
+    {"id": "prime_mix", "velocities": [0,8,11,17,23,29,37,43], "rationale": "Mostly coprime speeds, without the earlier fixed slow core"},
+    {"id": "near_pairs", "velocities": [0,15,16,17,31,33,47,49], "rationale": "Nearby speeds around multiples of sixteen; additive relations"},
+    {"id": "fibonacci", "velocities": [0,8,13,21,34,55,89,144], "rationale": "Recurrence relations and a broad speed range; not a novelty claim for Fibonacci results"},
+    {"id": "squares", "velocities": [0,8,9,25,49,81,121,169], "rationale": "Quadratic structure with mixed common factors"},
+    {"id": "prime_powers", "velocities": [0,16,25,27,49,64,81,125], "rationale": "Several prime-power chains and mixed repetition scales"},
+    {"id": "perturbed_chain", "velocities": [0,7,8,15,23,38,61,100], "rationale": "Additive recurrence broken at the last speed"}
+  ],
+  "selection": {
+    "cores": "All 35 three-element subsets of the seven labelled nonreference runners",
+    "windows": "Every complete CLOSED core-safe connected component in [0,1], including singleton components",
+    "blockers": "Strict distance less than 1/8; keep endpoint membership in all containment tests",
+    "reduction": "Remove empty blockers; quotient equal nonempty sets; retain the lowest original runner index in each inclusion-maximal class",
+    "bound": "Window length minus retained single durations plus maximum spanning-tree pair-overlap weight; zero retained means length, one retained means length minus its duration",
+    "ties": "Among positive-length windows: greatest bound, then fewest retained blockers, then greatest width, then lexicographically smallest numerical core tuple, then earliest left endpoint",
+    "independence": "Do not use actual allowed sets or actual uncovered duration in selection keys",
+    "fallback": "If no positive bound, test all sorted distinct core-component endpoints against all seven constraints; absence of a valid endpoint means inconclusive"
+  },
+  "measurements": [
+    "Complete exact allowed set at reference 0, positive duration, isolated points, and a directly checked witness",
+    "For every core/component: optimal full and reduced tree bounds, actual duration, strict containment map, vanished blockers and retained representatives",
+    "Per-core counts/extrema and reproducible digests of every complete component; selected certificate with all moments and retained relationships",
+    "Count positive actual windows missed by trees; measure optimal-tree slack using induced active-subgraph component counts",
+    "Independent event-based reconstruction and separately computed spanning-tree optimum",
+    "Relational structure of selected certificates, including whether useful certificates require containment"
+  ],
+  "hypothesis": "For eight distinct integer velocities at a selected reference, strict lonely time implies a positive tree certificate on some complete safe component of some three-runner core",
+  "falsifier": "A strict configuration with no positive bound across all 35 cores",
+  "adaptive_limit": "If a falsifier occurs, inspect at most one failed configuration with stronger pair inequalities; label this follow-up separately. Otherwise investigate the six fixed cases structurally without adding speed configurations.",
+  "limits": "Selected reference 0 only; exact rational/integer arithmetic; no all-reference scan, broad parameter search, retuned cases, outside contact, paid compute, or theorem/novelty claim. All six have a speed divisible by eight so time 1/8 fails. This does not assert the cases are hard, random, independent, or representative."
+}

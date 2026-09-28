@@ -1,0 +1,305 @@
+{
+  "status": "OBSERVED exact finite checks; general arguments require review",
+  "scope": "Six frozen speed inputs; reference 0; no added cases",
+  "script_sha256": "ed8553c2861ab1bdf7492579f6af184beacf7ce26e197f5cd7ed52923e6e2af6",
+  "protocol_sha256": "578ad79f2d65ffe7309e3b1ae576de98e24ccaab1c23d3ea2600cedb5a9636a2",
+  "boolean_checks": {
+    "tree_state_checks": 286,
+    "scopes": [
+      {
+        "vertices": 1,
+        "trees": 1,
+        "states": 2
+      },
+      {
+        "vertices": 2,
+        "trees": 1,
+        "states": 4
+      },
+      {
+        "vertices": 3,
+        "trees": 3,
+        "states": 8
+      },
+      {
+        "vertices": 4,
+        "trees": 16,
+        "states": 16
+      }
+    ],
+    "four_vertex_average_slack_coefficients": [
+      "0",
+      "0",
+      "1/2",
+      "1/2",
+      "0"
+    ]
+  },
+  "modular_checks": [
+    {
+      "id": "prime_mix",
+      "denominator_scope": "2..7",
+      "strict_reciprocal_witnesses": [
+        {
+          "time": "1/3",
+          "minimum": "1/3",
+          "distances": [
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/3"
+          ]
+        },
+        {
+          "time": "1/5",
+          "minimum": "1/5",
+          "distances": [
+            "2/5",
+            "1/5",
+            "2/5",
+            "2/5",
+            "1/5",
+            "2/5",
+            "2/5"
+          ]
+        },
+        {
+          "time": "1/6",
+          "minimum": "1/6",
+          "distances": [
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        },
+        {
+          "time": "1/7",
+          "minimum": "1/7",
+          "distances": [
+            "1/7",
+            "3/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "2/7",
+            "1/7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "near_pairs",
+      "denominator_scope": "2..7",
+      "strict_reciprocal_witnesses": [
+        {
+          "time": "1/6",
+          "minimum": "1/6",
+          "distances": [
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibonacci",
+      "denominator_scope": "2..7",
+      "strict_reciprocal_witnesses": []
+    },
+    {
+      "id": "squares",
+      "denominator_scope": "2..7",
+      "strict_reciprocal_witnesses": [
+        {
+          "time": "1/6",
+          "minimum": "1/6",
+          "distances": [
+            "1/3",
+            "1/2",
+            "1/6",
+            "1/6",
+            "1/2",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prime_powers",
+      "denominator_scope": "2..7",
+      "strict_reciprocal_witnesses": [
+        {
+          "time": "1/6",
+          "minimum": "1/6",
+          "distances": [
+            "1/3",
+            "1/6",
+            "1/2",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perturbed_chain",
+      "denominator_scope": "2..7",
+      "strict_reciprocal_witnesses": [
+        {
+          "time": "1/6",
+          "minimum": "1/6",
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/6",
+            "1/3",
+            "1/6",
+            "1/3"
+          ]
+        }
+      ]
+    }
+  ],
+  "primary_audit": {
+    "results_sha256": "62a49c217e0334be78d5040c3acf454cd49c103a0e11eca4dad896fc5f53d56f",
+    "cases": [
+      {
+        "id": "prime_mix",
+        "fastest_index": 7,
+        "fastest_speed": 43,
+        "guaranteed_exact_cores": 15,
+        "fastest_core_components": 716,
+        "selected_core": [
+          1,
+          2,
+          5
+        ],
+        "selected_bound": "865/46139",
+        "selected_actual": "865/46139",
+        "selected_slack": "0",
+        "selected_split_retained": [
+          7
+        ],
+        "selected_contains_fastest": false
+      },
+      {
+        "id": "near_pairs",
+        "fastest_index": 7,
+        "fastest_speed": 49,
+        "guaranteed_exact_cores": 15,
+        "fastest_core_components": 880,
+        "selected_core": [
+          1,
+          2,
+          3
+        ],
+        "selected_bound": "1357451/66752455",
+        "selected_actual": "1357451/66752455",
+        "selected_slack": "0",
+        "selected_split_retained": [
+          6,
+          7
+        ],
+        "selected_contains_fastest": false
+      },
+      {
+        "id": "fibonacci",
+        "fastest_index": 7,
+        "fastest_speed": 144,
+        "guaranteed_exact_cores": 15,
+        "fastest_core_components": 1848,
+        "selected_core": [
+          1,
+          2,
+          3
+        ],
+        "selected_bound": "306451/67104576",
+        "selected_actual": "381295/67104576",
+        "selected_slack": "27/24208",
+        "selected_split_retained": [
+          5,
+          6,
+          7
+        ],
+        "selected_contains_fastest": false
+      },
+      {
+        "id": "squares",
+        "fastest_index": 7,
+        "fastest_speed": 169,
+        "guaranteed_exact_cores": 15,
+        "fastest_core_components": 2222,
+        "selected_core": [
+          1,
+          2,
+          3
+        ],
+        "selected_bound": "2053/200772",
+        "selected_actual": "95731/6625476",
+        "selected_slack": "13991/3312738",
+        "selected_split_retained": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "selected_contains_fastest": false
+      },
+      {
+        "id": "prime_powers",
+        "fastest_index": 7,
+        "fastest_speed": 125,
+        "guaranteed_exact_cores": 15,
+        "fastest_core_components": 1856,
+        "selected_core": [
+          1,
+          2,
+          3
+        ],
+        "selected_bound": "35029/4704000",
+        "selected_actual": "13/1536",
+        "selected_slack": "3189/3136000",
+        "selected_split_retained": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "selected_contains_fastest": false
+      },
+      {
+        "id": "perturbed_chain",
+        "fastest_index": 7,
+        "fastest_speed": 100,
+        "guaranteed_exact_cores": 15,
+        "fastest_core_components": 1278,
+        "selected_core": [
+          1,
+          4,
+          5
+        ],
+        "selected_bound": "2827/426512",
+        "selected_actual": "2827/426512",
+        "selected_slack": "0",
+        "selected_split_retained": [],
+        "selected_contains_fastest": false
+      }
+    ]
+  }
+}

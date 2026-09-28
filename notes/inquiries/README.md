@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. The first relationship-map experiment is complete: maps simplify constraints but can miss local existence; quantitative selection succeeds on the bounded controls. Includes the source result and the limits of transfer. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Relationship maps simplify constraints but can miss local existence. The six-agent follow-up supplies fastest-core exactness: choosing context can make a previously insufficient duration formula exact. Shared-lap pair constraints preserve different information from pair-overlap totals. Existence remains separate. |
 
 ## How to continue this collection
 
