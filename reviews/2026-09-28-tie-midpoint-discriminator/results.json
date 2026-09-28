@@ -1,0 +1,3069 @@
+{
+  "baseline": "9ef34894a8657d91f1276a0a6fff32322b3e64da",
+  "protocol_sha256": "e62d116b764aa0869788dffb36785935d08e3de1ddb38d3e0ca11ca23ba3f2e3",
+  "primary_sha256": "65cefe76849a46ddfc6538f17e806dd92f6cbb0d33f83bffe038ddc1ad721b0d",
+  "source_contract": {
+    "selector_transfer_protocol": "reviews/2026-09-28-selector-transfer-audit/protocol.json",
+    "selector_transfer_protocol_sha256": "ccfdb403abef15f9c2cd9e08ac086232f4842b450f48308ba5a5992f8c3f9c17",
+    "selector_transfer_results": "reviews/2026-09-28-selector-transfer-audit/results.json",
+    "selector_transfer_results_sha256": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+    "selector_transfer_note": "notes/SELECTOR_TRANSFER_AUDIT_2026_09_28.md",
+    "selector_transfer_note_sha256": "772d120dc40fc37e15d9d88822fa1d46b220f825992de2c6cbde15dfbe377e4f",
+    "floor_sum_results": "reviews/2026-09-28-floor-sum-component-count/results.json",
+    "floor_sum_results_sha256": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "one_query_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "one_query_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5"
+  },
+  "arithmetic": "integers and fractions.Fraction only; no floating-point decisions",
+  "information_barrier": "Pinned selector outputs were literally projected to identifiers, speeds, windows, pair-only minima, eligible pairs, potential slacks and component counts, then deleted. Full containment answers were reloaded only after midpoint choices, selected queries and the separately charged tied-pair oracle were immutable.",
+  "cases": {
+    "squares:1,2,5:12": {
+      "id": "squares:1,2,5:12",
+      "role": "development",
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "window": [
+        "43/216",
+        "5/24"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 3,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "43/216",
+                "193/968"
+              ],
+              "laps": [
+                5,
+                24
+              ],
+              "left_included": true,
+              "right_included": false,
+              "midpoint": "5207/26136",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase": "19919/26136",
+                  "distance_to_integer": "6217/26136",
+                  "signed_safety_margin": "1475/13068"
+                },
+                {
+                  "speed": 169,
+                  "phase": "17495/26136",
+                  "distance_to_integer": "8641/26136",
+                  "signed_safety_margin": "2687/13068"
+                }
+              ]
+            }
+          ],
+          "pair_score": "1475/13068",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 16,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 8,
+            "nonempty_comparisons": 8,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "271/1352",
+                "21/104"
+              ],
+              "laps": [
+                5,
+                34
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "34/169",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase": "145/169",
+                  "distance_to_integer": "24/169",
+                  "signed_safety_margin": "23/1352"
+                },
+                {
+                  "speed": 121,
+                  "phase": "58/169",
+                  "distance_to_integer": "58/169",
+                  "signed_safety_margin": "295/1352"
+                }
+              ]
+            }
+          ],
+          "pair_score": "23/1352",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "310/3006003"
+        }
+      ],
+      "candidate_selected_pair": [
+        25,
+        121
+      ],
+      "inherited_lexicographic_pair": [
+        25,
+        121
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_query": {
+        "base_pair": [
+          25,
+          121
+        ],
+        "complement": [
+          49,
+          169
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 10,
+          "unique_threshold_events_including_window_endpoints": 12,
+          "open_cells": 11
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 3,
+          "blocking_pieces": 6,
+          "blocking_state_comparisons": 12,
+          "clip_comparisons": 34,
+          "containment_conclusions": 1,
+          "distance_computations": 12,
+          "join_advance_comparisons": 3,
+          "join_clip_comparisons": 4,
+          "join_nonempty_comparisons": 2,
+          "join_steps": 2,
+          "lap_candidates": 17,
+          "nonempty_comparisons": 17,
+          "phase_reductions": 12,
+          "positive_components": 1,
+          "violation_clip_comparisons": 6,
+          "violation_nonempty_comparisons": 3
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          25,
+          121
+        ],
+        "selected_pair_score": "1475/13068",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "1/2028",
+        "counterfactual_bound_if_containment_held": "1/2028",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "complement": [
+              49,
+              169
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "1475/13068",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "complement": [
+              49,
+              121
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": false,
+            "violation_count": 1,
+            "first_exact_violation": {
+              "kind": "positive_interval",
+              "interval": [
+                "79/392",
+                "21/104"
+              ],
+              "left_included": false,
+              "right_included": false,
+              "witness": "257/1274",
+              "witness_phase": "23/26",
+              "tested_complement_speed": 49,
+              "base_laps": [
+                5,
+                34
+              ],
+              "complement_lap": 10
+            },
+            "all_exact_violations": [
+              {
+                "kind": "positive_interval",
+                "interval": [
+                  "79/392",
+                  "21/104"
+                ],
+                "left_included": false,
+                "right_included": false,
+                "witness": "257/1274",
+                "witness_phase": "23/26",
+                "tested_complement_speed": 49,
+                "base_laps": [
+                  5,
+                  34
+                ],
+                "complement_lap": 10
+              }
+            ],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "23/1352",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "false_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            25,
+            121
+          ]
+        ],
+        "failed_pairs": [
+          [
+            25,
+            169
+          ]
+        ],
+        "prediction_class_counts": {
+          "false_positive": 1,
+          "true_positive": 1
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "inherited_lexicographic_pair": [
+          25,
+          121
+        ],
+        "inherited_lexicographic_containment_holds": true,
+        "archive_used_to_change_candidate_choice": false
+      }
+    },
+    "squares:1,2,5:39": {
+      "id": "squares:1,2,5:39",
+      "role": "development",
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "window": [
+        "19/24",
+        "173/216"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 3,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "775/968",
+                "173/216"
+              ],
+              "laps": [
+                20,
+                97
+              ],
+              "left_included": false,
+              "right_included": true,
+              "midpoint": "20929/26136",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase": "6217/26136",
+                  "distance_to_integer": "6217/26136",
+                  "signed_safety_margin": "1475/13068"
+                },
+                {
+                  "speed": 169,
+                  "phase": "8641/26136",
+                  "distance_to_integer": "8641/26136",
+                  "signed_safety_margin": "2687/13068"
+                }
+              ]
+            }
+          ],
+          "pair_score": "1475/13068",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 16,
+            "distance_computations": 6,
+            "join_advance_comparisons": 4,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 8,
+            "nonempty_comparisons": 8,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "83/104",
+                "1081/1352"
+              ],
+              "laps": [
+                20,
+                135
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "135/169",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase": "24/169",
+                  "distance_to_integer": "24/169",
+                  "signed_safety_margin": "23/1352"
+                },
+                {
+                  "speed": 121,
+                  "phase": "111/169",
+                  "distance_to_integer": "58/169",
+                  "signed_safety_margin": "295/1352"
+                }
+              ]
+            }
+          ],
+          "pair_score": "23/1352",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 4,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "310/3006003"
+        }
+      ],
+      "candidate_selected_pair": [
+        25,
+        121
+      ],
+      "inherited_lexicographic_pair": [
+        25,
+        121
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_query": {
+        "base_pair": [
+          25,
+          121
+        ],
+        "complement": [
+          49,
+          169
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 10,
+          "unique_threshold_events_including_window_endpoints": 12,
+          "open_cells": 11
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 3,
+          "blocking_pieces": 6,
+          "blocking_state_comparisons": 12,
+          "clip_comparisons": 34,
+          "containment_conclusions": 1,
+          "distance_computations": 12,
+          "join_advance_comparisons": 4,
+          "join_clip_comparisons": 4,
+          "join_nonempty_comparisons": 2,
+          "join_steps": 2,
+          "lap_candidates": 17,
+          "nonempty_comparisons": 17,
+          "phase_reductions": 12,
+          "positive_components": 1,
+          "violation_clip_comparisons": 6,
+          "violation_nonempty_comparisons": 3
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          25,
+          121
+        ],
+        "selected_pair_score": "1475/13068",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "1/2028",
+        "counterfactual_bound_if_containment_held": "1/2028",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "complement": [
+              49,
+              169
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 4,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "1475/13068",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "complement": [
+              49,
+              121
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": false,
+            "violation_count": 1,
+            "first_exact_violation": {
+              "kind": "positive_interval",
+              "interval": [
+                "83/104",
+                "313/392"
+              ],
+              "left_included": false,
+              "right_included": false,
+              "witness": "1017/1274",
+              "witness_phase": "3/26",
+              "tested_complement_speed": 49,
+              "base_laps": [
+                20,
+                135
+              ],
+              "complement_lap": 39
+            },
+            "all_exact_violations": [
+              {
+                "kind": "positive_interval",
+                "interval": [
+                  "83/104",
+                  "313/392"
+                ],
+                "left_included": false,
+                "right_included": false,
+                "witness": "1017/1274",
+                "witness_phase": "3/26",
+                "tested_complement_speed": 49,
+                "base_laps": [
+                  20,
+                  135
+                ],
+                "complement_lap": 39
+              }
+            ],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 4,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "23/1352",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "false_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            25,
+            121
+          ]
+        ],
+        "failed_pairs": [
+          [
+            25,
+            169
+          ]
+        ],
+        "prediction_class_counts": {
+          "false_positive": 1,
+          "true_positive": 1
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "inherited_lexicographic_pair": [
+          25,
+          121
+        ],
+        "inherited_lexicographic_containment_holds": true,
+        "archive_used_to_change_candidate_choice": false
+      }
+    },
+    "fibonacci:1,2,4:1": {
+      "id": "fibonacci:1,2,4:1",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "9/272",
+        "15/272"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 6,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "23/440",
+                "3/56"
+              ],
+              "laps": [
+                1,
+                3
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "163/3080",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase": "2187/3080",
+                  "distance_to_integer": "893/3080",
+                  "signed_safety_margin": "127/770"
+                },
+                {
+                  "speed": 144,
+                  "phase": "239/385",
+                  "distance_to_integer": "146/385",
+                  "signed_safety_margin": "783/3080"
+                }
+              ]
+            }
+          ],
+          "pair_score": "127/770",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "31/712",
+                "33/712"
+              ],
+              "laps": [
+                1,
+                4
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "4/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase": "42/89",
+                  "distance_to_integer": "42/89",
+                  "signed_safety_margin": "247/712"
+                },
+                {
+                  "speed": 144,
+                  "phase": "42/89",
+                  "distance_to_integer": "42/89",
+                  "signed_safety_margin": "247/712"
+                }
+              ]
+            }
+          ],
+          "pair_score": "247/712",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "3001/1879680"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_query": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18,
+          "open_cells": 17
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 6,
+          "blocking_pieces": 10,
+          "blocking_state_comparisons": 20,
+          "clip_comparisons": 40,
+          "containment_conclusions": 1,
+          "distance_computations": 20,
+          "join_advance_comparisons": 5,
+          "join_clip_comparisons": 6,
+          "join_nonempty_comparisons": 3,
+          "join_steps": 3,
+          "lap_candidates": 20,
+          "nonempty_comparisons": 20,
+          "phase_reductions": 20,
+          "positive_components": 1,
+          "violation_clip_comparisons": 12,
+          "violation_nonempty_comparisons": 6
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "247/712",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "3001/1879680",
+        "counterfactual_bound_if_containment_held": "3001/1879680",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "127/770",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "247/712",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ]
+        ],
+        "failed_pairs": [],
+        "prediction_class_counts": {
+          "true_positive": 2
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "inherited_lexicographic_pair": [
+          21,
+          55
+        ],
+        "inherited_lexicographic_containment_holds": true,
+        "archive_used_to_change_candidate_choice": false
+      }
+    },
+    "fibonacci:1,2,4:11": {
+      "id": "fibonacci:1,2,4:11",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "89/272",
+        "95/272"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 6,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "55/168",
+                "29/88"
+              ],
+              "laps": [
+                7,
+                18
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "607/1848",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase": "431/1848",
+                  "distance_to_integer": "431/1848",
+                  "signed_safety_margin": "25/231"
+                },
+                {
+                  "speed": 144,
+                  "phase": "23/77",
+                  "distance_to_integer": "23/77",
+                  "signed_safety_margin": "107/616"
+                }
+              ]
+            }
+          ],
+          "pair_score": "25/231",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "239/712",
+                "241/712"
+              ],
+              "laps": [
+                7,
+                30
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "30/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase": "48/89",
+                  "distance_to_integer": "41/89",
+                  "signed_safety_margin": "239/712"
+                },
+                {
+                  "speed": 144,
+                  "phase": "48/89",
+                  "distance_to_integer": "41/89",
+                  "signed_safety_margin": "239/712"
+                }
+              ]
+            }
+          ],
+          "pair_score": "239/712",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "383/1152",
+                "385/1152"
+              ],
+              "laps": [
+                7,
+                48
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "1/3",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase": "1/3",
+                  "distance_to_integer": "1/3",
+                  "signed_safety_margin": "5/24"
+                },
+                {
+                  "speed": 89,
+                  "phase": "2/3",
+                  "distance_to_integer": "1/3",
+                  "signed_safety_margin": "5/24"
+                }
+              ]
+            }
+          ],
+          "pair_score": "5/24",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 5,
+            "blocking_state_comparisons": 10,
+            "clip_comparisons": 20,
+            "distance_computations": 10,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 10,
+            "nonempty_comparisons": 10,
+            "phase_reductions": 10,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "479/221760"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 2
+      },
+      "selected_query": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18,
+          "open_cells": 17
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 6,
+          "blocking_pieces": 10,
+          "blocking_state_comparisons": 20,
+          "clip_comparisons": 40,
+          "containment_conclusions": 1,
+          "distance_computations": 20,
+          "join_advance_comparisons": 5,
+          "join_clip_comparisons": 6,
+          "join_nonempty_comparisons": 3,
+          "join_steps": 3,
+          "lap_candidates": 20,
+          "nonempty_comparisons": 20,
+          "phase_reductions": 20,
+          "positive_components": 1,
+          "violation_clip_comparisons": 12,
+          "violation_nonempty_comparisons": 6
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "239/712",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "15733/9868320",
+        "counterfactual_bound_if_containment_held": "15733/9868320",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "25/231",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "239/712",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "complement": [
+              55,
+              89
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 5,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 10,
+              "violation_nonempty_comparisons": 5
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "5/24",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ],
+          [
+            21,
+            144
+          ]
+        ],
+        "failed_pairs": [],
+        "prediction_class_counts": {
+          "true_positive": 3
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "inherited_lexicographic_pair": [
+          21,
+          55
+        ],
+        "inherited_lexicographic_containment_holds": true,
+        "archive_used_to_change_candidate_choice": false
+      }
+    },
+    "fibonacci:1,2,4:22": {
+      "id": "fibonacci:1,2,4:22",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "177/272",
+        "183/272"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 6,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "59/88",
+                "113/168"
+              ],
+              "laps": [
+                14,
+                37
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "1241/1848",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase": "1417/1848",
+                  "distance_to_integer": "431/1848",
+                  "signed_safety_margin": "25/231"
+                },
+                {
+                  "speed": 144,
+                  "phase": "54/77",
+                  "distance_to_integer": "23/77",
+                  "signed_safety_margin": "107/616"
+                }
+              ]
+            }
+          ],
+          "pair_score": "25/231",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "471/712",
+                "473/712"
+              ],
+              "laps": [
+                14,
+                59
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "59/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase": "41/89",
+                  "distance_to_integer": "41/89",
+                  "signed_safety_margin": "239/712"
+                },
+                {
+                  "speed": 144,
+                  "phase": "41/89",
+                  "distance_to_integer": "41/89",
+                  "signed_safety_margin": "239/712"
+                }
+              ]
+            }
+          ],
+          "pair_score": "239/712",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "767/1152",
+                "769/1152"
+              ],
+              "laps": [
+                14,
+                96
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "2/3",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase": "2/3",
+                  "distance_to_integer": "1/3",
+                  "signed_safety_margin": "5/24"
+                },
+                {
+                  "speed": 89,
+                  "phase": "1/3",
+                  "distance_to_integer": "1/3",
+                  "signed_safety_margin": "5/24"
+                }
+              ]
+            }
+          ],
+          "pair_score": "5/24",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 5,
+            "blocking_state_comparisons": 10,
+            "clip_comparisons": 20,
+            "distance_computations": 10,
+            "join_advance_comparisons": 7,
+            "join_clip_comparisons": 8,
+            "join_nonempty_comparisons": 4,
+            "join_steps": 4,
+            "lap_candidates": 10,
+            "nonempty_comparisons": 10,
+            "phase_reductions": 10,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "479/221760"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 2
+      },
+      "selected_query": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18,
+          "open_cells": 17
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 6,
+          "blocking_pieces": 10,
+          "blocking_state_comparisons": 20,
+          "clip_comparisons": 40,
+          "containment_conclusions": 1,
+          "distance_computations": 20,
+          "join_advance_comparisons": 5,
+          "join_clip_comparisons": 6,
+          "join_nonempty_comparisons": 3,
+          "join_steps": 3,
+          "lap_candidates": 20,
+          "nonempty_comparisons": 20,
+          "phase_reductions": 20,
+          "positive_components": 1,
+          "violation_clip_comparisons": 12,
+          "violation_nonempty_comparisons": 6
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "239/712",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "15733/9868320",
+        "counterfactual_bound_if_containment_held": "15733/9868320",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "25/231",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "239/712",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "complement": [
+              55,
+              89
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 5,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 7,
+              "join_clip_comparisons": 8,
+              "join_nonempty_comparisons": 4,
+              "join_steps": 4,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 10,
+              "violation_nonempty_comparisons": 5
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "5/24",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ],
+          [
+            21,
+            144
+          ]
+        ],
+        "failed_pairs": [],
+        "prediction_class_counts": {
+          "true_positive": 3
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "inherited_lexicographic_pair": [
+          21,
+          55
+        ],
+        "inherited_lexicographic_containment_holds": true,
+        "archive_used_to_change_candidate_choice": false
+      }
+    },
+    "fibonacci:1,2,4:32": {
+      "id": "fibonacci:1,2,4:32",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "257/272",
+        "263/272"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 6,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "53/56",
+                "417/440"
+              ],
+              "laps": [
+                20,
+                52
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "2917/3080",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase": "893/3080",
+                  "distance_to_integer": "893/3080",
+                  "signed_safety_margin": "127/770"
+                },
+                {
+                  "speed": 144,
+                  "phase": "146/385",
+                  "distance_to_integer": "146/385",
+                  "signed_safety_margin": "783/3080"
+                }
+              ]
+            }
+          ],
+          "pair_score": "127/770",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "679/712",
+                "681/712"
+              ],
+              "laps": [
+                20,
+                85
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "85/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase": "47/89",
+                  "distance_to_integer": "42/89",
+                  "signed_safety_margin": "247/712"
+                },
+                {
+                  "speed": 144,
+                  "phase": "47/89",
+                  "distance_to_integer": "42/89",
+                  "signed_safety_margin": "247/712"
+                }
+              ]
+            }
+          ],
+          "pair_score": "247/712",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "3001/1879680"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_query": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18,
+          "open_cells": 17
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 6,
+          "blocking_pieces": 10,
+          "blocking_state_comparisons": 20,
+          "clip_comparisons": 40,
+          "containment_conclusions": 1,
+          "distance_computations": 20,
+          "join_advance_comparisons": 5,
+          "join_clip_comparisons": 6,
+          "join_nonempty_comparisons": 3,
+          "join_steps": 3,
+          "lap_candidates": 20,
+          "nonempty_comparisons": 20,
+          "phase_reductions": 20,
+          "positive_components": 1,
+          "violation_clip_comparisons": 12,
+          "violation_nonempty_comparisons": 6
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "247/712",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "3001/1879680",
+        "counterfactual_bound_if_containment_held": "3001/1879680",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "127/770",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "247/712",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ]
+        ],
+        "failed_pairs": [],
+        "prediction_class_counts": {
+          "true_positive": 2
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "inherited_lexicographic_pair": [
+          21,
+          55
+        ],
+        "inherited_lexicographic_containment_holds": true,
+        "archive_used_to_change_candidate_choice": false
+      }
+    }
+  },
+  "controls": {
+    "strict_16": {
+      "id": "strict_16",
+      "role": "named_control",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 2,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_midpoint_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            6,
+            11
+          ],
+          "complement": [
+            7,
+            16
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "31/88",
+                "17/48"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "373/1056",
+              "complement_evaluations": [
+                {
+                  "speed": 7,
+                  "phase": "499/1056",
+                  "distance_to_integer": "499/1056",
+                  "signed_safety_margin": "367/1056"
+                },
+                {
+                  "speed": 16,
+                  "phase": "43/66",
+                  "distance_to_integer": "23/66",
+                  "signed_safety_margin": "59/264"
+                }
+              ]
+            }
+          ],
+          "pair_score": "59/264",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 16,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 8,
+            "nonempty_comparisons": 8,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "1/896"
+        },
+        {
+          "base_pair": [
+            11,
+            16
+          ],
+          "complement": [
+            6,
+            7
+          ],
+          "component_count": 1,
+          "components_and_samples": [
+            {
+              "component_index": 0,
+              "interval": [
+                "47/128",
+                "3/8"
+              ],
+              "laps": [
+                4,
+                6
+              ],
+              "left_included": false,
+              "right_included": false,
+              "midpoint": "95/256",
+              "complement_evaluations": [
+                {
+                  "speed": 6,
+                  "phase": "29/128",
+                  "distance_to_integer": "29/128",
+                  "signed_safety_margin": "13/128"
+                },
+                {
+                  "speed": 7,
+                  "phase": "153/256",
+                  "distance_to_integer": "103/256",
+                  "signed_safety_margin": "71/256"
+                }
+              ]
+            }
+          ],
+          "pair_score": "13/128",
+          "score_predicts_containment": true,
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "midpoint_score_cost": {
+            "complement_phase_reductions": 2,
+            "distance_computations": 2,
+            "midpoint_samples": 1,
+            "minimum_margin_comparisons": 1,
+            "signed_margin_subtractions": 2
+          },
+          "potential_slack": "1/896"
+        }
+      ],
+      "candidate_selected_pair": [
+        6,
+        11
+      ],
+      "inherited_lexicographic_pair": [
+        6,
+        11
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_query": {
+        "base_pair": [
+          6,
+          11
+        ],
+        "complement": [
+          7,
+          16
+        ],
+        "base_positive_component_count": 1,
+        "containment_holds": true,
+        "violation_count": 0,
+        "first_exact_violation": null,
+        "all_exact_violations": [],
+        "event_ledger": {
+          "raw_in_window_thresholds": 9,
+          "unique_threshold_events_including_window_endpoints": 10,
+          "open_cells": 9
+        },
+        "operation_cost": {
+          "base_complement_piece_tests": 3,
+          "blocking_pieces": 6,
+          "blocking_state_comparisons": 12,
+          "clip_comparisons": 34,
+          "containment_conclusions": 1,
+          "distance_computations": 12,
+          "join_advance_comparisons": 3,
+          "join_clip_comparisons": 4,
+          "join_nonempty_comparisons": 2,
+          "join_steps": 2,
+          "lap_candidates": 17,
+          "nonempty_comparisons": 17,
+          "phase_reductions": 12,
+          "positive_components": 1,
+          "violation_clip_comparisons": 6,
+          "violation_nonempty_comparisons": 3
+        },
+        "endpoint_semantics": "strict blocker distance<1/8; equality is safe"
+      },
+      "selected_result": {
+        "query_issued": true,
+        "selected_base_pair": [
+          6,
+          11
+        ],
+        "selected_pair_score": "59/264",
+        "containment_holds": true,
+        "outcome": "certified",
+        "certified_lower_bound": "1/896",
+        "counterfactual_bound_if_containment_held": "1/896",
+        "first_exact_violation": null,
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [
+          {
+            "base_pair": [
+              6,
+              11
+            ],
+            "complement": [
+              7,
+              16
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 9,
+              "unique_threshold_events_including_window_endpoints": 10,
+              "open_cells": 9
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "59/264",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          },
+          {
+            "base_pair": [
+              11,
+              16
+            ],
+            "complement": [
+              6,
+              7
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 9,
+              "unique_threshold_events_including_window_endpoints": 10,
+              "open_cells": 9
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 2,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 4,
+              "violation_nonempty_comparisons": 2
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "midpoint_pair_score": "13/128",
+            "midpoint_sign_prediction": true,
+            "prediction_class": "true_positive"
+          }
+        ],
+        "successful_pairs": [
+          [
+            6,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "failed_pairs": [],
+        "prediction_class_counts": {
+          "true_positive": 2
+        },
+        "selected_pair_contains": true,
+        "score_order_inversion": false,
+        "score_order_inversion_witnesses": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              6,
+              11
+            ],
+            "pinned_control_query_available": true,
+            "containment_matches_pinned_control": true
+          },
+          {
+            "base_pair": [
+              11,
+              16
+            ],
+            "pinned_control_query_available": false,
+            "containment_matches_pinned_control": null
+          }
+        ],
+        "archive_used_to_change_candidate_choice": false
+      }
+    },
+    "doubling_112": {
+      "id": "doubling_112",
+      "role": "dispatch_control",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "pair_only_minimum": "761/32256",
+      "eligible_pair_count": 0,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "pair_only_positive_exit",
+      "minimum_component_count": null,
+      "tied_minimum_pairs": [],
+      "scored_tied_pairs": [],
+      "candidate_selected_pair": null,
+      "inherited_lexicographic_pair": null,
+      "choice_cost": {},
+      "selected_result": {
+        "query_issued": false,
+        "outcome": "pair_only_positive_exit",
+        "certified_lower_bound": "761/32256",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      }
+    },
+    "tight_13": {
+      "id": "tight_13",
+      "role": "dispatch_control",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "pair_only_minimum": "0",
+      "eligible_pair_count": 0,
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "no_eligible_pair_no_duration_query",
+      "minimum_component_count": null,
+      "tied_minimum_pairs": [],
+      "scored_tied_pairs": [],
+      "candidate_selected_pair": null,
+      "inherited_lexicographic_pair": null,
+      "choice_cost": {},
+      "selected_result": {
+        "query_issued": false,
+        "outcome": "no_eligible_pair_no_duration_query",
+        "certified_lower_bound": null,
+        "second_or_fallback_query_issued": false
+      },
+      "isolated_equality_endpoint": {
+        "time": "3/8"
+      },
+      "postselection_tied_pair_oracle": {
+        "queries": [],
+        "charged_separately_from_selected_query": true,
+        "cannot_change_frozen_choice": true
+      }
+    }
+  },
+  "reflection_audit": [
+    {
+      "record_ids": [
+        "squares:1,2,5:12",
+        "squares:1,2,5:39"
+      ],
+      "role": "development",
+      "scores_choices_and_outcomes_match": true,
+      "counted_as_independent_validation": false
+    },
+    {
+      "record_ids": [
+        "fibonacci:1,2,4:1",
+        "fibonacci:1,2,4:32"
+      ],
+      "role": "archival_control",
+      "scores_choices_and_outcomes_match": true,
+      "counted_as_independent_validation": false
+    },
+    {
+      "record_ids": [
+        "fibonacci:1,2,4:11",
+        "fibonacci:1,2,4:22"
+      ],
+      "role": "archival_control",
+      "scores_choices_and_outcomes_match": true,
+      "counted_as_independent_validation": false
+    }
+  ],
+  "counts": {
+    "development_labels": 2,
+    "development_reflection_mechanisms": 1,
+    "archival_control_labels": 4,
+    "archival_control_reflection_mechanisms": 2,
+    "named_control_labels_and_mechanisms": 1,
+    "active_tie_labels": 7,
+    "active_tie_reflection_mechanisms_including_strict_16": 4,
+    "candidate_selected_query_success_labels": 7,
+    "candidate_selected_query_success_mechanisms": 4,
+    "candidate_selected_query_failure_labels": 0,
+    "tied_pair_label_queries_in_oracle": 16,
+    "tied_pair_reflection_mechanism_queries_in_oracle": 9,
+    "selected_logical_queries": 7,
+    "selected_physical_window_queries": 7,
+    "selected_reflection_mechanism_queries": 4,
+    "second_or_fallback_queries": 0,
+    "pair_only_dispatch_exits": 1,
+    "no_eligible_pair_dispatch_exits": 1
+  },
+  "outcomes": {
+    "development_score_orders_known_success_before_known_failure": true,
+    "development_selected_queries_certified": 2,
+    "development_failed_tied_pair_labels": 2,
+    "archival_control_selected_queries_certified": 4,
+    "strict_16_selected_query_certified": true,
+    "midpoint_sign_prediction_counts": {
+      "false_positive": 2,
+      "true_positive": 14
+    },
+    "score_order_inversion_labels": 0,
+    "all_control_tied_pairs_contain": true
+  },
+  "aggregate_cost_ledgers": {
+    "candidate_preselection_midpoint_scores": {
+      "tied_pairs": 16,
+      "reconstructed_positive_components": 16,
+      "component_reconstruction_operations": {
+        "blocking_pieces": 57,
+        "blocking_state_comparisons": 114,
+        "clip_comparisons": 286,
+        "distance_computations": 114,
+        "join_advance_comparisons": 66,
+        "join_clip_comparisons": 80,
+        "join_nonempty_comparisons": 40,
+        "join_steps": 40,
+        "lap_candidates": 143,
+        "nonempty_comparisons": 143,
+        "phase_reductions": 114,
+        "positive_components": 16
+      },
+      "prescribed_midpoint_operations": {
+        "complement_phase_reductions": 32,
+        "distance_computations": 32,
+        "midpoint_samples": 16,
+        "minimum_margin_comparisons": 16,
+        "signed_margin_subtractions": 32
+      },
+      "pair_choice_operations": {
+        "pair_score_comparisons": 9
+      }
+    },
+    "selected_one_query": {
+      "base_complement_piece_tests": 33,
+      "blocking_pieces": 58,
+      "blocking_state_comparisons": 116,
+      "clip_comparisons": 262,
+      "containment_conclusions": 7,
+      "distance_computations": 116,
+      "join_advance_comparisons": 30,
+      "join_clip_comparisons": 36,
+      "join_nonempty_comparisons": 18,
+      "join_steps": 18,
+      "lap_candidates": 131,
+      "nonempty_comparisons": 131,
+      "open_cells": 99,
+      "phase_reductions": 116,
+      "positive_components": 7,
+      "raw_in_window_thresholds": 93,
+      "unique_threshold_events_including_window_endpoints": 106,
+      "violation_clip_comparisons": 66,
+      "violation_nonempty_comparisons": 33
+    },
+    "postselection_all_tied_pair_oracle_charged_separately": {
+      "base_complement_piece_tests": 79,
+      "blocking_pieces": 136,
+      "blocking_state_comparisons": 272,
+      "clip_comparisons": 604,
+      "containment_conclusions": 16,
+      "distance_computations": 272,
+      "join_advance_comparisons": 66,
+      "join_clip_comparisons": 80,
+      "join_nonempty_comparisons": 40,
+      "join_steps": 40,
+      "lap_candidates": 302,
+      "nonempty_comparisons": 302,
+      "open_cells": 232,
+      "phase_reductions": 272,
+      "positive_components": 16,
+      "raw_in_window_thresholds": 218,
+      "unique_threshold_events_including_window_endpoints": 248,
+      "violation_clip_comparisons": 158,
+      "violation_nonempty_comparisons": 79
+    },
+    "comparison_policy": "Unlike operations are not combined into a synthetic runtime score."
+  },
+  "findings": {
+    "finite_status": "OBSERVED on frozen development and archival controls",
+    "development_fit_is_validation": false,
+    "archival_controls_are_prospective_held_out": false,
+    "midpoint_sign_is_containment_proof": false,
+    "all_success_controls_supply_negative_validation": false,
+    "general_selector_claim": false,
+    "whole_configuration_claim": false,
+    "novelty_claim": false,
+    "independent_mathematical_validation": false
+  },
+  "interpretation_limits": [
+    "The squares success/failure tie is development data used to formulate this candidate.",
+    "The Fibonacci records are archival controls whose full geometry already existed; they are not prospective held-out cases.",
+    "A finite midpoint sample is not a containment proof and may miss blocking away from the midpoint.",
+    "A failed local certificate is not failed loneliness, and a valid isolated equality point is not positive duration.",
+    "Selected-reference findings do not imply whole-configuration claims.",
+    "AI agreement is not independent mathematical validation."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "baseline": "9ef34894a8657d91f1276a0a6fff32322b3e64da",
+  "status": "FROZEN BEFORE CONTROL CALCULATION",
+  "question": "Within a tie for minimum positive base-pair component count, does one exact midpoint safety-margin sample per component distinguish the archived successful and failed compound containments without performing another containment query?",
+  "source_contract": {
+    "selector_transfer_protocol": "reviews/2026-09-28-selector-transfer-audit/protocol.json",
+    "selector_transfer_protocol_sha256": "ccfdb403abef15f9c2cd9e08ac086232f4842b450f48308ba5a5992f8c3f9c17",
+    "selector_transfer_results": "reviews/2026-09-28-selector-transfer-audit/results.json",
+    "selector_transfer_results_sha256": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+    "selector_transfer_note": "notes/SELECTOR_TRANSFER_AUDIT_2026_09_28.md",
+    "selector_transfer_note_sha256": "772d120dc40fc37e15d9d88822fa1d46b220f825992de2c6cbde15dfbe377e4f",
+    "floor_sum_results": "reviews/2026-09-28-floor-sum-component-count/results.json",
+    "floor_sum_results_sha256": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "one_query_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "one_query_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5"
+  },
+  "frozen_domain": {
+    "development_records": [
+      "squares:1,2,5:12",
+      "squares:1,2,5:39"
+    ],
+    "development_reason": "The reflected squares records supply the already-known equal-count success/failure pair that motivated this candidate. They are not validation evidence.",
+    "archival_control_records": [
+      "fibonacci:1,2,4:1",
+      "fibonacci:1,2,4:11",
+      "fibonacci:1,2,4:22",
+      "fibonacci:1,2,4:32"
+    ],
+    "named_control": "strict_16",
+    "dispatch_controls": [
+      "doubling_112",
+      "tight_13"
+    ],
+    "reflection_policy": "The two squares labels and the paired Fibonacci labels are exact reflections. Report labels and reflection mechanisms separately; reflections are consistency checks, not independent validation.",
+    "no_domain_expansion": "No new speed, window, core, reference, archive record, broad scan, alternate-window campaign or +7/+9 work."
+  },
+  "frozen_dispatch": {
+    "pair_only_exit": "If the inherited pair-only minimum is positive, stop before component scoring or containment. This must reproduce doubling_112.",
+    "no_eligible_pair": "If no inherited potential slack is strictly positive, make no duration query and preserve isolated equality separately. This must reproduce tight_13.",
+    "unique_minimum_count": "If exactly one eligible pair has minimum component count, retain the prior minimum-component selection without midpoint scoring; such records are outside the tie-discriminator evaluation.",
+    "minimum_count_tie": "Only eligible pairs tied at the minimum exact floor-sum component count receive midpoint scores."
+  },
+  "frozen_candidate_rule": {
+    "name": "maximin complement midpoint safety margin",
+    "component_reconstruction": "For each tied base pair {a,b}, reconstruct every positive component I=(l,r), with inherited window endpoint flags, from exact blocker thresholds. The component count must equal the pinned floor-sum count.",
+    "sample": "For each positive component use exactly one time t_I=(l+r)/2. Endpoint flags do not affect this interior midpoint.",
+    "signed_margin": "For complement speed v, margin(v,t)=distance(v*t,Z)-1/8. Positive is strictly safe, zero is threshold-safe contact, negative is blocking.",
+    "pair_score": "The pair score is the minimum signed margin over every component midpoint and both complement speeds.",
+    "selection": "Among pairs tied at the minimum component count, maximize pair score; break an exact score tie by physical-speed lexicographic order.",
+    "query_budget": "After the score choice is immutable, issue the same single compound containment query as the inherited policy on the selected pair. No second pair, fallback, alternate window, endpoint rescue or score change is allowed.",
+    "baseline_comparator": "Also record the inherited physical-lexicographic choice among minimum-count ties, but do not grant it an additional query if it differs; its archived outcome is a postselection comparison.",
+    "no_retuning": "Do not change the score, direction, aggregation, ties, domain or dispatch after any control outcome is read."
+  },
+  "information_contract": {
+    "preselection_projection": "Before calculation, irreversibly project the pinned selector-transfer results to record id, speeds, window, pair-only minimum, eligible physical pairs, potential slack and floor-sum component count. No containment answer, violation, actual lonely duration, postselection classification or archive mechanism may remain live.",
+    "allowed_new_information": "Exact endpoints/lap labels of tied minimum-count base-pair components and two complement phase evaluations at each component midpoint.",
+    "forbidden_preselection_information": "No complement threshold-event schedule away from the prescribed midpoints, no interval containment result, no violation search, no oracle answer and no actual-duration answer.",
+    "postselection_reload": "Only after all midpoint scores, choices and the selected one-query outcomes are immutable may the pinned archive be reloaded for all-tied-pair oracle classification, inherited lexicographic comparison, reflection QA and mechanism labels."
+  },
+  "postselection_audits": {
+    "all_tied_pair_containments": "Test every tied minimum-count pair only after the candidate choice is immutable. Classify whether midpoint-score sign predicts containment and preserve false positives, false negatives and score-order inversions.",
+    "development_question": "Does the score order the known squares successful pair ahead of the known failed pair? This is fit-to-development, not transfer evidence.",
+    "control_question": "On the Fibonacci and strict_16 ties, does the unchanged score select a containing pair, and do equal success outcomes expose a lack of negative validation?",
+    "dispatch_question": "Confirm doubling_112 exits before scoring and tight_13 makes no duration query while retaining isolated equality t=3/8."
+  },
+  "cost_ledger": {
+    "midpoint_score": "Record tied pairs, reconstructed components, midpoint samples, complement phase reductions, distance computations and exact comparisons.",
+    "selected_query": "Record one logical/physical compound containment query per active tie record, threshold events, open cells and exact violations.",
+    "oracle": "Charge all tied-pair postselection containments separately from candidate selection and selected query.",
+    "comparison_policy": "Do not combine unlike operations into a synthetic runtime score."
+  },
+  "verification": {
+    "primary": "Exact integers and fractions.Fraction only; deterministic --write/--check modes; initial source projection must be literal.",
+    "independent": "No import of primary.py or its component/phase helpers. Reconstruct components and midpoint phases from exact threshold events, recompute choices, and compare postselection containment outcomes independently.",
+    "adversarial": "Attack development leakage, whether the score is a disguised containment query, reflection double-counting, endpoint semantics, score aggregation, dispatch, oracle contamination, cost language, and overgeneralization from all-success controls."
+  },
+  "interpretation_limits": [
+    "The squares success/failure tie is development data used to formulate this candidate.",
+    "The Fibonacci records are archival controls whose full geometry already existed; they are not prospective held-out cases.",
+    "A finite midpoint sample is not a containment proof and may miss blocking away from the midpoint.",
+    "A failed local certificate is not failed loneliness, and a valid isolated equality point is not positive duration.",
+    "Selected-reference findings do not imply whole-configuration claims.",
+    "AI agreement is not independent mathematical validation."
+  ]
+}
