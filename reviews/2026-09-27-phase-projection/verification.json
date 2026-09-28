@@ -1,0 +1,297 @@
+{
+  "status": "REPRODUCED exact two-case phase profiles; shifted starts explicitly separated from common-start theta0",
+  "protocol_sha256": "8eba9a06595a2014095f84cc22c6b91d65d6f9fd71771912e0af368293bdff17",
+  "source_results_sha256": "daf8cadcb6f06bda538c9231f053e37c85fdaeba5fbd4167ca96d442ddc5ba34",
+  "primary_script_sha256": "6a7619b02c19e7141dbb7b8a3015f1e69704365ee6e137020d9972216d535526",
+  "prior_archive_sha256": "612cd4320fc3083476b352f8ce058e345cf2f88a418a36e87228cdbad29c8692",
+  "verifier_script_sha256": "c38160200ba606b8e3ccb001726af22251537ebc86a912df64d5342f09843731",
+  "methods": [
+    "threshold-event states and direct event-point distances for A",
+    "explicit safe-time preimage lists and branches for P, N, and B",
+    "direct shifted speed11 SAFE time-band intersections with A",
+    "all algebraic critical theta points plus one exact midpoint per open cell",
+    "time-domain active min/max branches give slopes independently of phase integrals",
+    "exact interval flags for extrema, plateaus, status sets and circular gaps",
+    "all29 prior phases and their entire allowed time sets against pinned archive"
+  ],
+  "continuum_justification": [
+    "For theta in [0,1] and t in A subset (0,1), only safe bands with lap integer0..11 can meet A.",
+    "Each A component [a,b] meets a shifted safe band [L(theta),R(theta)] in a length max(0,min(b,R)-max(a,L)); L and R have slope -1/11.",
+    "A min/max branch or nonempty-intersection change requires L or R to equal a or b. The script enumerates every such equation in [0,1] and checks equality with the endpoint-phase candidate set; translated circle-cut0 adds only redundant boundaries.",
+    "All comparisons therefore have fixed signs inside each generated open cell. Summing the selected affine time-domain branches gives D exactly throughout the cell. Direct endpoint and midpoint values verify the coefficients and continuity.",
+    "At zero duration, contact-only membership may change only when a moving safe boundary crosses an A endpoint or isolated time; these are the same candidates. Every zero-duration open-cell contact is checked to be an isolated fixed time of A.",
+    "The unweighted support estimate has the same min/max argument on B. Its breakpoints are contained in the generated partition, so differences, extrema and merged plateau sets are certified over the entire phase circle."
+  ],
+  "cases": [
+    {
+      "id": "tight13",
+      "case_sha256": "f7d6e4e2e858fbfcc3026ee7e0b2144dd44b73418c976762d1d3a4bf19cb99cd",
+      "A_component_count": 6,
+      "phase_event_count": 11,
+      "phase_cell_count": 11,
+      "candidate_theta_event_count": 18,
+      "direct_theta_point_checks": 19,
+      "direct_theta_cell_midpoint_checks": 18,
+      "endpoint_affine_identity_checks": 36,
+      "breakpoint_completeness_verified": true,
+      "full_case_field_comparison": true,
+      "prior_offsets_checked": 13,
+      "A_duration": "115/2184",
+      "P_metrics": {
+        "measure": "1/4",
+        "maximum_circular_gap": "1/4",
+        "minimum_covering_arc_length": "3/4",
+        "maximal_gap_arcs": [
+          [
+            "1/8",
+            "3/8",
+            "1/4"
+          ],
+          [
+            "3/8",
+            "5/8",
+            "1/4"
+          ],
+          [
+            "5/8",
+            "7/8",
+            "1/4"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "measure": "1/4",
+        "maximum_circular_gap": "3/4",
+        "minimum_covering_arc_length": "1/4",
+        "maximal_gap_arcs": [
+          [
+            "1/8",
+            "7/8",
+            "3/4"
+          ]
+        ]
+      },
+      "maximum_point_multiplicity": 3,
+      "maximum_bulk_multiplicity": 3,
+      "duration_extrema": {
+        "minimum": "0",
+        "maximum": "115/2184",
+        "minimizer_set": [
+          [
+            "0",
+            "0",
+            true,
+            true
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "1/4",
+            "3/4",
+            true,
+            true
+          ]
+        ]
+      },
+      "support_estimate_extrema": {
+        "minimum": "0",
+        "maximum": "1/44",
+        "minimizer_set": [
+          [
+            "0",
+            "0",
+            true,
+            true
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "1/4",
+            "3/4",
+            true,
+            true
+          ]
+        ]
+      },
+      "underestimate_extrema": {
+        "minimum": "0",
+        "maximum": "719/24024",
+        "minimizer_set": [
+          [
+            "0",
+            "1/48",
+            true,
+            true
+          ],
+          [
+            "47/48",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "11/48",
+            "37/48",
+            true,
+            true
+          ]
+        ]
+      },
+      "phase_status_sets": {
+        "strict": [
+          [
+            "0",
+            "1",
+            false,
+            false
+          ]
+        ],
+        "contacts": [
+          [
+            "0",
+            "0",
+            true,
+            true
+          ]
+        ],
+        "empty": []
+      }
+    },
+    {
+      "id": "strict16",
+      "case_sha256": "f7472be9bd1bb29c8c403e2c50b56df11ac218dcf0352d1b1a0fd25925907740",
+      "A_component_count": 6,
+      "phase_event_count": 13,
+      "phase_cell_count": 13,
+      "candidate_theta_event_count": 25,
+      "direct_theta_point_checks": 26,
+      "direct_theta_cell_midpoint_checks": 25,
+      "endpoint_affine_identity_checks": 50,
+      "breakpoint_completeness_verified": true,
+      "full_case_field_comparison": true,
+      "prior_offsets_checked": 16,
+      "A_duration": "7/96",
+      "P_metrics": {
+        "measure": "151/448",
+        "maximum_circular_gap": "19/64",
+        "minimum_covering_arc_length": "45/64",
+        "maximal_gap_arcs": [
+          [
+            "45/128",
+            "83/128",
+            "19/64"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "measure": "151/448",
+        "maximum_circular_gap": "19/64",
+        "minimum_covering_arc_length": "45/64",
+        "maximal_gap_arcs": [
+          [
+            "45/128",
+            "83/128",
+            "19/64"
+          ]
+        ]
+      },
+      "maximum_point_multiplicity": 4,
+      "maximum_bulk_multiplicity": 4,
+      "duration_extrema": {
+        "minimum": "39/4928",
+        "maximum": "7/96",
+        "minimizer_set": [
+          [
+            "0",
+            "1/48",
+            true,
+            true
+          ],
+          [
+            "47/48",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "61/128",
+            "67/128",
+            true,
+            true
+          ]
+        ]
+      },
+      "support_estimate_extrema": {
+        "minimum": "39/4928",
+        "maximum": "151/4928",
+        "minimizer_set": [
+          [
+            "0",
+            "1/32",
+            true,
+            true
+          ],
+          [
+            "31/32",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "61/128",
+            "67/128",
+            true,
+            true
+          ]
+        ]
+      },
+      "underestimate_extrema": {
+        "minimum": "0",
+        "maximum": "625/14784",
+        "minimizer_set": [
+          [
+            "0",
+            "1/48",
+            true,
+            true
+          ],
+          [
+            "47/48",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "11/48",
+            "37/48",
+            true,
+            true
+          ]
+        ]
+      },
+      "phase_status_sets": {
+        "strict": [
+          [
+            "0",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "contacts": [],
+        "empty": []
+      }
+    }
+  ],
+  "total_prior_offsets_checked": 29,
+  "total_algebraic_theta_cells": 43,
+  "total_direct_theta_points": 45
+}

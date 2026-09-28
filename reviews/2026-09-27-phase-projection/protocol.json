@@ -1,0 +1,42 @@
+{
+  "title": "Exact phase projections, preimage multiplicity, and compact existence certificates",
+  "date": "2026-09-27 America/Los_Angeles",
+  "baseline_commit": "0d67b3077af417f8b3e365b18bb2a6cb92b76189",
+  "status": "Frozen before the new phase profiles; previously known global and restricted phase results inform this protocol",
+  "cases": [
+    {"id":"tight13","velocities":[0,1,4,5,6,7,11,13]},
+    {"id":"strict16","velocities":[0,1,4,5,6,7,11,16]}
+  ],
+  "reference_index": 0,
+  "n": 8,
+  "threshold": "1/8",
+  "chosen_runner_speed": 11,
+  "time_interval": ["0","1"],
+  "phase_interval": ["0","1"],
+  "phase_circle_convention": "Represent phase points in [0,1), identifying 1 with 0; never double count a wrapped endpoint",
+  "objects": [
+    "A_V: complete closed safe set of unchanged speeds1,4,5,6,7,V",
+    "P_V: exact image of A_V under x=11t mod1, retaining all isolated points and boundary flags",
+    "N_V(x): number of distinct safe-time preimages (j+x)/11 in A_V; record constant counts on open phase cells and exact preimage lists at every event point",
+    "B_V: closure of the positive-measure support of N, distinguished from extra isolated points of P",
+    "D_V(theta)=(1/11) integral N_V(x)1_{||x+theta||>=1/8}dx for every theta, with exact piecewise-affine profile and all critical phases",
+    "Phase-dependent existence/contact-only/strict status and exact minimum/maximum values, including plateaus and endpoints"
+  ],
+  "summary_tests": [
+    "Compare full P, closed bulk support B, support measure, maximum circular gap/minimum covering-arc length, and full multiplicity N; state exactly which questions each determines",
+    "Compute the unweighted support-duration estimate (1/11)*measure(B intersect safe_theta), compare with true D without calling it a second physical runner configuration",
+    "Check the prior29 prescribed phases11s/V against their pinned archive without expanding the speed domain",
+    "Permit at most one explicitly abstract finite closed time-set pair with identical projection but different multiplicity, to establish a representation limit; label it nonphysical"
+  ],
+  "compact_certificate_test": {
+    "fixed_candidate_pairs": [
+      {"case":"tight13","times":["1/8","7/8"]},
+      {"case":"strict16","times":["7/15","8/15"]}
+    ],
+    "rationale": "Chosen by elementary symmetry and endpoint balancing before profile computation, not a blind search",
+    "task": "Independently check all unchanged distances and speed11 circular phase separation; derive a two-time certificate valid for every initial phase of11 if the margins permit it. Do not assume success or global optimality."
+  },
+  "verification": "Separate direct time-domain reconstruction for all algebraically generated critical phase points and every intervening cell; prove breakpoint completeness rather than treating sampled phases as a continuum proof",
+  "general_review": "Audit covering-arc criteria for all-phase existence versus strictness, endpoint protection and quantitative margins. General claims require supplied arguments and remain proof candidates.",
+  "limits": "Only two fixed velocity lists, exact finite algebraic phase partitions, the two predeclared time pairs, and at most one abstract representation countermodel. No new speed search, all-reference enumeration, arbitrary phase grid, outside contact, paid compute, novelty claim, or unlabelled change from common-start to shifted-start."
+}
