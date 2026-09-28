@@ -1,0 +1,66 @@
+{
+  "baseline": "bf5795ed41c06fc45be02f7b7c3a2c273de27749",
+  "status": "FROZEN BEFORE LAP-BAND CALCULATION",
+  "question": "Can the positive-component count of B_a intersect B_b be obtained from a speed/window integer-lattice formula, without constructing either runner's blocking-interval list or the pair-intersection intervals, and does that formula reproduce the frozen fewest-components selector?",
+  "source_contract": {
+    "selector_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "selector_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+    "physical_geometry_and_moments": "reviews/2026-09-28-joint-triple-exclusions/results.json",
+    "physical_geometry_and_moments_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+    "control_roles": "reviews/2026-09-28-cover-obligations/results.json",
+    "control_roles_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e"
+  },
+  "cases": [
+    {"id": "collective_target", "source_case": "target"},
+    {"id": "strict_16", "source_case": "strict_16"},
+    {"id": "doubling_112", "source_case": "doubling_112"},
+    {"id": "tight_13", "source_case": "tight_13"}
+  ],
+  "frozen_candidate_lemma": {
+    "domain": "positive integer speeds a<b, one nondegenerate rational window J=[L,R], threshold delta=1/8, strict blocking B_v={t in J: ||v t||<delta}",
+    "lap_window_bounds": "A lap label m for speed a can participate exactly when aL-delta < m < aR+delta; similarly bL-delta < n < bR+delta",
+    "lap_band": "The two strict blocking laps overlap with positive length exactly when |b*m-a*n| < delta*(a+b)",
+    "count_claim": "The number of positive connected components of B_a intersect B_b equals the number of integer lap pairs (m,n) satisfying both open window bounds and the open lap-band inequality",
+    "per_m_count": "For each eligible integer m, set lower=max(bL-delta,(b*m-delta*(a+b))/a) and upper=min(bR+delta,(b*m+delta*(a+b))/a). The number of integer n with lower<n<upper is max(0,ceil(upper)-floor(lower)-1). Sum over m.",
+    "iteration_policy": "Always use a<b and iterate only the candidate m labels of the smaller speed, in increasing order.",
+    "endpoint_policy": "All inequalities are strict because blocking is strict and zero-length contacts are not positive components; threshold equality remains safe. Window endpoints may belong to a positive relative component but do not alter the strict lap-pair conditions."
+  },
+  "frozen_decision_rule": {
+    "eligibility": "Use the already frozen condition C_0-O_cd>0 from archived total/single/pair moments.",
+    "selection": "Among eligible base pairs, minimize the lap-band count; break an exact tie directly by physical-speed lexicographic order.",
+    "no_query": "This investigation issues no new complement-containment query. After selection is fixed, compare only with the prior selector outcome and its archived containment result.",
+    "no_retuning": "Do not add a score, secondary key, special case or alternate pair after seeing counts or archived outcomes."
+  },
+  "calculation_order": [
+    "Verify the protocol and pinned source hashes.",
+    "Read only windows, speeds and moment-derived eligibility; do not read archived pair components or selector choices.",
+    "Apply the lap-band formula to all 24 physical pairs, recording every candidate m row, open rational bounds and counted n labels.",
+    "Select from eligible pairs by the frozen rule.",
+    "Only after all formula counts and selections are fixed, compare with the archived component counts, interval-derived selector and containment outcomes.",
+    "Independently reconstruct blocking threshold events and components in a separately structured verifier."
+  ],
+  "scope": {
+    "windows": 4,
+    "physical_pairs": 24,
+    "selector_charged_pairs": "exactly the pairs with positive C_0-O_cd",
+    "new_containment_queries": 0,
+    "arithmetic": "fractions.Fraction only; no floating-point decisions",
+    "forbidden": [
+      "construct blocking-interval lists or pair-intersection intervals in the primary count",
+      "read archived component counts or selector choices before primary counts and selections are fixed",
+      "post-result retuning",
+      "new speeds, windows, cores or references",
+      "broad or all-reference scan",
+      "alternate-window campaign",
+      "+7 or +9 campaign",
+      "uniform runtime, novelty, whole-configuration or general Lonely Runner claim"
+    ]
+  },
+  "controls_and_limits": [
+    "strict_16 tests an exact count tie and physical-speed lexicographic resolution.",
+    "doubling_112 remains a diagnostic after its pair-only-positive exit; formula selection does not replace that certificate.",
+    "tight_13 has no strictly positive-slack pair; its isolated equality t=3/8 remains separate from positive component counts.",
+    "The lemma may be supplied as an elementary proof candidate, but finite agreement is OBSERVED only and AI agreement is not independent mathematical validation.",
+    "The formula can still iterate speed-dependent lap labels. Avoid calling it constant-time, uniformly cheap, or better than the prior sparse arithmetic selector without a proved comparison."
+  ]
+}

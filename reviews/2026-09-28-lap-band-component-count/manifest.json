@@ -1,0 +1,77 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "bf5795ed41c06fc45be02f7b7c3a2c273de27749",
+  "question": "Can positive components of B_a intersect B_b be counted arithmetically from speeds and one window without constructing blocker or pair-intersection interval lists, and does that reproduce the frozen selector?",
+  "status": "OBSERVED exact agreement on 24 supplied pairs; general lap-band identity is an AI-assisted elementary proof candidate; no held-out-selector, runtime, novelty, whole-configuration or new-existence claim",
+  "delegation": {
+    "calculation": "lapband_calc implemented primary.py and results.json behind an access/dependency projection",
+    "independent_verification": "lapband_verify implemented verify.py, verification.json and verification.md using threshold-event components rather than the row formula",
+    "adversarial_review": "lapband_challenge proved and attacked endpoints, Helly, label uniqueness, gcd behavior, cost language and prior-work boundaries in challenge.md",
+    "coordination": "root verified the live continuation, froze protocol.json before calculation, replayed checks, wrote the note, and updated continuity"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-lap-band-component-count/primary.py --check",
+    "python -S -B reviews/2026-09-28-lap-band-component-count/verify.py --check",
+    "python -m unittest discover -s tests -v"
+  ],
+  "formula": {
+    "participation": "aL-delta<m<aR+delta and bL-delta<n<bR+delta",
+    "band": "abs(b*m-a*n)<delta*(a+b)",
+    "per_m_count": "max(0,ceil(upper)-floor(lower)-1)",
+    "component_bijection_conditions": "positive integer speeds a<b, one nondegenerate window, strict blocking, delta=1/8<1/2"
+  },
+  "results": {
+    "all_24_formula_counts_match_interval_components": true,
+    "target_pair_counts": {"15,38": 1, "61,100": 3},
+    "target_selection": [15,38],
+    "target_prior_bound": "49/524400",
+    "strict16_eligible_counts": {"6,11": 1, "11,16": 1},
+    "strict16_lex_selection": [6,11],
+    "strict16_prior_bound": "1/896",
+    "doubling112_pair_counts": [2,3,6,3,5,4],
+    "doubling112_diagnostic_selection": [56,64],
+    "doubling112_pair_only_exit": "761/32256",
+    "tight13_selection": null,
+    "tight13_isolated_equality": "3/8",
+    "new_containment_queries": 0
+  },
+  "scope_counts": {
+    "windows": 4,
+    "validation_pairs": 24,
+    "all_candidate_m_rows": 63,
+    "all_compatible_lap_pairs": 41,
+    "active_selector_pairs": 4,
+    "active_selector_m_rows": 7,
+    "active_selector_compatible_lap_pairs": 4,
+    "doubling_diagnostic_pairs": 6,
+    "doubling_diagnostic_m_rows": 39,
+    "doubling_diagnostic_compatible_lap_pairs": 23,
+    "eligible_pairs_total": 10,
+    "ineligible_audit_pairs": 14,
+    "independent_threshold_events": 311,
+    "independent_open_cells": 287,
+    "independent_primary_fields_compared": 28,
+    "repository_tests": 25
+  },
+  "information_barrier": "The full pinned joint archive is parsed, then irreversibly projected to exactly speeds, window and moments before all 24 counts and four case decisions. Component fields, archived selector choices, outcomes and control roles are not accessed or used until postselection comparison.",
+  "interpretation_limits": [
+    "The determinant strip is arithmetic overlap geometry, not removal of geometry",
+    "The row loop is speed-dependent and can repeat work that cached interval lists share",
+    "The primary materializes compatible n labels for review although the count formula need not",
+    "The target is a known development case, not held-out validation",
+    "Doubling112 is diagnostic after a pair-only-positive exit and tight13 has no eligible selection",
+    "The sparse arithmetic selector and lap-labelled occurrence representation are prior repository work",
+    "Internal AI agreement is not independent mathematical validation"
+  ],
+  "next_step": "Freeze an exact Euclidean/floor-sum counter on the same 24 pairs to remove the per-m scan, prove strict-boundary handling and compare operation costs with the row formula and cached interval enumeration.",
+  "sha256": {
+    "reviews/2026-09-28-lap-band-component-count/protocol.json": "9053ebb58fa30a1841e03bb1aba686fb51631b01480186772f751df63bda1165",
+    "reviews/2026-09-28-lap-band-component-count/primary.py": "45cebc6c6ac49e79127e077889c5438961240552af7a77efefaa3cbda9e8031c",
+    "reviews/2026-09-28-lap-band-component-count/results.json": "d756a43dedfe161eb1cfc5ca4eb751665b1e3fca5a22c88b9167700bf2b3cadb",
+    "reviews/2026-09-28-lap-band-component-count/verify.py": "8d9b94a8094a12526ab76bec5613e8662f44e3ba72be4ca494fd1731f4d1e197",
+    "reviews/2026-09-28-lap-band-component-count/verification.json": "c1171727805d36e27199108d4596af120b18782a9192b03c136789ec9e5730d6",
+    "reviews/2026-09-28-lap-band-component-count/verification.md": "b31b5556c15737eb99be508c7851762c5fd98e1a41f9a381cda648578329133f",
+    "reviews/2026-09-28-lap-band-component-count/challenge.md": "12e1864398970f48c2099cadd9cca87b92d062630538ec6e49471f99d1e0be84",
+    "notes/LAP_BAND_COMPONENT_COUNT_2026_09_28.md": "d55cb46a251c37073b0cfe9c652ab5941f9b0044b6561119e0ff4f4a4ff0668c"
+  }
+}
