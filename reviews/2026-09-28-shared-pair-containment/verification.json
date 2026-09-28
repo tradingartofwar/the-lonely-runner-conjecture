@@ -1,0 +1,4535 @@
+{
+  "archive_comparison": {
+    "collective_target": {
+      "joint_geometry_equal": true
+    },
+    "doubling_112": {
+      "cover_blockers_and_laps_equal": true,
+      "joint_geometry_equal": true
+    },
+    "sparse_arithmetic": {
+      "note": "The old sparse tests use the two different fixed regions P and Q; they are not this preselected shared-pair containment or its five-edge correction.",
+      "old_test_formula": "floor(w*a-1/8)+1 < w*b+1/8",
+      "old_two_occurrence_tests_recomputed": {
+        "13": {
+          "triple_6_11_w_possible": false,
+          "triple_7_11_w_possible": false
+        },
+        "16": {
+          "triple_6_11_w_possible": false,
+          "triple_7_11_w_possible": false
+        }
+      },
+      "strict_16_clear_lower_bound": "1/896",
+      "strict_16_replacement": 16,
+      "tight_13_clear_lower_bound": "0",
+      "tight_13_replacement": 13
+    },
+    "strict_16": {
+      "cover_blockers_and_laps_equal": true,
+      "joint_geometry_equal": true
+    },
+    "tight_13": {
+      "cover_blockers_and_laps_equal": true,
+      "joint_geometry_equal": true
+    }
+  },
+  "cases": {
+    "collective_target": {
+      "containment": {
+        "base_pair": [
+          15,
+          38
+        ],
+        "complement": [
+          61,
+          100
+        ],
+        "containment_holds": true,
+        "cost": {
+          "base_piece_pair_comparisons": 2,
+          "base_runner_blocking_pieces": 3,
+          "complement_component_checks": 2,
+          "complement_phase_range_checks": 2,
+          "event_point_predicate_checks": 18,
+          "internal_complement_threshold_partitions": 0,
+          "open_cell_predicate_checks": 17,
+          "pair_component_endpoint_base_distance_checks": 4,
+          "pair_component_endpoint_inclusion_checks": 2,
+          "pair_component_intersection_steps": 2,
+          "positive_pair_components": 1
+        },
+        "event_point_violations": [],
+        "first_positive_violation": null,
+        "implied_zero_triples": [
+          [
+            15,
+            38,
+            61
+          ],
+          [
+            15,
+            38,
+            100
+          ]
+        ],
+        "logical_certificate": {
+          "predicate_count": 2,
+          "preselected_shared_pair": [
+            15,
+            38
+          ],
+          "selection_performed": false,
+          "single_information_bit": false,
+          "zero_triple_predicates": [
+            {
+              "speeds": [
+                15,
+                38,
+                61
+              ],
+              "upper_bound": "0"
+            },
+            {
+              "speeds": [
+                15,
+                38,
+                100
+              ],
+              "upper_bound": "0"
+            }
+          ]
+        },
+        "open_cell_violations": [],
+        "pair_components": [
+          {
+            "base_laps": {
+              "15": 3,
+              "38": 8
+            },
+            "closure_complement_safe": true,
+            "complement_endpoint_distances": {
+              "100": [
+                "21/76",
+                "1/6"
+              ],
+              "61": [
+                "109/304",
+                "7/24"
+              ]
+            },
+            "complement_endpoint_phases": {
+              "100": [
+                "55/76",
+                "5/6"
+              ],
+              "61": [
+                "195/304",
+                "17/24"
+              ]
+            },
+            "interior_event_points": [],
+            "left": "63/304",
+            "left_included_in_pair_blocking_set": false,
+            "left_pair_blocks": false,
+            "phase_cells": [
+              {
+                "complement_distances_at_midpoint": {
+                  "100": "101/456",
+                  "61": "593/1824"
+                },
+                "left": "63/304",
+                "right": "5/24",
+                "state": 3
+              }
+            ],
+            "right": "5/24",
+            "right_included_in_pair_blocking_set": false,
+            "right_pair_blocks": false
+          }
+        ]
+      },
+      "five_edge": {
+        "all_six_pair_constant": "6121/2781600",
+        "nonnegative_lower_bound": "49/524400",
+        "omitted_complement_overlap": "473/224480",
+        "omitted_complement_pair": [
+          61,
+          100
+        ],
+        "positive_duration_certified": true,
+        "raw_lower_bound": "49/524400",
+        "triple_masks": [
+          7,
+          11
+        ],
+        "triple_upper_bounds": [
+          "0",
+          "0"
+        ]
+      },
+      "reconstruction": {
+        "atoms": [
+          "1/600",
+          "25013/2781600",
+          "811/146400",
+          "1/912",
+          "0",
+          "199/48800",
+          "1029/561200",
+          "0",
+          "1/400",
+          "121/48800",
+          "113/48800",
+          "0",
+          "11/6992",
+          "1/48800",
+          "119/231800",
+          "0"
+        ],
+        "blocker_components": {
+          "100": [
+            {
+              "lap": 18,
+              "left": "33/184",
+              "left_included": true,
+              "right": "29/160",
+              "right_included": false
+            },
+            {
+              "lap": 19,
+              "left": "151/800",
+              "left_included": false,
+              "right": "153/800",
+              "right_included": false
+            },
+            {
+              "lap": 20,
+              "left": "159/800",
+              "left_included": false,
+              "right": "161/800",
+              "right_included": false
+            },
+            {
+              "lap": 21,
+              "left": "167/800",
+              "left_included": false,
+              "right": "169/800",
+              "right_included": false
+            }
+          ],
+          "15": [
+            {
+              "lap": 3,
+              "left": "23/120",
+              "left_included": false,
+              "right": "5/24",
+              "right_included": false
+            }
+          ],
+          "38": [
+            {
+              "lap": 7,
+              "left": "55/304",
+              "left_included": false,
+              "right": "3/16",
+              "right_included": false
+            },
+            {
+              "lap": 8,
+              "left": "63/304",
+              "left_included": false,
+              "right": "39/184",
+              "right_included": true
+            }
+          ],
+          "61": [
+            {
+              "lap": 11,
+              "left": "33/184",
+              "left_included": true,
+              "right": "89/488",
+              "right_included": false
+            },
+            {
+              "lap": 12,
+              "left": "95/488",
+              "left_included": false,
+              "right": "97/488",
+              "right_included": false
+            },
+            {
+              "lap": 13,
+              "left": "103/488",
+              "left_included": false,
+              "right": "39/184",
+              "right_included": true
+            }
+          ]
+        },
+        "counts": {
+          "blocker_endpoint_distance_checks": 20,
+          "blocking_pieces_all_runners": 10,
+          "event_points": 18,
+          "interior_threshold_events": 16,
+          "open_cells": 17,
+          "state_distance_comparisons": 276
+        },
+        "event_points": [
+          {
+            "distances": {
+              "100": "3/46",
+              "15": "57/184",
+              "38": "17/92",
+              "61": "11/184"
+            },
+            "event_speeds": [],
+            "state": 12,
+            "time": "33/184"
+          },
+          {
+            "distances": {
+              "100": "7/76",
+              "15": "87/304",
+              "38": "1/8",
+              "61": "11/304"
+            },
+            "event_speeds": [
+              38
+            ],
+            "state": 12,
+            "time": "55/304"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "9/32",
+              "38": "9/80",
+              "61": "9/160"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 6,
+            "time": "29/160"
+          },
+          {
+            "distances": {
+              "100": "29/122",
+              "15": "129/488",
+              "38": "17/244",
+              "61": "1/8"
+            },
+            "event_speeds": [
+              61
+            ],
+            "state": 2,
+            "time": "89/488"
+          },
+          {
+            "distances": {
+              "100": "1/4",
+              "15": "3/16",
+              "38": "1/8",
+              "61": "7/16"
+            },
+            "event_speeds": [
+              38
+            ],
+            "state": 0,
+            "time": "3/16"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "27/160",
+              "38": "69/400",
+              "61": "389/800"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 0,
+            "time": "151/800"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "21/160",
+              "38": "107/400",
+              "61": "267/800"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 0,
+            "time": "153/800"
+          },
+          {
+            "distances": {
+              "100": "1/6",
+              "15": "1/8",
+              "38": "17/60",
+              "61": "37/120"
+            },
+            "event_speeds": [
+              15
+            ],
+            "state": 0,
+            "time": "23/120"
+          },
+          {
+            "distances": {
+              "100": "57/122",
+              "15": "39/488",
+              "38": "97/244",
+              "61": "1/8"
+            },
+            "event_speeds": [
+              61
+            ],
+            "state": 1,
+            "time": "95/488"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "3/160",
+              "38": "179/400",
+              "61": "99/800"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 5,
+            "time": "159/800"
+          },
+          {
+            "distances": {
+              "100": "15/122",
+              "15": "9/488",
+              "38": "109/244",
+              "61": "1/8"
+            },
+            "event_speeds": [
+              61
+            ],
+            "state": 9,
+            "time": "97/488"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "3/160",
+              "38": "141/400",
+              "61": "221/800"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 1,
+            "time": "161/800"
+          },
+          {
+            "distances": {
+              "100": "21/76",
+              "15": "33/304",
+              "38": "1/8",
+              "61": "109/304"
+            },
+            "event_speeds": [
+              38
+            ],
+            "state": 1,
+            "time": "63/304"
+          },
+          {
+            "distances": {
+              "100": "1/6",
+              "15": "1/8",
+              "38": "1/12",
+              "61": "7/24"
+            },
+            "event_speeds": [
+              15
+            ],
+            "state": 2,
+            "time": "5/24"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "21/160",
+              "38": "27/400",
+              "61": "213/800"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 2,
+            "time": "167/800"
+          },
+          {
+            "distances": {
+              "100": "13/122",
+              "15": "81/488",
+              "38": "5/244",
+              "61": "1/8"
+            },
+            "event_speeds": [
+              61
+            ],
+            "state": 10,
+            "time": "103/488"
+          },
+          {
+            "distances": {
+              "100": "1/8",
+              "15": "27/160",
+              "38": "11/400",
+              "61": "91/800"
+            },
+            "event_speeds": [
+              100
+            ],
+            "state": 6,
+            "time": "169/800"
+          },
+          {
+            "distances": {
+              "100": "9/46",
+              "15": "33/184",
+              "38": "5/92",
+              "61": "13/184"
+            },
+            "event_speeds": [],
+            "state": 6,
+            "time": "39/184"
+          }
+        ],
+        "moments": [
+          "3/92",
+          "1/60",
+          "79/6992",
+          "1/912",
+          "45/5612",
+          "1/244",
+          "1001/426512",
+          "0",
+          "173/18400",
+          "1/400",
+          "43/15200",
+          "0",
+          "473/224480",
+          "1/48800",
+          "119/231800",
+          "0"
+        ],
+        "open_cells": [
+          {
+            "left": "33/184",
+            "right": "55/304",
+            "state": 12
+          },
+          {
+            "left": "55/304",
+            "right": "29/160",
+            "state": 14
+          },
+          {
+            "left": "29/160",
+            "right": "89/488",
+            "state": 6
+          },
+          {
+            "left": "89/488",
+            "right": "3/16",
+            "state": 2
+          },
+          {
+            "left": "3/16",
+            "right": "151/800",
+            "state": 0
+          },
+          {
+            "left": "151/800",
+            "right": "153/800",
+            "state": 8
+          },
+          {
+            "left": "153/800",
+            "right": "23/120",
+            "state": 0
+          },
+          {
+            "left": "23/120",
+            "right": "95/488",
+            "state": 1
+          },
+          {
+            "left": "95/488",
+            "right": "159/800",
+            "state": 5
+          },
+          {
+            "left": "159/800",
+            "right": "97/488",
+            "state": 13
+          },
+          {
+            "left": "97/488",
+            "right": "161/800",
+            "state": 9
+          },
+          {
+            "left": "161/800",
+            "right": "63/304",
+            "state": 1
+          },
+          {
+            "left": "63/304",
+            "right": "5/24",
+            "state": 3
+          },
+          {
+            "left": "5/24",
+            "right": "167/800",
+            "state": 2
+          },
+          {
+            "left": "167/800",
+            "right": "103/488",
+            "state": 10
+          },
+          {
+            "left": "103/488",
+            "right": "169/800",
+            "state": 14
+          },
+          {
+            "left": "169/800",
+            "right": "39/184",
+            "state": 6
+          }
+        ],
+        "speeds": [
+          15,
+          38,
+          61,
+          100
+        ],
+        "window": [
+          "33/184",
+          "39/184"
+        ]
+      }
+    },
+    "doubling_112": {
+      "all_six_containments_fail": true,
+      "reconstruction": {
+        "atoms": [
+          "53/1792",
+          "29/3584",
+          "31/2304",
+          "43/32256",
+          "23/1792",
+          "1/448",
+          "5/2304",
+          "5/8064",
+          "29/5376",
+          "277/32256",
+          "1/256",
+          "3/3584",
+          "5/2688",
+          "1/576",
+          "0",
+          "1/896"
+        ],
+        "blocker_components": {
+          "112": [
+            {
+              "lap": 32,
+              "left": "255/896",
+              "left_included": false,
+              "right": "257/896",
+              "right_included": false
+            },
+            {
+              "lap": 33,
+              "left": "263/896",
+              "left_included": false,
+              "right": "265/896",
+              "right_included": false
+            },
+            {
+              "lap": 34,
+              "left": "271/896",
+              "left_included": false,
+              "right": "39/128",
+              "right_included": false
+            },
+            {
+              "lap": 35,
+              "left": "279/896",
+              "left_included": false,
+              "right": "281/896",
+              "right_included": false
+            },
+            {
+              "lap": 36,
+              "left": "41/128",
+              "left_included": false,
+              "right": "289/896",
+              "right_included": false
+            },
+            {
+              "lap": 37,
+              "left": "295/896",
+              "left_included": false,
+              "right": "297/896",
+              "right_included": false
+            },
+            {
+              "lap": 38,
+              "left": "303/896",
+              "left_included": false,
+              "right": "305/896",
+              "right_included": false
+            },
+            {
+              "lap": 39,
+              "left": "311/896",
+              "left_included": false,
+              "right": "313/896",
+              "right_included": false
+            },
+            {
+              "lap": 40,
+              "left": "319/896",
+              "left_included": false,
+              "right": "321/896",
+              "right_included": false
+            },
+            {
+              "lap": 41,
+              "left": "327/896",
+              "left_included": false,
+              "right": "47/128",
+              "right_included": false
+            },
+            {
+              "lap": 42,
+              "left": "335/896",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": true
+            }
+          ],
+          "56": [
+            {
+              "lap": 16,
+              "left": "127/448",
+              "left_included": false,
+              "right": "129/448",
+              "right_included": false
+            },
+            {
+              "lap": 17,
+              "left": "135/448",
+              "left_included": false,
+              "right": "137/448",
+              "right_included": false
+            },
+            {
+              "lap": 18,
+              "left": "143/448",
+              "left_included": false,
+              "right": "145/448",
+              "right_included": false
+            },
+            {
+              "lap": 19,
+              "left": "151/448",
+              "left_included": false,
+              "right": "153/448",
+              "right_included": false
+            },
+            {
+              "lap": 20,
+              "left": "159/448",
+              "left_included": false,
+              "right": "23/64",
+              "right_included": false
+            },
+            {
+              "lap": 21,
+              "left": "167/448",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": true
+            }
+          ],
+          "64": [
+            {
+              "lap": 18,
+              "left": "9/32",
+              "left_included": true,
+              "right": "145/512",
+              "right_included": false
+            },
+            {
+              "lap": 19,
+              "left": "151/512",
+              "left_included": false,
+              "right": "153/512",
+              "right_included": false
+            },
+            {
+              "lap": 20,
+              "left": "159/512",
+              "left_included": false,
+              "right": "161/512",
+              "right_included": false
+            },
+            {
+              "lap": 21,
+              "left": "167/512",
+              "left_included": false,
+              "right": "169/512",
+              "right_included": false
+            },
+            {
+              "lap": 22,
+              "left": "175/512",
+              "left_included": false,
+              "right": "177/512",
+              "right_included": false
+            },
+            {
+              "lap": 23,
+              "left": "183/512",
+              "left_included": false,
+              "right": "185/512",
+              "right_included": false
+            },
+            {
+              "lap": 24,
+              "left": "191/512",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": true
+            }
+          ],
+          "72": [
+            {
+              "lap": 21,
+              "left": "167/576",
+              "left_included": false,
+              "right": "169/576",
+              "right_included": false
+            },
+            {
+              "lap": 22,
+              "left": "175/576",
+              "left_included": false,
+              "right": "59/192",
+              "right_included": false
+            },
+            {
+              "lap": 23,
+              "left": "61/192",
+              "left_included": false,
+              "right": "185/576",
+              "right_included": false
+            },
+            {
+              "lap": 24,
+              "left": "191/576",
+              "left_included": false,
+              "right": "193/576",
+              "right_included": false
+            },
+            {
+              "lap": 25,
+              "left": "199/576",
+              "left_included": false,
+              "right": "67/192",
+              "right_included": false
+            },
+            {
+              "lap": 26,
+              "left": "23/64",
+              "left_included": false,
+              "right": "209/576",
+              "right_included": false
+            },
+            {
+              "lap": 27,
+              "left": "215/576",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": true
+            }
+          ]
+        },
+        "counts": {
+          "blocker_endpoint_distance_checks": 62,
+          "blocking_pieces_all_runners": 31,
+          "event_points": 58,
+          "interior_threshold_events": 56,
+          "open_cells": 57,
+          "state_distance_comparisons": 916
+        },
+        "event_points": [
+          {
+            "distances": {
+              "112": "1/2",
+              "56": "1/4",
+              "64": "0",
+              "72": "1/4"
+            },
+            "event_speeds": [],
+            "state": 2,
+            "time": "9/32"
+          },
+          {
+            "distances": {
+              "112": "9/32",
+              "56": "9/64",
+              "64": "1/8",
+              "72": "25/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 0,
+            "time": "145/512"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "1/7",
+              "72": "23/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "127/448"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "3/14",
+              "72": "55/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "255/896"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "5/14",
+              "72": "39/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "257/896"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "3/7",
+              "72": "15/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "129/448"
+          },
+          {
+            "distances": {
+              "112": "17/36",
+              "56": "17/72",
+              "64": "4/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "167/576"
+          },
+          {
+            "distances": {
+              "112": "5/36",
+              "56": "31/72",
+              "64": "2/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "169/576"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "3/14",
+              "72": "15/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 0,
+            "time": "263/896"
+          },
+          {
+            "distances": {
+              "112": "1/32",
+              "56": "31/64",
+              "64": "1/8",
+              "72": "15/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 8,
+            "time": "151/512"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "1/14",
+              "72": "33/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 2,
+            "time": "265/896"
+          },
+          {
+            "distances": {
+              "112": "15/32",
+              "56": "17/64",
+              "64": "1/8",
+              "72": "31/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 0,
+            "time": "153/512"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "2/7",
+              "72": "17/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "135/448"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "5/14",
+              "72": "25/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "271/896"
+          },
+          {
+            "distances": {
+              "112": "1/36",
+              "56": "1/72",
+              "64": "4/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 9,
+            "time": "175/576"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "1/2",
+              "72": "1/16"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 5,
+            "time": "39/128"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "3/7",
+              "72": "1/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 4,
+            "time": "137/448"
+          },
+          {
+            "distances": {
+              "112": "5/12",
+              "56": "5/24",
+              "64": "1/3",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "59/192"
+          },
+          {
+            "distances": {
+              "112": "7/32",
+              "56": "25/64",
+              "64": "1/8",
+              "72": "23/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 0,
+            "time": "159/512"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "1/14",
+              "72": "47/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 2,
+            "time": "279/896"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "1/14",
+              "72": "47/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 2,
+            "time": "281/896"
+          },
+          {
+            "distances": {
+              "112": "7/32",
+              "56": "25/64",
+              "64": "1/8",
+              "72": "23/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 0,
+            "time": "161/512"
+          },
+          {
+            "distances": {
+              "112": "5/12",
+              "56": "5/24",
+              "64": "1/3",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "61/192"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "3/7",
+              "72": "1/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 4,
+            "time": "143/448"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "1/2",
+              "72": "1/16"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 5,
+            "time": "41/128"
+          },
+          {
+            "distances": {
+              "112": "1/36",
+              "56": "1/72",
+              "64": "4/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 9,
+            "time": "185/576"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "5/14",
+              "72": "25/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "289/896"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "2/7",
+              "72": "17/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "145/448"
+          },
+          {
+            "distances": {
+              "112": "15/32",
+              "56": "17/64",
+              "64": "1/8",
+              "72": "31/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 0,
+            "time": "167/512"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "1/14",
+              "72": "33/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 2,
+            "time": "295/896"
+          },
+          {
+            "distances": {
+              "112": "1/32",
+              "56": "31/64",
+              "64": "1/8",
+              "72": "15/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 8,
+            "time": "169/512"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "3/14",
+              "72": "15/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 0,
+            "time": "297/896"
+          },
+          {
+            "distances": {
+              "112": "5/36",
+              "56": "31/72",
+              "64": "2/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "191/576"
+          },
+          {
+            "distances": {
+              "112": "17/36",
+              "56": "17/72",
+              "64": "4/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "193/576"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "3/7",
+              "72": "15/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "151/448"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "5/14",
+              "72": "39/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "303/896"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "3/14",
+              "72": "55/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "305/896"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "1/7",
+              "72": "23/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "153/448"
+          },
+          {
+            "distances": {
+              "112": "9/32",
+              "56": "9/64",
+              "64": "1/8",
+              "72": "25/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 0,
+            "time": "175/512"
+          },
+          {
+            "distances": {
+              "112": "11/36",
+              "56": "25/72",
+              "64": "1/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 2,
+            "time": "199/576"
+          },
+          {
+            "distances": {
+              "112": "9/32",
+              "56": "23/64",
+              "64": "1/8",
+              "72": "7/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 4,
+            "time": "177/512"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "3/14",
+              "72": "1/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 4,
+            "time": "311/896"
+          },
+          {
+            "distances": {
+              "112": "1/12",
+              "56": "11/24",
+              "64": "1/3",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 8,
+            "time": "67/192"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "5/14",
+              "72": "17/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 0,
+            "time": "313/896"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "2/7",
+              "72": "25/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "159/448"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "3/14",
+              "72": "41/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 1,
+            "time": "319/896"
+          },
+          {
+            "distances": {
+              "112": "1/32",
+              "56": "1/64",
+              "64": "1/8",
+              "72": "17/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 9,
+            "time": "183/512"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "1/14",
+              "72": "23/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 3,
+            "time": "321/896"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "0",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              56,
+              72
+            ],
+            "state": 2,
+            "time": "23/64"
+          },
+          {
+            "distances": {
+              "112": "15/32",
+              "56": "15/64",
+              "64": "1/8",
+              "72": "1/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 4,
+            "time": "185/512"
+          },
+          {
+            "distances": {
+              "112": "13/36",
+              "56": "23/72",
+              "64": "2/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 0,
+            "time": "209/576"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "5/14",
+              "72": "31/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 0,
+            "time": "327/896"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "7/16",
+              "64": "1/2",
+              "72": "7/16"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 0,
+            "time": "47/128"
+          },
+          {
+            "distances": {
+              "112": "1/4",
+              "56": "1/8",
+              "64": "1/7",
+              "72": "9/56"
+            },
+            "event_speeds": [
+              56
+            ],
+            "state": 0,
+            "time": "167/448"
+          },
+          {
+            "distances": {
+              "112": "7/32",
+              "56": "7/64",
+              "64": "1/8",
+              "72": "9/64"
+            },
+            "event_speeds": [
+              64
+            ],
+            "state": 1,
+            "time": "191/512"
+          },
+          {
+            "distances": {
+              "112": "7/36",
+              "56": "7/72",
+              "64": "1/9",
+              "72": "1/8"
+            },
+            "event_speeds": [
+              72
+            ],
+            "state": 3,
+            "time": "215/576"
+          },
+          {
+            "distances": {
+              "112": "1/8",
+              "56": "1/16",
+              "64": "1/14",
+              "72": "9/112"
+            },
+            "event_speeds": [
+              112
+            ],
+            "state": 7,
+            "time": "335/896"
+          },
+          {
+            "distances": {
+              "112": "0",
+              "56": "0",
+              "64": "0",
+              "72": "0"
+            },
+            "event_speeds": [],
+            "state": 15,
+            "time": "3/8"
+          }
+        ],
+        "moments": [
+          "3/32",
+          "11/448",
+          "3/128",
+          "1/256",
+          "13/576",
+          "23/4032",
+          "1/256",
+          "1/576",
+          "3/128",
+          "11/896",
+          "3/512",
+          "1/512",
+          "19/4032",
+          "23/8064",
+          "1/896",
+          "1/896"
+        ],
+        "open_cells": [
+          {
+            "left": "9/32",
+            "right": "145/512",
+            "state": 2
+          },
+          {
+            "left": "145/512",
+            "right": "127/448",
+            "state": 0
+          },
+          {
+            "left": "127/448",
+            "right": "255/896",
+            "state": 1
+          },
+          {
+            "left": "255/896",
+            "right": "257/896",
+            "state": 9
+          },
+          {
+            "left": "257/896",
+            "right": "129/448",
+            "state": 1
+          },
+          {
+            "left": "129/448",
+            "right": "167/576",
+            "state": 0
+          },
+          {
+            "left": "167/576",
+            "right": "169/576",
+            "state": 4
+          },
+          {
+            "left": "169/576",
+            "right": "263/896",
+            "state": 0
+          },
+          {
+            "left": "263/896",
+            "right": "151/512",
+            "state": 8
+          },
+          {
+            "left": "151/512",
+            "right": "265/896",
+            "state": 10
+          },
+          {
+            "left": "265/896",
+            "right": "153/512",
+            "state": 2
+          },
+          {
+            "left": "153/512",
+            "right": "135/448",
+            "state": 0
+          },
+          {
+            "left": "135/448",
+            "right": "271/896",
+            "state": 1
+          },
+          {
+            "left": "271/896",
+            "right": "175/576",
+            "state": 9
+          },
+          {
+            "left": "175/576",
+            "right": "39/128",
+            "state": 13
+          },
+          {
+            "left": "39/128",
+            "right": "137/448",
+            "state": 5
+          },
+          {
+            "left": "137/448",
+            "right": "59/192",
+            "state": 4
+          },
+          {
+            "left": "59/192",
+            "right": "159/512",
+            "state": 0
+          },
+          {
+            "left": "159/512",
+            "right": "279/896",
+            "state": 2
+          },
+          {
+            "left": "279/896",
+            "right": "281/896",
+            "state": 10
+          },
+          {
+            "left": "281/896",
+            "right": "161/512",
+            "state": 2
+          },
+          {
+            "left": "161/512",
+            "right": "61/192",
+            "state": 0
+          },
+          {
+            "left": "61/192",
+            "right": "143/448",
+            "state": 4
+          },
+          {
+            "left": "143/448",
+            "right": "41/128",
+            "state": 5
+          },
+          {
+            "left": "41/128",
+            "right": "185/576",
+            "state": 13
+          },
+          {
+            "left": "185/576",
+            "right": "289/896",
+            "state": 9
+          },
+          {
+            "left": "289/896",
+            "right": "145/448",
+            "state": 1
+          },
+          {
+            "left": "145/448",
+            "right": "167/512",
+            "state": 0
+          },
+          {
+            "left": "167/512",
+            "right": "295/896",
+            "state": 2
+          },
+          {
+            "left": "295/896",
+            "right": "169/512",
+            "state": 10
+          },
+          {
+            "left": "169/512",
+            "right": "297/896",
+            "state": 8
+          },
+          {
+            "left": "297/896",
+            "right": "191/576",
+            "state": 0
+          },
+          {
+            "left": "191/576",
+            "right": "193/576",
+            "state": 4
+          },
+          {
+            "left": "193/576",
+            "right": "151/448",
+            "state": 0
+          },
+          {
+            "left": "151/448",
+            "right": "303/896",
+            "state": 1
+          },
+          {
+            "left": "303/896",
+            "right": "305/896",
+            "state": 9
+          },
+          {
+            "left": "305/896",
+            "right": "153/448",
+            "state": 1
+          },
+          {
+            "left": "153/448",
+            "right": "175/512",
+            "state": 0
+          },
+          {
+            "left": "175/512",
+            "right": "199/576",
+            "state": 2
+          },
+          {
+            "left": "199/576",
+            "right": "177/512",
+            "state": 6
+          },
+          {
+            "left": "177/512",
+            "right": "311/896",
+            "state": 4
+          },
+          {
+            "left": "311/896",
+            "right": "67/192",
+            "state": 12
+          },
+          {
+            "left": "67/192",
+            "right": "313/896",
+            "state": 8
+          },
+          {
+            "left": "313/896",
+            "right": "159/448",
+            "state": 0
+          },
+          {
+            "left": "159/448",
+            "right": "319/896",
+            "state": 1
+          },
+          {
+            "left": "319/896",
+            "right": "183/512",
+            "state": 9
+          },
+          {
+            "left": "183/512",
+            "right": "321/896",
+            "state": 11
+          },
+          {
+            "left": "321/896",
+            "right": "23/64",
+            "state": 3
+          },
+          {
+            "left": "23/64",
+            "right": "185/512",
+            "state": 6
+          },
+          {
+            "left": "185/512",
+            "right": "209/576",
+            "state": 4
+          },
+          {
+            "left": "209/576",
+            "right": "327/896",
+            "state": 0
+          },
+          {
+            "left": "327/896",
+            "right": "47/128",
+            "state": 8
+          },
+          {
+            "left": "47/128",
+            "right": "167/448",
+            "state": 0
+          },
+          {
+            "left": "167/448",
+            "right": "191/512",
+            "state": 1
+          },
+          {
+            "left": "191/512",
+            "right": "215/576",
+            "state": 3
+          },
+          {
+            "left": "215/576",
+            "right": "335/896",
+            "state": 7
+          },
+          {
+            "left": "335/896",
+            "right": "3/8",
+            "state": 15
+          }
+        ],
+        "speeds": [
+          56,
+          64,
+          72,
+          112
+        ],
+        "window": [
+          "9/32",
+          "3/8"
+        ]
+      }
+    },
+    "strict_16": {
+      "containment": {
+        "base_pair": [
+          6,
+          11
+        ],
+        "complement": [
+          7,
+          16
+        ],
+        "containment_holds": true,
+        "cost": {
+          "base_piece_pair_comparisons": 2,
+          "base_runner_blocking_pieces": 3,
+          "complement_component_checks": 2,
+          "complement_phase_range_checks": 2,
+          "event_point_predicate_checks": 10,
+          "internal_complement_threshold_partitions": 0,
+          "open_cell_predicate_checks": 9,
+          "pair_component_endpoint_base_distance_checks": 4,
+          "pair_component_endpoint_inclusion_checks": 2,
+          "pair_component_intersection_steps": 2,
+          "positive_pair_components": 1
+        },
+        "event_point_violations": [],
+        "first_positive_violation": null,
+        "implied_zero_triples": [
+          [
+            6,
+            7,
+            11
+          ],
+          [
+            6,
+            11,
+            16
+          ]
+        ],
+        "logical_certificate": {
+          "predicate_count": 2,
+          "preselected_shared_pair": [
+            6,
+            11
+          ],
+          "selection_performed": false,
+          "single_information_bit": false,
+          "zero_triple_predicates": [
+            {
+              "speeds": [
+                6,
+                7,
+                11
+              ],
+              "upper_bound": "0"
+            },
+            {
+              "speeds": [
+                6,
+                11,
+                16
+              ],
+              "upper_bound": "0"
+            }
+          ]
+        },
+        "open_cell_violations": [],
+        "pair_components": [
+          {
+            "base_laps": {
+              "11": 4,
+              "6": 2
+            },
+            "closure_complement_safe": true,
+            "complement_endpoint_distances": {
+              "16": [
+                "4/11",
+                "1/3"
+              ],
+              "7": [
+                "41/88",
+                "23/48"
+              ]
+            },
+            "complement_endpoint_phases": {
+              "16": [
+                "7/11",
+                "2/3"
+              ],
+              "7": [
+                "41/88",
+                "23/48"
+              ]
+            },
+            "interior_event_points": [],
+            "left": "31/88",
+            "left_included_in_pair_blocking_set": false,
+            "left_pair_blocks": false,
+            "phase_cells": [
+              {
+                "complement_distances_at_midpoint": {
+                  "16": "23/66",
+                  "7": "499/1056"
+                },
+                "left": "31/88",
+                "right": "17/48",
+                "state": 5
+              }
+            ],
+            "right": "17/48",
+            "right_included_in_pair_blocking_set": false,
+            "right_pair_blocks": false
+          }
+        ]
+      },
+      "five_edge": {
+        "all_six_pair_constant": "1/896",
+        "nonnegative_lower_bound": "1/896",
+        "omitted_complement_overlap": "0",
+        "omitted_complement_pair": [
+          7,
+          16
+        ],
+        "positive_duration_certified": true,
+        "raw_lower_bound": "1/896",
+        "triple_masks": [
+          7,
+          13
+        ],
+        "triple_upper_bounds": [
+          "0",
+          "0"
+        ]
+      },
+      "reconstruction": {
+        "atoms": [
+          "1/896",
+          "45/1408",
+          "3/154",
+          "0",
+          "5/384",
+          "1/528",
+          "1/352",
+          "0",
+          "1/128",
+          "1/128",
+          "0",
+          "0",
+          "1/128",
+          "0",
+          "0",
+          "0"
+        ],
+        "blocker_components": {
+          "11": [
+            {
+              "lap": 3,
+              "left": "9/32",
+              "left_included": true,
+              "right": "25/88",
+              "right_included": false
+            },
+            {
+              "lap": 4,
+              "left": "31/88",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": false
+            }
+          ],
+          "16": [
+            {
+              "lap": 5,
+              "left": "39/128",
+              "left_included": false,
+              "right": "41/128",
+              "right_included": false
+            },
+            {
+              "lap": 6,
+              "left": "47/128",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": true
+            }
+          ],
+          "6": [
+            {
+              "lap": 2,
+              "left": "5/16",
+              "left_included": false,
+              "right": "17/48",
+              "right_included": false
+            }
+          ],
+          "7": [
+            {
+              "lap": 2,
+              "left": "9/32",
+              "left_included": true,
+              "right": "17/56",
+              "right_included": false
+            }
+          ]
+        },
+        "counts": {
+          "blocker_endpoint_distance_checks": 12,
+          "blocking_pieces_all_runners": 6,
+          "event_points": 10,
+          "interior_threshold_events": 8,
+          "open_cells": 9,
+          "state_distance_comparisons": 148
+        },
+        "event_points": [
+          {
+            "distances": {
+              "11": "3/32",
+              "16": "1/2",
+              "6": "5/16",
+              "7": "1/32"
+            },
+            "event_speeds": [],
+            "state": 6,
+            "time": "9/32"
+          },
+          {
+            "distances": {
+              "11": "1/8",
+              "16": "5/11",
+              "6": "13/44",
+              "7": "1/88"
+            },
+            "event_speeds": [
+              11
+            ],
+            "state": 2,
+            "time": "25/88"
+          },
+          {
+            "distances": {
+              "11": "19/56",
+              "16": "1/7",
+              "6": "5/28",
+              "7": "1/8"
+            },
+            "event_speeds": [
+              7
+            ],
+            "state": 0,
+            "time": "17/56"
+          },
+          {
+            "distances": {
+              "11": "45/128",
+              "16": "1/8",
+              "6": "11/64",
+              "7": "17/128"
+            },
+            "event_speeds": [
+              16
+            ],
+            "state": 0,
+            "time": "39/128"
+          },
+          {
+            "distances": {
+              "11": "7/16",
+              "16": "0",
+              "6": "1/8",
+              "7": "3/16"
+            },
+            "event_speeds": [
+              6
+            ],
+            "state": 8,
+            "time": "5/16"
+          },
+          {
+            "distances": {
+              "11": "61/128",
+              "16": "1/8",
+              "6": "5/64",
+              "7": "31/128"
+            },
+            "event_speeds": [
+              16
+            ],
+            "state": 1,
+            "time": "41/128"
+          },
+          {
+            "distances": {
+              "11": "1/8",
+              "16": "4/11",
+              "6": "5/44",
+              "7": "41/88"
+            },
+            "event_speeds": [
+              11
+            ],
+            "state": 1,
+            "time": "31/88"
+          },
+          {
+            "distances": {
+              "11": "5/48",
+              "16": "1/3",
+              "6": "1/8",
+              "7": "23/48"
+            },
+            "event_speeds": [
+              6
+            ],
+            "state": 4,
+            "time": "17/48"
+          },
+          {
+            "distances": {
+              "11": "5/128",
+              "16": "1/8",
+              "6": "13/64",
+              "7": "55/128"
+            },
+            "event_speeds": [
+              16
+            ],
+            "state": 4,
+            "time": "47/128"
+          },
+          {
+            "distances": {
+              "11": "1/8",
+              "16": "0",
+              "6": "1/4",
+              "7": "3/8"
+            },
+            "event_speeds": [
+              11
+            ],
+            "state": 8,
+            "time": "3/8"
+          }
+        ],
+        "moments": [
+          "3/32",
+          "1/24",
+          "5/224",
+          "0",
+          "9/352",
+          "1/528",
+          "1/352",
+          "0",
+          "3/128",
+          "1/128",
+          "0",
+          "0",
+          "1/128",
+          "0",
+          "0",
+          "0"
+        ],
+        "open_cells": [
+          {
+            "left": "9/32",
+            "right": "25/88",
+            "state": 6
+          },
+          {
+            "left": "25/88",
+            "right": "17/56",
+            "state": 2
+          },
+          {
+            "left": "17/56",
+            "right": "39/128",
+            "state": 0
+          },
+          {
+            "left": "39/128",
+            "right": "5/16",
+            "state": 8
+          },
+          {
+            "left": "5/16",
+            "right": "41/128",
+            "state": 9
+          },
+          {
+            "left": "41/128",
+            "right": "31/88",
+            "state": 1
+          },
+          {
+            "left": "31/88",
+            "right": "17/48",
+            "state": 5
+          },
+          {
+            "left": "17/48",
+            "right": "47/128",
+            "state": 4
+          },
+          {
+            "left": "47/128",
+            "right": "3/8",
+            "state": 12
+          }
+        ],
+        "speeds": [
+          6,
+          7,
+          11,
+          16
+        ],
+        "window": [
+          "9/32",
+          "3/8"
+        ]
+      }
+    },
+    "tight_13": {
+      "containment": {
+        "base_pair": [
+          6,
+          11
+        ],
+        "complement": [
+          7,
+          13
+        ],
+        "containment_holds": true,
+        "cost": {
+          "base_piece_pair_comparisons": 2,
+          "base_runner_blocking_pieces": 3,
+          "complement_component_checks": 2,
+          "complement_phase_range_checks": 2,
+          "event_point_predicate_checks": 9,
+          "internal_complement_threshold_partitions": 0,
+          "open_cell_predicate_checks": 8,
+          "pair_component_endpoint_base_distance_checks": 4,
+          "pair_component_endpoint_inclusion_checks": 2,
+          "pair_component_intersection_steps": 2,
+          "positive_pair_components": 1
+        },
+        "event_point_violations": [],
+        "first_positive_violation": null,
+        "implied_zero_triples": [
+          [
+            6,
+            7,
+            11
+          ],
+          [
+            6,
+            11,
+            13
+          ]
+        ],
+        "logical_certificate": {
+          "predicate_count": 2,
+          "preselected_shared_pair": [
+            6,
+            11
+          ],
+          "selection_performed": false,
+          "single_information_bit": false,
+          "zero_triple_predicates": [
+            {
+              "speeds": [
+                6,
+                7,
+                11
+              ],
+              "upper_bound": "0"
+            },
+            {
+              "speeds": [
+                6,
+                11,
+                13
+              ],
+              "upper_bound": "0"
+            }
+          ]
+        },
+        "open_cell_violations": [],
+        "pair_components": [
+          {
+            "base_laps": {
+              "11": 4,
+              "6": 2
+            },
+            "closure_complement_safe": true,
+            "complement_endpoint_distances": {
+              "13": [
+                "37/88",
+                "19/48"
+              ],
+              "7": [
+                "41/88",
+                "23/48"
+              ]
+            },
+            "complement_endpoint_phases": {
+              "13": [
+                "51/88",
+                "29/48"
+              ],
+              "7": [
+                "41/88",
+                "23/48"
+              ]
+            },
+            "interior_event_points": [],
+            "left": "31/88",
+            "left_included_in_pair_blocking_set": false,
+            "left_pair_blocks": false,
+            "phase_cells": [
+              {
+                "complement_distances_at_midpoint": {
+                  "13": "431/1056",
+                  "7": "499/1056"
+                },
+                "left": "31/88",
+                "right": "17/48",
+                "state": 5
+              }
+            ],
+            "right": "17/48",
+            "right_included_in_pair_blocking_set": false,
+            "right_pair_blocks": false
+          }
+        ]
+      },
+      "five_edge": {
+        "all_six_pair_constant": "0",
+        "nonnegative_lower_bound": "0",
+        "omitted_complement_overlap": "1/182",
+        "omitted_complement_pair": [
+          7,
+          13
+        ],
+        "positive_duration_certified": false,
+        "raw_lower_bound": "-1/182",
+        "triple_masks": [
+          7,
+          13
+        ],
+        "triple_upper_bounds": [
+          "0",
+          "0"
+        ]
+      },
+      "reconstruction": {
+        "atoms": [
+          "0",
+          "5/143",
+          "2/143",
+          "0",
+          "1/48",
+          "1/528",
+          "1/352",
+          "0",
+          "1/112",
+          "1/208",
+          "1/182",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "blocker_components": {
+          "11": [
+            {
+              "lap": 3,
+              "left": "9/32",
+              "left_included": true,
+              "right": "25/88",
+              "right_included": false
+            },
+            {
+              "lap": 4,
+              "left": "31/88",
+              "left_included": false,
+              "right": "3/8",
+              "right_included": false
+            }
+          ],
+          "13": [
+            {
+              "lap": 4,
+              "left": "31/104",
+              "left_included": false,
+              "right": "33/104",
+              "right_included": false
+            }
+          ],
+          "6": [
+            {
+              "lap": 2,
+              "left": "5/16",
+              "left_included": false,
+              "right": "17/48",
+              "right_included": false
+            }
+          ],
+          "7": [
+            {
+              "lap": 2,
+              "left": "9/32",
+              "left_included": true,
+              "right": "17/56",
+              "right_included": false
+            }
+          ]
+        },
+        "counts": {
+          "blocker_endpoint_distance_checks": 10,
+          "blocking_pieces_all_runners": 5,
+          "event_points": 9,
+          "interior_threshold_events": 7,
+          "open_cells": 8,
+          "state_distance_comparisons": 132
+        },
+        "event_points": [
+          {
+            "distances": {
+              "11": "3/32",
+              "13": "11/32",
+              "6": "5/16",
+              "7": "1/32"
+            },
+            "event_speeds": [],
+            "state": 6,
+            "time": "9/32"
+          },
+          {
+            "distances": {
+              "11": "1/8",
+              "13": "27/88",
+              "6": "13/44",
+              "7": "1/88"
+            },
+            "event_speeds": [
+              11
+            ],
+            "state": 2,
+            "time": "25/88"
+          },
+          {
+            "distances": {
+              "11": "29/104",
+              "13": "1/8",
+              "6": "11/52",
+              "7": "9/104"
+            },
+            "event_speeds": [
+              13
+            ],
+            "state": 2,
+            "time": "31/104"
+          },
+          {
+            "distances": {
+              "11": "19/56",
+              "13": "3/56",
+              "6": "5/28",
+              "7": "1/8"
+            },
+            "event_speeds": [
+              7
+            ],
+            "state": 8,
+            "time": "17/56"
+          },
+          {
+            "distances": {
+              "11": "7/16",
+              "13": "1/16",
+              "6": "1/8",
+              "7": "3/16"
+            },
+            "event_speeds": [
+              6
+            ],
+            "state": 8,
+            "time": "5/16"
+          },
+          {
+            "distances": {
+              "11": "51/104",
+              "13": "1/8",
+              "6": "5/52",
+              "7": "23/104"
+            },
+            "event_speeds": [
+              13
+            ],
+            "state": 1,
+            "time": "33/104"
+          },
+          {
+            "distances": {
+              "11": "1/8",
+              "13": "37/88",
+              "6": "5/44",
+              "7": "41/88"
+            },
+            "event_speeds": [
+              11
+            ],
+            "state": 1,
+            "time": "31/88"
+          },
+          {
+            "distances": {
+              "11": "5/48",
+              "13": "19/48",
+              "6": "1/8",
+              "7": "23/48"
+            },
+            "event_speeds": [
+              6
+            ],
+            "state": 4,
+            "time": "17/48"
+          },
+          {
+            "distances": {
+              "11": "1/8",
+              "13": "1/8",
+              "6": "1/4",
+              "7": "3/8"
+            },
+            "event_speeds": [
+              11,
+              13
+            ],
+            "state": 0,
+            "time": "3/8"
+          }
+        ],
+        "moments": [
+          "3/32",
+          "1/24",
+          "5/224",
+          "0",
+          "9/352",
+          "1/528",
+          "1/352",
+          "0",
+          "1/52",
+          "1/208",
+          "1/182",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "open_cells": [
+          {
+            "left": "9/32",
+            "right": "25/88",
+            "state": 6
+          },
+          {
+            "left": "25/88",
+            "right": "31/104",
+            "state": 2
+          },
+          {
+            "left": "31/104",
+            "right": "17/56",
+            "state": 10
+          },
+          {
+            "left": "17/56",
+            "right": "5/16",
+            "state": 8
+          },
+          {
+            "left": "5/16",
+            "right": "33/104",
+            "state": 9
+          },
+          {
+            "left": "33/104",
+            "right": "31/88",
+            "state": 1
+          },
+          {
+            "left": "31/88",
+            "right": "17/48",
+            "state": 5
+          },
+          {
+            "left": "17/48",
+            "right": "3/8",
+            "state": 4
+          }
+        ],
+        "speeds": [
+          6,
+          7,
+          11,
+          13
+        ],
+        "window": [
+          "9/32",
+          "3/8"
+        ]
+      }
+    }
+  },
+  "doubling_112_diagnostics": [
+    {
+      "base_pair": [
+        56,
+        64
+      ],
+      "complement": [
+        72,
+        112
+      ],
+      "containment_holds": false,
+      "cost": {
+        "base_piece_pair_comparisons": 42,
+        "base_runner_blocking_pieces": 13,
+        "complement_component_checks": 4,
+        "complement_phase_range_checks": 10,
+        "event_point_predicate_checks": 58,
+        "internal_complement_threshold_partitions": 3,
+        "open_cell_predicate_checks": 57,
+        "pair_component_endpoint_base_distance_checks": 8,
+        "pair_component_endpoint_inclusion_checks": 4,
+        "pair_component_intersection_steps": 12,
+        "positive_pair_components": 2
+      },
+      "event_point_violations": [
+        {
+          "blocking_complement": [
+            72
+          ],
+          "state": 7,
+          "time": "335/896"
+        },
+        {
+          "blocking_complement": [
+            72,
+            112
+          ],
+          "state": 15,
+          "time": "3/8"
+        }
+      ],
+      "first_positive_violation": {
+        "blocking_complement": [
+          112
+        ],
+        "left": "183/512",
+        "right": "321/896",
+        "state": 11,
+        "witness": "2565/7168"
+      },
+      "implied_zero_triples": [],
+      "logical_certificate": {
+        "predicate_count": 0,
+        "preselected_shared_pair": [
+          56,
+          64
+        ],
+        "selection_performed": false,
+        "single_information_bit": false,
+        "zero_triple_predicates": []
+      },
+      "open_cell_violations": [
+        {
+          "blocking_complement": [
+            112
+          ],
+          "left": "183/512",
+          "right": "321/896",
+          "state": 11,
+          "witness": "2565/7168"
+        },
+        {
+          "blocking_complement": [
+            72
+          ],
+          "left": "215/576",
+          "right": "335/896",
+          "state": 7,
+          "witness": "6025/16128"
+        },
+        {
+          "blocking_complement": [
+            72,
+            112
+          ],
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15,
+          "witness": "671/1792"
+        }
+      ],
+      "pair_components": [
+        {
+          "base_laps": {
+            "56": 20,
+            "64": 23
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "112": [
+              "1/32",
+              "1/4"
+            ],
+            "72": [
+              "17/64",
+              "1/8"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "1/32",
+              "1/4"
+            ],
+            "72": [
+              "47/64",
+              "7/8"
+            ]
+          },
+          "interior_event_points": [
+            "321/896"
+          ],
+          "left": "183/512",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "5/64",
+                "72": "211/896"
+              },
+              "left": "183/512",
+              "right": "321/896",
+              "state": 11
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "3/16",
+                "72": "37/224"
+              },
+              "left": "321/896",
+              "right": "23/64",
+              "state": 3
+            }
+          ],
+          "right": "23/64",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "56": 21,
+            "64": 24
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "112": [
+              "7/32",
+              "0"
+            ],
+            "72": [
+              "9/64",
+              "0"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "25/32",
+              "0"
+            ],
+            "72": [
+              "55/64",
+              "0"
+            ]
+          },
+          "interior_event_points": [
+            "215/576",
+            "335/896"
+          ],
+          "left": "191/512",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "119/576",
+                "72": "17/128"
+              },
+              "left": "191/512",
+              "right": "215/576",
+              "state": 3
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "23/144",
+                "72": "23/224"
+              },
+              "left": "215/576",
+              "right": "335/896",
+              "state": 7
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "1/16",
+                "72": "9/224"
+              },
+              "left": "335/896",
+              "right": "3/8",
+              "state": 15
+            }
+          ],
+          "right": "3/8",
+          "right_included_in_pair_blocking_set": true,
+          "right_pair_blocks": true
+        }
+      ]
+    },
+    {
+      "base_pair": [
+        56,
+        72
+      ],
+      "complement": [
+        64,
+        112
+      ],
+      "containment_holds": false,
+      "cost": {
+        "base_piece_pair_comparisons": 42,
+        "base_runner_blocking_pieces": 13,
+        "complement_component_checks": 6,
+        "complement_phase_range_checks": 12,
+        "event_point_predicate_checks": 58,
+        "internal_complement_threshold_partitions": 3,
+        "open_cell_predicate_checks": 57,
+        "pair_component_endpoint_base_distance_checks": 12,
+        "pair_component_endpoint_inclusion_checks": 6,
+        "pair_component_intersection_steps": 12,
+        "positive_pair_components": 3
+      },
+      "event_point_violations": [
+        {
+          "blocking_complement": [
+            64
+          ],
+          "state": 7,
+          "time": "335/896"
+        },
+        {
+          "blocking_complement": [
+            64,
+            112
+          ],
+          "state": 15,
+          "time": "3/8"
+        }
+      ],
+      "first_positive_violation": {
+        "blocking_complement": [
+          112
+        ],
+        "left": "175/576",
+        "right": "39/128",
+        "state": 13,
+        "witness": "701/2304"
+      },
+      "implied_zero_triples": [],
+      "logical_certificate": {
+        "predicate_count": 0,
+        "preselected_shared_pair": [
+          56,
+          72
+        ],
+        "selection_performed": false,
+        "single_information_bit": false,
+        "zero_triple_predicates": []
+      },
+      "open_cell_violations": [
+        {
+          "blocking_complement": [
+            112
+          ],
+          "left": "175/576",
+          "right": "39/128",
+          "state": 13,
+          "witness": "701/2304"
+        },
+        {
+          "blocking_complement": [
+            112
+          ],
+          "left": "41/128",
+          "right": "185/576",
+          "state": 13,
+          "witness": "739/2304"
+        },
+        {
+          "blocking_complement": [
+            64
+          ],
+          "left": "215/576",
+          "right": "335/896",
+          "state": 7,
+          "witness": "6025/16128"
+        },
+        {
+          "blocking_complement": [
+            64,
+            112
+          ],
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15,
+          "witness": "671/1792"
+        }
+      ],
+      "pair_components": [
+        {
+          "base_laps": {
+            "56": 17,
+            "72": 22
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "112": [
+              "1/36",
+              "1/4"
+            ],
+            "64": [
+              "4/9",
+              "3/7"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "1/36",
+              "1/4"
+            ],
+            "64": [
+              "4/9",
+              "4/7"
+            ]
+          },
+          "interior_event_points": [
+            "39/128"
+          ],
+          "left": "175/576",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "11/144",
+                "64": "17/36"
+              },
+              "left": "175/576",
+              "right": "39/128",
+              "state": 13
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "3/16",
+                "64": "13/28"
+              },
+              "left": "39/128",
+              "right": "137/448",
+              "state": 5
+            }
+          ],
+          "right": "137/448",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "56": 18,
+            "72": 23
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "112": [
+              "1/4",
+              "1/36"
+            ],
+            "64": [
+              "3/7",
+              "4/9"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "3/4",
+              "35/36"
+            ],
+            "64": [
+              "3/7",
+              "5/9"
+            ]
+          },
+          "interior_event_points": [
+            "41/128"
+          ],
+          "left": "143/448",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "3/16",
+                "64": "13/28"
+              },
+              "left": "143/448",
+              "right": "41/128",
+              "state": 5
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "11/144",
+                "64": "17/36"
+              },
+              "left": "41/128",
+              "right": "185/576",
+              "state": 13
+            }
+          ],
+          "right": "185/576",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "56": 21,
+            "72": 27
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "112": [
+              "7/36",
+              "0"
+            ],
+            "64": [
+              "1/9",
+              "0"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "29/36",
+              "0"
+            ],
+            "64": [
+              "8/9",
+              "0"
+            ]
+          },
+          "interior_event_points": [
+            "335/896"
+          ],
+          "left": "215/576",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "23/144",
+                "64": "23/252"
+              },
+              "left": "215/576",
+              "right": "335/896",
+              "state": 7
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "1/16",
+                "64": "1/28"
+              },
+              "left": "335/896",
+              "right": "3/8",
+              "state": 15
+            }
+          ],
+          "right": "3/8",
+          "right_included_in_pair_blocking_set": true,
+          "right_pair_blocks": true
+        }
+      ]
+    },
+    {
+      "base_pair": [
+        56,
+        112
+      ],
+      "complement": [
+        64,
+        72
+      ],
+      "containment_holds": false,
+      "cost": {
+        "base_piece_pair_comparisons": 66,
+        "base_runner_blocking_pieces": 17,
+        "complement_component_checks": 12,
+        "complement_phase_range_checks": 18,
+        "event_point_predicate_checks": 58,
+        "internal_complement_threshold_partitions": 3,
+        "open_cell_predicate_checks": 57,
+        "pair_component_endpoint_base_distance_checks": 24,
+        "pair_component_endpoint_inclusion_checks": 12,
+        "pair_component_intersection_steps": 16,
+        "positive_pair_components": 6
+      },
+      "event_point_violations": [
+        {
+          "blocking_complement": [
+            64,
+            72
+          ],
+          "state": 15,
+          "time": "3/8"
+        }
+      ],
+      "first_positive_violation": {
+        "blocking_complement": [
+          72
+        ],
+        "left": "175/576",
+        "right": "39/128",
+        "state": 13,
+        "witness": "701/2304"
+      },
+      "implied_zero_triples": [],
+      "logical_certificate": {
+        "predicate_count": 0,
+        "preselected_shared_pair": [
+          56,
+          112
+        ],
+        "selection_performed": false,
+        "single_information_bit": false,
+        "zero_triple_predicates": []
+      },
+      "open_cell_violations": [
+        {
+          "blocking_complement": [
+            72
+          ],
+          "left": "175/576",
+          "right": "39/128",
+          "state": 13,
+          "witness": "701/2304"
+        },
+        {
+          "blocking_complement": [
+            72
+          ],
+          "left": "41/128",
+          "right": "185/576",
+          "state": 13,
+          "witness": "739/2304"
+        },
+        {
+          "blocking_complement": [
+            64
+          ],
+          "left": "183/512",
+          "right": "321/896",
+          "state": 11,
+          "witness": "2565/7168"
+        },
+        {
+          "blocking_complement": [
+            64,
+            72
+          ],
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15,
+          "witness": "671/1792"
+        }
+      ],
+      "pair_components": [
+        {
+          "base_laps": {
+            "112": 32,
+            "56": 16
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "64": [
+              "3/14",
+              "5/14"
+            ],
+            "72": [
+              "55/112",
+              "39/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "64": [
+              "3/14",
+              "5/14"
+            ],
+            "72": [
+              "55/112",
+              "73/112"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "255/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "64": "2/7",
+                "72": "3/7"
+              },
+              "left": "255/896",
+              "right": "257/896",
+              "state": 9
+            }
+          ],
+          "right": "257/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 34,
+            "56": 17
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "64": [
+              "5/14",
+              "1/2"
+            ],
+            "72": [
+              "25/112",
+              "1/16"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "64": [
+              "5/14",
+              "1/2"
+            ],
+            "72": [
+              "87/112",
+              "15/16"
+            ]
+          },
+          "interior_event_points": [
+            "175/576"
+          ],
+          "left": "271/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "64": "101/252",
+                "72": "39/224"
+              },
+              "left": "271/896",
+              "right": "175/576",
+              "state": 9
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "64": "17/36",
+                "72": "3/32"
+              },
+              "left": "175/576",
+              "right": "39/128",
+              "state": 13
+            }
+          ],
+          "right": "39/128",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 36,
+            "56": 18
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "64": [
+              "1/2",
+              "5/14"
+            ],
+            "72": [
+              "1/16",
+              "25/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "64": [
+              "1/2",
+              "9/14"
+            ],
+            "72": [
+              "1/16",
+              "25/112"
+            ]
+          },
+          "interior_event_points": [
+            "185/576"
+          ],
+          "left": "41/128",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "64": "17/36",
+                "72": "3/32"
+              },
+              "left": "41/128",
+              "right": "185/576",
+              "state": 13
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "64": "101/252",
+                "72": "39/224"
+              },
+              "left": "185/576",
+              "right": "289/896",
+              "state": 9
+            }
+          ],
+          "right": "289/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 38,
+            "56": 19
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "64": [
+              "5/14",
+              "3/14"
+            ],
+            "72": [
+              "39/112",
+              "55/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "64": [
+              "9/14",
+              "11/14"
+            ],
+            "72": [
+              "39/112",
+              "57/112"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "303/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "64": "2/7",
+                "72": "3/7"
+              },
+              "left": "303/896",
+              "right": "305/896",
+              "state": 9
+            }
+          ],
+          "right": "305/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 40,
+            "56": 20
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "64": [
+              "3/14",
+              "1/14"
+            ],
+            "72": [
+              "41/112",
+              "23/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "64": [
+              "11/14",
+              "13/14"
+            ],
+            "72": [
+              "71/112",
+              "89/112"
+            ]
+          },
+          "interior_event_points": [
+            "183/512"
+          ],
+          "left": "319/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "64": "19/112",
+                "72": "283/896"
+              },
+              "left": "319/896",
+              "right": "183/512",
+              "state": 9
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "64": "11/112",
+                "72": "211/896"
+              },
+              "left": "183/512",
+              "right": "321/896",
+              "state": 11
+            }
+          ],
+          "right": "321/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 42,
+            "56": 21
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "64": [
+              "1/14",
+              "0"
+            ],
+            "72": [
+              "9/112",
+              "0"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "64": [
+              "13/14",
+              "0"
+            ],
+            "72": [
+              "103/112",
+              "0"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "335/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "64": "1/28",
+                "72": "9/224"
+              },
+              "left": "335/896",
+              "right": "3/8",
+              "state": 15
+            }
+          ],
+          "right": "3/8",
+          "right_included_in_pair_blocking_set": true,
+          "right_pair_blocks": true
+        }
+      ]
+    },
+    {
+      "base_pair": [
+        64,
+        72
+      ],
+      "complement": [
+        56,
+        112
+      ],
+      "containment_holds": false,
+      "cost": {
+        "base_piece_pair_comparisons": 49,
+        "base_runner_blocking_pieces": 14,
+        "complement_component_checks": 6,
+        "complement_phase_range_checks": 8,
+        "event_point_predicate_checks": 58,
+        "internal_complement_threshold_partitions": 1,
+        "open_cell_predicate_checks": 57,
+        "pair_component_endpoint_base_distance_checks": 12,
+        "pair_component_endpoint_inclusion_checks": 6,
+        "pair_component_intersection_steps": 13,
+        "positive_pair_components": 3
+      },
+      "event_point_violations": [
+        {
+          "blocking_complement": [
+            56
+          ],
+          "state": 7,
+          "time": "335/896"
+        },
+        {
+          "blocking_complement": [
+            56,
+            112
+          ],
+          "state": 15,
+          "time": "3/8"
+        }
+      ],
+      "first_positive_violation": {
+        "blocking_complement": [
+          56
+        ],
+        "left": "215/576",
+        "right": "335/896",
+        "state": 7,
+        "witness": "6025/16128"
+      },
+      "implied_zero_triples": [],
+      "logical_certificate": {
+        "predicate_count": 0,
+        "preselected_shared_pair": [
+          64,
+          72
+        ],
+        "selection_performed": false,
+        "single_information_bit": false,
+        "zero_triple_predicates": []
+      },
+      "open_cell_violations": [
+        {
+          "blocking_complement": [
+            56
+          ],
+          "left": "215/576",
+          "right": "335/896",
+          "state": 7,
+          "witness": "6025/16128"
+        },
+        {
+          "blocking_complement": [
+            56,
+            112
+          ],
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15,
+          "witness": "671/1792"
+        }
+      ],
+      "pair_components": [
+        {
+          "base_laps": {
+            "64": 22,
+            "72": 25
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "112": [
+              "11/36",
+              "9/32"
+            ],
+            "56": [
+              "25/72",
+              "23/64"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "25/36",
+              "23/32"
+            ],
+            "56": [
+              "25/72",
+              "23/64"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "199/576",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "169/576",
+                "56": "407/1152"
+              },
+              "left": "199/576",
+              "right": "177/512",
+              "state": 6
+            }
+          ],
+          "right": "177/512",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "64": 23,
+            "72": 26
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "112": [
+              "1/4",
+              "15/32"
+            ],
+            "56": [
+              "1/8",
+              "15/64"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "1/4",
+              "15/32"
+            ],
+            "56": [
+              "1/8",
+              "15/64"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "23/64",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "23/64",
+                "56": "23/128"
+              },
+              "left": "23/64",
+              "right": "185/512",
+              "state": 6
+            }
+          ],
+          "right": "185/512",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "64": 24,
+            "72": 27
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "112": [
+              "7/36",
+              "0"
+            ],
+            "56": [
+              "7/72",
+              "0"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "112": [
+              "29/36",
+              "0"
+            ],
+            "56": [
+              "65/72",
+              "0"
+            ]
+          },
+          "interior_event_points": [
+            "335/896"
+          ],
+          "left": "215/576",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "112": "23/144",
+                "56": "23/288"
+              },
+              "left": "215/576",
+              "right": "335/896",
+              "state": 7
+            },
+            {
+              "complement_distances_at_midpoint": {
+                "112": "1/16",
+                "56": "1/32"
+              },
+              "left": "335/896",
+              "right": "3/8",
+              "state": 15
+            }
+          ],
+          "right": "3/8",
+          "right_included_in_pair_blocking_set": true,
+          "right_pair_blocks": true
+        }
+      ]
+    },
+    {
+      "base_pair": [
+        64,
+        112
+      ],
+      "complement": [
+        56,
+        72
+      ],
+      "containment_holds": false,
+      "cost": {
+        "base_piece_pair_comparisons": 77,
+        "base_runner_blocking_pieces": 18,
+        "complement_component_checks": 10,
+        "complement_phase_range_checks": 10,
+        "event_point_predicate_checks": 58,
+        "internal_complement_threshold_partitions": 0,
+        "open_cell_predicate_checks": 57,
+        "pair_component_endpoint_base_distance_checks": 20,
+        "pair_component_endpoint_inclusion_checks": 10,
+        "pair_component_intersection_steps": 17,
+        "positive_pair_components": 5
+      },
+      "event_point_violations": [
+        {
+          "blocking_complement": [
+            56,
+            72
+          ],
+          "state": 15,
+          "time": "3/8"
+        }
+      ],
+      "first_positive_violation": {
+        "blocking_complement": [
+          56
+        ],
+        "left": "183/512",
+        "right": "321/896",
+        "state": 11,
+        "witness": "2565/7168"
+      },
+      "implied_zero_triples": [],
+      "logical_certificate": {
+        "predicate_count": 0,
+        "preselected_shared_pair": [
+          64,
+          112
+        ],
+        "selection_performed": false,
+        "single_information_bit": false,
+        "zero_triple_predicates": []
+      },
+      "open_cell_violations": [
+        {
+          "blocking_complement": [
+            56
+          ],
+          "left": "183/512",
+          "right": "321/896",
+          "state": 11,
+          "witness": "2565/7168"
+        },
+        {
+          "blocking_complement": [
+            56,
+            72
+          ],
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15,
+          "witness": "671/1792"
+        }
+      ],
+      "pair_components": [
+        {
+          "base_laps": {
+            "112": 33,
+            "64": 19
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "56": [
+              "31/64",
+              "7/16"
+            ],
+            "72": [
+              "15/64",
+              "33/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "33/64",
+              "9/16"
+            ],
+            "72": [
+              "15/64",
+              "33/112"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "151/512",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "59/128",
+                "72": "237/896"
+              },
+              "left": "151/512",
+              "right": "265/896",
+              "state": 10
+            }
+          ],
+          "right": "265/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 35,
+            "64": 20
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "56": [
+              "7/16",
+              "7/16"
+            ],
+            "72": [
+              "47/112",
+              "47/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "7/16",
+              "9/16"
+            ],
+            "72": [
+              "47/112",
+              "65/112"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "279/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "1/2",
+                "72": "1/2"
+              },
+              "left": "279/896",
+              "right": "281/896",
+              "state": 10
+            }
+          ],
+          "right": "281/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 37,
+            "64": 21
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "56": [
+              "7/16",
+              "31/64"
+            ],
+            "72": [
+              "33/112",
+              "15/64"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "7/16",
+              "31/64"
+            ],
+            "72": [
+              "79/112",
+              "49/64"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "295/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "59/128",
+                "72": "237/896"
+              },
+              "left": "295/896",
+              "right": "169/512",
+              "state": 10
+            }
+          ],
+          "right": "169/512",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 40,
+            "64": 23
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "56": [
+              "1/64",
+              "1/16"
+            ],
+            "72": [
+              "17/64",
+              "23/112"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "1/64",
+              "1/16"
+            ],
+            "72": [
+              "47/64",
+              "89/112"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "183/512",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "5/128",
+                "72": "211/896"
+              },
+              "left": "183/512",
+              "right": "321/896",
+              "state": 11
+            }
+          ],
+          "right": "321/896",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 42,
+            "64": 24
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "56": [
+              "1/16",
+              "0"
+            ],
+            "72": [
+              "9/112",
+              "0"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "15/16",
+              "0"
+            ],
+            "72": [
+              "103/112",
+              "0"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "335/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "1/32",
+                "72": "9/224"
+              },
+              "left": "335/896",
+              "right": "3/8",
+              "state": 15
+            }
+          ],
+          "right": "3/8",
+          "right_included_in_pair_blocking_set": true,
+          "right_pair_blocks": true
+        }
+      ]
+    },
+    {
+      "base_pair": [
+        72,
+        112
+      ],
+      "complement": [
+        56,
+        64
+      ],
+      "containment_holds": false,
+      "cost": {
+        "base_piece_pair_comparisons": 77,
+        "base_runner_blocking_pieces": 18,
+        "complement_component_checks": 8,
+        "complement_phase_range_checks": 8,
+        "event_point_predicate_checks": 58,
+        "internal_complement_threshold_partitions": 0,
+        "open_cell_predicate_checks": 57,
+        "pair_component_endpoint_base_distance_checks": 16,
+        "pair_component_endpoint_inclusion_checks": 8,
+        "pair_component_intersection_steps": 17,
+        "positive_pair_components": 4
+      },
+      "event_point_violations": [
+        {
+          "blocking_complement": [
+            56,
+            64
+          ],
+          "state": 15,
+          "time": "3/8"
+        }
+      ],
+      "first_positive_violation": {
+        "blocking_complement": [
+          56
+        ],
+        "left": "175/576",
+        "right": "39/128",
+        "state": 13,
+        "witness": "701/2304"
+      },
+      "implied_zero_triples": [],
+      "logical_certificate": {
+        "predicate_count": 0,
+        "preselected_shared_pair": [
+          72,
+          112
+        ],
+        "selection_performed": false,
+        "single_information_bit": false,
+        "zero_triple_predicates": []
+      },
+      "open_cell_violations": [
+        {
+          "blocking_complement": [
+            56
+          ],
+          "left": "175/576",
+          "right": "39/128",
+          "state": 13,
+          "witness": "701/2304"
+        },
+        {
+          "blocking_complement": [
+            56
+          ],
+          "left": "41/128",
+          "right": "185/576",
+          "state": 13,
+          "witness": "739/2304"
+        },
+        {
+          "blocking_complement": [
+            56,
+            64
+          ],
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15,
+          "witness": "671/1792"
+        }
+      ],
+      "pair_components": [
+        {
+          "base_laps": {
+            "112": 34,
+            "72": 22
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "56": [
+              "1/72",
+              "1/16"
+            ],
+            "64": [
+              "4/9",
+              "1/2"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "1/72",
+              "1/16"
+            ],
+            "64": [
+              "4/9",
+              "1/2"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "175/576",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "11/288",
+                "64": "17/36"
+              },
+              "left": "175/576",
+              "right": "39/128",
+              "state": 13
+            }
+          ],
+          "right": "39/128",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 36,
+            "72": 23
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "56": [
+              "1/16",
+              "1/72"
+            ],
+            "64": [
+              "1/2",
+              "4/9"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "15/16",
+              "71/72"
+            ],
+            "64": [
+              "1/2",
+              "5/9"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "41/128",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "11/288",
+                "64": "17/36"
+              },
+              "left": "41/128",
+              "right": "185/576",
+              "state": 13
+            }
+          ],
+          "right": "185/576",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 39,
+            "72": 25
+          },
+          "closure_complement_safe": true,
+          "complement_endpoint_distances": {
+            "56": [
+              "7/16",
+              "11/24"
+            ],
+            "64": [
+              "3/14",
+              "1/3"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "7/16",
+              "13/24"
+            ],
+            "64": [
+              "3/14",
+              "1/3"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "311/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "47/96",
+                "64": "23/84"
+              },
+              "left": "311/896",
+              "right": "67/192",
+              "state": 12
+            }
+          ],
+          "right": "67/192",
+          "right_included_in_pair_blocking_set": false,
+          "right_pair_blocks": false
+        },
+        {
+          "base_laps": {
+            "112": 42,
+            "72": 27
+          },
+          "closure_complement_safe": false,
+          "complement_endpoint_distances": {
+            "56": [
+              "1/16",
+              "0"
+            ],
+            "64": [
+              "1/14",
+              "0"
+            ]
+          },
+          "complement_endpoint_phases": {
+            "56": [
+              "15/16",
+              "0"
+            ],
+            "64": [
+              "13/14",
+              "0"
+            ]
+          },
+          "interior_event_points": [],
+          "left": "335/896",
+          "left_included_in_pair_blocking_set": false,
+          "left_pair_blocks": false,
+          "phase_cells": [
+            {
+              "complement_distances_at_midpoint": {
+                "56": "1/32",
+                "64": "1/28"
+              },
+              "left": "335/896",
+              "right": "3/8",
+              "state": 15
+            }
+          ],
+          "right": "3/8",
+          "right_included_in_pair_blocking_set": true,
+          "right_pair_blocks": true
+        }
+      ]
+    }
+  ],
+  "method": "separately authored exact rational threshold-event cell/state reconstruction; every open cell and event point checked",
+  "primary_comparison": {
+    "doubling_failures_witnesses_components_endpoints_and_costs_equal": 6,
+    "exact_rational_comparison_totals_not_equated": "Implementation-specific totals differ because the verifier performs a full event sweep.",
+    "mathematical_results_equal": true,
+    "primary_operation_ledger_internal_sums_checked": {
+      "doubling_diagnostics": 6,
+      "doubling_exact_rational_comparisons": 2322,
+      "selected_cases": 3,
+      "selected_exact_rational_comparisons": 279
+    },
+    "primary_sha256": "81992c0c9a38c5b5cedea1146dd1a5bea087c950228d10dc795839a7ab319c7d",
+    "results_sha256": "478b6caf2c654af7eef83c1d6f2388933d737df6a78ab0f306b801053fe2ff5b",
+    "selected_case_containments_bounds_components_endpoints_and_costs_equal": 3,
+    "selected_information_contracts_equal": 3
+  },
+  "protocol_sha256": "52cdd98452f9e47c082bb53703b1a20dc07fa9e47860bc7bbf0e2eb1d00378f3",
+  "source_hashes": {
+    "cover_results": {
+      "path": "reviews/2026-09-28-cover-obligations/results.json",
+      "sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e"
+    },
+    "joint_results": {
+      "path": "reviews/2026-09-28-joint-triple-exclusions/results.json",
+      "sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159"
+    },
+    "sparse_results": {
+      "path": "reviews/2026-09-25-lr2/sparse_overlap.json",
+      "sha256": "75428333a7f044ce537862ba08bceb7cce1a0fc8af14b24a3250b197049d997e"
+    }
+  },
+  "summary": {
+    "doubling_containments_fail": 6,
+    "event_points": 95,
+    "open_cells": 91,
+    "reflection_event_points": 18,
+    "reflection_open_cells": 17,
+    "selected_containments_pass": 3,
+    "strict_16_bound": "1/896",
+    "target_bound": "49/524400",
+    "tight_13_isolated_equality": true,
+    "tight_13_raw_bound": "-1/182"
+  },
+  "target_reflection": {
+    "atoms_equal": true,
+    "moments_equal": true,
+    "no_duplicate_selection": true,
+    "open_cells_reverse_exactly": true,
+    "reconstruction_counts": {
+      "blocker_endpoint_distance_checks": 20,
+      "blocking_pieces_all_runners": 10,
+      "event_points": 18,
+      "interior_threshold_events": 16,
+      "open_cells": 17,
+      "state_distance_comparisons": 276
+    },
+    "selected_containment_holds": true,
+    "window": [
+      "145/184",
+      "151/184"
+    ]
+  },
+  "tight_13_endpoint": {
+    "distances": {
+      "1": "3/8",
+      "11": "1/8",
+      "13": "1/8",
+      "4": "1/2",
+      "5": "1/8",
+      "6": "1/4",
+      "7": "3/8"
+    },
+    "isolated": true,
+    "left_neighborhood_blockers": [
+      11
+    ],
+    "positive_duration": false,
+    "right_neighborhood_blockers": [
+      5,
+      13
+    ],
+    "time": "3/8",
+    "valid": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "baseline": "d578e9f75b73d841c58577c435dfbbcf763f09e4",
+  "frozen_before_calculation": true,
+  "question": "Can the two selected zero-triple facts on the collective-only target be certified as one shared pair-occurrence containment, and what exact information and work does that certificate require?",
+  "assumptions": "Eight common-start runners; selected reference 0; threshold 1/8; strict blocking means distance below 1/8; equality is safe; duration and isolated contacts remain separate.",
+  "candidate_certificate": [
+    "For four residual blockers a,b,c,d on a supplied closed window J, construct only the positive-length components of B_a intersect B_b, retaining their lap labels and exact endpoints.",
+    "For every such component I, certify by exact unwrapped endpoint phase ranges that both c and d remain in the closed safe phase interval [1/8,7/8] throughout I. Partition I only if a tested phase crosses an integer or threshold boundary.",
+    "If every component passes, conclude the single containment B_a intersect B_b subset Safe_c intersect Safe_d and hence the two inclusive-triple exclusions T_abc=T_abd=0. Endpoint contacts are checked separately.",
+    "Insert those two exclusions into the already-known five-edge correction U >= C_0-O_cd-T_abc-T_abd. The graph inequality is prior work; this study tests only the shared geometric certificate and its cost."
+  ],
+  "frozen_cases": [
+    {
+      "name": "collective_target",
+      "velocities": [0,7,8,15,23,38,61,100],
+      "core_speeds": [7,8,23],
+      "residual_speeds": [15,38,61,100],
+      "window": ["33/184","39/184"],
+      "base_pair": [15,38],
+      "complement": [61,100],
+      "selection_provenance": "The common pair of the frozen lexicographically selected minimal coordinate bounds T_(15,38,61)<=0 and T_(15,38,100)<=0. No new pair selection is permitted."
+    },
+    {
+      "name": "strict_16",
+      "velocities": [0,1,4,5,6,7,11,16],
+      "core_speeds": [1,4,5],
+      "residual_speeds": [6,7,11,16],
+      "window": ["9/32","3/8"],
+      "base_pair": [6,11],
+      "complement": [7,16],
+      "selection_provenance": "The fixed nonempty pair interval P from the prior sparse selector. Its containment in Safe_7 is structural and its containment in Safe_16 is the already-known strict16 triple exclusion."
+    },
+    {
+      "name": "tight_13",
+      "velocities": [0,1,4,5,6,7,11,13],
+      "core_speeds": [1,4,5],
+      "residual_speeds": [6,7,11,13],
+      "window": ["9/32","3/8"],
+      "base_pair": [6,11],
+      "complement": [7,13],
+      "selection_provenance": "The same fixed nonempty pair interval P from the prior sparse selector. This is a required countercontrol: the containment may hold while positive duration still fails and only t=3/8 survives."
+    },
+    {
+      "name": "doubling_112",
+      "velocities": [0,1,4,5,56,64,72,112],
+      "core_speeds": [1,4,5],
+      "residual_speeds": [56,64,72,112],
+      "window": ["9/32","3/8"],
+      "base_pair": null,
+      "complement": null,
+      "selection_provenance": "Pair moments already certify positive duration, so the rule exits without a higher-order query. As a diagnostic only, test all six base pairs and preserve explicit violating occurrences; do not select a post-result pair."
+    }
+  ],
+  "frozen_outputs": [
+    "Exact base-pair blocking pieces, pair-overlap components, lap labels, complement phase ranges and any endpoint contacts or violations.",
+    "For each selected case, the implied two zero triples and the five-edge lower bound computed from the already archived total/single/pair moments.",
+    "For doubling112, one exact positive violating point or interval for each of the six candidate containments, if all fail; any success would be retained rather than reinterpreted.",
+    "A cost ledger counting base-runner blocking pieces, pair component intersections, complement phase-range checks, threshold partitions and exact rational comparisons. Compare with two separate triple reconstructions and with the old sparse arithmetic tests without calling prior work new.",
+    "A reflected-target check with no duplicate selection or independent-example claim."
+  ],
+  "falsification": [
+    "A target component on which either 61 or 100 blocks disproves the candidate containment and must be preserved without changing the base pair.",
+    "A claimed containment fails if any endpoint or positive cell violates the closed safe condition.",
+    "A positive-duration conclusion for tight13 is invalid; its isolated equality at 3/8 must remain separate.",
+    "A shared containment does not by itself imply a positive bound: the known five-edge arithmetic must be evaluated.",
+    "Abstract cover countermodels from the prior study are not runner configurations and are not used as geometric evidence."
+  ],
+  "verification_contract": "Primary implementation uses direct exact lap-interval intersections and unwrapped phase ranges. A separately authored verifier must reconstruct threshold-event states and check containments pointwise on every open cell and event point without importing primary functions. It must compare exact results and cost-relevant counts, and retain counterexamples for every failed doubling112 pair.",
+  "source_contract": {
+    "joint_results": "reviews/2026-09-28-joint-triple-exclusions/results.json",
+    "joint_results_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+    "cover_results": "reviews/2026-09-28-cover-obligations/results.json",
+    "cover_results_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e",
+    "sparse_results": "reviews/2026-09-25-lr2/sparse_overlap.json",
+    "sparse_results_sha256": "75428333a7f044ce537862ba08bceb7cce1a0fc8af14b24a3250b197049d997e"
+  },
+  "scope": "Exactly the selected target pair, the fixed strict16 and tight13 comparison pairs, all six doubling112 pairs as a negative diagnostic, and the target reflection. No LP search, new speed, core, window, reference, pair retuning, broad scan, +7/+9 work, outreach, paid compute, main merge or novelty claim.",
+  "status": "Finite exact diagnostics are OBSERVED/REPRODUCED. Any general selection or bounded-cost implication remains OPEN/HYPOTHESIS. Internal AI agreement is not independent mathematical validation."
+}
