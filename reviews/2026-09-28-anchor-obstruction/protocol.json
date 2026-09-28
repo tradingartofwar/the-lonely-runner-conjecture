@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-28",
+  "baseline": "2f15767ef7a5cd78c19a6606f24b2e00a51a6805",
+  "status": "FROZEN analytic construction; no broad search",
+  "question": "Can a finite rational anchor menu and a fixed early-safe-lap budget be complete for the common-displacement method?",
+  "construction": {
+    "n": 8,
+    "fixed_core": [
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "anchor_menu": "All reduced a/d in [0,1) with d<=8, including 0, tested in both directions.",
+    "q": 840,
+    "fast_ratio": 8,
+    "velocities": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      840,
+      6720
+    ],
+    "certificate_anchor": "17/56",
+    "later_interval": "[17/56+9/(64q),17/56+15/(64q)]",
+    "boundary_control": "q=840, fast ratio7 at certificate anchor; first safe intervals meet exactly, not strictly disjoint."
+  },
+  "symbolic_extension": "For any finite rational menu A and fixed positive integer B, choose q a positive multiple of lcm(56, all denominators in A). Speeds q and8Bq collide at every A. Fast firstB safe laps all end before slow first entry; a supplied later interval at17/56 uses fast lap indexB. This is an obstruction to the certificate class, not to loneliness.",
+  "diagnostics": {
+    "primary_physical_case": "q840,B1",
+    "boundary": "q840,R7",
+    "formula_only": "q840,B10^12; no lap enumeration"
+  },
+  "verification": [
+    "Coordinator exact residue/interval calculation; independent agent checks common anchor collisions and safe bands without importing primary code.",
+    "All44 small-denominator anchor/direction records checked exactly; strict gap and endpoint controls explicit.",
+    "Check later full-configuration certificate by lifted safe-lap containment and an independent local reconstruction.",
+    "Any further result recognized after the protocol must be marked as a follow-on, not silently included."
+  ],
+  "limits": [
+    "One directly constructed family inside the existing two-variable family, not new Lonely Runner existence coverage.",
+    "Finite rational menus are chosen independently of speeds; speed-dependent anchor or lap-label rules are not excluded.",
+    "Fixed early-lap cap differs from fixed number of intelligently chosen candidate laps.",
+    "General mathematical arguments are proof candidates under repository governance; concrete counterexample can be reproduced exactly; no novelty claim.",
+    "Hourly automation stays paused; no broad search, all-reference work, outside outreach, paid compute, main merge or +7/+9 restart."
+  ]
+}
