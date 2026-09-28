@@ -1,0 +1,750 @@
+{
+  "schema_version": 1,
+  "purpose": "Post-selection comparisons only. This file must not be read by the primary selector.",
+  "status": "Extracted from pre-existing exact archives; no new full seven-runner safe set or moment reconstruction. General implications retain proof-candidate status.",
+  "baseline_commit": "539dd899ac8ceea5b50d46b72c0fa28cec7a354e",
+  "protocol_sha256": "36ef24405de801a114e11325d30fe0b5f2d855e71441e5c4478047aa15b82d8e",
+  "extraction_scope": "Six frozen core/residual inputs, fixed archived local windows; field copies, exact arithmetic on archived values, and membership queries in archived complete local allowed sets only.",
+  "window_matching": "All six selected_window fields in the completed primary results.json match these archived windows, after the independent campaign had also selected them. No benchmark value chose or revised windows.",
+  "source_format": "JSON Pointer indices are zero-based. Paths are relative to repository root; hashes refer to source file bytes.",
+  "sources": {
+    "pairs": {
+      "path": "experiments/pair_selection.json",
+      "sha256": "c33dd6b542d30cdcb93a6b9cf788085b6b00cedc81a32318c3c5b0c2d578d138",
+      "archive_date": "2026-09-24",
+      "archive_baseline": "13a939e7cf0a25afa0590a5251e423aa5a36c1cc"
+    },
+    "placement": {
+      "path": "experiments/overlap_placement.json",
+      "sha256": "f5ceecab354b6699a500466110d186b6f455ba7ad50d8bb82eaca910acfb1550",
+      "archive_date": "2026-09-24",
+      "archive_baseline": "14b46f0dbb099168b84ec5dca4723dd8c0e5a99f"
+    },
+    "cycles": {
+      "path": "reviews/2026-09-25-lr2/four_blocker_cycles.json",
+      "sha256": "d573812e70638900278b0e5c93a884c58b5996d4ec8b9e81644b5a21c02a43f6",
+      "archive_date": "2026-09-25",
+      "archive_baseline": "91561c35751f1281c5b6920a8022f2f6653672bb"
+    },
+    "sparse": {
+      "path": "reviews/2026-09-25-lr2/sparse_overlap.json",
+      "sha256": "75428333a7f044ce537862ba08bceb7cce1a0fc8af14b24a3250b197049d997e",
+      "archive_date": "2026-09-25",
+      "archive_baseline": "c1cc625a2ee77d6a85da17dffb427c1ac2024e77"
+    },
+    "ultra_root": {
+      "path": "reviews/2026-09-25-ultra/root_checks.json",
+      "sha256": "21c8083c392ec121f957f4fc9eb0833c5ac6409a7a925984a282f15e0a4c53bb",
+      "archive_date": null,
+      "archive_baseline": null,
+      "provenance_note": "Existing September25 Ultra review artifact, present at the frozen baseline; accompanying notes/ULTRA_REVIEW_2026_09_25.md gives the dated interpretation."
+    }
+  },
+  "cases": [
+    {
+      "id": "fast_113",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "extras": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "actual_clear_duration": "6193/260352",
+      "excess_E": "1045/911232",
+      "best_pair_overlap": "395/65088",
+      "best_pairs": [
+        [
+          72,
+          113
+        ]
+      ],
+      "best_pair_bound": "1495/303744",
+      "best_tree_bound": "58073/3644928",
+      "best_tree_edges": [
+        [
+          56,
+          72
+        ],
+        [
+          64,
+          113
+        ],
+        [
+          72,
+          113
+        ]
+      ],
+      "right_endpoint": {
+        "time": "3/8",
+        "valid": false,
+        "local_status": "invalid",
+        "containing_archived_components": [],
+        "method": "membership in the archived complete closed local allowed set; no new runner evaluation",
+        "evidence": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/allowed_set"
+        },
+        "archived_contact_certificate": []
+      },
+      "evidence": {
+        "window": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/interval"
+        },
+        "actual_clear_duration": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/U"
+        },
+        "excess_E": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/E"
+        },
+        "best_pair_overlap": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/pair_overlaps"
+        },
+        "best_pairs": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/best_pairs"
+        },
+        "best_pair_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/best_pair_bound"
+        },
+        "best_tree_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/tree_bound"
+        },
+        "best_tree_edges": {
+          "source": "pairs",
+          "json_pointer": "/cases/0/components/1/chosen_maximum_tree"
+        }
+      },
+      "derivations": [
+        "best_pair_overlap is the maximum of six archived overlap durations; checked against archived best_pairs and best_pair_bound."
+      ]
+    },
+    {
+      "id": "changed_core",
+      "core": [
+        1,
+        3,
+        5
+      ],
+      "extras": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "window": [
+        "17/40",
+        "23/40"
+      ],
+      "actual_clear_duration": "1923/50624",
+      "excess_E": "1271/1822464",
+      "best_pair_overlap": "23/2016",
+      "best_pairs": [
+        [
+          56,
+          72
+        ]
+      ],
+      "best_pair_bound": "2169/202496",
+      "best_tree_bound": "49663/1822464",
+      "best_tree_edges": [
+        [
+          56,
+          72
+        ],
+        [
+          64,
+          113
+        ],
+        [
+          72,
+          113
+        ]
+      ],
+      "right_endpoint": {
+        "time": "23/40",
+        "valid": false,
+        "local_status": "invalid",
+        "containing_archived_components": [],
+        "method": "membership in the archived complete closed local allowed set; no new runner evaluation",
+        "evidence": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/allowed_set"
+        },
+        "archived_contact_certificate": []
+      },
+      "evidence": {
+        "window": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/interval"
+        },
+        "actual_clear_duration": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/U"
+        },
+        "excess_E": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/E"
+        },
+        "best_pair_overlap": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/pair_overlaps"
+        },
+        "best_pairs": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/best_pairs"
+        },
+        "best_pair_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/best_pair_bound"
+        },
+        "best_tree_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/tree_bound"
+        },
+        "best_tree_edges": {
+          "source": "pairs",
+          "json_pointer": "/cases/2/components/3/chosen_maximum_tree"
+        }
+      },
+      "derivations": [
+        "best_pair_overlap is the maximum of six archived overlap durations; checked against archived best_pairs and best_pair_bound."
+      ]
+    },
+    {
+      "id": "doubling_112",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "extras": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "actual_clear_duration": "53/1792",
+      "excess_E": "1/4032",
+      "best_pair_overlap": "11/896",
+      "best_pairs": [
+        [
+          56,
+          112
+        ]
+      ],
+      "best_pair_bound": "97/8064",
+      "best_tree_bound": "761/32256",
+      "best_tree_edges": [
+        [
+          56,
+          72
+        ],
+        [
+          56,
+          112
+        ],
+        [
+          64,
+          112
+        ]
+      ],
+      "compatibility_graph_bound": "761/32256",
+      "compatibility_graph_edges": [
+        [
+          56,
+          72
+        ],
+        [
+          56,
+          112
+        ],
+        [
+          64,
+          112
+        ]
+      ],
+      "right_endpoint": {
+        "time": "3/8",
+        "valid": false,
+        "local_status": "invalid",
+        "containing_archived_components": [],
+        "method": "membership in the archived complete closed local allowed set; no new runner evaluation",
+        "evidence": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/clear_cells"
+        },
+        "archived_contact_certificate": []
+      },
+      "evidence": {
+        "window": {
+          "source": "cycles",
+          "json_pointer": "/window"
+        },
+        "actual_clear_duration": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/clear_duration"
+        },
+        "excess_E": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/moments_by_mask"
+        },
+        "best_pair_overlap": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/pair_weights_in_lexicographic_order"
+        },
+        "best_pairs": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/pair_weights_in_lexicographic_order"
+        },
+        "best_pair_bound": [
+          {
+            "source": "cycles",
+            "json_pointer": "/cases/0/moments_by_mask"
+          },
+          {
+            "source": "cycles",
+            "json_pointer": "/cases/0/pair_weights_in_lexicographic_order"
+          }
+        ],
+        "best_tree_bound": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/tree/bound"
+        },
+        "best_tree_edges": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/tree/edges"
+        },
+        "compatibility_graph_bound": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/compatibility/bound"
+        },
+        "right_endpoint_validity_confirmation": {
+          "source": "cycles",
+          "json_pointer": "/cases/0/valid_boundaries"
+        }
+      },
+      "derivations": [
+        "E=sum archived singleton moments minus archived window length.",
+        "best_pair_overlap=max archived six pair weights; best_pair_bound=best_pair_overlap\u2212E. No overlap or full time set was recomputed.",
+        "clear_cells endpoint membership is crosschecked against the archived complete valid_boundaries list."
+      ],
+      "corroboration": {
+        "source": "placement",
+        "json_pointers": [
+          "/cases/0/actual_clear_duration",
+          "/cases/0/selected_pair_overlap",
+          "/cases/0/single_pair_clear_lower_bound",
+          "/cases/0/allowed_intervals_in_J"
+        ],
+        "note": "The archived selected56/112 pair attains the largest archived pair overlap."
+      }
+    },
+    {
+      "id": "tight_13",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "extras": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "actual_clear_duration": "0",
+      "excess_E": "1445/96096",
+      "best_pair_overlap": "1/182",
+      "best_pairs": [
+        [
+          7,
+          13
+        ]
+      ],
+      "best_pair_bound": "-131/13728",
+      "best_tree_bound": "-1/528",
+      "best_tree_edges": [
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "right_endpoint": {
+        "time": "3/8",
+        "valid": true,
+        "local_status": "isolated",
+        "containing_archived_components": [
+          [
+            "3/8",
+            "3/8"
+          ]
+        ],
+        "method": "membership in the archived complete closed local allowed set; no new runner evaluation",
+        "evidence": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/allowed_set"
+        },
+        "archived_contact_certificate": [
+          {
+            "time": "3/8",
+            "blocking_ends": [
+              11
+            ],
+            "blocking_starts": [
+              5,
+              13
+            ],
+            "strict_blockers": [],
+            "pairs": [
+              {
+                "outgoing": 11,
+                "incoming": 5,
+                "integers": [
+                  "4",
+                  "2"
+                ],
+                "sum_over_8": "2"
+              },
+              {
+                "outgoing": 11,
+                "incoming": 13,
+                "integers": [
+                  "4",
+                  "5"
+                ],
+                "sum_over_8": "3"
+              }
+            ]
+          }
+        ]
+      },
+      "evidence": {
+        "window": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/interval"
+        },
+        "actual_clear_duration": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/U"
+        },
+        "excess_E": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/E"
+        },
+        "best_pair_overlap": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/pair_overlaps"
+        },
+        "best_pairs": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/best_pairs"
+        },
+        "best_pair_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/best_pair_bound"
+        },
+        "best_tree_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/tree_bound"
+        },
+        "best_tree_edges": {
+          "source": "pairs",
+          "json_pointer": "/cases/1/components/1/chosen_maximum_tree"
+        }
+      },
+      "derivations": [
+        "best_pair_overlap is the maximum of six archived overlap durations; checked against archived best_pairs and best_pair_bound."
+      ]
+    },
+    {
+      "id": "one_pair_ceiling",
+      "core": [
+        1,
+        2,
+        4
+      ],
+      "extras": [
+        3,
+        5,
+        6,
+        8
+      ],
+      "window": [
+        "9/32",
+        "7/16"
+      ],
+      "actual_clear_duration": "11/480",
+      "excess_E": "1/20",
+      "best_pair_overlap": "1/24",
+      "best_pairs": [
+        [
+          3,
+          6
+        ]
+      ],
+      "best_pair_bound": "-1/120",
+      "best_tree_bound": "11/480",
+      "best_tree_edges": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "right_endpoint": {
+        "time": "7/16",
+        "valid": true,
+        "local_status": "endpoint_of_positive_interval",
+        "containing_archived_components": [
+          [
+            "17/40",
+            "7/16"
+          ]
+        ],
+        "method": "membership in the archived complete closed local allowed set; no new runner evaluation",
+        "evidence": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/allowed_set"
+        },
+        "archived_contact_certificate": []
+      },
+      "evidence": {
+        "window": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/interval"
+        },
+        "actual_clear_duration": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/U"
+        },
+        "excess_E": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/E"
+        },
+        "best_pair_overlap": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/pair_overlaps"
+        },
+        "best_pairs": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/best_pairs"
+        },
+        "best_pair_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/best_pair_bound"
+        },
+        "best_tree_bound": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/tree_bound"
+        },
+        "best_tree_edges": {
+          "source": "pairs",
+          "json_pointer": "/cases/9/components/1/chosen_maximum_tree"
+        }
+      },
+      "derivations": [
+        "best_pair_overlap is the maximum of six archived overlap durations; checked against archived best_pairs and best_pair_bound."
+      ]
+    },
+    {
+      "id": "strict_16",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "extras": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "actual_clear_duration": "1/896",
+      "excess_E": "569/29568",
+      "best_pair_overlap": "1/128",
+      "best_pairs": [
+        [
+          6,
+          16
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "best_pair_bound": "-169/14784",
+      "best_tree_bound": "-23/29568",
+      "best_tree_edges": [
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "compatibility_graph_bound": "1/896",
+      "compatibility_graph_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "right_endpoint": {
+        "time": "3/8",
+        "valid": false,
+        "local_status": "invalid",
+        "containing_archived_components": [],
+        "method": "membership in the archived complete closed local allowed set; no new runner evaluation",
+        "evidence": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/clear_cells"
+        },
+        "archived_contact_certificate": []
+      },
+      "evidence": {
+        "window": {
+          "source": "cycles",
+          "json_pointer": "/window"
+        },
+        "actual_clear_duration": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/clear_duration"
+        },
+        "excess_E": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/moments_by_mask"
+        },
+        "best_pair_overlap": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/pair_weights_in_lexicographic_order"
+        },
+        "best_pairs": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/pair_weights_in_lexicographic_order"
+        },
+        "best_pair_bound": [
+          {
+            "source": "cycles",
+            "json_pointer": "/cases/7/moments_by_mask"
+          },
+          {
+            "source": "cycles",
+            "json_pointer": "/cases/7/pair_weights_in_lexicographic_order"
+          }
+        ],
+        "best_tree_bound": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/tree/bound"
+        },
+        "best_tree_edges": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/tree/edges"
+        },
+        "compatibility_graph_bound": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/compatibility/bound"
+        },
+        "right_endpoint_validity_confirmation": {
+          "source": "cycles",
+          "json_pointer": "/cases/7/valid_boundaries"
+        }
+      },
+      "derivations": [
+        "E=sum archived singleton moments minus archived window length.",
+        "best_pair_overlap=max archived six pair weights; best_pair_bound=best_pair_overlap\u2212E. No overlap or full time set was recomputed.",
+        "clear_cells endpoint membership is crosschecked against the archived complete valid_boundaries list."
+      ],
+      "corroboration": {
+        "source": "sparse",
+        "json_pointers": [
+          "/finite_results/9/actual_clear_duration",
+          "/finite_results/9/best_runner_tree_bound",
+          "/finite_results/9/clear_lower_bound",
+          "/finite_results/9/triple_6_11_w_possible",
+          "/finite_results/9/triple_7_11_w_possible"
+        ]
+      },
+      "all_pair_information_obstruction": {
+        "physical_clear_duration": "1/896",
+        "abstract_alternative_uncovered_mass": "0",
+        "same_single_and_pair_moments": true,
+        "physical_runner_realization_claimed_for_alternative": false,
+        "scope": "An abstract complete-cover event arrangement matches all local singleton and pair moments. Those totals alone cannot force positive uncovered measure by a universally valid event inequality.",
+        "evidence": [
+          {
+            "source": "ultra_root",
+            "json_pointer": "/tree_limitation/actual_atom_durations"
+          },
+          {
+            "source": "ultra_root",
+            "json_pointer": "/tree_limitation/abstract_alternative_atoms"
+          },
+          {
+            "source": "ultra_root",
+            "json_pointer": "/tree_limitation/same_single_and_pair_moments"
+          }
+        ]
+      }
+    }
+  ]
+}

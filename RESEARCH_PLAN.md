@@ -11,17 +11,17 @@ Have fun working on a genuine mathematical question. Learn its structure well en
 
 The project began from a search for an enjoyable open problem suited to intuition, multiple representations, exact mathematics, and computation. Any broader origin conversation is context only, not a mathematical connection or proposed physical mechanism.
 
-## Current research queue — September 28, 2026 UTC
+## Current research queue — September28, 2026 UTC
 
 The detailed stages below preserve the original strategy. The current state is in [HANDOFF.md](HANDOFF.md); these bounded priorities govern the next work:
 
 | Priority | Task | State and constraint |
 | --- | --- | --- |
-| Completed | Classify the two fixed time templates | [Exact classification](notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md):96 strict,21 threshold,3 failed residue classes. The three selected failed representatives are robust at every runner-11 phase. |
-| Completed this round | Test the old adaptive time t(V) and its reflection | [Adaptive pair](notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md): all admissible V have all-phase threshold survival; every 8|V has all-phase duration at least1/(56V) by directed endpoints. The prescribed pair itself has exact best distance1/8. General deductions remain proof candidates. |
-| Immediate proposed continuation; added by Vance | Identify what a small-gcd local-certificate selector must know before seeing the answer | Start from the [56/113 audit](notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md). Freeze a bounded input/assumption audit using existing56/113,112,tight6/7/11/13 and summary-collision controls. Separate verification cost, arithmetic selection, and guaranteed success. The selected-overlap-zero opening from the fixed core1/3/5 is an existing falsification control. Do not merely repeat the already completed best-pair/tree search across all windows. |
+| Completed | Fixed and adaptive time-pair studies | [Adaptive pair](notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md) covers every admissible V and every runner11 phase in the fixed family; all8|V have duration at least1/(56V) as a supplied proof candidate. |
+| Completed this round; Vance's small-gcd priority | Freeze a certificate input/cost budget and test selection before seeing overlaps | [One-pair policy](notes/ONE_PAIR_SELECTION_2026_09_28.md) uses supplied-core widest window, four singles, at most one overlap, and one endpoint. Six existing controls end in strict16 failure; no rule refinement. A cap test excludes all one-pair positivity in another window without querying overlaps. Exact records separate pair-stage failures and endpoint rescues. |
+| Immediate proposed continuation | Formulate when to request a different kind of certificate information | Use the retained failure to state a speed/geometry condition choosing useful higher-order information or another window, with a declared discovery cost. Compare with the already completed sparse triple-exclusion and J/H dispatch rules; do not present their reconstruction as a new selector. Freeze falsification criteria before adding cases or retuning. |
 
-The precise56/113 coarse-bound failure and restricted small-gcd families were already resolved as supplied arguments. The remaining goal is speed-derived selection and scope beyond their hypotheses. Retain exact local concentration, overlap placement, and endpoint contacts. A small verifiable certificate is not automatically a rule that finds it, and a successful rule in this fixed family is not a general existence guarantee. No broad speed search, further pair optimization, or +7/+9 extension is scheduled.
+The [56/113 audit](notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md) already closes the original coarse-bound gap and records restricted infinite-family candidates beyond large gcd. Current work targets the unresolved selection/general-scope bridge. Individual concentration supplies an overlap upper cap, not a guarantee of useful overlap; a small verifiable certificate is not automatically discoverable cheaply or forced to exist. Preserve counterexamples, exact endpoint contacts, and the distinction between local certificate failure and failed loneliness. No broad speed search, cutoff polishing, or +7/+9 extension is scheduled.
 
 ## Strategic choice
 

@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. An adaptive pair now covers the fixed variable-speed family at every runner-11 phase. The same equality-level pair margin can describe isolated contacts or endpoints leading into positive intervals; active constraint directions distinguish them. Certificate existence, size, selection, and general guarantees remain separate. The small-gcd selection question is next; general existence remains open. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Adaptive pairs separate equality value from permitted direction. The one-pair selection test now separates choosing a poor pair from a window that no pair can certify: individual capacity is not actual overlap, and changing certificate information may be necessary. Existence, certificate size, discovery cost, and general guarantees remain separate. |
 
 ## How to continue this collection
 

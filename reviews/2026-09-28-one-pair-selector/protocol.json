@@ -1,0 +1,37 @@
+{
+  "question": "Can a concentration-guided one-pair query select a useful local certificate without examining all overlaps or the full allowed set?",
+  "baseline_commit": "539dd899ac8ceea5b50d46b72c0fa28cec7a354e",
+  "status": "Known-control diagnostic; general arguments remain HYPOTHESIS/proof candidates; no novelty claim",
+  "reference": 0,
+  "total_runners": 8,
+  "threshold": "1/8",
+  "starts": "All runners start together",
+  "input_contract": "A prescribed three-speed core plus four distinct positive residual speeds; core selection itself is not solved. All frozen full speed lists have gcd1 and retain the original unit period.",
+  "selection_rule": [
+    "Construct the complete closed safe set of only the supplied core on [0,1], retaining singleton components and counting construction cost.",
+    "Among positive-length core components select the widest, breaking ties by smallest left endpoint. Never change this window after seeing residual data.",
+    "Compute the four individual blocking durations D on the selected window using endpoint primitives; E=sum(D)-window_length.",
+    "Rank the six pairs by descending min(D_i,D_j), then ascending numerical speed pair. This is an overlap upper cap, not a prediction or lower bound.",
+    "If E<0, certify positive duration from singles and make no overlap query. Otherwise if the largest cap is at most E, record that no one-pair bound can be positive and make no overlap query.",
+    "Otherwise query exactly the first ranked pair's overlap O and use lower bound O-E. Never rerank or query another pair after failure.",
+    "If no positive duration certificate resulted, test only the selected window's right endpoint against all seven nonreference speeds. If valid, record its shared safe-lap intersection and equality directions to distinguish a positive local interval from an isolated contact. If invalid, return uncertified and stop the ordered diagnostic campaign. Do not select a second endpoint or window."
+  ],
+  "overlap_evaluator": "After selecting a<b, choose h in {1,2} minimizing (abs(b-h*a),h); put r=b-h*a. Use signed-residual phase strips and the exact periodic endpoint primitive. Count all strips and primitive calls. This is an evaluation choice, not a pair-ranking score. The independent verifier uses direct blocking-interval intersection instead.",
+  "ordered_cases": [
+    {"id":"fast_113", "core":[1,4,5], "extras":[56,64,72,113]},
+    {"id":"changed_core", "core":[1,3,5], "extras":[56,64,72,113]},
+    {"id":"doubling_112", "core":[1,4,5], "extras":[56,64,72,112]},
+    {"id":"tight_13", "core":[1,4,5], "extras":[6,7,11,13]},
+    {"id":"one_pair_ceiling", "core":[1,2,4], "extras":[3,5,6,8]},
+    {"id":"strict_16", "core":[1,4,5], "extras":[6,7,11,16]}
+  ],
+  "validation_contract": [
+    "Exact rational arithmetic only; no time/phase grid or broad speed search.",
+    "Primary generator must not read full allowed sets, all-pair archives, benchmark durations, or the independent implementation.",
+    "Independent verifier may read schema/output/protocol but must not read/import primary implementation. Use a separately structured core event partition, direct chosen-pair interval intersections, and endpoint substitution.",
+    "Compare policy outputs afterward to already archived local actual durations and best-pair/tree bounds. Benchmark sources do not feed selection. No new full seven-runner safe-set reconstruction.",
+    "These are known controls informed by prior research, not blind or held-out validation. Preserve the first uncertified result without retuning."
+  ],
+  "cost_contract": "Count core laps/events/components, four single-duration primitive calls at two endpoints each, six scalar pair caps, at most one exact overlap evaluation with all residual-strip construction and primitive calls, and at most one seven-runner endpoint plus its safe-lap intersection. Report rational operand bit sizes separately. No uniform or empirical runtime speedup claim follows merely from the one-query count.",
+  "scope_limits": "No arbitrary-speed existence guarantee, no core-selection theorem, no complete strictness classification, no external proof certification or novelty assertion. A failed policy is not failed loneliness. +7/+9 and cutoff polishing remain parked."
+}
