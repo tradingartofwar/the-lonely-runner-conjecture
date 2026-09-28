@@ -1,0 +1,10 @@
+{
+  "status": "Post-protocol analytical deduction; frozen pair controls and negative scope controls retained.",
+  "date": "2026-09-28",
+  "baseline": "e76965fa484797c77d2b68411ef5aaa28ceb3e95",
+  "claim": "At delta1/8, three ordered positive residual speeds admit earliest joint-safe selection by at most10 scalar projections, in nested order a,b,c,b,c,a,b,c,b,c.",
+  "proof": "For the pair selector, at most one of the two slower projections moves; total wait <2delta/a+4delta/b. For residual b,c this is <=(1-2delta)/a when delta<=1/8 and a<=b<=c. Apply the fresh-safe-lap argument twice, with the pair selector as the second operation.",
+  "diagnostic": "Only reuse frozen auxiliary speeds1,7,8, phases0, delta1/8,L7/8,R6/5. Compare with existing independent threshold-event earliest65/56. No new cases, scan, or physical configuration.",
+  "evidence_limit": "The unbounded three-runner claim rests on the supplied proof candidate; one reused control checks implementation, not general coverage."
+}
+

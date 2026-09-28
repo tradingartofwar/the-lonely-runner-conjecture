@@ -1,0 +1,135 @@
+{
+  "status": "pass",
+  "provenance": "post-protocol; no new input",
+  "speeds": [
+    1,
+    7,
+    8
+  ],
+  "phases": [
+    "0",
+    "0",
+    "0"
+  ],
+  "delta": "1/8",
+  "window": [
+    "7/8",
+    "6/5"
+  ],
+  "trace": [
+    {
+      "speed": "1",
+      "phase": "0",
+      "input": "7/8",
+      "output": "7/8",
+      "lap": 0,
+      "advance": "0"
+    },
+    {
+      "speed": "7",
+      "phase": "0",
+      "input": "7/8",
+      "output": "7/8",
+      "lap": 6,
+      "advance": "0"
+    },
+    {
+      "speed": "8",
+      "phase": "0",
+      "input": "7/8",
+      "output": "57/64",
+      "lap": 7,
+      "advance": "1/64"
+    },
+    {
+      "speed": "7",
+      "phase": "0",
+      "input": "57/64",
+      "output": "57/64",
+      "lap": 6,
+      "advance": "0"
+    },
+    {
+      "speed": "8",
+      "phase": "0",
+      "input": "57/64",
+      "output": "57/64",
+      "lap": 7,
+      "advance": "0"
+    },
+    {
+      "speed": "1",
+      "phase": "0",
+      "input": "57/64",
+      "output": "9/8",
+      "lap": 1,
+      "advance": "15/64"
+    },
+    {
+      "speed": "7",
+      "phase": "0",
+      "input": "9/8",
+      "output": "9/8",
+      "lap": 7,
+      "advance": "0"
+    },
+    {
+      "speed": "8",
+      "phase": "0",
+      "input": "9/8",
+      "output": "73/64",
+      "lap": 9,
+      "advance": "1/64"
+    },
+    {
+      "speed": "7",
+      "phase": "0",
+      "input": "73/64",
+      "output": "65/56",
+      "lap": 8,
+      "advance": "9/448"
+    },
+    {
+      "speed": "8",
+      "phase": "0",
+      "input": "65/56",
+      "output": "65/56",
+      "lap": 9,
+      "advance": "0"
+    }
+  ],
+  "scalar_projections": 10,
+  "pair_wait_bound": "11/112",
+  "slow_safe_lap_width": "3/4",
+  "earliest": "65/56",
+  "first_component": [
+    "65/56",
+    "6/5"
+  ],
+  "certificate": [
+    {
+      "speed": "1",
+      "phase": "0",
+      "lap": 1,
+      "left_phase": "9/56",
+      "right_phase": "1/5",
+      "minimum_margin": "1/28"
+    },
+    {
+      "speed": "7",
+      "phase": "0",
+      "lap": 8,
+      "left_phase": "1/8",
+      "right_phase": "2/5",
+      "minimum_margin": "0"
+    },
+    {
+      "speed": "8",
+      "phase": "0",
+      "lap": 9,
+      "left_phase": "2/7",
+      "right_phase": "3/5",
+      "minimum_margin": "9/56"
+    }
+  ]
+}
