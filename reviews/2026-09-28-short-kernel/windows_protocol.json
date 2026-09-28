@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-28",
+  "baseline": "bcf959b45a35701f2fd710b1d86ca2cc3152e14c",
+  "claim_status": "HYPOTHESIS / proof candidate for general implications; bounded rational calculations are OBSERVED",
+  "authorization": "Root approved exactly the 12 inherited protocol rows for S,H,width flags and archived witness status, plus only the already analytically derived strict16 J event sequence and prefix/suffix signed-excess formula. No other windows, event enumeration, translate search, or new physical input.",
+  "source_protocol": "../lr-chain-termination/reviews/2026-09-28-chain-termination/protocol.json",
+  "source_results": "../lr-chain-termination/reviews/2026-09-28-chain-termination/results.json",
+  "formulas": {
+    "S": "sum_i 1/v_i",
+    "H": "3*S/4 + max_i(1/v_i)/4",
+    "window_sufficient": "H <= R-L",
+    "core_J": "[9/32,3/8] for core 1,4,5",
+    "integer_tail": "H <= 13/(4*v_min) <= 3/32 if v_min >= 104/3; integer v_min >=35 suffices"
+  },
+  "cases": [
+    {"id":"doubling_112","speeds":[56,64,72,112],"window":["9/32","3/8"]},
+    {"id":"small_gcd_113","speeds":[56,64,72,113],"window":["9/32","3/8"]},
+    {"id":"tight_13","speeds":[6,7,11,13],"window":["9/32","3/8"]},
+    {"id":"control_8_11","speeds":[6,7,8,11],"window":["9/32","3/8"]},
+    {"id":"affine_309","speeds":[309,320,328,619],"window":["9/32","3/8"]},
+    {"id":"affine_310","speeds":[310,320,328,621],"window":["9/32","3/8"]},
+    {"id":"affine_320","speeds":[320,328,336,641],"window":["9/32","3/8"]},
+    {"id":"strict_16","speeds":[6,7,11,16],"window":["9/32","3/8"]},
+    {"id":"aux_condition_strict","speeds":[1,2,4,8],"window":["7/8","6/5"]},
+    {"id":"aux_condition_equality","speeds":[15,20,30,48],"window":["0","1/120"]},
+    {"id":"common_start_lift_clipped","speeds":[429158400185445,432537600141440,519045120390144,713687040084480],"window":["1144427480494519/3433267201483560","1903173888225289/5709496320675840"]},
+    {"id":"common_start_lift_extended","speeds":[429158400185445,432537600141440,519045120390144,713687040084480],"window":["1144427480494519/3433267201483560","163489640070647/490466743069080"]}
+  ],
+  "strict16_frozen_analytic_claim": {
+    "f": "sum of four blocking indicators minus1; endpoint values ignored only for integrals",
+    "positive_intervals": [["9/32","25/88"],["5/16","41/128"],["31/88","17/48"],["47/128","3/8"]],
+    "negative_intervals": [["17/56","39/128"]],
+    "total_signed_excess": "569/29568",
+    "prefix_range": "[0,569/29568]",
+    "window_width": "3/32",
+    "box_width": "1/6",
+    "consequence": "Every prefix and suffix signed excess is nonnegative; any nonnegative mixture of boxes of length at least |J| has nonnegative truncated weighted signed excess for every translation, so its negative-excess sufficient test cannot certify strict16 despite its positive safe interval."
+  },
+  "limits": ["No new selector execution","No new witness derivation except the frozen strict16 event verification","No translation or phase search","No fitted rule","No full conjecture, all-reference or novelty claim"]
+}

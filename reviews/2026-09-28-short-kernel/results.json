@@ -1,0 +1,3418 @@
+{
+  "protocol_sha256": "6cda7c02943bf88fbb315cba9adda3c318f367c26d8c381498d27c6fc8387f8b",
+  "primary_sha256": "f29d1c403823f011dae3fc7e7a7f54b014f667ef93330a72785b40df9be44635",
+  "status": "PASS: exact finite mixed-kernel and endpoint calibration only; general statements remain proof candidates.",
+  "method": "64 translated boxes with multiplicity; exact blocked-interval intersection lengths; direct open-box density counts.",
+  "counts": {
+    "kernel_fixtures": 9,
+    "translation_samples": 36,
+    "train_integrals": 144,
+    "totals": 36,
+    "positive_kernel_cells": 219,
+    "positive_kernel_breakpoints": 210,
+    "zero_kernel_endpoints": 18,
+    "discrete_point_checks": 54,
+    "equality_windows": 1,
+    "equality_points": 14,
+    "equality_cells": 13
+  },
+  "fixtures": [
+    {
+      "id": "equal__exact",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "anchor_index": 0,
+      "P": "1",
+      "H": "13/4",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "13/4",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "95/28",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/4",
+          "midpoint": "1/8",
+          "value": "1/64"
+        },
+        {
+          "left": "1/4",
+          "right": "1/2",
+          "midpoint": "3/8",
+          "value": "1/16"
+        },
+        {
+          "left": "1/2",
+          "right": "3/4",
+          "midpoint": "5/8",
+          "value": "5/32"
+        },
+        {
+          "left": "3/4",
+          "right": "1",
+          "midpoint": "7/8",
+          "value": "5/16"
+        },
+        {
+          "left": "1",
+          "right": "5/4",
+          "midpoint": "9/8",
+          "value": "31/64"
+        },
+        {
+          "left": "5/4",
+          "right": "3/2",
+          "midpoint": "11/8",
+          "value": "5/8"
+        },
+        {
+          "left": "3/2",
+          "right": "7/4",
+          "midpoint": "13/8",
+          "value": "11/16"
+        },
+        {
+          "left": "7/4",
+          "right": "2",
+          "midpoint": "15/8",
+          "value": "5/8"
+        },
+        {
+          "left": "2",
+          "right": "9/4",
+          "midpoint": "17/8",
+          "value": "31/64"
+        },
+        {
+          "left": "9/4",
+          "right": "5/2",
+          "midpoint": "19/8",
+          "value": "5/16"
+        },
+        {
+          "left": "5/2",
+          "right": "11/4",
+          "midpoint": "21/8",
+          "value": "5/32"
+        },
+        {
+          "left": "11/4",
+          "right": "3",
+          "midpoint": "23/8",
+          "value": "1/16"
+        },
+        {
+          "left": "3",
+          "right": "13/4",
+          "midpoint": "25/8",
+          "value": "1/64"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/4",
+          "value": "1/64"
+        },
+        {
+          "t": "1/2",
+          "value": "1/16"
+        },
+        {
+          "t": "3/4",
+          "value": "5/32"
+        },
+        {
+          "t": "1",
+          "value": "19/64"
+        },
+        {
+          "t": "5/4",
+          "value": "7/16"
+        },
+        {
+          "t": "3/2",
+          "value": "17/32"
+        },
+        {
+          "t": "7/4",
+          "value": "17/32"
+        },
+        {
+          "t": "2",
+          "value": "7/16"
+        },
+        {
+          "t": "9/4",
+          "value": "19/64"
+        },
+        {
+          "t": "5/2",
+          "value": "5/32"
+        },
+        {
+          "t": "11/4",
+          "value": "1/16"
+        },
+        {
+          "t": "3",
+          "value": "1/64"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "13/4",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "3/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "1/2",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "5/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "3/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/8",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "equal__period_first_up",
+      "periods": [
+        "1001/1000",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "anchor_index": 0,
+      "P": "1001/1000",
+      "H": "3251/1000",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "3251/1000",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "23757/7000",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/4",
+          "midpoint": "1/8",
+          "value": "125/8008"
+        },
+        {
+          "left": "1/4",
+          "right": "1/2",
+          "midpoint": "3/8",
+          "value": "125/2002"
+        },
+        {
+          "left": "1/2",
+          "right": "3/4",
+          "midpoint": "5/8",
+          "value": "625/4004"
+        },
+        {
+          "left": "3/4",
+          "right": "1",
+          "midpoint": "7/8",
+          "value": "625/2002"
+        },
+        {
+          "left": "1",
+          "right": "1001/1000",
+          "midpoint": "2001/2000",
+          "value": "500/1001"
+        },
+        {
+          "left": "1001/1000",
+          "right": "5/4",
+          "midpoint": "2251/2000",
+          "value": "3875/8008"
+        },
+        {
+          "left": "5/4",
+          "right": "1251/1000",
+          "midpoint": "2501/2000",
+          "value": "5375/8008"
+        },
+        {
+          "left": "1251/1000",
+          "right": "3/2",
+          "midpoint": "2751/2000",
+          "value": "625/1001"
+        },
+        {
+          "left": "3/2",
+          "right": "1501/1000",
+          "midpoint": "3001/2000",
+          "value": "3125/4004"
+        },
+        {
+          "left": "1501/1000",
+          "right": "7/4",
+          "midpoint": "3251/2000",
+          "value": "125/182"
+        },
+        {
+          "left": "7/4",
+          "right": "1751/1000",
+          "midpoint": "3501/2000",
+          "value": "3125/4004"
+        },
+        {
+          "left": "1751/1000",
+          "right": "2",
+          "midpoint": "3751/2000",
+          "value": "625/1001"
+        },
+        {
+          "left": "2",
+          "right": "2001/1000",
+          "midpoint": "4001/2000",
+          "value": "5375/8008"
+        },
+        {
+          "left": "2001/1000",
+          "right": "9/4",
+          "midpoint": "4251/2000",
+          "value": "3875/8008"
+        },
+        {
+          "left": "9/4",
+          "right": "2251/1000",
+          "midpoint": "4501/2000",
+          "value": "500/1001"
+        },
+        {
+          "left": "2251/1000",
+          "right": "2501/1000",
+          "midpoint": "297/125",
+          "value": "625/2002"
+        },
+        {
+          "left": "2501/1000",
+          "right": "2751/1000",
+          "midpoint": "1313/500",
+          "value": "625/4004"
+        },
+        {
+          "left": "2751/1000",
+          "right": "3001/1000",
+          "midpoint": "719/250",
+          "value": "125/2002"
+        },
+        {
+          "left": "3001/1000",
+          "right": "3251/1000",
+          "midpoint": "1563/500",
+          "value": "125/8008"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/4",
+          "value": "125/8008"
+        },
+        {
+          "t": "1/2",
+          "value": "125/2002"
+        },
+        {
+          "t": "3/4",
+          "value": "625/4004"
+        },
+        {
+          "t": "1",
+          "value": "625/2002"
+        },
+        {
+          "t": "1001/1000",
+          "value": "3875/8008"
+        },
+        {
+          "t": "5/4",
+          "value": "3875/8008"
+        },
+        {
+          "t": "1251/1000",
+          "value": "625/1001"
+        },
+        {
+          "t": "3/2",
+          "value": "625/1001"
+        },
+        {
+          "t": "1501/1000",
+          "value": "125/182"
+        },
+        {
+          "t": "7/4",
+          "value": "125/182"
+        },
+        {
+          "t": "1751/1000",
+          "value": "625/1001"
+        },
+        {
+          "t": "2",
+          "value": "625/1001"
+        },
+        {
+          "t": "2001/1000",
+          "value": "3875/8008"
+        },
+        {
+          "t": "9/4",
+          "value": "3875/8008"
+        },
+        {
+          "t": "2251/1000",
+          "value": "625/2002"
+        },
+        {
+          "t": "2501/1000",
+          "value": "625/4004"
+        },
+        {
+          "t": "2751/1000",
+          "value": "125/2002"
+        },
+        {
+          "t": "3001/1000",
+          "value": "125/8008"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "3251/1000",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "3/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "1/2",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "5/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "3/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/8",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "equal__start_first_down",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "-1/1000",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "anchor_index": 0,
+      "P": "1",
+      "H": "13/4",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "13/4",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "95/28",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/4",
+          "midpoint": "1/8",
+          "value": "1/64"
+        },
+        {
+          "left": "1/4",
+          "right": "1/2",
+          "midpoint": "3/8",
+          "value": "1/16"
+        },
+        {
+          "left": "1/2",
+          "right": "3/4",
+          "midpoint": "5/8",
+          "value": "5/32"
+        },
+        {
+          "left": "3/4",
+          "right": "1",
+          "midpoint": "7/8",
+          "value": "5/16"
+        },
+        {
+          "left": "1",
+          "right": "5/4",
+          "midpoint": "9/8",
+          "value": "31/64"
+        },
+        {
+          "left": "5/4",
+          "right": "3/2",
+          "midpoint": "11/8",
+          "value": "5/8"
+        },
+        {
+          "left": "3/2",
+          "right": "7/4",
+          "midpoint": "13/8",
+          "value": "11/16"
+        },
+        {
+          "left": "7/4",
+          "right": "2",
+          "midpoint": "15/8",
+          "value": "5/8"
+        },
+        {
+          "left": "2",
+          "right": "9/4",
+          "midpoint": "17/8",
+          "value": "31/64"
+        },
+        {
+          "left": "9/4",
+          "right": "5/2",
+          "midpoint": "19/8",
+          "value": "5/16"
+        },
+        {
+          "left": "5/2",
+          "right": "11/4",
+          "midpoint": "21/8",
+          "value": "5/32"
+        },
+        {
+          "left": "11/4",
+          "right": "3",
+          "midpoint": "23/8",
+          "value": "1/16"
+        },
+        {
+          "left": "3",
+          "right": "13/4",
+          "midpoint": "25/8",
+          "value": "1/64"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/4",
+          "value": "1/64"
+        },
+        {
+          "t": "1/2",
+          "value": "1/16"
+        },
+        {
+          "t": "3/4",
+          "value": "5/32"
+        },
+        {
+          "t": "1",
+          "value": "19/64"
+        },
+        {
+          "t": "5/4",
+          "value": "7/16"
+        },
+        {
+          "t": "3/2",
+          "value": "17/32"
+        },
+        {
+          "t": "7/4",
+          "value": "17/32"
+        },
+        {
+          "t": "2",
+          "value": "7/16"
+        },
+        {
+          "t": "9/4",
+          "value": "19/64"
+        },
+        {
+          "t": "5/2",
+          "value": "5/32"
+        },
+        {
+          "t": "11/4",
+          "value": "1/16"
+        },
+        {
+          "t": "3",
+          "value": "1/64"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "13/4",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "3/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "1/2",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "5/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "3/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/8",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "two_levels__exact",
+      "periods": [
+        "1",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "0",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "anchor_index": 0,
+      "P": "1",
+      "H": "5/2",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "5/2",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "37/14",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/8",
+          "midpoint": "1/16",
+          "value": "1/64"
+        },
+        {
+          "left": "1/8",
+          "right": "1/4",
+          "midpoint": "3/16",
+          "value": "3/64"
+        },
+        {
+          "left": "1/4",
+          "right": "3/8",
+          "midpoint": "5/16",
+          "value": "7/64"
+        },
+        {
+          "left": "3/8",
+          "right": "1/2",
+          "midpoint": "7/16",
+          "value": "13/64"
+        },
+        {
+          "left": "1/2",
+          "right": "5/8",
+          "midpoint": "9/16",
+          "value": "5/16"
+        },
+        {
+          "left": "5/8",
+          "right": "3/4",
+          "midpoint": "11/16",
+          "value": "7/16"
+        },
+        {
+          "left": "3/4",
+          "right": "7/8",
+          "midpoint": "13/16",
+          "value": "9/16"
+        },
+        {
+          "left": "7/8",
+          "right": "1",
+          "midpoint": "15/16",
+          "value": "11/16"
+        },
+        {
+          "left": "1",
+          "right": "9/8",
+          "midpoint": "17/16",
+          "value": "25/32"
+        },
+        {
+          "left": "9/8",
+          "right": "5/4",
+          "midpoint": "19/16",
+          "value": "27/32"
+        },
+        {
+          "left": "5/4",
+          "right": "11/8",
+          "midpoint": "21/16",
+          "value": "27/32"
+        },
+        {
+          "left": "11/8",
+          "right": "3/2",
+          "midpoint": "23/16",
+          "value": "25/32"
+        },
+        {
+          "left": "3/2",
+          "right": "13/8",
+          "midpoint": "25/16",
+          "value": "11/16"
+        },
+        {
+          "left": "13/8",
+          "right": "7/4",
+          "midpoint": "27/16",
+          "value": "9/16"
+        },
+        {
+          "left": "7/4",
+          "right": "15/8",
+          "midpoint": "29/16",
+          "value": "7/16"
+        },
+        {
+          "left": "15/8",
+          "right": "2",
+          "midpoint": "31/16",
+          "value": "5/16"
+        },
+        {
+          "left": "2",
+          "right": "17/8",
+          "midpoint": "33/16",
+          "value": "13/64"
+        },
+        {
+          "left": "17/8",
+          "right": "9/4",
+          "midpoint": "35/16",
+          "value": "7/64"
+        },
+        {
+          "left": "9/4",
+          "right": "19/8",
+          "midpoint": "37/16",
+          "value": "3/64"
+        },
+        {
+          "left": "19/8",
+          "right": "5/2",
+          "midpoint": "39/16",
+          "value": "1/64"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/8",
+          "value": "1/64"
+        },
+        {
+          "t": "1/4",
+          "value": "3/64"
+        },
+        {
+          "t": "3/8",
+          "value": "7/64"
+        },
+        {
+          "t": "1/2",
+          "value": "13/64"
+        },
+        {
+          "t": "5/8",
+          "value": "5/16"
+        },
+        {
+          "t": "3/4",
+          "value": "7/16"
+        },
+        {
+          "t": "7/8",
+          "value": "9/16"
+        },
+        {
+          "t": "1",
+          "value": "43/64"
+        },
+        {
+          "t": "9/8",
+          "value": "3/4"
+        },
+        {
+          "t": "5/4",
+          "value": "25/32"
+        },
+        {
+          "t": "11/8",
+          "value": "3/4"
+        },
+        {
+          "t": "3/2",
+          "value": "43/64"
+        },
+        {
+          "t": "13/8",
+          "value": "9/16"
+        },
+        {
+          "t": "7/4",
+          "value": "7/16"
+        },
+        {
+          "t": "15/8",
+          "value": "5/16"
+        },
+        {
+          "t": "2",
+          "value": "13/64"
+        },
+        {
+          "t": "17/8",
+          "value": "7/64"
+        },
+        {
+          "t": "9/4",
+          "value": "3/64"
+        },
+        {
+          "t": "19/8",
+          "value": "1/64"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "5/2",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/2",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "5/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "5/16",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "3/8",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/16",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "two_levels__period_first_up",
+      "periods": [
+        "1001/1000",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "0",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "anchor_index": 0,
+      "P": "1001/1000",
+      "H": "2501/1000",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "2501/1000",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "18507/7000",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/8",
+          "midpoint": "1/16",
+          "value": "125/8008"
+        },
+        {
+          "left": "1/8",
+          "right": "1/4",
+          "midpoint": "3/16",
+          "value": "375/8008"
+        },
+        {
+          "left": "1/4",
+          "right": "3/8",
+          "midpoint": "5/16",
+          "value": "125/1144"
+        },
+        {
+          "left": "3/8",
+          "right": "1/2",
+          "midpoint": "7/16",
+          "value": "125/616"
+        },
+        {
+          "left": "1/2",
+          "right": "5/8",
+          "midpoint": "9/16",
+          "value": "625/2002"
+        },
+        {
+          "left": "5/8",
+          "right": "3/4",
+          "midpoint": "11/16",
+          "value": "125/286"
+        },
+        {
+          "left": "3/4",
+          "right": "7/8",
+          "midpoint": "13/16",
+          "value": "1125/2002"
+        },
+        {
+          "left": "7/8",
+          "right": "1",
+          "midpoint": "15/16",
+          "value": "125/182"
+        },
+        {
+          "left": "1",
+          "right": "1001/1000",
+          "midpoint": "2001/2000",
+          "value": "6375/8008"
+        },
+        {
+          "left": "1001/1000",
+          "right": "9/8",
+          "midpoint": "1063/1000",
+          "value": "3125/4004"
+        },
+        {
+          "left": "9/8",
+          "right": "563/500",
+          "midpoint": "2251/2000",
+          "value": "125/143"
+        },
+        {
+          "left": "563/500",
+          "right": "5/4",
+          "midpoint": "297/250",
+          "value": "3375/4004"
+        },
+        {
+          "left": "5/4",
+          "right": "1251/1000",
+          "midpoint": "2501/2000",
+          "value": "3625/4004"
+        },
+        {
+          "left": "1251/1000",
+          "right": "11/8",
+          "midpoint": "1313/1000",
+          "value": "3375/4004"
+        },
+        {
+          "left": "11/8",
+          "right": "172/125",
+          "midpoint": "2751/2000",
+          "value": "125/143"
+        },
+        {
+          "left": "172/125",
+          "right": "3/2",
+          "midpoint": "719/500",
+          "value": "3125/4004"
+        },
+        {
+          "left": "3/2",
+          "right": "1501/1000",
+          "midpoint": "3001/2000",
+          "value": "6375/8008"
+        },
+        {
+          "left": "1501/1000",
+          "right": "813/500",
+          "midpoint": "3127/2000",
+          "value": "125/182"
+        },
+        {
+          "left": "813/500",
+          "right": "1751/1000",
+          "midpoint": "3377/2000",
+          "value": "1125/2002"
+        },
+        {
+          "left": "1751/1000",
+          "right": "469/250",
+          "midpoint": "3627/2000",
+          "value": "125/286"
+        },
+        {
+          "left": "469/250",
+          "right": "2001/1000",
+          "midpoint": "3877/2000",
+          "value": "625/2002"
+        },
+        {
+          "left": "2001/1000",
+          "right": "1063/500",
+          "midpoint": "4127/2000",
+          "value": "125/616"
+        },
+        {
+          "left": "1063/500",
+          "right": "2251/1000",
+          "midpoint": "4377/2000",
+          "value": "125/1144"
+        },
+        {
+          "left": "2251/1000",
+          "right": "297/125",
+          "midpoint": "4627/2000",
+          "value": "375/8008"
+        },
+        {
+          "left": "297/125",
+          "right": "2501/1000",
+          "midpoint": "4877/2000",
+          "value": "125/8008"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/8",
+          "value": "125/8008"
+        },
+        {
+          "t": "1/4",
+          "value": "375/8008"
+        },
+        {
+          "t": "3/8",
+          "value": "125/1144"
+        },
+        {
+          "t": "1/2",
+          "value": "125/616"
+        },
+        {
+          "t": "5/8",
+          "value": "625/2002"
+        },
+        {
+          "t": "3/4",
+          "value": "125/286"
+        },
+        {
+          "t": "7/8",
+          "value": "1125/2002"
+        },
+        {
+          "t": "1",
+          "value": "125/182"
+        },
+        {
+          "t": "1001/1000",
+          "value": "3125/4004"
+        },
+        {
+          "t": "9/8",
+          "value": "3125/4004"
+        },
+        {
+          "t": "563/500",
+          "value": "3375/4004"
+        },
+        {
+          "t": "5/4",
+          "value": "3375/4004"
+        },
+        {
+          "t": "1251/1000",
+          "value": "3375/4004"
+        },
+        {
+          "t": "11/8",
+          "value": "3375/4004"
+        },
+        {
+          "t": "172/125",
+          "value": "3125/4004"
+        },
+        {
+          "t": "3/2",
+          "value": "3125/4004"
+        },
+        {
+          "t": "1501/1000",
+          "value": "125/182"
+        },
+        {
+          "t": "813/500",
+          "value": "1125/2002"
+        },
+        {
+          "t": "1751/1000",
+          "value": "125/286"
+        },
+        {
+          "t": "469/250",
+          "value": "625/2002"
+        },
+        {
+          "t": "2001/1000",
+          "value": "125/616"
+        },
+        {
+          "t": "1063/500",
+          "value": "125/1144"
+        },
+        {
+          "t": "2251/1000",
+          "value": "375/8008"
+        },
+        {
+          "t": "297/125",
+          "value": "125/8008"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "2501/1000",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/2",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "5/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "5/16",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "3/8",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/16",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "two_levels__start_first_down",
+      "periods": [
+        "1",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "-1/1000",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "anchor_index": 0,
+      "P": "1",
+      "H": "5/2",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "5/2",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "37/14",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/8",
+          "midpoint": "1/16",
+          "value": "1/64"
+        },
+        {
+          "left": "1/8",
+          "right": "1/4",
+          "midpoint": "3/16",
+          "value": "3/64"
+        },
+        {
+          "left": "1/4",
+          "right": "3/8",
+          "midpoint": "5/16",
+          "value": "7/64"
+        },
+        {
+          "left": "3/8",
+          "right": "1/2",
+          "midpoint": "7/16",
+          "value": "13/64"
+        },
+        {
+          "left": "1/2",
+          "right": "5/8",
+          "midpoint": "9/16",
+          "value": "5/16"
+        },
+        {
+          "left": "5/8",
+          "right": "3/4",
+          "midpoint": "11/16",
+          "value": "7/16"
+        },
+        {
+          "left": "3/4",
+          "right": "7/8",
+          "midpoint": "13/16",
+          "value": "9/16"
+        },
+        {
+          "left": "7/8",
+          "right": "1",
+          "midpoint": "15/16",
+          "value": "11/16"
+        },
+        {
+          "left": "1",
+          "right": "9/8",
+          "midpoint": "17/16",
+          "value": "25/32"
+        },
+        {
+          "left": "9/8",
+          "right": "5/4",
+          "midpoint": "19/16",
+          "value": "27/32"
+        },
+        {
+          "left": "5/4",
+          "right": "11/8",
+          "midpoint": "21/16",
+          "value": "27/32"
+        },
+        {
+          "left": "11/8",
+          "right": "3/2",
+          "midpoint": "23/16",
+          "value": "25/32"
+        },
+        {
+          "left": "3/2",
+          "right": "13/8",
+          "midpoint": "25/16",
+          "value": "11/16"
+        },
+        {
+          "left": "13/8",
+          "right": "7/4",
+          "midpoint": "27/16",
+          "value": "9/16"
+        },
+        {
+          "left": "7/4",
+          "right": "15/8",
+          "midpoint": "29/16",
+          "value": "7/16"
+        },
+        {
+          "left": "15/8",
+          "right": "2",
+          "midpoint": "31/16",
+          "value": "5/16"
+        },
+        {
+          "left": "2",
+          "right": "17/8",
+          "midpoint": "33/16",
+          "value": "13/64"
+        },
+        {
+          "left": "17/8",
+          "right": "9/4",
+          "midpoint": "35/16",
+          "value": "7/64"
+        },
+        {
+          "left": "9/4",
+          "right": "19/8",
+          "midpoint": "37/16",
+          "value": "3/64"
+        },
+        {
+          "left": "19/8",
+          "right": "5/2",
+          "midpoint": "39/16",
+          "value": "1/64"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/8",
+          "value": "1/64"
+        },
+        {
+          "t": "1/4",
+          "value": "3/64"
+        },
+        {
+          "t": "3/8",
+          "value": "7/64"
+        },
+        {
+          "t": "1/2",
+          "value": "13/64"
+        },
+        {
+          "t": "5/8",
+          "value": "5/16"
+        },
+        {
+          "t": "3/4",
+          "value": "7/16"
+        },
+        {
+          "t": "7/8",
+          "value": "9/16"
+        },
+        {
+          "t": "1",
+          "value": "43/64"
+        },
+        {
+          "t": "9/8",
+          "value": "3/4"
+        },
+        {
+          "t": "5/4",
+          "value": "25/32"
+        },
+        {
+          "t": "11/8",
+          "value": "3/4"
+        },
+        {
+          "t": "3/2",
+          "value": "43/64"
+        },
+        {
+          "t": "13/8",
+          "value": "9/16"
+        },
+        {
+          "t": "7/4",
+          "value": "7/16"
+        },
+        {
+          "t": "15/8",
+          "value": "5/16"
+        },
+        {
+          "t": "2",
+          "value": "13/64"
+        },
+        {
+          "t": "17/8",
+          "value": "7/64"
+        },
+        {
+          "t": "9/4",
+          "value": "3/64"
+        },
+        {
+          "t": "19/8",
+          "value": "1/64"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "5/2",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/2",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "5/8",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "5/16",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "3/8",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/16",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "one_fast__exact",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "0",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "anchor_index": 0,
+      "P": "1",
+      "H": "11/4",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "11/4",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "81/28",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/12",
+          "midpoint": "1/24",
+          "value": "1/64"
+        },
+        {
+          "left": "1/12",
+          "right": "1/6",
+          "midpoint": "1/8",
+          "value": "1/32"
+        },
+        {
+          "left": "1/6",
+          "right": "1/4",
+          "midpoint": "5/24",
+          "value": "3/64"
+        },
+        {
+          "left": "1/4",
+          "right": "1/3",
+          "midpoint": "7/24",
+          "value": "3/32"
+        },
+        {
+          "left": "1/3",
+          "right": "5/12",
+          "midpoint": "3/8",
+          "value": "1/8"
+        },
+        {
+          "left": "5/12",
+          "right": "1/2",
+          "midpoint": "11/24",
+          "value": "5/32"
+        },
+        {
+          "left": "1/2",
+          "right": "7/12",
+          "midpoint": "13/24",
+          "value": "15/64"
+        },
+        {
+          "left": "7/12",
+          "right": "2/3",
+          "midpoint": "5/8",
+          "value": "9/32"
+        },
+        {
+          "left": "2/3",
+          "right": "3/4",
+          "midpoint": "17/24",
+          "value": "21/64"
+        },
+        {
+          "left": "3/4",
+          "right": "5/6",
+          "midpoint": "19/24",
+          "value": "7/16"
+        },
+        {
+          "left": "5/6",
+          "right": "11/12",
+          "midpoint": "7/8",
+          "value": "1/2"
+        },
+        {
+          "left": "11/12",
+          "right": "1",
+          "midpoint": "23/24",
+          "value": "9/16"
+        },
+        {
+          "left": "1",
+          "right": "13/12",
+          "midpoint": "25/24",
+          "value": "21/32"
+        },
+        {
+          "left": "13/12",
+          "right": "7/6",
+          "midpoint": "9/8",
+          "value": "11/16"
+        },
+        {
+          "left": "7/6",
+          "right": "5/4",
+          "midpoint": "29/24",
+          "value": "23/32"
+        },
+        {
+          "left": "5/4",
+          "right": "4/3",
+          "midpoint": "31/24",
+          "value": "3/4"
+        },
+        {
+          "left": "4/3",
+          "right": "17/12",
+          "midpoint": "11/8",
+          "value": "3/4"
+        },
+        {
+          "left": "17/12",
+          "right": "3/2",
+          "midpoint": "35/24",
+          "value": "3/4"
+        },
+        {
+          "left": "3/2",
+          "right": "19/12",
+          "midpoint": "37/24",
+          "value": "23/32"
+        },
+        {
+          "left": "19/12",
+          "right": "5/3",
+          "midpoint": "13/8",
+          "value": "11/16"
+        },
+        {
+          "left": "5/3",
+          "right": "7/4",
+          "midpoint": "41/24",
+          "value": "21/32"
+        },
+        {
+          "left": "7/4",
+          "right": "11/6",
+          "midpoint": "43/24",
+          "value": "9/16"
+        },
+        {
+          "left": "11/6",
+          "right": "23/12",
+          "midpoint": "15/8",
+          "value": "1/2"
+        },
+        {
+          "left": "23/12",
+          "right": "2",
+          "midpoint": "47/24",
+          "value": "7/16"
+        },
+        {
+          "left": "2",
+          "right": "25/12",
+          "midpoint": "49/24",
+          "value": "21/64"
+        },
+        {
+          "left": "25/12",
+          "right": "13/6",
+          "midpoint": "17/8",
+          "value": "9/32"
+        },
+        {
+          "left": "13/6",
+          "right": "9/4",
+          "midpoint": "53/24",
+          "value": "15/64"
+        },
+        {
+          "left": "9/4",
+          "right": "7/3",
+          "midpoint": "55/24",
+          "value": "5/32"
+        },
+        {
+          "left": "7/3",
+          "right": "29/12",
+          "midpoint": "19/8",
+          "value": "1/8"
+        },
+        {
+          "left": "29/12",
+          "right": "5/2",
+          "midpoint": "59/24",
+          "value": "3/32"
+        },
+        {
+          "left": "5/2",
+          "right": "31/12",
+          "midpoint": "61/24",
+          "value": "3/64"
+        },
+        {
+          "left": "31/12",
+          "right": "8/3",
+          "midpoint": "21/8",
+          "value": "1/32"
+        },
+        {
+          "left": "8/3",
+          "right": "11/4",
+          "midpoint": "65/24",
+          "value": "1/64"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/12",
+          "value": "1/64"
+        },
+        {
+          "t": "1/6",
+          "value": "1/32"
+        },
+        {
+          "t": "1/4",
+          "value": "3/64"
+        },
+        {
+          "t": "1/3",
+          "value": "3/32"
+        },
+        {
+          "t": "5/12",
+          "value": "1/8"
+        },
+        {
+          "t": "1/2",
+          "value": "5/32"
+        },
+        {
+          "t": "7/12",
+          "value": "15/64"
+        },
+        {
+          "t": "2/3",
+          "value": "9/32"
+        },
+        {
+          "t": "3/4",
+          "value": "21/64"
+        },
+        {
+          "t": "5/6",
+          "value": "7/16"
+        },
+        {
+          "t": "11/12",
+          "value": "1/2"
+        },
+        {
+          "t": "1",
+          "value": "35/64"
+        },
+        {
+          "t": "13/12",
+          "value": "41/64"
+        },
+        {
+          "t": "7/6",
+          "value": "43/64"
+        },
+        {
+          "t": "5/4",
+          "value": "43/64"
+        },
+        {
+          "t": "4/3",
+          "value": "23/32"
+        },
+        {
+          "t": "17/12",
+          "value": "23/32"
+        },
+        {
+          "t": "3/2",
+          "value": "43/64"
+        },
+        {
+          "t": "19/12",
+          "value": "43/64"
+        },
+        {
+          "t": "5/3",
+          "value": "41/64"
+        },
+        {
+          "t": "7/4",
+          "value": "35/64"
+        },
+        {
+          "t": "11/6",
+          "value": "1/2"
+        },
+        {
+          "t": "23/12",
+          "value": "7/16"
+        },
+        {
+          "t": "2",
+          "value": "21/64"
+        },
+        {
+          "t": "25/12",
+          "value": "9/32"
+        },
+        {
+          "t": "13/6",
+          "value": "15/64"
+        },
+        {
+          "t": "9/4",
+          "value": "5/32"
+        },
+        {
+          "t": "7/3",
+          "value": "1/8"
+        },
+        {
+          "t": "29/12",
+          "value": "3/32"
+        },
+        {
+          "t": "5/2",
+          "value": "3/64"
+        },
+        {
+          "t": "31/12",
+          "value": "1/32"
+        },
+        {
+          "t": "8/3",
+          "value": "1/64"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "11/4",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/3",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "11/24",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "2/3",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "19/24",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/24",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "one_fast__period_first_up",
+      "periods": [
+        "1001/1000",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "0",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "anchor_index": 0,
+      "P": "1001/1000",
+      "H": "2751/1000",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "2751/1000",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "20257/7000",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/12",
+          "midpoint": "1/24",
+          "value": "125/8008"
+        },
+        {
+          "left": "1/12",
+          "right": "1/6",
+          "midpoint": "1/8",
+          "value": "125/4004"
+        },
+        {
+          "left": "1/6",
+          "right": "1/4",
+          "midpoint": "5/24",
+          "value": "375/8008"
+        },
+        {
+          "left": "1/4",
+          "right": "1/3",
+          "midpoint": "7/24",
+          "value": "375/4004"
+        },
+        {
+          "left": "1/3",
+          "right": "5/12",
+          "midpoint": "3/8",
+          "value": "125/1001"
+        },
+        {
+          "left": "5/12",
+          "right": "1/2",
+          "midpoint": "11/24",
+          "value": "625/4004"
+        },
+        {
+          "left": "1/2",
+          "right": "7/12",
+          "midpoint": "13/24",
+          "value": "1875/8008"
+        },
+        {
+          "left": "7/12",
+          "right": "2/3",
+          "midpoint": "5/8",
+          "value": "1125/4004"
+        },
+        {
+          "left": "2/3",
+          "right": "3/4",
+          "midpoint": "17/24",
+          "value": "375/1144"
+        },
+        {
+          "left": "3/4",
+          "right": "5/6",
+          "midpoint": "19/24",
+          "value": "125/286"
+        },
+        {
+          "left": "5/6",
+          "right": "11/12",
+          "midpoint": "7/8",
+          "value": "500/1001"
+        },
+        {
+          "left": "11/12",
+          "right": "1",
+          "midpoint": "23/24",
+          "value": "1125/2002"
+        },
+        {
+          "left": "1",
+          "right": "1001/1000",
+          "midpoint": "2001/2000",
+          "value": "5375/8008"
+        },
+        {
+          "left": "1001/1000",
+          "right": "13/12",
+          "midpoint": "6253/6000",
+          "value": "375/572"
+        },
+        {
+          "left": "13/12",
+          "right": "3253/3000",
+          "midpoint": "6503/6000",
+          "value": "5625/8008"
+        },
+        {
+          "left": "3253/3000",
+          "right": "7/6",
+          "midpoint": "2251/2000",
+          "value": "125/182"
+        },
+        {
+          "left": "7/6",
+          "right": "3503/3000",
+          "midpoint": "7003/6000",
+          "value": "5875/8008"
+        },
+        {
+          "left": "3503/3000",
+          "right": "5/4",
+          "midpoint": "7253/6000",
+          "value": "2875/4004"
+        },
+        {
+          "left": "5/4",
+          "right": "1251/1000",
+          "midpoint": "2501/2000",
+          "value": "6375/8008"
+        },
+        {
+          "left": "1251/1000",
+          "right": "4/3",
+          "midpoint": "7753/6000",
+          "value": "750/1001"
+        },
+        {
+          "left": "4/3",
+          "right": "4003/3000",
+          "midpoint": "8003/6000",
+          "value": "3125/4004"
+        },
+        {
+          "left": "4003/3000",
+          "right": "17/12",
+          "midpoint": "2751/2000",
+          "value": "750/1001"
+        },
+        {
+          "left": "17/12",
+          "right": "4253/3000",
+          "midpoint": "8503/6000",
+          "value": "3125/4004"
+        },
+        {
+          "left": "4253/3000",
+          "right": "3/2",
+          "midpoint": "8753/6000",
+          "value": "750/1001"
+        },
+        {
+          "left": "3/2",
+          "right": "1501/1000",
+          "midpoint": "3001/2000",
+          "value": "6375/8008"
+        },
+        {
+          "left": "1501/1000",
+          "right": "19/12",
+          "midpoint": "9253/6000",
+          "value": "2875/4004"
+        },
+        {
+          "left": "19/12",
+          "right": "4753/3000",
+          "midpoint": "9503/6000",
+          "value": "5875/8008"
+        },
+        {
+          "left": "4753/3000",
+          "right": "5/3",
+          "midpoint": "3251/2000",
+          "value": "125/182"
+        },
+        {
+          "left": "5/3",
+          "right": "5003/3000",
+          "midpoint": "10003/6000",
+          "value": "5625/8008"
+        },
+        {
+          "left": "5003/3000",
+          "right": "7/4",
+          "midpoint": "10253/6000",
+          "value": "375/572"
+        },
+        {
+          "left": "7/4",
+          "right": "1751/1000",
+          "midpoint": "3501/2000",
+          "value": "5375/8008"
+        },
+        {
+          "left": "1751/1000",
+          "right": "5503/3000",
+          "midpoint": "2689/1500",
+          "value": "1125/2002"
+        },
+        {
+          "left": "5503/3000",
+          "right": "5753/3000",
+          "midpoint": "469/250",
+          "value": "500/1001"
+        },
+        {
+          "left": "5753/3000",
+          "right": "2001/1000",
+          "midpoint": "2939/1500",
+          "value": "125/286"
+        },
+        {
+          "left": "2001/1000",
+          "right": "6253/3000",
+          "midpoint": "766/375",
+          "value": "375/1144"
+        },
+        {
+          "left": "6253/3000",
+          "right": "6503/3000",
+          "midpoint": "1063/500",
+          "value": "1125/4004"
+        },
+        {
+          "left": "6503/3000",
+          "right": "2251/1000",
+          "midpoint": "1657/750",
+          "value": "1875/8008"
+        },
+        {
+          "left": "2251/1000",
+          "right": "7003/3000",
+          "midpoint": "3439/1500",
+          "value": "625/4004"
+        },
+        {
+          "left": "7003/3000",
+          "right": "7253/3000",
+          "midpoint": "297/125",
+          "value": "125/1001"
+        },
+        {
+          "left": "7253/3000",
+          "right": "2501/1000",
+          "midpoint": "3689/1500",
+          "value": "375/4004"
+        },
+        {
+          "left": "2501/1000",
+          "right": "7753/3000",
+          "midpoint": "1907/750",
+          "value": "375/8008"
+        },
+        {
+          "left": "7753/3000",
+          "right": "8003/3000",
+          "midpoint": "1313/500",
+          "value": "125/4004"
+        },
+        {
+          "left": "8003/3000",
+          "right": "2751/1000",
+          "midpoint": "1016/375",
+          "value": "125/8008"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/12",
+          "value": "125/8008"
+        },
+        {
+          "t": "1/6",
+          "value": "125/4004"
+        },
+        {
+          "t": "1/4",
+          "value": "375/8008"
+        },
+        {
+          "t": "1/3",
+          "value": "375/4004"
+        },
+        {
+          "t": "5/12",
+          "value": "125/1001"
+        },
+        {
+          "t": "1/2",
+          "value": "625/4004"
+        },
+        {
+          "t": "7/12",
+          "value": "1875/8008"
+        },
+        {
+          "t": "2/3",
+          "value": "1125/4004"
+        },
+        {
+          "t": "3/4",
+          "value": "375/1144"
+        },
+        {
+          "t": "5/6",
+          "value": "125/286"
+        },
+        {
+          "t": "11/12",
+          "value": "500/1001"
+        },
+        {
+          "t": "1",
+          "value": "1125/2002"
+        },
+        {
+          "t": "1001/1000",
+          "value": "375/572"
+        },
+        {
+          "t": "13/12",
+          "value": "375/572"
+        },
+        {
+          "t": "3253/3000",
+          "value": "125/182"
+        },
+        {
+          "t": "7/6",
+          "value": "125/182"
+        },
+        {
+          "t": "3503/3000",
+          "value": "2875/4004"
+        },
+        {
+          "t": "5/4",
+          "value": "2875/4004"
+        },
+        {
+          "t": "1251/1000",
+          "value": "750/1001"
+        },
+        {
+          "t": "4/3",
+          "value": "750/1001"
+        },
+        {
+          "t": "4003/3000",
+          "value": "750/1001"
+        },
+        {
+          "t": "17/12",
+          "value": "750/1001"
+        },
+        {
+          "t": "4253/3000",
+          "value": "750/1001"
+        },
+        {
+          "t": "3/2",
+          "value": "750/1001"
+        },
+        {
+          "t": "1501/1000",
+          "value": "2875/4004"
+        },
+        {
+          "t": "19/12",
+          "value": "2875/4004"
+        },
+        {
+          "t": "4753/3000",
+          "value": "125/182"
+        },
+        {
+          "t": "5/3",
+          "value": "125/182"
+        },
+        {
+          "t": "5003/3000",
+          "value": "375/572"
+        },
+        {
+          "t": "7/4",
+          "value": "375/572"
+        },
+        {
+          "t": "1751/1000",
+          "value": "1125/2002"
+        },
+        {
+          "t": "5503/3000",
+          "value": "500/1001"
+        },
+        {
+          "t": "5753/3000",
+          "value": "125/286"
+        },
+        {
+          "t": "2001/1000",
+          "value": "375/1144"
+        },
+        {
+          "t": "6253/3000",
+          "value": "1125/4004"
+        },
+        {
+          "t": "6503/3000",
+          "value": "1875/8008"
+        },
+        {
+          "t": "2251/1000",
+          "value": "625/4004"
+        },
+        {
+          "t": "7003/3000",
+          "value": "125/1001"
+        },
+        {
+          "t": "7253/3000",
+          "value": "375/4004"
+        },
+        {
+          "t": "2501/1000",
+          "value": "375/8008"
+        },
+        {
+          "t": "7753/3000",
+          "value": "125/4004"
+        },
+        {
+          "t": "8003/3000",
+          "value": "125/8008"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "2751/1000",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/3",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "11/24",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "2/3",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "19/24",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/24",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    },
+    {
+      "id": "one_fast__start_first_down",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "-1/1000",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "anchor_index": 0,
+      "P": "1",
+      "H": "11/4",
+      "atom_count": 64,
+      "samples": [
+        {
+          "name": "0",
+          "a": "0",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "1/7",
+          "a": "1/7",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H",
+          "a": "11/4",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        },
+        {
+          "name": "H+1/7",
+          "a": "81/28",
+          "train_integrals": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "total": "1"
+        }
+      ],
+      "kernel_cells": [
+        {
+          "left": "0",
+          "right": "1/12",
+          "midpoint": "1/24",
+          "value": "1/64"
+        },
+        {
+          "left": "1/12",
+          "right": "1/6",
+          "midpoint": "1/8",
+          "value": "1/32"
+        },
+        {
+          "left": "1/6",
+          "right": "1/4",
+          "midpoint": "5/24",
+          "value": "3/64"
+        },
+        {
+          "left": "1/4",
+          "right": "1/3",
+          "midpoint": "7/24",
+          "value": "3/32"
+        },
+        {
+          "left": "1/3",
+          "right": "5/12",
+          "midpoint": "3/8",
+          "value": "1/8"
+        },
+        {
+          "left": "5/12",
+          "right": "1/2",
+          "midpoint": "11/24",
+          "value": "5/32"
+        },
+        {
+          "left": "1/2",
+          "right": "7/12",
+          "midpoint": "13/24",
+          "value": "15/64"
+        },
+        {
+          "left": "7/12",
+          "right": "2/3",
+          "midpoint": "5/8",
+          "value": "9/32"
+        },
+        {
+          "left": "2/3",
+          "right": "3/4",
+          "midpoint": "17/24",
+          "value": "21/64"
+        },
+        {
+          "left": "3/4",
+          "right": "5/6",
+          "midpoint": "19/24",
+          "value": "7/16"
+        },
+        {
+          "left": "5/6",
+          "right": "11/12",
+          "midpoint": "7/8",
+          "value": "1/2"
+        },
+        {
+          "left": "11/12",
+          "right": "1",
+          "midpoint": "23/24",
+          "value": "9/16"
+        },
+        {
+          "left": "1",
+          "right": "13/12",
+          "midpoint": "25/24",
+          "value": "21/32"
+        },
+        {
+          "left": "13/12",
+          "right": "7/6",
+          "midpoint": "9/8",
+          "value": "11/16"
+        },
+        {
+          "left": "7/6",
+          "right": "5/4",
+          "midpoint": "29/24",
+          "value": "23/32"
+        },
+        {
+          "left": "5/4",
+          "right": "4/3",
+          "midpoint": "31/24",
+          "value": "3/4"
+        },
+        {
+          "left": "4/3",
+          "right": "17/12",
+          "midpoint": "11/8",
+          "value": "3/4"
+        },
+        {
+          "left": "17/12",
+          "right": "3/2",
+          "midpoint": "35/24",
+          "value": "3/4"
+        },
+        {
+          "left": "3/2",
+          "right": "19/12",
+          "midpoint": "37/24",
+          "value": "23/32"
+        },
+        {
+          "left": "19/12",
+          "right": "5/3",
+          "midpoint": "13/8",
+          "value": "11/16"
+        },
+        {
+          "left": "5/3",
+          "right": "7/4",
+          "midpoint": "41/24",
+          "value": "21/32"
+        },
+        {
+          "left": "7/4",
+          "right": "11/6",
+          "midpoint": "43/24",
+          "value": "9/16"
+        },
+        {
+          "left": "11/6",
+          "right": "23/12",
+          "midpoint": "15/8",
+          "value": "1/2"
+        },
+        {
+          "left": "23/12",
+          "right": "2",
+          "midpoint": "47/24",
+          "value": "7/16"
+        },
+        {
+          "left": "2",
+          "right": "25/12",
+          "midpoint": "49/24",
+          "value": "21/64"
+        },
+        {
+          "left": "25/12",
+          "right": "13/6",
+          "midpoint": "17/8",
+          "value": "9/32"
+        },
+        {
+          "left": "13/6",
+          "right": "9/4",
+          "midpoint": "53/24",
+          "value": "15/64"
+        },
+        {
+          "left": "9/4",
+          "right": "7/3",
+          "midpoint": "55/24",
+          "value": "5/32"
+        },
+        {
+          "left": "7/3",
+          "right": "29/12",
+          "midpoint": "19/8",
+          "value": "1/8"
+        },
+        {
+          "left": "29/12",
+          "right": "5/2",
+          "midpoint": "59/24",
+          "value": "3/32"
+        },
+        {
+          "left": "5/2",
+          "right": "31/12",
+          "midpoint": "61/24",
+          "value": "3/64"
+        },
+        {
+          "left": "31/12",
+          "right": "8/3",
+          "midpoint": "21/8",
+          "value": "1/32"
+        },
+        {
+          "left": "8/3",
+          "right": "11/4",
+          "midpoint": "65/24",
+          "value": "1/64"
+        }
+      ],
+      "kernel_breakpoints": [
+        {
+          "t": "1/12",
+          "value": "1/64"
+        },
+        {
+          "t": "1/6",
+          "value": "1/32"
+        },
+        {
+          "t": "1/4",
+          "value": "3/64"
+        },
+        {
+          "t": "1/3",
+          "value": "3/32"
+        },
+        {
+          "t": "5/12",
+          "value": "1/8"
+        },
+        {
+          "t": "1/2",
+          "value": "5/32"
+        },
+        {
+          "t": "7/12",
+          "value": "15/64"
+        },
+        {
+          "t": "2/3",
+          "value": "9/32"
+        },
+        {
+          "t": "3/4",
+          "value": "21/64"
+        },
+        {
+          "t": "5/6",
+          "value": "7/16"
+        },
+        {
+          "t": "11/12",
+          "value": "1/2"
+        },
+        {
+          "t": "1",
+          "value": "35/64"
+        },
+        {
+          "t": "13/12",
+          "value": "41/64"
+        },
+        {
+          "t": "7/6",
+          "value": "43/64"
+        },
+        {
+          "t": "5/4",
+          "value": "43/64"
+        },
+        {
+          "t": "4/3",
+          "value": "23/32"
+        },
+        {
+          "t": "17/12",
+          "value": "23/32"
+        },
+        {
+          "t": "3/2",
+          "value": "43/64"
+        },
+        {
+          "t": "19/12",
+          "value": "43/64"
+        },
+        {
+          "t": "5/3",
+          "value": "41/64"
+        },
+        {
+          "t": "7/4",
+          "value": "35/64"
+        },
+        {
+          "t": "11/6",
+          "value": "1/2"
+        },
+        {
+          "t": "23/12",
+          "value": "7/16"
+        },
+        {
+          "t": "2",
+          "value": "21/64"
+        },
+        {
+          "t": "25/12",
+          "value": "9/32"
+        },
+        {
+          "t": "13/6",
+          "value": "15/64"
+        },
+        {
+          "t": "9/4",
+          "value": "5/32"
+        },
+        {
+          "t": "7/3",
+          "value": "1/8"
+        },
+        {
+          "t": "29/12",
+          "value": "3/32"
+        },
+        {
+          "t": "5/2",
+          "value": "3/64"
+        },
+        {
+          "t": "31/12",
+          "value": "1/32"
+        },
+        {
+          "t": "8/3",
+          "value": "1/64"
+        }
+      ],
+      "kernel_endpoints": [
+        {
+          "t": "0",
+          "value": "0"
+        },
+        {
+          "t": "11/4",
+          "value": "0"
+        }
+      ],
+      "discrete_checks": [
+        {
+          "label": 1,
+          "t": "1/3",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 1,
+          "t": "11/24",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 2,
+          "t": "2/3",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 2,
+          "t": "19/24",
+          "kind": "interior",
+          "value": "1/4"
+        },
+        {
+          "label": 3,
+          "t": "1/4",
+          "kind": "boundary",
+          "value": "0"
+        },
+        {
+          "label": 3,
+          "t": "7/24",
+          "kind": "interior",
+          "value": "1/4"
+        }
+      ]
+    }
+  ],
+  "equality_window": {
+    "id": "auxiliary_equal_H_window",
+    "periods": [
+      "4/13",
+      "4/13",
+      "4/13",
+      "4/13"
+    ],
+    "starts": [
+      "0",
+      "1/13",
+      "2/13",
+      "3/13"
+    ],
+    "window": [
+      "0",
+      "1"
+    ],
+    "H": "1",
+    "width": "1",
+    "points": [
+      {
+        "t": "0",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "1/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "2/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "3/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "4/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "5/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "6/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "7/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "8/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "9/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "10/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "11/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "12/13",
+        "multiplicity": 0,
+        "safe": true
+      },
+      {
+        "t": "1",
+        "multiplicity": 0,
+        "safe": true
+      }
+    ],
+    "cells": [
+      {
+        "left": "0",
+        "right": "1/13",
+        "midpoint": "1/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "1/13",
+        "right": "2/13",
+        "midpoint": "3/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "2/13",
+        "right": "3/13",
+        "midpoint": "5/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "3/13",
+        "right": "4/13",
+        "midpoint": "7/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "4/13",
+        "right": "5/13",
+        "midpoint": "9/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "5/13",
+        "right": "6/13",
+        "midpoint": "11/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "6/13",
+        "right": "7/13",
+        "midpoint": "1/2",
+        "multiplicity": 1
+      },
+      {
+        "left": "7/13",
+        "right": "8/13",
+        "midpoint": "15/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "8/13",
+        "right": "9/13",
+        "midpoint": "17/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "9/13",
+        "right": "10/13",
+        "midpoint": "19/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "10/13",
+        "right": "11/13",
+        "midpoint": "21/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "11/13",
+        "right": "12/13",
+        "midpoint": "23/26",
+        "multiplicity": 1
+      },
+      {
+        "left": "12/13",
+        "right": "1",
+        "midpoint": "25/26",
+        "multiplicity": 1
+      }
+    ],
+    "safe_points": [
+      "0",
+      "1/13",
+      "2/13",
+      "3/13",
+      "4/13",
+      "5/13",
+      "6/13",
+      "7/13",
+      "8/13",
+      "9/13",
+      "10/13",
+      "11/13",
+      "12/13",
+      "1"
+    ],
+    "safe_duration": "0"
+  }
+}

@@ -102,3 +102,12 @@ The [explicit39-move candidate](../EXPLICIT_CHAIN_BOUND_2026_09_28.md) exposes a
 This is a placement-sensitive constraint on the full schedule, not just the individual duty fractions or pair-overlap totals. It needs no physical analogy. It also supplies a concrete sufficient window condition: core-safe W succeeds when width(W)>=S. The112 and113 controls both pass while their earliest witnesses remain different; the tight13 control fails the sufficient test but retains its isolated equality witness. Thus no failure of the width test should be read as failed loneliness.
 
 All general implications remain proof candidates pending external review; nine inherited algebra fixtures and twelve inherited windows supply exact bounded calibration only. Next: identify what forces an adequate core-safe window or otherwise resolves the cases where the width condition is inconclusive. No new physical configuration, broad scan, novelty claim or hourly resumption.
+
+
+## September28 continuation — shorter averages and a certificate limitation
+
+The [short-kernel candidate](../SHORT_KERNEL_BOUND_2026_09_28.md) sharpens the four-residual count to23 moves. Its additional relational fact is a compatibility constraint: a triple chain with at least6 occurrences forces r>3s and q+2s>3r, hence q+r+s<11q/7. But three appearances of the largest period P, under the new mixed-kernel span bound, require q+r+s>5P/3. These two joint requirements cannot coexist. Individual duty fractions do not express this return-word restriction.
+
+There is also a precise warning about the new representation. In strict16, every translate of the mixed kernel having positive mass inside J has strictly positive truncated signed excess, even though J has a safe interval of length1/896. This follows for all translations from the prefix/suffix signs and box widths; no translation scan was used. The averaging representation therefore still loses information needed for some short-window witnesses. Isolated equality witnesses pose a distinct measure-zero issue and must remain explicit.
+
+The general auxiliary m-train duty1/m model inherits a dimension-dependent m!-1 move candidate for m>=4. It does not supply the core windows needed for the full conjecture. New general implications remain HYPOTHESIS/proof candidates, exact finite checks retain their declared scope, and the earlier39 proof and counterexamples remain preserved. The next target is structural core-window existence where the shorter sufficient length condition fails.

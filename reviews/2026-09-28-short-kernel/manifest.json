@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-28",
+  "baseline": "bcf959b45a35701f2fd710b1d86ca2cc3152e14c",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "claim_status": "HYPOTHESIS: complete23-move and general critical-duty proof candidates; internally challenged by six AI agents and coordinator, external/novelty review pending.",
+  "scope": "Four arbitrary-phase positive-period quarter-duty trains: span<H=3sum(periods)/4+max(period)/4; actual advancing chainN<=23. Physical n8 selectedreference0, common start, core1,4,5 retained.",
+  "operation_counts": "23moves; at most23unsafe-start rounds and253projection calls in the existing11-call schedule with initial/round-boundary safety checks.24rounds264calls if an extra unchanged confirmation round is required. No bit-complexity claim.",
+  "larger_model": "For m>=4 arbitrary-phase trains eachduty1/m, B_m<=m!-1 follows by fixed-right-endpoint widening and induction fromB4=23. Threshold1/(2m), not fullLRC threshold1/(m+1).",
+  "window_corollary": "H<=width of a closed core-safe W suffices, including equality. Integer residual speeds>=35 suffice for core1,4,5 J[9/32,3/8]; neither necessary nor asserted optimal.",
+  "strict16_obstruction": "Every translate of the mixed kernel with positive mass on J has positive truncated signed excess, despite safe duration1/896. Analytic all-translates deduction from bounded prefix/suffix checks; no translation scan.",
+  "verification": {
+    "convolution_fixtures": 9,
+    "train_integrals": 144,
+    "multiplicity_totals": 36,
+    "positive_kernel_cells": 219,
+    "positive_interior_breakpoints": 210,
+    "zero_support_endpoints": 18,
+    "discrete_point_checks": 54,
+    "numerical_comparisons": 1943,
+    "boolean_comparisons": 14,
+    "text_comparisons": 82,
+    "new_auxiliary_equality_fixtures": 1,
+    "equality_safe_points": 14,
+    "equality_blocked_cells": 13,
+    "equality_safe_duration": "0",
+    "old_window_arithmetic_rows": 12,
+    "H_sufficient_rows": 5,
+    "newly_sufficient_rows": 0,
+    "strict16_occurrences": 6,
+    "strict16_events": 10,
+    "strict16_cells": 9,
+    "status": "pass within frozen finite scopes"
+  },
+  "protocol_sha256": {
+    "kernel": "6cda7c02943bf88fbb315cba9adda3c318f367c26d8c381498d27c6fc8387f8b",
+    "windows": "6d78b53e166441480ab3a4d76484698156615cd7792da6f7bd7a3bbfee10378a"
+  },
+  "post_protocol_math": "Kernel protocol froze for31 intermediate candidate.23 was derived analytically afterward from the long-triple lemma, without adapting fixtures or using a fitted trace maximum.",
+  "limits": [
+    "No novelty, full-conjecture, arbitrary-core-window, all-reference, sharpness or bit-complexity claim.",
+    "No new physical speed configuration or broad scan; one declared auxiliary equality calibration only.",
+    "No archived projection solver rerun or codecap change this round.",
+    "Hourly paused; no mainmerge,paidcompute,outreach or +7/+9restart."
+  ],
+  "prior_sources_sha256": {
+    "AGENTS.md": "3c71c7807ce0d6fc8abae7e1be138922f04a78d933083b32793f5a8a7fa9d50a",
+    "CLAIM_STATUS.md": "7387260161cbb4c758dc8255ce456af971638457e0f0b579aefbb93ae308ada6",
+    "CONTRIBUTING.md": "9e8963d8466e5ad4f153c21e00ce9cd2d5bb7095cd9f9e6aac6406b904e98077",
+    "README.md": "9b8554ebb04e6d462565687ee8080698337b0b6946eafd28700af63ce5f34168",
+    "HANDOFF.md": "8a919390db617d905a3723b0c05932a5cb3125cf13b7b5dc902f01ec7b260ff4",
+    "LR2_HANDOFF.md": "8bd6f11e6e2a3f24b3906dbd74454c311b9c186dc45753921616b8fd784fd39e",
+    "RESEARCH_PLAN.md": "59058335b58a12a5d3c35a6333e357560a6c5789fc9c33ffdb66f5951aebddc3",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "baad0d2ec8d61aba1220986b8af6443c5d917f2b4b30b3e60150ca3c2c408f51"
+  },
+  "canonical_older_inputs_sha256": {
+    "reviews/2026-09-28-chain-termination/protocol.json": "134f1825868d1bde006f3cf7f1d523047fc89410d3acaf8da5add4ec658608c0",
+    "reviews/2026-09-28-chain-termination/results.json": "02edb5fe0b579b79a65c900af37d9431bc99ae640db006fb4aca7874fd69145a"
+  },
+  "files_sha256": {
+    "HANDOFF.md": "b127db5329362140804b5a511ab3a301448c3c8046735ff7cdd73d8bb34ed971",
+    "LR2_HANDOFF.md": "fc2f03606757621c98e6879327a38bc9d49419224bca065beb44a493f867257e",
+    "README.md": "a975aa16f392605e79cc520417d3b53407dd785d5dc12dea4258f4b1533dc4b7",
+    "RESEARCH_PLAN.md": "59636dcfbeae1b1b609ae925a09068ffedca71439d882249e3bb81ad872a2f0d",
+    "notes/SHORT_KERNEL_BOUND_2026_09_28.md": "1adf956956284ea34e98241338d192891a94fb4eb644ccb96a044ad80aabdfc8",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "ca687188f66b9ff6c1055f24e2cc5c4f4464fdd3fac2471fc903f4dc7fc3aa1e",
+    "reviews/2026-09-28-short-kernel/TEAM_BRIEF.md": "810dc542f901156d110a4a46cfd79999a9a802b7d0e1f863465c0742d54cad6d",
+    "reviews/2026-09-28-short-kernel/challenge.md": "02f9942f13295ae56f05b9b350485a563b5190120bff6f418dce69969adf0b23",
+    "reviews/2026-09-28-short-kernel/compare.py": "e03c63a672de26850725c9245f04a2496215f7d9b9e1a55cd45dd77168fb03a4",
+    "reviews/2026-09-28-short-kernel/comparison.json": "2220c619b203eafba78fe1680e300015720944ef9c8ffc338134f0e47dfe8f2f",
+    "reviews/2026-09-28-short-kernel/general.md": "52b37154967af23d94f538eb8682e314b6e066cb8c2733c38941e5bcae94d8e6",
+    "reviews/2026-09-28-short-kernel/geometry.md": "8d55df64c2d96c53b98853c46eefdb0772df1b4fff0d200ed26ebc9cd7e2baa5",
+    "reviews/2026-09-28-short-kernel/primary.md": "c60f9eb21dac81f96cb25a817bfeeba14a423590177839d5ecdb788f93c84183",
+    "reviews/2026-09-28-short-kernel/primary.py": "f29d1c403823f011dae3fc7e7a7f54b014f667ef93330a72785b40df9be44635",
+    "reviews/2026-09-28-short-kernel/protocol.json": "6cda7c02943bf88fbb315cba9adda3c318f367c26d8c381498d27c6fc8387f8b",
+    "reviews/2026-09-28-short-kernel/results.json": "e093f7294e94559ecb899f0e1e82c91d2913f661ffe9dfc6666b0518424a16da",
+    "reviews/2026-09-28-short-kernel/review.md": "ce11da49185aeb0bf92325a09ca641da1a399affb0f7f9673f620ba7c9cb3d01",
+    "reviews/2026-09-28-short-kernel/verifier.md": "b770094db9da76c9bdfa2f8c5628c30fdb1647b22e8960c2e16baf496d634ac4",
+    "reviews/2026-09-28-short-kernel/verifier_results.json": "dc55d70b07668a9dfbd373c64e58a0661b56dae6be329646f31def04508dd255",
+    "reviews/2026-09-28-short-kernel/verify.py": "bb74347360f5e5e579821be50065ee597d45e927c44233d0fa44cb642bd247b5",
+    "reviews/2026-09-28-short-kernel/windows.md": "6fef0233c1a5019a478bd1cf9f648dcab177b2353e8666e888c99996bee4cb60",
+    "reviews/2026-09-28-short-kernel/windows.py": "8a9615927aded77abdc606d0329c46f188066491796aac3293fdeafe5b94de89",
+    "reviews/2026-09-28-short-kernel/windows_protocol.json": "6d78b53e166441480ab3a4d76484698156615cd7792da6f7bd7a3bbfee10378a",
+    "reviews/2026-09-28-short-kernel/windows_results.json": "2ce69cb53c88f634f543e2e85808dad5dc3c6e1b34aa8156c1bb1abe1ccb0e72"
+  },
+  "history_preservation": "Handoff/README earlier snapshots retained verbatim after new insertions; inquiry appended; current queue updated explicitly. Expected full text equality and canonical source hashes checked before publication.",
+  "path_note": "Frozen windows protocol retains historical working-directory references. windows.py resolves canonical repository paths first and verifies all input hashes; path-only code revision reran identical frozen scope.",
+  "primary_sources": [
+    {
+      "url": "https://math.colgate.edu/~integers/t29/t29.pdf",
+      "location": "Theorem4,printed page12",
+      "read": "statement and elementary proof inspected; original Schoenberg1976 paper not inspected. Focused searching does not determine priority for current kernel/count claims."
+    }
+  ]
+}

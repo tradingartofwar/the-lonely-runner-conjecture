@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-28",
+  "baseline": "bcf959b45a35701f2fd710b1d86ca2cc3152e14c",
+  "status": "Frozen by coordinator before implementation or evaluation. Exactly nine inherited kernel fixtures and one separate event-only auxiliary equality-window case. Finite calibration only, not proof of the general theorem.",
+  "provenance": "The three tiles and three perturbations are copied exactly from ../lr-explicit-bound/reviews/2026-09-28-explicit-bound/protocol.json (sha256 63d509f00dd73cfc54094030ed942d0e929215213a5e20604305dc4e99192d06). The equality case is analytically constructed, expressly auxiliary, and is not a physical common-start distinct-speed configuration.",
+  "convention": "Four arbitrary-phase open trains I(i,m)=(s_i+m*p_i,s_i+(m+1/4)*p_i), p_i>0. Endpoints are safe for their own train. Select anchor k as the least index attaining P=max_i p_i. X=U+[sum over j!=k D_j], U uniform on [0,P], D_j uniform on {0,p_j/4,p_j/2,3*p_j/4}. The 64 atom choices retain multiplicity. H=P+(3/4)*sum_{j!=k}p_j.",
+  "tiles": [
+    {"id": "equal", "periods": ["1", "1", "1", "1"], "starts": ["0", "1/4", "1/2", "3/4"]},
+    {"id": "two_levels", "periods": ["1", "1", "1/2", "1/2"], "starts": ["0", "1/2", "1/4", "3/8"]},
+    {"id": "one_fast", "periods": ["1", "1", "1", "1/3"], "starts": ["0", "1/3", "2/3", "1/4"]}
+  ],
+  "perturbations": [
+    {"id": "exact", "field": null, "runner": null, "delta": "0"},
+    {"id": "period_first_up", "field": "periods", "runner": 0, "delta": "1/1000"},
+    {"id": "start_first_down", "field": "starts", "runner": 0, "delta": "-1/1000"}
+  ],
+  "samples": ["0", "1/7", "H", "H+1/7"],
+  "sample_convention": "J_i(a)=E[1_{B_i}(a+X)]; positive translation a.",
+  "kernel_checks": "For all 64 shifts T (with multiplicity), form and sort the distinct endpoints T,T+P. At every open cell between consecutive distinct endpoints evaluate K at its midpoint; at every distinct interior endpoint evaluate K exactly. Use the specified representative K(t)=#{T:T<t<T+P}/(64*P), so both support endpoints are zero. This exhausts the finite density cells and breakpoints of each fixture; no seven-sample-only positivity assertion.",
+  "discrete_checks": "For each of the three non-anchor labels i, evaluate (1/4)*sum_{r=0}^3 1_{B_i}(t+r*p_i/4) at t=s_i (expected zero) and t=s_i+p_i/8 (expected 1/4). These explicit pointwise exceptions prevent misstatement of the discrete identity.",
+  "primary_method": "Exact rational interval intersections. For each of 64 shifts T and each label, sum lengths of blocked train intervals intersecting [a+T,a+T+P]; divide the total length over all shifts by 64*P. Enumerate only the finitely many occurrences meeting these compact boxes. Density counts open-box memberships directly.",
+  "independent_method": "Exact rational periodic occupancy primitives and primitive differences over 64 shifts; sorted signed box endpoint events reconstruct the density. No primary imports or interval-intersection summation for integrals.",
+  "equality_window": {
+    "id": "auxiliary_equal_H_window",
+    "periods": ["4/13", "4/13", "4/13", "4/13"],
+    "starts": ["0", "1/13", "2/13", "3/13"],
+    "window": ["0", "1"],
+    "expected_H": "1",
+    "expected_safe_points": ["0", "1/13", "2/13", "3/13", "4/13", "5/13", "6/13", "7/13", "8/13", "9/13", "10/13", "11/13", "12/13", "1"],
+    "checks": "Event-only: evaluate the 14 quarter-grid points and the midpoint of each of the 13 intervening cells. Expect all points safe, all cells multiplicity exactly one, and zero safe duration. No additional kernel integrals or values are authorized for this case."
+  },
+  "expected": "Every inherited-fixture train integral equals exactly 1/4; each sum equals exactly one. Every kernel cell and interior breakpoint has strictly positive specified density, and both support endpoints have density zero. The discrete checks distinguish zero boundary averages from generic 1/4 averages. The separate auxiliary equality window has width exactly H and only isolated safe points.",
+  "bounds": "Exactly nine kernel fixtures, 36 translation samples, 144 train integrals, 36 totals, 54 discrete point checks. Each fixture has at most 128 distinct box endpoints, at most 127 open density cells and 126 interior breakpoints; exactly 18 support endpoint checks overall. Exactly one event-only equality-window case with 14 points and 13 cells. No adaptive fixtures, parameter/speed/phase/word scan, additional physical configuration, or broader replay.",
+  "limits": [
+    "These exact finite calibrations do not prove the general identity, positivity, strict span inequality, occurrence bound, or core-window theorem.",
+    "All general conclusions remain HYPOTHESIS/proof candidates pending external mathematical review; AI agreement is not an external proof certificate.",
+    "No novelty claim, broad search, paid compute, outreach, publication, main merge, or hourly resumption."
+  ]
+}

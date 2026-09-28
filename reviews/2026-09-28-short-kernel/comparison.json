@@ -1,0 +1,79 @@
+{
+  "status": "PASS: every shared fixture and equality-window scalar agrees exactly.",
+  "protocol_sha256": "6cda7c02943bf88fbb315cba9adda3c318f367c26d8c381498d27c6fc8387f8b",
+  "compared": {
+    "numerical_fields": 1943,
+    "boolean_fields": 14,
+    "text_fields": 82
+  },
+  "additional_metadata_comparisons": {
+    "mapped_count_fields": 9,
+    "protocol_hash": 1,
+    "primary_self_hash": 1
+  },
+  "excluded_method_metadata": [
+    "status",
+    "method",
+    "implementation-specific hash fields"
+  ],
+  "verifier_only_cdf": {
+    "status": "Recorded independent internal normalization; no primary CDF values or cross-implementation CDF comparison.",
+    "recorded_breakpoints": 228,
+    "fixtures": [
+      {
+        "id": "equal__exact",
+        "recorded_breakpoints": 14,
+        "mass": "1"
+      },
+      {
+        "id": "equal__period_first_up",
+        "recorded_breakpoints": 20,
+        "mass": "1"
+      },
+      {
+        "id": "equal__start_first_down",
+        "recorded_breakpoints": 14,
+        "mass": "1"
+      },
+      {
+        "id": "two_levels__exact",
+        "recorded_breakpoints": 21,
+        "mass": "1"
+      },
+      {
+        "id": "two_levels__period_first_up",
+        "recorded_breakpoints": 26,
+        "mass": "1"
+      },
+      {
+        "id": "two_levels__start_first_down",
+        "recorded_breakpoints": 21,
+        "mass": "1"
+      },
+      {
+        "id": "one_fast__exact",
+        "recorded_breakpoints": 34,
+        "mass": "1"
+      },
+      {
+        "id": "one_fast__period_first_up",
+        "recorded_breakpoints": 44,
+        "mass": "1"
+      },
+      {
+        "id": "one_fast__start_first_down",
+        "recorded_breakpoints": 34,
+        "mass": "1"
+      }
+    ]
+  },
+  "hashes": {
+    "protocol.json": "6cda7c02943bf88fbb315cba9adda3c318f367c26d8c381498d27c6fc8387f8b",
+    "primary.py": "f29d1c403823f011dae3fc7e7a7f54b014f667ef93330a72785b40df9be44635",
+    "verify.py": "bb74347360f5e5e579821be50065ee597d45e927c44233d0fa44cb642bd247b5",
+    "results.json": "e093f7294e94559ecb899f0e1e82c91d2913f661ffe9dfc6666b0518424a16da",
+    "verifier_results.json": "dc55d70b07668a9dfbd373c64e58a0661b56dae6be329646f31def04508dd255",
+    "compare.py": "e03c63a672de26850725c9245f04a2496215f7d9b9e1a55cd45dd77168fb03a4"
+  },
+  "limits": "Frozen finite calibration only. Agreement is not proof of universal statements, sharpness, or novelty; no new fixture is evaluated by this comparator."
+}

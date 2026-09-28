@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 28, 2026 UTC
 
+The [short-kernel candidate](notes/SHORT_KERNEL_BOUND_2026_09_28.md) improves the explicit universal bound to **23 advancing moves** for four quarter-duty trains, independent of positive periods and phases. A mixed continuous/discrete average shortens the covered-span bound, and a long-triple restriction sharpens the count. Six-agent internal review and exact kernel checks support the candidate; external mathematical and novelty review remain pending.
+
+A closed core-safe window W succeeds if H=3(sum periods)/4+max(period)/4<=width(W). Integer residual speeds>=35 suffice for core1,4,5's J=[9/32,3/8]. A general auxiliary critical-duty corollary gives m!-1 moves for m>=4, with threshold1/(2m); full core-window existence and the full conjecture remain unresolved. The strict16 control proves that simple translated-box truncation can miss positive clear time.
+
+Two exact implementations agree on1943 numerical fields; one declared auxiliary equality window retains14 isolated safe points. Twelve inherited width checks gain no newly certified row. The current next step is a structural core-window guarantee where the sufficient length condition fails. Hourly research stays paused.
+
+### Prior39-move snapshot — preserved
+
 The [explicit chain-bound candidate](notes/EXPLICIT_CHAIN_BOUND_2026_09_28.md) supplies a short period-averaging argument for at most **39 advancing moves** for four quarter-duty trains, independent of positive periods and phases. Six agents and the coordinator checked the span argument, strict endpoints and count. The result remains **HYPOTHESIS / proof candidate pending external review**; novelty is not claimed.
 
 A connected strict blocking chain spans less than the sum S of the four periods. This also guarantees a common-safe point in every closed window of length S: for a supplied core-safe W, S<=width(W) suffices. On core1,4,5's J=[9/32,3/8], both the112 and113 controls meet the condition; residual integer speeds>=43 suffice. This is a selected-reference sufficient condition, not a proof of the full conjecture.
