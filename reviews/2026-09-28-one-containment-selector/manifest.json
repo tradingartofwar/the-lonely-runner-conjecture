@@ -1,0 +1,78 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "65f0148c15ed08248250198107b60c9d961569eb",
+  "question": "Can either largest potential five-edge slack or fewest positive base-pair occurrence components select a useful shared containment with only one compound query?",
+  "status": "OBSERVED on four supplied selected-reference windows; no held-out-validation, general-selector, runtime, whole-configuration, novelty or new-existence claim",
+  "delegation": {
+    "calculation": "selector_calc implemented primary.py and results.json",
+    "independent_verification": "selector_verify implemented verify.py, verification.json and verification.md without importing primary code",
+    "adversarial_review": "selector_challenge wrote challenge.md and required a verifier-schema correction before acceptance",
+    "coordination": "root verified the live continuation, froze protocol.json before calculation, replayed both checks, wrote the note, and updated continuity"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-one-containment-selector/primary.py --check",
+    "python -S -B reviews/2026-09-28-one-containment-selector/verify.py --check"
+  ],
+  "results": {
+    "collective_target": {
+      "eligible_pairs": [[15,38],[61,100]],
+      "largest_slack_selection": [61,100],
+      "largest_slack": "3071/2781600",
+      "largest_slack_containment": false,
+      "first_violation": ["55/304","29/160"],
+      "fewest_components_selection": [15,38],
+      "fewest_components_count": 1,
+      "fewest_components_containment": true,
+      "certified_lower_bound": "49/524400"
+    },
+    "strict_16": {
+      "both_rules_select": [6,11],
+      "certified_lower_bound": "1/896"
+    },
+    "doubling_112": {
+      "pair_only_exit": "761/32256",
+      "largest_slack_diagnostic": [56,112],
+      "fewest_components_diagnostic": [56,64],
+      "both_diagnostic_containments": false
+    },
+    "tight_13": {
+      "eligible_pair_count": 0,
+      "containment_query_count": 0,
+      "isolated_equality": "3/8"
+    }
+  },
+  "scope_counts": {
+    "windows": 4,
+    "base_pair_slacks": 24,
+    "eligible_pair_geometries": 10,
+    "positive_components_enumerated": 29,
+    "logical_containment_queries": 6,
+    "unique_physical_containment_queries": 5,
+    "successful_logical_queries": 3,
+    "failed_logical_queries": 3,
+    "second_queries_after_failure": 0,
+    "independent_critical_fields_compared": 142,
+    "independent_mismatches": 0
+  },
+  "review_trace": "The first verifier comparison failed because its interface did not recognize the primary archive's final field names. The verifier owner corrected the aliases, expanded the comparisons, and the final read-only run passes. This was a schema defect, not a mathematical disagreement.",
+  "interpretation_limits": [
+    "Largest conditional capacity does not predict geometric containment; its target failure is preserved without reranking",
+    "The component rule reads every eligible base-pair geometry, including both complementary target pairs, and is not a moment-only or one-table selector",
+    "The target pair and successful occurrence table were known from the preceding study, so this is not held-out validation",
+    "Doubling112 diagnostics do not replace its earlier pair-only certificate",
+    "Tight13's isolated equality is separate from positive duration",
+    "Sparse arithmetic selection, alternate-window dispatch, strict16 exclusion and the five-edge inequality are prior repository results",
+    "Internal AI agreement is not independent mathematical validation"
+  ],
+  "next_step": "Freeze a speed/window arithmetic component-count formula or certified ordering on these same cases, and test whether it reproduces the component selector without constructing all pair intervals.",
+  "sha256": {
+    "reviews/2026-09-28-one-containment-selector/protocol.json": "42c3fe75734e7fc137b3ffc9de805172661acb988b3d39162517adb50028a607",
+    "reviews/2026-09-28-one-containment-selector/primary.py": "6b6d4ef931da4edfb674bebe04e27654e40db932745b1110630f03c576ac5b2f",
+    "reviews/2026-09-28-one-containment-selector/results.json": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+    "reviews/2026-09-28-one-containment-selector/verify.py": "cf9a7446219d6a6b21917a4a1d7127e1235bb1a78ea3a4bd99ea1d1b90a104b4",
+    "reviews/2026-09-28-one-containment-selector/verification.json": "b29a6dc6831f4ee5b43bcd217b6009edec109862eed991dd00b56696b6290bc4",
+    "reviews/2026-09-28-one-containment-selector/verification.md": "317a298569e5db902ebbc392adf781b4861b7d4581e485a8e8121d6496a459fa",
+    "reviews/2026-09-28-one-containment-selector/challenge.md": "5f70567e094a99cf5dd8d6ba9bf214a3b2b264d9e809319aae2ac759ec520a98",
+    "notes/ONE_CONTAINMENT_SELECTION_2026_09_28.md": "642f46773c9305580edebd5391b9300da8e47e4b952d5dc94a36a02704fbd7a6"
+  }
+}

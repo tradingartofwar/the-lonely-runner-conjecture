@@ -1,0 +1,71 @@
+{
+  "baseline": "65f0148c15ed08248250198107b60c9d961569eb",
+  "status": "FROZEN BEFORE SELECTOR CALCULATION",
+  "question": "Among base pairs with positive potential five-edge slack C_0-O_cd, does either of two predeclared cheap rules select a pair whose blocking intersection is contained in both complementary closed-safe sets, using at most one compound containment query per rule?",
+  "source_contract": {
+    "physical_geometry_and_moments": "reviews/2026-09-28-joint-triple-exclusions/results.json",
+    "physical_geometry_and_moments_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+    "pair_only_control_and_endpoint_roles": "reviews/2026-09-28-cover-obligations/results.json",
+    "pair_only_control_and_endpoint_roles_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e"
+  },
+  "cases": [
+    {"id": "collective_target", "source_case": "target", "expected_role": "positive-duration target"},
+    {"id": "strict_16", "source_case": "strict_16", "expected_role": "positive-duration strict control"},
+    {"id": "doubling_112", "source_case": "doubling_112", "expected_role": "pair-only-positive exit control"},
+    {"id": "tight_13", "source_case": "tight_13", "expected_role": "equality-only endpoint control"}
+  ],
+  "definitions": {
+    "C_0": "window length minus the four individual blocking durations plus all six pair-overlap durations",
+    "potential_slack_for_base_pair_ab": "C_0 minus the overlap duration O_cd of the complementary pair",
+    "eligible_base_pair": "a physical-speed-ordered base pair whose potential slack is strictly positive",
+    "positive_occurrence_component": "a maximal positive-length connected component of the strict blocking intersection B_a intersect B_b inside the frozen window",
+    "compound_containment_query": "test the whole set B_a intersect B_b against Safe_c intersect Safe_d, where Safe is the closed threshold-safe set; retain exact positive-interval or included-endpoint counterexamples",
+    "physical_lexicographic_order": "compare the increasing physical-speed tuples (a,b)"
+  },
+  "frozen_rules": [
+    {
+      "id": "largest_potential_slack",
+      "selection": "maximize C_0-O_cd among eligible base pairs; break an exact tie by physical lexicographic order",
+      "prequery_information": "the archived total, four single durations, and six pair durations only",
+      "query_budget": "exactly one compound containment query if at least one eligible pair exists; no second pair after success or failure"
+    },
+    {
+      "id": "fewest_positive_occurrence_components",
+      "selection": "minimize the number of positive occurrence components among eligible base pairs; break an exact tie directly by physical lexicographic order, without using potential slack as a secondary key",
+      "prequery_information": "the archived total, four single durations, six pair durations, and exact positive-component counts for eligible base-pair intersections; no complementary-runner state",
+      "query_budget": "exactly one compound containment query if at least one eligible pair exists; no second pair after success or failure"
+    }
+  ],
+  "decision_order": [
+    "Read and verify the two pinned source archives.",
+    "For the ordinary target, strict control, and tight control, form all six potential slacks and the eligible set.",
+    "Apply both frozen rules without reading complementary-runner state.",
+    "Issue no more than one compound containment query per rule. If both rules choose the same pair, one physical calculation may be reused but counts logically for both rule budgets.",
+    "If containment holds, report the already-known five-edge lower bound C_0-O_cd. If it fails, preserve the first exact violation and do not retune or query another pair.",
+    "For tight_13, if the eligible set is empty, issue no containment query and report the already-archived isolated equality t=3/8 separately from duration.",
+    "For doubling_112, the archived positive pair-only optimum exits before selector use. Evaluate the two frozen rankings and their one-query outcomes only as labelled diagnostics; they do not replace or strengthen that exit."
+  ],
+  "arithmetic": "Python fractions.Fraction only; no floating-point decisions",
+  "scope": {
+    "windows": 4,
+    "base_pairs_per_window": 6,
+    "rule_count": 2,
+    "containment_queries_per_rule_per_nonempty_eligible_case": 1,
+    "forbidden": [
+      "second containment query after a failed selected pair",
+      "post-result retuning or new selection rule in this investigation",
+      "new speed or window search",
+      "all-reference scan",
+      "alternate-window campaign",
+      "+7 or +9 campaign",
+      "general Lonely Runner or novelty claim"
+    ]
+  },
+  "interpretation_limits": [
+    "A successful selected query is a finite selected-reference observation, not a whole-configuration theorem or a general selector proof.",
+    "Positive lonely duration and an isolated valid equality point are distinct outcomes.",
+    "The sparse triple-exclusion repair and alternate-window certificates are prior repository results and will be comparisons only.",
+    "The component-count rule has a strictly larger information contract than the moment-only slack rule; its enumeration cost must be recorded.",
+    "AI review is not independent mathematical validation."
+  ]
+}
