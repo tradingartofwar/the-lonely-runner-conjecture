@@ -1,0 +1,67 @@
+{
+  "baseline": "01c3ea2658a51e138f89837bf16ab44f16c81007",
+  "frozen_before_calculation": true,
+  "question": "What is the smallest simultaneous subset of the four physical inclusive-triple upper bounds that rules out every pair-compatible complete cover on the archived collective-only runner window?",
+  "target": {
+    "velocities": [0,7,8,15,23,38,61,100],
+    "reference_index": 0,
+    "threshold": "1/8",
+    "core_speeds": [7,8,23],
+    "residual_speeds": [15,38,61,100],
+    "window": ["33/184","39/184"],
+    "actual_uncovered_duration": "1/600",
+    "pair_constant_C": "6121/2781600",
+    "physical_inclusive_triple_upper_bounds": [
+      {"speeds":[15,38,61],"value":"0"},
+      {"speeds":[15,38,100],"value":"0"},
+      {"speeds":[15,61,100],"value":"1/48800"},
+      {"speeds":[38,61,100],"value":"119/231800"}
+    ],
+    "physical_four_way_duration": "0",
+    "physical_collective_H": "99/185440"
+  },
+  "source_contract": {
+    "target_results": "reviews/2026-09-28-collective-window-audit/results.json",
+    "target_results_sha256": "daf0dabdfb5ac191d890de801b37c0980a833ce7bab835832da3f8f646cb3d2e",
+    "control_results": "reviews/2026-09-28-cover-obligations/results.json",
+    "control_results_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e",
+    "abstract_collective_results": "reviews/2026-09-28-collective-obligations/results.json",
+    "abstract_collective_results_sha256": "dea12318c1ec54178b8874c3de516ce419737f6c96885fd819973530bbb63555"
+  },
+  "event_model": "Four labelled residual strict blocking events on one fixed closed window; sixteen nonnegative exact-state masses; supplied total, four singles and six pairs; U is empty-state mass; each T_K is inclusive exact-three plus four-way mass; H=sum_K T_K-Q.",
+  "frozen_coordinate_rule": [
+    "Order all sixteen subsets of the four labelled inclusive triples by cardinality and then lexicographic physical speed triples.",
+    "For each subset S, impose every physical upper bound T_K<=b_K for K in S and minimize U using exact total/single/pair moments.",
+    "Require an exact rational primal and dual certificate for every optimum. For every subset with optimum zero, retain an exact compatible complete-cover countermodel.",
+    "Call a successful subset inclusion-minimal only if its optimum is positive and every proper subset has optimum zero. Report all inclusion-minimal successful subsets before applying the frozen cardinality/lexicographic tie break.",
+    "The selected coordinate repair is the successful subset with least cardinality, then lexicographic list of physical speed triples. Do not change this ranking after outcomes.",
+    "The full four-bound subset must be evaluated even if a proper subset succeeds, because the physical atom distribution gives an exact upper control at U=1/600."
+  ],
+  "frozen_collective_comparison": [
+    "Separately impose the single supplied scalar bound H<=99/185440 and minimize U.",
+    "Record the identity certificate U+H=C and compare scalar input count with coordinate input count.",
+    "Do not call H cheap: charge one supplied scalar at optimization time, while recording that its present exact derivation used all four physical triple durations and Q. No new geometric derivation of H is attempted."
+  ],
+  "controls": [
+    {
+      "name":"strict_16",
+      "speeds":[6,7,11,16],
+      "role":"Run all sixteen actual-triple-bound subsets; the known zero upper bound on triple 6/11/16 should recover a one-coordinate repair if the implementation and interpretation are correct. This repair and its sparse predecessor are prior work."
+    },
+    {
+      "name":"doubling_112",
+      "speeds":[56,64,72,112],
+      "role":"Pair-only minimum is already positive; the empty subset must succeed and no higher-order subset search is charged or interpreted as needed."
+    },
+    {
+      "name":"tight_13",
+      "speeds":[6,7,11,13],
+      "role":"Run all sixteen actual-triple-bound subsets; no duration repair may exceed the physical U=0, while the valid isolated equality at 3/8 remains a separate endpoint certificate."
+    }
+  ],
+  "abstract_comparison": "Read the prior symmetric abstract model only to compare quantifiers: every proper zero-triple subset there can coexist with a cover. Do not present its collective identity or countermodels as a new result and do not count it as a fourth physical control.",
+  "falsification": "A claimed coordinate repair fails if an exact compatible cover satisfies all of its bounds. A positive lower bound greater than the physical U=1/600, a tight13 positive-duration result, or any invalid exact primal/dual certificate invalidates the calculation. A failure of every proper subset is a valid negative result and must not trigger retuning in this investigation.",
+  "verification_contract": "Primary and separately structured implementations must reconstruct all physical triple bounds exactly, solve the prescribed subset lattice, compare the target with its reflected window, preserve all zero-optimum countermodels, and check endpoints for tight13. The verifier must not import primary functions or accept floating output as proof.",
+  "scope": "One target representative plus its reflection check and three existing controls. At most 16 target coordinate LPs, 16 strict16 LPs, 1 doubling112 pair LP, 16 tight13 LPs, and 3 pair-zero collective-bound LPs: 52 exact optimizations total. No new speeds, cores, windows, references, alternate-window work, broad scan, +7/+9, outreach, paid compute, main merge or novelty claim.",
+  "status": "Finite exact diagnostics are OBSERVED/REPRODUCED. Any proposed general selection implication remains HYPOTHESIS/OPEN. Internal AI agreement is not independent mathematical validation."
+}
