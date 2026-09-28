@@ -1,0 +1,1077 @@
+{
+  "baseline": "38550bfe709df46bdf00f50c6b41e1d328131698",
+  "counts": {
+    "candidate_records": 16,
+    "certificate_cells_checked": 6,
+    "certificate_events_checked": 14,
+    "failed_first_safe_bands": 8,
+    "individual_band_comparisons": 112,
+    "positive_interval": 6,
+    "valid_instant": 2
+  },
+  "limits": [
+    "No new physical speed lists, phase changes, references, search or automatic resumption.",
+    "Keep the small-gcd result's original selected window distinct from a global witness at another time.",
+    "Compare with existing one-variable, directed-equality and adaptive-pair arguments; no novelty claim.",
+    "General sufficient proposition, finite reproduction and limitations remain separate."
+  ],
+  "prediction_sha256_before_verification": "da87ddda672722219cb441d118c1fbf1e544a4037bb60641fa8a14012484dcba",
+  "protocol_sha256": "6d9b131f8adc24f402069670e47394308626cbc1e5c172fce19ea440df3c1b40",
+  "records": {
+    "doubling_112": [
+      {
+        "anchor": "1/8",
+        "budget": "5/896",
+        "direction": 1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "1/128",
+        "exit_controllers": [
+          112
+        ],
+        "midpoint_witness": "233/1792",
+        "minimum_at_midpoint": "233/1792",
+        "result": "positive_interval",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "3/4",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/20",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "1/512",
+            "exit": "7/512",
+            "phase": "0",
+            "speed": 64
+          },
+          {
+            "entry": "1/576",
+            "exit": "7/576",
+            "phase": "0",
+            "speed": 72
+          },
+          {
+            "entry": "1/896",
+            "exit": "1/128",
+            "phase": "0",
+            "speed": 112
+          }
+        ],
+        "time_interval": [
+          "57/448",
+          "17/128"
+        ]
+      },
+      {
+        "anchor": "1/8",
+        "budget": "-1/448",
+        "conflict": {
+          "earliest_exit": "0",
+          "latest_entry": "1/448",
+          "runner_already_left_current_safe_band": 1,
+          "runner_not_yet_in_first_safe_band": 56
+        },
+        "direction": -1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "0",
+        "exit_controllers": [
+          1
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/10",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "1/512",
+            "exit": "7/512",
+            "phase": "0",
+            "speed": 64
+          },
+          {
+            "entry": "1/576",
+            "exit": "7/576",
+            "phase": "0",
+            "speed": 72
+          },
+          {
+            "entry": "1/896",
+            "exit": "1/128",
+            "phase": "0",
+            "speed": 112
+          }
+        ],
+        "time_interval": null
+      },
+      {
+        "anchor": "2/7",
+        "budget": "1/504",
+        "direction": 1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "17/4032",
+        "exit_controllers": [
+          72
+        ],
+        "midpoint_witness": "1165/4032",
+        "minimum_at_midpoint": "157/1008",
+        "result": "positive_interval",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "33/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "41/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "5/56",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "0",
+            "exit": "33/3584",
+            "phase": "2/7",
+            "speed": 64
+          },
+          {
+            "entry": "0",
+            "exit": "17/4032",
+            "phase": "4/7",
+            "speed": 72
+          },
+          {
+            "entry": "1/896",
+            "exit": "1/128",
+            "phase": "0",
+            "speed": 112
+          }
+        ],
+        "time_interval": [
+          "129/448",
+          "167/576"
+        ]
+      },
+      {
+        "anchor": "2/7",
+        "budget": "1/3584",
+        "direction": -1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "9/3584",
+        "exit_controllers": [
+          64
+        ],
+        "midpoint_witness": "2031/7168",
+        "minimum_at_midpoint": "17/128",
+        "result": "positive_interval",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "9/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "1/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "17/280",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "0",
+            "exit": "9/3584",
+            "phase": "2/7",
+            "speed": 64
+          },
+          {
+            "entry": "0",
+            "exit": "25/4032",
+            "phase": "4/7",
+            "speed": 72
+          },
+          {
+            "entry": "1/896",
+            "exit": "1/128",
+            "phase": "0",
+            "speed": 112
+          }
+        ],
+        "time_interval": [
+          "145/512",
+          "127/448"
+        ]
+      }
+    ],
+    "small_gcd_113": [
+      {
+        "anchor": "1/8",
+        "budget": "223/50624",
+        "direction": 1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "3/452",
+        "exit_controllers": [
+          113
+        ],
+        "midpoint_witness": "13105/101248",
+        "minimum_at_midpoint": "13105/101248",
+        "result": "positive_interval",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "3/4",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/20",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "1/512",
+            "exit": "7/512",
+            "phase": "0",
+            "speed": 64
+          },
+          {
+            "entry": "1/576",
+            "exit": "7/576",
+            "phase": "0",
+            "speed": 72
+          },
+          {
+            "entry": "0",
+            "exit": "3/452",
+            "phase": "1/8",
+            "speed": 113
+          }
+        ],
+        "time_interval": [
+          "57/448",
+          "119/904"
+        ]
+      },
+      {
+        "anchor": "1/8",
+        "budget": "-1/448",
+        "conflict": {
+          "earliest_exit": "0",
+          "latest_entry": "1/448",
+          "runner_already_left_current_safe_band": 1,
+          "runner_not_yet_in_first_safe_band": 56
+        },
+        "direction": -1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "0",
+        "exit_controllers": [
+          1,
+          113
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/10",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "1/512",
+            "exit": "7/512",
+            "phase": "0",
+            "speed": 64
+          },
+          {
+            "entry": "1/576",
+            "exit": "7/576",
+            "phase": "0",
+            "speed": 72
+          },
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "1/8",
+            "speed": 113
+          }
+        ],
+        "time_interval": null
+      },
+      {
+        "anchor": "2/7",
+        "budget": "1/504",
+        "direction": 1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "17/4032",
+        "exit_controllers": [
+          72
+        ],
+        "midpoint_witness": "1165/4032",
+        "minimum_at_midpoint": "157/1008",
+        "result": "positive_interval",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "33/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "41/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "5/56",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "0",
+            "exit": "33/3584",
+            "phase": "2/7",
+            "speed": 64
+          },
+          {
+            "entry": "0",
+            "exit": "17/4032",
+            "phase": "4/7",
+            "speed": 72
+          },
+          {
+            "entry": "0",
+            "exit": "33/6328",
+            "phase": "2/7",
+            "speed": 113
+          }
+        ],
+        "time_interval": [
+          "129/448",
+          "167/576"
+        ]
+      },
+      {
+        "anchor": "2/7",
+        "budget": "-41/50624",
+        "conflict": {
+          "earliest_exit": "9/6328",
+          "latest_entry": "1/448",
+          "runner_already_left_current_safe_band": 113,
+          "runner_not_yet_in_first_safe_band": 56
+        },
+        "direction": -1,
+        "entry": "1/448",
+        "entry_controllers": [
+          56
+        ],
+        "exit": "9/6328",
+        "exit_controllers": [
+          113
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "9/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "1/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "17/280",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "1/448",
+            "exit": "1/64",
+            "phase": "0",
+            "speed": 56
+          },
+          {
+            "entry": "0",
+            "exit": "9/3584",
+            "phase": "2/7",
+            "speed": 64
+          },
+          {
+            "entry": "0",
+            "exit": "25/4032",
+            "phase": "4/7",
+            "speed": 72
+          },
+          {
+            "entry": "0",
+            "exit": "9/6328",
+            "phase": "2/7",
+            "speed": 113
+          }
+        ],
+        "time_interval": null
+      }
+    ],
+    "strict_16": [
+      {
+        "anchor": "1/8",
+        "budget": "-1/128",
+        "conflict": {
+          "earliest_exit": "0",
+          "latest_entry": "1/128",
+          "runner_already_left_current_safe_band": 7,
+          "runner_not_yet_in_first_safe_band": 16
+        },
+        "direction": 1,
+        "entry": "1/128",
+        "entry_controllers": [
+          16
+        ],
+        "exit": "0",
+        "exit_controllers": [
+          7
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "3/4",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/20",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "1/48",
+            "phase": "3/4",
+            "speed": 6
+          },
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "7/8",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "1/22",
+            "phase": "3/8",
+            "speed": 11
+          },
+          {
+            "entry": "1/128",
+            "exit": "7/128",
+            "phase": "0",
+            "speed": 16
+          }
+        ],
+        "time_interval": null
+      },
+      {
+        "anchor": "1/8",
+        "budget": "-1/128",
+        "conflict": {
+          "earliest_exit": "0",
+          "latest_entry": "1/128",
+          "runner_already_left_current_safe_band": 1,
+          "runner_not_yet_in_first_safe_band": 16
+        },
+        "direction": -1,
+        "entry": "1/128",
+        "entry_controllers": [
+          16
+        ],
+        "exit": "0",
+        "exit_controllers": [
+          1
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/10",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "5/48",
+            "phase": "3/4",
+            "speed": 6
+          },
+          {
+            "entry": "0",
+            "exit": "3/28",
+            "phase": "7/8",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "1/44",
+            "phase": "3/8",
+            "speed": 11
+          },
+          {
+            "entry": "1/128",
+            "exit": "7/128",
+            "phase": "0",
+            "speed": 16
+          }
+        ],
+        "time_interval": null
+      },
+      {
+        "anchor": "2/7",
+        "budget": "1/896",
+        "direction": 1,
+        "entry": "1/56",
+        "entry_controllers": [
+          7
+        ],
+        "exit": "17/896",
+        "exit_controllers": [
+          16
+        ],
+        "midpoint_witness": "545/1792",
+        "minimum_at_midpoint": "33/256",
+        "result": "positive_interval",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "33/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "41/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "5/56",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "3/112",
+            "phase": "5/7",
+            "speed": 6
+          },
+          {
+            "entry": "1/56",
+            "exit": "1/8",
+            "phase": "0",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "41/616",
+            "phase": "1/7",
+            "speed": 11
+          },
+          {
+            "entry": "0",
+            "exit": "17/896",
+            "phase": "4/7",
+            "speed": 16
+          }
+        ],
+        "time_interval": [
+          "17/56",
+          "39/128"
+        ]
+      },
+      {
+        "anchor": "2/7",
+        "budget": "-5/308",
+        "conflict": {
+          "earliest_exit": "1/616",
+          "latest_entry": "1/56",
+          "runner_already_left_current_safe_band": 11,
+          "runner_not_yet_in_first_safe_band": 7
+        },
+        "direction": -1,
+        "entry": "1/56",
+        "entry_controllers": [
+          7
+        ],
+        "exit": "1/616",
+        "exit_controllers": [
+          11
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "9/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "1/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "17/280",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "11/112",
+            "phase": "5/7",
+            "speed": 6
+          },
+          {
+            "entry": "1/56",
+            "exit": "1/8",
+            "phase": "0",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "1/616",
+            "phase": "1/7",
+            "speed": 11
+          },
+          {
+            "entry": "0",
+            "exit": "25/896",
+            "phase": "4/7",
+            "speed": 16
+          }
+        ],
+        "time_interval": null
+      }
+    ],
+    "tight_13": [
+      {
+        "anchor": "1/8",
+        "budget": "0",
+        "direction": 1,
+        "entry": "0",
+        "entry_controllers": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          11,
+          13
+        ],
+        "exit": "0",
+        "exit_controllers": [
+          7
+        ],
+        "midpoint_witness": "1/8",
+        "minimum_at_midpoint": "1/8",
+        "result": "valid_instant",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "3/4",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/20",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "1/48",
+            "phase": "3/4",
+            "speed": 6
+          },
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "7/8",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "1/22",
+            "phase": "3/8",
+            "speed": 11
+          },
+          {
+            "entry": "0",
+            "exit": "1/52",
+            "phase": "5/8",
+            "speed": 13
+          }
+        ],
+        "time_interval": [
+          "1/8",
+          "1/8"
+        ]
+      },
+      {
+        "anchor": "1/8",
+        "budget": "0",
+        "direction": -1,
+        "entry": "0",
+        "entry_controllers": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          11,
+          13
+        ],
+        "exit": "0",
+        "exit_controllers": [
+          1
+        ],
+        "midpoint_witness": "1/8",
+        "minimum_at_midpoint": "1/8",
+        "result": "valid_instant",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "0",
+            "phase": "1/8",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "3/32",
+            "phase": "1/2",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "1/10",
+            "phase": "5/8",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "5/48",
+            "phase": "3/4",
+            "speed": 6
+          },
+          {
+            "entry": "0",
+            "exit": "3/28",
+            "phase": "7/8",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "1/44",
+            "phase": "3/8",
+            "speed": 11
+          },
+          {
+            "entry": "0",
+            "exit": "1/26",
+            "phase": "5/8",
+            "speed": 13
+          }
+        ],
+        "time_interval": [
+          "1/8",
+          "1/8"
+        ]
+      },
+      {
+        "anchor": "2/7",
+        "budget": "-1/182",
+        "conflict": {
+          "earliest_exit": "9/728",
+          "latest_entry": "1/56",
+          "runner_already_left_current_safe_band": 13,
+          "runner_not_yet_in_first_safe_band": 7
+        },
+        "direction": 1,
+        "entry": "1/56",
+        "entry_controllers": [
+          7
+        ],
+        "exit": "9/728",
+        "exit_controllers": [
+          13
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "33/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "41/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "5/56",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "3/112",
+            "phase": "5/7",
+            "speed": 6
+          },
+          {
+            "entry": "1/56",
+            "exit": "1/8",
+            "phase": "0",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "41/616",
+            "phase": "1/7",
+            "speed": 11
+          },
+          {
+            "entry": "0",
+            "exit": "9/728",
+            "phase": "5/7",
+            "speed": 13
+          }
+        ],
+        "time_interval": null
+      },
+      {
+        "anchor": "2/7",
+        "budget": "-5/308",
+        "conflict": {
+          "earliest_exit": "1/616",
+          "latest_entry": "1/56",
+          "runner_already_left_current_safe_band": 11,
+          "runner_not_yet_in_first_safe_band": 7
+        },
+        "direction": -1,
+        "entry": "1/56",
+        "entry_controllers": [
+          7
+        ],
+        "exit": "1/616",
+        "exit_controllers": [
+          11
+        ],
+        "result": "failed_first_safe_bands",
+        "rows": [
+          {
+            "entry": "0",
+            "exit": "9/56",
+            "phase": "2/7",
+            "speed": 1
+          },
+          {
+            "entry": "0",
+            "exit": "1/224",
+            "phase": "1/7",
+            "speed": 4
+          },
+          {
+            "entry": "0",
+            "exit": "17/280",
+            "phase": "3/7",
+            "speed": 5
+          },
+          {
+            "entry": "0",
+            "exit": "11/112",
+            "phase": "5/7",
+            "speed": 6
+          },
+          {
+            "entry": "1/56",
+            "exit": "1/8",
+            "phase": "0",
+            "speed": 7
+          },
+          {
+            "entry": "0",
+            "exit": "1/616",
+            "phase": "1/7",
+            "speed": 11
+          },
+          {
+            "entry": "0",
+            "exit": "33/728",
+            "phase": "5/7",
+            "speed": 13
+          }
+        ],
+        "time_interval": null
+      }
+    ]
+  },
+  "status": "PASS",
+  "verification": "One AI author; residue formula versus threshold-state sweep, exact fractions only."
+}

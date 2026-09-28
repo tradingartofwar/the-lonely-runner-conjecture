@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-28",
+  "baseline": "38550bfe709df46bdf00f50c6b41e1d328131698",
+  "question": "Can an explicit shared-displacement budget force a valid time without reconstructing the complete allowed set?",
+  "status": "FROZEN before calculation; known controls are development data, not held-out validation",
+  "threshold": "1/8",
+  "controls": {
+    "small_gcd_113": [
+      0,
+      1,
+      4,
+      5,
+      56,
+      64,
+      72,
+      113
+    ],
+    "doubling_112": [
+      0,
+      1,
+      4,
+      5,
+      56,
+      64,
+      72,
+      112
+    ],
+    "tight_13": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      11,
+      13
+    ],
+    "strict_16": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      11,
+      16
+    ]
+  },
+  "anchors": [
+    "1/8",
+    "2/7"
+  ],
+  "directions": [
+    1,
+    -1
+  ],
+  "candidate": "For positive integer speeds and reduced anchor a/d with d<=n, nonzero anchor residues are already safe. In a fixed direction intersect their current safe laps and the collision speeds' first safe laps. Latest entry E=max(1/(n*v) for anchor colliders, default 0); earliest exit X=min((1-1/n)/v for colliders, and direction-specific remaining safe phase divided by v otherwise). X>E certifies a strict interior; X=E one valid instant; X<E refutes only this simultaneous first-safe-lap itinerary.",
+  "scope_limits": [
+    "No new physical speed lists, phase changes, references, search or automatic resumption.",
+    "Keep the small-gcd result's original selected window distinct from a global witness at another time.",
+    "Compare with existing one-variable, directed-equality and adaptive-pair arguments; no novelty claim.",
+    "General sufficient proposition, finite reproduction and limitations remain separate."
+  ],
+  "verification": "Exact fractions. Derive candidate solely from residues and speeds. Independently reconstruct first safe displacement bands through threshold-state sweeps, retaining isolated points. Check every certificate on all threshold cells and endpoints, and keep an entry/exit conflict for every failed itinerary."
+}

@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-28 | [Configuration-level relational information](2026-09-28-configuration-relational-information.md) | Preserve the distinction between full speed data and lossy summaries; seek joint compatibility constraints, with 56/113 and tight controls. The next bounded test compares common displacement entry and exit times at existing rational anchors. Physics supplies inspiration only. |
+| 2026-09-28 | [Configuration-level relational information](2026-09-28-configuration-relational-information.md) | Preserve the distinction between full speed data and lossy summaries; seek joint compatibility constraints, with 56/113 and tight controls. The common-displacement test is complete: latest entry and earliest exit give a joint certificate, with first-anchor failures retained. Physics supplies inspiration only. |
 | 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Adaptive pairs separate equality value from permitted direction. The one-pair selection test now separates choosing a poor pair from a window that no pair can certify: individual capacity is not actual overlap, and changing certificate information may be necessary. Existence, certificate size, discovery cost, and general guarantees remain separate. |
 
 ## How to continue this collection

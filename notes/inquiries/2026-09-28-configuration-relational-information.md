@@ -72,3 +72,7 @@ The broader cross-window existence question remains: which arithmetic conditions
 Relative phase and correlation in physics motivated the question. This is inspiration only. No physical theorem, quantum effect, information-theoretic synergy measure or new physical mechanism is imported into the runner problem. The required structure must be defined and proved directly from the runner equations.
 
 Hourly research remains paused. This note and the immediate bounded calculation are part of the explicitly requested interactive continuation.
+
+## Same-day follow-through
+
+The [common-displacement study](../COMMON_DISPLACEMENT_CERTIFICATES_2026_09_28.md) completed the declared test. A supplied general argument compares latest safe entry with earliest safe exit at a rational anchor. All 112 individual-band checks agree across the sixteen existing-case/direction records. It preserves first-anchor failures, tight equality, and successful intervals, and gives explicit sufficient inequalities with all speeds allowed to vary. The result makes a joint constraint visible; it does not prove that a suitable anchor must exist, establish a new invariant, or solve the conjecture. The broader question above remains open.
