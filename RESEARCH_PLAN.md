@@ -17,10 +17,11 @@ The detailed stages below preserve the original strategy. The current state is i
 
 | Priority | Task | State and constraint |
 | --- | --- | --- |
-| Immediate continuation | Classify the arithmetic coverage of the two already-chosen time templates in the existing variable-V family | Proposed in [the phase-projection study](notes/PHASE_PROJECTION_2026_09_27.md), not yet run. Freeze the residue classification; preserve failed template classes. |
+| Completed this round | Classify the two already-chosen time templates in the variable-V family | [Exact classification and diagnostics](notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md) complete:96 strict,21 threshold,3 failed residue classes. All three selected failed representatives are nevertheless robust at every11phase. Four exact check commands pass. |
+| Immediate continuation | Test an adaptive reflected pair derived from the old common-start witness t(V) | Freeze the proposed pair `{t(V),1−t(V)}` before further checks. Verify unchanged safety and runner11 separation `||22t(V)||>=1/4`; retain equality and any failures. This is proposed, not part of the completed round. A finite fixed rational menu cannot cover allV. |
 | Added by Vance | Audit the missing distinction in the small-gcd 56/113 bound, and pursue its general transfer | [Repository review completed](notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md). The specific gap and restricted small-gcd families were already resolved as supplied arguments. The remaining priority is speed-derived selection and uniform scope beyond their hypotheses. Use existing controls before any new search. |
 
-The new addition does not discard the immediate continuation. It requires retaining local concentration as well as overlap, testing summary collisions and tight equality cases, and separating a certificate's failure from failure of loneliness. The +7/+9 extension and further cutoff polishing remain parked. No broad speed search is scheduled.
+The small-gcd addition remains a related selection priority. It requires retaining local concentration as well as overlap, testing summary collisions and tight equality cases, and separating a certificate's failure from failure of loneliness. The +7/+9 extension and further cutoff polishing remain parked. No broad speed search is scheduled.
 
 ## Strategic choice
 

@@ -8,7 +8,7 @@ These entries preserve intuitions and possible transfers alongside the mathemati
 
 | Date | Inquiry | Current position |
 | --- | --- | --- |
-| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Full phase projections distinguish existence from duration and time identities. Two fixed times certify robustness in the controls; a supplied argument makes some two-time certificate complete for that stronger all-phase question at our threshold. Finding such times from arbitrary speeds, and general Lonely Runner existence, remain open. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Phase sets separate existence, duration, and time identities. The fixed-pair classification now distinguishes existence of a small certificate from success of fixed choices: three missed representatives remain robust, while any finite rational menu has a denominator-multiple obstruction. Adaptive arithmetic selection is the next question; general existence remains open. |
 
 ## How to continue this collection
 

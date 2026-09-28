@@ -1,0 +1,363 @@
+{
+  "date": "2026-09-27 America/Los_Angeles; completed September28 UTC",
+  "baseline_commit": "e7dc510cc157a3d8e8c1ee81cca3922f48270bc1",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "0932c23c6c65dd8faaae4d319770ae0bca583237c0f92fee9c5ae7f8ce474f02",
+  "scope": {
+    "family": "{0,1,4,5,6,7,11,V}; positive integer V outside{1,4,5,6,7,11}",
+    "reference_index": 0,
+    "n": 8,
+    "threshold": "1/8",
+    "only_shifted_speed": 11,
+    "common_start_phase": "0",
+    "frozen_pairs": [
+      [
+        "1/8",
+        "7/8"
+      ],
+      [
+        "7/15",
+        "8/15"
+      ]
+    ],
+    "fixed_time_coefficient_period": 120,
+    "diagnostic_selection": "least positive admissibleV in each failed class; atmost6",
+    "diagnostic_representatives": [
+      120,
+      32,
+      88
+    ],
+    "extra_template_search": false,
+    "arbitrary_phase_grid": false,
+    "all_reference_scan": false
+  },
+  "classification_summary": {
+    "residue_count": 120,
+    "templates": {
+      "eighth_pair": {
+        "strict": 0,
+        "threshold": 105,
+        "failure": 15
+      },
+      "fifteenth_pair": {
+        "strict": 96,
+        "threshold": 0,
+        "failure": 24
+      }
+    },
+    "union": {
+      "strict": 96,
+      "threshold": 21,
+      "failure": 3
+    },
+    "all_pair_margins_constant": true
+  },
+  "failed_residue_classes": [
+    0,
+    32,
+    88
+  ],
+  "diagnostic_results": [
+    {
+      "V": 120,
+      "P_cover": "183/224",
+      "B_cover": "183/224",
+      "all_phase_decisions": {
+        "nonempty_for_every_phase": true,
+        "positive_duration_for_every_phase": true,
+        "nonempty_covering_margin": "127/224",
+        "positive_duration_covering_margin": "127/224",
+        "criterion_status": "supplied covering criteria; general proof-candidate status retained"
+      },
+      "common_start_duration": "53/3360",
+      "common_start_witness": {
+        "time": "821/2688",
+        "kind": "strict",
+        "phases": [
+          "821/2688",
+          "149/672",
+          "1417/2688",
+          "373/448",
+          "53/384",
+          "967/2688",
+          "73/112"
+        ],
+        "distances": [
+          "821/2688",
+          "149/672",
+          "1271/2688",
+          "75/448",
+          "53/384",
+          "967/2688",
+          "39/112"
+        ],
+        "minimum_distance": "53/384"
+      }
+    },
+    {
+      "V": 32,
+      "P_cover": "1387/1792",
+      "B_cover": "1387/1792",
+      "all_phase_decisions": {
+        "nonempty_for_every_phase": true,
+        "positive_duration_for_every_phase": true,
+        "nonempty_covering_margin": "939/1792",
+        "positive_duration_covering_margin": "939/1792",
+        "criterion_status": "supplied covering criteria; general proof-candidate status retained"
+      },
+      "common_start_duration": "9/896",
+      "common_start_witness": {
+        "time": "1097/3584",
+        "kind": "strict",
+        "phases": [
+          "1097/3584",
+          "201/896",
+          "1901/3584",
+          "1499/1792",
+          "73/512",
+          "1315/3584",
+          "89/112"
+        ],
+        "distances": [
+          "1097/3584",
+          "201/896",
+          "1683/3584",
+          "293/1792",
+          "73/512",
+          "1315/3584",
+          "23/112"
+        ],
+        "minimum_distance": "73/512"
+      }
+    },
+    {
+      "V": 88,
+      "P_cover": "183/224",
+      "B_cover": "183/224",
+      "all_phase_decisions": {
+        "nonempty_for_every_phase": true,
+        "positive_duration_for_every_phase": true,
+        "nonempty_covering_margin": "127/224",
+        "positive_duration_covering_margin": "127/224",
+        "criterion_status": "supplied covering criteria; general proof-candidate status retained"
+      },
+      "common_start_duration": "37/2464",
+      "common_start_witness": {
+        "time": "437/1408",
+        "kind": "strict",
+        "phases": [
+          "437/1408",
+          "85/352",
+          "777/1408",
+          "607/704",
+          "243/1408",
+          "53/128",
+          "5/16"
+        ],
+        "distances": [
+          "437/1408",
+          "85/352",
+          "631/1408",
+          "97/704",
+          "243/1408",
+          "53/128",
+          "5/16"
+        ],
+        "minimum_distance": "97/704"
+      }
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "read_only_commands": [
+      "python -B reviews/2026-09-27-time-templates/classify.py --check",
+      "python -B reviews/2026-09-27-time-templates/verify_classification.py --check",
+      "python -B reviews/2026-09-27-time-templates/diagnose.py --check",
+      "python -B reviews/2026-09-27-time-templates/verify_diagnostics.py --check"
+    ],
+    "independence": "Primary residue substitutions/triangle certificate versus direct clipped-distance affine envelopes; primary closed-safe-lap intersections versus threshold-event time states/direct phase-preimages. Neither verifier read/imported its primary implementation.",
+    "classification_pair_envelopes": 240,
+    "classification_union_envelopes": 120,
+    "classification_open_phase_cells": 3982,
+    "classification_phase_event_points": 4342,
+    "diagnostic_time_vertices": 1296,
+    "diagnostic_time_cells": 1290,
+    "diagnostic_phase_vertices": 71,
+    "diagnostic_phase_cells": 71,
+    "full_field_and_digest_agreement": true,
+    "relative_markdown_links": "PASS",
+    "broad_regression_rerun": false
+  },
+  "proof_candidates": [
+    "Pointwise constant two-template margins and universal residue coverage in the declared one-runner-phase family.",
+    "Compact duration bounds1/[60max(V,11)] andR+min(R,1/1320) on strictly coveredclasses.",
+    "All-phase positive-duration interpretation of the three bounded diagnostic projections using the prior covering criterion."
+  ],
+  "known_prior_in_project": "Common-start full-family adaptive witness andV>=29strict tail already present as proof candidates; finite fixed rationalmenu denominator obstruction already preserved. No new original common-start familycoverage claimed.",
+  "claim_limits": "Finite calculations OBSERVED/REPRODUCED; supplied unbounded implications remainHYPOTHESIS/proof candidates. No novelty, human proofcertification, formal proofassistantverification, arbitrary-speed LRCproof, or diagnostic residue extrapolation. Countsdescribeonlythisfixedfamily/menu.",
+  "next_proposed_not_run": "Freeze the old adaptive common-start t(V) anditsreflection; test unchanged safety and||22t(V)||>=1/4, preserving equality andfailures. The small-gcd selectionpriorityremains; +7/+9parked.",
+  "dependency_policy": "Four standard-library scripts. Runtimeinputs are only the new protocol andnewclassification/diagnostic archives, allincludedbelow; no historical implementationimported. Proof/coverage source notes hashedseparately.",
+  "python_imports": {
+    "reviews/2026-09-27-time-templates/verify_diagnostics.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-time-templates/verify_classification.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-time-templates/diagnose.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-time-templates/classify.py": [
+      "argparse",
+      "collections",
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  "proof_and_coverage_sources_at_baseline": [
+    {
+      "path": "notes/TWO_TIME_CERTIFICATES_2026_09_27.md",
+      "sha256": "9e908bc37a04fafa215aae6009ed35886030b520b42fc8d7f43755a3507d66ee"
+    },
+    {
+      "path": "notes/PHASE_PROJECTION_2026_09_27.md",
+      "sha256": "99d8bbde193034660d76b5603cd6723e3369db32fcf04fcc9749ef1b9bec9ee6"
+    },
+    {
+      "path": "notes/VARIABLE_SPEED_FAMILY.md",
+      "sha256": "097b4f44d6048a9939703f5be3fae6e4b5912f825f26517e252bd0e36929abb1"
+    },
+    {
+      "path": "notes/TWO_VARIABLE_SPEEDS.md",
+      "sha256": "8aedb9a3038832916d0423cd49e3db0dfd386e1dc48bc0f64efff175cf4dc320"
+    },
+    {
+      "path": "notes/CORE_EXCHANGE_NEIGHBORS_2026_09_27.md",
+      "sha256": "0f516b10e49144a740adcb24d158fcaf214f9c2d9a005073c0333a3a6c8bec2c"
+    },
+    {
+      "path": "notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md",
+      "sha256": "76a66e23ed6b6ba0f332d77eb5fae3c53100041c01fdd3cb1eaa9c6ed249f00f"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "HANDOFF.md",
+      "sha256": "bd269ebaae3c416197b0956fddca80f251f6a4a7a8b7bf52a2c7e6c4ec80e2b0",
+      "bytes": 158058
+    },
+    {
+      "path": "LR2_HANDOFF.md",
+      "sha256": "eb2ae53dbde6bc1f5de7cf630a46ee3f2aebd37e97ea9c72a25cdafe876c5f5a",
+      "bytes": 43575
+    },
+    {
+      "path": "README.md",
+      "sha256": "3bdfb25abfb55f237c14f71178b9c587c990c00a5f8eaaa242badbad6a49b4bb",
+      "bytes": 12070
+    },
+    {
+      "path": "RESEARCH_PLAN.md",
+      "sha256": "c91cb5d3ed4b7a7fb32ea4f917212760a99ddc04a1fa442ee976ac88ea807482",
+      "bytes": 9981
+    },
+    {
+      "path": "notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md",
+      "sha256": "f428873727a58f8d1ac4dd0051003108b3b1762ee57213be1d48abd65efdea23",
+      "bytes": 13548
+    },
+    {
+      "path": "notes/inquiries/2026-09-27-relationships-and-independence.md",
+      "sha256": "9ce7351660126ca88440d8d9aa7d97019db98ec7dcf6f70601b62ea25a7f74e4",
+      "bytes": 30072
+    },
+    {
+      "path": "notes/inquiries/README.md",
+      "sha256": "088cd7655481270c33d1bf8bfda2f45fe4fb7d17eea7782a7f3dad88e08a9748",
+      "bytes": 2222
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/challenge.md",
+      "sha256": "5b964dc75d946e0c504ea983ec7b5728ffe12c0823c8c398fb5988eab485d33a",
+      "bytes": 11090
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/classification.json",
+      "sha256": "80684a9da574a5676e4d5b7c8f05812432bac56d2991813f3ced992173d6f652",
+      "bytes": 81250
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/classification_verification.json",
+      "sha256": "1068b2ce68fa41c37d8b77b92b0dce11040a9906cabe3d3eef13026102927269",
+      "bytes": 119603
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/classify.py",
+      "sha256": "957e4730b64e6f8dccfaeeec29cf2863c8c3a86c12b7cef6f2e8d93112a4ebce",
+      "bytes": 6807
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/coverage.md",
+      "sha256": "3d631bdc937fe3ecf94fb87ffa9bf0bb46e157384983e2652dbd4f6e954ac8ec",
+      "bytes": 13286
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/diagnose.py",
+      "sha256": "d9a397e5cff2e8a012b97116322723cafdeea11079fc1d97e4b6fa65f4ce5330",
+      "bytes": 10179
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/diagnostics.json",
+      "sha256": "cb9f66ebcf533c92a213e4cf2165fe0f80e231c877b35b427ae9c68881b8e15a",
+      "bytes": 15172
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/diagnostics_schema.md",
+      "sha256": "21575e2b7a0965df51343ecfaec376eb4dd01b89cc48204b7ab7896fc5d24029",
+      "bytes": 5811
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/diagnostics_verification.json",
+      "sha256": "84f4e1b9c0dd13b0cbe394fe1627258182c552b6426fbc200793f30ed6e12a53",
+      "bytes": 15454
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/protocol.json",
+      "sha256": "0932c23c6c65dd8faaae4d319770ae0bca583237c0f92fee9c5ae7f8ce474f02",
+      "bytes": 4793
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/schema.md",
+      "sha256": "d4bb8674d27bf0bfefc18a6ee918a7635b3ba899351171850a74eb7eec56ab6f",
+      "bytes": 3787
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/verify_classification.py",
+      "sha256": "320365a48593ef8c9d9ee05d286691b0d1e077c10326a326312a00a9f720e471",
+      "bytes": 15990
+    },
+    {
+      "path": "reviews/2026-09-27-time-templates/verify_diagnostics.py",
+      "sha256": "59610fca32297f93217d6569c44f53ae198038956865df96eaf9a59e9a1be332",
+      "bytes": 12322
+    }
+  ]
+}

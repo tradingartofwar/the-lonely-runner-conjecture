@@ -1,0 +1,814 @@
+{
+  "status": "PASS; independent exact reconstruction, no diagnose.py read/import",
+  "protocol_sha256": "0932c23c6c65dd8faaae4d319770ae0bca583237c0f92fee9c5ae7f8ce474f02",
+  "classification_sha256": "80684a9da574a5676e4d5b7c8f05812432bac56d2991813f3ced992173d6f652",
+  "diagnostics_sha256": "cb9f66ebcf533c92a213e4cf2165fe0f80e231c877b35b427ae9c68881b8e15a",
+  "verifier_sha256": "59610fca32297f93217d6569c44f53ae198038956865df96eaf9a59e9a1be332",
+  "failed_residues": [
+    0,
+    32,
+    88
+  ],
+  "selected_representatives": [
+    {
+      "residue": 0,
+      "V": 120
+    },
+    {
+      "residue": 32,
+      "V": 32
+    },
+    {
+      "residue": 88,
+      "V": 88
+    }
+  ],
+  "diagnostics_performed": true,
+  "stop_reason": null,
+  "method": "threshold-time state partition; direct preimage-existence phase partition; circle endpoint/gap reconstruction",
+  "method_counts": {
+    "time_vertices": 1296,
+    "time_cells": 1290,
+    "phase_vertices": 71,
+    "phase_cells": 71
+  },
+  "cases": [
+    {
+      "residue": 0,
+      "V": 120,
+      "velocities": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        120
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        120
+      ],
+      "A_components": [
+        [
+          "17/56",
+          "59/192"
+        ],
+        [
+          "99/320",
+          "5/16"
+        ],
+        [
+          "17/48",
+          "343/960"
+        ],
+        [
+          "23/64",
+          "117/320"
+        ],
+        [
+          "353/960",
+          "359/960"
+        ],
+        [
+          "25/56",
+          "431/960"
+        ],
+        [
+          "433/960",
+          "439/960"
+        ],
+        [
+          "147/320",
+          "149/320"
+        ],
+        [
+          "449/960",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "511/960"
+        ],
+        [
+          "171/320",
+          "173/320"
+        ],
+        [
+          "521/960",
+          "527/960"
+        ],
+        [
+          "529/960",
+          "31/56"
+        ],
+        [
+          "601/960",
+          "607/960"
+        ],
+        [
+          "203/320",
+          "41/64"
+        ],
+        [
+          "617/960",
+          "31/48"
+        ],
+        [
+          "11/16",
+          "221/320"
+        ],
+        [
+          "133/192",
+          "39/56"
+        ]
+      ],
+      "A_duration": "37/480",
+      "A_positive_component_count": 18,
+      "A_isolated_times": [],
+      "P_components": [
+        [
+          "0",
+          "39/320",
+          true,
+          true
+        ],
+        [
+          "139/960",
+          "5/32",
+          true,
+          true
+        ],
+        [
+          "19/56",
+          "73/192",
+          true,
+          true
+        ],
+        [
+          "129/320",
+          "7/16",
+          true,
+          true
+        ],
+        [
+          "9/16",
+          "191/320",
+          true,
+          true
+        ],
+        [
+          "119/192",
+          "37/56",
+          true,
+          true
+        ],
+        [
+          "27/32",
+          "821/960",
+          true,
+          true
+        ],
+        [
+          "281/320",
+          "1",
+          true,
+          false
+        ]
+      ],
+      "B_components": [
+        [
+          "0",
+          "39/320",
+          true,
+          true
+        ],
+        [
+          "139/960",
+          "5/32",
+          true,
+          true
+        ],
+        [
+          "19/56",
+          "73/192",
+          true,
+          true
+        ],
+        [
+          "129/320",
+          "7/16",
+          true,
+          true
+        ],
+        [
+          "9/16",
+          "191/320",
+          true,
+          true
+        ],
+        [
+          "119/192",
+          "37/56",
+          true,
+          true
+        ],
+        [
+          "27/32",
+          "821/960",
+          true,
+          true
+        ],
+        [
+          "281/320",
+          "1",
+          true,
+          false
+        ]
+      ],
+      "extra_isolated_projection_points": [],
+      "P_metrics": {
+        "nonempty": true,
+        "measure": "701/1680",
+        "maximum_circular_gap": "41/224",
+        "minimum_covering_arc_length": "183/224",
+        "maximal_gap_arcs": [
+          [
+            "5/32",
+            "19/56",
+            "41/224"
+          ],
+          [
+            "37/56",
+            "27/32",
+            "41/224"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "nonempty": true,
+        "measure": "701/1680",
+        "maximum_circular_gap": "41/224",
+        "minimum_covering_arc_length": "183/224",
+        "maximal_gap_arcs": [
+          [
+            "5/32",
+            "19/56",
+            "41/224"
+          ],
+          [
+            "37/56",
+            "27/32",
+            "41/224"
+          ]
+        ]
+      },
+      "all_phase_decisions": {
+        "nonempty_for_every_phase": true,
+        "positive_duration_for_every_phase": true,
+        "nonempty_covering_margin": "127/224",
+        "positive_duration_covering_margin": "127/224",
+        "criterion_status": "supplied covering criteria; general proof-candidate status retained"
+      },
+      "common_start_components": [
+        [
+          "17/56",
+          "59/192"
+        ],
+        [
+          "99/320",
+          "5/16"
+        ],
+        [
+          "449/960",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "511/960"
+        ],
+        [
+          "11/16",
+          "221/320"
+        ],
+        [
+          "133/192",
+          "39/56"
+        ]
+      ],
+      "common_start_duration": "53/3360",
+      "common_start_positive_component_count": 6,
+      "common_start_isolated_times": [],
+      "common_start_status": "strict",
+      "common_start_witness": {
+        "time": "821/2688",
+        "kind": "strict",
+        "phases": [
+          "821/2688",
+          "149/672",
+          "1417/2688",
+          "373/448",
+          "53/384",
+          "967/2688",
+          "73/112"
+        ],
+        "distances": [
+          "821/2688",
+          "149/672",
+          "1271/2688",
+          "75/448",
+          "53/384",
+          "967/2688",
+          "39/112"
+        ],
+        "minimum_distance": "53/384"
+      },
+      "case_sha256": "b037de8e3fc00354691518098b28f1a39caa496be37a41ee2af0e81ede2a97c8"
+    },
+    {
+      "residue": 32,
+      "V": 32,
+      "velocities": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        32
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        32
+      ],
+      "A_components": [
+        [
+          "17/56",
+          "79/256"
+        ],
+        [
+          "17/48",
+          "95/256"
+        ],
+        [
+          "25/56",
+          "119/256"
+        ],
+        [
+          "137/256",
+          "31/56"
+        ],
+        [
+          "161/256",
+          "31/48"
+        ],
+        [
+          "177/256",
+          "39/56"
+        ]
+      ],
+      "A_duration": "31/384",
+      "A_positive_component_count": 6,
+      "A_isolated_times": [],
+      "P_components": [
+        [
+          "0",
+          "29/256",
+          true,
+          true
+        ],
+        [
+          "19/56",
+          "101/256",
+          true,
+          true
+        ],
+        [
+          "155/256",
+          "37/56",
+          true,
+          true
+        ],
+        [
+          "227/256",
+          "1",
+          true,
+          false
+        ]
+      ],
+      "B_components": [
+        [
+          "0",
+          "29/256",
+          true,
+          true
+        ],
+        [
+          "19/56",
+          "101/256",
+          true,
+          true
+        ],
+        [
+          "155/256",
+          "37/56",
+          true,
+          true
+        ],
+        [
+          "227/256",
+          "1",
+          true,
+          false
+        ]
+      ],
+      "extra_isolated_projection_points": [],
+      "P_metrics": {
+        "nonempty": true,
+        "measure": "151/448",
+        "maximum_circular_gap": "405/1792",
+        "minimum_covering_arc_length": "1387/1792",
+        "maximal_gap_arcs": [
+          [
+            "29/256",
+            "19/56",
+            "405/1792"
+          ],
+          [
+            "37/56",
+            "227/256",
+            "405/1792"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "nonempty": true,
+        "measure": "151/448",
+        "maximum_circular_gap": "405/1792",
+        "minimum_covering_arc_length": "1387/1792",
+        "maximal_gap_arcs": [
+          [
+            "29/256",
+            "19/56",
+            "405/1792"
+          ],
+          [
+            "37/56",
+            "227/256",
+            "405/1792"
+          ]
+        ]
+      },
+      "all_phase_decisions": {
+        "nonempty_for_every_phase": true,
+        "positive_duration_for_every_phase": true,
+        "nonempty_covering_margin": "939/1792",
+        "positive_duration_covering_margin": "939/1792",
+        "criterion_status": "supplied covering criteria; general proof-candidate status retained"
+      },
+      "common_start_components": [
+        [
+          "17/56",
+          "79/256"
+        ],
+        [
+          "177/256",
+          "39/56"
+        ]
+      ],
+      "common_start_duration": "9/896",
+      "common_start_positive_component_count": 2,
+      "common_start_isolated_times": [],
+      "common_start_status": "strict",
+      "common_start_witness": {
+        "time": "1097/3584",
+        "kind": "strict",
+        "phases": [
+          "1097/3584",
+          "201/896",
+          "1901/3584",
+          "1499/1792",
+          "73/512",
+          "1315/3584",
+          "89/112"
+        ],
+        "distances": [
+          "1097/3584",
+          "201/896",
+          "1683/3584",
+          "293/1792",
+          "73/512",
+          "1315/3584",
+          "23/112"
+        ],
+        "minimum_distance": "73/512"
+      },
+      "case_sha256": "a7de6500036261fd2edf1f6a3e9f68bbf0dd05ed661533459861231611c5b803"
+    },
+    {
+      "residue": 88,
+      "V": 88,
+      "velocities": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        88
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        88
+      ],
+      "A_components": [
+        [
+          "17/56",
+          "215/704"
+        ],
+        [
+          "217/704",
+          "5/16"
+        ],
+        [
+          "17/48",
+          "255/704"
+        ],
+        [
+          "257/704",
+          "263/704"
+        ],
+        [
+          "25/56",
+          "29/64"
+        ],
+        [
+          "321/704",
+          "327/704"
+        ],
+        [
+          "329/704",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "375/704"
+        ],
+        [
+          "377/704",
+          "383/704"
+        ],
+        [
+          "35/64",
+          "31/56"
+        ],
+        [
+          "441/704",
+          "447/704"
+        ],
+        [
+          "449/704",
+          "31/48"
+        ],
+        [
+          "11/16",
+          "487/704"
+        ],
+        [
+          "489/704",
+          "39/56"
+        ]
+      ],
+      "A_duration": "83/1056",
+      "A_positive_component_count": 14,
+      "A_isolated_times": [],
+      "P_components": [
+        [
+          "1/64",
+          "7/64",
+          true,
+          true
+        ],
+        [
+          "9/64",
+          "5/32",
+          true,
+          true
+        ],
+        [
+          "19/56",
+          "23/64",
+          true,
+          true
+        ],
+        [
+          "25/64",
+          "7/16",
+          true,
+          true
+        ],
+        [
+          "9/16",
+          "39/64",
+          true,
+          true
+        ],
+        [
+          "41/64",
+          "37/56",
+          true,
+          true
+        ],
+        [
+          "27/32",
+          "55/64",
+          true,
+          true
+        ],
+        [
+          "57/64",
+          "63/64",
+          true,
+          true
+        ]
+      ],
+      "B_components": [
+        [
+          "1/64",
+          "7/64",
+          true,
+          true
+        ],
+        [
+          "9/64",
+          "5/32",
+          true,
+          true
+        ],
+        [
+          "19/56",
+          "23/64",
+          true,
+          true
+        ],
+        [
+          "25/64",
+          "7/16",
+          true,
+          true
+        ],
+        [
+          "9/16",
+          "39/64",
+          true,
+          true
+        ],
+        [
+          "41/64",
+          "37/56",
+          true,
+          true
+        ],
+        [
+          "27/32",
+          "55/64",
+          true,
+          true
+        ],
+        [
+          "57/64",
+          "63/64",
+          true,
+          true
+        ]
+      ],
+      "extra_isolated_projection_points": [],
+      "P_metrics": {
+        "nonempty": true,
+        "measure": "79/224",
+        "maximum_circular_gap": "41/224",
+        "minimum_covering_arc_length": "183/224",
+        "maximal_gap_arcs": [
+          [
+            "5/32",
+            "19/56",
+            "41/224"
+          ],
+          [
+            "37/56",
+            "27/32",
+            "41/224"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "nonempty": true,
+        "measure": "79/224",
+        "maximum_circular_gap": "41/224",
+        "minimum_covering_arc_length": "183/224",
+        "maximal_gap_arcs": [
+          [
+            "5/32",
+            "19/56",
+            "41/224"
+          ],
+          [
+            "37/56",
+            "27/32",
+            "41/224"
+          ]
+        ]
+      },
+      "all_phase_decisions": {
+        "nonempty_for_every_phase": true,
+        "positive_duration_for_every_phase": true,
+        "nonempty_covering_margin": "127/224",
+        "positive_duration_covering_margin": "127/224",
+        "criterion_status": "supplied covering criteria; general proof-candidate status retained"
+      },
+      "common_start_components": [
+        [
+          "17/56",
+          "215/704"
+        ],
+        [
+          "217/704",
+          "5/16"
+        ],
+        [
+          "329/704",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "375/704"
+        ],
+        [
+          "11/16",
+          "487/704"
+        ],
+        [
+          "489/704",
+          "39/56"
+        ]
+      ],
+      "common_start_duration": "37/2464",
+      "common_start_positive_component_count": 6,
+      "common_start_isolated_times": [],
+      "common_start_status": "strict",
+      "common_start_witness": {
+        "time": "437/1408",
+        "kind": "strict",
+        "phases": [
+          "437/1408",
+          "85/352",
+          "777/1408",
+          "607/704",
+          "243/1408",
+          "53/128",
+          "5/16"
+        ],
+        "distances": [
+          "437/1408",
+          "85/352",
+          "631/1408",
+          "97/704",
+          "243/1408",
+          "53/128",
+          "5/16"
+        ],
+        "minimum_distance": "97/704"
+      },
+      "case_sha256": "8914493c7270167d848c0a5ada9628de56d0a3964fcda0de01e39c86f2a094ca"
+    }
+  ],
+  "totals": {
+    "cases": 3,
+    "A_components": 38,
+    "A_positive_components": 38,
+    "A_isolated_times": 0,
+    "common_start_components": 14,
+    "common_start_positive_components": 14,
+    "common_start_isolated_times": 0,
+    "all_phase_nonempty_cases": 3,
+    "all_phase_positive_duration_cases": 3,
+    "common_start_strict_cases": 3,
+    "common_start_contact_cases": 0,
+    "common_start_empty_cases": 0
+  }
+}
