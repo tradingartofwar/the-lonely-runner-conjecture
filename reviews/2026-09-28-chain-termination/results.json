@@ -1,0 +1,1984 @@
+{
+  "status": "pass",
+  "claim_status": "OBSERVED on the frozen cases; analytic bounds remain HYPOTHESIS/proof candidate",
+  "baseline": "dd5b3bce9a7a3fb22474a724161438f24e35fb41",
+  "protocol_sha256": "134f1825868d1bde006f3cf7f1d523047fc89410d3acaf8da5add4ec658608c0",
+  "primary_sha256": "a493e8a84e637bd3c6e3df6948b92525d2d339f6dfb89aca35db567165bfe696",
+  "cases": [
+    {
+      "id": "doubling_112",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "145/512",
+      "final_time": "145/512",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 1,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "meeting": 18,
+          "left": "143/512",
+          "right": "145/512"
+        }
+      ],
+      "consecutive_overlaps": [],
+      "union_span": [
+        "143/512",
+        "145/512"
+      ],
+      "selected_excess": "0",
+      "selected_excess_from_start": "0",
+      "H_union_difference": "1/4608",
+      "H_start_difference": "0",
+      "reciprocal_sum": "227/4032",
+      "Q": 1008,
+      "eta": "1/8064",
+      "global_budget": "227/21504",
+      "Hmax": "227/43008",
+      "H_at_start": "-1/4032",
+      "phase_budget": "713/129024",
+      "m_L": 1,
+      "K_global": 86,
+      "K_phase": 45,
+      "K_used": 45
+    },
+    {
+      "id": "small_gcd_113",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "129/448",
+      "final_time": "129/448",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "257/904"
+        },
+        {
+          "runner": 2,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 3,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 1,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 2,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 3,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 2,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 3,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 0,
+          "input": "257/904",
+          "output": "129/448"
+        },
+        {
+          "runner": 1,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 1,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        }
+      ],
+      "calls": 22,
+      "completed_rounds": 2,
+      "started_rounds": 2,
+      "nonzero_moves": 3,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "meeting": 18,
+          "left": "143/512",
+          "right": "145/512"
+        },
+        {
+          "runner": 3,
+          "meeting": 32,
+          "left": "255/904",
+          "right": "257/904"
+        },
+        {
+          "runner": 0,
+          "meeting": 16,
+          "left": "127/448",
+          "right": "129/448"
+        }
+      ],
+      "consecutive_overlaps": [
+        "65/57856",
+        "41/50624"
+      ],
+      "union_span": [
+        "143/512",
+        "129/448"
+      ],
+      "selected_excess": "783/404992",
+      "selected_excess_from_start": "783/404992",
+      "H_union_difference": "3919/1822464",
+      "H_start_difference": "783/404992",
+      "reciprocal_sum": "25615/455616",
+      "Q": 8136,
+      "eta": "1/65088",
+      "global_budget": "25615/2429952",
+      "Hmax": "25615/4859904",
+      "H_at_start": "-793/911232",
+      "phase_budget": "89533/14579712",
+      "m_L": 1,
+      "K_global": 687,
+      "K_phase": 400,
+      "K_used": 400
+    },
+    {
+      "id": "tight_13",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "3/8",
+      "final_time": "3/8",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "33/104"
+        },
+        {
+          "runner": 2,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 3,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 1,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 2,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 3,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 2,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 3,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 0,
+          "input": "33/104",
+          "output": "17/48"
+        },
+        {
+          "runner": 1,
+          "input": "17/48",
+          "output": "17/48"
+        },
+        {
+          "runner": 2,
+          "input": "17/48",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 2,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 1,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 2,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 2,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        }
+      ],
+      "calls": 22,
+      "completed_rounds": 2,
+      "started_rounds": 2,
+      "nonzero_moves": 4,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "meeting": 2,
+          "left": "15/56",
+          "right": "17/56"
+        },
+        {
+          "runner": 3,
+          "meeting": 4,
+          "left": "31/104",
+          "right": "33/104"
+        },
+        {
+          "runner": 0,
+          "meeting": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "runner": 2,
+          "meeting": 4,
+          "left": "31/88",
+          "right": "3/8"
+        }
+      ],
+      "consecutive_overlaps": [
+        "1/182",
+        "1/208",
+        "1/528"
+      ],
+      "union_span": [
+        "15/56",
+        "3/8"
+      ],
+      "selected_excess": "293/24024",
+      "selected_excess_from_start": "293/24024",
+      "H_union_difference": "683/24024",
+      "H_start_difference": "1445/96096",
+      "reciprocal_sum": "2867/6006",
+      "Q": 143,
+      "eta": "1/1144",
+      "global_budget": "2867/32032",
+      "Hmax": "2867/64064",
+      "H_at_start": "-249/32032",
+      "phase_budget": "3365/64064",
+      "m_L": 2,
+      "K_global": 103,
+      "K_phase": 62,
+      "K_used": 62
+    },
+    {
+      "id": "control_8_11",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "17/56",
+      "final_time": "17/56",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 1,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "meeting": 2,
+          "left": "15/56",
+          "right": "17/56"
+        }
+      ],
+      "consecutive_overlaps": [],
+      "union_span": [
+        "15/56",
+        "17/56"
+      ],
+      "selected_excess": "0",
+      "selected_excess_from_start": "0",
+      "H_union_difference": "5/308",
+      "H_start_difference": "1/352",
+      "reciprocal_sum": "971/1848",
+      "Q": 88,
+      "eta": "1/704",
+      "global_budget": "971/9856",
+      "Hmax": "971/19712",
+      "H_at_start": "15/4928",
+      "phase_budget": "911/19712",
+      "m_L": 2,
+      "K_global": 70,
+      "K_phase": 34,
+      "K_used": 34
+    },
+    {
+      "id": "affine_309",
+      "kind": "physical",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "697/2472",
+      "final_time": "697/2472",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "697/2472"
+        },
+        {
+          "runner": 1,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 1,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 0,
+          "meeting": 87,
+          "left": "695/2472",
+          "right": "697/2472"
+        }
+      ],
+      "consecutive_overlaps": [],
+      "union_span": [
+        "695/2472",
+        "697/2472"
+      ],
+      "selected_excess": "0",
+      "selected_excess_from_start": "0",
+      "H_union_difference": "315031/489653760",
+      "H_start_difference": "699/1584640",
+      "reciprocal_sum": "27668311/2509475520",
+      "Q": 203032,
+      "eta": "1/1624256",
+      "global_budget": "27668311/13383869440",
+      "Hmax": "27668311/26767738880",
+      "H_at_start": "25627/334596736",
+      "phase_budget": "25618151/26767738880",
+      "m_L": 3,
+      "K_global": 3358,
+      "K_phase": 1557,
+      "K_used": 1557
+    },
+    {
+      "id": "affine_310",
+      "kind": "physical",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "467/1656",
+      "final_time": "467/1656",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "467/1656"
+        },
+        {
+          "runner": 2,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 3,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 1,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 2,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 3,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 2,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 3,
+          "input": "467/1656",
+          "output": "467/1656"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 2,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "meeting": 90,
+          "left": "719/2560",
+          "right": "721/2560"
+        },
+        {
+          "runner": 3,
+          "meeting": 175,
+          "left": "1399/4968",
+          "right": "467/1656"
+        }
+      ],
+      "consecutive_overlaps": [
+        "61/1589760"
+      ],
+      "union_span": [
+        "719/2560",
+        "467/1656"
+      ],
+      "selected_excess": "61/1589760",
+      "selected_excess_from_start": "61/1589760",
+      "H_union_difference": "478697/2020584960",
+      "H_start_difference": "61/1589760",
+      "reciprocal_sum": "2780803/252573120",
+      "Q": 203688,
+      "eta": "1/1629504",
+      "global_budget": "2780803/1347056640",
+      "Hmax": "2780803/2694113280",
+      "H_at_start": "38357/101029248",
+      "phase_budget": "5273849/8082339840",
+      "m_L": 1,
+      "K_global": 3364,
+      "K_phase": 1064,
+      "K_used": 1064
+    },
+    {
+      "id": "affine_320",
+      "kind": "physical",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "721/2560",
+      "final_time": "721/2560",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "721/2560"
+        },
+        {
+          "runner": 1,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 1,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 0,
+          "meeting": 90,
+          "left": "719/2560",
+          "right": "721/2560"
+        }
+      ],
+      "consecutive_overlaps": [],
+      "union_span": [
+        "719/2560",
+        "721/2560"
+      ],
+      "selected_excess": "0",
+      "selected_excess_from_start": "0",
+      "H_union_difference": "5261/33639680",
+      "H_start_difference": "0",
+      "reciprocal_sum": "1891481/176608320",
+      "Q": 215376,
+      "eta": "1/1723008",
+      "global_budget": "1891481/941911040",
+      "Hmax": "1891481/1883822080",
+      "H_at_start": "29/105124",
+      "phase_budget": "1371801/1883822080",
+      "m_L": 1,
+      "K_global": 3461,
+      "K_phase": 1255,
+      "K_used": 1255
+    },
+    {
+      "id": "strict_16",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "17/56",
+      "final_time": "17/56",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 1,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "meeting": 2,
+          "left": "15/56",
+          "right": "17/56"
+        }
+      ],
+      "consecutive_overlaps": [],
+      "union_span": [
+        "15/56",
+        "17/56"
+      ],
+      "selected_excess": "0",
+      "selected_excess_from_start": "0",
+      "H_union_difference": "5/308",
+      "H_start_difference": "1/352",
+      "reciprocal_sum": "1711/3696",
+      "Q": 176,
+      "eta": "1/1408",
+      "global_budget": "1711/19712",
+      "Hmax": "1711/39424",
+      "H_at_start": "-47/9856",
+      "phase_budget": "1899/39424",
+      "m_L": 2,
+      "K_global": 123,
+      "K_phase": 69,
+      "K_used": 69
+    },
+    {
+      "id": "aux_condition_strict",
+      "kind": "auxiliary",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "window": [
+        "7/8",
+        "6/5"
+      ],
+      "core_certificate": [],
+      "verdict": "earliest_witness",
+      "earliest": "73/64",
+      "final_time": "73/64",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "7/8",
+          "output": "7/8"
+        },
+        {
+          "runner": 1,
+          "input": "7/8",
+          "output": "7/8"
+        },
+        {
+          "runner": 2,
+          "input": "7/8",
+          "output": "7/8"
+        },
+        {
+          "runner": 3,
+          "input": "7/8",
+          "output": "57/64"
+        },
+        {
+          "runner": 2,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 3,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 1,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 2,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 3,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 2,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 3,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 0,
+          "input": "57/64",
+          "output": "9/8"
+        },
+        {
+          "runner": 1,
+          "input": "9/8",
+          "output": "9/8"
+        },
+        {
+          "runner": 2,
+          "input": "9/8",
+          "output": "9/8"
+        },
+        {
+          "runner": 3,
+          "input": "9/8",
+          "output": "73/64"
+        },
+        {
+          "runner": 2,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 3,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 1,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 2,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 3,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 2,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 3,
+          "input": "73/64",
+          "output": "73/64"
+        }
+      ],
+      "calls": 22,
+      "completed_rounds": 2,
+      "started_rounds": 2,
+      "nonzero_moves": 3,
+      "selected_intervals": [
+        {
+          "runner": 3,
+          "meeting": 7,
+          "left": "55/64",
+          "right": "57/64"
+        },
+        {
+          "runner": 0,
+          "meeting": 1,
+          "left": "7/8",
+          "right": "9/8"
+        },
+        {
+          "runner": 3,
+          "meeting": 9,
+          "left": "71/64",
+          "right": "73/64"
+        }
+      ],
+      "consecutive_overlaps": [
+        "1/64",
+        "1/64"
+      ],
+      "union_span": [
+        "55/64",
+        "73/64"
+      ],
+      "selected_excess": "1/32",
+      "selected_excess_from_start": "1/32",
+      "H_union_difference": "1/4",
+      "H_start_difference": "1/4",
+      "reciprocal_sum": "15/8",
+      "Q": 8,
+      "eta": "1/64",
+      "global_budget": "45/128",
+      "Hmax": "45/256",
+      "H_at_start": "-1/8",
+      "phase_budget": "77/256",
+      "m_L": 1,
+      "K_global": 23,
+      "K_phase": 20,
+      "K_used": 20
+    },
+    {
+      "id": "aux_condition_equality",
+      "kind": "auxiliary",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "window": [
+        "0",
+        "1/120"
+      ],
+      "core_certificate": [],
+      "verdict": "earliest_witness",
+      "earliest": "1/120",
+      "final_time": "1/120",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "0",
+          "output": "1/120"
+        },
+        {
+          "runner": 1,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 1,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        }
+      ],
+      "calls": 11,
+      "completed_rounds": 1,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 0,
+          "meeting": 0,
+          "left": "-1/120",
+          "right": "1/120"
+        }
+      ],
+      "consecutive_overlaps": [],
+      "union_span": [
+        "-1/120",
+        "1/120"
+      ],
+      "selected_excess": "0",
+      "selected_excess_from_start": "0",
+      "H_union_difference": "5/192",
+      "H_start_difference": "5/384",
+      "reciprocal_sum": "41/240",
+      "Q": 240,
+      "eta": "1/1920",
+      "global_budget": "41/1280",
+      "Hmax": "41/2560",
+      "H_at_start": "0",
+      "phase_budget": "41/2560",
+      "m_L": 4,
+      "K_global": 62,
+      "K_phase": 34,
+      "K_used": 34
+    },
+    {
+      "id": "common_start_lift_clipped",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "1903173888225289/5709496320675840"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "1144427480494519/3433267201483560",
+          "phase_right": "1903173888225289/5709496320675840"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "286110680123629/858316800370890",
+          "phase_right": "475799808056329/1427374080168960"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "457774040197807/686653440296712",
+          "phase_right": "761274624090121/1141899264135168"
+        }
+      ],
+      "verdict": "empty",
+      "earliest": null,
+      "final_time": "163489640070647/490466743069080",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 1,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 2,
+          "input": "1144427480494519/3433267201483560",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 1,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "input": "461375488346795/1384120321040384",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 1,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 2,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "input": "381475826831507/1144422400494520",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 2,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 3,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "input": "225281/675840",
+          "output": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "input": "1153438720377177/3460300801131520",
+          "output": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "input": "1384126465040393/4152360963121152",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 2,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 3,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "input": "1903173888225289/5709496320675840",
+          "output": "163489640070647/490466743069080"
+        }
+      ],
+      "calls": 23,
+      "completed_rounds": 2,
+      "started_rounds": 3,
+      "nonzero_moves": 7,
+      "selected_intervals": [
+        {
+          "runner": 2,
+          "meeting": 173015808130048,
+          "left": "1384126465040383/4152360963121152",
+          "right": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "meeting": 143053435061815,
+          "left": "1144427480494519/3433267201483560",
+          "right": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "meeting": 237896736028160,
+          "left": "634391296075093/1903165440225280",
+          "right": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "meeting": 144179840047147,
+          "left": "230687744075435/692060160226304",
+          "right": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "meeting": 173015808130049,
+          "left": "461375488346797/1384120321040384",
+          "right": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "meeting": 237896736028161,
+          "left": "1903173888225287/5709496320675840",
+          "right": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "meeting": 143053435061816,
+          "left": "381475826831509/1144422400494520",
+          "right": "163489640070647/490466743069080"
+        }
+      ],
+      "consecutive_overlaps": [
+        "35215360191863/594006862641855725760934010880",
+        "3406019219/1555732258314874894123003904",
+        "1/456759705749360640",
+        "10240001147/4677219390389118567549624320",
+        "8447998717/1929352998132991918251663360",
+        "39021724549/23335983874723123411845058560"
+      ],
+      "union_span": [
+        "1384126465040383/4152360963121152",
+        "163489640070647/490466743069080"
+      ],
+      "selected_excess": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "selected_excess_from_start": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "H_union_difference": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "H_start_difference": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "reciprocal_sum": "5309395704738207549929877160490130037/666183571000139088872912946441494386635801414650880",
+      "Q": 74250857830231965720116751360,
+      "eta": "1/594006862641855725760934010880",
+      "global_budget": "5309395704738207549929877160490130037/3552979045334075140655535714354636728724274211471360",
+      "Hmax": "5309395704738207549929877160490130037/7105958090668150281311071428709273457448548422942720",
+      "H_at_start": "-141761509387151944077309466440878587/2664734284000556355491651785765977546543205658603520",
+      "phase_budget": "17062279189311838202408107212997418807/21317874272004450843933214286127820372345645268828160",
+      "m_L": 1,
+      "K_global": 887654400674673,
+      "K_phase": 475427840573787,
+      "K_used": 475427840573787
+    },
+    {
+      "id": "common_start_lift_extended",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "163489640070647/490466743069080"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "1144427480494519/3433267201483560",
+          "phase_right": "163489640070647/490466743069080"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "286110680123629/858316800370890",
+          "phase_right": "40872954303377/122616685767270"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "457774040197807/686653440296712",
+          "phase_right": "65396291456831/98093348613816"
+        }
+      ],
+      "verdict": "earliest_witness",
+      "earliest": "163489640070647/490466743069080",
+      "final_time": "163489640070647/490466743069080",
+      "final_residual_safe": true,
+      "trace": [
+        {
+          "runner": 0,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 1,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 2,
+          "input": "1144427480494519/3433267201483560",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 1,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "input": "461375488346795/1384120321040384",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 1,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 2,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "input": "381475826831507/1144422400494520",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 2,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 3,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "input": "225281/675840",
+          "output": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "input": "1153438720377177/3460300801131520",
+          "output": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "input": "1384126465040393/4152360963121152",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 2,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 3,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "input": "1903173888225289/5709496320675840",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 1,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 1,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        }
+      ],
+      "calls": 33,
+      "completed_rounds": 3,
+      "started_rounds": 3,
+      "nonzero_moves": 7,
+      "selected_intervals": [
+        {
+          "runner": 2,
+          "meeting": 173015808130048,
+          "left": "1384126465040383/4152360963121152",
+          "right": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "meeting": 143053435061815,
+          "left": "1144427480494519/3433267201483560",
+          "right": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "meeting": 237896736028160,
+          "left": "634391296075093/1903165440225280",
+          "right": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "meeting": 144179840047147,
+          "left": "230687744075435/692060160226304",
+          "right": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "meeting": 173015808130049,
+          "left": "461375488346797/1384120321040384",
+          "right": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "meeting": 237896736028161,
+          "left": "1903173888225287/5709496320675840",
+          "right": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "meeting": 143053435061816,
+          "left": "381475826831509/1144422400494520",
+          "right": "163489640070647/490466743069080"
+        }
+      ],
+      "consecutive_overlaps": [
+        "35215360191863/594006862641855725760934010880",
+        "3406019219/1555732258314874894123003904",
+        "1/456759705749360640",
+        "10240001147/4677219390389118567549624320",
+        "8447998717/1929352998132991918251663360",
+        "39021724549/23335983874723123411845058560"
+      ],
+      "union_span": [
+        "1384126465040383/4152360963121152",
+        "163489640070647/490466743069080"
+      ],
+      "selected_excess": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "selected_excess_from_start": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "H_union_difference": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "H_start_difference": "383206257294319731829368180614147893/5329468568001112710983303571531955093086411317207040",
+      "reciprocal_sum": "5309395704738207549929877160490130037/666183571000139088872912946441494386635801414650880",
+      "Q": 74250857830231965720116751360,
+      "eta": "1/594006862641855725760934010880",
+      "global_budget": "5309395704738207549929877160490130037/3552979045334075140655535714354636728724274211471360",
+      "Hmax": "5309395704738207549929877160490130037/7105958090668150281311071428709273457448548422942720",
+      "H_at_start": "-141761509387151944077309466440878587/2664734284000556355491651785765977546543205658603520",
+      "phase_budget": "17062279189311838202408107212997418807/21317874272004450843933214286127820372345645268828160",
+      "m_L": 1,
+      "K_global": 887654400674673,
+      "K_phase": 475427840573787,
+      "K_used": 475427840573787
+    }
+  ],
+  "counts": {
+    "window_cases": 12,
+    "physical_configurations": 9,
+    "auxiliary_configurations": 2,
+    "nonzero_moves": 32,
+    "calls": 199,
+    "empty": 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-28",
+  "baseline": "dd5b3bce9a7a3fb22474a724161438f24e35fb41",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "status": "Exact finite replay and comparison pass; general mathematics remains HYPOTHESIS/proof candidate.",
+  "scope": "12 reused window cases, nine physical configurations and two auxiliary inputs; no new physical configuration or scan.",
+  "inherited_constraints": "Hourly paused; no main merge, all-reference scan, paid compute, outreach or +7/+9 continuation.",
+  "prior_sources_sha256": {
+    "AGENTS.md": "3c71c7807ce0d6fc8abae7e1be138922f04a78d933083b32793f5a8a7fa9d50a",
+    "CLAIM_STATUS.md": "7387260161cbb4c758dc8255ce456af971638457e0f0b579aefbb93ae308ada6",
+    "CONTRIBUTING.md": "9e8963d8466e5ad4f153c21e00ce9cd2d5bb7095cd9f9e6aac6406b904e98077",
+    "README.md": "6c4094c36822913ba762bfccc4fb2ace51281be1c1468aec612ca47430ffac1e",
+    "HANDOFF.md": "fefa2e2d290f88680d76f960d51406a5a2ec39c5d8e6ef405b8e5b89970f3904",
+    "LR2_HANDOFF.md": "a97236dae8ee02ddcd0a99d8caaaf96b06f98b7962b5f9bd1f63eeacfbf07da2",
+    "RESEARCH_PLAN.md": "e16f2fc2badc7298ffa29473cf8cf5f2024cb8ec310c7e264e63a732b1be4359",
+    "notes/FOUR_RUNNER_PROJECTION_LIMIT_2026_09_28.md": "3108857fe8af190a49f66e695286a8cb21bedd3e2cbc52e0ac5f62b22065d7b8",
+    "notes/BLOCKING_CHAINS.md": "37f0edde7e46326f9adf01eaa8e2ebc4c5f26364c08f9e76ed5d5984397ed18a",
+    "scripts/analyze_phase_discrepancy.py": "13fc159a9da8431076445f317d17155560096da8c352bfe5b1c754507fdb7cbb",
+    "notes/MATHEMATICAL_BASELINE.md": "4b2f67bb62f76019a0662f060f8851135d6500771add9bee22e7ae39b5ff7f3c",
+    "notes/OVERLAP_PLACEMENT.md": "b4567b5d8883e529a0b1cd1eccec556c97c24b6a8ec7c4bd6df6070496dc35ee"
+  },
+  "files_sha256": {
+    "HANDOFF.md": "2d74a1ad21b2ce4d68009a9b86d05626899de5d890113eab0c9744adab778186",
+    "LR2_HANDOFF.md": "85db2acf29de120417e122f7bf2dca048f4936ccd2f22e56feba5c8ea48a4664",
+    "README.md": "8a7b3f1246ea042d677a9845f5b942c829d1cb1a00b5f5bbc950c629a4ecaa3e",
+    "RESEARCH_PLAN.md": "9a57a9a81abf614de1e1f65dd140c56ccda9344ca80a44b6218cf254ab2f8715",
+    "notes/BLOCKING_CHAIN_TERMINATION_2026_09_28.md": "4f8b312a4b40d83e228d143eed600400b1665df2ea85e229b4bfd5310d15b850",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "fb5644c94fadca093954db1a472f1aed8dc96343059e7202768149510cbc6289",
+    "reviews/2026-09-28-chain-termination/bound_review.md": "777c658b2ce45f42e5b3d4e9fa322138cb066410663583a97083ac043087b793",
+    "reviews/2026-09-28-chain-termination/compare.py": "59720a0627e3878f2dcaf27005adc5f47e2f722d8929aa1c2d59f5a4b6e586e8",
+    "reviews/2026-09-28-chain-termination/comparison.json": "c15ab9b5f4f6fb9ea48505078816f9e71df870d19587d1eec22140fcc36c67eb",
+    "reviews/2026-09-28-chain-termination/primary.py": "a493e8a84e637bd3c6e3df6948b92525d2d339f6dfb89aca35db567165bfe696",
+    "reviews/2026-09-28-chain-termination/proof_audit.md": "2dc31c54ba4c4586bdcbbc6b447119dc21d237374bb926ce95ef647b6b888bcf",
+    "reviews/2026-09-28-chain-termination/protocol.json": "134f1825868d1bde006f3cf7f1d523047fc89410d3acaf8da5add4ec658608c0",
+    "reviews/2026-09-28-chain-termination/results.json": "02edb5fe0b579b79a65c900af37d9431bc99ae640db006fb4aca7874fd69145a",
+    "reviews/2026-09-28-chain-termination/review.md": "5f5b6c8f49d2a8df2ab265181f91ed2d519a38a434407abe7c6a96064fd6d64f",
+    "reviews/2026-09-28-chain-termination/structural.md": "217a8389be7f86e2de76b496ba1f48b9711414f48d6fe9ad49d4afe33b234edd",
+    "reviews/2026-09-28-chain-termination/verification.json": "e6a395db885bf8585dee3e2276391a1876f389a7b225f43176c6f980a4ab3295",
+    "reviews/2026-09-28-chain-termination/verification_review.md": "dbe6a2236fea14079819d41a16f10ac16e6f69b91cb280383ed92684be4b76c4",
+    "reviews/2026-09-28-chain-termination/verify.py": "b01d85fa7fd5cd6746e1a0fe6216612a57051bf2f587acb35383498737b7e429"
+  },
+  "review_limit": "Material AI reasoning, implementation and review. No external human review or novelty determination. Uniform bounds and global core/window existence remain open."
+}
