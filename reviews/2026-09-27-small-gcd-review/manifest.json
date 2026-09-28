@@ -1,0 +1,147 @@
+{
+  "date": "2026-09-27 America/Los_Angeles",
+  "baseline_commit": "c02b2161db2d0462a54af0192c888221230ef1a9",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "scope": "Review and preserve the user-added56/113 distinction question against existing research; three read-only agent audits, exact fraction substitutions, and two archived read-only replays. No new speed domain, broad search, or proof-status promotion.",
+  "completed_review": "Specific56/113 explanatory gap already repaired by exact local concentration plus phase-located overlap. Later restricted small-gcd families already exist as proof candidates. Preserve current fixed-time-template continuation and add general certificate selection/uniformity priority.",
+  "verification": {
+    "status": "PASS",
+    "commands": [
+      "python -B reviews/2026-09-25-lr2/check_four_blocker_cycles.py --check",
+      "python -B reviews/2026-09-25-lr2/check_uniform_triangle.py --check"
+    ],
+    "fraction_ablations": {
+      "coarse_period_bound": "-755/3072",
+      "exact_singles_no_overlap": "-1045/911232",
+      "exact_selected_overlap_coarse_individual_budget": "-19567/2429952",
+      "exact_singles_and_selected_overlap": "1223/911232"
+    },
+    "matched_ratio_controls": {
+      "extras": [
+        [
+          80,
+          240,
+          88,
+          96
+        ],
+        [
+          160,
+          240,
+          88,
+          96
+        ]
+      ],
+      "common_individual_durations": [
+        "3/128",
+        "3/128",
+        "17/704",
+        "3/128"
+      ],
+      "common_selected_overlap": "1/128",
+      "common_excess": "1/1408",
+      "common_one_pair_bound": "5/704"
+    },
+    "relative_markdown_links": "PASS",
+    "review_limits": "No new literature audit, novelty claim, independent human proof certification, or formal verification. Existing known machinery and finite results retain prior status; general arguments remain proof candidates."
+  },
+  "sources_at_baseline": [
+    {
+      "path": "notes/LOCAL_OVERLAP.md",
+      "sha256": "24245be38dfd291c092285b022baf3cc510116abfa1568b69c25167a7318265f"
+    },
+    {
+      "path": "notes/SPEED_RATIOS.md",
+      "sha256": "c9cf63b283cb2fabe4bc9eb11a9d7fdb47de96a940396ed1884bf5535526ff72"
+    },
+    {
+      "path": "notes/OVERLAP_PLACEMENT.md",
+      "sha256": "b4567b5d8883e529a0b1cd1eccec556c97c24b6a8ec7c4bd6df6070496dc35ee"
+    },
+    {
+      "path": "notes/CORE_TRANSFER.md",
+      "sha256": "c365c43079642813531a1b3f86b013ddadbfc2ec67a730ab5182adbaf76d183d"
+    },
+    {
+      "path": "notes/FOUR_BLOCKER_CYCLE_CORRECTIONS.md",
+      "sha256": "10344bc213e796c4a3f2aa4d5442c562b3d9beb38365cfad2fee6680bf0c7ec6"
+    },
+    {
+      "path": "notes/UNIFORM_TRIANGLE_CERTIFICATE.md",
+      "sha256": "76616481f8a00687e67a40ea52e24bb3432d1bfab0dc96f64486cec1257dab4b"
+    },
+    {
+      "path": "notes/REVIEW_AFFINE_FAMILY.md",
+      "sha256": "5d18a5135e99eb3d7bdee254e9acc66fc6b6173deb16d8d083a013753c846334"
+    },
+    {
+      "path": "notes/RESIDUE_COLLISIONS_2026_09_27.md",
+      "sha256": "45e639766cd46034d37252336163a96a671a7764640fc7640e49caa108a8d4e7"
+    },
+    {
+      "path": "notes/ULTRA_REVIEW_2026_09_27.md",
+      "sha256": "63288a6305f500ebf863fc3a89af02f56617d0fe068da7482ddefa8a8e1ef85b"
+    },
+    {
+      "path": "reviews/2026-09-25-ultra/overlap.md",
+      "sha256": "2453078e6b1c689810045c56b598785032d66db18cbfbc09f5f87e773884139a"
+    },
+    {
+      "path": "experiments/speed_ratios.json",
+      "sha256": "9a948bc83ab071519f12ed7435f87b210fb7cf1743af3ac4ced314db679a03be"
+    },
+    {
+      "path": "experiments/overlap_placement.json",
+      "sha256": "f5ceecab354b6699a500466110d186b6f455ba7ad50d8bb82eaca910acfb1550"
+    },
+    {
+      "path": "reviews/2026-09-25-lr2/four_blocker_cycles.json",
+      "sha256": "d573812e70638900278b0e5c93a884c58b5996d4ec8b9e81644b5a21c02a43f6"
+    },
+    {
+      "path": "reviews/2026-09-25-lr2/uniform_triangle.json",
+      "sha256": "c8c69e3e3990dc17e5d421b77cbbae5fc53e8d721fd40513a2f25b025761d79a"
+    },
+    {
+      "path": "reviews/2026-09-25-lr2/check_four_blocker_cycles.py",
+      "sha256": "c917eb55af99330daf46565fe2e2877bb7e12690bc2581f5b611f22b11dcde20"
+    },
+    {
+      "path": "reviews/2026-09-25-lr2/check_uniform_triangle.py",
+      "sha256": "f2166007b05d555afb3c4ed9525ed4db97ae0bd226b5ba60f8f95198ef535310"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "HANDOFF.md",
+      "sha256": "a297061e7fb4cd154ceb92bd9c45b042f062b6ab2bf6618e81ba2a3f336b906c",
+      "bytes": 154616
+    },
+    {
+      "path": "LR2_HANDOFF.md",
+      "sha256": "eba8080a8ce14ae841241994f5c921e385252b30a1900c9a41ab7c5eb3ae05a4",
+      "bytes": 42371
+    },
+    {
+      "path": "RESEARCH_PLAN.md",
+      "sha256": "99598a04bf29c58ce9320cf4aaf35b60c1aee6da4ccb0c6867fbcbd45cef230a",
+      "bytes": 9544
+    },
+    {
+      "path": "notes/LOCAL_OVERLAP.md",
+      "sha256": "f9492bcd9dd44c79e08360774cdf10b9ce7d24534e7fe8f39d8b27cf74cdf6c4",
+      "bytes": 12113
+    },
+    {
+      "path": "notes/SPEED_RATIOS.md",
+      "sha256": "cc47ea4311e72d23253353fb25b9bbd2ac71a17f3ec8c75c64c66dc939e38189",
+      "bytes": 11821
+    },
+    {
+      "path": "notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md",
+      "sha256": "76a66e23ed6b6ba0f332d77eb5fae3c53100041c01fdd3cb1eaa9c6ed249f00f",
+      "bytes": 14335
+    }
+  ]
+}

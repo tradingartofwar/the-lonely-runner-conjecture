@@ -11,6 +11,17 @@ Have fun working on a genuine mathematical question. Learn its structure well en
 
 The project began from a search for an enjoyable open problem suited to intuition, multiple representations, exact mathematics, and computation. Any broader origin conversation is context only, not a mathematical connection or proposed physical mechanism.
 
+## Current research queue — September 27, 2026
+
+The detailed stages below preserve the original strategy. The current state is in [HANDOFF.md](HANDOFF.md); these bounded priorities govern the next work:
+
+| Priority | Task | State and constraint |
+| --- | --- | --- |
+| Immediate continuation | Classify the arithmetic coverage of the two already-chosen time templates in the existing variable-V family | Proposed in [the phase-projection study](notes/PHASE_PROJECTION_2026_09_27.md), not yet run. Freeze the residue classification; preserve failed template classes. |
+| Added by Vance | Audit the missing distinction in the small-gcd 56/113 bound, and pursue its general transfer | [Repository review completed](notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md). The specific gap and restricted small-gcd families were already resolved as supplied arguments. The remaining priority is speed-derived selection and uniform scope beyond their hypotheses. Use existing controls before any new search. |
+
+The new addition does not discard the immediate continuation. It requires retaining local concentration as well as overlap, testing summary collisions and tight equality cases, and separating a certificate's failure from failure of loneliness. The +7/+9 extension and further cutoff polishing remain parked. No broad speed search is scheduled.
+
 ## Strategic choice
 
 Begin with **tight configurations and the way different runners limit the available separation over time**. The survey identifies tight-instance classification as a research direction [S1 in Sources](notes/SOURCES.md). This gives us something concrete to see and test at small scale.
