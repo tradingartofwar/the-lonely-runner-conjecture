@@ -1,0 +1,34 @@
+{
+  "baseline": "9aa72796ac0f77af52edff876c154ca05b910d45",
+  "status": "Proof audit and archival reconstruction; not a prospective selector experiment",
+  "source": "reviews/2026-09-28-selector-transfer-audit/results.json",
+  "source_sha256": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+  "claim": "For interval closure [m-h,m+h], inf distance(vt+alpha,Z)=max(distance(vm+alpha,Z)-abs(v)*h,0). At positive threshold, un-clipped signed margin is nonnegative iff the entire positive interval is weakly safe, independently of endpoint inclusion.",
+  "scope": [
+    "All 38 eligible base-pair oracle entries on the ten active archived transfer labels; preserve the ten old minimum-component choices without re-ranking.",
+    "The two already eligible strict_16 pairs as calibration; doubling_112 keeps its pair-only exit, tight_13 its isolated equality.",
+    "Eight declared elementary interval boundary fixtures; these are scalar lemma checks, not new runner configurations.",
+    "No new physical speeds, windows, references or search."
+  ],
+  "verification": [
+    "Reconstruct base components by rational clipped lap-interval intersections; compute signed margins before consulting archived containments.",
+    "Compare each exact clipped minimum with endpoint/integer enumeration; compare total containment against a separate threshold-cell and endpoint sweep.",
+    "Aggregate over all components, preserving multi-component failures and successes.",
+    "Check the strict/weak distinction at omitted equality endpoints, empty union and singleton separately."
+  ],
+  "controls": [
+    "closed equality endpoints",
+    "open equality endpoints with strict safe interior",
+    "excluded endpoint below threshold",
+    "integer crossing",
+    "half-integer cusp",
+    "more than one lap",
+    "negative velocity and nonzero phase",
+    "zero velocity"
+  ],
+  "limits": [
+    "One coordinating AI author; independently structured algorithms are not independent human review.",
+    "General argument is a supplied proof candidate under repository governance; no novelty or new LRC coverage.",
+    "Archive already known; this tests exact representation, not new selector validation."
+  ]
+}
