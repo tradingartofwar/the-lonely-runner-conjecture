@@ -1,0 +1,78 @@
+{
+  "baseline": "ad7f51f6d367449d517695aa668f3b71ae63cb7f",
+  "status": "FROZEN BEFORE CONTROL CALCULATION",
+  "question": "On the unchanged minimum-component ties, does the Lipschitz-corrected midpoint lower margin certify whole-component complement safety and distinguish the squares development success from its failed tie without constructing complement threshold schedules?",
+  "source_contract": {
+    "midpoint_protocol": "reviews/2026-09-28-tie-midpoint-discriminator/protocol.json",
+    "midpoint_protocol_sha256": "e62d116b764aa0869788dffb36785935d08e3de1ddb38d3e0ca11ca23ba3f2e3",
+    "midpoint_results": "reviews/2026-09-28-tie-midpoint-discriminator/results.json",
+    "midpoint_results_sha256": "720ef7a31bc933d16b598525cc84a4e928b4cc1dc8bbcd524aa5ecbd1c372eb8",
+    "midpoint_note": "notes/TIE_MIDPOINT_DISCRIMINATOR_2026_09_28.md",
+    "midpoint_note_sha256": "c284aca585e495e85c3acb2ce8c818d62bdaaf21f5e52dd98c54ef91941c9442",
+    "selector_transfer_results": "reviews/2026-09-28-selector-transfer-audit/results.json",
+    "selector_transfer_results_sha256": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+    "floor_sum_results": "reviews/2026-09-28-floor-sum-component-count/results.json",
+    "floor_sum_results_sha256": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "one_query_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "one_query_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5"
+  },
+  "scope": {
+    "development": [
+      "squares:1,2,5:12",
+      "squares:1,2,5:39"
+    ],
+    "archival_controls": [
+      "fibonacci:1,2,4:1",
+      "fibonacci:1,2,4:11",
+      "fibonacci:1,2,4:22",
+      "fibonacci:1,2,4:32"
+    ],
+    "named_controls": [
+      "strict_16",
+      "doubling_112",
+      "tight_13"
+    ],
+    "unchanged_domain": "Use exactly the ties, physical speeds, windows, dispatch and reflection labels pinned by the midpoint study. Add no speed, core, window, reference, alternate-window check, broad scan, fallback query or +7/+9 work."
+  },
+  "assumptions": "Eight common-start runners; selected reference 0; threshold 1/8; strict blocking means distance below 1/8; equality is safe. Positive lonely duration and isolated equality remain separate.",
+  "candidate": {
+    "component": "For each tied eligible base pair reconstruct every positive component I=(l,r) of its two strict blocking sets and set t_I=(l+r)/2.",
+    "complement_lower_margin": "For complement speed v define L(v,I)=distance(v*t_I,Z)-1/8-v*(r-l)/2.",
+    "lemma": "Distance to the nearest integer is 1-Lipschitz. Hence for every t in the closure of I, distance(v*t,Z)-1/8 is at least L(v,I). Therefore L(v,I)>=0 certifies v is nonblocking throughout I, including equality endpoints.",
+    "pair_score": "Take the minimum L(v,I) over both complement speeds and all positive components.",
+    "choice": "Among minimum-component ties maximize the pair score, breaking exact score ties by physical-speed lexicographic order.",
+    "certificate": "A selected pair with score >=0 certifies the full compound containment B_a intersect B_b subset Safe_c intersect Safe_d without a complement threshold schedule or containment query. A selected negative score is inconclusive, not a failure of containment or loneliness.",
+    "query_budget": "No fallback pair, containment query, endpoint rescue, alternate window or post-result retuning. Postselection threshold schedules are allowed only as a separately charged audit after all scores, choices and certificate outcomes are immutable."
+  },
+  "frozen_tests": {
+    "development": "Does the corrected rule select and certify {25,121}, while refusing to certify failed {25,169}? Preserve either failure or unexpected certification exactly.",
+    "controls": "Apply the unchanged rule to every tied Fibonacci label and strict_16. Record certifications and negative/inconclusive outcomes without modifying the rule.",
+    "dispatch": "doubling_112 exits on its archived positive pair-only bound before tie scoring. tight_13 has no eligible duration pair and retains isolated equality t=3/8 separately.",
+    "all_tied_audit": "After freezing candidate outcomes, compare every tied pair score sign with exact archived containment. Report sufficient-certificate true positives, negative-score containing pairs, and any impossible nonnegative-score false positive as an implementation-or-lemma defect. Reflections are not independent examples."
+  },
+  "information_contract": {
+    "allowed_preselection": "Record id, physical speeds, window, pair-only dispatch value, eligible pairs, potential slack, minimum component count, exact base-pair component endpoints/lap labels, component widths, prescribed midpoints and complement phases only at those midpoints.",
+    "forbidden_preselection": "No complement threshold-event schedule, violation search, containment answer, actual lonely duration, archive mechanism label or oracle answer.",
+    "postselection_reload": "Reload pinned containment outcomes and mechanism/reflection labels only after candidate scores, choices and certificate decisions are immutable."
+  },
+  "cost_ledger": {
+    "candidate": "Count reconstructed base blocking pieces, lap candidates, components, midpoint samples, complement phase reductions, nearest-integer distances, width computations, speed-width products, divisions by two, subtractions and score comparisons.",
+    "audit": "Charge all postselection threshold-event containment checks separately; they are not part of the proposed sufficient certificate.",
+    "comparison_policy": "Do not combine unlike operations into a synthetic runtime score or claim asymptotic improvement from this finite ledger."
+  },
+  "verification": {
+    "primary": "Exact integers and fractions.Fraction only; deterministic --write/--check modes; verify every pinned SHA256 and enforce a literal preselection projection.",
+    "independent": "No import of primary.py. Reconstruct base components from an independently authored exact event sweep, recompute Lipschitz margins and choices, prove the numeric lower-bound inequality field-by-field, and compare separately reconstructed containment schedules only postselection.",
+    "adversarial": "Attack the Lipschitz lemma, factor v and half-width, strict/equality endpoints, circular distance cusps, open-component closures, information leakage, fitted-development interpretation, reflection double-counting, dispatch, cost language and any conversion of a sufficient condition into necessity."
+  },
+  "interpretation_limits": [
+    "Squares is fitted development data; success there is not transfer validation.",
+    "Fibonacci and strict_16 are archival controls, not prospective held-out cases.",
+    "A nonnegative corrected score is a sufficient whole-component certificate; a negative score is only inconclusive.",
+    "All currently tied pair-label instances have one component, so multi-component aggregation remains untested unless the pinned data contradict this.",
+    "A failed local certificate is not failed loneliness; isolated equality is not positive duration.",
+    "Selected-reference findings do not imply whole-configuration claims.",
+    "No new existence coverage, general selector, runtime, literature or novelty claim is authorized.",
+    "AI agreement is not independent mathematical validation."
+  ]
+}
