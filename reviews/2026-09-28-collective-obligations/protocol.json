@@ -1,0 +1,73 @@
+{
+  "baseline": "e94a3a84ba39a8227941d3e5aa2d1d63df149e37",
+  "frozen_before_calculation": true,
+  "question": "Can complete coverage require a positive collective higher-order correction even when every individual triple has zero minimum over compatible covers?",
+  "representation": {
+    "events": 4,
+    "state_masses": "x_S >= 0 for all 16 exact active sets S",
+    "retained_inputs": "total L, four singles D_i, and six pairs O_ij",
+    "empty_mass": "U = x_empty",
+    "inclusive_triples": "T_ijk = sum of x_S over S containing ijk",
+    "four_way": "Q = x_1234",
+    "collective_correction": "H = sum T_ijk - Q",
+    "identity": "U + H = C := L - sum D_i + sum O_ij"
+  },
+  "main_moments": {
+    "L": "1",
+    "D_i": "3/7 for each i",
+    "O_ij": "1/7 for each pair"
+  },
+  "frozen_candidate_rule": [
+    "Minimize U using only retained moments. Continue only if the exact minimum is zero.",
+    "On the full-cover face U=0, minimize each inclusive triple T_ijk separately and minimize H.",
+    "The individual-triple selector fails if all four separate minima are zero.",
+    "The collective selector requests an upper bound on H only if min H is strictly positive.",
+    "If a supplied or derived upper bound h < min H is later available, reoptimize U under H <= h. This abstract round uses the explicit compatible open arrangement as a diagnostic bound H=0, not as a runner configuration.",
+    "Do not substitute sum T for H when Q may be positive."
+  ],
+  "prescribed_controls": [
+    {
+      "name": "symmetric_collective",
+      "purpose": "Main paired countermodel: same retained moments admit full covers and an opening; each triple can separately vanish on the cover face."
+    },
+    {
+      "name": "zero_burden_partition",
+      "moments": {
+        "L": "1",
+        "D_i": "1/4 for each i",
+        "O_ij": "0 for each pair"
+      },
+      "purpose": "Negative control: full coverage by four singleton states, all individual and collective higher-order minima zero."
+    },
+    {
+      "name": "quadruple_correction",
+      "exact_state_distribution": "x_1234=1/4 and each singleton x_i=3/16; all other masses zero",
+      "purpose": "Countercheck that raw sum of triples overcounts the four-way state; H, not sum T alone, is the inclusion-exclusion correction."
+    }
+  ],
+  "falsification": [
+    "Any exact pair-compatible full cover of the main moments with H < 1/7 falsifies the proposed collective lower bound.",
+    "A positive minimum for any individual main triple falsifies the claimed selector failure.",
+    "Failure to provide exact feasible primal countermodels and exact dual or pointwise certificates invalidates the calculation.",
+    "If the zero-burden control has positive H minimum, the rule is spuriously inventing higher-order burden.",
+    "If raw sum T equals C in the quadruple control, the correction accounting is wrong."
+  ],
+  "scope": {
+    "models": "Three prescribed abstract four-event controls only",
+    "optimization_budget": "At most 3 baseline LPs, 12 cover-constrained individual-triple LPs, 3 cover-constrained H LPs, and 1 H-upper repair LP; 16 logical states each",
+    "verification": "Exact rational primal/dual certificates plus a separately structured analytic/Mobius reconstruction",
+    "excluded": [
+      "No physical runner realization claim or speed search",
+      "No new core/window/reference selection",
+      "No literature novelty claim",
+      "No all-reference inference",
+      "No alternate-window campaign or +7/+9 restart"
+    ]
+  },
+  "status": "Finite abstract observations and elementary identity; implications for certificate design remain HYPOTHESIS/proof-candidate material. AI agreement is not independent mathematical validation.",
+  "prior_work": [
+    "notes/COVER_OBLIGATION_SELECTION_2026_09_28.md",
+    "reviews/2026-09-27-ultra/optimization.md",
+    "notes/FOUR_BLOCKER_CYCLE_CORRECTIONS.md"
+  ]
+}

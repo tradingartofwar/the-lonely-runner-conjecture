@@ -1,0 +1,596 @@
+{
+  "analytic_verification": {
+    "main_cover_face": {
+      "H_zero_repair": "H=sum(y_i)+3q<=0 forces y_i=q=0, hence u=1/7.",
+      "archived_primal_parameters": [
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:baseline_U",
+          "q": "0",
+          "u": "0",
+          "y_missing_event": [
+            "1/7",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:cover_T_7",
+          "q": "0",
+          "u": "0",
+          "y_missing_event": [
+            "1/7",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:cover_T_11",
+          "q": "0",
+          "u": "0",
+          "y_missing_event": [
+            "1/7",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:cover_T_13",
+          "q": "0",
+          "u": "0",
+          "y_missing_event": [
+            "1/7",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:cover_T_14",
+          "q": "0",
+          "u": "0",
+          "y_missing_event": [
+            "0",
+            "0",
+            "0",
+            "1/7"
+          ]
+        },
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:cover_H",
+          "q": "0",
+          "u": "0",
+          "y_missing_event": [
+            "1/7",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "face_equation": "1/7",
+          "label": "symmetric_collective:H_le_0_repair",
+          "q": "0",
+          "u": "1/7",
+          "y_missing_event": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "individual_minima": {
+        "11": "0",
+        "13": "0",
+        "14": "0",
+        "7": "0"
+      },
+      "individual_zero_cover_models": {
+        "11": [
+          "0",
+          "2/21",
+          "2/21",
+          "2/21",
+          "1/7",
+          "1/21",
+          "1/21",
+          "1/21",
+          "2/21",
+          "2/21",
+          "2/21",
+          "0",
+          "1/21",
+          "1/21",
+          "1/21",
+          "0"
+        ],
+        "13": [
+          "0",
+          "2/21",
+          "1/7",
+          "1/21",
+          "2/21",
+          "2/21",
+          "1/21",
+          "1/21",
+          "2/21",
+          "2/21",
+          "1/21",
+          "1/21",
+          "2/21",
+          "0",
+          "1/21",
+          "0"
+        ],
+        "14": [
+          "0",
+          "1/7",
+          "2/21",
+          "1/21",
+          "2/21",
+          "1/21",
+          "2/21",
+          "1/21",
+          "2/21",
+          "1/21",
+          "2/21",
+          "1/21",
+          "2/21",
+          "1/21",
+          "0",
+          "0"
+        ],
+        "7": [
+          "0",
+          "2/21",
+          "2/21",
+          "2/21",
+          "2/21",
+          "2/21",
+          "2/21",
+          "0",
+          "1/7",
+          "1/21",
+          "1/21",
+          "1/21",
+          "1/21",
+          "1/21",
+          "1/21",
+          "0"
+        ]
+      },
+      "minimum_collective_H": "1/7",
+      "open_model": [
+        "1/7",
+        "0",
+        "0",
+        "1/7",
+        "0",
+        "1/7",
+        "1/7",
+        "0",
+        "0",
+        "1/7",
+        "1/7",
+        "0",
+        "1/7",
+        "0",
+        "0",
+        "0"
+      ],
+      "parameterization": "u=x_empty, q=x_1234, y_i=x_[4]\\{i}; u+sum(y_i)+3q=1/7; all parameters nonnegative",
+      "proper_subset_concentrated_covers": {
+        "11": [
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "1/7",
+          "0",
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "0",
+          "0"
+        ],
+        "13": [
+          "0",
+          "1/7",
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "1/7",
+          "0",
+          "1/7",
+          "0",
+          "1/7",
+          "0",
+          "0",
+          "1/7",
+          "0",
+          "0"
+        ],
+        "14": [
+          "0",
+          "0",
+          "1/7",
+          "1/7",
+          "1/7",
+          "1/7",
+          "0",
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/7",
+          "0"
+        ],
+        "7": [
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "1/7",
+          "0",
+          "0",
+          "1/7",
+          "0",
+          "1/7",
+          "1/7",
+          "0",
+          "1/7",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "proper_subset_limitation": "For any proper subset of the four inclusive triples, concentrate y=1/7 on an omitted triple: every queried triple is zero while U=0.",
+      "reconstruction": {
+        "pair_ij": "u + y_i + y_j + 2q",
+        "singleton_i": "sum_{j!=i} y_j + 2q",
+        "triple_missing_i": "y_i"
+      },
+      "sum_of_individual_minima": "0"
+    },
+    "quadruple_correction": {
+      "C": "3/4",
+      "H_equals_sumT_minus_Q": "3/4",
+      "Q": "1/4",
+      "inclusive_triples": {
+        "11": "1/4",
+        "13": "1/4",
+        "14": "1/4",
+        "7": "1/4"
+      },
+      "pair_only_mass_sum_on_cover": "-3/4+3q>=0 and sum(y)>=0 force q=1/4",
+      "sum_triples": "1",
+      "unique_cover": [
+        "0",
+        "3/16",
+        "3/16",
+        "0",
+        "3/16",
+        "0",
+        "0",
+        "0",
+        "3/16",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/4"
+      ]
+    },
+    "zero_burden": {
+      "C": "0",
+      "individual_triple_minima": {
+        "11": "0",
+        "13": "0",
+        "14": "0",
+        "7": "0"
+      },
+      "minimum_H": "0",
+      "unique_cover": [
+        "0",
+        "1/4",
+        "1/4",
+        "0",
+        "1/4",
+        "0",
+        "0",
+        "0",
+        "1/4",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  },
+  "certificates": [
+    {
+      "label": "symmetric_collective:baseline_U",
+      "positive_primal_states": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        14
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "symmetric_collective:cover_T_7",
+      "positive_primal_states": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        14
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "symmetric_collective:cover_T_11",
+      "positive_primal_states": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        14
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "symmetric_collective:cover_T_13",
+      "positive_primal_states": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        14
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "symmetric_collective:cover_T_14",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        10,
+        12
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "symmetric_collective:cover_H",
+      "positive_primal_states": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        14
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "1/7"
+    },
+    {
+      "label": "zero_burden_partition:baseline_U",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "zero_burden_partition:cover_T_7",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "zero_burden_partition:cover_T_11",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "zero_burden_partition:cover_T_13",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "zero_burden_partition:cover_T_14",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "zero_burden_partition:cover_H",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "quadruple_correction:baseline_U",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "0"
+    },
+    {
+      "label": "quadruple_correction:cover_T_7",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "1/4"
+    },
+    {
+      "label": "quadruple_correction:cover_T_11",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "1/4"
+    },
+    {
+      "label": "quadruple_correction:cover_T_13",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "1/4"
+    },
+    {
+      "label": "quadruple_correction:cover_T_14",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "1/4"
+    },
+    {
+      "label": "quadruple_correction:cover_H",
+      "positive_primal_states": [
+        1,
+        2,
+        4,
+        8,
+        15
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "3/4"
+    },
+    {
+      "label": "symmetric_collective:H_le_0_repair",
+      "positive_primal_states": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12
+      ],
+      "primal_dual_equal": true,
+      "reduced_costs_nonnegative": true,
+      "value": "1/7"
+    }
+  ],
+  "certificates_checked": 19,
+  "method": "independent Mobius inversion and exact rational primal/dual replay; no primary imports or optimizer",
+  "primary_sha256": "fba2cb579b887a9848064a58dbf489460eec77eab0615116ecc3db8b59f5bfe3",
+  "protocol_sha256": "0f9ca99436288f53989732f4d642992a80e2c7433ec3a8ec897dd52a981d6425",
+  "results_sha256": "dea12318c1ec54178b8874c3de516ce419737f6c96885fd819973530bbb63555",
+  "scope": "three frozen abstract four-event controls; no runner realizability inference"
+}
