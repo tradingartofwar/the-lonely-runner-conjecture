@@ -1,0 +1,2635 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "55d73b9e425f4ad8fa74441029cb88569f2091fcb3bdf3494c4cca656d92f7f7",
+  "script_sha256": "6809f16e93e5b3ca271b36c027ef99820bff3f7d02b9d3aa9a52061c26386c5b",
+  "status": "OBSERVED exact eight diagnostics; symbolic general implications remain HYPOTHESIS/proof candidates; no novelty claim",
+  "unchanged_speed_order": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    "V"
+  ],
+  "symbolic_branches": [
+    {
+      "id": "nonmultiple8",
+      "condition": "8 does not divide V",
+      "time_formula": "1/8",
+      "unchanged_phase_formulas": [
+        "1/8",
+        "1/2",
+        "5/8",
+        "3/4",
+        "7/8",
+        "r/8"
+      ],
+      "unchanged_distance_formulas": [
+        "1/8",
+        "1/2",
+        "3/8",
+        "1/4",
+        "1/8",
+        "min(r,8-r)/8"
+      ],
+      "equality_controller_rule": "At t: 1 enters right,7 enters left; V enters right if r=1,left if r=7. Reflection reverses directions.",
+      "selected_phase_at_t_formula": "3/8",
+      "separation_formula": "1/4",
+      "half_separation_formula": "1/8",
+      "half_separation_slack_formula": "0",
+      "envelope_minimum_formula": "1/8",
+      "envelope_maximum_formula": "1/8",
+      "constant_in_phase": true,
+      "unchanged_inward_direction": "none",
+      "directed_radius_formula": null,
+      "directed_radius_slack_formula": null
+    },
+    {
+      "id": "multiple8_not56",
+      "condition": "8 divides V and56 does not divide V",
+      "time_formula": "17/56",
+      "unchanged_phase_formulas": [
+        "17/56",
+        "3/14",
+        "29/56",
+        "23/28",
+        "1/8",
+        "k/7"
+      ],
+      "unchanged_distance_formulas": [
+        "17/56",
+        "3/14",
+        "27/56",
+        "5/28",
+        "1/8",
+        "min(k,7-k)/7"
+      ],
+      "equality_controller_rule": "At t only speed7 equals1/8 and enters right. Reflection enters left.",
+      "selected_phase_at_t_formula": "19/56",
+      "separation_formula": "9/28",
+      "half_separation_formula": "9/56",
+      "half_separation_slack_formula": "1/28",
+      "envelope_minimum_formula": "1/8",
+      "envelope_maximum_formula": "1/8",
+      "constant_in_phase": true,
+      "unchanged_inward_direction": "right",
+      "directed_radius_formula": "1/(56V)",
+      "directed_radius_slack_formula": "(2V-11)/(56V)"
+    },
+    {
+      "id": "multiple56",
+      "condition": "56 divides V",
+      "time_formula": "17/56+1/(8V)",
+      "unchanged_phase_formulas": [
+        "17/56+1/(8V)",
+        "3/14+1/(2V)",
+        "29/56+5/(8V)",
+        "23/28+3/(4V)",
+        "1/8+7/(8V)",
+        "1/8"
+      ],
+      "unchanged_distance_formulas": [
+        "17/56+1/(8V)",
+        "3/14+1/(2V)",
+        "27/56-5/(8V)",
+        "5/28-3/(4V)",
+        "1/8+7/(8V)",
+        "1/8"
+      ],
+      "equality_controller_rule": "At t only speedV equals1/8 and enters right. Reflection enters left.",
+      "selected_phase_at_t_formula": "19/56+11/(8V)",
+      "separation_formula": "9/28-11/(4V)",
+      "half_separation_formula": "9/56-11/(8V)",
+      "half_separation_slack_formula": "1/28-11/(8V)",
+      "envelope_minimum_formula": "1/8",
+      "envelope_maximum_formula": "1/8",
+      "constant_in_phase": true,
+      "unchanged_inward_direction": "right",
+      "directed_radius_formula": "1/(56V)",
+      "directed_radius_slack_formula": "(V-44)/(28V)"
+    }
+  ],
+  "directed_selection_rule": "For each theta choose the candidate maximizing speed11 distance, taking t on a tie; use its directed interval. Do not select by the tied full pair margin.",
+  "diagnostics": [
+    {
+      "V": 13,
+      "branch": "nonmultiple8",
+      "times": [
+        "1/8",
+        "7/8"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        13
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "1/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8"
+        ],
+        [
+          "1/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            1,
+            "right"
+          ],
+          [
+            7,
+            "left"
+          ]
+        ],
+        [
+          [
+            1,
+            "left"
+          ],
+          [
+            7,
+            "right"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "3/8",
+        "5/8"
+      ],
+      "selected_phase_separation": "1/4",
+      "half_separation": "1/8",
+      "half_separation_slack": "0",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/4",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/4",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/32",
+              "7/32"
+            ],
+            "phase": "1/2",
+            "distance": "1/2",
+            "left_clearance": "3/32",
+            "right_clearance": "3/32",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "25/32",
+              "31/32"
+            ],
+            "phase": "1/2",
+            "distance": "1/2",
+            "left_clearance": "3/32",
+            "right_clearance": "3/32",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/40",
+              "7/40"
+            ],
+            "phase": "5/8",
+            "distance": "3/8",
+            "left_clearance": "1/10",
+            "right_clearance": "1/20",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/40",
+              "39/40"
+            ],
+            "phase": "3/8",
+            "distance": "3/8",
+            "left_clearance": "1/20",
+            "right_clearance": "1/10",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/48",
+              "7/48"
+            ],
+            "phase": "3/4",
+            "distance": "1/4",
+            "left_clearance": "5/48",
+            "right_clearance": "1/48",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 5,
+            "interval": [
+              "41/48",
+              "47/48"
+            ],
+            "phase": "1/4",
+            "distance": "1/4",
+            "left_clearance": "1/48",
+            "right_clearance": "5/48",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/56",
+              "1/8"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/28",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          },
+          "at_reflection": {
+            "lap": 6,
+            "interval": [
+              "7/8",
+              "55/56"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/28",
+            "controller_direction": "right"
+          }
+        },
+        {
+          "speed": 13,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/104",
+              "15/104"
+            ],
+            "phase": "5/8",
+            "distance": "3/8",
+            "left_clearance": "1/26",
+            "right_clearance": "1/52",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 11,
+            "interval": [
+              "89/104",
+              "95/104"
+            ],
+            "phase": "3/8",
+            "distance": "3/8",
+            "left_clearance": "1/52",
+            "right_clearance": "1/26",
+            "controller_direction": null
+          }
+        }
+      ],
+      "directed_certificate": null
+    },
+    {
+      "V": 16,
+      "branch": "multiple8_not56",
+      "times": [
+        "17/56",
+        "39/56"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        16
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "29/56",
+          "23/28",
+          "1/8",
+          "6/7"
+        ],
+        [
+          "39/56",
+          "11/14",
+          "27/56",
+          "5/28",
+          "7/8",
+          "1/7"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "1/7"
+        ],
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "1/7"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          7
+        ],
+        [
+          7
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            7,
+            "right"
+          ]
+        ],
+        [
+          [
+            7,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "19/56",
+        "37/56"
+      ],
+      "selected_phase_separation": "9/28",
+      "half_separation": "9/56",
+      "half_separation_slack": "1/28",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "17/56",
+            "distance": "17/56",
+            "left_clearance": "5/28",
+            "right_clearance": "4/7",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "39/56",
+            "distance": "17/56",
+            "left_clearance": "4/7",
+            "right_clearance": "5/28",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "3/14",
+            "distance": "3/14",
+            "left_clearance": "5/224",
+            "right_clearance": "37/224",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "11/14",
+            "distance": "3/14",
+            "left_clearance": "37/224",
+            "right_clearance": "5/224",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "29/56",
+            "distance": "27/56",
+            "left_clearance": "11/140",
+            "right_clearance": "1/14",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "27/56",
+            "distance": "27/56",
+            "left_clearance": "1/14",
+            "right_clearance": "11/140",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "23/28",
+            "distance": "5/28",
+            "left_clearance": "13/112",
+            "right_clearance": "1/112",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "5/28",
+            "distance": "5/28",
+            "left_clearance": "1/112",
+            "right_clearance": "13/112",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/28",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/28",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        },
+        {
+          "speed": 16,
+          "at_t": {
+            "lap": 4,
+            "interval": [
+              "33/128",
+              "39/128"
+            ],
+            "phase": "6/7",
+            "distance": "1/7",
+            "left_clearance": "41/896",
+            "right_clearance": "1/896",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 11,
+            "interval": [
+              "89/128",
+              "95/128"
+            ],
+            "phase": "1/7",
+            "distance": "1/7",
+            "left_clearance": "1/896",
+            "right_clearance": "41/896",
+            "controller_direction": null
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/896",
+        "core_room": "1/112",
+        "variable_room": "1/896",
+        "selected_room": "1/308",
+        "minimum_room": "1/896",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "19/128",
+        "selected_slack_at_radius": "3/128",
+        "candidate_intervals": [
+          [
+            "17/56",
+            "39/128"
+          ],
+          [
+            "89/128",
+            "39/56"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "17/56",
+            "39/128"
+          ],
+          [
+            4,
+            "3/14",
+            "7/32"
+          ],
+          [
+            5,
+            "29/56",
+            "67/128"
+          ],
+          [
+            6,
+            "23/28",
+            "53/64"
+          ],
+          [
+            7,
+            "1/8",
+            "17/128"
+          ],
+          [
+            16,
+            "6/7",
+            "7/8"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "39/128",
+            "7/32",
+            "61/128",
+            "11/64",
+            "17/128",
+            "1/8"
+          ],
+          [
+            "39/128",
+            "7/32",
+            "61/128",
+            "11/64",
+            "17/128",
+            "1/8"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    },
+    {
+      "V": 32,
+      "branch": "multiple8_not56",
+      "times": [
+        "17/56",
+        "39/56"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        32
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "29/56",
+          "23/28",
+          "1/8",
+          "5/7"
+        ],
+        [
+          "39/56",
+          "11/14",
+          "27/56",
+          "5/28",
+          "7/8",
+          "2/7"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "2/7"
+        ],
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "2/7"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          7
+        ],
+        [
+          7
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            7,
+            "right"
+          ]
+        ],
+        [
+          [
+            7,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "19/56",
+        "37/56"
+      ],
+      "selected_phase_separation": "9/28",
+      "half_separation": "9/56",
+      "half_separation_slack": "1/28",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "17/56",
+            "distance": "17/56",
+            "left_clearance": "5/28",
+            "right_clearance": "4/7",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "39/56",
+            "distance": "17/56",
+            "left_clearance": "4/7",
+            "right_clearance": "5/28",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "3/14",
+            "distance": "3/14",
+            "left_clearance": "5/224",
+            "right_clearance": "37/224",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "11/14",
+            "distance": "3/14",
+            "left_clearance": "37/224",
+            "right_clearance": "5/224",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "29/56",
+            "distance": "27/56",
+            "left_clearance": "11/140",
+            "right_clearance": "1/14",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "27/56",
+            "distance": "27/56",
+            "left_clearance": "1/14",
+            "right_clearance": "11/140",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "23/28",
+            "distance": "5/28",
+            "left_clearance": "13/112",
+            "right_clearance": "1/112",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "5/28",
+            "distance": "5/28",
+            "left_clearance": "1/112",
+            "right_clearance": "13/112",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/28",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/28",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        },
+        {
+          "speed": 32,
+          "at_t": {
+            "lap": 9,
+            "interval": [
+              "73/256",
+              "79/256"
+            ],
+            "phase": "5/7",
+            "distance": "2/7",
+            "left_clearance": "33/1792",
+            "right_clearance": "9/1792",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 22,
+            "interval": [
+              "177/256",
+              "183/256"
+            ],
+            "phase": "2/7",
+            "distance": "2/7",
+            "left_clearance": "9/1792",
+            "right_clearance": "33/1792",
+            "controller_direction": null
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/1792",
+        "core_room": "1/112",
+        "variable_room": "9/1792",
+        "selected_room": "1/308",
+        "minimum_room": "1/308",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "277/1792",
+        "selected_slack_at_radius": "53/1792",
+        "candidate_intervals": [
+          [
+            "17/56",
+            "545/1792"
+          ],
+          [
+            "1247/1792",
+            "39/56"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "17/56",
+            "545/1792"
+          ],
+          [
+            4,
+            "3/14",
+            "97/448"
+          ],
+          [
+            5,
+            "29/56",
+            "933/1792"
+          ],
+          [
+            6,
+            "23/28",
+            "739/896"
+          ],
+          [
+            7,
+            "1/8",
+            "33/256"
+          ],
+          [
+            32,
+            "5/7",
+            "41/56"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "545/1792",
+            "97/448",
+            "859/1792",
+            "157/896",
+            "33/256",
+            "15/56"
+          ],
+          [
+            "545/1792",
+            "97/448",
+            "859/1792",
+            "157/896",
+            "33/256",
+            "15/56"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    },
+    {
+      "V": 56,
+      "branch": "multiple56",
+      "times": [
+        "137/448",
+        "311/448"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        56
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "137/448",
+          "25/112",
+          "237/448",
+          "187/224",
+          "9/64",
+          "1/8"
+        ],
+        [
+          "311/448",
+          "87/112",
+          "211/448",
+          "37/224",
+          "55/64",
+          "7/8"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "137/448",
+          "25/112",
+          "211/448",
+          "37/224",
+          "9/64",
+          "1/8"
+        ],
+        [
+          "137/448",
+          "25/112",
+          "211/448",
+          "37/224",
+          "9/64",
+          "1/8"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          56
+        ],
+        [
+          56
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            56,
+            "right"
+          ]
+        ],
+        [
+          [
+            56,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "163/448",
+        "285/448"
+      ],
+      "selected_phase_separation": "61/224",
+      "half_separation": "61/448",
+      "half_separation_slack": "5/448",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "137/448",
+            "distance": "137/448",
+            "left_clearance": "81/448",
+            "right_clearance": "255/448",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "311/448",
+            "distance": "137/448",
+            "left_clearance": "255/448",
+            "right_clearance": "81/448",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "25/112",
+            "distance": "25/112",
+            "left_clearance": "11/448",
+            "right_clearance": "73/448",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "87/112",
+            "distance": "25/112",
+            "left_clearance": "73/448",
+            "right_clearance": "11/448",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "237/448",
+            "distance": "211/448",
+            "left_clearance": "181/2240",
+            "right_clearance": "31/448",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "211/448",
+            "distance": "211/448",
+            "left_clearance": "31/448",
+            "right_clearance": "181/2240",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "187/224",
+            "distance": "37/224",
+            "left_clearance": "53/448",
+            "right_clearance": "3/448",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "37/224",
+            "distance": "37/224",
+            "left_clearance": "3/448",
+            "right_clearance": "53/448",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "9/64",
+            "distance": "9/64",
+            "left_clearance": "1/448",
+            "right_clearance": "47/448",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "55/64",
+            "distance": "9/64",
+            "left_clearance": "47/448",
+            "right_clearance": "1/448",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 56,
+          "at_t": {
+            "lap": 17,
+            "interval": [
+              "137/448",
+              "143/448"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/224",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 38,
+            "interval": [
+              "305/448",
+              "311/448"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/224",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/3136",
+        "core_room": "3/448",
+        "variable_room": "3/224",
+        "selected_room": "5/4928",
+        "minimum_room": "5/4928",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "13/98",
+        "selected_slack_at_radius": "3/392",
+        "candidate_intervals": [
+          [
+            "137/448",
+            "15/49"
+          ],
+          [
+            "34/49",
+            "311/448"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "137/448",
+            "15/49"
+          ],
+          [
+            4,
+            "25/112",
+            "11/49"
+          ],
+          [
+            5,
+            "237/448",
+            "26/49"
+          ],
+          [
+            6,
+            "187/224",
+            "41/49"
+          ],
+          [
+            7,
+            "9/64",
+            "1/7"
+          ],
+          [
+            56,
+            "1/8",
+            "1/7"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "15/49",
+            "11/49",
+            "23/49",
+            "8/49",
+            "1/7",
+            "1/7"
+          ],
+          [
+            "15/49",
+            "11/49",
+            "23/49",
+            "8/49",
+            "1/7",
+            "1/7"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    },
+    {
+      "V": 88,
+      "branch": "multiple8_not56",
+      "times": [
+        "17/56",
+        "39/56"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        88
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "29/56",
+          "23/28",
+          "1/8",
+          "5/7"
+        ],
+        [
+          "39/56",
+          "11/14",
+          "27/56",
+          "5/28",
+          "7/8",
+          "2/7"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "2/7"
+        ],
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "2/7"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          7
+        ],
+        [
+          7
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            7,
+            "right"
+          ]
+        ],
+        [
+          [
+            7,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "19/56",
+        "37/56"
+      ],
+      "selected_phase_separation": "9/28",
+      "half_separation": "9/56",
+      "half_separation_slack": "1/28",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "17/56",
+            "distance": "17/56",
+            "left_clearance": "5/28",
+            "right_clearance": "4/7",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "39/56",
+            "distance": "17/56",
+            "left_clearance": "4/7",
+            "right_clearance": "5/28",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "3/14",
+            "distance": "3/14",
+            "left_clearance": "5/224",
+            "right_clearance": "37/224",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "11/14",
+            "distance": "3/14",
+            "left_clearance": "37/224",
+            "right_clearance": "5/224",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "29/56",
+            "distance": "27/56",
+            "left_clearance": "11/140",
+            "right_clearance": "1/14",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "27/56",
+            "distance": "27/56",
+            "left_clearance": "1/14",
+            "right_clearance": "11/140",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "23/28",
+            "distance": "5/28",
+            "left_clearance": "13/112",
+            "right_clearance": "1/112",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "5/28",
+            "distance": "5/28",
+            "left_clearance": "1/112",
+            "right_clearance": "13/112",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/28",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/28",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        },
+        {
+          "speed": 88,
+          "at_t": {
+            "lap": 26,
+            "interval": [
+              "19/64",
+              "215/704"
+            ],
+            "phase": "5/7",
+            "distance": "2/7",
+            "left_clearance": "3/448",
+            "right_clearance": "9/4928",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 61,
+            "interval": [
+              "489/704",
+              "45/64"
+            ],
+            "phase": "2/7",
+            "distance": "2/7",
+            "left_clearance": "9/4928",
+            "right_clearance": "3/448",
+            "controller_direction": null
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/4928",
+        "core_room": "1/112",
+        "variable_room": "9/4928",
+        "selected_room": "1/308",
+        "minimum_room": "9/4928",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "71/448",
+        "selected_slack_at_radius": "15/448",
+        "candidate_intervals": [
+          [
+            "17/56",
+            "1497/4928"
+          ],
+          [
+            "3431/4928",
+            "39/56"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "17/56",
+            "1497/4928"
+          ],
+          [
+            4,
+            "3/14",
+            "265/1232"
+          ],
+          [
+            5,
+            "29/56",
+            "2557/4928"
+          ],
+          [
+            6,
+            "23/28",
+            "2027/2464"
+          ],
+          [
+            7,
+            "1/8",
+            "89/704"
+          ],
+          [
+            88,
+            "5/7",
+            "41/56"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "1497/4928",
+            "265/1232",
+            "2371/4928",
+            "437/2464",
+            "89/704",
+            "15/56"
+          ],
+          [
+            "1497/4928",
+            "265/1232",
+            "2371/4928",
+            "437/2464",
+            "89/704",
+            "15/56"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    },
+    {
+      "V": 112,
+      "branch": "multiple56",
+      "times": [
+        "39/128",
+        "89/128"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        112
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "39/128",
+          "7/32",
+          "67/128",
+          "53/64",
+          "17/128",
+          "1/8"
+        ],
+        [
+          "89/128",
+          "25/32",
+          "61/128",
+          "11/64",
+          "111/128",
+          "7/8"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "39/128",
+          "7/32",
+          "61/128",
+          "11/64",
+          "17/128",
+          "1/8"
+        ],
+        [
+          "39/128",
+          "7/32",
+          "61/128",
+          "11/64",
+          "17/128",
+          "1/8"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          112
+        ],
+        [
+          112
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            112,
+            "right"
+          ]
+        ],
+        [
+          [
+            112,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "45/128",
+        "83/128"
+      ],
+      "selected_phase_separation": "19/64",
+      "half_separation": "19/128",
+      "half_separation_slack": "3/128",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "39/128",
+            "distance": "39/128",
+            "left_clearance": "23/128",
+            "right_clearance": "73/128",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "89/128",
+            "distance": "39/128",
+            "left_clearance": "73/128",
+            "right_clearance": "23/128",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "7/32",
+            "distance": "7/32",
+            "left_clearance": "3/128",
+            "right_clearance": "21/128",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "25/32",
+            "distance": "7/32",
+            "left_clearance": "21/128",
+            "right_clearance": "3/128",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "67/128",
+            "distance": "61/128",
+            "left_clearance": "51/640",
+            "right_clearance": "9/128",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "61/128",
+            "distance": "61/128",
+            "left_clearance": "9/128",
+            "right_clearance": "51/640",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "53/64",
+            "distance": "11/64",
+            "left_clearance": "15/128",
+            "right_clearance": "1/128",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "11/64",
+            "distance": "11/64",
+            "left_clearance": "1/128",
+            "right_clearance": "15/128",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "17/128",
+            "distance": "17/128",
+            "left_clearance": "1/896",
+            "right_clearance": "95/896",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "111/128",
+            "distance": "17/128",
+            "left_clearance": "95/896",
+            "right_clearance": "1/896",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 112,
+          "at_t": {
+            "lap": 34,
+            "interval": [
+              "39/128",
+              "279/896"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/448",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 77,
+            "interval": [
+              "617/896",
+              "89/128"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/448",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/6272",
+        "core_room": "1/128",
+        "variable_room": "3/448",
+        "selected_room": "3/1408",
+        "minimum_room": "3/1408",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "115/784",
+        "selected_slack_at_radius": "17/784",
+        "candidate_intervals": [
+          [
+            "39/128",
+            "239/784"
+          ],
+          [
+            "545/784",
+            "89/128"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "39/128",
+            "239/784"
+          ],
+          [
+            4,
+            "7/32",
+            "43/196"
+          ],
+          [
+            5,
+            "67/128",
+            "411/784"
+          ],
+          [
+            6,
+            "53/64",
+            "325/392"
+          ],
+          [
+            7,
+            "17/128",
+            "15/112"
+          ],
+          [
+            112,
+            "1/8",
+            "1/7"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "239/784",
+            "43/196",
+            "373/784",
+            "67/392",
+            "15/112",
+            "1/7"
+          ],
+          [
+            "239/784",
+            "43/196",
+            "373/784",
+            "67/392",
+            "15/112",
+            "1/7"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    },
+    {
+      "V": 120,
+      "branch": "multiple8_not56",
+      "times": [
+        "17/56",
+        "39/56"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        120
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "29/56",
+          "23/28",
+          "1/8",
+          "3/7"
+        ],
+        [
+          "39/56",
+          "11/14",
+          "27/56",
+          "5/28",
+          "7/8",
+          "4/7"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "3/7"
+        ],
+        [
+          "17/56",
+          "3/14",
+          "27/56",
+          "5/28",
+          "1/8",
+          "3/7"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          7
+        ],
+        [
+          7
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            7,
+            "right"
+          ]
+        ],
+        [
+          [
+            7,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "19/56",
+        "37/56"
+      ],
+      "selected_phase_separation": "9/28",
+      "half_separation": "9/56",
+      "half_separation_slack": "1/28",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "17/56",
+            "distance": "17/56",
+            "left_clearance": "5/28",
+            "right_clearance": "4/7",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "39/56",
+            "distance": "17/56",
+            "left_clearance": "4/7",
+            "right_clearance": "5/28",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "3/14",
+            "distance": "3/14",
+            "left_clearance": "5/224",
+            "right_clearance": "37/224",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "11/14",
+            "distance": "3/14",
+            "left_clearance": "37/224",
+            "right_clearance": "5/224",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "29/56",
+            "distance": "27/56",
+            "left_clearance": "11/140",
+            "right_clearance": "1/14",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "27/56",
+            "distance": "27/56",
+            "left_clearance": "1/14",
+            "right_clearance": "11/140",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "23/28",
+            "distance": "5/28",
+            "left_clearance": "13/112",
+            "right_clearance": "1/112",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "5/28",
+            "distance": "5/28",
+            "left_clearance": "1/112",
+            "right_clearance": "13/112",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/28",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/28",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        },
+        {
+          "speed": 120,
+          "at_t": {
+            "lap": 36,
+            "interval": [
+              "289/960",
+              "59/192"
+            ],
+            "phase": "3/7",
+            "distance": "3/7",
+            "left_clearance": "17/6720",
+            "right_clearance": "5/1344",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 83,
+            "interval": [
+              "133/192",
+              "671/960"
+            ],
+            "phase": "4/7",
+            "distance": "3/7",
+            "left_clearance": "5/1344",
+            "right_clearance": "17/6720",
+            "controller_direction": null
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/6720",
+        "core_room": "1/112",
+        "variable_room": "5/1344",
+        "selected_room": "1/308",
+        "minimum_room": "1/308",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "1069/6720",
+        "selected_slack_at_radius": "229/6720",
+        "candidate_intervals": [
+          [
+            "17/56",
+            "2041/6720"
+          ],
+          [
+            "4679/6720",
+            "39/56"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "17/56",
+            "2041/6720"
+          ],
+          [
+            4,
+            "3/14",
+            "361/1680"
+          ],
+          [
+            5,
+            "29/56",
+            "697/1344"
+          ],
+          [
+            6,
+            "23/28",
+            "921/1120"
+          ],
+          [
+            7,
+            "1/8",
+            "121/960"
+          ],
+          [
+            120,
+            "3/7",
+            "25/56"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "2041/6720",
+            "361/1680",
+            "647/1344",
+            "199/1120",
+            "121/960",
+            "25/56"
+          ],
+          [
+            "2041/6720",
+            "361/1680",
+            "647/1344",
+            "199/1120",
+            "121/960",
+            "25/56"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    },
+    {
+      "V": 56000000000000,
+      "branch": "multiple56",
+      "times": [
+        "136000000000001/448000000000000",
+        "311999999999999/448000000000000"
+      ],
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        56000000000000
+      ],
+      "unchanged_phase_vectors": [
+        [
+          "136000000000001/448000000000000",
+          "24000000000001/112000000000000",
+          "46400000000001/89600000000000",
+          "184000000000003/224000000000000",
+          "8000000000001/64000000000000",
+          "1/8"
+        ],
+        [
+          "311999999999999/448000000000000",
+          "87999999999999/112000000000000",
+          "43199999999999/89600000000000",
+          "39999999999997/224000000000000",
+          "55999999999999/64000000000000",
+          "7/8"
+        ]
+      ],
+      "unchanged_distance_vectors": [
+        [
+          "136000000000001/448000000000000",
+          "24000000000001/112000000000000",
+          "43199999999999/89600000000000",
+          "39999999999997/224000000000000",
+          "8000000000001/64000000000000",
+          "1/8"
+        ],
+        [
+          "136000000000001/448000000000000",
+          "24000000000001/112000000000000",
+          "43199999999999/89600000000000",
+          "39999999999997/224000000000000",
+          "8000000000001/64000000000000",
+          "1/8"
+        ]
+      ],
+      "unchanged_cap": "1/8",
+      "equality_controllers": [
+        [
+          56000000000000
+        ],
+        [
+          56000000000000
+        ]
+      ],
+      "equality_controller_directions": [
+        [
+          [
+            56000000000000,
+            "right"
+          ]
+        ],
+        [
+          [
+            56000000000000,
+            "left"
+          ]
+        ]
+      ],
+      "selected_phase_pair": [
+        "152000000000011/448000000000000",
+        "295999999999989/448000000000000"
+      ],
+      "selected_phase_separation": "71999999999989/224000000000000",
+      "half_separation": "71999999999989/448000000000000",
+      "half_separation_slack": "15999999999989/448000000000000",
+      "raw_pair_minimizer_theta": "1/2",
+      "pair_envelope_minimum": "1/8",
+      "pair_envelope_maximum": "1/8",
+      "constant_in_phase": true,
+      "safe_laps": [
+        {
+          "speed": 1,
+          "at_t": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "136000000000001/448000000000000",
+            "distance": "136000000000001/448000000000000",
+            "left_clearance": "80000000000001/448000000000000",
+            "right_clearance": "255999999999999/448000000000000",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 0,
+            "interval": [
+              "1/8",
+              "7/8"
+            ],
+            "phase": "311999999999999/448000000000000",
+            "distance": "136000000000001/448000000000000",
+            "left_clearance": "255999999999999/448000000000000",
+            "right_clearance": "80000000000001/448000000000000",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 4,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/32",
+              "15/32"
+            ],
+            "phase": "24000000000001/112000000000000",
+            "distance": "24000000000001/112000000000000",
+            "left_clearance": "10000000000001/448000000000000",
+            "right_clearance": "73999999999999/448000000000000",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 2,
+            "interval": [
+              "17/32",
+              "23/32"
+            ],
+            "phase": "87999999999999/112000000000000",
+            "distance": "24000000000001/112000000000000",
+            "left_clearance": "73999999999999/448000000000000",
+            "right_clearance": "10000000000001/448000000000000",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 5,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "9/40",
+              "3/8"
+            ],
+            "phase": "46400000000001/89600000000000",
+            "distance": "43199999999999/89600000000000",
+            "left_clearance": "35200000000001/448000000000000",
+            "right_clearance": "31999999999999/448000000000000",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 3,
+            "interval": [
+              "5/8",
+              "31/40"
+            ],
+            "phase": "43199999999999/89600000000000",
+            "distance": "43199999999999/89600000000000",
+            "left_clearance": "31999999999999/448000000000000",
+            "right_clearance": "35200000000001/448000000000000",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 6,
+          "at_t": {
+            "lap": 1,
+            "interval": [
+              "3/16",
+              "5/16"
+            ],
+            "phase": "184000000000003/224000000000000",
+            "distance": "39999999999997/224000000000000",
+            "left_clearance": "52000000000001/448000000000000",
+            "right_clearance": "3999999999999/448000000000000",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "11/16",
+              "13/16"
+            ],
+            "phase": "39999999999997/224000000000000",
+            "distance": "39999999999997/224000000000000",
+            "left_clearance": "3999999999999/448000000000000",
+            "right_clearance": "52000000000001/448000000000000",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 7,
+          "at_t": {
+            "lap": 2,
+            "interval": [
+              "17/56",
+              "23/56"
+            ],
+            "phase": "8000000000001/64000000000000",
+            "distance": "8000000000001/64000000000000",
+            "left_clearance": "1/448000000000000",
+            "right_clearance": "47999999999999/448000000000000",
+            "controller_direction": null
+          },
+          "at_reflection": {
+            "lap": 4,
+            "interval": [
+              "33/56",
+              "39/56"
+            ],
+            "phase": "55999999999999/64000000000000",
+            "distance": "8000000000001/64000000000000",
+            "left_clearance": "47999999999999/448000000000000",
+            "right_clearance": "1/448000000000000",
+            "controller_direction": null
+          }
+        },
+        {
+          "speed": 56000000000000,
+          "at_t": {
+            "lap": 17000000000000,
+            "interval": [
+              "136000000000001/448000000000000",
+              "136000000000007/448000000000000"
+            ],
+            "phase": "1/8",
+            "distance": "1/8",
+            "left_clearance": "0",
+            "right_clearance": "3/224000000000000",
+            "controller_direction": "right"
+          },
+          "at_reflection": {
+            "lap": 38999999999999,
+            "interval": [
+              "311999999999993/448000000000000",
+              "311999999999999/448000000000000"
+            ],
+            "phase": "7/8",
+            "distance": "1/8",
+            "left_clearance": "3/224000000000000",
+            "right_clearance": "0",
+            "controller_direction": "left"
+          }
+        }
+      ],
+      "directed_certificate": {
+        "radius": "1/3136000000000000",
+        "core_room": "3999999999999/448000000000000",
+        "variable_room": "3/224000000000000",
+        "selected_room": "15999999999989/4928000000000000",
+        "minimum_room": "3/224000000000000",
+        "radius_within_room": true,
+        "selected_distance_lower_bound_at_radius": "62999999999989/392000000000000",
+        "selected_slack_at_radius": "13999999999989/392000000000000",
+        "candidate_intervals": [
+          [
+            "136000000000001/448000000000000",
+            "119000000000001/392000000000000"
+          ],
+          [
+            "272999999999999/392000000000000",
+            "311999999999999/448000000000000"
+          ]
+        ],
+        "unchanged_phase_segments": [
+          [
+            1,
+            "136000000000001/448000000000000",
+            "119000000000001/392000000000000"
+          ],
+          [
+            4,
+            "24000000000001/112000000000000",
+            "21000000000001/98000000000000"
+          ],
+          [
+            5,
+            "46400000000001/89600000000000",
+            "40600000000001/78400000000000"
+          ],
+          [
+            6,
+            "184000000000003/224000000000000",
+            "161000000000003/196000000000000"
+          ],
+          [
+            7,
+            "8000000000001/64000000000000",
+            "7000000000001/56000000000000"
+          ],
+          [
+            56000000000000,
+            "1/8",
+            "1/7"
+          ]
+        ],
+        "unchanged_endpoint_distances": [
+          [
+            "119000000000001/392000000000000",
+            "21000000000001/98000000000000",
+            "37799999999999/78400000000000",
+            "34999999999997/196000000000000",
+            "7000000000001/56000000000000",
+            "1/7"
+          ],
+          [
+            "119000000000001/392000000000000",
+            "21000000000001/98000000000000",
+            "37799999999999/78400000000000",
+            "34999999999997/196000000000000",
+            "7000000000001/56000000000000",
+            "1/7"
+          ]
+        ],
+        "strict_open_interior_verified": true
+      }
+    }
+  ],
+  "diagnostics_sha256": "31ad1dc6bf4c5b8d4345147cfa2fbc16f25a69702d98d81a384b378f342e4540",
+  "summary": {
+    "diagnostic_count": 8,
+    "branch_counts": {
+      "nonmultiple8": 1,
+      "multiple8_not56": 4,
+      "multiple56": 3
+    },
+    "all_pair_envelopes_constant_threshold": true,
+    "directed_certificate_count": 7,
+    "all_directed_checks_pass": true
+  }
+}

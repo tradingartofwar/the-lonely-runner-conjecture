@@ -6,7 +6,19 @@
 **Canonical branch:** `main`  
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
-## Current resumption — LR 2, September 27
+## Current resumption — LR 2, September 28 UTC
+
+**Latest — adaptive reflected pair completed.** [ADAPTIVE_REFLECTED_PAIR_2026_09_28.md](notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md) tests the old common-start rule without changing it: t(V)=1/8 when 8 does not divide V, 17/56 when 8 divides V but 56 does not, and 17/56+1/(8V) when 56 divides V. For every admissible positive integer V in {0,1,4,5,6,7,11,V}, one of t(V),1−t(V) is safe for every initial phase of runner 11. Reference 0, n=8, threshold 1/8; all other initial phases remain zero. Only phase zero is common start.
+
+The unchanged cap is exactly 1/8 in all three branches. The selected phase separations are 1/4,9/28, and 9/28−11/(4V), with the third at least 61/224. The best full minimum over the pair is therefore identically 1/8 for every phase. This is not the maximum over all time. Nevertheless, for every 8|V, choosing the candidate with larger runner-11 distance gives an inward interval of length 1/(56V), strict in its open interior. Reflection applies to the unchanged runners; a direct Lipschitz estimate treats shifted runner 11. For 8 not dividing V, the prescribed times have opposing equality controllers 1 and 7 and are locally isolated. Do not infer global zero duration from that local fact; V=13 at phase zero remains the known tight control.
+
+The all-phase positive-duration result now covers every member of the three former fixed-menu failure classes 0,32,88 modulo120, rather than just their diagnostic representatives. Original common-start all-V existence was already covered. The old fifteenth pair retains its stronger 2/15 distance on its successful classes; this adaptive pair complements it. All unbounded conclusions remain HYPOTHESIS/proof candidates, with no novelty or general LRC claim.
+
+Protocol SHA256 `55d73b9e425f4ad8fa74441029cb88569f2091fcb3bdf3494c4cca656d92f7f7` fixes eight existing diagnostics:13,16,32,56,88,112,120,56000000000000. Exact substitutions and a separate rational phase-envelope/safe-lap verifier are archived with arithmetic, endpoint, challenge, and coverage reviews under `reviews/2026-09-28-adaptive-pair/`. The written three-branch argument supplies the unbounded step; finite checks do not mechanically prove it. Reproduction commands and hashes are in the new note and manifest. No broad speed/phase search or full safe-set reconstruction was performed.
+
+**Next proposed:** return to the preserved small-gcd priority with a bounded audit of certificate inputs and selection assumptions on existing controls. Distinguish checking a supplied local certificate from selecting one from speed relations and from forcing success for arbitrary inputs. No further pair optimization is queued; +7/+9 stays parked. All earlier next-step statements below are historical.
+
+### Earlier September 27 — fixed-time templates
 
 **Latest — fixed-time residue classification completed.** Read [TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md](notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md). Protocol hash `0932c23c6c65dd8faaae4d319770ae0bca583237c0f92fee9c5ae7f8ce474f02` fixes family `{0,1,4,5,6,7,11,V}`, positive integer V outside{1,4,5,6,7,11}, reference0,n8, threshold1/8, only11phasevariable, and the two old pairs1/8,7/8 and7/15,8/15. Their pointwise best-of-pair distances are constant in theta: `min(1/8,||V/8||)` and `min(2/15,||7V/15||)`. Eighthpair passes iff8 does not divideV; fifteenthpair is strict unlessVmod15 is0,2,13. Union counts modulo120:96 strict,21 threshold-only menu performance,3 failures. The failures0,32,88mod120 have menu distances0,1/15,1/15 and every prescribed time fails at every theta becauseV blocks it.
 

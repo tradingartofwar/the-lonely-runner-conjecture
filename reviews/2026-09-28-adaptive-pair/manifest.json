@@ -1,0 +1,255 @@
+{
+  "date": "2026-09-28 UTC",
+  "baseline_commit": "3ffb0c7b5edb75a81e60de0ceed58f5a40edae7b",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "55d73b9e425f4ad8fa74441029cb88569f2091fcb3bdf3494c4cca656d92f7f7",
+  "scope": {
+    "question": "Does the existing adaptive common-start witness and its reflection give an all-phase certificate for runner 11?",
+    "baseline_commit": "3ffb0c7b5edb75a81e60de0ceed58f5a40edae7b",
+    "status": "HYPOTHESIS / proof candidate; independent review pending; originality unestablished",
+    "family": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7,
+      11,
+      "V"
+    ],
+    "reference": 0,
+    "total_runners": 8,
+    "threshold": "1/8",
+    "domain": "Positive integer V outside {1,4,5,6,7,11}",
+    "phase_scope": "Only runner 11 has initial phase theta; all other initial phases are zero. Theta=0 is the common-start input.",
+    "rule": [
+      {
+        "condition": "8 does not divide V",
+        "time": "1/8"
+      },
+      {
+        "condition": "8 divides V and 56 does not divide V",
+        "time": "17/56"
+      },
+      {
+        "condition": "56 divides V",
+        "time": "17/56 + 1/(8V)"
+      }
+    ],
+    "pair": [
+      "t(V)",
+      "1-t(V)"
+    ],
+    "symbolic_checks": [
+      "Unchanged-runner safety and exact equality controllers in each branch",
+      "Circular phase separation ||22t(V)|| and exact best-of-pair minimum over all theta",
+      "Directed endpoint behavior: whether a certified equality time admits a strict one-sided neighborhood; a sufficient exact radius may be derived without searching new times"
+    ],
+    "finite_diagnostics": [
+      13,
+      16,
+      32,
+      56,
+      88,
+      112,
+      120,
+      56000000000000
+    ],
+    "independence": "The secondary verifier may read protocol, schema, and output but must not read or import primary implementation. Use complete rational phase-cell checks and direct safe-lap endpoint inequalities.",
+    "limits": [
+      "No broad speed scan, time grid, phase grid, new time-template search, all-reference computation, or full safe-set reconstruction",
+      "Finite diagnostics do not establish unbounded quantifiers",
+      "Threshold performance of the pair is distinct from strictness elsewhere or beside its times",
+      "Preserve the V=13 common-start contact-only control and all failed older fixed-menu classes",
+      "Do not promote internally supplied general arguments to established proofs; do not claim novelty",
+      "Small-gcd selection remains a separate priority; +7/+9 remains parked"
+    ]
+  },
+  "summary": {
+    "diagnostic_count": 8,
+    "branch_counts": {
+      "nonmultiple8": 1,
+      "multiple8_not56": 4,
+      "multiple56": 3
+    },
+    "all_pair_envelopes_constant_threshold": true,
+    "directed_certificate_count": 7,
+    "all_directed_checks_pass": true
+  },
+  "diagnostics_sha256": "31ad1dc6bf4c5b8d4345147cfa2fbc16f25a69702d98d81a384b378f342e4540",
+  "supplied_conclusions": [
+    "For every admissible positive integer V and every runner11 phase, the old adaptive time and its reflection have best full minimum exactly1/8.",
+    "For every8|V and every runner11 phase, selecting by raw runner11 distance yields a directed allowed interval of length1/(56V), strict in its open interior.",
+    "When8 does not divideV, the prescribed pair times are locally isolated; this is not a global strictness classification."
+  ],
+  "verification": {
+    "status": "PASS",
+    "commands": [
+      "python -B reviews/2026-09-28-adaptive-pair/calculate.py --check",
+      "python -B reviews/2026-09-28-adaptive-pair/verify.py --check"
+    ],
+    "all_diagnostic_fields_and_digest_match": true,
+    "control_count": 8,
+    "raw_and_full_envelopes": 16,
+    "raw_and_full_phase_cells": 119,
+    "raw_and_full_phase_points": 135,
+    "directed_certificates": 7,
+    "unchanged_directed_safe_laps": 42,
+    "directed_selected_phase_cells": 98,
+    "directed_selected_phase_points": 105,
+    "symbolic_formula_substitutions": 166,
+    "independence": "Primary residue/triangle substitutions versus complete triangular/clipped rational phase envelopes and direct safe-lap endpoint checks. Verifier did not read or import primary implementation.",
+    "relative_markdown_links": "PASS",
+    "broad_regression_rerun": false
+  },
+  "counterchecks_preserved": [
+    "V13theta0 retains known zero-duration contacts; first-branch local isolation is not inferred to classify other phases or configurations.",
+    "At branch2 theta15/28, both full minima equal1/8 but t is isolated by opposing7 and11 directions; select larger raw11distance.",
+    "V16 directed far endpoint may be equality; closed interval safe and open interior strict.",
+    "Former fixed-menu failures0,32,88mod120 remain true failures of that menu. The adaptive argument covers them, rather than erasing the earlier counterexamples."
+  ],
+  "claim_limits": "Exact finite records OBSERVED/REPRODUCED; all unbounded implications HYPOTHESIS/proof candidates. No novelty, independent human proof certification, formal proof-assistant verification, arbitrary-speed LRC proof, or all-reference claim. Original common-start full-family coverage pre-existed.",
+  "next_proposed_not_run": "Bounded small-gcd certificate-input and arithmetic-selection audit on existing controls, before any full-set answer. No further pair optimization or broad speed search; +7/+9 remains parked.",
+  "dependency_policy": "Both scripts use only the standard library. Primary reads frozen protocol and own archive in check mode. Verifier reads protocol/results and own archive in check mode; no historical implementation import.",
+  "python_imports": {
+    "reviews/2026-09-28-adaptive-pair/calculate.py": [
+      "argparse",
+      "collections",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-28-adaptive-pair/verify.py": [
+      "argparse",
+      "ast",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib",
+      "re"
+    ]
+  },
+  "proof_and_coverage_sources_at_baseline": [
+    {
+      "path": "notes/VARIABLE_SPEED_FAMILY.md",
+      "sha256": "097b4f44d6048a9939703f5be3fae6e4b5912f825f26517e252bd0e36929abb1",
+      "bytes": 9066
+    },
+    {
+      "path": "notes/TWO_TIME_CERTIFICATES_2026_09_27.md",
+      "sha256": "9e908bc37a04fafa215aae6009ed35886030b520b42fc8d7f43755a3507d66ee",
+      "bytes": 9729
+    },
+    {
+      "path": "notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md",
+      "sha256": "f428873727a58f8d1ac4dd0051003108b3b1762ee57213be1d48abd65efdea23",
+      "bytes": 13548
+    },
+    {
+      "path": "notes/PHASE_PROJECTION_2026_09_27.md",
+      "sha256": "99d8bbde193034660d76b5603cd6723e3369db32fcf04fcc9749ef1b9bec9ee6",
+      "bytes": 13523
+    },
+    {
+      "path": "notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md",
+      "sha256": "76a66e23ed6b6ba0f332d77eb5fae3c53100041c01fdd3cb1eaa9c6ed249f00f",
+      "bytes": 14335
+    },
+    {
+      "path": "notes/CORE_TRANSFER.md",
+      "sha256": "c365c43079642813531a1b3f86b013ddadbfc2ec67a730ab5182adbaf76d183d",
+      "bytes": 19831
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "1c4a79d4e9de52cb0b23fbebab0a743d1d808fcbef52336b65ddead39629b1f3",
+      "bytes": 12856
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "13f8860626b0db3e63e39d1af02533af9407d79313b5d2e2304d8514bbe685a5",
+      "bytes": 160860
+    },
+    {
+      "path": "LR2_HANDOFF.md",
+      "sha256": "e0ed51c219fc69e5279bc779a9458f27579b5bd1cde0715e949ea81bc79c6147",
+      "bytes": 44837
+    },
+    {
+      "path": "RESEARCH_PLAN.md",
+      "sha256": "247d7390c5265e4dd279698edffe2c55ebc29aed92d362decd21501d2d5d2459",
+      "bytes": 10200
+    },
+    {
+      "path": "notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md",
+      "sha256": "b000cc429bf89adc27be567fcd89c9305b84c5e61b3b8a948c2b709d39d86176",
+      "bytes": 11633
+    },
+    {
+      "path": "notes/inquiries/README.md",
+      "sha256": "00cc068eedb458d008db7201e9b18b1a1e1480405158e8acc6c70a7ac8d1647b",
+      "bytes": 2249
+    },
+    {
+      "path": "notes/inquiries/2026-09-27-relationships-and-independence.md",
+      "sha256": "af21b09f0edd556b62d1e3b52c00efa4631066b9c4c4022080f64dca65e22812",
+      "bytes": 32049
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/arithmetic.md",
+      "sha256": "caf136e0bc36f885ec1a583cbd809e5987792bbe09605048a5831aaa5b9bb864",
+      "bytes": 9873
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/calculate.py",
+      "sha256": "6809f16e93e5b3ca271b36c027ef99820bff3f7d02b9d3aa9a52061c26386c5b",
+      "bytes": 12211
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/challenge.md",
+      "sha256": "9996f14b92275a8a1b10fac21026932ff450fde63c03164c1aa35f969fec8035",
+      "bytes": 10769
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/coverage.md",
+      "sha256": "d04d0e8d450b561ddfa8da1eef080d72ef4d7063bee18bf557abbe9c22f394e4",
+      "bytes": 10355
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/endpoints.md",
+      "sha256": "2d66802389bc096b2fa4ad8e68eb71319ece7452a406c50138ef004f641c9869",
+      "bytes": 7847
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/protocol.json",
+      "sha256": "55d73b9e425f4ad8fa74441029cb88569f2091fcb3bdf3494c4cca656d92f7f7",
+      "bytes": 2085
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/results.json",
+      "sha256": "0a46e3baf91d8cc740e23d019f39803362b0f92a789fb3f8685c697f68658364",
+      "bytes": 62766
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/schema.md",
+      "sha256": "106bc1718b69dd7aa392501d090aaf8d8f7be5ce40b77caeb647cc224b1b14f0",
+      "bytes": 5249
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/verification.json",
+      "sha256": "e3bac53a4bb1f620f31a2577c2d13719d11379ef7802f8866115991d0e4c0b87",
+      "bytes": 11646
+    },
+    {
+      "path": "reviews/2026-09-28-adaptive-pair/verify.py",
+      "sha256": "00837d9ae5a2b8fce97265a3d37f9a3a94e28876fe4276d0f587bdb10f42f64b",
+      "bytes": 23971
+    }
+  ]
+}

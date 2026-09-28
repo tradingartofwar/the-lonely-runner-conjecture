@@ -11,17 +11,17 @@ Have fun working on a genuine mathematical question. Learn its structure well en
 
 The project began from a search for an enjoyable open problem suited to intuition, multiple representations, exact mathematics, and computation. Any broader origin conversation is context only, not a mathematical connection or proposed physical mechanism.
 
-## Current research queue — September 27, 2026
+## Current research queue — September 28, 2026 UTC
 
 The detailed stages below preserve the original strategy. The current state is in [HANDOFF.md](HANDOFF.md); these bounded priorities govern the next work:
 
 | Priority | Task | State and constraint |
 | --- | --- | --- |
-| Completed this round | Classify the two already-chosen time templates in the variable-V family | [Exact classification and diagnostics](notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md) complete:96 strict,21 threshold,3 failed residue classes. All three selected failed representatives are nevertheless robust at every11phase. Four exact check commands pass. |
-| Immediate continuation | Test an adaptive reflected pair derived from the old common-start witness t(V) | Freeze the proposed pair `{t(V),1−t(V)}` before further checks. Verify unchanged safety and runner11 separation `||22t(V)||>=1/4`; retain equality and any failures. This is proposed, not part of the completed round. A finite fixed rational menu cannot cover allV. |
-| Added by Vance | Audit the missing distinction in the small-gcd 56/113 bound, and pursue its general transfer | [Repository review completed](notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md). The specific gap and restricted small-gcd families were already resolved as supplied arguments. The remaining priority is speed-derived selection and uniform scope beyond their hypotheses. Use existing controls before any new search. |
+| Completed | Classify the two fixed time templates | [Exact classification](notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md):96 strict,21 threshold,3 failed residue classes. The three selected failed representatives are robust at every runner-11 phase. |
+| Completed this round | Test the old adaptive time t(V) and its reflection | [Adaptive pair](notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md): all admissible V have all-phase threshold survival; every 8|V has all-phase duration at least1/(56V) by directed endpoints. The prescribed pair itself has exact best distance1/8. General deductions remain proof candidates. |
+| Immediate proposed continuation; added by Vance | Identify what a small-gcd local-certificate selector must know before seeing the answer | Start from the [56/113 audit](notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md). Freeze a bounded input/assumption audit using existing56/113,112,tight6/7/11/13 and summary-collision controls. Separate verification cost, arithmetic selection, and guaranteed success. The selected-overlap-zero opening from the fixed core1/3/5 is an existing falsification control. Do not merely repeat the already completed best-pair/tree search across all windows. |
 
-The small-gcd addition remains a related selection priority. It requires retaining local concentration as well as overlap, testing summary collisions and tight equality cases, and separating a certificate's failure from failure of loneliness. The +7/+9 extension and further cutoff polishing remain parked. No broad speed search is scheduled.
+The precise56/113 coarse-bound failure and restricted small-gcd families were already resolved as supplied arguments. The remaining goal is speed-derived selection and scope beyond their hypotheses. Retain exact local concentration, overlap placement, and endpoint contacts. A small verifiable certificate is not automatically a rule that finds it, and a successful rule in this fixed family is not a general existence guarantee. No broad speed search, further pair optimization, or +7/+9 extension is scheduled.
 
 ## Strategic choice
 

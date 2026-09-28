@@ -40,7 +40,9 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [notes/SOURCES.md](notes/SOURCES.md) | Dated literature starting points and verification limits |
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
-## Current state — September 27, 2026
+## Current state — September 28, 2026 UTC
+
+The [adaptive reflected-pair argument](notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md) now supplies a lonely instant for every admissible V and every initial phase of runner 11 in the fixed family {0,1,4,5,6,7,11,V}. It uses the old speed-dependent time and its reflection. The pair itself reaches exactly 1/8, while directed endpoint information gives a positive interval of length at least 1/(56V) whenever 8 divides V. This closes all three former fixed-menu failure classes. Original common-start family coverage was already available; general implications remain proof candidates, with exact finite checks and separate internal review. Next proposed: the preserved small-gcd certificate-selection question on existing controls. Earlier next-step statements below are historical.
 
 The [fixed-time-template classification](notes/TIME_TEMPLATE_CLASSIFICATION_2026_09_27.md) now gives exact arithmetic coverage in `{0,1,4,5,6,7,11,V}`. The two prescribed pairs certify every phase of runner11 in117 of120 fixed-time residue classes; these counts concern this particular certificate and family. The missed classes are0,32,88mod120. Their least admissible representatives120,32,88 nevertheless have positive duration at every phase, verified by separate exact reconstructions. The earlier variable-speed work already explains why no finite fixed rational menu can cover every V: a denominator multiple collides at every listed time. Next proposed: test the old V-dependent common-start witness together with its reflection as an adaptive pair. Original common-start family coverage was already available; this round adds compact phase-robust certificates and preserves their failures, with no general Lonely Runner or novelty claim.
 

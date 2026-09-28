@@ -1,0 +1,364 @@
+{
+  "status": "REPRODUCED eight finite controls; general branch implications remain proof candidates",
+  "protocol_sha256": "55d73b9e425f4ad8fa74441029cb88569f2091fcb3bdf3494c4cca656d92f7f7",
+  "source_results_sha256": "0a46e3baf91d8cc740e23d019f39803362b0f92a789fb3f8685c697f68658364",
+  "primary_script_sha256": "6809f16e93e5b3ca271b36c027ef99820bff3f7d02b9d3aa9a52061c26386c5b",
+  "verifier_script_sha256": "00837d9ae5a2b8fce97265a3d37f9a3a94e28876fe4276d0f587bdb10f42f64b",
+  "diagnostics_sha256": "31ad1dc6bf4c5b8d4345147cfa2fbc16f25a69702d98d81a384b378f342e4540",
+  "control_count": 8,
+  "raw_and_full_envelopes": 16,
+  "raw_and_full_phase_cells": 119,
+  "raw_and_full_phase_points": 135,
+  "directed_certificates": 7,
+  "unchanged_directed_safe_laps": 42,
+  "directed_selected_phase_cells": 98,
+  "directed_selected_phase_points": 105,
+  "symbolic_formula_substitutions": 166,
+  "methods": [
+    "direct rational phases and unchanged distance vectors at the prescribed adaptive pair",
+    "complete triangular and clipped phase envelopes from all corners, cap roots and line crossings",
+    "direct unchanged-runner single-safe-lap endpoint inequalities",
+    "raw speed11 maximizer selection with exact directed-endpoint phase partitions",
+    "finite residue and affine endpoint coefficient checks for the supplied branch formulas",
+    "full diagnostic dictionary and canonical digest agreement"
+  ],
+  "verification_limits": [
+    "Only the eight frozen values are substituted; no broad speed enumeration or complete safe-time set is calculated.",
+    "On each algebraic envelope cell every clipped distance is affine and every crossing is included. The winning affine branch and exact endpoints certify the entire cell; no uniform phase grid is used.",
+    "For divisible controls, unchanged phases lie in one closed safe lap throughout each candidate interval. Open interior is strict; a far endpoint can be equality, as for speed16 atV16.",
+    "The chosen candidate maximizes raw speed11 distance, with t on ties. Its selected-runner endpoint is strictly safe across the complete derived phase partition; the distance bound certifies persistence over the interval.",
+    "Seven mod8 residues, six nonzero mod7 residues and affine coefficient endpoints are finite arithmetic checks. Together with displayed formulas they support, but do not mechanically establish, the supplied unbounded branch proof.",
+    "Opposing speed1 and7 controllers prevent a strict one-sided neighborhood at the first-branch pair; this makes no assertion about strictness elsewhere."
+  ],
+  "branch_checks": {
+    "branch1_nonzero_mod8_distances": [
+      [
+        1,
+        "1/8"
+      ],
+      [
+        2,
+        "1/4"
+      ],
+      [
+        3,
+        "3/8"
+      ],
+      [
+        4,
+        "1/2"
+      ],
+      [
+        5,
+        "3/8"
+      ],
+      [
+        6,
+        "1/4"
+      ],
+      [
+        7,
+        "1/8"
+      ]
+    ],
+    "branch2_nonzero_mod7_phases_and_radius_endpoints": [
+      [
+        1,
+        "3/7",
+        "25/56"
+      ],
+      [
+        2,
+        "6/7",
+        "7/8"
+      ],
+      [
+        3,
+        "2/7",
+        "17/56"
+      ],
+      [
+        4,
+        "5/7",
+        "41/56"
+      ],
+      [
+        5,
+        "1/7",
+        "9/56"
+      ],
+      [
+        6,
+        "4/7",
+        "33/56"
+      ]
+    ],
+    "branch3_fixed_speed_affine_endpoint_checks": [
+      {
+        "speed": 1,
+        "fixed_lap": 0,
+        "limiting_endpoint_checks": [
+          [
+            "0",
+            "17/56",
+            "17/56"
+          ],
+          [
+            "1/56",
+            "137/448",
+            "15/49"
+          ]
+        ]
+      },
+      {
+        "speed": 4,
+        "fixed_lap": 1,
+        "limiting_endpoint_checks": [
+          [
+            "0",
+            "3/14",
+            "3/14"
+          ],
+          [
+            "1/56",
+            "25/112",
+            "11/49"
+          ]
+        ]
+      },
+      {
+        "speed": 5,
+        "fixed_lap": 1,
+        "limiting_endpoint_checks": [
+          [
+            "0",
+            "29/56",
+            "29/56"
+          ],
+          [
+            "1/56",
+            "237/448",
+            "26/49"
+          ]
+        ]
+      },
+      {
+        "speed": 6,
+        "fixed_lap": 1,
+        "limiting_endpoint_checks": [
+          [
+            "0",
+            "23/28",
+            "23/28"
+          ],
+          [
+            "1/56",
+            "187/224",
+            "41/49"
+          ]
+        ]
+      },
+      {
+        "speed": 7,
+        "fixed_lap": 2,
+        "limiting_endpoint_checks": [
+          [
+            "0",
+            "1/8",
+            "1/8"
+          ],
+          [
+            "1/56",
+            "9/64",
+            "1/7"
+          ]
+        ]
+      }
+    ],
+    "selected_excess_formulas": {
+      "branch2": "(2V-11)/(56V)",
+      "branch3": "(V-44)/(28V)"
+    },
+    "core_radius_excess_formulas": {
+      "branch2": "(V-2)/(112V)",
+      "branch3": "(V-16)/(112V)"
+    },
+    "branch3_fastest_phase_interval": [
+      "1/8",
+      "1/7"
+    ],
+    "limit": "These residue and affine arithmetic checks support the supplied branch argument; they are not a mechanical proof of its unbounded quantifiers."
+  },
+  "summary": {
+    "diagnostic_count": 8,
+    "branch_counts": {
+      "nonmultiple8": 1,
+      "multiple8_not56": 4,
+      "multiple56": 3
+    },
+    "all_pair_envelopes_constant_threshold": true,
+    "directed_certificate_count": 7,
+    "all_directed_checks_pass": true
+  },
+  "cases": [
+    {
+      "V": 13,
+      "branch": "nonmultiple8",
+      "raw_pair_minimum": "1/8",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "e446c07d330390e825e16bbc6ded4284c08678b2bb2fc7f1553ec38cd7719efa",
+      "full_phase_cells": 8,
+      "full_phase_points": 9,
+      "full_envelope_sha256": "3f60311b71d28c41ebdad4938c7754156b028beb59111baa84750d713561ab51",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": null,
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": true,
+        "phase_cells": 0,
+        "phase_points": 0
+      }
+    },
+    {
+      "V": 16,
+      "branch": "multiple8_not56",
+      "raw_pair_minimum": "9/56",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "6ce98457ed2220182ef514f88be277d9e166df0976b294ab5f29fc3ec3012042",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "1cd56793036f4a74d70cd04a7573f8071a77488751f3fcda7177c7481badbb86",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/896",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "37075eaa5ad59462d59a68b7a59a163e685f45c2ca925e771e5d90575c867907"
+      }
+    },
+    {
+      "V": 32,
+      "branch": "multiple8_not56",
+      "raw_pair_minimum": "9/56",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "6ce98457ed2220182ef514f88be277d9e166df0976b294ab5f29fc3ec3012042",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "1cd56793036f4a74d70cd04a7573f8071a77488751f3fcda7177c7481badbb86",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/1792",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "014c58c97ae38482d75ab63b3fb3d28ce3cfc2d60a51d69716c68d4949a20dba"
+      }
+    },
+    {
+      "V": 56,
+      "branch": "multiple56",
+      "raw_pair_minimum": "61/448",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "6282dbe6cf5e4d244b4fbf1b27ed22ff1a28dfef5c8c42275a5dd881b7ba4a35",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "21ac0afb61a91444d93eba217d6b0764c43d636970ce52d52dbf2cb9a6b771cf",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/3136",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "f33b76621fe8ea06acf24b7d4dc71b5c759241c60dae90e5b2b5559bcbfd1a50"
+      }
+    },
+    {
+      "V": 88,
+      "branch": "multiple8_not56",
+      "raw_pair_minimum": "9/56",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "6ce98457ed2220182ef514f88be277d9e166df0976b294ab5f29fc3ec3012042",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "1cd56793036f4a74d70cd04a7573f8071a77488751f3fcda7177c7481badbb86",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/4928",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "171d6a978b51c6933db41016e7b3ebd6adf3b79a9aaed524714203bc2c519e1a"
+      }
+    },
+    {
+      "V": 112,
+      "branch": "multiple56",
+      "raw_pair_minimum": "19/128",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "43bd7327b80faf9d47f0739aca1a83cbfcb5a9a3ca871648467e432de8982b8d",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "cf509b8c28f19730112e91005932a64984ecb0fc7c0cd2afabaa33004de28f03",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/6272",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "a53f94289a05b59371e20ce906cc25da303928bc6fd1df801822c9efa478360c"
+      }
+    },
+    {
+      "V": 120,
+      "branch": "multiple8_not56",
+      "raw_pair_minimum": "9/56",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "6ce98457ed2220182ef514f88be277d9e166df0976b294ab5f29fc3ec3012042",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "1cd56793036f4a74d70cd04a7573f8071a77488751f3fcda7177c7481badbb86",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/6720",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "a11d9407a46247e59e4272e58d8f923d863ae6a1e94663d8e9c52cd2ca3b6ffc"
+      }
+    },
+    {
+      "V": 56000000000000,
+      "branch": "multiple56",
+      "raw_pair_minimum": "71999999999989/448000000000000",
+      "raw_phase_cells": 6,
+      "raw_phase_points": 7,
+      "raw_envelope_sha256": "cbfcc90fd71105887cc86e5095d1ac6ae3ecf6461ada8a4295a0c76592d495c1",
+      "full_phase_cells": 9,
+      "full_phase_points": 10,
+      "full_envelope_sha256": "73bf5f74229f9b7b015e7fb160e2b0bc43d4dc47eb4cc53ed473b52e343d6b1e",
+      "full_pair_margin": "1/8",
+      "constant_in_phase": true,
+      "directed_radius": "1/3136000000000000",
+      "directed_selected_runner_check": {
+        "opposing_unchanged_controllers": false,
+        "phase_cells": 14,
+        "phase_points": 15,
+        "directed_selected_cells_sha256": "4178ab07aa7af36418aeae43e0e6c1b994ba409b8af93d5d160e60fde84ea859"
+      }
+    }
+  ]
+}
