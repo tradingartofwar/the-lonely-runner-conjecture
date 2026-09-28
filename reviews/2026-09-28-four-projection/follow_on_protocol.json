@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-28",
+  "baseline": "b5fbc19457794d3884d758de0833a38b236d3246",
+  "status": "Post-protocol analytical construction. Original10frozen cases and condition remain unchanged. No speed/phase scan.",
+  "purpose": "Test the unconditional22projection rule directly; distinguish invalid iterate from an actually empty supplied window. Lift the auxiliary counterexample into one common-start eight-runner configuration.",
+  "auxiliary_equal": {
+    "speeds": [
+      "1",
+      "1",
+      "6/5",
+      "33/20"
+    ],
+    "phases": [
+      "97/352",
+      "925/1056",
+      "127/220",
+      "1/8"
+    ],
+    "L": "-141/352",
+    "R": "20/33"
+  },
+  "auxiliary_distinct": {
+    "speeds": [
+      "127/128",
+      "1",
+      "6/5",
+      "33/20"
+    ],
+    "phases": [
+      "12363/45056",
+      "925/1056",
+      "127/220",
+      "1/8"
+    ],
+    "L_rule": "(-1/8-alpha_a)/a",
+    "R": "20/33"
+  },
+  "common_start_lift": {
+    "M": 675840,
+    "P": 225281,
+    "N": "640*M*10^6",
+    "tau": "P/M",
+    "residue_rule": "r_i=(M*alpha_i)*P^(-1) modM",
+    "integer_speeds": "U_i=N*v_i+r_i using distinct auxiliary case; include0,1,4,5 as reference/core",
+    "L_rule": "tau+(-1/8-alpha_a)/U_a",
+    "R_rule": "tau+(9/8-alpha_d)/U_d=tau+1/U_d",
+    "scope": "One directly constructed physical input added after freeze to test common-start scope. No search overN,residues,speeds,phases,anchors,cores or windows."
+  },
+  "certificate": "Run frozen22order with final safety checked. Supply seven open blocking intervals in chronological chain (c,0),(a,0),(d,0),(b,1),(c,1),(d,1),(a,1), translated toanchor; strict adjacent overlaps plus endpoints strictlyinside prove the whole suppliedwindowempty. Check the nexta-projection as a possible laterwitness; preserve failure if it does not pass.",
+  "independence": "Structural agent constructs and verifies algebra; primary separately checks rational trace/core/cover; original verification agent may independently reconstruct threshold cells for these3fixedfollow-oncases.",
+  "limits": [
+    "Auxiliary shifted-phaseexamples are not originalcommon-startLRCinputs.",
+    "Common-startlift is distinctlylabelled post-protocol physicalconstruction, not archivaltransfer orheld-outtest.",
+    "Failureof22does not disproveaninput-dependentmethod,anotheruniformbound,orLonelyRunner.",
+    "Generalconditionalstatementremainsproofcandidate; concretecounterexampleexactlycertified."
+  ]
+}
+

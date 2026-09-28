@@ -1,0 +1,741 @@
+{
+  "case_count": 3,
+  "cases": [
+    {
+      "anchor": "0",
+      "anchor_phases": [
+        "97/352",
+        "925/1056",
+        "127/220",
+        "1/8"
+      ],
+      "case_id": "auxiliary_equal",
+      "condition_margin": "-23/44",
+      "core": [],
+      "core_extended_window_certified": false,
+      "extended_window": [
+        "-141/352",
+        "299/352"
+      ],
+      "first_witness_after_left": "299/352",
+      "fixed22_final": "20/33",
+      "fixed22_raw_verdict": "inconclusive",
+      "fixed22_safe_flags": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "fixed22_trace": [
+        {
+          "input": "-141/352",
+          "output": "-141/352",
+          "runner_index": 0,
+          "speed": "1"
+        },
+        {
+          "input": "-141/352",
+          "output": "-141/352",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "-141/352",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-53/352",
+          "runner_index": 0,
+          "speed": "1"
+        },
+        {
+          "input": "-53/352",
+          "output": "-53/352",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "-53/352",
+          "output": "-53/352",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-53/352",
+          "output": "0",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "0",
+          "output": "0",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "0",
+          "output": "0",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "0",
+          "output": "263/1056",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "263/1056",
+          "output": "241/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "241/528",
+          "output": "20/33",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "20/33",
+          "output": "20/33",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "20/33",
+          "output": "20/33",
+          "runner_index": 3,
+          "speed": "33/20"
+        }
+      ],
+      "full_allowed_set_in_extended_window": [
+        [
+          "299/352",
+          "299/352"
+        ]
+      ],
+      "metadata": {},
+      "open_blocking_cover": [
+        {
+          "left": "-103/176",
+          "relative_lap": 0,
+          "right": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "left": "-141/352",
+          "relative_lap": 0,
+          "right": "-53/352",
+          "runner_index": 0,
+          "speed": "1"
+        },
+        {
+          "left": "-5/33",
+          "relative_lap": 0,
+          "right": "0",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "left": "-1/1056",
+          "relative_lap": 1,
+          "right": "263/1056",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "left": "131/528",
+          "relative_lap": 1,
+          "right": "241/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "left": "5/11",
+          "relative_lap": 1,
+          "right": "20/33",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "left": "211/352",
+          "relative_lap": 1,
+          "right": "299/352",
+          "runner_index": 0,
+          "speed": "1"
+        }
+      ],
+      "oracle_threshold_events_extended": 13,
+      "oracle_threshold_events_original": 12,
+      "phases": [
+        "97/352",
+        "925/1056",
+        "127/220",
+        "1/8"
+      ],
+      "speeds": [
+        "1",
+        "1",
+        "6/5",
+        "33/20"
+      ],
+      "step23": "P_a",
+      "window": [
+        "-141/352",
+        "20/33"
+      ],
+      "window_is_empty": true
+    },
+    {
+      "anchor": "0",
+      "anchor_phases": [
+        "12363/45056",
+        "925/1056",
+        "127/220",
+        "1/8"
+      ],
+      "case_id": "auxiliary_distinct",
+      "condition_margin": "-722/1397",
+      "core": [],
+      "core_extended_window_certified": false,
+      "extended_window": [
+        "-17995/44704",
+        "38325/44704"
+      ],
+      "first_witness_after_left": "38325/44704",
+      "fixed22_final": "20/33",
+      "fixed22_raw_verdict": "inconclusive",
+      "fixed22_safe_flags": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "fixed22_trace": [
+        {
+          "input": "-17995/44704",
+          "output": "-17995/44704",
+          "runner_index": 0,
+          "speed": "127/128"
+        },
+        {
+          "input": "-17995/44704",
+          "output": "-17995/44704",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "-17995/44704",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-199/528",
+          "output": "-199/528",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "-199/528",
+          "output": "-53/352",
+          "runner_index": 0,
+          "speed": "127/128"
+        },
+        {
+          "input": "-53/352",
+          "output": "-53/352",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "-53/352",
+          "output": "-53/352",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "-53/352",
+          "output": "0",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "0",
+          "output": "0",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "0",
+          "output": "0",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "0",
+          "output": "263/1056",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "input": "263/1056",
+          "output": "241/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "241/528",
+          "output": "20/33",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "input": "20/33",
+          "output": "20/33",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "input": "20/33",
+          "output": "20/33",
+          "runner_index": 3,
+          "speed": "33/20"
+        }
+      ],
+      "full_allowed_set_in_extended_window": [
+        [
+          "38325/44704",
+          "38325/44704"
+        ]
+      ],
+      "metadata": {},
+      "open_blocking_cover": [
+        {
+          "left": "-103/176",
+          "relative_lap": 0,
+          "right": "-199/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "left": "-17995/44704",
+          "relative_lap": 0,
+          "right": "-53/352",
+          "runner_index": 0,
+          "speed": "127/128"
+        },
+        {
+          "left": "-5/33",
+          "relative_lap": 0,
+          "right": "0",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "left": "-1/1056",
+          "relative_lap": 1,
+          "right": "263/1056",
+          "runner_index": 1,
+          "speed": "1"
+        },
+        {
+          "left": "131/528",
+          "relative_lap": 1,
+          "right": "241/528",
+          "runner_index": 2,
+          "speed": "6/5"
+        },
+        {
+          "left": "5/11",
+          "relative_lap": 1,
+          "right": "20/33",
+          "runner_index": 3,
+          "speed": "33/20"
+        },
+        {
+          "left": "27061/44704",
+          "relative_lap": 1,
+          "right": "38325/44704",
+          "runner_index": 0,
+          "speed": "127/128"
+        }
+      ],
+      "oracle_threshold_events_extended": 13,
+      "oracle_threshold_events_original": 12,
+      "phases": [
+        "12363/45056",
+        "925/1056",
+        "127/220",
+        "1/8"
+      ],
+      "speeds": [
+        "127/128",
+        "1",
+        "6/5",
+        "33/20"
+      ],
+      "step23": "P_a",
+      "window": [
+        "-17995/44704",
+        "20/33"
+      ],
+      "window_is_empty": true
+    },
+    {
+      "anchor": "225281/675840",
+      "anchor_phases": [
+        "12363/45056",
+        "925/1056",
+        "127/220",
+        "1/8"
+      ],
+      "case_id": "common_start_lift",
+      "condition_margin": "-1591991846093712659944020435015896407/1332367142000278177745825892882988773271602829301760",
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_extended_window_certified": true,
+      "extended_window": [
+        "1144427480494519/3433267201483560",
+        "163489640070647/490466743069080"
+      ],
+      "first_witness_after_left": "163489640070647/490466743069080",
+      "fixed22_final": "1903173888225289/5709496320675840",
+      "fixed22_raw_verdict": "inconclusive",
+      "fixed22_safe_flags": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "fixed22_trace": [
+        {
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560",
+          "runner_index": 0,
+          "speed": "429158400185445"
+        },
+        {
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560",
+          "runner_index": 1,
+          "speed": "432537600141440"
+        },
+        {
+          "input": "1144427480494519/3433267201483560",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 1,
+          "speed": "432537600141440"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "461375488346795/1384120321040384",
+          "output": "381475826831507/1144422400494520",
+          "runner_index": 0,
+          "speed": "429158400185445"
+        },
+        {
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520",
+          "runner_index": 1,
+          "speed": "432537600141440"
+        },
+        {
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "381475826831507/1144422400494520",
+          "output": "225281/675840",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "225281/675840",
+          "output": "225281/675840",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "225281/675840",
+          "output": "225281/675840",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "225281/675840",
+          "output": "1153438720377177/3460300801131520",
+          "runner_index": 1,
+          "speed": "432537600141440"
+        },
+        {
+          "input": "1153438720377177/3460300801131520",
+          "output": "1384126465040393/4152360963121152",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "1384126465040393/4152360963121152",
+          "output": "1903173888225289/5709496320675840",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        }
+      ],
+      "full_allowed_set_in_extended_window": [
+        [
+          "163489640070647/490466743069080",
+          "163489640070647/490466743069080"
+        ]
+      ],
+      "metadata": {
+        "M": 675840,
+        "N": 432537600000000,
+        "P": 225281,
+        "common_start": true,
+        "physical_n": 8,
+        "reference": 0,
+        "residues": [
+          185445,
+          141440,
+          390144,
+          84480
+        ]
+      },
+      "open_blocking_cover": [
+        {
+          "left": "1384126465040383/4152360963121152",
+          "relative_lap": 0,
+          "right": "461375488346795/1384120321040384",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "left": "1144427480494519/3433267201483560",
+          "relative_lap": 0,
+          "right": "381475826831507/1144422400494520",
+          "runner_index": 0,
+          "speed": "429158400185445"
+        },
+        {
+          "left": "634391296075093/1903165440225280",
+          "relative_lap": 0,
+          "right": "225281/675840",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "left": "230687744075435/692060160226304",
+          "relative_lap": 1,
+          "right": "1153438720377177/3460300801131520",
+          "runner_index": 1,
+          "speed": "432537600141440"
+        },
+        {
+          "left": "461375488346797/1384120321040384",
+          "relative_lap": 1,
+          "right": "1384126465040393/4152360963121152",
+          "runner_index": 2,
+          "speed": "519045120390144"
+        },
+        {
+          "left": "1903173888225287/5709496320675840",
+          "relative_lap": 1,
+          "right": "1903173888225289/5709496320675840",
+          "runner_index": 3,
+          "speed": "713687040084480"
+        },
+        {
+          "left": "381475826831509/1144422400494520",
+          "relative_lap": 1,
+          "right": "163489640070647/490466743069080",
+          "runner_index": 0,
+          "speed": "429158400185445"
+        }
+      ],
+      "oracle_threshold_events_extended": 13,
+      "oracle_threshold_events_original": 12,
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "speeds": [
+        "429158400185445",
+        "432537600141440",
+        "519045120390144",
+        "713687040084480"
+      ],
+      "step23": "P_a",
+      "window": [
+        "1144427480494519/3433267201483560",
+        "1903173888225289/5709496320675840"
+      ],
+      "window_is_empty": true
+    }
+  ],
+  "limits": "No full-period enumeration; no speed or phase scan; counterexample to fixed22 completeness, not LRC",
+  "method": "Independent tiny-window threshold reconstruction plus open-interval cover and phase-case22trace",
+  "protocol_sha256": "8cb55de04999c4e39d54e5bad912ce6b49d4e3325ce4ad6828c8220670e98614",
+  "provenance": "Post-protocol analytical constructions; frozen10case archive unchanged",
+  "status": "Independent exact3case verification passed"
+}
