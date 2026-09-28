@@ -1,0 +1,62 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "1d3bdf05b930f5765db866e4614bb2733eaa219d",
+  "question": "Can an exact Euclidean floor sum remove the per-lap scan while preserving all 24 open-strip component counts, and what does its frozen operation ledger show against the row formula and cached interval enumeration?",
+  "status": "OBSERVED exact agreement on 24 supplied pairs; general transformed count is an AI-assisted elementary proof candidate; mixed/negative active-case cost preserved; no runtime, held-out-selector, novelty, whole-configuration or new-existence claim",
+  "delegation": {
+    "calculation": "floor_sum_calc implemented primary.py and results.json with no lap-coordinate loop or interval construction",
+    "independent_verification": "floor_sum_verify implemented verify.py, verification.json and verification.md using direct rectangle scans, column-wise half-plane counts and threshold events without importing primary.py",
+    "adversarial_review": "floor_sum_challenge audited strict conversions, both equality signs, signed normalization, clipping, Euclidean termination, costs, prior work and overclaim boundaries in challenge.md",
+    "coordination": "root verified the live continuation, froze protocol.json before calculation, corrected one pre-calculation source-hash transcription, integrated reviews, replayed checks, wrote the note, corrected the old 4-to-6 prose/manifest transcription, and updated continuity"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-floor-sum-component-count/primary.py --check",
+    "python -S -B reviews/2026-09-28-floor-sum-component-count/verify.py --check",
+    "python -m unittest discover -s tests -v"
+  ],
+  "formula": {
+    "scaled_strip": "D=8*b*m-8*a*n and S=a+b; strict band is -S+1<=D<=S-1",
+    "half_plane_difference": "component count H(S-1)-H(-S)",
+    "clipped_floor": "x_K(m)=floor((8*b*m-K+8*a-1)/(8*a))-n_min; sum clamp(x_K,0,N_n)",
+    "split_indices": "first_ge(z)=ceil((Q*z-B)/A)",
+    "middle_sum": "signed-normalized quotient/remainder Euclidean floor-sum recurrence"
+  },
+  "results": {
+    "all_24_floor_sum_counts_match": true,
+    "all_four_archived_branch_records_match": true,
+    "target_selection": [15, 38],
+    "strict16_selection": [6, 11],
+    "doubling112_diagnostic_selection": [56, 64],
+    "tight13_selection": null,
+    "positive_lap_points": 41,
+    "both_strict_contacts_excluded": true,
+    "new_containment_queries": 0
+  },
+  "cost_scope": {
+    "all_24_pairs": {"euclidean_rounds": 65, "lap_rows": 63, "half_planes": 48, "floor_sum_ranges": 29, "quotient_remainder_pairs": 107},
+    "active_four_pairs": {"euclidean_rounds": 12, "lap_rows": 7, "half_planes": 8, "floor_sum_ranges": 5, "quotient_remainder_pairs": 20},
+    "doubling_six_diagnostics": {"euclidean_rounds": 28, "lap_rows": 39, "half_planes": 12, "floor_sum_ranges": 12, "quotient_remainder_pairs": 49},
+    "warning": "Euclidean rounds, lap rows and cached-interval primitives are unlike units; no runtime inference or combined score is valid."
+  },
+  "verification_scope": {
+    "windows": 4,
+    "pairs": 24,
+    "direct_rectangle_points": 410,
+    "threshold_events": 311,
+    "open_cells": 287,
+    "primary_fields_compared": 173,
+    "repository_tests": 25
+  },
+  "correction": "The old note and manifest prose said four active compatible lap pairs; the pinned old results ledger correctly gives six=1+3+1+1. Both prose locations are transparently corrected in this commit; no count or selector changes.",
+  "next_step": "Audit the unchanged minimum-floor-sum one-query selector on the already archived eighteen tree-missed positive windows, marking development cases and preserving failures; generate no new speed/window domain.",
+  "sha256": {
+    "reviews/2026-09-28-floor-sum-component-count/protocol.json": "a398539b747b9510259e5a134090f3eb6430370588d735bdec12f67260ec5724",
+    "reviews/2026-09-28-floor-sum-component-count/primary.py": "506bacdaf4d35c82f5ce1698f150602908e326449a0a9d928ac796e845ba040d",
+    "reviews/2026-09-28-floor-sum-component-count/results.json": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "reviews/2026-09-28-floor-sum-component-count/verify.py": "349d75ace8136e79d823f797d3a55ca3010be160d55fbe718eefdc2d3e1a46cc",
+    "reviews/2026-09-28-floor-sum-component-count/verification.json": "f63e9b0df24cc3c2bf354f019601016a5ee0f7d569efa75122f08c0be2cca363",
+    "reviews/2026-09-28-floor-sum-component-count/verification.md": "a768f598c3d612c745610184b0717c748868a0f42c45ed16d9acd8a059e670e2",
+    "reviews/2026-09-28-floor-sum-component-count/challenge.md": "0c1ac2f44e726bb08dda304760cdcaf5be90bb4dbe1d53fe3f393c6bae5c45cd",
+    "notes/FLOOR_SUM_COMPONENT_COUNT_2026_09_28.md": "9206a7aae5ba7a9f48eb1240d3d29d86a895f029b3d0083356d8a13bc0fd805a"
+  }
+}

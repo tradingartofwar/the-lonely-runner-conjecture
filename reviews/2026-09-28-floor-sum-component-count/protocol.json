@@ -1,0 +1,89 @@
+{
+  "baseline": "1d3bdf05b930f5765db866e4614bb2733eaa219d",
+  "status": "FROZEN BEFORE FLOOR-SUM CALCULATION",
+  "question": "Can an exact Euclidean floor-sum count the same open-strip lattice points, and hence the positive components of B_a intersect B_b, without scanning the smaller-speed lap rows on the same 24 frozen pairs? What is its honest charged arithmetic cost relative to the archived row formula and cached interval enumeration?",
+  "source_contract": {
+    "lap_band_protocol": "reviews/2026-09-28-lap-band-component-count/protocol.json",
+    "lap_band_protocol_sha256": "9053ebb58fa30a1841e03bb1aba686fb51631b01480186772f751df63bda1165",
+    "lap_band_results": "reviews/2026-09-28-lap-band-component-count/results.json",
+    "lap_band_results_sha256": "d756a43dedfe161eb1cfc5ca4eb751665b1e3fca5a22c88b9167700bf2b3cadb",
+    "cached_interval_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "cached_interval_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+    "physical_geometry": "reviews/2026-09-28-joint-triple-exclusions/results.json",
+    "physical_geometry_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159"
+  },
+  "cases": [
+    {"id": "collective_target"},
+    {"id": "strict_16"},
+    {"id": "doubling_112"},
+    {"id": "tight_13"}
+  ],
+  "frozen_exact_counter": {
+    "domain": "positive integer speeds a<b, rational nondegenerate window J=[L,R], delta=1/8, and the inclusive integer lap rectangle supplied by the prior strict participation inequalities",
+    "scaled_strip": "For integer D=8*b*m-8*a*n and S=a+b, the open band |b*m-a*n|<(a+b)/8 is exactly -S+1 <= D <= S-1.",
+    "half_plane_difference": "Let H(K) count lap-rectangle points with D<=K. The component count is H(S-1)-H(-S).",
+    "row_threshold": "For fixed m, D<=K iff n>=ceil((8*b*m-K)/(8*a)). H(K) is the rectangle size minus the sum, over m, of the number of n rows strictly below that threshold.",
+    "clipped_floor": "Write x_K(m)=ceil((8*b*m-K)/(8*a))-n_min=floor((8*b*m-K+8*a-1)/(8*a))-n_min. The below-threshold count is clamp(x_K(m),0,N_n). Since x_K is nondecreasing, split its sum at the exact first m with x_K>=1 and first m with x_K>=N_n.",
+    "threshold_indices": "For x(m)=floor((A*m+B)/Q), first_ge(z)=ceil((Q*z-B)/A), clipped to the inclusive m rectangle. No search or row iteration is allowed.",
+    "floor_sum": "On the unsaturated middle range, sum floor((A*m+B)/Q) by a classical quotient/remainder Euclidean recurrence. Normalize signed offsets by mathematical floor division before entering the nonnegative recurrence.",
+    "endpoint_policy": "The +/-1 conversion above is mandatory. Equality D=+/-S is excluded; strict window participation is converted separately to the exact inclusive m and n rectangle. Zero-length contacts are never counted as positive components.",
+    "degenerate_rectangle": "An empty m or n lap range returns zero before any half-plane recurrence. Equal or nonpositive speeds remain outside the inherited domain."
+  },
+  "frozen_decision_rule": {
+    "eligibility": "Inherit the prior positive-slack eligibility exactly.",
+    "selection": "Among eligible pairs minimize the floor-sum component count; break a tie by physical-speed lexicographic order.",
+    "no_query": "Issue no new complement-containment query; compare with archived selector outcomes only after all counts and selections are fixed.",
+    "no_retuning": "Do not change the counter, cost model, tie rule, or case handling after seeing results."
+  },
+  "frozen_cost_ledger": {
+    "floor_sum_counter": [
+      "strip_half_plane_calls",
+      "strip_subtractions",
+      "threshold_ceil_divisions",
+      "floor_sum_range_calls",
+      "signed_offset_normalizations",
+      "euclidean_rounds",
+      "quotient_divisions",
+      "remainder_operations",
+      "floor_sum_terminal_comparisons"
+    ],
+    "row_formula": "Reuse, without reinterpretation, the prior per-pair m_rows, band_bound_evaluations, max_min_bound_operations, floor_ceil_operations and integer_n_labels_counted.",
+    "cached_interval_enumeration": "Reuse, without reinterpretation, the prior eligible-pair lap_candidates, blocking_pieces, join_steps and named comparison counters. It is a shared-cache algorithm and only eligible-pair selector costs are comparable to the active/diagnostic selector contract.",
+    "comparison_policy": "Report primitive ledgers side by side. Do not add unlike operations into a synthetic score, infer wall-clock speed, or claim one primitive has equal cost to another. State separately whether the floor-sum loop count is smaller than m_rows."
+  },
+  "calculation_order": [
+    "Verify this protocol and all pinned hashes.",
+    "Project each prior case to speeds, window, inherited eligibility and inclusive lap-rectangle bounds; do not read archived counts, selections or outcomes in the prearchive phase.",
+    "Apply the frozen half-plane difference and Euclidean recurrence to all 24 physical pairs, recording exact transformed bounds, recurrence traces and the frozen operation ledger.",
+    "Apply the inherited selector to eligible pairs.",
+    "Only then compare all 24 counts, four decisions and three separate cost ledgers with pinned archives.",
+    "Use a separately structured verifier that does not import the primary counter and checks strict boundaries and exact counts by direct finite lattice enumeration plus a second independent floor-sum identity."
+  ],
+  "scope": {
+    "windows": 4,
+    "physical_pairs": 24,
+    "new_speeds": 0,
+    "new_windows": 0,
+    "new_references": 0,
+    "new_containment_queries": 0,
+    "arithmetic": "integers and fractions.Fraction only; no floating-point decisions",
+    "forbidden": [
+      "per-m or per-n loop in the primary floor-sum count",
+      "constructing blocking or pair-intersection intervals in the primary",
+      "reading archived counts, choices or outcomes before primary counts and choices are fixed",
+      "post-result retuning",
+      "new speeds, windows, cores or references",
+      "complement queries, alternate-window campaign, broad or all-reference scan",
+      "+7 or +9 work",
+      "runtime, novelty, held-out-selector, whole-configuration or general Lonely Runner claim"
+    ]
+  },
+  "controls_and_limits": [
+    "strict_16 tests a count tie and lexicographic resolution.",
+    "doubling_112 is the only frozen case with substantially more lap rows; it remains diagnostic after the pair-only-positive exit.",
+    "tight_13 has no eligible pair and its isolated equality t=3/8 remains separate from positive-duration counting.",
+    "The equality-contact pair a=3,b=5,m=1,n=2 at t=3/8 may be used only as an endpoint unit control, not as a new selector speed/window case.",
+    "Finite matches are OBSERVED. The general transformed-count derivation is an AI-assisted proof candidate, not independent mathematical validation or a novelty claim.",
+    "A slower, more complicated, or mixed cost outcome is a valid result and must be preserved."
+  ]
+}

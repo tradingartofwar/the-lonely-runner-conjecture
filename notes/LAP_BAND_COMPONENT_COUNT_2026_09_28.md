@@ -91,7 +91,7 @@ The positive-slack eligibility rule remains essential. Ineligible zero-count pai
 
 ## 4. Cost and information distinctions
 
-Across all 24 validation pairs, the formula processes 63 candidate rows and counts 41 compatible integer lap pairs. The active selector needs four positive-slack pairs—two target and two strict16—using seven rows and four compatible lap pairs. Doubling112 adds six explicitly diagnostic pairs, 39 rows, and 23 lap pairs after its pair-only-positive exit. The remaining fourteen pairs are ineligible audit comparisons.
+Across all 24 validation pairs, the formula processes 63 candidate rows and counts 41 compatible integer lap pairs. The active selector needs four positive-slack pairs—two target and two strict16—using seven rows and six compatible lap pairs. (The original prose said four here; the archived cost ledger correctly recorded six, namely target counts `1+3` and strict16 counts `1+1`.) Doubling112 adds six explicitly diagnostic pairs, 39 rows, and 23 lap pairs after its pair-only-positive exit. The remaining fourteen pairs are ineligible audit comparisons.
 
 Equivalently, the ten positive-slack pairs across active and diagnostic cases require 46 rows and contain the same 29 positive components reported previously. The primary materializes the integer `n` labels as review certificates, although the numerical formula needs only their count.
 
