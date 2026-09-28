@@ -1,0 +1,259 @@
+{
+  "date": "2026-09-28",
+  "baseline": "99a4e77a369ff0dd520138605b0339deb263ae39",
+  "status": "Frozen before implementation. Exactly the inherited twelve closed-window diagnostics; no new physical configurations, held-out claim, or parameter scan.",
+  "source": "reviews/2026-09-28-chain-termination/protocol.json",
+  "cases": [
+    {
+      "id": "doubling_112",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "small_gcd_113",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "tight_13",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "control_8_11",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "affine_309",
+      "kind": "physical",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "affine_310",
+      "kind": "physical",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "affine_320",
+      "kind": "physical",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "strict_16",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "aux_condition_strict",
+      "kind": "auxiliary",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "core": [],
+      "window": [
+        "7/8",
+        "6/5"
+      ]
+    },
+    {
+      "id": "aux_condition_equality",
+      "kind": "auxiliary",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "core": [],
+      "window": [
+        "0",
+        "1/120"
+      ]
+    },
+    {
+      "id": "common_start_lift_clipped",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "1903173888225289/5709496320675840"
+      ]
+    },
+    {
+      "id": "common_start_lift_extended",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "163489640070647/490466743069080"
+      ]
+    }
+  ],
+  "threshold": "1/8",
+  "phases": "All zero. Physical n=8, reference0 and core1,4,5; two auxiliary windows retain auxiliary status.",
+  "algorithm": {
+    "round_order": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      3,
+      1,
+      2,
+      3,
+      2,
+      3
+    ],
+    "projection": "m=ceil(v*t-7/8); output=max(t,(m+1/8)/v)",
+    "stopping": "Return L if initially jointly safe. After each call stop empty if t>R; otherwise test joint safety after each complete eleven-call round. A safe terminal t<=R is earliest. No fitted iteration cap: assert the 39-move proof-candidate bound on nonzero moves.",
+    "limits": "39 nonzero moves,39 completed unsafe-start rounds,429 scalar calls with joint-safety boundary checks. Earliest safe output or proof of window empty by monotone projection."
+  },
+  "new_checks": [
+    "Selected union span < sum reciprocal speeds.",
+    "Largest-period label appears at most4 times; deleting it gives three-label runs <=7.",
+    "Sufficient closed-window criterion sum reciprocal speeds <= R-L, and core safety at equality endpoints.",
+    "Compare exact trace, terminal time, earliest witness, calls and moves against the inherited separately structured threshold verifier; these are recycled diagnostics, not an independent new sample."
+  ],
+  "known_limits": [
+    "Proof candidate supplies global guarantee; bounded replay does not prove it.",
+    "No full conjecture, novelty, duration, arbitrary core window existence, or bit-complexity claim.",
+    "Hourly paused; no broad scan or new physical speed tuple."
+  ]
+}

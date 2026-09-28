@@ -1,0 +1,30 @@
+{
+  "status": "PASS: all declared exact numerical fields agree between independently structured implementations.",
+  "scope": "Nine inherited fixtures only. Identifier separator normalized from colon to slash. No new numerical case or scan.",
+  "numeric_comparisons": {
+    "periods": 36,
+    "starts": 36,
+    "support_lengths": 9,
+    "convolution_arguments": 36,
+    "train_integrals": 144,
+    "convolution_totals": 36,
+    "kernel_arguments": 81,
+    "kernel_values": 81
+  },
+  "numeric_comparisons_total": 459,
+  "metadata_comparisons": {
+    "protocol_sha256": 1,
+    "fixture_ids": 9
+  },
+  "metadata_comparisons_total": 10,
+  "integrity_checks": "Current protocol matches frozen hash and both result references; current primary matches its hash embedded in results.json.",
+  "sha256": {
+    "protocol.json": "63d509f00dd73cfc54094030ed942d0e929215213a5e20604305dc4e99192d06",
+    "primary.py": "007934302e57c2cda04d25e247158b3702743d194b8bd57e81e58b2498fe5160",
+    "challenge_verify.py": "7186bd79fd5c7368c0ef1b8b75b9f8fdd4f0ef07f8b5b0ca14028c44a9eb8f86",
+    "compare.py": "c369bc6058c3493f96f4968c5dae498fbd4bae7a4c53cdd8e1bc7112c8b11f64",
+    "results.json": "b6579a1b8f2474f26b8ebfbf8a228f6242ad1818c53c21c2a9a19ef83e99d89a",
+    "challenge_verification.json": "d4d08ef437e3f998c4d49cfbf0549caf00bd10d56cdd307ee9c980c734f31a99"
+  },
+  "limits": "Agreement calibrates only these formulas and fixtures. It is not external mathematical review or proof of the global 39-move candidate."
+}

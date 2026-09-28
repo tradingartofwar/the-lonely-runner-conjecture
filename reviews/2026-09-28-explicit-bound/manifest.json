@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-28",
+  "baseline": "99a4e77a369ff0dd520138605b0339deb263ae39",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "claim_status": "HYPOTHESIS: explicit global39 proof candidate; internal six-agent plus coordinator review; external and novelty review pending.",
+  "scope": "Four arbitrary-phase positive-period quarter-duty trains; physical n8 selected reference with core1,4,5 retained. Strict chain span<sum(periods),39 moves,429 projection calls under explicit boundary safety checks.",
+  "window_corollary": "A closed core-safe window W succeeds if sum residual reciprocal speeds <= width(W), including equality. This is sufficient, not necessary.",
+  "limits": [
+    "No full conjecture, all-reference, sharpness, positive-duration or bit-complexity claim.",
+    "No new physical configuration or broad scan.",
+    "No fixture at exact equality periodsum=windowwidth; analytical proof covers it.",
+    "Hourly paused; no main merge, paid compute, outreach or +7/+9 restart."
+  ],
+  "verification": {
+    "convolution_fixtures": 9,
+    "train_integrals": 144,
+    "multiplicity_totals": 36,
+    "kernel_interior_samples": 63,
+    "kernel_endpoint_samples": 18,
+    "numeric_comparisons": 459,
+    "metadata_comparisons": 10,
+    "replayed_windows": 12,
+    "calls": 199,
+    "moves": 32,
+    "max_observed_moves": 7,
+    "width_guaranteed_cases": 5,
+    "compound_replay_comparisons": 96,
+    "status": "pass, within declared finite scopes"
+  },
+  "frozen_protocol_sha256": {
+    "convolution": "63d509f00dd73cfc54094030ed942d0e929215213a5e20604305dc4e99192d06",
+    "replay": "563cefe2f0d36df46795a598e11a0c73dde1ff1e24e38b0481a9fb2d97b5ac5b"
+  },
+  "independent_archived_oracle": {
+    "path": "reviews/2026-09-28-chain-termination/verification.json",
+    "sha256": "e6a395db885bf8585dee3e2276391a1876f389a7b225f43176c6f980a4ab3295"
+  },
+  "prior_sources_sha256": {
+    "AGENTS.md": "3c71c7807ce0d6fc8abae7e1be138922f04a78d933083b32793f5a8a7fa9d50a",
+    "CLAIM_STATUS.md": "7387260161cbb4c758dc8255ce456af971638457e0f0b579aefbb93ae308ada6",
+    "CONTRIBUTING.md": "9e8963d8466e5ad4f153c21e00ce9cd2d5bb7095cd9f9e6aac6406b904e98077",
+    "README.md": "afc93532c5f61c88ed9ccabe5bcfc95eb51edc9ae7020ae1f1fed625c24ea29e",
+    "HANDOFF.md": "a7baad98990d2237ee151906ef5512de4e549edd24a24b00ffff1095f5073bd8",
+    "LR2_HANDOFF.md": "fd978102e7b4ed05c6d5f4a57f4006cdafc4c38a74eaccaad87902d370cac2bb",
+    "RESEARCH_PLAN.md": "d5b2e9c316d581b33b085f3e952beee17995490a58ebfabac8a109cab63eb6c1",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "7037255792ccde6f04881bfca101c0657d171c75ac45914b8150b76482c1bf62"
+  },
+  "files_sha256": {
+    "HANDOFF.md": "8a919390db617d905a3723b0c05932a5cb3125cf13b7b5dc902f01ec7b260ff4",
+    "LR2_HANDOFF.md": "8bd6f11e6e2a3f24b3906dbd74454c311b9c186dc45753921616b8fd784fd39e",
+    "README.md": "9b8554ebb04e6d462565687ee8080698337b0b6946eafd28700af63ce5f34168",
+    "RESEARCH_PLAN.md": "59058335b58a12a5d3c35a6333e357560a6c5789fc9c33ffdb66f5951aebddc3",
+    "notes/EXPLICIT_CHAIN_BOUND_2026_09_28.md": "3a1ba730dd4dfd7caf5d8ef2937c2eac8f7b9a7992627d74e1299fe1d415f547",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "baad0d2ec8d61aba1220986b8af6443c5d917f2b4b30b3e60150ca3c2c408f51",
+    "reviews/2026-09-28-explicit-bound/TEAM_BRIEF.md": "1139bfacab056062ab5333e5d28cad76293a6f99bc4b87fc6fc46ce1def96cec",
+    "reviews/2026-09-28-explicit-bound/affine.md": "73509ba37c4c4ffd7453f80a26a16a9703d4eee7f41b6b5751fcc3303f48215f",
+    "reviews/2026-09-28-explicit-bound/challenge.md": "2a5811f0001e60bdbb593c2ba6cf5aea5bd5e41e6ce56ce0df8afc37c3ef038d",
+    "reviews/2026-09-28-explicit-bound/challenge_verification.json": "d4d08ef437e3f998c4d49cfbf0549caf00bd10d56cdd307ee9c980c734f31a99",
+    "reviews/2026-09-28-explicit-bound/challenge_verify.py": "7186bd79fd5c7368c0ef1b8b75b9f8fdd4f0ef07f8b5b0ca14028c44a9eb8f86",
+    "reviews/2026-09-28-explicit-bound/combinatorial.md": "8fa2ca35d53d7be5e59329138348f3831a1dd41007b5be9dec393b9dae995648",
+    "reviews/2026-09-28-explicit-bound/compare.py": "c369bc6058c3493f96f4968c5dae498fbd4bae7a4c53cdd8e1bc7112c8b11f64",
+    "reviews/2026-09-28-explicit-bound/comparison.json": "e4ea387fb974dba68cea553cd5f5453338c5f08855bbbfee2db2710b02b8d0e0",
+    "reviews/2026-09-28-explicit-bound/geometry.md": "f23a9173f286daa7db5c33fbde1666ba8bddca13412ab64372f2ef222f66f01f",
+    "reviews/2026-09-28-explicit-bound/primary.py": "007934302e57c2cda04d25e247158b3702743d194b8bd57e81e58b2498fe5160",
+    "reviews/2026-09-28-explicit-bound/protocol.json": "63d509f00dd73cfc54094030ed942d0e929215213a5e20604305dc4e99192d06",
+    "reviews/2026-09-28-explicit-bound/recurrence.md": "8fe56c222d08b3bac60cf3d0c5ab27440ecbbc8e166bd75458e17eb9084a2b12",
+    "reviews/2026-09-28-explicit-bound/replay.py": "13af61661dd5977f5a2d0ab57cf3d6fd196a201152d7c00eeec2c06717e73a4a",
+    "reviews/2026-09-28-explicit-bound/replay_protocol.json": "563cefe2f0d36df46795a598e11a0c73dde1ff1e24e38b0481a9fb2d97b5ac5b",
+    "reviews/2026-09-28-explicit-bound/replay_results.json": "dce92dc72f9ee721841159e67f887f61bc4dba890a139d1e739523b5d98edc52",
+    "reviews/2026-09-28-explicit-bound/replay_review.md": "8afd855a237180eb5219c3ed5819ab82935a57c3b2e615f8bdb799db9486f740",
+    "reviews/2026-09-28-explicit-bound/results.json": "b6579a1b8f2474f26b8ebfbf8a228f6242ad1818c53c21c2a9a19ef83e99d89a",
+    "reviews/2026-09-28-explicit-bound/review.md": "73bc0f3d81afd405972d62b33991282d7b85256b3ff55ea2573a4e1962e25665",
+    "reviews/2026-09-28-explicit-bound/stability.md": "c17b33c525c6eac7aa1fae99c4cb021e382cc47b63ab8c047ea624a15423b12d"
+  },
+  "history_preservation": "HANDOFF and LR2 updates inserted before previous latest snapshots; README old snapshot retained; inquiry extended. Expected full text matched byte-for-byte before serialization. Current queue row replaced explicitly.",
+  "primary_sources": [
+    {
+      "url": "https://math.colgate.edu/~integers/t29/t29.pdf",
+      "location": "Theorem4,printed page12",
+      "read": "statement and elementary proof; original Schoenberg1976 paper not inspected"
+    },
+    {
+      "url": "https://arxiv.org/html/2111.13688v2",
+      "version": "2022-02-16",
+      "location": "Sections2.2 and4.1",
+      "read": "nearby compatible-chain definitions and selected argument, not a priority certificate for current claims"
+    }
+  ],
+  "path_note": "Frozen convolution protocol prose uses prior separate working-directory path; canonical source is reviews/2026-09-28-uniform-iteration/protocol.json. Executables are repository-relative."
+}
