@@ -467,3 +467,45 @@ instances: the changed coefficient changes their speeds. Keep source geometry,
 parameter domain, physical configurations, tested operation and requested
 output separately identifiable through transfer. The primitive orbit and
 time/lap identities still require the new row in every physical calculation.
+
+## 13. Retain which points a role actually obligates
+
+The [fixed-geometry coefficient analysis](CC_COEFFICIENT_RANGE_2026_09_29.md)
+separates two questions: whole leader plus whole fallback (W), and whole
+leader plus the sole fallback point used for primitive direction (1,2) (R).
+The first has 31 positive coefficient rows; the second has 42 infinite
+residue classes. The shared-lap inequalities, proved finite bounds and exact
+periodicity make these complete classifications of their stated contracts.
+They are sufficient for the physical selector, without being asserted maximal
+for its actual selected points or for existence using other geometry.
+
+The smaller carrier retains the fixed leader, the point C, their conditional
+coverage roles, recomputed lap labels, primitive normalization, distinct-speed
+domain and physical recovery. It omits the unused remainder of the fallback.
+The richer source is the changed-row certificate, SHA-256
+`6e62958d0b0f081ee0213054e1ea02f3da4de30de2278812b37d3e938d71431d`,
+at b2404d0d8ab43373a07c45d67bf4a432a2ddbc9d; INPUTS.json pins it and the prior
+physical output. Recover the full segment before an operation that obligates
+other fallback points. Source availability is a recovery path, not a claim
+that R preserves the whole geometry's safety.
+
+Three failure tests guard against consequential compression:
+
+- At (22,10), both fallback endpoints have safe residues in different laps,
+  while the interior point (1/8,9/40) collides. Connected safety requires one
+  common band. R still holds because its used point C is safe.
+- At (4,2), the whole leader is safe but the needed C contact collides for
+  physical (p,q)=(1,2). Removing the fallback obligation loses the guarantee.
+- On (6+16k,2+8k), the selected phases stay fixed, but seventh torus laps
+  change by 7k on L and 4k at C. Reducing modulo one can hide a stale-label
+  error. Keep the integer recovery data when the next operation needs laps.
+
+Coefficient geometry and physical distinctness are separate: four accepted
+rows repeat a core row identically and have empty eight-distinct-speed domains.
+Rejection of W or R is not failure of loneliness. The old (5,2) menu succeeds
+even though the new fixed leader fails its declared physical control.
+
+No larger ambient model is needed for this operation. A role-aware obligation
+record is adequate, with the pinned source available for changed uses. The
+42-class theorem still depends on the written coverage argument, not the
+54 physical controls; the general result remains a proof candidate.
