@@ -282,5 +282,39 @@ an external theorem or claiming those operations as CC inventions.
   q=4 candidates. Restore the needed geometry or choose a different model when
   a restricted class fails; check the ray/clock translation before reuse.
 
-The next proposed check is transfer of the frozen rule to the already studied
-B ray with its own orbit and clock. This has not yet been performed.
+The frozen B-ray transfer has now been carried out as recorded below.
+
+## 8. Coordinate adapters and reviewed output compression
+
+The [B-ray transfer](CC_B_RAY_TRANSFER_2026_09_29.md) preserves the discovery
+rule while changing its coordinate inputs. Native (x,y) becomes (u,v)=(y,x),
+the clock becomes t=u, the orbit becomes g=qu-v=-H, and a native row (a,b)
+becomes (b,a), with physical lap m+a*g. The old fold x<=1/2 becomes v<=1/2;
+all labels and the displayed first-two-row permutation remain synchronized.
+
+- **Question/output:** one 1/8-safe B-ray witness for every integer q>=2,
+  with the same selected stationary reference and common-start assumptions.
+- **Retained/operation:** the coordinate and recovery maps, original IDs,
+  closed geometry and labels, unchanged ranking, complete prefix and tail
+  certificate. The frozen rule selects P1 then P3, with cutoff4 and gapq2.
+- **Evidence/limits:** separately tasked internal AI coordinate, arithmetic and
+  physical checks, exact unbounded certificates and archived q=2,...,25 controls.
+  This is a tested transfer on already studied geometry, not blind discovery,
+  new family coverage, an optimum result or external certification.
+- **Consequential loss:** a wrong clock at q2 converts the safe point into an
+  unsafe time with distance1/10. Incorrect lap coefficient, sign and fold lose
+  valid certificate information. Safe ambient geometry does not carry its own
+  physical interpretation without these mappings.
+- **Subsequent compression:** after the frozen run, the reviewer observed that
+  P3 alone covers the full prefix and tail. A separately declared supplement
+  certifies g=floor((q+3)/8), t=(16g+9)/(8(2q+1)) for allq>=2. The original
+  run remains unchanged; this is a verified removal of a redundant selected
+  segment, not a claim that the frozen ranking minimized output size.
+- **Recovery/trigger:** the pinned parent atlas and previous B optimum package
+  remain available for stronger questions. Changing both substitution parameters,
+  the reference, threshold, geometry or output requires a new compatibility and
+  recovery argument. Success on these two coordinate rays is not a universal
+  segment-existence theorem.
+
+The next proposed step is a primitive (p,q) compatibility/recovery derivation
+within the same fixed-form model, before any broader coverage conclusion.

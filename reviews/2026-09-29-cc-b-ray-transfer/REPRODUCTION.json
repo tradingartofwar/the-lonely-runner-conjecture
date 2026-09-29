@@ -1,0 +1,57 @@
+{
+  "authorship": "Coordinator reproduction of its adapter and separately authored internal AI reviews",
+  "comparison": {
+    "candidate_records": 27,
+    "comparison": "ALL MATCH",
+    "coordinator_output_sha256": "9ee2a034051b60b376bd3ec84de092ec5a2509c8871d5e3ddda881228feb7095",
+    "frozen_review_sha256": "4519659164950de54f411e7bccf7d1e76e1d6e203727230c8080e4e65bf4ec23",
+    "prefix_boolean_entries": 54,
+    "selected_recovery_records": 24
+  },
+  "new_physical_q_values": 0,
+  "python_version": "3.12.14",
+  "records": [
+    {
+      "byte_identical": true,
+      "command": "python reviews/2026-09-29-cc-b-ray-transfer/transfer.py",
+      "exit_code": 0,
+      "output_file": "transfer.json",
+      "output_mode": "stdout",
+      "output_sha256": "9ee2a034051b60b376bd3ec84de092ec5a2509c8871d5e3ddda881228feb7095"
+    },
+    {
+      "byte_identical": true,
+      "command": "python reviews/2026-09-29-cc-b-ray-transfer/coordinate_checks.py",
+      "exit_code": 0,
+      "output_file": "coordinate_checks.json",
+      "output_mode": "stdout",
+      "output_sha256": "955b371b8d518cf2253341bdbf5e45413f2ff770ca952a899745bfe4c2fa19bd"
+    },
+    {
+      "byte_identical": true,
+      "command": "python reviews/2026-09-29-cc-b-ray-transfer/discovery_review.py",
+      "exit_code": 0,
+      "output_file": "discovery_review.json",
+      "output_mode": "file",
+      "output_sha256": "4519659164950de54f411e7bccf7d1e76e1d6e203727230c8080e4e65bf4ec23"
+    },
+    {
+      "byte_identical": true,
+      "command": "python reviews/2026-09-29-cc-b-ray-transfer/physical_review.py",
+      "exit_code": 0,
+      "output_file": "physical_review.json",
+      "output_mode": "file",
+      "output_sha256": "73a8b8ddb1b894d20806a6f4dbd8b40c785015ecb23af2b2caaf120afcc26aa7"
+    },
+    {
+      "byte_identical": true,
+      "command": "python reviews/2026-09-29-cc-b-ray-transfer/single_segment.py",
+      "exit_code": 0,
+      "output_file": "single_segment.json",
+      "output_mode": "file",
+      "output_sha256": "169aac514e2b5ce1b8a3be21e352c39da9503d6fb4741651e7496903793f6e3d"
+    }
+  ],
+  "scope": "Frozen transfer preserved; explicitly recorded post-protocol one-segment supplement uses sameq2..25",
+  "status": "PASS"
+}
