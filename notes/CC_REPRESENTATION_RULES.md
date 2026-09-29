@@ -360,3 +360,49 @@ uses the same two segments; no richer geometry is needed for this output.
 Changing signs, zero parameters, coefficients, threshold, reference or desired
 output requires a new adequacy check. This result is not a universal theorem
 that the same segments, or any fixed segment menu, must exist in another model.
+
+## 10. Source comparison must preserve the claim being credited
+
+The [two-parameter literature comparison](CC_LITERATURE_COMPARISON_2026_09_29.md)
+establishes two distinctions consequential to CC's interpretation.
+
+- **Construction versus existence coverage:** Rosenfeld's inspected theorem
+  already guarantees a safe time for the family's seven distinct positive
+  moving speeds. Our compact construction is a separate, explicit proof
+  candidate whose particular originality remains OPEN. Keep a known general
+  result attached when reporting progress on a special family.
+- **Mechanism versus inherited conclusion:** Jain–Kravitz Proposition 7.1's
+  forward proof supplies a close segment-intersection precedent. Its finite
+  relative-spectrum conclusion requires segments in the ambient optimal locus.
+  Our segments have separation1/8, while (1/6,1/6) gives seven-form separation1/6,
+  so that hypothesis fails. Reuse the contact argument at a threshold without
+  promoting its output to an optimal-spectrum conclusion.
+
+### Applied adaptation record: a descending safe segment
+
+- **Original source:** Jain–Kravitz, Relative Lonely Runner spectra,
+  Combinatorial Theory6(1),2026,#1, Proposition7.1 forward proof, printedp45.
+- **Modification:** restrict primitive directions to P,Q>0 and use one
+  threshold-safe segment with increments(alpha,-beta), alpha,beta>0.
+- **Translation:** H=Qx-Py has interval width alpha*Q+beta*P; width>=1 gives
+  an integer contact. The finite possible exceptions satisfy width<1.
+- **Retained guarantee:** conditional finite reduction for one supplied safe
+  segment, followed by exact time/lap recovery.
+- **New obligations:** segment existence and joint safety, complete exception
+  coverage, closed endpoints, primitive normalization and arithmetic cost.
+- **Guarantee not inherited:** finite optimal spectrum from nonoptimal segments.
+- **Comparison:** P3 gives(Q+2P)/8; its known exception triangle and two P1
+  fallbacks instantiate the record. No new physical run is needed for this
+  reinterpretation.
+
+The physical output also has an exact established-language translation:
+ell=t*v-f is an integer point in R*v-[1/8,7/8]^7, the polyhedron in
+Beck–Hoşten–Schymura, Lonely Runner Polyhedra, equation(5)/Proposition1.
+This is the same witness in physical lap coordinates. It does not supply
+independent evidence merely by changing notation.
+
+Retain source version, theorem hypotheses, what was read, what was reproduced,
+and current originality status separately. An unproductive formula search is
+not a novelty certificate; a publisher index is not a reading of the journal
+proof. Earlier notes remain historical records; this dated comparison supplies
+the closer attribution and prevents scope from changing through compression.

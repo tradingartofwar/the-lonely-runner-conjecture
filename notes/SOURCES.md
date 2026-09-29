@@ -1,10 +1,36 @@
 # Research sources and frontier check
 
-**Initial check:** September 20, 2026. **Latest targeted update:** September 29, 2026 (six-core and fast-runner audit).
+**Initial check:** September 20, 2026. **Latest targeted update:** September 29, 2026 (CC two-parameter literature comparison).
 
 **Scope:** Targeted source check for project planning, not an exhaustive literature review or independent proof audit.
 
 **September 27 team update (retrieved September 28 UTC):** [Targeted tree/pair/lattice literature review](../reviews/2026-09-27-team/literature.md) gives five primary sources and exact reading limits. Hunter's 1976 tree union bound is the established framework. The earlier signed four-cycle minus one diagonal is explicitly present in Prékopa–Vizvári–Regős–Gao, RUTCOR Report 4-2001, Lemma 7.3, printed p.30, equation (58); its form is KNOWN, without asserting that report's priority. The [fastest-core argument](FASTEST_CORE_CERTIFICATES_2026_09_27.md) is supplied with a complete derivation and remains a proof candidate; this targeted search does not establish its novelty. This update does not audit the whole LRC frontier.
+
+## September 29 update — CC two-parameter certificate and prior coverage
+
+[The targeted comparison](CC_LITERATURE_COMPARISON_2026_09_29.md) now separates
+the existence claim from our explicit construction. S2's Theorem 1 was read
+with its positive-speed domain: it already implies a stationary-reference
+1/8-safe time for every positive p!=q in our seven-form family. The proof and
+implementation discussion were inspected; its computer verification was not
+reproduced. The arXiv identifier/history, differing PDF/HTML title dates and
+publisher-index metadata have separate records in the review. Indexed AMS
+content reports DOI [10.1090/mcom/4243](https://doi.org/10.1090/mcom/4243) and
+electronic publication August 10, 2026; direct publisher access failed.
+
+S6 is no longer merely a retrieval lead for this use: Cordella v2 Section 5
+was read and matches our first six forms exactly. Its computation was not
+reproduced and does not contain the appended seventh band. S16's published
+Section 6 is the exact preceding torus, while Proposition 7.1's forward proof
+is a close precedent for the segment-intersection mechanism. Our threshold
+segments are outside its optimal locus, so its finite-spectrum conclusion
+cannot be imported. S10 equation (5)/Proposition 1 receives an explicit
+translation: our recovered lap vector is its integer polyhedral witness.
+
+This is a focused source/hypothesis comparison by three separately tasked AI
+reviewers and the coordinator. It establishes prior existence coverage and
+methodological precedent. The originality of our specific compact certificate
+remains OPEN. Earlier entries below retain their dated reading histories.
 
 ## S1 — Orientation and tight examples
 
@@ -241,3 +267,4 @@ This update supplements the earlier dated entries and does not erase their readi
 - **Additional shifted caution:** Poliakova, [More (shifted) runners, less loneliness, arXiv:2609.23952](https://arxiv.org/html/2609.23952), September20, 2026. The literature reviewer read the abstract and Theorems1–2; the construction was not audited. This concerns arbitrary shifts, not the common-start conjecture.
 
 A targeted search did not locate an all-n additive-triple extension theorem of the precise proposed form for p,q,p+q. That negative search is not a novelty or open-status certificate. The prospective theorem must preserve the original one-parameter orbit; deletion/contraction in a larger flow or phase space does not automatically do so. The earlier gcd contact criterion was also recognized as prior project work rather than promoted as new.
+
