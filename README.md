@@ -43,10 +43,11 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
-**Visual companion:** [From cap to clock](visuals/compatibility-calculus/README.md)
-is the first interactive CC slice, backed by the exact fixed-cell certificates.
-Open its self-contained `presentation.html` to follow a B-ray cap section to
-an integer orbit contact and a physical runner witness. The data and browser
+**Visual companion:** [Two interactive CC sections](visuals/compatibility-calculus/README.md)
+connect **from cap to clock** with **true somewhere versus true together**.
+Open the self-contained `presentation.html` to follow a B-ray integer contact
+back to the runners, or choose **02 · True together** for the A-ray q=4
+marginal/conditional counterexample and physical checks. Exact data and browser
 checks pass; the full deck and research explorer remain in progress.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.

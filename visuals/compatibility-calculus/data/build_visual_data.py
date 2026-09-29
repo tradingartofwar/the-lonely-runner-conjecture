@@ -108,6 +108,44 @@ def contact(cap, q):
             'interval': [h0+loss*low, h0+loss*high] if in_cap else None}
 
 
+def joint_visual(src):
+    """Derived display controls for the pinned q=4 marginal counterexample."""
+    record = src['transfer']['marginal_projection_counterexample']
+    parent = src['transfer']['parents'][record['parent_index']]
+    z, q = F(record['height']), record['q']
+    triangle = [list(map(F, p)) for p in parent['vertices'] if F(p[2]) == z]
+    image = [[q*x-y, 5*x+2*y] for x,y,_ in triangle]
+    h, s = map(F, record['false_positive_pair'])
+    fake = [(s+2*h)/(2*q+5), (q*s-5*h)/(2*q+5), z]
+    fake_check = witness('A', q, fake[0])
+    failed = [r['speed'] for r in fake_check['runners'] if r['distance'] < z]
+    assert failed == [6]
+    section = [list(map(F,p)) for p in record['conditional_section_endpoints']]
+    low, high = map(F, record['conditional_S_range'])
+    collision_ratio = (F(2)-low)/(high-low)
+    collision_point = [section[0][i]+collision_ratio*(section[1][i]-section[0][i]) for i in range(3)]
+    assert collision_ratio == F(6,13) and collision_point[0] == F(4,13)
+    slice_controls = []
+    for position in range(14):
+        p = [section[0][i]+F(position,13)*(section[1][i]-section[0][i]) for i in range(3)]
+        slice_controls.append({'position':position,'point':p,'witness':witness('A',q,p[0])})
+    return {'q':q, 'threshold':z, 'parent_index':record['parent_index'],
+            'parent_labels':parent['labels'], 'triangle_xy':triangle, 'triangle_hs':image,
+            'section_xy':section, 'conditional_S':[low,high],
+            'marginal_H':list(map(F,record['marginal_H_range'])),
+            'marginal_S':list(map(F,record['marginal_S_range'])),
+            'orbit_integer':int(h), 'fake_hs':[h,s], 'fake_xy':fake,
+            'fake_physical':fake_check, 'fake_failed_speeds':failed,
+            'safe_child_xy':list(map(F,record['only_child_point'])),
+            'safe_child_H':F(record['child_H']),
+            'safe_band_edges':[F(2)-z,F(2)+z], 'collision_ratio':collision_ratio,
+            'collision_point':collision_point, 'collision_physical':witness('A',q,collision_point[0]),
+            'slice_controls':slice_controls,
+            'full_safe_times':[F(i,8) for i in [1,3,5,7]],
+            'source':SOURCES['transfer'],
+            'status':'REPRODUCED — exact q=4 counterexample; derived display controls are same-author checks'}
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -163,10 +201,11 @@ def build():
                                     'B': {'formula': 'min(rho/(-d_min),(1-rho)/d_max); zero when h0 is integral',
                                           'source': 'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md'}}})
     examples = exact({'A': a_examples, 'B': b_examples,
+                      'joint_visual': joint_visual(src),
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -179,6 +218,10 @@ def build():
                 'q4_safe_times': ['1/8','3/8','5/8','7/8'], 'q10_required_times':['17/35','18/35'],
                 'selector_fallback': {'q':5,'time':'25/56'},
                 'selector_endpoints': {'4':'1/8','6':'5/24'}}
+    controls['joint_visual'] = {'q':4,'parent':2,'height':'1/8','candidate_time':'33/104',
+                               'candidate_failed_speed':6,'candidate_failed_distance':'5/52',
+                               'conditional_S':['109/56','33/16'],'slice_controls':14,
+                               'collision_time':'4/13','slice_failed_speed':13}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
@@ -189,8 +232,9 @@ def build():
                 'omitted_by_first_slice':'Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.',
                 'recovery':'Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.',
                 'scene_sources':{'cap':SOURCES['geometry'],'projection':'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
-                                 'first_hit':'notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md','physical':SOURCES['physical_b']},
-                'implementation_scope':'Phase 0 + Phase 1 data and first B-ray visual slice; full deck and explorer remain pending.'}
+                                 'first_hit':'notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md','physical':SOURCES['physical_b'],
+                                 'joint_compatibility':SOURCES['transfer'], 'joint_derivation':'notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md'},
+                'implementation_scope':'Exact data, B-ray cap-to-clock slice, and A-ray q=4 marginal-versus-joint section; full deck and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -205,10 +249,11 @@ def main():
     template = PACKAGE/'presentation.template.html'
     if template.exists():
         html = template.read_text()
+        html = html.replace('<!-- CC_JOINT -->', (PACKAGE/'joint.template.html').read_text())
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:

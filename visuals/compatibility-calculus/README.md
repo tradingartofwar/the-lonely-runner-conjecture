@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**First build:** exact data plus **top cap → section → first integer hit → physical witness**.
+**Two connected sections:** **from cap to clock**, and **true somewhere versus true together**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -11,6 +11,8 @@ python3 -m http.server 8000 --directory visuals/compatibility-calculus
 ```
 
 Then open `http://localhost:8000/presentation.html`.
+Choose **02 · True together** for the q=4 section. The URL fragment `#joint`
+opens that chapter directly when serving or opening the local file.
 
 ## What this version does
 
@@ -25,10 +27,19 @@ Rotate/tilt the cap or reveal the complete ten-cell atlas. Three singleton
 cells remain visible as hollow points. The coordinate picture exaggerates z
 by a declared factor of four; fractions, not screen lengths, are authoritative.
 
-The exact data layer also preserves the five planned A-ray controls, the
-six-to-seven atlas, the q=4 false marginal example, q=10 face contact, and both
-A-ray selector segments. Those scenes are not yet interactive. The 20-scene
-deck, full research explorer, second and third visual targets remain pending.
+The second chapter follows three steps: separate H/S ranges, the false
+combined pair, and the conditional S interval on the same H=1 slice. An exact
+inverse map and physical phase table expose which original constraint fails
+when the marginals are combined. A slider then moves along the valid parent
+slice, including its closed endpoints and the collision at t=4/13.
+
+This is A-ray q=4 with its own clock t=x, explicitly distinct from the first
+chapter's B ray. The scene rejects only parent P2 at height 1/8; the four
+isolated full-system witnesses remain displayed and verified.
+
+The exact data layer also preserves the other planned A-ray controls, the
+six-to-seven atlas, q=10 face contact, and both A-ray selector segments. The
+20-scene deck, full research explorer, and third visual target remain pending.
 
 ## Evidence and scope
 
@@ -80,7 +91,7 @@ files. The generated presentation needs neither Python nor Git to view.
 It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
-`presentation.template.html`, `css/cc.css`, and the files in `js/`, then rebuild;
+`presentation.template.html`, `joint.template.html`, `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
 
 The browser uses BigInt rational arithmetic even while scrubbing. Conversion
@@ -99,6 +110,8 @@ from a drawing.
 | A-ray examples | q=3,4,5,6,10; correct selector times and physical laps |
 | q=4 | All four isolated times survive; all four positive six-form intervals vanish |
 | Marginal counterexample | Recomputed H/S ranges and the blocked conditional interval on H=1 |
+| Combined marginal candidate | t=33/104 gives runner 6 distance 5/52<1/8 while runner 13 reaches 1/8 |
+| Conditional slice | All 14 displayed exact points retain six-runner safety and fail only runner 13; collision t=4/13; the entire closed S interval is strictly blocked |
 | q=10 | 17/35 and 18/35 are maximizers; the old face has dimension 2 and the child face dimension 1 |
 | Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints |
 | B-ray examples | q=2,3,4,5,6,7; all 42 cap-contact tests, direct physical maxima and complete maximizing sets |
@@ -124,5 +137,11 @@ question/ray branches. Do not draw an unqualified lossless chain from B caps
 to A conditional intervals. Their actual-orbit equations and physical clocks
 differ.
 
-Next visual target: the q=4 separate-marginals versus joint-compatibility
-demonstration, using the exact data already preserved here.
+The q=4 scene retains the full joint triangle and same-H conditional interval.
+Its separate-range rectangle is explicitly the inadequate representation; the
+false candidate fails the original parent constraints under direct physical
+checking. The 14 slider controls illustrate, rather than establish, the
+continuous exclusion: 15/8 < 109/56 ≤ S ≤ 33/16 < 17/8 certifies the full slice.
+
+Next visual target: the question-specific representation ladder, with separate
+A/B branches, retained/omitted information, and explicit recovery triggers.

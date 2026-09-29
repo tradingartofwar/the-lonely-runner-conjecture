@@ -10,6 +10,7 @@ const resolvePaths=[process.cwd(),process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES
 const {chromium}=require(require.resolve('playwright',{paths:resolvePaths}));
 const pkg=path.resolve(__dirname,'..');
 const examples=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).B;
+const joint=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).joint_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
 const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of six canonical examples; not mathematical proof.'};
 (async()=>{
@@ -80,6 +81,55 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     }
     await page.emulateMedia({reducedMotion:'reduce'});await page.click('#peak');await page.click('#play');
     assert.equal((await page.evaluate(()=>window.CC_STATE)).progress,100);report.checks.reduced_motion=true;
+    await page.click('#nav-joint');await page.waitForFunction(()=>window.CC_JOINT_STATE&& !document.getElementById('joint-chapter').hidden);
+    assert.equal(await page.locator('#cap-chapter').isVisible(),false);
+    assert.equal(await page.locator('#joint-physical').isVisible(),false);
+    await page.click('[data-joint-step="1"]');
+    let jointState=await page.evaluate(()=>window.CC_JOINT_STATE);
+    assert.equal(jointState.time,joint.fake_physical.time.text);
+    assert.deepEqual(jointState.failedSpeeds,[6]);assert.equal(jointState.coreSafe,false);
+    assert.deepEqual(jointState.phases,joint.fake_physical.runners.map(r=>r.phase.text));
+    await page.click('[data-joint-step="2"]');
+    for(const control of joint.slice_controls){
+      await page.locator('#joint-position').fill(String(control.position));
+      jointState=await page.evaluate(()=>window.CC_JOINT_STATE);
+      assert.equal(jointState.time,control.witness.time.text);
+      assert.deepEqual(jointState.point,control.point.map(v=>v.text));
+      assert.deepEqual(jointState.phases,control.witness.runners.map(r=>r.phase.text));
+      assert.deepEqual(jointState.distances,control.witness.runners.map(r=>r.distance.text));
+      assert.deepEqual(jointState.failedSpeeds,[13]);assert.equal(jointState.coreSafe,true);
+    }
+    for(const [id,t]of [['joint-left','17/56'],['joint-collision','4/13'],['joint-right','5/16']]){
+      await page.click('#'+id);assert.equal((await page.evaluate(()=>window.CC_JOINT_STATE)).time,t);
+    }
+    report.checks.joint_candidate_failed_speed=6;report.checks.joint_slice_physical_controls=14;
+    report.checks.joint_endpoints_and_collision=true;report.checks.joint_layouts=[];
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const step of [0,1,2]){
+        await page.click(`[data-joint-step="${step}"]`);await page.waitForTimeout(60);
+        const layout=await page.evaluate(()=>{
+          const outside=[];
+          for(const svg of document.querySelectorAll('#joint-chapter svg')){
+            if(!svg.getBoundingClientRect().width)continue;
+            const b=svg.viewBox.baseVal;
+            for(const text of svg.querySelectorAll('text')){const r=text.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:text.textContent});}
+          }
+          return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+        });
+        assert.equal(layout.overflow,false,`joint overflow at ${width}, step ${step}`);
+        assert.deepEqual(layout.outside,[],`joint clipped labels at ${width}, step ${step}`);
+        report.checks.joint_layouts.push({width,scheme,step,overflow:false,clipped_svg_labels:0});
+        if(process.env.CC_SCREENSHOT_DIR)await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`joint-${width}-${scheme}-${step}.png`),fullPage:true});
+      }
+    }
+    await page.click('#nav-cap');await page.waitForFunction(()=>!document.getElementById('cap-chapter').hidden);
+    assert.equal(await page.locator('#geometry polygon').count()>0,true);
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#joint');
+    await page.reload();
+    await page.waitForFunction(()=>window.CC_JOINT_STATE&&!document.getElementById('joint-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_JOINT_STATE)).step,0);
+    report.checks.chapter_navigation_and_direct_link=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));

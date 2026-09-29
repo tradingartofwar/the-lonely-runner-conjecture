@@ -8,6 +8,23 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Second visual section — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) now includes
+**02 · True together**, a three-stage A-ray q=4 demonstration of separate
+marginals, a false combined pair, and the repaired same-H conditional interval.
+The joint triangle and inverse map show why (H,S)=(1,17/8) does not belong to
+parent P2: at its recovered candidate time 33/104, runner 6 has distance
+5/52<1/8. Along the valid H=1 parent slice, all six earlier runners stay safe
+and only runner 13 fails; the slider includes both endpoints and t=4/13's
+collision. Exact data and browser checks cover all 14 displayed slice points,
+while the closed interval proves the entire slice is blocked. The four
+full-system isolated q=4 witnesses remain explicit. The two chapters share
+one offline `presentation.html`, with `#joint` for the second chapter. This
+adds an exact finite visual control, not a new universal mathematical claim.
+**Next visual target:** the representation ladder with distinct A/B branches,
+retained/omitted information, and recovery triggers. Research progress below
+and its claim statuses remain unchanged.
+
 **Visual implementation — September 29, 2026:**
 [The CC visual companion](visuals/compatibility-calculus/README.md) completes
 the planned source manifest and exact data layer, plus the first interactive

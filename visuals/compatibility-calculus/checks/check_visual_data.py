@@ -161,6 +161,32 @@ def main():
     child=children[9]
     assert rank([normal for _,normal,bound in child['constraints'] if dot(normal,point)==bound])==2
     counts.update(marginal_same_slice_control=True,q10_parent_face_dimension=2,q10_child_face_dimension=1)
+    joint=e['joint_visual']
+    assert joint['triangle_xy']==floor
+    assert joint['triangle_hs']==[[4*x-y,5*x+2*y] for x,y,z in floor]
+    assert joint['section_xy']==section and joint['conditional_S']==s
+    x,y,z=joint['fake_xy'];h,S=joint['fake_hs']
+    assert (h,S)==(4*x-y,5*x+2*y)==(F(1),F(17,8))
+    assert joint['marginal_H'][0]<=h<=joint['marginal_H'][1]
+    assert joint['marginal_S'][0]<=S<=joint['marginal_S'][1]
+    assert any(dot(normal,[x,y,z])>bound for _,normal,bound in parent['constraints'])
+    assert 2*x+y>1-z and min(frac(6*x),1-frac(6*x))==F(5,52)<z
+    assert joint['fake_failed_speeds']==[6]
+    assert joint['safe_child_H'].denominator!=1
+    assert joint['collision_ratio']==F(6,13) and joint['collision_point'][0]==F(4,13)
+    vs=[1,4,5,6,7,11,13]
+    for control in joint['slice_controls']:
+        x,y,z=control['point'];w=control['witness']
+        assert 4*x-y==1 and x==w['time']
+        assert all(dot(normal,[x,y,z])<=bound for _,normal,bound in parent['constraints'])
+        assert [r['phase'] for r in w['runners']]==[frac(v*x) for v in vs]
+        assert [r['distance'] for r in w['runners']]==[dist(v*x) for v in vs]
+        assert all(dist(v*x)>=z for v in vs[:6]) and dist(vs[6]*x)<z
+    assert joint['conditional_S'][0]-F(15,8)==F(1,14)
+    assert F(17,8)-joint['conditional_S'][1]==F(1,16)
+    assert safe_set(vs,z)==[(t,t) for t in joint['full_safe_times']]
+    counts.update(joint_candidate_failed_speed=6,joint_slice_controls=14,joint_collision_time='4/13',
+                  joint_closed_interval_strictly_blocked=True)
     for example in e['B']:
         q=example['q'];vs=example['speeds'];best,times=optimize(vs)
         assert (best,times)==(example['maximum'],example['times'])

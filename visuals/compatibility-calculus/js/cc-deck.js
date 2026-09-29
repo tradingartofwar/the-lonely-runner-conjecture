@@ -18,6 +18,7 @@
     }));
   }
   function render(){
+    if(el('cap-chapter').hidden)return;
     const ex=example(),cap=CC_DATA.geometry.top_caps.find(c=>c.id===state.cap),contact=ex.contacts.find(c=>c.cap===state.cap);
     const totalLoss=R(contact.loss),zero=totalLoss.cmp(0)===0;
     if(zero)state.progress=100;
@@ -78,6 +79,7 @@
     const li=document.createElement('li'),a=document.createElement('a');a.href=`${manifest.repository}/blob/${manifest.source_commit}/${path}`;a.textContent=`${name}: ${path.split('/').pop()}`;li.append(a);el('source-links').append(li);
   }
   selectQ();stop();render();
+  document.addEventListener('cc:chapter',event=>{if(event.detail.joint)stop();else render();});
   let resizeFrame=null;
   const observer=new ResizeObserver(()=>{if(resizeFrame!==null)cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{resizeFrame=null;render();});});
   observer.observe(document.querySelector('main'));
