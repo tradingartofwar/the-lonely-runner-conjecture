@@ -40,7 +40,15 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [notes/SOURCES.md](notes/SOURCES.md) | Dated literature starting points and verification limits |
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
-## Current state — September 28, 2026 UTC
+## Current state — September 29, 2026 UTC
+
+The [core-window candidate](notes/CORE_WINDOW_REDUCTION_2026_09_29.md) bounds three residual speeds in the fixed common-start integer family {0,1,4,5,a,b,c,d}, with a<b<c<d and selected reference0. The five-constraint core1,4,5,a,b retains at least1/24 of a period as safe time. Combining this with short blocking-chain bounds leaves only **a<=34, b<=47, c<=1565** uncertified by these sufficient tests; d remains unbounded. These are internally reviewed proof candidates, not a proof of the full conjecture. External mathematical and novelty assessment remain pending.
+
+Two exact implementations match all31 declared four-core cases across1932 numerical fields, preserving348 positive components and20 isolated points. The calculation checks twelve arithmetic values used in the universal core-measure argument. A separate translated-grid certificate handles residual gcd>=7. No broad tuple or all-reference scan was run.
+
+Next is a direct six-constraint core-window argument, with the final equality cases preserved. Hourly research stays paused.
+
+### Prior23-move snapshot — preserved
 
 The [short-kernel candidate](notes/SHORT_KERNEL_BOUND_2026_09_28.md) improves the explicit universal bound to **23 advancing moves** for four quarter-duty trains, independent of positive periods and phases. A mixed continuous/discrete average shortens the covered-span bound, and a long-triple restriction sharpens the count. Six-agent internal review and exact kernel checks support the candidate; external mathematical and novelty review remain pending.
 
