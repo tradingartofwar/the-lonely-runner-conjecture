@@ -4,8 +4,8 @@
     "rendering": "ILLUSTRATION — animation and floating-point rendering are not proof",
     "spectrum": "HYPOTHESIS — internally reviewed proof candidate; independent assessment remains open"
   },
-  "data_build_sha256": "b2bec6a154838da90c4cfeb74eea557ad2280ac6e22d04bc35a288d0953f660d",
-  "implementation_scope": "Exact data and seven sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, shared-clock occurrence identity, and safe-lap-to-cell construction; full deck and explorer remain pending.",
+  "data_build_sha256": "23c329e71e7424c61067b5162e12d7dfff2aeefab30d80cb88b4744d1a62a019",
+  "implementation_scope": "Exact data and eight sections: common-start/reference-motion opening, B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, shared-clock occurrence identity, and safe-lap-to-cell construction; concluding story, figure exports and explorer remain pending.",
   "omitted_by_first_slice": "Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.",
   "recovery": "Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.",
   "repository": "https://github.com/tradingartofwar/the-lonely-runner-conjecture",
@@ -18,6 +18,7 @@
     "joint_derivation": "notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md",
     "lap_bridge": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
     "occurrence_identity": "notes/LAP_LABELLED_CONSTRAINTS.md",
+    "opening": "notes/MATHEMATICAL_BASELINE.md",
     "parent_child_geometry": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
     "parent_child_physical": "reviews/2026-09-29-cc-six-seven-transfer/countercheck.json",
     "physical": "reviews/2026-09-29-cc-other-ray-review/physical_check.json",
@@ -29,7 +30,7 @@
     "shared_clock": "reviews/2026-09-25-lr2/lap_constraints.json"
   },
   "schema_version": 1,
-  "scope": "Selected stationary reference; eight common-start runners; the fixed A/B families and one separately labelled archived 6/7/11/16 blocking example on J=[9/32,3/8].",
+  "scope": "Opening: four common-start runners at speeds 1,2,3,4 with all four references. Advanced sections: selected stationary reference among eight common-start runners; fixed A/B families and a separately labelled archived 6/7/11/16 blocking example on J=[9/32,3/8].",
   "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
   "sources": {
     "arithmetic_b": "reviews/2026-09-29-cc-other-ray-review/arithmetic_check.json",

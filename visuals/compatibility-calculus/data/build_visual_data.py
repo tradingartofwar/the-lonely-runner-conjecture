@@ -31,6 +31,7 @@ SOURCES = {
 }
 NOTES = [
     'AGENTS.md', 'CLAIM_STATUS.md',
+    'notes/MATHEMATICAL_BASELINE.md',
     'notes/LAP_LABELLED_CONSTRAINTS.md',
     'notes/DISTINCTION_AUDIT_2026_09_25.md',
     'reviews/2026-09-25-lr2/check_lap_constraints.py',
@@ -347,6 +348,45 @@ def cell_visual(src):
             'status':'REPRODUCED — exact finite label cells and three archived q=4 lap controls'}
 
 
+def opening_visual():
+    """A translated consecutive-speed fixture, with all four references.
+
+    The boundary partition is complete: truth can change only where a signed
+    relative phase meets delta or 1-delta. Midpoints classify each open piece;
+    endpoints are tested separately and retained even when isolated.
+    """
+    velocities=[1,2,3,4]; delta=F(1,4); references=[]
+    controls=[F(0),F(1,4),F(1,3),F(3,8),F(1,2),F(3,4),F(1)]
+    for ref,sr in enumerate(velocities):
+        relative=[s-sr for s in velocities]
+        def state(t):
+            absolute=[s*t-(s*t).__floor__() for s in velocities]
+            phases=[u*t-(u*t).__floor__() for u in relative]
+            distances=[min(p,1-p) for p in phases]
+            nearest=min(d for i,d in enumerate(distances) if i!=ref)
+            return {'time':t,'absolute':absolute,'relative_phases':phases,
+                    'distances':distances,'minimum':nearest,'safe':nearest>=delta,
+                    'nearest':[i for i,d in enumerate(distances) if i!=ref and d==nearest]}
+        events={F(0),F(1)}
+        for v in map(abs,relative):
+            if v:
+                events.update((m+d)/v for m in range(v) for d in [delta,1-delta])
+        cuts=sorted(events)
+        pieces=[(t,t) for t in cuts if state(t)['safe']]
+        pieces += [(a,b) for a,b in zip(cuts,cuts[1:]) if state((a+b)/2)['safe']]
+        components=[]
+        for a,b in sorted(pieces):
+            if components and a<=components[-1][1]:components[-1][1]=max(b,components[-1][1])
+            else:components.append([a,b])
+        references.append({'index':ref,'speed':sr,'relative_speeds':relative,'safe_components':components,
+                           'witness_time':F(1,4) if ref in [0,3] else F(1,3),
+                           'controls':[state(t) for t in controls]})
+    return {'velocities':velocities,'total_runners':4,'threshold':delta,'period':F(1),
+            'time_denominator':96,'references':references,'control_times':controls,
+            'source':'notes/MATHEMATICAL_BASELINE.md',
+            'status':'REPRODUCED — finite four-runner illustration of the standard reference change'}
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -402,6 +442,7 @@ def build():
                                     'B': {'formula': 'min(rho/(-d_min),(1-rho)/d_max); zero when h0 is integral',
                                           'source': 'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md'}}})
     examples = exact({'A': a_examples, 'B': b_examples,
+                      'opening_visual': opening_visual(),
                       'joint_visual': joint_visual(src),
                       'transfer_visual': transfer_visual(src),
                       'selector_visual': selector_visual(src),
@@ -410,7 +451,7 @@ def build():
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'cell.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'opening.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'cell.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -444,16 +485,20 @@ def build():
     controls['cell_visual'] = {'cells':10,'stages_per_cell':8,'lap_cases':3,'singletons':['C0','C3','C5'],
                               'six_vertex_cell':'C7','positive_interval':['17/56','5/16'],
                               'singleton_time':'3/8','empty_bounds':['33/104','5/16']}
+    controls['opening_visual'] = {'velocities':[1,2,3,4],'references':4,'frames':2,'threshold':'1/4',
+                                 'time_denominator':96,'exact_snapshots':28,
+                                 'outer_reference_safe_set':[['1/4','1/4'],['3/4','3/4']],
+                                 'inner_reference_safe_set':[['1/4','3/8'],['5/8','3/4']]}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
                 'spectrum':'HYPOTHESIS — internally reviewed proof candidate; independent assessment remains open',
                 'rendering':'ILLUSTRATION — animation and floating-point rendering are not proof'},
-                'scope': 'Selected stationary reference; eight common-start runners; the fixed A/B families and one separately labelled archived 6/7/11/16 blocking example on J=[9/32,3/8].',
+                'scope': 'Opening: four common-start runners at speeds 1,2,3,4 with all four references. Advanced sections: selected stationary reference among eight common-start runners; fixed A/B families and a separately labelled archived 6/7/11/16 blocking example on J=[9/32,3/8].',
                 'retained':'Full labelled cells including singletons, cap directions, same-point orbit, exact recovery, canonical controls.',
                 'omitted_by_first_slice':'Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.',
                 'recovery':'Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.',
-                'scene_sources':{'cap':SOURCES['geometry'],'projection':'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
+                'scene_sources':{'opening':'notes/MATHEMATICAL_BASELINE.md','cap':SOURCES['geometry'],'projection':'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
                                  'first_hit':'notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md','physical':SOURCES['physical_b'],
                                  'joint_compatibility':SOURCES['transfer'], 'joint_derivation':'notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md',
                                  'representation_rules':'notes/CC_REPRESENTATION_RULES.md',
@@ -465,7 +510,7 @@ def build():
                                  'shared_clock':SOURCES['clock_occurrences'],
                                  'occurrence_identity':'notes/LAP_LABELLED_CONSTRAINTS.md',
                                  'cell_construction':SOURCES['geometry'], 'lap_bridge':SOURCES['transfer']},
-                'implementation_scope':'Exact data and seven sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, shared-clock occurrence identity, and safe-lap-to-cell construction; full deck and explorer remain pending.'}
+                'implementation_scope':'Exact data and eight sections: common-start/reference-motion opening, B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, shared-clock occurrence identity, and safe-lap-to-cell construction; concluding story, figure exports and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -480,6 +525,7 @@ def main():
     template = PACKAGE/'presentation.template.html'
     if template.exists():
         html = template.read_text()
+        html = html.replace('<!-- CC_OPENING -->', (PACKAGE/'opening.template.html').read_text())
         html = html.replace('<!-- CC_JOINT -->', (PACKAGE/'joint.template.html').read_text())
         html = html.replace('<!-- CC_REPRESENTATION -->', (PACKAGE/'representation.template.html').read_text())
         html = html.replace('<!-- CC_TRANSFER -->', (PACKAGE/'transfer.template.html').read_text())
@@ -489,7 +535,7 @@ def main():
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-cell.js','cc-navigation.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-cell.js','cc-opening.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:

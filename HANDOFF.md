@@ -8,6 +8,35 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Visual opening completed — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) now opens
+at **00 · One track** (`#opening`), ahead of the seven existing sections.
+A four-runner example with original speeds 1,2,3,4 supports all four selected
+references and exact track/moving-frame translation. Signed relative speeds,
+common start, shared time, phases, identity and distance are preserved. The
+moving view fixes the reference at phase zero; the inverse map recovers the
+original phases. Opposite relative speeds do not reduce n=4 or its 1/4 target.
+
+The complete lonely-time sets are {1/4,3/4} for R1/R4 and
+[1/4,3/8] union [5/8,3/4] for R2/R3. At t=1/3, R1/R4 meet while R2/R3
+are lonely. The complete sets come from a threshold-boundary partition and
+are checked independently by closed band intersections. They are separate
+from the 1/96 playback grid. All 28 declared snapshots and 388 scrubber states
+pass exact frame/recovery checks. Browser checks cover 168 main layouts and
+all 388 narrow scrubber states, playback, reduced motion and eight-section
+navigation. Existing section numbers/direct links remain stable.
+
+The baseline note is added to source hashes at the same pinned 6b2b931
+snapshot; the advanced A/B examples retain their selected eight-runner
+reference and original scope. No general theorem or novelty claim is added.
+Concurrent coefficient/compiler research is preserved and remains separate.
+
+**Next visual target:** the concluding guided CC story: recurring operations,
+question-specific branches and the correction/recovery loop. Standalone figure
+exports and the separate research explorer follow. Completion messages should
+identify the next build target.
+
+
 **Seventh visual section — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **07 · From time to shape**, directly reachable as `#cell`. Three archived

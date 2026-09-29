@@ -43,15 +43,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
-**Visual companion:** [Seven interactive CC sections](visuals/compatibility-calculus/README.md)
-now include **07 · From time to shape**. Open the self-contained
-`presentation.html`. Three physical lap controls show a positive interval,
-a closed singleton and an empty intersection. The exact label map then
-connects the time inequalities to geometric bands. Build any of the ten
-archived cells one band at a time and inspect the full atlas, including all
-three singletons and the six-vertex C7. Independent edge clipping checks all
-80 construction states against the plane-intersection builder. Sources stay
-frozen at 6b2b931; the full guided deck and explorer remain in progress.
+**Visual companion:** [Eight interactive CC sections](visuals/compatibility-calculus/README.md)
+now open with **00 · One track**. Four common-start runners introduce the
+selected reference, signed relative motion and exact 1/4 loneliness test.
+Switch viewpoints at the same time, inspect all four complete lonely-time
+sets, and compare t=1/3, when two runners are lonely while the other two meet.
+The seven existing geometry/compatibility sections remain available. Open the
+self-contained `presentation.html`; sources stay frozen at 6b2b931. The closing
+CC story, standalone figures and research explorer remain in progress.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

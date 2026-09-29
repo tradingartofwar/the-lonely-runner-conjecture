@@ -1,0 +1,65 @@
+<section class="intro opening-intro">
+  <p class="eyebrow">THE LONELY RUNNER PROBLEM / START HERE</p>
+  <h1>One track.<br> A different point of view.</h1>
+  <p class="lead">Everyone starts together. Can each runner eventually find a moment with enough room on both sides?</p>
+  <div class="badges"><span class="badge">REPRODUCED · exact four-runner example</span><span class="quiet">One unit around the track · four distinct speeds · a common start</span></div>
+</section>
+<section class="opening-controls" aria-label="Choose a reference and viewpoint">
+  <div><p class="eyebrow">01 / CHOOSE THE RUNNER WE ARE CHECKING</p><div id="opening-references" class="opening-reference-buttons"></div></div>
+  <div><p class="eyebrow">02 / CHOOSE YOUR POINT OF VIEW</p><div class="opening-frames"><button id="opening-track-view" aria-pressed="true">Watch from the track</button><button id="opening-relative-view" aria-pressed="false">Move with R1</button></div></div>
+</section>
+<section class="opening-main">
+  <article class="panel opening-track-panel">
+    <div class="panel-heading"><div><p class="eyebrow" id="opening-view-label">THE TRACK VIEW</p><h2 id="opening-view-title">Four runners. One shared clock.</h2></div><span class="tag" id="opening-time-tag">t = 0</span></div>
+    <svg id="opening-track" role="img" aria-label="Four runners on one circular track, with the selected reference and quarter-track boundaries"></svg>
+    <div class="legend"><span><i class="key opening-reference-key"></i>Dark outer ring: reference</span><span><i class="key opening-block-key"></i>Too close, strictly under 1/4</span><span><i class="key opening-boundary-key"></i>Hollow boundary: equality counts</span><span><i class="key opening-distance-key"></i>Blue arc: nearest distance</span></div>
+    <p class="caption" id="opening-track-caption"></p>
+    <div class="opening-scrubber">
+      <label for="opening-time">Move the shared clock <output id="opening-time-output">0 / 1</output></label>
+      <input id="opening-time" type="range" min="0" max="96" step="1" value="0" aria-label="Shared time in steps of one ninety-sixth">
+      <div class="button-row"><button id="opening-start">Common start</button><button id="opening-play">Play to t = 1</button><button id="opening-witness" class="primary">Show a lonely moment</button></div>
+      <p class="caption">Time runs from 0 to 1. These integer speeds repeat after one time unit. The slider advances by exact steps of 1/96. Reduced-motion mode shows a still lonely moment.</p>
+    </div>
+  </article>
+  <div class="opening-explanation">
+    <article class="panel opening-distance-panel">
+      <p class="eyebrow">03 / CHECK EVERY OTHER RUNNER AT THIS TIME</p>
+      <h2>How close is the nearest runner?</h2>
+      <div class="opening-distance"><strong id="opening-minimum">0</strong><span>of the track<br><span id="opening-nearest"></span></span></div>
+      <p id="opening-verdict" class="opening-verdict" aria-live="polite"></p>
+      <p>There are <strong>n = 4 runners</strong>, so the required distance is <strong>1/n = 1/4</strong>. Every one of the other three runners must meet it <strong>at the same time</strong>.</p>
+      <p class="caption">Distance means the shorter arc along the circle. Being exactly 1/4 away is enough.</p>
+    </article>
+    <article class="panel opening-map-panel">
+      <p class="eyebrow">THE CHANGE OF VIEW</p><h2 id="opening-map-title">Subtract the reference speed.</h2>
+      <p id="opening-map-description"></p>
+      <div class="opening-map"><div><span>Original speeds</span><strong>1, 2, 3, 4</strong></div><span class="opening-map-arrow" aria-hidden="true">↓</span><div><span id="opening-subtraction"></span><strong id="opening-relative-speeds"></strong></div></div>
+      <p id="opening-frame-note"></p>
+      <p class="caption">Changing viewpoint keeps the time and all pairwise distances. Choosing a different reference changes whose loneliness we are checking.</p>
+    </article>
+  </div>
+</section>
+<section class="panel opening-timeline-panel">
+  <div class="panel-heading"><div><p class="eyebrow">SAME CONFIGURATION / FOUR DIFFERENT QUESTIONS</p><h2>Each runner gets its own lonely times.</h2></div><button id="opening-compare">Compare at t = 1/3</button></div>
+  <p>Filled intervals and outlined points show <strong>all lonely times in [0, 1]</strong> for this four-runner example. The vertical line is the same time as the track above.</p>
+  <svg id="opening-timeline" role="img" aria-label="Complete lonely-time sets for all four reference runners, preserving isolated points and closed endpoints"></svg>
+  <div id="opening-safe-list" class="opening-safe-list"></div>
+  <p id="opening-comparison" class="opening-comparison"></p>
+  <p class="caption">The conjecture asks for a suitable time for each runner; those times may differ. A moving picture alone cannot find every equality point. These sets come from exact closed-interval calculations.</p>
+</section>
+<section class="opening-bottom">
+  <article class="panel opening-exact-panel">
+    <p class="eyebrow">THE SAME STATE, WRITTEN EXACTLY</p><h2 id="opening-table-title">Track phases and relative phases</h2>
+    <p>A phase is a fraction of a lap, measured clockwise from the top. The table retains every runner, including runners whose phases coincide.</p>
+    <div class="table-scroll"><table><caption class="sr-only">Exact original speeds, signed relative speeds, original phases, relative phases and distances to the selected reference</caption><thead><tr><th>Runner</th><th>Speed s</th><th>Relative u</th><th>Track phase</th><th>Relative phase</th><th>Distance</th></tr></thead><tbody id="opening-phase-rows"></tbody></table></div>
+    <details><summary>The translation and its recovery map</summary><p class="formula">uᵢ = sᵢ − sᵣ<br>pᵢ = {sᵢt}<br>qᵢ = {(sᵢ − sᵣ)t}<br>pᵢ = {qᵢ + sᵣt}</p><p>Braces take the fractional part, including for negative values: {−1/3} = 2/3. The reference has relative speed 0. A negative relative speed moves counterclockwise in the moving view. Opposite relative speeds can impose the same distance constraint, but they remain different runners; n stays 4.</p></details>
+  </article>
+  <article class="opening-next">
+    <p class="eyebrow">FROM A PHYSICAL QUESTION TO CC</p><h2>Carry the relationship<br>through the change.</h2>
+    <p>The viewpoint changes. The selected runner, shared time, and distances remain linked. That is the first translation this presentation asks the model to preserve.</p>
+    <p>The later A/B examples use <strong>eight runners</strong> and a threshold of <strong>1/8</strong>. Their stationary reference comes from the same subtraction of a selected runner’s speed.</p>
+    <a href="#cap" class="opening-next-link">Continue: from a safe shape to a real moment →</a>
+    <p class="caption"><strong>Scope:</strong> this opening checks one four-runner configuration and all four choices of reference. It illustrates the standard formulation and establishes no general Lonely Runner theorem.</p>
+  </article>
+</section>
+<footer><p>Exact fractions drive the clock, phases and decisions. The circle and playback illustrate those states; the complete safe sets are checked separately.</p><details><summary>Source, representation scope and reproducibility</summary><p id="opening-build-info"></p><p><strong>Retained:</strong> original speeds, runner identity, common start, selected reference, signed relative speeds, shared time, phases, distances and closed equality. Original phases are recoverable from the displayed map.</p><p><strong>Limits:</strong> a fixed configuration on one period, with exact scrubber snapshots. The complete safe sets are stored separately. Changing velocities, starting positions, period or threshold requires rebuilding and rechecking them.</p><ul id="opening-source-links"></ul><p>The example translates the pinned baseline’s relative-speed fixture (1,2,3), n=4 to original speeds (1,2,3,4), then checks every reference. AI-assisted implementation and same-author checks.</p></details></footer>

@@ -1,6 +1,6 @@
 # Visual companion audit — September 29, 2026
 
-Scope: the exact data layer and seven connected interactive sections.
+Scope: the exact data layer and eight connected interactive sections.
 AI-assisted implementation and same-author audit; no independent human review
 or new mathematical theorem is claimed.
 
@@ -12,7 +12,7 @@ selector controls, and six B-ray controls. The B maxima and complete maximizing
 times are crosschecked by a physical opposing-contact optimizer and closed
 band intersections, not only by replaying the cap selector.
 
-All 21 mathematical/semantic source hashes match the frozen Git snapshot.
+All 22 mathematical/semantic source hashes match the frozen Git snapshot.
 The builder and checker read that commit explicitly, so subsequent edits on
 the live research branch cannot silently change this visual's premises.
 Implementation files have a separate hash map; these files did not exist at
@@ -362,3 +362,56 @@ This is AI-assisted implementation and same-author finite verification. It
 does not change the underlying proof-candidate status or introduce a new
 family, theorem or novelty claim. The guided opening/relative-motion scene,
 concluding CC story, standalone figures and research explorer remain pending.
+
+
+## Opening: common start, selected reference and relative motion
+
+The eighth implemented section is placed first as **00 · One track**; existing
+01–07 numbers and fragments are unchanged. Default entry and `#opening` show
+four runners starting together at speeds 1,2,3,4. The original mathematical
+baseline is added to source hashes at the same frozen 6b2b931 commit.
+
+Exact verification:
+
+- All four references retain signed relative velocities, the original runner
+  count n=4, and the closed target 1/4. Negative fractional parts use floor.
+- The builder partitions [0,1] at every threshold crossing, tests open pieces
+  and endpoints, and merges only touching safe pieces. The checker separately
+  intersects the complete physical safe-band unions.
+- R1/R4 each have two singleton times {1/4,3/4}. R2/R3 each have
+  [1/4,3/8] union [5/8,3/4]. At 1/3, only R2 and R3 are lonely.
+- Twenty-eight exact snapshots reproduce original phases, signed relative
+  phases, nearest-runner identity and distances. All 388 scrubber states
+  preserve frame translation, phase recovery and a common speed shift.
+- Coincident phases retain distinct runners. Original phase is recovered as
+  {relative phase + reference speed * t}. Opposite speeds can duplicate a
+  distance constraint without changing n or the loneliness threshold.
+
+Browser/communication verification:
+
+- 168 primary layouts (four references, two frames, seven times, three widths)
+  and 388 narrow scrubber layouts have no clipped SVG labels, overlapping
+  runner labels, or horizontal page overflow.
+- Playback starts only on request, pauses, ends at t=1, stops on chapter exit,
+  and preserves state between visits. Reduced motion uses an exact witness.
+- Common start, all four witness jumps, t=1/3 comparison, same-time frame
+  switching and fresh default/direct links are checked. All previous seven
+  chapters remain in the audit, with no network dependencies or page errors.
+- Circle positions represent phase, not chord distance. The blue inner arc
+  shows one nearest distance; every tied nearest runner remains in the table.
+  Hollow threshold boundaries count as safe. The shaded arc is strictly
+  blocking, and its endpoints are explicitly excluded from that status.
+- Complete time sets are separately computed; the animated grid is not used
+  to infer completeness or a general theorem. Selected-reference quantifiers
+  and the transition from four to eight runners remain visible.
+
+Representation checkpoint: the moving view omits absolute orientation from
+its picture, while original speeds, reference and common time recover it.
+The table also retains original phases. Each complete time set is tied to its
+reference, configuration, threshold and period. Changing any of those inputs
+requires rebuilding the set; playback snapshots cannot carry that operation.
+The standard reference transformation is attributed to the pinned baseline;
+there is no new mathematical or novelty claim.
+
+Next: the concluding CC story, then standalone figures and the separate
+research explorer. Later research remains outside this frozen visual snapshot.

@@ -15,8 +15,9 @@ const cut=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).tr
 const selector=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).selector_visual;
 const clock=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).clock_visual;
 const cells=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).cell_visual;
+const opening=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).opening_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation, parent-child, selector, shared-clock and cell-construction controls; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the opening, cap, joint, representation, parent-child, selector, shared-clock and cell-construction controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -24,6 +25,86 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     const page=await browser.newPage({viewport:{width:1440,height:1100},colorScheme:'light'});
     const errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r.url()));
     await page.goto(pathToFileURL(path.join(pkg,'index.html')).href);
+    await page.waitForFunction(()=>window.CC_OPENING_STATE&&!document.getElementById('opening-chapter').hidden);
+    assert.equal(await page.locator('#nav-opening').getAttribute('aria-current'),'page');
+    assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).time,'0');
+    assert.deepEqual((await page.evaluate(()=>window.CC_OPENING_STATE)).absolute,['0','0','0','0']);
+    assert.equal(await page.locator('#opening-track .opening-runner').count(),4);
+    report.checks.opening_layouts=[];
+    async function openingLayout(){return page.evaluate(()=>{
+      const outside=[];
+      for(const svg of document.querySelectorAll('#opening-chapter svg')){
+        const b=svg.viewBox.baseVal;
+        for(const text of svg.querySelectorAll('text')){const r=text.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:text.textContent});}
+      }
+      const labels=[...document.querySelectorAll('.opening-runner-label')].map(t=>t.getBBox());
+      let overlaps=0;for(let i=0;i<labels.length;i++)for(let j=i+1;j<labels.length;j++){const a=labels[i],b=labels[j];if(a.x<b.x+b.width&&a.x+a.width>b.x&&a.y<b.y+b.height&&a.y+a.height>b.y)overlaps++;}
+      return{overflow:document.documentElement.scrollWidth>innerWidth,outside,labelOverlaps:overlaps};
+    });}
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const reference of opening.references){
+        await page.click(`#opening-references [data-reference="${reference.index}"]`);
+        for(const frame of ['track','relative']){
+          await page.click(`#opening-${frame}-view`);
+          for(const c of reference.controls){
+            await page.locator('#opening-time').fill(String(c.time.num*opening.time_denominator/c.time.den));
+            const s=await page.evaluate(()=>window.CC_OPENING_STATE);
+            assert.equal(s.time,c.time.text);assert.equal(s.reference,reference.index);assert.equal(s.frame,frame);
+            assert.deepEqual(s.absolute,c.absolute.map(x=>x.text));assert.deepEqual(s.relativeSpeeds,reference.relative_speeds);
+            assert.deepEqual(s.relativePhases,c.relative_phases.map(x=>x.text));assert.deepEqual(s.distances,c.distances.map(x=>x.text));
+            assert.equal(s.minimum,c.minimum.text);assert.equal(s.safe,c.safe);assert.deepEqual(s.nearest,c.nearest);
+            assert.deepEqual(s.displayedPhases,(frame==='track'?c.absolute:c.relative_phases).map(x=>x.text));
+            assert.deepEqual(s.safeComponents,reference.safe_components.map(pair=>pair.map(x=>x.text)));
+            assert.equal(await page.locator('#opening-phase-rows tr').count(),4);
+            assert.equal(await page.locator('#opening-timeline .opening-safe-singleton').count(),4);
+            assert.equal(await page.locator('#opening-timeline .opening-safe-interval').count(),4);
+            assert.deepEqual(await openingLayout(),{overflow:false,outside:[],labelOverlaps:0},`opening ${width} R${reference.index+1} ${frame} ${c.time.text}`);
+            report.checks.opening_layouts.push({width,scheme,reference:reference.index,frame,time:c.time.text,overflow:false,clipped_svg_labels:0});
+            if(process.env.CC_SCREENSHOT_DIR&&reference.index===1&&frame==='relative'&&c.time.text==='1/3'){
+              fs.mkdirSync(process.env.CC_SCREENSHOT_DIR,{recursive:true});
+              await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`opening-${width}-${scheme}.png`),fullPage:true});
+            }
+          }
+        }
+      }
+    }
+    // Every scrubber step in the narrow layout, including near-collisions.
+    for(const reference of opening.references){
+      await page.click(`#opening-references [data-reference="${reference.index}"]`);
+      for(let tick=0;tick<=opening.time_denominator;tick++){
+        await page.locator('#opening-time').fill(String(tick));
+        assert.deepEqual(await openingLayout(),{overflow:false,outside:[],labelOverlaps:0},`opening narrow scrub R${reference.index+1} tick ${tick}`);
+      }
+      await page.click('#opening-witness');assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).time,reference.witness_time.text);
+    }
+    await page.click('#opening-compare');assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).time,'1/3');
+    assert.ok((await page.locator('#opening-comparison').textContent()).includes('R2 and R3 are lonely'));
+    const beforeFrame=await page.evaluate(()=>window.CC_OPENING_STATE);
+    await page.click('#opening-track-view');const afterFrame=await page.evaluate(()=>window.CC_OPENING_STATE);
+    for(const key of ['time','minimum','distances','absolute','relativePhases','safeComponents'])assert.deepEqual(beforeFrame[key],afterFrame[key]);
+    await page.click('#opening-start');await page.click('#opening-play');
+    await page.waitForFunction(()=>window.CC_OPENING_STATE.tick>0&&window.CC_OPENING_STATE.playing);
+    await page.click('#opening-play');const pausedOpening=await page.evaluate(()=>window.CC_OPENING_STATE.tick);
+    await page.waitForTimeout(130);assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE.tick)),pausedOpening);
+    await page.locator('#opening-time').fill('95');await page.click('#opening-play');await page.waitForFunction(()=>window.CC_OPENING_STATE.tick===96&&!window.CC_OPENING_STATE.playing);
+    await page.click('#opening-start');await page.emulateMedia({reducedMotion:'reduce'});await page.click('#opening-play');
+    assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).time,'1/4');assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).playing,false);
+    await page.emulateMedia({reducedMotion:'no-preference'});
+    await page.click('#opening-play');await page.click('#nav-cap');await page.waitForFunction(()=>!document.getElementById('cap-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).playing,false);
+    const stoppedTick=await page.evaluate(()=>window.CC_OPENING_STATE.tick);await page.waitForTimeout(120);
+    await page.click('#nav-opening');await page.waitForFunction(()=>!document.getElementById('opening-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).tick,stoppedTick);
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#opening');await page.reload();
+    await page.waitForFunction(()=>window.CC_OPENING_STATE&&!document.getElementById('opening-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).reference,0);
+    assert.equal((await page.evaluate(()=>window.CC_OPENING_STATE)).time,'0');
+    report.checks.opening_exact_controls=28;report.checks.opening_narrow_scrubber_layouts=388;
+    report.checks.opening_frame_invariance_and_signed_phase=true;report.checks.opening_playback_pause_finish_and_reduced_motion=true;
+    report.checks.opening_default_direct_link_and_preserved_state=true;report.checks.eight_chapter_navigation=true;
+    await page.setViewportSize({width:1440,height:1100});await page.emulateMedia({colorScheme:'light'});
+    await page.click('#nav-cap');
     await page.waitForFunction(()=>window.CC_STATE);
     let cases=0;
     for(const ex of examples){

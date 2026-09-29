@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Seven connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, and **from time to shape**.
+**Eight connected sections:** the **one track** opening, **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, and **from time to shape**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -11,6 +11,8 @@ python3 -m http.server 8000 --directory visuals/compatibility-calculus
 ```
 
 Then open `http://localhost:8000/presentation.html`.
+The default is **00 · One track**, also directly reachable as `#opening`.
+Existing section numbers and direct links remain unchanged.
 Choose **02 · True together** for the q=4 section. The URL fragment `#joint`
 opens that chapter directly when serving or opening the local file.
 Choose **03 · What the model remembers**, or open `#representation`, for six
@@ -25,6 +27,28 @@ Choose **07 · From time to shape**, or open `#cell`, for closed lap intervals,
 stepwise band intersection and the full ten-cell atlas.
 
 ## What this version does
+
+The opening uses four common-start runners with original speeds 1,2,3,4.
+Choose any of the four as reference, then switch from the track frame to the
+moving frame. Signed relative speeds, time, original and relative phases,
+and distances are retained exactly. The reference freezes at phase zero;
+slower runners move counterclockwise. Changing frame preserves every distance,
+while changing reference changes whose loneliness is checked.
+
+The clock scrubs in steps of 1/96 over [0,1], with pauseable playback, a common
+start reset, a selected-reference witness jump and a t=1/3 comparison. Reduced
+motion jumps to an exact witness. Coincident runners retain separate markers
+and exact table rows. The threshold remains 1/4 with three other runners,
+even when opposite relative speeds give duplicate distance constraints.
+
+The complete lonely-time sets are computed separately from playback. R1 and
+R4 have only {1/4,3/4}; R2 and R3 have [1/4,3/8] union [5/8,3/4]. At t=1/3,
+R1 and R4 meet while R2 and R3 are lonely. The builder classifies a complete
+threshold-boundary partition; the checker independently intersects closed
+safe-band unions. This is a finite illustration of the pinned baseline's
+standard reference change, not an extension of the A/B family or a general
+conjecture proof. The advanced examples explicitly return to eight runners.
+
 
 Select one of six B-ray controls, lower a triangular section from a cap peak,
 and follow the exact interval under `H=x-qy`. At the first integer contact,
@@ -201,7 +225,7 @@ files. The generated presentation needs neither Python nor Git to view.
 It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
-`presentation.template.html`, `joint.template.html`, `representation.template.html`,
+`presentation.template.html`, `opening.template.html`, `joint.template.html`, `representation.template.html`,
 `transfer.template.html`, `selector.template.html`, `clock.template.html`, `cell.template.html`,
 `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
@@ -216,6 +240,7 @@ from a drawing.
 
 | Object / operation | Checked scope |
 | --- | --- |
+| Opening | Four references; 28 exact snapshots and 388 scrubber states; signed phases, original-phase recovery, common velocity shift, complete safe sets and closed endpoints |
 | Full geometry | 10 cells, 33 vertices, 45 edges, 3 singletons |
 | Top caps | All 7 exactly equal the corresponding cell cut at z≥1/7 |
 | Transfer | 8 parents, 10 children, 46 empty branches; 27 inherited, 6 new, 5 removed vertices; 9 edges inside old parent faces |
@@ -293,8 +318,16 @@ halfspace is added, instead of enumerating triples of boundary planes as the
 builder does. It checks all 80 construction states, complete facets and cyclic
 face order, the final source vertices/edges, and the physical lap translation.
 
-Next visual target: the opening explanation of common-start runners and the
-selected-reference/relative-motion translation. The concluding guided CC
-story, standalone figure exports and separate research explorer also remain
-unfinished. The new construction uses the existing frozen mathematical
-sources and does not incorporate later coefficient/selector research.
+The opening audit covers 168 reference/frame/snapshot layouts at widths
+1440, 390 and 320, plus every one of the 388 reference/scrubber states in the
+narrow layout. It checks phases, distances, complete safe sets, coincident
+runner identity, label placement, view changes, playback pause/finish,
+reduced motion, witness jumps, chapter exits and direct/default entry.
+All previous seven sections remain covered.
+
+Next visual target: the concluding guided CC story, connecting the recurring
+operations and correction loop to the existing question-specific branches.
+Standalone figure exports and the separate research explorer follow. Sources
+remain at 6b2b931; the baseline note is added from that same pinned commit.
+Later coefficient/selector/compiler research stays separate. At each completed
+visual section, report what comes next.

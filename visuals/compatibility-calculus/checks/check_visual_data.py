@@ -78,6 +78,38 @@ def main():
         assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest, path
     counts['source_hashes']=len(hashes['files'])
     counts['implementation_hashes']=len(hashes['implementation_files'])
+    # Opening: independent band-union intersection, rather than the builder's
+    # threshold-event partition. Signed phases are checked in the original frame.
+    opening=e['opening_visual'];vs=opening['velocities'];delta=opening['threshold']
+    assert vs==[1,2,3,4] and opening['total_runners']==4 and delta==F(1,4)
+    for ref in opening['references']:
+        i=ref['index'];sr=vs[i];relative=[s-sr for s in vs]
+        assert ref['relative_speeds']==relative
+        expected=safe_set([abs(u) for u in relative if u],delta)
+        assert expected==list(map(tuple,ref['safe_components']))
+        assert any(a<=ref['witness_time']<=b for a,b in expected)
+        for c in ref['controls']:
+            t=c['time'];absolute=[frac(s*t) for s in vs]
+            phases=[frac(p-absolute[i]) for p in absolute]
+            distances=[min(abs(p-absolute[i]),1-abs(p-absolute[i])) for p in absolute]
+            nearest=min(d for j,d in enumerate(distances) if j!=i)
+            assert c['absolute']==absolute and c['relative_phases']==phases and c['distances']==distances
+            assert c['minimum']==nearest and c['safe']==(nearest>=delta)
+            assert c['nearest']==[j for j,d in enumerate(distances) if j!=i and d==nearest]
+            assert [frac(p+sr*t) for p in phases]==absolute
+        # All scrubber states, with signed floor and a common velocity shift.
+        for tick in range(opening['time_denominator']+1):
+            t=F(tick,opening['time_denominator'])
+            assert [frac(u*t) for u in relative]==[frac(frac(s*t)-frac(sr*t)) for s in vs]
+            nearest=min(dist((s-sr)*t) for j,s in enumerate(vs) if j!=i)
+            assert (nearest>=delta)==any(a<=t<=b for a,b in expected)
+            assert nearest==min(dist(((s+7)-(sr+7))*t) for j,s in enumerate(vs) if j!=i)
+    assert opening['references'][0]['safe_components']==[[F(1,4),F(1,4)],[F(3,4),F(3,4)]]
+    assert opening['references'][1]['safe_components']==[[F(1,4),F(3,8)],[F(5,8),F(3,4)]]
+    assert [ref['controls'][2]['safe'] for ref in opening['references']]==[False,True,True,False]
+    assert opening['references'][1]['controls'][2]['relative_phases'][0]==F(2,3)
+    counts.update(opening_references=4,opening_exact_snapshots=28,opening_scrubber_states=388,
+                  opening_complete_safe_sets_and_closed_endpoints=True,opening_frame_recovery_and_signed_speeds=True)
     cells,caps=g['full_cells'],g['top_caps']
     assert (len(cells),sum(len(c['vertices']) for c in cells),sum(len(c['edges']) for c in cells),sum(c['singleton'] for c in cells),len(caps))==(10,33,45,3,7)
     for c in cells:
