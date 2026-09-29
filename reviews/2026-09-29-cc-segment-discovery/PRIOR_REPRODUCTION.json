@@ -1,0 +1,18 @@
+{
+  "authorship": "same coordinator reproduction; not independent review",
+  "checks": [
+    {
+      "byte_identical": true,
+      "saved_output": "reviews/2026-09-29-cc-bounded-selector/verification.json",
+      "script": "reviews/2026-09-29-cc-bounded-selector/verify.py",
+      "sha256": "eb21e9df8a708fc5bb315aa1e82be0543d82ba94699aef5a08fdea5115ca0fe6"
+    },
+    {
+      "byte_identical": true,
+      "saved_output": "reviews/2026-09-29-cc-bounded-selector/countercheck.json",
+      "script": "reviews/2026-09-29-cc-bounded-selector/countercheck.py",
+      "sha256": "27ff079e3f3a61cb1ea6b4130e986b196dda834f3c6bdd98135b4aa2de296cd0"
+    }
+  ],
+  "status": "PASS"
+}

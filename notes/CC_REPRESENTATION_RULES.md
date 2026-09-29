@@ -252,6 +252,35 @@ for reuse or adaptation during this step, with the source/change record above.
 
 The requirements themselves did not establish this result: the subsequent
 linked derivation and checks supply the new evidence. Historical certificates
-and their recorded claim statuses remain preserved. The next bounded question
-is review and discovery of sufficient compatible segment collections, not an
-unproved extension of this selector to new families.
+and their recorded claim statuses remain preserved. The subsequent parent-only
+discovery step is recorded below; it does not extend physical family coverage.
+
+## 7. Discovery certificates: tail coverage and finite exceptions
+
+The [parent-only discovery record](CC_SEGMENT_DISCOVERY_2026_09_29.md) adds a
+construction stage to the two-segment witness representation. It uses standard
+affine clipping, integer width and finite greedy covering, without importing
+an external theorem or claiming those operations as CC inventions.
+
+- **Question/output:** derive a sufficient fixed segment list from the supplied
+  six-form parent geometry and seventh band for the same A-ray witness task.
+- **Retained/operation:** candidate provenance, closed clipping, a proved tail
+  cutoff, every prefix coverage entry, deterministic choices, physical recovery
+  and separate preprocessing/online costs. Here 24 floor edges yield 27 records;
+  P3 covers all q>=6 and q=3,5, and P1 covers the remaining q=2,4.
+- **Omitted/limits:** parent face interiors, new child edges inside those faces,
+  optimal values and full witness sets. A failed candidate cover is a failure
+  of that restricted class, not a counterexample to loneliness. The nonvertical
+  segment hypothesis and the bounded execution scope remain explicit.
+- **Evidence/recovery:** the linked proof candidate, separately structured
+  polygon reconstruction and archived physical controls; all authored by the
+  coordinator. Pinned parent inequalities supply the richer recovery route.
+  The procedure was designed after seeing this example, so a future transfer
+  must not be reported as already tested or assumed successful.
+- **Failure/trigger:** a wrong band, omitted closed point, invalid width bound,
+  uncovered prefix or broken physical map. Removing endpoints eliminates all
+  q=4 candidates. Restore the needed geometry or choose a different model when
+  a restricted class fails; check the ray/clock translation before reuse.
+
+The next proposed check is transfer of the frozen rule to the already studied
+B ray with its own orbit and clock. This has not yet been performed.
