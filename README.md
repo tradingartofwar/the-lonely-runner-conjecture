@@ -50,8 +50,9 @@ to restored equality points, and false marginal compatibility to a local
 same-slice rejection. Question-specific branches keep the A/B clocks and
 output obligations distinct. Open the self-contained `presentation.html`;
 its guided narrative runs from common-start runners to compatibility,
-compression and recovery. Sources stay frozen at 6b2b931. Standalone figures
-and the research explorer remain in progress.
+compression and recovery. The [standalone figure gallery](visuals/compatibility-calculus/figures/index.html)
+now supplies all eleven planned SVGs with captions, exact states and source/status
+notes. Sources stay frozen at 6b2b931. The separate research explorer is next.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

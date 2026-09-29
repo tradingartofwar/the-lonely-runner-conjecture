@@ -23,6 +23,32 @@ This file is a detailed research-continuity record. The live repository remains 
 **Next proposed:** a frozen ten-runner transfer adding the archived difficult row (38,18). At (1,20), the current selector's 7/24 gives added phase 1/12, below the ten-runner target 1/10. No ten-runner compiler experiment has run. The coefficient-aware dispatcher remains separately pending.
 
 
+**Standalone visual figures completed — September 29, 2026:**
+The [offline figure gallery](visuals/compatibility-calculus/figures/index.html)
+contains all eleven SVGs in the presentation plan, from the runner circle
+through the representation map. Each vector figure includes a standalone
+caption, exact selected state, source/status and pinned recovery links.
+The gallery embeds every preview and download. The exporter reuses the
+verified presentation's SVG renderers; a separate manifest records inputs,
+states, environment and output hashes. Presentation/data bytes stay unchanged.
+
+The exports retain all three singleton rings, occurrence labels, the q=4
+local/global distinction, q=10 every-maximizer failure and q=5 one-witness
+scope. The planned representation ladder is rendered as question-specific
+branches with distinct A/B clocks. No new mathematical claim or source input.
+Sources remain at 6b2b931; later nine-runner research stays separate.
+
+All eleven figures pass source/state, physical recovery, vector-dependency
+and text-boundary checks and received visual inspection. The gallery passes
+1440/390/320 layouts and an actual download byte comparison. Rebuild checking
+is byte-for-byte in the recorded Chromium/font environment. See the figure
+README and `checks/figure_check.json` for commands and limits.
+
+**Next visual target:** the separate research explorer, with coordinated exact
+q/representation controls, geometry, projection, physical witness and scope.
+Completion messages should continue to identify what comes next.
+
+
 **Closing visual section completed — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **08 · Carry it through** (`#story`), completing the opening-to-conclusion

@@ -1,0 +1,3921 @@
+{
+  "schema_version": 1,
+  "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+  "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+  "input_sha256": {
+    "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+    "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+    "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+    "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+    "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+    "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+  },
+  "render_environment": {
+    "chromium": "153.0.8010.0",
+    "font": "Arial, sans-serif",
+    "color_scheme": "light",
+    "reduced_motion": "reduce",
+    "viewport": [
+      1440,
+      1000
+    ]
+  },
+  "scope": "Eleven static, exact-state illustrations of the pinned sources; no claim promotion or new research input.",
+  "figures": [
+    {
+      "id": "runner-circle",
+      "number": "01",
+      "title": "One track. Two frames.",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "track": {
+          "reference": 1,
+          "frame": "track",
+          "tick": 32,
+          "time": "1/3",
+          "playing": false,
+          "absolute": [
+            "1/3",
+            "2/3",
+            "0",
+            "1/3"
+          ],
+          "relativeSpeeds": [
+            -1,
+            0,
+            1,
+            2
+          ],
+          "relativePhases": [
+            "2/3",
+            "0",
+            "1/3",
+            "2/3"
+          ],
+          "distances": [
+            "1/3",
+            "0",
+            "1/3",
+            "1/3"
+          ],
+          "minimum": "1/3",
+          "nearest": [
+            0,
+            2,
+            3
+          ],
+          "safe": true,
+          "displayedPhases": [
+            "1/3",
+            "2/3",
+            "0",
+            "1/3"
+          ],
+          "safeComponents": [
+            [
+              "1/4",
+              "3/8"
+            ],
+            [
+              "5/8",
+              "3/4"
+            ]
+          ]
+        },
+        "relative": {
+          "reference": 1,
+          "frame": "relative",
+          "tick": 32,
+          "time": "1/3",
+          "playing": false,
+          "absolute": [
+            "1/3",
+            "2/3",
+            "0",
+            "1/3"
+          ],
+          "relativeSpeeds": [
+            -1,
+            0,
+            1,
+            2
+          ],
+          "relativePhases": [
+            "2/3",
+            "0",
+            "1/3",
+            "2/3"
+          ],
+          "distances": [
+            "1/3",
+            "0",
+            "1/3",
+            "1/3"
+          ],
+          "minimum": "1/3",
+          "nearest": [
+            0,
+            2,
+            3
+          ],
+          "safe": true,
+          "displayedPhases": [
+            "2/3",
+            "0",
+            "1/3",
+            "2/3"
+          ],
+          "safeComponents": [
+            [
+              "1/4",
+              "3/8"
+            ],
+            [
+              "5/8",
+              "3/4"
+            ]
+          ]
+        }
+      },
+      "status": "REPRODUCED finite example of the standard reference change",
+      "sources": [
+        "notes/MATHEMATICAL_BASELINE.md"
+      ],
+      "caption": "Runners start together. Here R1 and R4 coincide, while R2 and R3 are each lonely. Concentric rings preserve coincident identities. The amber arc marks distance < 1/4, with hollow equality endpoints; blue shows a shortest distance. Phase increases clockwise from the top. Subtracting the reference speed preserves distances; changing the reference changes whose loneliness is checked.",
+      "file": "01-runner-circle.svg",
+      "width": 1200,
+      "height": 1018,
+      "sha256": "24fa5d75db91ce773d863b83956b582db510dc8638244b8f05a9fdcb7077e1f2"
+    },
+    {
+      "id": "shared-clock",
+      "number": "02",
+      "title": "One shared clock",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "mode": "occurrence",
+        "index": 5,
+        "time": "545/1792",
+        "activeSpeeds": [],
+        "activeEpisodes": [],
+        "safe": true,
+        "minimum": "33/256",
+        "phases": [
+          "545/1792",
+          "97/448",
+          "933/1792",
+          "739/896",
+          "33/256",
+          "619/1792",
+          "97/112"
+        ],
+        "distances": [
+          "545/1792",
+          "97/448",
+          "859/1792",
+          "157/896",
+          "33/256",
+          "619/1792",
+          "15/112"
+        ],
+        "laps": [
+          "0",
+          "1",
+          "1",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "meetings": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "graphNodes": 6,
+        "graphEdges": 4,
+        "safeComponents": [
+          [
+            "17/56",
+            "39/128"
+          ]
+        ]
+      },
+      "status": "REPRODUCED exact local interval calculation",
+      "sources": [
+        "reviews/2026-09-25-lr2/lap_constraints.json",
+        "notes/LAP_LABELLED_CONSTRAINTS.md"
+      ],
+      "caption": "Each row is a strict blocking occurrence: distance < 1/8. Hollow endpoints exclude equality; filled endpoints can come from clipping to the window. Runners 1, 4 and 5 are safe throughout J. The local safe set is the closed interval [17/56, 39/128], duration 1/896. The cursor is at its midpoint t=545/1792. Meeting label m identifies the nearby zero-distance event; it is not the completed lap.",
+      "file": "02-shared-clock.svg",
+      "width": 1200,
+      "height": 1193,
+      "sha256": "4e4b0c82b8c3ce71254264640724a3a8f9d7cb00beac4671a277a4c543feb8b2"
+    },
+    {
+      "id": "occurrence-identity",
+      "number": "03",
+      "title": "The label changes the conclusion",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "merged": {
+          "mode": "runner",
+          "index": 5,
+          "time": "545/1792",
+          "activeSpeeds": [],
+          "activeEpisodes": [],
+          "safe": true,
+          "minimum": "33/256",
+          "phases": [
+            "545/1792",
+            "97/448",
+            "933/1792",
+            "739/896",
+            "33/256",
+            "619/1792",
+            "97/112"
+          ],
+          "distances": [
+            "545/1792",
+            "97/448",
+            "859/1792",
+            "157/896",
+            "33/256",
+            "619/1792",
+            "15/112"
+          ],
+          "laps": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "meetings": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "graphNodes": 4,
+          "graphEdges": 4,
+          "safeComponents": [
+            [
+              "17/56",
+              "39/128"
+            ]
+          ]
+        },
+        "split": {
+          "mode": "occurrence",
+          "index": 5,
+          "time": "545/1792",
+          "activeSpeeds": [],
+          "activeEpisodes": [],
+          "safe": true,
+          "minimum": "33/256",
+          "phases": [
+            "545/1792",
+            "97/448",
+            "933/1792",
+            "739/896",
+            "33/256",
+            "619/1792",
+            "97/112"
+          ],
+          "distances": [
+            "545/1792",
+            "97/448",
+            "859/1792",
+            "157/896",
+            "33/256",
+            "619/1792",
+            "15/112"
+          ],
+          "laps": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "meetings": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "graphNodes": 6,
+          "graphEdges": 4,
+          "safeComponents": [
+            [
+              "17/56",
+              "39/128"
+            ]
+          ]
+        }
+      },
+      "status": "REPRODUCED local counterexample to runner-only compression",
+      "sources": [
+        "reviews/2026-09-25-lr2/lap_constraints.json",
+        "notes/LAP_LABELLED_CONSTRAINTS.md"
+      ],
+      "caption": "An edge records overlap somewhere in J; it does not say all edges occur simultaneously. Merging occurrence identity produces a triangle among 6, 11 and 16. Restoring the labels removes that false local inference. This is local to J: those three runners do meet together at t=0. No nodes are active at the selected safe midpoint.",
+      "file": "03-occurrence-identity.svg",
+      "width": 1200,
+      "height": 1042,
+      "sha256": "78c399abc0e7d4fe02cbde274325a249ac216a4c3d8d8ab8fb209a36391f3fb5"
+    },
+    {
+      "id": "safe-cell",
+      "number": "04",
+      "title": "One closed safe cell",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "construction": {
+          "cell": "C1",
+          "stage": 7,
+          "dimension": 3,
+          "vertices": [
+            [
+              "1/8",
+              "1/4",
+              "1/8"
+            ],
+            [
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            [
+              "7/40",
+              "1/8",
+              "1/8"
+            ],
+            [
+              "5/24",
+              "1/8",
+              "1/8"
+            ]
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "faces": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "atlasCells": 10,
+          "atlasSingletons": 3
+        },
+        "sourceCell": {
+          "active_constraints": [
+            [
+              "floor",
+              "0.lower",
+              "5.upper",
+              "6.lower"
+            ],
+            [
+              "0.lower",
+              "1.lower",
+              "5.upper",
+              "6.lower"
+            ],
+            [
+              "floor",
+              "1.lower",
+              "6.lower"
+            ],
+            [
+              "floor",
+              "1.lower",
+              "5.upper"
+            ]
+          ],
+          "dimension": 3,
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "id": "C1",
+          "labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "peak_edges": [
+            {
+              "alpha": "-1",
+              "beta": "2",
+              "endpoint_index": 0,
+              "max_loss": "1/24",
+              "peak_index": 1
+            },
+            {
+              "alpha": "1/5",
+              "beta": "-1",
+              "endpoint_index": 2,
+              "max_loss": "1/24",
+              "peak_index": 1
+            },
+            {
+              "alpha": "1",
+              "beta": "-1",
+              "endpoint_index": 3,
+              "max_loss": "1/24",
+              "peak_index": 1
+            }
+          ],
+          "peak_indices": [
+            1
+          ],
+          "singleton": false,
+          "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+          "vertices": [
+            [
+              "1/8",
+              "1/4",
+              "1/8"
+            ],
+            [
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            [
+              "7/40",
+              "1/8",
+              "1/8"
+            ],
+            [
+              "5/24",
+              "1/8",
+              "1/8"
+            ]
+          ]
+        }
+      },
+      "status": "REPRODUCED fixed finite geometry; illustration is not a proof",
+      "sources": [
+        "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+        "reviews/2026-09-29-cc-six-seven-transfer/verification.json"
+      ],
+      "caption": "For each form fᵢ, the complete band mᵢ+z ≤ fᵢ(x,y) ≤ mᵢ+1−z holds everywhere in C1. The pale dashed outline is the preceding six-band relaxation; amber marks the new boundary. Closed endpoints are retained. This is ambient geometry: a physical time also requires the appropriate integer orbit equation and its A- or B-ray recovery map.",
+      "file": "04-safe-cell.svg",
+      "width": 1200,
+      "height": 946,
+      "sha256": "5c7f21e6610e4c36e2334df559028cb7700586c01b22360629f14e1602a7baed"
+    },
+    {
+      "id": "ten-cell-atlas",
+      "number": "05",
+      "title": "Keep the isolated points",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "lap": {
+          "id": "interval",
+          "bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "9/32",
+              "15/32"
+            ],
+            [
+              "9/40",
+              "3/8"
+            ],
+            [
+              "3/16",
+              "5/16"
+            ],
+            [
+              "17/56",
+              "23/56"
+            ],
+            [
+              "25/88",
+              "31/88"
+            ]
+          ],
+          "lower": "17/56",
+          "upper": "5/16",
+          "time": "69/224",
+          "physical": {
+            "time": "69/224",
+            "phases": [
+              "69/224",
+              "13/56",
+              "121/224",
+              "95/112",
+              "5/32",
+              "87/224",
+              "1/224"
+            ],
+            "distances": [
+              "69/224",
+              "13/56",
+              "103/224",
+              "17/112",
+              "5/32",
+              "87/224",
+              "1/224"
+            ],
+            "laps": [
+              "0",
+              "1",
+              "1",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "requiredMinimum": "17/112"
+          }
+        },
+        "construction": {
+          "cell": "C1",
+          "stage": 7,
+          "dimension": 3,
+          "vertices": [
+            [
+              "1/8",
+              "1/4",
+              "1/8"
+            ],
+            [
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            [
+              "7/40",
+              "1/8",
+              "1/8"
+            ],
+            [
+              "5/24",
+              "1/8",
+              "1/8"
+            ]
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "faces": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "atlasCells": 10,
+          "atlasSingletons": 3
+        },
+        "angle": 35,
+        "showVertices": true,
+        "counts": {
+          "cells": 10,
+          "vertexOccurrences": 33,
+          "edgeOccurrences": 45,
+          "singletons": [
+            "C0",
+            "C3",
+            "C5"
+          ]
+        },
+        "cells": [
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "0.lower",
+                "1.lower",
+                "6.upper"
+              ]
+            ],
+            "dimension": 0,
+            "edges": [],
+            "id": "C0",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "peak_edges": [],
+            "peak_indices": [],
+            "singleton": true,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "1/8",
+                "1/8",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "0.lower",
+                "5.upper",
+                "6.lower"
+              ],
+              [
+                "0.lower",
+                "1.lower",
+                "5.upper",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "1.lower",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "1.lower",
+                "5.upper"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "id": "C1",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-1",
+                "beta": "2",
+                "endpoint_index": 0,
+                "max_loss": "1/24",
+                "peak_index": 1
+              },
+              {
+                "alpha": "1/5",
+                "beta": "-1",
+                "endpoint_index": 2,
+                "max_loss": "1/24",
+                "peak_index": 1
+              },
+              {
+                "alpha": "1",
+                "beta": "-1",
+                "endpoint_index": 3,
+                "max_loss": "1/24",
+                "peak_index": 1
+              }
+            ],
+            "peak_indices": [
+              1
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "1/8",
+                "1/4",
+                "1/8"
+              ],
+              [
+                "1/6",
+                "1/6",
+                "1/6"
+              ],
+              [
+                "7/40",
+                "1/8",
+                "1/8"
+              ],
+              [
+                "5/24",
+                "1/8",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "0.lower",
+                "5.lower"
+              ],
+              [
+                "floor",
+                "0.lower",
+                "4.upper"
+              ],
+              [
+                "0.lower",
+                "4.upper",
+                "5.lower"
+              ],
+              [
+                "floor",
+                "4.upper",
+                "5.lower"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "id": "C2",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-1",
+                "beta": "1",
+                "endpoint_index": 0,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "-1",
+                "beta": "4",
+                "endpoint_index": 1,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "1",
+                "beta": "-2",
+                "endpoint_index": 3,
+                "max_loss": "1/24",
+                "peak_index": 2
+              }
+            ],
+            "peak_indices": [
+              2
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "1/8",
+                "3/8",
+                "1/8"
+              ],
+              [
+                "1/8",
+                "1/2",
+                "1/8"
+              ],
+              [
+                "1/6",
+                "1/3",
+                "1/6"
+              ],
+              [
+                "5/24",
+                "1/4",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "1.lower",
+                "3.upper",
+                "6.lower"
+              ]
+            ],
+            "dimension": 0,
+            "edges": [],
+            "id": "C3",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              2
+            ],
+            "peak_edges": [],
+            "peak_indices": [],
+            "singleton": true,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "3/8",
+                "1/8",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "3.lower",
+                "5.upper"
+              ],
+              [
+                "floor",
+                "fold",
+                "1.lower",
+                "3.lower"
+              ],
+              [
+                "fold",
+                "1.lower",
+                "3.lower",
+                "5.upper",
+                "6.upper"
+              ],
+              [
+                "floor",
+                "fold",
+                "5.upper",
+                "6.upper"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "id": "C4",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              2
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-3",
+                "beta": "5",
+                "endpoint_index": 0,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "-1",
+                "endpoint_index": 1,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "1/2",
+                "endpoint_index": 3,
+                "max_loss": "1/24",
+                "peak_index": 2
+              }
+            ],
+            "peak_indices": [
+              2
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "3/8",
+                "3/8",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "1/8",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "1/6",
+                "1/6"
+              ],
+              [
+                "1/2",
+                "3/16",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "2.upper",
+                "5.lower",
+                "6.upper"
+              ]
+            ],
+            "dimension": 0,
+            "edges": [],
+            "id": "C5",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              2,
+              2
+            ],
+            "peak_edges": [],
+            "peak_indices": [],
+            "singleton": true,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "3/8",
+                "1/2",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "2.upper",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "fold",
+                "5.lower",
+                "6.lower"
+              ],
+              [
+                "fold",
+                "2.upper",
+                "4.upper",
+                "5.lower",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "fold",
+                "2.upper",
+                "4.upper"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "id": "C6",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              2,
+              3
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-1",
+                "beta": "2",
+                "endpoint_index": 0,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "-1/2",
+                "endpoint_index": 1,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "1",
+                "endpoint_index": 3,
+                "max_loss": "1/24",
+                "peak_index": 2
+              }
+            ],
+            "peak_indices": [
+              2
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "11/24",
+                "5/12",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "5/16",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "1/3",
+                "1/6"
+              ],
+              [
+                "1/2",
+                "3/8",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "1.upper",
+                "6.lower"
+              ],
+              [
+                "1.upper",
+                "2.lower",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "2.lower",
+                "6.lower"
+              ],
+              [
+                "1.upper",
+                "2.lower",
+                "4.upper"
+              ],
+              [
+                "floor",
+                "1.upper",
+                "4.upper"
+              ],
+              [
+                "floor",
+                "2.lower",
+                "4.upper"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "id": "C7",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              2,
+              3
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-2",
+                "beta": "1",
+                "endpoint_index": 1,
+                "max_loss": "1/42",
+                "peak_index": 3
+              },
+              {
+                "alpha": "0",
+                "beta": "1",
+                "endpoint_index": 4,
+                "max_loss": "1/24",
+                "peak_index": 3
+              },
+              {
+                "alpha": "1",
+                "beta": "-2",
+                "endpoint_index": 5,
+                "max_loss": "1/24",
+                "peak_index": 3
+              }
+            ],
+            "peak_indices": [
+              3
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "11/40",
+                "7/8",
+                "1/8"
+              ],
+              [
+                "2/7",
+                "6/7",
+                "1/7"
+              ],
+              [
+                "7/24",
+                "5/6",
+                "1/8"
+              ],
+              [
+                "1/3",
+                "5/6",
+                "1/6"
+              ],
+              [
+                "1/3",
+                "7/8",
+                "1/8"
+              ],
+              [
+                "3/8",
+                "3/4",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "4.lower",
+                "5.upper"
+              ],
+              [
+                "floor",
+                "fold",
+                "2.lower",
+                "4.lower"
+              ],
+              [
+                "fold",
+                "2.lower",
+                "4.lower",
+                "5.upper",
+                "6.upper"
+              ],
+              [
+                "floor",
+                "fold",
+                "5.upper",
+                "6.upper"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "id": "C8",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-1",
+                "beta": "2",
+                "endpoint_index": 0,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "-1",
+                "endpoint_index": 1,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "1/2",
+                "endpoint_index": 3,
+                "max_loss": "1/24",
+                "peak_index": 2
+              }
+            ],
+            "peak_indices": [
+              2
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "11/24",
+                "3/4",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "5/8",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "2/3",
+                "1/6"
+              ],
+              [
+                "1/2",
+                "11/16",
+                "1/8"
+              ]
+            ]
+          },
+          {
+            "active_constraints": [
+              [
+                "floor",
+                "1.upper",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "fold",
+                "5.lower",
+                "6.lower"
+              ],
+              [
+                "fold",
+                "1.upper",
+                "3.upper",
+                "5.lower",
+                "6.lower"
+              ],
+              [
+                "floor",
+                "fold",
+                "1.upper",
+                "3.upper"
+              ]
+            ],
+            "dimension": 3,
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "id": "C9",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              3,
+              4
+            ],
+            "peak_edges": [
+              {
+                "alpha": "-3/5",
+                "beta": "1",
+                "endpoint_index": 0,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "-1/2",
+                "endpoint_index": 1,
+                "max_loss": "1/24",
+                "peak_index": 2
+              },
+              {
+                "alpha": "0",
+                "beta": "1",
+                "endpoint_index": 3,
+                "max_loss": "1/24",
+                "peak_index": 2
+              }
+            ],
+            "peak_indices": [
+              2
+            ],
+            "singleton": false,
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "vertices": [
+              [
+                "19/40",
+                "7/8",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "13/16",
+                "1/8"
+              ],
+              [
+                "1/2",
+                "5/6",
+                "1/6"
+              ],
+              [
+                "1/2",
+                "7/8",
+                "1/8"
+              ]
+            ]
+          }
+        ]
+      },
+      "status": "REPRODUCED complete fixed finite atlas",
+      "sources": [
+        "reviews/2026-09-29-cc-other-ray-review/geometry_check.json"
+      ],
+      "caption": "The full atlas preserves information that a positive-volume or top-cap picture would omit. A singleton has zero duration or volume and can still contain an exact safe witness when its orbit is compatible. All ten completed cells are shown independently of the construction stage. A geometric point alone is not a physical time.",
+      "file": "05-ten-cell-atlas.svg",
+      "width": 1200,
+      "height": 1133,
+      "sha256": "627d7290efd97fdaa080c018d58e0fa94231840c42c0f515dc17e49f110801c0"
+    },
+    {
+      "id": "seven-top-caps",
+      "number": "06",
+      "title": "Seven caps above the cut",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "caps": [
+          {
+            "cell": 1,
+            "cut_loss": "1/42",
+            "id": "A",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "peak": [
+              "1/6",
+              "1/6",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-1",
+                "2",
+                "-1"
+              ],
+              [
+                "1/5",
+                "-1",
+                "-1"
+              ],
+              [
+                "1",
+                "-1",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/6",
+                "1/6",
+                "1/6"
+              ],
+              [
+                "1/7",
+                "3/14",
+                "1/7"
+              ],
+              [
+                "6/35",
+                "1/7",
+                "1/7"
+              ],
+              [
+                "4/21",
+                "1/7",
+                "1/7"
+              ]
+            ]
+          },
+          {
+            "cell": 2,
+            "cut_loss": "1/42",
+            "id": "B",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "peak": [
+              "1/6",
+              "1/3",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-1",
+                "1",
+                "-1"
+              ],
+              [
+                "-1",
+                "4",
+                "-1"
+              ],
+              [
+                "1",
+                "-2",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/6",
+                "1/3",
+                "1/6"
+              ],
+              [
+                "1/7",
+                "5/14",
+                "1/7"
+              ],
+              [
+                "1/7",
+                "3/7",
+                "1/7"
+              ],
+              [
+                "4/21",
+                "2/7",
+                "1/7"
+              ]
+            ]
+          },
+          {
+            "cell": 4,
+            "cut_loss": "1/42",
+            "id": "C",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              2
+            ],
+            "peak": [
+              "1/2",
+              "1/6",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-3",
+                "5",
+                "-1"
+              ],
+              [
+                "0",
+                "-1",
+                "-1"
+              ],
+              [
+                "0",
+                "1/2",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/2",
+                "1/6",
+                "1/6"
+              ],
+              [
+                "3/7",
+                "2/7",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "1/7",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "5/28",
+                "1/7"
+              ]
+            ]
+          },
+          {
+            "cell": 6,
+            "cut_loss": "1/42",
+            "id": "D",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              2,
+              3
+            ],
+            "peak": [
+              "1/2",
+              "1/3",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-1",
+                "2",
+                "-1"
+              ],
+              [
+                "0",
+                "-1/2",
+                "-1"
+              ],
+              [
+                "0",
+                "1",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/2",
+                "1/3",
+                "1/6"
+              ],
+              [
+                "10/21",
+                "8/21",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "9/28",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "5/14",
+                "1/7"
+              ]
+            ]
+          },
+          {
+            "cell": 7,
+            "cut_loss": "1/42",
+            "id": "E",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              2,
+              3
+            ],
+            "peak": [
+              "1/3",
+              "5/6",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-2",
+                "1",
+                "-1"
+              ],
+              [
+                "0",
+                "1",
+                "-1"
+              ],
+              [
+                "1",
+                "-2",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/3",
+                "5/6",
+                "1/6"
+              ],
+              [
+                "2/7",
+                "6/7",
+                "1/7"
+              ],
+              [
+                "1/3",
+                "6/7",
+                "1/7"
+              ],
+              [
+                "5/14",
+                "11/14",
+                "1/7"
+              ]
+            ]
+          },
+          {
+            "cell": 8,
+            "cut_loss": "1/42",
+            "id": "F",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3
+            ],
+            "peak": [
+              "1/2",
+              "2/3",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-1",
+                "2",
+                "-1"
+              ],
+              [
+                "0",
+                "-1",
+                "-1"
+              ],
+              [
+                "0",
+                "1/2",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/2",
+                "2/3",
+                "1/6"
+              ],
+              [
+                "10/21",
+                "5/7",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "9/14",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "19/28",
+                "1/7"
+              ]
+            ]
+          },
+          {
+            "cell": 9,
+            "cut_loss": "1/42",
+            "id": "G",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              3,
+              4
+            ],
+            "peak": [
+              "1/2",
+              "5/6",
+              "1/6"
+            ],
+            "rays": [
+              [
+                "-3/5",
+                "1",
+                "-1"
+              ],
+              [
+                "0",
+                "-1/2",
+                "-1"
+              ],
+              [
+                "0",
+                "1",
+                "-1"
+              ]
+            ],
+            "source": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+            "status": "REPRODUCED — fixed finite geometry",
+            "vertices": [
+              [
+                "1/2",
+                "5/6",
+                "1/6"
+              ],
+              [
+                "17/35",
+                "6/7",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "23/28",
+                "1/7"
+              ],
+              [
+                "1/2",
+                "6/7",
+                "1/7"
+              ]
+            ]
+          }
+        ],
+        "cut": "1/7",
+        "peak": "1/6",
+        "loss": "1/42",
+        "verticalScale": 4,
+        "fit": "independent"
+      },
+      "status": "REPRODUCED cap geometry; all-q spectrum remains a proof candidate",
+      "sources": [
+        "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+        "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md"
+      ],
+      "caption": "Intersecting the seven nontrivial upper parts with z ≥ 1/7 yields these caps. The B-ray optimum argument uses this reduction only after a witness establishes that its optimum lies above 1/7. The picture omits the rest of the complete 1/8-safe atlas. Each panel is independently fitted: their positions and screen sizes are not a common coordinate plot.",
+      "file": "06-seven-top-caps.svg",
+      "width": 1200,
+      "height": 1191,
+      "sha256": "ef8a54ae721180ad93dbc6c92fa978368f7533942a81c9899f444c985c0af8af"
+    },
+    {
+      "id": "cap-to-clock",
+      "number": "07",
+      "title": "A section becomes a time",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "q": 6,
+        "cap": "B",
+        "progress": 100,
+        "hit": true,
+        "loss": "1/150",
+        "z": "4/25",
+        "time": "9/25",
+        "point": [
+          "4/25",
+          "9/25",
+          "4/25"
+        ],
+        "h": -2,
+        "phases": [
+          "9/25",
+          "4/25",
+          "13/25",
+          "17/25",
+          "21/25",
+          "1/5",
+          "13/25"
+        ],
+        "minimum": "4/25",
+        "reflected": false
+      },
+      "status": "REPRODUCED q=6 control of the pinned B-ray proof candidate",
+      "sources": [
+        "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+        "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md",
+        "reviews/2026-09-29-cc-other-ray-review/physical_check.json"
+      ],
+      "caption": "The section first reaches the integer H=−2 at the displayed point. All seven speeds 1, 6, 7, 13, 19, 20 and 32 are checked at the same physical time, with stationary reference 0. The cap view scales z by four. A recovered witness proves attainment in this control; the separate cap bound is needed to identify the optimum. This is the B clock t=y, not the A clock t=x.",
+      "file": "07-cap-to-clock.svg",
+      "width": 1200,
+      "height": 1179,
+      "sha256": "b4ba3f79fa3b18c9423de73a29b7c923bc9b4c4491651e483d0ca79bc2fa41bd"
+    },
+    {
+      "id": "false-marginals",
+      "number": "08",
+      "title": "True somewhere is not true together",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "falsePair": {
+          "step": 1,
+          "position": 6,
+          "point": [
+            "33/104",
+            "7/26",
+            "1/8"
+          ],
+          "h": "1",
+          "s": "17/8",
+          "time": "33/104",
+          "coreSafe": false,
+          "failedSpeeds": [
+            6
+          ],
+          "phases": [
+            "33/104",
+            "7/26",
+            "61/104",
+            "47/52",
+            "23/104",
+            "51/104",
+            "1/8"
+          ],
+          "distances": [
+            "33/104",
+            "7/26",
+            "43/104",
+            "5/52",
+            "23/104",
+            "51/104",
+            "1/8"
+          ]
+        },
+        "conditional": {
+          "step": 2,
+          "position": 0,
+          "point": [
+            "17/56",
+            "3/14",
+            "1/8"
+          ],
+          "h": "1",
+          "s": "109/56",
+          "time": "17/56",
+          "coreSafe": true,
+          "failedSpeeds": [
+            13
+          ],
+          "phases": [
+            "17/56",
+            "3/14",
+            "29/56",
+            "23/28",
+            "1/8",
+            "19/56",
+            "53/56"
+          ],
+          "distances": [
+            "17/56",
+            "3/14",
+            "27/56",
+            "5/28",
+            "1/8",
+            "19/56",
+            "3/56"
+          ]
+        },
+        "record": {
+          "collision_physical": {
+            "active_speeds": [
+              13
+            ],
+            "minimum": "0",
+            "runners": [
+              {
+                "distance": "4/13",
+                "lap": 0,
+                "phase": "4/13",
+                "speed": 1
+              },
+              {
+                "distance": "3/13",
+                "lap": 1,
+                "phase": "3/13",
+                "speed": 4
+              },
+              {
+                "distance": "6/13",
+                "lap": 1,
+                "phase": "7/13",
+                "speed": 5
+              },
+              {
+                "distance": "2/13",
+                "lap": 1,
+                "phase": "11/13",
+                "speed": 6
+              },
+              {
+                "distance": "2/13",
+                "lap": 2,
+                "phase": "2/13",
+                "speed": 7
+              },
+              {
+                "distance": "5/13",
+                "lap": 3,
+                "phase": "5/13",
+                "speed": 11
+              },
+              {
+                "distance": "0",
+                "lap": 4,
+                "phase": "0",
+                "speed": 13
+              }
+            ],
+            "time": "4/13"
+          },
+          "collision_point": [
+            "4/13",
+            "3/13",
+            "1/8"
+          ],
+          "collision_ratio": "6/13",
+          "conditional_S": [
+            "109/56",
+            "33/16"
+          ],
+          "fake_failed_speeds": [
+            6
+          ],
+          "fake_hs": [
+            "1",
+            "17/8"
+          ],
+          "fake_physical": {
+            "active_speeds": [
+              6
+            ],
+            "minimum": "5/52",
+            "runners": [
+              {
+                "distance": "33/104",
+                "lap": 0,
+                "phase": "33/104",
+                "speed": 1
+              },
+              {
+                "distance": "7/26",
+                "lap": 1,
+                "phase": "7/26",
+                "speed": 4
+              },
+              {
+                "distance": "43/104",
+                "lap": 1,
+                "phase": "61/104",
+                "speed": 5
+              },
+              {
+                "distance": "5/52",
+                "lap": 1,
+                "phase": "47/52",
+                "speed": 6
+              },
+              {
+                "distance": "23/104",
+                "lap": 2,
+                "phase": "23/104",
+                "speed": 7
+              },
+              {
+                "distance": "51/104",
+                "lap": 3,
+                "phase": "51/104",
+                "speed": 11
+              },
+              {
+                "distance": "1/8",
+                "lap": 4,
+                "phase": "1/8",
+                "speed": 13
+              }
+            ],
+            "time": "33/104"
+          },
+          "fake_xy": [
+            "33/104",
+            "7/26",
+            "1/8"
+          ],
+          "full_safe_times": [
+            "1/8",
+            "3/8",
+            "5/8",
+            "7/8"
+          ],
+          "marginal_H": [
+            "5/8",
+            "11/8"
+          ],
+          "marginal_S": [
+            "23/12",
+            "17/8"
+          ],
+          "orbit_integer": 1,
+          "parent_index": 2,
+          "parent_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "q": 4,
+          "safe_band_edges": [
+            "15/8",
+            "17/8"
+          ],
+          "safe_child_H": "11/8",
+          "safe_child_xy": [
+            "3/8",
+            "1/8",
+            "1/8"
+          ],
+          "section_xy": [
+            [
+              "17/56",
+              "3/14",
+              "1/8"
+            ],
+            [
+              "5/16",
+              "1/4",
+              "1/8"
+            ]
+          ],
+          "slice_controls": [
+            {
+              "point": [
+                "17/56",
+                "3/14",
+                "1/8"
+              ],
+              "position": 0,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "3/56",
+                "runners": [
+                  {
+                    "distance": "17/56",
+                    "lap": 0,
+                    "phase": "17/56",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "3/14",
+                    "lap": 1,
+                    "phase": "3/14",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "27/56",
+                    "lap": 1,
+                    "phase": "29/56",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "5/28",
+                    "lap": 1,
+                    "phase": "23/28",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "1/8",
+                    "lap": 2,
+                    "phase": "1/8",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "19/56",
+                    "lap": 3,
+                    "phase": "19/56",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "3/56",
+                    "lap": 3,
+                    "phase": "53/56",
+                    "speed": 13
+                  }
+                ],
+                "time": "17/56"
+              }
+            },
+            {
+              "point": [
+                "443/1456",
+                "79/364",
+                "1/8"
+              ],
+              "position": 1,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "5/112",
+                "runners": [
+                  {
+                    "distance": "443/1456",
+                    "lap": 0,
+                    "phase": "443/1456",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "79/364",
+                    "lap": 1,
+                    "phase": "79/364",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "697/1456",
+                    "lap": 1,
+                    "phase": "759/1456",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "127/728",
+                    "lap": 1,
+                    "phase": "601/728",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "27/208",
+                    "lap": 2,
+                    "phase": "27/208",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "505/1456",
+                    "lap": 3,
+                    "phase": "505/1456",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "5/112",
+                    "lap": 3,
+                    "phase": "107/112",
+                    "speed": 13
+                  }
+                ],
+                "time": "443/1456"
+              }
+            },
+            {
+              "point": [
+                "111/364",
+                "20/91",
+                "1/8"
+              ],
+              "position": 2,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/28",
+                "runners": [
+                  {
+                    "distance": "111/364",
+                    "lap": 0,
+                    "phase": "111/364",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "20/91",
+                    "lap": 1,
+                    "phase": "20/91",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "173/364",
+                    "lap": 1,
+                    "phase": "191/364",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "31/182",
+                    "lap": 1,
+                    "phase": "151/182",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "7/52",
+                    "lap": 2,
+                    "phase": "7/52",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "129/364",
+                    "lap": 3,
+                    "phase": "129/364",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/28",
+                    "lap": 3,
+                    "phase": "27/28",
+                    "speed": 13
+                  }
+                ],
+                "time": "111/364"
+              }
+            },
+            {
+              "point": [
+                "445/1456",
+                "81/364",
+                "1/8"
+              ],
+              "position": 3,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "3/112",
+                "runners": [
+                  {
+                    "distance": "445/1456",
+                    "lap": 0,
+                    "phase": "445/1456",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "81/364",
+                    "lap": 1,
+                    "phase": "81/364",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "687/1456",
+                    "lap": 1,
+                    "phase": "769/1456",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "121/728",
+                    "lap": 1,
+                    "phase": "607/728",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "29/208",
+                    "lap": 2,
+                    "phase": "29/208",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "527/1456",
+                    "lap": 3,
+                    "phase": "527/1456",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "3/112",
+                    "lap": 3,
+                    "phase": "109/112",
+                    "speed": 13
+                  }
+                ],
+                "time": "445/1456"
+              }
+            },
+            {
+              "point": [
+                "223/728",
+                "41/182",
+                "1/8"
+              ],
+              "position": 4,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/56",
+                "runners": [
+                  {
+                    "distance": "223/728",
+                    "lap": 0,
+                    "phase": "223/728",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "41/182",
+                    "lap": 1,
+                    "phase": "41/182",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "341/728",
+                    "lap": 1,
+                    "phase": "387/728",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "59/364",
+                    "lap": 1,
+                    "phase": "305/364",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "15/104",
+                    "lap": 2,
+                    "phase": "15/104",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "269/728",
+                    "lap": 3,
+                    "phase": "269/728",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/56",
+                    "lap": 3,
+                    "phase": "55/56",
+                    "speed": 13
+                  }
+                ],
+                "time": "223/728"
+              }
+            },
+            {
+              "point": [
+                "447/1456",
+                "83/364",
+                "1/8"
+              ],
+              "position": 5,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/112",
+                "runners": [
+                  {
+                    "distance": "447/1456",
+                    "lap": 0,
+                    "phase": "447/1456",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "83/364",
+                    "lap": 1,
+                    "phase": "83/364",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "677/1456",
+                    "lap": 1,
+                    "phase": "779/1456",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "115/728",
+                    "lap": 1,
+                    "phase": "613/728",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "31/208",
+                    "lap": 2,
+                    "phase": "31/208",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "549/1456",
+                    "lap": 3,
+                    "phase": "549/1456",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/112",
+                    "lap": 3,
+                    "phase": "111/112",
+                    "speed": 13
+                  }
+                ],
+                "time": "447/1456"
+              }
+            },
+            {
+              "point": [
+                "4/13",
+                "3/13",
+                "1/8"
+              ],
+              "position": 6,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "0",
+                "runners": [
+                  {
+                    "distance": "4/13",
+                    "lap": 0,
+                    "phase": "4/13",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "3/13",
+                    "lap": 1,
+                    "phase": "3/13",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "6/13",
+                    "lap": 1,
+                    "phase": "7/13",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "2/13",
+                    "lap": 1,
+                    "phase": "11/13",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "2/13",
+                    "lap": 2,
+                    "phase": "2/13",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "5/13",
+                    "lap": 3,
+                    "phase": "5/13",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "0",
+                    "lap": 4,
+                    "phase": "0",
+                    "speed": 13
+                  }
+                ],
+                "time": "4/13"
+              }
+            },
+            {
+              "point": [
+                "449/1456",
+                "85/364",
+                "1/8"
+              ],
+              "position": 7,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/112",
+                "runners": [
+                  {
+                    "distance": "449/1456",
+                    "lap": 0,
+                    "phase": "449/1456",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "85/364",
+                    "lap": 1,
+                    "phase": "85/364",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "667/1456",
+                    "lap": 1,
+                    "phase": "789/1456",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "109/728",
+                    "lap": 1,
+                    "phase": "619/728",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "33/208",
+                    "lap": 2,
+                    "phase": "33/208",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "571/1456",
+                    "lap": 3,
+                    "phase": "571/1456",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/112",
+                    "lap": 4,
+                    "phase": "1/112",
+                    "speed": 13
+                  }
+                ],
+                "time": "449/1456"
+              }
+            },
+            {
+              "point": [
+                "225/728",
+                "43/182",
+                "1/8"
+              ],
+              "position": 8,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/56",
+                "runners": [
+                  {
+                    "distance": "225/728",
+                    "lap": 0,
+                    "phase": "225/728",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "43/182",
+                    "lap": 1,
+                    "phase": "43/182",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "331/728",
+                    "lap": 1,
+                    "phase": "397/728",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "53/364",
+                    "lap": 1,
+                    "phase": "311/364",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "17/104",
+                    "lap": 2,
+                    "phase": "17/104",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "291/728",
+                    "lap": 3,
+                    "phase": "291/728",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/56",
+                    "lap": 4,
+                    "phase": "1/56",
+                    "speed": 13
+                  }
+                ],
+                "time": "225/728"
+              }
+            },
+            {
+              "point": [
+                "451/1456",
+                "87/364",
+                "1/8"
+              ],
+              "position": 9,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "3/112",
+                "runners": [
+                  {
+                    "distance": "451/1456",
+                    "lap": 0,
+                    "phase": "451/1456",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "87/364",
+                    "lap": 1,
+                    "phase": "87/364",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "657/1456",
+                    "lap": 1,
+                    "phase": "799/1456",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "103/728",
+                    "lap": 1,
+                    "phase": "625/728",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "35/208",
+                    "lap": 2,
+                    "phase": "35/208",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "593/1456",
+                    "lap": 3,
+                    "phase": "593/1456",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "3/112",
+                    "lap": 4,
+                    "phase": "3/112",
+                    "speed": 13
+                  }
+                ],
+                "time": "451/1456"
+              }
+            },
+            {
+              "point": [
+                "113/364",
+                "22/91",
+                "1/8"
+              ],
+              "position": 10,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/28",
+                "runners": [
+                  {
+                    "distance": "113/364",
+                    "lap": 0,
+                    "phase": "113/364",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "22/91",
+                    "lap": 1,
+                    "phase": "22/91",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "163/364",
+                    "lap": 1,
+                    "phase": "201/364",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "25/182",
+                    "lap": 1,
+                    "phase": "157/182",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "9/52",
+                    "lap": 2,
+                    "phase": "9/52",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "151/364",
+                    "lap": 3,
+                    "phase": "151/364",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/28",
+                    "lap": 4,
+                    "phase": "1/28",
+                    "speed": 13
+                  }
+                ],
+                "time": "113/364"
+              }
+            },
+            {
+              "point": [
+                "453/1456",
+                "89/364",
+                "1/8"
+              ],
+              "position": 11,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "5/112",
+                "runners": [
+                  {
+                    "distance": "453/1456",
+                    "lap": 0,
+                    "phase": "453/1456",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "89/364",
+                    "lap": 1,
+                    "phase": "89/364",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "647/1456",
+                    "lap": 1,
+                    "phase": "809/1456",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "97/728",
+                    "lap": 1,
+                    "phase": "631/728",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "37/208",
+                    "lap": 2,
+                    "phase": "37/208",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "615/1456",
+                    "lap": 3,
+                    "phase": "615/1456",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "5/112",
+                    "lap": 4,
+                    "phase": "5/112",
+                    "speed": 13
+                  }
+                ],
+                "time": "453/1456"
+              }
+            },
+            {
+              "point": [
+                "227/728",
+                "45/182",
+                "1/8"
+              ],
+              "position": 12,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "3/56",
+                "runners": [
+                  {
+                    "distance": "227/728",
+                    "lap": 0,
+                    "phase": "227/728",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "45/182",
+                    "lap": 1,
+                    "phase": "45/182",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "321/728",
+                    "lap": 1,
+                    "phase": "407/728",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "47/364",
+                    "lap": 1,
+                    "phase": "317/364",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "19/104",
+                    "lap": 2,
+                    "phase": "19/104",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "313/728",
+                    "lap": 3,
+                    "phase": "313/728",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "3/56",
+                    "lap": 4,
+                    "phase": "3/56",
+                    "speed": 13
+                  }
+                ],
+                "time": "227/728"
+              }
+            },
+            {
+              "point": [
+                "5/16",
+                "1/4",
+                "1/8"
+              ],
+              "position": 13,
+              "witness": {
+                "active_speeds": [
+                  13
+                ],
+                "minimum": "1/16",
+                "runners": [
+                  {
+                    "distance": "5/16",
+                    "lap": 0,
+                    "phase": "5/16",
+                    "speed": 1
+                  },
+                  {
+                    "distance": "1/4",
+                    "lap": 1,
+                    "phase": "1/4",
+                    "speed": 4
+                  },
+                  {
+                    "distance": "7/16",
+                    "lap": 1,
+                    "phase": "9/16",
+                    "speed": 5
+                  },
+                  {
+                    "distance": "1/8",
+                    "lap": 1,
+                    "phase": "7/8",
+                    "speed": 6
+                  },
+                  {
+                    "distance": "3/16",
+                    "lap": 2,
+                    "phase": "3/16",
+                    "speed": 7
+                  },
+                  {
+                    "distance": "7/16",
+                    "lap": 3,
+                    "phase": "7/16",
+                    "speed": 11
+                  },
+                  {
+                    "distance": "1/16",
+                    "lap": 4,
+                    "phase": "1/16",
+                    "speed": 13
+                  }
+                ],
+                "time": "5/16"
+              }
+            }
+          ],
+          "source": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
+          "status": "REPRODUCED — exact q=4 counterexample; derived display controls are same-author checks",
+          "threshold": "1/8",
+          "triangle_hs": [
+            [
+              "5/8",
+              "2"
+            ],
+            [
+              "29/24",
+              "23/12"
+            ],
+            [
+              "11/8",
+              "17/8"
+            ]
+          ],
+          "triangle_xy": [
+            [
+              "1/4",
+              "3/8",
+              "1/8"
+            ],
+            [
+              "1/3",
+              "1/8",
+              "1/8"
+            ],
+            [
+              "3/8",
+              "1/8",
+              "1/8"
+            ]
+          ]
+        }
+      },
+      "status": "REPRODUCED exact false positive and conditional-slice rejection",
+      "sources": [
+        "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
+        "notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md"
+      ],
+      "caption": "The marginal rectangle forgets which values share a point; the joint triangle retains that relationship. The entire H=1 slice of P2 is rejected by the seventh constraint. This local rejection does not make the full q=4 system empty: speeds 0, 1, 4, 5, 6, 7, 11 and 13 have complete safe-time set {1/8, 3/8, 5/8, 7/8} relative to 0.",
+      "file": "08-false-marginals.svg",
+      "width": 1200,
+      "height": 1081,
+      "sha256": "df99dac2433d8cf46059e0f48fbe9b88b491c055f74d261e83d6bcdd3791b7b2"
+    },
+    {
+      "id": "new-face-contact",
+      "number": "09",
+      "title": "A new contact inside an old face",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "before": {
+          "case": "face",
+          "stage": 0,
+          "q": 10,
+          "parent": 7,
+          "H": 4,
+          "parentSection": [
+            [
+              "89/184",
+              "77/92",
+              "1/8"
+            ],
+            [
+              "16/33",
+              "28/33",
+              "5/33"
+            ],
+            [
+              "39/80",
+              "7/8",
+              "1/8"
+            ]
+          ],
+          "childSections": [
+            {
+              "child": 9,
+              "points": [
+                [
+                  "97/200",
+                  "17/20",
+                  "1/8"
+                ],
+                [
+                  "17/35",
+                  "6/7",
+                  "1/7"
+                ],
+                [
+                  "39/80",
+                  "7/8",
+                  "1/8"
+                ]
+              ]
+            }
+          ],
+          "selectedPoint": [
+            "16/33",
+            "28/33",
+            "5/33"
+          ],
+          "reflection": false,
+          "showOrbit": true,
+          "physical": null,
+          "allFinalMaximizers": null
+        },
+        "after": {
+          "case": "face",
+          "stage": 2,
+          "q": 10,
+          "parent": 7,
+          "H": 4,
+          "parentSection": [
+            [
+              "89/184",
+              "77/92",
+              "1/8"
+            ],
+            [
+              "16/33",
+              "28/33",
+              "5/33"
+            ],
+            [
+              "39/80",
+              "7/8",
+              "1/8"
+            ]
+          ],
+          "childSections": [
+            {
+              "child": 9,
+              "points": [
+                [
+                  "97/200",
+                  "17/20",
+                  "1/8"
+                ],
+                [
+                  "17/35",
+                  "6/7",
+                  "1/7"
+                ],
+                [
+                  "39/80",
+                  "7/8",
+                  "1/8"
+                ]
+              ]
+            }
+          ],
+          "selectedPoint": [
+            "17/35",
+            "6/7",
+            "1/7"
+          ],
+          "reflection": false,
+          "showOrbit": true,
+          "physical": {
+            "time": "17/35",
+            "minimumSix": "1/7",
+            "addedDistance": "1/7",
+            "phases": [
+              "17/35",
+              "6/7",
+              "12/35",
+              "29/35",
+              "11/35",
+              "6/35",
+              "1/7"
+            ],
+            "laps": [
+              "0",
+              "4",
+              "5",
+              "5",
+              "6",
+              "11",
+              "12"
+            ],
+            "distances": [
+              "17/35",
+              "1/7",
+              "12/35",
+              "6/35",
+              "11/35",
+              "6/35",
+              "1/7"
+            ],
+            "recoveredChild": true
+          },
+          "allFinalMaximizers": [
+            "1/7",
+            "2/7",
+            "3/7",
+            "17/35",
+            "18/35",
+            "4/7",
+            "5/7",
+            "6/7"
+          ]
+        },
+        "record": {
+          "after_physical": {
+            "active_speeds": [
+              10,
+              25
+            ],
+            "minimum": "1/7",
+            "runners": [
+              {
+                "distance": "17/35",
+                "lap": 0,
+                "phase": "17/35",
+                "speed": 1
+              },
+              {
+                "distance": "1/7",
+                "lap": 4,
+                "phase": "6/7",
+                "speed": 10
+              },
+              {
+                "distance": "12/35",
+                "lap": 5,
+                "phase": "12/35",
+                "speed": 11
+              },
+              {
+                "distance": "6/35",
+                "lap": 5,
+                "phase": "29/35",
+                "speed": 12
+              },
+              {
+                "distance": "11/35",
+                "lap": 6,
+                "phase": "11/35",
+                "speed": 13
+              },
+              {
+                "distance": "6/35",
+                "lap": 11,
+                "phase": "6/35",
+                "speed": 23
+              },
+              {
+                "distance": "1/7",
+                "lap": 12,
+                "phase": "1/7",
+                "speed": 25
+              }
+            ],
+            "time": "17/35"
+          },
+          "after_point": [
+            "17/35",
+            "6/7",
+            "1/7"
+          ],
+          "after_reflected": {
+            "active_speeds": [
+              10,
+              25
+            ],
+            "minimum": "1/7",
+            "runners": [
+              {
+                "distance": "17/35",
+                "lap": 0,
+                "phase": "18/35",
+                "speed": 1
+              },
+              {
+                "distance": "1/7",
+                "lap": 5,
+                "phase": "1/7",
+                "speed": 10
+              },
+              {
+                "distance": "12/35",
+                "lap": 5,
+                "phase": "23/35",
+                "speed": 11
+              },
+              {
+                "distance": "6/35",
+                "lap": 6,
+                "phase": "6/35",
+                "speed": 12
+              },
+              {
+                "distance": "11/35",
+                "lap": 6,
+                "phase": "24/35",
+                "speed": 13
+              },
+              {
+                "distance": "6/35",
+                "lap": 11,
+                "phase": "29/35",
+                "speed": 23
+              },
+              {
+                "distance": "1/7",
+                "lap": 12,
+                "phase": "6/7",
+                "speed": 25
+              }
+            ],
+            "time": "18/35"
+          },
+          "before_physical": {
+            "active_speeds": [
+              25
+            ],
+            "minimum": "4/33",
+            "runners": [
+              {
+                "distance": "16/33",
+                "lap": 0,
+                "phase": "16/33",
+                "speed": 1
+              },
+              {
+                "distance": "5/33",
+                "lap": 4,
+                "phase": "28/33",
+                "speed": 10
+              },
+              {
+                "distance": "1/3",
+                "lap": 5,
+                "phase": "1/3",
+                "speed": 11
+              },
+              {
+                "distance": "2/11",
+                "lap": 5,
+                "phase": "9/11",
+                "speed": 12
+              },
+              {
+                "distance": "10/33",
+                "lap": 6,
+                "phase": "10/33",
+                "speed": 13
+              },
+              {
+                "distance": "5/33",
+                "lap": 11,
+                "phase": "5/33",
+                "speed": 23
+              },
+              {
+                "distance": "4/33",
+                "lap": 12,
+                "phase": "4/33",
+                "speed": 25
+              }
+            ],
+            "time": "16/33"
+          },
+          "before_point": [
+            "16/33",
+            "28/33",
+            "5/33"
+          ],
+          "before_reflected": {
+            "active_speeds": [
+              25
+            ],
+            "minimum": "4/33",
+            "runners": [
+              {
+                "distance": "16/33",
+                "lap": 0,
+                "phase": "17/33",
+                "speed": 1
+              },
+              {
+                "distance": "5/33",
+                "lap": 5,
+                "phase": "5/33",
+                "speed": 10
+              },
+              {
+                "distance": "1/3",
+                "lap": 5,
+                "phase": "2/3",
+                "speed": 11
+              },
+              {
+                "distance": "2/11",
+                "lap": 6,
+                "phase": "2/11",
+                "speed": 12
+              },
+              {
+                "distance": "10/33",
+                "lap": 6,
+                "phase": "23/33",
+                "speed": 13
+              },
+              {
+                "distance": "5/33",
+                "lap": 11,
+                "phase": "28/33",
+                "speed": 23
+              },
+              {
+                "distance": "4/33",
+                "lap": 12,
+                "phase": "29/33",
+                "speed": 25
+              }
+            ],
+            "time": "17/33"
+          },
+          "child_indices": [
+            9
+          ],
+          "child_sections": [
+            {
+              "child_index": 9,
+              "points": [
+                [
+                  "97/200",
+                  "17/20",
+                  "1/8"
+                ],
+                [
+                  "17/35",
+                  "6/7",
+                  "1/7"
+                ],
+                [
+                  "39/80",
+                  "7/8",
+                  "1/8"
+                ]
+              ]
+            }
+          ],
+          "id": "face",
+          "orbit_integer": 4,
+          "parent_index": 7,
+          "parent_section": [
+            [
+              "89/184",
+              "77/92",
+              "1/8"
+            ],
+            [
+              "16/33",
+              "28/33",
+              "5/33"
+            ],
+            [
+              "39/80",
+              "7/8",
+              "1/8"
+            ]
+          ],
+          "q": 10,
+          "singleton_orbits": [],
+          "source": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
+          "status": "REPRODUCED — exact finite parent/child and orbit controls"
+        }
+      },
+      "status": "REPRODUCED finite q=10 transfer and physical countercheck",
+      "sources": [
+        "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
+        "reviews/2026-09-29-cc-six-seven-transfer/countercheck.json"
+      ],
+      "caption": "The old optimum on this parent slice fails the added runner. The new optimum lies inside a two-dimensional old face, on a new child edge. Keeping only old parent edges misses 17/35 and 18/35, so it fails to recover every maximizer even though six others survive. Final speeds: 0, 1, 10, 11, 12, 13, 23, 25, with reference 0. Three-dimensional views scale z by two; the section uses separate time and separation axes.",
+      "file": "09-new-face-contact.svg",
+      "width": 1200,
+      "height": 1276,
+      "sha256": "879f815486385bcfbfb55409ef1eccc3fd46f5ca21da65090f1c62c5528261f4"
+    },
+    {
+      "id": "two-segment-selector",
+      "number": "10",
+      "title": "Two tests. One safe time.",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "q": 5,
+        "attempts": 2,
+        "reflection": false,
+        "trials": [
+          {
+            "interval": [
+              "1/8",
+              "19/24"
+            ],
+            "candidate": "1",
+            "tested": true,
+            "accepted": false
+          },
+          {
+            "interval": [
+              "3/2",
+              "19/8"
+            ],
+            "candidate": "2",
+            "tested": true,
+            "accepted": true
+          }
+        ],
+        "selectedSegment": "E2",
+        "point": [
+          "25/56",
+          "13/56",
+          "1/8"
+        ],
+        "H": "2",
+        "selectedTime": "25/56",
+        "physical": {
+          "time": "25/56",
+          "minimum": "1/8",
+          "laps": [
+            "0",
+            "2",
+            "2",
+            "3",
+            "3",
+            "5",
+            "6"
+          ],
+          "phases": [
+            "25/56",
+            "13/56",
+            "19/28",
+            "1/8",
+            "4/7",
+            "45/56",
+            "39/56"
+          ],
+          "distances": [
+            "25/56",
+            "13/56",
+            "9/28",
+            "1/8",
+            "3/7",
+            "11/56",
+            "17/56"
+          ]
+        }
+      },
+      "status": "REPRODUCED q=5 control; all-q selector remains a proof candidate",
+      "sources": [
+        "reviews/2026-09-29-cc-bounded-selector/verification.json",
+        "reviews/2026-09-29-cc-bounded-selector/countercheck.json",
+        "notes/CC_BOUNDED_SELECTOR_2026_09_29.md"
+      ],
+      "caption": "The pinned selector tries E1 and then E2, using the first integer at or above each lower endpoint and retaining equality. This figure reproduces q=5. The source gives the separate all-q argument; the picture does not prove it. The requested output is one 1/8 witness, not the optimum, all safe times, or a transfer guarantee. Restore the richer cells when the question changes.",
+      "file": "10-two-segment-selector.svg",
+      "width": 1200,
+      "height": 1129,
+      "sha256": "4caa939ffb3b456ba2f6bd09368ee7cd306bb3e2523f753e6abc3e1eeb9e0df1"
+    },
+    {
+      "id": "representation-branches",
+      "number": "11",
+      "title": "Choose the question. Keep its structure.",
+      "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+      "visual_data_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+      "input_sha256": {
+        "presentation.html": "4bfdb2f003350e39cb1d335cb7114d18219312a524a0a4226f8c145e4216ae62",
+        "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+        "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+        "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+        "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+        "figures/export_figures.cjs": "0cdee186cb14db6307da8f697d14b19b6a29b361d6208260900fa0b495cd1982"
+      },
+      "selected_state": {
+        "parents": 8,
+        "cells": 10,
+        "caps": 7,
+        "branches": [
+          {
+            "title": "B · OPTIMAL VALUE",
+            "map": "H = x − qy    /    t = y",
+            "body": "Seven top caps retain the upper geometry. An attaining witness above 1/7 justifies restricting this question to the caps. All maximizing times additionally require contact identities.",
+            "loss": "Omitted: lower safe cells.",
+            "recover": "Recover full cells for a lower threshold or a complete safe set."
+          },
+          {
+            "title": "A · TRANSFER A CONSTRAINT",
+            "map": "H = qx − y    /    t = x",
+            "body": "Condition on the same parent, height and orbit integer. Retain the joint section before projecting the new form. Keep equality and newly exposed faces.",
+            "loss": "Lost by marginals: common-point identity.",
+            "recover": "Recover the joint relation when another constraint is added."
+          },
+          {
+            "title": "A · ONE SAFE WITNESS",
+            "map": "H = qx − y    /    t = x",
+            "body": "Two closed segments support the pinned 1/8 witness selector. Keep segment identity, endpoints, integer contact and physical recovery at one shared time.",
+            "loss": "Omitted: optimum and complete time set.",
+            "recover": "Recover the atlas and orbit sections for a broader output."
+          }
+        ],
+        "sourceCommit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32"
+      },
+      "status": "REPRESENTATION CONTRACT; mathematical claims retain pinned status",
+      "sources": [
+        "notes/CC_REPRESENTATION_RULES.md",
+        "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md",
+        "notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md",
+        "notes/CC_BOUNDED_SELECTOR_2026_09_29.md"
+      ],
+      "caption": "These are complementary reductions for different questions, not a universal lossless chain. The B and A orbit equations use different physical clocks. A pinned source makes omitted information recoverable through a stated map; source availability alone does not make a compressed record lossless. Finite reproductions and proof candidates keep their original evidence status.",
+      "file": "11-representation-branches.svg",
+      "width": 1200,
+      "height": 1314,
+      "sha256": "338e0699e245b53c0da67640eafa8f43c8fd4066946b80b07d2d25ea4a97e9f3"
+    }
+  ]
+}

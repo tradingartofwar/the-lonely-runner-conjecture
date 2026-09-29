@@ -1,6 +1,7 @@
 # Visual companion audit — September 29, 2026
 
-Scope: the exact data layer and nine connected interactive sections.
+Scope: the exact data layer, nine connected interactive sections and eleven
+standalone SVG figures with an offline gallery.
 AI-assisted implementation and same-author audit; no independent human review
 or new mathematical theorem is claimed.
 
@@ -470,3 +471,47 @@ stated recap questions only. Links recover the detailed chapter and pinned
 source before a new operation. The summary adds no independent proof authority.
 
 Next: standalone SVG figure exports, then the separate research explorer.
+
+## Standalone figure collection
+
+All eleven planned figures are complete. `figures/export_figures.cjs` selects
+exact presentation states and reuses its SVG renderers; cap sheets reuse
+`CCGeometry.draw`. Figure 11 is an authored vector map of the same pinned
+representation contracts. Exact data and interactive presentation bytes are
+unchanged. The export manifest adds input/output hashes, source commit, exact
+state, caption/status, and browser/font provenance. Byte comparison is scoped
+to that rendering environment; fractions remain authoritative.
+
+`check_figures.cjs` checks the exported metadata against exact data, independently
+recomputes five physical minima using integer arithmetic, verifies three
+singleton rings and seven complete cap meshes, and rejects unresolved styles,
+raster images, scripts or external rendering dependencies. All text fits its
+figure or nested diagram. Every figure received visual inspection, including
+revised card/caption spacing and names on all ten atlas cells.
+
+The offline gallery embeds eleven previews and download targets. It passes
+widths 1440, 390 and 320 without horizontal overflow, page errors or network
+requests. One actual browser download is compared to the SVG hash. The report
+is `figure_check.json`; optional review PNGs are kept outside the repository.
+
+Communication audit:
+
+- Runner coincidences retain identity; moving frames retain exact distances.
+- Blocking occurrence labels and open/closed endpoints survive export. Graph
+  edges mean overlap somewhere in the local window, not one simultaneous state.
+- All ten cells and the three singletons remain visible. Atlas counts are
+  per-cell occurrences. Ambient geometry still requires an actual orbit.
+- Cap sheets declare independent fitting, height scaling and the 1/7 cut.
+  The optimum reduction retains its lower-witness premise and upper-bound duty.
+- B-ray t=y and A-ray t=x remain explicit. The false marginal pair and q=4
+  local rejection are kept beside the full-system safe set.
+- The q=10 face contact exposes failure for every maximizer, and the q=5
+  selector promises only one witness. Both retain exact physical recovery.
+- The representation map branches by question and ray. A richer source is a
+  recovery route, not an automatic guarantee that compression was lossless.
+
+Static export intentionally omits animation, other controls and full arguments.
+Restore the matching chapter and pinned source before changing the question or
+adding a constraint. All-q assertions retain their proof-candidate status.
+
+Next: the separate research explorer.

@@ -2,6 +2,11 @@
 
 **Nine connected sections:** the **one track** opening, **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, **from time to shape**, and the closing **carry it through** story.
 
+**Eleven standalone figures:** open [the offline SVG gallery](figures/index.html)
+to browse and download the complete planned figure set. Each figure carries
+its exact selected state, caption, pinned source and evidence status. See
+[figure export and verification notes](figures/README.md) for rebuilding.
+
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
 or build tooling is required to view it. A static server also works:
@@ -123,7 +128,8 @@ selected time and its reflection omit two safe times; at q=10, its minimum
 
 The original selector order and mathematical sources remain pinned to the
 frozen snapshot. Later discovery and coverage-compiler research are separate
-versions. The 20-scene deck and full research explorer remain pending.
+versions. The original 20-scene plan is organized here as nine connected
+sections; the separate research explorer remains pending.
 
 The sixth chapter returns to physical time with the archived configuration
 0,1,4,5,6,7,11,16 and J=[9/32,3/8]. This is explicitly separate from the A/B
@@ -358,8 +364,16 @@ related links and nine-section navigation. The earlier eight sections remain
 covered. The data audit recomputes projection endpoints through actual section
 vertices and checks the safe sets with direct physical band intersections.
 
-Next visual target: standalone SVG figures with captions, exact-state labels,
-source/status and reproducible export. The separate research explorer follows.
+The standalone collection now completes all eleven planned SVG figures.
+Exports reuse the checked presentation renderers, resolve all styles, retain
+exact selected-state metadata and embed captions/source/status. The gallery
+works offline with embedded previews and downloads. All eleven figures pass
+the figure/state audit and received visual inspection; gallery widths 1440,
+390 and 320 and a byte-checked browser download pass. The exporter supports
+byte-for-byte rebuild checking in the recorded rendering environment.
+
+Next visual target: the separate research explorer, with coordinated exact
+parameter, geometry, projection, witness and representation-scope controls.
 The guided narrative now has both its opening and conclusion. Sources remain
 at 6b2b931; later coefficient/selector/compiler work stays separate. At each
 completed visual section, report what comes next.
