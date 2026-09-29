@@ -1,0 +1,60 @@
+{
+  "cases": [
+    {
+      "all_coverage_fields_exact": true,
+      "archived_certificate_sha256": "88142d4442d65cb50e8e6068cd1826b5957015ffd2d0742cb6867ab5ab452aa1",
+      "candidate_records": 27,
+      "compared_fields": [
+        "budget",
+        "candidates",
+        "chosen_ids",
+        "contact_matrix",
+        "counts",
+        "domain",
+        "greedy_steps",
+        "leader",
+        "ranking",
+        "residual_pairs",
+        "rows",
+        "schema",
+        "status",
+        "threshold",
+        "uncovered"
+      ],
+      "row": [
+        5,
+        2
+      ],
+      "status": "PASS"
+    },
+    {
+      "all_coverage_fields_exact": true,
+      "archived_certificate_sha256": "6e62958d0b0f081ee0213054e1ea02f3da4de30de2278812b37d3e938d71431d",
+      "candidate_records": 24,
+      "compared_fields": [
+        "budget",
+        "candidates",
+        "chosen_ids",
+        "contact_matrix",
+        "counts",
+        "domain",
+        "greedy_steps",
+        "leader",
+        "ranking",
+        "residual_pairs",
+        "rows",
+        "schema",
+        "status",
+        "threshold",
+        "uncovered"
+      ],
+      "row": [
+        6,
+        2
+      ],
+      "status": "PASS"
+    }
+  ],
+  "scope": "Two archived certificate regressions; no old physical reruns.",
+  "status": "PASS"
+}

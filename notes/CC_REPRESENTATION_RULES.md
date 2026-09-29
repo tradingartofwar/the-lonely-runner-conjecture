@@ -582,3 +582,35 @@ exactly. A failure of this selector still does not exhaust every candidate
 segment or the full parent geometry. Recover those records before making
 that stronger judgment. No richer ambient representation is needed for the
 current coefficient decision and concrete-failure operation.
+
+## 16. A failed compact rule can call for recovered alternatives
+
+The [frozen (3,8) compiler transfer](CC_ROW38_COMPILER_TRANSFER_2026_09_29.md)
+repairs a known rejection of the old L/C selector using the same parent-edge
+source, unchanged clipping/selection functions and unchanged budgets. The
+old selected time 5/16 fails at (1,4); the new menu supplies 17/56 with minimum
+distance 1/8. The changed selected geometry is an actual physical repair.
+
+The compact selector could answer its own acceptance question but could not
+exhaust all available edge alternatives. Recovering those alternatives was
+enough here. No parent-interior restoration or new coordinate model was needed.
+The conditional richer diagnostic remains untriggered and unvalidated by this
+successful run. A representation can be adequate for its original operation
+and insufficient for a stronger question without its stored facts being wrong.
+
+Domain choices affect the emitted artifact: the compiler keeps auxiliary
+(1,1), producing a third segment used only for repeated speeds. Its first two
+entries suffice for the intended distinct-speed domain as a deduction from
+the complete output. Preserve the emitted three-entry menu and distinguish
+that deduction from rerunning a changed compiler or proving minimality.
+
+Five singleton records encode three distinct geometric points with separate
+provenance. Five endpoint-sensitive controls encode four primitive directions,
+one auxiliary; three are distinct-speed directions. Opening the selected menu
+loses those tested contacts while opening all candidates loses none of the
+18. Name the representation and domain before compressing these counts.
+
+One known rejected row now has a complete discovered certificate. This does
+not classify all compiler inputs or prove that its successful inputs contain
+the whole earlier fixed-selector range. Carry only the transfer evidence
+earned by the frozen trial and the conditional infinite coverage argument.
