@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Five connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, and **one safe time**.
+**Six connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, and **one shared clock**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -19,6 +19,8 @@ Choose **04 · What survives the cut**, or open `#transfer`, for the parent–ch
 geometry and physical recovery scenes.
 Choose **05 · One safe time**, or open `#selector`, to run the two-segment
 selector one test at a time.
+Choose **06 · One shared clock**, or open `#clock`, to compare merged runner
+rows with labelled blocking occurrences at the same exact physical time.
 
 ## What this version does
 
@@ -96,6 +98,29 @@ The original selector order and mathematical sources remain pinned to the
 frozen snapshot. Later discovery and coverage-compiler research are separate
 versions. The 20-scene deck and full research explorer remain pending.
 
+The sixth chapter returns to physical time with the archived configuration
+0,1,4,5,6,7,11,16 and J=[9/32,3/8]. This is explicitly separate from the A/B
+families. Runners 1,4,5 are safe throughout the window; the other four have
+six strict blocking occurrences. Merging by runner creates a triangle among
+6,11,16. Keeping (speed, meeting) labels restores the path (16,5)—(6,2)—
+(11,4)—(16,6), plus the separate (11,3)—(7,2) edge.
+
+The 6/16 overlap needs meeting 5 of runner 16; the 11/16 overlap needs meeting
+6. No common time in J can use both disjoint occurrences. All three block at
+t=0, so this is a local exclusion, not a consequence of their speed relation
+alone. Every graph edge means overlap somewhere; current highlights mean
+active now. The physical-time cursor and all seven phases remain unchanged
+when switching representation.
+
+Nineteen ordered exact stops cover every blocking boundary and every open
+cell between boundaries. Pair buttons visit each edge of the triangle. A
+magnified view preserves the full local safe interval [17/56,39/128], duration
+1/896, and both closed endpoints. Open threshold endpoints and included window
+clipping endpoints are drawn distinctly. Completed laps floor(vt) and nearby
+blocking meeting m are separate fields, with the latter shown only when active.
+The source's general forest argument and synthetic altered distribution are
+not promoted into new physical or universal claims.
+
 ## Evidence and scope
 
 Source snapshot: `6b2b9316dbc87499a1cb5184aadbd6614d4d6c32`, on
@@ -147,7 +172,7 @@ It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
 `presentation.template.html`, `joint.template.html`, `representation.template.html`,
-`transfer.template.html`, `selector.template.html`,
+`transfer.template.html`, `selector.template.html`, `clock.template.html`,
 `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
 
@@ -171,6 +196,7 @@ from a drawing.
 | Conditional slice | All 14 displayed exact points retain six-runner safety and fail only runner 13; collision t=4/13; the entire closed S interval is strictly blocked |
 | q=10 | 17/35 and 18/35 are maximizers; the old face has dimension 2 and the child face dimension 1 |
 | Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints; ten projected intervals and five selected/reflected physical controls |
+| Shared clock | Six exact blocking occurrences, four pair edges, no 6/11/16 triple in J; direct seven-band intersection reproduces the closed safe interval; 19 physical time stops |
 | Parent–child scenes | Three parents and four children: seven exact orbit slices reconstructed independently from 2D inequalities; before/after phases, laps and reflections |
 | Representation controls | q=4 closed/open segment integer contacts; all eight q=10 maximizers partitioned into six old-edge and two face-interior recoveries |
 | B-ray examples | q=2,3,4,5,6,7; all 42 cap-contact tests, direct physical maxima and complete maximizing sets |
@@ -220,7 +246,13 @@ physical/reflected tables, reset/direct execution and five-chapter navigation.
 The interval checker projects endpoints directly and enumerates integer
 contacts, independently of the builder's slope/intercept calculation.
 
-Next visual target: the physical foundations from the plan's early scenes—
-safe/blocking intervals on one shared clock, occurrence identity, and the
-archived 6/11/16 pairwise-overlap control. Keep that source example distinct
-from the current A/B-ray family. Full deck/explorer remain pending.
+The sixth-section audit checks all 38 time/representation states at three
+widths (114 layouts), exact phases and completed/meeting labels, strict
+blocking, both safe endpoints, graph structure, jump/step controls and
+six-chapter navigation. Four archived source files were added to the manifest
+at the same frozen commit; the existing A/B controls are unchanged.
+
+Next visual target: connect the physical safe-lap inequalities to construction
+of a geometric cell, then introduce the full atlas before its question-specific
+compressions. The guided opening/relative-motion introduction, concluding CC
+story, standalone figure exports and research explorer remain unfinished.

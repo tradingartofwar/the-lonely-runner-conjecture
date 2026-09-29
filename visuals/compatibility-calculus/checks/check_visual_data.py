@@ -187,6 +187,56 @@ def main():
     counts.update(selector_visual_controls=5,selector_visual_interval_checks=trial_count,
                   selector_visual_physical_and_reflection=True,selector_visual_states=11,
                   selector_visual_closed_endpoints_and_negative_rounding=True)
+    # Section 06: independently enumerate the strict blocking occurrences,
+    # and obtain the closed safe set by intersecting all seven safe bands.
+    clock=e['clock_visual'];lo,hi=clock['window'];delta=clock['threshold']
+    assert clock['speeds']==[1,4,5,6,7,11,16] and (lo,hi,delta)==(F(9,32),F(3,8),F(1,8))
+    expected=[]
+    for v in clock['extras']:
+        for m in range(v+1):
+            a,b=max(lo,(m-delta)/v),min(hi,(m+delta)/v)
+            if a<b:
+                expected.append({'id':f'v{v}m{m}','speed':v,'meeting':m,'interval':[a,b],
+                                 'closed':[dist(v*t)<delta for t in [a,b]]})
+    assert sorted(clock['episodes'],key=lambda e:e['id'])==sorted(expected,key=lambda e:e['id'])
+    clipped=[(max(a,lo),min(b,hi)) for a,b in safe_set(clock['speeds'],delta) if max(a,lo)<=min(b,hi)]
+    assert clipped==list(map(tuple,clock['safe_components']))==[(F(17,56),F(39,128))]
+    assert sum(b-a for a,b in clipped)==clock['safe_duration']==F(1,896)
+    assert all(any(a<=lo<=hi<=b for a,b in safe_set([v],delta)) for v in clock['core'])
+    expected_pairs=[]
+    for a,b in itertools.combinations(expected,2):
+        left=max(a['interval'][0],b['interval'][0]);right=min(a['interval'][1],b['interval'][1])
+        if left<right:expected_pairs.append((frozenset([a['id'],b['id']]),left,right))
+    assert len(expected_pairs)==len(clock['pairs'])==4
+    for pair in clock['pairs']:
+        left,right=pair['interval']
+        assert (frozenset(pair['episodes']),left,right) in expected_pairs
+        assert pair['duration']==right-left and pair['time']==(left+right)/2
+        assert pair['closed']==[all(dist(v*t)<delta for v in pair['speeds']) for t in [left,right]]
+        assert clock['controls'][pair['control_index']]['time']==pair['time']
+    for a,b,c in itertools.product(*[[e for e in expected if e['speed']==v] for v in [6,11,16]]):
+        assert max(e['interval'][0] for e in [a,b,c])>min(e['interval'][1] for e in [a,b,c])
+    cuts=sorted({lo,hi}|{x for e in expected for x in e['interval']})
+    assert [c['time'] for c in clock['controls']]==sorted(cuts+[(a+b)/2 for a,b in zip(cuts,cuts[1:])])
+    for control in clock['controls']:
+        t=control['time'];active=[]
+        for row,v in zip(control['runners'],clock['speeds']):
+            assert row['speed']==v and row['phase']==frac(v*t) and row['lap']==(v*t).__floor__()
+            assert row['distance']==dist(v*t) and row['blocked']==(dist(v*t)<delta)
+            if row['blocked']:
+                active.append(v);assert row['meeting']==(v*t+F(1,2)).__floor__()
+            else:assert row['meeting'] is None
+        assert control['active_speeds']==active and control['minimum']==min(dist(v*t) for v in clock['speeds'])
+        assert control['active_episodes']==[e['id'] for e in clock['episodes'] if abs(e['speed']*t-e['meeting'])<delta]
+        assert control['boundary']==(t in cuts)
+    assert [clock['controls'][i]['time'] for i in clock['safe_indices']]==[F(17,56),F(545,1792),F(39,128)]
+    assert all(not clock['controls'][i]['active_speeds'] for i in clock['safe_indices'])
+    default=clock['controls'][clock['default_index']]
+    six=next(r for r in default['runners'] if r['speed']==6)
+    assert default['time']==F(81,256) and (six['lap'],six['meeting'])==(1,2)
+    counts.update(clock_occurrences=6,clock_pair_edges=4,clock_exact_time_controls=19,
+                  clock_strict_boundaries_and_closed_safe_set=True,clock_meeting_distinct_from_completed_lap=True,
+                  clock_no_local_6_11_16_triple=True)
     # Controls for section 03, checked against full physical sets and parent facets.
     a4=next(r for r in e['A'] if r['q']==4)
     closed_segment_times=[];open_segment_times=[]

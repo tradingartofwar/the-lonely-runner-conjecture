@@ -1,6 +1,6 @@
 # Visual companion audit — September 29, 2026
 
-Scope: the exact data layer and B-ray cap-to-physical-time presentation.
+Scope: the exact data layer and six connected interactive sections.
 AI-assisted implementation and same-author audit; no independent human review
 or new mathematical theorem is claimed.
 
@@ -12,7 +12,7 @@ selector controls, and six B-ray controls. The B maxima and complete maximizing
 times are crosschecked by a physical opposing-contact optimizer and closed
 band intersections, not only by replaying the cap selector.
 
-All 17 mathematical/semantic source hashes match the frozen Git snapshot.
+All 21 mathematical/semantic source hashes match the frozen Git snapshot.
 The builder and checker read that commit explicitly, so subsequent edits on
 the live research branch cannot silently change this visual's premises.
 Implementation files have a separate hash map; these files did not exist at
@@ -236,3 +236,60 @@ Representation checkpoint:
 Full deck/explorer remain pending. The next visual target is shared physical
 clock/occurrence identity using the plan's archived 6/11/16 example, kept
 separate from the A/B-ray display controls.
+
+
+## Sixth section: one shared clock
+
+The archived replacement-16 control from lap_constraints.json is read at the
+same frozen source commit. It has seven positive speeds 1,4,5,6,7,11,16,
+reference 0, common starts, threshold 1/8 and J=[9/32,3/8]. It is labelled as a
+separate example, not an additional parameter in the existing A/B families.
+Four source files join the hash manifest: the occurrence JSON, its checker,
+the lap-labelled note and distinction audit, for 21 mathematical/semantic
+source hashes. The same-source finite example is reproduced, not generalized.
+
+The builder retains all six archived occurrences and four pair edges. Strict
+inequalities determine endpoint inclusion. A separately structured check
+enumerates occurrences from speeds and meeting integers, verifies every pair
+and rules out all 6/11/16 occurrence triples. Intersecting seven closed physical
+safe-band sets independently recovers [17/56,39/128] and duration 1/896.
+Nineteen exact time stops cover every blocking boundary and one interior point
+per partition cell; all phases, completed laps, distances, blocking status and
+nearby meeting labels are checked directly. Sampling is not the source of the
+interval or triple-exclusion claims.
+
+Both runner and occurrence representations are checked at every stop at
+1440/light, 390/light and 320/dark (38 states, 114 layouts). Tests cover the
+three triangle-pair jump buttons, both safe endpoints, interior witness,
+previous/next controls, preserving time on representation changes, source
+tables, chapter state retention and fresh direct links. The five preceding
+sections remain covered. No clipped SVG labels, horizontal document overflow,
+page errors or network dependencies were found. Wide exact tables scroll
+inside their own container on narrow screens.
+
+Visual review covered the desktop merged triangle and split path, plus the
+narrow dark occurrence timeline, graph and equality endpoint. Physical phase
+labels use separate leaders while their dots remain at the actual phases.
+The small safe opening has an explicitly magnified view with closed endpoints.
+
+Consequential distinctions retained:
+
+- An edge means overlap somewhere in J; a highlighted edge is active now.
+- Merging by runner hides which meeting supports each pair. Keeping individual
+  intervals and their overlap relation restores the missing identity.
+- Meeting m is the nearby integer in |vt-m|<1/8, not necessarily floor(vt).
+  At the default 6/16 overlap, runner 6 has completed one lap but is approaching
+  meeting 2. Both fields are shown explicitly.
+- Blocking threshold endpoints are open; equality is safe. Window clipping can
+  yield a closed endpoint if the blocking inequality is still strict there.
+- The no-triple statement is restricted to J. All three block at the common
+  start, so the affine speed relation by itself is not an exclusion proof.
+- The full local safe set is distinguished from the full-period safe set.
+- The original abstract altered distribution is not a second physical speed
+  configuration. The forest theorem is not asserted as an independently
+  reviewed result by this scene.
+
+The representation record specifies the local common-time question and the
+recovery trigger for a new configuration, reference, threshold or window.
+Full guided deck/explorer remain pending; next is the safe-lap-to-geometric-cell
+bridge and the introduction to the complete atlas.

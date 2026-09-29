@@ -4,8 +4,8 @@
     "rendering": "ILLUSTRATION — animation and floating-point rendering are not proof",
     "spectrum": "HYPOTHESIS — internally reviewed proof candidate; independent assessment remains open"
   },
-  "data_build_sha256": "e2f5d000f003b40c03f3de512b398bb4b0ccca4eaf4182d397ceeb21570b8a9e",
-  "implementation_scope": "Exact data and five sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, and an operable two-segment A-ray selector; full deck and explorer remain pending.",
+  "data_build_sha256": "3a7d93953e30e73992a4e3d059d413f0d72975f4653c46bc22e71a4a0a2c47cb",
+  "implementation_scope": "Exact data and six sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, and shared-clock occurrence identity; full deck and explorer remain pending.",
   "omitted_by_first_slice": "Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.",
   "recovery": "Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.",
   "repository": "https://github.com/tradingartofwar/the-lonely-runner-conjecture",
@@ -15,6 +15,7 @@
     "first_hit": "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md",
     "joint_compatibility": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
     "joint_derivation": "notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md",
+    "occurrence_identity": "notes/LAP_LABELLED_CONSTRAINTS.md",
     "parent_child_geometry": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
     "parent_child_physical": "reviews/2026-09-29-cc-six-seven-transfer/countercheck.json",
     "physical": "reviews/2026-09-29-cc-other-ray-review/physical_check.json",
@@ -22,14 +23,16 @@
     "representation_rules": "notes/CC_REPRESENTATION_RULES.md",
     "representation_selector": "notes/CC_BOUNDED_SELECTOR_2026_09_29.md",
     "selector_geometry": "reviews/2026-09-29-cc-bounded-selector/verification.json",
-    "selector_physical": "reviews/2026-09-29-cc-bounded-selector/countercheck.json"
+    "selector_physical": "reviews/2026-09-29-cc-bounded-selector/countercheck.json",
+    "shared_clock": "reviews/2026-09-25-lr2/lap_constraints.json"
   },
   "schema_version": 1,
-  "scope": "Selected stationary reference; eight common-start runners; the fixed A/B families only.",
+  "scope": "Selected stationary reference; eight common-start runners; the fixed A/B families and one separately labelled archived 6/7/11/16 blocking example on J=[9/32,3/8].",
   "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
   "sources": {
     "arithmetic_b": "reviews/2026-09-29-cc-other-ray-review/arithmetic_check.json",
     "caps": "reviews/2026-09-29-cc-other-ray-review/reconciliation.json",
+    "clock_occurrences": "reviews/2026-09-25-lr2/lap_constraints.json",
     "geometry": "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
     "original_geometry": "reviews/2026-09-29-ltcm-spectrum/ambient.json",
     "physical_b": "reviews/2026-09-29-cc-other-ray-review/physical_check.json",

@@ -8,6 +8,40 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Sixth visual section — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) adds
+**06 · One shared clock**, directly reachable as `#clock`. The separate
+archived configuration 0,1,4,5,6,7,11,16 is restricted to J=[9/32,3/8] with
+threshold 1/8. The core 1,4,5 is safe throughout J. Four remaining runners
+have six blocking occurrences and four positive pair edges.
+
+A representation switch merges by runner or keeps (speed, meeting) labels,
+without changing time. The merged 6/11/16 triangle separates into the path
+(16,5)—(6,2)—(11,4)—(16,6), plus (11,3)—(7,2). Runner 16's two required
+meeting numbers are incompatible at one time in J. This is explicitly local:
+the three runners do block together at t=0. Meeting m is distinguished from
+completed laps floor(vt) in the explanation and exact physical table.
+
+The linked timeline, overlap graph and circular phases support 19 exact time
+stops, triangle-pair jumps and the closed local opening [17/56,39/128] of
+length 1/896. The opening has a separately labelled magnification. Strict
+blocking endpoints and included clipping endpoints remain distinct.
+Independent occurrence enumeration, direct seven-safe-band intersection,
+and exact phase checks pass. Both representations at all 19 times pass
+114 desktop/phone layouts; prior chapter tests and six-chapter links pass.
+
+Four archived sources were added at the unchanged 6b2b931 snapshot (21 source
+hashes total). No new physical family, broad scan or theorem is claimed.
+The source's wider forest argument and artificial same-pair distribution
+remain separately scoped; no synthetic arrangement is called a physical case.
+Later research below is preserved separately.
+
+**Next visual target:** safe-lap inequalities to geometric-cell construction,
+then the full atlas before compression. The opening/relative-motion intro,
+concluding guided CC story, standalone figure exports and research explorer
+remain unfinished.
+
+
 **Fifth visual section — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **05 · One safe time**, directly reachable as `#selector`. It makes the

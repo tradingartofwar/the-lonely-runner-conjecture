@@ -13,8 +13,9 @@ const examples=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json')
 const joint=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).joint_visual;
 const cut=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).transfer_visual;
 const selector=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).selector_visual;
+const clock=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).clock_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation, parent-child and two-segment selector controls; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation, parent-child, selector and shared-clock controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -317,6 +318,73 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     report.checks.selector_exact_states=11;report.checks.selector_phases_laps_and_reflection=true;
     report.checks.selector_no_witness_after_failed_E1=true;report.checks.selector_reset_run_and_navigation=true;
     report.checks.five_chapter_direct_links=true;
+    await page.click('#nav-clock');
+    await page.waitForFunction(()=>window.CC_CLOCK_STATE&&!document.getElementById('clock-chapter').hidden);
+    report.checks.clock_layouts=[];
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const mode of ['runner','occurrence']){
+        const priorTime=(await page.evaluate(()=>window.CC_CLOCK_STATE)).time;
+        await page.click(mode==='runner'?'#clock-merge':'#clock-split');
+        assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).time,priorTime);
+        for(const [index,control]of clock.controls.entries()){
+          await page.locator('#clock-position').fill(String(index));
+          const c=await page.evaluate(()=>window.CC_CLOCK_STATE);
+          assert.equal(c.mode,mode);assert.equal(c.time,control.time.text);assert.equal(c.index,index);
+          assert.deepEqual(c.activeSpeeds,control.active_speeds);assert.deepEqual(c.activeEpisodes,control.active_episodes);
+          assert.equal(c.safe,control.active_speeds.length===0);assert.equal(c.minimum,control.minimum.text);
+          assert.deepEqual(c.phases,control.runners.map(r=>r.phase.text));assert.deepEqual(c.distances,control.runners.map(r=>r.distance.text));
+          assert.deepEqual(c.laps,control.runners.map(r=>String(r.lap)));assert.deepEqual(c.meetings,control.runners.map(r=>r.meeting===null?null:String(r.meeting)));
+          assert.equal(c.graphNodes,mode==='runner'?4:6);assert.equal(c.graphEdges,4);
+          assert.deepEqual(c.safeComponents,[['17/56','39/128']]);
+          assert.equal(await page.locator('#clock-phase-rows tr').count(),7);
+          assert.equal(await page.locator('#clock-phase-rows .clock-blocked-row').count(),control.active_speeds.length);
+          assert.equal(await page.locator('#clock-prev').isDisabled(),index===0);
+          assert.equal(await page.locator('#clock-next').isDisabled(),index===clock.controls.length-1);
+          const layout=await page.evaluate(()=>{
+            const outside=[];
+            for(const svg of document.querySelectorAll('#clock-chapter svg')){
+              if(!svg.getBoundingClientRect().width)continue;
+              const b=svg.viewBox.baseVal;
+              for(const t of svg.querySelectorAll('text')){const r=t.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:t.textContent});}
+            }
+            return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+          });
+          assert.deepEqual(layout,{overflow:false,outside:[]},`clock ${width} ${mode} time=${c.time}`);
+          report.checks.clock_layouts.push({width,scheme,mode,time:c.time,overflow:false,clipped_svg_labels:0});
+          if(process.env.CC_SCREENSHOT_DIR&&[clock.default_index,...clock.safe_indices].includes(index)&&(width===1440||width===320))await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`clock-${width}-${mode}-${index}.png`),fullPage:true});
+        }
+      }
+    }
+    for(const p of clock.pairs.filter(p=>p.speeds.includes(6)||p.speeds.includes(16))){
+      await page.click(`[data-clock-pair="${p.id}"]`);
+      assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).time,p.time.text);
+      assert.equal(await page.locator(`[data-clock-pair="${p.id}"]`).getAttribute('aria-pressed'),'true');
+    }
+    for(const [i,id]of ['left','middle','right'].entries()){
+      await page.click('#clock-safe-'+id);
+      const c=await page.evaluate(()=>window.CC_CLOCK_STATE);
+      assert.equal(c.time,clock.controls[clock.safe_indices[i]].time.text);assert.equal(c.safe,true);
+      if(i!==1)assert.equal(c.minimum,'1/8');
+    }
+    await page.click('#clock-next');assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).index,clock.safe_indices[2]+1);
+    await page.click('#clock-prev');assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).index,clock.safe_indices[2]);
+    await page.locator('#clock-chapter footer summary').click();
+    assert.equal(await page.locator('#clock-occurrence-rows tr').count(),6);assert.equal(await page.locator('#clock-overlap-rows tr').count(),4);
+    assert.ok((await page.locator('#clock-occurrence-rows').textContent()).includes('[9/32, 25/88)'));
+    assert.ok((await page.locator('#clock-occurrence-rows').textContent()).includes('(47/128, 3/8]'));
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+    await page.click('#nav-selector');await page.waitForFunction(()=>document.getElementById('clock-chapter').hidden);
+    await page.click('#nav-clock');await page.waitForFunction(()=>!document.getElementById('clock-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).index,clock.safe_indices[2]);
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#clock');await page.reload();
+    await page.waitForFunction(()=>window.CC_CLOCK_STATE&&!document.getElementById('clock-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).index,clock.default_index);
+    assert.equal((await page.evaluate(()=>window.CC_CLOCK_STATE)).mode,'runner');
+    assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-clock').getAttribute('aria-current'),'page');
+    report.checks.clock_exact_time_controls=19;report.checks.clock_representation_states=38;
+    report.checks.clock_phases_laps_meetings_and_strict_boundaries=true;report.checks.clock_jump_controls_and_closed_opening=true;
+    report.checks.clock_mode_preserves_time=true;report.checks.six_chapter_direct_links=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));

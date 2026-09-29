@@ -27,9 +27,13 @@ SOURCES = {
     'selector': PREFIX + 'cc-bounded-selector/verification.json',
     'selector_countercheck': PREFIX + 'cc-bounded-selector/countercheck.json',
     'original_geometry': PREFIX + 'ltcm-spectrum/ambient.json',
+    'clock_occurrences': 'reviews/2026-09-25-lr2/lap_constraints.json',
 }
 NOTES = [
     'AGENTS.md', 'CLAIM_STATUS.md',
+    'notes/LAP_LABELLED_CONSTRAINTS.md',
+    'notes/DISTINCTION_AUDIT_2026_09_25.md',
+    'reviews/2026-09-25-lr2/check_lap_constraints.py',
     'notes/CC_VISUAL_PRESENTATION_PLAN_2026_09_29.md',
     'notes/CC_REPRESENTATION_RULES.md',
     'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
@@ -226,6 +230,53 @@ def selector_visual(src):
             'source':SOURCES['selector'],'status':'Exact finite controls of the pinned two-segment proof candidate'}
 
 
+def clock_visual(src):
+    """One archived local window; preserve strict blocking and meeting identity."""
+    archive=src['clock_occurrences'];case=next(c for c in archive['cases'] if c['replacement']==16)
+    window=list(map(F,archive['window']));delta=F(archive['threshold'])
+    core=archive['core'];extras=[6,7,11,16];vs=sorted(core+extras)
+    episodes=[]
+    for e in case['episodes']:
+        v,m=e['speed'],e['lap'];a,b=F(e['left']),F(e['right'])
+        assert (a,b)==(max(window[0],(m-delta)/v),min(window[1],(m+delta)/v))
+        episodes.append({'id':f'v{v}m{m}','speed':v,'meeting':m,'interval':[a,b],
+                         'closed':[abs(v*a-m)<delta,abs(v*b-m)<delta]})
+    by_label={(e['speed'],e['meeting']):e for e in episodes}
+    pairs=[]
+    for edge in case['positive_pair_edges']:
+        a,b=[by_label[tuple(label)] for label in edge['episodes']]
+        lo=max(a['interval'][0],b['interval'][0]);hi=min(a['interval'][1],b['interval'][1])
+        assert hi-lo==F(edge['duration'])
+        def contains(e,t):return abs(e['speed']*t-e['meeting'])<delta
+        pair_speeds=sorted([a['speed'],b['speed']])
+        pairs.append({'id':'pair-'+ '-'.join(map(str,pair_speeds)),'speeds':pair_speeds,
+                      'episodes':[a['id'],b['id']],'interval':[lo,hi],
+                      'closed':[all(contains(e,t) for e in [a,b]) for t in [lo,hi]],
+                      'duration':hi-lo,'time':(lo+hi)/2})
+    safe=[list(map(F,c)) for c in case['clear_cells_closures']]
+    assert safe==[[F(17,56),F(39,128)]]
+    cuts=sorted(set(window+[v for e in episodes for v in e['interval']]))
+    times=sorted(set(cuts+[(a+b)/2 for a,b in zip(cuts,cuts[1:])]+[p['time'] for p in pairs]))
+    controls=[]
+    for t in times:
+        runners=[]
+        for v in vs:
+            lap=(v*t).__floor__();phase=v*t-lap;distance=min(phase,1-phase);blocked=distance<delta
+            runners.append({'speed':v,'lap':lap,'phase':phase,'distance':distance,'blocked':blocked,
+                            'meeting':(v*t+F(1,2)).__floor__() if blocked else None})
+        controls.append({'time':t,'boundary':t in cuts,'runners':runners,
+                         'minimum':min(r['distance'] for r in runners),
+                         'active_speeds':[r['speed'] for r in runners if r['blocked']],
+                         'active_episodes':[e['id'] for e in episodes if abs(e['speed']*t-e['meeting'])<delta]})
+    for p in pairs:p['control_index']=times.index(p['time'])
+    return {'source':SOURCES['clock_occurrences'],'window':window,'threshold':delta,
+            'core':core,'extras':extras,'speeds':vs,'episodes':episodes,'pairs':pairs,
+            'safe_components':safe,'safe_duration':F(case['direct_clear_duration']),
+            'safe_indices':[times.index(safe[0][0]),times.index(sum(safe[0])/2),times.index(safe[0][1])],
+            'controls':controls,'default_index':next(p['control_index'] for p in pairs if p['speeds']==[6,16]),
+            'status':'REPRODUCED — one archived configuration in one closed local window; no family or general theorem'}
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -284,10 +335,11 @@ def build():
                       'joint_visual': joint_visual(src),
                       'transfer_visual': transfer_visual(src),
                       'selector_visual': selector_visual(src),
+                      'clock_visual': clock_visual(src),
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -314,12 +366,16 @@ def build():
     controls['selector_visual'] = {'q':A_CONTROLS,'states':11,'fallback_q':5,
                                    'times':['7/48','1/8','25/56','5/24','15/104'],
                                    'endpoint_q':[4,6],'attempts':[1,1,2,1,1]}
+    controls['clock_visual'] = {'speeds':[1,4,5,6,7,11,16],'window':['9/32','3/8'],
+                               'occurrences':6,'pair_edges':4,'modes':2,
+                               'exact_time_controls':len(examples['clock_visual']['controls']),
+                               'safe_interval':['17/56','39/128'],'safe_duration':'1/896'}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
                 'spectrum':'HYPOTHESIS — internally reviewed proof candidate; independent assessment remains open',
                 'rendering':'ILLUSTRATION — animation and floating-point rendering are not proof'},
-                'scope': 'Selected stationary reference; eight common-start runners; the fixed A/B families only.',
+                'scope': 'Selected stationary reference; eight common-start runners; the fixed A/B families and one separately labelled archived 6/7/11/16 blocking example on J=[9/32,3/8].',
                 'retained':'Full labelled cells including singletons, cap directions, same-point orbit, exact recovery, canonical controls.',
                 'omitted_by_first_slice':'Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.',
                 'recovery':'Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.',
@@ -331,8 +387,10 @@ def build():
                                  'parent_child_geometry':SOURCES['transfer'],
                                  'parent_child_physical':SOURCES['transfer_countercheck'],
                                  'selector_geometry':SOURCES['selector'],
-                                 'selector_physical':SOURCES['selector_countercheck']},
-                'implementation_scope':'Exact data and five sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, and an operable two-segment A-ray selector; full deck and explorer remain pending.'}
+                                 'selector_physical':SOURCES['selector_countercheck'],
+                                 'shared_clock':SOURCES['clock_occurrences'],
+                                 'occurrence_identity':'notes/LAP_LABELLED_CONSTRAINTS.md'},
+                'implementation_scope':'Exact data and six sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, and shared-clock occurrence identity; full deck and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -351,10 +409,11 @@ def main():
         html = html.replace('<!-- CC_REPRESENTATION -->', (PACKAGE/'representation.template.html').read_text())
         html = html.replace('<!-- CC_TRANSFER -->', (PACKAGE/'transfer.template.html').read_text())
         html = html.replace('<!-- CC_SELECTOR -->', (PACKAGE/'selector.template.html').read_text())
+        html = html.replace('<!-- CC_CLOCK -->', (PACKAGE/'clock.template.html').read_text())
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-navigation.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:
