@@ -12,7 +12,7 @@ const pkg=path.resolve(__dirname,'..');
 const examples=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).B;
 const joint=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).joint_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of six canonical examples; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint and representation controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -130,6 +130,62 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     await page.waitForFunction(()=>window.CC_JOINT_STATE&&!document.getElementById('joint-chapter').hidden);
     assert.equal((await page.evaluate(()=>window.CC_JOINT_STATE)).step,0);
     report.checks.chapter_navigation_and_direct_link=true;
+    await page.click('#nav-representation');
+    await page.waitForFunction(()=>window.CC_REP_STATE&&!document.getElementById('representation-chapter').hidden);
+    const expected={
+      value:{ray:'B',clock:'t=y',q:6,shownTimes:[],missingTimes:[],lowerBound:'4/25',upperBound:'4/25'},
+      maximizers:{ray:'B',clock:'t=y',q:6,shownTimes:['9/25','16/25'],missingTimes:[],maximum:'4/25'},
+      witness:{ray:'A',clock:'t=x',q:4,shownTimes:['1/8'],missingTimes:[],orbitIntervals:[['0','7/12'],['9/8','15/8']]},
+      safe:{ray:'A',clock:'t=x',q:4,shownTimes:['1/8','3/8','5/8','7/8'],missingTimes:[]},
+      transfer:{ray:'A',clock:'t=x',q:4,shownTimes:[],missingTimes:[],range:['109/56','33/16'],safeBandOverlap:false},
+      faces:{ray:'A',clock:'t=x',q:10,shownTimes:['1/7','2/7','3/7','17/35','18/35','4/7','5/7','6/7'],missingTimes:[],maximum:'1/7'}
+    };
+    const reduced={
+      value:{upperBound:null},maximizers:{shownTimes:[],missingTimes:['9/25','16/25']},
+      witness:{shownTimes:[],missingTimes:['1/8']},safe:{shownTimes:[],missingTimes:['1/8','3/8','5/8','7/8']},
+      transfer:{range:['23/12','17/8'],safeBandOverlap:true},
+      faces:{shownTimes:['1/7','2/7','3/7','4/7','5/7','6/7'],missingTimes:['17/35','18/35']}
+    };
+    report.checks.representation_layouts=[];
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const question of Object.keys(expected)){
+        await page.click(`[data-rep-question="${question}"]`);
+        for(const thin of [false,true]){
+          if(thin)await page.click('#rep-remove');
+          await page.waitForTimeout(50);
+          const rep=await page.evaluate(()=>window.CC_REP_STATE);
+          assert.deepEqual(rep,{question,reduced:thin,...expected[question],...(thin?reduced[question]:{})});
+          assert.equal(await page.locator('#rep-keep').getAttribute('aria-pressed'),String(!thin));
+          assert.equal(await page.locator('#rep-remove').getAttribute('aria-pressed'),String(thin));
+          assert.equal(await page.locator('.rep-model-active').getAttribute('data-rep-model'),question);
+          assert.equal(await page.locator('.rep-branch-active').getAttribute('data-rep-ray'),expected[question].ray);
+          const layout=await page.evaluate(()=>{
+            const svg=document.getElementById('rep-diagram'),b=svg.viewBox.baseVal,outside=[];
+            for(const t of svg.querySelectorAll('text')){const r=t.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push(t.textContent);}
+            return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+          });
+          assert.deepEqual(layout,{overflow:false,outside:[]},`${width} ${question} reduced=${thin}`);
+          report.checks.representation_layouts.push({width,scheme,question,reduced:thin,overflow:false,clipped_svg_labels:0});
+          if(process.env.CC_SCREENSHOT_DIR&&(width===1440||(width===320&&['safe','faces','transfer'].includes(question)))){
+            await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`representation-${width}-${question}-${thin?'reduced':'full'}.png`),fullPage:true});
+          }
+        }
+        await page.click('#rep-keep');
+        assert.equal((await page.evaluate(()=>window.CC_REP_STATE)).reduced,false);
+      }
+    }
+    await page.click('#nav-joint');await page.waitForFunction(()=>!document.getElementById('joint-chapter').hidden);assert.equal(await page.locator('#representation-chapter').isVisible(),false);
+    await page.click('#nav-representation');await page.waitForFunction(()=>!document.getElementById('representation-chapter').hidden);assert.equal((await page.evaluate(()=>window.CC_REP_STATE)).question,'faces');
+    await page.click('#nav-cap');await page.waitForFunction(()=>!document.getElementById('cap-chapter').hidden);assert.equal(await page.locator('#representation-chapter').isVisible(),false);
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#representation');await page.reload();
+    await page.waitForFunction(()=>window.CC_REP_STATE&&!document.getElementById('representation-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_REP_STATE)).question,'value');
+    assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);
+    assert.equal(await page.locator('#nav-representation').getAttribute('aria-current'),'page');
+    report.checks.representation_questions=6;report.checks.representation_exact_states=12;
+    report.checks.representation_restore_and_branch_maps=true;
+    report.checks.three_chapter_navigation_and_direct_link=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));

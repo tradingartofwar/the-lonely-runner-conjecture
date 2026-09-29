@@ -158,14 +158,7 @@
     const path=manifest.scene_sources[key],li=document.createElement('li'),a=document.createElement('a');
     a.href=`${manifest.repository}/blob/${manifest.source_commit}/${path}`;a.textContent=path;li.append(a);el('joint-source-links').append(li);
   }
-  function chapter(){
-    const joint=location.hash==='#joint';el('cap-chapter').hidden=joint;el('joint-chapter').hidden=!joint;
-    for(const [id,active]of [['nav-cap',!joint],['nav-joint',joint]]){if(active)el(id).setAttribute('aria-current','page');else el(id).removeAttribute('aria-current');}
-    if(joint)render();
-    document.dispatchEvent(new CustomEvent('cc:chapter',{detail:{joint}}));
-    window.scrollTo({top:0,behavior:'auto'});
-  }
-  window.addEventListener('hashchange',chapter);
-  const observer=new ResizeObserver(()=>{render();});observer.observe(el('joint-chapter'));
-  chapter();
+  document.addEventListener('cc:chapter',render);
+  new ResizeObserver(render).observe(el('joint-chapter'));
+  render();
 })();

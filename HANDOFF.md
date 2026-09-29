@@ -8,6 +8,32 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Third visual section — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) adds
+**03 · What the model remembers**, directly reachable as `#representation`.
+Six selectable questions distinguish B-ray value/all-maximizers from A-ray
+one witness/full safety/same-slice transfer/all maximizers after transfer.
+Every choice carries retained/omitted information, a recovery trigger, a
+pinned richer source, and an explicit reduced-record comparison. The branch
+map keeps H=x-qy, t=y separate from H=qx-y, t=x.
+
+Exact finite controls verify that opening both q=4 selector segments removes
+their only integer contact (t=1/8), and that q=10 old-edge retention recovers
+six maximizers while omitting face-interior times 17/35 and 18/35. This separates
+selecting an optimizer from enumerating every optimizer. Other comparisons
+preserve attainment versus optimality, value versus witness identity, singleton
+safety versus positive duration, and marginal versus conditional compatibility.
+All twelve states pass exact browser-state checks and 36 responsive layouts;
+the existing two chapters and three-chapter navigation also pass. Sources stay
+pinned to 6b2b931; no mathematical claim is promoted or extended.
+
+**Next visual target:** a parent-to-child geometric transformation using the
+full atlas: show how the seventh band removes positive q=4 intervals while
+preserving isolated points, and how it creates the q=10 face contact. The full
+20-scene deck and research explorer remain incomplete. Later research below
+is preserved separately from this frozen visual snapshot.
+
+
 **Second visual section — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) now includes
 **02 · True together**, a three-stage A-ray q=4 demonstration of separate

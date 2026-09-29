@@ -43,12 +43,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
-**Visual companion:** [Two interactive CC sections](visuals/compatibility-calculus/README.md)
-connect **from cap to clock** with **true somewhere versus true together**.
-Open the self-contained `presentation.html` to follow a B-ray integer contact
-back to the runners, or choose **02 · True together** for the A-ray q=4
-marginal/conditional counterexample and physical checks. Exact data and browser
-checks pass; the full deck and research explorer remain in progress.
+**Visual companion:** [Three interactive CC sections](visuals/compatibility-calculus/README.md)
+connect **from cap to clock**, **true somewhere versus true together**, and
+**what the model remembers**. Open the self-contained `presentation.html`.
+Section 03 offers six question-specific representation records, each with an
+exact example, a removable-information comparison, and a recovery route.
+The A/B clocks stay distinct; q=4 equality and q=10 face contacts make the
+information losses concrete. Exact data and desktop/phone browser checks pass;
+the full deck and research explorer remain in progress.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

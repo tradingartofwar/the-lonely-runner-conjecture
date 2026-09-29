@@ -79,7 +79,7 @@
     const li=document.createElement('li'),a=document.createElement('a');a.href=`${manifest.repository}/blob/${manifest.source_commit}/${path}`;a.textContent=`${name}: ${path.split('/').pop()}`;li.append(a);el('source-links').append(li);
   }
   selectQ();stop();render();
-  document.addEventListener('cc:chapter',event=>{if(event.detail.joint)stop();else render();});
+  document.addEventListener('cc:chapter',event=>{if(event.detail.chapter!=='cap')stop();else render();});
   let resizeFrame=null;
   const observer=new ResizeObserver(()=>{if(resizeFrame!==null)cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{resizeFrame=null;render();});});
   observer.observe(document.querySelector('main'));

@@ -142,6 +142,38 @@ def main():
         q=r['q'];lo,hi=F(q-4,8),F(5*q-6,24)
         assert r['accept']==(lo.__ceil__()<=hi)==(q!=5)
     counts.update(A_controls=5,physical_transfer_optimizations=6,selector_endpoint_inequalities=56)
+    # Controls for section 03, checked against full physical sets and parent facets.
+    a4=next(r for r in e['A'] if r['q']==4)
+    closed_segment_times=[];open_segment_times=[]
+    segment_ranges=[]
+    for segment in segments:
+        p0,p1=[ep['point'] for ep in segment['endpoints']]
+        h0,h1=[4*p[0]-p[1] for p in [p0,p1]]
+        assert h0<h1
+        segment_ranges.append([h0,h1])
+        for h in range(h0.__ceil__(),h1.__floor__()+1):
+            t=p0[0]+(h-h0)/(h1-h0)*(p1[0]-p0[0])
+            assert min(dist(v*t) for v in a4['speeds'])>=F(1,8)
+            closed_segment_times.append(t)
+            if h0<h<h1:open_segment_times.append(t)
+    assert segment_ranges==[[F(0),F(7,12)],[F(9,8),F(15,8)]]
+    assert closed_segment_times==[F(1,8)] and not open_segment_times
+    a10=next(r for r in e['A'] if r['q']==10)
+    face_times=[];edge_times=[]
+    for origin in a10['transfer']['folded_child_maximizer_origins']:
+        parent=parents[origin['parent_index']];point=origin['point']
+        active=[n for _,n,b in parent['constraints'] if dot(n,point)==b]
+        dimension=3-rank(active)
+        assert dimension==origin['parent_face_dimension']
+        target=face_times if dimension==2 else edge_times
+        assert dimension in [1,2]
+        target.extend([origin['time'],1-origin['time']])
+    opt,all_times=optimize(a10['speeds'])
+    assert opt==F(1,7) and sorted(edge_times+face_times)==all_times
+    assert sorted(face_times)==[F(17,35),F(18,35)] and len(edge_times)==6
+    counts.update(representation_questions=6,representation_q4_closed_segment_times=['1/8'],
+                  representation_q4_open_segment_times=[],representation_q10_edge_times=6,
+                  representation_q10_face_times=['17/35','18/35'])
     marginal=e['marginal_counterexample'];parent=parents[2]
     floor=[p for p in parent['vertices'] if p[2]==F(1,8)]
     assert [min(4*x-y for x,y,z in floor),max(4*x-y for x,y,z in floor)]==marginal['marginal_H_range']

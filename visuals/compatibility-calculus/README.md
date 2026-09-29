@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Two connected sections:** **from cap to clock**, and **true somewhere versus true together**.
+**Three connected sections:** **from cap to clock**, **true somewhere versus true together**, and **what the model remembers**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -13,6 +13,8 @@ python3 -m http.server 8000 --directory visuals/compatibility-calculus
 Then open `http://localhost:8000/presentation.html`.
 Choose **02 · True together** for the q=4 section. The URL fragment `#joint`
 opens that chapter directly when serving or opening the local file.
+Choose **03 · What the model remembers**, or open `#representation`, for six
+question-specific representation records and their information-loss controls.
 
 ## What this version does
 
@@ -37,9 +39,23 @@ This is A-ray q=4 with its own clock t=x, explicitly distinct from the first
 chapter's B ray. The scene rejects only parent P2 at height 1/8; the four
 isolated full-system witnesses remain displayed and verified.
 
-The exact data layer also preserves the other planned A-ray controls, the
+The third chapter lets the reader select six questions: B-ray optimal value
+or every maximizing time; A-ray one witness, the entire safe set, same-slice
+survival after a new constraint, or every optimizer after transfer. Each has
+a matching representation record: retained information, deliberate omissions,
+recovery trigger and pinned source. A branch map keeps A/B clocks distinct.
+
+Each question also has an explicit reduced-record comparison. Removing an
+upper bound leaves attainment without optimality; removing contact identity
+leaves a value without its time set; opening the two q=4 selector segments
+loses their only integer contact; keeping only positive-duration components
+loses all four final q=4 witnesses; separate marginals create the preserved
+false positive; keeping old q=10 edges loses 17/35 and 18/35 while retaining
+six other maximizers. These are distinct failures of distinct requested outputs.
+
+The exact data layer preserves the other planned A-ray controls, the
 six-to-seven atlas, q=10 face contact, and both A-ray selector segments. The
-20-scene deck, full research explorer, and third visual target remain pending.
+20-scene deck and full research explorer remain pending.
 
 ## Evidence and scope
 
@@ -91,7 +107,8 @@ files. The generated presentation needs neither Python nor Git to view.
 It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
-`presentation.template.html`, `joint.template.html`, `css/cc.css`, and the files in `js/`, then rebuild;
+`presentation.template.html`, `joint.template.html`, `representation.template.html`,
+`css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
 
 The browser uses BigInt rational arithmetic even while scrubbing. Conversion
@@ -114,6 +131,7 @@ from a drawing.
 | Conditional slice | All 14 displayed exact points retain six-runner safety and fail only runner 13; collision t=4/13; the entire closed S interval is strictly blocked |
 | q=10 | 17/35 and 18/35 are maximizers; the old face has dimension 2 and the child face dimension 1 |
 | Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints |
+| Representation controls | q=4 closed/open segment integer contacts; all eight q=10 maximizers partitioned into six old-edge and two face-interior recoveries |
 | B-ray examples | q=2,3,4,5,6,7; all 42 cap-contact tests, direct physical maxima and complete maximizing sets |
 
 The all-q reasoning and unbounded comparisons remain in the pinned source
@@ -132,10 +150,10 @@ The seven-cap reduction uses the B-ray lower witnesses strictly above 1/7.
 Changing that premise requires restoring the full model. In particular the
 A-ray q=4 control lives at 1/8 and cannot be represented by these caps.
 
-For the eventual representation ladder, show the A and B uses as different
-question/ray branches. Do not draw an unqualified lossless chain from B caps
-to A conditional intervals. Their actual-orbit equations and physical clocks
-differ.
+The third section shows A and B as different question/ray branches. It does
+not imply a lossless chain from B caps to A conditional intervals. Their
+actual-orbit equations and physical clocks differ, and source availability is
+a recovery route rather than intrinsic losslessness.
 
 The q=4 scene retains the full joint triangle and same-H conditional interval.
 Its separate-range rectangle is explicitly the inadequate representation; the
@@ -143,5 +161,13 @@ false candidate fails the original parent constraints under direct physical
 checking. The 14 slider controls illustrate, rather than establish, the
 continuous exclusion: 15/8 < 109/56 ≤ S ≤ 33/16 < 17/8 certifies the full slice.
 
-Next visual target: the question-specific representation ladder, with separate
-A/B branches, retained/omitted information, and explicit recovery triggers.
+The browser audit checks all 12 representation states at widths 1440, 390 and
+320, exact values, ray/clock selection, restoration, and direct
+chapter links. The original two sections remain covered after the shared
+router change. Mathematical source data stay at the original frozen commit;
+later discovery and two-parameter research are not silently imported.
+
+Next visual target: a parent-to-child geometric transformation. Show the added
+band clipping the full parent, preserving the q=4 equality points and creating
+the q=10 face contact. The third chapter already provides the output distinctions
+and exact finite controls for that fuller geometric explanation.

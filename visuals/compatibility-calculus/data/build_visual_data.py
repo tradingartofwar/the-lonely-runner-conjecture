@@ -205,7 +205,7 @@ def build():
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -222,6 +222,10 @@ def build():
                                'candidate_failed_speed':6,'candidate_failed_distance':'5/52',
                                'conditional_S':['109/56','33/16'],'slice_controls':14,
                                'collision_time':'4/13','slice_failed_speed':13}
+    controls['representation'] = {'questions':6, 'comparison_states':12,
+                                  'B_q6_maximum':'4/25','B_q6_maximizers':['9/25','16/25'],
+                                  'A_q4_closed_segment_witnesses':['1/8'], 'A_q4_open_segment_witnesses':[],
+                                  'A_q10_old_edge_maximizers':6,'A_q10_omitted_face_times':['17/35','18/35']}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
@@ -233,8 +237,10 @@ def build():
                 'recovery':'Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.',
                 'scene_sources':{'cap':SOURCES['geometry'],'projection':'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
                                  'first_hit':'notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md','physical':SOURCES['physical_b'],
-                                 'joint_compatibility':SOURCES['transfer'], 'joint_derivation':'notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md'},
-                'implementation_scope':'Exact data, B-ray cap-to-clock slice, and A-ray q=4 marginal-versus-joint section; full deck and explorer remain pending.'}
+                                 'joint_compatibility':SOURCES['transfer'], 'joint_derivation':'notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md',
+                                 'representation_rules':'notes/CC_REPRESENTATION_RULES.md',
+                                 'representation_selector':'notes/CC_BOUNDED_SELECTOR_2026_09_29.md'},
+                'implementation_scope':'Exact data and three sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, and six query-specific representation records; full deck and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -250,10 +256,11 @@ def main():
     if template.exists():
         html = template.read_text()
         html = html.replace('<!-- CC_JOINT -->', (PACKAGE/'joint.template.html').read_text())
+        html = html.replace('<!-- CC_REPRESENTATION -->', (PACKAGE/'representation.template.html').read_text())
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:

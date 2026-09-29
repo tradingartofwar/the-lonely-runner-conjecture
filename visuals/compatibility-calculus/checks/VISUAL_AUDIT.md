@@ -91,3 +91,52 @@ as a nonexistent physical state. The scene excludes this one parent at this
 height, while the four full-system equality witnesses survive elsewhere.
 The A/B clocks and the REPRODUCED finite-example status are visible. The next
 visual target is the question-specific representation ladder.
+
+
+## Third section: question-specific representations
+
+Six question choices each have a retained/omitted/recovery record and a
+comparison that removes specific information. Numeric display values are read
+from the same pinned exact certificates, with BigInt rational arithmetic in
+the browser. No new parameter controls or source snapshot were introduced.
+
+The exact checker independently intersects the two q=4 segment orbit ranges
+with integers, retaining t=1/8 only for closed endpoints. For q=10 it recomputes
+the rank of active parent facets at every folded child optimizer, then checks
+the reflected six-edge/two-face partition against physical optimization.
+The other value, maximizing-set, singleton and conditional-range examples
+reuse the existing physical/cell acceptance controls.
+
+The browser audit checks all six adequate and six reduced states, exact bounds,
+time sets, integer ranges, same-slice range, A/B clocks, restore buttons, active
+branch mapping and direct chapter links. All 36 new layouts (six questions ×
+two states × 1440/390/320 widths, light/dark) have no horizontal overflow or
+clipped SVG text. The existing cap/joint controls pass after the common router
+was extracted. The router preserves chapter controls and pauses animation
+when leaving the cap chapter. Navigation checks wait for the hashchange event.
+
+Visual inspection covered desktop value bounds and q=10 omissions, plus the
+narrow dark q=4 safety view. The bound bars show the allowed F range under
+each inequality; both meet at the certified value. Long SVG captions wrap at
+the actual rendered width. At narrow widths, branch connector strokes are
+removed so stacked A/B cards cannot suggest a serial conversion.
+
+Consequential distinctions retained:
+
+- A lower bound alone does not certify optimality.
+- A best value does not carry time identities or recover them without sources.
+- One witness proves existence in scope but does not enumerate all witnesses.
+- Opening the q=4 segments loses their contact, not the underlying physical time.
+- A positive-duration-only summary can omit a nonempty set of isolated times.
+- The q=4 marginal false positive remains linked to its actual failed parent.
+- Six old-edge q=10 optimizers can survive while an all-optimizer claim fails.
+- Full safe sets, complete maximizing sets and one selected witness remain distinct.
+- A single conditional interval does not supply a complete family or a bounded
+  selection algorithm. The segment coverage argument is a separate source claim.
+- Source links, maps and evidence statuses stay visible; source availability
+  is a recovery route, not a claim of lossless compression.
+
+This is AI-assisted implementation and same-author verification. The finite
+illustrations do not establish all-q adequacy, novelty, other-reference results
+or the general Lonely Runner Conjecture. The underlying proof candidates keep
+their pinned statuses. Full parent-child geometric animation remains pending.

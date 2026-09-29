@@ -1,0 +1,51 @@
+<section class="intro">
+  <p class="eyebrow">QUESTION → REPRESENTATION → INFORMATION CHECK</p>
+  <h1>What must the<br> model remember?</h1>
+  <p class="lead">A smaller model can carry everything one question needs—and leave out the very thing the next question asks for.</p>
+  <div class="badges"><span class="badge">REPRODUCED · exact finite examples</span><span class="quiet">All-q source claims remain proof candidates</span></div>
+</section>
+<section class="rep-questions" aria-label="Choose the question to answer">
+  <div class="rep-question-group"><p class="eyebrow">B RAY / OPTIMIZATION</p><div class="rep-options">
+    <button data-rep-question="value" aria-pressed="true"><span>01</span> Highest separation?</button>
+    <button data-rep-question="maximizers" aria-pressed="false"><span>02</span> Every maximizing time?</button>
+  </div></div>
+  <div class="rep-question-group"><p class="eyebrow">A RAY / SAFETY & TRANSFER</p><div class="rep-options">
+    <button data-rep-question="witness" aria-pressed="false"><span>03</span> One safe time?</button>
+    <button data-rep-question="safe" aria-pressed="false"><span>04</span> Every safe time?</button>
+    <button data-rep-question="transfer" aria-pressed="false"><span>05</span> Survive a new constraint?</button>
+    <button data-rep-question="faces" aria-pressed="false"><span>06</span> Every optimizer after transfer?</button>
+  </div></div>
+</section>
+<section class="control-bar rep-map-bar" aria-label="Selected ray and physical recovery map">
+  <span class="tag" id="rep-family"></span><div class="clock-map"><strong id="rep-map"></strong><span id="rep-coordinates"></span><span id="rep-speeds"></span></div>
+</section>
+<section class="rep-workspace">
+  <article class="panel rep-evidence">
+    <div class="panel-heading"><div><p class="eyebrow" id="rep-question-label"></p><h2 id="rep-title"></h2></div><span class="tag" id="rep-example"></span></div>
+    <p class="rep-explainer" id="rep-explainer"></p>
+    <div class="rep-mode" role="group" aria-label="Compare the adequate and reduced records"><button id="rep-keep" aria-pressed="true">Keep what the question needs</button><button id="rep-remove" aria-pressed="false"></button></div>
+    <svg id="rep-diagram" role="img" aria-label="Exact example for the selected representation question"></svg>
+    <div id="rep-exact-values" class="rep-exact-values"></div>
+    <div id="rep-result" class="rep-result" aria-live="polite"><p class="eyebrow" id="rep-result-label"></p><p id="rep-result-text"></p></div>
+    <p class="caption" id="rep-caption"></p>
+    <a id="rep-related" class="rep-related" href="#cap">Explore this example →</a>
+  </article>
+  <aside class="panel rep-record" aria-label="Representation scope and recovery">
+    <p class="eyebrow">THE REPRESENTATION RECORD</p><h2 id="rep-carrier"></h2>
+    <div class="rep-record-item"><span class="rep-record-number">01</span><div><h3>Retain</h3><p id="rep-retain"></p></div></div>
+    <div class="rep-record-item"><span class="rep-record-number">02</span><div><h3>Deliberately omit</h3><p id="rep-omit"></p></div></div>
+    <div class="rep-record-item"><span class="rep-record-number">03</span><div><h3>Recover more when…</h3><p id="rep-trigger"></p><p id="rep-recovery"></p></div></div>
+    <a id="rep-source" target="_blank" rel="noopener">Read the pinned source ↗</a>
+  </aside>
+</section>
+<section class="rep-atlas" aria-label="Representation branches">
+  <div class="rep-atlas-heading"><p class="eyebrow">A MAP OF USES</p><h2>Different questions take different branches.</h2><p>The full labelled geometry is a recovery source. Each branch still needs its own orbit, clock and justification.</p></div>
+  <div class="rep-root"><strong>Full closed geometry</strong><span>Labels · inequalities · faces · singleton cells</span></div>
+  <div class="rep-branches">
+    <div class="rep-branch" data-rep-ray="B"><p class="eyebrow">B RAY · t = y</p><h3>Seven caps above 1/7</h3><p>The supplied lower bound exceeds 1/7. Lower geometry cannot improve this optimum.</p><div class="rep-model" data-rep-model="value">Value: matching lower & upper bounds</div><div class="rep-model" data-rep-model="maximizers">All maximizers: retain contacts, ties & reflection</div></div>
+    <div class="rep-branch" data-rep-ray="A"><p class="eyebrow">A RAY · t = x</p><h3>Same-threshold parent / child atlas</h3><p>Keep closed boundaries and the relation between each parent, orbit and added band.</p><div class="rep-model" data-rep-model="witness">One witness: two compatible segments</div><div class="rep-model" data-rep-model="safe">All safe times: full closed feasibility</div><div class="rep-model" data-rep-model="transfer">Transfer: same-slice conditional intervals</div><div class="rep-model" data-rep-model="faces">All maximizers: include new face contacts</div></div>
+  </div>
+  <p class="caption">These are supported uses, not a chain of lossless conversions. A single conditional interval does not replace the complete family of parents, orbit values and heights.</p>
+</section>
+<section class="joint-takeaway"><p class="eyebrow">THE INFORMATION CHECK</p><p>Can what we left out<br> change the answer?</p><span>If it can, recover the missing distinction, enrich the model, or choose another representation—and check it against the failure.</span></section>
+<footer><p>Eight common-start runners with stationary reference 0. These A/B examples do not cover other reference runners or the general Lonely Runner Conjecture.</p><details><summary>Sources, evidence and limits</summary><p id="rep-build-info"></p><ul id="rep-source-links"></ul><p>Exact finite controls are reproduced. The all-q spectrum and two-segment adequacy arguments retain their pinned proof-candidate status. AI-assisted implementation and same-author checks are not independent mathematical assessment. This chapter makes no new mathematical or novelty claim.</p><p>The mathematical snapshot is intentionally fixed; later research in the repository may use different certificates. A reachable richer source provides a recovery route—it does not make a compressed record lossless.</p></details><a href="#joint">← Return to section 02: true together</a></footer>
