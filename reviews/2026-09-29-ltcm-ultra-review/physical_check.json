@@ -1,0 +1,4410 @@
+{
+  "status": "bounded exact physical cross-check; internally AI-authored review",
+  "date": "2026-09-29",
+  "frozen_candidate_commit_from_protocol": "8a967b30fcd73abd814e4c8f7f53f216c4b3f61e",
+  "commit_validation_limit": "This mounted source snapshot has no .git metadata; coordinator reports separate GitHub HEAD and input-hash verification.",
+  "method": "strict opposing tent contacts plus individual tent peaks and endpoints",
+  "arithmetic": "Python standard-library fractions.Fraction; no floating point",
+  "small_q_scope": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "large_witness_only_scope": [
+    100002,
+    100003,
+    100004,
+    100005,
+    100006,
+    100007
+  ],
+  "independence": {
+    "project_mathematical_imports": [],
+    "original_verify_py_read_before_construction": false,
+    "original_verify_py_read_at_all": false,
+    "ambient_selector_or_breakpoint_partition_used": false,
+    "shared_implementation_dependency": "Python fractions.Fraction and integer arithmetic",
+    "authorship_limit": "Separately tasked AI reviewer; not independent human review or formal verification",
+    "theorem_and_inputs_known_during_construction": true
+  },
+  "source_sha256": {
+    "physical_check.py": "973b4fdd35a6e67ca9fe2beb20ddf181a74073efaf4b36aab1fda92ec925ca6e",
+    "PROTOCOL.md": "f606e3f62fd5f6b306b836c8acbd9552fe81bd9da84e563c7073e2d5e434ebc7",
+    "notes/LTCM_EXACT_SPECTRUM_2026_09_29.md": "48e128b75383e36738092b05bb597f0eba1d8ac1dc36f3338815fbfd87785edd"
+  },
+  "small_q_results": [
+    {
+      "q": 2,
+      "speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "phases": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            5,
+            7
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 1
+            },
+            {
+              "rising_speed": 2,
+              "falling_speed": 4,
+              "integer_speed_sum_times_t": 1
+            },
+            {
+              "rising_speed": 7,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "peak_speed": 3
+            },
+            {
+              "peak_speed": 9
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "phases": [
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            5,
+            7
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 5,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 4,
+              "falling_speed": 2,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 5,
+              "falling_speed": 7,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "peak_speed": 3
+            },
+            {
+              "peak_speed": 9
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 165,
+        "strict_opposing_contact_occurrences": 150,
+        "individual_peak_occurrences": 31,
+        "unique_candidate_times_including_endpoints": 79
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 3,
+      "speeds": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9,
+        11
+      ],
+      "maximum": "1/7",
+      "maximizing_times": [
+        "1/7",
+        "2/7",
+        "3/7",
+        "4/7",
+        "5/7",
+        "6/7"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/7",
+          "physical_laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "phases": [
+            "1/7",
+            "3/7",
+            "4/7",
+            "5/7",
+            "6/7",
+            "2/7",
+            "4/7"
+          ],
+          "distances": [
+            "1/7",
+            "3/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "2/7",
+            "3/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            1,
+            6
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 6,
+              "integer_speed_sum_times_t": 1
+            },
+            {
+              "rising_speed": 3,
+              "falling_speed": 4,
+              "integer_speed_sum_times_t": 1
+            },
+            {
+              "rising_speed": 3,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "rising_speed": 9,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 2
+            }
+          ]
+        },
+        {
+          "time": "2/7",
+          "physical_laps": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "phases": [
+            "2/7",
+            "6/7",
+            "1/7",
+            "3/7",
+            "5/7",
+            "4/7",
+            "1/7"
+          ],
+          "distances": [
+            "2/7",
+            "1/7",
+            "1/7",
+            "3/7",
+            "2/7",
+            "3/7",
+            "1/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            3,
+            4,
+            11
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 6,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "rising_speed": 4,
+              "falling_speed": 3,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 3,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 5,
+              "falling_speed": 9,
+              "integer_speed_sum_times_t": 4
+            }
+          ]
+        },
+        {
+          "time": "3/7",
+          "physical_laps": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4
+          ],
+          "phases": [
+            "3/7",
+            "2/7",
+            "5/7",
+            "1/7",
+            "4/7",
+            "6/7",
+            "5/7"
+          ],
+          "distances": [
+            "3/7",
+            "2/7",
+            "2/7",
+            "1/7",
+            "3/7",
+            "1/7",
+            "2/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            5,
+            9
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 6,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 3,
+              "falling_speed": 4,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 3,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "rising_speed": 5,
+              "falling_speed": 9,
+              "integer_speed_sum_times_t": 6
+            }
+          ]
+        },
+        {
+          "time": "4/7",
+          "physical_laps": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            5,
+            6
+          ],
+          "phases": [
+            "4/7",
+            "5/7",
+            "2/7",
+            "6/7",
+            "3/7",
+            "1/7",
+            "2/7"
+          ],
+          "distances": [
+            "3/7",
+            "2/7",
+            "2/7",
+            "1/7",
+            "3/7",
+            "1/7",
+            "2/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            5,
+            9
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 6,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 4,
+              "falling_speed": 3,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 3,
+              "integer_speed_sum_times_t": 8
+            },
+            {
+              "rising_speed": 9,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 8
+            }
+          ]
+        },
+        {
+          "time": "5/7",
+          "physical_laps": [
+            0,
+            2,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "phases": [
+            "5/7",
+            "1/7",
+            "6/7",
+            "4/7",
+            "2/7",
+            "3/7",
+            "6/7"
+          ],
+          "distances": [
+            "2/7",
+            "1/7",
+            "1/7",
+            "3/7",
+            "2/7",
+            "3/7",
+            "1/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            3,
+            4,
+            11
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 6,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 3,
+              "falling_speed": 4,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 3,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "rising_speed": 9,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 10
+            }
+          ]
+        },
+        {
+          "time": "6/7",
+          "physical_laps": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            7,
+            9
+          ],
+          "phases": [
+            "6/7",
+            "4/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "5/7",
+            "3/7"
+          ],
+          "distances": [
+            "1/7",
+            "3/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "2/7",
+            "3/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            1,
+            6
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 6,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "rising_speed": 4,
+              "falling_speed": 3,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 3,
+              "integer_speed_sum_times_t": 12
+            },
+            {
+              "rising_speed": 5,
+              "falling_speed": 9,
+              "integer_speed_sum_times_t": 12
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 213,
+        "strict_opposing_contact_occurrences": 194,
+        "individual_peak_occurrences": 39,
+        "unique_candidate_times_including_endpoints": 121
+      },
+      "proposed_formula": "1/7",
+      "proposed_witness": "2/7",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 4,
+      "speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "maximum": "1/8",
+      "maximizing_times": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/8",
+          "physical_laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "phases": [
+            "1/8",
+            "1/2",
+            "5/8",
+            "3/4",
+            "7/8",
+            "3/8",
+            "5/8"
+          ],
+          "distances": [
+            "1/8",
+            "1/2",
+            "3/8",
+            "1/4",
+            "1/8",
+            "3/8",
+            "3/8"
+          ],
+          "minimum_distance": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 7,
+              "integer_speed_sum_times_t": 1
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "peak_speed": 4
+            }
+          ]
+        },
+        {
+          "time": "3/8",
+          "physical_laps": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            4,
+            4
+          ],
+          "phases": [
+            "3/8",
+            "1/2",
+            "7/8",
+            "1/4",
+            "5/8",
+            "1/8",
+            "7/8"
+          ],
+          "distances": [
+            "3/8",
+            "1/2",
+            "1/8",
+            "1/4",
+            "3/8",
+            "1/8",
+            "1/8"
+          ],
+          "minimum_distance": "1/8",
+          "active_speeds": [
+            5,
+            11,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 7,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 9
+            },
+            {
+              "peak_speed": 4
+            }
+          ]
+        },
+        {
+          "time": "5/8",
+          "physical_laps": [
+            0,
+            2,
+            3,
+            3,
+            4,
+            6,
+            8
+          ],
+          "phases": [
+            "5/8",
+            "1/2",
+            "1/8",
+            "3/4",
+            "3/8",
+            "7/8",
+            "1/8"
+          ],
+          "distances": [
+            "3/8",
+            "1/2",
+            "1/8",
+            "1/4",
+            "3/8",
+            "1/8",
+            "1/8"
+          ],
+          "minimum_distance": "1/8",
+          "active_speeds": [
+            5,
+            11,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 7,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 5,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "rising_speed": 13,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "peak_speed": 4
+            }
+          ]
+        },
+        {
+          "time": "7/8",
+          "physical_laps": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            9,
+            11
+          ],
+          "phases": [
+            "7/8",
+            "1/2",
+            "3/8",
+            "1/4",
+            "1/8",
+            "5/8",
+            "3/8"
+          ],
+          "distances": [
+            "1/8",
+            "1/2",
+            "3/8",
+            "1/4",
+            "1/8",
+            "3/8",
+            "3/8"
+          ],
+          "minimum_distance": "1/8",
+          "active_speeds": [
+            1,
+            7
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 7,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 7
+            },
+            {
+              "rising_speed": 5,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 14
+            },
+            {
+              "rising_speed": 13,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 21
+            },
+            {
+              "peak_speed": 4
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 261,
+        "strict_opposing_contact_occurrences": 250,
+        "individual_peak_occurrences": 47,
+        "unique_candidate_times_including_endpoints": 159
+      },
+      "proposed_formula": "1/8",
+      "proposed_witness": "1/8",
+      "branch": "exceptional q=4",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 5,
+      "speeds": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        13,
+        15
+      ],
+      "maximum": "3/20",
+      "maximizing_times": [
+        "9/20",
+        "11/20"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "9/20",
+          "physical_laps": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            6
+          ],
+          "phases": [
+            "9/20",
+            "1/4",
+            "7/10",
+            "3/20",
+            "3/5",
+            "17/20",
+            "3/4"
+          ],
+          "distances": [
+            "9/20",
+            "1/4",
+            "3/10",
+            "3/20",
+            "2/5",
+            "3/20",
+            "1/4"
+          ],
+          "minimum_distance": "3/20",
+          "active_speeds": [
+            7,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 5,
+              "falling_speed": 15,
+              "integer_speed_sum_times_t": 9
+            },
+            {
+              "rising_speed": 7,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 9
+            }
+          ]
+        },
+        {
+          "time": "11/20",
+          "physical_laps": [
+            0,
+            2,
+            3,
+            3,
+            4,
+            7,
+            8
+          ],
+          "phases": [
+            "11/20",
+            "3/4",
+            "3/10",
+            "17/20",
+            "2/5",
+            "3/20",
+            "1/4"
+          ],
+          "distances": [
+            "9/20",
+            "1/4",
+            "3/10",
+            "3/20",
+            "2/5",
+            "3/20",
+            "1/4"
+          ],
+          "minimum_distance": "3/20",
+          "active_speeds": [
+            7,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 15,
+              "falling_speed": 5,
+              "integer_speed_sum_times_t": 11
+            },
+            {
+              "rising_speed": 13,
+              "falling_speed": 7,
+              "integer_speed_sum_times_t": 11
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 309,
+        "strict_opposing_contact_occurrences": 288,
+        "individual_peak_occurrences": 55,
+        "unique_candidate_times_including_endpoints": 189
+      },
+      "proposed_formula": "3/20",
+      "proposed_witness": "9/20",
+      "branch": "q mod 6=5",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 6,
+      "speeds": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        15,
+        17
+      ],
+      "maximum": "2/13",
+      "maximizing_times": [
+        "4/13",
+        "9/13"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "4/13",
+          "physical_laps": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            4,
+            5
+          ],
+          "phases": [
+            "4/13",
+            "11/13",
+            "2/13",
+            "6/13",
+            "10/13",
+            "8/13",
+            "3/13"
+          ],
+          "distances": [
+            "4/13",
+            "2/13",
+            "2/13",
+            "6/13",
+            "3/13",
+            "5/13",
+            "3/13"
+          ],
+          "minimum_distance": "2/13",
+          "active_speeds": [
+            6,
+            7
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 7,
+              "falling_speed": 6,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 17,
+              "falling_speed": 9,
+              "integer_speed_sum_times_t": 8
+            }
+          ]
+        },
+        {
+          "time": "9/13",
+          "physical_laps": [
+            0,
+            4,
+            4,
+            5,
+            6,
+            10,
+            11
+          ],
+          "phases": [
+            "9/13",
+            "2/13",
+            "11/13",
+            "7/13",
+            "3/13",
+            "5/13",
+            "10/13"
+          ],
+          "distances": [
+            "4/13",
+            "2/13",
+            "2/13",
+            "6/13",
+            "3/13",
+            "5/13",
+            "3/13"
+          ],
+          "minimum_distance": "2/13",
+          "active_speeds": [
+            6,
+            7
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 6,
+              "falling_speed": 7,
+              "integer_speed_sum_times_t": 9
+            },
+            {
+              "rising_speed": 9,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 18
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 357,
+        "strict_opposing_contact_occurrences": 338,
+        "individual_peak_occurrences": 63,
+        "unique_candidate_times_including_endpoints": 227
+      },
+      "proposed_formula": "2/13",
+      "proposed_witness": "4/13",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 7,
+      "speeds": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        17,
+        19
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "phases": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            7,
+            17,
+            19
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 7,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 8,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 19,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "peak_speed": 9
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            5,
+            6,
+            7,
+            8,
+            14,
+            15
+          ],
+          "phases": [
+            "5/6",
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            7,
+            17,
+            19
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 17,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "rising_speed": 17,
+              "falling_speed": 7,
+              "integer_speed_sum_times_t": 20
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 8,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "rising_speed": 17,
+              "falling_speed": 19,
+              "integer_speed_sum_times_t": 30
+            },
+            {
+              "peak_speed": 9
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 405,
+        "strict_opposing_contact_occurrences": 394,
+        "individual_peak_occurrences": 71,
+        "unique_candidate_times_including_endpoints": 273
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 8,
+      "speeds": [
+        1,
+        8,
+        9,
+        10,
+        11,
+        19,
+        21
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+          ],
+          "phases": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            11,
+            19
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "rising_speed": 8,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 19,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "peak_speed": 9
+            },
+            {
+              "peak_speed": 21
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            6,
+            7,
+            8,
+            9,
+            15,
+            17
+          ],
+          "phases": [
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            11,
+            19
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 11,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 8,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 19,
+              "integer_speed_sum_times_t": 25
+            },
+            {
+              "peak_speed": 9
+            },
+            {
+              "peak_speed": 21
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 453,
+        "strict_opposing_contact_occurrences": 438,
+        "individual_peak_occurrences": 79,
+        "unique_candidate_times_including_endpoints": 297
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 9,
+      "speeds": [
+        1,
+        9,
+        10,
+        11,
+        12,
+        21,
+        23
+      ],
+      "maximum": "3/19",
+      "maximizing_times": [
+        "6/19",
+        "13/19"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "6/19",
+          "physical_laps": [
+            0,
+            2,
+            3,
+            3,
+            3,
+            6,
+            7
+          ],
+          "phases": [
+            "6/19",
+            "16/19",
+            "3/19",
+            "9/19",
+            "15/19",
+            "12/19",
+            "5/19"
+          ],
+          "distances": [
+            "6/19",
+            "3/19",
+            "3/19",
+            "9/19",
+            "4/19",
+            "7/19",
+            "5/19"
+          ],
+          "minimum_distance": "3/19",
+          "active_speeds": [
+            9,
+            10
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 10,
+              "falling_speed": 9,
+              "integer_speed_sum_times_t": 6
+            }
+          ]
+        },
+        {
+          "time": "13/19",
+          "physical_laps": [
+            0,
+            6,
+            6,
+            7,
+            8,
+            14,
+            15
+          ],
+          "phases": [
+            "13/19",
+            "3/19",
+            "16/19",
+            "10/19",
+            "4/19",
+            "7/19",
+            "14/19"
+          ],
+          "distances": [
+            "6/19",
+            "3/19",
+            "3/19",
+            "9/19",
+            "4/19",
+            "7/19",
+            "5/19"
+          ],
+          "minimum_distance": "3/19",
+          "active_speeds": [
+            9,
+            10
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 9,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 13
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 501,
+        "strict_opposing_contact_occurrences": 482,
+        "individual_peak_occurrences": 87,
+        "unique_candidate_times_including_endpoints": 343
+      },
+      "proposed_formula": "3/19",
+      "proposed_witness": "6/19",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 10,
+      "speeds": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        23,
+        25
+      ],
+      "maximum": "1/7",
+      "maximizing_times": [
+        "1/7",
+        "2/7",
+        "3/7",
+        "17/35",
+        "18/35",
+        "4/7",
+        "5/7",
+        "6/7"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/7",
+          "physical_laps": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+          ],
+          "phases": [
+            "1/7",
+            "3/7",
+            "4/7",
+            "5/7",
+            "6/7",
+            "2/7",
+            "4/7"
+          ],
+          "distances": [
+            "1/7",
+            "3/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "2/7",
+            "3/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            1,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 2
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 23,
+              "falling_speed": 12,
+              "integer_speed_sum_times_t": 5
+            }
+          ]
+        },
+        {
+          "time": "2/7",
+          "physical_laps": [
+            0,
+            2,
+            3,
+            3,
+            3,
+            6,
+            7
+          ],
+          "phases": [
+            "2/7",
+            "6/7",
+            "1/7",
+            "3/7",
+            "5/7",
+            "4/7",
+            "1/7"
+          ],
+          "distances": [
+            "2/7",
+            "1/7",
+            "1/7",
+            "3/7",
+            "2/7",
+            "3/7",
+            "1/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            10,
+            11,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "rising_speed": 25,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "rising_speed": 12,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 10
+            }
+          ]
+        },
+        {
+          "time": "3/7",
+          "physical_laps": [
+            0,
+            4,
+            4,
+            5,
+            5,
+            9,
+            10
+          ],
+          "phases": [
+            "3/7",
+            "2/7",
+            "5/7",
+            "1/7",
+            "4/7",
+            "6/7",
+            "5/7"
+          ],
+          "distances": [
+            "3/7",
+            "2/7",
+            "2/7",
+            "1/7",
+            "3/7",
+            "1/7",
+            "2/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            12,
+            23
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 6
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 9
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "rising_speed": 12,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 15
+            }
+          ]
+        },
+        {
+          "time": "17/35",
+          "physical_laps": [
+            0,
+            4,
+            5,
+            5,
+            6,
+            11,
+            12
+          ],
+          "phases": [
+            "17/35",
+            "6/7",
+            "12/35",
+            "29/35",
+            "11/35",
+            "6/35",
+            "1/7"
+          ],
+          "distances": [
+            "17/35",
+            "1/7",
+            "12/35",
+            "6/35",
+            "11/35",
+            "6/35",
+            "1/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            10,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 25,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 17
+            },
+            {
+              "rising_speed": 23,
+              "falling_speed": 12,
+              "integer_speed_sum_times_t": 17
+            }
+          ]
+        },
+        {
+          "time": "18/35",
+          "physical_laps": [
+            0,
+            5,
+            5,
+            6,
+            6,
+            11,
+            12
+          ],
+          "phases": [
+            "18/35",
+            "1/7",
+            "23/35",
+            "6/35",
+            "24/35",
+            "29/35",
+            "6/7"
+          ],
+          "distances": [
+            "17/35",
+            "1/7",
+            "12/35",
+            "6/35",
+            "11/35",
+            "6/35",
+            "1/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            10,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 10,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 18
+            },
+            {
+              "rising_speed": 12,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 18
+            }
+          ]
+        },
+        {
+          "time": "4/7",
+          "physical_laps": [
+            0,
+            5,
+            6,
+            6,
+            7,
+            13,
+            14
+          ],
+          "phases": [
+            "4/7",
+            "5/7",
+            "2/7",
+            "6/7",
+            "3/7",
+            "1/7",
+            "2/7"
+          ],
+          "distances": [
+            "3/7",
+            "2/7",
+            "2/7",
+            "1/7",
+            "3/7",
+            "1/7",
+            "2/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            12,
+            23
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 13,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 8
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 12
+            },
+            {
+              "rising_speed": 25,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 20
+            },
+            {
+              "rising_speed": 23,
+              "falling_speed": 12,
+              "integer_speed_sum_times_t": 20
+            }
+          ]
+        },
+        {
+          "time": "5/7",
+          "physical_laps": [
+            0,
+            7,
+            7,
+            8,
+            9,
+            16,
+            17
+          ],
+          "phases": [
+            "5/7",
+            "1/7",
+            "6/7",
+            "4/7",
+            "2/7",
+            "3/7",
+            "6/7"
+          ],
+          "distances": [
+            "2/7",
+            "1/7",
+            "1/7",
+            "3/7",
+            "2/7",
+            "3/7",
+            "1/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            10,
+            11,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 13,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "rising_speed": 10,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 25
+            },
+            {
+              "rising_speed": 23,
+              "falling_speed": 12,
+              "integer_speed_sum_times_t": 25
+            }
+          ]
+        },
+        {
+          "time": "6/7",
+          "physical_laps": [
+            0,
+            8,
+            9,
+            10,
+            11,
+            19,
+            21
+          ],
+          "phases": [
+            "6/7",
+            "4/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "5/7",
+            "3/7"
+          ],
+          "distances": [
+            "1/7",
+            "3/7",
+            "3/7",
+            "2/7",
+            "1/7",
+            "2/7",
+            "3/7"
+          ],
+          "minimum_distance": "1/7",
+          "active_speeds": [
+            1,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 13,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 12
+            },
+            {
+              "rising_speed": 11,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 18
+            },
+            {
+              "rising_speed": 25,
+              "falling_speed": 10,
+              "integer_speed_sum_times_t": 30
+            },
+            {
+              "rising_speed": 12,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 30
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 549,
+        "strict_opposing_contact_occurrences": 534,
+        "individual_peak_occurrences": 95,
+        "unique_candidate_times_including_endpoints": 389
+      },
+      "proposed_formula": "1/7",
+      "proposed_witness": "2/7",
+      "branch": "q mod 6=4, q>=10",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 11,
+      "speeds": [
+        1,
+        11,
+        12,
+        13,
+        14,
+        25,
+        27
+      ],
+      "maximum": "3/19",
+      "maximizing_times": [
+        "9/19",
+        "10/19"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "9/19",
+          "physical_laps": [
+            0,
+            5,
+            5,
+            6,
+            6,
+            11,
+            12
+          ],
+          "phases": [
+            "9/19",
+            "4/19",
+            "13/19",
+            "3/19",
+            "12/19",
+            "16/19",
+            "15/19"
+          ],
+          "distances": [
+            "9/19",
+            "4/19",
+            "6/19",
+            "3/19",
+            "7/19",
+            "3/19",
+            "4/19"
+          ],
+          "minimum_distance": "3/19",
+          "active_speeds": [
+            13,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 11,
+              "falling_speed": 27,
+              "integer_speed_sum_times_t": 18
+            },
+            {
+              "rising_speed": 13,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 18
+            }
+          ]
+        },
+        {
+          "time": "10/19",
+          "physical_laps": [
+            0,
+            5,
+            6,
+            6,
+            7,
+            13,
+            14
+          ],
+          "phases": [
+            "10/19",
+            "15/19",
+            "6/19",
+            "16/19",
+            "7/19",
+            "3/19",
+            "4/19"
+          ],
+          "distances": [
+            "9/19",
+            "4/19",
+            "6/19",
+            "3/19",
+            "7/19",
+            "3/19",
+            "4/19"
+          ],
+          "minimum_distance": "3/19",
+          "active_speeds": [
+            13,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 27,
+              "falling_speed": 11,
+              "integer_speed_sum_times_t": 20
+            },
+            {
+              "rising_speed": 25,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 20
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 597,
+        "strict_opposing_contact_occurrences": 584,
+        "individual_peak_occurrences": 103,
+        "unique_candidate_times_including_endpoints": 405
+      },
+      "proposed_formula": "3/19",
+      "proposed_witness": "9/19",
+      "branch": "q mod 6=5",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 12,
+      "speeds": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        27,
+        29
+      ],
+      "maximum": "4/25",
+      "maximizing_times": [
+        "8/25",
+        "17/25"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "8/25",
+          "physical_laps": [
+            0,
+            3,
+            4,
+            4,
+            4,
+            8,
+            9
+          ],
+          "phases": [
+            "8/25",
+            "21/25",
+            "4/25",
+            "12/25",
+            "4/5",
+            "16/25",
+            "7/25"
+          ],
+          "distances": [
+            "8/25",
+            "4/25",
+            "4/25",
+            "12/25",
+            "1/5",
+            "9/25",
+            "7/25"
+          ],
+          "minimum_distance": "4/25",
+          "active_speeds": [
+            12,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 13,
+              "falling_speed": 12,
+              "integer_speed_sum_times_t": 8
+            }
+          ]
+        },
+        {
+          "time": "17/25",
+          "physical_laps": [
+            0,
+            8,
+            8,
+            9,
+            10,
+            18,
+            19
+          ],
+          "phases": [
+            "17/25",
+            "4/25",
+            "21/25",
+            "13/25",
+            "1/5",
+            "9/25",
+            "18/25"
+          ],
+          "distances": [
+            "8/25",
+            "4/25",
+            "4/25",
+            "12/25",
+            "1/5",
+            "9/25",
+            "7/25"
+          ],
+          "minimum_distance": "4/25",
+          "active_speeds": [
+            12,
+            13
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 12,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 17
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 645,
+        "strict_opposing_contact_occurrences": 626,
+        "individual_peak_occurrences": 111,
+        "unique_candidate_times_including_endpoints": 443
+      },
+      "proposed_formula": "4/25",
+      "proposed_witness": "8/25",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 13,
+      "speeds": [
+        1,
+        13,
+        14,
+        15,
+        16,
+        29,
+        31
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            4,
+            5
+          ],
+          "phases": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            13,
+            29,
+            31
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 29,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 13,
+              "falling_speed": 29,
+              "integer_speed_sum_times_t": 7
+            },
+            {
+              "rising_speed": 14,
+              "falling_speed": 16,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 31,
+              "falling_speed": 29,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "peak_speed": 15
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            10,
+            11,
+            12,
+            13,
+            24,
+            25
+          ],
+          "phases": [
+            "5/6",
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            13,
+            29,
+            31
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 29,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 25
+            },
+            {
+              "rising_speed": 29,
+              "falling_speed": 13,
+              "integer_speed_sum_times_t": 35
+            },
+            {
+              "rising_speed": 16,
+              "falling_speed": 14,
+              "integer_speed_sum_times_t": 25
+            },
+            {
+              "rising_speed": 29,
+              "falling_speed": 31,
+              "integer_speed_sum_times_t": 50
+            },
+            {
+              "peak_speed": 15
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 693,
+        "strict_opposing_contact_occurrences": 682,
+        "individual_peak_occurrences": 119,
+        "unique_candidate_times_including_endpoints": 501
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 14,
+      "speeds": [
+        1,
+        14,
+        15,
+        16,
+        17,
+        31,
+        33
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            5,
+            5
+          ],
+          "phases": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            17,
+            31
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 3
+            },
+            {
+              "rising_speed": 14,
+              "falling_speed": 16,
+              "integer_speed_sum_times_t": 5
+            },
+            {
+              "rising_speed": 31,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 8
+            },
+            {
+              "peak_speed": 15
+            },
+            {
+              "peak_speed": 33
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            11,
+            12,
+            13,
+            14,
+            25,
+            27
+          ],
+          "phases": [
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            17,
+            31
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 17,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 15
+            },
+            {
+              "rising_speed": 16,
+              "falling_speed": 14,
+              "integer_speed_sum_times_t": 25
+            },
+            {
+              "rising_speed": 17,
+              "falling_speed": 31,
+              "integer_speed_sum_times_t": 40
+            },
+            {
+              "peak_speed": 15
+            },
+            {
+              "peak_speed": 33
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 741,
+        "strict_opposing_contact_occurrences": 726,
+        "individual_peak_occurrences": 127,
+        "unique_candidate_times_including_endpoints": 527
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 15,
+      "speeds": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        33,
+        35
+      ],
+      "maximum": "5/31",
+      "maximizing_times": [
+        "10/31",
+        "21/31"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "10/31",
+          "physical_laps": [
+            0,
+            4,
+            5,
+            5,
+            5,
+            10,
+            11
+          ],
+          "phases": [
+            "10/31",
+            "26/31",
+            "5/31",
+            "15/31",
+            "25/31",
+            "20/31",
+            "9/31"
+          ],
+          "distances": [
+            "10/31",
+            "5/31",
+            "5/31",
+            "15/31",
+            "6/31",
+            "11/31",
+            "9/31"
+          ],
+          "minimum_distance": "5/31",
+          "active_speeds": [
+            15,
+            16
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 16,
+              "falling_speed": 15,
+              "integer_speed_sum_times_t": 10
+            }
+          ]
+        },
+        {
+          "time": "21/31",
+          "physical_laps": [
+            0,
+            10,
+            10,
+            11,
+            12,
+            22,
+            23
+          ],
+          "phases": [
+            "21/31",
+            "5/31",
+            "26/31",
+            "16/31",
+            "6/31",
+            "11/31",
+            "22/31"
+          ],
+          "distances": [
+            "10/31",
+            "5/31",
+            "5/31",
+            "15/31",
+            "6/31",
+            "11/31",
+            "9/31"
+          ],
+          "minimum_distance": "5/31",
+          "active_speeds": [
+            15,
+            16
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 15,
+              "falling_speed": 16,
+              "integer_speed_sum_times_t": 21
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 789,
+        "strict_opposing_contact_occurrences": 762,
+        "individual_peak_occurrences": 135,
+        "unique_candidate_times_including_endpoints": 551
+      },
+      "proposed_formula": "5/31",
+      "proposed_witness": "10/31",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 16,
+      "speeds": [
+        1,
+        16,
+        17,
+        18,
+        19,
+        35,
+        37
+      ],
+      "maximum": "5/33",
+      "maximizing_times": [
+        "10/33",
+        "23/33"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "10/33",
+          "physical_laps": [
+            0,
+            4,
+            5,
+            5,
+            5,
+            10,
+            11
+          ],
+          "phases": [
+            "10/33",
+            "28/33",
+            "5/33",
+            "5/11",
+            "25/33",
+            "20/33",
+            "7/33"
+          ],
+          "distances": [
+            "10/33",
+            "5/33",
+            "5/33",
+            "5/11",
+            "8/33",
+            "13/33",
+            "7/33"
+          ],
+          "minimum_distance": "5/33",
+          "active_speeds": [
+            16,
+            17
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 17,
+              "falling_speed": 16,
+              "integer_speed_sum_times_t": 10
+            }
+          ]
+        },
+        {
+          "time": "23/33",
+          "physical_laps": [
+            0,
+            11,
+            11,
+            12,
+            13,
+            24,
+            25
+          ],
+          "phases": [
+            "23/33",
+            "5/33",
+            "28/33",
+            "6/11",
+            "8/33",
+            "13/33",
+            "26/33"
+          ],
+          "distances": [
+            "10/33",
+            "5/33",
+            "5/33",
+            "5/11",
+            "8/33",
+            "13/33",
+            "7/33"
+          ],
+          "minimum_distance": "5/33",
+          "active_speeds": [
+            16,
+            17
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 16,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 23
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 837,
+        "strict_opposing_contact_occurrences": 826,
+        "individual_peak_occurrences": 143,
+        "unique_candidate_times_including_endpoints": 579
+      },
+      "proposed_formula": "5/33",
+      "proposed_witness": "10/33",
+      "branch": "q mod 6=4, q>=10",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 17,
+      "speeds": [
+        1,
+        17,
+        18,
+        19,
+        20,
+        37,
+        39
+      ],
+      "maximum": "9/56",
+      "maximizing_times": [
+        "27/56",
+        "29/56"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "27/56",
+          "physical_laps": [
+            0,
+            8,
+            8,
+            9,
+            9,
+            17,
+            18
+          ],
+          "phases": [
+            "27/56",
+            "11/56",
+            "19/28",
+            "9/56",
+            "9/14",
+            "47/56",
+            "45/56"
+          ],
+          "distances": [
+            "27/56",
+            "11/56",
+            "9/28",
+            "9/56",
+            "5/14",
+            "9/56",
+            "11/56"
+          ],
+          "minimum_distance": "9/56",
+          "active_speeds": [
+            19,
+            37
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 17,
+              "falling_speed": 39,
+              "integer_speed_sum_times_t": 27
+            },
+            {
+              "rising_speed": 19,
+              "falling_speed": 37,
+              "integer_speed_sum_times_t": 27
+            }
+          ]
+        },
+        {
+          "time": "29/56",
+          "physical_laps": [
+            0,
+            8,
+            9,
+            9,
+            10,
+            19,
+            20
+          ],
+          "phases": [
+            "29/56",
+            "45/56",
+            "9/28",
+            "47/56",
+            "5/14",
+            "9/56",
+            "11/56"
+          ],
+          "distances": [
+            "27/56",
+            "11/56",
+            "9/28",
+            "9/56",
+            "5/14",
+            "9/56",
+            "11/56"
+          ],
+          "minimum_distance": "9/56",
+          "active_speeds": [
+            19,
+            37
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 39,
+              "falling_speed": 17,
+              "integer_speed_sum_times_t": 29
+            },
+            {
+              "rising_speed": 37,
+              "falling_speed": 19,
+              "integer_speed_sum_times_t": 29
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 885,
+        "strict_opposing_contact_occurrences": 872,
+        "individual_peak_occurrences": 151,
+        "unique_candidate_times_including_endpoints": 625
+      },
+      "proposed_formula": "9/56",
+      "proposed_witness": "27/56",
+      "branch": "q mod 6=5",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 18,
+      "speeds": [
+        1,
+        18,
+        19,
+        20,
+        21,
+        39,
+        41
+      ],
+      "maximum": "6/37",
+      "maximizing_times": [
+        "12/37",
+        "25/37"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "12/37",
+          "physical_laps": [
+            0,
+            5,
+            6,
+            6,
+            6,
+            12,
+            13
+          ],
+          "phases": [
+            "12/37",
+            "31/37",
+            "6/37",
+            "18/37",
+            "30/37",
+            "24/37",
+            "11/37"
+          ],
+          "distances": [
+            "12/37",
+            "6/37",
+            "6/37",
+            "18/37",
+            "7/37",
+            "13/37",
+            "11/37"
+          ],
+          "minimum_distance": "6/37",
+          "active_speeds": [
+            18,
+            19
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 19,
+              "falling_speed": 18,
+              "integer_speed_sum_times_t": 12
+            }
+          ]
+        },
+        {
+          "time": "25/37",
+          "physical_laps": [
+            0,
+            12,
+            12,
+            13,
+            14,
+            26,
+            27
+          ],
+          "phases": [
+            "25/37",
+            "6/37",
+            "31/37",
+            "19/37",
+            "7/37",
+            "13/37",
+            "26/37"
+          ],
+          "distances": [
+            "12/37",
+            "6/37",
+            "6/37",
+            "18/37",
+            "7/37",
+            "13/37",
+            "11/37"
+          ],
+          "minimum_distance": "6/37",
+          "active_speeds": [
+            18,
+            19
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 18,
+              "falling_speed": 19,
+              "integer_speed_sum_times_t": 25
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 933,
+        "strict_opposing_contact_occurrences": 914,
+        "individual_peak_occurrences": 159,
+        "unique_candidate_times_including_endpoints": 683
+      },
+      "proposed_formula": "6/37",
+      "proposed_witness": "12/37",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 19,
+      "speeds": [
+        1,
+        19,
+        20,
+        21,
+        22,
+        41,
+        43
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            3,
+            3,
+            3,
+            3,
+            6,
+            7
+          ],
+          "phases": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            19,
+            41,
+            43
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 41,
+              "integer_speed_sum_times_t": 7
+            },
+            {
+              "rising_speed": 19,
+              "falling_speed": 41,
+              "integer_speed_sum_times_t": 10
+            },
+            {
+              "rising_speed": 20,
+              "falling_speed": 22,
+              "integer_speed_sum_times_t": 7
+            },
+            {
+              "rising_speed": 43,
+              "falling_speed": 41,
+              "integer_speed_sum_times_t": 14
+            },
+            {
+              "peak_speed": 21
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            15,
+            16,
+            17,
+            18,
+            34,
+            35
+          ],
+          "phases": [
+            "5/6",
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            19,
+            41,
+            43
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 41,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 35
+            },
+            {
+              "rising_speed": 41,
+              "falling_speed": 19,
+              "integer_speed_sum_times_t": 50
+            },
+            {
+              "rising_speed": 22,
+              "falling_speed": 20,
+              "integer_speed_sum_times_t": 35
+            },
+            {
+              "rising_speed": 41,
+              "falling_speed": 43,
+              "integer_speed_sum_times_t": 70
+            },
+            {
+              "peak_speed": 21
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 981,
+        "strict_opposing_contact_occurrences": 970,
+        "individual_peak_occurrences": 167,
+        "unique_candidate_times_including_endpoints": 699
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 20,
+      "speeds": [
+        1,
+        20,
+        21,
+        22,
+        23,
+        43,
+        45
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            3,
+            3,
+            3,
+            3,
+            7,
+            7
+          ],
+          "phases": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            23,
+            43
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 4
+            },
+            {
+              "rising_speed": 20,
+              "falling_speed": 22,
+              "integer_speed_sum_times_t": 7
+            },
+            {
+              "rising_speed": 43,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 11
+            },
+            {
+              "peak_speed": 21
+            },
+            {
+              "peak_speed": 45
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            16,
+            17,
+            18,
+            19,
+            35,
+            37
+          ],
+          "phases": [
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6",
+            "1/2"
+          ],
+          "distances": [
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/2"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            23,
+            43
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 23,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 20
+            },
+            {
+              "rising_speed": 22,
+              "falling_speed": 20,
+              "integer_speed_sum_times_t": 35
+            },
+            {
+              "rising_speed": 23,
+              "falling_speed": 43,
+              "integer_speed_sum_times_t": 55
+            },
+            {
+              "peak_speed": 21
+            },
+            {
+              "peak_speed": 45
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 1029,
+        "strict_opposing_contact_occurrences": 1010,
+        "individual_peak_occurrences": 175,
+        "unique_candidate_times_including_endpoints": 731
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 21,
+      "speeds": [
+        1,
+        21,
+        22,
+        23,
+        24,
+        45,
+        47
+      ],
+      "maximum": "7/43",
+      "maximizing_times": [
+        "14/43",
+        "29/43"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "14/43",
+          "physical_laps": [
+            0,
+            6,
+            7,
+            7,
+            7,
+            14,
+            15
+          ],
+          "phases": [
+            "14/43",
+            "36/43",
+            "7/43",
+            "21/43",
+            "35/43",
+            "28/43",
+            "13/43"
+          ],
+          "distances": [
+            "14/43",
+            "7/43",
+            "7/43",
+            "21/43",
+            "8/43",
+            "15/43",
+            "13/43"
+          ],
+          "minimum_distance": "7/43",
+          "active_speeds": [
+            21,
+            22
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 22,
+              "falling_speed": 21,
+              "integer_speed_sum_times_t": 14
+            }
+          ]
+        },
+        {
+          "time": "29/43",
+          "physical_laps": [
+            0,
+            14,
+            14,
+            15,
+            16,
+            30,
+            31
+          ],
+          "phases": [
+            "29/43",
+            "7/43",
+            "36/43",
+            "22/43",
+            "8/43",
+            "15/43",
+            "30/43"
+          ],
+          "distances": [
+            "14/43",
+            "7/43",
+            "7/43",
+            "21/43",
+            "8/43",
+            "15/43",
+            "13/43"
+          ],
+          "minimum_distance": "7/43",
+          "active_speeds": [
+            21,
+            22
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 21,
+              "falling_speed": 22,
+              "integer_speed_sum_times_t": 29
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 1077,
+        "strict_opposing_contact_occurrences": 1058,
+        "individual_peak_occurrences": 183,
+        "unique_candidate_times_including_endpoints": 771
+      },
+      "proposed_formula": "7/43",
+      "proposed_witness": "14/43",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 22,
+      "speeds": [
+        1,
+        22,
+        23,
+        24,
+        25,
+        47,
+        49
+      ],
+      "maximum": "7/45",
+      "maximizing_times": [
+        "14/45",
+        "31/45"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "14/45",
+          "physical_laps": [
+            0,
+            6,
+            7,
+            7,
+            7,
+            14,
+            15
+          ],
+          "phases": [
+            "14/45",
+            "38/45",
+            "7/45",
+            "7/15",
+            "7/9",
+            "28/45",
+            "11/45"
+          ],
+          "distances": [
+            "14/45",
+            "7/45",
+            "7/45",
+            "7/15",
+            "2/9",
+            "17/45",
+            "11/45"
+          ],
+          "minimum_distance": "7/45",
+          "active_speeds": [
+            22,
+            23
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 23,
+              "falling_speed": 22,
+              "integer_speed_sum_times_t": 14
+            }
+          ]
+        },
+        {
+          "time": "31/45",
+          "physical_laps": [
+            0,
+            15,
+            15,
+            16,
+            17,
+            32,
+            33
+          ],
+          "phases": [
+            "31/45",
+            "7/45",
+            "38/45",
+            "8/15",
+            "2/9",
+            "17/45",
+            "34/45"
+          ],
+          "distances": [
+            "14/45",
+            "7/45",
+            "7/45",
+            "7/15",
+            "2/9",
+            "17/45",
+            "11/45"
+          ],
+          "minimum_distance": "7/45",
+          "active_speeds": [
+            22,
+            23
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 22,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 31
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 1125,
+        "strict_opposing_contact_occurrences": 1114,
+        "individual_peak_occurrences": 191,
+        "unique_candidate_times_including_endpoints": 807
+      },
+      "proposed_formula": "7/45",
+      "proposed_witness": "14/45",
+      "branch": "q mod 6=4, q>=10",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 23,
+      "speeds": [
+        1,
+        23,
+        24,
+        25,
+        26,
+        49,
+        51
+      ],
+      "maximum": "6/37",
+      "maximizing_times": [
+        "18/37",
+        "19/37"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "18/37",
+          "physical_laps": [
+            0,
+            11,
+            11,
+            12,
+            12,
+            23,
+            24
+          ],
+          "phases": [
+            "18/37",
+            "7/37",
+            "25/37",
+            "6/37",
+            "24/37",
+            "31/37",
+            "30/37"
+          ],
+          "distances": [
+            "18/37",
+            "7/37",
+            "12/37",
+            "6/37",
+            "13/37",
+            "6/37",
+            "7/37"
+          ],
+          "minimum_distance": "6/37",
+          "active_speeds": [
+            25,
+            49
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 23,
+              "falling_speed": 51,
+              "integer_speed_sum_times_t": 36
+            },
+            {
+              "rising_speed": 25,
+              "falling_speed": 49,
+              "integer_speed_sum_times_t": 36
+            }
+          ]
+        },
+        {
+          "time": "19/37",
+          "physical_laps": [
+            0,
+            11,
+            12,
+            12,
+            13,
+            25,
+            26
+          ],
+          "phases": [
+            "19/37",
+            "30/37",
+            "12/37",
+            "31/37",
+            "13/37",
+            "6/37",
+            "7/37"
+          ],
+          "distances": [
+            "18/37",
+            "7/37",
+            "12/37",
+            "6/37",
+            "13/37",
+            "6/37",
+            "7/37"
+          ],
+          "minimum_distance": "6/37",
+          "active_speeds": [
+            25,
+            49
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 51,
+              "falling_speed": 23,
+              "integer_speed_sum_times_t": 38
+            },
+            {
+              "rising_speed": 49,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 38
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 1173,
+        "strict_opposing_contact_occurrences": 1160,
+        "individual_peak_occurrences": 199,
+        "unique_candidate_times_including_endpoints": 853
+      },
+      "proposed_formula": "6/37",
+      "proposed_witness": "18/37",
+      "branch": "q mod 6=5",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 24,
+      "speeds": [
+        1,
+        24,
+        25,
+        26,
+        27,
+        51,
+        53
+      ],
+      "maximum": "8/49",
+      "maximizing_times": [
+        "16/49",
+        "33/49"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "16/49",
+          "physical_laps": [
+            0,
+            7,
+            8,
+            8,
+            8,
+            16,
+            17
+          ],
+          "phases": [
+            "16/49",
+            "41/49",
+            "8/49",
+            "24/49",
+            "40/49",
+            "32/49",
+            "15/49"
+          ],
+          "distances": [
+            "16/49",
+            "8/49",
+            "8/49",
+            "24/49",
+            "9/49",
+            "17/49",
+            "15/49"
+          ],
+          "minimum_distance": "8/49",
+          "active_speeds": [
+            24,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 25,
+              "falling_speed": 24,
+              "integer_speed_sum_times_t": 16
+            }
+          ]
+        },
+        {
+          "time": "33/49",
+          "physical_laps": [
+            0,
+            16,
+            16,
+            17,
+            18,
+            34,
+            35
+          ],
+          "phases": [
+            "33/49",
+            "8/49",
+            "41/49",
+            "25/49",
+            "9/49",
+            "17/49",
+            "34/49"
+          ],
+          "distances": [
+            "16/49",
+            "8/49",
+            "8/49",
+            "24/49",
+            "9/49",
+            "17/49",
+            "15/49"
+          ],
+          "minimum_distance": "8/49",
+          "active_speeds": [
+            24,
+            25
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 24,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 33
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 1221,
+        "strict_opposing_contact_occurrences": 1202,
+        "individual_peak_occurrences": 207,
+        "unique_candidate_times_including_endpoints": 867
+      },
+      "proposed_formula": "8/49",
+      "proposed_witness": "16/49",
+      "branch": "q divisible by 3",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    },
+    {
+      "q": 25,
+      "speeds": [
+        1,
+        25,
+        26,
+        27,
+        28,
+        53,
+        55
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "maximizer_certificates": [
+        {
+          "time": "1/6",
+          "physical_laps": [
+            0,
+            4,
+            4,
+            4,
+            4,
+            8,
+            9
+          ],
+          "phases": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            "5/6",
+            "1/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            25,
+            53,
+            55
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 1,
+              "falling_speed": 53,
+              "integer_speed_sum_times_t": 9
+            },
+            {
+              "rising_speed": 25,
+              "falling_speed": 53,
+              "integer_speed_sum_times_t": 13
+            },
+            {
+              "rising_speed": 26,
+              "falling_speed": 28,
+              "integer_speed_sum_times_t": 9
+            },
+            {
+              "rising_speed": 55,
+              "falling_speed": 53,
+              "integer_speed_sum_times_t": 18
+            },
+            {
+              "peak_speed": 27
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "physical_laps": [
+            0,
+            20,
+            21,
+            22,
+            23,
+            44,
+            45
+          ],
+          "phases": [
+            "5/6",
+            "5/6",
+            "2/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "5/6"
+          ],
+          "distances": [
+            "1/6",
+            "1/6",
+            "1/3",
+            "1/2",
+            "1/3",
+            "1/6",
+            "1/6"
+          ],
+          "minimum_distance": "1/6",
+          "active_speeds": [
+            1,
+            25,
+            53,
+            55
+          ],
+          "candidate_origins": [
+            {
+              "rising_speed": 53,
+              "falling_speed": 1,
+              "integer_speed_sum_times_t": 45
+            },
+            {
+              "rising_speed": 53,
+              "falling_speed": 25,
+              "integer_speed_sum_times_t": 65
+            },
+            {
+              "rising_speed": 28,
+              "falling_speed": 26,
+              "integer_speed_sum_times_t": 45
+            },
+            {
+              "rising_speed": 53,
+              "falling_speed": 55,
+              "integer_speed_sum_times_t": 90
+            },
+            {
+              "peak_speed": 27
+            }
+          ]
+        }
+      ],
+      "candidate_counts": {
+        "integer_speed_sum_candidates_tested_with_multiplicity": 1269,
+        "strict_opposing_contact_occurrences": 1250,
+        "individual_peak_occurrences": 215,
+        "unique_candidate_times_including_endpoints": 923
+      },
+      "proposed_formula": "1/6",
+      "proposed_witness": "1/6",
+      "branch": "q mod 6 in {1,2}",
+      "formula_matches": true,
+      "proposed_witness_is_maximizer": true,
+      "reflection_closed": true
+    }
+  ],
+  "large_q_witness_results": [
+    {
+      "q": 100002,
+      "q_mod_6": 0,
+      "speeds": [
+        1,
+        100002,
+        100003,
+        100004,
+        100005,
+        200007,
+        200009
+      ],
+      "branch": "q divisible by 3",
+      "claimed_maximum": "33334/200005",
+      "witness_certificate": {
+        "time": "66668/200005",
+        "physical_laps": [
+          0,
+          33333,
+          33334,
+          33334,
+          33334,
+          66668,
+          66669
+        ],
+        "phases": [
+          "66668/200005",
+          "166671/200005",
+          "33334/200005",
+          "100002/200005",
+          "33334/40001",
+          "133336/200005",
+          "66667/200005"
+        ],
+        "distances": [
+          "66668/200005",
+          "33334/200005",
+          "33334/200005",
+          "100002/200005",
+          "6667/40001",
+          "66669/200005",
+          "66667/200005"
+        ],
+        "minimum_distance": "33334/200005",
+        "active_speeds": [
+          100002,
+          100003
+        ]
+      },
+      "actual_witness_value_equals_claimed": true,
+      "scope": "witness only; no exhaustive upper bound or optimum calculation"
+    },
+    {
+      "q": 100003,
+      "q_mod_6": 1,
+      "speeds": [
+        1,
+        100003,
+        100004,
+        100005,
+        100006,
+        200009,
+        200011
+      ],
+      "branch": "q mod 6 in {1,2}",
+      "claimed_maximum": "1/6",
+      "witness_certificate": {
+        "time": "1/6",
+        "physical_laps": [
+          0,
+          16667,
+          16667,
+          16667,
+          16667,
+          33334,
+          33335
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum_distance": "1/6",
+        "active_speeds": [
+          1,
+          100003,
+          200009,
+          200011
+        ]
+      },
+      "actual_witness_value_equals_claimed": true,
+      "scope": "witness only; no exhaustive upper bound or optimum calculation"
+    },
+    {
+      "q": 100004,
+      "q_mod_6": 2,
+      "speeds": [
+        1,
+        100004,
+        100005,
+        100006,
+        100007,
+        200011,
+        200013
+      ],
+      "branch": "q mod 6 in {1,2}",
+      "claimed_maximum": "1/6",
+      "witness_certificate": {
+        "time": "1/6",
+        "physical_laps": [
+          0,
+          16667,
+          16667,
+          16667,
+          16667,
+          33335,
+          33335
+        ],
+        "phases": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6",
+          "1/2"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6",
+          "1/2"
+        ],
+        "minimum_distance": "1/6",
+        "active_speeds": [
+          1,
+          100007,
+          200011
+        ]
+      },
+      "actual_witness_value_equals_claimed": true,
+      "scope": "witness only; no exhaustive upper bound or optimum calculation"
+    },
+    {
+      "q": 100005,
+      "q_mod_6": 3,
+      "speeds": [
+        1,
+        100005,
+        100006,
+        100007,
+        100008,
+        200013,
+        200015
+      ],
+      "branch": "q divisible by 3",
+      "claimed_maximum": "33335/200011",
+      "witness_certificate": {
+        "time": "66670/200011",
+        "physical_laps": [
+          0,
+          33334,
+          33335,
+          33335,
+          33335,
+          66670,
+          66671
+        ],
+        "phases": [
+          "66670/200011",
+          "166676/200011",
+          "33335/200011",
+          "100005/200011",
+          "166675/200011",
+          "133340/200011",
+          "66669/200011"
+        ],
+        "distances": [
+          "66670/200011",
+          "33335/200011",
+          "33335/200011",
+          "100005/200011",
+          "33336/200011",
+          "66671/200011",
+          "66669/200011"
+        ],
+        "minimum_distance": "33335/200011",
+        "active_speeds": [
+          100005,
+          100006
+        ]
+      },
+      "actual_witness_value_equals_claimed": true,
+      "scope": "witness only; no exhaustive upper bound or optimum calculation"
+    },
+    {
+      "q": 100006,
+      "q_mod_6": 4,
+      "speeds": [
+        1,
+        100006,
+        100007,
+        100008,
+        100009,
+        200015,
+        200017
+      ],
+      "branch": "q mod 6=4, q>=10",
+      "claimed_maximum": "33335/200013",
+      "witness_certificate": {
+        "time": "66670/200013",
+        "physical_laps": [
+          0,
+          33334,
+          33335,
+          33335,
+          33335,
+          66670,
+          66671
+        ],
+        "phases": [
+          "66670/200013",
+          "166678/200013",
+          "33335/200013",
+          "33335/66671",
+          "166675/200013",
+          "133340/200013",
+          "66667/200013"
+        ],
+        "distances": [
+          "66670/200013",
+          "33335/200013",
+          "33335/200013",
+          "33335/66671",
+          "33338/200013",
+          "66673/200013",
+          "66667/200013"
+        ],
+        "minimum_distance": "33335/200013",
+        "active_speeds": [
+          100006,
+          100007
+        ]
+      },
+      "actual_witness_value_equals_claimed": true,
+      "scope": "witness only; no exhaustive upper bound or optimum calculation"
+    },
+    {
+      "q": 100007,
+      "q_mod_6": 5,
+      "speeds": [
+        1,
+        100007,
+        100008,
+        100009,
+        100010,
+        200017,
+        200019
+      ],
+      "branch": "q mod 6=5",
+      "claimed_maximum": "25002/150013",
+      "witness_certificate": {
+        "time": "75006/150013",
+        "physical_laps": [
+          0,
+          50003,
+          50003,
+          50004,
+          50004,
+          100007,
+          100008
+        ],
+        "phases": [
+          "75006/150013",
+          "25003/150013",
+          "100009/150013",
+          "25002/150013",
+          "100008/150013",
+          "125011/150013",
+          "125010/150013"
+        ],
+        "distances": [
+          "75006/150013",
+          "25003/150013",
+          "50004/150013",
+          "25002/150013",
+          "50005/150013",
+          "25002/150013",
+          "25003/150013"
+        ],
+        "minimum_distance": "25002/150013",
+        "active_speeds": [
+          100009,
+          200017
+        ]
+      },
+      "actual_witness_value_equals_claimed": true,
+      "scope": "witness only; no exhaustive upper bound or optimum calculation"
+    }
+  ],
+  "archive_comparison": {
+    "status": "all comparisons pass",
+    "read_order": "archive first opened after checker construction and first complete fresh run",
+    "archive_sha256": "19d8aaadc34eddac26704d6e9255c7badb1f947ec1ea43e851c897f24affa160",
+    "small_q_comparisons": [
+      {
+        "q": 2,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 3,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 6
+      },
+      {
+        "q": 4,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 4
+      },
+      {
+        "q": 5,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 6,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 7,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 8,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 9,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 10,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 8
+      },
+      {
+        "q": 11,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 12,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 13,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 14,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 15,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 16,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 17,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 18,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 19,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 20,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 21,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 22,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 23,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 24,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      },
+      {
+        "q": 25,
+        "maximum_matches": true,
+        "complete_maximizer_set_matches": true,
+        "archived_maximizer_count": 2
+      }
+    ],
+    "existing_large_witness_comparisons": [
+      {
+        "q": 100003,
+        "witness_fields_match": true
+      },
+      {
+        "q": 100004,
+        "witness_fields_match": true
+      }
+    ],
+    "small_q_maximum_values_compared": 24,
+    "small_q_complete_time_sets_compared": 24,
+    "small_q_maximizing_times_compared": 60,
+    "differences": []
+  }
+}

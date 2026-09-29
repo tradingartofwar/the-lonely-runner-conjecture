@@ -8,6 +8,18 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — LR 2, September 28 UTC
 
+**Latest — Ultra adversarial review supports the exact spectrum candidate.** [LTCM_ULTRA_REVIEW_2026_09_29.md](notes/LTCM_ULTRA_REVIEW_2026_09_29.md) records six separately tasked Ultra reviews of frozen commit8a967b30fcd73abd814e4c8f7f53f216c4b3f61e. No result-level defect was found; all five optimum/witness formulas remain unchanged. This is internal AI mathematical review, not independent human certification, formal verification, or a novelty determination.
+
+Fresh exact geometry construction reproduces10 cells,33 vertices,45 edges and all3 singleton cells. A separately authored upper checker reconstructs21 peak directions and84 inequalities on whole infinite residue domains. A physical opposing-contact checker, written without reading the original mathematical scripts, recovers all24 maxima and all60 maximizing-time occurrences forq2,...,25. Witness-only evaluationsq100002,...,100007 cover all6 residues. Direct closed-band intersection independently preservesq4's four isolated safe times;56 affine endpoint inequalities verify both witness charts.
+
+The review supplies the robust minimal-face proof for slice optimization. Interpret the selector as finding an optimum and one witness with33 vertex checks plus45 edge selections, not enumerating every optimizer or taking constant bit-time. Peak-edge optimizer existence suffices; a claim about every maximizing point is unnecessary. These precision corrections are in the review supplement; the original proof package and its hashes remain unchanged.
+
+Prior-art update: Jain–Kravitz is published in Combinatorial Theory6(1),#1, April20,2026. Cordella, arXiv2609.03444v2, September8,2026, reports a complete exact analysis of the same first-six-coordinate torus for coprimeA,B. Its code was not rerun and its claims are not imported as premises of our proof. The seven-coordinate formula was not located in inspected sources; novelty stays OPEN. Established methods remain credited.
+
+**Next proposed:** compare the known six-coordinate model at(A,B)=(1,q) with the appended seventh constraint, isolating exactly which witnesses/cells it changes and whether this yields a reusable transfer rule. No extension has been executed. The fixed-family finite box remains unchanged and unexhausted. Hourly stays paused; no outside contact, main merge, paid compute, broad scan or unattended research.
+
+### Prior spectrum derivation — preserved
+
 **Latest — LTCM test produces an exact unbounded-family spectrum candidate.** [LTCM_EXACT_SPECTRUM_2026_09_29.md](notes/LTCM_EXACT_SPECTRUM_2026_09_29.md) gives a five-branch formula for the selected-reference optimum of (1,q,q+1,q+2,q+3,2q+3,2q+5), every integer q>=2, with explicit actual-time witnesses and matching upper bounds. This is a complete proof candidate supported by one fixed finite polyhedral certificate, not independent human review or a novelty claim. q4 is the only tight1/8 case; all other q have maximum>=1/7.
 
 The useful language operation is arithmetic selection from a fixed geometry while retaining qx-y in Z. Ten ambient cells,33 vertices and45 edges give a q-independent selector; edge losses simplify by q mod6. The proof does not enumerate q-many laps. Two separate exact ambient constructions agree;84 symbolic inequalities certify the unbounded comparisons. Direct one-dimensional maxima agree for the24 predeclared q2,...,25; two large inputs receive witness-only checks. These programs were written by the same coordinator, not independently authored reviewers.

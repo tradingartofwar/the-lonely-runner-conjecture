@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+The [Ultra spectrum review](notes/LTCM_ULTRA_REVIEW_2026_09_29.md) found no result-level defect in the five-branch exact spectrum candidate. Six separately tasked AI reviewers reconstructed the ten-cell geometry, checked all 84 universal upper-bound comparisons, proved selector completeness, and recovered all 24 small-q maxima with every maximizing time using a fresh physical algorithm. Six large witness checks cover every residue; q=4 retains exactly four isolated safe times.
+
+The review clarifies that the selector finds an optimum and one witness within 33+45 candidate checks, not every optimizer or constant bit-time. Cordella's September 8, 2026 preprint completes the first-six-coordinate model and is now credited alongside published Jain–Kravitz. The appended seventh-coordinate formula's novelty remains unresolved. Status remains an internally reviewed proof candidate, not external certification or a general Lonely Runner proof.
+
+Next proposed, not executed: isolate how the appended seventh constraint changes the known six-coordinate model and seek a transferable rule. Hourly remains paused.
+
+### Prior spectrum candidate — preserved
+
 The [LTCM spectrum test](notes/LTCM_EXACT_SPECTRUM_2026_09_29.md) gives a complete proof candidate for the exact selected-reference maximum of (1,q,q+1,q+2,q+3,2q+3,2q+5), every integer q>=2. A five-branch rule supplies both the optimum and an attaining time. q4 is the only tight1/8 case; every other member has maximum>=1/7.
 
 A fixed ten-cell geometry and the actual-orbit condition qx-y in Z replace growing lap enumeration. Separate exact constructions recover33 vertices;84 symbolic comparisons support the universal upper bound;24 declared small-q maxima and two large witness checks agree. This is an internally checked candidate with a finite polyhedral certificate, not independent human review or established novelty. The existing relative-spectrum and polyhedral frameworks are credited.
