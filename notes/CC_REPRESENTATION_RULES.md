@@ -406,3 +406,31 @@ and current originality status separately. An unproductive formula search is
 not a novelty certificate; a publisher index is not a reading of the journal
 proof. Earlier notes remain historical records; this dated comparison supplies
 the closer attribution and prevents scope from changing through compression.
+
+## 11. A coverage compiler must preserve the reason for success or failure
+
+The [coverage compiler](CC_COVERAGE_COMPILER_2026_09_29.md) adds a generation
+record to the existing two-parameter witness carrier. Its closed candidate
+geometry, leading width inequality, complete finite residual domain, contact
+matrix and fallback choices explain why the emitted menu covers every positive
+primitive direction. The serialized evaluator then applies the existing gcd,
+orbit and physical recovery map. This is a development example with a known
+answer, not evidence of general discovery ability.
+
+Keep invalid input, absence of a suitable descending segment, resource limits,
+and named uncovered primitive pairs distinct. A failure belongs to the
+attempted rule/candidate class; it does not establish failed loneliness.
+Preserve the stronger conclusion available from a completed contact matrix:
+if the greedy procedure ends with named uncovered pairs, every supplied
+candidate misses each such pair. No reordering or different leader using only
+the same records can repair it; additional geometry is required. In contrast,
+no descending segment or a budget stop does not prove candidate-class
+insufficiency. Do not merge these statuses into a generic search failure.
+
+The full audit record and the smaller online menu serve different operations.
+The evaluator checks its selected point and recovery, while a separate coverage
+check reconstructs the finite reduction and complete contact table. Do not
+describe an evaluator as an untrusted-certificate validator or a formal proof
+checker. Keep preprocessing, online segment count and variable-cost arithmetic
+separate. The existing literature adaptation and noninherited spectrum claims
+in Section 10 remain unchanged.

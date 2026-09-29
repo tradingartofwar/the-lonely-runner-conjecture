@@ -1,0 +1,40 @@
+{
+  "archived_selector_comparison": {
+    "all_exact": true,
+    "fields": [
+      "point",
+      "time",
+      "phases",
+      "physical_laps",
+      "reflected_time",
+      "reflected_phases"
+    ],
+    "pairs": 18
+  },
+  "compiler_summary": {
+    "chosen_ids": [
+      "P3:E0-1:K2",
+      "P1:E1-3:K1"
+    ],
+    "controls": "PASS",
+    "counts": {
+      "candidates": 27,
+      "chosen": 2,
+      "contacts": 216,
+      "descending": 10,
+      "rectangle_pairs": 21,
+      "residual_pairs": 8
+    },
+    "status": "COMPLETE_COVER_CERTIFICATE"
+  },
+  "input_hashes_verified": 6,
+  "limits": "Same frozen controls, no expanded scan. Separate AI implementations are not human or formal proof.",
+  "reproduce_script_sha256": "cf1132f24748e6a9c9c259db79d7275064affad3894a1d01ae8599371a45081b",
+  "reproduced_byte_for_byte": {
+    "certificate.json": "88142d4442d65cb50e8e6068cd1826b5957015ffd2d0742cb6867ab5ab452aa1",
+    "coverage_review.json": "de87c91963bca7a788f961134ea42dec71901117831c537539e40573cefe4ade",
+    "physical_review.json": "ff10a65b0b973669c88b412e63542b3c5a7508235d700cf0b9c7288031a0de13",
+    "run.json": "0367da1c759e2c777026787355ffe14df6e02172109ad394c9d20757e450a1e6"
+  },
+  "status": "PASS"
+}
