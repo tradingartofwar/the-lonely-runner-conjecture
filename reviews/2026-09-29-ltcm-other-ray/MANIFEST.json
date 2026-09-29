@@ -1,0 +1,24 @@
+{
+  "base_commit": "908a089ac39f9af796d6261d22f8b37009b1eb53",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "status": "reconstruction; new ray V(q,1); universal upper bound remains open",
+  "reproduce": "python3 reviews/2026-09-29-ltcm-other-ray/verify.py > /tmp/ltcm-other-ray-verification.json",
+  "exact_scope": {
+    "q_min": 2,
+    "q_max": 150,
+    "case_count": 149,
+    "total_runners": 8,
+    "selected_reference": 0,
+    "exact_maximum_mismatches": 0,
+    "candidate_times_in_half_period": 384107,
+    "symbolic_phase_identities": 42,
+    "symbolic_safe_band_inequalities": 84
+  },
+  "source_and_output_sha256": {
+    "notes/LTCM_OTHER_RAY_RECOVERY_2026_09_29.md": "9d9597f4448e4be299d58697bb91c57094e3bfbb83e19039f2e43c8a0be509a2",
+    "reviews/2026-09-29-ltcm-other-ray/PROTOCOL.md": "1025790c0b154a4f4f1b9e9977b2ec11699d9bc9d89d012c90cb133991ea297e",
+    "reviews/2026-09-29-ltcm-other-ray/verify.py": "b1cc4d4b3d3025b285b51eb2587c8c9be2a3646908f7b8226838cc4851e9e7d5",
+    "reviews/2026-09-29-ltcm-other-ray/verification.json": "faa9ffff198fa134639572a1240463e4b07e820c02a3512c04fcb810d25d3620"
+  },
+  "provenance": "AI-authored recovery; archived Ultra opposing-contact method inspected; not independent review"
+}

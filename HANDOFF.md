@@ -6,7 +6,15 @@
 **Canonical branch:** `main`  
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
-## Current resumption — LR 2, September 28 UTC
+## Current resumption — September 29, 2026
+
+**Latest — continuation recovered; two parameter rays separated.** The unsaved mod-6 rule concerns B_q=(1,q,q+1,2q+1,3q+1,3q+2,5q+2), which is V(q,1) after permutation. It was incorrectly called the p=1 ray in the continuation. The original A_q=V(1,q) spectrum and its Ultra review were already saved and already contain a matching upper-bound candidate. Their claims remain unchanged.
+
+[The recovery note](notes/LTCM_OTHER_RAY_RECOVERY_2026_09_29.md) preserves the newer formulas, contact pairs, physical laps, and symbolic lower-bound certificates. A fresh exact reproduction matches all 149 optima for q=2,...,150, with 42 polynomial phase identities and 84 safe-band inequalities on whole residue domains. These checks apply to B_q; its universal upper bound remains OPEN and has not received the original ray's Ultra review. Small controls q=2,4 confirm the two rays have different optima.
+
+Resume with these scopes explicit: the original ray's proposed next question is six-to-seven-coordinate transfer; the newer ray's unfinished task is a matching upper bound. No new upper-bound derivation or broader investigation was performed as part of preservation.
+
+### Prior Ultra spectrum review — preserved
 
 **Latest — Ultra adversarial review supports the exact spectrum candidate.** [LTCM_ULTRA_REVIEW_2026_09_29.md](notes/LTCM_ULTRA_REVIEW_2026_09_29.md) records six separately tasked Ultra reviews of frozen commit8a967b30fcd73abd814e4c8f7f53f216c4b3f61e. No result-level defect was found; all five optimum/witness formulas remain unchanged. This is internal AI mathematical review, not independent human certification, formal verification, or a novelty determination.
 

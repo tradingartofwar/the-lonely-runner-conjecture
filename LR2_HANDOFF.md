@@ -4,6 +4,14 @@ September 25, 2026. This is the compact continuation entry point after LR 1 reac
 
 ## Start here
 
+**Latest — continuation recovered; two parameter rays separated.** The unsaved mod-6 rule concerns B_q=(1,q,q+1,2q+1,3q+1,3q+2,5q+2), which is V(q,1) after permutation. It was incorrectly called the p=1 ray in the continuation. The original A_q=V(1,q) spectrum and its Ultra review were already saved and already contain a matching upper-bound candidate. Their claims remain unchanged.
+
+[The recovery note](notes/LTCM_OTHER_RAY_RECOVERY_2026_09_29.md) preserves the newer formulas, contact pairs, physical laps, and symbolic lower-bound certificates. A fresh exact reproduction matches all 149 optima for q=2,...,150, with 42 polynomial phase identities and 84 safe-band inequalities on whole residue domains. These checks apply to B_q; its universal upper bound remains OPEN and has not received the original ray's Ultra review. Small controls q=2,4 confirm the two rays have different optima.
+
+Resume with these scopes explicit: the original ray's proposed next question is six-to-seven-coordinate transfer; the newer ray's unfinished task is a matching upper bound. No new upper-bound derivation or broader investigation was performed as part of preservation.
+
+### Prior Ultra spectrum review — preserved
+
 **Latest — Ultra adversarial review supports the exact spectrum candidate.** [LTCM_ULTRA_REVIEW_2026_09_29.md](notes/LTCM_ULTRA_REVIEW_2026_09_29.md) records six separately tasked Ultra reviews of frozen commit8a967b30fcd73abd814e4c8f7f53f216c4b3f61e. No result-level defect was found; all five optimum/witness formulas remain unchanged. This is internal AI mathematical review, not independent human certification, formal verification, or a novelty determination.
 
 Fresh exact geometry construction reproduces10 cells,33 vertices,45 edges and all3 singleton cells. A separately authored upper checker reconstructs21 peak directions and84 inequalities on whole infinite residue domains. A physical opposing-contact checker, written without reading the original mathematical scripts, recovers all24 maxima and all60 maximizing-time occurrences forq2,...,25. Witness-only evaluationsq100002,...,100007 cover all6 residues. Direct closed-band intersection independently preservesq4's four isolated safe times;56 affine endpoint inequalities verify both witness charts.

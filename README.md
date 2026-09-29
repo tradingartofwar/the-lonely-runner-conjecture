@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+**Latest — continuation recovered; two parameter rays separated.** The unsaved mod-6 rule concerns B_q=(1,q,q+1,2q+1,3q+1,3q+2,5q+2), which is V(q,1) after permutation. It was incorrectly called the p=1 ray in the continuation. The original A_q=V(1,q) spectrum and its Ultra review were already saved and already contain a matching upper-bound candidate. Their claims remain unchanged.
+
+[The recovery note](notes/LTCM_OTHER_RAY_RECOVERY_2026_09_29.md) preserves the newer formulas, contact pairs, physical laps, and symbolic lower-bound certificates. A fresh exact reproduction matches all 149 optima for q=2,...,150, with 42 polynomial phase identities and 84 safe-band inequalities on whole residue domains. These checks apply to B_q; its universal upper bound remains OPEN and has not received the original ray's Ultra review. Small controls q=2,4 confirm the two rays have different optima.
+
+Resume with these scopes explicit: the original ray's proposed next question is six-to-seven-coordinate transfer; the newer ray's unfinished task is a matching upper bound. No new upper-bound derivation or broader investigation was performed as part of preservation.
+
+### Prior Ultra spectrum review — preserved
+
 The [Ultra spectrum review](notes/LTCM_ULTRA_REVIEW_2026_09_29.md) found no result-level defect in the five-branch exact spectrum candidate. Six separately tasked AI reviewers reconstructed the ten-cell geometry, checked all 84 universal upper-bound comparisons, proved selector completeness, and recovered all 24 small-q maxima with every maximizing time using a fresh physical algorithm. Six large witness checks cover every residue; q=4 retains exactly four isolated safe times.
 
 The review clarifies that the selector finds an optimum and one witness within 33+45 candidate checks, not every optimizer or constant bit-time. Cordella's September 8, 2026 preprint completes the first-six-coordinate model and is now credited alongside published Jain–Kravitz. The appended seventh-coordinate formula's novelty remains unresolved. Status remains an internally reviewed proof candidate, not external certification or a general Lonely Runner proof.

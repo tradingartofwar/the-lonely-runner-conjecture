@@ -1,0 +1,9991 @@
+{
+  "base_commit": "908a089ac39f9af796d6261d22f8b37009b1eb53",
+  "script_sha256": "b1cc4d4b3d3025b285b51eb2587c8c9be2a3646908f7b8226838cc4851e9e7d5",
+  "status": "bounded exact maximum checks; symbolic lower-bound certificates; upper bound open",
+  "scope": {
+    "q_min": 2,
+    "q_max": 150,
+    "case_count": 149,
+    "total_runners": 8,
+    "selected_reference": 0,
+    "exact_maximum_mismatches": 0,
+    "candidate_times_in_half_period": 384107,
+    "symbolic_phase_identities": 42,
+    "symbolic_safe_band_inequalities": 84
+  },
+  "symbolic_witness_charts": [
+    {
+      "residue": 0,
+      "k_min": 1,
+      "N": [
+        1,
+        8
+      ],
+      "D": [
+        1,
+        24
+      ],
+      "A": [
+        0,
+        4
+      ],
+      "laps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "remainders": [
+        [
+          1,
+          8
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          20
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          12
+        ]
+      ],
+      "coordinates": [
+        {
+          "speed_coefficients": [
+            1,
+            0
+          ],
+          "lap_coefficients": [
+            0,
+            0
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            8
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              4
+            ],
+            "slope": 4,
+            "value_at_k_min": 5
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              12
+            ],
+            "slope": 12,
+            "value_at_k_min": 12
+          }
+        },
+        {
+          "speed_coefficients": [
+            0,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            0,
+            4
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              16
+            ],
+            "slope": 16,
+            "value_at_k_min": 17
+          }
+        },
+        {
+          "speed_coefficients": [
+            1,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            12
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              8
+            ],
+            "slope": 8,
+            "value_at_k_min": 9
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              8
+            ],
+            "slope": 8,
+            "value_at_k_min": 8
+          }
+        },
+        {
+          "speed_coefficients": [
+            1,
+            12
+          ],
+          "lap_coefficients": [
+            0,
+            4
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            16
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              12
+            ],
+            "slope": 12,
+            "value_at_k_min": 13
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              4
+            ],
+            "slope": 4,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            1,
+            18
+          ],
+          "lap_coefficients": [
+            0,
+            6
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            20
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              16
+            ],
+            "slope": 16,
+            "value_at_k_min": 17
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        },
+        {
+          "speed_coefficients": [
+            2,
+            18
+          ],
+          "lap_coefficients": [
+            1,
+            6
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            4
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              16
+            ],
+            "slope": 16,
+            "value_at_k_min": 16
+          }
+        },
+        {
+          "speed_coefficients": [
+            2,
+            30
+          ],
+          "lap_coefficients": [
+            1,
+            10
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            12
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              8
+            ],
+            "slope": 8,
+            "value_at_k_min": 9
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              8
+            ],
+            "slope": 8,
+            "value_at_k_min": 8
+          }
+        }
+      ]
+    },
+    {
+      "residue": 1,
+      "k_min": 1,
+      "N": [
+        1,
+        0
+      ],
+      "D": [
+        6,
+        0
+      ],
+      "A": [
+        1,
+        0
+      ],
+      "laps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "remainders": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "coordinates": [
+        {
+          "speed_coefficients": [
+            1,
+            0
+          ],
+          "lap_coefficients": [
+            0,
+            0
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            1,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            2,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            2,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          }
+        },
+        {
+          "speed_coefficients": [
+            3,
+            12
+          ],
+          "lap_coefficients": [
+            0,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            3,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              2,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 2
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              2,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 2
+          }
+        },
+        {
+          "speed_coefficients": [
+            4,
+            18
+          ],
+          "lap_coefficients": [
+            0,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            4,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        },
+        {
+          "speed_coefficients": [
+            5,
+            18
+          ],
+          "lap_coefficients": [
+            0,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            5,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        },
+        {
+          "speed_coefficients": [
+            7,
+            30
+          ],
+          "lap_coefficients": [
+            1,
+            5
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        }
+      ]
+    },
+    {
+      "residue": 2,
+      "k_min": 0,
+      "N": [
+        3,
+        5
+      ],
+      "D": [
+        13,
+        30
+      ],
+      "A": [
+        2,
+        5
+      ],
+      "laps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "remainders": [
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          11,
+          25
+        ],
+        [
+          10,
+          25
+        ]
+      ],
+      "coordinates": [
+        {
+          "speed_coefficients": [
+            1,
+            0
+          ],
+          "lap_coefficients": [
+            0,
+            0
+          ],
+          "phase_numerator_coefficients": [
+            3,
+            5
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              8,
+              20
+            ],
+            "slope": 20,
+            "value_at_k_min": 8
+          }
+        },
+        {
+          "speed_coefficients": [
+            2,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            6,
+            15
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              4,
+              10
+            ],
+            "slope": 10,
+            "value_at_k_min": 4
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              5,
+              10
+            ],
+            "slope": 10,
+            "value_at_k_min": 5
+          }
+        },
+        {
+          "speed_coefficients": [
+            3,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            9,
+            20
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              7,
+              15
+            ],
+            "slope": 15,
+            "value_at_k_min": 7
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              2,
+              5
+            ],
+            "slope": 5,
+            "value_at_k_min": 2
+          }
+        },
+        {
+          "speed_coefficients": [
+            5,
+            12
+          ],
+          "lap_coefficients": [
+            1,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            2,
+            5
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              9,
+              20
+            ],
+            "slope": 20,
+            "value_at_k_min": 9
+          }
+        },
+        {
+          "speed_coefficients": [
+            7,
+            18
+          ],
+          "lap_coefficients": [
+            1,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            8,
+            20
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              6,
+              15
+            ],
+            "slope": 15,
+            "value_at_k_min": 6
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              3,
+              5
+            ],
+            "slope": 5,
+            "value_at_k_min": 3
+          }
+        },
+        {
+          "speed_coefficients": [
+            8,
+            18
+          ],
+          "lap_coefficients": [
+            1,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            11,
+            25
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              9,
+              20
+            ],
+            "slope": 20,
+            "value_at_k_min": 9
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        },
+        {
+          "speed_coefficients": [
+            12,
+            30
+          ],
+          "lap_coefficients": [
+            2,
+            5
+          ],
+          "phase_numerator_coefficients": [
+            10,
+            25
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              8,
+              20
+            ],
+            "slope": 20,
+            "value_at_k_min": 8
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        }
+      ]
+    },
+    {
+      "residue": 3,
+      "k_min": 0,
+      "N": [
+        1,
+        0
+      ],
+      "D": [
+        6,
+        0
+      ],
+      "A": [
+        1,
+        0
+      ],
+      "laps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "remainders": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "coordinates": [
+        {
+          "speed_coefficients": [
+            1,
+            0
+          ],
+          "lap_coefficients": [
+            0,
+            0
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            3,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            3,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              2,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 2
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              2,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 2
+          }
+        },
+        {
+          "speed_coefficients": [
+            4,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            4,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        },
+        {
+          "speed_coefficients": [
+            7,
+            12
+          ],
+          "lap_coefficients": [
+            1,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            10,
+            18
+          ],
+          "lap_coefficients": [
+            1,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            4,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        },
+        {
+          "speed_coefficients": [
+            11,
+            18
+          ],
+          "lap_coefficients": [
+            1,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            5,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        },
+        {
+          "speed_coefficients": [
+            17,
+            30
+          ],
+          "lap_coefficients": [
+            2,
+            5
+          ],
+          "phase_numerator_coefficients": [
+            5,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        }
+      ]
+    },
+    {
+      "residue": 4,
+      "k_min": 0,
+      "N": [
+        1,
+        0
+      ],
+      "D": [
+        6,
+        0
+      ],
+      "A": [
+        1,
+        0
+      ],
+      "laps": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "remainders": [
+        [
+          1,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "coordinates": [
+        {
+          "speed_coefficients": [
+            1,
+            0
+          ],
+          "lap_coefficients": [
+            0,
+            0
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            4,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            4,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        },
+        {
+          "speed_coefficients": [
+            5,
+            6
+          ],
+          "lap_coefficients": [
+            0,
+            1
+          ],
+          "phase_numerator_coefficients": [
+            5,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        },
+        {
+          "speed_coefficients": [
+            9,
+            12
+          ],
+          "lap_coefficients": [
+            1,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            3,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              2,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 2
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              2,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 2
+          }
+        },
+        {
+          "speed_coefficients": [
+            13,
+            18
+          ],
+          "lap_coefficients": [
+            2,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            1,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              4,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 4
+          }
+        },
+        {
+          "speed_coefficients": [
+            14,
+            18
+          ],
+          "lap_coefficients": [
+            2,
+            3
+          ],
+          "phase_numerator_coefficients": [
+            2,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          }
+        },
+        {
+          "speed_coefficients": [
+            22,
+            30
+          ],
+          "lap_coefficients": [
+            3,
+            5
+          ],
+          "phase_numerator_coefficients": [
+            4,
+            0
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              3,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 3
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        }
+      ]
+    },
+    {
+      "residue": 5,
+      "k_min": 0,
+      "N": [
+        10,
+        12
+      ],
+      "D": [
+        33,
+        36
+      ],
+      "A": [
+        5,
+        6
+      ],
+      "laps": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "remainders": [
+        [
+          10,
+          12
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          27,
+          30
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          28,
+          30
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "coordinates": [
+        {
+          "speed_coefficients": [
+            1,
+            0
+          ],
+          "lap_coefficients": [
+            0,
+            0
+          ],
+          "phase_numerator_coefficients": [
+            10,
+            12
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              5,
+              6
+            ],
+            "slope": 6,
+            "value_at_k_min": 5
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              18,
+              18
+            ],
+            "slope": 18,
+            "value_at_k_min": 18
+          }
+        },
+        {
+          "speed_coefficients": [
+            5,
+            6
+          ],
+          "lap_coefficients": [
+            1,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            17,
+            18
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              12,
+              12
+            ],
+            "slope": 12,
+            "value_at_k_min": 12
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              11,
+              12
+            ],
+            "slope": 12,
+            "value_at_k_min": 11
+          }
+        },
+        {
+          "speed_coefficients": [
+            6,
+            6
+          ],
+          "lap_coefficients": [
+            1,
+            2
+          ],
+          "phase_numerator_coefficients": [
+            27,
+            30
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              22,
+              24
+            ],
+            "slope": 24,
+            "value_at_k_min": 22
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          }
+        },
+        {
+          "speed_coefficients": [
+            11,
+            12
+          ],
+          "lap_coefficients": [
+            3,
+            4
+          ],
+          "phase_numerator_coefficients": [
+            11,
+            12
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              6,
+              6
+            ],
+            "slope": 6,
+            "value_at_k_min": 6
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              17,
+              18
+            ],
+            "slope": 18,
+            "value_at_k_min": 17
+          }
+        },
+        {
+          "speed_coefficients": [
+            16,
+            18
+          ],
+          "lap_coefficients": [
+            4,
+            6
+          ],
+          "phase_numerator_coefficients": [
+            28,
+            30
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              23,
+              24
+            ],
+            "slope": 24,
+            "value_at_k_min": 23
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          }
+        },
+        {
+          "speed_coefficients": [
+            17,
+            18
+          ],
+          "lap_coefficients": [
+            5,
+            6
+          ],
+          "phase_numerator_coefficients": [
+            5,
+            6
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              0,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 0
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              23,
+              24
+            ],
+            "slope": 24,
+            "value_at_k_min": 23
+          }
+        },
+        {
+          "speed_coefficients": [
+            27,
+            30
+          ],
+          "lap_coefficients": [
+            8,
+            10
+          ],
+          "phase_numerator_coefficients": [
+            6,
+            6
+          ],
+          "identity_vN_equals_lapD_plus_R": true,
+          "R_minus_A": {
+            "coefficients": [
+              1,
+              0
+            ],
+            "slope": 0,
+            "value_at_k_min": 1
+          },
+          "D_minus_A_minus_R": {
+            "coefficients": [
+              22,
+              24
+            ],
+            "slope": 24,
+            "value_at_k_min": 22
+          }
+        }
+      ]
+    }
+  ],
+  "family_distinction_controls": [
+    {
+      "q": 2,
+      "original_ray_speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "original_ray_maximum": "1/6",
+      "other_ray_maximum": "2/13",
+      "different_objectives": true
+    },
+    {
+      "q": 4,
+      "original_ray_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "original_ray_maximum": "1/8",
+      "other_ray_maximum": "1/6",
+      "different_objectives": true
+    }
+  ],
+  "cases": [
+    {
+      "q": 2,
+      "speeds": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        12
+      ],
+      "maximum": "2/13",
+      "maximizing_times": [
+        "3/13",
+        "10/13"
+      ],
+      "candidate_times_in_half_period": 66,
+      "formula_matches": true,
+      "witness": {
+        "time": "3/13",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "3/13",
+          "6/13",
+          "9/13",
+          "2/13",
+          "8/13",
+          "11/13",
+          "10/13"
+        ],
+        "distances": [
+          "3/13",
+          "6/13",
+          "4/13",
+          "2/13",
+          "5/13",
+          "2/13",
+          "3/13"
+        ],
+        "minimum": "2/13",
+        "active_speeds": [
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "q": 3,
+      "speeds": [
+        1,
+        3,
+        4,
+        7,
+        10,
+        11,
+        17
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 90,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          7,
+          11,
+          17
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "speeds": [
+        1,
+        4,
+        5,
+        9,
+        13,
+        14,
+        22
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 137,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          3
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          5,
+          13
+        ]
+      }
+    },
+    {
+      "q": 5,
+      "speeds": [
+        1,
+        5,
+        6,
+        11,
+        16,
+        17,
+        27
+      ],
+      "maximum": "5/33",
+      "maximizing_times": [
+        "10/33",
+        "23/33"
+      ],
+      "candidate_times_in_half_period": 161,
+      "formula_matches": true,
+      "witness": {
+        "time": "10/33",
+        "laps": [
+          0,
+          1,
+          1,
+          3,
+          4,
+          5,
+          8
+        ],
+        "phases": [
+          "10/33",
+          "17/33",
+          "9/11",
+          "1/3",
+          "28/33",
+          "5/33",
+          "2/11"
+        ],
+        "distances": [
+          "10/33",
+          "16/33",
+          "2/11",
+          "1/3",
+          "5/33",
+          "5/33",
+          "2/11"
+        ],
+        "minimum": "5/33",
+        "active_speeds": [
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "q": 6,
+      "speeds": [
+        1,
+        6,
+        7,
+        13,
+        19,
+        20,
+        32
+      ],
+      "maximum": "4/25",
+      "maximizing_times": [
+        "9/25",
+        "16/25"
+      ],
+      "candidate_times_in_half_period": 195,
+      "formula_matches": true,
+      "witness": {
+        "time": "9/25",
+        "laps": [
+          0,
+          2,
+          2,
+          4,
+          6,
+          7,
+          11
+        ],
+        "phases": [
+          "9/25",
+          "4/25",
+          "13/25",
+          "17/25",
+          "21/25",
+          "1/5",
+          "13/25"
+        ],
+        "distances": [
+          "9/25",
+          "4/25",
+          "12/25",
+          "8/25",
+          "4/25",
+          "1/5",
+          "12/25"
+        ],
+        "minimum": "4/25",
+        "active_speeds": [
+          6,
+          19
+        ]
+      }
+    },
+    {
+      "q": 7,
+      "speeds": [
+        1,
+        7,
+        8,
+        15,
+        22,
+        23,
+        37
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 237,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          1,
+          1,
+          2,
+          3,
+          3,
+          6
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          7,
+          23,
+          37
+        ]
+      }
+    },
+    {
+      "q": 8,
+      "speeds": [
+        1,
+        8,
+        9,
+        17,
+        25,
+        26,
+        42
+      ],
+      "maximum": "7/43",
+      "maximizing_times": [
+        "8/43",
+        "35/43"
+      ],
+      "candidate_times_in_half_period": 268,
+      "formula_matches": true,
+      "witness": {
+        "time": "8/43",
+        "laps": [
+          0,
+          1,
+          1,
+          3,
+          4,
+          4,
+          7
+        ],
+        "phases": [
+          "8/43",
+          "21/43",
+          "29/43",
+          "7/43",
+          "28/43",
+          "36/43",
+          "35/43"
+        ],
+        "distances": [
+          "8/43",
+          "21/43",
+          "14/43",
+          "7/43",
+          "15/43",
+          "7/43",
+          "8/43"
+        ],
+        "minimum": "7/43",
+        "active_speeds": [
+          17,
+          26
+        ]
+      }
+    },
+    {
+      "q": 9,
+      "speeds": [
+        1,
+        9,
+        10,
+        19,
+        28,
+        29,
+        47
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 292,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          1,
+          1,
+          3,
+          4,
+          4,
+          7
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          19,
+          29,
+          47
+        ]
+      }
+    },
+    {
+      "q": 10,
+      "speeds": [
+        1,
+        10,
+        11,
+        21,
+        31,
+        32,
+        52
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 340,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          1,
+          1,
+          3,
+          5,
+          5,
+          8
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          11,
+          31
+        ]
+      }
+    },
+    {
+      "q": 11,
+      "speeds": [
+        1,
+        11,
+        12,
+        23,
+        34,
+        35,
+        57
+      ],
+      "maximum": "11/69",
+      "maximizing_times": [
+        "22/69",
+        "47/69"
+      ],
+      "candidate_times_in_half_period": 357,
+      "formula_matches": true,
+      "witness": {
+        "time": "22/69",
+        "laps": [
+          0,
+          3,
+          3,
+          7,
+          10,
+          11,
+          18
+        ],
+        "phases": [
+          "22/69",
+          "35/69",
+          "19/23",
+          "1/3",
+          "58/69",
+          "11/69",
+          "4/23"
+        ],
+        "distances": [
+          "22/69",
+          "34/69",
+          "4/23",
+          "1/3",
+          "11/69",
+          "11/69",
+          "4/23"
+        ],
+        "minimum": "11/69",
+        "active_speeds": [
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "q": 12,
+      "speeds": [
+        1,
+        12,
+        13,
+        25,
+        37,
+        38,
+        62
+      ],
+      "maximum": "8/49",
+      "maximizing_times": [
+        "17/49",
+        "32/49"
+      ],
+      "candidate_times_in_half_period": 403,
+      "formula_matches": true,
+      "witness": {
+        "time": "17/49",
+        "laps": [
+          0,
+          4,
+          4,
+          8,
+          12,
+          13,
+          21
+        ],
+        "phases": [
+          "17/49",
+          "8/49",
+          "25/49",
+          "33/49",
+          "41/49",
+          "9/49",
+          "25/49"
+        ],
+        "distances": [
+          "17/49",
+          "8/49",
+          "24/49",
+          "16/49",
+          "8/49",
+          "9/49",
+          "24/49"
+        ],
+        "minimum": "8/49",
+        "active_speeds": [
+          12,
+          37
+        ]
+      }
+    },
+    {
+      "q": 13,
+      "speeds": [
+        1,
+        13,
+        14,
+        27,
+        40,
+        41,
+        67
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 442,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          2,
+          2,
+          4,
+          6,
+          6,
+          11
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          13,
+          41,
+          67
+        ]
+      }
+    },
+    {
+      "q": 14,
+      "speeds": [
+        1,
+        14,
+        15,
+        29,
+        43,
+        44,
+        72
+      ],
+      "maximum": "12/73",
+      "maximizing_times": [
+        "13/73",
+        "60/73"
+      ],
+      "candidate_times_in_half_period": 466,
+      "formula_matches": true,
+      "witness": {
+        "time": "13/73",
+        "laps": [
+          0,
+          2,
+          2,
+          5,
+          7,
+          7,
+          12
+        ],
+        "phases": [
+          "13/73",
+          "36/73",
+          "49/73",
+          "12/73",
+          "48/73",
+          "61/73",
+          "60/73"
+        ],
+        "distances": [
+          "13/73",
+          "36/73",
+          "24/73",
+          "12/73",
+          "25/73",
+          "12/73",
+          "13/73"
+        ],
+        "minimum": "12/73",
+        "active_speeds": [
+          29,
+          44
+        ]
+      }
+    },
+    {
+      "q": 15,
+      "speeds": [
+        1,
+        15,
+        16,
+        31,
+        46,
+        47,
+        77
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 501,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          2,
+          2,
+          5,
+          7,
+          7,
+          12
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          31,
+          47,
+          77
+        ]
+      }
+    },
+    {
+      "q": 16,
+      "speeds": [
+        1,
+        16,
+        17,
+        33,
+        49,
+        50,
+        82
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 543,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          2,
+          2,
+          5,
+          8,
+          8,
+          13
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          17,
+          49
+        ]
+      }
+    },
+    {
+      "q": 17,
+      "speeds": [
+        1,
+        17,
+        18,
+        35,
+        52,
+        53,
+        87
+      ],
+      "maximum": "17/105",
+      "maximizing_times": [
+        "34/105",
+        "71/105"
+      ],
+      "candidate_times_in_half_period": 579,
+      "formula_matches": true,
+      "witness": {
+        "time": "34/105",
+        "laps": [
+          0,
+          5,
+          5,
+          11,
+          16,
+          17,
+          28
+        ],
+        "phases": [
+          "34/105",
+          "53/105",
+          "29/35",
+          "1/3",
+          "88/105",
+          "17/105",
+          "6/35"
+        ],
+        "distances": [
+          "34/105",
+          "52/105",
+          "6/35",
+          "1/3",
+          "17/105",
+          "17/105",
+          "6/35"
+        ],
+        "minimum": "17/105",
+        "active_speeds": [
+          52,
+          53
+        ]
+      }
+    },
+    {
+      "q": 18,
+      "speeds": [
+        1,
+        18,
+        19,
+        37,
+        55,
+        56,
+        92
+      ],
+      "maximum": "12/73",
+      "maximizing_times": [
+        "25/73",
+        "48/73"
+      ],
+      "candidate_times_in_half_period": 603,
+      "formula_matches": true,
+      "witness": {
+        "time": "25/73",
+        "laps": [
+          0,
+          6,
+          6,
+          12,
+          18,
+          19,
+          31
+        ],
+        "phases": [
+          "25/73",
+          "12/73",
+          "37/73",
+          "49/73",
+          "61/73",
+          "13/73",
+          "37/73"
+        ],
+        "distances": [
+          "25/73",
+          "12/73",
+          "36/73",
+          "24/73",
+          "12/73",
+          "13/73",
+          "36/73"
+        ],
+        "minimum": "12/73",
+        "active_speeds": [
+          18,
+          55
+        ]
+      }
+    },
+    {
+      "q": 19,
+      "speeds": [
+        1,
+        19,
+        20,
+        39,
+        58,
+        59,
+        97
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 638,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          3,
+          3,
+          6,
+          9,
+          9,
+          16
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          19,
+          59,
+          97
+        ]
+      }
+    },
+    {
+      "q": 20,
+      "speeds": [
+        1,
+        20,
+        21,
+        41,
+        61,
+        62,
+        102
+      ],
+      "maximum": "17/103",
+      "maximizing_times": [
+        "18/103",
+        "85/103"
+      ],
+      "candidate_times_in_half_period": 677,
+      "formula_matches": true,
+      "witness": {
+        "time": "18/103",
+        "laps": [
+          0,
+          3,
+          3,
+          7,
+          10,
+          10,
+          17
+        ],
+        "phases": [
+          "18/103",
+          "51/103",
+          "69/103",
+          "17/103",
+          "68/103",
+          "86/103",
+          "85/103"
+        ],
+        "distances": [
+          "18/103",
+          "51/103",
+          "34/103",
+          "17/103",
+          "35/103",
+          "17/103",
+          "18/103"
+        ],
+        "minimum": "17/103",
+        "active_speeds": [
+          41,
+          62
+        ]
+      }
+    },
+    {
+      "q": 21,
+      "speeds": [
+        1,
+        21,
+        22,
+        43,
+        64,
+        65,
+        107
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 704,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          3,
+          3,
+          7,
+          10,
+          10,
+          17
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          43,
+          65,
+          107
+        ]
+      }
+    },
+    {
+      "q": 22,
+      "speeds": [
+        1,
+        22,
+        23,
+        45,
+        67,
+        68,
+        112
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 743,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          3,
+          3,
+          7,
+          11,
+          11,
+          18
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          23,
+          67
+        ]
+      }
+    },
+    {
+      "q": 23,
+      "speeds": [
+        1,
+        23,
+        24,
+        47,
+        70,
+        71,
+        117
+      ],
+      "maximum": "23/141",
+      "maximizing_times": [
+        "46/141",
+        "95/141"
+      ],
+      "candidate_times_in_half_period": 775,
+      "formula_matches": true,
+      "witness": {
+        "time": "46/141",
+        "laps": [
+          0,
+          7,
+          7,
+          15,
+          22,
+          23,
+          38
+        ],
+        "phases": [
+          "46/141",
+          "71/141",
+          "39/47",
+          "1/3",
+          "118/141",
+          "23/141",
+          "8/47"
+        ],
+        "distances": [
+          "46/141",
+          "70/141",
+          "8/47",
+          "1/3",
+          "23/141",
+          "23/141",
+          "8/47"
+        ],
+        "minimum": "23/141",
+        "active_speeds": [
+          70,
+          71
+        ]
+      }
+    },
+    {
+      "q": 24,
+      "speeds": [
+        1,
+        24,
+        25,
+        49,
+        73,
+        74,
+        122
+      ],
+      "maximum": "16/97",
+      "maximizing_times": [
+        "33/97",
+        "64/97"
+      ],
+      "candidate_times_in_half_period": 805,
+      "formula_matches": true,
+      "witness": {
+        "time": "33/97",
+        "laps": [
+          0,
+          8,
+          8,
+          16,
+          24,
+          25,
+          41
+        ],
+        "phases": [
+          "33/97",
+          "16/97",
+          "49/97",
+          "65/97",
+          "81/97",
+          "17/97",
+          "49/97"
+        ],
+        "distances": [
+          "33/97",
+          "16/97",
+          "48/97",
+          "32/97",
+          "16/97",
+          "17/97",
+          "48/97"
+        ],
+        "minimum": "16/97",
+        "active_speeds": [
+          24,
+          73
+        ]
+      }
+    },
+    {
+      "q": 25,
+      "speeds": [
+        1,
+        25,
+        26,
+        51,
+        76,
+        77,
+        127
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 846,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          4,
+          4,
+          8,
+          12,
+          12,
+          21
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          25,
+          77,
+          127
+        ]
+      }
+    },
+    {
+      "q": 26,
+      "speeds": [
+        1,
+        26,
+        27,
+        53,
+        79,
+        80,
+        132
+      ],
+      "maximum": "22/133",
+      "maximizing_times": [
+        "23/133",
+        "110/133"
+      ],
+      "candidate_times_in_half_period": 875,
+      "formula_matches": true,
+      "witness": {
+        "time": "23/133",
+        "laps": [
+          0,
+          4,
+          4,
+          9,
+          13,
+          13,
+          22
+        ],
+        "phases": [
+          "23/133",
+          "66/133",
+          "89/133",
+          "22/133",
+          "88/133",
+          "111/133",
+          "110/133"
+        ],
+        "distances": [
+          "23/133",
+          "66/133",
+          "44/133",
+          "22/133",
+          "45/133",
+          "22/133",
+          "23/133"
+        ],
+        "minimum": "22/133",
+        "active_speeds": [
+          53,
+          80
+        ]
+      }
+    },
+    {
+      "q": 27,
+      "speeds": [
+        1,
+        27,
+        28,
+        55,
+        82,
+        83,
+        137
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 913,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          4,
+          4,
+          9,
+          13,
+          13,
+          22
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          55,
+          83,
+          137
+        ]
+      }
+    },
+    {
+      "q": 28,
+      "speeds": [
+        1,
+        28,
+        29,
+        57,
+        85,
+        86,
+        142
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 952,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          4,
+          4,
+          9,
+          14,
+          14,
+          23
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          29,
+          85
+        ]
+      }
+    },
+    {
+      "q": 29,
+      "speeds": [
+        1,
+        29,
+        30,
+        59,
+        88,
+        89,
+        147
+      ],
+      "maximum": "29/177",
+      "maximizing_times": [
+        "58/177",
+        "119/177"
+      ],
+      "candidate_times_in_half_period": 981,
+      "formula_matches": true,
+      "witness": {
+        "time": "58/177",
+        "laps": [
+          0,
+          9,
+          9,
+          19,
+          28,
+          29,
+          48
+        ],
+        "phases": [
+          "58/177",
+          "89/177",
+          "49/59",
+          "1/3",
+          "148/177",
+          "29/177",
+          "10/59"
+        ],
+        "distances": [
+          "58/177",
+          "88/177",
+          "10/59",
+          "1/3",
+          "29/177",
+          "29/177",
+          "10/59"
+        ],
+        "minimum": "29/177",
+        "active_speeds": [
+          88,
+          89
+        ]
+      }
+    },
+    {
+      "q": 30,
+      "speeds": [
+        1,
+        30,
+        31,
+        61,
+        91,
+        92,
+        152
+      ],
+      "maximum": "20/121",
+      "maximizing_times": [
+        "41/121",
+        "80/121"
+      ],
+      "candidate_times_in_half_period": 1011,
+      "formula_matches": true,
+      "witness": {
+        "time": "41/121",
+        "laps": [
+          0,
+          10,
+          10,
+          20,
+          30,
+          31,
+          51
+        ],
+        "phases": [
+          "41/121",
+          "20/121",
+          "61/121",
+          "81/121",
+          "101/121",
+          "21/121",
+          "61/121"
+        ],
+        "distances": [
+          "41/121",
+          "20/121",
+          "60/121",
+          "40/121",
+          "20/121",
+          "21/121",
+          "60/121"
+        ],
+        "minimum": "20/121",
+        "active_speeds": [
+          30,
+          91
+        ]
+      }
+    },
+    {
+      "q": 31,
+      "speeds": [
+        1,
+        31,
+        32,
+        63,
+        94,
+        95,
+        157
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1045,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          5,
+          5,
+          10,
+          15,
+          15,
+          26
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          31,
+          95,
+          157
+        ]
+      }
+    },
+    {
+      "q": 32,
+      "speeds": [
+        1,
+        32,
+        33,
+        65,
+        97,
+        98,
+        162
+      ],
+      "maximum": "27/163",
+      "maximizing_times": [
+        "28/163",
+        "135/163"
+      ],
+      "candidate_times_in_half_period": 1087,
+      "formula_matches": true,
+      "witness": {
+        "time": "28/163",
+        "laps": [
+          0,
+          5,
+          5,
+          11,
+          16,
+          16,
+          27
+        ],
+        "phases": [
+          "28/163",
+          "81/163",
+          "109/163",
+          "27/163",
+          "108/163",
+          "136/163",
+          "135/163"
+        ],
+        "distances": [
+          "28/163",
+          "81/163",
+          "54/163",
+          "27/163",
+          "55/163",
+          "27/163",
+          "28/163"
+        ],
+        "minimum": "27/163",
+        "active_speeds": [
+          65,
+          98
+        ]
+      }
+    },
+    {
+      "q": 33,
+      "speeds": [
+        1,
+        33,
+        34,
+        67,
+        100,
+        101,
+        167
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1106,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          5,
+          5,
+          11,
+          16,
+          16,
+          27
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          67,
+          101,
+          167
+        ]
+      }
+    },
+    {
+      "q": 34,
+      "speeds": [
+        1,
+        34,
+        35,
+        69,
+        103,
+        104,
+        172
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1151,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          5,
+          5,
+          11,
+          17,
+          17,
+          28
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          35,
+          103
+        ]
+      }
+    },
+    {
+      "q": 35,
+      "speeds": [
+        1,
+        35,
+        36,
+        71,
+        106,
+        107,
+        177
+      ],
+      "maximum": "35/213",
+      "maximizing_times": [
+        "70/213",
+        "143/213"
+      ],
+      "candidate_times_in_half_period": 1191,
+      "formula_matches": true,
+      "witness": {
+        "time": "70/213",
+        "laps": [
+          0,
+          11,
+          11,
+          23,
+          34,
+          35,
+          58
+        ],
+        "phases": [
+          "70/213",
+          "107/213",
+          "59/71",
+          "1/3",
+          "178/213",
+          "35/213",
+          "12/71"
+        ],
+        "distances": [
+          "70/213",
+          "106/213",
+          "12/71",
+          "1/3",
+          "35/213",
+          "35/213",
+          "12/71"
+        ],
+        "minimum": "35/213",
+        "active_speeds": [
+          106,
+          107
+        ]
+      }
+    },
+    {
+      "q": 36,
+      "speeds": [
+        1,
+        36,
+        37,
+        73,
+        109,
+        110,
+        182
+      ],
+      "maximum": "24/145",
+      "maximizing_times": [
+        "49/145",
+        "96/145"
+      ],
+      "candidate_times_in_half_period": 1221,
+      "formula_matches": true,
+      "witness": {
+        "time": "49/145",
+        "laps": [
+          0,
+          12,
+          12,
+          24,
+          36,
+          37,
+          61
+        ],
+        "phases": [
+          "49/145",
+          "24/145",
+          "73/145",
+          "97/145",
+          "121/145",
+          "5/29",
+          "73/145"
+        ],
+        "distances": [
+          "49/145",
+          "24/145",
+          "72/145",
+          "48/145",
+          "24/145",
+          "5/29",
+          "72/145"
+        ],
+        "minimum": "24/145",
+        "active_speeds": [
+          36,
+          109
+        ]
+      }
+    },
+    {
+      "q": 37,
+      "speeds": [
+        1,
+        37,
+        38,
+        75,
+        112,
+        113,
+        187
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1256,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          6,
+          6,
+          12,
+          18,
+          18,
+          31
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          37,
+          113,
+          187
+        ]
+      }
+    },
+    {
+      "q": 38,
+      "speeds": [
+        1,
+        38,
+        39,
+        77,
+        115,
+        116,
+        192
+      ],
+      "maximum": "32/193",
+      "maximizing_times": [
+        "33/193",
+        "160/193"
+      ],
+      "candidate_times_in_half_period": 1282,
+      "formula_matches": true,
+      "witness": {
+        "time": "33/193",
+        "laps": [
+          0,
+          6,
+          6,
+          13,
+          19,
+          19,
+          32
+        ],
+        "phases": [
+          "33/193",
+          "96/193",
+          "129/193",
+          "32/193",
+          "128/193",
+          "161/193",
+          "160/193"
+        ],
+        "distances": [
+          "33/193",
+          "96/193",
+          "64/193",
+          "32/193",
+          "65/193",
+          "32/193",
+          "33/193"
+        ],
+        "minimum": "32/193",
+        "active_speeds": [
+          77,
+          116
+        ]
+      }
+    },
+    {
+      "q": 39,
+      "speeds": [
+        1,
+        39,
+        40,
+        79,
+        118,
+        119,
+        197
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1311,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          6,
+          6,
+          13,
+          19,
+          19,
+          32
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          79,
+          119,
+          197
+        ]
+      }
+    },
+    {
+      "q": 40,
+      "speeds": [
+        1,
+        40,
+        41,
+        81,
+        121,
+        122,
+        202
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1360,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          6,
+          6,
+          13,
+          20,
+          20,
+          33
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          41,
+          121
+        ]
+      }
+    },
+    {
+      "q": 41,
+      "speeds": [
+        1,
+        41,
+        42,
+        83,
+        124,
+        125,
+        207
+      ],
+      "maximum": "41/249",
+      "maximizing_times": [
+        "82/249",
+        "167/249"
+      ],
+      "candidate_times_in_half_period": 1383,
+      "formula_matches": true,
+      "witness": {
+        "time": "82/249",
+        "laps": [
+          0,
+          13,
+          13,
+          27,
+          40,
+          41,
+          68
+        ],
+        "phases": [
+          "82/249",
+          "125/249",
+          "69/83",
+          "1/3",
+          "208/249",
+          "41/249",
+          "14/83"
+        ],
+        "distances": [
+          "82/249",
+          "124/249",
+          "14/83",
+          "1/3",
+          "41/249",
+          "41/249",
+          "14/83"
+        ],
+        "minimum": "41/249",
+        "active_speeds": [
+          124,
+          125
+        ]
+      }
+    },
+    {
+      "q": 42,
+      "speeds": [
+        1,
+        42,
+        43,
+        85,
+        127,
+        128,
+        212
+      ],
+      "maximum": "28/169",
+      "maximizing_times": [
+        "57/169",
+        "112/169"
+      ],
+      "candidate_times_in_half_period": 1420,
+      "formula_matches": true,
+      "witness": {
+        "time": "57/169",
+        "laps": [
+          0,
+          14,
+          14,
+          28,
+          42,
+          43,
+          71
+        ],
+        "phases": [
+          "57/169",
+          "28/169",
+          "85/169",
+          "113/169",
+          "141/169",
+          "29/169",
+          "85/169"
+        ],
+        "distances": [
+          "57/169",
+          "28/169",
+          "84/169",
+          "56/169",
+          "28/169",
+          "29/169",
+          "84/169"
+        ],
+        "minimum": "28/169",
+        "active_speeds": [
+          42,
+          127
+        ]
+      }
+    },
+    {
+      "q": 43,
+      "speeds": [
+        1,
+        43,
+        44,
+        87,
+        130,
+        131,
+        217
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1452,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          7,
+          7,
+          14,
+          21,
+          21,
+          36
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          43,
+          131,
+          217
+        ]
+      }
+    },
+    {
+      "q": 44,
+      "speeds": [
+        1,
+        44,
+        45,
+        89,
+        133,
+        134,
+        222
+      ],
+      "maximum": "37/223",
+      "maximizing_times": [
+        "38/223",
+        "185/223"
+      ],
+      "candidate_times_in_half_period": 1499,
+      "formula_matches": true,
+      "witness": {
+        "time": "38/223",
+        "laps": [
+          0,
+          7,
+          7,
+          15,
+          22,
+          22,
+          37
+        ],
+        "phases": [
+          "38/223",
+          "111/223",
+          "149/223",
+          "37/223",
+          "148/223",
+          "186/223",
+          "185/223"
+        ],
+        "distances": [
+          "38/223",
+          "111/223",
+          "74/223",
+          "37/223",
+          "75/223",
+          "37/223",
+          "38/223"
+        ],
+        "minimum": "37/223",
+        "active_speeds": [
+          89,
+          134
+        ]
+      }
+    },
+    {
+      "q": 45,
+      "speeds": [
+        1,
+        45,
+        46,
+        91,
+        136,
+        137,
+        227
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1529,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          7,
+          7,
+          15,
+          22,
+          22,
+          37
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          91,
+          137,
+          227
+        ]
+      }
+    },
+    {
+      "q": 46,
+      "speeds": [
+        1,
+        46,
+        47,
+        93,
+        139,
+        140,
+        232
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1551,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          7,
+          7,
+          15,
+          23,
+          23,
+          38
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          47,
+          139
+        ]
+      }
+    },
+    {
+      "q": 47,
+      "speeds": [
+        1,
+        47,
+        48,
+        95,
+        142,
+        143,
+        237
+      ],
+      "maximum": "47/285",
+      "maximizing_times": [
+        "94/285",
+        "191/285"
+      ],
+      "candidate_times_in_half_period": 1592,
+      "formula_matches": true,
+      "witness": {
+        "time": "94/285",
+        "laps": [
+          0,
+          15,
+          15,
+          31,
+          46,
+          47,
+          78
+        ],
+        "phases": [
+          "94/285",
+          "143/285",
+          "79/95",
+          "1/3",
+          "238/285",
+          "47/285",
+          "16/95"
+        ],
+        "distances": [
+          "94/285",
+          "142/285",
+          "16/95",
+          "1/3",
+          "47/285",
+          "47/285",
+          "16/95"
+        ],
+        "minimum": "47/285",
+        "active_speeds": [
+          142,
+          143
+        ]
+      }
+    },
+    {
+      "q": 48,
+      "speeds": [
+        1,
+        48,
+        49,
+        97,
+        145,
+        146,
+        242
+      ],
+      "maximum": "32/193",
+      "maximizing_times": [
+        "65/193",
+        "128/193"
+      ],
+      "candidate_times_in_half_period": 1627,
+      "formula_matches": true,
+      "witness": {
+        "time": "65/193",
+        "laps": [
+          0,
+          16,
+          16,
+          32,
+          48,
+          49,
+          81
+        ],
+        "phases": [
+          "65/193",
+          "32/193",
+          "97/193",
+          "129/193",
+          "161/193",
+          "33/193",
+          "97/193"
+        ],
+        "distances": [
+          "65/193",
+          "32/193",
+          "96/193",
+          "64/193",
+          "32/193",
+          "33/193",
+          "96/193"
+        ],
+        "minimum": "32/193",
+        "active_speeds": [
+          48,
+          145
+        ]
+      }
+    },
+    {
+      "q": 49,
+      "speeds": [
+        1,
+        49,
+        50,
+        99,
+        148,
+        149,
+        247
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1666,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          8,
+          8,
+          16,
+          24,
+          24,
+          41
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          49,
+          149,
+          247
+        ]
+      }
+    },
+    {
+      "q": 50,
+      "speeds": [
+        1,
+        50,
+        51,
+        101,
+        151,
+        152,
+        252
+      ],
+      "maximum": "42/253",
+      "maximizing_times": [
+        "43/253",
+        "210/253"
+      ],
+      "candidate_times_in_half_period": 1689,
+      "formula_matches": true,
+      "witness": {
+        "time": "43/253",
+        "laps": [
+          0,
+          8,
+          8,
+          17,
+          25,
+          25,
+          42
+        ],
+        "phases": [
+          "43/253",
+          "126/253",
+          "169/253",
+          "42/253",
+          "168/253",
+          "211/253",
+          "210/253"
+        ],
+        "distances": [
+          "43/253",
+          "126/253",
+          "84/253",
+          "42/253",
+          "85/253",
+          "42/253",
+          "43/253"
+        ],
+        "minimum": "42/253",
+        "active_speeds": [
+          101,
+          152
+        ]
+      }
+    },
+    {
+      "q": 51,
+      "speeds": [
+        1,
+        51,
+        52,
+        103,
+        154,
+        155,
+        257
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1720,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          8,
+          8,
+          17,
+          25,
+          25,
+          42
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          103,
+          155,
+          257
+        ]
+      }
+    },
+    {
+      "q": 52,
+      "speeds": [
+        1,
+        52,
+        53,
+        105,
+        157,
+        158,
+        262
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1771,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          8,
+          8,
+          17,
+          26,
+          26,
+          43
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          53,
+          157
+        ]
+      }
+    },
+    {
+      "q": 53,
+      "speeds": [
+        1,
+        53,
+        54,
+        107,
+        160,
+        161,
+        267
+      ],
+      "maximum": "53/321",
+      "maximizing_times": [
+        "106/321",
+        "215/321"
+      ],
+      "candidate_times_in_half_period": 1793,
+      "formula_matches": true,
+      "witness": {
+        "time": "106/321",
+        "laps": [
+          0,
+          17,
+          17,
+          35,
+          52,
+          53,
+          88
+        ],
+        "phases": [
+          "106/321",
+          "161/321",
+          "89/107",
+          "1/3",
+          "268/321",
+          "53/321",
+          "18/107"
+        ],
+        "distances": [
+          "106/321",
+          "160/321",
+          "18/107",
+          "1/3",
+          "53/321",
+          "53/321",
+          "18/107"
+        ],
+        "minimum": "53/321",
+        "active_speeds": [
+          160,
+          161
+        ]
+      }
+    },
+    {
+      "q": 54,
+      "speeds": [
+        1,
+        54,
+        55,
+        109,
+        163,
+        164,
+        272
+      ],
+      "maximum": "36/217",
+      "maximizing_times": [
+        "73/217",
+        "144/217"
+      ],
+      "candidate_times_in_half_period": 1822,
+      "formula_matches": true,
+      "witness": {
+        "time": "73/217",
+        "laps": [
+          0,
+          18,
+          18,
+          36,
+          54,
+          55,
+          91
+        ],
+        "phases": [
+          "73/217",
+          "36/217",
+          "109/217",
+          "145/217",
+          "181/217",
+          "37/217",
+          "109/217"
+        ],
+        "distances": [
+          "73/217",
+          "36/217",
+          "108/217",
+          "72/217",
+          "36/217",
+          "37/217",
+          "108/217"
+        ],
+        "minimum": "36/217",
+        "active_speeds": [
+          54,
+          163
+        ]
+      }
+    },
+    {
+      "q": 55,
+      "speeds": [
+        1,
+        55,
+        56,
+        111,
+        166,
+        167,
+        277
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1872,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          9,
+          9,
+          18,
+          27,
+          27,
+          46
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          55,
+          167,
+          277
+        ]
+      }
+    },
+    {
+      "q": 56,
+      "speeds": [
+        1,
+        56,
+        57,
+        113,
+        169,
+        170,
+        282
+      ],
+      "maximum": "47/283",
+      "maximizing_times": [
+        "48/283",
+        "235/283"
+      ],
+      "candidate_times_in_half_period": 1902,
+      "formula_matches": true,
+      "witness": {
+        "time": "48/283",
+        "laps": [
+          0,
+          9,
+          9,
+          19,
+          28,
+          28,
+          47
+        ],
+        "phases": [
+          "48/283",
+          "141/283",
+          "189/283",
+          "47/283",
+          "188/283",
+          "236/283",
+          "235/283"
+        ],
+        "distances": [
+          "48/283",
+          "141/283",
+          "94/283",
+          "47/283",
+          "95/283",
+          "47/283",
+          "48/283"
+        ],
+        "minimum": "47/283",
+        "active_speeds": [
+          113,
+          170
+        ]
+      }
+    },
+    {
+      "q": 57,
+      "speeds": [
+        1,
+        57,
+        58,
+        115,
+        172,
+        173,
+        287
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1929,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          9,
+          9,
+          19,
+          28,
+          28,
+          47
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          115,
+          173,
+          287
+        ]
+      }
+    },
+    {
+      "q": 58,
+      "speeds": [
+        1,
+        58,
+        59,
+        117,
+        175,
+        176,
+        292
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 1966,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          9,
+          9,
+          19,
+          29,
+          29,
+          48
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          59,
+          175
+        ]
+      }
+    },
+    {
+      "q": 59,
+      "speeds": [
+        1,
+        59,
+        60,
+        119,
+        178,
+        179,
+        297
+      ],
+      "maximum": "59/357",
+      "maximizing_times": [
+        "118/357",
+        "239/357"
+      ],
+      "candidate_times_in_half_period": 1999,
+      "formula_matches": true,
+      "witness": {
+        "time": "118/357",
+        "laps": [
+          0,
+          19,
+          19,
+          39,
+          58,
+          59,
+          98
+        ],
+        "phases": [
+          "118/357",
+          "179/357",
+          "99/119",
+          "1/3",
+          "298/357",
+          "59/357",
+          "20/119"
+        ],
+        "distances": [
+          "118/357",
+          "178/357",
+          "20/119",
+          "1/3",
+          "59/357",
+          "59/357",
+          "20/119"
+        ],
+        "minimum": "59/357",
+        "active_speeds": [
+          178,
+          179
+        ]
+      }
+    },
+    {
+      "q": 60,
+      "speeds": [
+        1,
+        60,
+        61,
+        121,
+        181,
+        182,
+        302
+      ],
+      "maximum": "40/241",
+      "maximizing_times": [
+        "81/241",
+        "160/241"
+      ],
+      "candidate_times_in_half_period": 2038,
+      "formula_matches": true,
+      "witness": {
+        "time": "81/241",
+        "laps": [
+          0,
+          20,
+          20,
+          40,
+          60,
+          61,
+          101
+        ],
+        "phases": [
+          "81/241",
+          "40/241",
+          "121/241",
+          "161/241",
+          "201/241",
+          "41/241",
+          "121/241"
+        ],
+        "distances": [
+          "81/241",
+          "40/241",
+          "120/241",
+          "80/241",
+          "40/241",
+          "41/241",
+          "120/241"
+        ],
+        "minimum": "40/241",
+        "active_speeds": [
+          60,
+          181
+        ]
+      }
+    },
+    {
+      "q": 61,
+      "speeds": [
+        1,
+        61,
+        62,
+        123,
+        184,
+        185,
+        307
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2063,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          10,
+          10,
+          20,
+          30,
+          30,
+          51
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          61,
+          185,
+          307
+        ]
+      }
+    },
+    {
+      "q": 62,
+      "speeds": [
+        1,
+        62,
+        63,
+        125,
+        187,
+        188,
+        312
+      ],
+      "maximum": "52/313",
+      "maximizing_times": [
+        "53/313",
+        "260/313"
+      ],
+      "candidate_times_in_half_period": 2103,
+      "formula_matches": true,
+      "witness": {
+        "time": "53/313",
+        "laps": [
+          0,
+          10,
+          10,
+          21,
+          31,
+          31,
+          52
+        ],
+        "phases": [
+          "53/313",
+          "156/313",
+          "209/313",
+          "52/313",
+          "208/313",
+          "261/313",
+          "260/313"
+        ],
+        "distances": [
+          "53/313",
+          "156/313",
+          "104/313",
+          "52/313",
+          "105/313",
+          "52/313",
+          "53/313"
+        ],
+        "minimum": "52/313",
+        "active_speeds": [
+          125,
+          188
+        ]
+      }
+    },
+    {
+      "q": 63,
+      "speeds": [
+        1,
+        63,
+        64,
+        127,
+        190,
+        191,
+        317
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2129,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          10,
+          10,
+          21,
+          31,
+          31,
+          52
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          127,
+          191,
+          317
+        ]
+      }
+    },
+    {
+      "q": 64,
+      "speeds": [
+        1,
+        64,
+        65,
+        129,
+        193,
+        194,
+        322
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2172,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          10,
+          10,
+          21,
+          32,
+          32,
+          53
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          65,
+          193
+        ]
+      }
+    },
+    {
+      "q": 65,
+      "speeds": [
+        1,
+        65,
+        66,
+        131,
+        196,
+        197,
+        327
+      ],
+      "maximum": "65/393",
+      "maximizing_times": [
+        "130/393",
+        "263/393"
+      ],
+      "candidate_times_in_half_period": 2208,
+      "formula_matches": true,
+      "witness": {
+        "time": "130/393",
+        "laps": [
+          0,
+          21,
+          21,
+          43,
+          64,
+          65,
+          108
+        ],
+        "phases": [
+          "130/393",
+          "197/393",
+          "109/131",
+          "1/3",
+          "328/393",
+          "65/393",
+          "22/131"
+        ],
+        "distances": [
+          "130/393",
+          "196/393",
+          "22/131",
+          "1/3",
+          "65/393",
+          "65/393",
+          "22/131"
+        ],
+        "minimum": "65/393",
+        "active_speeds": [
+          196,
+          197
+        ]
+      }
+    },
+    {
+      "q": 66,
+      "speeds": [
+        1,
+        66,
+        67,
+        133,
+        199,
+        200,
+        332
+      ],
+      "maximum": "44/265",
+      "maximizing_times": [
+        "89/265",
+        "176/265"
+      ],
+      "candidate_times_in_half_period": 2237,
+      "formula_matches": true,
+      "witness": {
+        "time": "89/265",
+        "laps": [
+          0,
+          22,
+          22,
+          44,
+          66,
+          67,
+          111
+        ],
+        "phases": [
+          "89/265",
+          "44/265",
+          "133/265",
+          "177/265",
+          "221/265",
+          "9/53",
+          "133/265"
+        ],
+        "distances": [
+          "89/265",
+          "44/265",
+          "132/265",
+          "88/265",
+          "44/265",
+          "9/53",
+          "132/265"
+        ],
+        "minimum": "44/265",
+        "active_speeds": [
+          66,
+          199
+        ]
+      }
+    },
+    {
+      "q": 67,
+      "speeds": [
+        1,
+        67,
+        68,
+        135,
+        202,
+        203,
+        337
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2275,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          11,
+          11,
+          22,
+          33,
+          33,
+          56
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          67,
+          203,
+          337
+        ]
+      }
+    },
+    {
+      "q": 68,
+      "speeds": [
+        1,
+        68,
+        69,
+        137,
+        205,
+        206,
+        342
+      ],
+      "maximum": "57/343",
+      "maximizing_times": [
+        "58/343",
+        "285/343"
+      ],
+      "candidate_times_in_half_period": 2302,
+      "formula_matches": true,
+      "witness": {
+        "time": "58/343",
+        "laps": [
+          0,
+          11,
+          11,
+          23,
+          34,
+          34,
+          57
+        ],
+        "phases": [
+          "58/343",
+          "171/343",
+          "229/343",
+          "57/343",
+          "228/343",
+          "286/343",
+          "285/343"
+        ],
+        "distances": [
+          "58/343",
+          "171/343",
+          "114/343",
+          "57/343",
+          "115/343",
+          "57/343",
+          "58/343"
+        ],
+        "minimum": "57/343",
+        "active_speeds": [
+          137,
+          206
+        ]
+      }
+    },
+    {
+      "q": 69,
+      "speeds": [
+        1,
+        69,
+        70,
+        139,
+        208,
+        209,
+        347
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2336,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          11,
+          11,
+          23,
+          34,
+          34,
+          57
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          139,
+          209,
+          347
+        ]
+      }
+    },
+    {
+      "q": 70,
+      "speeds": [
+        1,
+        70,
+        71,
+        141,
+        211,
+        212,
+        352
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2375,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          11,
+          11,
+          23,
+          35,
+          35,
+          58
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          71,
+          211
+        ]
+      }
+    },
+    {
+      "q": 71,
+      "speeds": [
+        1,
+        71,
+        72,
+        143,
+        214,
+        215,
+        357
+      ],
+      "maximum": "71/429",
+      "maximizing_times": [
+        "142/429",
+        "287/429"
+      ],
+      "candidate_times_in_half_period": 2408,
+      "formula_matches": true,
+      "witness": {
+        "time": "142/429",
+        "laps": [
+          0,
+          23,
+          23,
+          47,
+          70,
+          71,
+          118
+        ],
+        "phases": [
+          "142/429",
+          "215/429",
+          "119/143",
+          "1/3",
+          "358/429",
+          "71/429",
+          "24/143"
+        ],
+        "distances": [
+          "142/429",
+          "214/429",
+          "24/143",
+          "1/3",
+          "71/429",
+          "71/429",
+          "24/143"
+        ],
+        "minimum": "71/429",
+        "active_speeds": [
+          214,
+          215
+        ]
+      }
+    },
+    {
+      "q": 72,
+      "speeds": [
+        1,
+        72,
+        73,
+        145,
+        217,
+        218,
+        362
+      ],
+      "maximum": "48/289",
+      "maximizing_times": [
+        "97/289",
+        "192/289"
+      ],
+      "candidate_times_in_half_period": 2452,
+      "formula_matches": true,
+      "witness": {
+        "time": "97/289",
+        "laps": [
+          0,
+          24,
+          24,
+          48,
+          72,
+          73,
+          121
+        ],
+        "phases": [
+          "97/289",
+          "48/289",
+          "145/289",
+          "193/289",
+          "241/289",
+          "49/289",
+          "145/289"
+        ],
+        "distances": [
+          "97/289",
+          "48/289",
+          "144/289",
+          "96/289",
+          "48/289",
+          "49/289",
+          "144/289"
+        ],
+        "minimum": "48/289",
+        "active_speeds": [
+          72,
+          217
+        ]
+      }
+    },
+    {
+      "q": 73,
+      "speeds": [
+        1,
+        73,
+        74,
+        147,
+        220,
+        221,
+        367
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2480,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          12,
+          12,
+          24,
+          36,
+          36,
+          61
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          73,
+          221,
+          367
+        ]
+      }
+    },
+    {
+      "q": 74,
+      "speeds": [
+        1,
+        74,
+        75,
+        149,
+        223,
+        224,
+        372
+      ],
+      "maximum": "62/373",
+      "maximizing_times": [
+        "63/373",
+        "310/373"
+      ],
+      "candidate_times_in_half_period": 2509,
+      "formula_matches": true,
+      "witness": {
+        "time": "63/373",
+        "laps": [
+          0,
+          12,
+          12,
+          25,
+          37,
+          37,
+          62
+        ],
+        "phases": [
+          "63/373",
+          "186/373",
+          "249/373",
+          "62/373",
+          "248/373",
+          "311/373",
+          "310/373"
+        ],
+        "distances": [
+          "63/373",
+          "186/373",
+          "124/373",
+          "62/373",
+          "125/373",
+          "62/373",
+          "63/373"
+        ],
+        "minimum": "62/373",
+        "active_speeds": [
+          149,
+          224
+        ]
+      }
+    },
+    {
+      "q": 75,
+      "speeds": [
+        1,
+        75,
+        76,
+        151,
+        226,
+        227,
+        377
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2531,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          12,
+          12,
+          25,
+          37,
+          37,
+          62
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          151,
+          227,
+          377
+        ]
+      }
+    },
+    {
+      "q": 76,
+      "speeds": [
+        1,
+        76,
+        77,
+        153,
+        229,
+        230,
+        382
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2580,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          12,
+          12,
+          25,
+          38,
+          38,
+          63
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          77,
+          229
+        ]
+      }
+    },
+    {
+      "q": 77,
+      "speeds": [
+        1,
+        77,
+        78,
+        155,
+        232,
+        233,
+        387
+      ],
+      "maximum": "77/465",
+      "maximizing_times": [
+        "154/465",
+        "311/465"
+      ],
+      "candidate_times_in_half_period": 2615,
+      "formula_matches": true,
+      "witness": {
+        "time": "154/465",
+        "laps": [
+          0,
+          25,
+          25,
+          51,
+          76,
+          77,
+          128
+        ],
+        "phases": [
+          "154/465",
+          "233/465",
+          "129/155",
+          "1/3",
+          "388/465",
+          "77/465",
+          "26/155"
+        ],
+        "distances": [
+          "154/465",
+          "232/465",
+          "26/155",
+          "1/3",
+          "77/465",
+          "77/465",
+          "26/155"
+        ],
+        "minimum": "77/465",
+        "active_speeds": [
+          232,
+          233
+        ]
+      }
+    },
+    {
+      "q": 78,
+      "speeds": [
+        1,
+        78,
+        79,
+        157,
+        235,
+        236,
+        392
+      ],
+      "maximum": "52/313",
+      "maximizing_times": [
+        "105/313",
+        "208/313"
+      ],
+      "candidate_times_in_half_period": 2634,
+      "formula_matches": true,
+      "witness": {
+        "time": "105/313",
+        "laps": [
+          0,
+          26,
+          26,
+          52,
+          78,
+          79,
+          131
+        ],
+        "phases": [
+          "105/313",
+          "52/313",
+          "157/313",
+          "209/313",
+          "261/313",
+          "53/313",
+          "157/313"
+        ],
+        "distances": [
+          "105/313",
+          "52/313",
+          "156/313",
+          "104/313",
+          "52/313",
+          "53/313",
+          "156/313"
+        ],
+        "minimum": "52/313",
+        "active_speeds": [
+          78,
+          235
+        ]
+      }
+    },
+    {
+      "q": 79,
+      "speeds": [
+        1,
+        79,
+        80,
+        159,
+        238,
+        239,
+        397
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2683,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          13,
+          13,
+          26,
+          39,
+          39,
+          66
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          79,
+          239,
+          397
+        ]
+      }
+    },
+    {
+      "q": 80,
+      "speeds": [
+        1,
+        80,
+        81,
+        161,
+        241,
+        242,
+        402
+      ],
+      "maximum": "67/403",
+      "maximizing_times": [
+        "68/403",
+        "335/403"
+      ],
+      "candidate_times_in_half_period": 2725,
+      "formula_matches": true,
+      "witness": {
+        "time": "68/403",
+        "laps": [
+          0,
+          13,
+          13,
+          27,
+          40,
+          40,
+          67
+        ],
+        "phases": [
+          "68/403",
+          "201/403",
+          "269/403",
+          "67/403",
+          "268/403",
+          "336/403",
+          "335/403"
+        ],
+        "distances": [
+          "68/403",
+          "201/403",
+          "134/403",
+          "67/403",
+          "135/403",
+          "67/403",
+          "68/403"
+        ],
+        "minimum": "67/403",
+        "active_speeds": [
+          161,
+          242
+        ]
+      }
+    },
+    {
+      "q": 81,
+      "speeds": [
+        1,
+        81,
+        82,
+        163,
+        244,
+        245,
+        407
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2742,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          13,
+          13,
+          27,
+          40,
+          40,
+          67
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          163,
+          245,
+          407
+        ]
+      }
+    },
+    {
+      "q": 82,
+      "speeds": [
+        1,
+        82,
+        83,
+        165,
+        247,
+        248,
+        412
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2782,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          13,
+          13,
+          27,
+          41,
+          41,
+          68
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          83,
+          247
+        ]
+      }
+    },
+    {
+      "q": 83,
+      "speeds": [
+        1,
+        83,
+        84,
+        167,
+        250,
+        251,
+        417
+      ],
+      "maximum": "83/501",
+      "maximizing_times": [
+        "166/501",
+        "335/501"
+      ],
+      "candidate_times_in_half_period": 2816,
+      "formula_matches": true,
+      "witness": {
+        "time": "166/501",
+        "laps": [
+          0,
+          27,
+          27,
+          55,
+          82,
+          83,
+          138
+        ],
+        "phases": [
+          "166/501",
+          "251/501",
+          "139/167",
+          "1/3",
+          "418/501",
+          "83/501",
+          "28/167"
+        ],
+        "distances": [
+          "166/501",
+          "250/501",
+          "28/167",
+          "1/3",
+          "83/501",
+          "83/501",
+          "28/167"
+        ],
+        "minimum": "83/501",
+        "active_speeds": [
+          250,
+          251
+        ]
+      }
+    },
+    {
+      "q": 84,
+      "speeds": [
+        1,
+        84,
+        85,
+        169,
+        253,
+        254,
+        422
+      ],
+      "maximum": "56/337",
+      "maximizing_times": [
+        "113/337",
+        "224/337"
+      ],
+      "candidate_times_in_half_period": 2851,
+      "formula_matches": true,
+      "witness": {
+        "time": "113/337",
+        "laps": [
+          0,
+          28,
+          28,
+          56,
+          84,
+          85,
+          141
+        ],
+        "phases": [
+          "113/337",
+          "56/337",
+          "169/337",
+          "225/337",
+          "281/337",
+          "57/337",
+          "169/337"
+        ],
+        "distances": [
+          "113/337",
+          "56/337",
+          "168/337",
+          "112/337",
+          "56/337",
+          "57/337",
+          "168/337"
+        ],
+        "minimum": "56/337",
+        "active_speeds": [
+          84,
+          253
+        ]
+      }
+    },
+    {
+      "q": 85,
+      "speeds": [
+        1,
+        85,
+        86,
+        171,
+        256,
+        257,
+        427
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2891,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          14,
+          14,
+          28,
+          42,
+          42,
+          71
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          85,
+          257,
+          427
+        ]
+      }
+    },
+    {
+      "q": 86,
+      "speeds": [
+        1,
+        86,
+        87,
+        173,
+        259,
+        260,
+        432
+      ],
+      "maximum": "72/433",
+      "maximizing_times": [
+        "73/433",
+        "360/433"
+      ],
+      "candidate_times_in_half_period": 2911,
+      "formula_matches": true,
+      "witness": {
+        "time": "73/433",
+        "laps": [
+          0,
+          14,
+          14,
+          29,
+          43,
+          43,
+          72
+        ],
+        "phases": [
+          "73/433",
+          "216/433",
+          "289/433",
+          "72/433",
+          "288/433",
+          "361/433",
+          "360/433"
+        ],
+        "distances": [
+          "73/433",
+          "216/433",
+          "144/433",
+          "72/433",
+          "145/433",
+          "72/433",
+          "73/433"
+        ],
+        "minimum": "72/433",
+        "active_speeds": [
+          173,
+          260
+        ]
+      }
+    },
+    {
+      "q": 87,
+      "speeds": [
+        1,
+        87,
+        88,
+        175,
+        262,
+        263,
+        437
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2952,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          14,
+          14,
+          29,
+          43,
+          43,
+          72
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          175,
+          263,
+          437
+        ]
+      }
+    },
+    {
+      "q": 88,
+      "speeds": [
+        1,
+        88,
+        89,
+        177,
+        265,
+        266,
+        442
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 2986,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          14,
+          14,
+          29,
+          44,
+          44,
+          73
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          89,
+          265
+        ]
+      }
+    },
+    {
+      "q": 89,
+      "speeds": [
+        1,
+        89,
+        90,
+        179,
+        268,
+        269,
+        447
+      ],
+      "maximum": "89/537",
+      "maximizing_times": [
+        "178/537",
+        "359/537"
+      ],
+      "candidate_times_in_half_period": 3013,
+      "formula_matches": true,
+      "witness": {
+        "time": "178/537",
+        "laps": [
+          0,
+          29,
+          29,
+          59,
+          88,
+          89,
+          148
+        ],
+        "phases": [
+          "178/537",
+          "269/537",
+          "149/179",
+          "1/3",
+          "448/537",
+          "89/537",
+          "30/179"
+        ],
+        "distances": [
+          "178/537",
+          "268/537",
+          "30/179",
+          "1/3",
+          "89/537",
+          "89/537",
+          "30/179"
+        ],
+        "minimum": "89/537",
+        "active_speeds": [
+          268,
+          269
+        ]
+      }
+    },
+    {
+      "q": 90,
+      "speeds": [
+        1,
+        90,
+        91,
+        181,
+        271,
+        272,
+        452
+      ],
+      "maximum": "60/361",
+      "maximizing_times": [
+        "121/361",
+        "240/361"
+      ],
+      "candidate_times_in_half_period": 3060,
+      "formula_matches": true,
+      "witness": {
+        "time": "121/361",
+        "laps": [
+          0,
+          30,
+          30,
+          60,
+          90,
+          91,
+          151
+        ],
+        "phases": [
+          "121/361",
+          "60/361",
+          "181/361",
+          "241/361",
+          "301/361",
+          "61/361",
+          "181/361"
+        ],
+        "distances": [
+          "121/361",
+          "60/361",
+          "180/361",
+          "120/361",
+          "60/361",
+          "61/361",
+          "180/361"
+        ],
+        "minimum": "60/361",
+        "active_speeds": [
+          90,
+          271
+        ]
+      }
+    },
+    {
+      "q": 91,
+      "speeds": [
+        1,
+        91,
+        92,
+        183,
+        274,
+        275,
+        457
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3088,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          15,
+          15,
+          30,
+          45,
+          45,
+          76
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          91,
+          275,
+          457
+        ]
+      }
+    },
+    {
+      "q": 92,
+      "speeds": [
+        1,
+        92,
+        93,
+        185,
+        277,
+        278,
+        462
+      ],
+      "maximum": "77/463",
+      "maximizing_times": [
+        "78/463",
+        "385/463"
+      ],
+      "candidate_times_in_half_period": 3127,
+      "formula_matches": true,
+      "witness": {
+        "time": "78/463",
+        "laps": [
+          0,
+          15,
+          15,
+          31,
+          46,
+          46,
+          77
+        ],
+        "phases": [
+          "78/463",
+          "231/463",
+          "309/463",
+          "77/463",
+          "308/463",
+          "386/463",
+          "385/463"
+        ],
+        "distances": [
+          "78/463",
+          "231/463",
+          "154/463",
+          "77/463",
+          "155/463",
+          "77/463",
+          "78/463"
+        ],
+        "minimum": "77/463",
+        "active_speeds": [
+          185,
+          278
+        ]
+      }
+    },
+    {
+      "q": 93,
+      "speeds": [
+        1,
+        93,
+        94,
+        187,
+        280,
+        281,
+        467
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3154,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          15,
+          15,
+          31,
+          46,
+          46,
+          77
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          187,
+          281,
+          467
+        ]
+      }
+    },
+    {
+      "q": 94,
+      "speeds": [
+        1,
+        94,
+        95,
+        189,
+        283,
+        284,
+        472
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3188,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          15,
+          15,
+          31,
+          47,
+          47,
+          78
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          95,
+          283
+        ]
+      }
+    },
+    {
+      "q": 95,
+      "speeds": [
+        1,
+        95,
+        96,
+        191,
+        286,
+        287,
+        477
+      ],
+      "maximum": "95/573",
+      "maximizing_times": [
+        "190/573",
+        "383/573"
+      ],
+      "candidate_times_in_half_period": 3224,
+      "formula_matches": true,
+      "witness": {
+        "time": "190/573",
+        "laps": [
+          0,
+          31,
+          31,
+          63,
+          94,
+          95,
+          158
+        ],
+        "phases": [
+          "190/573",
+          "287/573",
+          "159/191",
+          "1/3",
+          "478/573",
+          "95/573",
+          "32/191"
+        ],
+        "distances": [
+          "190/573",
+          "286/573",
+          "32/191",
+          "1/3",
+          "95/573",
+          "95/573",
+          "32/191"
+        ],
+        "minimum": "95/573",
+        "active_speeds": [
+          286,
+          287
+        ]
+      }
+    },
+    {
+      "q": 96,
+      "speeds": [
+        1,
+        96,
+        97,
+        193,
+        289,
+        290,
+        482
+      ],
+      "maximum": "64/385",
+      "maximizing_times": [
+        "129/385",
+        "256/385"
+      ],
+      "candidate_times_in_half_period": 3255,
+      "formula_matches": true,
+      "witness": {
+        "time": "129/385",
+        "laps": [
+          0,
+          32,
+          32,
+          64,
+          96,
+          97,
+          161
+        ],
+        "phases": [
+          "129/385",
+          "64/385",
+          "193/385",
+          "257/385",
+          "321/385",
+          "13/77",
+          "193/385"
+        ],
+        "distances": [
+          "129/385",
+          "64/385",
+          "192/385",
+          "128/385",
+          "64/385",
+          "13/77",
+          "192/385"
+        ],
+        "minimum": "64/385",
+        "active_speeds": [
+          96,
+          289
+        ]
+      }
+    },
+    {
+      "q": 97,
+      "speeds": [
+        1,
+        97,
+        98,
+        195,
+        292,
+        293,
+        487
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3292,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          16,
+          16,
+          32,
+          48,
+          48,
+          81
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          97,
+          293,
+          487
+        ]
+      }
+    },
+    {
+      "q": 98,
+      "speeds": [
+        1,
+        98,
+        99,
+        197,
+        295,
+        296,
+        492
+      ],
+      "maximum": "82/493",
+      "maximizing_times": [
+        "83/493",
+        "410/493"
+      ],
+      "candidate_times_in_half_period": 3327,
+      "formula_matches": true,
+      "witness": {
+        "time": "83/493",
+        "laps": [
+          0,
+          16,
+          16,
+          33,
+          49,
+          49,
+          82
+        ],
+        "phases": [
+          "83/493",
+          "246/493",
+          "329/493",
+          "82/493",
+          "328/493",
+          "411/493",
+          "410/493"
+        ],
+        "distances": [
+          "83/493",
+          "246/493",
+          "164/493",
+          "82/493",
+          "165/493",
+          "82/493",
+          "83/493"
+        ],
+        "minimum": "82/493",
+        "active_speeds": [
+          197,
+          296
+        ]
+      }
+    },
+    {
+      "q": 99,
+      "speeds": [
+        1,
+        99,
+        100,
+        199,
+        298,
+        299,
+        497
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3352,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          16,
+          16,
+          33,
+          49,
+          49,
+          82
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          199,
+          299,
+          497
+        ]
+      }
+    },
+    {
+      "q": 100,
+      "speeds": [
+        1,
+        100,
+        101,
+        201,
+        301,
+        302,
+        502
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3406,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          16,
+          16,
+          33,
+          50,
+          50,
+          83
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          101,
+          301
+        ]
+      }
+    },
+    {
+      "q": 101,
+      "speeds": [
+        1,
+        101,
+        102,
+        203,
+        304,
+        305,
+        507
+      ],
+      "maximum": "101/609",
+      "maximizing_times": [
+        "202/609",
+        "407/609"
+      ],
+      "candidate_times_in_half_period": 3428,
+      "formula_matches": true,
+      "witness": {
+        "time": "202/609",
+        "laps": [
+          0,
+          33,
+          33,
+          67,
+          100,
+          101,
+          168
+        ],
+        "phases": [
+          "202/609",
+          "305/609",
+          "169/203",
+          "1/3",
+          "508/609",
+          "101/609",
+          "34/203"
+        ],
+        "distances": [
+          "202/609",
+          "304/609",
+          "34/203",
+          "1/3",
+          "101/609",
+          "101/609",
+          "34/203"
+        ],
+        "minimum": "101/609",
+        "active_speeds": [
+          304,
+          305
+        ]
+      }
+    },
+    {
+      "q": 102,
+      "speeds": [
+        1,
+        102,
+        103,
+        205,
+        307,
+        308,
+        512
+      ],
+      "maximum": "68/409",
+      "maximizing_times": [
+        "137/409",
+        "272/409"
+      ],
+      "candidate_times_in_half_period": 3454,
+      "formula_matches": true,
+      "witness": {
+        "time": "137/409",
+        "laps": [
+          0,
+          34,
+          34,
+          68,
+          102,
+          103,
+          171
+        ],
+        "phases": [
+          "137/409",
+          "68/409",
+          "205/409",
+          "273/409",
+          "341/409",
+          "69/409",
+          "205/409"
+        ],
+        "distances": [
+          "137/409",
+          "68/409",
+          "204/409",
+          "136/409",
+          "68/409",
+          "69/409",
+          "204/409"
+        ],
+        "minimum": "68/409",
+        "active_speeds": [
+          102,
+          307
+        ]
+      }
+    },
+    {
+      "q": 103,
+      "speeds": [
+        1,
+        103,
+        104,
+        207,
+        310,
+        311,
+        517
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3494,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          17,
+          17,
+          34,
+          51,
+          51,
+          86
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          103,
+          311,
+          517
+        ]
+      }
+    },
+    {
+      "q": 104,
+      "speeds": [
+        1,
+        104,
+        105,
+        209,
+        313,
+        314,
+        522
+      ],
+      "maximum": "87/523",
+      "maximizing_times": [
+        "88/523",
+        "435/523"
+      ],
+      "candidate_times_in_half_period": 3536,
+      "formula_matches": true,
+      "witness": {
+        "time": "88/523",
+        "laps": [
+          0,
+          17,
+          17,
+          35,
+          52,
+          52,
+          87
+        ],
+        "phases": [
+          "88/523",
+          "261/523",
+          "349/523",
+          "87/523",
+          "348/523",
+          "436/523",
+          "435/523"
+        ],
+        "distances": [
+          "88/523",
+          "261/523",
+          "174/523",
+          "87/523",
+          "175/523",
+          "87/523",
+          "88/523"
+        ],
+        "minimum": "87/523",
+        "active_speeds": [
+          209,
+          314
+        ]
+      }
+    },
+    {
+      "q": 105,
+      "speeds": [
+        1,
+        105,
+        106,
+        211,
+        316,
+        317,
+        527
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3564,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          17,
+          17,
+          35,
+          52,
+          52,
+          87
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          211,
+          317,
+          527
+        ]
+      }
+    },
+    {
+      "q": 106,
+      "speeds": [
+        1,
+        106,
+        107,
+        213,
+        319,
+        320,
+        532
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3594,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          17,
+          17,
+          35,
+          53,
+          53,
+          88
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          107,
+          319
+        ]
+      }
+    },
+    {
+      "q": 107,
+      "speeds": [
+        1,
+        107,
+        108,
+        215,
+        322,
+        323,
+        537
+      ],
+      "maximum": "107/645",
+      "maximizing_times": [
+        "214/645",
+        "431/645"
+      ],
+      "candidate_times_in_half_period": 3639,
+      "formula_matches": true,
+      "witness": {
+        "time": "214/645",
+        "laps": [
+          0,
+          35,
+          35,
+          71,
+          106,
+          107,
+          178
+        ],
+        "phases": [
+          "214/645",
+          "323/645",
+          "179/215",
+          "1/3",
+          "538/645",
+          "107/645",
+          "36/215"
+        ],
+        "distances": [
+          "214/645",
+          "322/645",
+          "36/215",
+          "1/3",
+          "107/645",
+          "107/645",
+          "36/215"
+        ],
+        "minimum": "107/645",
+        "active_speeds": [
+          322,
+          323
+        ]
+      }
+    },
+    {
+      "q": 108,
+      "speeds": [
+        1,
+        108,
+        109,
+        217,
+        325,
+        326,
+        542
+      ],
+      "maximum": "72/433",
+      "maximizing_times": [
+        "145/433",
+        "288/433"
+      ],
+      "candidate_times_in_half_period": 3665,
+      "formula_matches": true,
+      "witness": {
+        "time": "145/433",
+        "laps": [
+          0,
+          36,
+          36,
+          72,
+          108,
+          109,
+          181
+        ],
+        "phases": [
+          "145/433",
+          "72/433",
+          "217/433",
+          "289/433",
+          "361/433",
+          "73/433",
+          "217/433"
+        ],
+        "distances": [
+          "145/433",
+          "72/433",
+          "216/433",
+          "144/433",
+          "72/433",
+          "73/433",
+          "216/433"
+        ],
+        "minimum": "72/433",
+        "active_speeds": [
+          108,
+          325
+        ]
+      }
+    },
+    {
+      "q": 109,
+      "speeds": [
+        1,
+        109,
+        110,
+        219,
+        328,
+        329,
+        547
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3705,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          18,
+          18,
+          36,
+          54,
+          54,
+          91
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          109,
+          329,
+          547
+        ]
+      }
+    },
+    {
+      "q": 110,
+      "speeds": [
+        1,
+        110,
+        111,
+        221,
+        331,
+        332,
+        552
+      ],
+      "maximum": "92/553",
+      "maximizing_times": [
+        "93/553",
+        "460/553"
+      ],
+      "candidate_times_in_half_period": 3726,
+      "formula_matches": true,
+      "witness": {
+        "time": "93/553",
+        "laps": [
+          0,
+          18,
+          18,
+          37,
+          55,
+          55,
+          92
+        ],
+        "phases": [
+          "93/553",
+          "276/553",
+          "369/553",
+          "92/553",
+          "368/553",
+          "461/553",
+          "460/553"
+        ],
+        "distances": [
+          "93/553",
+          "276/553",
+          "184/553",
+          "92/553",
+          "185/553",
+          "92/553",
+          "93/553"
+        ],
+        "minimum": "92/553",
+        "active_speeds": [
+          221,
+          332
+        ]
+      }
+    },
+    {
+      "q": 111,
+      "speeds": [
+        1,
+        111,
+        112,
+        223,
+        334,
+        335,
+        557
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3762,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          18,
+          18,
+          37,
+          55,
+          55,
+          92
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          223,
+          335,
+          557
+        ]
+      }
+    },
+    {
+      "q": 112,
+      "speeds": [
+        1,
+        112,
+        113,
+        225,
+        337,
+        338,
+        562
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3814,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          18,
+          18,
+          37,
+          56,
+          56,
+          93
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          113,
+          337
+        ]
+      }
+    },
+    {
+      "q": 113,
+      "speeds": [
+        1,
+        113,
+        114,
+        227,
+        340,
+        341,
+        567
+      ],
+      "maximum": "113/681",
+      "maximizing_times": [
+        "226/681",
+        "455/681"
+      ],
+      "candidate_times_in_half_period": 3830,
+      "formula_matches": true,
+      "witness": {
+        "time": "226/681",
+        "laps": [
+          0,
+          37,
+          37,
+          75,
+          112,
+          113,
+          188
+        ],
+        "phases": [
+          "226/681",
+          "341/681",
+          "189/227",
+          "1/3",
+          "568/681",
+          "113/681",
+          "38/227"
+        ],
+        "distances": [
+          "226/681",
+          "340/681",
+          "38/227",
+          "1/3",
+          "113/681",
+          "113/681",
+          "38/227"
+        ],
+        "minimum": "113/681",
+        "active_speeds": [
+          340,
+          341
+        ]
+      }
+    },
+    {
+      "q": 114,
+      "speeds": [
+        1,
+        114,
+        115,
+        229,
+        343,
+        344,
+        572
+      ],
+      "maximum": "76/457",
+      "maximizing_times": [
+        "153/457",
+        "304/457"
+      ],
+      "candidate_times_in_half_period": 3867,
+      "formula_matches": true,
+      "witness": {
+        "time": "153/457",
+        "laps": [
+          0,
+          38,
+          38,
+          76,
+          114,
+          115,
+          191
+        ],
+        "phases": [
+          "153/457",
+          "76/457",
+          "229/457",
+          "305/457",
+          "381/457",
+          "77/457",
+          "229/457"
+        ],
+        "distances": [
+          "153/457",
+          "76/457",
+          "228/457",
+          "152/457",
+          "76/457",
+          "77/457",
+          "228/457"
+        ],
+        "minimum": "76/457",
+        "active_speeds": [
+          114,
+          343
+        ]
+      }
+    },
+    {
+      "q": 115,
+      "speeds": [
+        1,
+        115,
+        116,
+        231,
+        346,
+        347,
+        577
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3901,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          19,
+          19,
+          38,
+          57,
+          57,
+          96
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          115,
+          347,
+          577
+        ]
+      }
+    },
+    {
+      "q": 116,
+      "speeds": [
+        1,
+        116,
+        117,
+        233,
+        349,
+        350,
+        582
+      ],
+      "maximum": "97/583",
+      "maximizing_times": [
+        "98/583",
+        "485/583"
+      ],
+      "candidate_times_in_half_period": 3942,
+      "formula_matches": true,
+      "witness": {
+        "time": "98/583",
+        "laps": [
+          0,
+          19,
+          19,
+          39,
+          58,
+          58,
+          97
+        ],
+        "phases": [
+          "98/583",
+          "291/583",
+          "389/583",
+          "97/583",
+          "388/583",
+          "486/583",
+          "485/583"
+        ],
+        "distances": [
+          "98/583",
+          "291/583",
+          "194/583",
+          "97/583",
+          "195/583",
+          "97/583",
+          "98/583"
+        ],
+        "minimum": "97/583",
+        "active_speeds": [
+          233,
+          350
+        ]
+      }
+    },
+    {
+      "q": 117,
+      "speeds": [
+        1,
+        117,
+        118,
+        235,
+        352,
+        353,
+        587
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 3971,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          19,
+          19,
+          39,
+          58,
+          58,
+          97
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          235,
+          353,
+          587
+        ]
+      }
+    },
+    {
+      "q": 118,
+      "speeds": [
+        1,
+        118,
+        119,
+        237,
+        355,
+        356,
+        592
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4004,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          19,
+          19,
+          39,
+          59,
+          59,
+          98
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          119,
+          355
+        ]
+      }
+    },
+    {
+      "q": 119,
+      "speeds": [
+        1,
+        119,
+        120,
+        239,
+        358,
+        359,
+        597
+      ],
+      "maximum": "119/717",
+      "maximizing_times": [
+        "238/717",
+        "479/717"
+      ],
+      "candidate_times_in_half_period": 4039,
+      "formula_matches": true,
+      "witness": {
+        "time": "238/717",
+        "laps": [
+          0,
+          39,
+          39,
+          79,
+          118,
+          119,
+          198
+        ],
+        "phases": [
+          "238/717",
+          "359/717",
+          "199/239",
+          "1/3",
+          "598/717",
+          "119/717",
+          "40/239"
+        ],
+        "distances": [
+          "238/717",
+          "358/717",
+          "40/239",
+          "1/3",
+          "119/717",
+          "119/717",
+          "40/239"
+        ],
+        "minimum": "119/717",
+        "active_speeds": [
+          358,
+          359
+        ]
+      }
+    },
+    {
+      "q": 120,
+      "speeds": [
+        1,
+        120,
+        121,
+        241,
+        361,
+        362,
+        602
+      ],
+      "maximum": "80/481",
+      "maximizing_times": [
+        "161/481",
+        "320/481"
+      ],
+      "candidate_times_in_half_period": 4078,
+      "formula_matches": true,
+      "witness": {
+        "time": "161/481",
+        "laps": [
+          0,
+          40,
+          40,
+          80,
+          120,
+          121,
+          201
+        ],
+        "phases": [
+          "161/481",
+          "80/481",
+          "241/481",
+          "321/481",
+          "401/481",
+          "81/481",
+          "241/481"
+        ],
+        "distances": [
+          "161/481",
+          "80/481",
+          "240/481",
+          "160/481",
+          "80/481",
+          "81/481",
+          "240/481"
+        ],
+        "minimum": "80/481",
+        "active_speeds": [
+          120,
+          361
+        ]
+      }
+    },
+    {
+      "q": 121,
+      "speeds": [
+        1,
+        121,
+        122,
+        243,
+        364,
+        365,
+        607
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4110,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          20,
+          20,
+          40,
+          60,
+          60,
+          101
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          121,
+          365,
+          607
+        ]
+      }
+    },
+    {
+      "q": 122,
+      "speeds": [
+        1,
+        122,
+        123,
+        245,
+        367,
+        368,
+        612
+      ],
+      "maximum": "102/613",
+      "maximizing_times": [
+        "103/613",
+        "510/613"
+      ],
+      "candidate_times_in_half_period": 4146,
+      "formula_matches": true,
+      "witness": {
+        "time": "103/613",
+        "laps": [
+          0,
+          20,
+          20,
+          41,
+          61,
+          61,
+          102
+        ],
+        "phases": [
+          "103/613",
+          "306/613",
+          "409/613",
+          "102/613",
+          "408/613",
+          "511/613",
+          "510/613"
+        ],
+        "distances": [
+          "103/613",
+          "306/613",
+          "204/613",
+          "102/613",
+          "205/613",
+          "102/613",
+          "103/613"
+        ],
+        "minimum": "102/613",
+        "active_speeds": [
+          245,
+          368
+        ]
+      }
+    },
+    {
+      "q": 123,
+      "speeds": [
+        1,
+        123,
+        124,
+        247,
+        370,
+        371,
+        617
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4167,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          20,
+          20,
+          41,
+          61,
+          61,
+          102
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          247,
+          371,
+          617
+        ]
+      }
+    },
+    {
+      "q": 124,
+      "speeds": [
+        1,
+        124,
+        125,
+        249,
+        373,
+        374,
+        622
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4211,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          20,
+          20,
+          41,
+          62,
+          62,
+          103
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          125,
+          373
+        ]
+      }
+    },
+    {
+      "q": 125,
+      "speeds": [
+        1,
+        125,
+        126,
+        251,
+        376,
+        377,
+        627
+      ],
+      "maximum": "125/753",
+      "maximizing_times": [
+        "250/753",
+        "503/753"
+      ],
+      "candidate_times_in_half_period": 4253,
+      "formula_matches": true,
+      "witness": {
+        "time": "250/753",
+        "laps": [
+          0,
+          41,
+          41,
+          83,
+          124,
+          125,
+          208
+        ],
+        "phases": [
+          "250/753",
+          "377/753",
+          "209/251",
+          "1/3",
+          "628/753",
+          "125/753",
+          "42/251"
+        ],
+        "distances": [
+          "250/753",
+          "376/753",
+          "42/251",
+          "1/3",
+          "125/753",
+          "125/753",
+          "42/251"
+        ],
+        "minimum": "125/753",
+        "active_speeds": [
+          376,
+          377
+        ]
+      }
+    },
+    {
+      "q": 126,
+      "speeds": [
+        1,
+        126,
+        127,
+        253,
+        379,
+        380,
+        632
+      ],
+      "maximum": "84/505",
+      "maximizing_times": [
+        "169/505",
+        "336/505"
+      ],
+      "candidate_times_in_half_period": 4274,
+      "formula_matches": true,
+      "witness": {
+        "time": "169/505",
+        "laps": [
+          0,
+          42,
+          42,
+          84,
+          126,
+          127,
+          211
+        ],
+        "phases": [
+          "169/505",
+          "84/505",
+          "253/505",
+          "337/505",
+          "421/505",
+          "17/101",
+          "253/505"
+        ],
+        "distances": [
+          "169/505",
+          "84/505",
+          "252/505",
+          "168/505",
+          "84/505",
+          "17/101",
+          "252/505"
+        ],
+        "minimum": "84/505",
+        "active_speeds": [
+          126,
+          379
+        ]
+      }
+    },
+    {
+      "q": 127,
+      "speeds": [
+        1,
+        127,
+        128,
+        255,
+        382,
+        383,
+        637
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4317,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          21,
+          21,
+          42,
+          63,
+          63,
+          106
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          127,
+          383,
+          637
+        ]
+      }
+    },
+    {
+      "q": 128,
+      "speeds": [
+        1,
+        128,
+        129,
+        257,
+        385,
+        386,
+        642
+      ],
+      "maximum": "107/643",
+      "maximizing_times": [
+        "108/643",
+        "535/643"
+      ],
+      "candidate_times_in_half_period": 4342,
+      "formula_matches": true,
+      "witness": {
+        "time": "108/643",
+        "laps": [
+          0,
+          21,
+          21,
+          43,
+          64,
+          64,
+          107
+        ],
+        "phases": [
+          "108/643",
+          "321/643",
+          "429/643",
+          "107/643",
+          "428/643",
+          "536/643",
+          "535/643"
+        ],
+        "distances": [
+          "108/643",
+          "321/643",
+          "214/643",
+          "107/643",
+          "215/643",
+          "107/643",
+          "108/643"
+        ],
+        "minimum": "107/643",
+        "active_speeds": [
+          257,
+          386
+        ]
+      }
+    },
+    {
+      "q": 129,
+      "speeds": [
+        1,
+        129,
+        130,
+        259,
+        388,
+        389,
+        647
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4374,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          21,
+          21,
+          43,
+          64,
+          64,
+          107
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          259,
+          389,
+          647
+        ]
+      }
+    },
+    {
+      "q": 130,
+      "speeds": [
+        1,
+        130,
+        131,
+        261,
+        391,
+        392,
+        652
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4412,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          21,
+          21,
+          43,
+          65,
+          65,
+          108
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          131,
+          391
+        ]
+      }
+    },
+    {
+      "q": 131,
+      "speeds": [
+        1,
+        131,
+        132,
+        263,
+        394,
+        395,
+        657
+      ],
+      "maximum": "131/789",
+      "maximizing_times": [
+        "262/789",
+        "527/789"
+      ],
+      "candidate_times_in_half_period": 4437,
+      "formula_matches": true,
+      "witness": {
+        "time": "262/789",
+        "laps": [
+          0,
+          43,
+          43,
+          87,
+          130,
+          131,
+          218
+        ],
+        "phases": [
+          "262/789",
+          "395/789",
+          "219/263",
+          "1/3",
+          "658/789",
+          "131/789",
+          "44/263"
+        ],
+        "distances": [
+          "262/789",
+          "394/789",
+          "44/263",
+          "1/3",
+          "131/789",
+          "131/789",
+          "44/263"
+        ],
+        "minimum": "131/789",
+        "active_speeds": [
+          394,
+          395
+        ]
+      }
+    },
+    {
+      "q": 132,
+      "speeds": [
+        1,
+        132,
+        133,
+        265,
+        397,
+        398,
+        662
+      ],
+      "maximum": "88/529",
+      "maximizing_times": [
+        "177/529",
+        "352/529"
+      ],
+      "candidate_times_in_half_period": 4489,
+      "formula_matches": true,
+      "witness": {
+        "time": "177/529",
+        "laps": [
+          0,
+          44,
+          44,
+          88,
+          132,
+          133,
+          221
+        ],
+        "phases": [
+          "177/529",
+          "88/529",
+          "265/529",
+          "353/529",
+          "441/529",
+          "89/529",
+          "265/529"
+        ],
+        "distances": [
+          "177/529",
+          "88/529",
+          "264/529",
+          "176/529",
+          "88/529",
+          "89/529",
+          "264/529"
+        ],
+        "minimum": "88/529",
+        "active_speeds": [
+          132,
+          397
+        ]
+      }
+    },
+    {
+      "q": 133,
+      "speeds": [
+        1,
+        133,
+        134,
+        267,
+        400,
+        401,
+        667
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4519,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          22,
+          22,
+          44,
+          66,
+          66,
+          111
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          133,
+          401,
+          667
+        ]
+      }
+    },
+    {
+      "q": 134,
+      "speeds": [
+        1,
+        134,
+        135,
+        269,
+        403,
+        404,
+        672
+      ],
+      "maximum": "112/673",
+      "maximizing_times": [
+        "113/673",
+        "560/673"
+      ],
+      "candidate_times_in_half_period": 4550,
+      "formula_matches": true,
+      "witness": {
+        "time": "113/673",
+        "laps": [
+          0,
+          22,
+          22,
+          45,
+          67,
+          67,
+          112
+        ],
+        "phases": [
+          "113/673",
+          "336/673",
+          "449/673",
+          "112/673",
+          "448/673",
+          "561/673",
+          "560/673"
+        ],
+        "distances": [
+          "113/673",
+          "336/673",
+          "224/673",
+          "112/673",
+          "225/673",
+          "112/673",
+          "113/673"
+        ],
+        "minimum": "112/673",
+        "active_speeds": [
+          269,
+          404
+        ]
+      }
+    },
+    {
+      "q": 135,
+      "speeds": [
+        1,
+        135,
+        136,
+        271,
+        406,
+        407,
+        677
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4587,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          22,
+          22,
+          45,
+          67,
+          67,
+          112
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          271,
+          407,
+          677
+        ]
+      }
+    },
+    {
+      "q": 136,
+      "speeds": [
+        1,
+        136,
+        137,
+        273,
+        409,
+        410,
+        682
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4626,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          22,
+          22,
+          45,
+          68,
+          68,
+          113
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          137,
+          409
+        ]
+      }
+    },
+    {
+      "q": 137,
+      "speeds": [
+        1,
+        137,
+        138,
+        275,
+        412,
+        413,
+        687
+      ],
+      "maximum": "137/825",
+      "maximizing_times": [
+        "274/825",
+        "551/825"
+      ],
+      "candidate_times_in_half_period": 4653,
+      "formula_matches": true,
+      "witness": {
+        "time": "274/825",
+        "laps": [
+          0,
+          45,
+          45,
+          91,
+          136,
+          137,
+          228
+        ],
+        "phases": [
+          "274/825",
+          "413/825",
+          "229/275",
+          "1/3",
+          "688/825",
+          "137/825",
+          "46/275"
+        ],
+        "distances": [
+          "274/825",
+          "412/825",
+          "46/275",
+          "1/3",
+          "137/825",
+          "137/825",
+          "46/275"
+        ],
+        "minimum": "137/825",
+        "active_speeds": [
+          412,
+          413
+        ]
+      }
+    },
+    {
+      "q": 138,
+      "speeds": [
+        1,
+        138,
+        139,
+        277,
+        415,
+        416,
+        692
+      ],
+      "maximum": "92/553",
+      "maximizing_times": [
+        "185/553",
+        "368/553"
+      ],
+      "candidate_times_in_half_period": 4677,
+      "formula_matches": true,
+      "witness": {
+        "time": "185/553",
+        "laps": [
+          0,
+          46,
+          46,
+          92,
+          138,
+          139,
+          231
+        ],
+        "phases": [
+          "185/553",
+          "92/553",
+          "277/553",
+          "369/553",
+          "461/553",
+          "93/553",
+          "277/553"
+        ],
+        "distances": [
+          "185/553",
+          "92/553",
+          "276/553",
+          "184/553",
+          "92/553",
+          "93/553",
+          "276/553"
+        ],
+        "minimum": "92/553",
+        "active_speeds": [
+          138,
+          415
+        ]
+      }
+    },
+    {
+      "q": 139,
+      "speeds": [
+        1,
+        139,
+        140,
+        279,
+        418,
+        419,
+        697
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4724,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          23,
+          23,
+          46,
+          69,
+          69,
+          116
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          139,
+          419,
+          697
+        ]
+      }
+    },
+    {
+      "q": 140,
+      "speeds": [
+        1,
+        140,
+        141,
+        281,
+        421,
+        422,
+        702
+      ],
+      "maximum": "117/703",
+      "maximizing_times": [
+        "118/703",
+        "585/703"
+      ],
+      "candidate_times_in_half_period": 4762,
+      "formula_matches": true,
+      "witness": {
+        "time": "118/703",
+        "laps": [
+          0,
+          23,
+          23,
+          47,
+          70,
+          70,
+          117
+        ],
+        "phases": [
+          "118/703",
+          "351/703",
+          "469/703",
+          "117/703",
+          "468/703",
+          "586/703",
+          "585/703"
+        ],
+        "distances": [
+          "118/703",
+          "351/703",
+          "234/703",
+          "117/703",
+          "235/703",
+          "117/703",
+          "118/703"
+        ],
+        "minimum": "117/703",
+        "active_speeds": [
+          281,
+          422
+        ]
+      }
+    },
+    {
+      "q": 141,
+      "speeds": [
+        1,
+        141,
+        142,
+        283,
+        424,
+        425,
+        707
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4770,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          23,
+          23,
+          47,
+          70,
+          70,
+          117
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          283,
+          425,
+          707
+        ]
+      }
+    },
+    {
+      "q": 142,
+      "speeds": [
+        1,
+        142,
+        143,
+        285,
+        427,
+        428,
+        712
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4819,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          23,
+          23,
+          47,
+          71,
+          71,
+          118
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          143,
+          427
+        ]
+      }
+    },
+    {
+      "q": 143,
+      "speeds": [
+        1,
+        143,
+        144,
+        287,
+        430,
+        431,
+        717
+      ],
+      "maximum": "143/861",
+      "maximizing_times": [
+        "286/861",
+        "575/861"
+      ],
+      "candidate_times_in_half_period": 4861,
+      "formula_matches": true,
+      "witness": {
+        "time": "286/861",
+        "laps": [
+          0,
+          47,
+          47,
+          95,
+          142,
+          143,
+          238
+        ],
+        "phases": [
+          "286/861",
+          "431/861",
+          "239/287",
+          "1/3",
+          "718/861",
+          "143/861",
+          "48/287"
+        ],
+        "distances": [
+          "286/861",
+          "430/861",
+          "48/287",
+          "1/3",
+          "143/861",
+          "143/861",
+          "48/287"
+        ],
+        "minimum": "143/861",
+        "active_speeds": [
+          430,
+          431
+        ]
+      }
+    },
+    {
+      "q": 144,
+      "speeds": [
+        1,
+        144,
+        145,
+        289,
+        433,
+        434,
+        722
+      ],
+      "maximum": "96/577",
+      "maximizing_times": [
+        "193/577",
+        "384/577"
+      ],
+      "candidate_times_in_half_period": 4891,
+      "formula_matches": true,
+      "witness": {
+        "time": "193/577",
+        "laps": [
+          0,
+          48,
+          48,
+          96,
+          144,
+          145,
+          241
+        ],
+        "phases": [
+          "193/577",
+          "96/577",
+          "289/577",
+          "385/577",
+          "481/577",
+          "97/577",
+          "289/577"
+        ],
+        "distances": [
+          "193/577",
+          "96/577",
+          "288/577",
+          "192/577",
+          "96/577",
+          "97/577",
+          "288/577"
+        ],
+        "minimum": "96/577",
+        "active_speeds": [
+          144,
+          433
+        ]
+      }
+    },
+    {
+      "q": 145,
+      "speeds": [
+        1,
+        145,
+        146,
+        291,
+        436,
+        437,
+        727
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4926,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          24,
+          24,
+          48,
+          72,
+          72,
+          121
+        ],
+        "phases": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3",
+          "5/6",
+          "1/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/6",
+          "1/3",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          145,
+          437,
+          727
+        ]
+      }
+    },
+    {
+      "q": 146,
+      "speeds": [
+        1,
+        146,
+        147,
+        293,
+        439,
+        440,
+        732
+      ],
+      "maximum": "122/733",
+      "maximizing_times": [
+        "123/733",
+        "610/733"
+      ],
+      "candidate_times_in_half_period": 4958,
+      "formula_matches": true,
+      "witness": {
+        "time": "123/733",
+        "laps": [
+          0,
+          24,
+          24,
+          49,
+          73,
+          73,
+          122
+        ],
+        "phases": [
+          "123/733",
+          "366/733",
+          "489/733",
+          "122/733",
+          "488/733",
+          "611/733",
+          "610/733"
+        ],
+        "distances": [
+          "123/733",
+          "366/733",
+          "244/733",
+          "122/733",
+          "245/733",
+          "122/733",
+          "123/733"
+        ],
+        "minimum": "122/733",
+        "active_speeds": [
+          293,
+          440
+        ]
+      }
+    },
+    {
+      "q": 147,
+      "speeds": [
+        1,
+        147,
+        148,
+        295,
+        442,
+        443,
+        737
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 4990,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          24,
+          24,
+          49,
+          73,
+          73,
+          122
+        ],
+        "phases": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1/6",
+          "2/3",
+          "5/6",
+          "5/6"
+        ],
+        "distances": [
+          "1/6",
+          "1/2",
+          "1/3",
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/6"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          295,
+          443,
+          737
+        ]
+      }
+    },
+    {
+      "q": 148,
+      "speeds": [
+        1,
+        148,
+        149,
+        297,
+        445,
+        446,
+        742
+      ],
+      "maximum": "1/6",
+      "maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "candidate_times_in_half_period": 5029,
+      "formula_matches": true,
+      "witness": {
+        "time": "1/6",
+        "laps": [
+          0,
+          24,
+          24,
+          49,
+          74,
+          74,
+          123
+        ],
+        "phases": [
+          "1/6",
+          "2/3",
+          "5/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "2/3"
+        ],
+        "distances": [
+          "1/6",
+          "1/3",
+          "1/6",
+          "1/2",
+          "1/6",
+          "1/3",
+          "1/3"
+        ],
+        "minimum": "1/6",
+        "active_speeds": [
+          1,
+          149,
+          445
+        ]
+      }
+    },
+    {
+      "q": 149,
+      "speeds": [
+        1,
+        149,
+        150,
+        299,
+        448,
+        449,
+        747
+      ],
+      "maximum": "149/897",
+      "maximizing_times": [
+        "298/897",
+        "599/897"
+      ],
+      "candidate_times_in_half_period": 5061,
+      "formula_matches": true,
+      "witness": {
+        "time": "298/897",
+        "laps": [
+          0,
+          49,
+          49,
+          99,
+          148,
+          149,
+          248
+        ],
+        "phases": [
+          "298/897",
+          "449/897",
+          "249/299",
+          "1/3",
+          "748/897",
+          "149/897",
+          "50/299"
+        ],
+        "distances": [
+          "298/897",
+          "448/897",
+          "50/299",
+          "1/3",
+          "149/897",
+          "149/897",
+          "50/299"
+        ],
+        "minimum": "149/897",
+        "active_speeds": [
+          448,
+          449
+        ]
+      }
+    },
+    {
+      "q": 150,
+      "speeds": [
+        1,
+        150,
+        151,
+        301,
+        451,
+        452,
+        752
+      ],
+      "maximum": "100/601",
+      "maximizing_times": [
+        "201/601",
+        "400/601"
+      ],
+      "candidate_times_in_half_period": 5095,
+      "formula_matches": true,
+      "witness": {
+        "time": "201/601",
+        "laps": [
+          0,
+          50,
+          50,
+          100,
+          150,
+          151,
+          251
+        ],
+        "phases": [
+          "201/601",
+          "100/601",
+          "301/601",
+          "401/601",
+          "501/601",
+          "101/601",
+          "301/601"
+        ],
+        "distances": [
+          "201/601",
+          "100/601",
+          "300/601",
+          "200/601",
+          "100/601",
+          "101/601",
+          "300/601"
+        ],
+        "minimum": "100/601",
+        "active_speeds": [
+          150,
+          451
+        ]
+      }
+    }
+  ]
+}
