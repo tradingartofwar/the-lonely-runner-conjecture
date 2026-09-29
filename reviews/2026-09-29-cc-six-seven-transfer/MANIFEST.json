@@ -1,0 +1,85 @@
+{
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "base_commit": "a9a9c2746bd39740888ecd4ae48ed8f5d47b4dcd",
+  "status": "Exact fixed geometry and bounded reproduction; conditional-interval transfer proof candidate",
+  "scope": {
+    "ray": "V(1,q), original A ray",
+    "moving_coordinates": [
+      6,
+      7
+    ],
+    "total_runners": [
+      7,
+      8
+    ],
+    "selected_reference": 0,
+    "common_start": true,
+    "physical_controls": [
+      3,
+      4,
+      10
+    ],
+    "floor": "1/8",
+    "orbit": "qx-y in Z"
+  },
+  "summary": {
+    "child_cells": 10,
+    "child_edges": 45,
+    "child_vertices": 33,
+    "edge_parent_face_dimensions": {
+      "1": 36,
+      "2": 9
+    },
+    "empty_branches": 46,
+    "new_child_vertices": 6,
+    "parent_cells": 8,
+    "parent_edges": 48,
+    "parent_vertices": 32,
+    "removed_parent_vertices": 5,
+    "seventh_lap_branches": 56,
+    "singleton_children": 3,
+    "split_parents": 2,
+    "unchanged_parent_cells": 3,
+    "vertex_parent_face_dimensions": {
+      "0": 27,
+      "1": 6
+    }
+  },
+  "checks": {
+    "parent_boundary_planes": 34,
+    "parent_plane_triples": 5984,
+    "physical_configurations": 6,
+    "all_exact_maxima_and_time_sets_match": true,
+    "primary_saved_output_reproduced": true,
+    "countercheck_saved_output_reproduced": true
+  },
+  "information_loss_findings": [
+    "Old global optimizers all fail final 1/8 safety in the three controls.",
+    "At q=4 all four positive old safe intervals disappear but four isolated safe times survive.",
+    "At q=10 two final maximizing times lie in old face interiors, not on old edges or at old parent-slice optima.",
+    "Separate H and S ranges give a false positive at q=4; their same-slice dependence must be retained."
+  ],
+  "reproduction_record": "reviews/2026-09-29-cc-six-seven-transfer/REPRODUCTION.json",
+  "frozen_inputs": "reviews/2026-09-29-cc-six-seven-transfer/FROZEN_INPUTS.json",
+  "file_sha256": {
+    "notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md": "16fbeed2082befae940d8b0f3f7ec4c9687cf657b4a5ad9179c1984550d7beb3",
+    "README.md": "6f8adc812a2bc9297200331ba5d795482fd8111f4a34bbc702204aa0f71ef6bb",
+    "HANDOFF.md": "6c17253a714ea573ebf9694100f7aee816f988731f451dc457db9d368b37b916",
+    "LR2_HANDOFF.md": "88b6935e0855d3e9e77571ed74ccec69cc86902dea173f3ea8fbacb0f1b4eaf7",
+    "reviews/2026-09-29-cc-six-seven-transfer/FROZEN_INPUTS.json": "7d3403f4fc04358ff670336b959f4a6913755472b9e7b8fcf2b5cba61d2a5cea",
+    "reviews/2026-09-29-cc-six-seven-transfer/PROTOCOL.md": "9ffae5f41849230659372f0a069c16484486d5e88cb46f465d11f43942f1258c",
+    "reviews/2026-09-29-cc-six-seven-transfer/REPRODUCTION.json": "17ab03bea2939da5a51b08849d8e037f60d5faf2c0a8918ebb12b44c9192ab90",
+    "reviews/2026-09-29-cc-six-seven-transfer/countercheck.json": "8a0226a56ba8f96beed497c7e59de412a260a386d34ccaa00ad47235b84a1d9a",
+    "reviews/2026-09-29-cc-six-seven-transfer/countercheck.py": "fd351f71b8cf9703ac2bf71c86648cfed40e26e0ddff16999655ddbd3798de29",
+    "reviews/2026-09-29-cc-six-seven-transfer/verification.json": "d86b6c3f37482be9fdade514ce0b2092ebd761cf75bcf4133193e0830aaa2157",
+    "reviews/2026-09-29-cc-six-seven-transfer/verify_transfer.py": "e5292844df40a1a9658c1ea52d496aa3929e21da7561dc85616d6d3e1edbb3c6"
+  },
+  "limits": [
+    "No new independent team review; coordinator explicitly reuses reviewed clipping/tent-envelope code.",
+    "Second implementation shares AI authorship and previously known methods.",
+    "No new unbounded six-coordinate spectrum, general forcing theorem, or novelty claim.",
+    "Only q=3,4,10 physically optimized; fixed geometry is exhaustive independently of q.",
+    "Original proof and review packages remain unchanged."
+  ]
+}
