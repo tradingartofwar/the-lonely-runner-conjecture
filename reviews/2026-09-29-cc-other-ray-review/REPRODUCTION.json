@@ -1,0 +1,90 @@
+{
+  "frozen_head": "12d08824ead7b772032ba240d0e858250fbd183c",
+  "coordinator": "AI coordinator; internal reproduction, not external certification",
+  "reviewer_checks": [
+    {
+      "command": "python3 reviews/2026-09-29-cc-other-ray-review/geometry_check.py --compare-archive",
+      "exit_code": 0,
+      "exact_output_match": true,
+      "sha256": "7af16c47e580130df2d91d3e576182f9625e3935e16a397787eb341312dca88f",
+      "summary": {
+        "ambient_maximum": "1/6",
+        "cell_dimension_counts": {
+          "0": 3,
+          "3": 7
+        },
+        "distinct_vertices": 33,
+        "edge_occurrences": 45,
+        "largest_nonpeak_vertex_height": "1/7",
+        "nonempty_cells": 10,
+        "peak_edges": 21,
+        "peak_vertices": 7,
+        "singleton_points": [
+          [
+            "1/8",
+            "1/8",
+            "1/8"
+          ],
+          [
+            "3/8",
+            "1/8",
+            "1/8"
+          ],
+          [
+            "3/8",
+            "1/2",
+            "1/8"
+          ]
+        ],
+        "vertex_occurrences": 33,
+        "written_directions_and_lengths_match": true
+      }
+    },
+    {
+      "command": "python3 reviews/2026-09-29-cc-other-ray-review/arithmetic_check.py",
+      "exit_code": 0,
+      "exact_output_match": true,
+      "sha256": "5e0f478b8fb7c627f9fb5da58068419aa2965e84927c642e37e788713503010e",
+      "summary": {
+        "directed_losses": 63,
+        "global_comparisons": 63,
+        "nonzero_projection_certificates": 21,
+        "peak_directions": 21,
+        "phase_identities": 42,
+        "physical_lap_transfers": 42,
+        "reflected_phase_identities": 42,
+        "remaining_premises": [
+          "fixed-cell completeness and ambient height classification",
+          "slice-vertex reduction and optimizer-face argument reviewed separately"
+        ],
+        "result": "PASS",
+        "safe_band_inequalities": 84,
+        "strict_nonwinner_comparisons": 60,
+        "within_peak_comparisons": 63
+      }
+    },
+    {
+      "command": "python3 reviews/2026-09-29-cc-other-ray-review/physical_check.py",
+      "exit_code": 0,
+      "exact_output_match": true,
+      "sha256": "4204ba5a744095843fee61ea2cd23d8c11d23e71f46ae25c608b364fc17e455d",
+      "summary": {
+        "exhaustive_case_count": 24,
+        "isolated_maximizer_occurrences": 48,
+        "positive_length_maximizing_components": 0,
+        "small_q_distance_records_at_maximizers": 336,
+        "witness_only_case_count": 6,
+        "witness_only_time_count": 12,
+        "witness_only_distance_records": 84,
+        "failures": 0
+      }
+    }
+  ],
+  "coordinator_check": {
+    "command": "python3 reviews/2026-09-29-cc-other-ray-review/reconcile.py",
+    "exit_code": 0,
+    "output_sha256": "50c740f444361b4c8c1b21940e149558b05f514283691efa968dfadd6c2a31f6",
+    "result": "PASS: reconciliation of supplied fresh certificates"
+  },
+  "result": "All three reviewer outputs matched byte for byte; reconciliation passed."
+}

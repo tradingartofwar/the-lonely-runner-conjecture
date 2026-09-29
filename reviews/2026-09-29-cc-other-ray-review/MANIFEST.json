@@ -1,0 +1,72 @@
+{
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "reviewed_commit": "12d08824ead7b772032ba240d0e858250fbd183c",
+  "status": "HYPOTHESIS / internally reviewed complete proof candidate",
+  "scope": "V(q,1) after first-two-coordinate permutation; q>=2; eight common-start runners; selected reference 0",
+  "assignments": [
+    "geometry",
+    "arithmetic",
+    "proof logic",
+    "physical time",
+    "representation and information loss"
+  ],
+  "summary": {
+    "result_level_defects_found": 0,
+    "proof_quantifier_clarifications": 2,
+    "fixed_cells": 10,
+    "vertices": 33,
+    "edges": 45,
+    "singleton_cells": 3,
+    "global_symbolic_comparisons": 63,
+    "strict_nonwinner_comparisons": 60,
+    "within_peak_comparisons": 63,
+    "small_physical_cases": 24,
+    "small_q_range": [
+      2,
+      25
+    ],
+    "isolated_maximizer_occurrences": 48,
+    "large_witness_only_cases": 6,
+    "large_witness_q_range": [
+      100002,
+      100007
+    ],
+    "reproduced_reviewer_outputs": 3,
+    "cap_extremal_directions": 14
+  },
+  "reproduction_record": "reviews/2026-09-29-cc-other-ray-review/REPRODUCTION.json",
+  "frozen_input_record": "reviews/2026-09-29-cc-other-ray-review/FROZEN_INPUTS.json",
+  "file_sha256": {
+    "notes/CC_OTHER_RAY_REVIEW_2026_09_29.md": "c019a0b6c68f91b39356853ae9449fdaab12088090b51fdd64ddb803b2780132",
+    "README.md": "98b0a70540a8bbaf712d6fd9c55b6704b50c83e2580f7b8acaab432a7e35e45e",
+    "HANDOFF.md": "65643ead6509eb089c8bc04511995f3912bddf11e4afe73d075a03e9b83e8e3e",
+    "LR2_HANDOFF.md": "9c2e72a1e474c17972af979e6135ffb8e07d466da61a71e9ecc495345967a7e3",
+    "reviews/2026-09-29-cc-other-ray-review/FROZEN_INPUTS.json": "fdb59035d5cc2df809bfc38484b122a924b7b6943c1187c1ec0b82d760f69756",
+    "reviews/2026-09-29-cc-other-ray-review/PROTOCOL.md": "aa369d5fd0bed0dbe29818c38d858c02e715c0312eabb428a8cead900cf9e13a",
+    "reviews/2026-09-29-cc-other-ray-review/REPRODUCTION.json": "487c81dd8d80383af110030d4ca0aa2472b9e91e07ee01a5b2f6e8c1bb686cb4",
+    "reviews/2026-09-29-cc-other-ray-review/arithmetic_check.json": "5e0f478b8fb7c627f9fb5da58068419aa2965e84927c642e37e788713503010e",
+    "reviews/2026-09-29-cc-other-ray-review/arithmetic_check.py": "ecd477b645eb0123e44a719f0007fcfab756fd350aa12a04296b91557475868c",
+    "reviews/2026-09-29-cc-other-ray-review/arithmetic_review.md": "c913569320d8fc12b2b120e1b0745bf81951d8b58e258b1f76d35f999943433b",
+    "reviews/2026-09-29-cc-other-ray-review/geometry_check.json": "7af16c47e580130df2d91d3e576182f9625e3935e16a397787eb341312dca88f",
+    "reviews/2026-09-29-cc-other-ray-review/geometry_check.py": "29b790b3044afd185a462d93fb64d50d4506fb29723b0dd1acbaf8882b68fe7c",
+    "reviews/2026-09-29-cc-other-ray-review/geometry_review.md": "cf5b3633b344797355ff87e4af7a28fb1367d7239d9088f09742e746b74ce43c",
+    "reviews/2026-09-29-cc-other-ray-review/physical_check.json": "4204ba5a744095843fee61ea2cd23d8c11d23e71f46ae25c608b364fc17e455d",
+    "reviews/2026-09-29-cc-other-ray-review/physical_check.py": "dc4a50e829a90d535d97d77c57474455abbd78767ca302c164ba6494b273ef7a",
+    "reviews/2026-09-29-cc-other-ray-review/physical_review.md": "da02fe482f0545ad6ec7e1f5dd7c37b4db0b2cfa5e2048c818b7284ed05eb88e",
+    "reviews/2026-09-29-cc-other-ray-review/proof_logic_review.md": "aa711790cf6a55bb172cfe20305b8bd7073f54ed0e29d016bdc7f12e6670947e",
+    "reviews/2026-09-29-cc-other-ray-review/reconcile.py": "9d38c28ac07b89edb2de28a412c0efa308baca1785b0d4743f17fa8b73c4936b",
+    "reviews/2026-09-29-cc-other-ray-review/reconciliation.json": "50c740f444361b4c8c1b21940e149558b05f514283691efa968dfadd6c2a31f6",
+    "reviews/2026-09-29-cc-other-ray-review/representation_review.md": "e17d3f25f63792ff5563e57bf61a1abd5f2558a8fdc33e096bc1045ee9db2875"
+  },
+  "frozen_package_manifest_sha256": {
+    "reviews/2026-09-29-ltcm-other-ray/MANIFEST.json": "e61ddff8ae75c7a02248a2f44585cb9761bd912e97fbcd64d2d8ed587c006433",
+    "reviews/2026-09-29-ltcm-other-ray-upper/MANIFEST.json": "5cbbd91738a783bd20bd2e726cf9b560f6414d77c87b18985d20d113bd53f464"
+  },
+  "limits": [
+    "AI-generated review and checkers; not external human certification or formal verification.",
+    "No claim of novelty or general runner-extension theorem.",
+    "Six-to-seven-form comparison remains proposed, not executed.",
+    "Original proof packages and prior A-ray review unchanged."
+  ]
+}

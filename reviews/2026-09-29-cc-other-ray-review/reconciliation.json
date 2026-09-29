@@ -1,0 +1,178 @@
+{
+  "cap_count": 7,
+  "cap_records": [
+    {
+      "maximum_minus_middle": {
+        "at_q2": "4/5",
+        "constant": "4/5",
+        "domain": "q>=2",
+        "slope": "0"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "36/5",
+        "constant": "6/5",
+        "domain": "q>=2",
+        "slope": "3"
+      },
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ]
+    },
+    {
+      "maximum_minus_middle": {
+        "at_q2": "8",
+        "constant": "2",
+        "domain": "q>=2",
+        "slope": "3"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "6",
+        "constant": "0",
+        "domain": "q>=2",
+        "slope": "3"
+      },
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ]
+    },
+    {
+      "maximum_minus_middle": {
+        "at_q2": "3",
+        "constant": "0",
+        "domain": "q>=2",
+        "slope": "3/2"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "12",
+        "constant": "3",
+        "domain": "q>=2",
+        "slope": "9/2"
+      },
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ]
+    },
+    {
+      "maximum_minus_middle": {
+        "at_q2": "3",
+        "constant": "0",
+        "domain": "q>=2",
+        "slope": "3/2"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "3",
+        "constant": "1",
+        "domain": "q>=2",
+        "slope": "1"
+      },
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ]
+    },
+    {
+      "maximum_minus_middle": {
+        "at_q2": "7",
+        "constant": "1",
+        "domain": "q>=2",
+        "slope": "3"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "2",
+        "constant": "2",
+        "domain": "q>=2",
+        "slope": "0"
+      },
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ]
+    },
+    {
+      "maximum_minus_middle": {
+        "at_q2": "3",
+        "constant": "0",
+        "domain": "q>=2",
+        "slope": "3/2"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "4",
+        "constant": "1",
+        "domain": "q>=2",
+        "slope": "3/2"
+      },
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ]
+    },
+    {
+      "maximum_minus_middle": {
+        "at_q2": "3",
+        "constant": "0",
+        "domain": "q>=2",
+        "slope": "3/2"
+      },
+      "middle_minus_minimum": {
+        "at_q2": "3/5",
+        "constant": "3/5",
+        "domain": "q>=2",
+        "slope": "0"
+      },
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ]
+    }
+  ],
+  "geometry_arithmetic_direction_records_match": 21,
+  "limits": "Uses the new geometry certificate; tangent-cone and optimal-face arguments are reviewed prose.",
+  "quantifier_examples": {
+    "q11": {
+      "H": "-1",
+      "cell_dimension": 0,
+      "point": [
+        "3/8",
+        "1/8",
+        "1/8"
+      ]
+    },
+    "q2": {
+      "H": "0",
+      "active_constraints": 1,
+      "phases": [
+        "37/80",
+        "37/160",
+        "111/160",
+        "5/32",
+        "99/160",
+        "17/20",
+        "31/40"
+      ],
+      "point": [
+        "37/80",
+        "37/160",
+        "3/20"
+      ]
+    }
+  },
+  "retained_extremal_directions": 14,
+  "scope": "B-ray cap projection table and two in-scope quantifier examples; no new scan",
+  "source_sha256": {
+    "arithmetic_check.json": "5e0f478b8fb7c627f9fb5da58068419aa2965e84927c642e37e788713503010e",
+    "geometry_check.json": "7af16c47e580130df2d91d3e576182f9625e3935e16a397787eb341312dca88f",
+    "reconcile.py": "9d38c28ac07b89edb2de28a412c0efa308baca1785b0d4743f17fa8b73c4936b"
+  },
+  "status": "PASS: reconciliation of supplied fresh certificates",
+  "strict_middle_projection_certificates": 14
+}

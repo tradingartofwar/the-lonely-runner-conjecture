@@ -44,6 +44,16 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 
+**Latest — CC other-ray adversarial review completed.** [CC_OTHER_RAY_REVIEW_2026_09_29.md](notes/CC_OTHER_RAY_REVIEW_2026_09_29.md) records five separately tasked AI reviews of the completed B_q=V(q,1) candidate, with its first two coordinates permuted. No result-level defect was found; all four value branches and the exactly-two-maximizer conclusion remain unchanged. Status is HYPOTHESIS / internally reviewed complete proof candidate, with independent mathematical assessment and novelty still open.
+
+Fresh exact halfspace clipping reproduces all 10 cells, 33 vertices, 45 edges and 3 singleton cells. A fresh arithmetic checker confirms all 63 unbounded global comparisons, including 60 strict nonwinners, plus symbolic witness/lap recovery. A different physical-time optimizer recovers every maximum and all 48 maximizing-time occurrences for q=2,...,25; closed-band intersection agrees. Six large inputs q=100002,...,100007 receive witness-only checks. The coordinator reproduced all three outputs exactly.
+
+Two quantifier clarifications distinguish slice vertices from arbitrary high points, and global optimizers from local slice maxima. Exact counterexamples to the overbroad readings are preserved. A simpler cap formulation projects each triangular section through H=x-qy to an interval: 14 extremal directions suffice for this B-ray upper bound. Full cells and equality cases remain stored; the smaller representation does not cover the original ray's tight q=4 case.
+
+**Next proposed:** a same-threshold (z>=1/8) parent-child comparison of the first six forms with the appended seventh constraint 5x+2y, retaining the A-ray orbit qx-y in Z, lap labels and isolated equality witnesses. Begin with archived controls, including q=4, and test what parent information is sufficient to recover the children. This investigation was not executed in the review. The original proof packages remain frozen; no main merge, outside contact, novelty sweep or unattended work was performed.
+
+### Prior other-ray upper-bound derivation — preserved
+
 **Latest — matching upper bound completes the other-ray proof candidate.** [LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md](notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md) closes the open upper-bound step for B_q=V(q,1), with its first two coordinates permuted. The four-row mod-6 spectrum and physical witness formulas now have a complete argument for every integer q>=2, conditional on the exact fixed-cell lemma. Status remains HYPOTHESIS / complete proof candidate, awaiting independent review; no novelty claim.
 
 The corrected actual-orbit equation x-qy in Z selects peak B's (-1,4) edge in residue 0, C's (-3,5) edge in residue 2, and F's (-1,2) edge in residue 5. Their minimum losses from 1/6 are 1/[6(4q+1)], 1/[6(5q+3)], and 1/[6(2q+1)]. Residues 1,3,4 reach an ambient peak. All competing edges have strictly greater loss in the nonconstant branches; exactly two maximizing times survive in every case, t(q) and 1-t(q).
