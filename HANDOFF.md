@@ -8,6 +8,23 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Visual implementation — September 29, 2026:**
+[The CC visual companion](visuals/compatibility-calculus/README.md) completes
+the planned source manifest and exact data layer, plus the first interactive
+B-ray slice: cap → triangular section → projected interval → first integer
+contact → recovered physical time and runner phases. Open the self-contained
+`visuals/compatibility-calculus/presentation.html` offline. It covers six
+canonical B inputs, all residues mod 6, preserves reflection and zero-loss peak
+cases, and can reveal the full ten-cell atlas including three singletons.
+Exact geometry, transfer, equality, selector and physical controls pass; the
+browser audit passes desktop/phone layouts, rational state checks and reduced
+motion. Source commit `6b2b931` and source/implementation hashes are recorded.
+This is AI-assisted visualization and same-author verification; mathematical
+claim statuses and the live research question below are unchanged. The full
+deck and explorer remain pending. **Next visual target:** q=4 separate marginal
+ranges versus joint same-point compatibility, using the existing exact data.
+The eventual compression ladder must distinguish A/B orbit maps and clocks.
+
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 
 **Visual presentation plan — September 29, 2026:** [CC_VISUAL_PRESENTATION_PLAN_2026_09_29.md](notes/CC_VISUAL_PRESENTATION_PLAN_2026_09_29.md) is the execution plan for a code-generated research presentation and explorer. It begins with an exact data layer, then a first vertical slice from B-ray top cap to projected interval to first integer hit to recovered physical witness, followed by the q=4 marginal-versus-joint compatibility visual and the representation-compression ladder. Use the plan file as the entry point for a new implementation thread; do not begin by hand-drawing the whole deck.

@@ -43,6 +43,12 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+**Visual companion:** [From cap to clock](visuals/compatibility-calculus/README.md)
+is the first interactive CC slice, backed by the exact fixed-cell certificates.
+Open its self-contained `presentation.html` to follow a B-ray cap section to
+an integer orbit contact and a physical runner witness. The data and browser
+checks pass; the full deck and research explorer remain in progress.
+
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 
 **CC working rules — September 29, 2026:** [Representation and transfer rules](notes/CC_REPRESENTATION_RULES.md) now require an explicit supported question and next operation, retained/omitted information, a richer source and recovery map, and evidence plus a failure test. The note supplies records for full cells, B-ray caps and A-ray conditional intervals. Existing frameworks, including other authors' LTCMs, may be reused, modified, combined or replaced whenever useful; preserve attribution, the exact changes and the applicability of inherited results. Apply the same scrutiny to CC itself. These rules are also in AGENTS.md. The bounded one-witness selection target now has the two-segment proof candidate below; its compact representation record is included in the working rules.
