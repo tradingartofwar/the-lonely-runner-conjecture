@@ -4,8 +4,8 @@
     "rendering": "ILLUSTRATION — animation and floating-point rendering are not proof",
     "spectrum": "HYPOTHESIS — internally reviewed proof candidate; independent assessment remains open"
   },
-  "data_build_sha256": "c58f5d8ce9f26ba626a08fc512d12584e50b4edc326feea5491550d5f2127248",
-  "implementation_scope": "Exact data and four sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, and three exact parent-to-child transformations; full deck and explorer remain pending.",
+  "data_build_sha256": "e2f5d000f003b40c03f3de512b398bb4b0ccca4eaf4182d397ceeb21570b8a9e",
+  "implementation_scope": "Exact data and five sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, and an operable two-segment A-ray selector; full deck and explorer remain pending.",
   "omitted_by_first_slice": "Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.",
   "recovery": "Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.",
   "repository": "https://github.com/tradingartofwar/the-lonely-runner-conjecture",
@@ -20,7 +20,9 @@
     "physical": "reviews/2026-09-29-cc-other-ray-review/physical_check.json",
     "projection": "notes/CC_OTHER_RAY_REVIEW_2026_09_29.md",
     "representation_rules": "notes/CC_REPRESENTATION_RULES.md",
-    "representation_selector": "notes/CC_BOUNDED_SELECTOR_2026_09_29.md"
+    "representation_selector": "notes/CC_BOUNDED_SELECTOR_2026_09_29.md",
+    "selector_geometry": "reviews/2026-09-29-cc-bounded-selector/verification.json",
+    "selector_physical": "reviews/2026-09-29-cc-bounded-selector/countercheck.json"
   },
   "schema_version": 1,
   "scope": "Selected stationary reference; eight common-start runners; the fixed A/B families only.",

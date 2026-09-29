@@ -8,6 +8,34 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Fifth visual section — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) adds
+**05 · One safe time**, directly reachable as `#selector`. It makes the
+original pinned E1-then-E2 selector operable with q=3,4,5,6,10. At default q=5,
+the first interval [1/8,19/24] rejects ceil(lower)=1; E2's [3/2,19/8] accepts
+2 and recovers t=25/56. No physical witness appears after the failed test.
+The other controls preserve negative-bound rounding, lower/upper equality
+and width greater than one. Step, direct execution, reset and reflection work.
+
+Exact endpoint projection and integer enumeration check all ten displayed
+intervals through a different route from the builder's line calculation.
+Selected and reflected phases, laps and distances agree with direct physical
+time. All eleven states pass 33 desktop/phone layouts; all earlier chapter
+checks and five-chapter navigation also pass. The width argument and complete
+small-input table remain distinct from the five finite display controls.
+One selected witness is explicitly not an optimum or complete witness set.
+
+Mathematical sources stay at 6b2b931, including the original segment order and
+proof-candidate status. Later two-parameter discovery and compiler work below
+remain separate and preserved. No new mathematical claim or status promotion.
+
+**Next visual target:** physical foundations from the plan's early scenes:
+safe/blocking intervals on one shared clock, occurrence identity and the
+archived 6/11/16 pairwise-overlap counterexample. That is a distinct source
+example, not an extension of the current A/B controls. Full deck/explorer
+remain pending.
+
+
 **Fourth visual section — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **04 · What survives the cut**, reachable directly as `#transfer`. Three exact

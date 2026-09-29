@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Four connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, and **what survives the cut**.
+**Five connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, and **one safe time**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -17,6 +17,8 @@ Choose **03 · What the model remembers**, or open `#representation`, for six
 question-specific representation records and their information-loss controls.
 Choose **04 · What survives the cut**, or open `#transfer`, for the parent–child
 geometry and physical recovery scenes.
+Choose **05 · One safe time**, or open `#selector`, to run the two-segment
+selector one test at a time.
 
 ## What this version does
 
@@ -75,9 +77,24 @@ q=4 safe set and complete q=10 maximizing set remain separate from the local
 parent-slice conclusions. At the rejected q=4 time, the recovery panel clearly
 checks the failed old time rather than displaying a child witness.
 
-The exact data layer preserves the other planned A-ray controls, the
-six-to-seven atlas, q=10 face contact, and both A-ray selector segments. The
-20-scene deck and full research explorer remain pending.
+The fifth chapter makes the pinned E1-then-E2 selector operable. Start at q=5:
+E1's interval [1/8,19/24] misses the integer 1, so the second test uses E2's
+[3/2,19/8], accepts 2, and recovers t=25/56. No witness is displayed after the
+failed first test. The other controls show negative-lower-bound rounding
+(q=3), closed lower/upper equality (q=4/q=6), and width greater than one
+(q=10). The reader can step, run directly, reset, and reflect physical time.
+
+Both safe segments, their exact projected intervals and the tested orbit
+remain linked. Every accepted point recovers its original laps and all seven
+physical phases. The width argument and complete q=2,...,8 arithmetic table
+explain the source candidate's all-q reduction. Five interactive examples are
+finite reproductions, not a substitute for that argument. At q=4, the one
+selected time and its reflection omit two safe times; at q=10, its minimum
+1/8 is below the optimum 1/7. This is a one-witness selector.
+
+The original selector order and mathematical sources remain pinned to the
+frozen snapshot. Later discovery and coverage-compiler research are separate
+versions. The 20-scene deck and full research explorer remain pending.
 
 ## Evidence and scope
 
@@ -130,7 +147,7 @@ It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
 `presentation.template.html`, `joint.template.html`, `representation.template.html`,
-`transfer.template.html`,
+`transfer.template.html`, `selector.template.html`,
 `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
 
@@ -153,7 +170,7 @@ from a drawing.
 | Combined marginal candidate | t=33/104 gives runner 6 distance 5/52<1/8 while runner 13 reaches 1/8 |
 | Conditional slice | All 14 displayed exact points retain six-runner safety and fail only runner 13; collision t=4/13; the entire closed S interval is strictly blocked |
 | q=10 | 17/35 and 18/35 are maximizers; the old face has dimension 2 and the child face dimension 1 |
-| Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints |
+| Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints; ten projected intervals and five selected/reflected physical controls |
 | Parent–child scenes | Three parents and four children: seven exact orbit slices reconstructed independently from 2D inequalities; before/after phases, laps and reflections |
 | Representation controls | q=4 closed/open segment integer contacts; all eight q=10 maximizers partitioned into six old-edge and two face-interior recoveries |
 | B-ray examples | q=2,3,4,5,6,7; all 42 cap-contact tests, direct physical maxima and complete maximizing sets |
@@ -197,7 +214,13 @@ chapter direct links. The builder intersects certified edges with H=qx-y;
 the checker independently intersects pairs of sliced halfspace boundaries,
 covering empty, singleton and triangular results.
 
-Next visual target: make the two-segment A-ray witness selector directly
-operable. Show integer rounding, the q=5 fallback, closed q=4/q=6 endpoints,
-and physical recovery on the already archived controls. Its output is one
-1/8-safe time; optimization and complete witness enumeration remain separate.
+The fifth-section audit adds eleven exact states across 33 layouts, including
+withheld witnesses after failure, closed endpoints, negative rounding, exact
+physical/reflected tables, reset/direct execution and five-chapter navigation.
+The interval checker projects endpoints directly and enumerates integer
+contacts, independently of the builder's slope/intercept calculation.
+
+Next visual target: the physical foundations from the plan's early scenes—
+safe/blocking intervals on one shared clock, occurrence identity, and the
+archived 6/11/16 pairwise-overlap control. Keep that source example distinct
+from the current A/B-ray family. Full deck/explorer remain pending.

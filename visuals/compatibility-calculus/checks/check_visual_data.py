@@ -142,6 +142,51 @@ def main():
         q=r['q'];lo,hi=F(q-4,8),F(5*q-6,24)
         assert r['accept']==(lo.__ceil__()<=hi)==(q!=5)
     counts.update(A_controls=5,physical_transfer_optimizations=6,selector_endpoint_inequalities=56)
+    # Section 05: project the endpoints directly and enumerate the integer set.
+    # This checks the slope/intercept builder through a different route.
+    selector=e['selector_visual'];trial_count=0
+    assert [c['q'] for c in selector['controls']]==[3,4,5,6,10]
+    for control in selector['controls']:
+        q=control['q'];valid=[]
+        for i,(segment,trial) in enumerate(zip(selector['segments'],control['trials'])):
+            endpoints=segment['endpoints']
+            lo,hi=sorted(q*x-y for x,y,z in endpoints)
+            integers=[h for h in range(lo.__floor__()-1,hi.__ceil__()+2) if lo<=h<=hi]
+            assert trial['interval']==[lo,hi] and trial['width']==hi-lo
+            assert trial['first_integer']==lo.__ceil__()
+            assert trial['accepted']==bool(integers)
+            assert trial['lower_equality']==(bool(integers) and integers[0]==lo)
+            assert trial['upper_equality']==(bool(integers) and integers[0]==hi)
+            if integers:
+                h=integers[0];u=(h-lo)/(hi-lo)
+                point=[a+u*(b-a) for a,b in zip(*endpoints)]
+                assert trial['point']==point
+                x,y,z=point;assert q*x-y==h and y==frac(q*x)
+                assert all(z<=a*x+b*y-m<=1-z for (a,b),m in zip(ROWS,segment['torus_laps']))
+                valid.append(i)
+            else:assert trial['point'] is None
+            trial_count+=1
+        assert control['selected_index']==valid[0] and control['attempts']==valid[0]+1
+        selected=control['trials'][valid[0]];segment=selector['segments'][valid[0]]
+        x,y,z=selected['point'];h=q*x-y
+        original=control['witness'];reflected=control['reflected']
+        speeds=next(a['speeds'] for a in e['A'] if a['q']==q)
+        assert original['time']==x and reflected['time']==1-x
+        for witness in [original,reflected]:
+            t=witness['time']
+            assert witness['minimum']==min(dist(v*t) for v in speeds)==F(1,8)
+            assert [r['lap'] for r in witness['runners']]==[(v*t).__floor__() for v in speeds]
+            assert [r['phase'] for r in witness['runners']]==[frac(v*t) for v in speeds]
+            assert [r['distance'] for r in witness['runners']]==[dist(v*t) for v in speeds]
+        assert [r['lap'] for r in original['runners']]==[m+b*h for m,(a,b) in zip(segment['torus_laps'],ROWS)]
+    s3,s4,s5,s6,s10=selector['controls']
+    assert s3['trials'][0]['first_integer']==0 and s3['trials'][0]['interval'][0]==F(-1,8)
+    assert s4['trials'][0]['lower_equality'] and s6['trials'][0]['upper_equality']
+    assert s5['attempts']==2 and s5['witness']['time']==F(25,56)
+    assert s10['trials'][0]['width']>=1 and s10['witness']['time']==F(15,104)
+    counts.update(selector_visual_controls=5,selector_visual_interval_checks=trial_count,
+                  selector_visual_physical_and_reflection=True,selector_visual_states=11,
+                  selector_visual_closed_endpoints_and_negative_rounding=True)
     # Controls for section 03, checked against full physical sets and parent facets.
     a4=next(r for r in e['A'] if r['q']==4)
     closed_segment_times=[];open_segment_times=[]

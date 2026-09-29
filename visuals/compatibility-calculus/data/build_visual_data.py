@@ -190,6 +190,42 @@ def transfer_visual(src):
     return result
 
 
+
+def selector_visual(src):
+    """Derive both projected intervals; retain the pinned E1-then-E2 order."""
+    segments=[]
+    for raw in src['selector']['segments']:
+        endpoints=[list(map(F,p['point'])) for p in raw['endpoints']]
+        a,b=endpoints
+        d=(a[1]-b[1])/(b[0]-a[0]);c=a[1]+d*a[0]
+        segments.append({'segment':raw['segment'],'parent':raw['parent'],
+                         'endpoints':endpoints,'torus_laps':raw['torus_laps'],
+                         'c':c,'d':d,'x_interval':[a[0],b[0]]})
+    archive={r['certificate']['q']:r['certificate'] for r in src['selector']['physical_controls']}
+    controls=[]
+    for q in A_CONTROLS:
+        trials=[]
+        for segment in segments:
+            lo,hi=[(q+segment['d'])*x-segment['c'] for x in segment['x_interval']]
+            h=lo.__ceil__();accepted=h<=hi
+            point=None
+            if accepted:
+                x=(h+segment['c'])/(q+segment['d']);y=segment['c']-segment['d']*x
+                point=[x,y,F(1,8)]
+            trials.append({'segment':segment['segment'],'interval':[lo,hi],
+                           'width':hi-lo,'first_integer':h,'accepted':accepted,
+                           'lower_equality':accepted and h==lo,'upper_equality':accepted and h==hi,
+                           'point':point})
+        chosen=next(i for i,t in enumerate(trials) if t['accepted'])
+        point=trials[chosen]['point'];t=point[0]
+        assert trials[chosen]['segment']==archive[q]['segment']
+        assert point==list(map(F,archive[q]['point']))
+        controls.append({'q':q,'trials':trials,'selected_index':chosen,'attempts':chosen+1,
+                         'witness':witness('A',q,t),'reflected':witness('A',q,1-t)})
+    return {'segments':segments,'controls':controls,'threshold':F(1,8),
+            'source':SOURCES['selector'],'status':'Exact finite controls of the pinned two-segment proof candidate'}
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -247,10 +283,11 @@ def build():
     examples = exact({'A': a_examples, 'B': b_examples,
                       'joint_visual': joint_visual(src),
                       'transfer_visual': transfer_visual(src),
+                      'selector_visual': selector_visual(src),
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -274,6 +311,9 @@ def build():
     controls['transfer_visual'] = {'scenes':3,'stages':3,'q4_removed_parent':2,
                                    'q4_surviving_time':'3/8','q10_before_time':'16/33',
                                    'q10_after_time':'17/35','q10_after_height':'1/7'}
+    controls['selector_visual'] = {'q':A_CONTROLS,'states':11,'fallback_q':5,
+                                   'times':['7/48','1/8','25/56','5/24','15/104'],
+                                   'endpoint_q':[4,6],'attempts':[1,1,2,1,1]}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
@@ -289,8 +329,10 @@ def build():
                                  'representation_rules':'notes/CC_REPRESENTATION_RULES.md',
                                  'representation_selector':'notes/CC_BOUNDED_SELECTOR_2026_09_29.md',
                                  'parent_child_geometry':SOURCES['transfer'],
-                                 'parent_child_physical':SOURCES['transfer_countercheck']},
-                'implementation_scope':'Exact data and four sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, and three exact parent-to-child transformations; full deck and explorer remain pending.'}
+                                 'parent_child_physical':SOURCES['transfer_countercheck'],
+                                 'selector_geometry':SOURCES['selector'],
+                                 'selector_physical':SOURCES['selector_countercheck']},
+                'implementation_scope':'Exact data and five sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, and an operable two-segment A-ray selector; full deck and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -308,10 +350,11 @@ def main():
         html = html.replace('<!-- CC_JOINT -->', (PACKAGE/'joint.template.html').read_text())
         html = html.replace('<!-- CC_REPRESENTATION -->', (PACKAGE/'representation.template.html').read_text())
         html = html.replace('<!-- CC_TRANSFER -->', (PACKAGE/'transfer.template.html').read_text())
+        html = html.replace('<!-- CC_SELECTOR -->', (PACKAGE/'selector.template.html').read_text())
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-navigation.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:

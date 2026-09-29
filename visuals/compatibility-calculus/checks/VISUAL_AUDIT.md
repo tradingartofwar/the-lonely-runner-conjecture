@@ -190,3 +190,49 @@ Distinctions retained:
 This remains finite reproduced data, AI-assisted implementation and same-author
 verification. The all-q transfer reasoning retains its pinned proof-candidate
 status. The full deck and research explorer are still in progress.
+
+## Fifth section: one safe time
+
+Section 05 uses the frozen two-segment E1-then-E2 A-ray selector. Controls are
+q=3,4,5,6,10, with eleven total initial/tested states. A separate exact check
+projects source endpoints through H=qx-y and enumerates the integers in each
+interval; this verifies the builder's slope/intercept computation and its
+first accepted segment. Selected and reflected phases, laps and distances
+are recomputed directly from all seven physical speeds.
+
+The browser checks all eleven states at 1440/light, 390/light and 320/dark
+(33 layouts), including negative-lower-bound rounding, lower/upper endpoint
+equality, the failed q=5 E1 attempt, and all selected/reflected tables. No
+witness appears after the failed test. Successful first tests stop without
+attempting E2. Direct execution, reset, retained state between chapters and
+a fresh #selector link pass. The prior four chapters remain covered.
+
+Rendered review covered the desktop q=5 failure and successful fallback,
+and the narrow dark q=6 upper-endpoint contact. The x-axis label was moved
+inside its viewBox after the first automated clipping check. The final audit
+found no clipped SVG labels, horizontal document overflow, page errors or
+network dependencies. The layout retains text status labels alongside color.
+
+Representation checkpoint:
+
+- Two compatible closed segments retain all seven affine safety bands and
+  torus lap labels. The accepted integer identifies a point on that same
+  segment; t=x and physical laps are recovered explicitly.
+- Equality remains part of the certificate; the q=4/q=6 witnesses are closed
+  segment endpoints, not approximation tolerances.
+- Failed E1 rejects that segment for the current q, not the complete system.
+- The coverage explanation uses width >=1 for q>=9 and the complete remaining
+  q=2,...,8 arithmetic table. The five display controls alone do not certify
+  an unbounded claim.
+- At most two rounding/tests is not constant bit complexity.
+- The physical table reflects time while the segment diagram retains the
+  original folded point, with that distinction stated beside the track.
+- q=4 exposes omitted safe times and q=10 exposes a better optimum. The
+  selected time answers one-witness existence, not enumeration or optimization.
+- The original order, sources and proof-candidate status stay pinned to
+  6b2b931. Subsequent discovery/coverage-compiler certificates are separate
+  versions. No new mathematical, generality or novelty claim is introduced.
+
+Full deck/explorer remain pending. The next visual target is shared physical
+clock/occurrence identity using the plan's archived 6/11/16 example, kept
+separate from the A/B-ray display controls.

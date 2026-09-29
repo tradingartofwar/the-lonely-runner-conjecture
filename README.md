@@ -43,14 +43,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
-**Visual companion:** [Four interactive CC sections](visuals/compatibility-calculus/README.md)
+**Visual companion:** [Five interactive CC sections](visuals/compatibility-calculus/README.md)
 connect **from cap to clock**, **true somewhere versus true together**,
-**what the model remembers**, and **what survives the cut**. Open the
-self-contained `presentation.html`. Section 04 shows exact 3D parent/child
-geometry beside its physical orbit slice: a q=4 interval disappears, an
-isolated q=4 witness survives, and a new q=10 contact appears inside an old
-face. Exact checks, physical/reflected phase tables and desktop/phone browser
-checks pass; the full deck and research explorer remain in progress.
+**what the model remembers**, **what survives the cut**, and **one safe time**.
+Open the self-contained `presentation.html`. Section 05 runs the pinned
+E1-then-E2 witness selector: exact integer rounding, the q=5 fallback, closed
+q=4/q=6 endpoints and physical recovery. Five controls cover eleven states
+and 33 desktop/phone layouts, alongside the existing section checks. Sources
+stay frozen at 6b2b931; the full deck and research explorer remain in progress.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

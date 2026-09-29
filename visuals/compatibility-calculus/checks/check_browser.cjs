@@ -12,8 +12,9 @@ const pkg=path.resolve(__dirname,'..');
 const examples=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).B;
 const joint=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).joint_visual;
 const cut=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).transfer_visual;
+const selector=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).selector_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation and parent-child controls; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation, parent-child and two-segment selector controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -248,6 +249,74 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-transfer').getAttribute('aria-current'),'page');
     report.checks.transfer_exact_stages=9;report.checks.transfer_phases_and_reflection=true;
     report.checks.transfer_camera_orbit_and_navigation=true;report.checks.four_chapter_direct_links=true;
+    await page.click('#nav-selector');
+    await page.waitForFunction(()=>window.CC_SELECTOR_STATE&&!document.getElementById('selector-chapter').hidden);
+    report.checks.selector_layouts=[];
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const control of selector.controls){
+        await page.selectOption('#selector-q',String(control.q));
+        for(let attempt=0;attempt<=control.attempts;attempt++){
+          if(attempt)await page.click('#selector-next');
+          await page.waitForTimeout(35);
+          let c=await page.evaluate(()=>window.CC_SELECTOR_STATE);
+          assert.equal(c.q,control.q);assert.equal(c.attempts,attempt);
+          const done=attempt===control.attempts;
+          assert.deepEqual(c.trials,control.trials.map((t,i)=>({interval:t.interval.map(v=>v.text),candidate:String(t.first_integer),tested:i<attempt,accepted:i<attempt?t.accepted:null})));
+          const selected=control.trials[control.selected_index];
+          assert.equal(c.selectedTime,done?control.witness.time.text:null);
+          assert.equal(c.selectedSegment,done?selected.segment:null);
+          assert.deepEqual(c.point,done?selected.point.map(v=>v.text):null);
+          assert.equal(await page.locator('#selector-recovery').isVisible(),done);
+          assert.equal(await page.locator('#selector-physical').isVisible(),done);
+          assert.equal(await page.locator('#selector-next').isVisible(),!done);
+          assert.equal(await page.locator('#selector-run').isVisible(),!done);
+          if(done){
+            for(const reflect of [false,true]){
+              await page.locator('#selector-reflect').setChecked(reflect);
+              c=await page.evaluate(()=>window.CC_SELECTOR_STATE);
+              const w=reflect?control.reflected:control.witness;
+              assert.equal(c.physical.time,w.time.text);assert.equal(c.physical.minimum,'1/8');
+              assert.deepEqual(c.physical.phases,w.runners.map(r=>r.phase.text));
+              assert.deepEqual(c.physical.distances,w.runners.map(r=>r.distance.text));
+              assert.deepEqual(c.physical.laps,w.runners.map(r=>String(r.lap)));
+              assert.deepEqual(c.point,selected.point.map(v=>v.text));
+              assert.equal(await page.locator('#selector-phase-rows tr').count(),7);
+            }
+            await page.uncheck('#selector-reflect');
+            assert.equal(await page.locator('#selector-status-1').textContent(),control.q===5?'Accepted':'Not needed');
+          }else assert.equal(c.physical,null);
+          if(control.q===5&&attempt===1){
+            assert.equal(await page.locator('#selector-status-0').textContent(),'No integer');
+            assert.equal(await page.locator('#selector-next').textContent(),'Test E2 →');
+          }
+          const layout=await page.evaluate(()=>{
+            const outside=[];
+            for(const svg of document.querySelectorAll('#selector-chapter svg')){
+              if(!svg.getBoundingClientRect().width)continue;
+              const b=svg.viewBox.baseVal;
+              for(const t of svg.querySelectorAll('text')){const r=t.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:t.textContent});}
+            }
+            return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+          });
+          assert.deepEqual(layout,{overflow:false,outside:[]},`selector ${width} q=${control.q} attempt=${attempt}`);
+          report.checks.selector_layouts.push({width,scheme,q:control.q,attempt,overflow:false,clipped_svg_labels:0});
+          if(process.env.CC_SCREENSHOT_DIR&&(width===1440||(width===320&&done)))await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`selector-${width}-q${control.q}-${attempt}.png`),fullPage:true});
+        }
+      }
+    }
+    await page.click('#selector-reset');assert.equal((await page.evaluate(()=>window.CC_SELECTOR_STATE)).physical,null);
+    await page.click('#selector-run');assert.equal((await page.evaluate(()=>window.CC_SELECTOR_STATE)).selectedTime,'15/104');
+    await page.selectOption('#selector-q','5');await page.click('#selector-run');assert.equal((await page.evaluate(()=>window.CC_SELECTOR_STATE)).attempts,2);
+    await page.click('#nav-transfer');await page.waitForFunction(()=>document.getElementById('selector-chapter').hidden);
+    await page.click('#nav-selector');await page.waitForFunction(()=>!document.getElementById('selector-chapter').hidden);assert.equal((await page.evaluate(()=>window.CC_SELECTOR_STATE)).attempts,2);
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#selector');await page.reload();
+    await page.waitForFunction(()=>window.CC_SELECTOR_STATE&&!document.getElementById('selector-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_SELECTOR_STATE)).q,5);assert.equal((await page.evaluate(()=>window.CC_SELECTOR_STATE)).attempts,0);
+    assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-selector').getAttribute('aria-current'),'page');
+    report.checks.selector_exact_states=11;report.checks.selector_phases_laps_and_reflection=true;
+    report.checks.selector_no_witness_after_failed_E1=true;report.checks.selector_reset_run_and_navigation=true;
+    report.checks.five_chapter_direct_links=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));
