@@ -4,6 +4,18 @@ September 25, 2026. This is the compact continuation entry point after LR 1 reac
 
 ## Start here
 
+**Latest — LTCM test produces an exact unbounded-family spectrum candidate.** [LTCM_EXACT_SPECTRUM_2026_09_29.md](notes/LTCM_EXACT_SPECTRUM_2026_09_29.md) gives a five-branch formula for the selected-reference optimum of (1,q,q+1,q+2,q+3,2q+3,2q+5), every integer q>=2, with explicit actual-time witnesses and matching upper bounds. This is a complete proof candidate supported by one fixed finite polyhedral certificate, not independent human review or a novelty claim. q4 is the only tight1/8 case; all other q have maximum>=1/7.
+
+The useful language operation is arithmetic selection from a fixed geometry while retaining qx-y in Z. Ten ambient cells,33 vertices and45 edges give a q-independent selector; edge losses simplify by q mod6. The proof does not enumerate q-many laps. Two separate exact ambient constructions agree;84 symbolic inequalities certify the unbounded comparisons. Direct one-dimensional maxima agree for the24 predeclared q2,...,25; two large inputs receive witness-only checks. These programs were written by the same coordinator, not independently authored reviewers.
+
+The preceding LTCM review also ruled out widening every old stronger-safe cell as a universal additive lift. Delete5=1+4 from tight13: all four final witnesses remain isolated already among the retained runners, and none belongs to a cell feasible at1/7. A complete method must permit new lap cells. This correction is preserved in the new note.
+
+Jain–Kravitz's relative-spectrum torus supplies exactly the first six coefficient rows; fixed-lap polyhedra and the broader method are established precedents. Ordinary eight-runner existence remains credited. The result classifies this ray's optimum, not arbitrary velocities, other reference runners, or all runner counts.
+
+**Next:** independent correctness and prior-art review of the fixed-cell certificate, slice-edge selector and residue formulas before extending to variable p or a broader coefficient class. No outside contact has been made. Hourly remains paused; no main merge, new agent delegation, paid compute, broad scan or unattended run. The older fixed-core finite box remains unchanged and unexhausted.
+
+### Prior Ultra assessment — preserved
+
 **Latest — Ultra assessment: retain the mechanisms, target the actual trajectory.** [ULTRA_ASSESSMENT_2026_09_29.md](notes/ULTRA_ASSESSMENT_2026_09_29.md) records a six-reviewer audit and fresh primary-source check. No fatal defect was found in the assigned short-kernel, core-window, six-core and last-runner proof spine. This is internal AI review, not external certification or a novelty decision. The present work has useful supplied-certificate mechanisms; it does not yet have a structural reduction from arbitrary velocities or an induction for arbitrary runner count. The fixed-family finite box remains unexhausted.
 
 The tight13 control conclusively rules out EVERY positive-window-only certificate family: all positive closed core components are strictly blocked, yet four isolated points survive. A universal route needs a genuine point/equality branch. The m-train critical-duty argument also does not transfer directly to all n−1 blockers at duty2/n, whose total duty exceeds one. All-phase final-runner protection is stronger than common-start existence and must not become an unearned universal requirement.

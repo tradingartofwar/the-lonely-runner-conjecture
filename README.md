@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+The [LTCM spectrum test](notes/LTCM_EXACT_SPECTRUM_2026_09_29.md) gives a complete proof candidate for the exact selected-reference maximum of (1,q,q+1,q+2,q+3,2q+3,2q+5), every integer q>=2. A five-branch rule supplies both the optimum and an attaining time. q4 is the only tight1/8 case; every other member has maximum>=1/7.
+
+A fixed ten-cell geometry and the actual-orbit condition qx-y in Z replace growing lap enumeration. Separate exact constructions recover33 vertices;84 symbolic comparisons support the universal upper bound;24 declared small-q maxima and two large witness checks agree. This is an internally checked candidate with a finite polyhedral certificate, not independent human review or established novelty. The existing relative-spectrum and polyhedral frameworks are credited.
+
+Next: independent proof and prior-art review before extending the parameter family. Hourly remains paused.
+
+### Prior Ultra assessment — preserved
+
 The [Ultra assessment](notes/ULTRA_ASSESSMENT_2026_09_29.md) found no fatal defect in the assigned proof spine, but identified the missing general step: our supplied-window and arithmetic certificates do not yet force witnesses for arbitrary configurations. The finite fixed-family remainder is unchanged and unexhausted. Tight13 rules out any universal strategy using only positive openings; isolated equality witnesses are essential.
 
 The review also ruled out a proposed detour: proper rational phase-space relaxations already have strict safe points by lower-runner theory. The hard part is transferring safety to the actual one-dimensional runner trajectory. A new relative short-relation bound adds no pruning to our present remainder.
