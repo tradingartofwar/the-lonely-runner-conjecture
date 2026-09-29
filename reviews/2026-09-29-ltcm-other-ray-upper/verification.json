@@ -1,0 +1,4873 @@
+{
+  "status": "PASS; complete upper/lower proof candidate with exact finite cell certificate",
+  "base_commit": "44bd7854cd14c15cc52d991a0c61a22295af1234",
+  "script_sha256": "5603fac08f783b97a603d5a930f9272fa54f0010aeb899c5ea6be54987154356",
+  "dependency_sha256": {
+    "reviews/2026-09-29-ltcm-spectrum/ambient.json": "af1a620e08e9407b7d01d0f444a0041f81e5be3e02c673f891f033c3a680f736",
+    "reviews/2026-09-29-ltcm-other-ray/verify.py": "b1cc4d4b3d3025b285b51eb2587c8c9be2a3646908f7b8226838cc4851e9e7d5",
+    "reviews/2026-09-29-ltcm-other-ray/verification.json": "faa9ffff198fa134639572a1240463e4b07e820c02a3512c04fcb810d25d3620"
+  },
+  "summary": {
+    "boundary_planes": 48,
+    "plane_triples": 17296,
+    "cells": 10,
+    "vertices": 33,
+    "edges": 45,
+    "peak_edges": 21,
+    "unbounded_domain_upper_comparisons": 63,
+    "peak_table_comparisons": 63,
+    "symbolic_lower_phase_identities": 42,
+    "symbolic_lower_inequalities": 84,
+    "frozen_physical_cases_compared": 149,
+    "new_physical_q_values": 0
+  },
+  "geometry": [
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": [
+        [
+          "1/8",
+          "1/8",
+          "1/8"
+        ]
+      ],
+      "edges": [],
+      "dimension": 0
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "vertices": [
+        [
+          "1/8",
+          "1/4",
+          "1/8"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "7/40",
+          "1/8",
+          "1/8"
+        ],
+        [
+          "5/24",
+          "1/8",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dimension": 3
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "vertices": [
+        [
+          "1/8",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/8",
+          "1/2",
+          "1/8"
+        ],
+        [
+          "1/6",
+          "1/3",
+          "1/6"
+        ],
+        [
+          "5/24",
+          "1/4",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dimension": 3
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "vertices": [
+        [
+          "3/8",
+          "1/8",
+          "1/8"
+        ]
+      ],
+      "edges": [],
+      "dimension": 0
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "vertices": [
+        [
+          "3/8",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "1/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "3/16",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dimension": 3
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "vertices": [
+        [
+          "3/8",
+          "1/2",
+          "1/8"
+        ]
+      ],
+      "edges": [],
+      "dimension": 0
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3
+      ],
+      "vertices": [
+        [
+          "11/24",
+          "5/12",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "5/16",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "3/8",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dimension": 3
+    },
+    {
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "vertices": [
+        [
+          "11/40",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "2/7",
+          "6/7",
+          "1/7"
+        ],
+        [
+          "7/24",
+          "5/6",
+          "1/8"
+        ],
+        [
+          "1/3",
+          "5/6",
+          "1/6"
+        ],
+        [
+          "1/3",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/4",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "dimension": 3
+    },
+    {
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "vertices": [
+        [
+          "11/24",
+          "3/4",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "5/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "2/3",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "11/16",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dimension": 3
+    },
+    {
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "vertices": [
+        [
+          "19/40",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "13/16",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "5/6",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "7/8",
+          "1/8"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "dimension": 3
+    }
+  ],
+  "peak_edges": [
+    {
+      "name": "A",
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "2",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "A",
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "direction": [
+        "1/5",
+        "-1"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "1",
+        "1/5"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "A",
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "direction": [
+        "1",
+        "-1"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "1",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "B",
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      "direction": [
+        "-1",
+        "1"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "B",
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      "direction": [
+        "-1",
+        "4"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "4",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "B",
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "2",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "C",
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "direction": [
+        "-3",
+        "5"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "5",
+        "3"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "C",
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "1",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "C",
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1/2",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "D",
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "2",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "D",
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "1/2",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "D",
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "1"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "E",
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ],
+      "direction": [
+        "-2",
+        "1"
+      ],
+      "emax": "1/42",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1",
+        "2"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "E",
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "1"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "E",
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ],
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "2",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "F",
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "2",
+        "1"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "F",
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "1",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "F",
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1/2",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "G",
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ],
+      "direction": [
+        "-3/5",
+        "1"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1",
+        "3/5"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "G",
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "emax": "1/24",
+      "projection_sign": 1,
+      "abs_projection": [
+        "1/2",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "G",
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ],
+      "direction": [
+        "0",
+        "1"
+      ],
+      "emax": "1/24",
+      "projection_sign": -1,
+      "abs_projection": [
+        "1",
+        "0"
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "archive_comparison": {
+    "git_blob": "0d2b6da07b31adb119eea9de3ea8dd2ba2524498",
+    "cells_vertices_edges_match": true
+  },
+  "symbolic_upper_bound": {
+    "integral_peak_residues": {
+      "0": [],
+      "1": [
+        "A"
+      ],
+      "2": [],
+      "3": [
+        "C",
+        "G"
+      ],
+      "4": [
+        "E"
+      ],
+      "5": []
+    },
+    "domains": [
+      {
+        "residue": 0,
+        "qmin": 6,
+        "winner": {
+          "edge": {
+            "name": "B",
+            "peak": [
+              "1/6",
+              "1/3",
+              "1/6"
+            ],
+            "direction": [
+              "-1",
+              "4"
+            ],
+            "emax": "1/24",
+            "projection_sign": -1,
+            "abs_projection": [
+              "4",
+              "1"
+            ],
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          "rho": "1/6",
+          "numerator": "1/6",
+          "denominator": [
+            "4",
+            "1"
+          ]
+        },
+        "loss_at_qmin": "1/150",
+        "H_coefficients_in_k": [
+          "0",
+          "-2"
+        ],
+        "physical_y_numerator_in_q": [
+          "6",
+          "8"
+        ],
+        "denominator_in_q": [
+          "6",
+          "24"
+        ],
+        "chosen_time_reflects_y": false,
+        "previous_witness_identity": true,
+        "previous_value_identity": true,
+        "peak_minimum_loss_table": {
+          "A": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "B": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "4",
+              "1"
+            ]
+          },
+          "C": {
+            "six_times_loss_numerator": "3",
+            "denominator": [
+              "5",
+              "3"
+            ]
+          },
+          "D": {
+            "six_times_loss_numerator": "3",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "E": {
+            "six_times_loss_numerator": "2",
+            "denominator": [
+              "1",
+              "2"
+            ]
+          },
+          "F": {
+            "six_times_loss_numerator": "3",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "G": {
+            "six_times_loss_numerator": "3",
+            "denominator": [
+              "1",
+              "3/5"
+            ]
+          }
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "winner": {
+          "edge": {
+            "name": "C",
+            "peak": [
+              "1/2",
+              "1/6",
+              "1/6"
+            ],
+            "direction": [
+              "-3",
+              "5"
+            ],
+            "emax": "1/24",
+            "projection_sign": -1,
+            "abs_projection": [
+              "5",
+              "3"
+            ],
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              2
+            ]
+          },
+          "rho": "1/6",
+          "numerator": "1/6",
+          "denominator": [
+            "5",
+            "3"
+          ]
+        },
+        "loss_at_qmin": "1/78",
+        "H_coefficients_in_k": [
+          "0",
+          "-1"
+        ],
+        "physical_y_numerator_in_q": [
+          "8",
+          "5"
+        ],
+        "denominator_in_q": [
+          "18",
+          "30"
+        ],
+        "chosen_time_reflects_y": false,
+        "previous_witness_identity": true,
+        "previous_value_identity": true,
+        "peak_minimum_loss_table": {
+          "A": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "1",
+              "1"
+            ]
+          },
+          "B": {
+            "six_times_loss_numerator": "3",
+            "denominator": [
+              "4",
+              "1"
+            ]
+          },
+          "C": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "5",
+              "3"
+            ]
+          },
+          "D": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "1/2",
+              "0"
+            ]
+          },
+          "E": {
+            "six_times_loss_numerator": "2",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "F": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "G": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "1/2",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "winner": {
+          "edge": {
+            "name": "F",
+            "peak": [
+              "1/2",
+              "2/3",
+              "1/6"
+            ],
+            "direction": [
+              "-1",
+              "2"
+            ],
+            "emax": "1/24",
+            "projection_sign": -1,
+            "abs_projection": [
+              "2",
+              "1"
+            ],
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2,
+              3
+            ]
+          },
+          "rho": "1/6",
+          "numerator": "1/6",
+          "denominator": [
+            "2",
+            "1"
+          ]
+        },
+        "loss_at_qmin": "1/66",
+        "H_coefficients_in_k": [
+          "-3",
+          "-4"
+        ],
+        "physical_y_numerator_in_q": [
+          "6",
+          "8"
+        ],
+        "denominator_in_q": [
+          "6",
+          "12"
+        ],
+        "chosen_time_reflects_y": true,
+        "previous_witness_identity": true,
+        "previous_value_identity": true,
+        "peak_minimum_loss_table": {
+          "A": {
+            "six_times_loss_numerator": "2",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "B": {
+            "six_times_loss_numerator": "3",
+            "denominator": [
+              "4",
+              "1"
+            ]
+          },
+          "C": {
+            "six_times_loss_numerator": "4",
+            "denominator": [
+              "5",
+              "3"
+            ]
+          },
+          "D": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "1/2",
+              "0"
+            ]
+          },
+          "E": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "1",
+              "2"
+            ]
+          },
+          "F": {
+            "six_times_loss_numerator": "1",
+            "denominator": [
+              "2",
+              "1"
+            ]
+          },
+          "G": {
+            "six_times_loss_numerator": "2",
+            "denominator": [
+              "1",
+              "3/5"
+            ]
+          }
+        }
+      }
+    ],
+    "global_comparisons": [
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "A",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/3",
+          "intercept": "0",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "A",
+        "direction": [
+          "1/5",
+          "-1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "1/5"
+        ],
+        "comparison": {
+          "slope": "19/6",
+          "intercept": "4/5",
+          "value_at_qmin": "99/5"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "A",
+        "direction": [
+          "1",
+          "-1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "19/6",
+          "intercept": "2/3",
+          "value_at_qmin": "59/3"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "0",
+          "value_at_qmin": "3"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "4"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "4",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "B",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "3",
+          "intercept": "2/3",
+          "value_at_qmin": "56/3"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "C",
+        "direction": [
+          "-3",
+          "5"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "5",
+          "3"
+        ],
+        "comparison": {
+          "slope": "7/6",
+          "intercept": "0",
+          "value_at_qmin": "7"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "C",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "11/6",
+          "intercept": "1/2",
+          "value_at_qmin": "23/2"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "C",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "23/12",
+          "intercept": "1/2",
+          "value_at_qmin": "12"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "D",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "5/3",
+          "intercept": "1/3",
+          "value_at_qmin": "31/3"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "D",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "23/12",
+          "intercept": "1/2",
+          "value_at_qmin": "12"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "D",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "11/6",
+          "intercept": "1/2",
+          "value_at_qmin": "23/2"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "E",
+        "direction": [
+          "-2",
+          "1"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "7/6",
+          "intercept": "0",
+          "value_at_qmin": "7"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "E",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "7/6",
+          "intercept": "1/3",
+          "value_at_qmin": "22/3"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "E",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "7/3",
+          "intercept": "1/2",
+          "value_at_qmin": "29/2"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "F",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "5/3",
+          "intercept": "1/3",
+          "value_at_qmin": "31/3"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "F",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "11/6",
+          "intercept": "1/2",
+          "value_at_qmin": "23/2"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "F",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "23/12",
+          "intercept": "1/2",
+          "value_at_qmin": "12"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "G",
+        "direction": [
+          "-3/5",
+          "1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "3/5"
+        ],
+        "comparison": {
+          "slope": "11/6",
+          "intercept": "2/5",
+          "value_at_qmin": "57/5"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "G",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "23/12",
+          "intercept": "1/2",
+          "value_at_qmin": "12"
+        }
+      },
+      {
+        "residue": 0,
+        "qmin": 6,
+        "peak": "G",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "11/6",
+          "intercept": "1/2",
+          "value_at_qmin": "23/2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "A",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "23/6",
+          "intercept": "7/3",
+          "value_at_qmin": "10"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "A",
+        "direction": [
+          "1/5",
+          "-1"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1",
+          "1/5"
+        ],
+        "comparison": {
+          "slope": "2/3",
+          "intercept": "7/15",
+          "value_at_qmin": "9/5"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "A",
+        "direction": [
+          "1",
+          "-1"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "2/3",
+          "intercept": "1/3",
+          "value_at_qmin": "5/3"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "7/3",
+          "intercept": "4/3",
+          "value_at_qmin": "6"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "4"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "4",
+          "1"
+        ],
+        "comparison": {
+          "slope": "11/6",
+          "intercept": "4/3",
+          "value_at_qmin": "5"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "B",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "13/6",
+          "intercept": "4/3",
+          "value_at_qmin": "17/3"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "C",
+        "direction": [
+          "-3",
+          "5"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "5",
+          "3"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "C",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "4",
+          "intercept": "5/2",
+          "value_at_qmin": "21/2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "C",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "D",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "23/6",
+          "intercept": "7/3",
+          "value_at_qmin": "10"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "D",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "D",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "4",
+          "intercept": "5/2",
+          "value_at_qmin": "21/2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "E",
+        "direction": [
+          "-2",
+          "1"
+        ],
+        "rho": "2/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "19/6",
+          "intercept": "5/3",
+          "value_at_qmin": "8"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "E",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "2/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "19/6",
+          "intercept": "2",
+          "value_at_qmin": "25/3"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "E",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "rho": "2/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "4/3",
+          "intercept": "5/6",
+          "value_at_qmin": "7/2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "F",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "1/3",
+          "value_at_qmin": "4/3"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "F",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "4",
+          "intercept": "5/2",
+          "value_at_qmin": "21/2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "F",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "G",
+        "direction": [
+          "-3/5",
+          "1"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "3/5"
+        ],
+        "comparison": {
+          "slope": "4",
+          "intercept": "12/5",
+          "value_at_qmin": "52/5"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "G",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "qmin": 2,
+        "peak": "G",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "4",
+          "intercept": "5/2",
+          "value_at_qmin": "21/2"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "A",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/3",
+          "intercept": "1/6",
+          "value_at_qmin": "11/6"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "A",
+        "direction": [
+          "1/5",
+          "-1"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "1",
+          "1/5"
+        ],
+        "comparison": {
+          "slope": "7/6",
+          "intercept": "19/30",
+          "value_at_qmin": "97/15"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "A",
+        "direction": [
+          "1",
+          "-1"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "7/6",
+          "intercept": "1/2",
+          "value_at_qmin": "19/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "1"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "5/6",
+          "intercept": "1/3",
+          "value_at_qmin": "9/2"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "4"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "4",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/3",
+          "intercept": "1/3",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "B",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "rho": "1/2",
+        "loss_numerator": "1/2",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "2/3",
+          "intercept": "1/3",
+          "value_at_qmin": "11/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "C",
+        "direction": [
+          "-3",
+          "5"
+        ],
+        "rho": "2/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "5",
+          "3"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "1/6",
+          "value_at_qmin": "8/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "C",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "rho": "2/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "1/3",
+          "value_at_qmin": "17/6"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "C",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "rho": "2/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "5/4",
+          "intercept": "2/3",
+          "value_at_qmin": "83/12"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "D",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "4/3",
+          "intercept": "2/3",
+          "value_at_qmin": "22/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "D",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "1/6",
+          "value_at_qmin": "17/12"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "D",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "5/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "5/6",
+          "value_at_qmin": "25/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "E",
+        "direction": [
+          "-2",
+          "1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "1/6",
+          "intercept": "-1/6",
+          "value_at_qmin": "2/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "E",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "1/6",
+          "intercept": "1/6",
+          "value_at_qmin": "1"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "E",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "4/3",
+          "intercept": "2/3",
+          "value_at_qmin": "22/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "F",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "F",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "5/6",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "5/6",
+          "value_at_qmin": "25/3"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "F",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "rho": "1/6",
+        "loss_numerator": "1/6",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "1/6",
+          "value_at_qmin": "17/12"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "G",
+        "direction": [
+          "-3/5",
+          "1"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "1",
+          "3/5"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "7/30",
+          "value_at_qmin": "41/15"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "G",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "2/3",
+        "loss_denominator": [
+          "1/2",
+          "0"
+        ],
+        "comparison": {
+          "slope": "5/4",
+          "intercept": "2/3",
+          "value_at_qmin": "83/12"
+        }
+      },
+      {
+        "residue": 5,
+        "qmin": 5,
+        "peak": "G",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "rho": "1/3",
+        "loss_numerator": "1/3",
+        "loss_denominator": [
+          "1",
+          "0"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "1/3",
+          "value_at_qmin": "17/6"
+        }
+      }
+    ],
+    "table_comparisons": [
+      {
+        "residue": 0,
+        "peak": "A",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "A",
+        "direction": [
+          "1/5",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "4/5",
+          "value_at_qmin": "49/5"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "A",
+        "direction": [
+          "1",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "2/3",
+          "value_at_qmin": "29/3"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "0",
+          "value_at_qmin": "3"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "4"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "B",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "comparison": {
+          "slope": "3",
+          "intercept": "2/3",
+          "value_at_qmin": "56/3"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "C",
+        "direction": [
+          "-3",
+          "5"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "C",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "2",
+          "intercept": "3/2",
+          "value_at_qmin": "27/2"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "C",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "comparison": {
+          "slope": "9/4",
+          "intercept": "3/2",
+          "value_at_qmin": "15"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "D",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "D",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "5"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "D",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "1/2",
+          "value_at_qmin": "7/2"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "E",
+        "direction": [
+          "-2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "E",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "2/3",
+          "value_at_qmin": "2/3"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "E",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "1",
+          "value_at_qmin": "1"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "F",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "F",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "1/2",
+          "value_at_qmin": "7/2"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "F",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "5"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "G",
+        "direction": [
+          "-3/5",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "G",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "3/10",
+          "value_at_qmin": "9/5"
+        }
+      },
+      {
+        "residue": 0,
+        "peak": "G",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "3/10",
+          "value_at_qmin": "3/10"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "A",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "2/3",
+          "value_at_qmin": "5/3"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "A",
+        "direction": [
+          "1/5",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "2/15",
+          "value_at_qmin": "2/15"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "A",
+        "direction": [
+          "1",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "0",
+          "value_at_qmin": "3"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "4"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "B",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "0",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "C",
+        "direction": [
+          "-3",
+          "5"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "C",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "4",
+          "intercept": "5/2",
+          "value_at_qmin": "21/2"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "C",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "comparison": {
+          "slope": "3/4",
+          "intercept": "1/2",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "D",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "1/12",
+          "intercept": "-1/6",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "D",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "D",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "0",
+          "value_at_qmin": "1/2"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "E",
+        "direction": [
+          "-2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "0",
+          "value_at_qmin": "2"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "E",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "2/3",
+          "value_at_qmin": "8/3"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "E",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "F",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "F",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "5/6",
+          "value_at_qmin": "23/6"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "F",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "1/6",
+          "value_at_qmin": "2/3"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "G",
+        "direction": [
+          "-3/5",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "-1/10",
+          "value_at_qmin": "2/5"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "G",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 2,
+        "peak": "G",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "0",
+          "value_at_qmin": "1/2"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "A",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "A",
+        "direction": [
+          "1/5",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "3/5",
+          "value_at_qmin": "28/5"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "A",
+        "direction": [
+          "1",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "1/3",
+          "value_at_qmin": "16/3"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "1"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "0",
+          "value_at_qmin": "15/2"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "B",
+        "direction": [
+          "-1",
+          "4"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "B",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "0",
+          "value_at_qmin": "5"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "C",
+        "direction": [
+          "-3",
+          "5"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "C",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "1",
+          "intercept": "1",
+          "value_at_qmin": "6"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "C",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "comparison": {
+          "slope": "3",
+          "intercept": "2",
+          "value_at_qmin": "17"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "D",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "1/12",
+          "intercept": "-1/6",
+          "value_at_qmin": "1/4"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "D",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "D",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "0",
+          "value_at_qmin": "5/4"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "E",
+        "direction": [
+          "-2",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "E",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "1/3",
+          "value_at_qmin": "1/3"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "E",
+        "direction": [
+          "1",
+          "-2"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "3/2",
+          "value_at_qmin": "4"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "F",
+        "direction": [
+          "-1",
+          "2"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "F",
+        "direction": [
+          "0",
+          "-1"
+        ],
+        "comparison": {
+          "slope": "3/2",
+          "intercept": "5/6",
+          "value_at_qmin": "25/3"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "F",
+        "direction": [
+          "0",
+          "1/2"
+        ],
+        "comparison": {
+          "slope": "1/4",
+          "intercept": "1/6",
+          "value_at_qmin": "17/12"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "G",
+        "direction": [
+          "-3/5",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "0",
+          "value_at_qmin": "0"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "G",
+        "direction": [
+          "0",
+          "-1/2"
+        ],
+        "comparison": {
+          "slope": "1/2",
+          "intercept": "2/5",
+          "value_at_qmin": "29/10"
+        }
+      },
+      {
+        "residue": 5,
+        "peak": "G",
+        "direction": [
+          "0",
+          "1"
+        ],
+        "comparison": {
+          "slope": "0",
+          "intercept": "1/5",
+          "value_at_qmin": "1/5"
+        }
+      }
+    ]
+  },
+  "lower_certificate_residues": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "slice_comparisons": [
+    {
+      "q": 2,
+      "maximum": "2/13",
+      "all_maximizing_times": [
+        "3/13",
+        "10/13"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 3,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 4,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 5,
+      "maximum": "5/33",
+      "all_maximizing_times": [
+        "10/33",
+        "23/33"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 6,
+      "maximum": "4/25",
+      "all_maximizing_times": [
+        "9/25",
+        "16/25"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 7,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 8,
+      "maximum": "7/43",
+      "all_maximizing_times": [
+        "8/43",
+        "35/43"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 9,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 10,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 11,
+      "maximum": "11/69",
+      "all_maximizing_times": [
+        "22/69",
+        "47/69"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 12,
+      "maximum": "8/49",
+      "all_maximizing_times": [
+        "17/49",
+        "32/49"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 13,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 14,
+      "maximum": "12/73",
+      "all_maximizing_times": [
+        "13/73",
+        "60/73"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 15,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 16,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 17,
+      "maximum": "17/105",
+      "all_maximizing_times": [
+        "34/105",
+        "71/105"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 18,
+      "maximum": "12/73",
+      "all_maximizing_times": [
+        "25/73",
+        "48/73"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 19,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 20,
+      "maximum": "17/103",
+      "all_maximizing_times": [
+        "18/103",
+        "85/103"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 21,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 22,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 23,
+      "maximum": "23/141",
+      "all_maximizing_times": [
+        "46/141",
+        "95/141"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 24,
+      "maximum": "16/97",
+      "all_maximizing_times": [
+        "33/97",
+        "64/97"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 25,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 26,
+      "maximum": "22/133",
+      "all_maximizing_times": [
+        "23/133",
+        "110/133"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 27,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 28,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 29,
+      "maximum": "29/177",
+      "all_maximizing_times": [
+        "58/177",
+        "119/177"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 30,
+      "maximum": "20/121",
+      "all_maximizing_times": [
+        "41/121",
+        "80/121"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 31,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 32,
+      "maximum": "27/163",
+      "all_maximizing_times": [
+        "28/163",
+        "135/163"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 33,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 34,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 35,
+      "maximum": "35/213",
+      "all_maximizing_times": [
+        "70/213",
+        "143/213"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 36,
+      "maximum": "24/145",
+      "all_maximizing_times": [
+        "49/145",
+        "96/145"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 37,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 38,
+      "maximum": "32/193",
+      "all_maximizing_times": [
+        "33/193",
+        "160/193"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 39,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 40,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 41,
+      "maximum": "41/249",
+      "all_maximizing_times": [
+        "82/249",
+        "167/249"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 42,
+      "maximum": "28/169",
+      "all_maximizing_times": [
+        "57/169",
+        "112/169"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 43,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 44,
+      "maximum": "37/223",
+      "all_maximizing_times": [
+        "38/223",
+        "185/223"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 45,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 46,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 47,
+      "maximum": "47/285",
+      "all_maximizing_times": [
+        "94/285",
+        "191/285"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 48,
+      "maximum": "32/193",
+      "all_maximizing_times": [
+        "65/193",
+        "128/193"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 49,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 50,
+      "maximum": "42/253",
+      "all_maximizing_times": [
+        "43/253",
+        "210/253"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 51,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 52,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 53,
+      "maximum": "53/321",
+      "all_maximizing_times": [
+        "106/321",
+        "215/321"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 54,
+      "maximum": "36/217",
+      "all_maximizing_times": [
+        "73/217",
+        "144/217"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 55,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 56,
+      "maximum": "47/283",
+      "all_maximizing_times": [
+        "48/283",
+        "235/283"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 57,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 58,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 59,
+      "maximum": "59/357",
+      "all_maximizing_times": [
+        "118/357",
+        "239/357"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 60,
+      "maximum": "40/241",
+      "all_maximizing_times": [
+        "81/241",
+        "160/241"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 61,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 62,
+      "maximum": "52/313",
+      "all_maximizing_times": [
+        "53/313",
+        "260/313"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 63,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 64,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 65,
+      "maximum": "65/393",
+      "all_maximizing_times": [
+        "130/393",
+        "263/393"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 66,
+      "maximum": "44/265",
+      "all_maximizing_times": [
+        "89/265",
+        "176/265"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 67,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 68,
+      "maximum": "57/343",
+      "all_maximizing_times": [
+        "58/343",
+        "285/343"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 69,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 70,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 71,
+      "maximum": "71/429",
+      "all_maximizing_times": [
+        "142/429",
+        "287/429"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 72,
+      "maximum": "48/289",
+      "all_maximizing_times": [
+        "97/289",
+        "192/289"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 73,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 74,
+      "maximum": "62/373",
+      "all_maximizing_times": [
+        "63/373",
+        "310/373"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 75,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 76,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 77,
+      "maximum": "77/465",
+      "all_maximizing_times": [
+        "154/465",
+        "311/465"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 78,
+      "maximum": "52/313",
+      "all_maximizing_times": [
+        "105/313",
+        "208/313"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 79,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 80,
+      "maximum": "67/403",
+      "all_maximizing_times": [
+        "68/403",
+        "335/403"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 81,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 82,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 83,
+      "maximum": "83/501",
+      "all_maximizing_times": [
+        "166/501",
+        "335/501"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 84,
+      "maximum": "56/337",
+      "all_maximizing_times": [
+        "113/337",
+        "224/337"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 85,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 86,
+      "maximum": "72/433",
+      "all_maximizing_times": [
+        "73/433",
+        "360/433"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 87,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 88,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 89,
+      "maximum": "89/537",
+      "all_maximizing_times": [
+        "178/537",
+        "359/537"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 90,
+      "maximum": "60/361",
+      "all_maximizing_times": [
+        "121/361",
+        "240/361"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 91,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 92,
+      "maximum": "77/463",
+      "all_maximizing_times": [
+        "78/463",
+        "385/463"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 93,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 94,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 95,
+      "maximum": "95/573",
+      "all_maximizing_times": [
+        "190/573",
+        "383/573"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 96,
+      "maximum": "64/385",
+      "all_maximizing_times": [
+        "129/385",
+        "256/385"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 97,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 98,
+      "maximum": "82/493",
+      "all_maximizing_times": [
+        "83/493",
+        "410/493"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 99,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 100,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 101,
+      "maximum": "101/609",
+      "all_maximizing_times": [
+        "202/609",
+        "407/609"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 102,
+      "maximum": "68/409",
+      "all_maximizing_times": [
+        "137/409",
+        "272/409"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 103,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 104,
+      "maximum": "87/523",
+      "all_maximizing_times": [
+        "88/523",
+        "435/523"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 105,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 106,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 107,
+      "maximum": "107/645",
+      "all_maximizing_times": [
+        "214/645",
+        "431/645"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 108,
+      "maximum": "72/433",
+      "all_maximizing_times": [
+        "145/433",
+        "288/433"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 109,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 110,
+      "maximum": "92/553",
+      "all_maximizing_times": [
+        "93/553",
+        "460/553"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 111,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 112,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 113,
+      "maximum": "113/681",
+      "all_maximizing_times": [
+        "226/681",
+        "455/681"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 114,
+      "maximum": "76/457",
+      "all_maximizing_times": [
+        "153/457",
+        "304/457"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 115,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 116,
+      "maximum": "97/583",
+      "all_maximizing_times": [
+        "98/583",
+        "485/583"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 117,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 118,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 119,
+      "maximum": "119/717",
+      "all_maximizing_times": [
+        "238/717",
+        "479/717"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 120,
+      "maximum": "80/481",
+      "all_maximizing_times": [
+        "161/481",
+        "320/481"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 121,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 122,
+      "maximum": "102/613",
+      "all_maximizing_times": [
+        "103/613",
+        "510/613"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 123,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 124,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 125,
+      "maximum": "125/753",
+      "all_maximizing_times": [
+        "250/753",
+        "503/753"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 126,
+      "maximum": "84/505",
+      "all_maximizing_times": [
+        "169/505",
+        "336/505"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 127,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 128,
+      "maximum": "107/643",
+      "all_maximizing_times": [
+        "108/643",
+        "535/643"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 129,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 130,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 131,
+      "maximum": "131/789",
+      "all_maximizing_times": [
+        "262/789",
+        "527/789"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 132,
+      "maximum": "88/529",
+      "all_maximizing_times": [
+        "177/529",
+        "352/529"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 133,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 134,
+      "maximum": "112/673",
+      "all_maximizing_times": [
+        "113/673",
+        "560/673"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 135,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 136,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 137,
+      "maximum": "137/825",
+      "all_maximizing_times": [
+        "274/825",
+        "551/825"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 138,
+      "maximum": "92/553",
+      "all_maximizing_times": [
+        "185/553",
+        "368/553"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 139,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 140,
+      "maximum": "117/703",
+      "all_maximizing_times": [
+        "118/703",
+        "585/703"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 141,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 142,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 143,
+      "maximum": "143/861",
+      "all_maximizing_times": [
+        "286/861",
+        "575/861"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 144,
+      "maximum": "96/577",
+      "all_maximizing_times": [
+        "193/577",
+        "384/577"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 145,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 146,
+      "maximum": "122/733",
+      "all_maximizing_times": [
+        "123/733",
+        "610/733"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 147,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 148,
+      "maximum": "1/6",
+      "all_maximizing_times": [
+        "1/6",
+        "5/6"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 149,
+      "maximum": "149/897",
+      "all_maximizing_times": [
+        "298/897",
+        "599/897"
+      ],
+      "matches_frozen_physical_calculation": true
+    },
+    {
+      "q": 150,
+      "maximum": "100/601",
+      "all_maximizing_times": [
+        "201/601",
+        "400/601"
+      ],
+      "matches_frozen_physical_calculation": true
+    }
+  ],
+  "limits": "Same AI author; exact arithmetic and symbolic-domain checks are not external or formal review. No novelty claim."
+}

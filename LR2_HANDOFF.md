@@ -4,6 +4,16 @@ September 25, 2026. This is the compact continuation entry point after LR 1 reac
 
 ## Start here
 
+**Latest — matching upper bound completes the other-ray proof candidate.** [LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md](notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md) closes the open upper-bound step for B_q=V(q,1), with its first two coordinates permuted. The four-row mod-6 spectrum and physical witness formulas now have a complete argument for every integer q>=2, conditional on the exact fixed-cell lemma. Status remains HYPOTHESIS / complete proof candidate, awaiting independent review; no novelty claim.
+
+The corrected actual-orbit equation x-qy in Z selects peak B's (-1,4) edge in residue 0, C's (-3,5) edge in residue 2, and F's (-1,2) edge in residue 5. Their minimum losses from 1/6 are 1/[6(4q+1)], 1/[6(5q+3)], and 1/[6(2q+1)]. Residues 1,3,4 reach an ambient peak. All competing edges have strictly greater loss in the nonconstant branches; exactly two maximizing times survive in every case, t(q) and 1-t(q).
+
+A fresh exact 48-plane reconstruction matches all ten cells, 33 vertices and 45 edges. The audit certifies 63 global upper comparisons on unbounded residue domains, the explanatory loss table, and symbolic witness transfer. The fixed-cell selector agrees with all 149 previously frozen physical maxima and full maximizer sets for q=2,...,150. No new physical q values or reference runners were added. The original V(1,q) proof and Ultra review, and the earlier recovery's historical files, remain unchanged.
+
+Next: independent adversarial review of this completed other-ray argument, particularly folded-coordinate transfer, slice-vertex completeness and the two-maximizer conclusion. No new team review, external contact, main merge, or recurring work has been performed.
+
+### Prior continuation recovery — preserved
+
 **Latest — continuation recovered; two parameter rays separated.** The unsaved mod-6 rule concerns B_q=(1,q,q+1,2q+1,3q+1,3q+2,5q+2), which is V(q,1) after permutation. It was incorrectly called the p=1 ray in the continuation. The original A_q=V(1,q) spectrum and its Ultra review were already saved and already contain a matching upper-bound candidate. Their claims remain unchanged.
 
 [The recovery note](notes/LTCM_OTHER_RAY_RECOVERY_2026_09_29.md) preserves the newer formulas, contact pairs, physical laps, and symbolic lower-bound certificates. A fresh exact reproduction matches all 149 optima for q=2,...,150, with 42 polynomial phase identities and 84 safe-band inequalities on whole residue domains. These checks apply to B_q; its universal upper bound remains OPEN and has not received the original ray's Ultra review. Small controls q=2,4 confirm the two rays have different optima.
