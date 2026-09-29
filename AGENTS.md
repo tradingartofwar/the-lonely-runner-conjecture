@@ -30,6 +30,16 @@ Carry a brief check after substantive stages, after significant summarization or
 
 Use the smallest adequate representation; more detail is not automatically more understanding. The model itself remains testable, including Compatibility Calculus (CC). Carry routine checks on the AI side, surface consequential findings, and record only changes worth preserving. These are checkpoints in active work, without a per-turn quota or a new unattended schedule.
 
+### Representation scope and adaptation
+
+Apply [CC representation and transfer rules](notes/CC_REPRESENTATION_RULES.md) to substantive model, compression and transfer work. Reuse an existing record when its question, domain and operation are unchanged.
+
+- Declare the supported question and next operation. Distinguish existence, optimal value, one witness, every maximizer, the complete safe set, and transfer to another model.
+- Record consequential retained and omitted information, a pinned richer source and recovery map, evidence and limits, and a concrete failure test. Source availability is a recovery route, not a claim that the compressed record is lossless.
+- Preserve same-point compatibility, relevant equality cases and physical recovery. Before adding constraints or changing scope, establish that the current representation supports the new use; otherwise recover, enrich or switch and check the exposed failure.
+- Actively consider existing languages, models and frameworks, including other authors' LTCMs, at any stage where reuse, modification, combination or replacement could help. Do not wait for our approach to fail or privilege it because we developed it. CC itself can be revised or replaced if the evidence warrants it.
+- For adaptations, credit and pin the source, state the exact modification and translation, distinguish inherited guarantees from new proof obligations, and test the revised model against the motivating case. An adapted framework does not inherit claims whose hypotheses no longer hold.
+
 ## Evidence discipline
 
 Use the vocabulary in [CLAIM_STATUS.md](CLAIM_STATUS.md).

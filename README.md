@@ -34,6 +34,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [HANDOFF.md](HANDOFF.md) | Detailed current research state, evidence pointers, and next questions |
 | [Broader inquiries](notes/inquiries/README.md) | Reflections, thought experiments, and possible connections to other problems |
 | [RESEARCH_PLAN.md](RESEARCH_PLAN.md) | Strategy and research method |
+| [CC representation rules](notes/CC_REPRESENTATION_RULES.md) | Supported questions, information loss, recovery and framework adaptation |
 | [CLAIM_STATUS.md](CLAIM_STATUS.md) | Evidence/status vocabulary used throughout the project |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to investigate, challenge, reproduce, and submit work |
 | [notes/MATHEMATICAL_BASELINE.md](notes/MATHEMATICAL_BASELINE.md) | Definitions, exact checks, normalization, and test fixtures |
@@ -43,6 +44,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 ## Current state — September 29, 2026 UTC
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
+
+**CC working rules — September 29, 2026:** [Representation and transfer rules](notes/CC_REPRESENTATION_RULES.md) now require an explicit supported question and next operation, retained/omitted information, a richer source and recovery map, and evidence plus a failure test. The note supplies records for full cells, B-ray caps and A-ray conditional intervals. Existing frameworks, including other authors' LTCMs, may be reused, modified, combined or replaced whenever useful; preserve attribution, the exact changes and the applicability of inherited results. Apply the same scrutiny to CC itself. These rules are also in AGENTS.md. The next selection target is one physical 1/8-safe A-ray witness from parent data, with a bounded number of rational selection operations; that derivation remains open.
 
 **Latest — CC six-to-seven transfer exposes consequential information loss.** [CC_SIX_SEVEN_TRANSFER_2026_09_29.md](notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md) completes the same-threshold parent-child atlas for the original A ray V(1,q). Eight six-form tetrahedra (32 vertices, 48 edges) become the existing ten seven-form cells (33 vertices, 45 edges), including all three singletons. Of the child edges, nine are new cuts inside old parent faces. Exact clipping and a separate 34-plane reconstruction agree; all children match the frozen certificate.
 
