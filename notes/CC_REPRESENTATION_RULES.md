@@ -614,3 +614,35 @@ One known rejected row now has a complete discovered certificate. This does
 not classify all compiler inputs or prove that its successful inputs contain
 the whole earlier fixed-selector range. Carry only the transfer evidence
 earned by the frozen trial and the conditional infinite coverage argument.
+
+## 17. Stronger obligations can change the question being answered
+
+The [new coefficient classification](CC_ROW38_COEFFICIENT_RANGE_2026_09_29.md)
+separates four obligations. Whole-leader safety plus two used fallback contacts
+is exact for every actual primary output: T=R, with 205 classes under +(56,56).
+Requiring all of the first fallback segment leaves only 21 positive rows.
+Requiring the repeated-speed p=q auxiliary leaves 178 operational classes.
+Neither extra obligation may silently substitute for the primary p!=q task.
+
+Row (59,64) preserves all actual selected phases of (3,8), but an unused
+strict interior point of the fallback has seventh phase zero. Row (6,2)
+works for every p!=q while the auxiliary C gives seventh phase zero. The
+first example concerns discarded geometry; the second concerns an expanded
+parameter domain. Both are concrete ways to overrestrict a valid answer.
+
+Sparse geometric support does not by itself imply coefficient decision loss:
+whole-leader safety remains exact after the separate necessity proof. Conversely,
+a convenient auxiliary case is not automatically harmless. Preserve each
+contract's quantifiers, domain, relevant points and physical recovery.
+
+The old and new coefficient sets have only ten shared rows, four identically
+repeated cores, and each has infinitely many exclusive rows. Their class counts
+42 and 205 use different period directions and cannot establish containment.
+A finite intersection bound plus explicit infinite progressions supplies the
+correct comparison. Source lookup and exact recovery preserve those meanings.
+
+A proposed combined dispatcher would choose a fixed certified rule for a
+coefficient row, then use it for every primary parameter pair. Choosing a rule
+separately for each pair interchanges the quantifiers and could establish a
+larger domain; it requires a new proof obligation. The present classification
+does not silently supply that stronger result.

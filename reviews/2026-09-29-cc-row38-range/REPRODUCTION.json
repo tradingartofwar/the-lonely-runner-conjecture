@@ -1,0 +1,111 @@
+{
+  "input_hashes_verified": 7,
+  "reproduce_script_sha256": "885a8a0eafd84061030a0fa780268744fb4d8556f544b1705bcebe908635268b",
+  "reproduced_byte_for_byte": {
+    "arithmetic_review.json": "b0626d395005e67fc0729ff34809e784643494bd0de3058338fd85ac846b581c",
+    "auxiliary_failures.json": "c189830be7f2dec71ec8113cb7449f2b1a90b0f108ced4202615cfe4ad3cf612",
+    "classification.json": "363ffbf228bafee6ae7209d95d868af339a7ece54241254dd3dd52de8ccf01c7",
+    "comparison.json": "2c679f20c325048eddd6847295fdf66896e41d1cdb451cab38a8197bab856fbe",
+    "controls.json": "c7546114434c92883f88df7d98e9be76df60c71637ddf88ada316efbe7d6d7af",
+    "failures/delta_m1.json": "95ab73609f1aebebfd952870161c2d2501fcaaceb8a85b12d11b04e7c9d0ce17",
+    "failures/delta_m10.json": "13c88d321375a4067b210bb1bae736ee1c95e7d7f06ed68eb199c3b5ebce5218",
+    "failures/delta_m11.json": "c10dc123b1bfeec9fe15f0062474636e4fcc91daa6cbd7072b4bf135e0e1c81c",
+    "failures/delta_m12.json": "6b0acec866771e6c49eca6ca941eec0b87efffcb0cb748bc6b0ff6e385ee2fb8",
+    "failures/delta_m13.json": "66058eb3f8369684fdf328992b23532f46438dcd08d44d7ee6b3c9c3f7207bdc",
+    "failures/delta_m2.json": "f7aafec762c2041b9d52cbf5288c0a8caabb5d26a8fa430839d96287f18b0709",
+    "failures/delta_m3.json": "fbb6f39c72786c2f8b222594b0d78bf4a950bb3b5ca6391806a9d8a198a0eccc",
+    "failures/delta_m4.json": "94ad2e52d5b7eb14a10ad852f16c2a53bf2fffd6e7b17c5f7041370dde262803",
+    "failures/delta_m5.json": "f47ab1962807a2ed52aab1fd35e8dffe6ffd85a8e724796ae078e2f15c5a6eef",
+    "failures/delta_m6.json": "4fff83ab37c72facad35ac349ed85b248c0fa77a59d282f2d2ba244f1da97a6e",
+    "failures/delta_m7.json": "596c955169563196694019bdeef722c6179b834e76a1efd7cdfa3c541b989a90",
+    "failures/delta_m8.json": "8667ff779ef991cf6719c264f799266f898f124fbd92e658a474d82fc8c69d39",
+    "failures/delta_m9.json": "ac9f63e758e38006c88050785d9fc6614290460c8ba7d9458abf4758f76b50c0",
+    "failures/delta_p0.json": "4e1fee6184878a56aef4bb0201d2761f8ac41d4805cdd7d4bef45beeda4af6b9",
+    "failures/delta_p1.json": "650d8fc7bc091d0b4a9557295d5cff45c3e5c970f157af9eed76893cece34b24",
+    "failures/delta_p10.json": "73bb64d8280fff9e11d0099024216d1203ade44cfd71a3d44f6532cc02bfa4c3",
+    "failures/delta_p11.json": "64b5f56fbde28b58f584feaa9db485ba876ff001f3c8e7b86387e788dedbc9f2",
+    "failures/delta_p12.json": "f0c1f8a01aa51b4bf18467424309c6d7764a2a86db3feab767c5fc6a37f098dc",
+    "failures/delta_p13.json": "a021afda5a89eb339ad9ea7e133960645c9fd99fcdc4fdc1078f1ae3a2a79de2",
+    "failures/delta_p2.json": "cee8ee29826c69369d500583ed22ea907144c4066f69659264e0e4d3d24bcf33",
+    "failures/delta_p3.json": "5e4b278d5d79ecc39a90d1025079922eb8d76ac2cc501dc657dcfc5b2ad02537",
+    "failures/delta_p4.json": "5bd594993e237269fa1d0ad5119cd8a7e4c554ad053eca5f5053a6c8a0454c36",
+    "failures/delta_p5.json": "cb0562e63577aebc9e188d475c30ad37dd43db96624dad4408222f5fab75522b",
+    "failures/delta_p6.json": "95a23d92cca04559fccf042aaa18122c5601a63344c190e1b01d0b8ecff3f482",
+    "failures/delta_p7.json": "329d0f8ab3a0820af8ce77da0fe6b8d68de807b14d4eb8d05668f8d76613f348",
+    "failures/delta_p8.json": "b6aca6ae157c00a4b93eef5d566e701440adc053dbf38da89f22617a507481d7",
+    "failures/delta_p9.json": "73512335c467a45ca0841cc52f5933641c4c9aeaa66f59a2d9a861a58cbb3108",
+    "physical_review.json": "dfac1e0be42b8b06fe5b231b85b13d21d32e653b9de670a88e707d4829db5525",
+    "support.json": "0e717b67056682c6198a1a6f8c2729b70a443a21972fff2d26add0c8d0a1417c",
+    "whole_segments.json": "2577acb58bc6de1ca6a2f8084c0f4c31b10cb01a0bc813508c0067b330f94c61"
+  },
+  "scope": "Frozen complete reductions, derived rejection records and predeclared controls only.",
+  "status": "PASS",
+  "summary": {
+    "T_all_equals_T": false,
+    "T_equals_R": true,
+    "classification": {
+      "R": 205,
+      "T": 205,
+      "T_all": 178,
+      "auxiliary_failures": 27,
+      "cells": 1512,
+      "outside_R": 0,
+      "primary_failures": 1307
+    },
+    "controls": {
+      "conditional_outside_R": 0,
+      "large_slope_controls": 6,
+      "old_only_pairs": 1,
+      "physical_controls": 58
+    },
+    "intersection": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        11,
+        5
+      ]
+    ],
+    "status": "PASS",
+    "support": {
+      "distinct_leader_points": 404,
+      "primary_directions": 2550,
+      "primitive_directions": 2551
+    },
+    "whole_accepted": 21
+  }
+}
