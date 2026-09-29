@@ -546,3 +546,39 @@ different times and laps for nonprimitive inputs. Retain the intended clock
 and lap convention when reproducing physical records, even if the safety
 verdict is unchanged. No richer ambient model is needed for the current
 decision; the mathematical result remains an internally reviewed candidate.
+
+## 15. A decision should carry the evidence needed by its next operation
+
+The [coefficient checker](CC_COEFFICIENT_CHECKER_2026_09_29.md) implements
+the existing classification with different evidence for acceptance and
+rejection. Acceptance retains the shared leader lap, safe C phase, physical
+recovery and exact distinct-speed domain. Rejection retains an explicit
+failed p,q, selected time, speeds, phases and laps. It directly checks safe
+core phases, strict seventh failure and eight distinct total speeds.
+
+A rejected coefficient means there is a failed input for this fixed rule;
+it does not mean every input fails. Optional requested-pair evaluation
+therefore remains separate from the global coefficient status. Row (5,2)
+is rejected through (2,3) while its requested (1,3) output is safe. Likewise
+labelled acceptance and a nonempty eight-distinct-speed domain are different:
+the four identically repeated core rows carry an empty-domain flag.
+
+Invalid input and internal arithmetic inconsistency are operational outcomes,
+not mathematical rejections. Production guards remain active under Python
+optimization. No returned REJECTED verdict is based merely on inability to
+produce an acceptance record. It includes a checked physical failure.
+
+The proof source is pinned to 57997d4220226b44b9a89d8d8139926f15cca90c;
+the new package manifest separately identifies the runtime and tests. An
+implementation hash does not certify its mathematical source, and a proof
+source does not certify the implementation. The general claim remains an
+internally reviewed candidate rather than formal verification.
+
+Changing rejection precedence changes 40 archived failure identities without
+changing coefficient decisions. Large periodic shifts preserve decisions,
+directions and phases while changing exact laps. Preserve the distinctions
+needed by the next use; JSON consumers must retain the large integer values
+exactly. A failure of this selector still does not exhaust every candidate
+segment or the full parent geometry. Recover those records before making
+that stronger judgment. No richer ambient representation is needed for the
+current coefficient decision and concrete-failure operation.
