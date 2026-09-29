@@ -195,7 +195,7 @@ Comparison case, result and unresolved obligation:
   compression. Adapt the check to the question: missing one maximizer refutes
   complete enumeration, not necessarily selection of a different witness.
 
-## 6. Record for the next proposed selection step
+## 6. Selection target and completed two-segment candidate
 
 **Requested output:** a certificate selecting one physical 1/8-safe witness for
 each integer q>=2 in the A ray from six-form parent information plus the added
@@ -214,14 +214,44 @@ No such bound follows merely from storing conditional intervals. Derive the
 selection argument from the parent data; use the already known seven-form
 spectrum as a comparison target, not as the premise establishing success.
 
-**Evidence status and failure conditions:** OPEN. A missed admissible input,
+**Evidence status:** the [two-segment selector](CC_BOUNDED_SELECTOR_2026_09_29.md)
+now supplies a complete proof candidate for this target. Two parent edges and
+integer interval coverage suffice for all q>=2, with at most two roundings and
+tests. The self-contained derivation, exact unbounded arithmetic checks and
+archived physical controls are recorded there; independent review remains open.
+
+**Failure conditions:** A missed admissible input,
 an unsupported equality exclusion, an unproved nonempty slice, or a number of
 steps that grows with q defeats the corresponding requested claim. Reuse the
 existing controls before considering additional bounded checks. A finite pass
 alone will not establish the all-q result. Existing frameworks are candidates
 for reuse or adaptation during this step, with the source/change record above.
 
-This specification updates how the research is carried. The mathematical
-certificates and their historical claim statuses are preserved at their
-recorded revisions; the next selection derivation has not been performed by
-adopting these requirements.
+### Applied record: two compatible segments for one A-ray witness
+
+- **Question/output:** one physical 1/8-safe witness for every integer q>=2,
+  with the stationary reference fixed among eight common-start runners.
+- **Retained/operation:** parent P1 and P3 edge equations, closed endpoints,
+  all seven joint bands and laps, h=qx-y, integer rounding, coverage and the
+  inverse time/lap map. The primary edge misses only q=5; the second covers it.
+- **Omitted/limits:** other safe points, the complete safe set, optimum values
+  and maximizing-time sets cannot be recovered from these two segments alone.
+  Every selected separation is exactly 1/8. This is not a lossless atlas.
+- **Source/recovery:** the [full record](CC_BOUNDED_SELECTOR_2026_09_29.md)
+  pins the richer parent/child atlas and gives the recovery map. Recover that
+  richer model before changing to optimization or all-witness questions.
+- **Evidence/trigger:** complete proof candidate using endpoint affinity and
+  integer-interval coverage; exact certificates and archived q=2,...,25 checks.
+  Any failed band, uncovered integer, physical-map defect or equality loss
+  defeats its respective claim. A change of ray, reference, coefficients,
+  threshold or output requires rechecking.
+- **Framework assessment:** elementary affine convexity and integer rounding
+  provide the needed operation within CC. No external theorem is newly
+  imported or modified, and no novelty is claimed. Alternative frameworks
+  remain available under section 4.
+
+The requirements themselves did not establish this result: the subsequent
+linked derivation and checks supply the new evidence. Historical certificates
+and their recorded claim statuses remain preserved. The next bounded question
+is review and discovery of sufficient compatible segment collections, not an
+unproved extension of this selector to new families.

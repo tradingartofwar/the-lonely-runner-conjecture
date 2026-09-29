@@ -1,0 +1,1809 @@
+{
+  "authorship": "Same coordinator; no imports from selector, geometry or optimum code",
+  "coefficient_order": "constant, a, a^2; trailing zero coefficients retained",
+  "controls": [
+    {
+      "minimum_distance": "1/8",
+      "q": 2,
+      "time": "7/40"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 3,
+      "time": "7/48"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 4,
+      "time": "1/8"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 5,
+      "time": "25/56"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 6,
+      "time": "5/24"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 7,
+      "time": "3/16"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 8,
+      "time": "15/88"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 9,
+      "time": "5/32"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 10,
+      "time": "15/104"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 11,
+      "time": "15/112"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 12,
+      "time": "1/8"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 13,
+      "time": "23/128"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 14,
+      "time": "23/136"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 15,
+      "time": "23/144"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 16,
+      "time": "23/152"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 17,
+      "time": "23/160"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 18,
+      "time": "23/168"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 19,
+      "time": "23/176"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 20,
+      "time": "1/8"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 21,
+      "time": "31/192"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 22,
+      "time": "31/200"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 23,
+      "time": "31/208"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 24,
+      "time": "31/216"
+    },
+    {
+      "minimum_distance": "1/8",
+      "q": 25,
+      "time": "31/224"
+    }
+  ],
+  "fallback": {
+    "laps": [
+      0,
+      2,
+      2,
+      3,
+      3,
+      5,
+      6
+    ],
+    "phases": [
+      "25/56",
+      "13/56",
+      "19/28",
+      "1/8",
+      "4/7",
+      "45/56",
+      "39/56"
+    ],
+    "q": 5,
+    "time": "25/56"
+  },
+  "primary_omitted_q": [
+    5
+  ],
+  "script_sha256": "b37c4d77d1c7024c9d751cfb441ff423a91ef4832b6a2e4ee025ae33711f833b",
+  "status": "PASS: direct physical polynomial certificate",
+  "summary": {
+    "fallback_q": 5,
+    "physical_band_inequalities": 112,
+    "physical_control_count": 24,
+    "unbounded_residue_domains": 8
+  },
+  "unbounded_primary_domains": [
+    {
+      "a_min": 1,
+      "folded_time": {
+        "a_min": 1,
+        "constant": 10,
+        "minimum": 58,
+        "slope": 48
+      },
+      "r": 0,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 32,
+            "minimum": 32,
+            "slope": 0
+          },
+          "phase_numerator": [
+            7,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 112,
+            "minimum": 496,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": -24,
+            "minimum": 168,
+            "slope": 192
+          },
+          "phase_numerator": [
+            0,
+            32,
+            0
+          ],
+          "speed": [
+            0,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 168,
+            "minimum": 360,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 32,
+            "minimum": 288,
+            "slope": 256
+          },
+          "phase_numerator": [
+            7,
+            40,
+            0
+          ],
+          "speed": [
+            1,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 112,
+            "minimum": 240,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 88,
+            "minimum": 408,
+            "slope": 320
+          },
+          "phase_numerator": [
+            14,
+            48,
+            0
+          ],
+          "speed": [
+            2,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 56,
+            "minimum": 120,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 144,
+            "minimum": 528,
+            "slope": 384
+          },
+          "phase_numerator": [
+            21,
+            56,
+            0
+          ],
+          "speed": [
+            3,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": -48,
+            "minimum": 80,
+            "slope": 128
+          },
+          "phase_numerator": [
+            -3,
+            24,
+            0
+          ],
+          "speed": [
+            3,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 192,
+            "minimum": 448,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 64,
+            "minimum": 320,
+            "slope": 256
+          },
+          "phase_numerator": [
+            11,
+            40,
+            0
+          ],
+          "speed": [
+            5,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 80,
+            "minimum": 208,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        24,
+        64
+      ],
+      "time_numerator": [
+        7,
+        8
+      ]
+    },
+    {
+      "a_min": 1,
+      "folded_time": {
+        "a_min": 1,
+        "constant": 18,
+        "minimum": 66,
+        "slope": 48
+      },
+      "r": 1,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 24,
+            "minimum": 24,
+            "slope": 0
+          },
+          "phase_numerator": [
+            7,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 168,
+            "minimum": 552,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 24,
+            "minimum": 216,
+            "slope": 192
+          },
+          "phase_numerator": [
+            7,
+            32,
+            0
+          ],
+          "speed": [
+            1,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 168,
+            "minimum": 360,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 80,
+            "minimum": 336,
+            "slope": 256
+          },
+          "phase_numerator": [
+            14,
+            40,
+            0
+          ],
+          "speed": [
+            2,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 112,
+            "minimum": 240,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 136,
+            "minimum": 456,
+            "slope": 320
+          },
+          "phase_numerator": [
+            21,
+            48,
+            0
+          ],
+          "speed": [
+            3,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 56,
+            "minimum": 120,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 192,
+            "minimum": 576,
+            "slope": 384
+          },
+          "phase_numerator": [
+            28,
+            56,
+            0
+          ],
+          "speed": [
+            4,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": -8,
+            "minimum": 120,
+            "slope": 128
+          },
+          "phase_numerator": [
+            3,
+            24,
+            0
+          ],
+          "speed": [
+            5,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 200,
+            "minimum": 456,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 104,
+            "minimum": 360,
+            "slope": 256
+          },
+          "phase_numerator": [
+            17,
+            40,
+            0
+          ],
+          "speed": [
+            7,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 88,
+            "minimum": 216,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        32,
+        64
+      ],
+      "time_numerator": [
+        7,
+        8
+      ]
+    },
+    {
+      "a_min": 0,
+      "folded_time": {
+        "a_min": 0,
+        "constant": 26,
+        "minimum": 26,
+        "slope": 48
+      },
+      "r": 2,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 16,
+            "minimum": 16,
+            "slope": 0
+          },
+          "phase_numerator": [
+            7,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 224,
+            "minimum": 224,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 72,
+            "minimum": 72,
+            "slope": 192
+          },
+          "phase_numerator": [
+            14,
+            32,
+            0
+          ],
+          "speed": [
+            2,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 168,
+            "minimum": 168,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 128,
+            "minimum": 128,
+            "slope": 256
+          },
+          "phase_numerator": [
+            21,
+            40,
+            0
+          ],
+          "speed": [
+            3,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 112,
+            "minimum": 112,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 184,
+            "minimum": 184,
+            "slope": 320
+          },
+          "phase_numerator": [
+            28,
+            48,
+            0
+          ],
+          "speed": [
+            4,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 56,
+            "minimum": 56,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 240,
+            "minimum": 240,
+            "slope": 384
+          },
+          "phase_numerator": [
+            35,
+            56,
+            0
+          ],
+          "speed": [
+            5,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 32,
+            "minimum": 32,
+            "slope": 128
+          },
+          "phase_numerator": [
+            9,
+            24,
+            0
+          ],
+          "speed": [
+            7,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 208,
+            "minimum": 208,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 144,
+            "minimum": 144,
+            "slope": 256
+          },
+          "phase_numerator": [
+            23,
+            40,
+            0
+          ],
+          "speed": [
+            9,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 96,
+            "minimum": 96,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        40,
+        64
+      ],
+      "time_numerator": [
+        7,
+        8
+      ]
+    },
+    {
+      "a_min": 0,
+      "folded_time": {
+        "a_min": 0,
+        "constant": 34,
+        "minimum": 34,
+        "slope": 48
+      },
+      "r": 3,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 8,
+            "minimum": 8,
+            "slope": 0
+          },
+          "phase_numerator": [
+            7,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 280,
+            "minimum": 280,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 120,
+            "minimum": 120,
+            "slope": 192
+          },
+          "phase_numerator": [
+            21,
+            32,
+            0
+          ],
+          "speed": [
+            3,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 168,
+            "minimum": 168,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 176,
+            "minimum": 176,
+            "slope": 256
+          },
+          "phase_numerator": [
+            28,
+            40,
+            0
+          ],
+          "speed": [
+            4,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 112,
+            "minimum": 112,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 232,
+            "minimum": 232,
+            "slope": 320
+          },
+          "phase_numerator": [
+            35,
+            48,
+            0
+          ],
+          "speed": [
+            5,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 56,
+            "minimum": 56,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 288,
+            "minimum": 288,
+            "slope": 384
+          },
+          "phase_numerator": [
+            42,
+            56,
+            0
+          ],
+          "speed": [
+            6,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 72,
+            "minimum": 72,
+            "slope": 128
+          },
+          "phase_numerator": [
+            15,
+            24,
+            0
+          ],
+          "speed": [
+            9,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 216,
+            "minimum": 216,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 184,
+            "minimum": 184,
+            "slope": 256
+          },
+          "phase_numerator": [
+            29,
+            40,
+            0
+          ],
+          "speed": [
+            11,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 104,
+            "minimum": 104,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        48,
+        64
+      ],
+      "time_numerator": [
+        7,
+        8
+      ]
+    },
+    {
+      "a_min": 0,
+      "folded_time": {
+        "a_min": 0,
+        "constant": 42,
+        "minimum": 42,
+        "slope": 48
+      },
+      "r": 4,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          },
+          "phase_numerator": [
+            7,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 336,
+            "minimum": 336,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 168,
+            "minimum": 168,
+            "slope": 192
+          },
+          "phase_numerator": [
+            28,
+            32,
+            0
+          ],
+          "speed": [
+            4,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 168,
+            "minimum": 168,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 224,
+            "minimum": 224,
+            "slope": 256
+          },
+          "phase_numerator": [
+            35,
+            40,
+            0
+          ],
+          "speed": [
+            5,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 112,
+            "minimum": 112,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 280,
+            "minimum": 280,
+            "slope": 320
+          },
+          "phase_numerator": [
+            42,
+            48,
+            0
+          ],
+          "speed": [
+            6,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 56,
+            "minimum": 56,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            0,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 336,
+            "minimum": 336,
+            "slope": 384
+          },
+          "phase_numerator": [
+            49,
+            56,
+            0
+          ],
+          "speed": [
+            7,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 112,
+            "minimum": 112,
+            "slope": 128
+          },
+          "phase_numerator": [
+            21,
+            24,
+            0
+          ],
+          "speed": [
+            11,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 224,
+            "minimum": 224,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            1,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 224,
+            "minimum": 224,
+            "slope": 256
+          },
+          "phase_numerator": [
+            35,
+            40,
+            0
+          ],
+          "speed": [
+            13,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 112,
+            "minimum": 112,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        56,
+        64
+      ],
+      "time_numerator": [
+        7,
+        8
+      ]
+    },
+    {
+      "a_min": 1,
+      "folded_time": {
+        "a_min": 1,
+        "constant": 34,
+        "minimum": 82,
+        "slope": 48
+      },
+      "r": 5,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 56,
+            "minimum": 56,
+            "slope": 0
+          },
+          "phase_numerator": [
+            15,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 328,
+            "minimum": 712,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 24,
+            "minimum": 216,
+            "slope": 192
+          },
+          "phase_numerator": [
+            11,
+            32,
+            0
+          ],
+          "speed": [
+            5,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 360,
+            "minimum": 552,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 144,
+            "minimum": 400,
+            "slope": 256
+          },
+          "phase_numerator": [
+            26,
+            40,
+            0
+          ],
+          "speed": [
+            6,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 240,
+            "minimum": 368,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 264,
+            "minimum": 584,
+            "slope": 320
+          },
+          "phase_numerator": [
+            41,
+            48,
+            0
+          ],
+          "speed": [
+            7,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 120,
+            "minimum": 184,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 384,
+            "minimum": 768,
+            "slope": 384
+          },
+          "phase_numerator": [
+            56,
+            56,
+            0
+          ],
+          "speed": [
+            8,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            3,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": -40,
+            "minimum": 88,
+            "slope": 128
+          },
+          "phase_numerator": [
+            3,
+            24,
+            0
+          ],
+          "speed": [
+            13,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 424,
+            "minimum": 680,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            3,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 1,
+            "constant": 200,
+            "minimum": 456,
+            "slope": 256
+          },
+          "phase_numerator": [
+            33,
+            40,
+            0
+          ],
+          "speed": [
+            15,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 1,
+            "constant": 184,
+            "minimum": 312,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        64,
+        64
+      ],
+      "time_numerator": [
+        15,
+        8
+      ]
+    },
+    {
+      "a_min": 0,
+      "folded_time": {
+        "a_min": 0,
+        "constant": 42,
+        "minimum": 42,
+        "slope": 48
+      },
+      "r": 6,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 48,
+            "minimum": 48,
+            "slope": 0
+          },
+          "phase_numerator": [
+            15,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 384,
+            "minimum": 384,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 72,
+            "minimum": 72,
+            "slope": 192
+          },
+          "phase_numerator": [
+            18,
+            32,
+            0
+          ],
+          "speed": [
+            6,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 360,
+            "minimum": 360,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 192,
+            "minimum": 192,
+            "slope": 256
+          },
+          "phase_numerator": [
+            33,
+            40,
+            0
+          ],
+          "speed": [
+            7,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 240,
+            "minimum": 240,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 312,
+            "minimum": 312,
+            "slope": 320
+          },
+          "phase_numerator": [
+            48,
+            48,
+            0
+          ],
+          "speed": [
+            8,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 120,
+            "minimum": 120,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 432,
+            "minimum": 432,
+            "slope": 384
+          },
+          "phase_numerator": [
+            63,
+            56,
+            0
+          ],
+          "speed": [
+            9,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            3,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 128
+          },
+          "phase_numerator": [
+            9,
+            24,
+            0
+          ],
+          "speed": [
+            15,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 432,
+            "minimum": 432,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            3,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 240,
+            "minimum": 240,
+            "slope": 256
+          },
+          "phase_numerator": [
+            39,
+            40,
+            0
+          ],
+          "speed": [
+            17,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 192,
+            "minimum": 192,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        72,
+        64
+      ],
+      "time_numerator": [
+        15,
+        8
+      ]
+    },
+    {
+      "a_min": 0,
+      "folded_time": {
+        "a_min": 0,
+        "constant": 50,
+        "minimum": 50,
+        "slope": 48
+      },
+      "r": 7,
+      "rows": [
+        {
+          "lap": [
+            0
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 40,
+            "minimum": 40,
+            "slope": 0
+          },
+          "phase_numerator": [
+            15,
+            8
+          ],
+          "speed": [
+            1
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 440,
+            "minimum": 440,
+            "slope": 384
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 120,
+            "minimum": 120,
+            "slope": 192
+          },
+          "phase_numerator": [
+            25,
+            32,
+            0
+          ],
+          "speed": [
+            7,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 360,
+            "minimum": 360,
+            "slope": 192
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 240,
+            "minimum": 240,
+            "slope": 256
+          },
+          "phase_numerator": [
+            40,
+            40,
+            0
+          ],
+          "speed": [
+            8,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 240,
+            "minimum": 240,
+            "slope": 128
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 360,
+            "minimum": 360,
+            "slope": 320
+          },
+          "phase_numerator": [
+            55,
+            48,
+            0
+          ],
+          "speed": [
+            9,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 120,
+            "minimum": 120,
+            "slope": 64
+          }
+        },
+        {
+          "lap": [
+            1,
+            1
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 480,
+            "minimum": 480,
+            "slope": 384
+          },
+          "phase_numerator": [
+            70,
+            56,
+            0
+          ],
+          "speed": [
+            10,
+            8
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 0,
+            "minimum": 0,
+            "slope": 0
+          }
+        },
+        {
+          "lap": [
+            3,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 40,
+            "minimum": 40,
+            "slope": 128
+          },
+          "phase_numerator": [
+            15,
+            24,
+            0
+          ],
+          "speed": [
+            17,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 440,
+            "minimum": 440,
+            "slope": 256
+          }
+        },
+        {
+          "lap": [
+            3,
+            2
+          ],
+          "lower_certificate": {
+            "a_min": 0,
+            "constant": 280,
+            "minimum": 280,
+            "slope": 256
+          },
+          "phase_numerator": [
+            45,
+            40,
+            0
+          ],
+          "speed": [
+            19,
+            16
+          ],
+          "upper_certificate": {
+            "a_min": 0,
+            "constant": 200,
+            "minimum": 200,
+            "slope": 128
+          }
+        }
+      ],
+      "time_denominator": [
+        80,
+        64
+      ],
+      "time_numerator": [
+        15,
+        8
+      ]
+    }
+  ]
+}
