@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "reproduced": [
+    {
+      "program": "selector.py",
+      "output": "selector.json",
+      "exact_bytes_reproduced": true,
+      "sha256": "e185ccb820a30f15bb21a7ed3aaf718383d0124971d4467bbae5258d2e3b7e4c"
+    },
+    {
+      "program": "orbit_checks.py",
+      "output": "orbit_checks.json",
+      "exact_bytes_reproduced": true,
+      "sha256": "05938d9cc75c17ea480e6aeb3d417a853b956e1d602ee6d4ae6e51ba67b9f772"
+    },
+    {
+      "program": "coverage_checks.py",
+      "output": "coverage_checks.json",
+      "exact_bytes_reproduced": true,
+      "sha256": "1de530fe0164da8de535b378898dd68796329bfe56e591900c547cb2cba346a5"
+    },
+    {
+      "program": "physical_checks.py",
+      "output": "physical_checks.json",
+      "exact_bytes_reproduced": true,
+      "sha256": "1491c9f70d7d52aa1ef8e6142ad5e009ca91ccf4865240622106e0078b7eb300"
+    }
+  ],
+  "comparison": {
+    "three_implementations_agree_on_pairs": 18,
+    "distinct_speed_pairs": 17,
+    "repeated_speed_auxiliaries": 1,
+    "coverage_triangle_matches": 8,
+    "compared_fields": [
+      "segment",
+      "gcd",
+      "primitive pair",
+      "point",
+      "h",
+      "physical time",
+      "primitive time",
+      "phases",
+      "laps",
+      "reflected time",
+      "reflected phases/laps"
+    ],
+    "congruence_recovery_matches": 18
+  },
+  "limits": "Finite exact reproduction and cross-comparison only; universal claim uses the written proof candidate."
+}

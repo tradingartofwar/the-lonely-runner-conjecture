@@ -316,5 +316,47 @@ all labels and the displayed first-two-row permutation remain synchronized.
   recovery argument. Success on these two coordinate rays is not a universal
   segment-existence theorem.
 
-The next proposed step is a primitive (p,q) compatibility/recovery derivation
-within the same fixed-form model, before any broader coverage conclusion.
+That proposed primitive (p,q) step is now recorded below; the frozen A/B
+discovery packages and their historical scopes remain intact.
+
+## 9. Primitive orbits and arithmetic recovery for two parameters
+
+The [two-parameter witness](CC_TWO_PARAMETER_WITNESS_2026_09_29.md) extends
+the one-witness certificate to every positive integer p!=q in the same seven
+coefficient forms, with the stationary reference fixed. Its proof candidate
+uses the same two segments; no richer geometry is needed for this output.
+
+- **Retained/operation:** d=gcd(p,q), primitive P=p/d,Q=q/d, same-point
+  compatibility h=Qx-Py in Z, Bezout rP+sQ=1, floor N=floor(rx+sy),
+  physical time t=({rx+sy})/d, and lap
+  m+(-as+br)h-(aP+bQ)N for each native row (a,b). The original fold remains
+  geometric; the recovered time can exceed one half.
+- **Coverage:** P3 has projected width (Q+2P)/8 and covers Q+2P>=8.
+  The complete primitive complement contains eight pairs including the
+  repeated-speed (1,1) auxiliary. Only (1,2),(1,4) need P1; the latter
+  requires its closed endpoint. Scaling supplies the nonprimitive inputs.
+- **Consequential loss:** retaining merely qx-py in Z instead of dZ adds
+  false orbit components. At p=2,q=4, the safe point (13/32,5/16) has raw
+  value1 but primitive value1/2 and is not physically recoverable. The
+  proposed earlier fixture with raw value5/4 is preserved as a failed attempt.
+  Wrong clocks can be unsafe or accidentally find a different safe point;
+  direct phase and lap recovery is stronger than checking safety alone.
+- **Cost change:** at most two segment tests after normalization, plus
+  gcd/Bezout computation and exact recovery. Constant geometric carrier size
+  does not imply a constant number of elementary arithmetic steps or bit cost.
+- **Evidence/limits:** complete elementary proof candidate, three separately
+  tasked AI reviews, 56 endpoint inequalities, the exhaustive finite complement,
+  and 18 declared physical controls. Exact outputs reproduce and independent
+  implementations agree. No human/formal verification or novelty claim.
+- **Omitted/recovery:** full safe sets, optimum values, all maximizers and
+  other references remain outside the two-segment record. Restore the pinned
+  full atlas and recheck the actual orbit before asking those questions.
+- **Framework assessment:** standard affine geometry, integer intervals and
+  Bezout arithmetic supply the added operation. CC is enriched by recording
+  primitive normalization and physical recovery, rather than treating its
+  earlier coordinate clocks as universal. No external theorem is imported
+  or credited as a CC invention; literature comparison remains OPEN.
+
+Changing signs, zero parameters, coefficients, threshold, reference or desired
+output requires a new adequacy check. This result is not a universal theorem
+that the same segments, or any fixed segment menu, must exist in another model.

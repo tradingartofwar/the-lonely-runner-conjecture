@@ -1,0 +1,393 @@
+{
+  "status": "exact finite supporting checks; infinite proof remains an internally reviewed proof candidate",
+  "arithmetic": "fractions.Fraction",
+  "scope": "joint seven-form endpoint safety and complete primitive triangle Q+2P<8; no other parameter scan",
+  "endpoint_phase_checks": 28,
+  "endpoint_band_inequalities": 56,
+  "endpoint_records": [
+    {
+      "segment": "P1:E1-3:K1",
+      "endpoint_index": 0,
+      "point": [
+        "1/8",
+        "1/2"
+      ],
+      "phases": [
+        "1/8",
+        "1/2",
+        "5/8",
+        "3/4",
+        "7/8",
+        "3/8",
+        "5/8"
+      ]
+    },
+    {
+      "segment": "P1:E1-3:K1",
+      "endpoint_index": 1,
+      "point": [
+        "5/24",
+        "1/4"
+      ],
+      "phases": [
+        "5/24",
+        "1/4",
+        "11/24",
+        "2/3",
+        "7/8",
+        "1/8",
+        "13/24"
+      ]
+    },
+    {
+      "segment": "P3:E0-1:K2",
+      "endpoint_index": 0,
+      "point": [
+        "3/8",
+        "3/8"
+      ],
+      "phases": [
+        "3/8",
+        "3/8",
+        "3/4",
+        "1/8",
+        "1/2",
+        "7/8",
+        "5/8"
+      ]
+    },
+    {
+      "segment": "P3:E0-1:K2",
+      "endpoint_index": 1,
+      "point": [
+        "1/2",
+        "1/8"
+      ],
+      "phases": [
+        "1/2",
+        "1/8",
+        "5/8",
+        "1/8",
+        "5/8",
+        "3/4",
+        "3/4"
+      ]
+    }
+  ],
+  "projection_coefficients": {
+    "P1:E1-3:K1": {
+      "endpoints_P_Q": [
+        [
+          "-1/2",
+          "1/8"
+        ],
+        [
+          "-1/4",
+          "5/24"
+        ]
+      ],
+      "width_P_Q": [
+        "1/4",
+        "1/12"
+      ]
+    },
+    "P3:E0-1:K2": {
+      "endpoints_P_Q": [
+        [
+          "-3/8",
+          "3/8"
+        ],
+        [
+          "-1/8",
+          "1/2"
+        ]
+      ],
+      "width_P_Q": [
+        "1/4",
+        "1/8"
+      ]
+    }
+  },
+  "infinite_tail_argument": "P3 width=(Q+2P)/8>=1 when Q+2P>=8; ceil(lower)<=lower+1<=upper",
+  "positive_triangle_pair_count": 9,
+  "excluded_nonprimitive_pairs": [
+    [
+      2,
+      2
+    ]
+  ],
+  "primitive_triangle_pair_count": 8,
+  "primitive_triangle": [
+    {
+      "P": 1,
+      "Q": 1,
+      "distinct_speed_configuration": false,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "0",
+          "3/8"
+        ],
+        "first_integer": 0,
+        "covered": true,
+        "point": [
+          "3/8",
+          "3/8"
+        ],
+        "phases": [
+          "3/8",
+          "3/8",
+          "3/4",
+          "1/8",
+          "1/2",
+          "7/8",
+          "5/8"
+        ]
+      },
+      "fallback": null
+    },
+    {
+      "P": 1,
+      "Q": 2,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "3/8",
+          "7/8"
+        ],
+        "first_integer": 1,
+        "covered": false
+      },
+      "fallback": {
+        "segment": "P1:E1-3:K1",
+        "interval": [
+          "-1/4",
+          "1/6"
+        ],
+        "first_integer": 0,
+        "covered": true,
+        "point": [
+          "7/40",
+          "7/20"
+        ],
+        "phases": [
+          "7/40",
+          "7/20",
+          "21/40",
+          "7/10",
+          "7/8",
+          "9/40",
+          "23/40"
+        ]
+      }
+    },
+    {
+      "P": 1,
+      "Q": 3,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "3/4",
+          "11/8"
+        ],
+        "first_integer": 1,
+        "covered": true,
+        "point": [
+          "17/40",
+          "11/40"
+        ],
+        "phases": [
+          "17/40",
+          "11/40",
+          "7/10",
+          "1/8",
+          "11/20",
+          "33/40",
+          "27/40"
+        ]
+      },
+      "fallback": null
+    },
+    {
+      "P": 1,
+      "Q": 4,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "9/8",
+          "15/8"
+        ],
+        "first_integer": 2,
+        "covered": false
+      },
+      "fallback": {
+        "segment": "P1:E1-3:K1",
+        "interval": [
+          "0",
+          "7/12"
+        ],
+        "first_integer": 0,
+        "covered": true,
+        "point": [
+          "1/8",
+          "1/2"
+        ],
+        "phases": [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "3/8",
+          "5/8"
+        ]
+      }
+    },
+    {
+      "P": 1,
+      "Q": 5,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "3/2",
+          "19/8"
+        ],
+        "first_integer": 2,
+        "covered": true,
+        "point": [
+          "25/56",
+          "13/56"
+        ],
+        "phases": [
+          "25/56",
+          "13/56",
+          "19/28",
+          "1/8",
+          "4/7",
+          "45/56",
+          "39/56"
+        ]
+      },
+      "fallback": null
+    },
+    {
+      "P": 2,
+      "Q": 1,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "-3/8",
+          "1/4"
+        ],
+        "first_integer": 0,
+        "covered": true,
+        "point": [
+          "9/20",
+          "9/40"
+        ],
+        "phases": [
+          "9/20",
+          "9/40",
+          "27/40",
+          "1/8",
+          "23/40",
+          "4/5",
+          "7/10"
+        ]
+      },
+      "fallback": null
+    },
+    {
+      "P": 2,
+      "Q": 3,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "3/8",
+          "5/4"
+        ],
+        "first_integer": 1,
+        "covered": true,
+        "point": [
+          "13/28",
+          "11/56"
+        ],
+        "phases": [
+          "13/28",
+          "11/56",
+          "37/56",
+          "1/8",
+          "33/56",
+          "11/14",
+          "5/7"
+        ]
+      },
+      "fallback": null
+    },
+    {
+      "P": 3,
+      "Q": 1,
+      "distinct_speed_configuration": true,
+      "primary": {
+        "segment": "P3:E0-1:K2",
+        "interval": [
+          "-3/4",
+          "1/8"
+        ],
+        "first_integer": 0,
+        "covered": true,
+        "point": [
+          "27/56",
+          "9/56"
+        ],
+        "phases": [
+          "27/56",
+          "9/56",
+          "9/14",
+          "1/8",
+          "17/28",
+          "43/56",
+          "41/56"
+        ]
+      },
+      "fallback": null
+    }
+  ],
+  "sole_P3_misses": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "all_misses_covered_by_P1": true,
+  "endpoint_removal_failure": {
+    "pair": [
+      1,
+      4
+    ],
+    "open_P1_image": [
+      "0",
+      "7/12"
+    ],
+    "no_integer": true,
+    "P3_already_misses": true
+  },
+  "cost_scope": "at most two segment tests after gcd reduction; no constant bound claimed for extended Euclid, whole algorithm, or bit cost",
+  "proof_limits": [
+    "one selected-reference witness",
+    "not an optimum or all-maximizer claim",
+    "not arbitrary seven speeds or all reference runners",
+    "not a new run or retuning of the frozen discovery procedure",
+    "no novelty or formal verification claim"
+  ]
+}
