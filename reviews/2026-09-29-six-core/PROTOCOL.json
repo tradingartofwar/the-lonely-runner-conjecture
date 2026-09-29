@@ -1,0 +1,118 @@
+{
+  "title": "Frozen direct six-core remainder verification",
+  "date": "2026-09-29",
+  "parent_commit": "da05361310a6e0d5607fdd7565ad226f637c8305",
+  "status": "Declared before domain enumeration or exact six-core evaluation; coordinator-approved.",
+  "mathematical_scope": {
+    "total_runners": 8,
+    "selected_reference": 0,
+    "core": [
+      1,
+      4,
+      5
+    ],
+    "residual_order": "a<b<c<d, distinct positive integers, excluding1,4,5",
+    "six_core": "[1,4,5,a,b,c]",
+    "threshold": "1/8",
+    "time_domain": [
+      "0",
+      "1"
+    ],
+    "blocking": "open",
+    "safety": "closed including equality"
+  },
+  "derivation": "Inherited widest four-core windows and T2(b,c)<w_a certify positivity outside the listed36(a,b) branches. Any remaining c is <=62. Strict sixth/seventh anchors and one-sided eighth anchors remove further branches. No unique-seven-divisor shortcut or newly tailored pair windows are used to prune this protocol.",
+  "a_b_branches": {
+    "2": [
+      3,
+      6,
+      7
+    ],
+    "3": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "6": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "7": [
+      8,
+      9
+    ],
+    "9": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "10": [
+      11
+    ],
+    "12": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "15": [
+      16
+    ]
+  },
+  "widths": {
+    "2": "3/32",
+    "3": "1/20",
+    "6": "7/160",
+    "7": "1/14",
+    "9": "1/20",
+    "10": "1/16",
+    "12": "1/24",
+    "15": "7/160"
+  },
+  "domain_rule": [
+    "For every declared(a,b), take integers b<c<=62, with c outside{1,4,5}.",
+    "Retain iff exact rational1/(4b)+1/(2c)>=widths[a].",
+    "Retain iff at least one of a,b,c is divisible by6 and at least one is divisible by7.",
+    "Retain iff either at least one of a,b,c is divisible by8 OR their residues mod8 contain both3and7.",
+    "Sort retained triples lexicographically. This fixed formula is the complete evaluated domain, with no optional extra cases."
+  ],
+  "outputs": [
+    "explicit complete input triples",
+    "all maximal closed safe components, including isolated points",
+    "positive component count and isolated point count",
+    "exact total safe measure",
+    "earliest widest positive component and all ties, or null if none",
+    "exact selected endpoint and midpoint distances for all six speeds",
+    "ceil(1/(4*w)) one-additional-runner sufficient cutoff when w>0",
+    "protocol and source SHA-256 hashes"
+  ],
+  "primary_method": "Successive exact rational closed-safe-band intersections.",
+  "independent_method": "Independently generate the same declared domain; modular predicates at every rational threshold and open-cell midpoint, then reconstruct maximal components. No primary code or output access until independent output is frozen.",
+  "comparison": "Match the complete domains and all common mathematical fields; separately verify that the archived w_a values and36 branches support the analytic reduction.",
+  "limits": [
+    "No d values evaluated",
+    "No other residual triples",
+    "No phases or all-reference scans",
+    "No refinement of the frozen domain after results",
+    "A failed positivity row must be retained and investigated; do not patch the protocol to hide it",
+    "General proof remains HYPOTHESIS/proof candidate; exact records OBSERVED"
+  ],
+  "stopping_rule": "Complete this domain and independent comparison, then stop evaluation. Any additional concrete case requires a separately declared protocol."
+}

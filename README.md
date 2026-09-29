@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+The [six-core continuation](notes/SIX_CORE_WINDOW_2026_09_29.md) supplies a direct proof candidate that every common-start integer core1,4,5,a,b,c has a positive1/8-safe window. Short-chain bounds reduce the work to a frozen27-triple domain; explicit arithmetic certificates close it, and two exact implementations agree on2495 numerical fields. All50 isolated points are retained alongside190 positive components.
+
+The last speed is now bounded too. The direct route gives a finite remainder; separately crediting established six- and seven-runner results sharpens it to **a<=34,b<=47,c<=281,d<=1268** in the fixed family{0,1,4,5,a,b,c,d}. This remaining region has not been exhaustively checked. The existence conclusions are already implied by established lower-runner/eight-runner results; our focus is an explicit structural argument. External review of our derivation and novelty assessment remain pending.
+
+Next: identify the simultaneous containment conditions for the final runner's blocking intervals across the full six-core safe set. No broad tuple scan is authorized; hourly research stays paused.
+
+### Prior three-speed-bound snapshot — preserved
+
 The [core-window candidate](notes/CORE_WINDOW_REDUCTION_2026_09_29.md) bounds three residual speeds in the fixed common-start integer family {0,1,4,5,a,b,c,d}, with a<b<c<d and selected reference0. The five-constraint core1,4,5,a,b retains at least1/24 of a period as safe time. Combining this with short blocking-chain bounds leaves only **a<=34, b<=47, c<=1565** uncertified by these sufficient tests; d remains unbounded. These are internally reviewed proof candidates, not a proof of the full conjecture. External mathematical and novelty assessment remain pending.
 
 Two exact implementations match all31 declared four-core cases across1932 numerical fields, preserving348 positive components and20 isolated points. The calculation checks twelve arithmetic values used in the universal core-measure argument. A separate translated-grid certificate handles residual gcd>=7. No broad tuple or all-reference scan was run.

@@ -1,6 +1,6 @@
 # Research sources and frontier check
 
-**Initial check:** September 20, 2026. **Latest targeted update:** September 27, 2026 (latest team sources retrieved September 28 UTC).
+**Initial check:** September 20, 2026. **Latest targeted update:** September 29, 2026 (six-core and fast-runner audit).
 
 **Scope:** Targeted source check for project planning, not an exhaustive literature review or independent proof audit.
 
@@ -212,6 +212,17 @@ Romanos Diogenes Malikiosis, Francisco Santos, Matthias Schymura, *Linearly expo
 [Publisher / DOI](https://doi.org/10.1017/fms.2025.10107).
 
 Inspected Section 1.2's LR-zonotope construction and Section 2.1, Corollary 2.3 and its displayed argument, September 27. The lattice-point formula includes singleton-speed terms. Our 1680/3360 pair therefore does not match this invariant even though all nonsingleton subset gcds agree; the formula's counts differ by 1680. This is a deduction from the formula, not a separately enumerated zonotope census. The paper's full finite-reduction proof was not audited.
+
+## September 29 six-core and fast-runner source audit
+
+[Focused literature report](../reviews/2026-09-29-six-core/literature.md) records exact conventions and reading limits. These are credited inputs, not results discovered by the current fixed-core calculation.
+
+- **J. Barajas and O. Serra, The lonely runner with seven runners**, Electronic Journal of Combinatorics15(1), R48(2008), DOI[10.37236/772](https://doi.org/10.37236/772). [Published PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v15i1r48/pdf), [author-hosted preprint copy](https://kam.mff.cuni.cz/~matousek/cla/barajas-serra-lonelyseven.pdf). Inspected the abstract, selected-reference positive-integer formulation, prime-filtering lemma and proof roadmap; the detailed later casework was not independently audited. The established result gives six frequencies distance at least1/7. Our core contains1 and therefore already has gcd1.
+- **Tom Bohman, Ron Holzman and Dan Kleitman, Six Lonely Runners**, Electronic Journal of Combinatorics8(2), R3(2001), DOI[10.37236/1602](https://doi.org/10.37236/1602). [Author-hosted published PDF](https://holzman.technion.ac.il/files/2012/09/runners.pdf). Inspected Theorem2 (printedp3), the introduction and Lemma4's two-block proof. Theorem2 applies to five positive real frequencies at distance at least1/6. The whole proof was not independently reproduced.
+- **S15, Kravitz Proposition6.1**, [published PDF](https://escholarship.org/content/qt3wx931fh/qt3wx931fh.pdf), printedpp12–13: revisited the proposition and full proof. The published page image was checked because text extraction incorrectly made several non-strict signs strict. A witness margin epsilon produces a closed time interval of radius epsilon/maximum core speed. Its1/7-to1/8 specialization gives d>=7c, including equality; this perturbation step is established precedent, not a new lemma claimed here.
+- **S2, Rosenfeld's eight-runner paper**: the reviewer inspected the versioned statement and proof framework again; its computational component was not reproduced. The fixed eight-runner family must not be described as a newly open existence case.
+
+Our quarter-duty pair-span refinement adapts the elementary two-block structure in Bohman–Holzman–Kleitman Lemma4, with different blocked duty. Its derivation and the finite-region consequences are supplied in [SIX_CORE_WINDOW_2026_09_29.md](SIX_CORE_WINDOW_2026_09_29.md) as internally reviewed deductions. No current-frontier audit or novelty conclusion follows from this targeted reading.
 
 ## Source discipline
 
