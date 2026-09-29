@@ -8,6 +8,13 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Latest — nine-runner joint transfer succeeds at 1/8.** [CC_NINE_RUNNER_TRANSFER_2026_09_29.md](notes/CC_NINE_RUNNER_TRANSFER_2026_09_29.md) combines rows (6,2) and (3,8) at the same point. The frozen compiler produces 36 candidates, 17 residual directions, 612 contacts and a complete three-segment menu. The first two suffice for nine distinct speeds, requiring p!=q and p!=2q. All 20 controls pass, including four repeated-speed auxiliaries. The stronger 1/8 guarantee makes the conditional 1/9 run unnecessary; richer-parent recovery was also not triggered.
+
+**Continuity correction:** the prior coefficient classification already placed (6,2) on the fixed (3,8) selector for p!=q, so primary joint coverage was already implied. This run verifies explicit two-label compiler recovery and a changed p=q fallback; it does not establish new family existence. Separate geometry, physical and proof reviews plus exact reproduction are recorded in the package. Universal arguments remain internally reviewed proof candidates.
+
+**Next proposed:** a frozen ten-runner transfer adding the archived difficult row (38,18). At (1,20), the current selector's 7/24 gives added phase 1/12, below the ten-runner target 1/10. No ten-runner compiler experiment has run. The coefficient-aware dispatcher remains separately pending.
+
+
 **Closing visual section completed — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **08 · Carry it through** (`#story`), completing the opening-to-conclusion

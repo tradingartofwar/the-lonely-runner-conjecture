@@ -646,3 +646,26 @@ coefficient row, then use it for every primary parameter pair. Choosing a rule
 separately for each pair interchanges the quantifiers and could establish a
 larger domain; it requires a new proof obligation. The present classification
 does not silently supply that stronger result.
+
+## 18. Recover implications already present in the record
+
+The [nine-runner joint transfer](CC_NINE_RUNNER_TRANSFER_2026_09_29.md)
+simultaneously clips rows (6,2) and (3,8), retaining both laps at one edge
+parameter. The compiler returns a complete 1/8 certificate. Its first two
+segments suffice on p!=q,p!=2q; its third repairs the p=q auxiliary. The
+stronger threshold makes the planned 1/9 regeneration unnecessary.
+
+The prior coefficient classification already accepted (6,2) for the very
+same primary selector used for (3,8). Thus the common-point guarantee was
+already implied, rather than following for the first time from this run.
+Remembering only separate successes would discard this operational relation
+and exaggerate the experiment's contribution. Source recovery corrected its
+interpretation: explicit two-label compiler transfer and changed auxiliary
+selection, without new family existence coverage.
+
+No model replacement is needed for this operation: add the second lap label,
+preserve the same-point constraint, and update distinctness. The edge class
+still omits parent interiors and new added-band boundaries. Its untriggered
+recovery path is not validated by success. The next test should challenge
+the available joint guarantee; adding the archived difficult (38,18) row is
+a proposed ten-runner case, still unrun.
