@@ -1,6 +1,6 @@
 # Visual companion audit — September 29, 2026
 
-Scope: the exact data layer and six connected interactive sections.
+Scope: the exact data layer and seven connected interactive sections.
 AI-assisted implementation and same-author audit; no independent human review
 or new mathematical theorem is claimed.
 
@@ -293,3 +293,72 @@ The representation record specifies the local common-time question and the
 recovery trigger for a new configuration, reference, threshold or window.
 Full guided deck/explorer remain pending; next is the safe-lap-to-geometric-cell
 bridge and the introduction to the complete atlas.
+
+
+## Seventh section: from time to shape
+
+The new chapter is a finite construction view over the existing frozen sources.
+It uses all ten original seven-form label vectors, with eight states per cell:
+the declared closed coordinate frame, followed by seven cumulative whole-band
+intersections. The frame is 0<=x<=1/2, 0<=y<=1, 1/8<=z<=1/2. It encloses each
+completed certificate, but its initial/intermediate states are explicitly
+relaxations rather than seven-runner safe cells.
+
+The builder enumerates triples of boundary planes with exact determinants,
+retains feasible vertices, and records edges and ordered faces. The checker
+starts with the frame's eight vertices and twelve edges, incrementally clips
+by each halfspace and recovers new vertices by rational edge interpolation.
+All 80 resulting vertex sets agree. Dimensions, incidences, complete face
+sets and cyclic face order pass; completed vertices/edges agree with the
+pinned certificate. In particular C0/C3/C5 remain singletons, and C7 retains
+six vertices and nine edges. Source hashes remain the existing 21; no newer
+coefficient or selector research is imported.
+
+Three archived q=4,H=1 lap controls separately demonstrate L<R, L=R and L>R.
+Their closed intersections are [17/56,5/16], {3/8}, and empty with
+L=33/104>R=5/16. The first applies only six constraints and explicitly shows
+that speed 13 fails at the chosen midpoint 69/224 (distance 1/224). The
+singleton satisfies all seven. The empty branch returns no physical time,
+while the corresponding ambient C3 survives at noninteger H=11/8.
+
+The browser audit compares every construction vertex/edge/face and all three
+lap controls with exact data at 1440/light, 390/light and 320/dark: 240
+construction layouts plus nine lap layouts. It checks cumulative-band
+selection, next/all/reset, all completed atlas selections, camera rotation
+and reset, thirty non-singleton vertex markers plus three persistent rings,
+chapter state retention and fresh #cell navigation. Prior chapters remain
+covered. No clipped SVG labels, horizontal document overflow, page errors or
+network dependencies were found.
+
+Visual inspection covered the closed singleton with its dashed previous
+parent, C7's six-vertex clipped shape, the full atlas, and the narrow dark
+layout. Singleton rings and labels are drawn after volume faces so they stay
+visible. The current/previous construction view is fitted together; the atlas
+uses a shared full-atlas frame. Both explicitly declare height exaggeration
+by two. Tiny numerical shape changes are never replaced by approximate
+feasibility decisions.
+
+Representation checkpoint:
+
+- Physical completed lap ell, torus label m and the prior chapter's nearby
+  blocking meeting index are different objects.
+- The A-ray translation ell=m+bh carries the same inequality under v=a+qb,
+  x=t, y=qt-h. It is not silently substituted for the B-ray clock.
+- z is a requested lower bound. An interior point can have actual minimum
+  separation greater than its displayed height.
+- Equality is retained in both interval and geometric intersections.
+- Empty fixed-lap physical intersection does not imply an empty ambient cell,
+  an empty system, or a failure on every orbit.
+- All seven closed bands act on one shared (x,y,z), with one fixed label vector.
+  New labels choose a different cell; they are not merged mid-construction.
+- The completed atlas and an intermediate construction stage remain separate.
+  Cell/vertex/edge counts refer to per-cell occurrences, not unique coordinates.
+- Full cells are not all tetrahedra. The seven top-cap tetrahedra are a later,
+  question-specific compression and are linked separately.
+- The integer orbit and physical recovery remain necessary; ambient membership
+  alone does not return a runner time.
+
+This is AI-assisted implementation and same-author finite verification. It
+does not change the underlying proof-candidate status or introduce a new
+family, theorem or novelty claim. The guided opening/relative-motion scene,
+concluding CC story, standalone figures and research explorer remain pending.

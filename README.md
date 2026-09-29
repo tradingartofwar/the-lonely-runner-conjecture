@@ -43,16 +43,15 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
-**Visual companion:** [Six interactive CC sections](visuals/compatibility-calculus/README.md)
-connect **from cap to clock**, **true somewhere versus true together**,
-**what the model remembers**, **what survives the cut**, **one safe time**,
-and **one shared clock**. Open the self-contained `presentation.html`.
-Section 06 links physical phases, strict blocking intervals and an overlap
-graph for the archived 6/11/16 example. Merging runners hides the different
-meeting occurrences; restoring the labels excludes the proposed local triple.
-The closed safe opening and exact endpoints remain visible. All 38 states
-pass 114 desktop/phone layouts, alongside the existing section checks.
-Sources stay frozen at 6b2b931; the full deck and explorer remain in progress.
+**Visual companion:** [Seven interactive CC sections](visuals/compatibility-calculus/README.md)
+now include **07 · From time to shape**. Open the self-contained
+`presentation.html`. Three physical lap controls show a positive interval,
+a closed singleton and an empty intersection. The exact label map then
+connects the time inequalities to geometric bands. Build any of the ten
+archived cells one band at a time and inspect the full atlas, including all
+three singletons and the six-vertex C7. Independent edge clipping checks all
+80 construction states against the plane-intersection builder. Sources stay
+frozen at 6b2b931; the full guided deck and explorer remain in progress.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

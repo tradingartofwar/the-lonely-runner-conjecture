@@ -277,6 +277,76 @@ def clock_visual(src):
             'status':'REPRODUCED — one archived configuration in one closed local window; no family or general theorem'}
 
 
+def cell_visual(src):
+    """Construct each archived label cell by adding its seven closed bands."""
+    from itertools import combinations
+    def dot(a,b):return sum(x*y for x,y in zip(a,b))
+    def determinant(a,b,c):
+        return a[0]*(b[1]*c[2]-b[2]*c[1])-a[1]*(b[0]*c[2]-b[2]*c[0])+a[2]*(b[0]*c[1]-b[1]*c[0])
+    def rank(rows):
+        a=[list(map(F,row)) for row in rows];r=0
+        for col in range(3):
+            p=next((i for i in range(r,len(a)) if a[i][col]),None)
+            if p is None:continue
+            a[r],a[p]=a[p],a[r];q=a[r][col];a[r]=[x/q for x in a[r]]
+            for i in range(r+1,len(a)):
+                q=a[i][col];a[i]=[x-q*y for x,y in zip(a[i],a[r])]
+            r+=1
+        return r
+    def poly(constraints):
+        vertices=set()
+        for triple in combinations(constraints,3):
+            rows=[list(map(F,c[0])) for c in triple];bounds=[F(c[1]) for c in triple]
+            det=determinant(*rows)
+            if not det:continue
+            columns=list(zip(*rows))
+            point=tuple(determinant(*(columns[:i]+[tuple(bounds)]+columns[i+1:]))/det for i in range(3))
+            if all(dot(n,point)<=b for n,b in constraints):vertices.add(point)
+        vertices=sorted(vertices)
+        dimension=rank([[x-y for x,y in zip(p,vertices[0])] for p in vertices[1:]]) if vertices else -1
+        edges=[]
+        for i,j in combinations(range(len(vertices)),2):
+            active=[n for n,b in constraints if dot(n,vertices[i])==b==dot(n,vertices[j])]
+            if rank(active)>=2:edges.append([i,j])
+        face_sets=set()
+        for n,b in constraints:
+            ids=tuple(i for i,v in enumerate(vertices) if dot(n,v)==b)
+            if len(ids)>=3 and rank([[x-y for x,y in zip(vertices[i],vertices[ids[0]])] for i in ids[1:]])==2:face_sets.add(ids)
+        faces=[]
+        for ids in sorted(face_sets):
+            order=[ids[0]]
+            while len(order)<len(ids):
+                candidates=[j if i==order[-1] else i for i,j in edges if order[-1] in [i,j] and i in ids and j in ids]
+                nxt=next((i for i in sorted(candidates) if i not in order),None)
+                assert nxt is not None
+                order.append(nxt)
+            faces.append(order)
+        return {'vertices':vertices,'edges':edges,'faces':faces,'dimension':dimension}
+    frame=[([-1,0,0],F(0)),([1,0,0],F(1,2)),([0,-1,0],F(0)),([0,1,0],F(1)),([0,0,-1],F(-1,8)),([0,0,1],F(1,2))]
+    records=[]
+    for ci,raw in enumerate(src['geometry']['cells']):
+        constraints=frame.copy();stages=[poly(constraints)];bands=[]
+        for (a,b),m in zip(ROWS,raw['labels']):
+            band=[([-a,-b,1],F(-m)),([a,b,1],F(m+1))]
+            bands.append(band);constraints+=band;stages.append(poly(constraints))
+        assert set(stages[-1]['vertices'])=={tuple(map(F,p)) for p in raw['vertices']}
+        assert stages[-1]['dimension']==raw['dimension']
+        records.append({'id':f'C{ci}','labels':raw['labels'],'bands':bands,'stages':stages})
+    cases=[]
+    parent=src['transfer']['parents'][2]
+    for name,labels,n in [('interval',parent['labels'],6),('point',src['geometry']['cells'][5]['labels'],7),('empty',src['geometry']['cells'][3]['labels'],7)]:
+        laps=[m+b for m,(a,b) in zip(labels,ROWS)]
+        vs=speeds('A',4)[:n];bounds=[[(F(l)+F(1,8))/v,(F(l)+F(7,8))/v] for l,v in zip(laps,vs)]
+        lo=max(b[0] for b in bounds);hi=min(b[1] for b in bounds)
+        t=(lo+hi)/2 if lo<=hi else None
+        cases.append({'id':name,'q':4,'h':1,'count':n,'torus_laps':labels,'physical_laps':laps,'speeds':vs,
+                      'bounds':bounds,'lower':lo,'upper':hi,'time':t,
+                      'point':[t,4*t-1,F(1,8)] if t is not None else None,
+                      'witness':witness('A',4,t) if t is not None else None})
+    return {'frame':frame,'cells':records,'lap_cases':cases,'source':SOURCES['geometry'],
+            'status':'REPRODUCED — exact finite label cells and three archived q=4 lap controls'}
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -336,10 +406,11 @@ def build():
                       'transfer_visual': transfer_visual(src),
                       'selector_visual': selector_visual(src),
                       'clock_visual': clock_visual(src),
+                      'cell_visual': cell_visual(src),
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'cell.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -370,6 +441,9 @@ def build():
                                'occurrences':6,'pair_edges':4,'modes':2,
                                'exact_time_controls':len(examples['clock_visual']['controls']),
                                'safe_interval':['17/56','39/128'],'safe_duration':'1/896'}
+    controls['cell_visual'] = {'cells':10,'stages_per_cell':8,'lap_cases':3,'singletons':['C0','C3','C5'],
+                              'six_vertex_cell':'C7','positive_interval':['17/56','5/16'],
+                              'singleton_time':'3/8','empty_bounds':['33/104','5/16']}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
@@ -389,8 +463,9 @@ def build():
                                  'selector_geometry':SOURCES['selector'],
                                  'selector_physical':SOURCES['selector_countercheck'],
                                  'shared_clock':SOURCES['clock_occurrences'],
-                                 'occurrence_identity':'notes/LAP_LABELLED_CONSTRAINTS.md'},
-                'implementation_scope':'Exact data and six sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, and shared-clock occurrence identity; full deck and explorer remain pending.'}
+                                 'occurrence_identity':'notes/LAP_LABELLED_CONSTRAINTS.md',
+                                 'cell_construction':SOURCES['geometry'], 'lap_bridge':SOURCES['transfer']},
+                'implementation_scope':'Exact data and seven sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, shared-clock occurrence identity, and safe-lap-to-cell construction; full deck and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -410,10 +485,11 @@ def main():
         html = html.replace('<!-- CC_TRANSFER -->', (PACKAGE/'transfer.template.html').read_text())
         html = html.replace('<!-- CC_SELECTOR -->', (PACKAGE/'selector.template.html').read_text())
         html = html.replace('<!-- CC_CLOCK -->', (PACKAGE/'clock.template.html').read_text())
+        html = html.replace('<!-- CC_CELL -->', (PACKAGE/'cell.template.html').read_text())
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-navigation.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-cell.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:

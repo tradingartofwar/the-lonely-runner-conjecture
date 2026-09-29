@@ -8,6 +8,41 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Seventh visual section — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) adds
+**07 · From time to shape**, directly reachable as `#cell`. Three archived
+q=4,H=1 lap controls show the six-form interval [17/56,5/16], the seven-form
+singleton {3/8}, and an empty seventh-lap branch with L=33/104 > R=5/16.
+The first control explicitly does not require speed 13; its midpoint 69/224
+has seventh distance 1/224. Empty intersections select no physical witness.
+
+The physical inequality ell+z<=vt<=ell+1-z translates exactly to the torus
+band m+z<=ax+by<=m+1-z under v=a+qb, x=t, y=qt-h and ell=m+bh. Physical
+completed laps, torus labels and blocking meeting numbers remain distinct.
+z is a requested separation lower bound, not necessarily an attained minimum.
+
+Each of the ten pinned label vectors can be constructed by adding all seven
+closed bands to the declared folded coordinate frame. All 80 exact states
+are generated from triple-plane intersection and independently reconstructed
+by incremental edge clipping. Facets, cyclic face order and completed edges
+are checked; final vertices match the original source certificates. C7 has
+six vertices; C0/C3/C5 are preserved singletons. The full atlas remains
+separate from the current build stage and retains all three singleton rings.
+All 240 construction layouts and nine physical-lap layouts pass, along with
+stage/atlas controls, camera, optional vertices and seven-chapter navigation.
+The previous six sections remain covered.
+
+Sources stay at 6b2b931. Intermediate shapes are labelled relaxations, with
+previous edges dashed and the newest band boundary highlighted. The 3D view
+fits current/previous states with a declared height factor two. No interpolated
+constraint is presented as a physical runner. Ambient and integer-orbit
+feasibility stay separate. Later coefficient/selector research is preserved.
+
+**Next visual target:** the common-start/selected-reference/relative-motion
+opening. The concluding guided CC story, standalone figures and separate
+research explorer remain unfinished.
+
+
 **Sixth visual section — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **06 · One shared clock**, directly reachable as `#clock`. The separate

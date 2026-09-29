@@ -237,6 +237,58 @@ def main():
     counts.update(clock_occurrences=6,clock_pair_edges=4,clock_exact_time_controls=19,
                   clock_strict_boundaries_and_closed_safe_set=True,clock_meeting_distinct_from_completed_lap=True,
                   clock_no_local_6_11_16_triple=True)
+    # Section 07: incremental edge clipping, independent of the builder's
+    # enumeration of triples of boundary planes.
+    construction=e['cell_visual'];construction_states=0
+    for ci,record in enumerate(construction['cells']):
+        vertices=sorted(itertools.product([F(0),F(1,2)],[F(0),F(1)],[F(1,8),F(1,2)]))
+        edges=[(i,j) for i,j in itertools.combinations(range(8),2) if sum(a!=b for a,b in zip(vertices[i],vertices[j]))==1]
+        constraints=construction['frame'].copy()
+        for stage,poly in enumerate(record['stages']):
+            if stage:
+                for normal,bound in record['bands'][stage-1]:
+                    values=[dot(normal,p)-bound for p in vertices]
+                    clipped={p for p,value in zip(vertices,values) if value<=0}
+                    for i,j in edges:
+                        if values[i]*values[j]<0:
+                            u=values[i]/(values[i]-values[j])
+                            clipped.add(tuple(a+u*(b-a) for a,b in zip(vertices[i],vertices[j])))
+                    vertices=sorted(clipped);constraints.append([normal,bound])
+                    edges=[(i,j) for i,j in itertools.combinations(range(len(vertices)),2)
+                           if rank([n for n,b in constraints if dot(n,vertices[i])==b==dot(n,vertices[j])])>=2]
+            assert vertices==list(map(tuple,poly['vertices']))
+            assert edges==list(map(tuple,poly['edges']))
+            dimension=rank([[a-b for a,b in zip(p,vertices[0])] for p in vertices[1:]])
+            assert dimension==poly['dimension']
+            assert all(dot(n,p)<=b for p in vertices for n,b in constraints)
+            facets=set()
+            for n,b in constraints:
+                ids=tuple(i for i,p in enumerate(vertices) if dot(n,p)==b)
+                if len(ids)>2 and rank([[a-b for a,b in zip(vertices[i],vertices[ids[0]])] for i in ids[1:]])==2:facets.add(frozenset(ids))
+            assert {frozenset(f) for f in poly['faces']}==facets
+            for face in poly['faces']:
+                assert all(tuple(sorted([i,j])) in edges for i,j in zip(face,face[1:]+face[:1]))
+            construction_states+=1
+        assert set(vertices)==set(map(tuple,cells[ci]['vertices']))
+        certified_edges={frozenset([tuple(cells[ci]['vertices'][i]),tuple(cells[ci]['vertices'][j])]) for i,j in cells[ci]['edges']}
+        assert {frozenset([vertices[i],vertices[j]]) for i,j in edges}==certified_edges
+    speeds_for_q4=[1,4,5,6,7,11,13]
+    for case in construction['lap_cases']:
+        bounds=[((ell+F(1,8))/v,(ell+F(7,8))/v) for v,ell in zip(case['speeds'],case['physical_laps'])]
+        assert bounds==list(map(tuple,case['bounds']))
+        lo=max(a for a,b in bounds);hi=min(b for a,b in bounds)
+        assert (lo,hi)==(case['lower'],case['upper'])
+        expected={'interval':(F(17,56),F(5,16)),'point':(F(3,8),F(3,8)),'empty':(F(33,104),F(5,16))}
+        assert (lo,hi)==expected[case['id']]
+        assert case['physical_laps']==[m+b*case['h'] for m,(a,b) in zip(case['torus_laps'],ROWS)]
+        if lo>hi:assert case['time'] is None and case['point'] is None and case['witness'] is None
+        else:
+            t=(lo+hi)/2;x,y,z=case['point'];assert t==x==case['time'] and 4*x-y==1
+            assert all(z<=a*x+b*y-m<=1-z for (a,b),m in zip(ROWS,case['torus_laps']))
+            assert all(dist(v*t)>=z for v in case['speeds'])
+            assert [r['phase'] for r in case['witness']['runners']]==[frac(v*t) for v in speeds_for_q4]
+    counts.update(cell_construction_states=construction_states,cell_incremental_clipping=True,
+                  cell_final_vertices_edges_match_atlas=True,cell_closed_lap_controls=3)
     # Controls for section 03, checked against full physical sets and parent facets.
     a4=next(r for r in e['A'] if r['q']==4)
     closed_segment_times=[];open_segment_times=[]

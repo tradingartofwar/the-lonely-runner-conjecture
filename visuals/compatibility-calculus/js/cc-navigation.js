@@ -1,6 +1,6 @@
 /* One chapter router; each chapter retains its own controls between visits. */
 (() => {
-  const chapters=['cap','joint','representation','transfer','selector','clock'];
+  const chapters=['cap','joint','representation','transfer','selector','clock','cell'];
   function navigate(){
     const hash=location.hash.slice(1),chapter=chapters.includes(hash)?hash:'cap';
     for(const id of chapters){

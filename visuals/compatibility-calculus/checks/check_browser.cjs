@@ -14,8 +14,9 @@ const joint=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).
 const cut=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).transfer_visual;
 const selector=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).selector_visual;
 const clock=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).clock_visual;
+const cells=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).cell_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation, parent-child, selector and shared-clock controls; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation, parent-child, selector, shared-clock and cell-construction controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -385,6 +386,68 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     report.checks.clock_exact_time_controls=19;report.checks.clock_representation_states=38;
     report.checks.clock_phases_laps_meetings_and_strict_boundaries=true;report.checks.clock_jump_controls_and_closed_opening=true;
     report.checks.clock_mode_preserves_time=true;report.checks.six_chapter_direct_links=true;
+    await page.click('#nav-cell');await page.waitForFunction(()=>window.CC_CELL_STATE&&!document.getElementById('cell-chapter').hidden);
+    report.checks.cell_construction_layouts=[];report.checks.cell_lap_layouts=[];
+    async function cellLayout(){
+      return page.evaluate(()=>{
+        const outside=[];
+        for(const svg of document.querySelectorAll('#cell-chapter svg')){
+          if(!svg.getBoundingClientRect().width)continue;
+          const b=svg.viewBox.baseVal;
+          for(const t of svg.querySelectorAll('text')){const r=t.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:t.textContent});}
+        }
+        return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+      });
+    }
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const record of cells.lap_cases){
+        await page.click(`[data-lap-case="${record.id}"]`);
+        const c=(await page.evaluate(()=>window.CC_CELL_STATE)).lap;
+        assert.equal(c.id,record.id);assert.equal(c.lower,record.lower.text);assert.equal(c.upper,record.upper.text);
+        assert.deepEqual(c.bounds,record.bounds.map(b=>b.map(v=>v.text)));assert.equal(c.time,record.time?record.time.text:null);
+        if(record.witness){
+          assert.deepEqual(c.physical.phases,record.witness.runners.map(r=>r.phase.text));
+          assert.deepEqual(c.physical.distances,record.witness.runners.map(r=>r.distance.text));
+          assert.deepEqual(c.physical.laps,record.witness.runners.map(r=>String(r.lap)));
+          assert.equal(c.physical.requiredMinimum,record.id==='interval'?'17/112':'1/8');
+        }else assert.equal(c.physical,null);
+        assert.equal(await page.locator('#cell-lap-rows tr').count(),record.count);
+        assert.deepEqual(await cellLayout(),{overflow:false,outside:[]},`cell lap ${width} ${record.id}`);
+        report.checks.cell_lap_layouts.push({width,scheme,case:record.id,overflow:false,clipped_svg_labels:0});
+      }
+      for(const [index,record]of cells.cells.entries()){
+        await page.selectOption('#cell-choice',String(index));
+        for(let stage=0;stage<8;stage++){
+          if(stage)await page.click('#cell-build-next');
+          const c=(await page.evaluate(()=>window.CC_CELL_STATE)).construction,p=record.stages[stage];
+          assert.equal(c.cell,record.id);assert.equal(c.stage,stage);assert.equal(c.dimension,p.dimension);
+          assert.deepEqual(c.vertices,p.vertices.map(v=>v.map(x=>x.text)));assert.deepEqual(c.edges,p.edges);assert.deepEqual(c.faces,p.faces);
+          assert.equal(await page.locator('#cell-atlas .cell-atlas-singleton').count(),3);
+          assert.equal(await page.locator('#cell-volume .cell-build-singleton').count(),p.dimension===0?1:0);
+          assert.equal(await page.locator('#cell-build-next').isDisabled(),stage===7);
+          assert.deepEqual(await cellLayout(),{overflow:false,outside:[]},`cell ${width} ${record.id} stage ${stage}`);
+          report.checks.cell_construction_layouts.push({width,scheme,cell:record.id,stage,overflow:false,clipped_svg_labels:0});
+          if(process.env.CC_SCREENSHOT_DIR&&[0,1,7].includes(index)&&[0,6,7].includes(stage)&&(width===1440||(width===320&&stage===7)))await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`cell-${width}-${record.id}-${stage}.png`),fullPage:true});
+        }
+      }
+    }
+    await page.click('#cell-build-reset');assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.stage,0);
+    await page.click('[data-band="4"]');assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.stage,4);
+    await page.click('#cell-build-all');assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.stage,7);
+    await page.click('[data-cell="7"]');assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.vertices.length,6);
+    await page.check('#cell-show-vertices');assert.equal(await page.locator('#cell-atlas .cell-vertex-dot').count(),30);
+    const cellShape=await page.locator('#cell-volume polygon').first().getAttribute('points');
+    await page.click('#cell-rotate-left');assert.notEqual(await page.locator('#cell-volume polygon').first().getAttribute('points'),cellShape);
+    await page.click('#cell-reset-view');assert.equal(await page.locator('#cell-volume polygon').first().getAttribute('points'),cellShape);
+    await page.click('#nav-clock');await page.waitForFunction(()=>document.getElementById('cell-chapter').hidden);
+    await page.click('#nav-cell');await page.waitForFunction(()=>!document.getElementById('cell-chapter').hidden);assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.cell,'C7');
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#cell');await page.reload();
+    await page.waitForFunction(()=>window.CC_CELL_STATE&&!document.getElementById('cell-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.cell,'C1');assert.equal((await page.evaluate(()=>window.CC_CELL_STATE)).construction.stage,0);
+    assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-cell').getAttribute('aria-current'),'page');
+    report.checks.cell_construction_states=80;report.checks.cell_physical_lap_cases=3;
+    report.checks.cell_singletons_six_vertex_cell_and_camera=true;report.checks.seven_chapter_direct_links=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));

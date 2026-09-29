@@ -2,7 +2,7 @@
   "status": "PASS",
   "checks": {
     "source_hashes": 21,
-    "implementation_hashes": 19,
+    "implementation_hashes": 21,
     "cells": 10,
     "vertex_occurrences": 33,
     "edge_occurrences": 45,
@@ -28,6 +28,10 @@
     "clock_strict_boundaries_and_closed_safe_set": true,
     "clock_meeting_distinct_from_completed_lap": true,
     "clock_no_local_6_11_16_triple": true,
+    "cell_construction_states": 80,
+    "cell_incremental_clipping": true,
+    "cell_final_vertices_edges_match_atlas": true,
+    "cell_closed_lap_controls": 3,
     "representation_questions": 6,
     "representation_q4_closed_segment_times": [
       "1/8"

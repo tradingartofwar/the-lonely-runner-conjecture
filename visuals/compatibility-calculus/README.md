@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Six connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, and **one shared clock**.
+**Seven connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, and **from time to shape**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -21,6 +21,8 @@ Choose **05 · One safe time**, or open `#selector`, to run the two-segment
 selector one test at a time.
 Choose **06 · One shared clock**, or open `#clock`, to compare merged runner
 rows with labelled blocking occurrences at the same exact physical time.
+Choose **07 · From time to shape**, or open `#cell`, for closed lap intervals,
+stepwise band intersection and the full ten-cell atlas.
 
 ## What this version does
 
@@ -121,6 +123,34 @@ blocking meeting m are separate fields, with the latter shown only when active.
 The source's general forest argument and synthetic altered distribution are
 not promoted into new physical or universal claims.
 
+The seventh chapter connects physical lap intervals to the geometric model.
+Three archived q=4,H=1 controls distinguish a six-constraint interval
+[17/56,5/16], the seven-constraint singleton {3/8}, and the empty seventh-lap
+branch with lower bound 33/104 greater than upper bound 5/16. The six-form
+control explicitly leaves speed 13 unchecked; its selected midpoint is not
+presented as seven-runner safe. The empty branch returns no physical witness.
+
+The A-ray translation v=a+qb, x=t, y=qt-h, ell=m+bh preserves the inequality
+ell+z <= vt <= ell+1-z as m+z <= ax+by <= m+1-z. Physical completed laps,
+torus labels and the preceding chapter's nearby blocking meetings are kept
+distinct. A height z is a required lower bound, not necessarily the attained
+minimum of an interior point.
+
+For each of the ten archived label vectors, the cell constructor starts with
+0<=x<=1/2, 0<=y<=1 and 1/8<=z<=1/2, then intersects the seven whole closed
+bands in order. All eighty states are exact. Intermediate shapes are clearly
+labelled relaxations. Previous edges are dashed and the newest boundary is
+highlighted; the current/previous view is fitted together and z is scaled by
+a declared factor of two. Completed vertices and edges agree with the source
+atlas, including C0/C3/C5 singletons and the six-vertex C7.
+
+The atlas always displays all ten completed cells separately from the build
+stage. Selecting an atlas cell restores its completed construction. Optional
+vertex markers preserve 33 vertex occurrences, and all three singleton rings
+remain visible. Per-cell occurrence counts are not unique-coordinate counts.
+The physical orbit requirement remains explicit; an ambient cell alone is not
+a physical time.
+
 ## Evidence and scope
 
 Source snapshot: `6b2b9316dbc87499a1cb5184aadbd6614d4d6c32`, on
@@ -172,7 +202,7 @@ It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
 `presentation.template.html`, `joint.template.html`, `representation.template.html`,
-`transfer.template.html`, `selector.template.html`, `clock.template.html`,
+`transfer.template.html`, `selector.template.html`, `clock.template.html`, `cell.template.html`,
 `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
 
@@ -196,6 +226,7 @@ from a drawing.
 | Conditional slice | All 14 displayed exact points retain six-runner safety and fail only runner 13; collision t=4/13; the entire closed S interval is strictly blocked |
 | q=10 | 17/35 and 18/35 are maximizers; the old face has dimension 2 and the child face dimension 1 |
 | Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints; ten projected intervals and five selected/reflected physical controls |
+| Cell construction | Ten fixed label vectors × eight stages; all vertices checked by independent incremental edge clipping; completed edges/vertices agree with the atlas; three closed physical lap controls |
 | Shared clock | Six exact blocking occurrences, four pair edges, no 6/11/16 triple in J; direct seven-band intersection reproduces the closed safe interval; 19 physical time stops |
 | Parent–child scenes | Three parents and four children: seven exact orbit slices reconstructed independently from 2D inequalities; before/after phases, laps and reflections |
 | Representation controls | q=4 closed/open segment integer contacts; all eight q=10 maximizers partitioned into six old-edge and two face-interior recoveries |
@@ -252,7 +283,18 @@ blocking, both safe endpoints, graph structure, jump/step controls and
 six-chapter navigation. Four archived source files were added to the manifest
 at the same frozen commit; the existing A/B controls are unchanged.
 
-Next visual target: connect the physical safe-lap inequalities to construction
-of a geometric cell, then introduce the full atlas before its question-specific
-compressions. The guided opening/relative-motion introduction, concluding CC
-story, standalone figure exports and research explorer remain unfinished.
+The seventh-section browser audit checks 240 construction layouts and nine
+physical-lap layouts, all displayed exact coordinates, singleton rings, the
+six-vertex cell, stage controls, camera controls and seven-chapter navigation.
+The preceding six sections remain covered.
+
+The seventh-section data audit independently clips the frame's edges as each
+halfspace is added, instead of enumerating triples of boundary planes as the
+builder does. It checks all 80 construction states, complete facets and cyclic
+face order, the final source vertices/edges, and the physical lap translation.
+
+Next visual target: the opening explanation of common-start runners and the
+selected-reference/relative-motion translation. The concluding guided CC
+story, standalone figure exports and separate research explorer also remain
+unfinished. The new construction uses the existing frozen mathematical
+sources and does not incorporate later coefficient/selector research.
