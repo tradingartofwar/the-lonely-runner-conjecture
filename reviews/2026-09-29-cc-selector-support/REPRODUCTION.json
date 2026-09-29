@@ -1,0 +1,57 @@
+{
+  "cross_comparison": {
+    "classification_fields_matched": 1944,
+    "direction_fields_matched": 7650,
+    "method": "JSON comparison after independent calculation; not blind",
+    "physical_fields_matched": 4332
+  },
+  "input_hashes_verified": 6,
+  "reproduce_script_sha256": "4f2cb3f9b27d5cea909e90f71ba1aa3afdbdc7e8f0ab60c439f36df6c1beb11f",
+  "reproduced_byte_for_byte": {
+    "classification.json": "853ae3e0e8d478f99113be31d23fc145eaae69c4b75fb79bbe9f73420084a02c",
+    "classification_review.json": "bb0eb71575e3d2304774730d81999dc16ed618c4e4d97899c62af5cb5ccb9843",
+    "support.json": "1b3dd13c74b2a0a5d70d3b58b3168847a662b13604a17182c28169c7630b385c",
+    "witnesses.json": "f14fc5a30252430345de10c73585bc1da993de6d6334a850610b05745804e18a"
+  },
+  "scope": "Only the proved 216-cell / M<=91 reduction, 174 derived failures and 54 archived configurations; no extra trial.",
+  "status": "PASS",
+  "summaries": {
+    "classification_review": {
+      "R_classes": 42,
+      "T_all_classes": 42,
+      "T_classes": 42,
+      "added_positive_controls": 0,
+      "archived_fields_matched": 972,
+      "archived_positive_controls": 54,
+      "distinct_leader_points": 387,
+      "fallback_records": 1,
+      "genuine_distinct_speed_negative_certificates": 174,
+      "leader_records": 1274,
+      "p_ne_q_support_records": 1274,
+      "rejected_classes": 174,
+      "residue_cells": 216,
+      "support_records": 1275
+    },
+    "selector": {
+      "classification": {
+        "R": 42,
+        "T": 42,
+        "T_all": 42,
+        "cells": 216,
+        "negative_certificates": 174,
+        "outside_R": 0
+      },
+      "status": "PASS",
+      "support": {
+        "all_primitive_directions": 1275,
+        "distinct_leader_points": 387,
+        "primary_directions": 1274
+      },
+      "witnesses": {
+        "archived_configurations_reproduced": 54,
+        "derived_negative_certificates": 174,
+        "postclassification_extra_controls": 0
+      }
+    }
+  }
+}

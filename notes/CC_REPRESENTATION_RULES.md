@@ -509,3 +509,40 @@ No larger ambient model is needed for this operation. A role-aware obligation
 record is adequate, with the pinned source available for changed uses. The
 42-class theorem still depends on the written coverage argument, not the
 54 physical controls; the general result remains a proof candidate.
+
+## 14. A smaller geometric support need not change the supported decision
+
+The [actual-selector analysis](CC_SELECTOR_SUPPORT_2026_09_29.md) supplies
+the missing necessity check for positive integer seventh rows. Actual leader
+outputs form a closed countable set with one accumulation point; they are
+not dense in L. Excluding p=q removes exactly one isolated output. Nevertheless
+the complete proof gives T=T_all=R: uniform actual-output safety accepts
+exactly the same 42 classes as whole-L safety plus C.
+
+For this coefficient decision, the simpler connected-segment carrier loses
+no accepted row. That conclusion requires the large-slope obstruction, exact
+tail argument and exhaustive remaining residue classes. Neither geometric
+containment, endpoint agreement, sparse sampling nor the size of the omitted
+set establishes it. Preserve the coefficient domain, threshold and selection
+rule when reusing this equivalence; other domains or rules reopen the question.
+
+The operational support formula and recovery source are pinned to
+78c6b25cc4e96d35c6a60595120deb754bd90187 in the selector-support INPUTS.json.
+Use that fuller support record when the next operation asks which points
+actually occur. Use the existing R inequalities when it asks only whether
+this positive integer row is uniformly accepted. These are different records
+with a proved translation for one question, not universally interchangeable
+representations.
+
+Every failed T output has p!=q and safe distinct core speeds. Its unsafe
+seventh phase therefore cannot coincide with a core speed. The rejection
+certificate is a genuine eight-distinct-speed failure of this selector;
+it remains a different claim from absence of a lonely time. Four accepted
+coefficient rows have empty distinct-speed domains and stay labelled.
+
+The arithmetic review also corrected primitive-period reflection 1/d-t to
+the archived unit-period reflection 1-t. Equal reflected phases concealed
+different times and laps for nonprimitive inputs. Retain the intended clock
+and lap convention when reproducing physical records, even if the safety
+verdict is unchanged. No richer ambient model is needed for the current
+decision; the mathematical result remains an internally reviewed candidate.
