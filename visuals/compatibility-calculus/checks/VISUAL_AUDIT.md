@@ -140,3 +140,53 @@ This is AI-assisted implementation and same-author verification. The finite
 illustrations do not establish all-q adequacy, novelty, other-reference results
 or the general Lonely Runner Conjecture. The underlying proof candidates keep
 their pinned statuses. Full parent-child geometric animation remains pending.
+
+
+## Fourth section: what survives the cut
+
+The fourth chapter uses the frozen parent/child atlas, with three controls:
+P2 at q=4,H=1; P4 at q=4,H=1; and P7 at q=10,H=4. The data builder intersects
+certified edges and vertices with the exact orbit plane. A separately
+structured check maps every defining inequality into (t,z), enumerates pairs
+of boundary lines and tests all halfspaces. It reproduces all seven parent
+and child sections, including the empty and singleton cases.
+
+All nine stage states are checked in the browser at 1440/light, 390/light and
+320/dark (27 layouts). The audit compares every section point with the exact
+data, checks selected points before/after, all displayed physical phases,
+laps and distances, reflection, full-system maximizing sets, camera rotation
+and reset, orbit visibility, next-stage buttons and direct chapter navigation.
+The existing three sections remain covered. No clipping, overflow, network
+dependency or page error was found.
+
+Visual review covered the q=10 new contact and phase table, the q=4 removed
+slice, and the narrow dark equality case. The 3D height exaggeration was
+reduced to two, explicitly labelled, to make the q=10 face cut easier to see.
+The empty-slice label was moved clear of the old peak. The before/after
+outlines show exact sets, without an interpolated constraint or animation
+being treated as mathematical evidence.
+
+Distinctions retained:
+
+- Both six- and seven-form models use the same floor z>=1/8.
+- Parent geometry is ambient; H=qx-y and t=x connect the actual orbit.
+- P2 has a nonempty ambient singleton child with H=11/8 but no q=4 physical
+  child. Its positive time interval disappears.
+- P4's H=1 slice is a singleton even before the new constraint; it is not
+  falsely shown as an interval collapsing into a point. C5 preserves it by
+  equality, while C6 belongs elsewhere in the ambient model.
+- The q=10 old time 16/33 is the optimum of the displayed parent slice,
+  explicitly not the global six-runner optimum.
+- The new q=10 contact lies inside a two-dimensional old face, on a new
+  child edge; its physical phase table checks speeds 10 and 25 as limiting.
+- For the removed slice, the recovery panel checks the rejected old time,
+  clearly labelled, rather than inventing a child witness.
+- Reflection changes the physical table while the original folded geometry
+  remains displayed; the recovered coordinates and orbit value are printed.
+- Local slice statements do not replace complete time sets. The q=4 panel
+  shows the whole 1/8-safe set; q=10 enumerates the full maximizing set at 1/7
+  and does not call it the complete 1/8-safe set.
+
+This remains finite reproduced data, AI-assisted implementation and same-author
+verification. The all-q transfer reasoning retains its pinned proof-candidate
+status. The full deck and research explorer are still in progress.

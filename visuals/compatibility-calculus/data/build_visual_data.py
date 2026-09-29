@@ -146,6 +146,50 @@ def joint_visual(src):
             'status':'REPRODUCED — exact q=4 counterexample; derived display controls are same-author checks'}
 
 
+
+def orbit_section(poly, q, h):
+    """Intersect a bounded certified polytope with H=qx-y using its edges."""
+    vertices=[list(map(F,v)) for v in poly['vertices']]
+    points={tuple(v) for v in vertices if q*v[0]-v[1]==h}
+    for i,j in poly['edges']:
+        a,b=vertices[i],vertices[j]
+        ha,hb=q*a[0]-a[1],q*b[0]-b[1]
+        if min(ha,hb)<h<max(ha,hb):
+            r=(F(h)-ha)/(hb-ha)
+            points.add(tuple(a[k]+r*(b[k]-a[k]) for k in range(3)))
+    return [list(v) for v in sorted(points)]
+
+
+def transfer_visual(src):
+    """Three exact before/after controls, not intermediate physical systems."""
+    atlas=src['transfer']
+    result=[]
+    for name,q,pi,h in [('removed',4,2,1),('equality',4,4,1),('face',10,7,4)]:
+        parent=atlas['parents'][pi]
+        children=[(i,c) for i,c in enumerate(atlas['children']) if c['parent_index']==pi]
+        before=orbit_section(parent,q,h)
+        after=[{'child_index':i,'points':orbit_section(c,q,h)} for i,c in children]
+        old=max(before,key=lambda p:p[2])
+        remaining=[p for c in after for p in c['points']]
+        new=max(remaining,key=lambda p:p[2]) if remaining else None
+        old_physical=witness('A',q,old[0]);new_physical=witness('A',q,new[0]) if new else None
+        assert min(r['distance'] for r in old_physical['runners'][:6])==old[2]
+        if new:assert new_physical['minimum']==new[2]
+        singleton_orbits=[{'child_index':i,'point':list(map(F,c['vertices'][0])),
+                           'H':q*F(c['vertices'][0][0])-F(c['vertices'][0][1])}
+                          for i,c in children if c['dimension']==0]
+        result.append({'id':name,'q':q,'parent_index':pi,'orbit_integer':h,
+                       'child_indices':[i for i,c in children], 'parent_section':before,
+                       'child_sections':after, 'before_point':old,'after_point':new,
+                       'before_physical':old_physical,'after_physical':new_physical,
+                       'before_reflected':witness('A',q,1-old[0]),
+                       'after_reflected':witness('A',q,1-new[0]) if new else None,
+                       'singleton_orbits':singleton_orbits,
+                       'source':SOURCES['transfer'],
+                       'status':'REPRODUCED — exact finite parent/child and orbit controls'})
+    return result
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -202,10 +246,11 @@ def build():
                                           'source': 'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md'}}})
     examples = exact({'A': a_examples, 'B': b_examples,
                       'joint_visual': joint_visual(src),
+                      'transfer_visual': transfer_visual(src),
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -226,6 +271,9 @@ def build():
                                   'B_q6_maximum':'4/25','B_q6_maximizers':['9/25','16/25'],
                                   'A_q4_closed_segment_witnesses':['1/8'], 'A_q4_open_segment_witnesses':[],
                                   'A_q10_old_edge_maximizers':6,'A_q10_omitted_face_times':['17/35','18/35']}
+    controls['transfer_visual'] = {'scenes':3,'stages':3,'q4_removed_parent':2,
+                                   'q4_surviving_time':'3/8','q10_before_time':'16/33',
+                                   'q10_after_time':'17/35','q10_after_height':'1/7'}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
@@ -239,8 +287,10 @@ def build():
                                  'first_hit':'notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md','physical':SOURCES['physical_b'],
                                  'joint_compatibility':SOURCES['transfer'], 'joint_derivation':'notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md',
                                  'representation_rules':'notes/CC_REPRESENTATION_RULES.md',
-                                 'representation_selector':'notes/CC_BOUNDED_SELECTOR_2026_09_29.md'},
-                'implementation_scope':'Exact data and three sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, and six query-specific representation records; full deck and explorer remain pending.'}
+                                 'representation_selector':'notes/CC_BOUNDED_SELECTOR_2026_09_29.md',
+                                 'parent_child_geometry':SOURCES['transfer'],
+                                 'parent_child_physical':SOURCES['transfer_countercheck']},
+                'implementation_scope':'Exact data and four sections: B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, and three exact parent-to-child transformations; full deck and explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -257,10 +307,11 @@ def main():
         html = template.read_text()
         html = html.replace('<!-- CC_JOINT -->', (PACKAGE/'joint.template.html').read_text())
         html = html.replace('<!-- CC_REPRESENTATION -->', (PACKAGE/'representation.template.html').read_text())
+        html = html.replace('<!-- CC_TRANSFER -->', (PACKAGE/'transfer.template.html').read_text())
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-navigation.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:

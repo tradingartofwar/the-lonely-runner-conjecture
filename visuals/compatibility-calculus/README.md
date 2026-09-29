@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Three connected sections:** **from cap to clock**, **true somewhere versus true together**, and **what the model remembers**.
+**Four connected sections:** **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, and **what survives the cut**.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -15,6 +15,8 @@ Choose **02 · True together** for the q=4 section. The URL fragment `#joint`
 opens that chapter directly when serving or opening the local file.
 Choose **03 · What the model remembers**, or open `#representation`, for six
 question-specific representation records and their information-loss controls.
+Choose **04 · What survives the cut**, or open `#transfer`, for the parent–child
+geometry and physical recovery scenes.
 
 ## What this version does
 
@@ -52,6 +54,26 @@ loses their only integer contact; keeping only positive-duration components
 loses all four final q=4 witnesses; separate marginals create the preserved
 false positive; keeping old q=10 edges loses 17/35 and 18/35 while retaining
 six other maximizers. These are distinct failures of distinct requested outputs.
+
+The fourth chapter shows three exact parent-to-child transformations, each
+with before, after and recovery stages:
+
+- **P2 at q=4, H=1:** a full physical triangle, including the positive floor
+  interval [17/56,5/16], disappears. The ambient singleton C3 still exists but
+  has H=11/8, so it supplies no actual-orbit point.
+- **P4 at q=4, H=1:** the physical slice is already a closed singleton. Child C5
+  preserves t=3/8 at separation 1/8, while the other child C6 misses this slice.
+- **P7 at q=10, H=4:** the old slice optimum at t=16/33, z=5/33 fails the added
+  runner. The new contact t=17/35, z=1/7 lies in an old parent face and on a new
+  child edge. The table also checks its reflected time 18/35.
+
+Rotatable 3D parent/child geometry and a 2D physical-time/separation plot share
+the same exact points. New edges in old faces are highlighted. The 3D view
+uses a declared height factor of two; the 2D view uses independent labelled
+axes. No interpolated band is presented as a physical runner system. The full
+q=4 safe set and complete q=10 maximizing set remain separate from the local
+parent-slice conclusions. At the rejected q=4 time, the recovery panel clearly
+checks the failed old time rather than displaying a child witness.
 
 The exact data layer preserves the other planned A-ray controls, the
 six-to-seven atlas, q=10 face contact, and both A-ray selector segments. The
@@ -108,6 +130,7 @@ It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
 `presentation.template.html`, `joint.template.html`, `representation.template.html`,
+`transfer.template.html`,
 `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
 
@@ -131,6 +154,7 @@ from a drawing.
 | Conditional slice | All 14 displayed exact points retain six-runner safety and fail only runner 13; collision t=4/13; the entire closed S interval is strictly blocked |
 | q=10 | 17/35 and 18/35 are maximizers; the old face has dimension 2 and the child face dimension 1 |
 | Selector | 56 endpoint inequalities; primary small cases, q=5 fallback, q=4/q=6 equality endpoints |
+| Parent–child scenes | Three parents and four children: seven exact orbit slices reconstructed independently from 2D inequalities; before/after phases, laps and reflections |
 | Representation controls | q=4 closed/open segment integer contacts; all eight q=10 maximizers partitioned into six old-edge and two face-interior recoveries |
 | B-ray examples | q=2,3,4,5,6,7; all 42 cap-contact tests, direct physical maxima and complete maximizing sets |
 
@@ -167,7 +191,13 @@ chapter links. The original two sections remain covered after the shared
 router change. Mathematical source data stay at the original frozen commit;
 later discovery and two-parameter research are not silently imported.
 
-Next visual target: a parent-to-child geometric transformation. Show the added
-band clipping the full parent, preserving the q=4 equality points and creating
-the q=10 face contact. The third chapter already provides the output distinctions
-and exact finite controls for that fuller geometric explanation.
+The fourth-section audit adds nine exact stage states across 27 layouts,
+physical/reflected phase tables, camera controls, orbit visibility and four
+chapter direct links. The builder intersects certified edges with H=qx-y;
+the checker independently intersects pairs of sliced halfspace boundaries,
+covering empty, singleton and triangular results.
+
+Next visual target: make the two-segment A-ray witness selector directly
+operable. Show integer rounding, the q=5 fallback, closed q=4/q=6 endpoints,
+and physical recovery on the already archived controls. Its output is one
+1/8-safe time; optimization and complete witness enumeration remain separate.

@@ -8,6 +8,35 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Fourth visual section — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) adds
+**04 · What survives the cut**, reachable directly as `#transfer`. Three exact
+parent/child controls each have six-constraint, seventh-band and physical
+recovery stages. The 3D parent/child geometry and 2D (t,z) slice stay linked
+by A-ray H=qx-y and t=x. New edges in old faces, singleton children and removed
+physical slices remain distinct.
+
+P2 at q=4,H=1 loses its whole physical triangle, though ambient C3 survives
+at noninteger H=11/8. P4 at q=4,H=1 keeps singleton C5 at t=3/8; C6 misses that
+slice. P7 at q=10,H=4 replaces its old slice peak (16/33,5/33) with the new
+contact (17/35,1/7), which is inside an old face and on a new child edge.
+Physical phases/laps and reflection are checked; rejected old times are
+labelled as failures. Local parent conclusions remain separate from the full
+q=4 safe set and q=10 maximizing set.
+
+Seven exact parent/child orbit sections are reconstructed independently from
+sliced halfspaces, covering empty, singleton and triangular intersections.
+All nine stage states pass 27 desktop/phone layouts; camera, orbit visibility,
+phase tables and four-chapter links pass. Source math stays pinned to 6b2b931;
+the diagram uses a declared height exaggeration of two. No new mathematical
+claim or status promotion. Later research remains separate and preserved.
+
+**Next visual target:** an operable two-segment A-ray witness selector, using
+archived q=3,4,5,6,10: integer rounding, the q=5 fallback, equality endpoints,
+and recovered physical time. Keep its one-witness output distinct from
+optimization and all-witness enumeration. Full deck/explorer remain pending.
+
+
 **Third visual section — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) adds
 **03 · What the model remembers**, directly reachable as `#representation`.

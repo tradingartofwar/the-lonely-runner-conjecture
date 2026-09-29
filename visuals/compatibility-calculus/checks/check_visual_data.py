@@ -219,6 +219,57 @@ def main():
     assert safe_set(vs,z)==[(t,t) for t in joint['full_safe_times']]
     counts.update(joint_candidate_failed_speed=6,joint_slice_controls=14,joint_collision_time='4/13',
                   joint_closed_interval_strictly_blocked=True)
+    # Independent 2D halfspace reconstruction of the section builder's edge cuts.
+    def sliced_vertices(poly,q,h):
+        constraints=[([n[0]+q*n[1],n[2]],b+h*n[1]) for _,n,b in poly['constraints']]
+        result=set()
+        for (a,b),(c,d) in itertools.combinations(constraints,2):
+            det=a[0]*c[1]-a[1]*c[0]
+            if not det:continue
+            t=(b*c[1]-a[1]*d)/det
+            z=(a[0]*d-b*c[0])/det
+            if all(n[0]*t+n[1]*z<=bound for n,bound in constraints):
+                result.add((t,q*t-h,z))
+        return sorted(result)
+    scene_expected={'removed':(4,2,1,F(4,13),None),
+                    'equality':(4,4,1,F(3,8),F(3,8)),
+                    'face':(10,7,4,F(16,33),F(17,35))}
+    section_checks=0
+    for scene in e['transfer_visual']:
+        q,pi,h,old_t,new_t=scene_expected[scene['id']]
+        assert (scene['q'],scene['parent_index'],scene['orbit_integer'])==(q,pi,h)
+        assert list(map(tuple,scene['parent_section']))==sliced_vertices(parents[pi],q,h)
+        assert scene['child_indices']==[i for i,c in enumerate(children) if c['parent_index']==pi]
+        section_checks+=1
+        after=[]
+        for section in scene['child_sections']:
+            assert list(map(tuple,section['points']))==sliced_vertices(children[section['child_index']],q,h)
+            after.extend(section['points']);section_checks+=1
+        assert scene['before_point'][0]==old_t
+        assert scene['before_point'][2]==max(p[2] for p in scene['parent_section'])
+        if new_t is None:assert not after and scene['after_point'] is None
+        else:
+            assert scene['after_point'][0]==new_t
+            assert scene['after_point'][2]==max(p[2] for p in after)
+        vs=next(a['speeds'] for a in e['A'] if a['q']==q)
+        for key in ['before_physical','after_physical','before_reflected','after_reflected']:
+            witness=scene[key]
+            if witness is None:continue
+            t=witness['time']
+            assert witness['minimum']==min(dist(v*t) for v in vs)
+            assert [r['lap'] for r in witness['runners']]==[(v*t).__floor__() for v in vs]
+            assert [r['phase'] for r in witness['runners']]==[frac(v*t) for v in vs]
+            assert [r['distance'] for r in witness['runners']]==[dist(v*t) for v in vs]
+        for point in scene['singleton_orbits']:
+            x,y,z=point['point'];assert point['H']==q*x-y
+    removed,equality,face=e['transfer_visual']
+    assert removed['singleton_orbits'][0]['H']==F(11,8)
+    assert equality['singleton_orbits'][0]['H']==1
+    assert face['before_physical']['runners'][-1]['distance']==F(4,33)<F(1,8)
+    assert face['after_point']==[F(17,35),F(6,7),F(1,7)]
+    assert face['after_physical']['active_speeds']==[10,25]
+    counts.update(transfer_visual_scenes=3,transfer_visual_halfspace_sections=section_checks,
+                  transfer_visual_reflected_phases=True,transfer_visual_empty_point_polygon=True)
     for example in e['B']:
         q=example['q'];vs=example['speeds'];best,times=optimize(vs)
         assert (best,times)==(example['maximum'],example['times'])

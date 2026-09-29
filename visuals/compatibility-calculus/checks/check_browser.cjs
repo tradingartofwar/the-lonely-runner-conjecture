@@ -11,8 +11,9 @@ const {chromium}=require(require.resolve('playwright',{paths:resolvePaths}));
 const pkg=path.resolve(__dirname,'..');
 const examples=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).B;
 const joint=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).joint_visual;
+const cut=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).transfer_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint and representation controls; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the declared cap, joint, representation and parent-child controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -186,6 +187,67 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     report.checks.representation_questions=6;report.checks.representation_exact_states=12;
     report.checks.representation_restore_and_branch_maps=true;
     report.checks.three_chapter_navigation_and_direct_link=true;
+    await page.click('#nav-transfer');await page.waitForFunction(()=>window.CC_CUT_STATE&&!document.getElementById('transfer-chapter').hidden);
+    report.checks.transfer_layouts=[];
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme});
+      for(const scene of cut){
+        await page.click(`[data-cut-case="${scene.id}"]`);
+        for(const stage of [0,1,2]){
+          await page.click(`[data-cut-stage="${stage}"]`);await page.waitForTimeout(55);
+          let c=await page.evaluate(()=>window.CC_CUT_STATE);
+          assert.equal(c.case,scene.id);assert.equal(c.stage,stage);assert.equal(c.H,scene.orbit_integer);
+          assert.deepEqual(c.parentSection,scene.parent_section.map(p=>p.map(v=>v.text)));
+          assert.deepEqual(c.childSections,scene.child_sections.map(s=>({child:s.child_index,points:s.points.map(p=>p.map(v=>v.text))})));
+          const point=stage?scene.after_point:scene.before_point;
+          assert.deepEqual(c.selectedPoint,point?point.map(v=>v.text):null);
+          assert.equal(await page.locator('#cut-recovery').isVisible(),stage===2);
+          assert.equal(await page.locator('#cut-whole').isVisible(),stage===2);
+          if(stage===2){
+            for(const reflected of [false,true]){
+              await page.locator('#cut-reflect').setChecked(reflected);
+              c=await page.evaluate(()=>window.CC_CUT_STATE);
+              const key=(scene.id==='removed'?'before':'after')+(reflected?'_reflected':'_physical'),w=scene[key];
+              assert.equal(c.physical.time,w.time.text);
+              assert.deepEqual(c.physical.phases,w.runners.map(r=>r.phase.text));
+              assert.deepEqual(c.physical.distances,w.runners.map(r=>r.distance.text));
+              assert.deepEqual(c.physical.laps,w.runners.map(r=>String(r.lap)));
+              assert.equal(c.physical.addedDistance,w.runners[6].distance.text);
+              assert.equal(c.physical.recoveredChild,scene.id!=='removed');
+              assert.equal(await page.locator('#cut-phase-rows tr').count(),7);
+              const a=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).A.find(a=>a.q===scene.q);
+              assert.deepEqual(c.allFinalMaximizers,a.transfer.optimization.find(r=>r.coordinates===7).all_maximizing_times.map(v=>v.text));
+            }
+            await page.uncheck('#cut-reflect');
+          }else assert.equal(c.physical,null);
+          const layout=await page.evaluate(()=>{
+            const outside=[];
+            for(const svg of document.querySelectorAll('#transfer-chapter svg')){
+              if(!svg.getBoundingClientRect().width)continue;
+              const b=svg.viewBox.baseVal;
+              for(const t of svg.querySelectorAll('text')){const r=t.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:t.textContent});}
+            }
+            return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+          });
+          assert.deepEqual(layout,{overflow:false,outside:[]},`transfer ${width} ${scene.id} stage ${stage}`);
+          report.checks.transfer_layouts.push({width,scheme,case:scene.id,stage,overflow:false,clipped_svg_labels:0});
+          if(process.env.CC_SCREENSHOT_DIR&&(width===1440||(width===320&&stage===2)))await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`transfer-${width}-${scene.id}-${stage}.png`),fullPage:true});
+        }
+      }
+    }
+    const geometry=await page.locator('#cut-geometry polygon').first().getAttribute('points');
+    await page.click('#cut-rotate-left');assert.notEqual(await page.locator('#cut-geometry polygon').first().getAttribute('points'),geometry);
+    await page.click('#cut-reset');assert.equal(await page.locator('#cut-geometry polygon').first().getAttribute('points'),geometry);
+    await page.uncheck('#cut-show-orbit');assert.equal((await page.evaluate(()=>window.CC_CUT_STATE)).showOrbit,false);await page.check('#cut-show-orbit');
+    await page.click('[data-cut-case="removed"]');await page.click('#cut-next');assert.equal((await page.evaluate(()=>window.CC_CUT_STATE)).stage,1);
+    await page.click('#cut-next');assert.equal((await page.evaluate(()=>window.CC_CUT_STATE)).stage,2);assert.equal(await page.locator('#cut-next').isVisible(),false);
+    await page.click('#nav-representation');await page.waitForFunction(()=>document.getElementById('transfer-chapter').hidden);
+    await page.click('#nav-transfer');await page.waitForFunction(()=>!document.getElementById('transfer-chapter').hidden);assert.equal((await page.evaluate(()=>window.CC_CUT_STATE)).stage,2);
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#transfer');await page.reload();
+    await page.waitForFunction(()=>window.CC_CUT_STATE&&!document.getElementById('transfer-chapter').hidden);assert.equal((await page.evaluate(()=>window.CC_CUT_STATE)).stage,0);
+    assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-transfer').getAttribute('aria-current'),'page');
+    report.checks.transfer_exact_stages=9;report.checks.transfer_phases_and_reflection=true;
+    report.checks.transfer_camera_orbit_and_navigation=true;report.checks.four_chapter_direct_links=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));
