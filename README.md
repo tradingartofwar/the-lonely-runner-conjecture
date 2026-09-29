@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+The [last-runner continuation](notes/LAST_RUNNER_COMPATIBILITY_2026_09_29.md) identifies a concrete placement constraint. For two core-safe windows with hull span D, gap G and larger width w, G<=3w prevents simultaneous blocking once d>=1/(4D), at every final-runner phase. Strict inequalities give positive duration. For core {1,3,4,5,7,24}, this covers every admissible d>24, including the auxiliary real-speed/arbitrary-phase setting.
+
+The exact calculation distinguishes full strict coverage, coverage of positive components only, and zero duration. The tight d13 control preserves four isolated lonely moments after every positive opening is blocked. Two separately structured implementations agree on all declared records for three frozen inherited cores, including3162 numerical fields. General deductions remain internally reviewed proof candidates; no novelty or new eight-runner existence claim is made.
+
+Next: show that a useful window pair or bounded collection must exist, using the core's arithmetic and retaining equality witnesses. The previous finite parameter region remains unexhausted. No broad tuple scan is authorized; hourly research stays paused.
+
+### Prior six-core-window snapshot — preserved
+
 The [six-core continuation](notes/SIX_CORE_WINDOW_2026_09_29.md) supplies a direct proof candidate that every common-start integer core1,4,5,a,b,c has a positive1/8-safe window. Short-chain bounds reduce the work to a frozen27-triple domain; explicit arithmetic certificates close it, and two exact implementations agree on2495 numerical fields. All50 isolated points are retained alongside190 positive components.
 
 The last speed is now bounded too. The direct route gives a finite remainder; separately crediting established six- and seven-runner results sharpens it to **a<=34,b<=47,c<=281,d<=1268** in the fixed family{0,1,4,5,a,b,c,d}. This remaining region has not been exhaustively checked. The existence conclusions are already implied by established lower-runner/eight-runner results; our focus is an explicit structural argument. External review of our derivation and novelty assessment remain pending.
