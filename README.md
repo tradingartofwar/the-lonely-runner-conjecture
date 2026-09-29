@@ -42,6 +42,14 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
+The [Ultra assessment](notes/ULTRA_ASSESSMENT_2026_09_29.md) found no fatal defect in the assigned proof spine, but identified the missing general step: our supplied-window and arithmetic certificates do not yet force witnesses for arbitrary configurations. The finite fixed-family remainder is unchanged and unexhausted. Tight13 rules out any universal strategy using only positive openings; isolated equality witnesses are essential.
+
+The review also ruled out a proposed detour: proper rational phase-space relaxations already have strict safe points by lower-runner theory. The hard part is transferring safety to the actual one-dimensional runner trajectory. A new relative short-relation bound adds no pruning to our present remainder.
+
+Next: an explicitly quantified, equality-preserving extension for a parameterized additive core p,q,p+q, retaining the original common-time trajectory. This is an open research target, not a promised lemma or novelty claim. General deductions remain internally reviewed proof candidates. No new mathematical computation was run; hourly remains paused.
+
+### Prior last-runner snapshot — preserved
+
 The [last-runner continuation](notes/LAST_RUNNER_COMPATIBILITY_2026_09_29.md) identifies a concrete placement constraint. For two core-safe windows with hull span D, gap G and larger width w, G<=3w prevents simultaneous blocking once d>=1/(4D), at every final-runner phase. Strict inequalities give positive duration. For core {1,3,4,5,7,24}, this covers every admissible d>24, including the auxiliary real-speed/arbitrary-phase setting.
 
 The exact calculation distinguishes full strict coverage, coverage of positive components only, and zero duration. The tight d13 control preserves four isolated lonely moments after every positive opening is blocked. Two separately structured implementations agree on all declared records for three frozen inherited cores, including3162 numerical fields. General deductions remain internally reviewed proof candidates; no novelty or new eight-runner existence claim is made.
