@@ -1,0 +1,32 @@
+{
+  "source_commit": "50d0379628f4a1097d30bbc55d38c581c4338f02",
+  "verified_against_remote_tree": true,
+  "protocol_sha256": "3a7b28e8719e3958b9ea494210aadf731378840805814853a2a6c31fec2d6905",
+  "files": {
+    "reviews/2026-09-29-cc-segment-discovery/PARENT_INPUT.json": {
+      "sha256": "53779c7cf3303e71635b5ba4dd1d9a4dc485612b6a87e1556df80703438f5f62",
+      "git_blob_sha": "64756fb8de7adbfa5337514966eb27977fb8dbe8"
+    },
+    "reviews/2026-09-29-cc-segment-discovery/discover.py": {
+      "sha256": "67e5c1b187bfdcfae57ad5993e330048c20a108c63ed0a8c8e0d1bafcdfd2f5f",
+      "git_blob_sha": "f0227e0af90c31fad9626d0faaa38362b58b0d22"
+    },
+    "reviews/2026-09-29-cc-segment-discovery/discovery.json": {
+      "sha256": "ecc1d0888fd87848338263ead7f24ef7ed72a10104e2102e3e8b5709adbddd51",
+      "git_blob_sha": "d0f24ebabebe9a67b6c084acf26cd10670475b26"
+    },
+    "reviews/2026-09-29-cc-coverage-compiler/compiler.py": {
+      "sha256": "f998170868ebb261f5a9ae431caba3ace3ecd837438246571a591bfc4e616d92",
+      "git_blob_sha": "ac0a47bda8c5147793fb78a1fe02c0cb0a63189e"
+    },
+    "reviews/2026-09-29-cc-coverage-compiler/certificate.json": {
+      "sha256": "88142d4442d65cb50e8e6068cd1826b5957015ffd2d0742cb6867ab5ab452aa1",
+      "git_blob_sha": "73f3ba4a8928f85c61cb6646d6a9c29ca8d7c023"
+    },
+    "reviews/2026-09-29-cc-six-seven-transfer/verification.json": {
+      "sha256": "d86b6c3f37482be9fdade514ce0b2092ebd761cf75bcf4133193e0830aaa2157",
+      "git_blob_sha": "7588da7b71be67dd65fa39f13aba829e3ee1c85c"
+    }
+  },
+  "scope": "Old row (5,2) regression and one frozen changed row (6,2). Compiler and previous packages are unchanged. Runtime geometry input is the pinned six-form parent file; archived records and richer source are separate-review inputs."
+}

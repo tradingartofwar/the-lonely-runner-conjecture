@@ -434,3 +434,36 @@ describe an evaluator as an untrusted-certificate validator or a formal proof
 checker. Keep preprocessing, online segment count and variable-cost arithmetic
 separate. The existing literature adaptation and noninherited spectrum claims
 in Section 10 remain unchanged.
+
+## 12. Transfer must name the operation and the representation it tests
+
+The [frozen coefficient transfer](CC_CHANGED_COEFFICIENT_TRANSFER_2026_09_29.md)
+changes only the seventh row from (5,2) to (6,2). Recomputing the parent-edge
+candidate class and applying the unchanged rule produces a new P2/P0 menu.
+This is evidence of portability to that one predeclared change, not a universal
+discovery guarantee. The old-row regression, changed input, unchanged rule,
+emitted output and separate review each have their own record.
+
+Two role/operation distinctions matter:
+
+- A descending segment is required by the chosen leading finite-reduction
+  argument. A fallback only needs a checked contact for a remaining pair;
+  the new selected fallback is vertical. Do not apply a role-specific filter
+  to the entire candidate class without checking the consequences.
+- Opening the two selected segments loses five tested contacts, representing
+  four primitive directions. Opening all 24 candidates loses none of the
+  18 declared contacts. Exhausting a compact menu after an operation is not
+  exhausting its fuller source. Recover the already retained candidates
+  before concluding that parent interiors or a different model are needed.
+
+The endpoint experiment opens geometric segments, not the safety threshold.
+Its full-candidate result is finite in scope; do not promote it to a universal
+claim about open witnesses. The main certificate retains closed equality.
+The changed run had no uncovered primitive pair, so its conditional full-parent
+diagnostic was not executed or validated by an observed repair.
+
+Reuse of the parameter list is not reproduction of the former physical
+instances: the changed coefficient changes their speeds. Keep source geometry,
+parameter domain, physical configurations, tested operation and requested
+output separately identifiable through transfer. The primitive orbit and
+time/lap identities still require the new row in every physical calculation.
