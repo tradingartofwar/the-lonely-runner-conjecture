@@ -16,8 +16,9 @@ const selector=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json')
 const clock=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).clock_visual;
 const cells=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).cell_visual;
 const opening=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).opening_visual;
+const story=JSON.parse(fs.readFileSync(path.join(pkg,'data/cc_examples.json'))).story_visual;
 const manifest=JSON.parse(fs.readFileSync(path.join(pkg,'data/visual_manifest.json')));
-const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the opening, cap, joint, representation, parent-child, selector, shared-clock and cell-construction controls; not mathematical proof.'};
+const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha256,checks:{},limits:'Same-author UI audit of the opening, cap, joint, representation, parent-child, selector, shared-clock, cell-construction and closing-story controls; not mathematical proof.'};
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:process.env.CC_CHROMIUM_PATH||undefined,args:['--no-sandbox','--disable-dev-shm-usage']});
   report.browser=await browser.version();
@@ -529,6 +530,67 @@ const report={status:'PASS',browser:'',data_build_sha256:manifest.data_build_sha
     assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-cell').getAttribute('aria-current'),'page');
     report.checks.cell_construction_states=80;report.checks.cell_physical_lap_cases=3;
     report.checks.cell_singletons_six_vertex_cell_and_camera=true;report.checks.seven_chapter_direct_links=true;
+    await page.locator('#cell-chapter .next-chapter a').click();
+    await page.waitForFunction(()=>window.CC_STORY_STATE&&!document.getElementById('story-chapter').hidden);
+    report.checks.story_layouts=[];
+    async function storyLayout(){return page.evaluate(()=>{
+      const outside=[];
+      for(const svg of document.querySelectorAll('#story-chapter svg')){
+        const b=svg.viewBox.baseVal;
+        for(const text of svg.querySelectorAll('text')){const r=text.getBBox();if(r.x< -1||r.y< -1||r.x+r.width>b.width+1||r.y+r.height>b.height+1)outside.push({svg:svg.id,text:text.textContent});}
+      }
+      return{overflow:document.documentElement.scrollWidth>innerWidth,outside};
+    });}
+    for(const [width,scheme]of [[1440,'light'],[390,'light'],[320,'dark']]){
+      await page.setViewportSize({width,height:1000});await page.emulateMedia({colorScheme:scheme,reducedMotion:'reduce'});
+      for(const name of story.cases){
+        await page.click(`[data-story-case="${name}"]`);
+        for(let step=0;step<4;step++){
+          if(step)await page.click('#story-next');
+          const s=await page.evaluate(()=>window.CC_STORY_STATE);assert.equal(s.case,name);assert.equal(s.step,step);
+          assert.equal(await page.locator('#story-previous').isDisabled(),step===0);assert.equal(await page.locator('#story-next').isDisabled(),step===3);
+          let expected=null,kind=null;
+          if(name==='contact'){
+            const c=story.contact.controls[step];assert.deepEqual(s.evidence.interval,c.interval.map(f=>f.text));assert.deepEqual(s.evidence.integers,c.integers);
+            assert.equal(s.evidence.loss,c.loss.text);assert.equal(s.evidence.height,c.height.text);
+            assert.deepEqual(s.evidence.point,c.point?c.point.map(f=>f.text):null);
+            expected=c.witness;kind=expected?'accepted':null;
+          }else if(name==='equality'){
+            assert.deepEqual(s.evidence.retainedTimes,[0,3].includes(step)?story.equality.components.map(c=>c[0].text):[]);
+            assert.equal(s.evidence.duration,'0');assert.equal(s.evidence.sourceWitnessTime,step===2?'1/8':null);
+            assert.equal(await page.locator('#story-diagram .story-equality-point').count(),step===1?0:step===2?1:4);
+            if(step>=2){expected=story.equality.witnesses[0];kind=step===2?'source-counterexample':'accepted';}
+          }else{
+            assert.deepEqual(s.evidence.candidatePair,story.joint.candidate_hs.map(f=>f.text));assert.deepEqual(s.evidence.conditionalInterval,story.joint.conditional_S.map(f=>f.text));
+            assert.equal(s.evidence.localEmpty,step>=2);assert.deepEqual(s.evidence.failedSpeeds,step===1?[6]:[]);
+            if(step===1){expected=story.joint.candidate_physical;kind='rejected';}
+            if(step===3)assert.ok((await page.locator('#story-limit').textContent()).includes('four safe times elsewhere'));
+          }
+          if(expected){
+            assert.equal(s.physical.kind,kind);assert.equal(s.physical.time,expected.time.text);assert.equal(s.physical.minimum,expected.minimum.text);
+            assert.deepEqual(s.physical.phases,expected.runners.map(r=>r.phase.text));assert.deepEqual(s.physical.distances,expected.runners.map(r=>r.distance.text));assert.deepEqual(s.physical.laps,expected.runners.map(r=>String(r.lap)));
+            await page.locator('#story-certificate summary').click();assert.equal(await page.locator('#story-certificate-rows tr').count(),7);
+          }else{assert.equal(s.physical,null);assert.equal(await page.locator('#story-certificate').isVisible(),false);}
+          assert.deepEqual(await storyLayout(),{overflow:false,outside:[]},`story ${width} ${name} ${step}`);
+          report.checks.story_layouts.push({width,scheme,case:name,step,overflow:false,clipped_svg_labels:0});
+          if(process.env.CC_SCREENSHOT_DIR&&(width===1440||(width===320&&step===3)))await page.screenshot({path:path.join(process.env.CC_SCREENSHOT_DIR,`story-${width}-${name}-${step}.png`),fullPage:true});
+        }
+      }
+    }
+    await page.click('#story-previous');assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).step,2);
+    await page.click('#story-reset');assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).step,0);
+    await page.click('[data-story-step="3"]');assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).step,3);
+    await page.click('#story-related');await page.waitForFunction(()=>!document.getElementById('joint-chapter').hidden);
+    await page.click('#nav-story');await page.waitForFunction(()=>!document.getElementById('story-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).case,'joint');assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).step,3);
+    const branches=await page.locator('.story-branch-clock').allTextContents();assert.ok(branches[0].includes('t = y'));assert.ok(branches[1].includes('t = x'));assert.ok(branches[2].includes('t = x'));
+    await page.goto(pathToFileURL(path.join(pkg,'presentation.html')).href+'#story');await page.reload();
+    await page.waitForFunction(()=>window.CC_STORY_STATE&&!document.getElementById('story-chapter').hidden);
+    assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).case,'contact');assert.equal((await page.evaluate(()=>window.CC_STORY_STATE)).step,0);
+    assert.equal(await page.locator('.chapter-nav [aria-current="page"]').count(),1);assert.equal(await page.locator('#nav-story').getAttribute('aria-current'),'page');
+    assert.equal(await page.locator('.chapter-nav a').count(),9);
+    report.checks.story_states=12;report.checks.story_scope_recovery_and_rejected_candidate=true;
+    report.checks.story_branch_clocks_and_navigation=true;report.checks.nine_chapter_direct_links=true;
     assert.deepEqual(errors,[]);assert.ok(requests.every(url=>url.startsWith('file:')));
     report.checks.page_errors=0;report.checks.network_dependencies=0;
     console.log(JSON.stringify(report,null,2));

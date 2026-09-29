@@ -1,6 +1,6 @@
 # Compatibility Calculus visual companion
 
-**Eight connected sections:** the **one track** opening, **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, and **from time to shape**.
+**Nine connected sections:** the **one track** opening, **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, **from time to shape**, and the closing **carry it through** story.
 
 Open [presentation.html](presentation.html) in a modern browser. It is a
 self-contained offline file: no backend, network dependencies, font download,
@@ -25,6 +25,7 @@ Choose **06 · One shared clock**, or open `#clock`, to compare merged runner
 rows with labelled blocking occurrences at the same exact physical time.
 Choose **07 · From time to shape**, or open `#cell`, for closed lap intervals,
 stepwise band intersection and the full ten-cell atlas.
+Choose **08 · Carry it through**, or open `#story`, for the closing CC story: three exact recaps, distinct question/ray branches, and the correction loop.
 
 ## What this version does
 
@@ -175,6 +176,30 @@ remain visible. Per-cell occurrence counts are not unique-coordinate counts.
 The physical orbit requirement remains explicit; an ambient cell alone is not
 a physical time.
 
+The closing section connects the examples with four checkpoints: ask, carry,
+test, and recover. Three cases keep the abstract working rules tied to exact
+records:
+
+- B-ray q=6: the peak and halfway section have no integer H, first contact
+  reaches H=-2, and the B clock recovers t=9/25 with minimum 4/25. No physical
+  witness is shown before recovery. One contact establishes attainment;
+  comparison with all caps and the upper argument remain separate obligations.
+- A-ray q=4: keeping positive-duration components drops all four safe times.
+  A source witness refutes nonexistence inferred from zero duration; restoring
+  the original closed bands recovers {1/8,3/8,5/8,7/8} with duration still zero.
+- A-ray q=4, P2, h=1, z=1/8: the marginal pair (1,17/8) recovers t=33/104,
+  which fails speed 6. Conditioning on the shared orbit gives an S interval
+  strictly inside the blocked gap. The repaired record rejects this local
+  branch without rejecting the full q=4 system.
+
+An attached representation record states retained/omitted information, recovery,
+answer limits and claim status. Three parallel cards distinguish B-ray optimum,
+A-ray constraint transfer and A-ray one-witness selection, with their own clocks.
+The correction loop explicitly permits recovering, enriching or replacing a
+model, including CC. Case and step changes are discrete; no animation implies
+a new mathematical transformation. All numbers derive from the existing frozen
+certificates. The story is a synthesis, not a new general proof.
+
 ## Evidence and scope
 
 Source snapshot: `6b2b9316dbc87499a1cb5184aadbd6614d4d6c32`, on
@@ -225,7 +250,7 @@ files. The generated presentation needs neither Python nor Git to view.
 It uses exact rational arithmetic and serializes each fraction as `num`, `den`,
 `text`, and a rendering-only `float`. It generates two data files, source hashes,
 the manifest (including implementation hashes), expected controls, and the standalone presentation. Edit
-`presentation.template.html`, `opening.template.html`, `joint.template.html`, `representation.template.html`,
+`presentation.template.html`, `opening.template.html`, `story.template.html`, `joint.template.html`, `representation.template.html`,
 `transfer.template.html`, `selector.template.html`, `clock.template.html`, `cell.template.html`,
 `css/cc.css`, and the files in `js/`, then rebuild;
 do not hand-edit generated outputs.
@@ -240,6 +265,7 @@ from a drawing.
 
 | Object / operation | Checked scope |
 | --- | --- |
+| Closing story | Three cases × four checkpoints; projection checked through section vertices, physical recovery, full closed safe set versus duration, local same-slice rejection |
 | Opening | Four references; 28 exact snapshots and 388 scrubber states; signed phases, original-phase recovery, common velocity shift, complete safe sets and closed endpoints |
 | Full geometry | 10 cells, 33 vertices, 45 edges, 3 singletons |
 | Top caps | All 7 exactly equal the corresponding cell cut at z≥1/7 |
@@ -325,9 +351,15 @@ runner identity, label placement, view changes, playback pause/finish,
 reduced motion, witness jumps, chapter exits and direct/default entry.
 All previous seven sections remain covered.
 
-Next visual target: the concluding guided CC story, connecting the recurring
-operations and correction loop to the existing question-specific branches.
-Standalone figure exports and the separate research explorer follow. Sources
-remain at 6b2b931; the baseline note is added from that same pinned commit.
-Later coefficient/selector/compiler research stays separate. At each completed
-visual section, report what comes next.
+The closing audit checks all 12 case/checkpoint states at desktop light,
+phone light and narrow-phone dark widths (36 layouts), exact displayed values,
+accepted/source/rejected physical records, certificate tables, step controls,
+related links and nine-section navigation. The earlier eight sections remain
+covered. The data audit recomputes projection endpoints through actual section
+vertices and checks the safe sets with direct physical band intersections.
+
+Next visual target: standalone SVG figures with captions, exact-state labels,
+source/status and reproducible export. The separate research explorer follows.
+The guided narrative now has both its opening and conclusion. Sources remain
+at 6b2b931; later coefficient/selector/compiler work stays separate. At each
+completed visual section, report what comes next.

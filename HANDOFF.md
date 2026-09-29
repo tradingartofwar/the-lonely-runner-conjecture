@@ -8,6 +8,36 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Closing visual section completed — September 29, 2026:**
+The [CC visual companion](visuals/compatibility-calculus/README.md) adds
+**08 · Carry it through** (`#story`), completing the opening-to-conclusion
+narrative across nine connected sections. Three exact recaps use four
+checkpoints: ask, carry, test and recover.
+
+B-ray q=6 carries the cap section to H=-2 and recovers t=9/25 with minimum
+4/25. Witness display is withheld until the physical recovery checkpoint;
+attainment is distinguished from the full optimality argument. A-ray q=4
+shows that deleting zero-duration components loses all four safe times,
+then restores their exact closed set. The P2/h=1/z=1/8 marginal example
+rejects t=33/104 and restores the conditional S interval; this certifies only
+the local empty branch, while full-system safe times remain acknowledged.
+
+Each case retains its question, ray, exact state, omissions, recovery and
+answer limits. Parallel B optimum / A transfer / A selector cards have distinct
+clock maps. The correction loop permits enrichment, another model or replacing
+CC, with attribution and rechecking. No new domain, theorem or novelty claim.
+The 22 mathematical source hashes stay at 6b2b931; later research is separate.
+
+All 12 states pass 36 browser layouts; the existing eight sections remain
+covered. Independent projection through section vertices and direct physical
+band intersections check the new recap data. Physical records distinguish
+accepted witnesses, restored source witnesses and rejected candidates.
+
+**Next visual target:** standalone SVG figures with captions, source/status,
+exact-state labels and reproducible export. Then build the separate research
+explorer. Completion messages should continue to identify the next target.
+
+
 **Visual opening completed — September 29, 2026:**
 The [CC visual companion](visuals/compatibility-calculus/README.md) now opens
 at **00 · One track** (`#opening`), ahead of the seven existing sections.

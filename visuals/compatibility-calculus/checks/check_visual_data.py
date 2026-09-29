@@ -78,6 +78,42 @@ def main():
         assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest, path
     counts['source_hashes']=len(hashes['files'])
     counts['implementation_hashes']=len(hashes['implementation_files'])
+    # Closing recaps: reconstruct projected extrema from section vertices,
+    # and use physical band intersections for the restored/local safe sets.
+    story=e['story_visual'];contact_story=story['contact'];equality_story=story['equality'];joint_story=story['joint']
+    assert story['cases']==['contact','equality','joint'] and story['steps']==4
+    cap=next(c for c in g['top_caps'] if c['id']==contact_story['cap'])
+    for index,control in enumerate(contact_story['controls']):
+        loss=control['loss']
+        section=[[p+loss*d for p,d in zip(cap['peak'],ray)] for ray in cap['rays']]
+        projected=[x-6*y for x,y,z in section]
+        assert control['interval']==[min(projected),max(projected)]
+        assert control['integers']==[h for h in range(-10,11) if min(projected)<=h<=max(projected)]
+        assert control['height']==F(1,6)-loss
+        assert bool(control['point'])==(index>=2) and bool(control['witness'])==(index==3)
+        if control['point']:
+            x,y,z=control['point'];assert x-6*y==-2 and z==control['height']
+        if control['witness']:
+            w=control['witness'];assert w['time']==control['point'][1]
+            assert w['minimum']==min(dist(v*w['time']) for v in contact_story['speeds'])==F(4,25)
+            assert [r['phase'] for r in w['runners']]==[frac(v*w['time']) for v in contact_story['speeds']]
+    assert [c['integers'] for c in contact_story['controls']]==[[],[],[-2],[-2]]
+    components=safe_set(equality_story['speeds'],equality_story['threshold'])
+    assert components==list(map(tuple,equality_story['components']))
+    assert len(components)==4 and all(a==b for a,b in components)
+    assert equality_story['duration']==0 and equality_story['positive_components']==[]
+    for w,(t,_) in zip(equality_story['witnesses'],components):
+        assert w['time']==t and w['minimum']==min(dist(v*t) for v in equality_story['speeds'])==F(1,8)
+    h,s=joint_story['candidate_hs'];x,y,z=joint_story['candidate_point']
+    assert 4*x-y==h==1 and 5*x+2*y==s==F(17,8)
+    assert joint_story['candidate_physical']['time']==x==F(33,104)
+    assert [v for v in equality_story['speeds'] if dist(v*x)<z]==joint_story['failed_speeds']==[6]
+    lo,hi=joint_story['conditional_S'];left,right=joint_story['blocking_edges']
+    assert left<lo<=hi<right
+    assert not [(max(lo,F(k)+z),min(hi,F(k+1)-z)) for k in range(4) if max(lo,F(k)+z)<=min(hi,F(k+1)-z)]
+    assert components  # This local rejection does not imply global nonexistence.
+    counts.update(story_cases=3,story_states=12,story_section_projection_and_recovery=True,
+                  story_closed_set_vs_duration=True,story_joint_rejection_scope=True)
     # Opening: independent band-union intersection, rather than the builder's
     # threshold-event partition. Signed phases are checked in the original frame.
     opening=e['opening_visual'];vs=opening['velocities'];delta=opening['threshold']

@@ -43,14 +43,15 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — September 29, 2026 UTC
 
-**Visual companion:** [Eight interactive CC sections](visuals/compatibility-calculus/README.md)
-now open with **00 · One track**. Four common-start runners introduce the
-selected reference, signed relative motion and exact 1/4 loneliness test.
-Switch viewpoints at the same time, inspect all four complete lonely-time
-sets, and compare t=1/3, when two runners are lonely while the other two meet.
-The seven existing geometry/compatibility sections remain available. Open the
-self-contained `presentation.html`; sources stay frozen at 6b2b931. The closing
-CC story, standalone figures and research explorer remain in progress.
+**Visual companion:** [Nine interactive CC sections](visuals/compatibility-calculus/README.md)
+now include **08 · Carry it through**, the closing CC story. Three exact
+recaps connect integer contact to a physical time, zero-duration compression
+to restored equality points, and false marginal compatibility to a local
+same-slice rejection. Question-specific branches keep the A/B clocks and
+output obligations distinct. Open the self-contained `presentation.html`;
+its guided narrative runs from common-start runners to compatibility,
+compression and recovery. Sources stay frozen at 6b2b931. Standalone figures
+and the research explorer remain in progress.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

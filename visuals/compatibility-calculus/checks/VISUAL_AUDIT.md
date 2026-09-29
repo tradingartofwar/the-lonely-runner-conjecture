@@ -1,6 +1,6 @@
 # Visual companion audit — September 29, 2026
 
-Scope: the exact data layer and eight connected interactive sections.
+Scope: the exact data layer and nine connected interactive sections.
 AI-assisted implementation and same-author audit; no independent human review
 or new mathematical theorem is claimed.
 
@@ -415,3 +415,58 @@ there is no new mathematical or novelty claim.
 
 Next: the concluding CC story, then standalone figures and the separate
 research explorer. Later research remains outside this frozen visual snapshot.
+
+
+## Closing story: compatibility, compression and recovery
+
+**08 · Carry it through** links from section 07 and is directly reachable at
+`#story`. It completes the guided narrative without replacing the existing
+chapter numbers, default opening or direct fragments. Its three cases each
+have four checkpoints and an attached representation/recovery record.
+
+Mathematical checks:
+
+- B-ray q=6 uses the existing winning cap B. The checker reconstructs each
+  horizontal section from peak plus loss times rays, then projects its three
+  vertices. Peak and halfway controls have no integer; contact reaches -2.
+  Recovery gives (4/25,9/25,4/25) and physical time 9/25, minimum 4/25.
+- A-ray q=4 closed-band intersection reproduces four singleton components.
+  Positive-duration filtering leaves no stored times, while a restored source
+  witness and the complete restored set preserve nonempty feasibility.
+- The marginal inverse map returns x=33/104 with only speed 6 below the
+  target. The same-h conditional S interval lies strictly between 15/8 and
+  17/8 and intersects no closed safe band. The full q=4 set remains nonempty.
+- No new mathematical sources or parameter controls are introduced. All 22
+  mathematical/semantic hashes stay at the original snapshot. The implementation
+  manifest now covers 25 files.
+
+Browser checks cover 12 states at 1440/light, 390/light and 320/dark (36 layouts),
+all exact readouts, physical phases/laps, step buttons, reset, disabled endpoints,
+related links, state preservation, direct reload and nine-section navigation.
+Certificate tables expose accepted witnesses, a source counterexample to a
+compression, and a rejected candidate without conflating their roles. The
+recap is fully operable with reduced motion. Earlier eight-section checks remain
+active; no network dependencies, page errors, clipped labels or page overflow.
+
+Communication checkpoints:
+
+- A cap's geometric safety does not imply an actual time before integer
+  contact and recovery. One contact shows attainment; optimality retains its
+  all-cap comparison and upper-bound obligations.
+- Empty stored duration data is explicitly separated from an empty physical
+  safe set. Singleton markers are closed/included, even when duration is zero.
+- The marginal case's repaired rejection is local to P2, h=1, z=1/8. Its result
+  returns no local witness, and the known full-system witnesses remain explicit.
+- B optimum, A transfer and A one-witness selection form parallel branches,
+  with different clocks and requested outputs. No universal lossless chain
+  is implied. The all-q claims remain pinned proof candidates.
+- The working definition and correction loop synthesize existing CC rules.
+  CC itself may be revised or replaced. Other frameworks can be adapted with
+  attribution, explicit changes and rechecking rather than inherited guarantees.
+
+Representation checkpoint: the conclusion deliberately omits most geometry,
+individual contacts and general derivations. Its records answer the three
+stated recap questions only. Links recover the detailed chapter and pinned
+source before a new operation. The summary adds no independent proof authority.
+
+Next: standalone SVG figure exports, then the separate research explorer.

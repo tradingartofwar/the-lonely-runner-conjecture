@@ -387,6 +387,40 @@ def opening_visual():
             'status':'REPRODUCED — finite four-runner illustration of the standard reference change'}
 
 
+def story_visual(src, b_examples):
+    """Closing recaps reuse exact certificates; they introduce no new domain."""
+    b=next(r for r in b_examples if r['q']==6)
+    c=next(c for c in b['contacts'] if c['cap']==b['winner_caps'][0])
+    contact_steps=[]
+    for stage,loss in enumerate([F(0),c['loss']/2,c['loss'],c['loss']]):
+        interval=[c['h0']+loss*c['d_min'],c['h0']+loss*c['d_max']]
+        integers=list(range(interval[0].__ceil__(),interval[1].__floor__()+1))
+        contact_steps.append({'stage':stage,'loss':loss,'height':F(1,6)-loss,
+                              'interval':interval,'integers':integers,
+                              'point':c['point'] if stage>=2 else None,
+                              'witness':witness('B',6,c['point'][1]) if stage==3 else None})
+    a=next(r for r in src['transfer']['physical_controls'] if r['q']==4)
+    components=[list(map(F,p)) for p in a['seven_safe_components_at_1_over_8']]
+    positive=[p for p in components if p[0]<p[1]]
+    j=joint_visual(src)
+    return {'cases':['contact','equality','joint'],'steps':4,
+            'contact':{'q':6,'ray':'B','cap':c['cap'],'speeds':b['speeds'],
+                       'h0':c['h0'],'maximum':b['maximum'],'times':b['times'],
+                       'controls':contact_steps,'source':SOURCES['physical_b']},
+            'equality':{'q':4,'ray':'A','threshold':F(1,8),'speeds':speeds('A',4),
+                        'components':components,'positive_components':positive,
+                        'duration':sum((hi-lo for lo,hi in components),F(0)),
+                        'witnesses':[witness('A',4,lo) for lo,hi in components],
+                        'source':SOURCES['transfer']},
+            'joint':{'q':4,'ray':'A','parent':2,'threshold':j['threshold'],
+                     'orbit_integer':j['orbit_integer'],'marginal_H':j['marginal_H'],
+                     'marginal_S':j['marginal_S'],'candidate_hs':j['fake_hs'],
+                     'candidate_point':j['fake_xy'],'candidate_physical':j['fake_physical'],
+                     'failed_speeds':j['fake_failed_speeds'],'conditional_S':j['conditional_S'],
+                     'blocking_edges':j['safe_band_edges'],'source':SOURCES['transfer']},
+            'status':'REPRODUCED — three finite recaps; all-q assertions retain their pinned proof-candidate status'}
+
+
 def build():
     src = {key: json.loads(source_bytes(path)) for key, path in SOURCES.items()}
     cells, caps = [], []
@@ -443,6 +477,7 @@ def build():
                                           'source': 'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md'}}})
     examples = exact({'A': a_examples, 'B': b_examples,
                       'opening_visual': opening_visual(),
+                      'story_visual': story_visual(src,b_examples),
                       'joint_visual': joint_visual(src),
                       'transfer_visual': transfer_visual(src),
                       'selector_visual': selector_visual(src),
@@ -451,7 +486,7 @@ def build():
                       'marginal_counterexample': src['transfer']['marginal_projection_counterexample'],
                       'q10_face_contact': src['transfer_countercheck']['q10_new_face_contact']})
     hashes = {p: digest(source_bytes(p)) for p in sorted(set(SOURCES.values()) | set(NOTES))}
-    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'opening.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'cell.template.html', PACKAGE/'css/cc.css',
+    implementation_paths = [Path(__file__), PACKAGE/'presentation.template.html', PACKAGE/'opening.template.html', PACKAGE/'story.template.html', PACKAGE/'joint.template.html', PACKAGE/'representation.template.html', PACKAGE/'transfer.template.html', PACKAGE/'selector.template.html', PACKAGE/'clock.template.html', PACKAGE/'cell.template.html', PACKAGE/'css/cc.css',
                             *sorted((PACKAGE/'js').glob('*.js')),
                             PACKAGE/'checks/check_visual_data.py', PACKAGE/'checks/check_browser.cjs']
     source_hashes = {'source_commit': PIN, 'algorithm': 'sha256', 'files': hashes,
@@ -489,6 +524,11 @@ def build():
                                  'time_denominator':96,'exact_snapshots':28,
                                  'outer_reference_safe_set':[['1/4','1/4'],['3/4','3/4']],
                                  'inner_reference_safe_set':[['1/4','3/8'],['5/8','3/4']]}
+    controls['story_visual'] = {'cases':['contact','equality','joint'],'steps':4,'states':12,
+                               'contact_integer':-2,'contact_time':'9/25','contact_minimum':'4/25',
+                               'equality_points':4,'positive_duration_components':0,
+                               'false_candidate_time':'33/104','failed_speed':6,
+                               'local_joint_intersection':'empty'}
     data_hash = digest(json_bytes({'geometry': geometry, 'examples': examples, 'sources':source_hashes}))
     manifest = {'schema_version':1,'source_commit':PIN,'repository':REPO,'data_build_sha256':data_hash,
                 'sources':SOURCES, 'claim_status':{'geometry':'REPRODUCED — exact finite certificate',
@@ -498,7 +538,7 @@ def build():
                 'retained':'Full labelled cells including singletons, cap directions, same-point orbit, exact recovery, canonical controls.',
                 'omitted_by_first_slice':'Complete 1/8-safe sets, other reference runners, A-ray interactions, parent-child animations.',
                 'recovery':'Use the full_cells and parent_child data and the pinned notes before changing threshold, family or requested output.',
-                'scene_sources':{'opening':'notes/MATHEMATICAL_BASELINE.md','cap':SOURCES['geometry'],'projection':'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
+                'scene_sources':{'opening':'notes/MATHEMATICAL_BASELINE.md','story':'notes/CC_REPRESENTATION_RULES.md','cap':SOURCES['geometry'],'projection':'notes/CC_OTHER_RAY_REVIEW_2026_09_29.md',
                                  'first_hit':'notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md','physical':SOURCES['physical_b'],
                                  'joint_compatibility':SOURCES['transfer'], 'joint_derivation':'notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md',
                                  'representation_rules':'notes/CC_REPRESENTATION_RULES.md',
@@ -510,7 +550,7 @@ def build():
                                  'shared_clock':SOURCES['clock_occurrences'],
                                  'occurrence_identity':'notes/LAP_LABELLED_CONSTRAINTS.md',
                                  'cell_construction':SOURCES['geometry'], 'lap_bridge':SOURCES['transfer']},
-                'implementation_scope':'Exact data and eight sections: common-start/reference-motion opening, B-ray cap-to-clock, A-ray q=4 joint compatibility, six query-specific representation records, three exact parent-to-child transformations, an operable two-segment A-ray selector, shared-clock occurrence identity, and safe-lap-to-cell construction; concluding story, figure exports and explorer remain pending.'}
+                'implementation_scope':'Exact data and nine connected sections, including common-start/reference-motion opening, seven mathematical chapters, and the closing CC story with three exact recaps and distinct question/ray branches. Standalone figure exports and research explorer remain pending.'}
     return {'cc_geometry.json':geometry,'cc_examples.json':examples,'source_hashes.json':source_hashes,
             'visual_manifest.json':manifest}, controls
 
@@ -526,6 +566,7 @@ def main():
     if template.exists():
         html = template.read_text()
         html = html.replace('<!-- CC_OPENING -->', (PACKAGE/'opening.template.html').read_text())
+        html = html.replace('<!-- CC_STORY -->', (PACKAGE/'story.template.html').read_text())
         html = html.replace('<!-- CC_JOINT -->', (PACKAGE/'joint.template.html').read_text())
         html = html.replace('<!-- CC_REPRESENTATION -->', (PACKAGE/'representation.template.html').read_text())
         html = html.replace('<!-- CC_TRANSFER -->', (PACKAGE/'transfer.template.html').read_text())
@@ -535,7 +576,7 @@ def main():
         payload = {'geometry':data['cc_geometry.json'],'examples':data['cc_examples.json'], 'manifest':data['visual_manifest.json']}
         html = html.replace('/* CC_DATA */', 'const CC_DATA = '+json.dumps(payload,ensure_ascii=False).replace('</','<\\/')+';')
         html = html.replace('/* CC_CSS */', (PACKAGE/'css/cc.css').read_text())
-        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-cell.js','cc-opening.js','cc-navigation.js']))
+        html = html.replace('/* CC_JS */', '\n'.join((PACKAGE/'js'/p).read_text() for p in ['cc-core.js','cc-geometry.js','cc-deck.js','cc-joint.js','cc-representation.js','cc-transfer.js','cc-selector.js','cc-clock.js','cc-cell.js','cc-opening.js','cc-story.js','cc-navigation.js']))
         outputs[PACKAGE/'presentation.html'] = html.encode()
     for path, content in outputs.items():
         if args.check:
