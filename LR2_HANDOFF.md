@@ -4,6 +4,8 @@ September 25, 2026. This is the compact continuation entry point after LR 1 reac
 
 ## Start here
 
+**Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
+
 **Latest — matching upper bound completes the other-ray proof candidate.** [LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md](notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md) closes the open upper-bound step for B_q=V(q,1), with its first two coordinates permuted. The four-row mod-6 spectrum and physical witness formulas now have a complete argument for every integer q>=2, conditional on the exact fixed-cell lemma. Status remains HYPOTHESIS / complete proof candidate, awaiting independent review; no novelty claim.
 
 The corrected actual-orbit equation x-qy in Z selects peak B's (-1,4) edge in residue 0, C's (-3,5) edge in residue 2, and F's (-1,2) edge in residue 5. Their minimum losses from 1/6 are 1/[6(4q+1)], 1/[6(5q+3)], and 1/[6(2q+1)]. Residues 1,3,4 reach an ambient peak. All competing edges have strictly greater loss in the nonconstant branches; exactly two maximizing times survive in every case, t(q) and 1-t(q).
