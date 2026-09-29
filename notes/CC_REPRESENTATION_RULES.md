@@ -669,3 +669,33 @@ still omits parent interiors and new added-band boundaries. Its untriggered
 recovery path is not validated by success. The next test should challenge
 the available joint guarantee; adding the archived difficult (38,18) row is
 a proposed ten-runner case, still unrun.
+
+## 19. Equal phases need their supporting relation and distinct laps
+
+The [ten-runner transfer](CC_TEN_RUNNER_TRANSFER_2026_09_29.md) repairs the
+current selector's failure for (38,18) by recovering other core-floor edges.
+On its new leader and first fallback, 2x+y=7/8. Since
+(38,18)-(6,2)=16(2,1), the raw values differ by 14 and the fractional phases
+coincide. Their torus laps remain 16 and 2. Equality of projected phases must
+not erase distinct unwrapped values or imply a global identity away from the
+supporting line. This relation explains part of the repair, not its complete
+finite exception cover.
+
+The joint compiler retains three added laps at one parameter and returns a
+complete 1/8 menu, so conditional 1/10 regeneration is unnecessary. This is
+stronger selected-reference coverage for the declared structured family,
+without an arbitrary ten-runner or optimum claim from the compiler alone.
+
+Opening all 52 supplied candidates loses the frozen primary pair (1,2).
+A separately labelled post-protocol argument gives its exact physical optimum
+1/6 at t=1/6. Every moving phase is strictly safe at 1/8 there; the torus point
+lies in a full parent-floor interior omitted by the edge representation.
+This directly separates representation-specific endpoint dependence from
+physical endpoint necessity. The closed edge certificate remains adequate
+for one witness while omitting information required for a complete safe set.
+
+The analytic fixed-case argument did not alter frozen outputs or execute the
+conditional parent diagnostic. Preserve its timing and scope. The next proposed
+phase-identity screen is sufficient only: rejecting an edge by that screen
+would not prove the edge unsafe. Compare any restricted discovery rule with
+the recoverable full class before assigning it a completeness claim.
