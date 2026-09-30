@@ -8,6 +8,14 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — September 29, 2026
 
+**Latest — a different boundary makes the unchanged screen complete.** [CC_BOUNDARY_TRANSFER_2026_09_29.md](notes/CC_BOUNDARY_TRANSFER_2026_09_29.md) tests row (78,50), using (78,50)-(6,2)=24(3,2). The screen retains 10 of 36 source records and chooses four nondegenerate segments plus one point. Its new leader reduces coverage to 28 primitive directions; the menu covers them all, so recovery does no work. Full discovery emits 81 records. Both methods pass all 24 controls, with no coverage discrepancy over the complete residual union.
+
+Three separate internal AI reviews pass; geometry matches 58,814 exact fields. Nine deterministic outputs reproduce, with 52 hybrid and 24 full saved-JSON dispatch checks. The frozen eleven-pair benchmark records median computation of 8.892 ms hybrid versus 34.465 ms full. This is one informed transfer with bounded timing evidence; uniform coverage remains an internally reviewed proof candidate. The selected point is necessary only to this menu: the full screened class has a nondegenerate alternative. Empty recovery/open-source diagnostics do not validate unexecuted branches.
+
+**Next proposed:** derive a fixed-menu parameterized certificate for u=(6,2)+8k(3,2), integer k>=1, carrying affine lap labels, physical recovery and distinctness. This would establish validity of that fixed certificate, not identical compiler output or runtime across k. No further coefficient trial or completed family classification has been performed. The coefficient-aware old/new dispatcher remains separately pending.
+
+### Prior within-progression hybrid transfer — preserved
+
 **Latest — the frozen hybrid transfers after an old witness fails.** [CC_HYBRID_TRANSFER_2026_09_29.md](notes/CC_HYBRID_TRANSFER_2026_09_29.md) changes the tenth row to (102,50), deliberately making the old (5,1) time9/40 fail with phase zero. The unchanged hybrid rejects that contact and recovers31/136 from a later source. All three exception directions are repaired in14 source visits and four phase checks. Full discovery emits89 candidates; both methods pass24 controls and agree over the complete47-direction residual comparison.
 
 The explicit data/default adapter reproduces the old result before transfer. Three separate AI reviews pass; geometry matches64,343 fields, and eight exact output files reproduce with71 hybrid/24 full serialized dispatch checks. A frozen eleven-pair benchmark gives medians10.747 ms hybrid versus53.053 ms full, median paired ratio4.912, with setup and supplied preprocessing excluded. This is one informed within-progression transfer and a machine-specific timing result; uniform arguments remain internally reviewed proof candidates.

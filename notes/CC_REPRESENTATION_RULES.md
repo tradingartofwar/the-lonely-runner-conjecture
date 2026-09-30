@@ -798,3 +798,35 @@ next test can actually reveal before enlarging the method or claiming reach.
 Both methods still need supplied source geometry and finite-reduction
 conditions. The measured hybrid advantage on this second input is bounded
 implementation evidence, not a complexity result or a full safe-set claim.
+
+## 23. A complete screen and an empty recovery have different meanings
+
+The [changed-boundary transfer](CC_BOUNDARY_TRANSFER_2026_09_29.md) uses
+(78,50)-(6,2)=24(3,2), changing the retained supporting geometry. The same
+sufficient screen that lost three rays on the earlier boundary now produces
+a complete five-record menu. A new leader gives width (2Q+3P)/24 and a
+28-direction remainder; the old 47-direction table cannot be reused merely
+because the compiler is unchanged. Completeness of a sufficient screen is an
+input-dependent outcome, not a guarantee inherited from its local safety rule.
+
+No exceptions remain, so recovery and its open-source diagnostic perform
+zero work. Their completion statuses certify an empty task; they provide no
+new evidence about source recovery or safety after opening a menu. Zero-budget
+preflight passes at required work zero and does not test a budget-rejection
+branch. Preserve both status and the reached operation counts.
+
+The menu includes four nondegenerate segments and a point. Here that point is
+an ordinary closed screen/menu candidate, unlike the earlier direction-keyed
+exception points. Removing it breaks this chosen menu at (1,4), but the full
+screened contact table retains a nondegenerate alternative. Necessity for one
+selected representation is neither necessity for its whole candidate class
+nor physical necessity. The source alternatives prevent that information loss.
+
+The identity suggests a next fixed-menu certificate for
+u=(6,2)+8k(3,2), integer k>=1, with affine torus-lap labels. A numeric successful
+answer and a parameterized supporting relation are distinct records: carry
+all bands, domains, contact geometry and the physical inverse before promoting
+the latter to a family certificate. Even then, fixed-certificate validity
+would not force a fresh compiler to select the same menu or preserve a measured
+runtime ratio. The proposed derivation remains the next task, not a completed
+family classification in this trial.

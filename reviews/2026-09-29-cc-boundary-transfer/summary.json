@@ -1,0 +1,104 @@
+{
+  "comparison_scope": "ALL_POSITIVE_PRIMITIVE_DIRECTIONS",
+  "controls_per_method": 24,
+  "dispatch_coverage_mismatches": [],
+  "evidence": "Informed different-boundary transfer; universal arguments remain internally reviewed proof candidates",
+  "exception_pairs": [],
+  "full_clipping_counts": {
+    "budget": 256,
+    "candidate_records": 81,
+    "point_records": 4,
+    "source_lap_attempts": 81,
+    "source_records": 36,
+    "status": "PASS"
+  },
+  "full_clipping_status": "PASS",
+  "full_compiler_counts": {
+    "candidates": 81,
+    "chosen": 5,
+    "contacts": 2268,
+    "descending": 42,
+    "rectangle_pairs": 77,
+    "residual_pairs": 28
+  },
+  "full_control_hits": 24,
+  "full_leader": {
+    "P_max": 7,
+    "Q_max": 11,
+    "alpha": "1/12",
+    "beta": "1/8",
+    "id": "P4:E0-1:K3:L4:M54",
+    "rectangle_pairs": 77
+  },
+  "full_source_diagnostic_status": "NOT_TRIGGERED",
+  "full_status": "COMPLETE_COVER_CERTIFICATE",
+  "hybrid_control_hits": 24,
+  "hybrid_status": "COMPLETE_HYBRID_CERTIFICATE",
+  "open_source_status": "COMPLETE_EXCEPTION_RECOVERY",
+  "preflight": {
+    "budget": 4096,
+    "integer_h_bound": 0,
+    "new_row_raw_ranges": 0,
+    "source_pair_projections": 0,
+    "status": "PASS",
+    "work_bound": 0
+  },
+  "protocol_sha256": "2ea70d567b25185bbd3bf48b4b53fe78d022e0c70fb9dcdc2f8695ebf8f2be0b",
+  "recovered": [],
+  "recovery_counts": {
+    "h_tests": 0,
+    "parallel_band_tests": 0,
+    "point_phase_tests": 0,
+    "source_visits": 0
+  },
+  "relations": [
+    {
+      "c_index": 5,
+      "core_row": [
+        3,
+        2
+      ],
+      "k": 3,
+      "safe_row": [
+        6,
+        2
+      ],
+      "v_index": 6
+    }
+  ],
+  "screen_class_lost_pairs": [],
+  "screen_compiler_counts": {
+    "candidates": 10,
+    "chosen": 5,
+    "contacts": 280,
+    "descending": 8,
+    "rectangle_pairs": 77,
+    "residual_pairs": 28
+  },
+  "screen_counts": {
+    "accepted_sources": 10,
+    "boundary_checks": 36,
+    "coefficient_pair_tests": 48,
+    "new_row_lap_attempts": 0,
+    "omitted_sources": 26,
+    "point_records": 2,
+    "relations": 1,
+    "source_records": 36
+  },
+  "screen_leader": {
+    "P_max": 7,
+    "Q_max": 11,
+    "alpha": "1/12",
+    "beta": "1/8",
+    "id": "P4:E0-1:K3:L4:M54",
+    "rectangle_pairs": 77
+  },
+  "screen_status": "COMPLETE_COVER_CERTIFICATE",
+  "source_validation_endpoint_band_checks_per_method": 576,
+  "target": [
+    78,
+    50
+  ],
+  "threshold": "1/8",
+  "union_pairs": 28
+}
