@@ -729,3 +729,39 @@ could consult source geometry only on the screen's remaining directions,
 but that operation and its costs are not yet validated. Count the supplied
 preprocessing, relation checks, clipping and contact work separately; smaller
 outputs do not automatically mean lower total cost or faster execution.
+
+## 21. Recover only the distinctions needed by the supported operation
+
+The [contact-first hybrid](CC_HYBRID_RECOVERY_2026_09_29.md) repairs the known
+phase-screen omissions without reconstructing every clipped candidate. It
+first asks which primitive directions remain uncovered, intersects their
+integer-orbit lines with the supplied source segments, then checks the new
+runner at those contacts. Closed affine intersections commute; explicit
+constant-projection and singleton cases establish a source-relative
+completeness candidate when the bounded searches finish.
+
+The resulting record combines a three-segment menu with three points keyed
+to primitive directions. These are different types with different domains
+of use, not six interchangeable segments. The physical inverse retains gcd,
+Bezout coefficients, integer H and both lap systems. For (5,1), point
+(1/8,9/40) recovers time 9/40; the new row has torus lap 12 and physical lap
+66. Omitting these maps would compromise the answer even though the phase
+itself is retained.
+
+Recovery preserves the one-witness question and, conditionally, the full
+supplied source class's directional coverage. It does not preserve all safe
+points, optima, or new-constraint transfer. A failed source search is distinct
+from physical nonexistence, and a budget stop is distinct from exhaustion.
+The pinned source remains necessary for unsupported subsequent operations.
+
+The three closed-rule exception witnesses are not all physically endpoint
+dependent: open-original-source diagnostics recover each direction, while
+retaining closed new-row safety bands. Keep the chosen witness, source class,
+openness convention and actual physical claim separate.
+
+The hybrid reduces candidate materialization and contact-table entries but
+adds preflight and recovery work. Report each operation and supplied
+preprocessing. Here an eleven-pair benchmark also observes lower median
+runtime; that is a machine/implementation/input result. A known-case repair
+with a faster observed run still needs a frozen transfer test before claiming
+broader usefulness. Apply these same tests if another framework replaces CC.

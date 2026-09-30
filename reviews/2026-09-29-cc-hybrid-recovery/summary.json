@@ -1,0 +1,184 @@
+{
+  "evidence": "Exact development repair; general completeness/coverage remains internally reviewed proof candidate",
+  "exception_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "full_clipping_counts": {
+    "budget": 256,
+    "candidate_records": 61,
+    "point_records": 5,
+    "source_lap_attempts": 61,
+    "source_records": 36,
+    "status": "PASS"
+  },
+  "full_compiler_counts": {
+    "candidates": 61,
+    "chosen": 5,
+    "contacts": 2867,
+    "descending": 33,
+    "rectangle_pairs": 136,
+    "residual_pairs": 47
+  },
+  "leader": {
+    "P_max": 8,
+    "Q_max": 17,
+    "alpha": "3/52",
+    "beta": "3/26",
+    "id": "P2:E0-3:K2:L2:M23",
+    "rectangle_pairs": 136
+  },
+  "open_source_status": "COMPLETE_EXCEPTION_RECOVERY",
+  "open_source_uncovered": [],
+  "physical_controls": 24,
+  "preflight": {
+    "budget": 4096,
+    "integer_h_bound": 17,
+    "new_row_raw_ranges": 108,
+    "source_pair_projections": 108,
+    "status": "PASS",
+    "work_bound": 33
+  },
+  "primary_controls": 20,
+  "protocol_sha256": "eb3a894b8d2c411b177ef26f3916a0138adad975f9848a590aaaf1ee11723ccf",
+  "recovered": [
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "h": 0,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        13
+      ],
+      "local_parameter": "1",
+      "ninth_lap": 13,
+      "original_parameter": "1",
+      "pair": [
+        1,
+        2
+      ],
+      "parent": 0,
+      "point": [
+        "1/8",
+        "1/4"
+      ],
+      "source_endpoint": true,
+      "source_id": "P0:E0-1:K1:L2"
+    },
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "h": 0,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        4,
+        19
+      ],
+      "local_parameter": "1",
+      "ninth_lap": 19,
+      "original_parameter": "1",
+      "pair": [
+        1,
+        4
+      ],
+      "parent": 1,
+      "point": [
+        "1/8",
+        "1/2"
+      ],
+      "source_endpoint": true,
+      "source_id": "P1:E0-1:K1:L4"
+    },
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "h": -1,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        12
+      ],
+      "local_parameter": "1/5",
+      "ninth_lap": 12,
+      "original_parameter": "4/5",
+      "pair": [
+        5,
+        1
+      ],
+      "parent": 0,
+      "point": [
+        "1/8",
+        "9/40"
+      ],
+      "source_endpoint": false,
+      "source_id": "P0:E0-1:K1:L2"
+    }
+  ],
+  "recovery_counts": {
+    "h_tests": 3,
+    "parallel_band_tests": 0,
+    "point_phase_tests": 3,
+    "source_visits": 11
+  },
+  "residual_dispatch_checks": 47,
+  "screen_compiler_counts": {
+    "candidates": 5,
+    "chosen": 3,
+    "contacts": 235,
+    "descending": 4,
+    "rectangle_pairs": 136,
+    "residual_pairs": 47
+  },
+  "screen_counts": {
+    "accepted_sources": 5,
+    "boundary_checks": 36,
+    "coefficient_pair_tests": 48,
+    "new_row_lap_attempts": 0,
+    "omitted_sources": 31,
+    "point_records": 1,
+    "relations": 1,
+    "source_records": 36
+  },
+  "source_validation_endpoint_band_checks_per_method": 576,
+  "status": "COMPLETE_HYBRID_CERTIFICATE",
+  "target": [
+    54,
+    26
+  ],
+  "threshold": "1/8"
+}
