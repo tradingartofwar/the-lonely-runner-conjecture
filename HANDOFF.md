@@ -31,6 +31,37 @@ The first lost witness is recovered at t=1/8 for speeds (0,1,2,3,4,5,7,10,19,106
 **Next proposed:** a frozen ten-runner transfer adding the archived difficult row (38,18). At (1,20), the current selector's 7/24 gives added phase 1/12, below the ten-runner target 1/10. No ten-runner compiler experiment has run. The coefficient-aware dispatcher remains separately pending.
 
 
+**Research explorer completed — September 29, 2026 (Pacific):**
+The separate offline [explorer.html](visuals/compatibility-calculus/explorer.html)
+implements A/B rays, integer q=2…60, six/seven required forms, full-cell/cap/
+selector inspection, first integer contact, closed time sets, physical phases
+and laps, reflection, exact state export and same-orbit parent/child transfer.
+It has four distinct questions: one 1/8 witness, optimum, every maximizer and
+complete safe set at 1/8, 1/7 or 1/6. Six-form comparison retains the fixed
+1/8 atlas floor, explicitly distinct from its nominal 1/7 runner threshold.
+
+The complete global answer and one selected inspector state have separate
+roles. Hiding equality markers does not alter the exact set. An incompatible
+compression triggers a scope notice while the requested output remains tied
+to its richer source. Empty orbit sections withhold physical recovery; the
+unchecked seventh runner is labelled before transfer. q=4 local rejection,
+four full-system equality times, q=5 selector fallback and q=10 new-face
+contacts all remain explicit. A/B clocks and reflection maps stay distinct.
+
+An independently structured physical-time checker agrees with all 236 enabled
+systems for optima, complete optimizer sets and witnesses, and all 708 safe
+sets. Fifty-nine B controls match the cap/full-atlas optimum above 1/7. Browser
+checks cover 312 question/control layouts at 1440/390/320 plus canonical
+interaction states, exact bookmarks and downloaded JSON. Source mathematics
+remain frozen at 6b2b931; presentation/data/figure bytes are unchanged. A separate
+explorer manifest owns the new implementation and finite checks. This is an
+AI-assisted same-author audit, with no claim promotion or new all-q theorem.
+
+**Next visual target:** coordinated transformations with reduced-motion
+equivalents, then the package-wide final visual audit. Continue to name what
+comes next after completing each stage.
+
+
 **Standalone visual figures completed — September 29, 2026:**
 The [offline figure gallery](visuals/compatibility-calculus/figures/index.html)
 contains all eleven SVGs in the presentation plan, from the runner circle

@@ -52,7 +52,10 @@ output obligations distinct. Open the self-contained `presentation.html`;
 its guided narrative runs from common-start runners to compatibility,
 compression and recovery. The [standalone figure gallery](visuals/compatibility-calculus/figures/index.html)
 now supplies all eleven planned SVGs with captions, exact states and source/status
-notes. Sources stay frozen at 6b2b931. The separate research explorer is next.
+notes. The [research explorer](visuals/compatibility-calculus/explorer.html)
+now coordinates A/B rays, q=2…60, four output questions, exact orbit geometry,
+physical recovery and six-to-seven transfer. Sources stay frozen at 6b2b931.
+Next visual work is the coordinated transformation pass and final audit.
 
 **Language name — September 29, 2026:** The language we are developing is **Compatibility Calculus (CC)**. Use this name for current discussion and new work. Historical LTCM terminology and filenames remain in the preserved research record.
 

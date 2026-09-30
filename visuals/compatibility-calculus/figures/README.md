@@ -89,5 +89,6 @@ Restore the matching presentation chapter and pinned richer source before
 changing the parameter, threshold, representation or requested output. An
 available source is a recovery route, not an assertion of losslessness.
 
-Next visual target: the separate research explorer, with coordinated exact
-parameter, geometry, projection, witness and representation-scope controls.
+The [separate research explorer](../explorer.html) is now available, with
+coordinated exact parameter, geometry, projection, witness and scope controls.
+Next visual target: coordinated transformations and the final visual audit.

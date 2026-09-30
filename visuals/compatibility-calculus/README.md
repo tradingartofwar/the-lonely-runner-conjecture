@@ -1,5 +1,11 @@
 # Compatibility Calculus visual companion
 
+**Research explorer:** open [explorer.html](explorer.html) for A/B rays,
+integer q=2…60, six/seven forms, four output questions, exact geometry/orbit
+inspection, complete time sets, physical recovery and parent/child comparison.
+It is a separate offline file. [Explorer notes and checks](explorer/README.md)
+explain its bounded domain and representation contracts.
+
 **Nine connected sections:** the **one track** opening, **from cap to clock**, **true somewhere versus true together**, **what the model remembers**, **what survives the cut**, **one safe time**, **one shared clock**, **from time to shape**, and the closing **carry it through** story.
 
 **Eleven standalone figures:** open [the offline SVG gallery](figures/index.html)
@@ -129,7 +135,7 @@ selected time and its reflection omit two safe times; at q=10, its minimum
 The original selector order and mathematical sources remain pinned to the
 frozen snapshot. Later discovery and coverage-compiler research are separate
 versions. The original 20-scene plan is organized here as nine connected
-sections; the separate research explorer remains pending.
+sections; the separate research explorer is now available.
 
 The sixth chapter returns to physical time with the archived configuration
 0,1,4,5,6,7,11,16 and J=[9/32,3/8]. This is explicitly separate from the A/B
@@ -372,8 +378,16 @@ the figure/state audit and received visual inspection; gallery widths 1440,
 390 and 320 and a byte-checked browser download pass. The exporter supports
 byte-for-byte rebuild checking in the recorded rendering environment.
 
-Next visual target: the separate research explorer, with coordinated exact
-parameter, geometry, projection, witness and representation-scope controls.
+The research explorer now coordinates all planned initial controls. Its exact
+global answer remains separate from the selected cell/cap/segment inspector;
+scope updates when a compression is inadequate for the requested output.
+All 236 enabled ray/q/form-count configurations agree with an independently
+structured physical checker for optima, complete maximizing sets and witnesses,
+and all 708 threshold-safe sets agree. Browser checks cover 312 core layouts,
+canonical transfers, equality visibility, exact bookmarks and JSON export.
+
+Next visual target: coordinated transformations with reduced-motion
+equivalents, followed by the package-wide final visual audit.
 The guided narrative now has both its opening and conclusion. Sources remain
 at 6b2b931; later coefficient/selector/compiler work stays separate. At each
 completed visual section, report what comes next.

@@ -1,7 +1,8 @@
 # Visual companion audit — September 29, 2026
 
-Scope: the exact data layer, nine connected interactive sections and eleven
-standalone SVG figures with an offline gallery.
+Scope: the exact data layer, nine connected interactive sections, eleven
+standalone SVG figures with an offline gallery, and the separate research
+explorer over its declared finite parameter domain.
 AI-assisted implementation and same-author audit; no independent human review
 or new mathematical theorem is claimed.
 
@@ -515,3 +516,54 @@ Restore the matching chapter and pinned source before changing the question or
 adding a constraint. All-q assertions retain their proof-candidate status.
 
 Next: the separate research explorer.
+
+## Separate research explorer
+
+The explorer adds A/B rays with q=2…60 and six/seven required forms. Its four
+questions have distinct outputs: one 1/8-safe witness, optimum, every maximizer,
+and the complete safe set at 1/8, 1/7 or 1/6. BigInt rational arithmetic drives
+all state; camera and SVG conversion alone use floating point. The original
+presentation/data/figure bytes remain unchanged under their existing manifests.
+
+The exact engine enumerates every integer H meeting each certified cell,
+intersects its edges with that orbit plane and retains closed contacts. Complete
+safe sets come from horizontal sections followed by the same orbit condition,
+with reflection and union. The A one-witness question retains E1-then-E2.
+The physical countercheck instead intersects runner safe bands and optimizes
+the tent lower envelope by exact physical contact enumeration.
+
+All 236 ray/q/form-count combinations agree for optima, complete optimizer
+sets and recovered witnesses. All 708 threshold-safe sets agree. All 59 B-ray
+seven-form cap optima agree with the full atlas and exceed 1/7. These are finite
+computational checks of the pinned inputs, not new all-q proof authority.
+Reports and canonical controls are under `explorer/checks/`.
+
+The browser audit compares 312 question/control layouts at 1440, 390 and 320
+with independently checked outputs. Additional checks cover rational section
+and same-orbit scrubbing, first-contact withholding, reflection, closed selector
+endpoints, q=5 fallback, q=4 empty/singleton branches, q=10 face contact, equality
+visibility, inadequate-view scope, all-cell/cap context, camera, invalid q,
+exact permalink reload and a downloaded state JSON. Phone table overflow and a
+transfer-label clip found during inspection were corrected. The final checked
+views have no page overflow, clipped SVG text, page errors or external requests.
+
+Communication and information-loss checkpoint:
+
+- The full global answer is separate from the selected cell/cap/segment. A
+  local contact is not silently substituted for an optimum or complete set.
+- The scope panel states what the current compression omits. Choosing caps
+  for the A4 complete-safe-set question preserves the global answer and shows
+  the inadequacy warning. The richer source is actually used for that answer.
+- Equality visibility is a display operation. Exact records, singleton counts,
+  time lists and physical selection remain closed and unchanged.
+- Empty H sections supply no physical witness. The six-form table explicitly
+  leaves the added runner unchecked; its fixed 1/8 floor is a comparison target.
+- Transfer retains the same parent and H. Its full vertical section and local
+  before/after optima remain distinct from the inspector's horizontal height
+  and the global question. The preserved marginal false positive stays rejected.
+- Physical laps, folded torus labels, A/B coordinate order, and reflected time
+  retain their meanings. One witness, every optimizer and all threshold-safe
+  times never share an unqualified result label.
+
+Next: coordinated transformations with reduced-motion equivalents, followed
+by the package-wide final visual audit.

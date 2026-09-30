@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "source_commit": "6b2b9316dbc87499a1cb5184aadbd6614d4d6c32",
+  "repository": "https://github.com/tradingartofwar/the-lonely-runner-conjecture",
+  "data_build_sha256": "edf61760ebe576939affc29242bb9ac620793545ee2ef845267ca1049fe11f91",
+  "domain": {
+    "rays": [
+      "A",
+      "B"
+    ],
+    "integer_q": [
+      2,
+      60
+    ],
+    "required_forms": [
+      6,
+      7
+    ],
+    "safe_thresholds": [
+      "1/8",
+      "1/7",
+      "1/6"
+    ],
+    "common_start": true,
+    "reference_speed": 0,
+    "comparison_floor": "1/8"
+  },
+  "status": "REPRODUCED finite controls; all-q source arguments remain proof candidates",
+  "answer_method": "Enumerate closed integer-orbit sections of the full pinned atlas. Reflect and deduplicate physical times. A-ray one-witness output uses the pinned E1-then-E2 selector.",
+  "limits": "Selected object and hidden display markers do not replace the complete global answer. No new coefficients, arbitrary runner systems or all-q proof.",
+  "sources": [
+    "notes/CC_BOUNDED_SELECTOR_2026_09_29.md",
+    "notes/CC_REPRESENTATION_RULES.md",
+    "notes/CC_SIX_SEVEN_TRANSFER_2026_09_29.md",
+    "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md",
+    "reviews/2026-09-29-cc-bounded-selector/countercheck.json",
+    "reviews/2026-09-29-cc-bounded-selector/verification.json",
+    "reviews/2026-09-29-cc-other-ray-review/geometry_check.json",
+    "reviews/2026-09-29-cc-other-ray-review/physical_check.json",
+    "reviews/2026-09-29-cc-six-seven-transfer/countercheck.json",
+    "reviews/2026-09-29-cc-six-seven-transfer/verification.json"
+  ],
+  "input_sha256": {
+    "data/cc_geometry.json": "b38ee4dcd3a0689d980e4d76758159faa8b667829a71a0cc76df880d298349e3",
+    "data/cc_examples.json": "3adea0b480ddcaf33f1c9218e01661796be82b02674f427c1604a30d99a128c0",
+    "data/visual_manifest.json": "d65348d1841dcc3abda7faeb3a9c673aa553dbc9dda887fb841562a56ebb9100",
+    "data/source_hashes.json": "e799957dddc6ffd1d6898c3014481672f6a543d78d21121c1936201960c49b77",
+    "js/cc-core.js": "27da85cd748148e857ff7a89e915325312c06b0644c31cef2b1901f65318506d",
+    "explorer/model.js": "a7f249b85b32fcc78cadec6683bbf5ddf73fc113f27cf07cf1f47f5b28f3df74",
+    "explorer/app.js": "94aa06688dcef4b24ef820019fb6b785ed3bf73ff007ff574b4bdaaf343c4647",
+    "explorer/style.css": "74e83db9c13cfe2cf080dbfd081d5ae84b1e8388660e7bfd651d7e182bb31d31",
+    "explorer/template.html": "618905a24919c7e3296a53ad58e9da5ce14cda52289d74c40ab4291153bbc0ed",
+    "explorer/build_explorer.py": "3d705be0f622c628d9534adad9f9c5ce834948ab306354a40a2b83126284f9c0"
+  },
+  "explorer_html_sha256": "d9c5598ba561fa07ef197f0d38b97de65c3e2353a32f47ad40bf58405811e849"
+}
