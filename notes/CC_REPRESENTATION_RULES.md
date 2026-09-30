@@ -765,3 +765,36 @@ preprocessing. Here an eleven-pair benchmark also observes lower median
 runtime; that is a machine/implementation/input result. A known-case repair
 with a faster observed run still needs a frozen transfer test before claiming
 broader usefulness. Apply these same tests if another framework replaces CC.
+
+## 22. Transfer the recovery operation, not an unchecked saved answer
+
+The [frozen hybrid transfer](CC_HYBRID_TRANSFER_2026_09_29.md) deliberately
+invalidates the previous (5,1) witness: the new row (102,50) has speed560,
+and time9/40 gives phase zero. The compact old point table is therefore not
+a certificate for the changed input. The retained source and fixed recovery
+operation remain useful: they reject that contact and obtain31/136 from a
+later source, with all same-point bands and physical maps checked again.
+
+The operation transfers within the declared class even though an old selected
+answer does not. Keep the rejected witness, changed constraint and successful
+recovery trace, rather than reporting only a final pass. Here the new torus
+lap25 and physical lap127 carry the same safe phase11/17; neither unwrapped
+value can be discarded merely because the fractional phases coincide.
+
+Implementation identity also has a domain obligation. Unchanged function
+bodies can still use stale captured defaults. The adapter explicitly carries
+the target through globals, Python default arguments and physical row data,
+and first reproduces the old result. Code identity, input identity and answer
+validity are separate checks; a provenance-hash augmentation is recorded
+separately from algorithm or mathematical correction.
+
+This transfer preserves the same boundary-identity progression and screen
+geometry. It tests recovery after a changed phase, not availability of the
+screen for every coefficient row. A different allowed identity can test new
+supporting geometry; absence of every allowed identity forces an empty screen
+by definition. Preserve that predictable boundary and ask what a proposed
+next test can actually reveal before enlarging the method or claiming reach.
+
+Both methods still need supplied source geometry and finite-reduction
+conditions. The measured hybrid advantage on this second input is bounded
+implementation evidence, not a complexity result or a full safe-set claim.
