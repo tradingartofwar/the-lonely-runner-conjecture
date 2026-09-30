@@ -1,0 +1,87 @@
+{
+  "input_hashes_verified": 8,
+  "reproduce_script_sha256": "bef1f4c4bf4704f2337d5d302bf65d498ce69f4903b25710f1a564c7bdbd8b08",
+  "reproduced_byte_for_byte": {
+    "comparison.json": "b6018bf8bd642c5f4f434e9feb8e6c2735812bef0702eda9e79994ede654c0ab",
+    "diagnostic.json": "fa4715d17193d6a30bf409572625e003d9ee5b52c10d7eb32fb953a5666c7a08",
+    "full.json": "9701b7d743cfebfbf655a9c70e6e5b6f5a3225c29721128469de3addbc8ef90a",
+    "full_clipping.json": "4263951036d5f49d19c0411f9b63aec5a1ba4768385586088d946830a8bc6a56",
+    "geometry_review.json": "c195d8ef41580e444b4bf0474671ba539ba5c14a9029f8a713f154ce63d372fc",
+    "physical_review.json": "2663f6a8a8185910482596f86d35d744f4bb6a99a80bbd10711e8b3cdadcd480",
+    "regression.json": "246180201ea076823ec8bda49ef1a0b0cf19801381dac2fa98c3e54a6116c799",
+    "restricted.json": "1320167a028dd9fd61e72d4d36a2858ff2d6669ab8c5661feedc25b2675ed432",
+    "screen.json": "29470ee8a29d35e1b95a0cbcf829413ce806d04bb5c7346e1ece7bd131513b4a",
+    "summary.json": "65cc419f856a87413d679a388c36415ff7df849be57cf0c0dd5482f2cb1fc7ce"
+  },
+  "scope": "Frozen screen/full comparison and reached paths only; no new coefficients or parameter scans.",
+  "status": "PASS",
+  "summary": {
+    "both_miss_pairs": [],
+    "comparison_scope": "ALL_POSITIVE_PRIMITIVE_DIRECTIONS",
+    "diagnostic_status": "NOT_TRIGGERED",
+    "full": {
+      "clip_counts": {
+        "budget": 256,
+        "candidate_records": 61,
+        "point_records": 5,
+        "source_lap_attempts": 61,
+        "source_records": 36,
+        "status": "PASS"
+      },
+      "counts": {
+        "candidates": 61,
+        "chosen": 5,
+        "contacts": 2867,
+        "descending": 33,
+        "rectangle_pairs": 136,
+        "residual_pairs": 47
+      },
+      "primary_status": "PRIMARY_COMPLETE",
+      "status": "COMPLETE_COVER_CERTIFICATE"
+    },
+    "lost_auxiliary_pairs": [],
+    "lost_primary_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "protocol_sha256": "0cc8219fadcfb0f3ac5091a613692355b1c7e4ceb9a51b3b2eeba7fcf8875300",
+    "restricted": {
+      "counts": {
+        "candidates": 5,
+        "chosen": 3,
+        "contacts": 235,
+        "descending": 4,
+        "rectangle_pairs": 136,
+        "residual_pairs": 47
+      },
+      "primary_status": "NO_PRIMARY_GUARANTEE",
+      "screen_counts": {
+        "accepted_sources": 5,
+        "boundary_checks": 36,
+        "coefficient_pair_tests": 48,
+        "new_row_lap_attempts": 0,
+        "omitted_sources": 31,
+        "point_records": 1,
+        "relations": 1,
+        "source_records": 36
+      },
+      "status": "UNCOVERED_PRIMITIVE_PAIRS"
+    },
+    "target": [
+      54,
+      26
+    ],
+    "threshold": "1/8",
+    "union_pairs": 47
+  }
+}

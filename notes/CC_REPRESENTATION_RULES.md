@@ -699,3 +699,33 @@ conditional parent diagnostic. Preserve its timing and scope. The next proposed
 phase-identity screen is sufficient only: rejecting an edge by that screen
 would not prove the edge unsafe. Compare any restricted discovery rule with
 the recoverable full class before assigning it a completeness claim.
+
+## 20. A sound local certificate can be an incomplete discovery rule
+
+The [phase-screen comparison](CC_PHASE_SCREEN_2026_09_29.md) turns the earlier
+boundary identity into a frozen whole-source filter for row (54,26). All
+five retained records are safe and occur identically in the full 61-record
+output. Nevertheless the restricted class misses exactly primitive directions
+(1,2),(1,4),(5,1), while full discovery covers all positive directions. Both
+leaders agree, so the lost information concerns fallback alternatives.
+
+This is a global candidate-class difference: the proved residual-domain union
+has 47 directions, outside which both leaders guarantee a contact. It is not
+inferred from the 22 physical controls. Three primitive directions represent
+three infinite positive-integer rays. Raw compiler status, primary domain,
+candidate class, chosen menu and physical-control set remain distinct.
+
+At the first lost witness, (x,y)=(1/8,1/4), the two rows have equal phases
+because their raw difference is 12. The omitted source's core value varies
+from 15/32 to 1/2, so it fails the stronger whole-boundary predicate. A valid
+contact does not require the particular identity to hold everywhere on its
+source. NO_SCREEN_CERTIFICATE is an absence of that sufficient proof, not
+unsafety. Preserve the counterexample without silently broadening the rule.
+
+Full source recovery supplies the lost witness and complete cover; the
+full-parent diagnostic is not triggered. CC needs this recovery distinction,
+not an unearned completeness claim for the smaller record. A future hybrid
+could consult source geometry only on the screen's remaining directions,
+but that operation and its costs are not yet validated. Count the supplied
+preprocessing, relation checks, clipping and contact work separately; smaller
+outputs do not automatically mean lower total cost or faster execution.

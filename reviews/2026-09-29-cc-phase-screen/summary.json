@@ -1,0 +1,69 @@
+{
+  "both_miss_pairs": [],
+  "comparison_scope": "ALL_POSITIVE_PRIMITIVE_DIRECTIONS",
+  "diagnostic_status": "NOT_TRIGGERED",
+  "full": {
+    "clip_counts": {
+      "budget": 256,
+      "candidate_records": 61,
+      "point_records": 5,
+      "source_lap_attempts": 61,
+      "source_records": 36,
+      "status": "PASS"
+    },
+    "counts": {
+      "candidates": 61,
+      "chosen": 5,
+      "contacts": 2867,
+      "descending": 33,
+      "rectangle_pairs": 136,
+      "residual_pairs": 47
+    },
+    "primary_status": "PRIMARY_COMPLETE",
+    "status": "COMPLETE_COVER_CERTIFICATE"
+  },
+  "lost_auxiliary_pairs": [],
+  "lost_primary_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "protocol_sha256": "0cc8219fadcfb0f3ac5091a613692355b1c7e4ceb9a51b3b2eeba7fcf8875300",
+  "restricted": {
+    "counts": {
+      "candidates": 5,
+      "chosen": 3,
+      "contacts": 235,
+      "descending": 4,
+      "rectangle_pairs": 136,
+      "residual_pairs": 47
+    },
+    "primary_status": "NO_PRIMARY_GUARANTEE",
+    "screen_counts": {
+      "accepted_sources": 5,
+      "boundary_checks": 36,
+      "coefficient_pair_tests": 48,
+      "new_row_lap_attempts": 0,
+      "omitted_sources": 31,
+      "point_records": 1,
+      "relations": 1,
+      "source_records": 36
+    },
+    "status": "UNCOVERED_PRIMITIVE_PAIRS"
+  },
+  "target": [
+    54,
+    26
+  ],
+  "threshold": "1/8",
+  "union_pairs": 47
+}
