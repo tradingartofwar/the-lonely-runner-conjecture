@@ -6,7 +6,9 @@
 **Canonical branch:** `main`  
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
-## Current resumption — September 29, 2026
+## Current resumption — October 1, 2026
+
+**Selected next step — controlled handoff comparison, October 1.** The [handoff pilot](notes/CC_HANDOFF_PILOT_2026_10_01.md) prepares ten fixed synthetic cards, a proposed answer key and an 80-trial order to compare a CC-informed record with a strong conventional handoff. Same-author static checks pass; no model answers exist. Separate oracle review must precede arm drafting and execution freeze. Fresh-agent authorization is pending; exposed runtime cannot verify total-token costs or a provider model snapshot. The software-corpus extraction below is now a separate pending proposal.
 
 **Completed review — transferable value beyond Lonely Runner.** The [Ultra assessment](notes/ULTRA_TRANSFER_VALUE_ASSESSMENT_2026_09_30.md) reviews the record through 52c4912 with four AI tracks and primary-source comparisons. Strongest exports: exact conformance examples, query-specific summary/recovery contracts, and narrow periodic point-feasibility proof candidates. It recovers the physical 1680/3360 summary collision and preserves all eight rank-three menu failures. No new research computations or external application tests were run; no novelty or open-problem implication is claimed. The [supporting reports and coverage ledger](reviews/2026-09-30-ultra-transfer-value/README.md) record reading limits and explicit unrun designs. Next recommended: extract three exact compatibility regressions with direct physical-time verification; a larger adapter test is conditional on a real frontend needing it. Earlier mathematical follow-ups remain pending.
 

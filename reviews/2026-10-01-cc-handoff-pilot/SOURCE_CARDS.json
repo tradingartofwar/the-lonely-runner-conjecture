@@ -1,0 +1,370 @@
+{
+  "status": "FIXED_SOURCE_CARDS_AWAITING_INDEPENDENT_ORACLE_REVIEW",
+  "source_commit": "bbdf1b7c3f699eda46e4cd4bc9aac9a7a486a970",
+  "source_path": "reviews/2026-09-30-ultra-transfer-value/information_transfer.md",
+  "scope": "Synthetic operations examples only; no private business or personal records.",
+  "expansion_notes": [
+    "Same-query references are expanded to the identical question text.",
+    "M2 replaces the M1 miss with an untested case; it does not inherit a failure at16.",
+    "V2 has no hidden later report content: unavailable remains unspecified.",
+    "T2 notation is explained without changing endpoint membership.",
+    "Source aliases and synthetic dates are presentation metadata, not outcomes."
+  ],
+  "cards": [
+    {
+      "id": "K1",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "query": "Is one build eligible, requiring both?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS."
+        }
+      ],
+      "structured_source": {
+        "kind": "build",
+        "checks": [
+          "security",
+          "performance"
+        ],
+        "rows": {
+          "A": [
+            true,
+            false
+          ],
+          "B": [
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "id": "K2",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "query": "Is one build eligible, requiring both?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL."
+        }
+      ],
+      "structured_source": {
+        "kind": "build",
+        "checks": [
+          "security",
+          "performance"
+        ],
+        "rows": {
+          "A": [
+            true,
+            true
+          ],
+          "B": [
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "id": "T1",
+      "neutral_summary": "Each resource has two units of availability.",
+      "query": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Resource A available [2,4]; B available [4,6]; endpoints included."
+        }
+      ],
+      "structured_source": {
+        "kind": "interval",
+        "intervals": [
+          [
+            2,
+            4,
+            true,
+            true
+          ],
+          [
+            4,
+            6,
+            true,
+            true
+          ]
+        ],
+        "dwell": null
+      }
+    },
+    {
+      "id": "T2",
+      "neutral_summary": "Each resource has two units of availability.",
+      "query": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it."
+        }
+      ],
+      "structured_source": {
+        "kind": "interval",
+        "intervals": [
+          [
+            2,
+            4,
+            true,
+            false
+          ],
+          [
+            4,
+            6,
+            true,
+            true
+          ]
+        ],
+        "dwell": null
+      }
+    },
+    {
+      "id": "M1",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "query": "Did unchanged P pass held-out validation?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally."
+        }
+      ],
+      "structured_source": {
+        "kind": "validation",
+        "train": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "holdout": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "passes": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "failures": [
+          16
+        ],
+        "untested": [],
+        "policy": "P",
+        "class_covers_all": true
+      }
+    },
+    {
+      "id": "M2",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "query": "Did unchanged P pass held-out validation?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16."
+        }
+      ],
+      "structured_source": {
+        "kind": "validation",
+        "train": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "holdout": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "passes": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "failures": [],
+        "untested": [
+          16
+        ],
+        "policy": "P",
+        "class_covers_all": true
+      }
+    },
+    {
+      "id": "V1",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "query": "Does current recorded evidence contain a failure?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Source v1, dated day1: tested cases1–6, no failure observed."
+        },
+        {
+          "alias": "record-v2",
+          "date": "day2",
+          "available": true,
+          "text": "Source v2, dated day2: case7 fails; first six unchanged."
+        }
+      ],
+      "structured_source": {
+        "kind": "version",
+        "v1_cases": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "v1_failures": [],
+        "v2_exists": true,
+        "v2_available": true,
+        "v2_failures": [
+          7
+        ]
+      }
+    },
+    {
+      "id": "V2",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "query": "Does current recorded evidence contain a failure?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Source v1, dated day1: tested cases1–6, no failure observed."
+        },
+        {
+          "alias": "record-v2",
+          "date": "day2",
+          "available": false,
+          "text": null
+        }
+      ],
+      "structured_source": {
+        "kind": "version",
+        "v1_cases": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "v1_failures": [],
+        "v2_exists": true,
+        "v2_available": false,
+        "v2_failures": null
+      }
+    },
+    {
+      "id": "S1",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "query": "Is some build eligible, requiring both?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Build C: security PASS, performance PASS. Build D: security FAIL, performance FAIL."
+        }
+      ],
+      "structured_source": {
+        "kind": "build",
+        "checks": [
+          "security",
+          "performance"
+        ],
+        "rows": {
+          "C": [
+            true,
+            true
+          ],
+          "D": [
+            false,
+            false
+          ]
+        }
+      }
+    },
+    {
+      "id": "S2",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "query": "Is a shared task of duration1 possible?",
+      "sources": [
+        {
+          "alias": "record-v1",
+          "date": "day1",
+          "available": true,
+          "text": "Resource A available [2,6]; B available [2,6]; endpoints included."
+        }
+      ],
+      "structured_source": {
+        "kind": "interval",
+        "intervals": [
+          [
+            2,
+            6,
+            true,
+            true
+          ],
+          [
+            2,
+            6,
+            true,
+            true
+          ]
+        ],
+        "dwell": 1
+      }
+    }
+  ]
+}

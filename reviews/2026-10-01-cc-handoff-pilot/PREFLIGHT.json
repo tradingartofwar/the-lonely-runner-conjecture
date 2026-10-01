@@ -1,0 +1,80 @@
+{
+  "status": "STATIC_PREFLIGHT_PASS_NOT_MODEL_RESULTS",
+  "cards": 10,
+  "draft_oracle_checks": 10,
+  "planned_answers": 80,
+  "actual_model_answers": 0,
+  "same_author_check": true,
+  "independent_review": "PENDING",
+  "neutral_summary_query_collisions": [
+    [
+      "K1",
+      "K2"
+    ],
+    [
+      "T1",
+      "T2"
+    ],
+    [
+      "M1",
+      "M2"
+    ],
+    [
+      "V1",
+      "V2"
+    ]
+  ],
+  "scope": "Checks data and proposed semantics. Does not test CC or conventional handoff behavior.",
+  "derived_answers": {
+    "K1": {
+      "decision": "no",
+      "eligible_builds": []
+    },
+    "K2": {
+      "decision": "yes",
+      "eligible_builds": [
+        "A"
+      ]
+    },
+    "T1": {
+      "instant": "yes",
+      "positive_duration": "no",
+      "instant_witness": "4"
+    },
+    "T2": {
+      "instant": "no",
+      "positive_duration": "no"
+    },
+    "M1": {
+      "decision": "fail",
+      "passed": 7,
+      "failed": 1,
+      "untested": 0,
+      "failing_case": 16
+    },
+    "M2": {
+      "decision": "unresolved",
+      "passed": 7,
+      "failed": 0,
+      "untested": 1,
+      "untested_case": 16
+    },
+    "V1": {
+      "decision": "yes",
+      "version": "v2",
+      "failing_case": 7
+    },
+    "V2": {
+      "decision": "unknown"
+    },
+    "S1": {
+      "decision": "yes",
+      "eligible_builds": [
+        "C"
+      ]
+    },
+    "S2": {
+      "decision": "yes"
+    }
+  }
+}
