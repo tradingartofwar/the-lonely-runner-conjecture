@@ -1,8 +1,24 @@
-# CC handoff pilot: execution materials
+# CC handoff pilot: completed results
 
-October 1, 2026. Fresh-agent review and respondent execution are now authorized. The answer-key review is complete, the two arms carry matched statements and word counts, and recorder controls were repaired before execution. Final execution inputs are pinned in `FROZEN_MANIFEST.json`; no respondent outcome is implied by preparation checks.
+October 1, 2026. **OBSERVED:** all 80 trials completed. Both formats returned 40/40 correct requested outputs with 32 source requests. Strict full-answer grading gives CC 38/40 and conventional 37/40 because five M2 explanations add unsupported policy distinctness; the initially permissive interpretation gives 40/40 each. This wording-sensitive difference does not establish a robust CC presentation advantage. The original token-cost gate is unassessable.
 
-Read [PROTOCOL.md](PROTOCOL.md), [ORACLE_REVIEW.md](ORACLE_REVIEW.md), [MATERIALS_REVIEW.md](MATERIALS_REVIEW.md), [SCORING.md](SCORING.md), [RUNTIME.json](RUNTIME.json), [HANDOFFS.json](HANDOFFS.json) and [HARNESS_CHECK.json](HARNESS_CHECK.json). `STIMULI.json` contains the eighty exact initial prompts. The original cost gate remains unassessable; this is a bounded accuracy/retrieval pilot.
+Start with [RESULTS_REPORT.md](RESULTS_REPORT.md), [RESULTS.json](RESULTS.json), [ADJUDICATION.md](ADJUDICATION.md) and [GRADING_REVIEW.md](GRADING_REVIEW.md). All outcomes, including the five strict-reading errors, are preserved.
+
+| Record | Purpose |
+| --- | --- |
+| [PROTOCOL.md](PROTOCOL.md), [SCORING.md](SCORING.md), [RUNTIME.json](RUNTIME.json) | Frozen design, semantic rule and runtime limits |
+| [FROZEN_MANIFEST.json](FROZEN_MANIFEST.json) | Execution-input hashes published at c273239 before any respondent |
+| [ORACLE_REVIEW.md](ORACLE_REVIEW.md), [MATERIALS_REVIEW.md](MATERIALS_REVIEW.md) | Pre-execution internal source and material reviews |
+| [HANDOFFS.json](HANDOFFS.json), [STIMULI.json](STIMULI.json) | Matched statements and 80 exact prompts |
+| [TRANSCRIPTS.json](run/TRANSCRIPTS.json), [INVOCATIONS.jsonl](run/INVOCATIONS.jsonl) |80 trial records and 144 invocation records |
+| [PRIMARY_GRADES.json](PRIMARY_GRADES.json), [CHECK_GRADES.json](CHECK_GRADES.json), [GRADES.json](GRADES.json) | Initial grading, masked review and adjudication |
+| [BLIND_PACKET.json](BLIND_PACKET.json), [BLIND_MAPPING.json](BLIND_MAPPING.json) | Normalized evidence packet and condition reconciliation |
+| [COLLECTION_AUDIT.json](COLLECTION_AUDIT.json), [TRANSPORT_NOTES.json](run/TRANSPORT_NOTES.json) | Integrity checks and the documented framing-byte correction |
+| [RESULT_MANIFEST.json](RESULT_MANIFEST.json) | Result-package file hashes |
+
+The run closed within 53m17.6s with no protocol errors, infrastructure stops, late exclusions or unrun cells. Raw captures live in `run/incoming/`; individual records in `run/trials/`; ungraded terminal-record checkpoints at 20/40/60 trials remain in `checkpoints/`. The replay commands in the report check stored evidence and arithmetic, not stochastic model reproduction.
+
+Historical preparation manifests and statuses below describe their original pinned stage. The final protocol, result report and result manifest govern the completed pilot.
 
 ## Preserved preparation record
 

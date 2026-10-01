@@ -1,0 +1,31 @@
+{
+  "note": "The shell heredoc framing added one newline to the first two response files. Removed exactly that framing newline from R001-01 and R002-01 and their recorded messages before further collection. Subsequent helper writes strip one heredoc framing newline; response payloads are otherwise unchanged.",
+  "corrections": [
+    {
+      "trial_id": "R001",
+      "raw_file": "incoming/R001-01.txt",
+      "message_index": 1,
+      "removed_framing_hex": "0a",
+      "before_characters": 187,
+      "after_characters": 186,
+      "before_utf8_bytes": 189,
+      "after_utf8_bytes": 188,
+      "stored_character_total_corrected": true,
+      "correction_detail": "R001 completed output total reduced by one; R002 still active so eventual finish recomputed from corrected messages.",
+      "precorrection_file_retained": false
+    },
+    {
+      "trial_id": "R002",
+      "raw_file": "incoming/R002-01.txt",
+      "message_index": 1,
+      "removed_framing_hex": "0a",
+      "before_characters": 39,
+      "after_characters": 38,
+      "before_utf8_bytes": 39,
+      "after_utf8_bytes": 38,
+      "stored_character_total_corrected": false,
+      "correction_detail": "R001 completed output total reduced by one; R002 still active so eventual finish recomputed from corrected messages.",
+      "precorrection_file_retained": false
+    }
+  ]
+}

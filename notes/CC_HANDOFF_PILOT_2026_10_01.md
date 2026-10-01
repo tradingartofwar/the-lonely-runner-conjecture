@@ -1,8 +1,16 @@
-# CC handoff comparison: execution stage
+# CC handoff comparison: completed pilot and qualified result
 
-October 1, 2026. The maintainer authorized fresh agents to review the oracle and conduct the bounded comparison. A source-first internal reviewer agrees with all ten outcomes and clarified scoped uncertainty. Matched handoffs now use identical statements and equal word counts, with labels/grouping/order as the treatment. A separate material review and recorder checks precede the execution freeze. See the [final protocol](../reviews/2026-10-01-cc-handoff-pilot/PROTOCOL.md) and [pilot package](../reviews/2026-10-01-cc-handoff-pilot/README.md).
+October 1, 2026. **OBSERVED:** all 80 frozen trials completed. CC-informed and strong conventional handoffs each produced 40/40 correct requested decisions, witnesses and counts, used 32 source requests, and made no unsupported full-pass/feasibility approvals. The [full report](../reviews/2026-10-01-cc-handoff-pilot/RESULTS_REPORT.md) preserves the complete comparison.
 
-This stage tests recipient use and source recovery, not summary generation or general memory improvement. Actual total-token cost and provider snapshot remain unavailable, so the original cost-effectiveness gate is unassessable. No outcome is claimed until the frozen comparison is collected and scored.
+Strict full-answer grading gives CC 38/40 and conventional 37/40. Five M2 explanations correctly leave case 16 untested but speak of “another policy,” adding distinctness the source does not establish. Initial permissive grading gives 40/40 each; penalizing only the two direct existence assertions gives 39/40 each. The [adjudication](../reviews/2026-10-01-cc-handoff-pilot/ADJUDICATION.md) preserves these interpretations and the exact countermodel. The one-answer strict-score difference does not establish a robust presentation advantage.
+
+The execution freeze was published at `c27323948d29c8fb25a6a45726c08bb3fe23b2d7` before any respondent call. All 80 contexts completed within 53m17.6s;144 raw messages and all delivery records pass the saved-record audit. One documented shell-framing newline correction affected the first two captures; no prompt or response wording changed. Primary and condition-masked internal AI review were reconciled after collection, without changing the frozen rubric or rerunning trials.
+
+The arms contained identical statements and matched word counts. This tests recipient use of labels/grouping/order. It does not test whether CC helps an author select better information from a long history. Actual token costs and the provider snapshot remain unavailable; the original cost-effectiveness gate is unassessable. These are ten synthetic cards with four repetitions, not eighty independent situations.
+
+**Useful distinction:** existence of a covering policy does not imply a covering policy different from the tested P. In M1, P is known to fail and distinctness follows; in M2, P's case 16 result is unobserved and it does not. Preserve that contrast along with the correct requested decisions and the explanatory overstatements.
+
+**Next question, unrun:** can CC improve summary authoring from longer histories against a strong conventional authoring process, with equal budgets, unseen downstream questions and measured costs? This needs a separate freeze. No further benchmark, mathematical computation or outside application was launched.
 
 ## Earlier preparation — preserved
 

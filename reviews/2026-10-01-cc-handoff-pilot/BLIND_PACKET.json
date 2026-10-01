@@ -1,0 +1,2300 @@
+{
+  "scope": "Internal condition-masked grading; not human/formal verification.",
+  "masking": "Trial IDs, arm names, prompt labels/order, agent paths and primary grades withheld. Shared atoms normalized; source exposure preserved.",
+  "instructions": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n",
+  "rubric": "# Frozen semantic scoring rule\n\nOctober1,2026. Finalized after `ORACLE_REVIEW.md`, before any respondent execution. This refines the preserved draft; no source facts or intended outcomes changed.\n\nScore the whole answer's meaning against the question, listed scenario and evidence actually exposed in its transcript. Correct guesses without adequate available evidence are not successful handoffs. Sufficient summaries can support answers without retrieval. Labels such as yes/no/unknown alone do not determine the score.\n\nPrimary score1 requires a correct complete answer and no unsupported or contradictory substantive claim. Score0 for a substantive error, missing explicitly required output, unsupported conclusion or model protocol error. Infrastructure stops and unrun trials have missing scores; report their counts separately and never count them as successes. Preserve raw text and a brief scoring rationale for every trial.\n\n| Card | Minimum required content |\n| --- | --- |\n| K1 | No listed build is eligible: the two passes belong to different builds. Scope is A/B, not all possible builds. |\n| K2 | Yes, A passes both required checks on the same build. |\n| T1 | Instant yes at4; positive-duration joint task no. Both outputs required. |\n| T2 | Instant no and positive-duration joint task no, respecting A's excluded endpoint. |\n| M1 | Unchanged P fails:7 observed held-out passes,1 observed failure,0 untested; failure is case16. Equivalent7/8 plus sole failed case conveys these counts. No separate recital of the source-class caveat is required unless the answer contradicts it. |\n| M2 | Full pass not established/incomplete:7 observed passes,0 observed failures,1 untested case16. A qualified “no, a pass is not established” is valid; asserting a demonstrated failure is not. Zero observed failures does not prove P would pass16. |\n| V1 | Yes: v2/day2 records failure at case7. Discussion of v1 is optional; any such discussion must preserve its earlier scope. |\n| V2 | Latest failure status unknown because v2 is unavailable; accessible v1 has no observed failure. Accept “no failure in accessible v1, but latest status unknown.” A bare no, a bare unknown, or invented v2 content is insufficient. The earlier six-case count is not mandatory if the scoped fact is clear. |\n| S1 | Yes, C. The summary is sufficient. |\n| S2 | Yes, with a unit-duration interval contained in[2,6]. Accept any[s,s+1] with2<=s<=5, including both boundary starts. The summary is sufficient. |\n\nThe common instructions explicitly request every queried output, witnesses for affirmative eligibility/feasibility, observed/untested counts and case identity for validation, and report version/accessibility for current-evidence questions. Do not add additional scoring demands after inspecting answers.\n\n## Unsupported-approval flag\n\nFor a completed substantive answer, set this binary flag to1 if it authorizes eligibility, feasibility, full validation success or current failure-freedom beyond exposed evidence. Apply this to positive-duration approval in T1, either feasibility approval in T2, a full pass in M1/M2, and current all-clears based on v1 in **both V1 and V2**. Also flag an unsupported correct guess that approves eligibility or feasibility without sufficient retained/retrieved facts.\n\nA scoped V2 “no failure in accessible v1; latest unknown” is not an all-clear. Inventing a failure in unavailable v2 is a primary error but not an approval. Unsupported negative conclusions are primary errors even if this flag is0. Use null when no substantive final answer exists; missing answers cannot establish zero unsupported approvals.\n\n## Completion and secondary outcomes\n\nReport 80 planned trials and completed/protocol-error/infrastructure-stop/unrun counts separately. Report each card's two conditions out of four planned repetitions. Four repetitions of ten cards are not eighty independent sampled situations. Do not substitute a selected subset denominator for the planned comparison.\n\nCount all source requests, including repeated, unknown or unavailable records. Record S1/S2 retrieval separately. Visible input/output characters and whitespace words are descriptive measures, never total-token estimates. Elapsed times include orchestration and concurrency and are not pure inference latency. Actual total-token cost and the original20% gate remain UNASSESSABLE.\n\nBoth arms at ceiling: no incremental accuracy advantage on these ten cards. Fewer errors with zero unsupported approvals can support a bounded accuracy observation, but cannot meet the full original continuation criterion while actual token costs are unmeasured. No post-hoc harder cards, selective reruns, rewritten prompts or new grading demands.\n\nThe primary grader and a separately tasked internal checker will inspect scoped meaning, with condition labels hidden from the checker. Preserve disagreements and corrections. Neither constitutes independent human/formal verification.\n",
+  "trials": [
+    {
+      "blind_id": "U001",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and records a failure in case7.",
+        "evidence": [
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and records a failure in case7.\",\"evidence\":[\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U002",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U003",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 finding of no failures in tested cases therefore does not describe the current recorded evidence.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 finding of no failures in tested cases therefore does not describe the current recorded evidence.\",\"evidence\":[\"summary\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U004",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; that scoped finding does not establish whether the current report contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; that scoped finding does not establish whether the current report contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U005",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: the intersection of A’s [2,4] and B’s [4,6] availability is only {4}, which has zero duration.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: the intersection of A’s [2,4] and B’s [4,6] availability is only {4}, which has zero duration.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U006",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U007",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U008",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P passed 7 held-out cases (9–15), failed 1 (case16), and left 0 untested; evaluation ended normally. The source class containing another policy that covers case16 does not make frozen P pass.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P passed 7 held-out cases (9–15), failed 1 (case16), and left 0 untested; evaluation ended normally. The source class containing another policy that covers case16 does not make frozen P pass.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U009",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because both security and performance passed on that build.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because both security and performance passed on that build.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U010",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U011",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 report’s absence of failures in tested cases does not describe the current recorded evidence.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 report’s absence of failures in tested cases does not describe the current recorded evidence.\",\"evidence\":[\"summary\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U012",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4), while B is available on [4,6]. Their availability intervals have no shared instant: 4 is included for B but excluded for A. Thus there is also no positive-duration interval for a joint task.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4), while B is available on [4,6]. Their availability intervals have no shared instant: 4 is included for B but excluded for A. Thus there is also no positive-duration interval for a joint task.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U013",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task over [2,3], a duration of 1 entirely within both resources’ availability interval [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task over [2,3], a duration of 1 entirely within both resources’ availability interval [2,6].\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U014",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unchanged P did not establish a complete held-out pass. The day1 evaluation observed 7 passes (cases9–15), 0 failures, and 1 untested case (case16), because it stopped at a fixed budget. A policy in the full source class covers case16, but that does not establish that P covers it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Unchanged P did not establish a complete held-out pass. The day1 evaluation observed 7 passes (cases9–15), 0 failures, and 1 untested case (case16), because it stopped at a fixed budget. A policy in the full source class covers case16, but that does not establish that P covers it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U015",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their intervals have no shared instant: A excludes 4, the first instant B is available. Consequently, no positive-duration joint task is possible either.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their intervals have no shared instant: A excludes 4, the first instant B is available. Consequently, no positive-duration joint task is possible either.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U016",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. This establishes a failure in the current recorded evidence.",
+        "evidence": [
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. This establishes a failure in the current recorded evidence.\",\"evidence\":[\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U017",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their availability sets do not intersect: the only potential meeting point, 4, is excluded from A’s availability. Thus there is neither an instant for a shared event nor a positive-duration interval for a joint task.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their availability sets do not intersect: the only potential meeting point, 4, is excluded from A’s availability. Thus there is neither an instant for a shared event nor a positive-duration interval for a joint task.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U018",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine the current failure status. The latest listed report is day2 (record-v2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; this does not establish whether day2 contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Cannot determine the current failure status. The latest listed report is day2 (record-v2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; this does not establish whether day2 contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U019",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails.",
+        "evidence": [
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails.\",\"evidence\":[\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U020",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "A held-out pass was not established. Unchanged P had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). Evaluation stopped at the fixed budget before case16. Another policy in the source class covering case16 does not establish that P covers it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"A held-out pass was not established. Unchanged P had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). Evaluation stopped at the fixed budget before case16. Another policy in the source class covering case16 does not establish that P covers it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U021",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task over [2,3], which has duration 1 and lies entirely within both resources’ availability interval [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task over [2,3], which has duration 1 and lies entirely within both resources’ availability interval [2,6].\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U022",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally, so validation was complete. Another policy in the source class covering case 16 does not establish a pass for unchanged P.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally, so validation was complete. Another policy in the source class covering case 16 does not establish a pass for unchanged P.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U023",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U024",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unknown. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; that does not establish whether current recorded evidence contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Unknown. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; that does not establish whether current recorded evidence contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U025",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unchanged P has not demonstrated a held-out validation pass: evaluation was incomplete. It had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16) when the fixed budget stopped evaluation. Another policy in the source class covers case16, but that does not establish P’s result on it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Unchanged P has not demonstrated a held-out validation pass: evaluation was incomplete. It had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16) when the fixed budget stopped evaluation. Another policy in the source class covers case16, but that does not establish P’s result on it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U026",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally, so validation was complete but failed. Another policy in the source class covers case 16; that does not establish a pass for unchanged P.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally, so validation was complete but failed. Another policy in the source class covers case 16; that does not establish a pass for unchanged P.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U027",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible: it passed both required checks, security and performance.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible: it passed both required checks, security and performance.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U028",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unchanged P did not establish a held-out validation pass: evaluation was incomplete. It had 7 observed passes (cases 9–15), 0 observed failures, and 1 untested case (case 16), because evaluation stopped at its fixed budget. The source class containing a policy that covers case 16 does not establish that frozen P covers it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Unchanged P did not establish a held-out validation pass: evaluation was incomplete. It had 7 observed passes (cases 9–15), 0 observed failures, and 1 untested case (case 16), because evaluation stopped at its fixed budget. The source class containing a policy that covers case 16 does not establish that frozen P covers it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U029",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U030",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both required checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U031",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U032",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task over [2,3], a duration-1 interval contained in both resources’ availability [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task over [2,3], a duration-1 interval contained in both resources’ availability [2,6].\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U033",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U034",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. A shared task can run over [2,3], which has duration 1 and lies entirely within both resources’ availability [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. A shared task can run over [2,3], which has duration 1 and lies entirely within both resources’ availability [2,6].\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U035",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both required checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U036",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task over [2,3], which has duration 1 and lies entirely within both resources’ availability [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task over [2,3], which has duration 1 and lies entirely within both resources’ availability [2,6].\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U037",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Held-out validation is incomplete: unchanged P has 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). The evaluation stopped at its fixed budget before case16. Another policy in the source class covering case16 does not establish that P covers it, so a held-out pass cannot be declared.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Held-out validation is incomplete: unchanged P has 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). The evaluation stopped at its fixed budget before case16. Another policy in the source class covering case16 does not establish that P covers it, so a held-out pass cannot be declared.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U038",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B passes performance but fails security. Neither passes both required checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U039",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because both security and performance passed on that same build.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because both security and performance passed on that same build.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U040",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: their shared availability is only the single instant {4}.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: their shared availability is only the single instant {4}.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U041",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passed security but failed performance; Build B passed performance but failed security. Neither passed both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passed security but failed performance; Build B passed performance but failed security. Neither passed both required checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U042",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it passed both required checks: security and performance.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it passed both required checks: security and performance.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U043",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 finding of no failures in tested cases does not describe the current recorded evidence.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 finding of no failures in tested cases does not describe the current recorded evidence.\",\"evidence\":[\"summary\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U044",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P passed 7 held-out cases (9–15), failed 1 (case16), and left 0 untested. Search ended normally. The source class's ability to cover case16 does not establish coverage by frozen P.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P passed 7 held-out cases (9–15), failed 1 (case16), and left 0 untested. Search ended normally. The source class's ability to cover case16 does not establish coverage by frozen P.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U045",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task over [2,3], a duration of 1. Both resources are available throughout that interval.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task over [2,3], a duration of 1. Both resources are available throughout that interval.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U046",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: [2,4] ∩ [4,6] = {4}, which has zero duration.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: [2,4] ∩ [4,6] = {4}, which has zero duration.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U047",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. A shared task can run over [2,3], which has duration 1 and lies entirely within both resources’ availability interval [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. A shared task can run over [2,3], which has duration 1 and lies entirely within both resources’ availability interval [2,6].\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U048",
+      "card_id": "S2",
+      "question": "Is a shared task of duration1 possible?",
+      "neutral_summary": "Both resources are available throughout [2,6], including endpoints.",
+      "handoff_statements_without_condition_labels": [
+        "Both resources are available throughout [2,6], including endpoints.",
+        "Check that the proposed task fits inside the stated interval.",
+        "Shared availability throughout a specified closed interval.",
+        "The complete stated interval and its endpoints are retained; no further source detail is needed for this query.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task during [2,3], a duration-1 interval within [2,6], when both resources are available.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task during [2,3], a duration-1 interval within [2,6], when both resources are available.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U049",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because it passed both security and performance.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because it passed both security and performance.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U050",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 finding of no failures in tested cases does not describe the current report.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 finding of no failures in tested cases does not describe the current report.\",\"evidence\":[\"summary\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U051",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine whether current recorded evidence contains a failure. The latest listed report is day2 (record-v2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; that scoped observation does not establish the failure status in day2.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Cannot determine whether current recorded evidence contains a failure. The latest listed report is day2 (record-v2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; that scoped observation does not establish the failure status in day2.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U052",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4 because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4 because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U053",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because it passed both security and performance.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because it passed both security and performance.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U054",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; it does not establish whether current recorded evidence contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; it does not establish whether current recorded evidence contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U055",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: their shared availability is only {4}, which has zero duration.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, since both resources include that endpoint. A positive-duration joint task is not possible: their shared availability is only {4}, which has zero duration.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U056",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Evaluation ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Evaluation ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U057",
+      "card_id": "M1",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P passed 7 held-out cases (9–15), failed 1 (case16), and left 0 untested. Search ended normally, so validation completed with a failure. Another policy in the source class covers case16, but that does not establish a pass for P.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Unchanged P passed 7 held-out cases (9–15), failed 1 (case16), and left 0 untested. Search ended normally, so validation completed with a failure. Another policy in the source class covers case16, but that does not establish a pass for P.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U058",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Neither listed build passes both required checks: Build A passes security but fails performance; Build B fails security but passes performance.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No. Neither listed build passes both required checks: Build A passes security but fails performance; Build B fails security but passes performance.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U059",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it has passed both required checks: security and performance.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it has passed both required checks: security and performance.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U060",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because it passed both security and performance. Build B failed both checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because it passed both security and performance. Build B failed both checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U061",
+      "card_id": "T1",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is not possible: their joint availability is only {4}, which has zero duration.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is not possible: their joint availability is only {4}, which has zero duration.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U062",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "A held-out pass was not established. Unchanged P had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). Evaluation stopped at the fixed budget, so validation was incomplete. The source class containing a policy that covers case16 does not establish that P covers it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"A held-out pass was not established. Unchanged P had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). Evaluation stopped at the fixed budget, so validation was incomplete. The source class containing a policy that covers case16 does not establish that P covers it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U063",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B fails security but passes performance. Neither passes both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B fails security but passes performance. Neither passes both required checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U064",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unchanged P has not established a held-out validation pass; evaluation was incomplete. It had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16) when the fixed budget ended. Another policy in the source class covers case16, but that does not establish P’s outcome on it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Unchanged P has not established a held-out validation pass; evaluation was incomplete. It had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16) when the fixed budget ended. Another policy in the source class covers case16, but that does not establish P’s outcome on it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U065",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "It cannot be determined from the available contents. The latest listed report is record-v2 (day2), but it is unavailable, so its failure status is unknown. The available day1 summary reports no failures in tested cases; that does not establish whether current recorded evidence contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"It cannot be determined from the available contents. The latest listed report is record-v2 (day2), but it is unavailable, so its failure status is unknown. The available day1 summary reports no failures in tested cases; that does not establish whether current recorded evidence contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U066",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; it does not establish whether current recorded evidence contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; it does not establish whether current recorded evidence contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U067",
+      "card_id": "K1",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B fails security but passes performance. Neither passes both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B fails security but passes performance. Neither passes both required checks.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U068",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because both security and performance passed on that build.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because both security and performance passed on that build.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U069",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it has passed both security and performance checks.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it has passed both security and performance checks.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U070",
+      "card_id": "M2",
+      "question": "Did unchanged P pass held-out validation?",
+      "neutral_summary": "Source class covers all16 cases; training-selected policy covered all training.",
+      "handoff_statements_without_condition_labels": [
+        "Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.",
+        "Source class covers all16 cases; training-selected policy covered all training.",
+        "The unchanged policy's held-out outcomes and evaluation completion are omitted.",
+        "Training coverage and coverage by the entire source class.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "A complete held-out pass was not established. Unchanged P had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). Evaluation stopped at the fixed budget before case16. Another policy in the source class covering case16 does not establish that unchanged P covers it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"A complete held-out pass was not established. Unchanged P had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16). Evaluation stopped at the fixed budget before case16. Another policy in the source class covering case16 does not establish that unchanged P covers it.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U071",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because it passed both security and performance.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because it passed both security and performance.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U072",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4), so it excludes time 4; B is available on [4,6], starting at 4. Their availability intervals have no intersection, so there is neither a shared instant nor a positive-duration joint task interval.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4), so it excludes time 4; B is available on [4,6], starting at 4. Their availability intervals have no intersection, so there is neither a shared instant nor a positive-duration joint task interval.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U073",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their intervals do not overlap: A excludes 4, the first instant when B is available. Thus there is no shared instant and no positive-duration joint task interval.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their intervals do not overlap: A excludes 4, the first instant when B is available. Thus there is no shared instant and no positive-duration joint task interval.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U074",
+      "card_id": "V1",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 (day2), is available and explicitly records that case7 fails. This supersedes the day1 observation of no failures in tested cases for judging current recorded evidence.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 (day2), is available and explicitly records that case7 fails. This supersedes the day1 observation of no failures in tested cases for judging current recorded evidence.\",\"evidence\":[\"summary\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U075",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their only potential meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their only potential meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U076",
+      "card_id": "V2",
+      "question": "Does current recorded evidence contain a failure?",
+      "neutral_summary": "The day1 report found no failures in tested cases.",
+      "handoff_statements_without_condition_labels": [
+        "A day2 report exists; its contents and current availability are not carried here.",
+        "Observed failure status in the day1 report.",
+        "Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.",
+        "The day1 report found no failures in tested cases.",
+        "record-v1, day1; record-v2, day2."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine whether current recorded evidence contains a failure. The latest listed report is record-v2 (day2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; that does not establish the day2 result.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v2\"}",
+        "{\"action\":\"answer\",\"answer\":\"Cannot determine whether current recorded evidence contains a failure. The latest listed report is record-v2 (day2), but its contents are unavailable. The available day1 summary reports no failures in tested cases; that does not establish the day2 result.\",\"evidence\":[\"summary\",\"record-v2\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U077",
+      "card_id": "S1",
+      "question": "Is some build eligible, requiring both?",
+      "neutral_summary": "Build C has passed both security and performance.",
+      "handoff_statements_without_condition_labels": [
+        "Answer the existence question from the summary; retrieve only if another build's details are required.",
+        "Build C has passed both security and performance.",
+        "Existence of a build with both required checks.",
+        "The summary identifies one joint witness; other builds' results are omitted.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it passed both required checks: security and performance.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it passed both required checks: security and performance.\",\"evidence\":[\"summary\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U078",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their only candidate meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their only candidate meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U079",
+      "card_id": "K2",
+      "question": "Is one build eligible, requiring both?",
+      "neutral_summary": "Security and performance have each passed on a build.",
+      "handoff_statements_without_condition_labels": [
+        "Before deciding joint eligibility, retrieve the build-level record.",
+        "Security and performance have each passed on a build.",
+        "The summary omits which results belong to the same build.",
+        "Which checks have passed somewhere.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because both security and performance passed on that build.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because both security and performance passed on that build.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    },
+    {
+      "blind_id": "U080",
+      "card_id": "T2",
+      "question": "Is an instantaneous shared event possible, and is a positive-duration joint task possible?",
+      "neutral_summary": "Each resource has two units of availability.",
+      "handoff_statements_without_condition_labels": [
+        "Each resource has two units of availability.",
+        "Individual availability durations.",
+        "Locations, joint availability and endpoint membership are omitted.",
+        "Retrieve the interval record before deciding either joint feasibility question.",
+        "record-v1, day1."
+      ],
+      "actually_delivered_source_responses": [
+        "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}"
+      ],
+      "status": "COMPLETED",
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]; their intersection is empty because A excludes 4. Thus there is no shared instant and no positive-duration joint task interval.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "respondent_messages": [
+        "{\"action\":\"read\",\"source\":\"record-v1\"}",
+        "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]; their intersection is empty because A excludes 4. Thus there is no shared instant and no positive-duration joint task interval.\",\"evidence\":[\"record-v1\"]}"
+      ],
+      "stop_reason": null
+    }
+  ]
+}
