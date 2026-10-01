@@ -1,3 +1,11 @@
+# CC handoff comparison: execution stage
+
+October 1, 2026. The maintainer authorized fresh agents to review the oracle and conduct the bounded comparison. A source-first internal reviewer agrees with all ten outcomes and clarified scoped uncertainty. Matched handoffs now use identical statements and equal word counts, with labels/grouping/order as the treatment. A separate material review and recorder checks precede the execution freeze. See the [final protocol](../reviews/2026-10-01-cc-handoff-pilot/PROTOCOL.md) and [pilot package](../reviews/2026-10-01-cc-handoff-pilot/README.md).
+
+This stage tests recipient use and source recovery, not summary generation or general memory improvement. Actual total-token cost and provider snapshot remain unavailable, so the original cost-effectiveness gate is unassessable. No outcome is claimed until the frozen comparison is collected and scored.
+
+## Earlier preparation — preserved
+
 # CC handoff comparison: fixed materials, experiment pending
 
 October 1, 2026. **Status: preparation and same-author static preflight completed; independent review and comparative model trial UNRUN.**

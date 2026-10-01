@@ -1,3 +1,13 @@
+# CC handoff pilot: execution materials
+
+October 1, 2026. Fresh-agent review and respondent execution are now authorized. The answer-key review is complete, the two arms carry matched statements and word counts, and recorder controls were repaired before execution. Final execution inputs are pinned in `FROZEN_MANIFEST.json`; no respondent outcome is implied by preparation checks.
+
+Read [PROTOCOL.md](PROTOCOL.md), [ORACLE_REVIEW.md](ORACLE_REVIEW.md), [MATERIALS_REVIEW.md](MATERIALS_REVIEW.md), [SCORING.md](SCORING.md), [RUNTIME.json](RUNTIME.json), [HANDOFFS.json](HANDOFFS.json) and [HARNESS_CHECK.json](HARNESS_CHECK.json). `STIMULI.json` contains the eighty exact initial prompts. The original cost gate remains unassessable; this is a bounded accuracy/retrieval pilot.
+
+## Preserved preparation record
+
+The following describes the earlier preparation commit `dea5e09`; its pending-authorization/review statements are historical.
+
 # CC-informed versus conventional handoffs: pilot preparation
 
 October 1, 2026. **No model answers have been collected.**
