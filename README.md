@@ -44,6 +44,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 ## Current state — October 1, 2026 UTC
 
+**Prepared next study — authoring from longer histories.** The [study package](notes/CC_HANDOFF_AUTHORING_STUDY_2026_10_01.md) compares two authoring procedures on six synthetic histories with a common 220-word output format, eighteen hidden questions and equal explicit budgets. It scores handoff-only answers before recovery and includes full-source controls. Materials and same-author static checks are complete; separate review and execution preparation remain pending. No new trial or CC advantage is claimed.
+
 **Visual companion:** [Nine interactive CC sections](visuals/compatibility-calculus/README.md)
 now include **08 · Carry it through**, the closing CC story. Three exact
 recaps connect integer contact to a physical time, zero-duration compression

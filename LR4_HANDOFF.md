@@ -2,6 +2,8 @@
 
 October 1, 2026. AI-assisted continuity audit and next-step recommendation.
 
+**Later LR 4 update:** the [long-history authoring study](notes/CC_HANDOFF_AUTHORING_STUDY_2026_10_01.md) now has a concrete protocol, six synthetic histories, eighteen hidden questions, matched authoring instructions, fixed schedules and a passing same-author static preflight. All model trials remain UNRUN. The next step is separate source-first key review and recorder preparation, then materials review and an execution freeze. The earlier recommendation below is preserved as its starting point.
+
 ## Resume here
 
 The final LR 3 handoff experiment **finished and was saved**. Its result commit is `9cfe6cb7d52a81e56357c0e11a0f44743e4dcbf2`, published at 08:47:48 America/Los_Angeles on October 1. Do not resume collection from an intermediate 20/40/60-trial checkpoint or rerun the completed pilot.
@@ -46,7 +48,7 @@ python reviews/2026-10-01-cc-handoff-pilot/analyze_results.py summarize
 
 This verifies stored evidence and arithmetic, not a fresh model experiment, independent semantic certification, or provider telemetry. Retrieved conversation context reached an intermediate collection update; it did not supply a complete verbatim LR 3 transcript or a verified final delivered message. No missing research artifact was identified in the recovered work. An unavailable old runtime's unsaved scratch state cannot be certified from this checkout. This note is a research resumption record, not a conversation transcript.
 
-## Recommended next work — proposed, not executed
+## Earlier recommendation — preparation now recorded above
 
 **Test whether CC helps an author select and preserve consequential information while compressing a longer history.** This addresses the remaining mechanism directly: the completed pilot supplied the same selected facts to both formats, so it could not test information selection.
 
