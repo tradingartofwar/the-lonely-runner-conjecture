@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-10-01",
+  "participant_interface": "collaboration.spawn_agent and same-agent followup_task",
+  "context_fork": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "provider_snapshot": null,
+  "actual_token_usage": null,
+  "hard_token_cap": null,
+  "sampling_parameters": null,
+  "unavailable_metadata_basis": "The exposed collaboration interface returns identities and status but no exact provider snapshot or token usage; its schema provides no hard-token-limit or sampling controls.",
+  "visible_controls": ["identical inherited configuration", "one author realization", "common word caps", "fixed wall-clock budgets", "one allowed source followup"],
+  "token_efficiency_claim_permitted": false,
+  "isolation": "No-history-fork prompts and instructions; shared filesystem remains technically accessible",
+  "recorder_writer": "one collection coordinator",
+  "publication_gate_verifier": "owner checks remote freeze and author seal before phase starts"
+}

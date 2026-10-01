@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_REVIEW_REQUIRED_UNRUN",
+  "status": "REVIEWED_EXECUTION_FREEZE_UNRUN",
   "source_checkpoint": "12fa1585652ac71cd8005cd148491fc559d88c82",
   "seed": 202610011218,
   "histories": 6,
@@ -17,13 +17,14 @@
   "model_override": null,
   "reasoning_override": null,
   "provider_snapshot": null,
-  "actual_token_accounting": "RECHECK_BEFORE_FREEZE; no token-efficiency claim if unavailable",
+  "actual_token_accounting": "UNAVAILABLE_CONFIRMED; no token-efficiency claim",
   "source_isolation": "prompt exclusion and instructions, not a filesystem security boundary",
-  "separate_oracle_review": "PENDING",
-  "separate_materials_review": "PENDING",
-  "recorder_rehearsal": "PENDING_IMPLEMENTATION",
+  "separate_oracle_review": "PASS; item-level optionality adopted in SCORING.md",
+  "separate_materials_review": "PASS; recording diagnostic defect corrected and rechecked",
+  "recorder_rehearsal": "PASS_19_DUMMY_CHECKS",
   "execution_freeze_commit": null,
   "authors_run": 0,
   "recipients_run": 0,
-  "controls_run": 0
+  "controls_run": 0,
+  "preparation_commit": "d03d3e0277541dd77e579fb418e4c76fec793174"
 }

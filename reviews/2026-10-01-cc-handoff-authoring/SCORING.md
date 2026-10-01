@@ -1,6 +1,6 @@
 # Proposed semantic scoring and retention audit
 
-**Preparation version; review required before execution.** Freeze after source-first review and before any author sees a history.
+**Execution scoring, clarified before participant collection.** The source-first reviewer confirmed all eighteen substantive answers. The item-level optionality distinctions in [ORACLE_COMPARISON.md](review/ORACLE_COMPARISON.md) are controlling scoring notes: its table separates requested outputs from optional explanations in the key's mixed-purpose required arrays. No history, query, or substantive answer was changed.
 
 The source histories establish scenario truth. A query's explicit hypothetical replaces only the named assumptions for that question. The proposed key identifies relevant evidence and expected outputs. Grade meaning rather than keywords, JSON formatting aesthetics, field placement, or the use of CC terminology. Event citations are helpful but are not required; a faithful sufficient summary can support a decision without reproducing every primitive or source identifier.
 

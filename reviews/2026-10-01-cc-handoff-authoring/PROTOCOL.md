@@ -1,6 +1,6 @@
-# Long-history handoff authoring: preparation protocol
+# Long-history handoff authoring: execution protocol
 
-October 1, 2026. **PREPARED; SAME-AUTHOR PREFLIGHT ONLY; MODEL EXPERIMENT UNRUN.** The preparation manifest pins a reviewable design. It is not an execution freeze. Separate source/key review and materials review must finish before a final execution manifest is committed.
+October 1, 2026. **PRE-EXECUTION PROTOCOL; collection status is recorded separately in run/STATUS.json.** The historical preparation manifest belongs to commit d03d3e0277541dd77e579fb418e4c76fec793174. EXECUTION_MANIFEST.json pins the reviewed inputs and recorder for this run; its containing commit must be published before author collection.
 
 ## Question and scope
 
@@ -64,7 +64,7 @@ Use one recorder writer. Dispatch the committed author order, then the committed
 
 Record every exact delivered prompt, source followup, response, participant identity, parent/fork configuration, ordering, timestamp, parse result, word count, and status. Record delivery success separately from a queued prompt. Checkpoints after every four completed authors and every twelve completed recipient/control contexts contain raw outcomes and status only, without grading. There are no selective reruns or extensions. A transport retry is allowed only after confirming the original delivery did not succeed; retain it as a deviation. An uncertain completed delivery is not blindly repeated.
 
-Preparation supplies exact prompt assembly and output validation, not a tested orchestration/recording driver. Before execution freeze, implement the single-writer recorder and exercise it on dummy data outside these six histories, including overlength, malformed, unavailable delivery, deadline, and recovery paths. Record that rehearsal and pin the driver. No fabricated dummy answers may enter study result records.
+The single-writer recorder is run_support.py; EXECUTION_GUIDE.md specifies mediated delivery and exact-message capture. The dummy rehearsal and review are preserved in review/. No fabricated dummy answers may enter study result records. The owner verifies remote publication at both phase gates; the recorder verifies hashes, not remote publication.
 
 Exact provider snapshot, actual token usage, sampling controls, and hard token limits were unavailable in the earlier runtime. Confirm availability again before the execution freeze. If still unavailable, record null; do not substitute word counts or elapsed orchestration time for actual token cost. Identical inherited settings, explicit response opportunities, common word caps, and wall budgets are the enforceable budget controls. They do not establish equal hidden reasoning compute. No paid API, external account, or additional compute purchase is part of this design.
 
@@ -90,7 +90,7 @@ Do not declare a winner from a single wording-sensitive grade. Report strict who
 3. Resolve review issues without any participant outcome data; preserve changes and review provenance. Internal AI review is not independent human or formal certification.
 4. Commit the final execution protocol, inputs, reviews, runtime declaration, driver, and SHA-256 manifest before author execution. Name that commit in every run record.
 
-No fresh review or respondent agents were launched during preparation. The current deliverable is a concrete design and materials package, not completed review, an execution freeze, a run result, or authorization to buy compute.
+No respondent agents were launched during the original preparation checkpoint. Separate internal review and recorder rehearsal are preserved for the execution freeze. Collection results and status are separate artifacts; frozen configuration counters describe the zero-call freeze boundary. Nothing here authorizes additional purchases or claims unavailable token telemetry.
 
 ## Representation checkpoint
 
