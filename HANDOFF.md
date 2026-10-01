@@ -4,9 +4,13 @@
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
+**Active research branch:** `research/near-doubling-overlap-2026-09-24` (not yet merged into `main` at the October 1 continuity audit)
+
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
 ## Current resumption — October 1, 2026
+
+**LR 4 continuity verified:** [LR4_HANDOFF.md](LR4_HANDOFF.md) is the concise resumption entry point. The final LR 3 pilot was already committed at `9cfe6cb`; a fresh-checkout replay passes all frozen-input checks, 80 trial records, 144 raw messages, and all 267 result-manifest file hashes. No recovered research artifact was found missing. The next recommended step is to design a separately frozen long-history summary-authoring comparison; no new experiment was launched during this audit.
 
 **Completed handoff pilot — correct decisions in both formats, with a wording-sensitive identity caveat.** The [handoff comparison](notes/CC_HANDOFF_PILOT_2026_10_01.md) completed all 80 frozen trials. Both formats gave 40/40 correct requested outputs and used 32 source requests. Strict full-answer grading gives CC 38/40 and conventional 37/40: five M2 explanations assert a distinct covering policy that the source does not establish. Initial permissive grading gives 40/40 each; the correction and sensitivity are preserved. This does not establish a robust presentation advantage. Frozen hashes,144 raw messages and all delivery records pass audit; total-token cost remains unassessable. Summary-authoring value is the next separate question, still unrun. Earlier mathematical and software-corpus proposals remain pending.
 

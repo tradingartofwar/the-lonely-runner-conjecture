@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [LR4_HANDOFF.md](LR4_HANDOFF.md) | Concise October 1 resumption, verified completed pilot, active research branch, and recommended next work |
 | [HANDOFF.md](HANDOFF.md) | Detailed current research state, evidence pointers, and next questions |
 | [Broader inquiries](notes/inquiries/README.md) | Reflections, thought experiments, and possible connections to other problems |
 | [RESEARCH_PLAN.md](RESEARCH_PLAN.md) | Strategy and research method |
