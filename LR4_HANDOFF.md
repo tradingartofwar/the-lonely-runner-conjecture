@@ -4,6 +4,8 @@ October 1, 2026. AI-assisted continuity audit and next-step recommendation.
 
 **Later LR 4 update — launch failure preserved:** the [authoring study closeout](reviews/2026-10-01-cc-handoff-authoring/RESULTS_REPORT.md) records completed source/materials review, nineteen recorder checks and execution freeze `2f5c620`. The first launch used an invalid uppercase worker name and was rejected; collection then stalled. No participant launched and no answer was collected. The attempt is closed, with one infrastructure-stop author cell, eleven unrun author cells and the entire reader phase unstarted. Next: verify one real dummy dispatch with a lowercase name, then publish a new run identity and budget. Do not reopen this attempt or mistake preparation for comparison results.
 
+**Live restart checkpoint:** the reviewed [run02 package](reviews/2026-10-01-cc-handoff-authoring-run02/RUN_IDENTITY.md) was frozen at `379403b` after a successful real dummy dispatch. All twelve authors completed and were published at `874379c` before recipients. The latest saved reader checkpoint contains 24 of 54 completed trials; collection is still running, with no comparative grading yet. Use run02/run/STATUS.json and its latest checkpoint to resume actual state. Do not restart completed cells or confuse this active run with the preserved failed attempt below.
+
 ## Resume here
 
 The final LR 3 handoff experiment **finished and was saved**. Its result commit is `9cfe6cb7d52a81e56357c0e11a0f44743e4dcbf2`, published at 08:47:48 America/Los_Angeles on October 1. Do not resume collection from an intermediate 20/40/60-trial checkpoint or rerun the completed pilot.
