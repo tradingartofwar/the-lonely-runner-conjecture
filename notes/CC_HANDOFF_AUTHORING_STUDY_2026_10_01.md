@@ -1,5 +1,27 @@
 # Can CC help decide what survives a handoff?
 
+Updated October 2, 2026 UTC. **Completed bounded comparison; no observed CC authoring advantage.**
+
+The [run02 result report](../reviews/2026-10-01-cc-handoff-authoring-run02/RESULTS_REPORT.md) completes the promised sequence: separate source-first key review, recorder rehearsal and materials review, published execution freeze, authors, published author seal, fresh recipients and controls, semantic grading, separate masked grade/retention review, and descriptive aggregation. Twelve authors and all fifty-four recipients/controls completed with no missing cells, protocol errors or source recoveries.
+
+| Outcome | CC handoffs | Strong conventional | Full source |
+| --- | ---: | ---: | ---: |
+| Supported complete first/final answers | 17/18 | 18/18 | 18/18 |
+| Correct requested outputs | 17/18 | 18/18 | 18/18 |
+| Handoff/query pairs with adequate support | 18/18 | 18/18 | Not applicable |
+
+One CC recipient treats a fixed backup's contents as unknown because the destination audit is incomplete. The handoff retained the needed source relation. The useful regression is object-, version- and operation-specific uncertainty; its presence does not causally identify an authoring-method effect. A second CC answer has an optional “planned work” scope ambiguity: the broader reading changes whole-answer credit to 16/18, while requested-output accuracy stays 17/18. One conventional author has a separate booking-wording ambiguity that no reader repeats. Initial and reviewed grades agree; all sensitivities remain visible.
+
+This is six paired synthetic history clusters, one author realization per method/history and three correlated questions per handoff. All controls pass, cases include an easy control and restated decisive facts, and actual tokens/provider snapshot are unavailable. No general equivalence, superiority, token efficiency, secure blinding or independent human validation follows. All 35 frozen files, 66 trial records and 66 raw responses pass the stored-record audit.
+
+The original failed launch remains a separate zero-delivery record. Run02's published freeze is `379403b`, its author seal `874379c`, and its closed collection/initial-grade commit `e4f7010`. Frozen preparation documents retain their historical tense; the result report and run status give the completed state.
+
+**Next recommended:** return to the [rank-three sheet coverage question](CC_THREE_PARAMETER_TEST_2026_09_30.md). Use the eight archived compact-menu misses to develop a joint integer-contact criterion, then freeze a new selection rule and fresh validation domain. Do not extend this finished benchmark merely to seek a preferred result. No new mathematical experiment has been launched here.
+
+## Original preparation and failed attempt — historical
+
+The following account preserves what was known at preparation. Its pending statements are superseded by the completed result above.
+
 October 1, 2026, America/Los_Angeles. **Reviewed and frozen; execution attempt closed before participant delivery.**
 
 The [closeout](../reviews/2026-10-01-cc-handoff-authoring/RESULTS_REPORT.md) records execution freeze `2f5c620`, completed source/materials reviews and nineteen dummy recorder checks. The first launch was rejected for an uppercase worker name, and collection stalled before correction. No participant launched and no answer was collected. All frozen inputs remain intact. Next: verify real dummy dispatch/capture, then publish a new run identity and budget. The preparation account below is retained as historical context; its pending-review statements have been superseded.

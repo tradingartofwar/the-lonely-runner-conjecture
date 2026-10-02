@@ -1,12 +1,12 @@
 # LR 4 — recovered research state
 
-October 1, 2026. AI-assisted continuity audit and next-step recommendation.
+Updated October 2, 2026 UTC. AI-assisted continuity audit, completed comparison and next-step recommendation.
 
-**Later LR 4 update — launch failure preserved:** the [authoring study closeout](reviews/2026-10-01-cc-handoff-authoring/RESULTS_REPORT.md) records completed source/materials review, nineteen recorder checks and execution freeze `2f5c620`. The first launch used an invalid uppercase worker name and was rejected; collection then stalled. No participant launched and no answer was collected. The attempt is closed, with one infrastructure-stop author cell, eleven unrun author cells and the entire reader phase unstarted. Next: verify one real dummy dispatch with a lowercase name, then publish a new run identity and budget. Do not reopen this attempt or mistake preparation for comparison results.
+**Earlier attempt — preserved separately:** the [zero-delivery closeout](reviews/2026-10-01-cc-handoff-authoring/RESULTS_REPORT.md) records completed reviews and rehearsal, freeze `2f5c620`, an uppercase worker-name rejection and a subsequent unexplained stall. No participant received a prompt. The failed attempt remains closed; the successful real dispatch check and separately frozen run02 supersede its former next step.
 
-**Live restart checkpoint:** [run02](reviews/2026-10-01-cc-handoff-authoring-run02/RUN_IDENTITY.md) has completed all twelve authors and all fifty-four reader/control trials. No source recoveries, protocol errors, missing trials or observed deviations occurred. The stored-record audit passes. Initial condition-masked grading identifies one clear backup/destination scope error and one wording sensitivity; separate grade and retention review is underway. No final method comparison has been declared. Preserve the closed run and initial grades; do not restart collection. The earlier failed attempt remains separate below.
+**Completed authoring comparison — no observed CC advantage.** The [run02 report](reviews/2026-10-01-cc-handoff-authoring-run02/RESULTS_REPORT.md) records all twelve authors and fifty-four reader/control trials complete. Supported complete first/final answers are CC 17/18, strong conventional 18/18 and full source 18/18, with no recoveries or missing trials. All 36 handoff/query retention checks are adequate. One CC reader transfers destination-audit uncertainty to a fixed backup's known contents; a separate wording sensitivity gives CC 16/18 under the broader reading without changing requested-output accuracy. Initial grades and separate review agree; frozen inputs, all raw records and sensitivities are preserved. Six paired synthetic histories and one author realization per method/history do not establish general method superiority. Next: return to the rank-three sheet coverage criterion, using the eight old misses as development counterexamples before a new rule and fresh validation domain.
 
-## Resume here
+## Earlier LR 3 recovery — preserved
 
 The final LR 3 handoff experiment **finished and was saved**. Its result commit is `9cfe6cb7d52a81e56357c0e11a0f44743e4dcbf2`, published at 08:47:48 America/Los_Angeles on October 1. Do not resume collection from an intermediate 20/40/60-trial checkpoint or rerun the completed pilot.
 
@@ -28,7 +28,7 @@ The question was whether CC-informed handoffs help recipients preserve consequen
 
 The strict difference comes entirely from five M2 explanations that say **another policy** covers a case when the evidence establishes only **a policy**. The policy might be the very one whose evaluation is incomplete. All five answers correctly retain the requested validation counts and uncertainty. A permissive reading gives 40/40 in each format; penalizing only explicit distinct-existence assertions gives 39/40 each. Preserve the strict primary score and these sensitivities together.
 
-**Conclusion:** this pilot does not establish a robust CC presentation advantage. It does not establish that CC is useless. It leaves summary authoring from longer histories untested. Ten cases repeated four times are not eighty independent situations. Actual token costs and an exact provider model snapshot are unavailable, so the original cost-effectiveness gate remains unassessable.
+**Conclusion:** this pilot does not establish a robust CC presentation advantage. It does not establish that CC is useless. That presentation pilot left summary authoring untested; the separate run02 result above now addresses the bounded authoring question. Ten cases repeated four times are not eighty independent situations. Actual token costs and an exact provider model snapshot are unavailable, so the original cost-effectiveness gate remains unassessable.
 
 The useful additional regression example is the distinction between an unspecified witness and a witness known to be different from the tested object. Correct requested outputs do not guarantee that the accompanying explanation contains no unsupported assertion.
 
@@ -50,7 +50,7 @@ python reviews/2026-10-01-cc-handoff-pilot/analyze_results.py summarize
 
 This verifies stored evidence and arithmetic, not a fresh model experiment, independent semantic certification, or provider telemetry. Retrieved conversation context reached an intermediate collection update; it did not supply a complete verbatim LR 3 transcript or a verified final delivered message. No missing research artifact was identified in the recovered work. An unavailable old runtime's unsaved scratch state cannot be certified from this checkout. This note is a research resumption record, not a conversation transcript.
 
-## Earlier recommendation — preparation now recorded above
+## Earlier recommendation — study now completed above
 
 **Test whether CC helps an author select and preserve consequential information while compressing a longer history.** This addresses the remaining mechanism directly: the completed pilot supplied the same selected facts to both formats, so it could not test information selection.
 
@@ -63,10 +63,10 @@ The next concrete step is a separate, bounded authoring-study protocol:
 
 This is a recommendation, not an execution freeze or a launched benchmark. No new respondent agents, trials, mathematical search, paid compute, or external application were run during this continuity audit.
 
-## Mathematical work remains available
+## Recommended next: mathematical sheet coverage
 
 The [rank-three test](notes/CC_THREE_PARAMETER_TEST_2026_09_30.md), committed at `52c4912`, found that four selected sheets cover 89/89 training cases but only 310/318 held-out cases. All 36 supplied sheets recover physical witnesses in all 407 cases. Keep the eight compact-menu failures: they are failures of that frozen selection, not counterexamples to Lonely Runner.
 
-If the next priority returns to mathematics, the saved next question is to derive a coverage criterion for a sheet's joint integer-contact image, use the eight misses as development counterexamples, and then freeze a new rule with a fresh validation domain. The [transfer-value assessment](notes/ULTRA_TRANSFER_VALUE_ASSESSMENT_2026_09_30.md) also preserves the optional export of three exact compatibility regressions. These are separate pending directions, not work silently launched alongside the recommended authoring study.
+The recommended next question is to derive a coverage criterion for a sheet's joint integer-contact image, use the eight misses as development counterexamples, and then freeze a new rule with a fresh validation domain. The [transfer-value assessment](notes/ULTRA_TRANSFER_VALUE_ASSESSMENT_2026_09_30.md) also preserves the optional export of three exact compatibility regressions. These are separate pending directions, not work silently launched alongside the recommended authoring study.
 
 Earlier universal arguments retain their recorded proof-candidate status. This recovery does not promote a mathematical claim or demonstrate external utility.
