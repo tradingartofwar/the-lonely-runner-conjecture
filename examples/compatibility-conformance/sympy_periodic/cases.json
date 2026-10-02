@@ -1,0 +1,12 @@
+[
+  {"id":"documentation_cosine","horizon":{"lo":"0","hi":"4","left_open":false,"right_open":true},"atoms":[{"function":"cos","frequency":"1","phase":"0","relation":"<","threshold":"1/2"}]},
+  {"id":"mixed_periods","horizon":{"lo":"0","hi":"4","left_open":false,"right_open":true},"atoms":[{"function":"sin","frequency":"1","phase":"0","relation":"<=","threshold":"0"},{"function":"cos","frequency":"2","phase":"0","relation":">=","threshold":"0"}]},
+  {"id":"same_time_empty","horizon":{"lo":"0","hi":"2","left_open":false,"right_open":true},"atoms":[{"function":"sin","frequency":"1","phase":"0","relation":">","threshold":"0"},{"function":"sin","frequency":"1","phase":"0","relation":"<","threshold":"0"}]},
+  {"id":"equality_only","horizon":{"lo":"0","hi":"4","left_open":false,"right_open":true},"atoms":[{"function":"sin","frequency":"1","phase":"0","relation":">=","threshold":"0"},{"function":"sin","frequency":"1","phase":"0","relation":"<=","threshold":"0"}]},
+  {"id":"offsets","horizon":{"lo":"0","hi":"3","left_open":false,"right_open":true},"atoms":[{"function":"sin","frequency":"2","phase":"1/3","relation":">=","threshold":"1/2"},{"function":"cos","frequency":"1","phase":"0","relation":"<=","threshold":"0"}]},
+  {"id":"rational_frequency","horizon":{"lo":"-1","hi":"5","left_open":false,"right_open":true},"atoms":[{"function":"cos","frequency":"1/2","phase":"1/3","relation":">","threshold":"0"},{"function":"sin","frequency":"1","phase":"0","relation":">=","threshold":"-1/2"}]},
+  {"id":"negative_horizon","horizon":{"lo":"-4","hi":"0","left_open":false,"right_open":true},"atoms":[{"function":"sin","frequency":"1","phase":"0","relation":"<=","threshold":"0"}]},
+  {"id":"closed_horizon","horizon":{"lo":"0","hi":"2","left_open":false,"right_open":false},"atoms":[{"function":"sin","frequency":"1","phase":"0","relation":">=","threshold":"0"},{"function":"sin","frequency":"1","phase":"0","relation":"<=","threshold":"0"}]},
+  {"id":"extremal_singletons","horizon":{"lo":"-1","hi":"3","left_open":false,"right_open":true},"atoms":[{"function":"sin","frequency":"1","phase":"0","relation":">=","threshold":"1"}]},
+  {"id":"second_period_only","horizon":{"lo":"2","hi":"4","left_open":false,"right_open":true},"atoms":[{"function":"cos","frequency":"1","phase":"0","relation":"<","threshold":"1/2"}]}
+]

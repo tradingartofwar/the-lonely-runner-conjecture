@@ -1,0 +1,1116 @@
+{
+  "cases": [
+    {
+      "atom_sources": [
+        {
+          "expression": "cos(pi*t) < 1/2",
+          "lift_range": [
+            -1,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "5/3",
+              "left_closed": false,
+              "lo": "1/3",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "cos",
+          "phase": "0",
+          "relation": "<",
+          "threshold": "1/2"
+        }
+      ],
+      "checks": {
+        "event_count": 6,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 11
+      },
+      "complete_intervals": [
+        {
+          "hi": "5/3",
+          "left_closed": false,
+          "lo": "1/3",
+          "right_closed": false
+        },
+        {
+          "hi": "11/3",
+          "left_closed": false,
+          "lo": "7/3",
+          "right_closed": false
+        }
+      ],
+      "horizon": {
+        "hi": "4",
+        "left_open": false,
+        "lo": "0",
+        "right_open": true
+      },
+      "id": "documentation_cosine",
+      "oracle_intervals": [
+        {
+          "hi": "5/3",
+          "left_closed": false,
+          "lo": "1/3",
+          "right_closed": false
+        },
+        {
+          "hi": "11/3",
+          "left_closed": false,
+          "lo": "7/3",
+          "right_closed": false
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "5/3",
+          "left_closed": false,
+          "lo": "1/3",
+          "right_closed": false
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 0,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*t) <= 0",
+          "lift_range": [
+            -1,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "0",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "2",
+              "left_closed": true,
+              "lo": "1",
+              "right_closed": false
+            }
+          ]
+        },
+        {
+          "expression": "cos(2*pi*t) >= 0",
+          "lift_range": [
+            -1,
+            5
+          ],
+          "period": "1",
+          "principal_seed": [
+            {
+              "hi": "1/4",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "1",
+              "left_closed": true,
+              "lo": "3/4",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": "<=",
+          "threshold": "0"
+        },
+        {
+          "frequency": "2",
+          "function": "cos",
+          "phase": "0",
+          "relation": ">=",
+          "threshold": "0"
+        }
+      ],
+      "checks": {
+        "event_count": 13,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 25
+      },
+      "complete_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "5/4",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        },
+        {
+          "hi": "2",
+          "left_closed": true,
+          "lo": "7/4",
+          "right_closed": true
+        },
+        {
+          "hi": "13/4",
+          "left_closed": true,
+          "lo": "3",
+          "right_closed": true
+        },
+        {
+          "hi": "4",
+          "left_closed": true,
+          "lo": "15/4",
+          "right_closed": false
+        }
+      ],
+      "horizon": {
+        "hi": "4",
+        "left_open": false,
+        "lo": "0",
+        "right_open": true
+      },
+      "id": "mixed_periods",
+      "oracle_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "5/4",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        },
+        {
+          "hi": "2",
+          "left_closed": true,
+          "lo": "7/4",
+          "right_closed": true
+        },
+        {
+          "hi": "13/4",
+          "left_closed": true,
+          "lo": "3",
+          "right_closed": true
+        },
+        {
+          "hi": "4",
+          "left_closed": true,
+          "lo": "15/4",
+          "right_closed": false
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 1,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*t) > 0",
+          "lift_range": [
+            -1,
+            2
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "1",
+              "left_closed": false,
+              "lo": "0",
+              "right_closed": false
+            }
+          ]
+        },
+        {
+          "expression": "sin(pi*t) < 0",
+          "lift_range": [
+            -1,
+            2
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "2",
+              "left_closed": false,
+              "lo": "1",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": ">",
+          "threshold": "0"
+        },
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": "<",
+          "threshold": "0"
+        }
+      ],
+      "checks": {
+        "event_count": 3,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 5
+      },
+      "complete_intervals": [],
+      "horizon": {
+        "hi": "2",
+        "left_open": false,
+        "lo": "0",
+        "right_open": true
+      },
+      "id": "same_time_empty",
+      "oracle_intervals": [],
+      "principal_only_intervals": [],
+      "principal_only_matches_complete": true,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 0,
+      "status": "PASS",
+      "verdict": "EMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*t) >= 0",
+          "lift_range": [
+            -1,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "1",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            }
+          ]
+        },
+        {
+          "expression": "sin(pi*t) <= 0",
+          "lift_range": [
+            -1,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "0",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "2",
+              "left_closed": true,
+              "lo": "1",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": ">=",
+          "threshold": "0"
+        },
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": "<=",
+          "threshold": "0"
+        }
+      ],
+      "checks": {
+        "event_count": 5,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 9
+      },
+      "complete_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        },
+        {
+          "hi": "2",
+          "left_closed": true,
+          "lo": "2",
+          "right_closed": true
+        },
+        {
+          "hi": "3",
+          "left_closed": true,
+          "lo": "3",
+          "right_closed": true
+        }
+      ],
+      "horizon": {
+        "hi": "4",
+        "left_open": false,
+        "lo": "0",
+        "right_open": true
+      },
+      "id": "equality_only",
+      "oracle_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        },
+        {
+          "hi": "2",
+          "left_closed": true,
+          "lo": "2",
+          "right_closed": true
+        },
+        {
+          "hi": "3",
+          "left_closed": true,
+          "lo": "3",
+          "right_closed": true
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 4,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*(2*t + 1/3)) >= 1/2",
+          "lift_range": [
+            -1,
+            4
+          ],
+          "period": "1",
+          "principal_seed": [
+            {
+              "hi": "1/4",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "1",
+              "left_closed": true,
+              "lo": "11/12",
+              "right_closed": false
+            }
+          ]
+        },
+        {
+          "expression": "cos(pi*t) <= 0",
+          "lift_range": [
+            -1,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "3/2",
+              "left_closed": true,
+              "lo": "1/2",
+              "right_closed": true
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "2",
+          "function": "sin",
+          "phase": "1/3",
+          "relation": ">=",
+          "threshold": "1/2"
+        },
+        {
+          "frequency": "1",
+          "function": "cos",
+          "phase": "0",
+          "relation": "<=",
+          "threshold": "0"
+        }
+      ],
+      "checks": {
+        "event_count": 11,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 21
+      },
+      "complete_intervals": [
+        {
+          "hi": "5/4",
+          "left_closed": true,
+          "lo": "11/12",
+          "right_closed": true
+        },
+        {
+          "hi": "3",
+          "left_closed": true,
+          "lo": "35/12",
+          "right_closed": false
+        }
+      ],
+      "horizon": {
+        "hi": "3",
+        "left_open": false,
+        "lo": "0",
+        "right_open": true
+      },
+      "id": "offsets",
+      "oracle_intervals": [
+        {
+          "hi": "5/4",
+          "left_closed": true,
+          "lo": "11/12",
+          "right_closed": true
+        },
+        {
+          "hi": "3",
+          "left_closed": true,
+          "lo": "35/12",
+          "right_closed": false
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "11/12",
+          "right_closed": false
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 0,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "cos(pi*(t/2 + 1/3)) > 0",
+          "lift_range": [
+            -2,
+            3
+          ],
+          "period": "4",
+          "principal_seed": [
+            {
+              "hi": "1/3",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": false
+            },
+            {
+              "hi": "4",
+              "left_closed": false,
+              "lo": "7/3",
+              "right_closed": false
+            }
+          ]
+        },
+        {
+          "expression": "sin(pi*t) >= -1/2",
+          "lift_range": [
+            -2,
+            4
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "7/6",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "2",
+              "left_closed": true,
+              "lo": "11/6",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1/2",
+          "function": "cos",
+          "phase": "1/3",
+          "relation": ">",
+          "threshold": "0"
+        },
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": ">=",
+          "threshold": "-1/2"
+        }
+      ],
+      "checks": {
+        "event_count": 11,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 21
+      },
+      "complete_intervals": [
+        {
+          "hi": "-5/6",
+          "left_closed": true,
+          "lo": "-1",
+          "right_closed": true
+        },
+        {
+          "hi": "1/3",
+          "left_closed": true,
+          "lo": "-1/6",
+          "right_closed": false
+        },
+        {
+          "hi": "19/6",
+          "left_closed": false,
+          "lo": "7/3",
+          "right_closed": true
+        },
+        {
+          "hi": "13/3",
+          "left_closed": true,
+          "lo": "23/6",
+          "right_closed": false
+        }
+      ],
+      "horizon": {
+        "hi": "5",
+        "left_open": false,
+        "lo": "-1",
+        "right_open": true
+      },
+      "id": "rational_frequency",
+      "oracle_intervals": [
+        {
+          "hi": "-5/6",
+          "left_closed": true,
+          "lo": "-1",
+          "right_closed": true
+        },
+        {
+          "hi": "1/3",
+          "left_closed": true,
+          "lo": "-1/6",
+          "right_closed": false
+        },
+        {
+          "hi": "19/6",
+          "left_closed": false,
+          "lo": "7/3",
+          "right_closed": true
+        },
+        {
+          "hi": "13/3",
+          "left_closed": true,
+          "lo": "23/6",
+          "right_closed": false
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "1/3",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": false
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 0,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*t) <= 0",
+          "lift_range": [
+            -3,
+            1
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "0",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "2",
+              "left_closed": true,
+              "lo": "1",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": "<=",
+          "threshold": "0"
+        }
+      ],
+      "checks": {
+        "event_count": 5,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 9
+      },
+      "complete_intervals": [
+        {
+          "hi": "-4",
+          "left_closed": true,
+          "lo": "-4",
+          "right_closed": true
+        },
+        {
+          "hi": "-2",
+          "left_closed": true,
+          "lo": "-3",
+          "right_closed": true
+        },
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "-1",
+          "right_closed": false
+        }
+      ],
+      "horizon": {
+        "hi": "0",
+        "left_open": false,
+        "lo": "-4",
+        "right_open": true
+      },
+      "id": "negative_horizon",
+      "oracle_intervals": [
+        {
+          "hi": "-4",
+          "left_closed": true,
+          "lo": "-4",
+          "right_closed": true
+        },
+        {
+          "hi": "-2",
+          "left_closed": true,
+          "lo": "-3",
+          "right_closed": true
+        },
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "-1",
+          "right_closed": false
+        }
+      ],
+      "principal_only_intervals": [],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 1,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*t) >= 0",
+          "lift_range": [
+            -1,
+            2
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "1",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            }
+          ]
+        },
+        {
+          "expression": "sin(pi*t) <= 0",
+          "lift_range": [
+            -1,
+            2
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "0",
+              "left_closed": true,
+              "lo": "0",
+              "right_closed": true
+            },
+            {
+              "hi": "2",
+              "left_closed": true,
+              "lo": "1",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": ">=",
+          "threshold": "0"
+        },
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": "<=",
+          "threshold": "0"
+        }
+      ],
+      "checks": {
+        "event_count": 3,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 5
+      },
+      "complete_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        },
+        {
+          "hi": "2",
+          "left_closed": true,
+          "lo": "2",
+          "right_closed": true
+        }
+      ],
+      "horizon": {
+        "hi": "2",
+        "left_open": false,
+        "lo": "0",
+        "right_open": false
+      },
+      "id": "closed_horizon",
+      "oracle_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        },
+        {
+          "hi": "2",
+          "left_closed": true,
+          "lo": "2",
+          "right_closed": true
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "0",
+          "left_closed": true,
+          "lo": "0",
+          "right_closed": true
+        },
+        {
+          "hi": "1",
+          "left_closed": true,
+          "lo": "1",
+          "right_closed": true
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 3,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "sin(pi*t) >= 1",
+          "lift_range": [
+            -2,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "1/2",
+              "left_closed": true,
+              "lo": "1/2",
+              "right_closed": true
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "sin",
+          "phase": "0",
+          "relation": ">=",
+          "threshold": "1"
+        }
+      ],
+      "checks": {
+        "event_count": 4,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 7
+      },
+      "complete_intervals": [
+        {
+          "hi": "1/2",
+          "left_closed": true,
+          "lo": "1/2",
+          "right_closed": true
+        },
+        {
+          "hi": "5/2",
+          "left_closed": true,
+          "lo": "5/2",
+          "right_closed": true
+        }
+      ],
+      "horizon": {
+        "hi": "3",
+        "left_open": false,
+        "lo": "-1",
+        "right_open": true
+      },
+      "id": "extremal_singletons",
+      "oracle_intervals": [
+        {
+          "hi": "1/2",
+          "left_closed": true,
+          "lo": "1/2",
+          "right_closed": true
+        },
+        {
+          "hi": "5/2",
+          "left_closed": true,
+          "lo": "5/2",
+          "right_closed": true
+        }
+      ],
+      "principal_only_intervals": [
+        {
+          "hi": "1/2",
+          "left_closed": true,
+          "lo": "1/2",
+          "right_closed": true
+        }
+      ],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 2,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    },
+    {
+      "atom_sources": [
+        {
+          "expression": "cos(pi*t) < 1/2",
+          "lift_range": [
+            0,
+            3
+          ],
+          "period": "2",
+          "principal_seed": [
+            {
+              "hi": "5/3",
+              "left_closed": false,
+              "lo": "1/3",
+              "right_closed": false
+            }
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "frequency": "1",
+          "function": "cos",
+          "phase": "0",
+          "relation": "<",
+          "threshold": "1/2"
+        }
+      ],
+      "checks": {
+        "event_count": 4,
+        "exact_set_agreement": true,
+        "exact_substitution_agreement": true,
+        "probe_count": 7
+      },
+      "complete_intervals": [
+        {
+          "hi": "11/3",
+          "left_closed": false,
+          "lo": "7/3",
+          "right_closed": false
+        }
+      ],
+      "horizon": {
+        "hi": "4",
+        "left_open": false,
+        "lo": "2",
+        "right_open": true
+      },
+      "id": "second_period_only",
+      "oracle_intervals": [
+        {
+          "hi": "11/3",
+          "left_closed": false,
+          "lo": "7/3",
+          "right_closed": false
+        }
+      ],
+      "principal_only_intervals": [],
+      "principal_only_matches_complete": false,
+      "principal_only_scope": "documented limited result; not a competitor",
+      "singleton_count": 0,
+      "status": "PASS",
+      "verdict": "NONEMPTY"
+    }
+  ],
+  "claim_status": "OBSERVED development regression",
+  "method": "ordinary per-atom periodic lifting followed by exact set intersection",
+  "provenance": {
+    "artifact_sha256": {
+      "PROTOCOL.md": "56d428de34a0ab6e4d796a2fad33433414b29fac5997ac3ae9e26474dbf385ad",
+      "cases.json": "205a6f409762dec7e50ce2124c6e867f3cdc6634cc3bd1f86d91d1849c704990",
+      "demo.py": "db8b41effd27f9fdb13196267cd6d6c086ce974f1c42f8c386ec40463586a433",
+      "requirements.txt": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94"
+    },
+    "module_sha256": {
+      "sympy.calculus.util": "a810d395be553fec493df87635dcf7ef334c569b1e5d6e1defb8710422d7e400",
+      "sympy.sets.sets": "fa2b8b9cf58bba709ad28384ac710b3bd1242d95ece8bd8015642090215b25c0",
+      "sympy.solvers.inequalities": "933e87cc0cad8385767aa48ac06cdb26e63215f823e9b1525209358b5e73569d"
+    },
+    "package_pins": {
+      "mpmath": {
+        "record_sha256": "89869bb99d259b6078aa20ebadb44d921aa20595ffa58ab929e3082d7f3f5529",
+        "version": "1.3.0"
+      },
+      "sympy": {
+        "record_sha256": "0242c32c8821655168c07d0c4fe75d8559fc265d8f6322fa8a4d82408647fa81",
+        "version": "1.14.0"
+      }
+    },
+    "repository_baseline": "29e54d32e2ff5349bdb0c3db56fab753a0e44c94"
+  },
+  "schema_version": 1,
+  "summary": {
+    "all_passed": true,
+    "cases": 10,
+    "errors": 0,
+    "executed_cases": 10,
+    "passed": 10,
+    "unsupported": 0
+  }
+}

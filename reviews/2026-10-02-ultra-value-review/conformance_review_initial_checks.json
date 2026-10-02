@@ -1,0 +1,143 @@
+{
+  "arithmetic_comparisons": [
+    {
+      "case": "isolated_points",
+      "complete_set": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "equal": true,
+      "method": "successive exact band intersection versus event decomposition"
+    },
+    {
+      "case": "widest_only",
+      "complete_set": [
+        [
+          "3/16",
+          "23/120"
+        ],
+        [
+          "5/24",
+          "5/24"
+        ],
+        [
+          "145/408",
+          "23/64"
+        ],
+        [
+          "49/120",
+          "167/408"
+        ],
+        [
+          "19/40",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "21/40"
+        ],
+        [
+          "241/408",
+          "71/120"
+        ],
+        [
+          "41/64",
+          "263/408"
+        ],
+        [
+          "19/24",
+          "19/24"
+        ],
+        [
+          "97/120",
+          "13/16"
+        ]
+      ],
+      "equal": true,
+      "method": "successive exact band intersection versus event decomposition"
+    },
+    {
+      "candidates": [
+        "1/8"
+      ],
+      "case": "complete_relations",
+      "method": "third-coordinate lap enumeration",
+      "surviving": []
+    },
+    {
+      "candidates": [
+        "7/80",
+        "23/80",
+        "39/80",
+        "11/16",
+        "71/80"
+      ],
+      "case": "clock_lifts",
+      "method": "third-coordinate lap enumeration",
+      "surviving": [
+        "11/16"
+      ]
+    }
+  ],
+  "limits": "Audit controls for this frozen fixture, not independent human certification, a parser security audit, or external solver defect evidence.",
+  "mutation_checks": [
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source changed: reviews/2026-09-30-cc-three-parameter/discovery.json",
+      "mutation": "wrong expected source digest"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Archived physical-time disagreement",
+      "mutation": "wrong clock expected time"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Archived full-set disagreement",
+      "mutation": "removed isolated point from expected full set"
+    },
+    {
+      "accepted": true,
+      "desired_for_strict_source_contract": "reject",
+      "error": null,
+      "mutation": "wrong source selector"
+    },
+    {
+      "accepted": true,
+      "desired_for_strict_source_contract": "reject",
+      "error": null,
+      "mutation": "wrong claimed source commit"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Joint relation/reference mismatch",
+      "mutation": "changed same-point physical rates without source update"
+    },
+    {
+      "accepted": true,
+      "desired_for_strict_source_contract": "reject",
+      "error": null,
+      "mutation": "unknown query kind accepted through else branch"
+    }
+  ],
+  "reviewed_checker_sha256": "ee560688c993617c9ecd6f59f2e9e5a22ddcb4165435bf93d4cc6257874509c2",
+  "reviewed_fixture_sha256": "cb5fdede6c10c32e7fb1243698b4b3d511035c5ab20bece9c9eb332d86167282"
+}
