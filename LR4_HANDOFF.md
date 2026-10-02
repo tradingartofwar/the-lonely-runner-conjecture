@@ -2,7 +2,7 @@
 
 October 1, 2026. AI-assisted continuity audit and next-step recommendation.
 
-**Later LR 4 update:** the [long-history authoring study](notes/CC_HANDOFF_AUTHORING_STUDY_2026_10_01.md) now has a concrete protocol, six synthetic histories, eighteen hidden questions, matched authoring instructions, fixed schedules and a passing same-author static preflight. All model trials remain UNRUN. The next step is separate source-first key review and recorder preparation, then materials review and an execution freeze. The earlier recommendation below is preserved as its starting point.
+**Later LR 4 update — launch failure preserved:** the [authoring study closeout](reviews/2026-10-01-cc-handoff-authoring/RESULTS_REPORT.md) records completed source/materials review, nineteen recorder checks and execution freeze `2f5c620`. The first launch used an invalid uppercase worker name and was rejected; collection then stalled. No participant launched and no answer was collected. The attempt is closed, with one infrastructure-stop author cell, eleven unrun author cells and the entire reader phase unstarted. Next: verify one real dummy dispatch with a lowercase name, then publish a new run identity and budget. Do not reopen this attempt or mistake preparation for comparison results.
 
 ## Resume here
 
