@@ -1,0 +1,49 @@
+{
+  "freeze_commit": "1b4c636a68363047566d5f816c4bda661b0e1c9f",
+  "records": [
+    {
+      "stage": "construction",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "reviews/2026-10-02-cc-orbit-intervals/run.py",
+        "--freeze",
+        "1b4c636a68363047566d5f816c4bda661b0e1c9f"
+      ],
+      "started_utc": "2026-10-02T12:48:45.068745+00:00",
+      "wall_limit_seconds": 600,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"COMPLETED_FROZEN_COMPARISON\", \"fresh_cases\": 1197, \"coverage\": {\"widest\": 981, \"all_components\": 1197, \"positive_only\": 1196}, \"core_pairs\": 140, \"core_classes\": {\"MIXED\": 61, \"POSITIVE_ONLY\": 79}, \"core_components\": 3938, \"maximum_components_per_core\": 54, \"counts\": {\"core_builds\": 140, \"core_events\": 75348, \"direct_phase_predicates\": 150556, \"component_queries\": 34364, \"lift_queries\": 35394}}\n",
+      "stderr": "",
+      "ended_utc": "2026-10-02T12:48:50.846276+00:00",
+      "elapsed_seconds": 5.777535410001292
+    },
+    {
+      "stage": "verification",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "reviews/2026-10-02-cc-orbit-intervals/verify.py"
+      ],
+      "started_utc": "2026-10-02T12:48:50.846789+00:00",
+      "wall_limit_seconds": 600,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"checks\": {\"core_components\": 3938, \"source_endpoint_band_checks\": 63008, \"component_bits\": 34364, \"witnesses\": 1197, \"full_physical_cases\": 1197}, \"coverage\": {\"widest\": 981, \"all_components\": 1197, \"positive_only\": 1196}, \"negative_event_checks\": 0}\n",
+      "stderr": "",
+      "ended_utc": "2026-10-02T12:48:56.488544+00:00",
+      "elapsed_seconds": 5.641770433001511
+    },
+    {
+      "stage": "reproduction",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "reviews/2026-10-02-cc-orbit-intervals/reproduce.py"
+      ],
+      "started_utc": "2026-10-02T12:49:26.521641+00:00",
+      "wall_limit_seconds_per_subprocess": 600,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_BYTE_FOR_BYTE\", \"freeze_commit\": \"1b4c636a68363047566d5f816c4bda661b0e1c9f\", \"outputs\": {\"RESULTS.json\": \"40a06e6ea078848d289868aa8c5b21fc57ec2a3b94bc13422a46b5e27286ec67\", \"SUMMARY.json\": \"a9cb2bf97b0f4ae8b5f653f662cfd63e034697f4d35ca69b440cfce366b36817\", \"VERIFICATION.json\": \"3a341653a5b5bb7b46dec506b8237eaa3281f1215a00547b2147582ba4aab45f\"}, \"scope\": \"Temporary output directory in the same pinned checkout; no new domain or new participant.\"}\n",
+      "stderr": "",
+      "ended_utc": "2026-10-02T12:49:38.511630+00:00",
+      "elapsed_seconds": 11.989992889997666
+    }
+  ]
+}
