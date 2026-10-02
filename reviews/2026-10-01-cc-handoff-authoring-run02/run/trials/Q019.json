@@ -1,0 +1,60 @@
+{
+  "question": "H06-Q2",
+  "history": "H06",
+  "method": "conventional",
+  "author": "A006",
+  "id": "Q019",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q019",
+  "started_at": "2026-10-02T00:50:28.085869+00:00",
+  "started_epoch": 1790902228.0858867,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nHow many additional participants can the current plan accommodate separately under the room cap, kit inventory and leader ratio? What is the overall remaining participant capacity?\n\nEVIDENCE\nSTATUS\nAt the end of Day 12, the ninety-minute headphone listening workshop is fully feasible: 22 participants, 24 reserved functioning kits, two confirmed leaders, and a confirmed 10:00–11:30 room booking. All required reservations and confirmations are complete. Maximum attendance is 24, leaving two participant places and two spare kits.\n\nEVIDENCE\nO11 (Day 11), unchanged by O12 (Day 12), consolidates the adopted plan. Room capacity is 24; each leader supports 12 participants; every participant needs one kit throughout, without sharing. Leaders neither count against the room cap nor use participant kits. Both leaders cover the full booking, which fits within 09:00–17:00 availability. Headphones throughout are explicitly exempt from the pre-11:00 amplified-sound prohibition (O07). The earlier 09:30 start and speaker demonstration were discarded proposals. Unregistered mailing-list members and empty cartons do not increase attendance or kit inventory.\n\nNEXT\nFor an attendance change, check the requested total against room, kits, and staffing separately: each currently permits 24. Adding one or two participants fits; adding three does not. Keep timing, headphone use, and resources fixed unless explicitly changed. O01–O04 supply detailed rules, O06–O08 confirmations, and O10 change guidance. No additional approval gate, setup time, invitation decision, or source recovery is required.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T00:50:28.086661+00:00",
+      "sha256": "7c39222bb4c96e315b1ff8407d94a08a4b9e2c4a9acc19dcbbb1ae945f7a9d24",
+      "delivered_at": "2026-10-02T00:51:01.025363+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"The current plan can accommodate 2 additional participants under each constraint: room cap (24 − 22), kit inventory (24 − 22), and leader ratio (2 × 12 − 22). Overall remaining capacity is 2 participants, for a maximum total of 24.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T00:51:32.793626+00:00",
+      "raw_file": "incoming/Q019-01.json",
+      "sha256": "9d8f24d095f0b431fdfd392bf329465d7ff47420a77b62448c7c2719704106e4",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 41,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "The current plan can accommodate 2 additional participants under each constraint: room cap (24 − 22), kit inventory (24 − 22), and leader ratio (2 × 12 − 22). Overall remaining capacity is 2 participants, for a maximum total of 24.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T00:51:32.793851+00:00",
+  "final_answer": {
+    "answer": "The current plan can accommodate 2 additional participants under each constraint: room cap (24 − 22), kit inventory (24 − 22), and leader ratio (2 × 12 − 22). Overall remaining capacity is 2 participants, for a maximum total of 24.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T00:51:32.793856+00:00",
+  "ended_epoch": 1790902292.7938576,
+  "visible_input_words": 382,
+  "visible_input_characters": 2616,
+  "visible_output_words": 41,
+  "visible_output_characters": 260,
+  "actual_tokens": null
+}

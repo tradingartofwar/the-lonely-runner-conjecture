@@ -1,0 +1,60 @@
+{
+  "question": "H01-Q1",
+  "history": "H01",
+  "method": "conventional",
+  "author": "A002",
+  "id": "Q028",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q028",
+  "started_at": "2026-10-02T00:56:54.893784+00:00",
+  "started_epoch": 1790902614.893799,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nAt the cutoff, which of A, B and C are bench-ready under the current rule? Identify the eligible set and briefly explain why each other station is not ready.\n\nEVIDENCE\nSTATUS\nAt the end of Day 12, C is the only bench-ready station among A, B, and C. A lacks current packet/latency evidence and has buffering disabled; B fails runtime alone. Readiness is separate from booking, transport, and administrative signoff. C's afternoon transport aligns with the afternoon room availability; no booking completion is recorded.\n\nEVIDENCE\nAdopted v2 (R08) supersedes v1: the same station must have firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours; equality passes. C meets every requirement: 198/200 packets, 7 seconds, buffering enabled, 8 hours (R10–R12). B has firmware 8, 119/120 packets (99.17%), 6 seconds, buffering enabled, but only 7.5 hours. Its replacement pack remains unreceived and unmeasured (R04, R09, R12). A has firmware 8 and reusable 9-hour runtime, but its only packet/latency tests were on firmware 7 and became invalid after upgrading (R03, R06). Its green READY badge is historical v1 evidence, not current approval. Invalidation does not prove deterioration.\n\nNEXT\nUse C for current technical eligibility before choosing logistics. B would qualify after an installed replacement pack verifies ≥8 hours, with other qualifying attributes unchanged. Enabling A's buffering alone is insufficient: obtain qualifying firmware-8 packet and latency tests. Consult R01/R08 for evidence reuse and firmware-change rules; R12 confirms no later changes.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T00:56:54.894693+00:00",
+      "sha256": "0207ab6f986f9498c299dd804996bc6a5a6e1ce30d4eb9bbd32582cd190d51da",
+      "delivered_at": "2026-10-02T00:57:30.988115+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"The eligible set is {C}. Under current rule v2, C meets every requirement: firmware 8, 198/200 packet success (99%), 7-second latency, buffering enabled, and 8-hour runtime; equality passes. A is not ready because buffering is disabled and its firmware-7 packet/latency tests became invalid after upgrading to firmware 8. Its historical READY badge does not establish current readiness. B fails only runtime: 7.5 hours is below 8 hours, and its replacement pack remains unreceived and unmeasured. Booking and administrative signoff do not determine technical eligibility.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T00:58:05.258666+00:00",
+      "raw_file": "incoming/Q028-01.json",
+      "sha256": "ca03532b66f01961e3560793b42e24257b87ea4d096e5e053524eca060301aab",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 84,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "The eligible set is {C}. Under current rule v2, C meets every requirement: firmware 8, 198/200 packet success (99%), 7-second latency, buffering enabled, and 8-hour runtime; equality passes. A is not ready because buffering is disabled and its firmware-7 packet/latency tests became invalid after upgrading to firmware 8. Its historical READY badge does not establish current readiness. B fails only runtime: 7.5 hours is below 8 hours, and its replacement pack remains unreceived and unmeasured. Booking and administrative signoff do not determine technical eligibility.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T00:58:05.258865+00:00",
+  "final_answer": {
+    "answer": "The eligible set is {C}. Under current rule v2, C meets every requirement: firmware 8, 198/200 packet success (99%), 7-second latency, buffering enabled, and 8-hour runtime; equality passes. A is not ready because buffering is disabled and its firmware-7 packet/latency tests became invalid after upgrading to firmware 8. Its historical READY badge does not establish current readiness. B fails only runtime: 7.5 hours is below 8 hours, and its replacement pack remains unreceived and unmeasured. Booking and administrative signoff do not determine technical eligibility.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T00:58:05.258869+00:00",
+  "ended_epoch": 1790902685.2588708,
+  "visible_input_words": 399,
+  "visible_input_characters": 2623,
+  "visible_output_words": 84,
+  "visible_output_characters": 600,
+  "actual_tokens": null
+}

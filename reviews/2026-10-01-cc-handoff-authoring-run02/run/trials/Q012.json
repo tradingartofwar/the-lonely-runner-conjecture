@@ -1,0 +1,60 @@
+{
+  "question": "H05-Q3",
+  "history": "H05",
+  "method": "cc",
+  "author": "A004",
+  "id": "Q012",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q012",
+  "started_at": "2026-10-02T00:44:35.553677+00:00",
+  "started_epoch": 1790901875.5536923,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nInstead of the original objective, require exactly two jobs including A and add only one memory unit to the final adopted allowance. Staff and power stay unchanged, and the staff rental is not adopted. What feasible pair can be chosen, with what output and resource totals?\n\nEVIDENCE\nSTATUS\nAt Day 12, select B+C: output 16, using (8,9,8) staff/memory/power, exactly matching adopted caps. It is the only feasible pair and therefore the optimum. Exactly two distinct, indivisible jobs run simultaneously for the full session; neither capacity option nor mandatory A is adopted.\n\nEVIDENCE\nD02–D04/D12 primitives, in staff/memory/power order: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. Complete pair catalogue: AB=(9,11,9), output 18; AC=(7,10,7), output 14; BC=(8,9,8), output 16. Currently AB exceeds every cap; AC exceeds memory only. D05 proposed AB from unconstrained output, without pair approval. D07 reduced memory from 10 to 9, invalidating AC’s earlier feasibility; BC remains optimal. Individual feasibility and staff-only checks cannot approve pairs.\n\nNEXT\nRecompute all three pairs against explicitly changed caps or requirements. If A becomes mandatory (D09), currently no pair qualifies. D10’s independent, unadopted +1 memory option enables AC. D08’s unadopted staff rental sets caps to (10,9,8): neither A pair becomes feasible. Combining both options enables AC but leaves AB short of memory and power. AB requires caps at least (9,11,9). Recover D05–D10 for proposal chronology; D01–D04 prohibit splitting, resource substitution, duplicate jobs, and invented candidates or reduced-output variants.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T00:44:35.554425+00:00",
+      "sha256": "80943cd375d42bc9d0a2de3923422351ef9806eb72d37519be9d38cc9a436f95",
+      "delivered_at": "2026-10-02T00:45:09.726330+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"Choose A+C, with output 14 and resource totals of 7 staff, 10 memory, and 7 power. Adding one memory unit changes the adopted caps to (8,10,8), so A+C is feasible. It is the only feasible pair including A: A+B requires (9,11,9), exceeding all three caps.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T00:45:46.030062+00:00",
+      "raw_file": "incoming/Q012-01.json",
+      "sha256": "fadcf303d5d04cb63a32761767c9b8bde262cbc8314098c47d2b1c82dd1736f6",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 45,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "Choose A+C, with output 14 and resource totals of 7 staff, 10 memory, and 7 power. Adding one memory unit changes the adopted caps to (8,10,8), so A+C is feasible. It is the only feasible pair including A: A+B requires (9,11,9), exceeding all three caps.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T00:45:46.030304+00:00",
+  "final_answer": {
+    "answer": "Choose A+C, with output 14 and resource totals of 7 staff, 10 memory, and 7 power. Adding one memory unit changes the adopted caps to (8,10,8), so A+C is feasible. It is the only feasible pair including A: A+B requires (9,11,9), exceeding all three caps.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T00:45:46.030310+00:00",
+  "ended_epoch": 1790901946.0303113,
+  "visible_input_words": 394,
+  "visible_input_characters": 2658,
+  "visible_output_words": 45,
+  "visible_output_characters": 283,
+  "actual_tokens": null
+}

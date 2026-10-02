@@ -1,0 +1,60 @@
+{
+  "question": "H02-Q1",
+  "history": "H02",
+  "method": "conventional",
+  "author": "A011",
+  "id": "Q048",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q048",
+  "started_at": "2026-10-02T01:12:20.207942+00:00",
+  "started_epoch": 1790903540.2079594,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nUsing the accepted current calibration, how many unique samples are late, out of how many unique samples? Name the late sample or samples.\n\nEVIDENCE\nSTATUS\nAt Day 12, two of three unique samples pass delivery within two seconds: S and T each take 1 second; U takes 3 seconds and fails. Pass rate is 2/3 (66.7%); lateness is 1/3 (33.3%). U-retry is U’s transmission alias, not another sample. Dashboard clock correction and identity grouping remain unreleased (C09).\n\nEVIDENCE\nC03–C05 give acquisition/gateway/database timestamps: S 100/104/111; T 100.5/104.5/111; U 102/108/113. C07 establishes gateway = reference +3 throughout arrivals, replacing the withdrawn +1 guess, with no current uncertainty. Corrected first arrivals are 101, 101.5, 105. Delivery means gateway arrival, not database insertion; equality at two seconds passes. Insertion follows arrival by 10, 9.5, 8 seconds respectively. C08 confirms the complete three-sample catalogue and first-arrival observations. C06’s four late rows describe the uncorrected display, not confirmed unique failures. Shared insertion batching and preview styling supply no new arrival evidence.\n\nNEXT\nUse preserved rows and calibration now; display release is unnecessary for calculation. For a hypothetical closed offset interval [a,b], delay lies in [g−acquisition−b, g−acquisition−a]; the upper endpoint is worst-case delay. For S/T, guaranteed pass requires a≥2, guaranteed failure b<2; for U, a≥4 or b<4 respectively. Otherwise classification is indeterminate (C10). Retain the exact current offset unless explicitly changed. Recover definitions and scope from C01, C11–C12; do not extrapolate to unseen samples or days.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:12:20.208667+00:00",
+      "sha256": "f1c5f444e95f402a2919615eafbb83d36ca1a4546d9cf94e06bfb2724b0ca0cf",
+      "delivered_at": "2026-10-02T01:12:51.964674+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"1 of 3 unique samples is late: U, with a corrected delivery time of 3 seconds. S and T each take 1 second and pass. U-retry is an alias of U, not an additional sample.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:14:02.835056+00:00",
+      "raw_file": "incoming/Q048-01.json",
+      "sha256": "211ed5a30ca9009e889124cb1b2c8d2e923c0455ca8d466e3da6eecb90fefa10",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 35,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "1 of 3 unique samples is late: U, with a corrected delivery time of 3 seconds. S and T each take 1 second and pass. U-retry is an alias of U, not an additional sample.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:14:02.835263+00:00",
+  "final_answer": {
+    "answer": "1 of 3 unique samples is late: U, with a corrected delivery time of 3 seconds. S and T each take 1 second and pass. U-retry is an alias of U, not an additional sample.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:14:02.835267+00:00",
+  "ended_epoch": 1790903642.8352685,
+  "visible_input_words": 397,
+  "visible_input_characters": 2696,
+  "visible_output_words": 35,
+  "visible_output_characters": 196,
+  "actual_tokens": null
+}

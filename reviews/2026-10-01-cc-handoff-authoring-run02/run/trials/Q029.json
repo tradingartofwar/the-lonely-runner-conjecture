@@ -1,0 +1,60 @@
+{
+  "question": "H01-Q2",
+  "history": "H01",
+  "method": "conventional",
+  "author": "A002",
+  "id": "Q029",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q029",
+  "started_at": "2026-10-02T00:57:31.111135+00:00",
+  "started_epoch": 1790902651.1111507,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nDoes the record show that A failed the current packet-success criterion after its firmware upgrade, or is that performance unknown? State what happened to the earlier packet result.\n\nEVIDENCE\nSTATUS\nAt the end of Day 12, C is the only bench-ready station among A, B, and C. A lacks current packet/latency evidence and has buffering disabled; B fails runtime alone. Readiness is separate from booking, transport, and administrative signoff. C's afternoon transport aligns with the afternoon room availability; no booking completion is recorded.\n\nEVIDENCE\nAdopted v2 (R08) supersedes v1: the same station must have firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours; equality passes. C meets every requirement: 198/200 packets, 7 seconds, buffering enabled, 8 hours (R10–R12). B has firmware 8, 119/120 packets (99.17%), 6 seconds, buffering enabled, but only 7.5 hours. Its replacement pack remains unreceived and unmeasured (R04, R09, R12). A has firmware 8 and reusable 9-hour runtime, but its only packet/latency tests were on firmware 7 and became invalid after upgrading (R03, R06). Its green READY badge is historical v1 evidence, not current approval. Invalidation does not prove deterioration.\n\nNEXT\nUse C for current technical eligibility before choosing logistics. B would qualify after an installed replacement pack verifies ≥8 hours, with other qualifying attributes unchanged. Enabling A's buffering alone is insufficient: obtain qualifying firmware-8 packet and latency tests. Consult R01/R08 for evidence reuse and firmware-change rules; R12 confirms no later changes.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T00:57:31.112014+00:00",
+      "sha256": "99e8aff785d0428a9229ca828e8e920be254edebcbc6f9dc46ec6c13c49f9461",
+      "delivered_at": "2026-10-02T00:58:05.226588+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"A’s packet-success performance after the firmware upgrade is unknown; the record does not show that it failed the current ≥99% criterion. Its earlier packet result was obtained on firmware 7 and became invalid for current qualification after the upgrade to firmware 8. Invalidation does not establish deterioration or failure, and no later packet test is recorded.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T00:59:11.803739+00:00",
+      "raw_file": "incoming/Q029-01.json",
+      "sha256": "a77e2284b6d795b529cb083d5e5fe71292c58b0c987c799ad0a65a7afcadaa05",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 56,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "A’s packet-success performance after the firmware upgrade is unknown; the record does not show that it failed the current ≥99% criterion. Its earlier packet result was obtained on firmware 7 and became invalid for current qualification after the upgrade to firmware 8. Invalidation does not establish deterioration or failure, and no later packet test is recorded.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T00:59:11.804021+00:00",
+  "final_answer": {
+    "answer": "A’s packet-success performance after the firmware upgrade is unknown; the record does not show that it failed the current ≥99% criterion. Its earlier packet result was obtained on firmware 7 and became invalid for current qualification after the upgrade to firmware 8. Invalidation does not establish deterioration or failure, and no later packet test is recorded.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T00:59:11.804027+00:00",
+  "ended_epoch": 1790902751.8040285,
+  "visible_input_words": 398,
+  "visible_input_characters": 2647,
+  "visible_output_words": 56,
+  "visible_output_characters": 393,
+  "actual_tokens": null
+}

@@ -1,0 +1,60 @@
+{
+  "question": "H05-Q1",
+  "history": "H05",
+  "method": "full_source",
+  "author": null,
+  "id": "Q039",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q039",
+  "started_at": "2026-10-02T01:05:52.431377+00:00",
+  "started_epoch": 1790903152.4313922,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: complete source history. Answer from this source and the query. Set recover to false; no additional source is available.\n\nQUESTION\nUnder the final adopted caps, which feasible pair maximizes output? Give the pair, output and total use of staff, memory and power.\n\nEVIDENCE\n# Cedar shared-resource planning\n\nThis is a synthetic planning problem. All quantities are exact abstract units, not estimates for a real facility. The cutoff is the end of Day 12. The incoming planner must choose a feasible simultaneous pair, explain why earlier proposals changed, and reconsider the choice if a requirement or resource allowance changes. Three jobs are available: A, B, and C. Jobs are indivisible and run for the same full session. Their resource requirements add when run together. A job cannot borrow spare resources from a later session or split its work across time unless the question explicitly changes that rule.\n\n## D01 — Day 1, goal\n\nThe initial goal is to run exactly two distinct jobs simultaneously and maximize their total output. There are three shared resource types: staff, memory, and power. A pair is feasible only if its summed requirements fit all three current caps at the same time. Feasibility is a supplied deterministic definition, not a probability estimate. Individual jobs can each be feasible while a proposed pair is not. The planner should retain enough of the alternatives to respond if a later request requires a particular job instead of simply maximizing the original objective.\n\n## D02 — Day 2, job A\n\nJob A needs four staff units, six memory units, and four power units for the session. It produces eight output units. Its setup is already complete and adds no further resource cost in this scenario. The team likes A because its output is easy to demonstrate, but preference does not change either its resource needs or the objective. These quantities remain fixed through the cutoff. A screen showing A alone reports it feasible under the provisional caps; that statement concerns the single job, not any pair containing it.\n\n## D03 — Day 3, job B\n\nJob B needs five staff units, five memory units, and five power units. It produces ten output units. The prototype schedule gives B the largest output label among the three jobs. It also lists a separate staff-only check to help the coordinator reserve people. That check is deliberately incomplete as a feasibility decision because memory and power are also shared. All three resource values apply simultaneously for the entire session. There is no option in the supplied catalogue to lower B's resource needs by accepting a smaller output.\n\n## D04 — Day 4, job C\n\nJob C needs three staff units, four memory units, and three power units and produces six output units. Its preparation note describes it as a possible companion for either A or B, depending on the caps. That wording is conditional rather than an approval of both pairs under every future budget. C is a distinct job and cannot be run twice to satisfy the two-job requirement. The project has no other job candidates. The incoming planner may therefore enumerate all three possible unordered pairs without assuming an unexplored external alternative exists.\n\n## D05 — Day 5, provisional caps\n\nThe provisional shared caps are eight staff units, ten memory units, and eight power units. Each job fits by itself. An early slide highlights A and B because their separate outputs sum to eighteen, the largest unconstrained pair total. The slide was produced before the pair-resource calculation and is marked proposed. The pair's total requirements must be computed from both jobs. Neither an individual green badge nor the unconstrained output ranking establishes that this pair can run within the shared caps.\n\n## D06 — Day 6, pair discussion\n\nThe team calculates candidate pairs and keeps the job-level requirements rather than only saving the winning name. A proposed rental would raise the staff cap, but it would not change memory or power. The rental quote is for staff capacity only. The coordinator explicitly rejects reading the phrase more capacity as an increase to every resource. The quote remains a proposal. No rental has been accepted, and the current staff cap is still eight. The project does not permit staff to substitute for missing memory or power units.\n\n## D07 — Day 7, resource correction\n\nThe facility corrects the memory allowance from ten to nine units for the planned session. This is an adopted change and supersedes the earlier memory cap. The staff cap stays eight and the power cap stays eight. The correction changes the feasibility of some combinations without changing their output or job-level requirements. Old pair calculations under the ten-unit allowance are preserved with their date. They are useful for a future changed-budget question but cannot be silently reused as current approvals.\n\n## D08 — Day 8, staff-only rental\n\nThe rental proposal is made concrete: it would raise the staff cap from eight to ten units, leaving the memory cap at nine and the power cap at eight. Its availability is assumed if a later question explicitly adopts it, but it is not adopted in the actual history. The rental has no output of its own and does not add a fourth job. A planner examining this option must recheck every limiting resource. Satisfying a previously tight staff inequality does not erase independent memory or power requirements.\n\n## D09 — Day 9, alternative requirement\n\nA stakeholder says that a future demonstration might require job A to be included. This request is not adopted for the current session; the present objective is still maximum output from any feasible pair. The coordinator asks the handoff to retain what would need to change if A later became mandatory. The project has no universal rule that the currently best pair remains best under a new inclusion requirement. The alternative must be evaluated from the original job requirements and whatever caps the new question actually supplies.\n\n## D10 — Day 10, separate memory option\n\nA separate option could add one memory unit, taking the adopted nine-unit cap back to ten. This option would leave staff and power at eight unless another change were separately specified. The option is not adopted before the cutoff. It must not be merged with the staff rental merely because both appear in the planning discussion. The two options affect different constraints and can be considered independently. The current plan includes neither option, and no resource measurement or job requirement is revised on this date.\n\n## D11 — Day 11, reporting request\n\nThe incoming planner should state the selected pair, its total output, and its combined use of each resource. If asked about a rejected alternative, the explanation should identify the actual binding violations, not merely say it lost to another pair. If the objective changes, the planner should distinguish the original optimum from feasibility under the changed requirement. The finite catalogue is small enough that no search budget issue arises. A calculation that covers all three pairs is complete for this scenario, without claiming anything about larger scheduling problems.\n\n## D12 — Day 12, cutoff\n\nThe final adopted caps are eight staff units, nine memory units, and eight power units. Job A still has requirements (4,6,4) and output 8; B has (5,5,5) and output 10; C has (3,4,3) and output 6, in staff, memory, power order. Exactly two distinct jobs must run simultaneously. No rental or extra memory has been adopted. The future A-inclusion request remains hypothetical. This final inventory is a convenient restatement of the primitives, not a replacement for the chronology explaining which earlier proposals and budgets are no longer current.\n",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:05:52.431471+00:00",
+      "sha256": "9fa44cb5840f48b5ff7266e5dd140dc1868f18fc99419f39c90935fb8fb54c97",
+      "delivered_at": "2026-10-02T01:06:59.314361+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"The optimal feasible pair is B and C, producing 16 output units and using 8 staff, 9 memory, and 8 power units, exactly matching all final adopted caps. A+C exceeds the memory cap; A+B exceeds all three caps, so B+C is the only feasible pair.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:08:11.326799+00:00",
+      "raw_file": "incoming/Q039-01.json",
+      "sha256": "e5916d7e85931b992c1a797457cd49bc5d8e751d4b5f2fd620b49b11b1f6d8b3",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 45,
+        "schema_and_cap_status": "PASS",
+        "mode": "full_source",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "The optimal feasible pair is B and C, producing 16 output units and using 8 staff, 9 memory, and 8 power units, exactly matching all final adopted caps. A+C exceeds the memory cap; A+B exceeds all three caps, so B+C is the only feasible pair.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:08:11.327023+00:00",
+  "final_answer": {
+    "answer": "The optimal feasible pair is B and C, producing 16 output units and using 8 staff, 9 memory, and 8 power units, exactly matching all final adopted caps. A+C exceeds the memory cap; A+B exceeds all three caps, so B+C is the only feasible pair.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:08:11.327029+00:00",
+  "ended_epoch": 1790903291.32703,
+  "visible_input_words": 1391,
+  "visible_input_characters": 8548,
+  "visible_output_words": 45,
+  "visible_output_characters": 271,
+  "actual_tokens": null
+}

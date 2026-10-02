@@ -1,0 +1,60 @@
+{
+  "question": "H02-Q3",
+  "history": "H02",
+  "method": "conventional",
+  "author": "A011",
+  "id": "Q043",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q043",
+  "started_at": "2026-10-02T01:09:30.383805+00:00",
+  "started_epoch": 1790903370.3838472,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nReplace the exact calibration only for this hypothetical: the gateway is ahead by one common unknown offset in the closed interval [2,4] seconds. Which unique samples are guaranteed to pass, guaranteed to fail, or unresolved under the two-second requirement? Is it possible that all three pass?\n\nEVIDENCE\nSTATUS\nAt Day 12, two of three unique samples pass delivery within two seconds: S and T each take 1 second; U takes 3 seconds and fails. Pass rate is 2/3 (66.7%); lateness is 1/3 (33.3%). U-retry is U’s transmission alias, not another sample. Dashboard clock correction and identity grouping remain unreleased (C09).\n\nEVIDENCE\nC03–C05 give acquisition/gateway/database timestamps: S 100/104/111; T 100.5/104.5/111; U 102/108/113. C07 establishes gateway = reference +3 throughout arrivals, replacing the withdrawn +1 guess, with no current uncertainty. Corrected first arrivals are 101, 101.5, 105. Delivery means gateway arrival, not database insertion; equality at two seconds passes. Insertion follows arrival by 10, 9.5, 8 seconds respectively. C08 confirms the complete three-sample catalogue and first-arrival observations. C06’s four late rows describe the uncorrected display, not confirmed unique failures. Shared insertion batching and preview styling supply no new arrival evidence.\n\nNEXT\nUse preserved rows and calibration now; display release is unnecessary for calculation. For a hypothetical closed offset interval [a,b], delay lies in [g−acquisition−b, g−acquisition−a]; the upper endpoint is worst-case delay. For S/T, guaranteed pass requires a≥2, guaranteed failure b<2; for U, a≥4 or b<4 respectively. Otherwise classification is indeterminate (C10). Retain the exact current offset unless explicitly changed. Recover definitions and scope from C01, C11–C12; do not extrapolate to unseen samples or days.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:09:30.384938+00:00",
+      "sha256": "3e07eb04f4359822b28f15d8cbb4439ce81e1f3157f37fa2eb0ed14062647366",
+      "delivered_at": "2026-10-02T01:10:04.523701+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"S and T are guaranteed to pass: each has corrected delay 4−offset, ranging from 0 to 2 seconds. No sample is guaranteed to fail. U is unresolved: its delay 6−offset ranges from 2 to 4 seconds; it passes at offset 4 and fails for offsets in [2,4). Thus, among three unique samples, 2 are guaranteed passes, 0 guaranteed failures, and 1 unresolved. All three can pass simultaneously when the common offset is exactly 4 seconds, giving delays of 0, 0, and 2 seconds; equality at two seconds passes. U-retry adds no sample.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:10:37.567626+00:00",
+      "raw_file": "incoming/Q043-01.json",
+      "sha256": "7ee9b2489f1713ab48e57dbbe946631cc7649ff70ea399ab0e4a7184cd8253d0",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 92,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "S and T are guaranteed to pass: each has corrected delay 4−offset, ranging from 0 to 2 seconds. No sample is guaranteed to fail. U is unresolved: its delay 6−offset ranges from 2 to 4 seconds; it passes at offset 4 and fails for offsets in [2,4). Thus, among three unique samples, 2 are guaranteed passes, 0 guaranteed failures, and 1 unresolved. All three can pass simultaneously when the common offset is exactly 4 seconds, giving delays of 0, 0, and 2 seconds; equality at two seconds passes. U-retry adds no sample.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:10:37.567866+00:00",
+  "final_answer": {
+    "answer": "S and T are guaranteed to pass: each has corrected delay 4−offset, ranging from 0 to 2 seconds. No sample is guaranteed to fail. U is unresolved: its delay 6−offset ranges from 2 to 4 seconds; it passes at offset 4 and fails for offsets in [2,4). Thus, among three unique samples, 2 are guaranteed passes, 0 guaranteed failures, and 1 unresolved. All three can pass simultaneously when the common offset is exactly 4 seconds, giving delays of 0, 0, and 2 seconds; equality at two seconds passes. U-retry adds no sample.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:10:37.567871+00:00",
+  "ended_epoch": 1790903437.5678728,
+  "visible_input_words": 420,
+  "visible_input_characters": 2852,
+  "visible_output_words": 92,
+  "visible_output_characters": 548,
+  "actual_tokens": null
+}

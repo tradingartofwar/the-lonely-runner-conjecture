@@ -1,0 +1,60 @@
+{
+  "question": "H04-Q2",
+  "history": "H04",
+  "method": "conventional",
+  "author": "A007",
+  "id": "Q051",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q051",
+  "started_at": "2026-10-02T01:15:26.577430+00:00",
+  "started_epoch": 1790903726.5774446,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nHow many distinct stored backup objects do the labels backup-east and archive-copy establish? Does that stored content include the post-M0 addition and revision change?\n\nEVIDENCE\nSTATUS\nAt Day 12, the source may not be retired under H01: the destination lacks verification of every current source revision. The source remains available and writable, with 97 keys: K12 at revision 2, all others at revision 1. Current-revision verification covers 93 of 97 keys.\n\nEVIDENCE\nH02–H07/H12 establish 96 M0 ingestion acknowledgments, meaning accepted for writing, and 94 verified revision-1 matches, with zero observed mismatches. K95 and K96 remain unaudited. K12's historical revision-1 match does not verify its current revision 2. H08–H09 record exactly two post-snapshot changes: K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence. Missing evidence does not establish corruption. H03/H12 confirm backup-east and archive-copy are aliases for one stored object, object-amber, containing only M0. H10's successful read-only preview excludes all four current verification gaps; routing neither verifies content nor retires the source.\n\nNEXT\nFollow H11's unexecuted plan: audit K95 and K96, then synchronize and verify both delta revisions. Successful completion of only those two audits would yield 96 verified M0 matches but just 95 of 97 current-revision matches; retirement would still fail. Check for further source changes before retirement because writes remain enabled. H08–H12 supply the complete cutoff delta and destination evidence.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:15:26.578158+00:00",
+      "sha256": "89f905fbf6d6f12c4bf226d6fc2b82940bd2434eaae213914c7c5838ca4757d0",
+      "delivered_at": "2026-10-02T01:16:00.720107+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"The two labels establish one distinct stored backup object: object-amber. backup-east and archive-copy are aliases for that same object. It contains only M0, so it excludes both post-M0 changes: the addition of K97 revision 1 and the change to K12 revision 2.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:16:32.880185+00:00",
+      "raw_file": "incoming/Q051-01.json",
+      "sha256": "ab89ff85d195b00bbcea7ade204dec3cb4509f59656e8531943b63d67c5e4140",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 42,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "The two labels establish one distinct stored backup object: object-amber. backup-east and archive-copy are aliases for that same object. It contains only M0, so it excludes both post-M0 changes: the addition of K97 revision 1 and the change to K12 revision 2.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:16:32.880396+00:00",
+  "final_answer": {
+    "answer": "The two labels establish one distinct stored backup object: object-amber. backup-east and archive-copy are aliases for that same object. It contains only M0, so it excludes both post-M0 changes: the addition of K97 revision 1 and the change to K12 revision 2.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:16:32.880400+00:00",
+  "ended_epoch": 1790903792.8804018,
+  "visible_input_words": 384,
+  "visible_input_characters": 2602,
+  "visible_output_words": 42,
+  "visible_output_characters": 288,
+  "actual_tokens": null
+}

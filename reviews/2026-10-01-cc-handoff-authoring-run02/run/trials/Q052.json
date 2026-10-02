@@ -1,0 +1,60 @@
+{
+  "question": "H02-Q2",
+  "history": "H02",
+  "method": "cc",
+  "author": "A012",
+  "id": "Q052",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q052",
+  "started_at": "2026-10-02T01:16:00.846860+00:00",
+  "started_epoch": 1790903760.8468783,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nWere S and T simultaneous at acquisition or at gateway arrival? Give their gateway arrival times on the reference clock under the accepted current calibration.\n\nEVIDENCE\nSTATUS\nAt Day 12, 2/3 unique acquired samples pass (66⅔%): S and T each have one-second delivery delay; U has three seconds and fails. Delivery means first gateway arrival, with delay ≤2 seconds passing. Dashboard repair remains unreleased; its four late rows are provisional, not four distinct failures.\n\nEVIDENCE\nC03–C05 (Days 3–5) record acquisition/reference, arrival/gateway, insertion/reference respectively: S=(100,104,111), T=(100.5,104.5,111), U=(102,108,113). C07 establishes gateway=reference+3 throughout; subtract three, replacing the withdrawn +1 guess. Corrected arrivals are 101,101.5,105. Insertion follows arrival by 10,9.5,8 seconds respectively; this reporting backlog does not determine delivery compliance. C08 confirms the complete denominator is three: U-retry shares U's acquisition identifier and supplies no new first arrival. Shared insertion time does not imply simultaneous acquisition or arrival. C06 preserves the four-row alarm; C09's preview adds no measurements.\n\nNEXT\nFor a future closed offset interval [L,H], C10 gives delay range [g−a−H,g−a−L]; the upper endpoint is worst-case delay. S/T guarantee pass if L≥2, failure if H<2; U guarantees pass if L≥4, failure if H<4. Otherwise neither guarantee holds. This contingency leaves today's exact offset unchanged. Recover dated raw evidence from C03–C08 and scope/conventions from C10–C12 before extending assumptions; no unseen-sample or other-day reliability inference is supported.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:16:00.847590+00:00",
+      "sha256": "2c44330633433ebfbb7376ee93a56d1ed98b74a1f2809e20dbafc1d1907888ba",
+      "delivered_at": "2026-10-02T01:16:32.846593+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"S and T were simultaneous at neither acquisition nor gateway arrival. On the reference clock, S was acquired at 100 and T at 100.5. Under the accepted calibration, gateway = reference + 3, their gateway arrival times were S = 101 and T = 101.5. T was 0.5 seconds later at both stages. Their shared insertion time of 111 does not establish simultaneity at acquisition or arrival.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:17:05.900788+00:00",
+      "raw_file": "incoming/Q052-01.json",
+      "sha256": "2666537a97761faeafadafd5ef641da3d1b56701a35eae25ae62916e23f8c00c",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 67,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "S and T were simultaneous at neither acquisition nor gateway arrival. On the reference clock, S was acquired at 100 and T at 100.5. Under the accepted calibration, gateway = reference + 3, their gateway arrival times were S = 101 and T = 101.5. T was 0.5 seconds later at both stages. Their shared insertion time of 111 does not establish simultaneity at acquisition or arrival.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:17:05.901017+00:00",
+  "final_answer": {
+    "answer": "S and T were simultaneous at neither acquisition nor gateway arrival. On the reference clock, S was acquired at 100 and T at 100.5. Under the accepted calibration, gateway = reference + 3, their gateway arrival times were S = 101 and T = 101.5. T was 0.5 seconds later at both stages. Their shared insertion time of 111 does not establish simultaneity at acquisition or arrival.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:17:05.901023+00:00",
+  "ended_epoch": 1790903825.9010248,
+  "visible_input_words": 379,
+  "visible_input_characters": 2663,
+  "visible_output_words": 67,
+  "visible_output_characters": 407,
+  "actual_tokens": null
+}
