@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "recorded_at": "2026-10-02T00:16:05.636967+00:00",
+  "scope": "Real dummy dispatch/capture outside all study cases; no semantic calibration",
+  "task_name": "dispatch_check",
+  "participant_identity": "/root/dispatch_check",
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "prompt": "This is a dummy dispatch-and-capture check, not a study participant. Do not use tools, files, internet, or other agents. Return exactly this JSON object and nothing else: {\"dispatch\":\"ok\",\"value\":7}",
+  "raw_response": "{\"dispatch\":\"ok\",\"value\":7}",
+  "expected_exact_response": "{\"dispatch\":\"ok\",\"value\":7}",
+  "actual_tokens": null,
+  "provider_snapshot": null
+}
