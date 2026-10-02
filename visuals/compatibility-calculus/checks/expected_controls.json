@@ -1,0 +1,216 @@
+{
+  "A_q": [
+    3,
+    4,
+    5,
+    6,
+    10
+  ],
+  "B_q": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cell_visual": {
+    "cells": 10,
+    "empty_bounds": [
+      "33/104",
+      "5/16"
+    ],
+    "lap_cases": 3,
+    "positive_interval": [
+      "17/56",
+      "5/16"
+    ],
+    "singleton_time": "3/8",
+    "singletons": [
+      "C0",
+      "C3",
+      "C5"
+    ],
+    "six_vertex_cell": "C7",
+    "stages_per_cell": 8
+  },
+  "clock_visual": {
+    "exact_time_controls": 19,
+    "modes": 2,
+    "occurrences": 6,
+    "pair_edges": 4,
+    "safe_duration": "1/896",
+    "safe_interval": [
+      "17/56",
+      "39/128"
+    ],
+    "speeds": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      11,
+      16
+    ],
+    "window": [
+      "9/32",
+      "3/8"
+    ]
+  },
+  "geometry": {
+    "caps": 7,
+    "cells": 10,
+    "edges": 45,
+    "singletons": 3,
+    "vertices": 33
+  },
+  "joint_visual": {
+    "candidate_failed_distance": "5/52",
+    "candidate_failed_speed": 6,
+    "candidate_time": "33/104",
+    "collision_time": "4/13",
+    "conditional_S": [
+      "109/56",
+      "33/16"
+    ],
+    "height": "1/8",
+    "parent": 2,
+    "q": 4,
+    "slice_controls": 14,
+    "slice_failed_speed": 13
+  },
+  "opening_visual": {
+    "exact_snapshots": 28,
+    "frames": 2,
+    "inner_reference_safe_set": [
+      [
+        "1/4",
+        "3/8"
+      ],
+      [
+        "5/8",
+        "3/4"
+      ]
+    ],
+    "outer_reference_safe_set": [
+      [
+        "1/4",
+        "1/4"
+      ],
+      [
+        "3/4",
+        "3/4"
+      ]
+    ],
+    "references": 4,
+    "threshold": "1/4",
+    "time_denominator": 96,
+    "velocities": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "q10_required_times": [
+    "17/35",
+    "18/35"
+  ],
+  "q4_safe_times": [
+    "1/8",
+    "3/8",
+    "5/8",
+    "7/8"
+  ],
+  "representation": {
+    "A_q10_old_edge_maximizers": 6,
+    "A_q10_omitted_face_times": [
+      "17/35",
+      "18/35"
+    ],
+    "A_q4_closed_segment_witnesses": [
+      "1/8"
+    ],
+    "A_q4_open_segment_witnesses": [],
+    "B_q6_maximizers": [
+      "9/25",
+      "16/25"
+    ],
+    "B_q6_maximum": "4/25",
+    "comparison_states": 12,
+    "questions": 6
+  },
+  "selector_endpoints": {
+    "4": "1/8",
+    "6": "5/24"
+  },
+  "selector_fallback": {
+    "q": 5,
+    "time": "25/56"
+  },
+  "selector_visual": {
+    "attempts": [
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    "endpoint_q": [
+      4,
+      6
+    ],
+    "fallback_q": 5,
+    "q": [
+      3,
+      4,
+      5,
+      6,
+      10
+    ],
+    "states": 11,
+    "times": [
+      "7/48",
+      "1/8",
+      "25/56",
+      "5/24",
+      "15/104"
+    ]
+  },
+  "story_visual": {
+    "cases": [
+      "contact",
+      "equality",
+      "joint"
+    ],
+    "contact_integer": -2,
+    "contact_minimum": "4/25",
+    "contact_time": "9/25",
+    "equality_points": 4,
+    "failed_speed": 6,
+    "false_candidate_time": "33/104",
+    "local_joint_intersection": "empty",
+    "positive_duration_components": 0,
+    "states": 12,
+    "steps": 4
+  },
+  "transfer": {
+    "children": 10,
+    "empty_branches": 46,
+    "inherited_vertices": 27,
+    "new_face_edges": 9,
+    "new_vertices": 6,
+    "parents": 8,
+    "removed_vertices": 5
+  },
+  "transfer_visual": {
+    "q10_after_height": "1/7",
+    "q10_after_time": "17/35",
+    "q10_before_time": "16/33",
+    "q4_removed_parent": 2,
+    "q4_surviving_time": "3/8",
+    "scenes": 3,
+    "stages": 3
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-27 America/Los_Angeles",
+  "baseline_commit": "910a26b044d6ea093a0d22aa678304a02e7e2642",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "578ad79f2d65ffe7309e3b1ae576de98e24ccaab1c23d3ea2600cedb5a9636a2",
+  "scope": {
+    "cases": 6,
+    "reference_index": 0,
+    "n": 8,
+    "threshold": "1/8",
+    "cores": 210,
+    "components": 15696,
+    "fastest_core_components": 8800,
+    "extra_configurations": false
+  },
+  "results": {
+    "positive_cores": 210,
+    "actual_positive_windows": 7971,
+    "tree_positive_windows": 7953,
+    "tree_misses": 18,
+    "fastest_core_nonexact_windows": 0
+  },
+  "verification": {
+    "status": "PASS",
+    "read_only_commands": [
+      "python -B reviews/2026-09-27-team/calculate.py --check",
+      "python -B reviews/2026-09-27-team/verify_independent.py --check",
+      "python -B reviews/2026-09-27-team/challenge_check.py --check",
+      "python -B reviews/2026-09-27-team/lattice_check.py --check",
+      "python -B reviews/2026-09-27-team/structure_check.py --check"
+    ],
+    "independence": "Primary interval/prefix/tree enumeration versus separate event-state/product-grid/Kruskal implementation; latter did not read/import primary code. Further bounded review scripts are separately scoped, not full independent time reconstructions.",
+    "broader_regression_rerun": false
+  },
+  "claim_status": "Finite exact results OBSERVED/REPRODUCED. Fastest-core and endpoint-completeness arguments remain HYPOTHESIS/proof candidates. Hunter and signed-cycle inequality forms attributed to existing literature. No full LRC proof or novelty claim.",
+  "dependencies": {
+    "policy": "All five executable scripts use only listed standard-library imports; local input/expected output dependency closure is included in artifact hashes. No project-module imports.",
+    "python_imports": {
+      "reviews/2026-09-27-team/structure_check.py": [
+        "argparse",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "pathlib"
+      ],
+      "reviews/2026-09-27-team/challenge_check.py": [
+        "argparse",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "pathlib"
+      ],
+      "reviews/2026-09-27-team/calculate.py": [
+        "argparse",
+        "bisect",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "reviews/2026-09-27-team/verify_independent.py": [
+        "argparse",
+        "bisect",
+        "fractions",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "reviews/2026-09-27-team/lattice_check.py": [
+        "argparse",
+        "fractions",
+        "hashlib",
+        "json",
+        "pathlib"
+      ]
+    }
+  },
+  "artifact_sha256": {
+    "reviews/2026-09-27-team/calculate.py": "5b5e4a1d8df315ac80fcca5567acc219b40081b8df3835852a7d0510a7084639",
+    "reviews/2026-09-27-team/challenge.md": "50a686b7a194e55013d7521ab1a03f702c842eb2e1c364686d350f3a3d1c1b5d",
+    "reviews/2026-09-27-team/challenge_check.py": "ed8553c2861ab1bdf7492579f6af184beacf7ce26e197f5cd7ed52923e6e2af6",
+    "reviews/2026-09-27-team/challenge_checks.json": "137b6931f7bad02c38d1ec12c2b4fb0ee9922dacd187022dd82c5744ca84233b",
+    "reviews/2026-09-27-team/geometry.md": "ddddf1d885cddb49ee5a17f6dfa8a865632e199af2c84ba81c3da31fca434631",
+    "reviews/2026-09-27-team/lattice.json": "93495076e9adb4298220fbb92ae8f5192332580afbf4633650b8ae75f7bb46d8",
+    "reviews/2026-09-27-team/lattice_check.py": "4c8a2988040930842891f35b18993f6462164ca55468159a9e5aafa1b35f49c9",
+    "reviews/2026-09-27-team/literature.md": "de02c166c53c44deab99897326f554da32f1c53918fbee51e32101e3785fc769",
+    "reviews/2026-09-27-team/protocol.json": "578ad79f2d65ffe7309e3b1ae576de98e24ccaab1c23d3ea2600cedb5a9636a2",
+    "reviews/2026-09-27-team/results.json": "62a49c217e0334be78d5040c3acf454cd49c103a0e11eca4dad896fc5f53d56f",
+    "reviews/2026-09-27-team/schema.md": "72f92b1178a516317067430715d454274ee9ba96bb4ce639fd1da25abbe79f13",
+    "reviews/2026-09-27-team/structure.json": "7998f66d4142896cef40b4d074d27753f64144b13486865e71c76639a82da8f5",
+    "reviews/2026-09-27-team/structure.md": "387a785467145f433531a5262bb7de6df36a1f0fcb3b52d745b19a6933560d15",
+    "reviews/2026-09-27-team/structure_check.py": "3153e4d7fddf5e3e616ec924e9493175db3894c08c42391941a46b007a6c9499",
+    "reviews/2026-09-27-team/verification.json": "6e5c00e1de3d2f815b8c080fb34d321ccdc2bdafd9b84f0a09c597a7f4182045",
+    "reviews/2026-09-27-team/verify_independent.py": "694fba2ce7ff1703936d43d25cb07a67e9c004cf14a67b8f40d8d84f6e0cd39c",
+    "notes/FASTEST_CORE_CERTIFICATES_2026_09_27.md": "1fa187f2726b07e950414aea15fb03e2ae354fe70353385fca1fdf87505eaf30",
+    "notes/TEAM_TRANSFER_2026_09_27.md": "1a2b129b8458dd5e3ce332999ede1146a78d99ae14c38b12a3f6d51f1867f5ab",
+    "README.md": "30a439ad26e5f971623708afebb40f00e7650238928be18801a7e6f9416cbbc3",
+    "HANDOFF.md": "849329d686b6645ef93916ab4a51f07de7e01dc466fe82aa43b027fab3d8cfde",
+    "LR2_HANDOFF.md": "924b792946dd35222e9b48e68f3fd4f74f78a44250e337df735176ba64b6c7a7",
+    "notes/SOURCES.md": "ae9cc6aebcb059e64ac41e9b1af64bad78ff59ee0a1886075d75f30751f8d80f",
+    "notes/inquiries/README.md": "42a895d674eac827ad93ce5d31b7f49b2ffb16734b2eb972b9d65648a18ac59c",
+    "notes/inquiries/2026-09-27-relationships-and-independence.md": "d9c3577dbda6f82b71e3ce14eb1e6d1dc7737b513b02d35dcc78579640983a8b"
+  }
+}

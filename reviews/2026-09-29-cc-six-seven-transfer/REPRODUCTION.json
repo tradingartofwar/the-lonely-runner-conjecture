@@ -1,0 +1,20 @@
+{
+  "frozen_head": "a9a9c2746bd39740888ecd4ae48ed8f5d47b4dcd",
+  "checks": [
+    {
+      "command": "python3 reviews/2026-09-29-cc-six-seven-transfer/verify_transfer.py",
+      "exit_code": 0,
+      "saved_output": "reviews/2026-09-29-cc-six-seven-transfer/verification.json",
+      "exact_output_match": true,
+      "output_sha256": "d86b6c3f37482be9fdade514ce0b2092ebd761cf75bcf4133193e0830aaa2157"
+    },
+    {
+      "command": "python3 reviews/2026-09-29-cc-six-seven-transfer/countercheck.py",
+      "exit_code": 0,
+      "saved_output": "reviews/2026-09-29-cc-six-seven-transfer/countercheck.json",
+      "exact_output_match": true,
+      "output_sha256": "8a0226a56ba8f96beed497c7e59de412a260a386d34ccaa00ad47235b84a1d9a"
+    }
+  ],
+  "status": "PASS; both outputs reproduced byte for byte"
+}

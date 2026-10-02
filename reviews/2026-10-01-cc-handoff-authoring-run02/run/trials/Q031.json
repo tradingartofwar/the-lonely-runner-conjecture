@@ -1,0 +1,60 @@
+{
+  "question": "H04-Q1",
+  "history": "H04",
+  "method": "cc",
+  "author": "A008",
+  "id": "Q031",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q031",
+  "started_at": "2026-10-02T00:59:11.880619+00:00",
+  "started_epoch": 1790902751.8806334,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nMay the live source be retired at the cutoff under the supplied rule? How many current source keys have verified matching current revisions, and which keys still prevent establishing complete coverage?\n\nEVIDENCE\nSTATUS\nAt Day 12, source retirement is not permitted under H01. The writable source has 97 keys: K12 revision 2, all others revision 1. Destination evidence covers 96 M0 ingestion acknowledgments and 94 verified M0 matches; only 93 matches establish current revisions. Current verification gaps are K95, K96, K97, and K12 revision 2.\n\nEVIDENCE\nH02–H03: M0 contains K1–K96 revision 1; backup-east and archive-copy alias one stored object, object-amber, not independent copies. H04–H07: ingestion accepted writing; audits matched K1–K94 revision 1, with K95–K96 unaudited and zero observed mismatches. H08–H09: the complete delta ledger contains K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence. H10: preview routing neither retired the source nor added verification; its sample excluded all four gaps. H11–H12: planned work remains unexecuted, with no further recorded source changes. Missing audits do not establish corruption.\n\nNEXT\nComplete K95–K96 revision-1 comparisons, then synchronize and verify both deltas. If those two comparisons match, M0 becomes fully verified: 96 snapshot matches, but only 95 current matches out of 97; retirement still fails. Retirement requires verified destination matches for every current key/revision, accounting for subsequent writes. Recover exact scope from H01–H03, audit evidence H04–H07, deltas H08–H09, and proposal/cutoff H11–H12.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T00:59:11.881369+00:00",
+      "sha256": "92565b3ceff22f09f0b8bedff7eb8346867daafdf927a12eaa712d7b32157c97",
+      "delivered_at": "2026-10-02T00:59:47.414155+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"No. At the Day 12 cutoff, H01 requires verified destination matches for every current source key and revision. Only 93 of 97 current source keys have verified matching current revisions. Complete coverage remains unestablished for K95 revision 1, K96 revision 1, K97 revision 1, and K12 revision 2. The 94 verified M0 matches include K12 revision 1, which is no longer current. K95–K96 lack audits; K97 and K12 revision 2 lack destination ingestion and verification evidence. Planned work has not occurred, and missing verification does not establish corruption.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:01:00.004970+00:00",
+      "raw_file": "incoming/Q031-01.json",
+      "sha256": "b05808146c0dd09ce7801c1487b43a594300ec059378e3cea2ebdb74df1ddd6a",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 88,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "No. At the Day 12 cutoff, H01 requires verified destination matches for every current source key and revision. Only 93 of 97 current source keys have verified matching current revisions. Complete coverage remains unestablished for K95 revision 1, K96 revision 1, K97 revision 1, and K12 revision 2. The 94 verified M0 matches include K12 revision 1, which is no longer current. K95–K96 lack audits; K97 and K12 revision 2 lack destination ingestion and verification evidence. Planned work has not occurred, and missing verification does not establish corruption.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:01:00.005219+00:00",
+  "final_answer": {
+    "answer": "No. At the Day 12 cutoff, H01 requires verified destination matches for every current source key and revision. Only 93 of 97 current source keys have verified matching current revisions. Complete coverage remains unestablished for K95 revision 1, K96 revision 1, K97 revision 1, and K12 revision 2. The 94 verified M0 matches include K12 revision 1, which is no longer current. K95–K96 lack audits; K97 and K12 revision 2 lack destination ingestion and verification evidence. Planned work has not occurred, and missing verification does not establish corruption.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:01:00.005225+00:00",
+  "ended_epoch": 1790902860.0052266,
+  "visible_input_words": 390,
+  "visible_input_characters": 2656,
+  "visible_output_words": 88,
+  "visible_output_characters": 591,
+  "actual_tokens": null
+}

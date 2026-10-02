@@ -1,0 +1,2517 @@
+{
+  "date": "2026-09-27",
+  "baseline_commit": "8a4b1415aff92a53473237183b18076cdc2d8537",
+  "status": "Exact physical empty/contact counterexample and scoped residue classification; unbounded arguments are proof candidates awaiting independent review. No novelty claim.",
+  "script_sha256": "514364bf9fb0a58e27fcc47d05654d29d94976a94dc36a9ee00c59a3401c40bc",
+  "core": [
+    1,
+    4,
+    5
+  ],
+  "fixed_blockers": [
+    6,
+    7,
+    3
+  ],
+  "window": [
+    "9/32",
+    "3/8"
+  ],
+  "threshold": "1/8",
+  "variable_domain": "Positive integer y outside {1,3,4,5,6,7}; reference 0; common start.",
+  "endpoint_rule": "F_J is empty iff 8 divides y, otherwise F_J={3/8}; U=0 always.",
+  "denominator_rule": "For reduced D_y=p/q, F_J is empty iff 64 divides q; q=1 when D_y=0.",
+  "denominator_certificate": [
+    {
+      "residue": 0,
+      "coefficient": 0,
+      "conclusion": "D_y=3/128; denominator has exactly seven factors of 2"
+    },
+    {
+      "residue": 1,
+      "coefficient": -3,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 2,
+      "coefficient": -6,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 3,
+      "coefficient": 23,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 4,
+      "coefficient": -12,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 5,
+      "coefficient": -15,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 6,
+      "coefficient": 14,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 7,
+      "coefficient": -1,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 8,
+      "coefficient": -8,
+      "conclusion": "denominator has exactly six factors of 2"
+    },
+    {
+      "residue": 9,
+      "coefficient": 5,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 10,
+      "coefficient": 2,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 11,
+      "coefficient": 3,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 12,
+      "coefficient": -4,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 13,
+      "coefficient": -7,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 14,
+      "coefficient": 14,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 15,
+      "coefficient": -13,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 16,
+      "coefficient": 0,
+      "conclusion": "D_y=3/128; denominator has exactly seven factors of 2"
+    },
+    {
+      "residue": 17,
+      "coefficient": 13,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 18,
+      "coefficient": -14,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 19,
+      "coefficient": 7,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 20,
+      "coefficient": 4,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 21,
+      "coefficient": -3,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 22,
+      "coefficient": -2,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 23,
+      "coefficient": -5,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 24,
+      "coefficient": 8,
+      "conclusion": "denominator has exactly six factors of 2"
+    },
+    {
+      "residue": 25,
+      "coefficient": 1,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 26,
+      "coefficient": -14,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 27,
+      "coefficient": 15,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 28,
+      "coefficient": 12,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 29,
+      "coefficient": -23,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 30,
+      "coefficient": 6,
+      "conclusion": "denominator has at most five factors of 2"
+    },
+    {
+      "residue": 31,
+      "coefficient": 3,
+      "conclusion": "denominator has at most five factors of 2"
+    }
+  ],
+  "period": 672,
+  "fixed_regions_by_mask": [
+    [
+      [
+        "9/32",
+        "3/8"
+      ]
+    ],
+    [
+      [
+        "5/16",
+        "17/48"
+      ]
+    ],
+    [
+      [
+        "9/32",
+        "17/56"
+      ]
+    ],
+    [],
+    [
+      [
+        "7/24",
+        "3/8"
+      ]
+    ],
+    [
+      [
+        "5/16",
+        "17/48"
+      ]
+    ],
+    [
+      [
+        "7/24",
+        "17/56"
+      ]
+    ],
+    []
+  ],
+  "coefficient_rows_sha256": "edc3a94dd64fee5b60c94ddac11afef6260683d325aa3a59c43b2ae627e9a150",
+  "nonzero_ray_count": 534,
+  "ray_size_counts": {
+    "1": 416,
+    "2": 108,
+    "3": 6,
+    "4": 2,
+    "6": 2
+  },
+  "zero_coefficient_rows": [
+    [
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      336,
+      0,
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "zero_class": "All positive multiples of 336; all have empty J and identical complete moments.",
+  "same_ray_residue_pairs": 168,
+  "family_counts": {
+    "all": 34,
+    "empty": 12,
+    "singleton": 22,
+    "mixed_outcome": 0
+  },
+  "collision_families": [
+    {
+      "residues": [
+        48,
+        144
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 48,
+      "k_modulus": 672,
+      "first_admissible_k": 48,
+      "first_speeds": [
+        48,
+        144
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        95,
+        190
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 95,
+      "k_modulus": 672,
+      "first_admissible_k": 95,
+      "first_speeds": [
+        95,
+        190
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        98,
+        196
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 98,
+      "k_modulus": 672,
+      "first_admissible_k": 98,
+      "first_speeds": [
+        98,
+        196
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        48,
+        240
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 48,
+      "k_modulus": 672,
+      "first_admissible_k": 48,
+      "first_speeds": [
+        48,
+        240
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        144,
+        240
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 48,
+      "k_modulus": 672,
+      "first_admissible_k": 48,
+      "first_speeds": [
+        144,
+        240
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        170,
+        340
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 170,
+      "k_modulus": 672,
+      "first_admissible_k": 170,
+      "first_speeds": [
+        170,
+        340
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        97,
+        388
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 97,
+      "k_modulus": 672,
+      "first_admissible_k": 97,
+      "first_speeds": [
+        97,
+        388
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        266,
+        532
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 266,
+      "k_modulus": 672,
+      "first_admissible_k": 266,
+      "first_speeds": [
+        266,
+        532
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        406,
+        140
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 406,
+      "k_modulus": 672,
+      "first_admissible_k": 406,
+      "first_speeds": [
+        406,
+        812
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        288,
+        192
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 288,
+      "k_modulus": 672,
+      "first_admissible_k": 288,
+      "first_speeds": [
+        288,
+        864
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        502,
+        332
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 502,
+      "k_modulus": 672,
+      "first_admissible_k": 502,
+      "first_speeds": [
+        502,
+        1004
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        574,
+        476
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 574,
+      "k_modulus": 672,
+      "first_admissible_k": 574,
+      "first_speeds": [
+        574,
+        1148
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        384,
+        480
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 384,
+      "k_modulus": 672,
+      "first_admissible_k": 384,
+      "first_speeds": [
+        384,
+        1152
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        577,
+        482
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 577,
+      "k_modulus": 672,
+      "first_admissible_k": 577,
+      "first_speeds": [
+        577,
+        1154
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        670,
+        668
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 670,
+      "k_modulus": 672,
+      "first_admissible_k": 670,
+      "first_speeds": [
+        670,
+        1340
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        671,
+        670
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 671,
+      "k_modulus": 672,
+      "first_admissible_k": 671,
+      "first_speeds": [
+        671,
+        1342
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        1,
+        2
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1,
+      "k_modulus": 672,
+      "first_admissible_k": 673,
+      "first_speeds": [
+        673,
+        1346
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        2,
+        4
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 2,
+      "k_modulus": 672,
+      "first_admissible_k": 674,
+      "first_speeds": [
+        674,
+        1348
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        288,
+        96
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 288,
+      "k_modulus": 672,
+      "first_admissible_k": 288,
+      "first_speeds": [
+        288,
+        1440
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        192,
+        96
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 288,
+      "k_modulus": 672,
+      "first_admissible_k": 288,
+      "first_speeds": [
+        864,
+        1440
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        624,
+        528
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 624,
+      "k_modulus": 672,
+      "first_admissible_k": 624,
+      "first_speeds": [
+        624,
+        1872
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        384,
+        576
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 384,
+      "k_modulus": 672,
+      "first_admissible_k": 384,
+      "first_speeds": [
+        384,
+        1920
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        480,
+        576
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 384,
+      "k_modulus": 672,
+      "first_admissible_k": 384,
+      "first_speeds": [
+        1152,
+        1920
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        575,
+        284
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 575,
+      "k_modulus": 672,
+      "first_admissible_k": 575,
+      "first_speeds": [
+        575,
+        2300
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        671,
+        668
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 671,
+      "k_modulus": 672,
+      "first_admissible_k": 671,
+      "first_speeds": [
+        671,
+        2684
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        1,
+        4
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 1,
+      "k_modulus": 672,
+      "first_admissible_k": 673,
+      "first_speeds": [
+        673,
+        2692
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        624,
+        432
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 624,
+      "k_modulus": 672,
+      "first_admissible_k": 624,
+      "first_speeds": [
+        624,
+        3120
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        528,
+        432
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 624,
+      "k_modulus": 672,
+      "first_admissible_k": 624,
+      "first_speeds": [
+        1872,
+        3120
+      ],
+      "outcome": "empty"
+    },
+    {
+      "residues": [
+        671,
+        667
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 671,
+      "k_modulus": 672,
+      "first_admissible_k": 671,
+      "first_speeds": [
+        671,
+        3355
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        670,
+        667
+      ],
+      "multipliers": [
+        2,
+        5
+      ],
+      "k_residue": 671,
+      "k_modulus": 672,
+      "first_admissible_k": 671,
+      "first_speeds": [
+        1342,
+        3355
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        668,
+        667
+      ],
+      "multipliers": [
+        4,
+        5
+      ],
+      "k_residue": 671,
+      "k_modulus": 672,
+      "first_admissible_k": 671,
+      "first_speeds": [
+        2684,
+        3355
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        1,
+        5
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 1,
+      "k_modulus": 672,
+      "first_admissible_k": 673,
+      "first_speeds": [
+        673,
+        3365
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        2,
+        5
+      ],
+      "multipliers": [
+        2,
+        5
+      ],
+      "k_residue": 1,
+      "k_modulus": 672,
+      "first_admissible_k": 673,
+      "first_speeds": [
+        1346,
+        3365
+      ],
+      "outcome": "singleton at 3/8"
+    },
+    {
+      "residues": [
+        4,
+        5
+      ],
+      "multipliers": [
+        4,
+        5
+      ],
+      "k_residue": 1,
+      "k_modulus": 672,
+      "first_admissible_k": 673,
+      "first_speeds": [
+        2692,
+        3365
+      ],
+      "outcome": "singleton at 3/8"
+    }
+  ],
+  "physical_controls": [
+    {
+      "y": 2,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "D_y_denominator": 1,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/96",
+        "0",
+        "5/168",
+        "1/24",
+        "1/84",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "variable_endpoint_phases": [
+        "9/16",
+        "3/4"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "contact_controllers": [
+        {
+          "time": "3/8",
+          "speed": 5,
+          "phase": "7/8",
+          "direction": "leaves safety"
+        },
+        {
+          "time": "3/8",
+          "speed": 3,
+          "phase": "1/8",
+          "direction": "enters safety"
+        }
+      ]
+    },
+    {
+      "y": 8,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "1/64",
+        "0",
+        "0",
+        "1/64"
+      ],
+      "D_y_denominator": 64,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "1/64",
+        "0",
+        "0",
+        "0",
+        "1/64",
+        "0",
+        "0",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/96",
+        "0",
+        "19/1344",
+        "1/24",
+        "1/84",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/64",
+        "0",
+        "0",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [],
+      "variable_endpoint_phases": [
+        "1/4",
+        "0"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "contact_controllers": []
+    },
+    {
+      "y": 10,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "1/40",
+        "0",
+        "9/560",
+        "1/48"
+      ],
+      "D_y_denominator": 40,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "1/40",
+        "0",
+        "9/560",
+        "0",
+        "1/48",
+        "0",
+        "1/84",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/160",
+        "0",
+        "1/48",
+        "1/24",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/240",
+        "0",
+        "1/112",
+        "0",
+        "1/84",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "variable_endpoint_phases": [
+        "13/16",
+        "3/4"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        5,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "contact_controllers": [
+        {
+          "time": "3/8",
+          "speed": 5,
+          "phase": "7/8",
+          "direction": "leaves safety"
+        },
+        {
+          "time": "3/8",
+          "speed": 3,
+          "phase": "1/8",
+          "direction": "enters safety"
+        }
+      ]
+    },
+    {
+      "y": 24,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "5/192",
+        "1/96",
+        "1/96",
+        "1/48"
+      ],
+      "D_y_denominator": 192,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "5/192",
+        "1/96",
+        "1/96",
+        "0",
+        "1/48",
+        "1/96",
+        "1/192",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/192",
+        "0",
+        "11/448",
+        "1/32",
+        "3/448",
+        "0",
+        "0",
+        "0",
+        "1/192",
+        "0",
+        "1/192",
+        "1/96",
+        "1/192",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [],
+      "variable_endpoint_phases": [
+        "3/4",
+        "0"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        6,
+        1,
+        1,
+        3
+      ],
+      "contact_controllers": []
+    },
+    {
+      "y": 48,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "3/128",
+        "1/96",
+        "1/192",
+        "1/48"
+      ],
+      "D_y_denominator": 128,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "3/128",
+        "1/96",
+        "1/192",
+        "0",
+        "1/48",
+        "1/96",
+        "1/384",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/128",
+        "0",
+        "59/2688",
+        "1/32",
+        "25/2688",
+        "0",
+        "0",
+        "0",
+        "1/384",
+        "0",
+        "1/128",
+        "1/96",
+        "1/384",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [],
+      "variable_endpoint_phases": [
+        "1/2",
+        "0"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        6,
+        1,
+        1,
+        3
+      ],
+      "contact_controllers": []
+    },
+    {
+      "y": 144,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "3/128",
+        "1/96",
+        "1/192",
+        "1/48"
+      ],
+      "D_y_denominator": 128,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "3/128",
+        "1/96",
+        "1/192",
+        "0",
+        "1/48",
+        "1/96",
+        "1/384",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/128",
+        "0",
+        "59/2688",
+        "1/32",
+        "25/2688",
+        "0",
+        "0",
+        "0",
+        "1/384",
+        "0",
+        "1/128",
+        "1/96",
+        "1/384",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [],
+      "variable_endpoint_phases": [
+        "1/2",
+        "0"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        6,
+        1,
+        1,
+        3
+      ],
+      "contact_controllers": []
+    },
+    {
+      "y": 95,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "9/380",
+        "1/95",
+        "1/190",
+        "2/95"
+      ],
+      "D_y_denominator": 380,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "9/380",
+        "1/95",
+        "1/190",
+        "0",
+        "2/95",
+        "1/95",
+        "1/380",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "71/9120",
+        "0",
+        "349/15960",
+        "71/2280",
+        "37/3990",
+        "0",
+        "0",
+        "0",
+        "1/380",
+        "0",
+        "3/380",
+        "1/95",
+        "1/380",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "variable_endpoint_phases": [
+        "23/32",
+        "5/8"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "contact_controllers": [
+        {
+          "time": "3/8",
+          "speed": 5,
+          "phase": "7/8",
+          "direction": "leaves safety"
+        },
+        {
+          "time": "3/8",
+          "speed": 3,
+          "phase": "1/8",
+          "direction": "enters safety"
+        }
+      ]
+    },
+    {
+      "y": 190,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "9/380",
+        "1/95",
+        "1/190",
+        "2/95"
+      ],
+      "D_y_denominator": 380,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "9/380",
+        "1/95",
+        "1/190",
+        "0",
+        "2/95",
+        "1/95",
+        "1/380",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "71/9120",
+        "0",
+        "349/15960",
+        "71/2280",
+        "37/3990",
+        "0",
+        "0",
+        "0",
+        "1/380",
+        "0",
+        "3/380",
+        "1/95",
+        "1/380",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "variable_endpoint_phases": [
+        "7/16",
+        "1/4"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        5,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "contact_controllers": [
+        {
+          "time": "3/8",
+          "speed": 5,
+          "phase": "7/8",
+          "direction": "leaves safety"
+        },
+        {
+          "time": "3/8",
+          "speed": 3,
+          "phase": "1/8",
+          "direction": "enters safety"
+        }
+      ]
+    },
+    {
+      "y": 336,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "3/128",
+        "1/96",
+        "5/896",
+        "1/48"
+      ],
+      "D_y_denominator": 128,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "3/128",
+        "1/96",
+        "5/896",
+        "0",
+        "1/48",
+        "1/96",
+        "1/336",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/128",
+        "0",
+        "5/224",
+        "1/32",
+        "1/112",
+        "0",
+        "0",
+        "0",
+        "1/384",
+        "0",
+        "5/672",
+        "1/96",
+        "1/336",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [],
+      "variable_endpoint_phases": [
+        "1/2",
+        "0"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        6,
+        1,
+        7,
+        3
+      ],
+      "contact_controllers": []
+    },
+    {
+      "y": 672,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "3/128",
+        "1/96",
+        "5/896",
+        "1/48"
+      ],
+      "D_y_denominator": 128,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "3/128",
+        "1/96",
+        "5/896",
+        "0",
+        "1/48",
+        "1/96",
+        "1/336",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/128",
+        "0",
+        "5/224",
+        "1/32",
+        "1/112",
+        "0",
+        "0",
+        "0",
+        "1/384",
+        "0",
+        "5/672",
+        "1/96",
+        "1/336",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [],
+      "variable_endpoint_phases": [
+        "0",
+        "0"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        6,
+        1,
+        7,
+        3
+      ],
+      "contact_controllers": []
+    },
+    {
+      "y": 673,
+      "fixed_blockers": [
+        6,
+        7,
+        3
+      ],
+      "summary": [
+        "63/2692",
+        "7/673",
+        "15/2692",
+        "14/673"
+      ],
+      "D_y_denominator": 2692,
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "63/2692",
+        "7/673",
+        "15/2692",
+        "0",
+        "14/673",
+        "7/673",
+        "2/673",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "505/64608",
+        "0",
+        "2525/113064",
+        "505/16152",
+        "505/56532",
+        "0",
+        "0",
+        "0",
+        "7/2692",
+        "0",
+        "5/673",
+        "7/673",
+        "2/673",
+        "0"
+      ],
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "variable_endpoint_phases": [
+        "9/32",
+        "3/8"
+      ],
+      "all_nonzero_relative_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "contact_controllers": [
+        {
+          "time": "3/8",
+          "speed": 5,
+          "phase": "7/8",
+          "direction": "leaves safety"
+        },
+        {
+          "time": "3/8",
+          "speed": 3,
+          "phase": "1/8",
+          "direction": "enters safety"
+        }
+      ]
+    }
+  ],
+  "closeness_controls": [
+    {
+      "m": 1,
+      "speeds": [
+        672,
+        673
+      ],
+      "empty_D_y": "3/128",
+      "contact_D_z": "63/2692",
+      "maximum_moment_difference": "3/86144"
+    },
+    {
+      "m": 1000000,
+      "speeds": [
+        672000000,
+        672000001
+      ],
+      "empty_D_y": "3/128",
+      "contact_D_z": "15750000/672000001",
+      "maximum_moment_difference": "3/86016000128"
+    },
+    {
+      "m": 100000000000000000000,
+      "speeds": [
+        67200000000000000000000,
+        67200000000000000000001
+      ],
+      "empty_D_y": "3/128",
+      "contact_D_z": "1575000000000000000000/67200000000000000000001",
+      "maximum_moment_difference": "3/8601600000000000000000128"
+    }
+  ],
+  "constructive_boundary_family": {
+    "fixed_blockers": [
+      3,
+      10,
+      28
+    ],
+    "period": 3360,
+    "fixed_regions_by_mask": [
+      [
+        [
+          "9/32",
+          "3/8"
+        ]
+      ],
+      [
+        [
+          "7/24",
+          "3/8"
+        ]
+      ],
+      [
+        [
+          "23/80",
+          "5/16"
+        ]
+      ],
+      [
+        [
+          "7/24",
+          "5/16"
+        ]
+      ],
+      [
+        [
+          "9/32",
+          "65/224"
+        ],
+        [
+          "71/224",
+          "73/224"
+        ],
+        [
+          "79/224",
+          "81/224"
+        ]
+      ],
+      [
+        [
+          "71/224",
+          "73/224"
+        ],
+        [
+          "79/224",
+          "81/224"
+        ]
+      ],
+      [
+        [
+          "23/80",
+          "65/224"
+        ]
+      ],
+      []
+    ],
+    "endpoint_certificate": [
+      {
+        "time": "9/32",
+        "phase_for_1680": "1/2",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "23/80",
+        "phase_for_1680": "0",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "65/224",
+        "phase_for_1680": "1/2",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "7/24",
+        "phase_for_1680": "0",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "5/16",
+        "phase_for_1680": "0",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "71/224",
+        "phase_for_1680": "1/2",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "73/224",
+        "phase_for_1680": "1/2",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "79/224",
+        "phase_for_1680": "1/2",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "81/224",
+        "phase_for_1680": "1/2",
+        "periodic_correction": "1/8"
+      },
+      {
+        "time": "3/8",
+        "phase_for_1680": "0",
+        "periodic_correction": "1/8"
+      }
+    ],
+    "variable_speeds": "y=1680h for every positive integer h",
+    "statement": "All joint duration moments and all pair gcds among the seven nonzero relative speeds are constant. F_J={9/32} for odd h and is empty for even h.",
+    "controls": [
+      {
+        "y": 1680,
+        "fixed_blockers": [
+          3,
+          10,
+          28
+        ],
+        "summary": [
+          "3/128",
+          "1/48",
+          "1/160",
+          "3/448"
+        ],
+        "D_y_denominator": 128,
+        "moments_by_mask": [
+          "3/32",
+          "1/12",
+          "1/40",
+          "1/48",
+          "3/112",
+          "1/56",
+          "3/1120",
+          "0",
+          "3/128",
+          "1/48",
+          "1/160",
+          "1/192",
+          "3/448",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "state_durations_by_mask": [
+          "0",
+          "15/448",
+          "1/896",
+          "1/64",
+          "3/640",
+          "3/224",
+          "9/4480",
+          "0",
+          "0",
+          "5/448",
+          "1/2688",
+          "1/192",
+          "1/640",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "clear_duration": "0",
+        "components": [
+          [
+            "9/32",
+            "9/32"
+          ]
+        ],
+        "variable_endpoint_phases": [
+          "1/2",
+          "0"
+        ],
+        "all_nonzero_relative_pair_gcds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          4,
+          1,
+          5,
+          1,
+          5,
+          1,
+          1,
+          3,
+          2,
+          10,
+          28
+        ],
+        "contact_controllers": [
+          {
+            "time": "9/32",
+            "speed": 4,
+            "phase": "1/8",
+            "direction": "enters safety"
+          },
+          {
+            "time": "9/32",
+            "speed": 28,
+            "phase": "7/8",
+            "direction": "leaves safety"
+          }
+        ]
+      },
+      {
+        "y": 3360,
+        "fixed_blockers": [
+          3,
+          10,
+          28
+        ],
+        "summary": [
+          "3/128",
+          "1/48",
+          "1/160",
+          "3/448"
+        ],
+        "D_y_denominator": 128,
+        "moments_by_mask": [
+          "3/32",
+          "1/12",
+          "1/40",
+          "1/48",
+          "3/112",
+          "1/56",
+          "3/1120",
+          "0",
+          "3/128",
+          "1/48",
+          "1/160",
+          "1/192",
+          "3/448",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "state_durations_by_mask": [
+          "0",
+          "15/448",
+          "1/896",
+          "1/64",
+          "3/640",
+          "3/224",
+          "9/4480",
+          "0",
+          "0",
+          "5/448",
+          "1/2688",
+          "1/192",
+          "1/640",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "clear_duration": "0",
+        "components": [],
+        "variable_endpoint_phases": [
+          "0",
+          "0"
+        ],
+        "all_nonzero_relative_pair_gcds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          4,
+          1,
+          5,
+          1,
+          5,
+          1,
+          1,
+          3,
+          2,
+          10,
+          28
+        ],
+        "contact_controllers": []
+      },
+      {
+        "y": 5040,
+        "fixed_blockers": [
+          3,
+          10,
+          28
+        ],
+        "summary": [
+          "3/128",
+          "1/48",
+          "1/160",
+          "3/448"
+        ],
+        "D_y_denominator": 128,
+        "moments_by_mask": [
+          "3/32",
+          "1/12",
+          "1/40",
+          "1/48",
+          "3/112",
+          "1/56",
+          "3/1120",
+          "0",
+          "3/128",
+          "1/48",
+          "1/160",
+          "1/192",
+          "3/448",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "state_durations_by_mask": [
+          "0",
+          "15/448",
+          "1/896",
+          "1/64",
+          "3/640",
+          "3/224",
+          "9/4480",
+          "0",
+          "0",
+          "5/448",
+          "1/2688",
+          "1/192",
+          "1/640",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "clear_duration": "0",
+        "components": [
+          [
+            "9/32",
+            "9/32"
+          ]
+        ],
+        "variable_endpoint_phases": [
+          "1/2",
+          "0"
+        ],
+        "all_nonzero_relative_pair_gcds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          4,
+          1,
+          5,
+          1,
+          5,
+          1,
+          1,
+          3,
+          2,
+          10,
+          28
+        ],
+        "contact_controllers": [
+          {
+            "time": "9/32",
+            "speed": 4,
+            "phase": "1/8",
+            "direction": "enters safety"
+          },
+          {
+            "time": "9/32",
+            "speed": 28,
+            "phase": "7/8",
+            "direction": "leaves safety"
+          }
+        ]
+      },
+      {
+        "y": 6720,
+        "fixed_blockers": [
+          3,
+          10,
+          28
+        ],
+        "summary": [
+          "3/128",
+          "1/48",
+          "1/160",
+          "3/448"
+        ],
+        "D_y_denominator": 128,
+        "moments_by_mask": [
+          "3/32",
+          "1/12",
+          "1/40",
+          "1/48",
+          "3/112",
+          "1/56",
+          "3/1120",
+          "0",
+          "3/128",
+          "1/48",
+          "1/160",
+          "1/192",
+          "3/448",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "state_durations_by_mask": [
+          "0",
+          "15/448",
+          "1/896",
+          "1/64",
+          "3/640",
+          "3/224",
+          "9/4480",
+          "0",
+          "0",
+          "5/448",
+          "1/2688",
+          "1/192",
+          "1/640",
+          "1/224",
+          "3/4480",
+          "0"
+        ],
+        "clear_duration": "0",
+        "components": [],
+        "variable_endpoint_phases": [
+          "0",
+          "0"
+        ],
+        "all_nonzero_relative_pair_gcds": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          4,
+          1,
+          5,
+          1,
+          5,
+          1,
+          1,
+          3,
+          2,
+          10,
+          28
+        ],
+        "contact_controllers": []
+      }
+    ],
+    "closed_safe_cells": [
+      {
+        "speeds": [
+          1,
+          3,
+          4,
+          5,
+          10,
+          28,
+          1680
+        ],
+        "rows": [
+          {
+            "speed": 1,
+            "lap": 0,
+            "lower": "1/8",
+            "upper": "7/8"
+          },
+          {
+            "speed": 3,
+            "lap": 0,
+            "lower": "1/24",
+            "upper": "7/24"
+          },
+          {
+            "speed": 4,
+            "lap": 1,
+            "lower": "9/32",
+            "upper": "15/32"
+          },
+          {
+            "speed": 5,
+            "lap": 1,
+            "lower": "9/40",
+            "upper": "3/8"
+          },
+          {
+            "speed": 10,
+            "lap": 2,
+            "lower": "17/80",
+            "upper": "23/80"
+          },
+          {
+            "speed": 28,
+            "lap": 7,
+            "lower": "57/224",
+            "upper": "9/32"
+          },
+          {
+            "speed": 1680,
+            "lap": 472,
+            "lower": "1259/4480",
+            "upper": "1261/4480"
+          }
+        ],
+        "cell": [
+          "9/32",
+          "9/32"
+        ],
+        "width": "0",
+        "lower_controller": 4,
+        "upper_controller": 28
+      },
+      {
+        "speeds": [
+          1,
+          3,
+          4,
+          5,
+          10,
+          28,
+          5040
+        ],
+        "rows": [
+          {
+            "speed": 1,
+            "lap": 0,
+            "lower": "1/8",
+            "upper": "7/8"
+          },
+          {
+            "speed": 3,
+            "lap": 0,
+            "lower": "1/24",
+            "upper": "7/24"
+          },
+          {
+            "speed": 4,
+            "lap": 1,
+            "lower": "9/32",
+            "upper": "15/32"
+          },
+          {
+            "speed": 5,
+            "lap": 1,
+            "lower": "9/40",
+            "upper": "3/8"
+          },
+          {
+            "speed": 10,
+            "lap": 2,
+            "lower": "17/80",
+            "upper": "23/80"
+          },
+          {
+            "speed": 28,
+            "lap": 7,
+            "lower": "57/224",
+            "upper": "9/32"
+          },
+          {
+            "speed": 5040,
+            "lap": 1417,
+            "lower": "3779/13440",
+            "upper": "3781/13440"
+          }
+        ],
+        "cell": [
+          "9/32",
+          "9/32"
+        ],
+        "width": "0",
+        "lower_controller": 4,
+        "upper_controller": 28
+      }
+    ],
+    "strict_witnesses_outside_J": [
+      {
+        "y": 1680,
+        "time": "11/64",
+        "minimum_distance": "9/64",
+        "margin": "1/64"
+      },
+      {
+        "y": 3360,
+        "time": "11/64",
+        "minimum_distance": "9/64",
+        "margin": "1/64"
+      }
+    ]
+  },
+  "limits": "The first anchor excludes exact complete-moment empty/contact matches. The second anchor supplies them physically on the same J and threshold. This is local, selected-reference information loss, not a counterexample to Lonely Runner. Right-endpoint status is encoded by single-duration denominators; left-endpoint status need not be. Full chronology, reduced ratios, and speeds are not matched."
+}

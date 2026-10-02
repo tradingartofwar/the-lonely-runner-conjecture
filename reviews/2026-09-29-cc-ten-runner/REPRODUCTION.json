@@ -1,0 +1,34 @@
+{
+  "input_hashes_verified": 8,
+  "reproduce_script_sha256": "2367b8f9192d4bddb59a78b73e170d25c597cabe25481f05133b9c8f534ef194",
+  "reproduced_byte_for_byte": {
+    "geometry_review.json": "1436ee4e1c99f894a0864d0ee302a1618acc3b814fd54cc280575b757b60130a",
+    "motivation.json": "4e473b07e94e544d56fe87e759adb321153a94b8f832ff5a26b4272d798cf014",
+    "physical_review.json": "c548628f79016ca00cb2c9cf42e7fd70ee4996abce0ec6c17bdbf1d31c68817b",
+    "regression.json": "4ca79f129a6c978eb4a6ded81309ff48745428c1a1904454dfa7123d234bcb0e",
+    "stage8.json": "dad144b315d38735f6f26a7421d7a5f8e0386ff8463b6fc43dec48e8e3442f25",
+    "summary.json": "fae7e435d04af5029b9d60772c1e8741e88fd597166fffd3924e53b58f96b376"
+  },
+  "scope": "Frozen Stage A and reached paths only; no new coefficients or parameter scans.",
+  "status": "PASS",
+  "summary": {
+    "protocol_sha256": "7d380e243a06de179fa2b456a86ebbeee35f8b8de75fc5ead6ebf8d15684f506",
+    "stage10": {
+      "reason": "Stage A primary guarantee already implies 1/10 safety.",
+      "status": "NOT_TRIGGERED"
+    },
+    "stage8": {
+      "counts": {
+        "candidates": 52,
+        "chosen": 4,
+        "contacts": 2444,
+        "descending": 31,
+        "rectangle_pairs": 136,
+        "residual_pairs": 47
+      },
+      "diagnostic_status": "NOT_TRIGGERED",
+      "primary_status": "PRIMARY_COMPLETE",
+      "status": "COMPLETE_COVER_CERTIFICATE"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "baseline": "c1e88837c8d48954b0de217d857d0bd6ac9cbccf",
+  "snapshot_recovery": "334 baseline files verified against live Git blob SHA1 before use",
+  "status": "OBSERVED/REPRODUCED bounded three-control study; general implications proof candidates; no novelty claim",
+  "delegation": {
+    "calculate": "primary.py/results.json",
+    "verify": "verify.py/verification.json/verification.md; no primary imports",
+    "challenge": "challenge.md; mathematical and prior-coverage review"
+  },
+  "commands": [
+    "python -B reviews/2026-09-28-cover-obligations/primary.py --check",
+    "python -B reviews/2026-09-28-cover-obligations/verify.py --check"
+  ],
+  "verification": {
+    "controls": 3,
+    "exact_primal_dual_certificates": 12,
+    "independent_threshold_cells": 74,
+    "pair_summaries_compared_including_totals": 33,
+    "single_interval_lists_checked": 12,
+    "pair_interval_lists_checked": 18
+  },
+  "policy_costs_per_evaluation": {
+    "LPs": 12,
+    "logical_states_per_LP": 16,
+    "pair_queries": 18,
+    "candidate_laps": 75,
+    "individual_pieces": 42,
+    "pair_intersection_comparisons": 107,
+    "selected_triple_queries": 1,
+    "selected_triple_comparisons": 2,
+    "endpoints": 1
+  },
+  "dependencies": {
+    "replay": "Python standard library only",
+    "primary_regeneration": "NumPy and SciPy propose LP candidates; all acceptance exact rational",
+    "external_project_imports": []
+  },
+  "scope_limits": [
+    "Only three prescribed windows; no broader regression or speed scan",
+    "No ranking competition or positive selected triple duration exercised",
+    "Abstract cover distributions need not be runner-realizable",
+    "No AI agreement promoted to independent human validation",
+    "Old sparse repair and pair-polytope mathematics reproduced, not claimed new"
+  ],
+  "sha256": {
+    "reviews/2026-09-28-cover-obligations/challenge.md": "184f57826bc611d201d1730de2a130925c329cb55b1183214027f3e204747375",
+    "reviews/2026-09-28-cover-obligations/primary.py": "215767faca07262d6f89d7d27702b2aa6de306e9ec183be2a6dfc0fe6c4466b3",
+    "reviews/2026-09-28-cover-obligations/protocol.json": "8619a3b5594c9c8219dfd39e69a796e82dfc5204d9ed3b9b5faf17fde79a5de7",
+    "reviews/2026-09-28-cover-obligations/results.json": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e",
+    "reviews/2026-09-28-cover-obligations/verification.json": "9b41c5b9e96e57271a2db3becdc9992c1566e2ff320789f765ad4d6f929e1d9c",
+    "reviews/2026-09-28-cover-obligations/verification.md": "9e5a2e558c4edba91910cbf9ba8d8fcdd2675ab13bb247304af013c0a63f3e94",
+    "reviews/2026-09-28-cover-obligations/verify.py": "0832eb4be65fb4b441ebcbc3084983f67225b65f03eb8e857e10ad2fdb15b54f",
+    "notes/COVER_OBLIGATION_SELECTION_2026_09_28.md": "4d17d94661f2dd287a155d822532cab436d9cf7db0b4d4e200be5e15b438c5eb"
+  }
+}

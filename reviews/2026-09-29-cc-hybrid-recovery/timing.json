@@ -1,0 +1,149 @@
+{
+  "budget_seconds": 30,
+  "clock": "perf_counter_ns",
+  "gc": "default",
+  "median_paired_full_over_hybrid": 3.7836389915399558,
+  "medians_ns": {
+    "full": 37902064,
+    "hybrid": 10073670
+  },
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rounds": [
+    {
+      "full_over_hybrid": 3.8206446265146856,
+      "nanoseconds": {
+        "full": 37584090,
+        "hybrid": 9837107
+      },
+      "order": [
+        "hybrid",
+        "full"
+      ],
+      "round": 0
+    },
+    {
+      "full_over_hybrid": 4.137414236168908,
+      "nanoseconds": {
+        "full": 43548006,
+        "hybrid": 10525416
+      },
+      "order": [
+        "full",
+        "hybrid"
+      ],
+      "round": 1
+    },
+    {
+      "full_over_hybrid": 3.8232576210394464,
+      "nanoseconds": {
+        "full": 38013775,
+        "hybrid": 9942771
+      },
+      "order": [
+        "hybrid",
+        "full"
+      ],
+      "round": 2
+    },
+    {
+      "full_over_hybrid": 3.3790858081097856,
+      "nanoseconds": {
+        "full": 39559015,
+        "hybrid": 11707017
+      },
+      "order": [
+        "full",
+        "hybrid"
+      ],
+      "round": 3
+    },
+    {
+      "full_over_hybrid": 3.7407942990711183,
+      "nanoseconds": {
+        "full": 37367202,
+        "hybrid": 9989109
+      },
+      "order": [
+        "hybrid",
+        "full"
+      ],
+      "round": 4
+    },
+    {
+      "full_over_hybrid": 3.59158186636101,
+      "nanoseconds": {
+        "full": 37902064,
+        "hybrid": 10553028
+      },
+      "order": [
+        "full",
+        "hybrid"
+      ],
+      "round": 5
+    },
+    {
+      "full_over_hybrid": 4.159226180726587,
+      "nanoseconds": {
+        "full": 41898672,
+        "hybrid": 10073670
+      },
+      "order": [
+        "hybrid",
+        "full"
+      ],
+      "round": 6
+    },
+    {
+      "full_over_hybrid": 3.5054840835306846,
+      "nanoseconds": {
+        "full": 37797479,
+        "hybrid": 10782385
+      },
+      "order": [
+        "full",
+        "hybrid"
+      ],
+      "round": 7
+    },
+    {
+      "full_over_hybrid": 3.7032148142271626,
+      "nanoseconds": {
+        "full": 37716917,
+        "hybrid": 10184912
+      },
+      "order": [
+        "hybrid",
+        "full"
+      ],
+      "round": 8
+    },
+    {
+      "full_over_hybrid": 3.7836389915399558,
+      "nanoseconds": {
+        "full": 37918930,
+        "hybrid": 10021815
+      },
+      "order": [
+        "full",
+        "hybrid"
+      ],
+      "round": 9
+    },
+    {
+      "full_over_hybrid": 3.801655988060772,
+      "nanoseconds": {
+        "full": 37899294,
+        "hybrid": 9969154
+      },
+      "order": [
+        "hybrid",
+        "full"
+      ],
+      "round": 10
+    }
+  ],
+  "scope": "Compute from supplied parsed sources including validation/traces; excludes earlier discovery, imports, parsing, audits, physical controls and writes. Environment-specific, not complexity evidence.",
+  "status": "COMPLETE",
+  "warmups_per_method": 1
+}

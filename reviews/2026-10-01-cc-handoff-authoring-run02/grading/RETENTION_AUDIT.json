@@ -1,0 +1,1422 @@
+{
+  "status": "COMPLETED_MASKED_INTERNAL_RETENTION_AUDIT",
+  "reviewer": "Separate internal AI reviewer; no condition map read",
+  "scope": "12 masked handoffs × 3 exact queries = 36 query-level records. Source histories and the query hypotheticals govern truth; ORACLE_COMPARISON controls optionality.",
+  "limits": [
+    "Partial condition masking only; style may reveal method.",
+    "This is not independent human review or secure blinding.",
+    "No participant calls, source recovery, network, new experiment, condition unmasking, or causal identification.",
+    "Adequacy is assessed from the handoff plus each explicit query, without treating cited source events as if recipients had opened them."
+  ],
+  "counts": {
+    "handoffs": 12,
+    "query_records": 36,
+    "adequate_source_true_support": 36,
+    "query_critical_missing_fact": 0,
+    "query_critical_missing_relation": 0,
+    "clear_source_false_query_support_claim": 0,
+    "other_summary_wording_sensitivities": 1
+  },
+  "records": [
+    {
+      "summary_id": "S01",
+      "history": "H03",
+      "question": "H03-Q1",
+      "query": "Does selected candidate C1 pass the finite acceptance rule at the cutoff? Give its pass, failure and untested counts, naming the failed and untested cases.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the Day 12 cutoff, C1 remains selected and does not pass validation: nine passes, two observed failures (A8, B3), and one untested case (B4). Acceptance requires all twelve authorized cases evaluated for the exact candidate version and at least eleven passes. Even a B4 pass would leave C1 below threshold.",
+          "source_event_ids": [
+            "J01",
+            "J02",
+            "J04",
+            "J05",
+            "J12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C1 does not pass: nine passes, two observed failures A8/B3, one untested B4. The exact-version rule requires all twelve evaluated and at least eleven passes.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S01",
+      "history": "H03",
+      "question": "H03-Q2",
+      "query": "For C1, what are the pass fractions among evaluated cohort cases and among all authorized cohort cases? Explain why neither denominator is the original fourteen-file inventory.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "J01–J02 establish fourteen registered files, with unreadable X1/X2 excluded before outcome inspection, leaving twelve eligible cases.",
+          "source_event_ids": [
+            "J01",
+            "J02"
+          ]
+        },
+        {
+          "handoff_passage": "C1's descriptive fractions are 9/11 evaluated cases (81.8%) and 9/12 cohort cases (75%); B4 is not a failure.",
+          "source_event_ids": [
+            "J04",
+            "J05",
+            "J09"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C1 fractions are 9/11 evaluated and 9/12 authorized. Two unreadable files were excluded before outcomes; B4 remains authorized but untested.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S01",
+      "history": "H03",
+      "question": "H03-Q3",
+      "query": "If the project now selects C2 without performing any additional evaluations, what are C2's pass, failure and untested counts for the authorized cohort, and does it pass the acceptance rule?",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "Acceptance requires all twelve authorized cases evaluated for the exact candidate version and at least eleven passes. Even a B4 pass would leave C1 below threshold.",
+          "source_event_ids": [
+            "J02"
+          ]
+        },
+        {
+          "handoff_passage": "J07–J08 record C2's changed routine and sole evaluation: B3 passes on Day 8. That outcome cannot replace C1's B3 failure. No A8 repair result exists.",
+          "source_event_ids": [
+            "J07",
+            "J08"
+          ]
+        },
+        {
+          "handoff_passage": "If C2 is selected, evaluate its eleven missing cases: A1–A8, B1, B2, B4. Earlier C1 outcomes cannot transfer; X1/X2 exclusions still apply.",
+          "source_event_ids": [
+            "J01",
+            "J02",
+            "J08",
+            "J10",
+            "J11",
+            "J12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C2 has one pass, zero observed failures, eleven untested and does not pass. Its sole B3 result cannot acquire C1 outcomes by selection.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S02",
+      "history": "H02",
+      "question": "H02-Q1",
+      "query": "Using the accepted current calibration, how many unique samples are late, out of how many unique samples? Name the late sample or samples.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, 2/3 unique acquired samples pass (66⅔%): S and T each have one-second delivery delay; U has three seconds and fails. Delivery means first gateway arrival, with delay ≤2 seconds passing. Dashboard repair remains unreleased; its four late rows are provisional, not four distinct failures.",
+          "source_event_ids": [
+            "C01",
+            "C03",
+            "C04",
+            "C05",
+            "C06",
+            "C07",
+            "C08",
+            "C09",
+            "C12"
+          ]
+        },
+        {
+          "handoff_passage": "C08 confirms the complete denominator is three: U-retry shares U's acquisition identifier and supplies no new first arrival.",
+          "source_event_ids": [
+            "C05",
+            "C08"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "After subtracting the accepted +3 clock offset, S/T/U delays are 1/1/3 seconds. U is the one late sample among three unique acquisitions.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S02",
+      "history": "H02",
+      "question": "H02-Q2",
+      "query": "Were S and T simultaneous at acquisition or at gateway arrival? Give their gateway arrival times on the reference clock under the accepted current calibration.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "C03–C05 (Days 3–5) record acquisition/reference, arrival/gateway, insertion/reference respectively: S=(100,104,111), T=(100.5,104.5,111), U=(102,108,113). C07 establishes gateway=reference+3 throughout; subtract three, replacing the withdrawn +1 guess. Corrected arrivals are 101,101.5,105.",
+          "source_event_ids": [
+            "C03",
+            "C04",
+            "C05",
+            "C07"
+          ]
+        },
+        {
+          "handoff_passage": "Shared insertion time does not imply simultaneous acquisition or arrival.",
+          "source_event_ids": [
+            "C04"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "S and T differ by 0.5 seconds at acquisition and arrival. Reference arrival times are 101 and 101.5; neither stage is simultaneous.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S02",
+      "history": "H02",
+      "question": "H02-Q3",
+      "query": "Replace the exact calibration only for this hypothetical: the gateway is ahead by one common unknown offset in the closed interval [2,4] seconds. Which unique samples are guaranteed to pass, guaranteed to fail, or unresolved under the two-second requirement? Is it possible that all three pass?",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "C03–C05 (Days 3–5) record acquisition/reference, arrival/gateway, insertion/reference respectively: S=(100,104,111), T=(100.5,104.5,111), U=(102,108,113).",
+          "source_event_ids": [
+            "C03",
+            "C04",
+            "C05"
+          ]
+        },
+        {
+          "handoff_passage": "Delivery means first gateway arrival, with delay ≤2 seconds passing.",
+          "source_event_ids": [
+            "C01"
+          ]
+        },
+        {
+          "handoff_passage": "C08 confirms the complete denominator is three: U-retry shares U's acquisition identifier and supplies no new first arrival.",
+          "source_event_ids": [
+            "C05",
+            "C08"
+          ]
+        },
+        {
+          "handoff_passage": "For a future closed offset interval [L,H], C10 gives delay range [g−a−H,g−a−L]; the upper endpoint is worst-case delay. S/T guarantee pass if L≥2, failure if H<2; U guarantees pass if L≥4, failure if H<4. Otherwise neither guarantee holds.",
+          "source_event_ids": [
+            "C10",
+            "C12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "With one common offset in [2,4], S/T delays are [0,2], hence guaranteed passes; U delay is [2,4], hence unresolved; none is guaranteed to fail. At the included common endpoint 4, all three pass. Intervals and witness explain the requested classifications but are not independently required.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S03",
+      "history": "H06",
+      "question": "H06-Q1",
+      "query": "Is the current twenty-two-participant workshop feasible under every supplied rule? Explain the booked timing and the headphone issue as well as capacity.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, the ninety-minute headphone listening workshop is fully feasible: 22 participants, 24 reserved functioning kits, two confirmed leaders, and a confirmed 10:00–11:30 room booking. All required reservations and confirmations are complete. Maximum attendance is 24, leaving two participant places and two spare kits.",
+          "source_event_ids": [
+            "O03",
+            "O04",
+            "O06",
+            "O08",
+            "O11",
+            "O12"
+          ]
+        },
+        {
+          "handoff_passage": "Room capacity is 24; each leader supports 12 participants; every participant needs one kit throughout, without sharing. Leaders neither count against the room cap nor use participant kits. Both leaders cover the full booking, which fits within 09:00–17:00 availability. Headphones throughout are explicitly exempt from the pre-11:00 amplified-sound prohibition (O07). The earlier 09:30 start and speaker demonstration were discarded proposals.",
+          "source_event_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O06",
+            "O07",
+            "O11"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "The 22-person plan is feasible: each capacity is 24, two leaders and 24 kits are confirmed/reserved, 10:00–11:30 is ninety minutes within 09:00–17:00 and both leaders’ confirmations, and headphones are exempt before 11:00.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S03",
+      "history": "H06",
+      "question": "H06-Q2",
+      "query": "How many additional participants can the current plan accommodate separately under the room cap, kit inventory and leader ratio? What is the overall remaining participant capacity?",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, the ninety-minute headphone listening workshop is fully feasible: 22 participants, 24 reserved functioning kits, two confirmed leaders, and a confirmed 10:00–11:30 room booking. All required reservations and confirmations are complete. Maximum attendance is 24, leaving two participant places and two spare kits.",
+          "source_event_ids": [
+            "O03",
+            "O04",
+            "O06",
+            "O08",
+            "O11",
+            "O12"
+          ]
+        },
+        {
+          "handoff_passage": "Room capacity is 24; each leader supports 12 participants; every participant needs one kit throughout, without sharing. Leaders neither count against the room cap nor use participant kits.",
+          "source_event_ids": [
+            "O01",
+            "O02",
+            "O03"
+          ]
+        },
+        {
+          "handoff_passage": "For an attendance change, check the requested total against room, kits, and staffing separately: each currently permits 24.",
+          "source_event_ids": [
+            "O10",
+            "O11"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Room, kits and leaders each permit two more participants, and the simultaneous overall remaining capacity is two.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S03",
+      "history": "H06",
+      "question": "H06-Q3",
+      "query": "If exactly two more participants register and nothing else changes, is the workshop still feasible? State the new count and how it relates to the three capacity limits.",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, the ninety-minute headphone listening workshop is fully feasible: 22 participants, 24 reserved functioning kits, two confirmed leaders, and a confirmed 10:00–11:30 room booking. All required reservations and confirmations are complete. Maximum attendance is 24, leaving two participant places and two spare kits.",
+          "source_event_ids": [
+            "O03",
+            "O04",
+            "O06",
+            "O08",
+            "O11",
+            "O12"
+          ]
+        },
+        {
+          "handoff_passage": "For an attendance change, check the requested total against room, kits, and staffing separately: each currently permits 24. Adding one or two participants fits; adding three does not. Keep timing, headphone use, and resources fixed unless explicitly changed.",
+          "source_event_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O04",
+            "O10",
+            "O11"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Twenty-two plus two is 24, exactly meeting room, kit and leader capacities; with nothing else changed the plan remains feasible.",
+      "context_notes": "The query supplies the attendance increase. The retained current count and independent capacities suffice; discarded history and a new timing explanation are not required.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S04",
+      "history": "H01",
+      "question": "H01-Q1",
+      "query": "At the cutoff, which of A, B and C are bench-ready under the current rule? Identify the eligible set and briefly explain why each other station is not ready.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, only C is bench-ready. A lacks current tests and has buffering disabled; B fails runtime only. Adopted v2 (R08, Day 8) requires firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours on the same station. Equality passes; v2 supersedes v1.",
+          "source_event_ids": [
+            "R06",
+            "R07",
+            "R08",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "R12 confirms all three remain on firmware 8. A retains its unchanged nine-hour pack; its only packet/latency results—99/100 and four seconds on firmware 7 (R03, Day 3)—became invalid after its Day 6 upgrade (R06), without demonstrating worse performance. Buffering remains disabled (R07). Its green READY badge reflects historical v1. B retains 119/120 packets, six-second latency (R04), enabled buffering (R07), and its 7.5-hour pack. The replacement order remains unfulfilled and unmeasured (R09–R12). C retains 198/200 packets, seven-second latency, enabled buffering, and eight-hour runtime (R10, Day 10).",
+          "source_event_ids": [
+            "R03",
+            "R04",
+            "R06",
+            "R07",
+            "R09",
+            "R10",
+            "R12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C alone is ready. A has disabled buffering and lacks current firmware-8 packet/latency evidence; B has only 7.5 hours against the eight-hour minimum.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S04",
+      "history": "H01",
+      "question": "H01-Q2",
+      "query": "Does the record show that A failed the current packet-success criterion after its firmware upgrade, or is that performance unknown? State what happened to the earlier packet result.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "A retains its unchanged nine-hour pack; its only packet/latency results—99/100 and four seconds on firmware 7 (R03, Day 3)—became invalid after its Day 6 upgrade (R06), without demonstrating worse performance.",
+          "source_event_ids": [
+            "R01",
+            "R03",
+            "R06",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "Reuse tests only when firmware and relevant hardware remain unchanged; firmware changes invalidate packet/latency evidence, while unchanged-pack runtime remains reusable (R01/R08).",
+          "source_event_ids": [
+            "R01",
+            "R08"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "The post-upgrade packet performance is unknown. The old firmware-7 result is invalid as current firmware-8 evidence; invalidation is not an observed failure. Its old numerical value is optional.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S04",
+      "history": "H01",
+      "question": "H01-Q3",
+      "query": "Suppose B's pack is replaced and a valid new test establishes 8.5 hours, with all its other recorded attributes unchanged. Under the current rule, what is the new bench-ready set? Explain any change.",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, only C is bench-ready. A lacks current tests and has buffering disabled; B fails runtime only. Adopted v2 (R08, Day 8) requires firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours on the same station. Equality passes; v2 supersedes v1.",
+          "source_event_ids": [
+            "R06",
+            "R07",
+            "R08",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "B retains 119/120 packets, six-second latency (R04), enabled buffering (R07), and its 7.5-hour pack. The replacement order remains unfulfilled and unmeasured (R09–R12). C retains 198/200 packets, seven-second latency, enabled buffering, and eight-hour runtime (R10, Day 10).",
+          "source_event_ids": [
+            "R04",
+            "R07",
+            "R09",
+            "R10",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "B can become ready after an installed pack verifies ≥8 hours, provided its other evidence remains valid.",
+          "source_event_ids": [
+            "R08",
+            "R09",
+            "R12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "The hypothetical valid 8.5-hour pack resolves B’s only deficit, with other attributes fixed; the ready set becomes B and C.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S05",
+      "history": "H05",
+      "question": "H05-Q1",
+      "query": "Under the final adopted caps, which feasible pair maximizes output? Give the pair, output and total use of staff, memory and power.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, select B+C: output 16, using (8,9,8) staff/memory/power, exactly matching adopted caps. It is the only feasible pair and therefore the optimum.",
+          "source_event_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D07",
+            "D12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "B+C is the feasible optimum, output 16 with staff/memory/power (8,9,8). Other pair calculations are not independently required by the query.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S05",
+      "history": "H05",
+      "question": "H05-Q2",
+      "query": "If only the staff rental is adopted, does the A/B pair become feasible? Identify any remaining resource violations using the recorded quantities.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "Complete pair catalogue: AB=(9,11,9), output 18; AC=(7,10,7), output 14; BC=(8,9,8), output 16. Currently AB exceeds every cap; AC exceeds memory only.",
+          "source_event_ids": [
+            "D02",
+            "D03",
+            "D04",
+            "D07",
+            "D12"
+          ]
+        },
+        {
+          "handoff_passage": "D08’s unadopted staff rental sets caps to (10,9,8): neither A pair becomes feasible.",
+          "source_event_ids": [
+            "D08"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Staff-only rental gives caps (10,9,8); A+B needs (9,11,9), so memory exceeds 9 by 2 and power exceeds 8 by 1. Staff fits, but the pair remains infeasible.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S05",
+      "history": "H05",
+      "question": "H05-Q3",
+      "query": "Instead of the original objective, require exactly two jobs including A and add only one memory unit to the final adopted allowance. Staff and power stay unchanged, and the staff rental is not adopted. What feasible pair can be chosen, with what output and resource totals?",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "Exactly two distinct, indivisible jobs run simultaneously for the full session; neither capacity option nor mandatory A is adopted.",
+          "source_event_ids": [
+            "D01",
+            "D08",
+            "D09",
+            "D10",
+            "D12"
+          ]
+        },
+        {
+          "handoff_passage": "D02–D04/D12 primitives, in staff/memory/power order: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. Complete pair catalogue: AB=(9,11,9), output 18; AC=(7,10,7), output 14; BC=(8,9,8), output 16.",
+          "source_event_ids": [
+            "D02",
+            "D03",
+            "D04",
+            "D12"
+          ]
+        },
+        {
+          "handoff_passage": "D10’s independent, unadopted +1 memory option enables AC.",
+          "source_event_ids": [
+            "D10"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Adding only one memory unit gives caps (8,10,8). With A mandatory, A+C is feasible, output 14 and resources (7,10,7); independent staff rental is not imported.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S06",
+      "history": "H05",
+      "question": "H05-Q1",
+      "query": "Under the final adopted caps, which feasible pair maximizes output? Give the pair, output and total use of staff, memory and power.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the Day 12 cutoff, select B+C: output 16 and combined (staff, memory, power) use (8,9,8), exactly the adopted caps. It is the only feasible pair and therefore optimal.",
+          "source_event_ids": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D07",
+            "D12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "B+C is the feasible optimum, output 16 with staff/memory/power (8,9,8). Other pair calculations are not independently required by the query.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S06",
+      "history": "H05",
+      "question": "H05-Q2",
+      "query": "If only the staff rental is adopted, does the A/B pair become feasible? Identify any remaining resource violations using the recorded quantities.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "A+B uses (9,11,9), output 18, exceeding current staff, memory, power by (1,2,1). A+C uses (7,10,7), output 14, exceeding memory by 1.",
+          "source_event_ids": [
+            "D02",
+            "D03",
+            "D04",
+            "D07",
+            "D12"
+          ]
+        },
+        {
+          "handoff_passage": "Staff rental alone gives caps (10,9,8) and leaves only B+C feasible.",
+          "source_event_ids": [
+            "D08"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Staff-only rental gives caps (10,9,8); A+B needs (9,11,9), so memory exceeds 9 by 2 and power exceeds 8 by 1. Staff fits, but the pair remains infeasible.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S06",
+      "history": "H05",
+      "question": "H05-Q3",
+      "query": "Instead of the original objective, require exactly two jobs including A and add only one memory unit to the final adopted allowance. Staff and power stay unchanged, and the staff rental is not adopted. What feasible pair can be chosen, with what output and resource totals?",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "Exactly two distinct, indivisible jobs must run simultaneously for the full session; resources add, with no borrowing across sessions or resource substitution.",
+          "source_event_ids": [
+            "D01",
+            "D06"
+          ]
+        },
+        {
+          "handoff_passage": "D02–D04/D12 give requirements and outputs: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. A+B uses (9,11,9), output 18, exceeding current staff, memory, power by (1,2,1). A+C uses (7,10,7), output 14, exceeding memory by 1.",
+          "source_event_ids": [
+            "D02",
+            "D03",
+            "D04",
+            "D07",
+            "D12"
+          ]
+        },
+        {
+          "handoff_passage": "Extra memory alone gives (8,10,8): B+C remains optimal, while A+C becomes the feasible mandatory-A choice.",
+          "source_event_ids": [
+            "D09",
+            "D10"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Adding only one memory unit gives caps (8,10,8). With A mandatory, A+C is feasible, output 14 and resources (7,10,7); independent staff rental is not imported.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S07",
+      "history": "H06",
+      "question": "H06-Q1",
+      "query": "Is the current twenty-two-participant workshop feasible under every supplied rule? Explain the booked timing and the headphone issue as well as capacity.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, the confirmed plan is feasible: 22 participants, two confirmed leaders, and 24 reserved functioning kits for a ninety-minute headphone session, booked 10:00–11:30. All required reservations and confirmations are complete. There is room for two additional participants and two spare kits.",
+          "source_event_ids": [
+            "O03",
+            "O04",
+            "O06",
+            "O08",
+            "O11",
+            "O12"
+          ]
+        },
+        {
+          "handoff_passage": "Room capacity is 24 participants, inventory is 24 usable kits, and two leaders support 24 participants at one leader per twelve. Leaders neither count toward the participant cap nor require kits. Each participant needs one kit throughout; sharing is prohibited. The booking fits within inclusive 09:00–17:00 room availability, and both leaders cover the full session. Headphones throughout are explicitly exempt from the pre-11:00 amplified-sound prohibition. Earlier 09:30 and speaker ideas were discarded proposals.",
+          "source_event_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O04",
+            "O06",
+            "O07",
+            "O11"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "The 22-person plan is feasible: each capacity is 24, two leaders and 24 kits are confirmed/reserved, 10:00–11:30 is ninety minutes within 09:00–17:00 and both leaders’ confirmations, and headphones are exempt before 11:00.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S07",
+      "history": "H06",
+      "question": "H06-Q2",
+      "query": "How many additional participants can the current plan accommodate separately under the room cap, kit inventory and leader ratio? What is the overall remaining participant capacity?",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, the confirmed plan is feasible: 22 participants, two confirmed leaders, and 24 reserved functioning kits for a ninety-minute headphone session, booked 10:00–11:30. All required reservations and confirmations are complete. There is room for two additional participants and two spare kits.",
+          "source_event_ids": [
+            "O03",
+            "O04",
+            "O06",
+            "O08",
+            "O11",
+            "O12"
+          ]
+        },
+        {
+          "handoff_passage": "Room capacity is 24 participants, inventory is 24 usable kits, and two leaders support 24 participants at one leader per twelve. Leaders neither count toward the participant cap nor require kits.",
+          "source_event_ids": [
+            "O01",
+            "O02",
+            "O03",
+            "O04"
+          ]
+        },
+        {
+          "handoff_passage": "Totals up to 24 fit all capacities; 25 or more exceed room, kit, and staffing capacities.",
+          "source_event_ids": [
+            "O10",
+            "O11"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Room, kits and leaders each permit two more participants, and the simultaneous overall remaining capacity is two.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S07",
+      "history": "H06",
+      "question": "H06-Q3",
+      "query": "If exactly two more participants register and nothing else changes, is the workshop still feasible? State the new count and how it relates to the three capacity limits.",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, the confirmed plan is feasible: 22 participants, two confirmed leaders, and 24 reserved functioning kits for a ninety-minute headphone session, booked 10:00–11:30. All required reservations and confirmations are complete. There is room for two additional participants and two spare kits.",
+          "source_event_ids": [
+            "O03",
+            "O04",
+            "O06",
+            "O08",
+            "O11",
+            "O12"
+          ]
+        },
+        {
+          "handoff_passage": "For an attendance-only change, retain the booking, duration, headphones, inventory, and leader confirmations. Totals up to 24 fit all capacities; 25 or more exceed room, kit, and staffing capacities.",
+          "source_event_ids": [
+            "O10",
+            "O11",
+            "O12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Twenty-two plus two is 24, exactly meeting room, kit and leader capacities; with nothing else changed the plan remains feasible.",
+      "context_notes": "The query supplies the attendance increase. The retained count and independent capacities suffice, with unchanged timing/headphone facts available in the handoff.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S08",
+      "history": "H03",
+      "question": "H03-Q1",
+      "query": "Does selected candidate C1 pass the finite acceptance rule at the cutoff? Give its pass, failure and untested counts, naming the failed and untested cases.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the Day 12 cutoff, C1 remains selected and does not pass validation: nine passes, two observed failures (A8, B3), and one untested case (B4). Acceptance requires all twelve cohort cases evaluated for the exact candidate and at least eleven passes (J02). Even a B4 pass would leave C1 at ten passes, below threshold.",
+          "source_event_ids": [
+            "J01",
+            "J02",
+            "J04",
+            "J05",
+            "J12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C1 does not pass: nine passes, two observed failures A8/B3, one untested B4. The exact-version rule requires all twelve evaluated and at least eleven passes.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S08",
+      "history": "H03",
+      "question": "H03-Q2",
+      "query": "For C1, what are the pass fractions among evaluated cohort cases and among all authorized cohort cases? Explain why neither denominator is the original fourteen-file inventory.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "C1 passes 9/11 evaluated cases (81.8%) and 9/12 authorized cohort cases (75%); B4 enters only the latter denominator. J01 excludes unreadable X1 and X2 from the original fourteen files before evaluation; difficult cases cannot be excluded.",
+          "source_event_ids": [
+            "J01",
+            "J04",
+            "J05",
+            "J09"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C1 fractions are 9/11 evaluated and 9/12 authorized. Two unreadable files were excluded before outcomes; B4 remains authorized but untested.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S08",
+      "history": "H03",
+      "question": "H03-Q3",
+      "query": "If the project now selects C2 without performing any additional evaluations, what are C2's pass, failure and untested counts for the authorized cohort, and does it pass the acceptance rule?",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "Acceptance requires all twelve cohort cases evaluated for the exact candidate and at least eleven passes (J02). Even a B4 pass would leave C1 at ten passes, below threshold.",
+          "source_event_ids": [
+            "J02"
+          ]
+        },
+        {
+          "handoff_passage": "C2’s B3 pass on Day 8 is its only outcome and cannot replace C1’s B3 failure (J08, J12).",
+          "source_event_ids": [
+            "J08",
+            "J12"
+          ]
+        },
+        {
+          "handoff_passage": "If C2 is selected, evaluate its eleven remaining cases: A1–A8, B1, B2, B4. Preserve both X exclusions. C1 evidence cannot transfer across versions; further changes need exact-version evidence. A8 repair remains merely proposed.",
+          "source_event_ids": [
+            "J01",
+            "J02",
+            "J07",
+            "J08",
+            "J10",
+            "J11",
+            "J12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C2 has one pass, zero observed failures, eleven untested and does not pass. Its sole B3 result cannot acquire C1 outcomes by selection.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S09",
+      "history": "H04",
+      "question": "H04-Q1",
+      "query": "May the live source be retired at the cutoff under the supplied rule? How many current source keys have verified matching current revisions, and which keys still prevent establishing complete coverage?",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, source retirement is not permitted under H01. The writable source has 97 keys: K12 revision 2, all others revision 1. Destination evidence covers 96 M0 ingestion acknowledgments and 94 verified M0 matches; only 93 matches establish current revisions. Current verification gaps are K95, K96, K97, and K12 revision 2.",
+          "source_event_ids": [
+            "H01",
+            "H05",
+            "H06",
+            "H08",
+            "H09",
+            "H12"
+          ]
+        },
+        {
+          "handoff_passage": "H04–H07: ingestion accepted writing; audits matched K1–K94 revision 1, with K95–K96 unaudited and zero observed mismatches.",
+          "source_event_ids": [
+            "H04",
+            "H05",
+            "H06",
+            "H07"
+          ]
+        },
+        {
+          "handoff_passage": "Retirement requires verified destination matches for every current key/revision, accounting for subsequent writes.",
+          "source_event_ids": [
+            "H01",
+            "H02",
+            "H08",
+            "H09"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Retirement is blocked. Ninety-four old-revision matches minus K12’s superseded revision gives 93 current matches; K95/K96 audits, K97 revision 1 and K12 revision 2 are the four gaps.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S09",
+      "history": "H04",
+      "question": "H04-Q2",
+      "query": "How many distinct stored backup objects do the labels backup-east and archive-copy establish? Does that stored content include the post-M0 addition and revision change?",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "H02–H03: M0 contains K1–K96 revision 1; backup-east and archive-copy alias one stored object, object-amber, not independent copies.",
+          "source_event_ids": [
+            "H02",
+            "H03"
+          ]
+        },
+        {
+          "handoff_passage": "H08–H09: the complete delta ledger contains K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence.",
+          "source_event_ids": [
+            "H08",
+            "H09"
+          ]
+        },
+        {
+          "handoff_passage": "H11–H12: planned work remains unexecuted, with no further recorded source changes.",
+          "source_event_ids": [
+            "H11",
+            "H12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Both labels denote one fixed stored M0 object. M0 has K1–K96 revision 1, so neither K97’s addition nor K12 revision 2 is included; destination verification is a different issue.",
+      "context_notes": "The snapshot-content and alias relations are compressed into one semicolon-separated sentence. In ordinary contextual reading, the object discussed is the M0 backup, which is sufficient. The text does not state “object-amber contains M0” as explicitly as S11. A formal reading that refuses this discourse relation would identify a missing object-to-snapshot edge, but that is not the recommended semantic reading; no missing destination audit can make the backup snapshot’s dated contents uncertain.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S09",
+      "history": "H04",
+      "question": "H04-Q3",
+      "query": "Suppose only the two missing M0 comparisons now complete and verify K95 and K96 revision 1. Nothing else changes. May the source now be retired? Give the updated current-revision verification count and remaining blockers.",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "The writable source has 97 keys: K12 revision 2, all others revision 1. Destination evidence covers 96 M0 ingestion acknowledgments and 94 verified M0 matches; only 93 matches establish current revisions. Current verification gaps are K95, K96, K97, and K12 revision 2.",
+          "source_event_ids": [
+            "H05",
+            "H06",
+            "H08",
+            "H09",
+            "H12"
+          ]
+        },
+        {
+          "handoff_passage": "Complete K95–K96 revision-1 comparisons, then synchronize and verify both deltas. If those two comparisons match, M0 becomes fully verified: 96 snapshot matches, but only 95 current matches out of 97; retirement still fails.",
+          "source_event_ids": [
+            "H01",
+            "H06",
+            "H08",
+            "H09",
+            "H11",
+            "H12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Completing only K95/K96 comparisons raises current matches from 93 to 95, though M0 matches become 96. K97 revision 1 and K12 revision 2 remain gaps and still block retirement.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S10",
+      "history": "H02",
+      "question": "H02-Q1",
+      "query": "Using the accepted current calibration, how many unique samples are late, out of how many unique samples? Name the late sample or samples.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, two of three unique samples pass delivery within two seconds: S and T each take 1 second; U takes 3 seconds and fails. Pass rate is 2/3 (66.7%); lateness is 1/3 (33.3%). U-retry is U’s transmission alias, not another sample.",
+          "source_event_ids": [
+            "C01",
+            "C03",
+            "C04",
+            "C05",
+            "C07",
+            "C08",
+            "C12"
+          ]
+        },
+        {
+          "handoff_passage": "C07 establishes gateway = reference +3 throughout arrivals, replacing the withdrawn +1 guess, with no current uncertainty. Corrected first arrivals are 101, 101.5, 105. Delivery means gateway arrival, not database insertion; equality at two seconds passes.",
+          "source_event_ids": [
+            "C01",
+            "C07",
+            "C12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "After subtracting the accepted +3 clock offset, S/T/U delays are 1/1/3 seconds. U is the one late sample among three unique acquisitions.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S10",
+      "history": "H02",
+      "question": "H02-Q2",
+      "query": "Were S and T simultaneous at acquisition or at gateway arrival? Give their gateway arrival times on the reference clock under the accepted current calibration.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "C03–C05 give acquisition/gateway/database timestamps: S 100/104/111; T 100.5/104.5/111; U 102/108/113. C07 establishes gateway = reference +3 throughout arrivals, replacing the withdrawn +1 guess, with no current uncertainty. Corrected first arrivals are 101, 101.5, 105.",
+          "source_event_ids": [
+            "C03",
+            "C04",
+            "C05",
+            "C07"
+          ]
+        },
+        {
+          "handoff_passage": "Shared insertion batching and preview styling supply no new arrival evidence.",
+          "source_event_ids": [
+            "C04",
+            "C09"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "S and T differ by 0.5 seconds at acquisition and arrival. Reference arrival times are 101 and 101.5; neither stage is simultaneous.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S10",
+      "history": "H02",
+      "question": "H02-Q3",
+      "query": "Replace the exact calibration only for this hypothetical: the gateway is ahead by one common unknown offset in the closed interval [2,4] seconds. Which unique samples are guaranteed to pass, guaranteed to fail, or unresolved under the two-second requirement? Is it possible that all three pass?",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "C03–C05 give acquisition/gateway/database timestamps: S 100/104/111; T 100.5/104.5/111; U 102/108/113.",
+          "source_event_ids": [
+            "C03",
+            "C04",
+            "C05"
+          ]
+        },
+        {
+          "handoff_passage": "Delivery means gateway arrival, not database insertion; equality at two seconds passes.",
+          "source_event_ids": [
+            "C01",
+            "C12"
+          ]
+        },
+        {
+          "handoff_passage": "For a hypothetical closed offset interval [a,b], delay lies in [g−acquisition−b, g−acquisition−a]; the upper endpoint is worst-case delay. For S/T, guaranteed pass requires a≥2, guaranteed failure b<2; for U, a≥4 or b<4 respectively. Otherwise classification is indeterminate (C10).",
+          "source_event_ids": [
+            "C10"
+          ]
+        },
+        {
+          "handoff_passage": "U-retry is U’s transmission alias, not another sample.",
+          "source_event_ids": [
+            "C05",
+            "C08"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "With one common offset in [2,4], S/T delays are [0,2], hence guaranteed passes; U delay is [2,4], hence unresolved; none is guaranteed to fail. At the included common endpoint 4, all three pass. Intervals and witness explain the requested classifications but are not independently required.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S11",
+      "history": "H04",
+      "question": "H04-Q1",
+      "query": "May the live source be retired at the cutoff under the supplied rule? How many current source keys have verified matching current revisions, and which keys still prevent establishing complete coverage?",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At Day 12, the source may not be retired under H01: the destination lacks verification of every current source revision. The source remains available and writable, with 97 keys: K12 at revision 2, all others at revision 1. Current-revision verification covers 93 of 97 keys.",
+          "source_event_ids": [
+            "H01",
+            "H05",
+            "H06",
+            "H08",
+            "H09",
+            "H12"
+          ]
+        },
+        {
+          "handoff_passage": "H02–H07/H12 establish 96 M0 ingestion acknowledgments, meaning accepted for writing, and 94 verified revision-1 matches, with zero observed mismatches. K95 and K96 remain unaudited. K12's historical revision-1 match does not verify its current revision 2. H08–H09 record exactly two post-snapshot changes: K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence. Missing evidence does not establish corruption.",
+          "source_event_ids": [
+            "H04",
+            "H05",
+            "H06",
+            "H07",
+            "H08",
+            "H09",
+            "H12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Retirement is blocked. Ninety-four old-revision matches minus K12’s superseded revision gives 93 current matches; K95/K96 audits, K97 revision 1 and K12 revision 2 are the four gaps.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S11",
+      "history": "H04",
+      "question": "H04-Q2",
+      "query": "How many distinct stored backup objects do the labels backup-east and archive-copy establish? Does that stored content include the post-M0 addition and revision change?",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "H03/H12 confirm backup-east and archive-copy are aliases for one stored object, object-amber, containing only M0.",
+          "source_event_ids": [
+            "H02",
+            "H03",
+            "H12"
+          ]
+        },
+        {
+          "handoff_passage": "H08–H09 record exactly two post-snapshot changes: K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence.",
+          "source_event_ids": [
+            "H08",
+            "H09"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Both labels denote one fixed stored M0 object. M0 has K1–K96 revision 1, so neither K97’s addition nor K12 revision 2 is included; destination verification is a different issue.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S11",
+      "history": "H04",
+      "question": "H04-Q3",
+      "query": "Suppose only the two missing M0 comparisons now complete and verify K95 and K96 revision 1. Nothing else changes. May the source now be retired? Give the updated current-revision verification count and remaining blockers.",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "Follow H11's unexecuted plan: audit K95 and K96, then synchronize and verify both delta revisions. Successful completion of only those two audits would yield 96 verified M0 matches but just 95 of 97 current-revision matches; retirement would still fail.",
+          "source_event_ids": [
+            "H01",
+            "H06",
+            "H08",
+            "H09",
+            "H11",
+            "H12"
+          ]
+        },
+        {
+          "handoff_passage": "H08–H09 record exactly two post-snapshot changes: K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence.",
+          "source_event_ids": [
+            "H08",
+            "H09"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "Completing only K95/K96 comparisons raises current matches from 93 to 95, though M0 matches become 96. K97 revision 1 and K12 revision 2 remain gaps and still block retirement.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": []
+    },
+    {
+      "summary_id": "S12",
+      "history": "H01",
+      "question": "H01-Q1",
+      "query": "At the cutoff, which of A, B and C are bench-ready under the current rule? Identify the eligible set and briefly explain why each other station is not ready.",
+      "kind": "current_decision",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, C is the only bench-ready station among A, B, and C. A lacks current packet/latency evidence and has buffering disabled; B fails runtime alone.",
+          "source_event_ids": [
+            "R06",
+            "R07",
+            "R08",
+            "R10",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "Adopted v2 (R08) supersedes v1: the same station must have firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours; equality passes. C meets every requirement: 198/200 packets, 7 seconds, buffering enabled, 8 hours (R10–R12). B has firmware 8, 119/120 packets (99.17%), 6 seconds, buffering enabled, but only 7.5 hours. Its replacement pack remains unreceived and unmeasured (R04, R09, R12). A has firmware 8 and reusable 9-hour runtime, but its only packet/latency tests were on firmware 7 and became invalid after upgrading (R03, R06). Its green READY badge is historical v1 evidence, not current approval. Invalidation does not prove deterioration.",
+          "source_event_ids": [
+            "R01",
+            "R03",
+            "R04",
+            "R06",
+            "R07",
+            "R08",
+            "R09",
+            "R10",
+            "R12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "C alone is ready. A has disabled buffering and lacks current firmware-8 packet/latency evidence; B has only 7.5 hours against the eight-hour minimum.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": [
+        "S12-I01"
+      ]
+    },
+    {
+      "summary_id": "S12",
+      "history": "H01",
+      "question": "H01-Q2",
+      "query": "Does the record show that A failed the current packet-success criterion after its firmware upgrade, or is that performance unknown? State what happened to the earlier packet result.",
+      "kind": "evidence_scope",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "A has firmware 8 and reusable 9-hour runtime, but its only packet/latency tests were on firmware 7 and became invalid after upgrading (R03, R06). Its green READY badge is historical v1 evidence, not current approval. Invalidation does not prove deterioration.",
+          "source_event_ids": [
+            "R01",
+            "R03",
+            "R06",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "Enabling A's buffering alone is insufficient: obtain qualifying firmware-8 packet and latency tests. Consult R01/R08 for evidence reuse and firmware-change rules; R12 confirms no later changes.",
+          "source_event_ids": [
+            "R01",
+            "R06",
+            "R08",
+            "R12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "The post-upgrade packet performance is unknown. The old firmware-7 result is invalid as current firmware-8 evidence; invalidation is not an observed failure. Its old numerical value is optional.",
+      "context_notes": "The summary omits A’s old 99/100 packet value. That is not a retention defect for this query: the controlling optionality note requires the firmware scope and absence of a new result, both retained.",
+      "summary_assertion_issue_ids": [
+        "S12-I01"
+      ]
+    },
+    {
+      "summary_id": "S12",
+      "history": "H01",
+      "question": "H01-Q3",
+      "query": "Suppose B's pack is replaced and a valid new test establishes 8.5 hours, with all its other recorded attributes unchanged. Under the current rule, what is the new bench-ready set? Explain any change.",
+      "kind": "changed_use",
+      "assessment": "adequate_source_true_support",
+      "supports_every_requested_output": true,
+      "source_true_support": true,
+      "missing_facts": [],
+      "missing_relations": [],
+      "source_false_or_unsupported_query_support_claims": [],
+      "evidence": [
+        {
+          "handoff_passage": "At the end of Day 12, C is the only bench-ready station among A, B, and C. A lacks current packet/latency evidence and has buffering disabled; B fails runtime alone.",
+          "source_event_ids": [
+            "R06",
+            "R07",
+            "R08",
+            "R10",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "Adopted v2 (R08) supersedes v1: the same station must have firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours; equality passes. C meets every requirement: 198/200 packets, 7 seconds, buffering enabled, 8 hours (R10–R12). B has firmware 8, 119/120 packets (99.17%), 6 seconds, buffering enabled, but only 7.5 hours. Its replacement pack remains unreceived and unmeasured (R04, R09, R12).",
+          "source_event_ids": [
+            "R04",
+            "R07",
+            "R08",
+            "R09",
+            "R10",
+            "R12"
+          ]
+        },
+        {
+          "handoff_passage": "B would qualify after an installed replacement pack verifies ≥8 hours, with other qualifying attributes unchanged.",
+          "source_event_ids": [
+            "R08",
+            "R09",
+            "R12"
+          ]
+        }
+      ],
+      "source_truth_and_derivation": "The hypothetical valid 8.5-hour pack resolves B’s only deficit, with other attributes fixed; the ready set becomes B and C.",
+      "context_notes": "No source recovery is needed for this query. Correct cached conclusions and ordinary arithmetic are accepted; unasked explanation is not made mandatory.",
+      "summary_assertion_issue_ids": [
+        "S12-I01"
+      ]
+    }
+  ],
+  "other_summary_assertion_issues": [
+    {
+      "id": "S12-I01",
+      "summary_id": "S12",
+      "history": "H01",
+      "classification": "ambiguous_optional_logistics_claim",
+      "handoff_passage": "Readiness is separate from booking, transport, and administrative signoff. C's afternoon transport aligns with the afternoon room availability; no booking completion is recorded.",
+      "source_event_ids": [
+        "R01",
+        "R11"
+      ],
+      "source_passages": [
+        "C can be transported only in the afternoon; the room booking also permits an afternoon session.",
+        "The coordinator asks the incoming person to report readiness before making a booking choice and not to replace current measurements with earlier project preferences."
+      ],
+      "supported_reading": "No completed choice or booking of C as the selected station is recorded. This fits the source distinction between technical eligibility and a later booking choice.",
+      "unsupported_reading": "No room booking exists or has completed. R11 already refers to “the room booking”; an unqualified denial of all booking completion overstates the record.",
+      "recommended_treatment": "Preserve as a wording sensitivity outside the three requested technical answers. The source does not establish a general absence of bookings. The three query-critical support assessments remain adequate under either reading.",
+      "downstream_effect": "None observed: R041, R046 and R053 do not repeat the no-booking-completion claim."
+    }
+  ]
+}

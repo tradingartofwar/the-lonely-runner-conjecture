@@ -1,0 +1,61 @@
+{
+  "status": "PROPOSED_ORACLE_NOT_INDEPENDENTLY_REVIEWED",
+  "answers": {
+    "K1": {
+      "decision": "no",
+      "eligible_builds": []
+    },
+    "K2": {
+      "decision": "yes",
+      "eligible_builds": [
+        "A"
+      ]
+    },
+    "T1": {
+      "instant": "yes",
+      "instant_witness": "4",
+      "positive_duration": "no"
+    },
+    "T2": {
+      "instant": "no",
+      "positive_duration": "no"
+    },
+    "M1": {
+      "decision": "fail",
+      "passed": 7,
+      "failed": 1,
+      "untested": 0,
+      "failing_case": 16
+    },
+    "M2": {
+      "decision": "unresolved",
+      "passed": 7,
+      "failed": 0,
+      "untested": 1,
+      "untested_case": 16
+    },
+    "V1": {
+      "decision": "yes",
+      "version": "v2",
+      "failing_case": 7
+    },
+    "V2": {
+      "decision": "unknown",
+      "reason": "Latest report unavailable; no failure established in available v1."
+    },
+    "S1": {
+      "decision": "yes",
+      "eligible_builds": [
+        "C"
+      ]
+    },
+    "S2": {
+      "decision": "yes",
+      "example_task": [
+        "2",
+        "3"
+      ],
+      "other_valid_witnesses_allowed": true
+    }
+  }
+}

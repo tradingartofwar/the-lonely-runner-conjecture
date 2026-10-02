@@ -1,0 +1,465 @@
+{
+  "date": "2026-09-27 America/Los_Angeles; completed September28 UTC",
+  "baseline_commit": "539dd899ac8ceea5b50d46b72c0fa28cec7a354e",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "36ef24405de801a114e11325d30fe0b5f2d855e71441e5c4478047aa15b82d8e",
+  "scope": {
+    "question": "Can a concentration-guided one-pair query select a useful local certificate without examining all overlaps or the full allowed set?",
+    "baseline_commit": "539dd899ac8ceea5b50d46b72c0fa28cec7a354e",
+    "status": "Known-control diagnostic; general arguments remain HYPOTHESIS/proof candidates; no novelty claim",
+    "reference": 0,
+    "total_runners": 8,
+    "threshold": "1/8",
+    "starts": "All runners start together",
+    "input_contract": "A prescribed three-speed core plus four distinct positive residual speeds; core selection itself is not solved. All frozen full speed lists have gcd1 and retain the original unit period.",
+    "selection_rule": [
+      "Construct the complete closed safe set of only the supplied core on [0,1], retaining singleton components and counting construction cost.",
+      "Among positive-length core components select the widest, breaking ties by smallest left endpoint. Never change this window after seeing residual data.",
+      "Compute the four individual blocking durations D on the selected window using endpoint primitives; E=sum(D)-window_length.",
+      "Rank the six pairs by descending min(D_i,D_j), then ascending numerical speed pair. This is an overlap upper cap, not a prediction or lower bound.",
+      "If E<0, certify positive duration from singles and make no overlap query. Otherwise if the largest cap is at most E, record that no one-pair bound can be positive and make no overlap query.",
+      "Otherwise query exactly the first ranked pair's overlap O and use lower bound O-E. Never rerank or query another pair after failure.",
+      "If no positive duration certificate resulted, test only the selected window's right endpoint against all seven nonreference speeds. If valid, record its shared safe-lap intersection and equality directions to distinguish a positive local interval from an isolated contact. If invalid, return uncertified and stop the ordered diagnostic campaign. Do not select a second endpoint or window."
+    ],
+    "overlap_evaluator": "After selecting a<b, choose h in {1,2} minimizing (abs(b-h*a),h); put r=b-h*a. Use signed-residual phase strips and the exact periodic endpoint primitive. Count all strips and primitive calls. This is an evaluation choice, not a pair-ranking score. The independent verifier uses direct blocking-interval intersection instead.",
+    "ordered_cases": [
+      {
+        "id": "fast_113",
+        "core": [
+          1,
+          4,
+          5
+        ],
+        "extras": [
+          56,
+          64,
+          72,
+          113
+        ]
+      },
+      {
+        "id": "changed_core",
+        "core": [
+          1,
+          3,
+          5
+        ],
+        "extras": [
+          56,
+          64,
+          72,
+          113
+        ]
+      },
+      {
+        "id": "doubling_112",
+        "core": [
+          1,
+          4,
+          5
+        ],
+        "extras": [
+          56,
+          64,
+          72,
+          112
+        ]
+      },
+      {
+        "id": "tight_13",
+        "core": [
+          1,
+          4,
+          5
+        ],
+        "extras": [
+          6,
+          7,
+          11,
+          13
+        ]
+      },
+      {
+        "id": "one_pair_ceiling",
+        "core": [
+          1,
+          2,
+          4
+        ],
+        "extras": [
+          3,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "strict_16",
+        "core": [
+          1,
+          4,
+          5
+        ],
+        "extras": [
+          6,
+          7,
+          11,
+          16
+        ]
+      }
+    ],
+    "validation_contract": [
+      "Exact rational arithmetic only; no time/phase grid or broad speed search.",
+      "Primary generator must not read full allowed sets, all-pair archives, benchmark durations, or the independent implementation.",
+      "Independent verifier may read schema/output/protocol but must not read/import primary implementation. Use a separately structured core event partition, direct chosen-pair interval intersections, and endpoint substitution.",
+      "Compare policy outputs afterward to already archived local actual durations and best-pair/tree bounds. Benchmark sources do not feed selection. No new full seven-runner safe-set reconstruction.",
+      "These are known controls informed by prior research, not blind or held-out validation. Preserve the first uncertified result without retuning."
+    ],
+    "cost_contract": "Count core laps/events/components, four single-duration primitive calls at two endpoints each, six scalar pair caps, at most one exact overlap evaluation with all residual-strip construction and primitive calls, and at most one seven-runner endpoint plus its safe-lap intersection. Report rational operand bit sizes separately. No uniform or empirical runtime speedup claim follows merely from the one-query count.",
+    "scope_limits": "No arbitrary-speed existence guarantee, no core-selection theorem, no complete strictness classification, no external proof certification or novelty assertion. A failed policy is not failed loneliness. +7/+9 and cutoff polishing remain parked."
+  },
+  "summary": {
+    "processed_cases": 6,
+    "outcome_counts": {
+      "positive_duration": 3,
+      "endpoint_interval": 1,
+      "endpoint_contact": 1,
+      "uncertified": 1
+    },
+    "cap_class_failures": 1,
+    "selected_query_failures": 2,
+    "exact_overlap_queries": 5,
+    "endpoint_tests": 3,
+    "positive_duration_certificates": 4
+  },
+  "stopped_at_uncertified": "strict_16",
+  "unrun_case_ids": [],
+  "case_outcomes": [
+    {
+      "id": "fast_113",
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "selected_pair": [
+        56,
+        113
+      ],
+      "queried_overlap": "9/3616",
+      "duration_lower_bound": "1223/911232",
+      "outcome": "positive_duration",
+      "semantic_sha256": "bf5f790e05c760c02e334b79bc74e2e8a66f0dbb8aa5548a3ee07257bcff38be"
+    },
+    {
+      "id": "changed_core",
+      "window": [
+        "17/40",
+        "23/40"
+      ],
+      "selected_pair": [
+        56,
+        72
+      ],
+      "queried_overlap": "23/2016",
+      "duration_lower_bound": "2169/202496",
+      "outcome": "positive_duration",
+      "semantic_sha256": "55f9da00edc0390133c55717d2ba6ed7bddf4ea924aa68fd16dac6efb8f16414"
+    },
+    {
+      "id": "doubling_112",
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "selected_pair": [
+        56,
+        64
+      ],
+      "queried_overlap": "1/256",
+      "duration_lower_bound": "59/16128",
+      "outcome": "positive_duration",
+      "semantic_sha256": "3f2dce44b0740cf48924750aff458c556b4ef128c553a62cc386827c3fb9cdc7"
+    },
+    {
+      "id": "tight_13",
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "selected_pair": [
+        6,
+        11
+      ],
+      "queried_overlap": "1/528",
+      "duration_lower_bound": "-421/32032",
+      "outcome": "endpoint_contact",
+      "semantic_sha256": "8c98a742d3fb7ba1035629e60b0ea43ed6955ca6e7181290f95616460fc63cff"
+    },
+    {
+      "id": "one_pair_ceiling",
+      "window": [
+        "9/32",
+        "7/16"
+      ],
+      "selected_pair": null,
+      "queried_overlap": null,
+      "duration_lower_bound": "-1/20",
+      "outcome": "endpoint_interval",
+      "semantic_sha256": "1bd3881326e64a4227453823396c789fdd7b28b439d94e40fe6d441afcfdb1c9"
+    },
+    {
+      "id": "strict_16",
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "selected_pair": [
+        6,
+        11
+      ],
+      "queried_overlap": "1/528",
+      "duration_lower_bound": "-171/9856",
+      "outcome": "uncertified",
+      "semantic_sha256": "a6c1bb21123fbf2369fdc536a505246044459af3b35ee1ee44f6b7c9d97bab45"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "commands": [
+      "python -B reviews/2026-09-28-one-pair-selector/select.py --check",
+      "python -B reviews/2026-09-28-one-pair-selector/verify.py --check"
+    ],
+    "agreement": "All semantic records/digests, evaluation certificates, and declared cost counters",
+    "semantic_digest_comparisons": 6,
+    "independent_core_components": 35,
+    "direct_single_interval_checks": 24,
+    "direct_selected_overlap_checks": 5,
+    "direct_positive_strip_overlap_checks": 10,
+    "negative_residual_overlap_checks": 2,
+    "independence": "Primary core safe-lap intersections/signed-residual endpoint primitive versus core threshold-event states/direct chosen-pair interval intersections. Verifier did not read/import primary implementation, benchmark archives, unselected overlaps, or full seven-runner safe sets.",
+    "post_selection_benchmark_checks": "Five baseline archive hashes, source scalar pointers and six selected-window/excess matches checked separately after policy selection; benchmark sources never feed generator or independent verifier.",
+    "relative_markdown_links": "PASS",
+    "broad_regression_rerun": false
+  },
+  "primary_cost_totals": {
+    "core_laps_total": 56,
+    "core_event_vertices": 122,
+    "core_components": 35,
+    "single_duration_evaluations": 24,
+    "single_primitive_calls": 48,
+    "pair_caps": 36,
+    "exact_overlap_queries": 5,
+    "residual_strip_candidates": 17,
+    "residual_event_candidates": 68,
+    "residual_cells_examined": 25,
+    "positive_strip_cells": 10,
+    "overlap_W_calls": 20,
+    "overlap_P_calls": 40,
+    "endpoint_tests": 3,
+    "endpoint_distance_evaluations": 21,
+    "safe_lap_constructions": 14,
+    "core_intersection_iterations": 71
+  },
+  "cost_limits": "Counts include repeated core construction without caching. Primitive/reported operand bit sizes are per-case, not bounds on every transient operation. No timing benchmark, general constant-operation guarantee, or runtime speedup claim.",
+  "supplied_general_arguments": [
+    "Every one-pair score is at most C-E, where C is the second-largest single duration. C<=E rejects the entire one-pair certificate class on that window before querying overlaps.",
+    "C>E is only capacity, not guaranteed realized overlap. The marginal cap is sharp for abstract measurable events, not asserted realizable by runner speeds.",
+    "For selected a<b and h1or2, signed-residual affine strips have positive endpoint frequencies a and b/h; the periodic primitive evaluates exact overlap using O(1+|b-ha||J|) strip candidates."
+  ],
+  "important_limits": [
+    "Known controls informed design; not blind or held-out evidence. No new common-start existence coverage or core-selection theorem.",
+    "The frozen policy fails on strict16 although its selected window contains duration1/896. The old best-pair and best-tree bounds there are negative, and a prior abstract cover preserves all single/pair totals.",
+    "No observed selected-pair failure is repairable by choosing another pair on the same selected window. Conditional cap-ranking sufficiency remains undecided by this batch.",
+    "No singles-positive exit or r0 overlap evaluator is exercised. Negative-r evaluation is exercised twice.",
+    "First uncertified case is the last prescribed input, so stop-rule enforcement yields no measured early-stop savings.",
+    "Endpoint rescues are separate certificate paths; unqueried overlap is null, not zero. Positive shared safe-lap interval is distinct from an isolated contact.",
+    "Exact finite checks OBSERVED/REPRODUCED. General implications remain HYPOTHESIS/proof candidates; no independent human proof certification, formal proof-assistant verification, novelty assertion, or general LRC proof."
+  ],
+  "next_proposed_not_run": "With an explicit larger input/cost contract, derive a condition selecting added speed geometry or a quantitative intersection bound that excludes every summary-compatible complete-cover arrangement. Use archived strict16,112,tight controls and prior sparse/alternative-window rules as comparison targets; no fitted reranking, new scan, cutoff polishing, or+7/+9 extension.",
+  "dependency_policy": "Two standard-library scripts. Primary reads protocol, self hash and its archive in check mode. Verifier reads protocol/results and its archive, never primary code or historical benchmark archives. Proof-context and benchmark sources are recorded separately.",
+  "python_imports": {
+    "reviews/2026-09-28-one-pair-selector/select.py": [
+      "argparse",
+      "collections",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib",
+      "re"
+    ],
+    "reviews/2026-09-28-one-pair-selector/verify.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  "benchmark_sources_at_baseline": {
+    "pairs": {
+      "path": "experiments/pair_selection.json",
+      "sha256": "c33dd6b542d30cdcb93a6b9cf788085b6b00cedc81a32318c3c5b0c2d578d138",
+      "archive_date": "2026-09-24",
+      "archive_baseline": "13a939e7cf0a25afa0590a5251e423aa5a36c1cc"
+    },
+    "placement": {
+      "path": "experiments/overlap_placement.json",
+      "sha256": "f5ceecab354b6699a500466110d186b6f455ba7ad50d8bb82eaca910acfb1550",
+      "archive_date": "2026-09-24",
+      "archive_baseline": "14b46f0dbb099168b84ec5dca4723dd8c0e5a99f"
+    },
+    "cycles": {
+      "path": "reviews/2026-09-25-lr2/four_blocker_cycles.json",
+      "sha256": "d573812e70638900278b0e5c93a884c58b5996d4ec8b9e81644b5a21c02a43f6",
+      "archive_date": "2026-09-25",
+      "archive_baseline": "91561c35751f1281c5b6920a8022f2f6653672bb"
+    },
+    "sparse": {
+      "path": "reviews/2026-09-25-lr2/sparse_overlap.json",
+      "sha256": "75428333a7f044ce537862ba08bceb7cce1a0fc8af14b24a3250b197049d997e",
+      "archive_date": "2026-09-25",
+      "archive_baseline": "c1cc625a2ee77d6a85da17dffb427c1ac2024e77"
+    },
+    "ultra_root": {
+      "path": "reviews/2026-09-25-ultra/root_checks.json",
+      "sha256": "21c8083c392ec121f957f4fc9eb0833c5ac6409a7a925984a282f15e0a4c53bb",
+      "archive_date": null,
+      "archive_baseline": null,
+      "provenance_note": "Existing September25 Ultra review artifact, present at the frozen baseline; accompanying notes/ULTRA_REVIEW_2026_09_25.md gives the dated interpretation."
+    }
+  },
+  "proof_and_coverage_sources_at_baseline": [
+    {
+      "path": "notes/SMALL_GCD_DISTINCTION_REVIEW_2026_09_27.md",
+      "sha256": "76a66e23ed6b6ba0f332d77eb5fae3c53100041c01fdd3cb1eaa9c6ed249f00f",
+      "bytes": 14335
+    },
+    {
+      "path": "notes/CORE_TRANSFER.md",
+      "sha256": "c365c43079642813531a1b3f86b013ddadbfc2ec67a730ab5182adbaf76d183d",
+      "bytes": 19831
+    },
+    {
+      "path": "notes/OVERLAP_PLACEMENT.md",
+      "sha256": "b4567b5d8883e529a0b1cd1eccec556c97c24b6a8ec7c4bd6df6070496dc35ee",
+      "bytes": 34760
+    },
+    {
+      "path": "notes/SPARSE_OVERLAP_SELECTION.md",
+      "sha256": "a209f49c76fe0b6aa7cb171c08714ccb716cd2162ccfb96a25dc6e3d0dd42bf3",
+      "bytes": 10505
+    },
+    {
+      "path": "notes/TWO_SPEED_SPARSE_TRANSFER.md",
+      "sha256": "52110e01803896a5e32f12cef5a3fbca8cdc653baa1cdcd3f5ebc95c89b9742c",
+      "bytes": 13160
+    },
+    {
+      "path": "notes/ULTRA_REVIEW_2026_09_25.md",
+      "sha256": "b042eec308e17754153000d8970428c1d8bd4c1776deb486408412c668bd1c39",
+      "bytes": 17903
+    },
+    {
+      "path": "notes/ADAPTIVE_REFLECTED_PAIR_2026_09_28.md",
+      "sha256": "b000cc429bf89adc27be567fcd89c9305b84c5e61b3b8a948c2b709d39d86176",
+      "bytes": 11633
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "ab8a3e358f753f7622348ed344ccf2aec304d7294cf9c545c1fdc5c7c7ed73ae",
+      "bytes": 13580
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "23ddcb2d0c395d84eab8c15017af567ef0ae7107308c5510752760f3769baf8d",
+      "bytes": 164073
+    },
+    {
+      "path": "LR2_HANDOFF.md",
+      "sha256": "248f843237835dd8583ccb424019f513ce54da704420d26932fa00322268322f",
+      "bytes": 46132
+    },
+    {
+      "path": "RESEARCH_PLAN.md",
+      "sha256": "42257ec0aca3d566de4e783cdee43956a27a347b06b0f5f106a6a326910ec97d",
+      "bytes": 10331
+    },
+    {
+      "path": "notes/ONE_PAIR_SELECTION_2026_09_28.md",
+      "sha256": "e40cab52490ffc694963aed7dccc0a2a276cf6c36feace770106de0822587177",
+      "bytes": 14497
+    },
+    {
+      "path": "notes/inquiries/README.md",
+      "sha256": "3a5eec7b7137522c903d64ba2018af449e3b30a69aba5b297a3181851b95d5bf",
+      "bytes": 2200
+    },
+    {
+      "path": "notes/inquiries/2026-09-27-relationships-and-independence.md",
+      "sha256": "4f944c628e60b0c4de94c5d341028c163b6991fd69fe76f940f79c391f022cdc",
+      "bytes": 34065
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/arithmetic.md",
+      "sha256": "bbaec8c828cd4196a852d20d77747aba8ae0b3e211a4cee6f0d57a1a9d35e828",
+      "bytes": 11404
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/benchmarks.json",
+      "sha256": "88819094e09a3e6ac2d46cadffab8fbfa5eb7424f5f7a982ce7d4415d8d2dd99",
+      "bytes": 20770
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/challenge.md",
+      "sha256": "ad344ff3f5eac2b7e6b197326816a3a46e4df877dd2d9a48eae709750b47e52e",
+      "bytes": 13050
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/coverage.md",
+      "sha256": "b83694786d962a622ff8ae4397cae4b06734a9854a2e397f5eca3df2314dbb90",
+      "bytes": 12364
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/protocol.json",
+      "sha256": "36ef24405de801a114e11325d30fe0b5f2d855e71441e5c4478047aa15b82d8e",
+      "bytes": 4283
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/results.json",
+      "sha256": "07de386d85fbd27cfbba45ce53f4006a7d2ac9c08249d2050b616ed598faf2ba",
+      "bytes": 50555
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/schema.md",
+      "sha256": "3fd7d303941d6b9428c2d6243c935c2ba885e563952fa54f4aefc85607b091ed",
+      "bytes": 5709
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/select.py",
+      "sha256": "d02aa626a08bec2d2cc9dbaf2159c1b85629b3aaea9dc9f751875053bb782af0",
+      "bytes": 13695
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/structure.md",
+      "sha256": "6f2190adb8e2083a8349df37d0968876ef1414a2dfd12e52d5778841ffcecc49",
+      "bytes": 14230
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/verification.json",
+      "sha256": "e969ffc28e3ccd554595789c8686faeb845ceca31adfc9822f0ab9c20c46f9a5",
+      "bytes": 14975
+    },
+    {
+      "path": "reviews/2026-09-28-one-pair-selector/verify.py",
+      "sha256": "5dc37fb0441ab3ca976aa5cfddf219c5e105890a84adda466375fbaceb7bcff6",
+      "bytes": 23991
+    }
+  ]
+}

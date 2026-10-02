@@ -1,0 +1,2156 @@
+{
+  "baseline": "bf5795ed41c06fc45be02f7b7c3a2c273de27749",
+  "protocol_sha256": "9053ebb58fa30a1841e03bb1aba686fb51631b01480186772f751df63bda1165",
+  "primary_sha256": "45cebc6c6ac49e79127e077889c5438961240552af7a77efefaa3cbda9e8031c",
+  "source_contract": {
+    "selector_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "selector_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+    "physical_geometry_and_moments": "reviews/2026-09-28-joint-triple-exclusions/results.json",
+    "physical_geometry_and_moments_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+    "control_roles": "reviews/2026-09-28-cover-obligations/results.json",
+    "control_roles_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e"
+  },
+  "arithmetic": "fractions.Fraction only; no floating-point decisions",
+  "formula": {
+    "threshold": "1/8",
+    "strictness": "Every displayed lap-window and lap-band bound is open.",
+    "per_m_integer_count": "max(0, ceil(upper)-floor(lower)-1)",
+    "component_count": "sum of per-m integer n counts",
+    "iteration": "candidate m labels of the smaller physical speed only"
+  },
+  "information_barrier": "All 24 lap-band counts and all four selections are fixed before archived component counts, interval-selector choices, containment outcomes, or control roles are parsed.",
+  "primary_forbidden_structures": {
+    "blocking_interval_lists_constructed": 0,
+    "pair_intersection_intervals_constructed": 0,
+    "new_containment_queries": 0
+  },
+  "cases": {
+    "collective_target": {
+      "source_case": "target",
+      "speeds": [
+        15,
+        38,
+        61,
+        100
+      ],
+      "window": [
+        "33/184",
+        "39/184"
+      ],
+      "C_0": "6121/2781600",
+      "moment_projection": {
+        "total": "3/92",
+        "single_durations": {
+          "15": "1/60",
+          "38": "79/6992",
+          "61": "45/5612",
+          "100": "173/18400"
+        },
+        "pair_durations": {
+          "15/38": "1/912",
+          "15/61": "1/244",
+          "15/100": "1/400",
+          "38/61": "1001/426512",
+          "38/100": "43/15200",
+          "61/100": "473/224480"
+        }
+      },
+      "pair_rows": [
+        {
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement": [
+            61,
+            100
+          ],
+          "omitted_pair_overlap": "473/224480",
+          "potential_slack": "49/524400",
+          "eligible": true,
+          "lap_band_component_count": 1,
+          "cost_category": "selector_charged",
+          "lap_band_table": {
+            "smaller_speed": 15,
+            "larger_speed": 38,
+            "m_window_lower": "59/23",
+            "m_window_upper": "76/23",
+            "candidate_m_labels": [
+              3
+            ],
+            "larger_speed_n_window_lower": "1231/184",
+            "larger_speed_n_window_upper": "1505/184",
+            "band_radius": "53/8",
+            "m_rows": [
+              {
+                "m": 3,
+                "raw_band_lower": "859/120",
+                "raw_band_upper": "193/24",
+                "lower": "859/120",
+                "upper": "193/24",
+                "n_labels": [
+                  8
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 1,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            15,
+            61
+          ],
+          "complement": [
+            38,
+            100
+          ],
+          "omitted_pair_overlap": "43/15200",
+          "potential_slack": "-23/36600",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 15,
+            "larger_speed": 61,
+            "m_window_lower": "59/23",
+            "m_window_upper": "76/23",
+            "candidate_m_labels": [
+              3
+            ],
+            "larger_speed_n_window_lower": "995/92",
+            "larger_speed_n_window_upper": "1201/92",
+            "band_radius": "19/2",
+            "m_rows": [
+              {
+                "m": 3,
+                "raw_band_lower": "347/30",
+                "raw_band_upper": "77/6",
+                "lower": "347/30",
+                "upper": "77/6",
+                "n_labels": [
+                  12
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            15,
+            100
+          ],
+          "complement": [
+            38,
+            61
+          ],
+          "omitted_pair_overlap": "1001/426512",
+          "potential_slack": "-493/3367200",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 15,
+            "larger_speed": 100,
+            "m_window_lower": "59/23",
+            "m_window_upper": "76/23",
+            "candidate_m_labels": [
+              3
+            ],
+            "larger_speed_n_window_lower": "3277/184",
+            "larger_speed_n_window_upper": "3923/184",
+            "band_radius": "115/8",
+            "m_rows": [
+              {
+                "m": 3,
+                "raw_band_lower": "457/24",
+                "raw_band_upper": "503/24",
+                "lower": "457/24",
+                "upper": "503/24",
+                "n_labels": [
+                  20
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            38,
+            61
+          ],
+          "complement": [
+            15,
+            100
+          ],
+          "omitted_pair_overlap": "1/400",
+          "potential_slack": "-833/2781600",
+          "eligible": false,
+          "lap_band_component_count": 2,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 38,
+            "larger_speed": 61,
+            "m_window_lower": "1231/184",
+            "m_window_upper": "1505/184",
+            "candidate_m_labels": [
+              7,
+              8
+            ],
+            "larger_speed_n_window_lower": "995/92",
+            "larger_speed_n_window_upper": "1201/92",
+            "band_radius": "99/8",
+            "m_rows": [
+              {
+                "m": 7,
+                "raw_band_lower": "3317/304",
+                "raw_band_upper": "185/16",
+                "lower": "3317/304",
+                "upper": "185/16",
+                "n_labels": [
+                  11
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 8,
+                "raw_band_lower": "3805/304",
+                "raw_band_upper": "4003/304",
+                "lower": "3805/304",
+                "upper": "1201/92",
+                "n_labels": [
+                  13
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 2
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 4,
+            "floor_ceil_operations": 4,
+            "integer_n_labels_counted": 2,
+            "m_rows": 2,
+            "max_min_bound_operations": 4
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 2,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            38,
+            100
+          ],
+          "complement": [
+            15,
+            61
+          ],
+          "omitted_pair_overlap": "1/244",
+          "potential_slack": "-5279/2781600",
+          "eligible": false,
+          "lap_band_component_count": 2,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 38,
+            "larger_speed": 100,
+            "m_window_lower": "1231/184",
+            "m_window_upper": "1505/184",
+            "candidate_m_labels": [
+              7,
+              8
+            ],
+            "larger_speed_n_window_lower": "3277/184",
+            "larger_speed_n_window_upper": "3923/184",
+            "band_radius": "69/4",
+            "m_rows": [
+              {
+                "m": 7,
+                "raw_band_lower": "2731/152",
+                "raw_band_upper": "151/8",
+                "lower": "2731/152",
+                "upper": "151/8",
+                "n_labels": [
+                  18
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 8,
+                "raw_band_lower": "3131/152",
+                "raw_band_upper": "3269/152",
+                "lower": "3131/152",
+                "upper": "3923/184",
+                "n_labels": [
+                  21
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 2
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 4,
+            "floor_ceil_operations": 4,
+            "integer_n_labels_counted": 2,
+            "m_rows": 2,
+            "max_min_bound_operations": 4
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 2,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement": [
+            15,
+            38
+          ],
+          "omitted_pair_overlap": "1/912",
+          "potential_slack": "3071/2781600",
+          "eligible": true,
+          "lap_band_component_count": 3,
+          "cost_category": "selector_charged",
+          "lap_band_table": {
+            "smaller_speed": 61,
+            "larger_speed": 100,
+            "m_window_lower": "995/92",
+            "m_window_upper": "1201/92",
+            "candidate_m_labels": [
+              11,
+              12,
+              13
+            ],
+            "larger_speed_n_window_lower": "3277/184",
+            "larger_speed_n_window_upper": "3923/184",
+            "band_radius": "161/8",
+            "m_rows": [
+              {
+                "m": 11,
+                "raw_band_lower": "8639/488",
+                "raw_band_upper": "8961/488",
+                "lower": "3277/184",
+                "upper": "8961/488",
+                "n_labels": [
+                  18
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 12,
+                "raw_band_lower": "9439/488",
+                "raw_band_upper": "9761/488",
+                "lower": "9439/488",
+                "upper": "9761/488",
+                "n_labels": [
+                  20
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 13,
+                "raw_band_lower": "10239/488",
+                "raw_band_upper": "10561/488",
+                "lower": "10239/488",
+                "upper": "3923/184",
+                "n_labels": [
+                  21
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 3
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 6,
+            "floor_ceil_operations": 6,
+            "integer_n_labels_counted": 3,
+            "m_rows": 3,
+            "max_min_bound_operations": 6
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 3,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 3,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        }
+      ],
+      "eligible_base_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "formula_selected_base_pair": [
+        15,
+        38
+      ],
+      "diagnostic_only_after_pair_exit": false,
+      "cost": {
+        "all_six_pairs_in_this_window": {
+          "band_bound_evaluations": 20,
+          "floor_ceil_operations": 20,
+          "integer_n_labels_counted": 10,
+          "m_rows": 10,
+          "max_min_bound_operations": 20
+        },
+        "selector_charged": {
+          "band_bound_evaluations": 8,
+          "floor_ceil_operations": 8,
+          "integer_n_labels_counted": 4,
+          "m_rows": 4,
+          "max_min_bound_operations": 8
+        },
+        "diagnostic_selector": {},
+        "ineligible_all_pair_audit_only": {
+          "band_bound_evaluations": 12,
+          "floor_ceil_operations": 12,
+          "integer_n_labels_counted": 6,
+          "m_rows": 6,
+          "max_min_bound_operations": 12
+        },
+        "selection": {
+          "component_count_order_comparisons": 1
+        }
+      },
+      "postselection_archived_outcome": {
+        "prior_interval_selector_base_pair": [
+          15,
+          38
+        ],
+        "formula_reproduces_prior_selector": true,
+        "prior_containment_query_issued": true,
+        "prior_containment_holds": true,
+        "prior_outcome": "certified",
+        "prior_certified_lower_bound": "49/524400",
+        "pair_only_exit": null,
+        "isolated_equality_endpoint": null,
+        "cover_obligation_control_outcome": null
+      }
+    },
+    "strict_16": {
+      "source_case": "strict_16",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "C_0": "1/896",
+      "moment_projection": {
+        "total": "3/32",
+        "single_durations": {
+          "6": "1/24",
+          "7": "5/224",
+          "11": "9/352",
+          "16": "3/128"
+        },
+        "pair_durations": {
+          "6/7": "0",
+          "6/11": "1/528",
+          "6/16": "1/128",
+          "7/11": "1/352",
+          "7/16": "0",
+          "11/16": "1/128"
+        }
+      },
+      "pair_rows": [
+        {
+          "base_pair": [
+            6,
+            7
+          ],
+          "complement": [
+            11,
+            16
+          ],
+          "omitted_pair_overlap": "1/128",
+          "potential_slack": "-3/448",
+          "eligible": false,
+          "lap_band_component_count": 0,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 6,
+            "larger_speed": 7,
+            "m_window_lower": "25/16",
+            "m_window_upper": "19/8",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "59/32",
+            "larger_speed_n_window_upper": "11/4",
+            "band_radius": "13/8",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "33/16",
+                "raw_band_upper": "125/48",
+                "lower": "33/16",
+                "upper": "125/48",
+                "n_labels": [],
+                "n_count": 0
+              }
+            ],
+            "component_count": 0
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 0,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 0,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            6,
+            11
+          ],
+          "complement": [
+            7,
+            16
+          ],
+          "omitted_pair_overlap": "0",
+          "potential_slack": "1/896",
+          "eligible": true,
+          "lap_band_component_count": 1,
+          "cost_category": "selector_charged",
+          "lap_band_table": {
+            "smaller_speed": 6,
+            "larger_speed": 11,
+            "m_window_lower": "25/16",
+            "m_window_upper": "19/8",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "95/32",
+            "larger_speed_n_window_upper": "17/4",
+            "band_radius": "17/8",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "53/16",
+                "raw_band_upper": "193/48",
+                "lower": "53/16",
+                "upper": "193/48",
+                "n_labels": [
+                  4
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 1,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            6,
+            16
+          ],
+          "complement": [
+            7,
+            11
+          ],
+          "omitted_pair_overlap": "1/352",
+          "potential_slack": "-17/9856",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 6,
+            "larger_speed": 16,
+            "m_window_lower": "25/16",
+            "m_window_upper": "19/8",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "35/8",
+            "larger_speed_n_window_upper": "49/8",
+            "band_radius": "11/4",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "39/8",
+                "raw_band_upper": "139/24",
+                "lower": "39/8",
+                "upper": "139/24",
+                "n_labels": [
+                  5
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            7,
+            11
+          ],
+          "complement": [
+            6,
+            16
+          ],
+          "omitted_pair_overlap": "1/128",
+          "potential_slack": "-3/448",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 7,
+            "larger_speed": 11,
+            "m_window_lower": "59/32",
+            "m_window_upper": "11/4",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "95/32",
+            "larger_speed_n_window_upper": "17/4",
+            "band_radius": "9/4",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "79/28",
+                "raw_band_upper": "97/28",
+                "lower": "95/32",
+                "upper": "97/28",
+                "n_labels": [
+                  3
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            7,
+            16
+          ],
+          "complement": [
+            6,
+            11
+          ],
+          "omitted_pair_overlap": "1/528",
+          "potential_slack": "-23/29568",
+          "eligible": false,
+          "lap_band_component_count": 0,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 7,
+            "larger_speed": 16,
+            "m_window_lower": "59/32",
+            "m_window_upper": "11/4",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "35/8",
+            "larger_speed_n_window_upper": "49/8",
+            "band_radius": "23/8",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "233/56",
+                "raw_band_upper": "279/56",
+                "lower": "35/8",
+                "upper": "279/56",
+                "n_labels": [],
+                "n_count": 0
+              }
+            ],
+            "component_count": 0
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 0,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 0,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            11,
+            16
+          ],
+          "complement": [
+            6,
+            7
+          ],
+          "omitted_pair_overlap": "0",
+          "potential_slack": "1/896",
+          "eligible": true,
+          "lap_band_component_count": 1,
+          "cost_category": "selector_charged",
+          "lap_band_table": {
+            "smaller_speed": 11,
+            "larger_speed": 16,
+            "m_window_lower": "95/32",
+            "m_window_upper": "17/4",
+            "candidate_m_labels": [
+              3,
+              4
+            ],
+            "larger_speed_n_window_lower": "35/8",
+            "larger_speed_n_window_upper": "49/8",
+            "band_radius": "27/8",
+            "m_rows": [
+              {
+                "m": 3,
+                "raw_band_lower": "357/88",
+                "raw_band_upper": "411/88",
+                "lower": "35/8",
+                "upper": "411/88",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 4,
+                "raw_band_lower": "485/88",
+                "raw_band_upper": "49/8",
+                "lower": "485/88",
+                "upper": "49/8",
+                "n_labels": [
+                  6
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 4,
+            "floor_ceil_operations": 4,
+            "integer_n_labels_counted": 1,
+            "m_rows": 2,
+            "max_min_bound_operations": 4
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 1,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        }
+      ],
+      "eligible_base_pairs": [
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "formula_selected_base_pair": [
+        6,
+        11
+      ],
+      "diagnostic_only_after_pair_exit": false,
+      "cost": {
+        "all_six_pairs_in_this_window": {
+          "band_bound_evaluations": 14,
+          "floor_ceil_operations": 14,
+          "integer_n_labels_counted": 4,
+          "m_rows": 7,
+          "max_min_bound_operations": 14
+        },
+        "selector_charged": {
+          "band_bound_evaluations": 6,
+          "floor_ceil_operations": 6,
+          "integer_n_labels_counted": 2,
+          "m_rows": 3,
+          "max_min_bound_operations": 6
+        },
+        "diagnostic_selector": {},
+        "ineligible_all_pair_audit_only": {
+          "band_bound_evaluations": 8,
+          "floor_ceil_operations": 8,
+          "integer_n_labels_counted": 2,
+          "m_rows": 4,
+          "max_min_bound_operations": 8
+        },
+        "selection": {
+          "component_count_order_comparisons": 1,
+          "component_count_ties": 1,
+          "physical_lexicographic_tie_breaks": 1
+        }
+      },
+      "postselection_archived_outcome": {
+        "prior_interval_selector_base_pair": [
+          6,
+          11
+        ],
+        "formula_reproduces_prior_selector": true,
+        "prior_containment_query_issued": true,
+        "prior_containment_holds": true,
+        "prior_outcome": "certified",
+        "prior_certified_lower_bound": "1/896",
+        "pair_only_exit": null,
+        "isolated_equality_endpoint": null,
+        "cover_obligation_control_outcome": "one_triple_repair_positive"
+      }
+    },
+    "doubling_112": {
+      "source_case": "doubling_112",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "C_0": "1165/32256",
+      "moment_projection": {
+        "total": "3/32",
+        "single_durations": {
+          "56": "11/448",
+          "64": "3/128",
+          "72": "13/576",
+          "112": "3/128"
+        },
+        "pair_durations": {
+          "56/64": "1/256",
+          "56/72": "23/4032",
+          "56/112": "11/896",
+          "64/72": "1/256",
+          "64/112": "3/512",
+          "72/112": "19/4032"
+        }
+      },
+      "pair_rows": [
+        {
+          "base_pair": [
+            56,
+            64
+          ],
+          "complement": [
+            72,
+            112
+          ],
+          "omitted_pair_overlap": "19/4032",
+          "potential_slack": "1013/32256",
+          "eligible": true,
+          "lap_band_component_count": 2,
+          "cost_category": "diagnostic_selector",
+          "lap_band_table": {
+            "smaller_speed": 56,
+            "larger_speed": 64,
+            "m_window_lower": "125/8",
+            "m_window_upper": "169/8",
+            "candidate_m_labels": [
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "larger_speed_n_window_lower": "143/8",
+            "larger_speed_n_window_upper": "193/8",
+            "band_radius": "15",
+            "m_rows": [
+              {
+                "m": 16,
+                "raw_band_lower": "1009/56",
+                "raw_band_upper": "1039/56",
+                "lower": "1009/56",
+                "upper": "1039/56",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 17,
+                "raw_band_lower": "1073/56",
+                "raw_band_upper": "1103/56",
+                "lower": "1073/56",
+                "upper": "1103/56",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 18,
+                "raw_band_lower": "1137/56",
+                "raw_band_upper": "1167/56",
+                "lower": "1137/56",
+                "upper": "1167/56",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 19,
+                "raw_band_lower": "1201/56",
+                "raw_band_upper": "1231/56",
+                "lower": "1201/56",
+                "upper": "1231/56",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 20,
+                "raw_band_lower": "1265/56",
+                "raw_band_upper": "185/8",
+                "lower": "1265/56",
+                "upper": "185/8",
+                "n_labels": [
+                  23
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 21,
+                "raw_band_lower": "1329/56",
+                "raw_band_upper": "1359/56",
+                "lower": "1329/56",
+                "upper": "193/8",
+                "n_labels": [
+                  24
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 2
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 12,
+            "floor_ceil_operations": 12,
+            "integer_n_labels_counted": 2,
+            "m_rows": 6,
+            "max_min_bound_operations": 12
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 2,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 2,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            56,
+            72
+          ],
+          "complement": [
+            64,
+            112
+          ],
+          "omitted_pair_overlap": "3/512",
+          "potential_slack": "61/2016",
+          "eligible": true,
+          "lap_band_component_count": 3,
+          "cost_category": "diagnostic_selector",
+          "lap_band_table": {
+            "smaller_speed": 56,
+            "larger_speed": 72,
+            "m_window_lower": "125/8",
+            "m_window_upper": "169/8",
+            "candidate_m_labels": [
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "larger_speed_n_window_lower": "161/8",
+            "larger_speed_n_window_upper": "217/8",
+            "band_radius": "16",
+            "m_rows": [
+              {
+                "m": 16,
+                "raw_band_lower": "142/7",
+                "raw_band_upper": "146/7",
+                "lower": "142/7",
+                "upper": "146/7",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 17,
+                "raw_band_lower": "151/7",
+                "raw_band_upper": "155/7",
+                "lower": "151/7",
+                "upper": "155/7",
+                "n_labels": [
+                  22
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 18,
+                "raw_band_lower": "160/7",
+                "raw_band_upper": "164/7",
+                "lower": "160/7",
+                "upper": "164/7",
+                "n_labels": [
+                  23
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 19,
+                "raw_band_lower": "169/7",
+                "raw_band_upper": "173/7",
+                "lower": "169/7",
+                "upper": "173/7",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 20,
+                "raw_band_lower": "178/7",
+                "raw_band_upper": "26",
+                "lower": "178/7",
+                "upper": "26",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 21,
+                "raw_band_lower": "187/7",
+                "raw_band_upper": "191/7",
+                "lower": "187/7",
+                "upper": "217/8",
+                "n_labels": [
+                  27
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 3
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 12,
+            "floor_ceil_operations": 12,
+            "integer_n_labels_counted": 3,
+            "m_rows": 6,
+            "max_min_bound_operations": 12
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 3,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 3,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            56,
+            112
+          ],
+          "complement": [
+            64,
+            72
+          ],
+          "omitted_pair_overlap": "1/256",
+          "potential_slack": "1039/32256",
+          "eligible": true,
+          "lap_band_component_count": 6,
+          "cost_category": "diagnostic_selector",
+          "lap_band_table": {
+            "smaller_speed": 56,
+            "larger_speed": 112,
+            "m_window_lower": "125/8",
+            "m_window_upper": "169/8",
+            "candidate_m_labels": [
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "larger_speed_n_window_lower": "251/8",
+            "larger_speed_n_window_upper": "337/8",
+            "band_radius": "21",
+            "m_rows": [
+              {
+                "m": 16,
+                "raw_band_lower": "253/8",
+                "raw_band_upper": "259/8",
+                "lower": "253/8",
+                "upper": "259/8",
+                "n_labels": [
+                  32
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 17,
+                "raw_band_lower": "269/8",
+                "raw_band_upper": "275/8",
+                "lower": "269/8",
+                "upper": "275/8",
+                "n_labels": [
+                  34
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 18,
+                "raw_band_lower": "285/8",
+                "raw_band_upper": "291/8",
+                "lower": "285/8",
+                "upper": "291/8",
+                "n_labels": [
+                  36
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 19,
+                "raw_band_lower": "301/8",
+                "raw_band_upper": "307/8",
+                "lower": "301/8",
+                "upper": "307/8",
+                "n_labels": [
+                  38
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 20,
+                "raw_band_lower": "317/8",
+                "raw_band_upper": "323/8",
+                "lower": "317/8",
+                "upper": "323/8",
+                "n_labels": [
+                  40
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 21,
+                "raw_band_lower": "333/8",
+                "raw_band_upper": "339/8",
+                "lower": "333/8",
+                "upper": "337/8",
+                "n_labels": [
+                  42
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 6
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 12,
+            "floor_ceil_operations": 12,
+            "integer_n_labels_counted": 6,
+            "m_rows": 6,
+            "max_min_bound_operations": 12
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 6,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 6,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            64,
+            72
+          ],
+          "complement": [
+            56,
+            112
+          ],
+          "omitted_pair_overlap": "11/896",
+          "potential_slack": "769/32256",
+          "eligible": true,
+          "lap_band_component_count": 3,
+          "cost_category": "diagnostic_selector",
+          "lap_band_table": {
+            "smaller_speed": 64,
+            "larger_speed": 72,
+            "m_window_lower": "143/8",
+            "m_window_upper": "193/8",
+            "candidate_m_labels": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "larger_speed_n_window_lower": "161/8",
+            "larger_speed_n_window_upper": "217/8",
+            "band_radius": "17",
+            "m_rows": [
+              {
+                "m": 18,
+                "raw_band_lower": "1279/64",
+                "raw_band_upper": "1313/64",
+                "lower": "161/8",
+                "upper": "1313/64",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 19,
+                "raw_band_lower": "1351/64",
+                "raw_band_upper": "1385/64",
+                "lower": "1351/64",
+                "upper": "1385/64",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 20,
+                "raw_band_lower": "1423/64",
+                "raw_band_upper": "1457/64",
+                "lower": "1423/64",
+                "upper": "1457/64",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 21,
+                "raw_band_lower": "1495/64",
+                "raw_band_upper": "1529/64",
+                "lower": "1495/64",
+                "upper": "1529/64",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 22,
+                "raw_band_lower": "1567/64",
+                "raw_band_upper": "1601/64",
+                "lower": "1567/64",
+                "upper": "1601/64",
+                "n_labels": [
+                  25
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 23,
+                "raw_band_lower": "1639/64",
+                "raw_band_upper": "1673/64",
+                "lower": "1639/64",
+                "upper": "1673/64",
+                "n_labels": [
+                  26
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 24,
+                "raw_band_lower": "1711/64",
+                "raw_band_upper": "1745/64",
+                "lower": "1711/64",
+                "upper": "217/8",
+                "n_labels": [
+                  27
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 3
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 14,
+            "floor_ceil_operations": 14,
+            "integer_n_labels_counted": 3,
+            "m_rows": 7,
+            "max_min_bound_operations": 14
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 3,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 3,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            64,
+            112
+          ],
+          "complement": [
+            56,
+            72
+          ],
+          "omitted_pair_overlap": "23/4032",
+          "potential_slack": "109/3584",
+          "eligible": true,
+          "lap_band_component_count": 5,
+          "cost_category": "diagnostic_selector",
+          "lap_band_table": {
+            "smaller_speed": 64,
+            "larger_speed": 112,
+            "m_window_lower": "143/8",
+            "m_window_upper": "193/8",
+            "candidate_m_labels": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "larger_speed_n_window_lower": "251/8",
+            "larger_speed_n_window_upper": "337/8",
+            "band_radius": "22",
+            "m_rows": [
+              {
+                "m": 18,
+                "raw_band_lower": "997/32",
+                "raw_band_upper": "1019/32",
+                "lower": "251/8",
+                "upper": "1019/32",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 19,
+                "raw_band_lower": "1053/32",
+                "raw_band_upper": "1075/32",
+                "lower": "1053/32",
+                "upper": "1075/32",
+                "n_labels": [
+                  33
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 20,
+                "raw_band_lower": "1109/32",
+                "raw_band_upper": "1131/32",
+                "lower": "1109/32",
+                "upper": "1131/32",
+                "n_labels": [
+                  35
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 21,
+                "raw_band_lower": "1165/32",
+                "raw_band_upper": "1187/32",
+                "lower": "1165/32",
+                "upper": "1187/32",
+                "n_labels": [
+                  37
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 22,
+                "raw_band_lower": "1221/32",
+                "raw_band_upper": "1243/32",
+                "lower": "1221/32",
+                "upper": "1243/32",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 23,
+                "raw_band_lower": "1277/32",
+                "raw_band_upper": "1299/32",
+                "lower": "1277/32",
+                "upper": "1299/32",
+                "n_labels": [
+                  40
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 24,
+                "raw_band_lower": "1333/32",
+                "raw_band_upper": "1355/32",
+                "lower": "1333/32",
+                "upper": "337/8",
+                "n_labels": [
+                  42
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 5
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 14,
+            "floor_ceil_operations": 14,
+            "integer_n_labels_counted": 5,
+            "m_rows": 7,
+            "max_min_bound_operations": 14
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 5,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 5,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        },
+        {
+          "base_pair": [
+            72,
+            112
+          ],
+          "complement": [
+            56,
+            64
+          ],
+          "omitted_pair_overlap": "1/256",
+          "potential_slack": "1039/32256",
+          "eligible": true,
+          "lap_band_component_count": 4,
+          "cost_category": "diagnostic_selector",
+          "lap_band_table": {
+            "smaller_speed": 72,
+            "larger_speed": 112,
+            "m_window_lower": "161/8",
+            "m_window_upper": "217/8",
+            "candidate_m_labels": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "larger_speed_n_window_lower": "251/8",
+            "larger_speed_n_window_upper": "337/8",
+            "band_radius": "23",
+            "m_rows": [
+              {
+                "m": 21,
+                "raw_band_lower": "2329/72",
+                "raw_band_upper": "2375/72",
+                "lower": "2329/72",
+                "upper": "2375/72",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 22,
+                "raw_band_lower": "2441/72",
+                "raw_band_upper": "829/24",
+                "lower": "2441/72",
+                "upper": "829/24",
+                "n_labels": [
+                  34
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 23,
+                "raw_band_lower": "851/24",
+                "raw_band_upper": "2599/72",
+                "lower": "851/24",
+                "upper": "2599/72",
+                "n_labels": [
+                  36
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 24,
+                "raw_band_lower": "2665/72",
+                "raw_band_upper": "2711/72",
+                "lower": "2665/72",
+                "upper": "2711/72",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 25,
+                "raw_band_lower": "2777/72",
+                "raw_band_upper": "941/24",
+                "lower": "2777/72",
+                "upper": "941/24",
+                "n_labels": [
+                  39
+                ],
+                "n_count": 1
+              },
+              {
+                "m": 26,
+                "raw_band_lower": "321/8",
+                "raw_band_upper": "2935/72",
+                "lower": "321/8",
+                "upper": "2935/72",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 27,
+                "raw_band_lower": "3001/72",
+                "raw_band_upper": "3047/72",
+                "lower": "3001/72",
+                "upper": "337/8",
+                "n_labels": [
+                  42
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 4
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 14,
+            "floor_ceil_operations": 14,
+            "integer_n_labels_counted": 4,
+            "m_rows": 7,
+            "max_min_bound_operations": 14
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 4,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": 4,
+            "formula_matches_prior_selector_recorded_count": true
+          }
+        }
+      ],
+      "eligible_base_pairs": [
+        [
+          56,
+          64
+        ],
+        [
+          56,
+          72
+        ],
+        [
+          56,
+          112
+        ],
+        [
+          64,
+          72
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          72,
+          112
+        ]
+      ],
+      "formula_selected_base_pair": [
+        56,
+        64
+      ],
+      "diagnostic_only_after_pair_exit": true,
+      "cost": {
+        "all_six_pairs_in_this_window": {
+          "band_bound_evaluations": 78,
+          "floor_ceil_operations": 78,
+          "integer_n_labels_counted": 23,
+          "m_rows": 39,
+          "max_min_bound_operations": 78
+        },
+        "selector_charged": {},
+        "diagnostic_selector": {
+          "band_bound_evaluations": 78,
+          "floor_ceil_operations": 78,
+          "integer_n_labels_counted": 23,
+          "m_rows": 39,
+          "max_min_bound_operations": 78
+        },
+        "ineligible_all_pair_audit_only": {},
+        "selection": {
+          "component_count_order_comparisons": 5
+        }
+      },
+      "postselection_archived_outcome": {
+        "prior_interval_selector_base_pair": [
+          56,
+          64
+        ],
+        "formula_reproduces_prior_selector": true,
+        "prior_containment_query_issued": true,
+        "prior_containment_holds": false,
+        "prior_outcome": "failed_no_retune",
+        "prior_certified_lower_bound": null,
+        "pair_only_exit": {
+          "precedes_selector": true,
+          "archived_positive_optimum": "761/32256",
+          "selector_results_are_diagnostic_only": true
+        },
+        "isolated_equality_endpoint": null,
+        "cover_obligation_control_outcome": "pair_only_positive"
+      }
+    },
+    "tight_13": {
+      "source_case": "tight_13",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "C_0": "0",
+      "moment_projection": {
+        "total": "3/32",
+        "single_durations": {
+          "6": "1/24",
+          "7": "5/224",
+          "11": "9/352",
+          "13": "1/52"
+        },
+        "pair_durations": {
+          "6/7": "0",
+          "6/11": "1/528",
+          "6/13": "1/208",
+          "7/11": "1/352",
+          "7/13": "1/182",
+          "11/13": "0"
+        }
+      },
+      "pair_rows": [
+        {
+          "base_pair": [
+            6,
+            7
+          ],
+          "complement": [
+            11,
+            13
+          ],
+          "omitted_pair_overlap": "0",
+          "potential_slack": "0",
+          "eligible": false,
+          "lap_band_component_count": 0,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 6,
+            "larger_speed": 7,
+            "m_window_lower": "25/16",
+            "m_window_upper": "19/8",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "59/32",
+            "larger_speed_n_window_upper": "11/4",
+            "band_radius": "13/8",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "33/16",
+                "raw_band_upper": "125/48",
+                "lower": "33/16",
+                "upper": "125/48",
+                "n_labels": [],
+                "n_count": 0
+              }
+            ],
+            "component_count": 0
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 0,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 0,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            6,
+            11
+          ],
+          "complement": [
+            7,
+            13
+          ],
+          "omitted_pair_overlap": "1/182",
+          "potential_slack": "-1/182",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 6,
+            "larger_speed": 11,
+            "m_window_lower": "25/16",
+            "m_window_upper": "19/8",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "95/32",
+            "larger_speed_n_window_upper": "17/4",
+            "band_radius": "17/8",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "53/16",
+                "raw_band_upper": "193/48",
+                "lower": "53/16",
+                "upper": "193/48",
+                "n_labels": [
+                  4
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            6,
+            13
+          ],
+          "complement": [
+            7,
+            11
+          ],
+          "omitted_pair_overlap": "1/352",
+          "potential_slack": "-1/352",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 6,
+            "larger_speed": 13,
+            "m_window_lower": "25/16",
+            "m_window_upper": "19/8",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "113/32",
+            "larger_speed_n_window_upper": "5",
+            "band_radius": "19/8",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "63/16",
+                "raw_band_upper": "227/48",
+                "lower": "63/16",
+                "upper": "227/48",
+                "n_labels": [
+                  4
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            7,
+            11
+          ],
+          "complement": [
+            6,
+            13
+          ],
+          "omitted_pair_overlap": "1/208",
+          "potential_slack": "-1/208",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 7,
+            "larger_speed": 11,
+            "m_window_lower": "59/32",
+            "m_window_upper": "11/4",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "95/32",
+            "larger_speed_n_window_upper": "17/4",
+            "band_radius": "9/4",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "79/28",
+                "raw_band_upper": "97/28",
+                "lower": "95/32",
+                "upper": "97/28",
+                "n_labels": [
+                  3
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            7,
+            13
+          ],
+          "complement": [
+            6,
+            11
+          ],
+          "omitted_pair_overlap": "1/528",
+          "potential_slack": "-1/528",
+          "eligible": false,
+          "lap_band_component_count": 1,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 7,
+            "larger_speed": 13,
+            "m_window_lower": "59/32",
+            "m_window_upper": "11/4",
+            "candidate_m_labels": [
+              2
+            ],
+            "larger_speed_n_window_lower": "113/32",
+            "larger_speed_n_window_upper": "5",
+            "band_radius": "5/2",
+            "m_rows": [
+              {
+                "m": 2,
+                "raw_band_lower": "47/14",
+                "raw_band_upper": "57/14",
+                "lower": "113/32",
+                "upper": "57/14",
+                "n_labels": [
+                  4
+                ],
+                "n_count": 1
+              }
+            ],
+            "component_count": 1
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 2,
+            "floor_ceil_operations": 2,
+            "integer_n_labels_counted": 1,
+            "m_rows": 1,
+            "max_min_bound_operations": 2
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 1,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        },
+        {
+          "base_pair": [
+            11,
+            13
+          ],
+          "complement": [
+            6,
+            7
+          ],
+          "omitted_pair_overlap": "0",
+          "potential_slack": "0",
+          "eligible": false,
+          "lap_band_component_count": 0,
+          "cost_category": "all_pair_audit_only",
+          "lap_band_table": {
+            "smaller_speed": 11,
+            "larger_speed": 13,
+            "m_window_lower": "95/32",
+            "m_window_upper": "17/4",
+            "candidate_m_labels": [
+              3,
+              4
+            ],
+            "larger_speed_n_window_lower": "113/32",
+            "larger_speed_n_window_upper": "5",
+            "band_radius": "3",
+            "m_rows": [
+              {
+                "m": 3,
+                "raw_band_lower": "36/11",
+                "raw_band_upper": "42/11",
+                "lower": "113/32",
+                "upper": "42/11",
+                "n_labels": [],
+                "n_count": 0
+              },
+              {
+                "m": 4,
+                "raw_band_lower": "49/11",
+                "raw_band_upper": "5",
+                "lower": "49/11",
+                "upper": "5",
+                "n_labels": [],
+                "n_count": 0
+              }
+            ],
+            "component_count": 0
+          },
+          "arithmetic_cost": {
+            "band_bound_evaluations": 4,
+            "floor_ceil_operations": 4,
+            "integer_n_labels_counted": 0,
+            "m_rows": 2,
+            "max_min_bound_operations": 4
+          },
+          "postselection_archive_comparison": {
+            "interval_derived_component_count": 0,
+            "formula_matches_interval_derived_count": true,
+            "prior_selector_recorded_count": null,
+            "formula_matches_prior_selector_recorded_count": null
+          }
+        }
+      ],
+      "eligible_base_pairs": [],
+      "formula_selected_base_pair": null,
+      "diagnostic_only_after_pair_exit": false,
+      "cost": {
+        "all_six_pairs_in_this_window": {
+          "band_bound_evaluations": 14,
+          "floor_ceil_operations": 14,
+          "integer_n_labels_counted": 4,
+          "m_rows": 7,
+          "max_min_bound_operations": 14
+        },
+        "selector_charged": {},
+        "diagnostic_selector": {},
+        "ineligible_all_pair_audit_only": {
+          "band_bound_evaluations": 14,
+          "floor_ceil_operations": 14,
+          "integer_n_labels_counted": 4,
+          "m_rows": 7,
+          "max_min_bound_operations": 14
+        },
+        "selection": {}
+      },
+      "postselection_archived_outcome": {
+        "prior_interval_selector_base_pair": null,
+        "formula_reproduces_prior_selector": true,
+        "prior_containment_query_issued": false,
+        "prior_containment_holds": null,
+        "prior_outcome": "no_eligible_pair_no_query",
+        "prior_certified_lower_bound": null,
+        "pair_only_exit": null,
+        "isolated_equality_endpoint": {
+          "time": "3/8",
+          "distances": {
+            "1": "3/8",
+            "4": "1/2",
+            "5": "1/8",
+            "6": "1/4",
+            "7": "3/8",
+            "11": "1/8",
+            "13": "1/8"
+          },
+          "valid": true,
+          "isolated": true,
+          "positive_duration": false,
+          "left_neighborhood_blockers": [
+            11
+          ],
+          "right_neighborhood_blockers": [
+            5,
+            13
+          ]
+        },
+        "cover_obligation_control_outcome": "no_individually_forced_triple"
+      }
+    }
+  },
+  "counts": {
+    "windows": 4,
+    "physical_pairs": 24,
+    "candidate_m_rows": 63,
+    "integer_lap_pairs_counted": 41,
+    "eligible_pairs_total": 10,
+    "selector_charged_pairs": 4,
+    "diagnostic_selector_pairs": 6,
+    "ineligible_audit_pairs": 14,
+    "all_pair_component_count_comparisons": 24,
+    "eligible_prior_count_comparisons": 10,
+    "selector_comparisons": 4
+  },
+  "findings": {
+    "all_24_formula_counts_match_interval_components": true,
+    "all_four_formula_selections_match_prior_selector": true,
+    "target_selection": [
+      15,
+      38
+    ],
+    "strict_16_tie_selection": [
+      6,
+      11
+    ],
+    "doubling_112_diagnostic_selection": [
+      56,
+      64
+    ],
+    "tight_13_selection": null
+  },
+  "limits": [
+    "Finite agreement on four archived windows is OBSERVED, not a general selector theorem.",
+    "The elementary lap-band count identity is a proof candidate awaiting independent review.",
+    "The formula still iterates speed-dependent lap labels; no constant-time or uniform-runtime claim is made.",
+    "The doubling_112 selection is diagnostic after its prior pair-only-positive exit.",
+    "The tight_13 isolated equality at 3/8 is separate from positive component counting."
+  ]
+}

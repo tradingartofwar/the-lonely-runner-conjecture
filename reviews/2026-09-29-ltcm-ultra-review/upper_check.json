@@ -1,0 +1,2392 @@
+{
+  "status": "PASS; internal AI review conditional on printed-cell completeness",
+  "candidate_frozen_commit": "8a967b30fcd73abd814e4c8f7f53f216c4b3f61e",
+  "source_sha256": "7de65a03766825e40ec7617017c64d5f7860f42a4fac5f9913c4259198b40502",
+  "cell_checks": [
+    {
+      "cell": 0,
+      "dimension": 0,
+      "vertices": 1,
+      "edges": 0
+    },
+    {
+      "cell": 1,
+      "dimension": 3,
+      "vertices": 4,
+      "edges": 6
+    },
+    {
+      "cell": 2,
+      "dimension": 3,
+      "vertices": 4,
+      "edges": 6
+    },
+    {
+      "cell": 3,
+      "dimension": 0,
+      "vertices": 1,
+      "edges": 0
+    },
+    {
+      "cell": 4,
+      "dimension": 3,
+      "vertices": 4,
+      "edges": 6
+    },
+    {
+      "cell": 5,
+      "dimension": 0,
+      "vertices": 1,
+      "edges": 0
+    },
+    {
+      "cell": 6,
+      "dimension": 3,
+      "vertices": 4,
+      "edges": 6
+    },
+    {
+      "cell": 7,
+      "dimension": 3,
+      "vertices": 6,
+      "edges": 9
+    },
+    {
+      "cell": 8,
+      "dimension": 3,
+      "vertices": 4,
+      "edges": 6
+    },
+    {
+      "cell": 9,
+      "dimension": 3,
+      "vertices": 4,
+      "edges": 6
+    }
+  ],
+  "edge_count": 45,
+  "peak_count": 7,
+  "peak_edges": [
+    {
+      "cell": 1,
+      "name": "A",
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/8",
+        "1/4",
+        "1/8"
+      ],
+      "alpha": "-1",
+      "beta": "2",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "1",
+        "2"
+      ],
+      "projection_abs_at_q2": "4"
+    },
+    {
+      "cell": 1,
+      "name": "A",
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "7/40",
+        "1/8",
+        "1/8"
+      ],
+      "alpha": "1/5",
+      "beta": "-1",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "1/5",
+        "1"
+      ],
+      "projection_abs_at_q2": "7/5"
+    },
+    {
+      "cell": 1,
+      "name": "A",
+      "peak": [
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "5/24",
+        "1/8",
+        "1/8"
+      ],
+      "alpha": "1",
+      "beta": "-1",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "1",
+        "1"
+      ],
+      "projection_abs_at_q2": "3"
+    },
+    {
+      "cell": 2,
+      "name": "B",
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/8",
+        "3/8",
+        "1/8"
+      ],
+      "alpha": "-1",
+      "beta": "1",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "1",
+        "1"
+      ],
+      "projection_abs_at_q2": "3"
+    },
+    {
+      "cell": 2,
+      "name": "B",
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/8",
+        "1/2",
+        "1/8"
+      ],
+      "alpha": "-1",
+      "beta": "4",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "1",
+        "4"
+      ],
+      "projection_abs_at_q2": "6"
+    },
+    {
+      "cell": 2,
+      "name": "B",
+      "peak": [
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "5/24",
+        "1/4",
+        "1/8"
+      ],
+      "alpha": "1",
+      "beta": "-2",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "1",
+        "2"
+      ],
+      "projection_abs_at_q2": "4"
+    },
+    {
+      "cell": 4,
+      "name": "C",
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "3/8",
+        "3/8",
+        "1/8"
+      ],
+      "alpha": "-3",
+      "beta": "5",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "3",
+        "5"
+      ],
+      "projection_abs_at_q2": "11"
+    },
+    {
+      "cell": 4,
+      "name": "C",
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "1/8",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "-1",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "0",
+        "1"
+      ],
+      "projection_abs_at_q2": "1"
+    },
+    {
+      "cell": 4,
+      "name": "C",
+      "peak": [
+        "1/2",
+        "1/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "3/16",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "1/2",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "projection_abs_at_q2": "1/2"
+    },
+    {
+      "cell": 6,
+      "name": "D",
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "11/24",
+        "5/12",
+        "1/8"
+      ],
+      "alpha": "-1",
+      "beta": "2",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "1",
+        "2"
+      ],
+      "projection_abs_at_q2": "4"
+    },
+    {
+      "cell": 6,
+      "name": "D",
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "5/16",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "-1/2",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "projection_abs_at_q2": "1/2"
+    },
+    {
+      "cell": 6,
+      "name": "D",
+      "peak": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "3/8",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "1",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "0",
+        "1"
+      ],
+      "projection_abs_at_q2": "1"
+    },
+    {
+      "cell": 7,
+      "name": "E",
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "2/7",
+        "6/7",
+        "1/7"
+      ],
+      "alpha": "-2",
+      "beta": "1",
+      "emax": "1/42",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "2",
+        "1"
+      ],
+      "projection_abs_at_q2": "5"
+    },
+    {
+      "cell": 7,
+      "name": "E",
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/3",
+        "7/8",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "1",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "0",
+        "1"
+      ],
+      "projection_abs_at_q2": "1"
+    },
+    {
+      "cell": 7,
+      "name": "E",
+      "peak": [
+        "1/3",
+        "5/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "3/8",
+        "3/4",
+        "1/8"
+      ],
+      "alpha": "1",
+      "beta": "-2",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "1",
+        "2"
+      ],
+      "projection_abs_at_q2": "4"
+    },
+    {
+      "cell": 8,
+      "name": "F",
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "11/24",
+        "3/4",
+        "1/8"
+      ],
+      "alpha": "-1",
+      "beta": "2",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "1",
+        "2"
+      ],
+      "projection_abs_at_q2": "4"
+    },
+    {
+      "cell": 8,
+      "name": "F",
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "5/8",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "-1",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "0",
+        "1"
+      ],
+      "projection_abs_at_q2": "1"
+    },
+    {
+      "cell": 8,
+      "name": "F",
+      "peak": [
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "11/16",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "1/2",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "projection_abs_at_q2": "1/2"
+    },
+    {
+      "cell": 9,
+      "name": "G",
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "19/40",
+        "7/8",
+        "1/8"
+      ],
+      "alpha": "-3/5",
+      "beta": "1",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "3/5",
+        "1"
+      ],
+      "projection_abs_at_q2": "11/5"
+    },
+    {
+      "cell": 9,
+      "name": "G",
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "13/16",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "-1/2",
+      "emax": "1/24",
+      "projection_sign": 1,
+      "projection_abs_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "projection_abs_at_q2": "1/2"
+    },
+    {
+      "cell": 9,
+      "name": "G",
+      "peak": [
+        "1/2",
+        "5/6",
+        "1/6"
+      ],
+      "endpoint": [
+        "1/2",
+        "7/8",
+        "1/8"
+      ],
+      "alpha": "0",
+      "beta": "1",
+      "emax": "1/24",
+      "projection_sign": -1,
+      "projection_abs_coefficients": [
+        "0",
+        "1"
+      ],
+      "projection_abs_at_q2": "1"
+    }
+  ],
+  "integral_peak_residues": {
+    "0": [],
+    "1": [
+      "A"
+    ],
+    "2": [
+      "B"
+    ],
+    "3": [],
+    "4": [],
+    "5": []
+  },
+  "certificate_count": 84,
+  "certificates": [
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "A",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "3/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "19/2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "A",
+      "direction": [
+        "1/5",
+        "-1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1/5",
+        "1"
+      ],
+      "comparison_slope": "3/10",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "9/5"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "A",
+      "direction": [
+        "1",
+        "-1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "15/2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "4"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "4"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "7"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "B",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "3"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "C",
+      "direction": [
+        "-3",
+        "5"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "3",
+        "5"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "7"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "C",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "C",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "3/4",
+      "comparison_at_qmin": "43/4"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "D",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "1/3",
+      "comparison_at_qmin": "22/3"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "D",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "1/4",
+      "comparison_at_qmin": "17/4"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "D",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "4/3",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "17/2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "E",
+      "direction": [
+        "-2",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "2",
+        "1"
+      ],
+      "comparison_slope": "0",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "E",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "E",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "3/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "19/2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "F",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "3"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "F",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "4/3",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "17/2"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "F",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "1/4",
+      "comparison_at_qmin": "17/4"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "G",
+      "direction": [
+        "-3/5",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "3/5",
+        "1"
+      ],
+      "comparison_slope": "7/30",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "7/5"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "G",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "3/4",
+      "comparison_at_qmin": "43/4"
+    },
+    {
+      "residue": 0,
+      "qmin": 6,
+      "peak": "G",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "2"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "A",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "3/2"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "A",
+      "direction": [
+        "1/5",
+        "-1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1/5",
+        "1"
+      ],
+      "comparison_slope": "13/10",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "22/5"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "A",
+      "direction": [
+        "1",
+        "-1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "4"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "1/2"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "4"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "4"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-1/2",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "B",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "3/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "5"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "C",
+      "direction": [
+        "-3",
+        "5"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "3",
+        "5"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-1/2",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "C",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "4/3",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "9/2"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "C",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "1/4",
+      "comparison_at_qmin": "9/4"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "D",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-1/6",
+      "comparison_at_qmin": "1/3"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "D",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "3/4",
+      "comparison_at_qmin": "23/4"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "D",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "E",
+      "direction": [
+        "-2",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "2",
+        "1"
+      ],
+      "comparison_slope": "0",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "E",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "E",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "3/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "5"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "F",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "3/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "5"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "F",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "F",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "3/4",
+      "comparison_at_qmin": "23/4"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "G",
+      "direction": [
+        "-3/5",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "3/5",
+        "1"
+      ],
+      "comparison_slope": "37/30",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "21/5"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "G",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "1/4",
+      "comparison_at_qmin": "9/4"
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "peak": "G",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "4/3",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "9/2"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "A",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "-1/2",
+      "comparison_at_qmin": "9/2"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "A",
+      "direction": [
+        "1/5",
+        "-1"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1/5",
+        "1"
+      ],
+      "comparison_slope": "9/10",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "9"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "A",
+      "direction": [
+        "1",
+        "-1"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "5"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-1/6",
+      "comparison_at_qmin": "3/2"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "4"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "4"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-5/3",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "B",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "5/6",
+      "comparison_intercept": "-1/3",
+      "comparison_at_qmin": "8"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "C",
+      "direction": [
+        "-3",
+        "5"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "3",
+        "5"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-5/3",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "C",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "-1/3",
+      "comparison_at_qmin": "3"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "C",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "7/12",
+      "comparison_at_qmin": "69/4"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "D",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "5/6",
+      "comparison_intercept": "-1/3",
+      "comparison_at_qmin": "8"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "D",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "1/12",
+      "comparison_at_qmin": "27/4"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "D",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "4/3",
+      "comparison_intercept": "1/6",
+      "comparison_at_qmin": "27/2"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "E",
+      "direction": [
+        "-2",
+        "1"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "2",
+        "1"
+      ],
+      "comparison_slope": "0",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "E",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "10"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "E",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "-1/2",
+      "comparison_at_qmin": "9/2"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "F",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "-2/3",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "F",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "4/3",
+      "comparison_intercept": "1/6",
+      "comparison_at_qmin": "27/2"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "F",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "1/12",
+      "comparison_at_qmin": "27/4"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "G",
+      "direction": [
+        "-3/5",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "3/5",
+        "1"
+      ],
+      "comparison_slope": "1/30",
+      "comparison_intercept": "-1/3",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "G",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "7/12",
+      "comparison_at_qmin": "69/4"
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "peak": "G",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/3",
+      "comparison_intercept": "-1/3",
+      "comparison_at_qmin": "3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "A",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "5/3",
+      "comparison_intercept": "8/3",
+      "comparison_at_qmin": "11"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "A",
+      "direction": [
+        "1/5",
+        "-1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1/5",
+        "1"
+      ],
+      "comparison_slope": "14/15",
+      "comparison_intercept": "4/3",
+      "comparison_at_qmin": "6"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "A",
+      "direction": [
+        "1",
+        "-1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "2/3",
+      "comparison_intercept": "4/3",
+      "comparison_at_qmin": "14/3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "1"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1",
+        "1"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "13/6",
+      "comparison_at_qmin": "8"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "B",
+      "direction": [
+        "-1",
+        "4"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1",
+        "4"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "7/6",
+      "comparison_at_qmin": "7"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "B",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "1/2",
+      "loss_numerator": "1/2",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "7/6",
+      "comparison_intercept": "11/6",
+      "comparison_at_qmin": "23/3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "C",
+      "direction": [
+        "-3",
+        "5"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "3",
+        "5"
+      ],
+      "comparison_slope": "0",
+      "comparison_intercept": "0",
+      "comparison_at_qmin": "0"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "C",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "2",
+      "comparison_intercept": "3",
+      "comparison_at_qmin": "13"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "C",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "1/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "1",
+      "comparison_intercept": "3/2",
+      "comparison_at_qmin": "13/2"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "D",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "1/6",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "D",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/2",
+      "comparison_intercept": "4",
+      "comparison_at_qmin": "33/2"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "D",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "1/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "E",
+      "direction": [
+        "-2",
+        "1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "2",
+        "1"
+      ],
+      "comparison_slope": "11/6",
+      "comparison_intercept": "23/6",
+      "comparison_at_qmin": "13"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "E",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "5/2",
+      "comparison_intercept": "23/6",
+      "comparison_at_qmin": "49/3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "E",
+      "direction": [
+        "1",
+        "-2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "1/6",
+      "comparison_intercept": "1/6",
+      "comparison_at_qmin": "1"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "F",
+      "direction": [
+        "-1",
+        "2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "1",
+        "2"
+      ],
+      "comparison_slope": "13/6",
+      "comparison_intercept": "7/2",
+      "comparison_at_qmin": "43/3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "F",
+      "direction": [
+        "0",
+        "-1"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "1/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "1/2",
+      "comparison_intercept": "1/2",
+      "comparison_at_qmin": "3"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "F",
+      "direction": [
+        "0",
+        "1/2"
+      ],
+      "rho": "5/6",
+      "loss_numerator": "5/6",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "5/2",
+      "comparison_intercept": "4",
+      "comparison_at_qmin": "33/2"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "G",
+      "direction": [
+        "-3/5",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "3/5",
+        "1"
+      ],
+      "comparison_slope": "9/5",
+      "comparison_intercept": "3",
+      "comparison_at_qmin": "12"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "G",
+      "direction": [
+        "0",
+        "-1/2"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "1/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1/2"
+      ],
+      "comparison_slope": "1",
+      "comparison_intercept": "3/2",
+      "comparison_at_qmin": "13/2"
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "peak": "G",
+      "direction": [
+        "0",
+        "1"
+      ],
+      "rho": "2/3",
+      "loss_numerator": "2/3",
+      "loss_denominator_coefficients": [
+        "0",
+        "1"
+      ],
+      "comparison_slope": "2",
+      "comparison_intercept": "3",
+      "comparison_at_qmin": "13"
+    }
+  ],
+  "domain_checks": [
+    {
+      "residue": 0,
+      "qmin": 6,
+      "winner": "E",
+      "winner_loss": [
+        "1/6",
+        "2",
+        "1"
+      ],
+      "winner_edge_emax": "1/42",
+      "upper_bound_at_qmin": "2/13",
+      "boundary_ties": [
+        {
+          "peak": "E",
+          "direction": [
+            "-2",
+            "1"
+          ],
+          "e": "1/78",
+          "emax": "1/42",
+          "within_edge": true,
+          "point": [
+            "4/13",
+            "11/13",
+            "2/13"
+          ],
+          "h": "1"
+        }
+      ]
+    },
+    {
+      "residue": 3,
+      "qmin": 3,
+      "winner": "E",
+      "winner_loss": [
+        "1/6",
+        "2",
+        "1"
+      ],
+      "winner_edge_emax": "1/42",
+      "upper_bound_at_qmin": "1/7",
+      "boundary_ties": [
+        {
+          "peak": "B",
+          "direction": [
+            "-1",
+            "4"
+          ],
+          "e": "1/42",
+          "emax": "1/24",
+          "within_edge": true,
+          "point": [
+            "1/7",
+            "3/7",
+            "1/7"
+          ],
+          "h": "0"
+        },
+        {
+          "peak": "C",
+          "direction": [
+            "-3",
+            "5"
+          ],
+          "e": "1/42",
+          "emax": "1/24",
+          "within_edge": true,
+          "point": [
+            "3/7",
+            "2/7",
+            "1/7"
+          ],
+          "h": "1"
+        },
+        {
+          "peak": "E",
+          "direction": [
+            "-2",
+            "1"
+          ],
+          "e": "1/42",
+          "emax": "1/42",
+          "within_edge": true,
+          "point": [
+            "2/7",
+            "6/7",
+            "1/7"
+          ],
+          "h": "0"
+        }
+      ]
+    },
+    {
+      "residue": 4,
+      "qmin": 10,
+      "winner": "E",
+      "winner_loss": [
+        "1/2",
+        "2",
+        "1"
+      ],
+      "winner_edge_emax": "1/42",
+      "upper_bound_at_qmin": "1/7",
+      "boundary_ties": [
+        {
+          "peak": "B",
+          "direction": [
+            "-1",
+            "4"
+          ],
+          "e": "1/42",
+          "emax": "1/24",
+          "within_edge": true,
+          "point": [
+            "1/7",
+            "3/7",
+            "1/7"
+          ],
+          "h": "1"
+        },
+        {
+          "peak": "C",
+          "direction": [
+            "-3",
+            "5"
+          ],
+          "e": "1/42",
+          "emax": "1/24",
+          "within_edge": true,
+          "point": [
+            "3/7",
+            "2/7",
+            "1/7"
+          ],
+          "h": "4"
+        },
+        {
+          "peak": "E",
+          "direction": [
+            "-2",
+            "1"
+          ],
+          "e": "1/42",
+          "emax": "1/42",
+          "within_edge": true,
+          "point": [
+            "2/7",
+            "6/7",
+            "1/7"
+          ],
+          "h": "2"
+        },
+        {
+          "peak": "G",
+          "direction": [
+            "-3/5",
+            "1"
+          ],
+          "e": "1/42",
+          "emax": "1/24",
+          "within_edge": true,
+          "point": [
+            "17/35",
+            "6/7",
+            "1/7"
+          ],
+          "h": "4"
+        }
+      ]
+    },
+    {
+      "residue": 5,
+      "qmin": 5,
+      "winner": "C",
+      "winner_loss": [
+        "1/3",
+        "3",
+        "5"
+      ],
+      "winner_edge_emax": "1/24",
+      "upper_bound_at_qmin": "3/20",
+      "boundary_ties": [
+        {
+          "peak": "C",
+          "direction": [
+            "-3",
+            "5"
+          ],
+          "e": "1/60",
+          "emax": "1/24",
+          "within_edge": true,
+          "point": [
+            "9/20",
+            "1/4",
+            "3/20"
+          ],
+          "h": "2"
+        }
+      ]
+    }
+  ],
+  "q4_cell_ranges": [
+    {
+      "cell": 0,
+      "H_range": [
+        "3/8",
+        "3/8"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 1,
+      "H_range": [
+        "1/4",
+        "17/24"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 2,
+      "H_range": [
+        "0",
+        "7/12"
+      ],
+      "integer_levels": [
+        0
+      ],
+      "points": [
+        [
+          "1/8",
+          "1/2",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "cell": 3,
+      "H_range": [
+        "11/8",
+        "11/8"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 4,
+      "H_range": [
+        "9/8",
+        "15/8"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 5,
+      "H_range": [
+        "1",
+        "1"
+      ],
+      "integer_levels": [
+        1
+      ],
+      "points": [
+        [
+          "3/8",
+          "1/2",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "cell": 6,
+      "H_range": [
+        "17/12",
+        "27/16"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 7,
+      "H_range": [
+        "9/40",
+        "3/4"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 8,
+      "H_range": [
+        "13/12",
+        "11/8"
+      ],
+      "integer_levels": [],
+      "points": []
+    },
+    {
+      "cell": 9,
+      "H_range": [
+        "41/40",
+        "19/16"
+      ],
+      "integer_levels": [],
+      "points": []
+    }
+  ],
+  "scope": "Fixed printed cell certificate; 84 universal rational inequalities; q4 exception. No physical optimum scan."
+}

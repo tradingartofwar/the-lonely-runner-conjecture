@@ -1,0 +1,33 @@
+{
+  "base_commit": "44bd7854cd14c15cc52d991a0c61a22295af1234",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "status": "HYPOTHESIS / complete proof candidate with exact finite cell certificate",
+  "scope": "V(q,1), integer q>=2, selected stationary reference; exactly two maximizing times",
+  "reproduce": "python3 reviews/2026-09-29-ltcm-other-ray-upper/verify_upper.py > /tmp/ltcm-other-ray-upper.json",
+  "verification_summary": {
+    "boundary_planes": 48,
+    "plane_triples": 17296,
+    "cells": 10,
+    "vertices": 33,
+    "edges": 45,
+    "peak_edges": 21,
+    "unbounded_domain_upper_comparisons": 63,
+    "peak_table_comparisons": 63,
+    "symbolic_lower_phase_identities": 42,
+    "symbolic_lower_inequalities": 84,
+    "frozen_physical_cases_compared": 149,
+    "new_physical_q_values": 0
+  },
+  "file_sha256": {
+    "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md": "1bbbbe1471c3363893bfdb7b1803c597b684022613777d17ad363fe04c7ee8ab",
+    "reviews/2026-09-29-ltcm-other-ray-upper/PROTOCOL.md": "f44de8fd5c94d17fc833df8ed7ece3385e55b941e78f471c4c6afa539c31ef8f",
+    "reviews/2026-09-29-ltcm-other-ray-upper/verify_upper.py": "5603fac08f783b97a603d5a930f9272fa54f0010aeb899c5ea6be54987154356",
+    "reviews/2026-09-29-ltcm-other-ray-upper/verification.json": "9629e22437663efa369a40543b3a4207e969384b050e4c28b197f3df723aaec6"
+  },
+  "dependency_sha256": {
+    "reviews/2026-09-29-ltcm-spectrum/ambient.json": "af1a620e08e9407b7d01d0f444a0041f81e5be3e02c673f891f033c3a680f736",
+    "reviews/2026-09-29-ltcm-other-ray/verify.py": "b1cc4d4b3d3025b285b51eb2587c8c9be2a3646908f7b8226838cc4851e9e7d5",
+    "reviews/2026-09-29-ltcm-other-ray/verification.json": "faa9ffff198fa134639572a1240463e4b07e820c02a3512c04fcb810d25d3620"
+  },
+  "provenance": "Same AI coordinator; different computational organization, not independent authorship or formal review"
+}

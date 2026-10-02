@@ -1,0 +1,11 @@
+# Final adjudication before method unmasking
+
+The owner accepts the separate reviewer’s recommended grades for all 54 answers at both stages. All 108 numerical rows remain identical to INITIAL_GRADES.json. This decision and FINAL_GRADES.json were written before the owner opened PRIVATE_MASK_MAP.json or ran method aggregation. Masking is partial: the owner knows the design and earlier source/treatment context, prose can reveal method, and the separate reviewer saw the initial grades. This is internal AI review, not independent human certification.
+
+R010 fails the requested backup-content output. The one fixed M0 backup lacks both post-M0 changes. Uncertainty about destination ingestion and verification cannot make the backup contents unknown. The handoff’s compressed object-to-snapshot relation is adequate on the ordinary contextual reading; the record retains the alternative literal relation-gap objection. Even that objection would not turn the answer into a source-true exclusion of both changes. The preferred error classification is recipient object/scope confusion, not author information loss. This does not establish a causal explanation of how the response arose.
+
+R040 passes under the contextual reading: its opening accepts both hypothetical completed comparisons, and its final “planned work” refers to the immediately discussed remaining delta work. The broader reading as all original planned work contradicts the hypothetical. Preserve a sensitivity with requested_outputs_correct=1, supported_by_exposure=0, source_faithful=0, primary=0, unsupported_assertion=1 and unsupported_approval=0 at both stages. Do not choose between these readings using method labels.
+
+S12’s optional “no booking completion” clause is supported as station selection but unsupported as a denial of the existing room booking. None of its recipients repeats it. Retain the author-wording caveat without altering recipient grades or the adequacy of the three technical answers.
+
+All 36 handoff/query retention records were reviewed separately and their quoted passages mechanically verified against the preserved masked handoffs. Adequacy for these requested uses does not certify lossless compression or universal source faithfulness. Initial grades, packet, raw collection and frozen inputs remain unchanged.

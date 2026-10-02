@@ -1,0 +1,814 @@
+{
+  "cases": [
+    {
+      "actual_empty": "1/896",
+      "all_moments": {
+        "0": "3/32",
+        "1": "1/24",
+        "10": "0",
+        "11": "0",
+        "12": "1/128",
+        "13": "0",
+        "14": "0",
+        "15": "0",
+        "2": "5/224",
+        "3": "0",
+        "4": "9/352",
+        "5": "1/528",
+        "6": "1/352",
+        "7": "0",
+        "8": "3/128",
+        "9": "1/128"
+      },
+      "cell_count": 9,
+      "cells": [
+        {
+          "left": "9/32",
+          "right": "25/88",
+          "state": 6
+        },
+        {
+          "left": "25/88",
+          "right": "17/56",
+          "state": 2
+        },
+        {
+          "left": "17/56",
+          "right": "39/128",
+          "state": 0
+        },
+        {
+          "left": "39/128",
+          "right": "5/16",
+          "state": 8
+        },
+        {
+          "left": "5/16",
+          "right": "41/128",
+          "state": 9
+        },
+        {
+          "left": "41/128",
+          "right": "31/88",
+          "state": 1
+        },
+        {
+          "left": "31/88",
+          "right": "17/48",
+          "state": 5
+        },
+        {
+          "left": "17/48",
+          "right": "47/128",
+          "state": 4
+        },
+        {
+          "left": "47/128",
+          "right": "3/8",
+          "state": 12
+        }
+      ],
+      "certificates": [
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "1/896"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12,
+            13
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            12
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "1/896"
+        }
+      ],
+      "cover_algebra": {
+        "K": "1/896",
+        "allowed_higher_states": [
+          13
+        ],
+        "excluded_states": [
+          3,
+          7,
+          10,
+          11,
+          14,
+          15
+        ],
+        "forced_triples": {
+          "11": "0",
+          "13": "1/896",
+          "14": "0",
+          "7": "0"
+        },
+        "unique_abstract_cover_masses": [
+          "0",
+          "163/4928",
+          "3/154",
+          "0",
+          "19/1344",
+          "23/29568",
+          "1/352",
+          "0",
+          "1/112",
+          "3/448",
+          "0",
+          "0",
+          "3/448",
+          "1/896",
+          "0",
+          "0"
+        ],
+        "zero_pairs": [
+          3,
+          10
+        ]
+      },
+      "exact_state_masses": [
+        "1/896",
+        "45/1408",
+        "3/154",
+        "0",
+        "5/384",
+        "1/528",
+        "1/352",
+        "0",
+        "1/128",
+        "1/128",
+        "0",
+        "0",
+        "1/128",
+        "0",
+        "0",
+        "0"
+      ],
+      "name": "strict_16",
+      "selected_geometric_triple": {
+        "duration": "0",
+        "mask": 13
+      }
+    },
+    {
+      "actual_empty": "53/1792",
+      "all_moments": {
+        "0": "3/32",
+        "1": "11/448",
+        "10": "3/512",
+        "11": "1/512",
+        "12": "19/4032",
+        "13": "23/8064",
+        "14": "1/896",
+        "15": "1/896",
+        "2": "3/128",
+        "3": "1/256",
+        "4": "13/576",
+        "5": "23/4032",
+        "6": "1/256",
+        "7": "1/576",
+        "8": "3/128",
+        "9": "11/896"
+      },
+      "cell_count": 57,
+      "cells": [
+        {
+          "left": "9/32",
+          "right": "145/512",
+          "state": 2
+        },
+        {
+          "left": "145/512",
+          "right": "127/448",
+          "state": 0
+        },
+        {
+          "left": "127/448",
+          "right": "255/896",
+          "state": 1
+        },
+        {
+          "left": "255/896",
+          "right": "257/896",
+          "state": 9
+        },
+        {
+          "left": "257/896",
+          "right": "129/448",
+          "state": 1
+        },
+        {
+          "left": "129/448",
+          "right": "167/576",
+          "state": 0
+        },
+        {
+          "left": "167/576",
+          "right": "169/576",
+          "state": 4
+        },
+        {
+          "left": "169/576",
+          "right": "263/896",
+          "state": 0
+        },
+        {
+          "left": "263/896",
+          "right": "151/512",
+          "state": 8
+        },
+        {
+          "left": "151/512",
+          "right": "265/896",
+          "state": 10
+        },
+        {
+          "left": "265/896",
+          "right": "153/512",
+          "state": 2
+        },
+        {
+          "left": "153/512",
+          "right": "135/448",
+          "state": 0
+        },
+        {
+          "left": "135/448",
+          "right": "271/896",
+          "state": 1
+        },
+        {
+          "left": "271/896",
+          "right": "175/576",
+          "state": 9
+        },
+        {
+          "left": "175/576",
+          "right": "39/128",
+          "state": 13
+        },
+        {
+          "left": "39/128",
+          "right": "137/448",
+          "state": 5
+        },
+        {
+          "left": "137/448",
+          "right": "59/192",
+          "state": 4
+        },
+        {
+          "left": "59/192",
+          "right": "159/512",
+          "state": 0
+        },
+        {
+          "left": "159/512",
+          "right": "279/896",
+          "state": 2
+        },
+        {
+          "left": "279/896",
+          "right": "281/896",
+          "state": 10
+        },
+        {
+          "left": "281/896",
+          "right": "161/512",
+          "state": 2
+        },
+        {
+          "left": "161/512",
+          "right": "61/192",
+          "state": 0
+        },
+        {
+          "left": "61/192",
+          "right": "143/448",
+          "state": 4
+        },
+        {
+          "left": "143/448",
+          "right": "41/128",
+          "state": 5
+        },
+        {
+          "left": "41/128",
+          "right": "185/576",
+          "state": 13
+        },
+        {
+          "left": "185/576",
+          "right": "289/896",
+          "state": 9
+        },
+        {
+          "left": "289/896",
+          "right": "145/448",
+          "state": 1
+        },
+        {
+          "left": "145/448",
+          "right": "167/512",
+          "state": 0
+        },
+        {
+          "left": "167/512",
+          "right": "295/896",
+          "state": 2
+        },
+        {
+          "left": "295/896",
+          "right": "169/512",
+          "state": 10
+        },
+        {
+          "left": "169/512",
+          "right": "297/896",
+          "state": 8
+        },
+        {
+          "left": "297/896",
+          "right": "191/576",
+          "state": 0
+        },
+        {
+          "left": "191/576",
+          "right": "193/576",
+          "state": 4
+        },
+        {
+          "left": "193/576",
+          "right": "151/448",
+          "state": 0
+        },
+        {
+          "left": "151/448",
+          "right": "303/896",
+          "state": 1
+        },
+        {
+          "left": "303/896",
+          "right": "305/896",
+          "state": 9
+        },
+        {
+          "left": "305/896",
+          "right": "153/448",
+          "state": 1
+        },
+        {
+          "left": "153/448",
+          "right": "175/512",
+          "state": 0
+        },
+        {
+          "left": "175/512",
+          "right": "199/576",
+          "state": 2
+        },
+        {
+          "left": "199/576",
+          "right": "177/512",
+          "state": 6
+        },
+        {
+          "left": "177/512",
+          "right": "311/896",
+          "state": 4
+        },
+        {
+          "left": "311/896",
+          "right": "67/192",
+          "state": 12
+        },
+        {
+          "left": "67/192",
+          "right": "313/896",
+          "state": 8
+        },
+        {
+          "left": "313/896",
+          "right": "159/448",
+          "state": 0
+        },
+        {
+          "left": "159/448",
+          "right": "319/896",
+          "state": 1
+        },
+        {
+          "left": "319/896",
+          "right": "183/512",
+          "state": 9
+        },
+        {
+          "left": "183/512",
+          "right": "321/896",
+          "state": 11
+        },
+        {
+          "left": "321/896",
+          "right": "23/64",
+          "state": 3
+        },
+        {
+          "left": "23/64",
+          "right": "185/512",
+          "state": 6
+        },
+        {
+          "left": "185/512",
+          "right": "209/576",
+          "state": 4
+        },
+        {
+          "left": "209/576",
+          "right": "327/896",
+          "state": 0
+        },
+        {
+          "left": "327/896",
+          "right": "47/128",
+          "state": 8
+        },
+        {
+          "left": "47/128",
+          "right": "167/448",
+          "state": 0
+        },
+        {
+          "left": "167/448",
+          "right": "191/512",
+          "state": 1
+        },
+        {
+          "left": "191/512",
+          "right": "215/576",
+          "state": 3
+        },
+        {
+          "left": "215/576",
+          "right": "335/896",
+          "state": 7
+        },
+        {
+          "left": "335/896",
+          "right": "3/8",
+          "state": 15
+        }
+      ],
+      "certificates": [
+        {
+          "positive_primal_states": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8,
+            9,
+            10,
+            13,
+            15
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "761/32256"
+        }
+      ],
+      "exact_state_masses": [
+        "53/1792",
+        "29/3584",
+        "31/2304",
+        "43/32256",
+        "23/1792",
+        "1/448",
+        "5/2304",
+        "5/8064",
+        "29/5376",
+        "277/32256",
+        "1/256",
+        "3/3584",
+        "5/2688",
+        "1/576",
+        "0",
+        "1/896"
+      ],
+      "name": "doubling_112"
+    },
+    {
+      "actual_empty": "0",
+      "all_moments": {
+        "0": "3/32",
+        "1": "1/24",
+        "10": "1/182",
+        "11": "0",
+        "12": "0",
+        "13": "0",
+        "14": "0",
+        "15": "0",
+        "2": "5/224",
+        "3": "0",
+        "4": "9/352",
+        "5": "1/528",
+        "6": "1/352",
+        "7": "0",
+        "8": "1/52",
+        "9": "1/208"
+      },
+      "cell_count": 8,
+      "cells": [
+        {
+          "left": "9/32",
+          "right": "25/88",
+          "state": 6
+        },
+        {
+          "left": "25/88",
+          "right": "31/104",
+          "state": 2
+        },
+        {
+          "left": "31/104",
+          "right": "17/56",
+          "state": 10
+        },
+        {
+          "left": "17/56",
+          "right": "5/16",
+          "state": 8
+        },
+        {
+          "left": "5/16",
+          "right": "33/104",
+          "state": 9
+        },
+        {
+          "left": "33/104",
+          "right": "31/88",
+          "state": 1
+        },
+        {
+          "left": "31/88",
+          "right": "17/48",
+          "state": 5
+        },
+        {
+          "left": "17/48",
+          "right": "3/8",
+          "state": 4
+        }
+      ],
+      "certificates": [
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        },
+        {
+          "positive_primal_states": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "primal_dual_equal": true,
+          "reduced_costs_nonnegative": true,
+          "value": "0"
+        }
+      ],
+      "cover_algebra": {
+        "K": "0",
+        "allowed_higher_states": [],
+        "excluded_states": [
+          3,
+          7,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "forced_triples": {
+          "11": "0",
+          "13": "0",
+          "14": "0",
+          "7": "0"
+        },
+        "unique_abstract_cover_masses": [
+          "0",
+          "5/143",
+          "2/143",
+          "0",
+          "1/48",
+          "1/528",
+          "1/352",
+          "0",
+          "1/112",
+          "1/208",
+          "1/182",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "zero_pairs": [
+          3,
+          12
+        ]
+      },
+      "endpoint": {
+        "containing_safe_component": [
+          "3/8",
+          "3/8"
+        ],
+        "distances": {
+          "1": "3/8",
+          "11": "1/8",
+          "13": "1/8",
+          "4": "1/2",
+          "5": "1/8",
+          "6": "1/4",
+          "7": "3/8"
+        },
+        "isolated": true,
+        "left_neighborhood_blockers": [
+          11
+        ],
+        "right_neighborhood_blockers": [
+          5,
+          13
+        ],
+        "time": "3/8",
+        "valid": true
+      },
+      "exact_state_masses": [
+        "0",
+        "5/143",
+        "2/143",
+        "0",
+        "1/48",
+        "1/528",
+        "1/352",
+        "0",
+        "1/112",
+        "1/208",
+        "1/182",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "name": "tight_13"
+    }
+  ],
+  "exact_certificates_checked": 12,
+  "method": "independent exact threshold-cell partition; exact primal/dual checks; zero-pair algebra",
+  "primary_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e",
+  "scope": "three frozen windows only, selected reference 0, eight common-start runners",
+  "total_cells": 74
+}

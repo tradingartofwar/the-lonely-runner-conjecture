@@ -1,0 +1,60 @@
+{
+  "question": "H03-Q2",
+  "history": "H03",
+  "method": "conventional",
+  "author": "A010",
+  "id": "Q045",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q045",
+  "started_at": "2026-10-02T01:10:37.655425+00:00",
+  "started_epoch": 1790903437.6554394,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nFor C1, what are the pass fractions among evaluated cohort cases and among all authorized cohort cases? Explain why neither denominator is the original fourteen-file inventory.\n\nEVIDENCE\nSTATUS\nAt the Day 12 cutoff, C1 remains selected and does not pass validation: nine passes, two observed failures (A8, B3), and one untested case (B4). Acceptance requires all twelve cohort cases evaluated for the exact candidate and at least eleven passes (J02). Even a B4 pass would leave C1 at ten passes, below threshold.\n\nEVIDENCE\nC1 passes 9/11 evaluated cases (81.8%) and 9/12 authorized cohort cases (75%); B4 enters only the latter denominator. J01 excludes unreadable X1 and X2 from the original fourteen files before evaluation; difficult cases cannot be excluded. J04–J05 establish group A: seven passes, one failure; group B: two passes, one failure, one untested. J06’s nine-of-nine export selects successful examples, hiding failures and missing evaluation; its cropped heading does not change validation. C2’s B3 pass on Day 8 is its only outcome and cannot replace C1’s B3 failure (J08, J12).\n\nNEXT\nThe requested B4 machine slot remains unconfirmed (J10); completing it would resolve missing collection but cannot secure C1 acceptance. If C2 is selected, evaluate its eleven remaining cases: A1–A8, B1, B2, B4. Preserve both X exclusions. C1 evidence cannot transfer across versions; further changes need exact-version evidence. A8 repair remains merely proposed. Recover authoritative case totals and version boundaries from J04–J05, J08, and J12.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:10:37.656210+00:00",
+      "sha256": "2dcd5a3a72f329fffabd92136cca1063f609418f33413365dad9844490c70bd1",
+      "delivered_at": "2026-10-02T01:11:10.470941+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"C1 passes 9/11 evaluated cohort cases (81.8%) and 9/12 authorized cohort cases (75%). The evaluated denominator comprises nine passes and two observed failures, A8 and B3. The authorized denominator also includes untested B4, which is neither a pass nor an observed failure. Neither denominator is fourteen because J01 excludes unreadable X1 and X2 from the original inventory before evaluation, leaving twelve authorized cohort cases. Difficult cases remain in the cohort.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:11:45.913021+00:00",
+      "raw_file": "incoming/Q045-01.json",
+      "sha256": "0693f27056f835ef4ce0dacaa963e6d6f8a4ad052ba13e4811631c17ec2327b7",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 70,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "C1 passes 9/11 evaluated cohort cases (81.8%) and 9/12 authorized cohort cases (75%). The evaluated denominator comprises nine passes and two observed failures, A8 and B3. The authorized denominator also includes untested B4, which is neither a pass nor an observed failure. Neither denominator is fourteen because J01 excludes unreadable X1 and X2 from the original inventory before evaluation, leaving twelve authorized cohort cases. Difficult cases remain in the cohort.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:11:45.913214+00:00",
+  "final_answer": {
+    "answer": "C1 passes 9/11 evaluated cohort cases (81.8%) and 9/12 authorized cohort cases (75%). The evaluated denominator comprises nine passes and two observed failures, A8 and B3. The authorized denominator also includes untested B4, which is neither a pass nor an observed failure. Neither denominator is fourteen because J01 excludes unreadable X1 and X2 from the original inventory before evaluation, leaving twelve authorized cohort cases. Difficult cases remain in the cohort.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:11:45.913219+00:00",
+  "ended_epoch": 1790903505.9132204,
+  "visible_input_words": 394,
+  "visible_input_characters": 2575,
+  "visible_output_words": 70,
+  "visible_output_characters": 502,
+  "actual_tokens": null
+}

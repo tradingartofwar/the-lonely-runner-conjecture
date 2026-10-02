@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-28",
+  "baseline_commit": "b5fbc19457794d3884d758de0833a38b236d3246",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "claim_status": {
+    "conditional_four_runner_theorem": "HYPOTHESIS / supplied proof candidate pending external review",
+    "unconditional_fixed_22_order": "DISPROVEN by exact counterexample, including a common-start integer configuration",
+    "finite_control_results": "OBSERVED / internally REPRODUCED",
+    "novelty": "Not asserted"
+  },
+  "roles": {
+    "coordinator": "Conditional bound, primary arithmetic calculations, common-start modular lift, comparison and synthesis",
+    "verification_agent": "Independent mathematical review, threshold-event oracle and phase-case projection traces without primary imports; final audit",
+    "structural_agent": "Analytical interval-chain counterexample; distinct-speed refinement; separate exact check of coordinator lift"
+  },
+  "protocol_scope": {
+    "frozen_physical_cases": 8,
+    "frozen_auxiliary_cases": 2,
+    "frozen_trace_outputs": 220,
+    "physical_condition_passes": 0,
+    "physical_raw_successes": 8,
+    "post_protocol_constructions": 3,
+    "post_protocol_new_common_start_configurations": 1,
+    "post_protocol_trace_outputs": 66,
+    "open_cover_intervals_compared": 21,
+    "extended_threshold_events_by_case": [
+      13,
+      13,
+      13
+    ],
+    "later_witnesses_compared": 3
+  },
+  "verification": {
+    "primary_read_only": "pass",
+    "independent_frozen_replay": "pass",
+    "follow_on_read_only": "pass",
+    "independent_follow_on_replay": "pass",
+    "actual_record_comparison": "pass",
+    "structural_check": "pass",
+    "common_start_lift_check": "pass",
+    "final_review": "No blocker; restricted opening claim to this fixed order and retained prior triple proof-candidate status"
+  },
+  "scope_limits": [
+    "Selected reference0, threshold1/8; original physical cases have8common-start runners.",
+    "One new common-start construction is explicitly post-protocol; no speed/phase scan.",
+    "The counterexample uses a tiny clipped window inside oldJ, not a claim oldJ is empty.",
+    "Same-input extended window contains the earliest witness missed by22steps.",
+    "No universal23step guarantee or impossibility of every fixed bound follows.",
+    "No full Lonely Runner or novelty claim; no new family existence coverage."
+  ],
+  "actions": {
+    "hourly_resumed": false,
+    "broad_scan": false,
+    "all_reference_scan": false,
+    "paid_compute": false,
+    "outside_outreach": false,
+    "main_merge": false,
+    "parked_plus7_plus9": false
+  },
+  "files_sha256": {
+    "HANDOFF.md": "fefa2e2d290f88680d76f960d51406a5a2ec39c5d8e6ef405b8e5b89970f3904",
+    "LR2_HANDOFF.md": "a97236dae8ee02ddcd0a99d8caaaf96b06f98b7962b5f9bd1f63eeacfbf07da2",
+    "README.md": "6c4094c36822913ba762bfccc4fb2ace51281be1c1468aec612ca47430ffac1e",
+    "RESEARCH_PLAN.md": "e16f2fc2badc7298ffa29473cf8cf5f2024cb8ec310c7e264e63a732b1be4359",
+    "notes/FOUR_RUNNER_PROJECTION_LIMIT_2026_09_28.md": "3108857fe8af190a49f66e695286a8cb21bedd3e2cbc52e0ac5f62b22065d7b8",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "3ed7e842df93e84e3e167a0f11992549cc789d8ddef8a7b8591a2291f5f3470c",
+    "reviews/2026-09-28-four-projection/common_start_lift_check.py": "7e64d789ab55b5300f23880f347e69c0e0d121971d63f5f91a60bf64b6ea6e90",
+    "reviews/2026-09-28-four-projection/compare.py": "eddfa0cc899a893373ab9e83ba90122ab618d7d34dfe2ad23ca807c087ac3270",
+    "reviews/2026-09-28-four-projection/follow_on.json": "6a6a0ff590062c370f7a576edf75b641091f70f93c675a253af41febaa68e0c8",
+    "reviews/2026-09-28-four-projection/follow_on.py": "e970c2ae91f52052dfe6b1a5ed0dcbf2b9034e810bf1fc401fd095ffe28c31b0",
+    "reviews/2026-09-28-four-projection/follow_on_protocol.json": "8cb55de04999c4e39d54e5bad912ce6b49d4e3325ce4ad6828c8220670e98614",
+    "reviews/2026-09-28-four-projection/follow_on_verification.json": "7997c05cc83ef389d7fa5407b2054d606eedf4c90d533cbf5a66a8f97b716b2a",
+    "reviews/2026-09-28-four-projection/follow_on_verify.py": "bbd864610daee68cc3b53cd5686dde78e0ba873b7fa103871025925915351eb0",
+    "reviews/2026-09-28-four-projection/primary.py": "f8c1ac2fc6baba6c8aa7448e9f7f3242f5f2461c49c3fa6d2c614ce699609332",
+    "reviews/2026-09-28-four-projection/protocol.json": "9e6ef9f4dd7ff80959a66497f5756d916c18a427b7feeb8c82baacfee6537ae4",
+    "reviews/2026-09-28-four-projection/results.json": "a50b6eb43849ce83b63f6c550d882bc25e563bfa6918c32587030cf052a2b071",
+    "reviews/2026-09-28-four-projection/review.md": "1fca9c89eaec92833c0633ffa3a6e7cb6c3f0f7aa1a8706484fa338f829488da",
+    "reviews/2026-09-28-four-projection/structural.md": "6529b6901d49c1979e592bb12725a278e895b812da3b8c9cac5bf5afc47f045f",
+    "reviews/2026-09-28-four-projection/structural_check.py": "199c3977f457e60a1d0aa4c864f66eaf5e8d53f03a1670724b7fc1a66559eff4",
+    "reviews/2026-09-28-four-projection/verification.json": "710342208f636312724f6fb83f024a26d8aa23cfd25fcbae3aa80a4eb594ed3d",
+    "reviews/2026-09-28-four-projection/verify.py": "46dad554261df663eb0f75faf631f351f7823e2e7517ad372bbd9640b57775f9"
+  }
+}

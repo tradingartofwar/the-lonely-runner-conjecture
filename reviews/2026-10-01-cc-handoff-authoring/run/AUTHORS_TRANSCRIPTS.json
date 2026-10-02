@@ -1,0 +1,143 @@
+[
+  {
+    "id": "A001",
+    "history": "H01",
+    "method": "cc",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "INFRASTRUCTURE_STOP",
+    "agent": null,
+    "started_at": "2026-10-01T23:53:49.277344+00:00",
+    "started_epoch": 1790898829.2773569,
+    "recovery_requested": false,
+    "recovery_served": false,
+    "messages": [
+      {
+        "role": "user",
+        "kind": "initial",
+        "content": "Write an operational handoff for an incoming coordinator from the supplied complete synthetic history. The coordinator will answer current-state questions, explain evidence, and consider modest changes within the stated task family. You will not see the exact later questions. Use only this history. Do not use tools, files, the internet, other agents, or outside domain assumptions. Do not mention an experiment or your writing method.\n\nReturn only valid JSON with exactly three nonempty string fields in this order: \"status\", \"evidence\", \"next\". Use the fields for current status, supporting facts and limits, and next actions or source recovery. The total of whitespace-separated words across the three decoded values must be at most 220. Concise accurate statements are preferred to filling the allowance. Event identifiers may be used and count toward the limit. No other keys, attachments, hidden encodings, or surrounding commentary. Write the handoff once; no clarification or revision round is available.\n\nAUTHORING PROCEDURE\nPrepare a concise handoff as a representation supporting the stated questions and next operations. Identify which conclusions it can justify and where a changed use would require source recovery. Preserve consequential relationships: conditions on the same object, linked measurements, versions, dependencies, thresholds, and compatible alternatives. Keep observations distinct from missing evidence, proposals, and inferred outcomes. Decide which omissions cannot affect supported uses and which create limits worth stating. Retain a route back to dated source events for omitted details. Check the compressed account against a foreseeable change of assumption or objective. Prefer the smallest adequate record; do not add detail or special terminology merely to display the method. Keep unsupported conclusions out.\n\nCOMPLETE HISTORY\n# Rook field imaging stations\n\nThis is a synthetic project history. All rules and measurements below are scenario facts, not advice about real equipment. The handover cutoff is the end of Day 12. The incoming coordinator must assess current bench readiness, explain remaining evidence gaps, and reconsider readiness after a small equipment change. Bench readiness is a technical classification under the recorded rule; booking a station or signing an administrative form is a separate operation. There are exactly three candidate stations, A, B, and C. No other station is available in this scenario. Messages are chronological; proposals take effect only when a later entry explicitly adopts or completes them.\n\n## R01 — Day 1, scope\n\nThe field session will use one imaging station at a time. Each station has its own firmware, power pack, packet test, latency test, and buffer setting. Measurements belong to the named station and firmware. Firmware changes invalidate earlier packet and latency measurements for readiness; they do not establish that performance became worse. A current power-pack runtime can be reused if the pack is unchanged. A technical pass does not reserve transport or personnel, and a reservation cannot supply a missing measurement. The coordinator requests a record that will survive a change in which station is preferred.\n\n## R02 — Day 2, early acceptance rule\n\nRule v1 requires packet success of at least 98 percent, latency no greater than five seconds, and power-pack runtime of at least eight hours. The team initially expects to keep firmware 7 for the demonstration. Under this rule the buffer setting has no acceptance role. A dashboard column called READY reflects this early rule and will not automatically recalculate if the rule changes. The interface designer is asked to retain the old column for comparison, with its date visible in exports. No general statement about future firmware is part of v1.\n\n## R03 — Day 3, A measured\n\nStation A on firmware 7 delivers 99 of 100 packets, has measured latency of four seconds, and runs for nine hours on its installed pack. It therefore passes v1 on this date. Its READY badge is green and its photograph is selected for the draft event page. The page is an illustration, not an inventory decision. These are the only packet and latency measurements ever obtained for A in the supplied history. The technicians retain the raw test identifiers so an upgrade will not accidentally acquire the earlier results.\n\n## R04 — Day 4, B measured\n\nStation B is already running firmware 8. It delivers 119 of 120 packets and has latency of six seconds. Its unchanged installed power pack runs for 7.5 hours. The engineering team likes the packet result but records two failures against v1: latency and runtime. That judgment is attached to v1, not to every conceivable acceptance rule. B's packaging insert is revised because its connector moved between firmware development assemblies, but the insert has no bearing on any measured acceptance quantity. No replacement pack is installed during this test.\n\n## R05 — Day 5, proposed change\n\nThe imaging team proposes v2: firmware 8, packet success at least 99 percent, latency at most seven seconds, buffering enabled, and pack runtime at least eight hours. The extra latency allowance is justified inside this fictional project by the revised demonstration format. This entry is a proposal, so it does not change readiness today. The communications team drafts a shorter description saying that firmware 8 stations are suitable for the show. The draft omits the measurements and buffering requirement and is never adopted as an acceptance rule.\n\n## R06 — Day 6, A upgraded\n\nStation A is upgraded to firmware 8. Its firmware 7 packet and latency results cease to qualify as current readiness evidence under R01. There is no new packet test and no new latency test for A before the handover cutoff. Its pack remains unchanged, so the nine-hour runtime still applies. The upgrade ticket says installation completed successfully; it does not report packet performance. A technician plans to rerun measurements after the session checklist is revised, but the plan has no completion entry in the remaining history.\n\n## R07 — Day 7, settings checked\n\nThe configuration inspection records buffering disabled on A and enabled on B. The team can potentially change A's setting, but no completed change is recorded. Buffering is a distinct prerequisite under the proposed v2 rule and is not inferred from firmware number. A's display still shows its old green READY badge because the dashboard is displaying the historical v1 result. The inspection note explicitly preserves the firmware and test dates next to that badge. The demonstration staff have not yet been instructed to choose a station from the photographs.\n\n## R08 — Day 8, rule adopted\n\nThe coordinator adopts rule v2 exactly as proposed in R05. It supersedes v1 for all readiness decisions from this point through the cutoff. The required combination is firmware 8, packet success at least 99 percent, latency at most seven seconds, buffering enabled, and pack runtime at least eight hours on the same station. Threshold equality is accepted. A completed test can be reused if the tested firmware and relevant hardware have not changed. The new rule does not require the earlier v1 latency limit as an additional condition.\n\n## R09 — Day 9, pack request\n\nA longer-lasting pack is requested for B. The supplier describes the requested model as nominally suitable, but the order has not arrived by the cutoff and no runtime with that replacement has been measured. B still has its 7.5-hour pack. A spreadsheet draft lists B as an alternative once its power issue is resolved; that conditional entry does not establish resolution. The coordinator asks that a handoff retain the distinction between an available alternative and an alternative that would become available after a specific verified change.\n\n## R10 — Day 10, C measured\n\nStation C on firmware 8 delivers 198 of 200 packets, has latency of exactly seven seconds, has buffering enabled, and achieves exactly eight hours on its installed pack. None of these attributes changes before the cutoff. The results are accepted as valid measurements. C has no earlier v1 approval, but the current decision uses v2. Its carry case has a scratched panel that is recorded for inventory rather than readiness. The scratch is not a technical exclusion under either rule and creates no additional test requirement in this scenario.\n\n## R11 — Day 11, logistics\n\nC can be transported only in the afternoon; the room booking also permits an afternoon session. A had been assigned the morning transport slot before its upgrade. Both transport records remain in the schedule because they describe resources, not current bench eligibility. B's pack order remains open. A new banner design uses a generic station drawing so the page no longer implies that A has been selected. The coordinator asks the incoming person to report readiness before making a booking choice and not to replace current measurements with earlier project preferences.\n\n## R12 — Day 12, cutoff\n\nNo additional equipment changes, packet tests, latency tests, or pack measurements have occurred. A remains on firmware 8 with buffering disabled, its old packet and latency tests invalid for current readiness, and its unchanged nine-hour pack. B retains its recorded firmware 8 results and enabled buffering with the 7.5-hour pack. C retains all Day 10 measurements and settings. The history is complete for these three stations at the cutoff. A future verified pack result may change B's technical status without changing the acceptance rule or any other station's evidence.\n",
+        "delivery": "queued",
+        "recorded_at": "2026-10-01T23:53:49.277360+00:00",
+        "sha256": "75e126a3ccf026af9c9be388c4390cb0f9ba2aa1861f79d9dacf38a52b0f1f6b"
+      }
+    ],
+    "ended_at": "2026-10-02T00:05:48.573622+00:00",
+    "ended_epoch": 1790899548.5736346,
+    "reason": "Coordinator interrupted before confirmed delivery; delivery uncertain, no retry.",
+    "visible_input_words": 0,
+    "visible_input_characters": 0,
+    "visible_output_words": 0,
+    "visible_output_characters": 0,
+    "actual_tokens": null
+  },
+  {
+    "id": "A002",
+    "history": "H01",
+    "method": "conventional",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A003",
+    "history": "H05",
+    "method": "conventional",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A004",
+    "history": "H05",
+    "method": "cc",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A005",
+    "history": "H06",
+    "method": "cc",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A006",
+    "history": "H06",
+    "method": "conventional",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A007",
+    "history": "H04",
+    "method": "conventional",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A008",
+    "history": "H04",
+    "method": "cc",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A009",
+    "history": "H03",
+    "method": "cc",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A010",
+    "history": "H03",
+    "method": "conventional",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A011",
+    "history": "H02",
+    "method": "conventional",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  },
+  {
+    "id": "A012",
+    "history": "H02",
+    "method": "cc",
+    "phase": "authors",
+    "freeze_commit": "2f5c62013525e36fefbc86b48aec9340e8025c92",
+    "status": "UNRUN",
+    "messages": [],
+    "reason": "Not dispatched before closure."
+  }
+]

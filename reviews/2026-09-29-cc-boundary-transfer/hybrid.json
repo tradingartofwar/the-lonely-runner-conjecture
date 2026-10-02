@@ -1,0 +1,4669 @@
+{
+  "recovery": {
+    "counts": {
+      "h_tests": 0,
+      "parallel_band_tests": 0,
+      "point_phase_tests": 0,
+      "source_visits": 0
+    },
+    "exceptions": [],
+    "preflight": {
+      "budget": 4096,
+      "integer_h_bound": 0,
+      "new_row_raw_ranges": 0,
+      "rows": [],
+      "source_pair_projections": 0,
+      "status": "PASS",
+      "work_bound": 0
+    },
+    "queries": [],
+    "status": "COMPLETE_EXCEPTION_RECOVERY",
+    "uncovered": []
+  },
+  "screen_certificate": {
+    "budget": 400,
+    "candidates": [
+      {
+        "added_laps": [
+          1,
+          1,
+          22
+        ],
+        "edge": [
+          1,
+          3
+        ],
+        "eighth_lap": 1,
+        "endpoints": [
+          [
+            "13/72",
+            "1/6"
+          ],
+          [
+            "5/24",
+            "1/8"
+          ]
+        ],
+        "id": "P0:E1-3:K1:L1:M22",
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          22
+        ],
+        "ninth_lap": 22,
+        "parent": 0,
+        "seventh_lap": 1,
+        "source_parameters": [
+          "2/3",
+          "1"
+        ]
+      },
+      {
+        "added_laps": [
+          1,
+          2,
+          22
+        ],
+        "edge": [
+          1,
+          3
+        ],
+        "eighth_lap": 2,
+        "endpoints": [
+          [
+            "1/8",
+            "1/4"
+          ],
+          [
+            "11/72",
+            "5/24"
+          ]
+        ],
+        "id": "P0:E1-3:K1:L2:M22",
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          22
+        ],
+        "ninth_lap": 22,
+        "parent": 0,
+        "seventh_lap": 1,
+        "source_parameters": [
+          "0",
+          "1/3"
+        ]
+      },
+      {
+        "added_laps": [
+          1,
+          2,
+          28
+        ],
+        "edge": [
+          0,
+          3
+        ],
+        "eighth_lap": 2,
+        "endpoints": [
+          [
+            "13/72",
+            "7/24"
+          ],
+          [
+            "5/24",
+            "1/4"
+          ]
+        ],
+        "id": "P1:E0-3:K1:L2:M28",
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          28
+        ],
+        "ninth_lap": 28,
+        "parent": 1,
+        "seventh_lap": 1,
+        "source_parameters": [
+          "2/3",
+          "1"
+        ]
+      },
+      {
+        "added_laps": [
+          1,
+          3,
+          28
+        ],
+        "edge": [
+          0,
+          3
+        ],
+        "eighth_lap": 3,
+        "endpoints": [
+          [
+            "1/8",
+            "3/8"
+          ],
+          [
+            "11/72",
+            "1/3"
+          ]
+        ],
+        "id": "P1:E0-3:K1:L3:M28",
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          3,
+          28
+        ],
+        "ninth_lap": 28,
+        "parent": 1,
+        "seventh_lap": 1,
+        "source_parameters": [
+          "0",
+          "1/3"
+        ]
+      },
+      {
+        "added_laps": [
+          3,
+          3,
+          48
+        ],
+        "edge": [
+          0,
+          3
+        ],
+        "eighth_lap": 3,
+        "endpoints": [
+          [
+            "5/12",
+            "5/16"
+          ],
+          [
+            "35/72",
+            "5/24"
+          ]
+        ],
+        "id": "P3:E0-3:K3:L3:M48",
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          3,
+          48
+        ],
+        "ninth_lap": 48,
+        "parent": 3,
+        "seventh_lap": 3,
+        "source_parameters": [
+          "1/3",
+          "8/9"
+        ]
+      },
+      {
+        "added_laps": [
+          3,
+          4,
+          54
+        ],
+        "edge": [
+          0,
+          1
+        ],
+        "eighth_lap": 4,
+        "endpoints": [
+          [
+            "29/72",
+            "11/24"
+          ],
+          [
+            "35/72",
+            "1/3"
+          ]
+        ],
+        "id": "P4:E0-1:K3:L4:M54",
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          4,
+          54
+        ],
+        "ninth_lap": 54,
+        "parent": 4,
+        "seventh_lap": 3,
+        "source_parameters": [
+          "2/9",
+          "8/9"
+        ]
+      },
+      {
+        "added_laps": [
+          3,
+          5,
+          54
+        ],
+        "edge": [
+          0,
+          1
+        ],
+        "eighth_lap": 5,
+        "endpoints": [
+          [
+            "3/8",
+            "1/2"
+          ],
+          [
+            "3/8",
+            "1/2"
+          ]
+        ],
+        "id": "P4:E0-1:K3:L5:M54",
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          5,
+          54
+        ],
+        "ninth_lap": 54,
+        "parent": 4,
+        "seventh_lap": 3,
+        "source_parameters": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "added_laps": [
+          3,
+          5,
+          54
+        ],
+        "edge": [
+          0,
+          3
+        ],
+        "eighth_lap": 5,
+        "endpoints": [
+          [
+            "3/8",
+            "1/2"
+          ],
+          [
+            "3/8",
+            "1/2"
+          ]
+        ],
+        "id": "P4:E0-3:K3:L5:M54",
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          5,
+          54
+        ],
+        "ninth_lap": 54,
+        "parent": 4,
+        "seventh_lap": 3,
+        "source_parameters": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "added_laps": [
+          4,
+          7,
+          73
+        ],
+        "edge": [
+          0,
+          3
+        ],
+        "eighth_lap": 7,
+        "endpoints": [
+          [
+            "11/24",
+            "3/4"
+          ],
+          [
+            "35/72",
+            "17/24"
+          ]
+        ],
+        "id": "P6:E0-3:K4:L7:M73",
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          4,
+          7,
+          73
+        ],
+        "ninth_lap": 73,
+        "parent": 6,
+        "seventh_lap": 4,
+        "source_parameters": [
+          "0",
+          "2/3"
+        ]
+      },
+      {
+        "added_laps": [
+          4,
+          8,
+          79
+        ],
+        "edge": [
+          0,
+          1
+        ],
+        "eighth_lap": 8,
+        "endpoints": [
+          [
+            "11/24",
+            "7/8"
+          ],
+          [
+            "35/72",
+            "5/6"
+          ]
+        ],
+        "id": "P7:E0-1:K4:L8:M79",
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          4,
+          8,
+          79
+        ],
+        "ninth_lap": 79,
+        "parent": 7,
+        "seventh_lap": 4,
+        "source_parameters": [
+          "0",
+          "2/3"
+        ]
+      }
+    ],
+    "chosen_ids": [
+      "P4:E0-1:K3:L4:M54",
+      "P3:E0-3:K3:L3:M48",
+      "P0:E1-3:K1:L2:M22",
+      "P1:E0-3:K1:L3:M28",
+      "P4:E0-1:K3:L5:M54"
+    ],
+    "contact_matrix": [
+      {
+        "contacts": [
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/72",
+              "1/12"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "7/36",
+              "7/24"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "3/8",
+              "1/2"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/9",
+              "17/24"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "53/72",
+              "11/12"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "11/12",
+              "9/8"
+            ],
+            "pair": [
+              1,
+              6
+            ],
+            "parameter": "2/5",
+            "point": [
+              "23/120",
+              "3/20"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "79/72",
+              "4/3"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "23/18",
+              "37/24"
+            ],
+            "pair": [
+              1,
+              8
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "35/24",
+              "7/4"
+            ],
+            "pair": [
+              1,
+              9
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "59/36",
+              "47/24"
+            ],
+            "pair": [
+              1,
+              10
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-11/72",
+              "-1/24"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/24",
+              "3/8"
+            ],
+            "pair": [
+              2,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "41/72",
+              "19/24"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "67/72",
+              "29/24"
+            ],
+            "pair": [
+              2,
+              7
+            ],
+            "parameter": "1/4",
+            "point": [
+              "3/16",
+              "5/32"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-23/72",
+              "-1/6"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-5/36",
+              "1/24"
+            ],
+            "pair": [
+              3,
+              2
+            ],
+            "parameter": "10/13",
+            "point": [
+              "21/104",
+              "7/52"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "2/9",
+              "11/24"
+            ],
+            "pair": [
+              3,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "29/72",
+              "2/3"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "55/72",
+              "13/12"
+            ],
+            "pair": [
+              3,
+              7
+            ],
+            "parameter": "17/23",
+            "point": [
+              "37/184",
+              "25/184"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-35/72",
+              "-7/24"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "1/8"
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "parameter": "1/2",
+            "point": [
+              "7/36",
+              "7/48"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "17/72",
+              "13/24"
+            ],
+            "pair": [
+              4,
+              5
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-47/72",
+              "-5/12"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-17/36",
+              "-5/24"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-7/24",
+              "0"
+            ],
+            "pair": [
+              5,
+              3
+            ],
+            "parameter": "1",
+            "point": [
+              "5/24",
+              "1/8"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/9",
+              "5/24"
+            ],
+            "pair": [
+              5,
+              4
+            ],
+            "parameter": "8/23",
+            "point": [
+              "35/184",
+              "7/46"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-59/72",
+              "-13/24"
+            ],
+            "pair": [
+              6,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-71/72",
+              "-2/3"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P0:E1-3:K1:L1:M22"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/8",
+              "-1/18"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "7/72"
+            ],
+            "pair": [
+              1,
+              2
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "1/4"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/4",
+              "29/72"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "3/8",
+              "5/9"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/2",
+              "17/24"
+            ],
+            "pair": [
+              1,
+              6
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/8",
+              "31/36"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "3/4",
+              "73/72"
+            ],
+            "pair": [
+              1,
+              8
+            ],
+            "parameter": "18/19",
+            "point": [
+              "23/152",
+              "4/19"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "7/8",
+              "7/6"
+            ],
+            "pair": [
+              1,
+              9
+            ],
+            "parameter": "3/7",
+            "point": [
+              "23/168",
+              "13/56"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "1",
+              "95/72"
+            ],
+            "pair": [
+              1,
+              10
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/8",
+              "-19/72"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "1/24"
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "parameter": "3/4",
+            "point": [
+              "7/48",
+              "7/32"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "25/72"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "3/8",
+              "47/72"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-17/36"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/2",
+              "-23/72"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/4",
+              "-1/72"
+            ],
+            "pair": [
+              3,
+              4
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "5/36"
+            ],
+            "pair": [
+              3,
+              5
+            ],
+            "parameter": "9/19",
+            "point": [
+              "21/152",
+              "35/152"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "4/9"
+            ],
+            "pair": [
+              3,
+              7
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/8",
+              "-49/72"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-3/8"
+            ],
+            "pair": [
+              4,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/8",
+              "-5/72"
+            ],
+            "pair": [
+              4,
+              5
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-9/8",
+              "-8/9"
+            ],
+            "pair": [
+              5,
+              1
+            ],
+            "parameter": "9/17",
+            "point": [
+              "19/136",
+              "31/136"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-53/72"
+            ],
+            "pair": [
+              5,
+              2
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/8",
+              "-7/12"
+            ],
+            "pair": [
+              5,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/4",
+              "-31/72"
+            ],
+            "pair": [
+              5,
+              4
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-11/8",
+              "-79/72"
+            ],
+            "pair": [
+              6,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-13/8",
+              "-47/36"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P0:E1-3:K1:L2:M22"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/9",
+              "-1/24"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/72",
+              "1/6"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/4",
+              "3/8"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "31/72",
+              "7/12"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "11/18",
+              "19/24"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "19/24",
+              "1"
+            ],
+            "pair": [
+              1,
+              6
+            ],
+            "parameter": "1",
+            "point": [
+              "5/24",
+              "1/4"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "35/36",
+              "29/24"
+            ],
+            "pair": [
+              1,
+              7
+            ],
+            "parameter": "2/17",
+            "point": [
+              "25/136",
+              "39/136"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "83/72",
+              "17/12"
+            ],
+            "pair": [
+              1,
+              8
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "4/3",
+              "13/8"
+            ],
+            "pair": [
+              1,
+              9
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "109/72",
+              "11/6"
+            ],
+            "pair": [
+              1,
+              10
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-29/72",
+              "-7/24"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/24",
+              "1/8"
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "parameter": "1/4",
+            "point": [
+              "3/16",
+              "9/32"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "23/72",
+              "13/24"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "49/72",
+              "23/24"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-25/36",
+              "-13/24"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-37/72",
+              "-1/3"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-11/72",
+              "1/12"
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "parameter": "11/17",
+            "point": [
+              "27/136",
+              "9/34"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/36",
+              "7/24"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "7/18",
+              "17/24"
+            ],
+            "pair": [
+              3,
+              7
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-71/72",
+              "-19/24"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-3/8"
+            ],
+            "pair": [
+              4,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-19/72",
+              "1/24"
+            ],
+            "pair": [
+              4,
+              5
+            ],
+            "parameter": "19/22",
+            "point": [
+              "9/44",
+              "45/176"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-23/18",
+              "-25/24"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-79/72",
+              "-5/6"
+            ],
+            "pair": [
+              5,
+              2
+            ],
+            "parameter": "7/19",
+            "point": [
+              "29/152",
+              "21/76"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-11/12",
+              "-5/8"
+            ],
+            "pair": [
+              5,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-53/72",
+              "-5/12"
+            ],
+            "pair": [
+              5,
+              4
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-113/72",
+              "-31/24"
+            ],
+            "pair": [
+              6,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-67/36",
+              "-37/24"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P1:E0-3:K1:L2:M28"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/4",
+              "-13/72"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/8",
+              "-1/36"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "1/8"
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "5/18"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/4",
+              "31/72"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "3/8",
+              "7/12"
+            ],
+            "pair": [
+              1,
+              6
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/2",
+              "53/72"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/8",
+              "8/9"
+            ],
+            "pair": [
+              1,
+              8
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "3/4",
+              "25/24"
+            ],
+            "pair": [
+              1,
+              9
+            ],
+            "parameter": "6/7",
+            "point": [
+              "25/168",
+              "19/56"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "7/8",
+              "43/36"
+            ],
+            "pair": [
+              1,
+              10
+            ],
+            "parameter": "9/23",
+            "point": [
+              "25/184",
+              "33/92"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-37/72"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/8",
+              "-5/24"
+            ],
+            "pair": [
+              2,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "7/72"
+            ],
+            "pair": [
+              2,
+              5
+            ],
+            "parameter": "9/16",
+            "point": [
+              "9/64",
+              "45/128"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "29/72"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-61/72"
+            ],
+            "pair": [
+              3,
+              1
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/8",
+              "-25/36"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-7/18"
+            ],
+            "pair": [
+              3,
+              4
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/2",
+              "-17/72"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/4",
+              "5/72"
+            ],
+            "pair": [
+              3,
+              7
+            ],
+            "parameter": "18/23",
+            "point": [
+              "27/184",
+              "63/184"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-11/8",
+              "-85/72"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-9/8",
+              "-7/8"
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "parameter": "1/2",
+            "point": [
+              "5/36",
+              "17/48"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/8",
+              "-41/72"
+            ],
+            "pair": [
+              4,
+              5
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-7/4",
+              "-109/72"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-13/8",
+              "-49/36"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-3/2",
+              "-29/24"
+            ],
+            "pair": [
+              5,
+              3
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-11/8",
+              "-19/18"
+            ],
+            "pair": [
+              5,
+              4
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": true,
+            "interval": [
+              "-17/8",
+              "-133/72"
+            ],
+            "pair": [
+              6,
+              1
+            ],
+            "parameter": "9/20",
+            "point": [
+              "11/80",
+              "57/160"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-5/2",
+              "-157/72"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P1:E0-3:K1:L3:M28"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/48",
+              "5/18"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "25/48",
+              "55/72"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "15/16",
+              "5/4"
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "parameter": "1/5",
+            "point": [
+              "31/72",
+              "7/24"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "65/48",
+              "125/72"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "85/48",
+              "20/9"
+            ],
+            "pair": [
+              1,
+              5
+            ],
+            "parameter": "33/65",
+            "point": [
+              "47/104",
+              "27/104"
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "35/16",
+              "65/24"
+            ],
+            "pair": [
+              1,
+              6
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "125/48",
+              "115/36"
+            ],
+            "pair": [
+              1,
+              7
+            ],
+            "parameter": "57/85",
+            "point": [
+              "63/136",
+              "33/136"
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": false,
+            "interval": [
+              "145/48",
+              "265/72"
+            ],
+            "pair": [
+              1,
+              8
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "55/16",
+              "25/6"
+            ],
+            "pair": [
+              1,
+              9
+            ],
+            "parameter": "27/35",
+            "point": [
+              "79/168",
+              "13/56"
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "185/48",
+              "335/72"
+            ],
+            "pair": [
+              1,
+              10
+            ],
+            "parameter": "21/115",
+            "point": [
+              "79/184",
+              "27/92"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-5/24",
+              "5/72"
+            ],
+            "pair": [
+              2,
+              1
+            ],
+            "parameter": "3/4",
+            "point": [
+              "15/32",
+              "15/64"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "5/8",
+              "25/24"
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "parameter": "9/10",
+            "point": [
+              "23/48",
+              "7/32"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "35/24",
+              "145/72"
+            ],
+            "pair": [
+              2,
+              5
+            ],
+            "parameter": "39/40",
+            "point": [
+              "31/64",
+              "27/128"
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "55/24",
+              "215/72"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-25/48",
+              "-5/36"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-5/48",
+              "25/72"
+            ],
+            "pair": [
+              3,
+              2
+            ],
+            "parameter": "3/13",
+            "point": [
+              "45/104",
+              "15/52"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "35/48",
+              "95/72"
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "parameter": "39/85",
+            "point": [
+              "61/136",
+              "9/34"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "55/48",
+              "65/36"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "95/48",
+              "25/9"
+            ],
+            "pair": [
+              3,
+              7
+            ],
+            "parameter": "3/115",
+            "point": [
+              "77/184",
+              "57/184"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/6",
+              "-25/72"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "5/8"
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "parameter": "0",
+            "point": [
+              "5/12",
+              "5/16"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "5/6",
+              "115/72"
+            ],
+            "pair": [
+              4,
+              5
+            ],
+            "parameter": "12/55",
+            "point": [
+              "19/44",
+              "51/176"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-55/48",
+              "-5/9"
+            ],
+            "pair": [
+              5,
+              1
+            ],
+            "parameter": "21/85",
+            "point": [
+              "59/136",
+              "39/136"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-35/48",
+              "-5/72"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-5/16",
+              "5/12"
+            ],
+            "pair": [
+              5,
+              3
+            ],
+            "parameter": "3/7",
+            "point": [
+              "25/56",
+              "15/56"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/48",
+              "65/72"
+            ],
+            "pair": [
+              5,
+              4
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-35/24",
+              "-55/72"
+            ],
+            "pair": [
+              6,
+              1
+            ],
+            "parameter": "33/50",
+            "point": [
+              "37/80",
+              "39/160"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-85/48",
+              "-35/36"
+            ],
+            "pair": [
+              7,
+              1
+            ],
+            "parameter": "111/115",
+            "point": [
+              "89/184",
+              "39/184"
+            ]
+          }
+        ],
+        "id": "P3:E0-3:K3:L3:M48"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/18",
+              "11/72"
+            ],
+            "pair": [
+              1,
+              1
+            ],
+            "parameter": "4/15",
+            "point": [
+              "17/40",
+              "17/40"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "25/72",
+              "23/36"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "3/4",
+              "9/8"
+            ],
+            "pair": [
+              1,
+              3
+            ],
+            "parameter": "2/3",
+            "point": [
+              "11/24",
+              "3/8"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "83/72",
+              "29/18"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "14/9",
+              "151/72"
+            ],
+            "pair": [
+              1,
+              5
+            ],
+            "parameter": "32/39",
+            "point": [
+              "49/104",
+              "37/104"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "47/24",
+              "31/12"
+            ],
+            "pair": [
+              1,
+              6
+            ],
+            "parameter": "1/15",
+            "point": [
+              "49/120",
+              "9/20"
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "85/36",
+              "221/72"
+            ],
+            "pair": [
+              1,
+              7
+            ],
+            "parameter": "46/51",
+            "point": [
+              "65/136",
+              "47/136"
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "199/72",
+              "32/9"
+            ],
+            "pair": [
+              1,
+              8
+            ],
+            "parameter": "17/57",
+            "point": [
+              "65/152",
+              "8/19"
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "19/6",
+              "97/24"
+            ],
+            "pair": [
+              1,
+              9
+            ],
+            "parameter": "20/21",
+            "point": [
+              "27/56",
+              "19/56"
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "257/72",
+              "163/36"
+            ],
+            "pair": [
+              1,
+              10
+            ],
+            "parameter": "31/69",
+            "point": [
+              "81/184",
+              "37/92"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-37/72",
+              "-13/72"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "7/24",
+              "19/24"
+            ],
+            "pair": [
+              2,
+              3
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "79/72",
+              "127/72"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "137/72",
+              "197/72"
+            ],
+            "pair": [
+              2,
+              7
+            ],
+            "parameter": "7/60",
+            "point": [
+              "33/80",
+              "71/160"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-35/36",
+              "-37/72"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-41/72",
+              "-1/36"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "17/72",
+              "17/18"
+            ],
+            "pair": [
+              3,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "23/36",
+              "103/72"
+            ],
+            "pair": [
+              3,
+              5
+            ],
+            "parameter": "26/57",
+            "point": [
+              "67/152",
+              "61/152"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "13/9",
+              "173/72"
+            ],
+            "pair": [
+              3,
+              7
+            ],
+            "parameter": "40/69",
+            "point": [
+              "83/184",
+              "71/184"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-103/72",
+              "-61/72"
+            ],
+            "pair": [
+              4,
+              1
+            ],
+            "parameter": "31/42",
+            "point": [
+              "13/28",
+              "41/112"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-5/8",
+              "1/8"
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "parameter": "5/6",
+            "point": [
+              "17/36",
+              "17/48"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "13/72",
+              "79/72"
+            ],
+            "pair": [
+              4,
+              5
+            ],
+            "parameter": "59/66",
+            "point": [
+              "21/44",
+              "61/176"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-17/9",
+              "-85/72"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-107/72",
+              "-25/36"
+            ],
+            "pair": [
+              5,
+              2
+            ],
+            "parameter": "35/57",
+            "point": [
+              "69/152",
+              "29/76"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-13/12",
+              "-5/24"
+            ],
+            "pair": [
+              5,
+              3
+            ],
+            "parameter": "2/21",
+            "point": [
+              "23/56",
+              "25/56"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-49/72",
+              "5/18"
+            ],
+            "pair": [
+              5,
+              4
+            ],
+            "parameter": "49/69",
+            "point": [
+              "85/184",
+              "17/46"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": true,
+            "interval": [
+              "-169/72",
+              "-109/72"
+            ],
+            "pair": [
+              6,
+              1
+            ],
+            "parameter": "5/12",
+            "point": [
+              "7/16",
+              "13/32"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": true,
+            "interval": [
+              "-101/36",
+              "-133/72"
+            ],
+            "pair": [
+              7,
+              1
+            ],
+            "parameter": "58/69",
+            "point": [
+              "87/184",
+              "65/184"
+            ]
+          }
+        ],
+        "id": "P4:E0-1:K3:L4:M54"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/8",
+              "-1/8"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/4",
+              "1/4"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/8",
+              "5/8"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "1",
+              "1"
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "11/8",
+              "11/8"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "7/4",
+              "7/4"
+            ],
+            "pair": [
+              1,
+              6
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "17/8",
+              "17/8"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "5/2",
+              "5/2"
+            ],
+            "pair": [
+              1,
+              8
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "23/8",
+              "23/8"
+            ],
+            "pair": [
+              1,
+              9
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": false,
+            "interval": [
+              "13/4",
+              "13/4"
+            ],
+            "pair": [
+              1,
+              10
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-5/8"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "1/8"
+            ],
+            "pair": [
+              2,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "7/8",
+              "7/8"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "13/8",
+              "13/8"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-9/8",
+              "-9/8"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/4",
+              "-3/4"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "0"
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "3/8",
+              "3/8"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "9/8",
+              "9/8"
+            ],
+            "pair": [
+              3,
+              7
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-13/8",
+              "-13/8"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/8",
+              "-7/8"
+            ],
+            "pair": [
+              4,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/8",
+              "-1/8"
+            ],
+            "pair": [
+              4,
+              5
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-17/8",
+              "-17/8"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-7/4",
+              "-7/4"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-11/8",
+              "-11/8"
+            ],
+            "pair": [
+              5,
+              3
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-1"
+            ],
+            "pair": [
+              5,
+              4
+            ],
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-21/8",
+              "-21/8"
+            ],
+            "pair": [
+              6,
+              1
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": false,
+            "interval": [
+              "-25/8",
+              "-25/8"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P4:E0-1:K3:L5:M54"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/8",
+              "-1/8"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/4",
+              "1/4"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/8",
+              "5/8"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "1",
+              "1"
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "11/8",
+              "11/8"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "7/4",
+              "7/4"
+            ],
+            "pair": [
+              1,
+              6
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "17/8",
+              "17/8"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "5/2",
+              "5/2"
+            ],
+            "pair": [
+              1,
+              8
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "23/8",
+              "23/8"
+            ],
+            "pair": [
+              1,
+              9
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": false,
+            "interval": [
+              "13/4",
+              "13/4"
+            ],
+            "pair": [
+              1,
+              10
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/8",
+              "-5/8"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/8",
+              "1/8"
+            ],
+            "pair": [
+              2,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "7/8",
+              "7/8"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "13/8",
+              "13/8"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-9/8",
+              "-9/8"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/4",
+              "-3/4"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "0"
+            ],
+            "pair": [
+              3,
+              4
+            ],
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "3/8",
+              "3/8"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "9/8",
+              "9/8"
+            ],
+            "pair": [
+              3,
+              7
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-13/8",
+              "-13/8"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/8",
+              "-7/8"
+            ],
+            "pair": [
+              4,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/8",
+              "-1/8"
+            ],
+            "pair": [
+              4,
+              5
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-17/8",
+              "-17/8"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-7/4",
+              "-7/4"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-11/8",
+              "-11/8"
+            ],
+            "pair": [
+              5,
+              3
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-1"
+            ],
+            "pair": [
+              5,
+              4
+            ],
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-21/8",
+              "-21/8"
+            ],
+            "pair": [
+              6,
+              1
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": false,
+            "interval": [
+              "-25/8",
+              "-25/8"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P4:E0-3:K3:L5:M54"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-7/24",
+              "-2/9"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/6",
+              "19/72"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "5/8",
+              "3/4"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "13/12",
+              "89/72"
+            ],
+            "pair": [
+              1,
+              4
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "37/24",
+              "31/18"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "2",
+              "53/24"
+            ],
+            "pair": [
+              1,
+              6
+            ],
+            "parameter": "0",
+            "point": [
+              "11/24",
+              "3/4"
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "59/24",
+              "97/36"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "35/12",
+              "229/72"
+            ],
+            "pair": [
+              1,
+              8
+            ],
+            "parameter": "6/19",
+            "point": [
+              "71/152",
+              "14/19"
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": false,
+            "interval": [
+              "27/8",
+              "11/3"
+            ],
+            "pair": [
+              1,
+              9
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "23/6",
+              "299/72"
+            ],
+            "pair": [
+              1,
+              10
+            ],
+            "parameter": "12/23",
+            "point": [
+              "87/184",
+              "67/92"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-25/24",
+              "-67/72"
+            ],
+            "pair": [
+              2,
+              1
+            ],
+            "parameter": "3/8",
+            "point": [
+              "15/32",
+              "47/64"
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "1/24"
+            ],
+            "pair": [
+              2,
+              3
+            ],
+            "parameter": "3/4",
+            "point": [
+              "23/48",
+              "23/32"
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "19/24",
+              "73/72"
+            ],
+            "pair": [
+              2,
+              5
+            ],
+            "parameter": "15/16",
+            "point": [
+              "31/64",
+              "91/128"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "41/24",
+              "143/72"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-43/24",
+              "-59/36"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-4/3",
+              "-83/72"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/12",
+              "-13/72"
+            ],
+            "pair": [
+              3,
+              4
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/24",
+              "11/36"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "23/24",
+              "23/18"
+            ],
+            "pair": [
+              3,
+              7
+            ],
+            "parameter": "3/23",
+            "point": [
+              "85/184",
+              "137/184"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-61/24",
+              "-169/72"
+            ],
+            "pair": [
+              4,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-13/8",
+              "-11/8"
+            ],
+            "pair": [
+              4,
+              3
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-17/24",
+              "-29/72"
+            ],
+            "pair": [
+              4,
+              5
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": false,
+            "interval": [
+              "-79/24",
+              "-55/18"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-17/6",
+              "-185/72"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-19/8",
+              "-25/12"
+            ],
+            "pair": [
+              5,
+              3
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-23/12",
+              "-115/72"
+            ],
+            "pair": [
+              5,
+              4
+            ]
+          },
+          {
+            "first_integer": -4,
+            "hit": true,
+            "interval": [
+              "-97/24",
+              "-271/72"
+            ],
+            "pair": [
+              6,
+              1
+            ],
+            "parameter": "3/20",
+            "point": [
+              "37/80",
+              "119/160"
+            ]
+          },
+          {
+            "first_integer": -4,
+            "hit": false,
+            "interval": [
+              "-115/24",
+              "-161/36"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P6:E0-3:K4:L7:M73"
+      },
+      {
+        "contacts": [
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-5/12",
+              "-25/72"
+            ],
+            "pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/24",
+              "5/36"
+            ],
+            "pair": [
+              1,
+              2
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "1/2",
+              "5/8"
+            ],
+            "pair": [
+              1,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "23/24",
+              "10/9"
+            ],
+            "pair": [
+              1,
+              4
+            ],
+            "parameter": "3/11",
+            "point": [
+              "41/88",
+              "19/22"
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "17/12",
+              "115/72"
+            ],
+            "pair": [
+              1,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "15/8",
+              "25/12"
+            ],
+            "pair": [
+              1,
+              6
+            ],
+            "parameter": "3/5",
+            "point": [
+              "19/40",
+              "17/20"
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": false,
+            "interval": [
+              "7/3",
+              "185/72"
+            ],
+            "pair": [
+              1,
+              7
+            ]
+          },
+          {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "67/24",
+              "55/18"
+            ],
+            "pair": [
+              1,
+              8
+            ],
+            "parameter": "15/19",
+            "point": [
+              "73/152",
+              "16/19"
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": false,
+            "interval": [
+              "13/4",
+              "85/24"
+            ],
+            "pair": [
+              1,
+              9
+            ]
+          },
+          {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "89/24",
+              "145/36"
+            ],
+            "pair": [
+              1,
+              10
+            ],
+            "parameter": "21/23",
+            "point": [
+              "89/184",
+              "77/92"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-31/24",
+              "-85/72"
+            ],
+            "pair": [
+              2,
+              1
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-3/8",
+              "-5/24"
+            ],
+            "pair": [
+              2,
+              3
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "13/24",
+              "55/72"
+            ],
+            "pair": [
+              2,
+              5
+            ]
+          },
+          {
+            "first_integer": 2,
+            "hit": false,
+            "interval": [
+              "35/24",
+              "125/72"
+            ],
+            "pair": [
+              2,
+              7
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-13/6",
+              "-145/72"
+            ],
+            "pair": [
+              3,
+              1
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": false,
+            "interval": [
+              "-41/24",
+              "-55/36"
+            ],
+            "pair": [
+              3,
+              2
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-19/24",
+              "-5/9"
+            ],
+            "pair": [
+              3,
+              4
+            ]
+          },
+          {
+            "first_integer": 0,
+            "hit": false,
+            "interval": [
+              "-1/3",
+              "-5/72"
+            ],
+            "pair": [
+              3,
+              5
+            ]
+          },
+          {
+            "first_integer": 1,
+            "hit": false,
+            "interval": [
+              "7/12",
+              "65/72"
+            ],
+            "pair": [
+              3,
+              7
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": true,
+            "interval": [
+              "-73/24",
+              "-205/72"
+            ],
+            "pair": [
+              4,
+              1
+            ],
+            "parameter": "3/14",
+            "point": [
+              "13/28",
+              "97/112"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": true,
+            "interval": [
+              "-17/8",
+              "-15/8"
+            ],
+            "pair": [
+              4,
+              3
+            ],
+            "parameter": "1/2",
+            "point": [
+              "17/36",
+              "41/48"
+            ]
+          },
+          {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-29/24",
+              "-65/72"
+            ],
+            "pair": [
+              4,
+              5
+            ],
+            "parameter": "15/22",
+            "point": [
+              "21/44",
+              "149/176"
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": false,
+            "interval": [
+              "-47/12",
+              "-265/72"
+            ],
+            "pair": [
+              5,
+              1
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": false,
+            "interval": [
+              "-83/24",
+              "-115/36"
+            ],
+            "pair": [
+              5,
+              2
+            ]
+          },
+          {
+            "first_integer": -3,
+            "hit": true,
+            "interval": [
+              "-3",
+              "-65/24"
+            ],
+            "pair": [
+              5,
+              3
+            ],
+            "parameter": "0",
+            "point": [
+              "11/24",
+              "7/8"
+            ]
+          },
+          {
+            "first_integer": -2,
+            "hit": false,
+            "interval": [
+              "-61/24",
+              "-20/9"
+            ],
+            "pair": [
+              5,
+              4
+            ]
+          },
+          {
+            "first_integer": -4,
+            "hit": false,
+            "interval": [
+              "-115/24",
+              "-325/72"
+            ],
+            "pair": [
+              6,
+              1
+            ]
+          },
+          {
+            "first_integer": -5,
+            "hit": false,
+            "interval": [
+              "-17/3",
+              "-385/72"
+            ],
+            "pair": [
+              7,
+              1
+            ]
+          }
+        ],
+        "id": "P7:E0-1:K4:L8:M79"
+      }
+    ],
+    "counts": {
+      "candidates": 10,
+      "chosen": 5,
+      "contacts": 280,
+      "descending": 8,
+      "rectangle_pairs": 77,
+      "residual_pairs": 28
+    },
+    "domain": "positive integer p,q; ten distinct speeds iff p!=q and p!=2q; full labelled compilation includes auxiliaries",
+    "greedy_steps": [
+      {
+        "before": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "chosen": "P3:E0-3:K3:L3:M48",
+        "newly_covered": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "chosen": "P0:E1-3:K1:L2:M22",
+        "newly_covered": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "chosen": "P1:E0-3:K1:L3:M28",
+        "newly_covered": [
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "before": [
+          [
+            1,
+            4
+          ]
+        ],
+        "chosen": "P4:E0-1:K3:L5:M54",
+        "newly_covered": [
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    ],
+    "leader": {
+      "P_max": 7,
+      "Q_max": 11,
+      "alpha": "1/12",
+      "beta": "1/8",
+      "id": "P4:E0-1:K3:L4:M54",
+      "rectangle_pairs": 77
+    },
+    "ranking": [
+      {
+        "P_max": 7,
+        "Q_max": 11,
+        "alpha": "1/12",
+        "beta": "1/8",
+        "id": "P4:E0-1:K3:L4:M54",
+        "rectangle_pairs": 77
+      },
+      {
+        "P_max": 9,
+        "Q_max": 14,
+        "alpha": "5/72",
+        "beta": "5/48",
+        "id": "P3:E0-3:K3:L3:M48",
+        "rectangle_pairs": 126
+      },
+      {
+        "P_max": 23,
+        "Q_max": 35,
+        "alpha": "1/36",
+        "beta": "1/24",
+        "id": "P0:E1-3:K1:L1:M22",
+        "rectangle_pairs": 805
+      },
+      {
+        "P_max": 23,
+        "Q_max": 35,
+        "alpha": "1/36",
+        "beta": "1/24",
+        "id": "P0:E1-3:K1:L2:M22",
+        "rectangle_pairs": 805
+      },
+      {
+        "P_max": 23,
+        "Q_max": 35,
+        "alpha": "1/36",
+        "beta": "1/24",
+        "id": "P1:E0-3:K1:L2:M28",
+        "rectangle_pairs": 805
+      },
+      {
+        "P_max": 23,
+        "Q_max": 35,
+        "alpha": "1/36",
+        "beta": "1/24",
+        "id": "P1:E0-3:K1:L3:M28",
+        "rectangle_pairs": 805
+      },
+      {
+        "P_max": 23,
+        "Q_max": 35,
+        "alpha": "1/36",
+        "beta": "1/24",
+        "id": "P6:E0-3:K4:L7:M73",
+        "rectangle_pairs": 805
+      },
+      {
+        "P_max": 23,
+        "Q_max": 35,
+        "alpha": "1/36",
+        "beta": "1/24",
+        "id": "P7:E0-1:K4:L8:M79",
+        "rectangle_pairs": 805
+      }
+    ],
+    "residual_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ]
+    ],
+    "rows": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        78,
+        50
+      ]
+    ],
+    "schema": "cc-positive-coverage-v1",
+    "status": "COMPLETE_COVER_CERTIFICATE",
+    "threshold": "1/8",
+    "uncovered": []
+  },
+  "screen_counts": {
+    "accepted_sources": 10,
+    "boundary_checks": 36,
+    "coefficient_pair_tests": 48,
+    "new_row_lap_attempts": 0,
+    "omitted_sources": 26,
+    "point_records": 2,
+    "relations": 1,
+    "source_records": 36
+  },
+  "source_validation_endpoint_band_checks": 576,
+  "status": "COMPLETE_HYBRID_CERTIFICATE"
+}

@@ -1,0 +1,27 @@
+# Broader inquiries
+
+A continuing home for questions about what the Lonely Runner work might illuminate about representation, relationships, other problems, and the world. Created September 27, 2026, at Vance's request after the fixed-window containment discussion.
+
+These entries preserve intuitions and possible transfers alongside the mathematical results that prompted them. The technical research record remains in the linked source notes; claim status follows [CLAIM_STATUS.md](../../CLAIM_STATUS.md).
+
+## Entries
+
+| Date | Inquiry | Current position |
+| --- | --- | --- |
+| 2026-10-02 | [Representation cost, complexity, and consequential compression](REPRESENTATION_COST_COMPLEXITY_AND_CONSEQUENTIAL_COMPRESSION_2026_10_02.md) | Working paper from the October 2 driving discussion: representation growth may reflect real consequential relationships rather than model failure; underlying representation should scale with the problem while human-facing views scale with the decision. No complexity lower bound or general CC claim is asserted. |
+| 2026-09-28 | [Configuration-level relational information](2026-09-28-configuration-relational-information.md) | Preserve the distinction between full speed data and lossy summaries; seek joint compatibility constraints, with 56/113 and tight controls. The common-displacement test is complete: latest entry and earliest exit give a joint certificate, with first-anchor failures retained. Physics supplies inspiration only. |
+| 2026-09-27 | [Relationships, context, and independence](2026-09-27-relationships-and-independence.md) | All six ideas discussed. Adaptive pairs separate equality value from permitted direction. The one-pair selection test now separates choosing a poor pair from a window that no pair can certify: individual capacity is not actual overlap, and changing certificate information may be necessary. Existence, certificate size, discovery cost, and general guarantees remain separate. |
+
+## How to continue this collection
+
+Give each new inquiry a dated Markdown file and add it to the table. Preserve the question that prompted it, its source findings and scope, the interpretation being proposed, and what observation or counterexample could support or weaken that interpretation. Mark later developments with dated updates so an earlier intuition is not silently rewritten as a result.
+
+An entry may remain exploratory. A promising connection can lead to a separate technical experiment with explicit assumptions and a link back here. Adding an inquiry does not itself start that experiment.
+
+Related entry points:
+
+- [Domain connections and LTCMs](../DOMAIN_CONNECTIONS.md): representational languages and earlier runner thought experiments.
+- [Distinction audit](../DISTINCTION_AUDIT_2026_09_25.md): which summaries preserve or discard consequential information.
+- [Research handoff](../../HANDOFF.md): current mathematical work and pending decisions.
+
+Material AI involvement: organization and writing from the human–AI research discussion. This collection introduces no new empirical evidence or literature review.

@@ -1,0 +1,1614 @@
+{
+  "arithmetic": "fractions.Fraction only",
+  "checked_source_hashes": {
+    "floor_sum_results": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "one_query_results": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+    "protocol.json": "e62d116b764aa0869788dffb36785935d08e3de1ddb38d3e0ca11ca23ba3f2e3",
+    "selector_transfer_note": "772d120dc40fc37e15d9d88822fa1d46b220f825992de2c6cbde15dfbe377e4f",
+    "selector_transfer_protocol": "ccfdb403abef15f9c2cd9e08ac086232f4842b450f48308ba5a5992f8c3f9c17",
+    "selector_transfer_results": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615"
+  },
+  "cost_ledger": {
+    "candidate_selection": {
+      "active_tie_records": 7,
+      "complement_phase_reductions": 32,
+      "distance_computations": 32,
+      "midpoint_samples": 16,
+      "physical_lexicographic_tie_breaks": 0,
+      "reconstructed_components": 16,
+      "score_order_comparisons": 9,
+      "tied_pairs": 16
+    },
+    "postselection_oracle": {
+      "logical_compound_containment_queries": 16,
+      "open_cells": 232,
+      "raw_in_window_thresholds": 218
+    },
+    "selected_queries": {
+      "logical_compound_containment_queries": 7,
+      "open_cells": 99,
+      "raw_in_window_thresholds": 93
+    }
+  },
+  "dispatch_checks": {
+    "doubling_112": {
+      "duration_queries": 0,
+      "outcome": "pair_only_exit_before_scoring",
+      "pair_only_minimum": "761/32256",
+      "score_pairs": 0
+    },
+    "tight_13": {
+      "duration_queries": 0,
+      "isolated_equality_time": "3/8",
+      "isolated_equality_valid": true,
+      "outcome": "no_eligible_pair_no_duration_query",
+      "positive_duration": false,
+      "score_pairs": 0
+    }
+  },
+  "literal_scope": {
+    "active_label_count": 7,
+    "active_reflection_mechanisms": 4,
+    "archival_control_records": [
+      "fibonacci:1,2,4:1",
+      "fibonacci:1,2,4:11",
+      "fibonacci:1,2,4:22",
+      "fibonacci:1,2,4:32"
+    ],
+    "development_records": [
+      "squares:1,2,5:12",
+      "squares:1,2,5:39"
+    ],
+    "dispatch_controls": [
+      "doubling_112",
+      "tight_13"
+    ],
+    "named_control": "strict_16"
+  },
+  "method": "independent exact threshold-event reconstruction; no import of primary.py",
+  "postselection_score_audit": {
+    "false_negatives": 0,
+    "false_positives": 2,
+    "rows": [
+      {
+        "base_pair": [
+          25,
+          121
+        ],
+        "containment_holds": true,
+        "record": "squares:1,2,5:12",
+        "score": "1475/13068",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          25,
+          169
+        ],
+        "containment_holds": false,
+        "record": "squares:1,2,5:12",
+        "score": "23/1352",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          25,
+          121
+        ],
+        "containment_holds": true,
+        "record": "squares:1,2,5:39",
+        "score": "1475/13068",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          25,
+          169
+        ],
+        "containment_holds": false,
+        "record": "squares:1,2,5:39",
+        "score": "23/1352",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          55
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:1",
+        "score": "127/770",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          89
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:1",
+        "score": "247/712",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          55
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:11",
+        "score": "25/231",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          89
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:11",
+        "score": "239/712",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          144
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:11",
+        "score": "5/24",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          55
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:22",
+        "score": "25/231",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          89
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:22",
+        "score": "239/712",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          144
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:22",
+        "score": "5/24",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          55
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:32",
+        "score": "127/770",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          21,
+          89
+        ],
+        "containment_holds": true,
+        "record": "fibonacci:1,2,4:32",
+        "score": "247/712",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          6,
+          11
+        ],
+        "containment_holds": true,
+        "record": "strict_16",
+        "score": "59/264",
+        "score_nonnegative": true
+      },
+      {
+        "base_pair": [
+          11,
+          16
+        ],
+        "containment_holds": true,
+        "record": "strict_16",
+        "score": "13/128",
+        "score_nonnegative": true
+      }
+    ],
+    "score_order_inversions": 0
+  },
+  "primary_comparison": {
+    "compared_fields": 491,
+    "differences": [],
+    "primary_py_sha256": "65cefe76849a46ddfc6538f17e806dd92f6cbb0d33f83bffe038ddc1ad721b0d",
+    "primary_results_sha256": "720ef7a31bc933d16b598525cc84a4e928b4cc1dc8bbcd524aa5ecbd1c372eb8",
+    "status": "PASS"
+  },
+  "records": [
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 12,
+            "open_cells": 11,
+            "raw_in_window_thresholds": 10,
+            "unique_threshold_events_including_window_endpoints": 12
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "containment_holds": false,
+          "event_ledger": {
+            "event_points_checked": 12,
+            "open_cells": 11,
+            "raw_in_window_thresholds": 10,
+            "unique_threshold_events_including_window_endpoints": 12
+          },
+          "violations": [
+            {
+              "blocking": [
+                49
+              ],
+              "interval": [
+                "79/392",
+                "21/104"
+              ],
+              "kind": "open_cell",
+              "witness": "257/1274"
+            }
+          ]
+        }
+      ],
+      "candidate_choice": [
+        25,
+        121
+      ],
+      "candidate_score": "1475/13068",
+      "id": "squares:1,2,5:12",
+      "lexicographic_comparator_choice": [
+        25,
+        121
+      ],
+      "minimum_component_count": 1,
+      "role": "development",
+      "selected_containment": {
+        "base_pair": [
+          25,
+          121
+        ],
+        "complement": [
+          49,
+          169
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 12,
+          "open_cells": 11,
+          "raw_in_window_thresholds": 10,
+          "unique_threshold_events_including_window_endpoints": 12
+        },
+        "violations": []
+      },
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "43/216",
+                "193/968"
+              ],
+              "laps": [
+                5,
+                24
+              ],
+              "left_included": true,
+              "midpoint": "5207/26136",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "6217/26136",
+                  "signed_margin": "1475/13068",
+                  "speed": 49
+                },
+                {
+                  "distance": "8641/26136",
+                  "signed_margin": "2687/13068",
+                  "speed": 169
+                }
+              ],
+              "midpoint": "5207/26136"
+            }
+          ],
+          "pair_score": "1475/13068"
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "271/1352",
+                "21/104"
+              ],
+              "laps": [
+                5,
+                34
+              ],
+              "left_included": false,
+              "midpoint": "34/169",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "24/169",
+                  "signed_margin": "23/1352",
+                  "speed": 49
+                },
+                {
+                  "distance": "58/169",
+                  "signed_margin": "295/1352",
+                  "speed": 121
+                }
+              ],
+              "midpoint": "34/169"
+            }
+          ],
+          "pair_score": "23/1352"
+        }
+      ],
+      "window": [
+        "43/216",
+        "5/24"
+      ]
+    },
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 12,
+            "open_cells": 11,
+            "raw_in_window_thresholds": 10,
+            "unique_threshold_events_including_window_endpoints": 12
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "containment_holds": false,
+          "event_ledger": {
+            "event_points_checked": 12,
+            "open_cells": 11,
+            "raw_in_window_thresholds": 10,
+            "unique_threshold_events_including_window_endpoints": 12
+          },
+          "violations": [
+            {
+              "blocking": [
+                49
+              ],
+              "interval": [
+                "83/104",
+                "313/392"
+              ],
+              "kind": "open_cell",
+              "witness": "1017/1274"
+            }
+          ]
+        }
+      ],
+      "candidate_choice": [
+        25,
+        121
+      ],
+      "candidate_score": "1475/13068",
+      "id": "squares:1,2,5:39",
+      "lexicographic_comparator_choice": [
+        25,
+        121
+      ],
+      "minimum_component_count": 1,
+      "role": "development",
+      "selected_containment": {
+        "base_pair": [
+          25,
+          121
+        ],
+        "complement": [
+          49,
+          169
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 12,
+          "open_cells": 11,
+          "raw_in_window_thresholds": 10,
+          "unique_threshold_events_including_window_endpoints": 12
+        },
+        "violations": []
+      },
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "775/968",
+                "173/216"
+              ],
+              "laps": [
+                20,
+                97
+              ],
+              "left_included": false,
+              "midpoint": "20929/26136",
+              "right_included": true
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "6217/26136",
+                  "signed_margin": "1475/13068",
+                  "speed": 49
+                },
+                {
+                  "distance": "8641/26136",
+                  "signed_margin": "2687/13068",
+                  "speed": 169
+                }
+              ],
+              "midpoint": "20929/26136"
+            }
+          ],
+          "pair_score": "1475/13068"
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "83/104",
+                "1081/1352"
+              ],
+              "laps": [
+                20,
+                135
+              ],
+              "left_included": false,
+              "midpoint": "135/169",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "24/169",
+                  "signed_margin": "23/1352",
+                  "speed": 49
+                },
+                {
+                  "distance": "58/169",
+                  "signed_margin": "295/1352",
+                  "speed": 121
+                }
+              ],
+              "midpoint": "135/169"
+            }
+          ],
+          "pair_score": "23/1352"
+        }
+      ],
+      "window": [
+        "19/24",
+        "173/216"
+      ]
+    },
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        }
+      ],
+      "candidate_choice": [
+        21,
+        89
+      ],
+      "candidate_score": "247/712",
+      "id": "fibonacci:1,2,4:1",
+      "lexicographic_comparator_choice": [
+        21,
+        55
+      ],
+      "minimum_component_count": 1,
+      "role": "archival_control",
+      "selected_containment": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 18,
+          "open_cells": 17,
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18
+        },
+        "violations": []
+      },
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "23/440",
+                "3/56"
+              ],
+              "laps": [
+                1,
+                3
+              ],
+              "left_included": false,
+              "midpoint": "163/3080",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "893/3080",
+                  "signed_margin": "127/770",
+                  "speed": 89
+                },
+                {
+                  "distance": "146/385",
+                  "signed_margin": "783/3080",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "163/3080"
+            }
+          ],
+          "pair_score": "127/770"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "31/712",
+                "33/712"
+              ],
+              "laps": [
+                1,
+                4
+              ],
+              "left_included": false,
+              "midpoint": "4/89",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "42/89",
+                  "signed_margin": "247/712",
+                  "speed": 55
+                },
+                {
+                  "distance": "42/89",
+                  "signed_margin": "247/712",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "4/89"
+            }
+          ],
+          "pair_score": "247/712"
+        }
+      ],
+      "window": [
+        "9/272",
+        "15/272"
+      ]
+    },
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        }
+      ],
+      "candidate_choice": [
+        21,
+        89
+      ],
+      "candidate_score": "239/712",
+      "id": "fibonacci:1,2,4:11",
+      "lexicographic_comparator_choice": [
+        21,
+        55
+      ],
+      "minimum_component_count": 1,
+      "role": "archival_control",
+      "selected_containment": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 18,
+          "open_cells": 17,
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18
+        },
+        "violations": []
+      },
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "55/168",
+                "29/88"
+              ],
+              "laps": [
+                7,
+                18
+              ],
+              "left_included": false,
+              "midpoint": "607/1848",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "431/1848",
+                  "signed_margin": "25/231",
+                  "speed": 89
+                },
+                {
+                  "distance": "23/77",
+                  "signed_margin": "107/616",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "607/1848"
+            }
+          ],
+          "pair_score": "25/231"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "239/712",
+                "241/712"
+              ],
+              "laps": [
+                7,
+                30
+              ],
+              "left_included": false,
+              "midpoint": "30/89",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "41/89",
+                  "signed_margin": "239/712",
+                  "speed": 55
+                },
+                {
+                  "distance": "41/89",
+                  "signed_margin": "239/712",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "30/89"
+            }
+          ],
+          "pair_score": "239/712"
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "383/1152",
+                "385/1152"
+              ],
+              "laps": [
+                7,
+                48
+              ],
+              "left_included": false,
+              "midpoint": "1/3",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "1/3",
+                  "signed_margin": "5/24",
+                  "speed": 55
+                },
+                {
+                  "distance": "1/3",
+                  "signed_margin": "5/24",
+                  "speed": 89
+                }
+              ],
+              "midpoint": "1/3"
+            }
+          ],
+          "pair_score": "5/24"
+        }
+      ],
+      "window": [
+        "89/272",
+        "95/272"
+      ]
+    },
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        }
+      ],
+      "candidate_choice": [
+        21,
+        89
+      ],
+      "candidate_score": "239/712",
+      "id": "fibonacci:1,2,4:22",
+      "lexicographic_comparator_choice": [
+        21,
+        55
+      ],
+      "minimum_component_count": 1,
+      "role": "archival_control",
+      "selected_containment": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 18,
+          "open_cells": 17,
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18
+        },
+        "violations": []
+      },
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "59/88",
+                "113/168"
+              ],
+              "laps": [
+                14,
+                37
+              ],
+              "left_included": false,
+              "midpoint": "1241/1848",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "431/1848",
+                  "signed_margin": "25/231",
+                  "speed": 89
+                },
+                {
+                  "distance": "23/77",
+                  "signed_margin": "107/616",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "1241/1848"
+            }
+          ],
+          "pair_score": "25/231"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "471/712",
+                "473/712"
+              ],
+              "laps": [
+                14,
+                59
+              ],
+              "left_included": false,
+              "midpoint": "59/89",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "41/89",
+                  "signed_margin": "239/712",
+                  "speed": 55
+                },
+                {
+                  "distance": "41/89",
+                  "signed_margin": "239/712",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "59/89"
+            }
+          ],
+          "pair_score": "239/712"
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "767/1152",
+                "769/1152"
+              ],
+              "laps": [
+                14,
+                96
+              ],
+              "left_included": false,
+              "midpoint": "2/3",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "1/3",
+                  "signed_margin": "5/24",
+                  "speed": 55
+                },
+                {
+                  "distance": "1/3",
+                  "signed_margin": "5/24",
+                  "speed": 89
+                }
+              ],
+              "midpoint": "2/3"
+            }
+          ],
+          "pair_score": "5/24"
+        }
+      ],
+      "window": [
+        "177/272",
+        "183/272"
+      ]
+    },
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 18,
+            "open_cells": 17,
+            "raw_in_window_thresholds": 16,
+            "unique_threshold_events_including_window_endpoints": 18
+          },
+          "violations": []
+        }
+      ],
+      "candidate_choice": [
+        21,
+        89
+      ],
+      "candidate_score": "247/712",
+      "id": "fibonacci:1,2,4:32",
+      "lexicographic_comparator_choice": [
+        21,
+        55
+      ],
+      "minimum_component_count": 1,
+      "role": "archival_control",
+      "selected_containment": {
+        "base_pair": [
+          21,
+          89
+        ],
+        "complement": [
+          55,
+          144
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 18,
+          "open_cells": 17,
+          "raw_in_window_thresholds": 16,
+          "unique_threshold_events_including_window_endpoints": 18
+        },
+        "violations": []
+      },
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "53/56",
+                "417/440"
+              ],
+              "laps": [
+                20,
+                52
+              ],
+              "left_included": false,
+              "midpoint": "2917/3080",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "893/3080",
+                  "signed_margin": "127/770",
+                  "speed": 89
+                },
+                {
+                  "distance": "146/385",
+                  "signed_margin": "783/3080",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "2917/3080"
+            }
+          ],
+          "pair_score": "127/770"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "679/712",
+                "681/712"
+              ],
+              "laps": [
+                20,
+                85
+              ],
+              "left_included": false,
+              "midpoint": "85/89",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "42/89",
+                  "signed_margin": "247/712",
+                  "speed": 55
+                },
+                {
+                  "distance": "42/89",
+                  "signed_margin": "247/712",
+                  "speed": 144
+                }
+              ],
+              "midpoint": "85/89"
+            }
+          ],
+          "pair_score": "247/712"
+        }
+      ],
+      "window": [
+        "257/272",
+        "263/272"
+      ]
+    },
+    {
+      "all_tied_pair_oracle": [
+        {
+          "base_pair": [
+            6,
+            11
+          ],
+          "complement": [
+            7,
+            16
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 10,
+            "open_cells": 9,
+            "raw_in_window_thresholds": 9,
+            "unique_threshold_events_including_window_endpoints": 10
+          },
+          "violations": []
+        },
+        {
+          "base_pair": [
+            11,
+            16
+          ],
+          "complement": [
+            6,
+            7
+          ],
+          "containment_holds": true,
+          "event_ledger": {
+            "event_points_checked": 10,
+            "open_cells": 9,
+            "raw_in_window_thresholds": 9,
+            "unique_threshold_events_including_window_endpoints": 10
+          },
+          "violations": []
+        }
+      ],
+      "candidate_choice": [
+        6,
+        11
+      ],
+      "candidate_score": "59/264",
+      "id": "strict_16",
+      "lexicographic_comparator_choice": [
+        6,
+        11
+      ],
+      "minimum_component_count": 1,
+      "role": "named_control",
+      "selected_containment": {
+        "base_pair": [
+          6,
+          11
+        ],
+        "complement": [
+          7,
+          16
+        ],
+        "containment_holds": true,
+        "event_ledger": {
+          "event_points_checked": 10,
+          "open_cells": 9,
+          "raw_in_window_thresholds": 9,
+          "unique_threshold_events_including_window_endpoints": 10
+        },
+        "violations": []
+      },
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "tied_pair_scores": [
+        {
+          "base_pair": [
+            6,
+            11
+          ],
+          "complement": [
+            7,
+            16
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "31/88",
+                "17/48"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "left_included": false,
+              "midpoint": "373/1056",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "499/1056",
+                  "signed_margin": "367/1056",
+                  "speed": 7
+                },
+                {
+                  "distance": "23/66",
+                  "signed_margin": "59/264",
+                  "speed": 16
+                }
+              ],
+              "midpoint": "373/1056"
+            }
+          ],
+          "pair_score": "59/264"
+        },
+        {
+          "base_pair": [
+            11,
+            16
+          ],
+          "complement": [
+            6,
+            7
+          ],
+          "component_count": 1,
+          "components": [
+            {
+              "interval": [
+                "47/128",
+                "3/8"
+              ],
+              "laps": [
+                4,
+                6
+              ],
+              "left_included": false,
+              "midpoint": "95/256",
+              "right_included": false
+            }
+          ],
+          "midpoint_rows": [
+            {
+              "complement_phases": [
+                {
+                  "distance": "29/128",
+                  "signed_margin": "13/128",
+                  "speed": 6
+                },
+                {
+                  "distance": "103/256",
+                  "signed_margin": "71/256",
+                  "speed": 7
+                }
+              ],
+              "midpoint": "95/256"
+            }
+          ],
+          "pair_score": "13/128"
+        }
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    }
+  ],
+  "reflection_checks": [
+    {
+      "candidate_choice_equal": true,
+      "candidate_score_equal": true,
+      "oracle_outcomes_equal": true,
+      "records": [
+        "squares:1,2,5:12",
+        "squares:1,2,5:39"
+      ]
+    },
+    {
+      "candidate_choice_equal": true,
+      "candidate_score_equal": true,
+      "oracle_outcomes_equal": true,
+      "records": [
+        "fibonacci:1,2,4:1",
+        "fibonacci:1,2,4:32"
+      ]
+    },
+    {
+      "candidate_choice_equal": true,
+      "candidate_score_equal": true,
+      "oracle_outcomes_equal": true,
+      "records": [
+        "fibonacci:1,2,4:11",
+        "fibonacci:1,2,4:22"
+      ]
+    }
+  ],
+  "status": "PASS",
+  "verification_scalar_fields": 797
+}

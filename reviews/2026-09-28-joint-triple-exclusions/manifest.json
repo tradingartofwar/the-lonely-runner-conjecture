@@ -1,0 +1,98 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "01c3ea2658a51e138f89837bf16ab44f16c81007",
+  "protocol_sha256": "ad4746abe0a7b34ff0e4c63a1a3f1b18fab9ddbdb06a42da702e7a75b9f5db78",
+  "question": "What smallest simultaneous subset of the four physical inclusive-triple upper bounds rules out every pair-compatible complete cover on the archived collective-only runner window?",
+  "status": "OBSERVED/REPRODUCED in the frozen four-coordinate contract; no general selection, unrestricted information-minimality, new existence coverage, novelty or runner-realizability claim",
+  "delegation": {
+    "calculation": "calculate created primary.py and results.json",
+    "independent_verification": "verify created verify.py, verification.json and verification.md without importing primary functions or the primary LP helper",
+    "adversarial_review": "challenge created challenge.md and audited directions, quantifiers, monotonicity, controls, prior-work boundaries and all final claims",
+    "coordination": "root verified the live continuation, froze the protocol, reviewed all outputs, replayed both implementations, wrote the note and updated continuity"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-joint-triple-exclusions/primary.py --check",
+    "python -S -B reviews/2026-09-28-joint-triple-exclusions/verify.py --check"
+  ],
+  "verification": {
+    "coordinate_lps": 49,
+    "collective_lps": 3,
+    "total_exact_lps": 52,
+    "logical_states_per_lp": 16,
+    "independent_exact_simplex_pivots": 883,
+    "physical_threshold_cells": 108,
+    "target_cells": 17,
+    "reflected_target_cells": 17,
+    "strict16_cells": 9,
+    "doubling112_cells": 57,
+    "tight13_cells": 8,
+    "zero_optimum_coordinate_countermodels": 33,
+    "target_zero_countermodels": 9,
+    "strict16_zero_countermodels": 8,
+    "tight13_zero_countermodels": 16,
+    "proper_subset_monotonicity_comparisons": 195,
+    "independent_method": "Exact threshold-event reconstruction and a separately implemented rational two-phase simplex with Bland pivots; no primary import and no floating optimizer"
+  },
+  "results": {
+    "target_velocities": [0,7,8,15,23,38,61,100],
+    "target_core_speeds": [7,8,23],
+    "target_residual_speeds": [15,38,61,100],
+    "target_window": ["33/184","39/184"],
+    "reflected_window": ["145/184","151/184"],
+    "actual_uncovered_duration": "1/600",
+    "physical_triple_bounds": {
+      "15,38,61": "0",
+      "15,38,100": "0",
+      "15,61,100": "1/48800",
+      "38,61,100": "119/231800"
+    },
+    "inclusion_minimal_subsets": [
+      {
+        "triples": [[15,38,61],[15,38,100]],
+        "minimum_U": "49/524400",
+        "selected_by_frozen_rule": true
+      },
+      {
+        "triples": [[15,61,100],[38,61,100]],
+        "minimum_U": "13/22800",
+        "selected_by_frozen_rule": false
+      }
+    ],
+    "all_four_minimum_U": "1/600",
+    "collective_H_bound": "99/185440",
+    "collective_minimum_U": "1/600",
+    "strict16_minimal_repair": [[6,11,16]],
+    "strict16_minimum_U": "1/896",
+    "doubling112_pair_only_minimum_U": "761/32256",
+    "tight13_all_duration_minima": "0",
+    "tight13_isolated_equality": "3/8"
+  },
+  "dependencies": {
+    "readback": "Python standard library only; both archived commands pass with python -S",
+    "primary_regeneration": "The archived helper may use NumPy/SciPy to propose solutions, but every accepted primal and dual is verified with exact Fraction arithmetic",
+    "independent_verification": "Python standard library only; exact rational optimizer; no primary import"
+  },
+  "prior_work_boundaries": [
+    "The successful dual forms are the previously archived five-edge K4-minus-one-edge corrections",
+    "The sparse two-test selector and alternate-window dispatch are prior project results",
+    "The symmetric abstract collective model is a read-only quantifier comparison"
+  ],
+  "scope_limits": [
+    "Reference 0, threshold 1/8, one target representative and its reflection check only",
+    "Minimality concerns subsets of four fixed supplied upper bounds, not arbitrary geometric facts or computation cost",
+    "Complete-cover countermodels are abstract measurable-event distributions, not asserted runner configurations",
+    "A supplied H scalar is charged as one optimization input, but its current derivation uses all four triples and Q",
+    "No new speed, core, window, reference, broad scan, +7/+9 work, outreach, paid compute, main merge or novelty audit",
+    "AI calculation, separate AI verification and adversarial AI review are not independent human mathematical validation"
+  ],
+  "sha256": {
+    "reviews/2026-09-28-joint-triple-exclusions/protocol.json": "ad4746abe0a7b34ff0e4c63a1a3f1b18fab9ddbdb06a42da702e7a75b9f5db78",
+    "reviews/2026-09-28-joint-triple-exclusions/primary.py": "b4e2f94812d6489f4c111b8f87e1cb5f3e7dd846de1876a1bd36d07a05dfa0f1",
+    "reviews/2026-09-28-joint-triple-exclusions/results.json": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+    "reviews/2026-09-28-joint-triple-exclusions/verify.py": "93753085a89422f18f5f9af8646051aa8a6a234628dcc2575f6eeef0c846d47d",
+    "reviews/2026-09-28-joint-triple-exclusions/verification.json": "314252497ebb6c8f65b3b9cf0a6473a3025fbf23f172771fc76c04794728a70f",
+    "reviews/2026-09-28-joint-triple-exclusions/verification.md": "ee6defc3e495342be8ed3b3706865174ea2b33b7f53fd782cdd5211481318b6b",
+    "reviews/2026-09-28-joint-triple-exclusions/challenge.md": "feb0efb5ddc0d966f3b4ffbec58dac62bc68895ec3cf7ede6d17eab9e8b2e502",
+    "notes/JOINT_TRIPLE_EXCLUSIONS_2026_09_28.md": "0155912535c13c607981dc48cd6fc27f94714d2bf9dd942d5e3d4c7e3880c5df"
+  }
+}

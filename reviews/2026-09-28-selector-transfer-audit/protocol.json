@@ -1,0 +1,91 @@
+{
+  "baseline": "6cb881ad661fd2c268a19c4418a6624e17969326",
+  "status": "FROZEN BEFORE SELECTOR-TRANSFER CALCULATION",
+  "question": "On the eighteen already archived positive-duration windows missed by tree certificates, how often does the unchanged positive-slack/minimum-component one-query rule certify, and when it fails is that a ranking failure or a limitation of every eligible shared-pair containment?",
+  "source_contract": {
+    "archived_windows": "reviews/2026-09-28-collective-window-audit/results.json",
+    "archived_windows_sha256": "daf0dabdfb5ac191d890de801b37c0980a833ce7bab835832da3f8f646cb3d2e",
+    "floor_sum_protocol": "reviews/2026-09-28-floor-sum-component-count/protocol.json",
+    "floor_sum_protocol_sha256": "a398539b747b9510259e5a134090f3eb6430370588d735bdec12f67260ec5724",
+    "floor_sum_results": "reviews/2026-09-28-floor-sum-component-count/results.json",
+    "floor_sum_results_sha256": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "prior_one_query_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "prior_one_query_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+    "control_roles": "reviews/2026-09-28-cover-obligations/results.json",
+    "control_roles_sha256": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e"
+  },
+  "frozen_domain": {
+    "records": "Exactly the 18 labelled records in archived_windows.cases, with their supplied residual speed quadruples, rational windows, pair moments and previously verified pair-only minima.",
+    "development_records": [
+      "perturbed_chain:1,2,4:4",
+      "perturbed_chain:1,2,4:19"
+    ],
+    "development_interpretation": "These are the target and its reflection used to create the rule. They are never counted as transfer evidence.",
+    "transfer_records": "The other 16 labelled records. They are an archival transfer audit, not prospective held-out data; the repository already contains their full geometry.",
+    "reflection_policy": "Report both labelled records and the nine reflection pairs. Do not call reflections independent examples; exact reflected outcomes must agree."
+  },
+  "frozen_prequery_branches": {
+    "pair_only_exit": "If the supplied exact pair-only minimum uncovered duration is positive, stop with the prior pair-only certificate. Make no selector containment query. Floor-sum counts may be computed only as validation diagnostics and are not charged to the active rule.",
+    "active_pair_zero": "If the supplied pair-only minimum is zero, compute C_0=|J|-sum singles+sum pairs. For base pair {a,b} with complement {c,d}, potential slack is C_0-O_cd. Only strictly positive slack is eligible.",
+    "no_eligible_pair": "If no potential slack is strictly positive, make no query and preserve the failed duration branch. An independently valid isolated equality point is not positive duration and remains a separate control outcome."
+  },
+  "frozen_rules": {
+    "fewest_components": "Among eligible base pairs, minimize the exact floor-sum positive-component count of B_a intersect B_b; break ties directly by physical-speed lexicographic order.",
+    "largest_slack_comparator": "Among eligible base pairs, maximize potential slack; break ties directly by physical-speed lexicographic order.",
+    "query": "Each rule receives at most one compound query B_a intersect B_b subset Safe_c intersect Safe_d on its selected pair. If both rules select the same pair, reuse the same physical calculation.",
+    "success": "Containment plus positive potential slack certifies uncovered duration at least that slack by the previously known five-edge correction.",
+    "failure": "A failed selected containment ends that rule's active outcome. No second pair, score modification, alternate window or endpoint rescue is permitted.",
+    "no_retuning": "Do not alter eligibility, scores, ties, query semantics, case dispatch or controls after any outcome is seen."
+  },
+  "frozen_calculation": {
+    "preselection_projection": "Before any component or containment calculation, irreversibly project the monolithic archive to record id, case id, residual speeds, window, total/single/pair moments and supplied pair-only minimum only.",
+    "component_counter": "Use the already frozen strict open-strip half-plane/floor-sum identity. No primary per-lap scan or interval construction is permitted for component counts.",
+    "selected_query": "After both selections are fixed, reconstruct exact selected base-pair components and test complement safety with strict blocking ||v*t||<1/8 and safe threshold equality.",
+    "postselection_oracle_audit": "Only after both one-query outcomes are immutable, test every eligible pair containment. This audit may classify a failed selection as ranking failure when another eligible pair certifies, or certificate-class failure when none does. Oracle results may not change either frozen rule.",
+    "postselection_archive_comparison": "Only after decisions and oracle classifications are fixed, compare with archived physical moments, triple classifications, development outcomes and prior controls."
+  },
+  "controls": {
+    "strict_16": "Pair-only zero; preserve the prior two eligible pairs, lexicographic tie behavior, successful {6,11} containment and 1/896 positive-duration certificate.",
+    "doubling_112": "Pair-only positive at 761/32256; exit before an active selector query. Any old failed selector query remains diagnostic prior work, not part of this active audit.",
+    "tight_13": "Pair-only zero and no strictly positive slack; make no duration query. Preserve valid isolated equality t=3/8 separately from positive duration.",
+    "known_prior_work": "The sparse triple-exclusion selector, its alternate-window dispatch, shared-pair five-edge correction and prior target containments are existing repository results. Compare against them; do not present them as new."
+  },
+  "cost_ledger": {
+    "floor_sum": "Record all-pair validation costs separately from active eligible-pair score costs, with the same primitive fields as the frozen floor-sum study.",
+    "containment": "Record selected logical queries, unique physical queries, base components inspected, complement-speed tests, threshold events/open cells or equivalent exact primitive counts.",
+    "oracle": "Charge all eligible-pair postselection containments separately. Do not fold oracle work into the one-query rule.",
+    "comparison_policy": "Do not combine unlike operations into a synthetic score or infer wall-clock speed."
+  },
+  "verification": {
+    "primary": "Exact integers and fractions.Fraction only; deterministic write/check modes.",
+    "independent": "No import of primary.py or its floor-sum/containment helpers. Reconstruct pair components and containments from threshold events, and independently recompute eligibility and selected outcomes.",
+    "adversarial": "Attack information leakage, reflection double-counting, pair-only dispatch, endpoint semantics, oracle contamination, ranking-versus-class classification, cost language and prior-work claims."
+  },
+  "scope": {
+    "archived_records": 18,
+    "reflection_pairs": 9,
+    "development_records": 2,
+    "transfer_records": 16,
+    "new_speeds": 0,
+    "new_windows": 0,
+    "new_references": 0,
+    "max_active_queries_per_rule_per_record": 1,
+    "arithmetic": "Exact rational/integer only; no floating-point decisions",
+    "forbidden": [
+      "new speed, window, core or reference generation",
+      "broad or all-reference scan",
+      "fallback query or post-result retuning",
+      "using postselection oracle results to change the frozen rule",
+      "alternate-window campaign",
+      "+7 or +9 work",
+      "runtime, novelty, prospective-held-out, whole-configuration or general Lonely Runner claim"
+    ]
+  },
+  "interpretation_limits": [
+    "All records are selected-reference physical windows whose full geometry already exists in the repository.",
+    "A positive duration certificate is distinct from an isolated valid equality point.",
+    "A failed local certificate is not failed loneliness; every archived record has positive actual duration by source construction.",
+    "Reflection labels are repeated geometry, not independent validation.",
+    "AI agreement is not independent mathematical validation."
+  ]
+}

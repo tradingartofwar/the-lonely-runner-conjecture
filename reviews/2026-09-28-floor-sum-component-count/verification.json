@@ -1,0 +1,3653 @@
+{
+  "all_checks_passed": true,
+  "arithmetic": "integers and fractions.Fraction only; no floating-point decisions",
+  "baseline": "1d3bdf05b930f5765db866e4614bb2733eaa219d",
+  "cases": {
+    "collective_target": {
+      "archived_selected_base_pair": [
+        15,
+        38
+      ],
+      "independent_selected_base_pair": [
+        15,
+        38
+      ],
+      "pairs": [
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            15,
+            38
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -53,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 7,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 0,
+                  "n": 8,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            },
+            {
+              "H": 1,
+              "K": 52,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 7,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 8,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              3,
+              8
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "63/304",
+                  "5/24"
+                ],
+                "laps": [
+                  3,
+                  8
+                ],
+                "sample": "379/1824"
+              }
+            ],
+            "events": 7,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 6,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 3,
+            "m_min": 3,
+            "n_max": 8,
+            "n_min": 7,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "63/304",
+                "5/24"
+              ],
+              "laps": [
+                3,
+                8
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 53,
+            "strict_D_lower": -53,
+            "strict_D_upper": 53
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            15,
+            61
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 1,
+              "K": -76,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 11,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 0,
+                  "n": 12,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 13,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            },
+            {
+              "H": 2,
+              "K": 75,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 11,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 12,
+                  "unclipped_m_upper": 3
+                },
+                {
+                  "contribution": 1,
+                  "n": 13,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              3,
+              12
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "95/488",
+                  "97/488"
+                ],
+                "laps": [
+                  3,
+                  12
+                ],
+                "sample": "12/61"
+              }
+            ],
+            "events": 8,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 7,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 3,
+            "m_min": 3,
+            "n_max": 13,
+            "n_min": 11,
+            "rectangle_points_scanned": 3
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "95/488",
+                "97/488"
+              ],
+              "laps": [
+                3,
+                12
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 76,
+            "strict_D_lower": -76,
+            "strict_D_upper": 76
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            15,
+            100
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 1,
+              "K": -115,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 18,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 0,
+                  "n": 19,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 0,
+                  "n": 20,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            },
+            {
+              "H": 2,
+              "K": 114,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 18,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 0,
+                  "n": 19,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 20,
+                  "unclipped_m_upper": 3
+                },
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              3,
+              20
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "159/800",
+                  "161/800"
+                ],
+                "laps": [
+                  3,
+                  20
+                ],
+                "sample": "1/5"
+              }
+            ],
+            "events": 11,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 10,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 3,
+            "m_min": 3,
+            "n_max": 21,
+            "n_min": 18,
+            "rectangle_points_scanned": 4
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "159/800",
+                "161/800"
+              ],
+              "laps": [
+                3,
+                20
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 115,
+            "strict_D_lower": -115,
+            "strict_D_upper": 115
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            38,
+            61
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 2,
+          "column_half_planes": [
+            {
+              "H": 2,
+              "K": -99,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 11,
+                  "unclipped_m_upper": 6
+                },
+                {
+                  "contribution": 1,
+                  "n": 12,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 1,
+                  "n": 13,
+                  "unclipped_m_upper": 7
+                }
+              ]
+            },
+            {
+              "H": 4,
+              "K": 98,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 11,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 1,
+                  "n": 12,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 2,
+                  "n": 13,
+                  "unclipped_m_upper": 8
+                }
+              ]
+            }
+          ],
+          "direct_count": 2,
+          "direct_points": [
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              13
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "55/304",
+                  "89/488"
+                ],
+                "laps": [
+                  7,
+                  11
+                ],
+                "sample": "6737/37088"
+              },
+              {
+                "interval": [
+                  "103/488",
+                  "39/184"
+                ],
+                "laps": [
+                  8,
+                  13
+                ],
+                "sample": "1187/5612"
+              }
+            ],
+            "events": 9,
+            "jointly_blocked_open_cells": 2,
+            "open_cells": 8,
+            "positive_components": 2
+          },
+          "lap_rectangle": {
+            "m_max": 8,
+            "m_min": 7,
+            "n_max": 13,
+            "n_min": 11,
+            "rectangle_points_scanned": 6
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "55/304",
+                "89/488"
+              ],
+              "laps": [
+                7,
+                11
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "103/488",
+                "39/184"
+              ],
+              "laps": [
+                8,
+                13
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 99,
+            "strict_D_lower": -99,
+            "strict_D_upper": 99
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            38,
+            100
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 2,
+          "column_half_planes": [
+            {
+              "H": 3,
+              "K": -138,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 18,
+                  "unclipped_m_upper": 6
+                },
+                {
+                  "contribution": 1,
+                  "n": 19,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 1,
+                  "n": 20,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 7
+                }
+              ]
+            },
+            {
+              "H": 5,
+              "K": 137,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 18,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 1,
+                  "n": 19,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 1,
+                  "n": 20,
+                  "unclipped_m_upper": 7
+                },
+                {
+                  "contribution": 2,
+                  "n": 21,
+                  "unclipped_m_upper": 8
+                }
+              ]
+            }
+          ],
+          "direct_count": 2,
+          "direct_points": [
+            [
+              7,
+              18
+            ],
+            [
+              8,
+              21
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "55/304",
+                  "29/160"
+                ],
+                "laps": [
+                  7,
+                  18
+                ],
+                "sample": "1101/6080"
+              },
+              {
+                "interval": [
+                  "167/800",
+                  "169/800"
+                ],
+                "laps": [
+                  8,
+                  21
+                ],
+                "sample": "21/100"
+              }
+            ],
+            "events": 12,
+            "jointly_blocked_open_cells": 2,
+            "open_cells": 11,
+            "positive_components": 2
+          },
+          "lap_rectangle": {
+            "m_max": 8,
+            "m_min": 7,
+            "n_max": 21,
+            "n_min": 18,
+            "rectangle_points_scanned": 8
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "55/304",
+                "29/160"
+              ],
+              "laps": [
+                7,
+                18
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "167/800",
+                "169/800"
+              ],
+              "laps": [
+                8,
+                21
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 138,
+            "strict_D_lower": -138,
+            "strict_D_upper": 138
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            61,
+            100
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 3,
+          "column_half_planes": [
+            {
+              "H": 4,
+              "K": -161,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 18,
+                  "unclipped_m_upper": 10
+                },
+                {
+                  "contribution": 1,
+                  "n": 19,
+                  "unclipped_m_upper": 11
+                },
+                {
+                  "contribution": 1,
+                  "n": 20,
+                  "unclipped_m_upper": 11
+                },
+                {
+                  "contribution": 2,
+                  "n": 21,
+                  "unclipped_m_upper": 12
+                }
+              ]
+            },
+            {
+              "H": 7,
+              "K": 160,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 18,
+                  "unclipped_m_upper": 11
+                },
+                {
+                  "contribution": 1,
+                  "n": 19,
+                  "unclipped_m_upper": 11
+                },
+                {
+                  "contribution": 2,
+                  "n": 20,
+                  "unclipped_m_upper": 12
+                },
+                {
+                  "contribution": 3,
+                  "n": 21,
+                  "unclipped_m_upper": 13
+                }
+              ]
+            }
+          ],
+          "direct_count": 3,
+          "direct_points": [
+            [
+              11,
+              18
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              21
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "33/184",
+                  "29/160"
+                ],
+                "laps": [
+                  11,
+                  18
+                ],
+                "sample": "1327/7360"
+              },
+              {
+                "interval": [
+                  "159/800",
+                  "97/488"
+                ],
+                "laps": [
+                  12,
+                  20
+                ],
+                "sample": "19399/97600"
+              },
+              {
+                "interval": [
+                  "103/488",
+                  "169/800"
+                ],
+                "laps": [
+                  13,
+                  21
+                ],
+                "sample": "20609/97600"
+              }
+            ],
+            "events": 13,
+            "jointly_blocked_open_cells": 3,
+            "open_cells": 12,
+            "positive_components": 3
+          },
+          "lap_rectangle": {
+            "m_max": 13,
+            "m_min": 11,
+            "n_max": 21,
+            "n_min": 18,
+            "rectangle_points_scanned": 12
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "33/184",
+                "29/160"
+              ],
+              "laps": [
+                11,
+                18
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "159/800",
+                "97/488"
+              ],
+              "laps": [
+                12,
+                20
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "103/488",
+                "169/800"
+              ],
+              "laps": [
+                13,
+                21
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 161,
+            "strict_D_lower": -161,
+            "strict_D_upper": 161
+          }
+        }
+      ],
+      "primary_selected_base_pair": [
+        15,
+        38
+      ],
+      "selection_matches_archive": true,
+      "selection_matches_primary": true,
+      "speeds": [
+        15,
+        38,
+        61,
+        100
+      ],
+      "window": [
+        "33/184",
+        "39/184"
+      ]
+    },
+    "doubling_112": {
+      "archived_selected_base_pair": [
+        56,
+        64
+      ],
+      "independent_selected_base_pair": [
+        56,
+        64
+      ],
+      "pairs": [
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            56,
+            64
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 2,
+          "column_half_planes": [
+            {
+              "H": 19,
+              "K": -120,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 18,
+                  "unclipped_m_upper": 15
+                },
+                {
+                  "contribution": 1,
+                  "n": 19,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 2,
+                  "n": 20,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 3,
+                  "n": 21,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 4,
+                  "n": 22,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 4,
+                  "n": 23,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 5,
+                  "n": 24,
+                  "unclipped_m_upper": 20
+                }
+              ]
+            },
+            {
+              "H": 21,
+              "K": 119,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 18,
+                  "unclipped_m_upper": 15
+                },
+                {
+                  "contribution": 1,
+                  "n": 19,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 2,
+                  "n": 20,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 3,
+                  "n": 21,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 4,
+                  "n": 22,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 5,
+                  "n": 23,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 6,
+                  "n": 24,
+                  "unclipped_m_upper": 21
+                }
+              ]
+            }
+          ],
+          "direct_count": 2,
+          "direct_points": [
+            [
+              20,
+              23
+            ],
+            [
+              21,
+              24
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "183/512",
+                  "23/64"
+                ],
+                "laps": [
+                  20,
+                  23
+                ],
+                "sample": "367/1024"
+              },
+              {
+                "interval": [
+                  "191/512",
+                  "3/8"
+                ],
+                "laps": [
+                  21,
+                  24
+                ],
+                "sample": "383/1024"
+              }
+            ],
+            "events": 25,
+            "jointly_blocked_open_cells": 2,
+            "open_cells": 24,
+            "positive_components": 2
+          },
+          "lap_rectangle": {
+            "m_max": 21,
+            "m_min": 16,
+            "n_max": 24,
+            "n_min": 18,
+            "rectangle_points_scanned": 42
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "183/512",
+                "23/64"
+              ],
+              "laps": [
+                20,
+                23
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "191/512",
+                "3/8"
+              ],
+              "laps": [
+                21,
+                24
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 120,
+            "strict_D_lower": -120,
+            "strict_D_upper": 120
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            56,
+            72
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 3,
+          "column_half_planes": [
+            {
+              "H": 21,
+              "K": -128,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 1,
+                  "n": 22,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 2,
+                  "n": 23,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 3,
+                  "n": 24,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 4,
+                  "n": 25,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 5,
+                  "n": 26,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 5,
+                  "n": 27,
+                  "unclipped_m_upper": 20
+                }
+              ]
+            },
+            {
+              "H": 24,
+              "K": 127,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 2,
+                  "n": 22,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 3,
+                  "n": 23,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 3,
+                  "n": 24,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 4,
+                  "n": 25,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 5,
+                  "n": 26,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 6,
+                  "n": 27,
+                  "unclipped_m_upper": 21
+                }
+              ]
+            }
+          ],
+          "direct_count": 3,
+          "direct_points": [
+            [
+              17,
+              22
+            ],
+            [
+              18,
+              23
+            ],
+            [
+              21,
+              27
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "175/576",
+                  "137/448"
+                ],
+                "laps": [
+                  17,
+                  22
+                ],
+                "sample": "1229/4032"
+              },
+              {
+                "interval": [
+                  "143/448",
+                  "185/576"
+                ],
+                "laps": [
+                  18,
+                  23
+                ],
+                "sample": "1291/4032"
+              },
+              {
+                "interval": [
+                  "215/576",
+                  "3/8"
+                ],
+                "laps": [
+                  21,
+                  27
+                ],
+                "sample": "431/1152"
+              }
+            ],
+            "events": 25,
+            "jointly_blocked_open_cells": 3,
+            "open_cells": 24,
+            "positive_components": 3
+          },
+          "lap_rectangle": {
+            "m_max": 21,
+            "m_min": 16,
+            "n_max": 27,
+            "n_min": 21,
+            "rectangle_points_scanned": 42
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "175/576",
+                "137/448"
+              ],
+              "laps": [
+                17,
+                22
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "143/448",
+                "185/576"
+              ],
+              "laps": [
+                18,
+                23
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "215/576",
+                "3/8"
+              ],
+              "laps": [
+                21,
+                27
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 128,
+            "strict_D_lower": -128,
+            "strict_D_upper": 128
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            56,
+            112
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 6,
+          "column_half_planes": [
+            {
+              "H": 30,
+              "K": -168,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 32,
+                  "unclipped_m_upper": 15
+                },
+                {
+                  "contribution": 1,
+                  "n": 33,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 1,
+                  "n": 34,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 2,
+                  "n": 35,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 2,
+                  "n": 36,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 3,
+                  "n": 37,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 3,
+                  "n": 38,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 4,
+                  "n": 39,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 4,
+                  "n": 40,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 5,
+                  "n": 41,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 5,
+                  "n": 42,
+                  "unclipped_m_upper": 20
+                }
+              ]
+            },
+            {
+              "H": 36,
+              "K": 167,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 32,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 1,
+                  "n": 33,
+                  "unclipped_m_upper": 16
+                },
+                {
+                  "contribution": 2,
+                  "n": 34,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 2,
+                  "n": 35,
+                  "unclipped_m_upper": 17
+                },
+                {
+                  "contribution": 3,
+                  "n": 36,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 3,
+                  "n": 37,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 4,
+                  "n": 38,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 4,
+                  "n": 39,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 5,
+                  "n": 40,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 5,
+                  "n": 41,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 6,
+                  "n": 42,
+                  "unclipped_m_upper": 21
+                }
+              ]
+            }
+          ],
+          "direct_count": 6,
+          "direct_points": [
+            [
+              16,
+              32
+            ],
+            [
+              17,
+              34
+            ],
+            [
+              18,
+              36
+            ],
+            [
+              19,
+              38
+            ],
+            [
+              20,
+              40
+            ],
+            [
+              21,
+              42
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "255/896",
+                  "257/896"
+                ],
+                "laps": [
+                  16,
+                  32
+                ],
+                "sample": "2/7"
+              },
+              {
+                "interval": [
+                  "271/896",
+                  "39/128"
+                ],
+                "laps": [
+                  17,
+                  34
+                ],
+                "sample": "17/56"
+              },
+              {
+                "interval": [
+                  "41/128",
+                  "289/896"
+                ],
+                "laps": [
+                  18,
+                  36
+                ],
+                "sample": "9/28"
+              },
+              {
+                "interval": [
+                  "303/896",
+                  "305/896"
+                ],
+                "laps": [
+                  19,
+                  38
+                ],
+                "sample": "19/56"
+              },
+              {
+                "interval": [
+                  "319/896",
+                  "321/896"
+                ],
+                "laps": [
+                  20,
+                  40
+                ],
+                "sample": "5/14"
+              },
+              {
+                "interval": [
+                  "335/896",
+                  "3/8"
+                ],
+                "laps": [
+                  21,
+                  42
+                ],
+                "sample": "671/1792"
+              }
+            ],
+            "events": 34,
+            "jointly_blocked_open_cells": 6,
+            "open_cells": 33,
+            "positive_components": 6
+          },
+          "lap_rectangle": {
+            "m_max": 21,
+            "m_min": 16,
+            "n_max": 42,
+            "n_min": 32,
+            "rectangle_points_scanned": 66
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "255/896",
+                "257/896"
+              ],
+              "laps": [
+                16,
+                32
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "271/896",
+                "39/128"
+              ],
+              "laps": [
+                17,
+                34
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "41/128",
+                "289/896"
+              ],
+              "laps": [
+                18,
+                36
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "303/896",
+                "305/896"
+              ],
+              "laps": [
+                19,
+                38
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "319/896",
+                "321/896"
+              ],
+              "laps": [
+                20,
+                40
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "335/896",
+                "3/8"
+              ],
+              "laps": [
+                21,
+                42
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 168,
+            "strict_D_lower": -168,
+            "strict_D_upper": 168
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            64,
+            72
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 3,
+          "column_half_planes": [
+            {
+              "H": 25,
+              "K": -136,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 2,
+                  "n": 22,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 3,
+                  "n": 23,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 4,
+                  "n": 24,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 4,
+                  "n": 25,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 5,
+                  "n": 26,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 6,
+                  "n": 27,
+                  "unclipped_m_upper": 23
+                }
+              ]
+            },
+            {
+              "H": 28,
+              "K": 135,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 21,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 2,
+                  "n": 22,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 3,
+                  "n": 23,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 4,
+                  "n": 24,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 5,
+                  "n": 25,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 6,
+                  "n": 26,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 7,
+                  "n": 27,
+                  "unclipped_m_upper": 24
+                }
+              ]
+            }
+          ],
+          "direct_count": 3,
+          "direct_points": [
+            [
+              22,
+              25
+            ],
+            [
+              23,
+              26
+            ],
+            [
+              24,
+              27
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "199/576",
+                  "177/512"
+                ],
+                "laps": [
+                  22,
+                  25
+                ],
+                "sample": "3185/9216"
+              },
+              {
+                "interval": [
+                  "23/64",
+                  "185/512"
+                ],
+                "laps": [
+                  23,
+                  26
+                ],
+                "sample": "369/1024"
+              },
+              {
+                "interval": [
+                  "215/576",
+                  "3/8"
+                ],
+                "laps": [
+                  24,
+                  27
+                ],
+                "sample": "431/1152"
+              }
+            ],
+            "events": 27,
+            "jointly_blocked_open_cells": 3,
+            "open_cells": 26,
+            "positive_components": 3
+          },
+          "lap_rectangle": {
+            "m_max": 24,
+            "m_min": 18,
+            "n_max": 27,
+            "n_min": 21,
+            "rectangle_points_scanned": 49
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "199/576",
+                "177/512"
+              ],
+              "laps": [
+                22,
+                25
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "23/64",
+                "185/512"
+              ],
+              "laps": [
+                23,
+                26
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "215/576",
+                "3/8"
+              ],
+              "laps": [
+                24,
+                27
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 136,
+            "strict_D_lower": -136,
+            "strict_D_upper": 136
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            64,
+            112
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 5,
+          "column_half_planes": [
+            {
+              "H": 38,
+              "K": -176,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 32,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 1,
+                  "n": 33,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 2,
+                  "n": 34,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 2,
+                  "n": 35,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 3,
+                  "n": 36,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 3,
+                  "n": 37,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 4,
+                  "n": 38,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 5,
+                  "n": 39,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 5,
+                  "n": 40,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 6,
+                  "n": 41,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 6,
+                  "n": 42,
+                  "unclipped_m_upper": 23
+                }
+              ]
+            },
+            {
+              "H": 43,
+              "K": 175,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 32,
+                  "unclipped_m_upper": 18
+                },
+                {
+                  "contribution": 2,
+                  "n": 33,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 2,
+                  "n": 34,
+                  "unclipped_m_upper": 19
+                },
+                {
+                  "contribution": 3,
+                  "n": 35,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 3,
+                  "n": 36,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 4,
+                  "n": 37,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 4,
+                  "n": 38,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 5,
+                  "n": 39,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 6,
+                  "n": 40,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 6,
+                  "n": 41,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 7,
+                  "n": 42,
+                  "unclipped_m_upper": 24
+                }
+              ]
+            }
+          ],
+          "direct_count": 5,
+          "direct_points": [
+            [
+              19,
+              33
+            ],
+            [
+              20,
+              35
+            ],
+            [
+              21,
+              37
+            ],
+            [
+              23,
+              40
+            ],
+            [
+              24,
+              42
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "151/512",
+                  "265/896"
+                ],
+                "laps": [
+                  19,
+                  33
+                ],
+                "sample": "2117/7168"
+              },
+              {
+                "interval": [
+                  "279/896",
+                  "281/896"
+                ],
+                "laps": [
+                  20,
+                  35
+                ],
+                "sample": "5/16"
+              },
+              {
+                "interval": [
+                  "295/896",
+                  "169/512"
+                ],
+                "laps": [
+                  21,
+                  37
+                ],
+                "sample": "2363/7168"
+              },
+              {
+                "interval": [
+                  "183/512",
+                  "321/896"
+                ],
+                "laps": [
+                  23,
+                  40
+                ],
+                "sample": "2565/7168"
+              },
+              {
+                "interval": [
+                  "335/896",
+                  "3/8"
+                ],
+                "laps": [
+                  24,
+                  42
+                ],
+                "sample": "671/1792"
+              }
+            ],
+            "events": 35,
+            "jointly_blocked_open_cells": 5,
+            "open_cells": 34,
+            "positive_components": 5
+          },
+          "lap_rectangle": {
+            "m_max": 24,
+            "m_min": 18,
+            "n_max": 42,
+            "n_min": 32,
+            "rectangle_points_scanned": 77
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "151/512",
+                "265/896"
+              ],
+              "laps": [
+                19,
+                33
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "279/896",
+                "281/896"
+              ],
+              "laps": [
+                20,
+                35
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "295/896",
+                "169/512"
+              ],
+              "laps": [
+                21,
+                37
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "183/512",
+                "321/896"
+              ],
+              "laps": [
+                23,
+                40
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "335/896",
+                "3/8"
+              ],
+              "laps": [
+                24,
+                42
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 176,
+            "strict_D_lower": -176,
+            "strict_D_upper": 176
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            72,
+            112
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 4,
+          "column_half_planes": [
+            {
+              "H": 34,
+              "K": -184,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 32,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 1,
+                  "n": 33,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 1,
+                  "n": 34,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 2,
+                  "n": 35,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 2,
+                  "n": 36,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 3,
+                  "n": 37,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 4,
+                  "n": 38,
+                  "unclipped_m_upper": 24
+                },
+                {
+                  "contribution": 4,
+                  "n": 39,
+                  "unclipped_m_upper": 24
+                },
+                {
+                  "contribution": 5,
+                  "n": 40,
+                  "unclipped_m_upper": 25
+                },
+                {
+                  "contribution": 6,
+                  "n": 41,
+                  "unclipped_m_upper": 26
+                },
+                {
+                  "contribution": 6,
+                  "n": 42,
+                  "unclipped_m_upper": 26
+                }
+              ]
+            },
+            {
+              "H": 38,
+              "K": 183,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 32,
+                  "unclipped_m_upper": 20
+                },
+                {
+                  "contribution": 1,
+                  "n": 33,
+                  "unclipped_m_upper": 21
+                },
+                {
+                  "contribution": 2,
+                  "n": 34,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 2,
+                  "n": 35,
+                  "unclipped_m_upper": 22
+                },
+                {
+                  "contribution": 3,
+                  "n": 36,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 3,
+                  "n": 37,
+                  "unclipped_m_upper": 23
+                },
+                {
+                  "contribution": 4,
+                  "n": 38,
+                  "unclipped_m_upper": 24
+                },
+                {
+                  "contribution": 5,
+                  "n": 39,
+                  "unclipped_m_upper": 25
+                },
+                {
+                  "contribution": 5,
+                  "n": 40,
+                  "unclipped_m_upper": 25
+                },
+                {
+                  "contribution": 6,
+                  "n": 41,
+                  "unclipped_m_upper": 26
+                },
+                {
+                  "contribution": 7,
+                  "n": 42,
+                  "unclipped_m_upper": 27
+                }
+              ]
+            }
+          ],
+          "direct_count": 4,
+          "direct_points": [
+            [
+              22,
+              34
+            ],
+            [
+              23,
+              36
+            ],
+            [
+              25,
+              39
+            ],
+            [
+              27,
+              42
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "175/576",
+                  "39/128"
+                ],
+                "laps": [
+                  22,
+                  34
+                ],
+                "sample": "701/2304"
+              },
+              {
+                "interval": [
+                  "41/128",
+                  "185/576"
+                ],
+                "laps": [
+                  23,
+                  36
+                ],
+                "sample": "739/2304"
+              },
+              {
+                "interval": [
+                  "311/896",
+                  "67/192"
+                ],
+                "laps": [
+                  25,
+                  39
+                ],
+                "sample": "1871/5376"
+              },
+              {
+                "interval": [
+                  "335/896",
+                  "3/8"
+                ],
+                "laps": [
+                  27,
+                  42
+                ],
+                "sample": "671/1792"
+              }
+            ],
+            "events": 36,
+            "jointly_blocked_open_cells": 4,
+            "open_cells": 35,
+            "positive_components": 4
+          },
+          "lap_rectangle": {
+            "m_max": 27,
+            "m_min": 21,
+            "n_max": 42,
+            "n_min": 32,
+            "rectangle_points_scanned": 77
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "175/576",
+                "39/128"
+              ],
+              "laps": [
+                22,
+                34
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "41/128",
+                "185/576"
+              ],
+              "laps": [
+                23,
+                36
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "311/896",
+                "67/192"
+              ],
+              "laps": [
+                25,
+                39
+              ],
+              "positive": true
+            },
+            {
+              "interval": [
+                "335/896",
+                "3/8"
+              ],
+              "laps": [
+                27,
+                42
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 184,
+            "strict_D_lower": -184,
+            "strict_D_upper": 184
+          }
+        }
+      ],
+      "primary_selected_base_pair": [
+        56,
+        64
+      ],
+      "selection_matches_archive": true,
+      "selection_matches_primary": true,
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    "strict_16": {
+      "archived_selected_base_pair": [
+        6,
+        11
+      ],
+      "independent_selected_base_pair": [
+        6,
+        11
+      ],
+      "pairs": [
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            6,
+            7
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 0,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -13,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 2,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            },
+            {
+              "H": 0,
+              "K": 12,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 2,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            }
+          ],
+          "direct_count": 0,
+          "direct_points": [],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [],
+            "events": 5,
+            "jointly_blocked_open_cells": 0,
+            "open_cells": 4,
+            "positive_components": 0
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 2,
+            "n_min": 2,
+            "rectangle_points_scanned": 1
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [],
+          "scaled_strip": {
+            "S": 13,
+            "strict_D_lower": -13,
+            "strict_D_upper": 13
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            6,
+            11
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -17,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 3,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 0,
+                  "n": 4,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            },
+            {
+              "H": 1,
+              "K": 16,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 3,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              4
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "31/88",
+                  "17/48"
+                ],
+                "laps": [
+                  2,
+                  4
+                ],
+                "sample": "373/1056"
+              }
+            ],
+            "events": 6,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 5,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 4,
+            "n_min": 3,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "31/88",
+                "17/48"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 17,
+            "strict_D_lower": -17,
+            "strict_D_upper": 17
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            6,
+            16
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 1,
+              "K": -22,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 5,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 1,
+                  "n": 6,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            },
+            {
+              "H": 2,
+              "K": 21,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 5,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 6,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              5
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "5/16",
+                  "41/128"
+                ],
+                "laps": [
+                  2,
+                  5
+                ],
+                "sample": "81/256"
+              }
+            ],
+            "events": 7,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 6,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 6,
+            "n_min": 5,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "5/16",
+                "41/128"
+              ],
+              "laps": [
+                2,
+                5
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 22,
+            "strict_D_lower": -22,
+            "strict_D_upper": 22
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            7,
+            11
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 1,
+              "K": -18,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 3,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            },
+            {
+              "H": 2,
+              "K": 17,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 3,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              3
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "9/32",
+                  "25/88"
+                ],
+                "laps": [
+                  2,
+                  3
+                ],
+                "sample": "199/704"
+              }
+            ],
+            "events": 5,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 4,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 4,
+            "n_min": 3,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "9/32",
+                "25/88"
+              ],
+              "laps": [
+                2,
+                3
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 18,
+            "strict_D_lower": -18,
+            "strict_D_upper": 18
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            7,
+            16
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 0,
+          "column_half_planes": [
+            {
+              "H": 2,
+              "K": -23,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 5,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 6,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            },
+            {
+              "H": 2,
+              "K": 22,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 5,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 6,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 0,
+          "direct_points": [],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [],
+            "events": 6,
+            "jointly_blocked_open_cells": 0,
+            "open_cells": 5,
+            "positive_components": 0
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 6,
+            "n_min": 5,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [],
+          "scaled_strip": {
+            "S": 23,
+            "strict_D_lower": -23,
+            "strict_D_upper": 23
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            11,
+            16
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 2,
+              "K": -27,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 5,
+                  "unclipped_m_upper": 3
+                },
+                {
+                  "contribution": 1,
+                  "n": 6,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            },
+            {
+              "H": 3,
+              "K": 26,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 5,
+                  "unclipped_m_upper": 3
+                },
+                {
+                  "contribution": 2,
+                  "n": 6,
+                  "unclipped_m_upper": 4
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              4,
+              6
+            ]
+          ],
+          "eligible": true,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "47/128",
+                  "3/8"
+                ],
+                "laps": [
+                  4,
+                  6
+                ],
+                "sample": "95/256"
+              }
+            ],
+            "events": 7,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 6,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 4,
+            "m_min": 3,
+            "n_max": 6,
+            "n_min": 5,
+            "rectangle_points_scanned": 4
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "47/128",
+                "3/8"
+              ],
+              "laps": [
+                4,
+                6
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 27,
+            "strict_D_lower": -27,
+            "strict_D_upper": 27
+          }
+        }
+      ],
+      "primary_selected_base_pair": [
+        6,
+        11
+      ],
+      "selection_matches_archive": true,
+      "selection_matches_primary": true,
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    "tight_13": {
+      "archived_selected_base_pair": null,
+      "independent_selected_base_pair": null,
+      "pairs": [
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            6,
+            7
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 0,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -13,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 2,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            },
+            {
+              "H": 0,
+              "K": 12,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 2,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            }
+          ],
+          "direct_count": 0,
+          "direct_points": [],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [],
+            "events": 5,
+            "jointly_blocked_open_cells": 0,
+            "open_cells": 4,
+            "positive_components": 0
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 2,
+            "n_min": 2,
+            "rectangle_points_scanned": 1
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [],
+          "scaled_strip": {
+            "S": 13,
+            "strict_D_lower": -13,
+            "strict_D_upper": 13
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            6,
+            11
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -17,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 3,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 0,
+                  "n": 4,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            },
+            {
+              "H": 1,
+              "K": 16,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 3,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              4
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "31/88",
+                  "17/48"
+                ],
+                "laps": [
+                  2,
+                  4
+                ],
+                "sample": "373/1056"
+              }
+            ],
+            "events": 6,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 5,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 4,
+            "n_min": 3,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "31/88",
+                "17/48"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 17,
+            "strict_D_lower": -17,
+            "strict_D_upper": 17
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            6,
+            13
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -19,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 4,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            },
+            {
+              "H": 1,
+              "K": 18,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              4
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "5/16",
+                  "33/104"
+                ],
+                "laps": [
+                  2,
+                  4
+                ],
+                "sample": "131/416"
+              }
+            ],
+            "events": 6,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 5,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 4,
+            "n_min": 4,
+            "rectangle_points_scanned": 1
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "5/16",
+                "33/104"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 19,
+            "strict_D_lower": -19,
+            "strict_D_upper": 19
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            7,
+            11
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 1,
+              "K": -18,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 3,
+                  "unclipped_m_upper": 1
+                },
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            },
+            {
+              "H": 2,
+              "K": 17,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 3,
+                  "unclipped_m_upper": 2
+                },
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              3
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "9/32",
+                  "25/88"
+                ],
+                "laps": [
+                  2,
+                  3
+                ],
+                "sample": "199/704"
+              }
+            ],
+            "events": 5,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 4,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 4,
+            "n_min": 3,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "9/32",
+                "25/88"
+              ],
+              "laps": [
+                2,
+                3
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 18,
+            "strict_D_lower": -18,
+            "strict_D_upper": 18
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            7,
+            13
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 1,
+          "column_half_planes": [
+            {
+              "H": 0,
+              "K": -20,
+              "columns": [
+                {
+                  "contribution": 0,
+                  "n": 4,
+                  "unclipped_m_upper": 1
+                }
+              ]
+            },
+            {
+              "H": 1,
+              "K": 19,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 2
+                }
+              ]
+            }
+          ],
+          "direct_count": 1,
+          "direct_points": [
+            [
+              2,
+              4
+            ]
+          ],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [
+              {
+                "interval": [
+                  "31/104",
+                  "17/56"
+                ],
+                "laps": [
+                  2,
+                  4
+                ],
+                "sample": "219/728"
+              }
+            ],
+            "events": 5,
+            "jointly_blocked_open_cells": 1,
+            "open_cells": 4,
+            "positive_components": 1
+          },
+          "lap_rectangle": {
+            "m_max": 2,
+            "m_min": 2,
+            "n_max": 4,
+            "n_min": 4,
+            "rectangle_points_scanned": 1
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [
+            {
+              "interval": [
+                "31/104",
+                "17/56"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "positive": true
+            }
+          ],
+          "scaled_strip": {
+            "S": 20,
+            "strict_D_lower": -20,
+            "strict_D_upper": 20
+          }
+        },
+        {
+          "archive_comparison": {
+            "count_matches_archived_interval_count": true,
+            "count_matches_archived_lap_count": true,
+            "points_match_archived_lap_rows": true
+          },
+          "base_pair": [
+            11,
+            13
+          ],
+          "checks": {
+            "all_reconstructed_intervals_positive": true,
+            "direct_equals_column_half_plane_difference": true,
+            "event_sweep_component_count_matches": true
+          },
+          "column_half_plane_difference_count": 0,
+          "column_half_planes": [
+            {
+              "H": 1,
+              "K": -24,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            },
+            {
+              "H": 1,
+              "K": 23,
+              "columns": [
+                {
+                  "contribution": 1,
+                  "n": 4,
+                  "unclipped_m_upper": 3
+                }
+              ]
+            }
+          ],
+          "direct_count": 0,
+          "direct_points": [],
+          "eligible": false,
+          "event_sweep": {
+            "active_cells": [],
+            "events": 6,
+            "jointly_blocked_open_cells": 0,
+            "open_cells": 5,
+            "positive_components": 0
+          },
+          "lap_rectangle": {
+            "m_max": 4,
+            "m_min": 3,
+            "n_max": 4,
+            "n_min": 4,
+            "rectangle_points_scanned": 2
+          },
+          "primary_comparison": {
+            "component_count_matches": true,
+            "half_plane_totals_match": true,
+            "lap_rectangle_matches": true
+          },
+          "reconstructed_components": [],
+          "scaled_strip": {
+            "S": 24,
+            "strict_D_lower": -24,
+            "strict_D_upper": 24
+          }
+        }
+      ],
+      "primary_selected_base_pair": null,
+      "selection_matches_archive": true,
+      "selection_matches_primary": true,
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    }
+  },
+  "primary_protocol_matches": true,
+  "primary_results_present": true,
+  "protocol_sha256": "a398539b747b9510259e5a134090f3eb6430370588d735bdec12f67260ec5724",
+  "scope": {
+    "cases": 4,
+    "direct_rectangle_points_scanned": 410,
+    "event_sweep_events_with_per_pair_endpoint_duplication": 311,
+    "event_sweep_open_cells": 287,
+    "physical_pairs": 24,
+    "positive_components": 41,
+    "primary_critical_fields_compared": 173
+  },
+  "source_hash_checks": {
+    "cached_interval_results": {
+      "actual_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+      "expected_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5",
+      "matches": true,
+      "path": "reviews/2026-09-28-one-containment-selector/results.json"
+    },
+    "lap_band_protocol": {
+      "actual_sha256": "9053ebb58fa30a1841e03bb1aba686fb51631b01480186772f751df63bda1165",
+      "expected_sha256": "9053ebb58fa30a1841e03bb1aba686fb51631b01480186772f751df63bda1165",
+      "matches": true,
+      "path": "reviews/2026-09-28-lap-band-component-count/protocol.json"
+    },
+    "lap_band_results": {
+      "actual_sha256": "d756a43dedfe161eb1cfc5ca4eb751665b1e3fca5a22c88b9167700bf2b3cadb",
+      "expected_sha256": "d756a43dedfe161eb1cfc5ca4eb751665b1e3fca5a22c88b9167700bf2b3cadb",
+      "matches": true,
+      "path": "reviews/2026-09-28-lap-band-component-count/results.json"
+    },
+    "physical_geometry": {
+      "actual_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+      "expected_sha256": "37d446c6c44d22e5d81804d33839d2c72ee4b24640d43129c97d8aaae3a15159",
+      "matches": true,
+      "path": "reviews/2026-09-28-joint-triple-exclusions/results.json"
+    }
+  },
+  "strict_equality_contact_controls": [
+    {
+      "D": -8,
+      "S": 8,
+      "a": 3,
+      "b": 5,
+      "checks": {
+        "expected_scaled_difference": true,
+        "not_in_strict_strip": true,
+        "on_excluded_boundary": true,
+        "zero_length_contact": true
+      },
+      "contact": "3/8",
+      "m": 1,
+      "n": 2
+    },
+    {
+      "D": 8,
+      "S": 8,
+      "a": 3,
+      "b": 5,
+      "checks": {
+        "expected_scaled_difference": true,
+        "not_in_strict_strip": true,
+        "on_excluded_boundary": true,
+        "zero_length_contact": true
+      },
+      "contact": "5/8",
+      "m": 2,
+      "n": 3
+    }
+  ],
+  "verifier": "independent direct lattice enumeration, column-wise half-plane identity, and blocker-endpoint event sweep; no primary import"
+}

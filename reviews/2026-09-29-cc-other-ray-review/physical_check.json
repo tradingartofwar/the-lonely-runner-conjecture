@@ -1,0 +1,4918 @@
+{
+  "title": "Fresh physical tent-segment audit of the CC other ray",
+  "date": "2026-09-29",
+  "frozen_research_head_from_protocol": "12d08824ead7b772032ba240d0e858250fbd183c",
+  "code_sha256": "dc4a50e829a90d535d97d77c57474455abbd78767ca302c164ba6494b273ef7a",
+  "arithmetic": "fractions.Fraction; no floating point",
+  "scope": {
+    "total_runners": 8,
+    "reference_speed": 0,
+    "common_start": true,
+    "time_domain": "[0,1]",
+    "exhaustive_q": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "witness_only_q": [
+      100002,
+      100003,
+      100004,
+      100005,
+      100006,
+      100007
+    ],
+    "large_q_exhaustive_optimization": false
+  },
+  "provenance": {
+    "prior_optimizer_code_read_before_authoring": false,
+    "prior_saved_optimizer_output_read_before_authoring": false,
+    "prior_optimizer_code_or_saved_output_read_after_authoring": false,
+    "written_statement_read": true,
+    "current_entrypoint_prose_read": true,
+    "fresh_ai_authorship_is_external_certification": false
+  },
+  "helper_controls": {
+    "synthetic_affine_control_count": 3,
+    "passed": true,
+    "new_physical_inputs": 0
+  },
+  "summary": {
+    "exhaustive_case_count": 24,
+    "isolated_maximizer_occurrences": 48,
+    "positive_length_maximizing_components": 0,
+    "small_q_distance_records_at_maximizers": 336,
+    "witness_only_case_count": 6,
+    "witness_only_time_count": 12,
+    "witness_only_distance_records": 84,
+    "failures": 0
+  },
+  "total_optimizer_counts": {
+    "affine_distance_checks": 203448,
+    "base_intervals": 9688,
+    "distinct_tent_corners": 9712,
+    "domain_endpoint_checks": 48,
+    "dominance_inequalities": 211578,
+    "dominance_pieces": 17826,
+    "envelope_coverage_checks": 9688,
+    "envelope_value_checks": 53478,
+    "maximizer_value_checks": 144,
+    "singleton_dominance_pieces": 3358,
+    "tent_corner_occurrences": 10272,
+    "threshold_bands_generated": 5052,
+    "threshold_set_comparisons": 24
+  },
+  "exhaustive_results": [
+    {
+      "q": 2,
+      "residue_mod_6": 2,
+      "speeds": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        12
+      ],
+      "maximum": "2/13",
+      "maximizing_components": [
+        {
+          "start": "3/13",
+          "end": "3/13",
+          "kind": "point"
+        },
+        {
+          "start": "10/13",
+          "end": "10/13",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "3/13",
+          "end": "3/13",
+          "kind": "point"
+        },
+        {
+          "start": "10/13",
+          "end": "10/13",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "2/13",
+      "claimed_times": [
+        "3/13",
+        "10/13"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "3/13",
+          "achieved_value": "2/13",
+          "limiting_speeds": [
+            5,
+            8
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "3/13",
+              "distance": "3/13"
+            },
+            {
+              "speed": 2,
+              "lap": 0,
+              "fractional_phase": "6/13",
+              "distance": "6/13"
+            },
+            {
+              "speed": 3,
+              "lap": 0,
+              "fractional_phase": "9/13",
+              "distance": "4/13"
+            },
+            {
+              "speed": 5,
+              "lap": 1,
+              "fractional_phase": "2/13",
+              "distance": "2/13"
+            },
+            {
+              "speed": 7,
+              "lap": 1,
+              "fractional_phase": "8/13",
+              "distance": "5/13"
+            },
+            {
+              "speed": 8,
+              "lap": 1,
+              "fractional_phase": "11/13",
+              "distance": "2/13"
+            },
+            {
+              "speed": 12,
+              "lap": 2,
+              "fractional_phase": "10/13",
+              "distance": "3/13"
+            }
+          ]
+        },
+        {
+          "time": "10/13",
+          "achieved_value": "2/13",
+          "limiting_speeds": [
+            5,
+            8
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "10/13",
+              "distance": "3/13"
+            },
+            {
+              "speed": 2,
+              "lap": 1,
+              "fractional_phase": "7/13",
+              "distance": "6/13"
+            },
+            {
+              "speed": 3,
+              "lap": 2,
+              "fractional_phase": "4/13",
+              "distance": "4/13"
+            },
+            {
+              "speed": 5,
+              "lap": 3,
+              "fractional_phase": "11/13",
+              "distance": "2/13"
+            },
+            {
+              "speed": 7,
+              "lap": 5,
+              "fractional_phase": "5/13",
+              "distance": "5/13"
+            },
+            {
+              "speed": 8,
+              "lap": 6,
+              "fractional_phase": "2/13",
+              "distance": "2/13"
+            },
+            {
+              "speed": 12,
+              "lap": 9,
+              "fractional_phase": "3/13",
+              "distance": "3/13"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 1092,
+        "base_intervals": 52,
+        "distinct_tent_corners": 53,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 1192,
+        "dominance_pieces": 106,
+        "envelope_coverage_checks": 52,
+        "envelope_value_checks": 318,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 28,
+        "tent_corner_occurrences": 83,
+        "threshold_bands_generated": 38,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 3,
+      "residue_mod_6": 3,
+      "speeds": [
+        1,
+        3,
+        4,
+        7,
+        10,
+        11,
+        17
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            7,
+            11,
+            17
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 3,
+              "lap": 0,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 4,
+              "lap": 0,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 7,
+              "lap": 1,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 10,
+              "lap": 1,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 11,
+              "lap": 1,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 17,
+              "lap": 2,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            7,
+            11,
+            17
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 3,
+              "lap": 2,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 4,
+              "lap": 3,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 7,
+              "lap": 5,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 10,
+              "lap": 8,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 11,
+              "lap": 9,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 17,
+              "lap": 14,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 1932,
+        "base_intervals": 92,
+        "distinct_tent_corners": 93,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 2046,
+        "dominance_pieces": 188,
+        "envelope_coverage_checks": 92,
+        "envelope_value_checks": 564,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 56,
+        "tent_corner_occurrences": 113,
+        "threshold_bands_generated": 53,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 4,
+      "residue_mod_6": 4,
+      "speeds": [
+        1,
+        4,
+        5,
+        9,
+        13,
+        14,
+        22
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            5,
+            13
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 4,
+              "lap": 0,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 5,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 9,
+              "lap": 1,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 13,
+              "lap": 2,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 14,
+              "lap": 2,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 22,
+              "lap": 3,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            5,
+            13
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 4,
+              "lap": 3,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 5,
+              "lap": 4,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 9,
+              "lap": 7,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 13,
+              "lap": 10,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 14,
+              "lap": 11,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 22,
+              "lap": 18,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 2520,
+        "base_intervals": 120,
+        "distinct_tent_corners": 121,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 2702,
+        "dominance_pieces": 232,
+        "envelope_coverage_checks": 120,
+        "envelope_value_checks": 696,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 52,
+        "tent_corner_occurrences": 143,
+        "threshold_bands_generated": 68,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 5,
+      "residue_mod_6": 5,
+      "speeds": [
+        1,
+        5,
+        6,
+        11,
+        16,
+        17,
+        27
+      ],
+      "maximum": "5/33",
+      "maximizing_components": [
+        {
+          "start": "10/33",
+          "end": "10/33",
+          "kind": "point"
+        },
+        {
+          "start": "23/33",
+          "end": "23/33",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "10/33",
+          "end": "10/33",
+          "kind": "point"
+        },
+        {
+          "start": "23/33",
+          "end": "23/33",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "5/33",
+      "claimed_times": [
+        "10/33",
+        "23/33"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "10/33",
+          "achieved_value": "5/33",
+          "limiting_speeds": [
+            16,
+            17
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "10/33",
+              "distance": "10/33"
+            },
+            {
+              "speed": 5,
+              "lap": 1,
+              "fractional_phase": "17/33",
+              "distance": "16/33"
+            },
+            {
+              "speed": 6,
+              "lap": 1,
+              "fractional_phase": "9/11",
+              "distance": "2/11"
+            },
+            {
+              "speed": 11,
+              "lap": 3,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 16,
+              "lap": 4,
+              "fractional_phase": "28/33",
+              "distance": "5/33"
+            },
+            {
+              "speed": 17,
+              "lap": 5,
+              "fractional_phase": "5/33",
+              "distance": "5/33"
+            },
+            {
+              "speed": 27,
+              "lap": 8,
+              "fractional_phase": "2/11",
+              "distance": "2/11"
+            }
+          ]
+        },
+        {
+          "time": "23/33",
+          "achieved_value": "5/33",
+          "limiting_speeds": [
+            16,
+            17
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "23/33",
+              "distance": "10/33"
+            },
+            {
+              "speed": 5,
+              "lap": 3,
+              "fractional_phase": "16/33",
+              "distance": "16/33"
+            },
+            {
+              "speed": 6,
+              "lap": 4,
+              "fractional_phase": "2/11",
+              "distance": "2/11"
+            },
+            {
+              "speed": 11,
+              "lap": 7,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 16,
+              "lap": 11,
+              "fractional_phase": "5/33",
+              "distance": "5/33"
+            },
+            {
+              "speed": 17,
+              "lap": 11,
+              "fractional_phase": "28/33",
+              "distance": "5/33"
+            },
+            {
+              "speed": 27,
+              "lap": 18,
+              "fractional_phase": "9/11",
+              "distance": "2/11"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 3108,
+        "base_intervals": 148,
+        "distinct_tent_corners": 149,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 3278,
+        "dominance_pieces": 284,
+        "envelope_coverage_checks": 148,
+        "envelope_value_checks": 852,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 68,
+        "tent_corner_occurrences": 173,
+        "threshold_bands_generated": 83,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 6,
+      "residue_mod_6": 0,
+      "speeds": [
+        1,
+        6,
+        7,
+        13,
+        19,
+        20,
+        32
+      ],
+      "maximum": "4/25",
+      "maximizing_components": [
+        {
+          "start": "9/25",
+          "end": "9/25",
+          "kind": "point"
+        },
+        {
+          "start": "16/25",
+          "end": "16/25",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "9/25",
+          "end": "9/25",
+          "kind": "point"
+        },
+        {
+          "start": "16/25",
+          "end": "16/25",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "4/25",
+      "claimed_times": [
+        "9/25",
+        "16/25"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "9/25",
+          "achieved_value": "4/25",
+          "limiting_speeds": [
+            6,
+            19
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "9/25",
+              "distance": "9/25"
+            },
+            {
+              "speed": 6,
+              "lap": 2,
+              "fractional_phase": "4/25",
+              "distance": "4/25"
+            },
+            {
+              "speed": 7,
+              "lap": 2,
+              "fractional_phase": "13/25",
+              "distance": "12/25"
+            },
+            {
+              "speed": 13,
+              "lap": 4,
+              "fractional_phase": "17/25",
+              "distance": "8/25"
+            },
+            {
+              "speed": 19,
+              "lap": 6,
+              "fractional_phase": "21/25",
+              "distance": "4/25"
+            },
+            {
+              "speed": 20,
+              "lap": 7,
+              "fractional_phase": "1/5",
+              "distance": "1/5"
+            },
+            {
+              "speed": 32,
+              "lap": 11,
+              "fractional_phase": "13/25",
+              "distance": "12/25"
+            }
+          ]
+        },
+        {
+          "time": "16/25",
+          "achieved_value": "4/25",
+          "limiting_speeds": [
+            6,
+            19
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "16/25",
+              "distance": "9/25"
+            },
+            {
+              "speed": 6,
+              "lap": 3,
+              "fractional_phase": "21/25",
+              "distance": "4/25"
+            },
+            {
+              "speed": 7,
+              "lap": 4,
+              "fractional_phase": "12/25",
+              "distance": "12/25"
+            },
+            {
+              "speed": 13,
+              "lap": 8,
+              "fractional_phase": "8/25",
+              "distance": "8/25"
+            },
+            {
+              "speed": 19,
+              "lap": 12,
+              "fractional_phase": "4/25",
+              "distance": "4/25"
+            },
+            {
+              "speed": 20,
+              "lap": 12,
+              "fractional_phase": "4/5",
+              "distance": "1/5"
+            },
+            {
+              "speed": 32,
+              "lap": 20,
+              "fractional_phase": "12/25",
+              "distance": "12/25"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 3696,
+        "base_intervals": 176,
+        "distinct_tent_corners": 177,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 3874,
+        "dominance_pieces": 330,
+        "envelope_coverage_checks": 176,
+        "envelope_value_checks": 990,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 68,
+        "tent_corner_occurrences": 203,
+        "threshold_bands_generated": 98,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 7,
+      "residue_mod_6": 1,
+      "speeds": [
+        1,
+        7,
+        8,
+        15,
+        22,
+        23,
+        37
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            7,
+            23,
+            37
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 7,
+              "lap": 1,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 8,
+              "lap": 1,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 15,
+              "lap": 2,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 22,
+              "lap": 3,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 23,
+              "lap": 3,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 37,
+              "lap": 6,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            7,
+            23,
+            37
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 7,
+              "lap": 5,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 8,
+              "lap": 6,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 15,
+              "lap": 12,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 22,
+              "lap": 18,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 23,
+              "lap": 19,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 37,
+              "lap": 30,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 4452,
+        "base_intervals": 212,
+        "distinct_tent_corners": 213,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 4666,
+        "dominance_pieces": 398,
+        "envelope_coverage_checks": 212,
+        "envelope_value_checks": 1194,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 86,
+        "tent_corner_occurrences": 233,
+        "threshold_bands_generated": 113,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 8,
+      "residue_mod_6": 2,
+      "speeds": [
+        1,
+        8,
+        9,
+        17,
+        25,
+        26,
+        42
+      ],
+      "maximum": "7/43",
+      "maximizing_components": [
+        {
+          "start": "8/43",
+          "end": "8/43",
+          "kind": "point"
+        },
+        {
+          "start": "35/43",
+          "end": "35/43",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "8/43",
+          "end": "8/43",
+          "kind": "point"
+        },
+        {
+          "start": "35/43",
+          "end": "35/43",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "7/43",
+      "claimed_times": [
+        "8/43",
+        "35/43"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "8/43",
+          "achieved_value": "7/43",
+          "limiting_speeds": [
+            17,
+            26
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "8/43",
+              "distance": "8/43"
+            },
+            {
+              "speed": 8,
+              "lap": 1,
+              "fractional_phase": "21/43",
+              "distance": "21/43"
+            },
+            {
+              "speed": 9,
+              "lap": 1,
+              "fractional_phase": "29/43",
+              "distance": "14/43"
+            },
+            {
+              "speed": 17,
+              "lap": 3,
+              "fractional_phase": "7/43",
+              "distance": "7/43"
+            },
+            {
+              "speed": 25,
+              "lap": 4,
+              "fractional_phase": "28/43",
+              "distance": "15/43"
+            },
+            {
+              "speed": 26,
+              "lap": 4,
+              "fractional_phase": "36/43",
+              "distance": "7/43"
+            },
+            {
+              "speed": 42,
+              "lap": 7,
+              "fractional_phase": "35/43",
+              "distance": "8/43"
+            }
+          ]
+        },
+        {
+          "time": "35/43",
+          "achieved_value": "7/43",
+          "limiting_speeds": [
+            17,
+            26
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "35/43",
+              "distance": "8/43"
+            },
+            {
+              "speed": 8,
+              "lap": 6,
+              "fractional_phase": "22/43",
+              "distance": "21/43"
+            },
+            {
+              "speed": 9,
+              "lap": 7,
+              "fractional_phase": "14/43",
+              "distance": "14/43"
+            },
+            {
+              "speed": 17,
+              "lap": 13,
+              "fractional_phase": "36/43",
+              "distance": "7/43"
+            },
+            {
+              "speed": 25,
+              "lap": 20,
+              "fractional_phase": "15/43",
+              "distance": "15/43"
+            },
+            {
+              "speed": 26,
+              "lap": 21,
+              "fractional_phase": "7/43",
+              "distance": "7/43"
+            },
+            {
+              "speed": 42,
+              "lap": 34,
+              "fractional_phase": "8/43",
+              "distance": "8/43"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 4956,
+        "base_intervals": 236,
+        "distinct_tent_corners": 237,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 5234,
+        "dominance_pieces": 442,
+        "envelope_coverage_checks": 236,
+        "envelope_value_checks": 1326,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 92,
+        "tent_corner_occurrences": 263,
+        "threshold_bands_generated": 128,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 9,
+      "residue_mod_6": 3,
+      "speeds": [
+        1,
+        9,
+        10,
+        19,
+        28,
+        29,
+        47
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            19,
+            29,
+            47
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 9,
+              "lap": 1,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 10,
+              "lap": 1,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 19,
+              "lap": 3,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 28,
+              "lap": 4,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 29,
+              "lap": 4,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 47,
+              "lap": 7,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            19,
+            29,
+            47
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 9,
+              "lap": 7,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 10,
+              "lap": 8,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 19,
+              "lap": 15,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 28,
+              "lap": 23,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 29,
+              "lap": 24,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 47,
+              "lap": 39,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 5712,
+        "base_intervals": 272,
+        "distinct_tent_corners": 273,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 5970,
+        "dominance_pieces": 512,
+        "envelope_coverage_checks": 272,
+        "envelope_value_checks": 1536,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 110,
+        "tent_corner_occurrences": 293,
+        "threshold_bands_generated": 143,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 10,
+      "residue_mod_6": 4,
+      "speeds": [
+        1,
+        10,
+        11,
+        21,
+        31,
+        32,
+        52
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            11,
+            31
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 10,
+              "lap": 1,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 11,
+              "lap": 1,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 21,
+              "lap": 3,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 31,
+              "lap": 5,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 32,
+              "lap": 5,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 52,
+              "lap": 8,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            11,
+            31
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 10,
+              "lap": 8,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 11,
+              "lap": 9,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 21,
+              "lap": 17,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 31,
+              "lap": 25,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 32,
+              "lap": 26,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 52,
+              "lap": 43,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 6216,
+        "base_intervals": 296,
+        "distinct_tent_corners": 297,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 6474,
+        "dominance_pieces": 546,
+        "envelope_coverage_checks": 296,
+        "envelope_value_checks": 1638,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 100,
+        "tent_corner_occurrences": 323,
+        "threshold_bands_generated": 158,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 11,
+      "residue_mod_6": 5,
+      "speeds": [
+        1,
+        11,
+        12,
+        23,
+        34,
+        35,
+        57
+      ],
+      "maximum": "11/69",
+      "maximizing_components": [
+        {
+          "start": "22/69",
+          "end": "22/69",
+          "kind": "point"
+        },
+        {
+          "start": "47/69",
+          "end": "47/69",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "22/69",
+          "end": "22/69",
+          "kind": "point"
+        },
+        {
+          "start": "47/69",
+          "end": "47/69",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "11/69",
+      "claimed_times": [
+        "22/69",
+        "47/69"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "22/69",
+          "achieved_value": "11/69",
+          "limiting_speeds": [
+            34,
+            35
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "22/69",
+              "distance": "22/69"
+            },
+            {
+              "speed": 11,
+              "lap": 3,
+              "fractional_phase": "35/69",
+              "distance": "34/69"
+            },
+            {
+              "speed": 12,
+              "lap": 3,
+              "fractional_phase": "19/23",
+              "distance": "4/23"
+            },
+            {
+              "speed": 23,
+              "lap": 7,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 34,
+              "lap": 10,
+              "fractional_phase": "58/69",
+              "distance": "11/69"
+            },
+            {
+              "speed": 35,
+              "lap": 11,
+              "fractional_phase": "11/69",
+              "distance": "11/69"
+            },
+            {
+              "speed": 57,
+              "lap": 18,
+              "fractional_phase": "4/23",
+              "distance": "4/23"
+            }
+          ]
+        },
+        {
+          "time": "47/69",
+          "achieved_value": "11/69",
+          "limiting_speeds": [
+            34,
+            35
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "47/69",
+              "distance": "22/69"
+            },
+            {
+              "speed": 11,
+              "lap": 7,
+              "fractional_phase": "34/69",
+              "distance": "34/69"
+            },
+            {
+              "speed": 12,
+              "lap": 8,
+              "fractional_phase": "4/23",
+              "distance": "4/23"
+            },
+            {
+              "speed": 23,
+              "lap": 15,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 34,
+              "lap": 23,
+              "fractional_phase": "11/69",
+              "distance": "11/69"
+            },
+            {
+              "speed": 35,
+              "lap": 23,
+              "fractional_phase": "58/69",
+              "distance": "11/69"
+            },
+            {
+              "speed": 57,
+              "lap": 38,
+              "fractional_phase": "19/23",
+              "distance": "4/23"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 6888,
+        "base_intervals": 328,
+        "distinct_tent_corners": 329,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 7198,
+        "dominance_pieces": 614,
+        "envelope_coverage_checks": 328,
+        "envelope_value_checks": 1842,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 130,
+        "tent_corner_occurrences": 353,
+        "threshold_bands_generated": 173,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 12,
+      "residue_mod_6": 0,
+      "speeds": [
+        1,
+        12,
+        13,
+        25,
+        37,
+        38,
+        62
+      ],
+      "maximum": "8/49",
+      "maximizing_components": [
+        {
+          "start": "17/49",
+          "end": "17/49",
+          "kind": "point"
+        },
+        {
+          "start": "32/49",
+          "end": "32/49",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "17/49",
+          "end": "17/49",
+          "kind": "point"
+        },
+        {
+          "start": "32/49",
+          "end": "32/49",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "8/49",
+      "claimed_times": [
+        "17/49",
+        "32/49"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "17/49",
+          "achieved_value": "8/49",
+          "limiting_speeds": [
+            12,
+            37
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "17/49",
+              "distance": "17/49"
+            },
+            {
+              "speed": 12,
+              "lap": 4,
+              "fractional_phase": "8/49",
+              "distance": "8/49"
+            },
+            {
+              "speed": 13,
+              "lap": 4,
+              "fractional_phase": "25/49",
+              "distance": "24/49"
+            },
+            {
+              "speed": 25,
+              "lap": 8,
+              "fractional_phase": "33/49",
+              "distance": "16/49"
+            },
+            {
+              "speed": 37,
+              "lap": 12,
+              "fractional_phase": "41/49",
+              "distance": "8/49"
+            },
+            {
+              "speed": 38,
+              "lap": 13,
+              "fractional_phase": "9/49",
+              "distance": "9/49"
+            },
+            {
+              "speed": 62,
+              "lap": 21,
+              "fractional_phase": "25/49",
+              "distance": "24/49"
+            }
+          ]
+        },
+        {
+          "time": "32/49",
+          "achieved_value": "8/49",
+          "limiting_speeds": [
+            12,
+            37
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "32/49",
+              "distance": "17/49"
+            },
+            {
+              "speed": 12,
+              "lap": 7,
+              "fractional_phase": "41/49",
+              "distance": "8/49"
+            },
+            {
+              "speed": 13,
+              "lap": 8,
+              "fractional_phase": "24/49",
+              "distance": "24/49"
+            },
+            {
+              "speed": 25,
+              "lap": 16,
+              "fractional_phase": "16/49",
+              "distance": "16/49"
+            },
+            {
+              "speed": 37,
+              "lap": 24,
+              "fractional_phase": "8/49",
+              "distance": "8/49"
+            },
+            {
+              "speed": 38,
+              "lap": 24,
+              "fractional_phase": "40/49",
+              "distance": "9/49"
+            },
+            {
+              "speed": 62,
+              "lap": 40,
+              "fractional_phase": "24/49",
+              "distance": "24/49"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 7560,
+        "base_intervals": 360,
+        "distinct_tent_corners": 361,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 7830,
+        "dominance_pieces": 664,
+        "envelope_coverage_checks": 360,
+        "envelope_value_checks": 1992,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 124,
+        "tent_corner_occurrences": 383,
+        "threshold_bands_generated": 188,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 13,
+      "residue_mod_6": 1,
+      "speeds": [
+        1,
+        13,
+        14,
+        27,
+        40,
+        41,
+        67
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            13,
+            41,
+            67
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 13,
+              "lap": 2,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 14,
+              "lap": 2,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 27,
+              "lap": 4,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 40,
+              "lap": 6,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 41,
+              "lap": 6,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 67,
+              "lap": 11,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            13,
+            41,
+            67
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 13,
+              "lap": 10,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 14,
+              "lap": 11,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 27,
+              "lap": 22,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 40,
+              "lap": 33,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 41,
+              "lap": 34,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 67,
+              "lap": 55,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 8232,
+        "base_intervals": 392,
+        "distinct_tent_corners": 393,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 8572,
+        "dominance_pieces": 720,
+        "envelope_coverage_checks": 392,
+        "envelope_value_checks": 2160,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 134,
+        "tent_corner_occurrences": 413,
+        "threshold_bands_generated": 203,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 14,
+      "residue_mod_6": 2,
+      "speeds": [
+        1,
+        14,
+        15,
+        29,
+        43,
+        44,
+        72
+      ],
+      "maximum": "12/73",
+      "maximizing_components": [
+        {
+          "start": "13/73",
+          "end": "13/73",
+          "kind": "point"
+        },
+        {
+          "start": "60/73",
+          "end": "60/73",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "13/73",
+          "end": "13/73",
+          "kind": "point"
+        },
+        {
+          "start": "60/73",
+          "end": "60/73",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "12/73",
+      "claimed_times": [
+        "13/73",
+        "60/73"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "13/73",
+          "achieved_value": "12/73",
+          "limiting_speeds": [
+            29,
+            44
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "13/73",
+              "distance": "13/73"
+            },
+            {
+              "speed": 14,
+              "lap": 2,
+              "fractional_phase": "36/73",
+              "distance": "36/73"
+            },
+            {
+              "speed": 15,
+              "lap": 2,
+              "fractional_phase": "49/73",
+              "distance": "24/73"
+            },
+            {
+              "speed": 29,
+              "lap": 5,
+              "fractional_phase": "12/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 43,
+              "lap": 7,
+              "fractional_phase": "48/73",
+              "distance": "25/73"
+            },
+            {
+              "speed": 44,
+              "lap": 7,
+              "fractional_phase": "61/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 72,
+              "lap": 12,
+              "fractional_phase": "60/73",
+              "distance": "13/73"
+            }
+          ]
+        },
+        {
+          "time": "60/73",
+          "achieved_value": "12/73",
+          "limiting_speeds": [
+            29,
+            44
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "60/73",
+              "distance": "13/73"
+            },
+            {
+              "speed": 14,
+              "lap": 11,
+              "fractional_phase": "37/73",
+              "distance": "36/73"
+            },
+            {
+              "speed": 15,
+              "lap": 12,
+              "fractional_phase": "24/73",
+              "distance": "24/73"
+            },
+            {
+              "speed": 29,
+              "lap": 23,
+              "fractional_phase": "61/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 43,
+              "lap": 35,
+              "fractional_phase": "25/73",
+              "distance": "25/73"
+            },
+            {
+              "speed": 44,
+              "lap": 36,
+              "fractional_phase": "12/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 72,
+              "lap": 59,
+              "fractional_phase": "13/73",
+              "distance": "13/73"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 8652,
+        "base_intervals": 412,
+        "distinct_tent_corners": 413,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 9008,
+        "dominance_pieces": 756,
+        "envelope_coverage_checks": 412,
+        "envelope_value_checks": 2268,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 140,
+        "tent_corner_occurrences": 443,
+        "threshold_bands_generated": 218,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 15,
+      "residue_mod_6": 3,
+      "speeds": [
+        1,
+        15,
+        16,
+        31,
+        46,
+        47,
+        77
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            31,
+            47,
+            77
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 15,
+              "lap": 2,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 16,
+              "lap": 2,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 31,
+              "lap": 5,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 46,
+              "lap": 7,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 47,
+              "lap": 7,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 77,
+              "lap": 12,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            31,
+            47,
+            77
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 15,
+              "lap": 12,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 16,
+              "lap": 13,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 31,
+              "lap": 25,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 46,
+              "lap": 38,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 47,
+              "lap": 39,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 77,
+              "lap": 64,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 9492,
+        "base_intervals": 452,
+        "distinct_tent_corners": 453,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 9848,
+        "dominance_pieces": 830,
+        "envelope_coverage_checks": 452,
+        "envelope_value_checks": 2490,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 158,
+        "tent_corner_occurrences": 473,
+        "threshold_bands_generated": 233,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 16,
+      "residue_mod_6": 4,
+      "speeds": [
+        1,
+        16,
+        17,
+        33,
+        49,
+        50,
+        82
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            17,
+            49
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 16,
+              "lap": 2,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 17,
+              "lap": 2,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 33,
+              "lap": 5,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 49,
+              "lap": 8,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 50,
+              "lap": 8,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 82,
+              "lap": 13,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            17,
+            49
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 16,
+              "lap": 13,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 17,
+              "lap": 14,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 33,
+              "lap": 27,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 49,
+              "lap": 40,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 50,
+              "lap": 41,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 82,
+              "lap": 68,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 10080,
+        "base_intervals": 480,
+        "distinct_tent_corners": 481,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 10488,
+        "dominance_pieces": 876,
+        "envelope_coverage_checks": 480,
+        "envelope_value_checks": 2628,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 158,
+        "tent_corner_occurrences": 503,
+        "threshold_bands_generated": 248,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 17,
+      "residue_mod_6": 5,
+      "speeds": [
+        1,
+        17,
+        18,
+        35,
+        52,
+        53,
+        87
+      ],
+      "maximum": "17/105",
+      "maximizing_components": [
+        {
+          "start": "34/105",
+          "end": "34/105",
+          "kind": "point"
+        },
+        {
+          "start": "71/105",
+          "end": "71/105",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "34/105",
+          "end": "34/105",
+          "kind": "point"
+        },
+        {
+          "start": "71/105",
+          "end": "71/105",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "17/105",
+      "claimed_times": [
+        "34/105",
+        "71/105"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "34/105",
+          "achieved_value": "17/105",
+          "limiting_speeds": [
+            52,
+            53
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "34/105",
+              "distance": "34/105"
+            },
+            {
+              "speed": 17,
+              "lap": 5,
+              "fractional_phase": "53/105",
+              "distance": "52/105"
+            },
+            {
+              "speed": 18,
+              "lap": 5,
+              "fractional_phase": "29/35",
+              "distance": "6/35"
+            },
+            {
+              "speed": 35,
+              "lap": 11,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 52,
+              "lap": 16,
+              "fractional_phase": "88/105",
+              "distance": "17/105"
+            },
+            {
+              "speed": 53,
+              "lap": 17,
+              "fractional_phase": "17/105",
+              "distance": "17/105"
+            },
+            {
+              "speed": 87,
+              "lap": 28,
+              "fractional_phase": "6/35",
+              "distance": "6/35"
+            }
+          ]
+        },
+        {
+          "time": "71/105",
+          "achieved_value": "17/105",
+          "limiting_speeds": [
+            52,
+            53
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "71/105",
+              "distance": "34/105"
+            },
+            {
+              "speed": 17,
+              "lap": 11,
+              "fractional_phase": "52/105",
+              "distance": "52/105"
+            },
+            {
+              "speed": 18,
+              "lap": 12,
+              "fractional_phase": "6/35",
+              "distance": "6/35"
+            },
+            {
+              "speed": 35,
+              "lap": 23,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 52,
+              "lap": 35,
+              "fractional_phase": "17/105",
+              "distance": "17/105"
+            },
+            {
+              "speed": 53,
+              "lap": 35,
+              "fractional_phase": "88/105",
+              "distance": "17/105"
+            },
+            {
+              "speed": 87,
+              "lap": 58,
+              "fractional_phase": "29/35",
+              "distance": "6/35"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 10668,
+        "base_intervals": 508,
+        "distinct_tent_corners": 509,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 11082,
+        "dominance_pieces": 932,
+        "envelope_coverage_checks": 508,
+        "envelope_value_checks": 2796,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 174,
+        "tent_corner_occurrences": 533,
+        "threshold_bands_generated": 263,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 18,
+      "residue_mod_6": 0,
+      "speeds": [
+        1,
+        18,
+        19,
+        37,
+        55,
+        56,
+        92
+      ],
+      "maximum": "12/73",
+      "maximizing_components": [
+        {
+          "start": "25/73",
+          "end": "25/73",
+          "kind": "point"
+        },
+        {
+          "start": "48/73",
+          "end": "48/73",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "25/73",
+          "end": "25/73",
+          "kind": "point"
+        },
+        {
+          "start": "48/73",
+          "end": "48/73",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "12/73",
+      "claimed_times": [
+        "25/73",
+        "48/73"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "25/73",
+          "achieved_value": "12/73",
+          "limiting_speeds": [
+            18,
+            55
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "25/73",
+              "distance": "25/73"
+            },
+            {
+              "speed": 18,
+              "lap": 6,
+              "fractional_phase": "12/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 19,
+              "lap": 6,
+              "fractional_phase": "37/73",
+              "distance": "36/73"
+            },
+            {
+              "speed": 37,
+              "lap": 12,
+              "fractional_phase": "49/73",
+              "distance": "24/73"
+            },
+            {
+              "speed": 55,
+              "lap": 18,
+              "fractional_phase": "61/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 56,
+              "lap": 19,
+              "fractional_phase": "13/73",
+              "distance": "13/73"
+            },
+            {
+              "speed": 92,
+              "lap": 31,
+              "fractional_phase": "37/73",
+              "distance": "36/73"
+            }
+          ]
+        },
+        {
+          "time": "48/73",
+          "achieved_value": "12/73",
+          "limiting_speeds": [
+            18,
+            55
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "48/73",
+              "distance": "25/73"
+            },
+            {
+              "speed": 18,
+              "lap": 11,
+              "fractional_phase": "61/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 19,
+              "lap": 12,
+              "fractional_phase": "36/73",
+              "distance": "36/73"
+            },
+            {
+              "speed": 37,
+              "lap": 24,
+              "fractional_phase": "24/73",
+              "distance": "24/73"
+            },
+            {
+              "speed": 55,
+              "lap": 36,
+              "fractional_phase": "12/73",
+              "distance": "12/73"
+            },
+            {
+              "speed": 56,
+              "lap": 36,
+              "fractional_phase": "60/73",
+              "distance": "13/73"
+            },
+            {
+              "speed": 92,
+              "lap": 60,
+              "fractional_phase": "36/73",
+              "distance": "36/73"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 11256,
+        "base_intervals": 536,
+        "distinct_tent_corners": 537,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 11660,
+        "dominance_pieces": 978,
+        "envelope_coverage_checks": 536,
+        "envelope_value_checks": 2934,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 172,
+        "tent_corner_occurrences": 563,
+        "threshold_bands_generated": 278,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 19,
+      "residue_mod_6": 1,
+      "speeds": [
+        1,
+        19,
+        20,
+        39,
+        58,
+        59,
+        97
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            19,
+            59,
+            97
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 19,
+              "lap": 3,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 20,
+              "lap": 3,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 39,
+              "lap": 6,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 58,
+              "lap": 9,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 59,
+              "lap": 9,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 97,
+              "lap": 16,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            19,
+            59,
+            97
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 19,
+              "lap": 15,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 20,
+              "lap": 16,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 39,
+              "lap": 32,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 58,
+              "lap": 48,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 59,
+              "lap": 49,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 97,
+              "lap": 80,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 12012,
+        "base_intervals": 572,
+        "distinct_tent_corners": 573,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 12458,
+        "dominance_pieces": 1048,
+        "envelope_coverage_checks": 572,
+        "envelope_value_checks": 3144,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 194,
+        "tent_corner_occurrences": 593,
+        "threshold_bands_generated": 293,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 20,
+      "residue_mod_6": 2,
+      "speeds": [
+        1,
+        20,
+        21,
+        41,
+        61,
+        62,
+        102
+      ],
+      "maximum": "17/103",
+      "maximizing_components": [
+        {
+          "start": "18/103",
+          "end": "18/103",
+          "kind": "point"
+        },
+        {
+          "start": "85/103",
+          "end": "85/103",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "18/103",
+          "end": "18/103",
+          "kind": "point"
+        },
+        {
+          "start": "85/103",
+          "end": "85/103",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "17/103",
+      "claimed_times": [
+        "18/103",
+        "85/103"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "18/103",
+          "achieved_value": "17/103",
+          "limiting_speeds": [
+            41,
+            62
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "18/103",
+              "distance": "18/103"
+            },
+            {
+              "speed": 20,
+              "lap": 3,
+              "fractional_phase": "51/103",
+              "distance": "51/103"
+            },
+            {
+              "speed": 21,
+              "lap": 3,
+              "fractional_phase": "69/103",
+              "distance": "34/103"
+            },
+            {
+              "speed": 41,
+              "lap": 7,
+              "fractional_phase": "17/103",
+              "distance": "17/103"
+            },
+            {
+              "speed": 61,
+              "lap": 10,
+              "fractional_phase": "68/103",
+              "distance": "35/103"
+            },
+            {
+              "speed": 62,
+              "lap": 10,
+              "fractional_phase": "86/103",
+              "distance": "17/103"
+            },
+            {
+              "speed": 102,
+              "lap": 17,
+              "fractional_phase": "85/103",
+              "distance": "18/103"
+            }
+          ]
+        },
+        {
+          "time": "85/103",
+          "achieved_value": "17/103",
+          "limiting_speeds": [
+            41,
+            62
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "85/103",
+              "distance": "18/103"
+            },
+            {
+              "speed": 20,
+              "lap": 16,
+              "fractional_phase": "52/103",
+              "distance": "51/103"
+            },
+            {
+              "speed": 21,
+              "lap": 17,
+              "fractional_phase": "34/103",
+              "distance": "34/103"
+            },
+            {
+              "speed": 41,
+              "lap": 33,
+              "fractional_phase": "86/103",
+              "distance": "17/103"
+            },
+            {
+              "speed": 61,
+              "lap": 50,
+              "fractional_phase": "35/103",
+              "distance": "35/103"
+            },
+            {
+              "speed": 62,
+              "lap": 51,
+              "fractional_phase": "17/103",
+              "distance": "17/103"
+            },
+            {
+              "speed": 102,
+              "lap": 84,
+              "fractional_phase": "18/103",
+              "distance": "18/103"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 12516,
+        "base_intervals": 596,
+        "distinct_tent_corners": 597,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 12970,
+        "dominance_pieces": 1086,
+        "envelope_coverage_checks": 596,
+        "envelope_value_checks": 3258,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 192,
+        "tent_corner_occurrences": 623,
+        "threshold_bands_generated": 308,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 21,
+      "residue_mod_6": 3,
+      "speeds": [
+        1,
+        21,
+        22,
+        43,
+        64,
+        65,
+        107
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            43,
+            65,
+            107
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 21,
+              "lap": 3,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 22,
+              "lap": 3,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 43,
+              "lap": 7,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 64,
+              "lap": 10,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 65,
+              "lap": 10,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 107,
+              "lap": 17,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            43,
+            65,
+            107
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 21,
+              "lap": 17,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 22,
+              "lap": 18,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 43,
+              "lap": 35,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 64,
+              "lap": 53,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 65,
+              "lap": 54,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 107,
+              "lap": 89,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 13272,
+        "base_intervals": 632,
+        "distinct_tent_corners": 633,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 13752,
+        "dominance_pieces": 1158,
+        "envelope_coverage_checks": 632,
+        "envelope_value_checks": 3474,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 216,
+        "tent_corner_occurrences": 653,
+        "threshold_bands_generated": 323,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 22,
+      "residue_mod_6": 4,
+      "speeds": [
+        1,
+        22,
+        23,
+        45,
+        67,
+        68,
+        112
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            23,
+            67
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 22,
+              "lap": 3,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 23,
+              "lap": 3,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 45,
+              "lap": 7,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 67,
+              "lap": 11,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 68,
+              "lap": 11,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 112,
+              "lap": 18,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            23,
+            67
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 22,
+              "lap": 18,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 23,
+              "lap": 19,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 45,
+              "lap": 37,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 67,
+              "lap": 55,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 68,
+              "lap": 56,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 112,
+              "lap": 93,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 13776,
+        "base_intervals": 656,
+        "distinct_tent_corners": 657,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 14294,
+        "dominance_pieces": 1194,
+        "envelope_coverage_checks": 656,
+        "envelope_value_checks": 3582,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 208,
+        "tent_corner_occurrences": 683,
+        "threshold_bands_generated": 338,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 23,
+      "residue_mod_6": 5,
+      "speeds": [
+        1,
+        23,
+        24,
+        47,
+        70,
+        71,
+        117
+      ],
+      "maximum": "23/141",
+      "maximizing_components": [
+        {
+          "start": "46/141",
+          "end": "46/141",
+          "kind": "point"
+        },
+        {
+          "start": "95/141",
+          "end": "95/141",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "46/141",
+          "end": "46/141",
+          "kind": "point"
+        },
+        {
+          "start": "95/141",
+          "end": "95/141",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "23/141",
+      "claimed_times": [
+        "46/141",
+        "95/141"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "46/141",
+          "achieved_value": "23/141",
+          "limiting_speeds": [
+            70,
+            71
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "46/141",
+              "distance": "46/141"
+            },
+            {
+              "speed": 23,
+              "lap": 7,
+              "fractional_phase": "71/141",
+              "distance": "70/141"
+            },
+            {
+              "speed": 24,
+              "lap": 7,
+              "fractional_phase": "39/47",
+              "distance": "8/47"
+            },
+            {
+              "speed": 47,
+              "lap": 15,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 70,
+              "lap": 22,
+              "fractional_phase": "118/141",
+              "distance": "23/141"
+            },
+            {
+              "speed": 71,
+              "lap": 23,
+              "fractional_phase": "23/141",
+              "distance": "23/141"
+            },
+            {
+              "speed": 117,
+              "lap": 38,
+              "fractional_phase": "8/47",
+              "distance": "8/47"
+            }
+          ]
+        },
+        {
+          "time": "95/141",
+          "achieved_value": "23/141",
+          "limiting_speeds": [
+            70,
+            71
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "95/141",
+              "distance": "46/141"
+            },
+            {
+              "speed": 23,
+              "lap": 15,
+              "fractional_phase": "70/141",
+              "distance": "70/141"
+            },
+            {
+              "speed": 24,
+              "lap": 16,
+              "fractional_phase": "8/47",
+              "distance": "8/47"
+            },
+            {
+              "speed": 47,
+              "lap": 31,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 70,
+              "lap": 47,
+              "fractional_phase": "23/141",
+              "distance": "23/141"
+            },
+            {
+              "speed": 71,
+              "lap": 47,
+              "fractional_phase": "118/141",
+              "distance": "23/141"
+            },
+            {
+              "speed": 117,
+              "lap": 78,
+              "fractional_phase": "39/47",
+              "distance": "8/47"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 14448,
+        "base_intervals": 688,
+        "distinct_tent_corners": 689,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 14956,
+        "dominance_pieces": 1252,
+        "envelope_coverage_checks": 688,
+        "envelope_value_checks": 3756,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 222,
+        "tent_corner_occurrences": 713,
+        "threshold_bands_generated": 353,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 24,
+      "residue_mod_6": 0,
+      "speeds": [
+        1,
+        24,
+        25,
+        49,
+        73,
+        74,
+        122
+      ],
+      "maximum": "16/97",
+      "maximizing_components": [
+        {
+          "start": "33/97",
+          "end": "33/97",
+          "kind": "point"
+        },
+        {
+          "start": "64/97",
+          "end": "64/97",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "33/97",
+          "end": "33/97",
+          "kind": "point"
+        },
+        {
+          "start": "64/97",
+          "end": "64/97",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "16/97",
+      "claimed_times": [
+        "33/97",
+        "64/97"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "33/97",
+          "achieved_value": "16/97",
+          "limiting_speeds": [
+            24,
+            73
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "33/97",
+              "distance": "33/97"
+            },
+            {
+              "speed": 24,
+              "lap": 8,
+              "fractional_phase": "16/97",
+              "distance": "16/97"
+            },
+            {
+              "speed": 25,
+              "lap": 8,
+              "fractional_phase": "49/97",
+              "distance": "48/97"
+            },
+            {
+              "speed": 49,
+              "lap": 16,
+              "fractional_phase": "65/97",
+              "distance": "32/97"
+            },
+            {
+              "speed": 73,
+              "lap": 24,
+              "fractional_phase": "81/97",
+              "distance": "16/97"
+            },
+            {
+              "speed": 74,
+              "lap": 25,
+              "fractional_phase": "17/97",
+              "distance": "17/97"
+            },
+            {
+              "speed": 122,
+              "lap": 41,
+              "fractional_phase": "49/97",
+              "distance": "48/97"
+            }
+          ]
+        },
+        {
+          "time": "64/97",
+          "achieved_value": "16/97",
+          "limiting_speeds": [
+            24,
+            73
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "64/97",
+              "distance": "33/97"
+            },
+            {
+              "speed": 24,
+              "lap": 15,
+              "fractional_phase": "81/97",
+              "distance": "16/97"
+            },
+            {
+              "speed": 25,
+              "lap": 16,
+              "fractional_phase": "48/97",
+              "distance": "48/97"
+            },
+            {
+              "speed": 49,
+              "lap": 32,
+              "fractional_phase": "32/97",
+              "distance": "32/97"
+            },
+            {
+              "speed": 73,
+              "lap": 48,
+              "fractional_phase": "16/97",
+              "distance": "16/97"
+            },
+            {
+              "speed": 74,
+              "lap": 48,
+              "fractional_phase": "80/97",
+              "distance": "17/97"
+            },
+            {
+              "speed": 122,
+              "lap": 80,
+              "fractional_phase": "48/97",
+              "distance": "48/97"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 15120,
+        "base_intervals": 720,
+        "distinct_tent_corners": 721,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 15644,
+        "dominance_pieces": 1306,
+        "envelope_coverage_checks": 720,
+        "envelope_value_checks": 3918,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 224,
+        "tent_corner_occurrences": 743,
+        "threshold_bands_generated": 368,
+        "threshold_set_comparisons": 1
+      }
+    },
+    {
+      "q": 25,
+      "residue_mod_6": 1,
+      "speeds": [
+        1,
+        25,
+        26,
+        51,
+        76,
+        77,
+        127
+      ],
+      "maximum": "1/6",
+      "maximizing_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "positive_length_maximizing_components": 0,
+      "threshold_components": [
+        {
+          "start": "1/6",
+          "end": "1/6",
+          "kind": "point"
+        },
+        {
+          "start": "5/6",
+          "end": "5/6",
+          "kind": "point"
+        }
+      ],
+      "threshold_set_matches": true,
+      "claimed_value": "1/6",
+      "claimed_times": [
+        "1/6",
+        "5/6"
+      ],
+      "claimed_value_matches": true,
+      "claimed_all_times_match": true,
+      "maximizer_witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            25,
+            77,
+            127
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 25,
+              "lap": 4,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 26,
+              "lap": 4,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 51,
+              "lap": 8,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 76,
+              "lap": 12,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 77,
+              "lap": 12,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 127,
+              "lap": 21,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            25,
+            77,
+            127
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 25,
+              "lap": 20,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 26,
+              "lap": 21,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 51,
+              "lap": 42,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 76,
+              "lap": 63,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 77,
+              "lap": 64,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 127,
+              "lap": 105,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "affine_distance_checks": 15792,
+        "base_intervals": 752,
+        "distinct_tent_corners": 753,
+        "domain_endpoint_checks": 2,
+        "dominance_inequalities": 16382,
+        "dominance_pieces": 1374,
+        "envelope_coverage_checks": 752,
+        "envelope_value_checks": 4122,
+        "maximizer_value_checks": 6,
+        "singleton_dominance_pieces": 252,
+        "tent_corner_occurrences": 773,
+        "threshold_bands_generated": 383,
+        "threshold_set_comparisons": 1
+      }
+    }
+  ],
+  "witness_only_results": [
+    {
+      "q": 100002,
+      "residue_mod_6": 0,
+      "speeds": [
+        1,
+        100002,
+        100003,
+        200005,
+        300007,
+        300008,
+        500012
+      ],
+      "claimed_value": "66668/400009",
+      "witnesses": [
+        {
+          "time": "133337/400009",
+          "achieved_value": "66668/400009",
+          "limiting_speeds": [
+            100002,
+            300007
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "133337/400009",
+              "distance": "133337/400009"
+            },
+            {
+              "speed": 100002,
+              "lap": 33334,
+              "fractional_phase": "66668/400009",
+              "distance": "66668/400009"
+            },
+            {
+              "speed": 100003,
+              "lap": 33334,
+              "fractional_phase": "200005/400009",
+              "distance": "200004/400009"
+            },
+            {
+              "speed": 200005,
+              "lap": 66668,
+              "fractional_phase": "266673/400009",
+              "distance": "133336/400009"
+            },
+            {
+              "speed": 300007,
+              "lap": 100002,
+              "fractional_phase": "333341/400009",
+              "distance": "66668/400009"
+            },
+            {
+              "speed": 300008,
+              "lap": 100003,
+              "fractional_phase": "66669/400009",
+              "distance": "66669/400009"
+            },
+            {
+              "speed": 500012,
+              "lap": 166671,
+              "fractional_phase": "200005/400009",
+              "distance": "200004/400009"
+            }
+          ]
+        },
+        {
+          "time": "266672/400009",
+          "achieved_value": "66668/400009",
+          "limiting_speeds": [
+            100002,
+            300007
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "266672/400009",
+              "distance": "133337/400009"
+            },
+            {
+              "speed": 100002,
+              "lap": 66667,
+              "fractional_phase": "333341/400009",
+              "distance": "66668/400009"
+            },
+            {
+              "speed": 100003,
+              "lap": 66668,
+              "fractional_phase": "200004/400009",
+              "distance": "200004/400009"
+            },
+            {
+              "speed": 200005,
+              "lap": 133336,
+              "fractional_phase": "133336/400009",
+              "distance": "133336/400009"
+            },
+            {
+              "speed": 300007,
+              "lap": 200004,
+              "fractional_phase": "66668/400009",
+              "distance": "66668/400009"
+            },
+            {
+              "speed": 300008,
+              "lap": 200004,
+              "fractional_phase": "333340/400009",
+              "distance": "66669/400009"
+            },
+            {
+              "speed": 500012,
+              "lap": 333340,
+              "fractional_phase": "200004/400009",
+              "distance": "200004/400009"
+            }
+          ]
+        }
+      ],
+      "witness_value_matches": true,
+      "exhaustive_maximum_computed": false,
+      "all_maximizers_checked": false
+    },
+    {
+      "q": 100003,
+      "residue_mod_6": 1,
+      "speeds": [
+        1,
+        100003,
+        100004,
+        200007,
+        300010,
+        300011,
+        500017
+      ],
+      "claimed_value": "1/6",
+      "witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            100003,
+            300011,
+            500017
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100003,
+              "lap": 16667,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100004,
+              "lap": 16667,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 200007,
+              "lap": 33334,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 300010,
+              "lap": 50001,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 300011,
+              "lap": 50001,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 500017,
+              "lap": 83336,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            100003,
+            300011,
+            500017
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100003,
+              "lap": 83335,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100004,
+              "lap": 83336,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 200007,
+              "lap": 166672,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 300010,
+              "lap": 250008,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 300011,
+              "lap": 250009,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 500017,
+              "lap": 416680,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "witness_value_matches": true,
+      "exhaustive_maximum_computed": false,
+      "all_maximizers_checked": false
+    },
+    {
+      "q": 100004,
+      "residue_mod_6": 2,
+      "speeds": [
+        1,
+        100004,
+        100005,
+        200009,
+        300013,
+        300014,
+        500022
+      ],
+      "claimed_value": "83337/500023",
+      "witnesses": [
+        {
+          "time": "83338/500023",
+          "achieved_value": "83337/500023",
+          "limiting_speeds": [
+            200009,
+            300014
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "83338/500023",
+              "distance": "83338/500023"
+            },
+            {
+              "speed": 100004,
+              "lap": 16667,
+              "fractional_phase": "250011/500023",
+              "distance": "250011/500023"
+            },
+            {
+              "speed": 100005,
+              "lap": 16667,
+              "fractional_phase": "333349/500023",
+              "distance": "166674/500023"
+            },
+            {
+              "speed": 200009,
+              "lap": 33335,
+              "fractional_phase": "83337/500023",
+              "distance": "83337/500023"
+            },
+            {
+              "speed": 300013,
+              "lap": 50002,
+              "fractional_phase": "333348/500023",
+              "distance": "166675/500023"
+            },
+            {
+              "speed": 300014,
+              "lap": 50002,
+              "fractional_phase": "416686/500023",
+              "distance": "83337/500023"
+            },
+            {
+              "speed": 500022,
+              "lap": 83337,
+              "fractional_phase": "416685/500023",
+              "distance": "83338/500023"
+            }
+          ]
+        },
+        {
+          "time": "416685/500023",
+          "achieved_value": "83337/500023",
+          "limiting_speeds": [
+            200009,
+            300014
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "416685/500023",
+              "distance": "83338/500023"
+            },
+            {
+              "speed": 100004,
+              "lap": 83336,
+              "fractional_phase": "250012/500023",
+              "distance": "250011/500023"
+            },
+            {
+              "speed": 100005,
+              "lap": 83337,
+              "fractional_phase": "166674/500023",
+              "distance": "166674/500023"
+            },
+            {
+              "speed": 200009,
+              "lap": 166673,
+              "fractional_phase": "416686/500023",
+              "distance": "83337/500023"
+            },
+            {
+              "speed": 300013,
+              "lap": 250010,
+              "fractional_phase": "166675/500023",
+              "distance": "166675/500023"
+            },
+            {
+              "speed": 300014,
+              "lap": 250011,
+              "fractional_phase": "83337/500023",
+              "distance": "83337/500023"
+            },
+            {
+              "speed": 500022,
+              "lap": 416684,
+              "fractional_phase": "83338/500023",
+              "distance": "83338/500023"
+            }
+          ]
+        }
+      ],
+      "witness_value_matches": true,
+      "exhaustive_maximum_computed": false,
+      "all_maximizers_checked": false
+    },
+    {
+      "q": 100005,
+      "residue_mod_6": 3,
+      "speeds": [
+        1,
+        100005,
+        100006,
+        200011,
+        300016,
+        300017,
+        500027
+      ],
+      "claimed_value": "1/6",
+      "witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            200011,
+            300017,
+            500027
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100005,
+              "lap": 16667,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 100006,
+              "lap": 16667,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 200011,
+              "lap": 33335,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 300016,
+              "lap": 50002,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 300017,
+              "lap": 50002,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 500027,
+              "lap": 83337,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            200011,
+            300017,
+            500027
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100005,
+              "lap": 83337,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 100006,
+              "lap": 83338,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 200011,
+              "lap": 166675,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 300016,
+              "lap": 250013,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 300017,
+              "lap": 250014,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 500027,
+              "lap": 416689,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            }
+          ]
+        }
+      ],
+      "witness_value_matches": true,
+      "exhaustive_maximum_computed": false,
+      "all_maximizers_checked": false
+    },
+    {
+      "q": 100006,
+      "residue_mod_6": 4,
+      "speeds": [
+        1,
+        100006,
+        100007,
+        200013,
+        300019,
+        300020,
+        500032
+      ],
+      "claimed_value": "1/6",
+      "witnesses": [
+        {
+          "time": "1/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            100007,
+            300019
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100006,
+              "lap": 16667,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 100007,
+              "lap": 16667,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 200013,
+              "lap": 33335,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 300019,
+              "lap": 50003,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 300020,
+              "lap": 50003,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 500032,
+              "lap": 83338,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            }
+          ]
+        },
+        {
+          "time": "5/6",
+          "achieved_value": "1/6",
+          "limiting_speeds": [
+            1,
+            100007,
+            300019
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 100006,
+              "lap": 83338,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 100007,
+              "lap": 83339,
+              "fractional_phase": "1/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 200013,
+              "lap": 166677,
+              "fractional_phase": "1/2",
+              "distance": "1/2"
+            },
+            {
+              "speed": 300019,
+              "lap": 250015,
+              "fractional_phase": "5/6",
+              "distance": "1/6"
+            },
+            {
+              "speed": 300020,
+              "lap": 250016,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 500032,
+              "lap": 416693,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            }
+          ]
+        }
+      ],
+      "witness_value_matches": true,
+      "exhaustive_maximum_computed": false,
+      "all_maximizers_checked": false
+    },
+    {
+      "q": 100007,
+      "residue_mod_6": 5,
+      "speeds": [
+        1,
+        100007,
+        100008,
+        200015,
+        300022,
+        300023,
+        500037
+      ],
+      "claimed_value": "100007/600045",
+      "witnesses": [
+        {
+          "time": "200014/600045",
+          "achieved_value": "100007/600045",
+          "limiting_speeds": [
+            300022,
+            300023
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "200014/600045",
+              "distance": "200014/600045"
+            },
+            {
+              "speed": 100007,
+              "lap": 33335,
+              "fractional_phase": "300023/600045",
+              "distance": "300022/600045"
+            },
+            {
+              "speed": 100008,
+              "lap": 33335,
+              "fractional_phase": "166679/200015",
+              "distance": "33336/200015"
+            },
+            {
+              "speed": 200015,
+              "lap": 66671,
+              "fractional_phase": "1/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 300022,
+              "lap": 100006,
+              "fractional_phase": "500038/600045",
+              "distance": "100007/600045"
+            },
+            {
+              "speed": 300023,
+              "lap": 100007,
+              "fractional_phase": "100007/600045",
+              "distance": "100007/600045"
+            },
+            {
+              "speed": 500037,
+              "lap": 166678,
+              "fractional_phase": "33336/200015",
+              "distance": "33336/200015"
+            }
+          ]
+        },
+        {
+          "time": "400031/600045",
+          "achieved_value": "100007/600045",
+          "limiting_speeds": [
+            300022,
+            300023
+          ],
+          "runners": [
+            {
+              "speed": 1,
+              "lap": 0,
+              "fractional_phase": "400031/600045",
+              "distance": "200014/600045"
+            },
+            {
+              "speed": 100007,
+              "lap": 66671,
+              "fractional_phase": "300022/600045",
+              "distance": "300022/600045"
+            },
+            {
+              "speed": 100008,
+              "lap": 66672,
+              "fractional_phase": "33336/200015",
+              "distance": "33336/200015"
+            },
+            {
+              "speed": 200015,
+              "lap": 133343,
+              "fractional_phase": "2/3",
+              "distance": "1/3"
+            },
+            {
+              "speed": 300022,
+              "lap": 200015,
+              "fractional_phase": "100007/600045",
+              "distance": "100007/600045"
+            },
+            {
+              "speed": 300023,
+              "lap": 200015,
+              "fractional_phase": "500038/600045",
+              "distance": "100007/600045"
+            },
+            {
+              "speed": 500037,
+              "lap": 333358,
+              "fractional_phase": "166679/200015",
+              "distance": "33336/200015"
+            }
+          ]
+        }
+      ],
+      "witness_value_matches": true,
+      "exhaustive_maximum_computed": false,
+      "all_maximizers_checked": false
+    }
+  ],
+  "failures": [],
+  "conclusion": "PASS within the declared finite scope",
+  "limits": [
+    "No infinite-q upper bound or uniqueness proof is certified by this finite calculation.",
+    "Large-q checks establish only achieved witness values, not maxima or uniqueness.",
+    "No other speed family, reference runner, or initial phase was examined.",
+    "Fresh internally AI-authored code is a useful countercheck, not external certification."
+  ]
+}

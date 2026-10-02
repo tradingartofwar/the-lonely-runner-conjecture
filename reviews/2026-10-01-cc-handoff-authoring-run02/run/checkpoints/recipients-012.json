@@ -1,0 +1,754 @@
+{
+  "phase": "recipients",
+  "terminal_records": [
+    {
+      "question": "H01-Q3",
+      "history": "H01",
+      "method": "cc",
+      "author": "A001",
+      "id": "Q001",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q001",
+      "started_at": "2026-10-02T00:36:02.380290+00:00",
+      "started_epoch": 1790901362.3803062,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nSuppose B's pack is replaced and a valid new test establishes 8.5 hours, with all its other recorded attributes unchanged. Under the current rule, what is the new bench-ready set? Explain any change.\n\nEVIDENCE\nSTATUS\nAt Day 12, only C is bench-ready. A lacks current tests and has buffering disabled; B fails runtime only. Adopted v2 (R08, Day 8) requires firmware 8, packet success ≥99%, latency ≤7 seconds, buffering enabled, and runtime ≥8 hours on the same station. Equality passes; v2 supersedes v1.\n\nEVIDENCE\nR12 confirms all three remain on firmware 8. A retains its unchanged nine-hour pack; its only packet/latency results—99/100 and four seconds on firmware 7 (R03, Day 3)—became invalid after its Day 6 upgrade (R06), without demonstrating worse performance. Buffering remains disabled (R07). Its green READY badge reflects historical v1. B retains 119/120 packets, six-second latency (R04), enabled buffering (R07), and its 7.5-hour pack. The replacement order remains unfulfilled and unmeasured (R09–R12). C retains 198/200 packets, seven-second latency, enabled buffering, and eight-hour runtime (R10, Day 10).\n\nNEXT\nB can become ready after an installed pack verifies ≥8 hours, provided its other evidence remains valid. A needs buffering enabled and qualifying firmware-8 packet/latency tests. Reuse tests only when firmware and relevant hardware remain unchanged; firmware changes invalidate packet/latency evidence, while unchanged-pack runtime remains reusable (R01/R08). Readiness does not book resources: C’s afternoon transport matches the room availability (R11). Recover dated source events for proposed changes or scheduling details.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:36:02.381033+00:00",
+          "sha256": "b0bca4b6c65dfcba8400594ada980956c41509b5066802cac462bd70765f8690",
+          "delivered_at": "2026-10-02T00:36:30.901322+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"The new bench-ready set is {B, C}. B’s valid 8.5-hour runtime passes v2’s ≥8-hour requirement, resolving its only failure. Its unchanged firmware 8, 119/120 packet success (about 99.17%), six-second latency, and enabled buffering satisfy the remaining requirements. C remains ready, with its 99% packet success, seven-second latency, and eight-hour runtime passing at equality. A remains excluded because buffering is disabled and its firmware-7 packet/latency results are invalid after the firmware-8 upgrade.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:37:12.050077+00:00",
+          "raw_file": "incoming/Q001-01.json",
+          "sha256": "e9d712f98ac2224479606fce836c11b98ef9b878e1f26606e658c9d8922f8f48",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 71,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "The new bench-ready set is {B, C}. B’s valid 8.5-hour runtime passes v2’s ≥8-hour requirement, resolving its only failure. Its unchanged firmware 8, 119/120 packet success (about 99.17%), six-second latency, and enabled buffering satisfy the remaining requirements. C remains ready, with its 99% packet success, seven-second latency, and eight-hour runtime passing at equality. A remains excluded because buffering is disabled and its firmware-7 packet/latency results are invalid after the firmware-8 upgrade.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:37:12.050335+00:00",
+      "final_answer": {
+        "answer": "The new bench-ready set is {B, C}. B’s valid 8.5-hour runtime passes v2’s ≥8-hour requirement, resolving its only failure. Its unchanged firmware 8, 119/120 packet success (about 99.17%), six-second latency, and enabled buffering satisfy the remaining requirements. C remains ready, with its 99% packet success, seven-second latency, and eight-hour runtime passing at equality. A remains excluded because buffering is disabled and its firmware-7 packet/latency results are invalid after the firmware-8 upgrade.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:37:12.050340+00:00",
+      "ended_epoch": 1790901432.0503418,
+      "visible_input_words": 398,
+      "visible_input_characters": 2681,
+      "visible_output_words": 71,
+      "visible_output_characters": 539,
+      "actual_tokens": null
+    },
+    {
+      "question": "H04-Q3",
+      "history": "H04",
+      "method": "cc",
+      "author": "A008",
+      "id": "Q002",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q002",
+      "started_at": "2026-10-02T00:36:30.961722+00:00",
+      "started_epoch": 1790901390.961737,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nSuppose only the two missing M0 comparisons now complete and verify K95 and K96 revision 1. Nothing else changes. May the source now be retired? Give the updated current-revision verification count and remaining blockers.\n\nEVIDENCE\nSTATUS\nAt Day 12, source retirement is not permitted under H01. The writable source has 97 keys: K12 revision 2, all others revision 1. Destination evidence covers 96 M0 ingestion acknowledgments and 94 verified M0 matches; only 93 matches establish current revisions. Current verification gaps are K95, K96, K97, and K12 revision 2.\n\nEVIDENCE\nH02–H03: M0 contains K1–K96 revision 1; backup-east and archive-copy alias one stored object, object-amber, not independent copies. H04–H07: ingestion accepted writing; audits matched K1–K94 revision 1, with K95–K96 unaudited and zero observed mismatches. H08–H09: the complete delta ledger contains K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence. H10: preview routing neither retired the source nor added verification; its sample excluded all four gaps. H11–H12: planned work remains unexecuted, with no further recorded source changes. Missing audits do not establish corruption.\n\nNEXT\nComplete K95–K96 revision-1 comparisons, then synchronize and verify both deltas. If those two comparisons match, M0 becomes fully verified: 96 snapshot matches, but only 95 current matches out of 97; retirement still fails. Retirement requires verified destination matches for every current key/revision, accounting for subsequent writes. Recover exact scope from H01–H03, audit evidence H04–H07, deltas H08–H09, and proposal/cutoff H11–H12.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:36:30.962497+00:00",
+          "sha256": "c020f021465fb7ff8812afa745c07a4ded0210dc98758b9315ab3d7f565312c8",
+          "delivered_at": "2026-10-02T00:37:12.017577+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"No. The two successful comparisons raise verification to 96 M0 snapshot matches, but only 95 of 97 current key/revisions are verified. Remaining blockers are K97 revision 1 and K12 revision 2: neither has destination ingestion or verification evidence. Both deltas must be synchronized and verified. Because the source remains writable, any subsequent writes must also be accounted for before retirement. The planned work remains unexecuted.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:37:45.722362+00:00",
+          "raw_file": "incoming/Q002-01.json",
+          "sha256": "59f737e8d2b108b408e761200718d04e855a1a8fd5bef9e80218175e548b30f3",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 65,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "No. The two successful comparisons raise verification to 96 M0 snapshot matches, but only 95 of 97 current key/revisions are verified. Remaining blockers are K97 revision 1 and K12 revision 2: neither has destination ingestion or verification evidence. Both deltas must be synchronized and verified. Because the source remains writable, any subsequent writes must also be accounted for before retirement. The planned work remains unexecuted.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:37:45.722657+00:00",
+      "final_answer": {
+        "answer": "No. The two successful comparisons raise verification to 96 M0 snapshot matches, but only 95 of 97 current key/revisions are verified. Remaining blockers are K97 revision 1 and K12 revision 2: neither has destination ingestion or verification evidence. Both deltas must be synchronized and verified. Because the source remains writable, any subsequent writes must also be accounted for before retirement. The planned work remains unexecuted.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:37:45.722663+00:00",
+      "ended_epoch": 1790901465.722665,
+      "visible_input_words": 393,
+      "visible_input_characters": 2676,
+      "visible_output_words": 65,
+      "visible_output_characters": 470,
+      "actual_tokens": null
+    },
+    {
+      "question": "H05-Q1",
+      "history": "H05",
+      "method": "conventional",
+      "author": "A003",
+      "id": "Q003",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q003",
+      "started_at": "2026-10-02T00:37:12.109653+00:00",
+      "started_epoch": 1790901432.1096666,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nUnder the final adopted caps, which feasible pair maximizes output? Give the pair, output and total use of staff, memory and power.\n\nEVIDENCE\nSTATUS\nAt the Day 12 cutoff, select B+C: output 16 and combined (staff, memory, power) use (8,9,8), exactly the adopted caps. It is the only feasible pair and therefore optimal. Exactly two distinct, indivisible jobs must run simultaneously for the full session; resources add, with no borrowing across sessions or resource substitution.\n\nEVIDENCE\nD02–D04/D12 give requirements and outputs: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. A+B uses (9,11,9), output 18, exceeding current staff, memory, power by (1,2,1). A+C uses (7,10,7), output 14, exceeding memory by 1. D07 adopted the memory correction from 10 to 9; staff and power remained 8. Under D05 provisional caps, A+C and B+C were feasible, but A+B was not. Its early output-based slide was only a proposal; individual feasibility and staff-only checks cannot approve pairs. All quantities are exact.\n\nNEXT\nNeither D08 staff rental nor D10 extra memory was adopted; D09 mandatory A remains hypothetical. Staff rental alone gives caps (10,9,8) and leaves only B+C feasible. Extra memory alone gives (8,10,8): B+C remains optimal, while A+C becomes the feasible mandatory-A choice. Both options together still leave A+B short of memory and power. For changed requirements or caps, recheck all three pairs using D12 primitives.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:37:12.110460+00:00",
+          "sha256": "ede793199387fbbf1a4792fa5c15c96d8b187eb1a927488344206c4edece305f",
+          "delivered_at": "2026-10-02T00:37:45.685617+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"B+C is the only feasible pair and therefore maximizes output. Its output is 16, with total use of 8 staff, 9 memory, and 8 power, exactly matching the final adopted caps.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:38:16.139660+00:00",
+          "raw_file": "incoming/Q003-01.json",
+          "sha256": "56752d5a9707dab4dae5943c80364901d47f37c73ba5db35d22afac824d2b797",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 31,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "B+C is the only feasible pair and therefore maximizes output. Its output is 16, with total use of 8 staff, 9 memory, and 8 power, exactly matching the final adopted caps.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:38:16.139936+00:00",
+      "final_answer": {
+        "answer": "B+C is the only feasible pair and therefore maximizes output. Its output is 16, with total use of 8 staff, 9 memory, and 8 power, exactly matching the final adopted caps.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:38:16.139941+00:00",
+      "ended_epoch": 1790901496.139943,
+      "visible_input_words": 381,
+      "visible_input_characters": 2468,
+      "visible_output_words": 31,
+      "visible_output_characters": 199,
+      "actual_tokens": null
+    },
+    {
+      "question": "H04-Q1",
+      "history": "H04",
+      "method": "conventional",
+      "author": "A007",
+      "id": "Q004",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q004",
+      "started_at": "2026-10-02T00:37:45.799729+00:00",
+      "started_epoch": 1790901465.7997437,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nMay the live source be retired at the cutoff under the supplied rule? How many current source keys have verified matching current revisions, and which keys still prevent establishing complete coverage?\n\nEVIDENCE\nSTATUS\nAt Day 12, the source may not be retired under H01: the destination lacks verification of every current source revision. The source remains available and writable, with 97 keys: K12 at revision 2, all others at revision 1. Current-revision verification covers 93 of 97 keys.\n\nEVIDENCE\nH02–H07/H12 establish 96 M0 ingestion acknowledgments, meaning accepted for writing, and 94 verified revision-1 matches, with zero observed mismatches. K95 and K96 remain unaudited. K12's historical revision-1 match does not verify its current revision 2. H08–H09 record exactly two post-snapshot changes: K97 revision 1 and K12 revision 2; neither has destination ingestion or verification evidence. Missing evidence does not establish corruption. H03/H12 confirm backup-east and archive-copy are aliases for one stored object, object-amber, containing only M0. H10's successful read-only preview excludes all four current verification gaps; routing neither verifies content nor retires the source.\n\nNEXT\nFollow H11's unexecuted plan: audit K95 and K96, then synchronize and verify both delta revisions. Successful completion of only those two audits would yield 96 verified M0 matches but just 95 of 97 current-revision matches; retirement would still fail. Check for further source changes before retirement because writes remain enabled. H08–H12 supply the complete cutoff delta and destination evidence.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:37:45.800451+00:00",
+          "sha256": "eb525602e8770725cec5fc0955ef8eff6e50119a7b613a4ee4a77521dcd64924",
+          "delivered_at": "2026-10-02T00:38:16.101072+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"No. At the cutoff, H01 does not permit retirement because only 93 of 97 current source keys have verified matching current revisions. Four keys prevent establishing complete coverage: K95 and K96 remain unaudited; K97 revision 1 lacks destination ingestion and verification evidence; and K12 revision 2 lacks destination ingestion and verification evidence—its historical revision-1 match does not cover its current revision. The planned actions are unexecuted, and the successful preview excluded these gaps. Missing verification does not establish corruption.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:39:26.746865+00:00",
+          "raw_file": "incoming/Q004-01.json",
+          "sha256": "ad16f9047230f66bfe7ebd6ec743a9eec47c0b58881d2e862958da853ab5a041",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 79,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "No. At the cutoff, H01 does not permit retirement because only 93 of 97 current source keys have verified matching current revisions. Four keys prevent establishing complete coverage: K95 and K96 remain unaudited; K97 revision 1 lacks destination ingestion and verification evidence; and K12 revision 2 lacks destination ingestion and verification evidence—its historical revision-1 match does not cover its current revision. The planned actions are unexecuted, and the successful preview excluded these gaps. Missing verification does not establish corruption.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:39:26.747082+00:00",
+      "final_answer": {
+        "answer": "No. At the cutoff, H01 does not permit retirement because only 93 of 97 current source keys have verified matching current revisions. Four keys prevent establishing complete coverage: K95 and K96 remain unaudited; K97 revision 1 lacks destination ingestion and verification evidence; and K12 revision 2 lacks destination ingestion and verification evidence—its historical revision-1 match does not cover its current revision. The planned actions are unexecuted, and the successful preview excluded these gaps. Missing verification does not establish corruption.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:39:26.747087+00:00",
+      "ended_epoch": 1790901566.7470884,
+      "visible_input_words": 391,
+      "visible_input_characters": 2635,
+      "visible_output_words": 79,
+      "visible_output_characters": 590,
+      "actual_tokens": null
+    },
+    {
+      "question": "H02-Q1",
+      "history": "H02",
+      "method": "full_source",
+      "author": null,
+      "id": "Q005",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q005",
+      "started_at": "2026-10-02T00:38:16.214561+00:00",
+      "started_epoch": 1790901496.2145793,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: complete source history. Answer from this source and the query. Set recover to false; no additional source is available.\n\nQUESTION\nUsing the accepted current calibration, how many unique samples are late, out of how many unique samples? Name the late sample or samples.\n\nEVIDENCE\n# Canal telemetry replay\n\nThis is a synthetic telemetry investigation with a complete finite event catalogue. The cutoff is the end of Day 12. The incoming analyst must determine delivery performance, recover timings from the appropriate clock, and explain what a changed timing uncertainty would permit. All arithmetic uses seconds on a fictional reference timeline. The task concerns three unique acquired samples, S, T, and U. Transport retries do not create new acquired samples. Clock labels are part of the evidence; numbers copied from different clocks cannot be subtracted until their relation is applied. All intervals and acceptance thresholds in this history include their endpoints.\n\n## C01 — Day 1, definition\n\nA sample passes the delivery requirement if its true gateway arrival time minus its acquisition time is at most two seconds. Acquisition timestamps are already on the reference clock. Gateway timestamps use a different clock. The word delivery in this requirement means arrival at the gateway, not later insertion into a reporting database. Acquisition identifiers remain unchanged when a packet is retried. Every sample in the catalogue must be counted once. The analyst is asked to preserve enough detail to explain both a pass rate and a disputed individual sample.\n\n## C02 — Day 2, dashboard draft\n\nThe first dashboard simply subtracts acquisition timestamps from the gateway's recorded timestamp. It labels differences above two seconds as late. The designer acknowledges that this is a provisional display awaiting clock calibration. It is useful for locating rows but is not yet an accepted lateness calculation. A separate graph shows database insertion times, which are intended for checking report backlog. Its title is shortened to receipt time in an early screenshot. The investigation retains that screenshot as historical context rather than silently treating the graph's title as a measurement definition.\n\n## C03 — Day 3, sample S\n\nSample S is acquired at reference time 100 and has gateway recorded arrival timestamp 104. Its database insertion occurs at reference time 111. The row is intact, and no part of its payload is missing. The transport monitor marks it delivered because an arrival occurred; that mark does not itself decide whether the two-second latency requirement was met. The operator copies both timestamps into the investigation record. S is never retried, and there are no other observations with its acquisition identifier in the complete supplied catalogue.\n\n## C04 — Day 4, sample T\n\nSample T is acquired at reference time 100.5 and has gateway recorded arrival timestamp 104.5. Its database insertion occurs at reference time 111, the same insertion time shown for S because the reporting process writes them together. The insertion batch therefore does not imply simultaneous acquisition or simultaneous arrival. The packet carries a different acquisition identifier from S and is a distinct sample. There is no retry for T. A chart that groups events by whole database insertion seconds is retained for backlog planning only.\n\n## C05 — Day 5, sample U\n\nSample U is acquired at reference time 102 and has gateway recorded arrival timestamp 108. Its database insertion occurs at reference time 113. A retry envelope is later named U-retry, but it contains the same acquisition identifier and payload as U. It does not contain a new acquisition or a second first-arrival observation. The packet-level transport log counts this envelope as a second transmission. The sample-level service requirement counts only U once. The investigation must keep those denominators distinct when it translates the dashboard into a readiness report.\n\n## C06 — Day 6, provisional count\n\nAn uncorrected screenshot shows four late rows: S, T, U, and U-retry. This is a faithful picture of what the provisional software displayed, not a verified statement that four unique samples violated the service requirement. One issue is clock calibration and another is retry identity. The analyst retains the screenshot to explain why the initial alarm was larger than the eventual sample catalogue. The number four should not disappear from the project history, but its meaning must not change from displayed rows to confirmed distinct failures.\n\n## C07 — Day 7, clock calibration\n\nThe timing test establishes that the gateway clock was exactly three seconds ahead of the reference clock throughout all three arrivals. Thus a gateway reading g corresponds to reference time g minus three. The calibration covers the complete relevant arrival period; no drift or additional uncertainty applies in the current case. Acquisition timestamps need no correction. Database insertion timestamps also already use the reference clock. A technician's older guess of a one-second offset is withdrawn. This accepted calibration replaces that guess and governs the current performance calculation.\n\n## C08 — Day 8, identity audit\n\nThe complete acquired-sample set is confirmed as S, T, and U. U-retry is an alias for U's retry envelope, not a fourth sample. No hidden samples are omitted, and no original acquisition has been excluded as invalid. Both envelope identifiers remain useful for tracing transport traffic. The service-level report, however, must use the three unique acquisition identifiers. The audit also confirms that the first gateway arrival values recorded in C03 through C05 are the ones to use, rather than the time a retry receipt was copied into the dashboard.\n\n## C09 — Day 9, display repair\n\nThe developer plans two independent fixes: apply the accepted clock conversion and group transmissions by acquisition identifier. A preview changes the graph colors and rearranges the sample labels, but it does not add new measurements. The release ticket is still open, so screenshots from the deployed dashboard can continue to show the old provisional counts. The analyst can nevertheless calculate the required results from the preserved raw rows and calibration. A future display update is not a prerequisite for arithmetic, and a display preview is not an extra source of timing evidence.\n\n## C10 — Day 10, contingency convention\n\nThe team records how to handle a future uncertainty interval for the offset. If the gateway is ahead by any amount o in a specified closed interval, an arrival reading g corresponds to the possible reference times g minus o. A guaranteed pass must meet the two-second requirement for every allowed offset. A guaranteed failure must exceed it for every allowed offset. An interval spanning a passing and a failing value supports neither guarantee. This convention does not replace the currently exact offset; it specifies how a changed assumption would be evaluated.\n\n## C11 — Day 11, reporting scope\n\nThe incoming analyst should distinguish current observed lateness, the worst possible delay under a hypothetical uncertain offset, and the later database backlog. The report is not asked to estimate reliability for unseen samples or infer behavior on other days. S and T's shared insertion batch can be mentioned if explaining the display, but it is irrelevant to the current delivery threshold. The three seconds of calibration are a signed clock relation, not a processing delay that should be added to latency. The complete raw values remain available in the dated entries.\n\n## C12 — Day 12, cutoff\n\nThere are no further samples, calibration changes, or amended raw timestamps. The current accepted offset remains exactly plus three seconds on the gateway clock. The complete sample set remains S, T, and U. The service threshold remains delay at most two seconds, including equality. The analyst will hand over both the factual current evaluation and enough of the conversion rule to assess a later explicit uncertainty change. Neither the unresolved display release nor the old screenshot changes the recorded sample identities or the accepted calibration.\n",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:38:16.214673+00:00",
+          "sha256": "b7a5f0b2167fb5db3369cc73a3b3fee2042383a587b9bb74b9ce0aeca5ad20b1",
+          "delivered_at": "2026-10-02T00:39:26.714804+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"1 of 3 unique samples is late: U. With the accepted three-second clock correction, S and T each have a one-second delivery delay, while U has a three-second delay, exceeding the two-second limit. U-retry counts as the same sample as U.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:40:32.796703+00:00",
+          "raw_file": "incoming/Q005-01.json",
+          "sha256": "2e797321312bcd1f9f2b9eb7a4f3dc8305170e356fa4af268adce3c3b54a4be9",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 41,
+            "schema_and_cap_status": "PASS",
+            "mode": "full_source",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "1 of 3 unique samples is late: U. With the accepted three-second clock correction, S and T each have a one-second delivery delay, while U has a three-second delay, exceeding the two-second limit. U-retry counts as the same sample as U.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:40:32.796936+00:00",
+      "final_answer": {
+        "answer": "1 of 3 unique samples is late: U. With the accepted three-second clock correction, S and T each have a one-second delivery delay, while U has a three-second delay, exceeding the two-second limit. U-retry counts as the same sample as U.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:40:32.796941+00:00",
+      "ended_epoch": 1790901632.796943,
+      "visible_input_words": 1411,
+      "visible_input_characters": 9000,
+      "visible_output_words": 41,
+      "visible_output_characters": 264,
+      "actual_tokens": null
+    },
+    {
+      "question": "H05-Q2",
+      "history": "H05",
+      "method": "full_source",
+      "author": null,
+      "id": "Q006",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q006",
+      "started_at": "2026-10-02T00:39:26.810640+00:00",
+      "started_epoch": 1790901566.810653,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: complete source history. Answer from this source and the query. Set recover to false; no additional source is available.\n\nQUESTION\nIf only the staff rental is adopted, does the A/B pair become feasible? Identify any remaining resource violations using the recorded quantities.\n\nEVIDENCE\n# Cedar shared-resource planning\n\nThis is a synthetic planning problem. All quantities are exact abstract units, not estimates for a real facility. The cutoff is the end of Day 12. The incoming planner must choose a feasible simultaneous pair, explain why earlier proposals changed, and reconsider the choice if a requirement or resource allowance changes. Three jobs are available: A, B, and C. Jobs are indivisible and run for the same full session. Their resource requirements add when run together. A job cannot borrow spare resources from a later session or split its work across time unless the question explicitly changes that rule.\n\n## D01 — Day 1, goal\n\nThe initial goal is to run exactly two distinct jobs simultaneously and maximize their total output. There are three shared resource types: staff, memory, and power. A pair is feasible only if its summed requirements fit all three current caps at the same time. Feasibility is a supplied deterministic definition, not a probability estimate. Individual jobs can each be feasible while a proposed pair is not. The planner should retain enough of the alternatives to respond if a later request requires a particular job instead of simply maximizing the original objective.\n\n## D02 — Day 2, job A\n\nJob A needs four staff units, six memory units, and four power units for the session. It produces eight output units. Its setup is already complete and adds no further resource cost in this scenario. The team likes A because its output is easy to demonstrate, but preference does not change either its resource needs or the objective. These quantities remain fixed through the cutoff. A screen showing A alone reports it feasible under the provisional caps; that statement concerns the single job, not any pair containing it.\n\n## D03 — Day 3, job B\n\nJob B needs five staff units, five memory units, and five power units. It produces ten output units. The prototype schedule gives B the largest output label among the three jobs. It also lists a separate staff-only check to help the coordinator reserve people. That check is deliberately incomplete as a feasibility decision because memory and power are also shared. All three resource values apply simultaneously for the entire session. There is no option in the supplied catalogue to lower B's resource needs by accepting a smaller output.\n\n## D04 — Day 4, job C\n\nJob C needs three staff units, four memory units, and three power units and produces six output units. Its preparation note describes it as a possible companion for either A or B, depending on the caps. That wording is conditional rather than an approval of both pairs under every future budget. C is a distinct job and cannot be run twice to satisfy the two-job requirement. The project has no other job candidates. The incoming planner may therefore enumerate all three possible unordered pairs without assuming an unexplored external alternative exists.\n\n## D05 — Day 5, provisional caps\n\nThe provisional shared caps are eight staff units, ten memory units, and eight power units. Each job fits by itself. An early slide highlights A and B because their separate outputs sum to eighteen, the largest unconstrained pair total. The slide was produced before the pair-resource calculation and is marked proposed. The pair's total requirements must be computed from both jobs. Neither an individual green badge nor the unconstrained output ranking establishes that this pair can run within the shared caps.\n\n## D06 — Day 6, pair discussion\n\nThe team calculates candidate pairs and keeps the job-level requirements rather than only saving the winning name. A proposed rental would raise the staff cap, but it would not change memory or power. The rental quote is for staff capacity only. The coordinator explicitly rejects reading the phrase more capacity as an increase to every resource. The quote remains a proposal. No rental has been accepted, and the current staff cap is still eight. The project does not permit staff to substitute for missing memory or power units.\n\n## D07 — Day 7, resource correction\n\nThe facility corrects the memory allowance from ten to nine units for the planned session. This is an adopted change and supersedes the earlier memory cap. The staff cap stays eight and the power cap stays eight. The correction changes the feasibility of some combinations without changing their output or job-level requirements. Old pair calculations under the ten-unit allowance are preserved with their date. They are useful for a future changed-budget question but cannot be silently reused as current approvals.\n\n## D08 — Day 8, staff-only rental\n\nThe rental proposal is made concrete: it would raise the staff cap from eight to ten units, leaving the memory cap at nine and the power cap at eight. Its availability is assumed if a later question explicitly adopts it, but it is not adopted in the actual history. The rental has no output of its own and does not add a fourth job. A planner examining this option must recheck every limiting resource. Satisfying a previously tight staff inequality does not erase independent memory or power requirements.\n\n## D09 — Day 9, alternative requirement\n\nA stakeholder says that a future demonstration might require job A to be included. This request is not adopted for the current session; the present objective is still maximum output from any feasible pair. The coordinator asks the handoff to retain what would need to change if A later became mandatory. The project has no universal rule that the currently best pair remains best under a new inclusion requirement. The alternative must be evaluated from the original job requirements and whatever caps the new question actually supplies.\n\n## D10 — Day 10, separate memory option\n\nA separate option could add one memory unit, taking the adopted nine-unit cap back to ten. This option would leave staff and power at eight unless another change were separately specified. The option is not adopted before the cutoff. It must not be merged with the staff rental merely because both appear in the planning discussion. The two options affect different constraints and can be considered independently. The current plan includes neither option, and no resource measurement or job requirement is revised on this date.\n\n## D11 — Day 11, reporting request\n\nThe incoming planner should state the selected pair, its total output, and its combined use of each resource. If asked about a rejected alternative, the explanation should identify the actual binding violations, not merely say it lost to another pair. If the objective changes, the planner should distinguish the original optimum from feasibility under the changed requirement. The finite catalogue is small enough that no search budget issue arises. A calculation that covers all three pairs is complete for this scenario, without claiming anything about larger scheduling problems.\n\n## D12 — Day 12, cutoff\n\nThe final adopted caps are eight staff units, nine memory units, and eight power units. Job A still has requirements (4,6,4) and output 8; B has (5,5,5) and output 10; C has (3,4,3) and output 6, in staff, memory, power order. Exactly two distinct jobs must run simultaneously. No rental or extra memory has been adopted. The future A-inclusion request remains hypothetical. This final inventory is a convenient restatement of the primitives, not a replacement for the chronology explaining which earlier proposals and budgets are no longer current.\n",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:39:26.810740+00:00",
+          "sha256": "1775bfbccc1e4f44f454810b6f6a94f0c0be79e5324601bf9b0922e5d51a689e",
+          "delivered_at": "2026-10-02T00:40:32.765246+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"No. With only the staff rental adopted, the caps are 10 staff, 9 memory, and 8 power. A/B requires 9 staff, 11 memory, and 9 power. Staff fits, but memory exceeds its cap by 2 units and power exceeds its cap by 1 unit, so A/B remains infeasible.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:41:47.206621+00:00",
+          "raw_file": "incoming/Q006-01.json",
+          "sha256": "cfdbd08411ba2a4382940884f09a39805d19ec361fbfa25cb3b70491fe227005",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 48,
+            "schema_and_cap_status": "PASS",
+            "mode": "full_source",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "No. With only the staff rental adopted, the caps are 10 staff, 9 memory, and 8 power. A/B requires 9 staff, 11 memory, and 9 power. Staff fits, but memory exceeds its cap by 2 units and power exceeds its cap by 1 unit, so A/B remains infeasible.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:41:47.206857+00:00",
+      "final_answer": {
+        "answer": "No. With only the staff rental adopted, the caps are 10 staff, 9 memory, and 8 power. A/B requires 9 staff, 11 memory, and 9 power. Staff fits, but memory exceeds its cap by 2 units and power exceeds its cap by 1 unit, so A/B remains infeasible.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:41:47.206863+00:00",
+      "ended_epoch": 1790901707.2068644,
+      "visible_input_words": 1391,
+      "visible_input_characters": 8562,
+      "visible_output_words": 48,
+      "visible_output_characters": 274,
+      "actual_tokens": null
+    },
+    {
+      "question": "H05-Q3",
+      "history": "H05",
+      "method": "full_source",
+      "author": null,
+      "id": "Q007",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q007",
+      "started_at": "2026-10-02T00:40:32.867462+00:00",
+      "started_epoch": 1790901632.8674784,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: complete source history. Answer from this source and the query. Set recover to false; no additional source is available.\n\nQUESTION\nInstead of the original objective, require exactly two jobs including A and add only one memory unit to the final adopted allowance. Staff and power stay unchanged, and the staff rental is not adopted. What feasible pair can be chosen, with what output and resource totals?\n\nEVIDENCE\n# Cedar shared-resource planning\n\nThis is a synthetic planning problem. All quantities are exact abstract units, not estimates for a real facility. The cutoff is the end of Day 12. The incoming planner must choose a feasible simultaneous pair, explain why earlier proposals changed, and reconsider the choice if a requirement or resource allowance changes. Three jobs are available: A, B, and C. Jobs are indivisible and run for the same full session. Their resource requirements add when run together. A job cannot borrow spare resources from a later session or split its work across time unless the question explicitly changes that rule.\n\n## D01 — Day 1, goal\n\nThe initial goal is to run exactly two distinct jobs simultaneously and maximize their total output. There are three shared resource types: staff, memory, and power. A pair is feasible only if its summed requirements fit all three current caps at the same time. Feasibility is a supplied deterministic definition, not a probability estimate. Individual jobs can each be feasible while a proposed pair is not. The planner should retain enough of the alternatives to respond if a later request requires a particular job instead of simply maximizing the original objective.\n\n## D02 — Day 2, job A\n\nJob A needs four staff units, six memory units, and four power units for the session. It produces eight output units. Its setup is already complete and adds no further resource cost in this scenario. The team likes A because its output is easy to demonstrate, but preference does not change either its resource needs or the objective. These quantities remain fixed through the cutoff. A screen showing A alone reports it feasible under the provisional caps; that statement concerns the single job, not any pair containing it.\n\n## D03 — Day 3, job B\n\nJob B needs five staff units, five memory units, and five power units. It produces ten output units. The prototype schedule gives B the largest output label among the three jobs. It also lists a separate staff-only check to help the coordinator reserve people. That check is deliberately incomplete as a feasibility decision because memory and power are also shared. All three resource values apply simultaneously for the entire session. There is no option in the supplied catalogue to lower B's resource needs by accepting a smaller output.\n\n## D04 — Day 4, job C\n\nJob C needs three staff units, four memory units, and three power units and produces six output units. Its preparation note describes it as a possible companion for either A or B, depending on the caps. That wording is conditional rather than an approval of both pairs under every future budget. C is a distinct job and cannot be run twice to satisfy the two-job requirement. The project has no other job candidates. The incoming planner may therefore enumerate all three possible unordered pairs without assuming an unexplored external alternative exists.\n\n## D05 — Day 5, provisional caps\n\nThe provisional shared caps are eight staff units, ten memory units, and eight power units. Each job fits by itself. An early slide highlights A and B because their separate outputs sum to eighteen, the largest unconstrained pair total. The slide was produced before the pair-resource calculation and is marked proposed. The pair's total requirements must be computed from both jobs. Neither an individual green badge nor the unconstrained output ranking establishes that this pair can run within the shared caps.\n\n## D06 — Day 6, pair discussion\n\nThe team calculates candidate pairs and keeps the job-level requirements rather than only saving the winning name. A proposed rental would raise the staff cap, but it would not change memory or power. The rental quote is for staff capacity only. The coordinator explicitly rejects reading the phrase more capacity as an increase to every resource. The quote remains a proposal. No rental has been accepted, and the current staff cap is still eight. The project does not permit staff to substitute for missing memory or power units.\n\n## D07 — Day 7, resource correction\n\nThe facility corrects the memory allowance from ten to nine units for the planned session. This is an adopted change and supersedes the earlier memory cap. The staff cap stays eight and the power cap stays eight. The correction changes the feasibility of some combinations without changing their output or job-level requirements. Old pair calculations under the ten-unit allowance are preserved with their date. They are useful for a future changed-budget question but cannot be silently reused as current approvals.\n\n## D08 — Day 8, staff-only rental\n\nThe rental proposal is made concrete: it would raise the staff cap from eight to ten units, leaving the memory cap at nine and the power cap at eight. Its availability is assumed if a later question explicitly adopts it, but it is not adopted in the actual history. The rental has no output of its own and does not add a fourth job. A planner examining this option must recheck every limiting resource. Satisfying a previously tight staff inequality does not erase independent memory or power requirements.\n\n## D09 — Day 9, alternative requirement\n\nA stakeholder says that a future demonstration might require job A to be included. This request is not adopted for the current session; the present objective is still maximum output from any feasible pair. The coordinator asks the handoff to retain what would need to change if A later became mandatory. The project has no universal rule that the currently best pair remains best under a new inclusion requirement. The alternative must be evaluated from the original job requirements and whatever caps the new question actually supplies.\n\n## D10 — Day 10, separate memory option\n\nA separate option could add one memory unit, taking the adopted nine-unit cap back to ten. This option would leave staff and power at eight unless another change were separately specified. The option is not adopted before the cutoff. It must not be merged with the staff rental merely because both appear in the planning discussion. The two options affect different constraints and can be considered independently. The current plan includes neither option, and no resource measurement or job requirement is revised on this date.\n\n## D11 — Day 11, reporting request\n\nThe incoming planner should state the selected pair, its total output, and its combined use of each resource. If asked about a rejected alternative, the explanation should identify the actual binding violations, not merely say it lost to another pair. If the objective changes, the planner should distinguish the original optimum from feasibility under the changed requirement. The finite catalogue is small enough that no search budget issue arises. A calculation that covers all three pairs is complete for this scenario, without claiming anything about larger scheduling problems.\n\n## D12 — Day 12, cutoff\n\nThe final adopted caps are eight staff units, nine memory units, and eight power units. Job A still has requirements (4,6,4) and output 8; B has (5,5,5) and output 10; C has (3,4,3) and output 6, in staff, memory, power order. Exactly two distinct jobs must run simultaneously. No rental or extra memory has been adopted. The future A-inclusion request remains hypothetical. This final inventory is a convenient restatement of the primitives, not a replacement for the chronology explaining which earlier proposals and budgets are no longer current.\n",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:40:32.867569+00:00",
+          "sha256": "e474d2e43ab048a81d2dedba63a743f018b0d4768b3c3729d115214ac82f650b",
+          "delivered_at": "2026-10-02T00:41:47.169466+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"Choose A and C. Together they produce 14 output units and use 7 staff, 10 memory, and 7 power units, fitting the revised caps of 8 staff, 10 memory, and 8 power. This is the only feasible pair including A: A and B would require 9 staff, 11 memory, and 9 power, exceeding all three caps.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:42:22.874276+00:00",
+          "raw_file": "incoming/Q007-01.json",
+          "sha256": "2668cca656be6d75bad2a4395351e3225f58b7428766832ae74562b33f928125",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 56,
+            "schema_and_cap_status": "PASS",
+            "mode": "full_source",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "Choose A and C. Together they produce 14 output units and use 7 staff, 10 memory, and 7 power units, fitting the revised caps of 8 staff, 10 memory, and 8 power. This is the only feasible pair including A: A and B would require 9 staff, 11 memory, and 9 power, exceeding all three caps.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:42:22.874478+00:00",
+      "final_answer": {
+        "answer": "Choose A and C. Together they produce 14 output units and use 7 staff, 10 memory, and 7 power units, fitting the revised caps of 8 staff, 10 memory, and 8 power. This is the only feasible pair including A: A and B would require 9 staff, 11 memory, and 9 power, exceeding all three caps.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:42:22.874483+00:00",
+      "ended_epoch": 1790901742.8744843,
+      "visible_input_words": 1415,
+      "visible_input_characters": 8690,
+      "visible_output_words": 56,
+      "visible_output_characters": 315,
+      "actual_tokens": null
+    },
+    {
+      "question": "H05-Q3",
+      "history": "H05",
+      "method": "conventional",
+      "author": "A003",
+      "id": "Q008",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q008",
+      "started_at": "2026-10-02T00:41:47.272422+00:00",
+      "started_epoch": 1790901707.2724345,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nInstead of the original objective, require exactly two jobs including A and add only one memory unit to the final adopted allowance. Staff and power stay unchanged, and the staff rental is not adopted. What feasible pair can be chosen, with what output and resource totals?\n\nEVIDENCE\nSTATUS\nAt the Day 12 cutoff, select B+C: output 16 and combined (staff, memory, power) use (8,9,8), exactly the adopted caps. It is the only feasible pair and therefore optimal. Exactly two distinct, indivisible jobs must run simultaneously for the full session; resources add, with no borrowing across sessions or resource substitution.\n\nEVIDENCE\nD02–D04/D12 give requirements and outputs: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. A+B uses (9,11,9), output 18, exceeding current staff, memory, power by (1,2,1). A+C uses (7,10,7), output 14, exceeding memory by 1. D07 adopted the memory correction from 10 to 9; staff and power remained 8. Under D05 provisional caps, A+C and B+C were feasible, but A+B was not. Its early output-based slide was only a proposal; individual feasibility and staff-only checks cannot approve pairs. All quantities are exact.\n\nNEXT\nNeither D08 staff rental nor D10 extra memory was adopted; D09 mandatory A remains hypothetical. Staff rental alone gives caps (10,9,8) and leaves only B+C feasible. Extra memory alone gives (8,10,8): B+C remains optimal, while A+C becomes the feasible mandatory-A choice. Both options together still leave A+B short of memory and power. For changed requirements or caps, recheck all three pairs using D12 primitives.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:41:47.273245+00:00",
+          "sha256": "8b97e01aa986297f6f7664b6b3c8fb8f6f549744952dffd14d230244bd3c7565",
+          "delivered_at": "2026-10-02T00:42:22.841003+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"Choose A+C, with output 14 and total resource use (staff, memory, power) = (7,10,7), within the revised caps (8,10,8). It is the only feasible pair including A: A+B requires (9,11,9), exceeding each cap by 1; B+C does not include A.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:42:55.173711+00:00",
+          "raw_file": "incoming/Q008-01.json",
+          "sha256": "6108298a5d078324b7869bc342cdc2ad594c877e2a00d7c7af56b20cadb0662a",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 40,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "Choose A+C, with output 14 and total resource use (staff, memory, power) = (7,10,7), within the revised caps (8,10,8). It is the only feasible pair including A: A+B requires (9,11,9), exceeding each cap by 1; B+C does not include A.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:42:55.174060+00:00",
+      "final_answer": {
+        "answer": "Choose A+C, with output 14 and total resource use (staff, memory, power) = (7,10,7), within the revised caps (8,10,8). It is the only feasible pair including A: A+B requires (9,11,9), exceeding each cap by 1; B+C does not include A.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:42:55.174067+00:00",
+      "ended_epoch": 1790901775.1740685,
+      "visible_input_words": 405,
+      "visible_input_characters": 2610,
+      "visible_output_words": 40,
+      "visible_output_characters": 261,
+      "actual_tokens": null
+    },
+    {
+      "question": "H05-Q2",
+      "history": "H05",
+      "method": "conventional",
+      "author": "A003",
+      "id": "Q009",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q009",
+      "started_at": "2026-10-02T00:42:22.937885+00:00",
+      "started_epoch": 1790901742.9379003,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nIf only the staff rental is adopted, does the A/B pair become feasible? Identify any remaining resource violations using the recorded quantities.\n\nEVIDENCE\nSTATUS\nAt the Day 12 cutoff, select B+C: output 16 and combined (staff, memory, power) use (8,9,8), exactly the adopted caps. It is the only feasible pair and therefore optimal. Exactly two distinct, indivisible jobs must run simultaneously for the full session; resources add, with no borrowing across sessions or resource substitution.\n\nEVIDENCE\nD02–D04/D12 give requirements and outputs: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. A+B uses (9,11,9), output 18, exceeding current staff, memory, power by (1,2,1). A+C uses (7,10,7), output 14, exceeding memory by 1. D07 adopted the memory correction from 10 to 9; staff and power remained 8. Under D05 provisional caps, A+C and B+C were feasible, but A+B was not. Its early output-based slide was only a proposal; individual feasibility and staff-only checks cannot approve pairs. All quantities are exact.\n\nNEXT\nNeither D08 staff rental nor D10 extra memory was adopted; D09 mandatory A remains hypothetical. Staff rental alone gives caps (10,9,8) and leaves only B+C feasible. Extra memory alone gives (8,10,8): B+C remains optimal, while A+C becomes the feasible mandatory-A choice. Both options together still leave A+B short of memory and power. For changed requirements or caps, recheck all three pairs using D12 primitives.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:42:22.938637+00:00",
+          "sha256": "8565aed916b56b9907c4c75728e89f50355b87f5bda2eb7b4bed4595c23a1fa4",
+          "delivered_at": "2026-10-02T00:42:55.131378+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"No. With only the staff rental, caps are (10,9,8), while A+B requires (9,11,9). Staff is within the cap by 1, but memory exceeds its cap by 2 and power exceeds its cap by 1. A+B remains infeasible; B+C remains the only feasible pair.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:43:30.162469+00:00",
+          "raw_file": "incoming/Q009-01.json",
+          "sha256": "f1de815ee39cdfbff5cecbafd3308d005f80a84fc456439fc2bb8b0835f19d15",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 43,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "No. With only the staff rental, caps are (10,9,8), while A+B requires (9,11,9). Staff is within the cap by 1, but memory exceeds its cap by 2 and power exceeds its cap by 1. A+B remains infeasible; B+C remains the only feasible pair.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:43:30.162656+00:00",
+      "final_answer": {
+        "answer": "No. With only the staff rental, caps are (10,9,8), while A+B requires (9,11,9). Staff is within the cap by 1, but memory exceeds its cap by 2 and power exceeds its cap by 1. A+B remains infeasible; B+C remains the only feasible pair.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:43:30.162661+00:00",
+      "ended_epoch": 1790901810.162662,
+      "visible_input_words": 381,
+      "visible_input_characters": 2482,
+      "visible_output_words": 43,
+      "visible_output_characters": 262,
+      "actual_tokens": null
+    },
+    {
+      "question": "H03-Q1",
+      "history": "H03",
+      "method": "conventional",
+      "author": "A010",
+      "id": "Q010",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q010",
+      "started_at": "2026-10-02T00:42:55.274258+00:00",
+      "started_epoch": 1790901775.2742746,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nDoes selected candidate C1 pass the finite acceptance rule at the cutoff? Give its pass, failure and untested counts, naming the failed and untested cases.\n\nEVIDENCE\nSTATUS\nAt the Day 12 cutoff, C1 remains selected and does not pass validation: nine passes, two observed failures (A8, B3), and one untested case (B4). Acceptance requires all twelve cohort cases evaluated for the exact candidate and at least eleven passes (J02). Even a B4 pass would leave C1 at ten passes, below threshold.\n\nEVIDENCE\nC1 passes 9/11 evaluated cases (81.8%) and 9/12 authorized cohort cases (75%); B4 enters only the latter denominator. J01 excludes unreadable X1 and X2 from the original fourteen files before evaluation; difficult cases cannot be excluded. J04–J05 establish group A: seven passes, one failure; group B: two passes, one failure, one untested. J06’s nine-of-nine export selects successful examples, hiding failures and missing evaluation; its cropped heading does not change validation. C2’s B3 pass on Day 8 is its only outcome and cannot replace C1’s B3 failure (J08, J12).\n\nNEXT\nThe requested B4 machine slot remains unconfirmed (J10); completing it would resolve missing collection but cannot secure C1 acceptance. If C2 is selected, evaluate its eleven remaining cases: A1–A8, B1, B2, B4. Preserve both X exclusions. C1 evidence cannot transfer across versions; further changes need exact-version evidence. A8 repair remains merely proposed. Recover authoritative case totals and version boundaries from J04–J05, J08, and J12.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:42:55.275033+00:00",
+          "sha256": "a51f7b14d914ea7ee78041706b065f83cb4534e7dc3f03b2530352fa58e8ff13",
+          "delivered_at": "2026-10-02T00:43:30.129513+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"No. At the Day 12 cutoff, selected candidate C1 has nine passes, two observed failures (A8 and B3), and one untested case (B4). Acceptance requires all twelve cases evaluated for C1 and at least eleven passes. C1 meets neither condition; even a B4 pass would bring it to only ten passes.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:44:35.490562+00:00",
+          "raw_file": "incoming/Q010-01.json",
+          "sha256": "b0219d2144b0a9a0d0a4314b702847e66f90464d9f11ac4b6fe47340d42ed0a2",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 51,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "No. At the Day 12 cutoff, selected candidate C1 has nine passes, two observed failures (A8 and B3), and one untested case (B4). Acceptance requires all twelve cases evaluated for C1 and at least eleven passes. C1 meets neither condition; even a B4 pass would bring it to only ten passes.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:44:35.490760+00:00",
+      "final_answer": {
+        "answer": "No. At the Day 12 cutoff, selected candidate C1 has nine passes, two observed failures (A8 and B3), and one untested case (B4). Acceptance requires all twelve cases evaluated for C1 and at least eleven passes. C1 meets neither condition; even a B4 pass would bring it to only ten passes.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:44:35.490765+00:00",
+      "ended_epoch": 1790901875.4907663,
+      "visible_input_words": 393,
+      "visible_input_characters": 2554,
+      "visible_output_words": 51,
+      "visible_output_characters": 316,
+      "actual_tokens": null
+    },
+    {
+      "question": "H06-Q3",
+      "history": "H06",
+      "method": "full_source",
+      "author": null,
+      "id": "Q011",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q011",
+      "started_at": "2026-10-02T00:43:30.226149+00:00",
+      "started_epoch": 1790901810.2261631,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: complete source history. Answer from this source and the query. Set recover to false; no additional source is available.\n\nQUESTION\nIf exactly two more participants register and nothing else changes, is the workshop still feasible? State the new count and how it relates to the three capacity limits.\n\nEVIDENCE\n# Orchid listening workshop\n\nThis is a synthetic workshop-planning history with no real people or private records. The cutoff is the end of Day 12. The incoming coordinator must assess the current plan, explain remaining capacity, and decide whether a small attendance change fits the recorded rules. This is deliberately a straightforward case with a clear final restatement. A careful concise handoff should not invent hidden complications just because the chronology is long. The rules below are the whole feasibility rule for this exercise. Real-world requirements not stated here are outside scope and must not be added as reasons to approve or reject the plan.\n\n## O01 — Day 1, activity\n\nThe workshop is a ninety-minute listening session using headphones and individual audio kits. The plan requires one kit per participant throughout the session. There is no kit sharing, and kits are not consumed during use. Leaders do not require participant kits. The program's purpose is to compare sound recordings, but the particular recording titles have no effect on the feasibility rule. The coordinator begins a chronological log so that room, staffing, and attendance decisions can later be summarized without requiring the successor to reread every design discussion.\n\n## O02 — Day 2, room rule\n\nThe only available room has a participant capacity of twenty-four. Leaders do not count toward that participant cap in this fictional rule. The room is available from 09:00 through 17:00, with both endpoints allowed. An approved session must fit entirely inside that availability. There is no additional setup or cleanup time requirement in the exercise. A room booking and a staffing confirmation are separate records, though both are required. No other room is available, and there is no option to split participants across concurrent rooms.\n\n## O03 — Day 3, leader rule\n\nThe workshop requires at least one confirmed leader for every twelve participants, so two confirmed leaders can support up to twenty-four participants. This is a supplied exact rule, not a real supervision recommendation. Fractional leaders are not possible. Two leaders are confirmed for the whole proposed session, and neither confirmation is later withdrawn. A third person offers to help with poster design but is not added as a leader. That offer does not increase staffing capacity and is unnecessary for the current attendance plan.\n\n## O04 — Day 4, kit inventory\n\nTwenty-four functioning audio kits are inspected and reserved for the workshop. The inventory includes exactly twenty-four usable participant kits; two empty shipping cartons are recorded separately and are not kits. The reservation remains valid through the cutoff. There is no later damage report or reassignment. The kit count is an independent capacity constraint even though its numerical value matches the room's participant cap. The incoming coordinator should be able to calculate spare kits from the current attendance rather than mistake the inventory count for the number of registered participants.\n\n## O05 — Day 5, initial timing idea\n\nAn early poster draft proposes a 09:30 start. The program team later prefers 10:00 because that aligns better with arrival arrangements. The draft is retained in the design folder, but it is not a confirmed room booking. The room's general availability would permit either time for a ninety-minute session. A change of preferred start does not change the duration. The handoff should carry the final booked time and can omit the discarded poster layout unless explaining why an old flyer differs from the adopted plan.\n\n## O06 — Day 6, confirmed booking\n\nThe room is confirmed for 10:00 through 11:30. This is the adopted session time and remains unchanged through the cutoff. Both leaders confirm that same full interval. The room's availability and the leaders' availability therefore cover the entire ninety-minute session. There is no break that would shorten either confirmation. The coordinator records the booking separately from the poster drafts. A future attendance change, by itself, does not move this booking or extend the session duration under the supplied rules.\n\n## O07 — Day 7, audio arrangement\n\nThe venue prohibits amplified room sound before 11:00, but headphone listening is explicitly exempt. The workshop will use headphones throughout, with no amplified room playback. That plan remains unchanged through the cutoff. The recording selector briefly considers a speaker demonstration and then withdraws it before booking the equipment. The withdrawn idea is not part of the current activity. The headphone exemption matters if someone notices the early start and mistakenly applies the amplified-sound restriction to every kind of listening session.\n\n## O08 — Day 8, attendance\n\nTwenty-two participants are registered. This is the final actual attendance count in the history; there are no later cancellations or additions before the cutoff. Participants are the people counted against room capacity, kits, and the leader ratio. The two leaders are separate and do not use participant kits. A mailing list contains additional people who expressed interest but did not register. Its size is not an attendance forecast in this exercise and should not be added to the twenty-two registered participants when checking current feasibility.\n\n## O09 — Day 9, design work\n\nThe team changes the poster from green to blue, shortens the workshop title, and switches the order of two recordings. None of these edits changes attendance, session length, kit needs, room capacity, staffing, or headphone use. The new poster is easier to read, but visual polish does not create a new approval requirement. The history retains the design decisions to resemble an ordinary project log in which operationally important events appear among ordinary work. A concise operational handoff can omit these edits without losing an answer to the stated task family.\n\n## O10 — Day 10, contingency discussion\n\nThe coordinator expects possible requests for a small attendance increase and asks the successor to check every capacity rather than simply remember that the current plan passes. The room, kit inventory, and leader confirmations are fixed unless a future question explicitly changes them. Any added participants would use the same ninety-minute headphone session. There is no waiting-list priority rule to evaluate. A feasibility answer should say whether the requested total fits the supplied capacities; it need not decide whom to invite or send any invitations.\n\n## O11 — Day 11, final operational synopsis\n\nThe adopted plan is twenty-two participants, twenty-four reserved functioning kits, two confirmed leaders with a twelve-participant capacity each, room participant capacity twenty-four, and a confirmed 10:00–11:30 session inside 09:00–17:00 availability. Headphones are used throughout and are exempt from the pre-11:00 amplified-sound restriction. Every required reservation and confirmation is complete. This synopsis intentionally brings the decisive facts together. It introduces no new rule and does not conflict with the earlier dated entries. The discarded timing and speaker ideas remain historical proposals only.\n\n## O12 — Day 12, cutoff\n\nNo operational fact changes after the final synopsis. The current count remains twenty-two participants and the confirmed plan remains fully as stated in O11. The successor may use that synopsis to answer the current feasibility and spare-capacity questions without recovering the decorative history. A later explicit attendance increase should be checked against the same capacities. The exercise contains no unavailable source or unreported approval gate. Preserving the simple sufficient account is desirable; retaining every earlier design event would not automatically produce a better handoff.\n",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:43:30.226299+00:00",
+          "sha256": "52f8970c89c480afa85c368297fad4a3320eebd48f0eda959d3da2c7a950f5b8",
+          "delivered_at": "2026-10-02T00:44:35.458168+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"Yes. Two additional registrations bring the total to 24 participants, exactly meeting all three capacity limits: the room holds 24, the 24 functioning kits provide one per participant, and two confirmed leaders support 24 at twelve participants per leader. No spare capacity remains under any of these limits. With everything else unchanged, the workshop is still feasible.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:45:09.759390+00:00",
+          "raw_file": "incoming/Q011-01.json",
+          "sha256": "2612ac6ab858171a82d1005074f9eb33aab2cdfbfff218a9ceaafc4f7be9433a",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 57,
+            "schema_and_cap_status": "PASS",
+            "mode": "full_source",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "Yes. Two additional registrations bring the total to 24 participants, exactly meeting all three capacity limits: the room holds 24, the 24 functioning kits provide one per participant, and two confirmed leaders support 24 at twelve participants per leader. No spare capacity remains under any of these limits. With everything else unchanged, the workshop is still feasible.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:45:09.759599+00:00",
+      "final_answer": {
+        "answer": "Yes. Two additional registrations bring the total to 24 participants, exactly meeting all three capacity limits: the room holds 24, the 24 functioning kits provide one per participant, and two confirmed leaders support 24 at twelve participants per leader. No spare capacity remains under any of these limits. With everything else unchanged, the workshop is still feasible.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:45:09.759604+00:00",
+      "ended_epoch": 1790901909.7596056,
+      "visible_input_words": 1371,
+      "visible_input_characters": 8950,
+      "visible_output_words": 57,
+      "visible_output_characters": 402,
+      "actual_tokens": null
+    },
+    {
+      "question": "H05-Q3",
+      "history": "H05",
+      "method": "cc",
+      "author": "A004",
+      "id": "Q012",
+      "phase": "recipients",
+      "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+      "status": "COMPLETED",
+      "agent": "/root/collection_run02/q012",
+      "started_at": "2026-10-02T00:44:35.553677+00:00",
+      "started_epoch": 1790901875.5536923,
+      "recovery_requested": false,
+      "recovery_served": false,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial",
+          "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nInstead of the original objective, require exactly two jobs including A and add only one memory unit to the final adopted allowance. Staff and power stay unchanged, and the staff rental is not adopted. What feasible pair can be chosen, with what output and resource totals?\n\nEVIDENCE\nSTATUS\nAt Day 12, select B+C: output 16, using (8,9,8) staff/memory/power, exactly matching adopted caps. It is the only feasible pair and therefore the optimum. Exactly two distinct, indivisible jobs run simultaneously for the full session; neither capacity option nor mandatory A is adopted.\n\nEVIDENCE\nD02–D04/D12 primitives, in staff/memory/power order: A=(4,6,4), output 8; B=(5,5,5), output 10; C=(3,4,3), output 6. Complete pair catalogue: AB=(9,11,9), output 18; AC=(7,10,7), output 14; BC=(8,9,8), output 16. Currently AB exceeds every cap; AC exceeds memory only. D05 proposed AB from unconstrained output, without pair approval. D07 reduced memory from 10 to 9, invalidating AC’s earlier feasibility; BC remains optimal. Individual feasibility and staff-only checks cannot approve pairs.\n\nNEXT\nRecompute all three pairs against explicitly changed caps or requirements. If A becomes mandatory (D09), currently no pair qualifies. D10’s independent, unadopted +1 memory option enables AC. D08’s unadopted staff rental sets caps to (10,9,8): neither A pair becomes feasible. Combining both options enables AC but leaves AB short of memory and power. AB requires caps at least (9,11,9). Recover D05–D10 for proposal chronology; D01–D04 prohibit splitting, resource substitution, duplicate jobs, and invented candidates or reduced-output variants.",
+          "delivery": "delivered",
+          "recorded_at": "2026-10-02T00:44:35.554425+00:00",
+          "sha256": "80943cd375d42bc9d0a2de3923422351ef9806eb72d37519be9d38cc9a436f95",
+          "delivered_at": "2026-10-02T00:45:09.726330+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "response",
+          "content": "{\"answer\":\"Choose A+C, with output 14 and resource totals of 7 staff, 10 memory, and 7 power. Adding one memory unit changes the adopted caps to (8,10,8), so A+C is feasible. It is the only feasible pair including A: A+B requires (9,11,9), exceeding all three caps.\",\"recover\":false}",
+          "recorded_at": "2026-10-02T00:45:46.030062+00:00",
+          "raw_file": "incoming/Q012-01.json",
+          "sha256": "fadcf303d5d04cb63a32761767c9b8bde262cbc8314098c47d2b1c82dd1736f6",
+          "validation": {
+            "json_parse_status": "PASS",
+            "decoded_words": 45,
+            "schema_and_cap_status": "PASS",
+            "mode": "handoff",
+            "error": null
+          }
+        }
+      ],
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "first_answer": {
+        "answer": "Choose A+C, with output 14 and resource totals of 7 staff, 10 memory, and 7 power. Adding one memory unit changes the adopted caps to (8,10,8), so A+C is feasible. It is the only feasible pair including A: A+B requires (9,11,9), exceeding all three caps.",
+        "recover": false
+      },
+      "first_answer_recorded_at": "2026-10-02T00:45:46.030304+00:00",
+      "final_answer": {
+        "answer": "Choose A+C, with output 14 and resource totals of 7 staff, 10 memory, and 7 power. Adding one memory unit changes the adopted caps to (8,10,8), so A+C is feasible. It is the only feasible pair including A: A+B requires (9,11,9), exceeding all three caps.",
+        "recover": false
+      },
+      "ended_at": "2026-10-02T00:45:46.030310+00:00",
+      "ended_epoch": 1790901946.0303113,
+      "visible_input_words": 394,
+      "visible_input_characters": 2658,
+      "visible_output_words": 45,
+      "visible_output_characters": 283,
+      "actual_tokens": null
+    }
+  ],
+  "status": {
+    "status": "RUNNING",
+    "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+    "phase": "recipients",
+    "phases": {
+      "authors": {
+        "status": "CLOSED",
+        "started_epoch": 1790900261.7618165,
+        "started_at": "2026-10-02T00:17:41.761840+00:00",
+        "limit_seconds": 1200,
+        "next_index": 12,
+        "ended_at": "2026-10-02T00:34:12.687486+00:00",
+        "elapsed_seconds": 990.9256863594055,
+        "counts": {
+          "COMPLETED": 12
+        }
+      },
+      "recipients": {
+        "status": "RUNNING",
+        "started_epoch": 1790901362.3220518,
+        "started_at": "2026-10-02T00:36:02.322060+00:00",
+        "limit_seconds": 3300,
+        "next_index": 13
+      }
+    },
+    "provider_snapshot": null,
+    "actual_tokens": null,
+    "author_seal_commit": "874379c4a0e60707c292b59f5bb3a8fd3b694baa"
+  }
+}

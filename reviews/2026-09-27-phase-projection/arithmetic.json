@@ -1,0 +1,909 @@
+{
+  "status": "OBSERVED finite integer certificates; all-phase implications are supplied proof candidates",
+  "protocol_sha256": "8eba9a06595a2014095f84cc22c6b91d65d6f9fd71771912e0af368293bdff17",
+  "script_sha256": "f0a4c640aaf1192f1ee927e2d4517588f21aec77e9d05d3ca8d012d956b51885",
+  "complete_unchanged_safe_set_reconstructed": false,
+  "additional_test_time_search_performed": false,
+  "cases": [
+    {
+      "id": "tight13",
+      "V": 13,
+      "pair_certificate": {
+        "times": [
+          "1/8",
+          "7/8"
+        ],
+        "unchanged_speed_order": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          13
+        ],
+        "unchanged_checks": [
+          {
+            "time": "1/8",
+            "residues": [
+              1,
+              4,
+              5,
+              6,
+              7,
+              5
+            ],
+            "denominator": 8,
+            "distances": [
+              "1/8",
+              "1/2",
+              "3/8",
+              "1/4",
+              "1/8",
+              "3/8"
+            ],
+            "minimum": "1/8"
+          },
+          {
+            "time": "7/8",
+            "residues": [
+              7,
+              4,
+              3,
+              2,
+              1,
+              3
+            ],
+            "denominator": 8,
+            "distances": [
+              "1/8",
+              "1/2",
+              "3/8",
+              "1/4",
+              "1/8",
+              "3/8"
+            ],
+            "minimum": "1/8"
+          }
+        ],
+        "chosen_speed_phases": [
+          "3/8",
+          "5/8"
+        ],
+        "circular_phase_separation": "1/4",
+        "uniform_minimum_distance": "1/8",
+        "margin_above_threshold": "0",
+        "unchanged_caps_at_each_time": [
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "best_of_the_two_distance_is_constant_for_all_phases": "1/8",
+        "unchanged_integer_certificates": [
+          {
+            "time": "1/8",
+            "rows_speed_residue_lower_upper": [
+              [
+                1,
+                1,
+                0,
+                48
+              ],
+              [
+                4,
+                4,
+                24,
+                24
+              ],
+              [
+                5,
+                5,
+                32,
+                16
+              ],
+              [
+                6,
+                6,
+                40,
+                8
+              ],
+              [
+                7,
+                7,
+                48,
+                0
+              ],
+              [
+                13,
+                5,
+                32,
+                16
+              ]
+            ]
+          },
+          {
+            "time": "7/8",
+            "rows_speed_residue_lower_upper": [
+              [
+                1,
+                7,
+                48,
+                0
+              ],
+              [
+                4,
+                4,
+                24,
+                24
+              ],
+              [
+                5,
+                3,
+                16,
+                32
+              ],
+              [
+                6,
+                2,
+                8,
+                40
+              ],
+              [
+                7,
+                1,
+                0,
+                48
+              ],
+              [
+                13,
+                3,
+                16,
+                32
+              ]
+            ]
+          }
+        ],
+        "pair_integer_certificate": {
+          "common_denominator": 8,
+          "phase_residues": [
+            3,
+            5
+          ],
+          "short_circular_integer_separation": 2,
+          "nonnegative_slack": 0
+        }
+      },
+      "known_safe_subset_certificate": {
+        "unchanged_safe_interval_certificates": [
+          {
+            "interval": [
+              "17/48",
+              "3/8"
+            ],
+            "duration": "1/48",
+            "laps": [
+              {
+                "speed": 1,
+                "lap": 0,
+                "safe_lap": [
+                  "1/8",
+                  "7/8"
+                ],
+                "lower_endpoint_integer_slack": 88,
+                "upper_endpoint_integer_slack": 32
+              },
+              {
+                "speed": 4,
+                "lap": 1,
+                "safe_lap": [
+                  "9/32",
+                  "15/32"
+                ],
+                "lower_endpoint_integer_slack": 112,
+                "upper_endpoint_integer_slack": 24
+              },
+              {
+                "speed": 5,
+                "lap": 1,
+                "safe_lap": [
+                  "9/40",
+                  "3/8"
+                ],
+                "lower_endpoint_integer_slack": 248,
+                "upper_endpoint_integer_slack": 0
+              },
+              {
+                "speed": 6,
+                "lap": 2,
+                "safe_lap": [
+                  "17/48",
+                  "23/48"
+                ],
+                "lower_endpoint_integer_slack": 0,
+                "upper_endpoint_integer_slack": 40
+              },
+              {
+                "speed": 7,
+                "lap": 2,
+                "safe_lap": [
+                  "17/56",
+                  "23/56"
+                ],
+                "lower_endpoint_integer_slack": 136,
+                "upper_endpoint_integer_slack": 16
+              },
+              {
+                "speed": 13,
+                "lap": 4,
+                "safe_lap": [
+                  "33/104",
+                  "3/8"
+                ],
+                "lower_endpoint_integer_slack": 184,
+                "upper_endpoint_integer_slack": 0
+              }
+            ]
+          },
+          {
+            "interval": [
+              "5/8",
+              "31/48"
+            ],
+            "duration": "1/48",
+            "laps": [
+              {
+                "speed": 1,
+                "lap": 0,
+                "safe_lap": [
+                  "1/8",
+                  "7/8"
+                ],
+                "lower_endpoint_integer_slack": 32,
+                "upper_endpoint_integer_slack": 88
+              },
+              {
+                "speed": 4,
+                "lap": 2,
+                "safe_lap": [
+                  "17/32",
+                  "23/32"
+                ],
+                "lower_endpoint_integer_slack": 24,
+                "upper_endpoint_integer_slack": 112
+              },
+              {
+                "speed": 5,
+                "lap": 3,
+                "safe_lap": [
+                  "5/8",
+                  "31/40"
+                ],
+                "lower_endpoint_integer_slack": 0,
+                "upper_endpoint_integer_slack": 248
+              },
+              {
+                "speed": 6,
+                "lap": 3,
+                "safe_lap": [
+                  "25/48",
+                  "31/48"
+                ],
+                "lower_endpoint_integer_slack": 40,
+                "upper_endpoint_integer_slack": 0
+              },
+              {
+                "speed": 7,
+                "lap": 4,
+                "safe_lap": [
+                  "33/56",
+                  "39/56"
+                ],
+                "lower_endpoint_integer_slack": 16,
+                "upper_endpoint_integer_slack": 136
+              },
+              {
+                "speed": 13,
+                "lap": 8,
+                "safe_lap": [
+                  "5/8",
+                  "71/104"
+                ],
+                "lower_endpoint_integer_slack": 0,
+                "upper_endpoint_integer_slack": 184
+              }
+            ]
+          }
+        ],
+        "centered_chosen_phase_images": [
+          [
+            "-5/48",
+            "1/8"
+          ],
+          [
+            "-1/8",
+            "5/48"
+          ]
+        ],
+        "phase_union": [
+          "-1/8",
+          "1/8"
+        ],
+        "phase_union_length": "1/4",
+        "blocking_arc_length": "1/4",
+        "excess_phase_width": "0",
+        "phase_independent_duration_bound": "0",
+        "nonzero_phase_bound_if_exact_fit": "min(||theta||,1/4)/11"
+      }
+    },
+    {
+      "id": "strict16",
+      "V": 16,
+      "pair_certificate": {
+        "times": [
+          "7/15",
+          "8/15"
+        ],
+        "unchanged_speed_order": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          16
+        ],
+        "unchanged_checks": [
+          {
+            "time": "7/15",
+            "residues": [
+              7,
+              13,
+              5,
+              12,
+              4,
+              7
+            ],
+            "denominator": 15,
+            "distances": [
+              "7/15",
+              "2/15",
+              "1/3",
+              "1/5",
+              "4/15",
+              "7/15"
+            ],
+            "minimum": "2/15"
+          },
+          {
+            "time": "8/15",
+            "residues": [
+              8,
+              2,
+              10,
+              3,
+              11,
+              8
+            ],
+            "denominator": 15,
+            "distances": [
+              "7/15",
+              "2/15",
+              "1/3",
+              "1/5",
+              "4/15",
+              "7/15"
+            ],
+            "minimum": "2/15"
+          }
+        ],
+        "chosen_speed_phases": [
+          "2/15",
+          "13/15"
+        ],
+        "circular_phase_separation": "4/15",
+        "uniform_minimum_distance": "2/15",
+        "margin_above_threshold": "1/120",
+        "unchanged_caps_at_each_time": [
+          [
+            4
+          ],
+          [
+            4
+          ]
+        ],
+        "best_of_the_two_distance_is_constant_for_all_phases": "2/15",
+        "unchanged_integer_certificates": [
+          {
+            "time": "7/15",
+            "rows_speed_residue_lower_upper": [
+              [
+                1,
+                7,
+                75,
+                90
+              ],
+              [
+                4,
+                13,
+                165,
+                0
+              ],
+              [
+                5,
+                5,
+                45,
+                120
+              ],
+              [
+                6,
+                12,
+                150,
+                15
+              ],
+              [
+                7,
+                4,
+                30,
+                135
+              ],
+              [
+                16,
+                7,
+                75,
+                90
+              ]
+            ]
+          },
+          {
+            "time": "8/15",
+            "rows_speed_residue_lower_upper": [
+              [
+                1,
+                8,
+                90,
+                75
+              ],
+              [
+                4,
+                2,
+                0,
+                165
+              ],
+              [
+                5,
+                10,
+                120,
+                45
+              ],
+              [
+                6,
+                3,
+                15,
+                150
+              ],
+              [
+                7,
+                11,
+                135,
+                30
+              ],
+              [
+                16,
+                8,
+                90,
+                75
+              ]
+            ]
+          }
+        ],
+        "pair_integer_certificate": {
+          "common_denominator": 15,
+          "phase_residues": [
+            2,
+            13
+          ],
+          "short_circular_integer_separation": 4,
+          "nonnegative_slack": 0
+        },
+        "strict_interval_menu": {
+          "unchanged_radius_by_speed": [
+            [
+              "41/120",
+              "1/480",
+              "1/24",
+              "1/80",
+              "17/840",
+              "41/1920"
+            ],
+            [
+              "41/120",
+              "1/480",
+              "1/24",
+              "1/80",
+              "17/840",
+              "41/1920"
+            ]
+          ],
+          "unchanged_uniform_radius": "1/480",
+          "chosen_speed_uniform_radius": "1/1320",
+          "selected_radius": "1/1320",
+          "intervals": [
+            {
+              "interval": [
+                "41/88",
+                "617/1320"
+              ],
+              "duration": "1/660",
+              "laps": [
+                {
+                  "speed": 1,
+                  "lap": 0,
+                  "safe_lap": [
+                    "1/8",
+                    "7/8"
+                  ],
+                  "lower_endpoint_integer_slack": 240,
+                  "upper_endpoint_integer_slack": 4304
+                },
+                {
+                  "speed": 4,
+                  "lap": 1,
+                  "safe_lap": [
+                    "9/32",
+                    "15/32"
+                  ],
+                  "lower_endpoint_integer_slack": 520,
+                  "upper_endpoint_integer_slack": 56
+                },
+                {
+                  "speed": 5,
+                  "lap": 2,
+                  "safe_lap": [
+                    "17/40",
+                    "23/40"
+                  ],
+                  "lower_endpoint_integer_slack": 144,
+                  "upper_endpoint_integer_slack": 5680
+                },
+                {
+                  "speed": 6,
+                  "lap": 2,
+                  "safe_lap": [
+                    "17/48",
+                    "23/48"
+                  ],
+                  "lower_endpoint_integer_slack": 472,
+                  "upper_endpoint_integer_slack": 744
+                },
+                {
+                  "speed": 7,
+                  "lap": 3,
+                  "safe_lap": [
+                    "25/56",
+                    "31/56"
+                  ],
+                  "lower_endpoint_integer_slack": 96,
+                  "upper_endpoint_integer_slack": 6368
+                },
+                {
+                  "speed": 16,
+                  "lap": 7,
+                  "safe_lap": [
+                    "57/128",
+                    "63/128"
+                  ],
+                  "lower_endpoint_integer_slack": 232,
+                  "upper_endpoint_integer_slack": 4184
+                }
+              ]
+            },
+            {
+              "interval": [
+                "703/1320",
+                "47/88"
+              ],
+              "duration": "1/660",
+              "laps": [
+                {
+                  "speed": 1,
+                  "lap": 0,
+                  "safe_lap": [
+                    "1/8",
+                    "7/8"
+                  ],
+                  "lower_endpoint_integer_slack": 4304,
+                  "upper_endpoint_integer_slack": 240
+                },
+                {
+                  "speed": 4,
+                  "lap": 2,
+                  "safe_lap": [
+                    "17/32",
+                    "23/32"
+                  ],
+                  "lower_endpoint_integer_slack": 56,
+                  "upper_endpoint_integer_slack": 520
+                },
+                {
+                  "speed": 5,
+                  "lap": 2,
+                  "safe_lap": [
+                    "17/40",
+                    "23/40"
+                  ],
+                  "lower_endpoint_integer_slack": 5680,
+                  "upper_endpoint_integer_slack": 144
+                },
+                {
+                  "speed": 6,
+                  "lap": 3,
+                  "safe_lap": [
+                    "25/48",
+                    "31/48"
+                  ],
+                  "lower_endpoint_integer_slack": 744,
+                  "upper_endpoint_integer_slack": 472
+                },
+                {
+                  "speed": 7,
+                  "lap": 3,
+                  "safe_lap": [
+                    "25/56",
+                    "31/56"
+                  ],
+                  "lower_endpoint_integer_slack": 6368,
+                  "upper_endpoint_integer_slack": 96
+                },
+                {
+                  "speed": 16,
+                  "lap": 8,
+                  "safe_lap": [
+                    "65/128",
+                    "71/128"
+                  ],
+                  "lower_endpoint_integer_slack": 4184,
+                  "upper_endpoint_integer_slack": 232
+                }
+              ]
+            }
+          ],
+          "guaranteed_total_duration_lower_bound": "1/660",
+          "selection_rule": "Choose a menu interval whose center has shifted speed11 distance at least gamma; at least one always does."
+        },
+        "one_sided_refinement": {
+          "unchanged_symmetric_radius": "1/480",
+          "chosen_safe_lap_duration": "3/44",
+          "chosen_minimum_one_sided_radius": "1/1320",
+          "guaranteed_duration_lower_bound": "1/352"
+        }
+      },
+      "known_safe_subset_certificate": {
+        "unchanged_safe_interval_certificates": [
+          {
+            "interval": [
+              "25/56",
+              "15/32"
+            ],
+            "duration": "5/224",
+            "laps": [
+              {
+                "speed": 1,
+                "lap": 0,
+                "safe_lap": [
+                  "1/8",
+                  "7/8"
+                ],
+                "lower_endpoint_integer_slack": 144,
+                "upper_endpoint_integer_slack": 104
+              },
+              {
+                "speed": 4,
+                "lap": 1,
+                "safe_lap": [
+                  "9/32",
+                  "15/32"
+                ],
+                "lower_endpoint_integer_slack": 296,
+                "upper_endpoint_integer_slack": 0
+              },
+              {
+                "speed": 5,
+                "lap": 2,
+                "safe_lap": [
+                  "17/40",
+                  "23/40"
+                ],
+                "lower_endpoint_integer_slack": 48,
+                "upper_endpoint_integer_slack": 136
+              },
+              {
+                "speed": 6,
+                "lap": 2,
+                "safe_lap": [
+                  "17/48",
+                  "23/48"
+                ],
+                "lower_endpoint_integer_slack": 248,
+                "upper_endpoint_integer_slack": 16
+              },
+              {
+                "speed": 7,
+                "lap": 3,
+                "safe_lap": [
+                  "25/56",
+                  "31/56"
+                ],
+                "lower_endpoint_integer_slack": 0,
+                "upper_endpoint_integer_slack": 152
+              },
+              {
+                "speed": 16,
+                "lap": 7,
+                "safe_lap": [
+                  "57/128",
+                  "63/128"
+                ],
+                "lower_endpoint_integer_slack": 8,
+                "upper_endpoint_integer_slack": 96
+              }
+            ]
+          },
+          {
+            "interval": [
+              "17/32",
+              "31/56"
+            ],
+            "duration": "5/224",
+            "laps": [
+              {
+                "speed": 1,
+                "lap": 0,
+                "safe_lap": [
+                  "1/8",
+                  "7/8"
+                ],
+                "lower_endpoint_integer_slack": 104,
+                "upper_endpoint_integer_slack": 144
+              },
+              {
+                "speed": 4,
+                "lap": 2,
+                "safe_lap": [
+                  "17/32",
+                  "23/32"
+                ],
+                "lower_endpoint_integer_slack": 0,
+                "upper_endpoint_integer_slack": 296
+              },
+              {
+                "speed": 5,
+                "lap": 2,
+                "safe_lap": [
+                  "17/40",
+                  "23/40"
+                ],
+                "lower_endpoint_integer_slack": 136,
+                "upper_endpoint_integer_slack": 48
+              },
+              {
+                "speed": 6,
+                "lap": 3,
+                "safe_lap": [
+                  "25/48",
+                  "31/48"
+                ],
+                "lower_endpoint_integer_slack": 16,
+                "upper_endpoint_integer_slack": 248
+              },
+              {
+                "speed": 7,
+                "lap": 3,
+                "safe_lap": [
+                  "25/56",
+                  "31/56"
+                ],
+                "lower_endpoint_integer_slack": 152,
+                "upper_endpoint_integer_slack": 0
+              },
+              {
+                "speed": 16,
+                "lap": 8,
+                "safe_lap": [
+                  "65/128",
+                  "71/128"
+                ],
+                "lower_endpoint_integer_slack": 96,
+                "upper_endpoint_integer_slack": 8
+              }
+            ]
+          }
+        ],
+        "centered_chosen_phase_images": [
+          [
+            "-5/56",
+            "5/32"
+          ],
+          [
+            "-5/32",
+            "5/56"
+          ]
+        ],
+        "phase_union": [
+          "-5/32",
+          "5/32"
+        ],
+        "phase_union_length": "5/16",
+        "blocking_arc_length": "1/4",
+        "excess_phase_width": "1/16",
+        "phase_independent_duration_bound": "1/176",
+        "nonzero_phase_bound_if_exact_fit": null
+      }
+    }
+  ],
+  "full_profile_comparison": {
+    "results_sha256": "daf8cadcb6f06bda538c9231f053e37c85fdaeba5fbd4167ca96d442ddc5ba34",
+    "used_as_input_to_compact_certificates": false,
+    "cases": [
+      {
+        "id": "tight13",
+        "certified_subset_is_contained_in_full_bulk": true,
+        "certified_subset_phase_measure": "1/4",
+        "full_bulk_measure": "1/4",
+        "additional_bulk_measure": "0",
+        "extra_isolated_projection_points": [
+          "3/8",
+          "5/8"
+        ],
+        "full_bulk_measure_only_duration_bound": "0",
+        "profile_exact_minimum": "0",
+        "profile_exact_maximum": "115/2184",
+        "profile_minimizer_set": [
+          [
+            "0",
+            "0",
+            true,
+            true
+          ]
+        ],
+        "improvement_over_previous_subset_constant_bound": "0"
+      },
+      {
+        "id": "strict16",
+        "certified_subset_is_contained_in_full_bulk": true,
+        "certified_subset_phase_measure": "5/16",
+        "full_bulk_measure": "151/448",
+        "additional_bulk_measure": "11/448",
+        "extra_isolated_projection_points": [],
+        "full_bulk_measure_only_duration_bound": "39/4928",
+        "profile_exact_minimum": "39/4928",
+        "profile_exact_maximum": "7/96",
+        "profile_minimizer_set": [
+          [
+            "0",
+            "1/48",
+            true,
+            true
+          ],
+          [
+            "47/48",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "improvement_over_previous_subset_constant_bound": "1/448"
+      }
+    ]
+  },
+  "totals": {
+    "cases": 2,
+    "prescribed_test_times": 4,
+    "unchanged_distance_checks": 24,
+    "two_phase_separation_certificates": 2,
+    "known_safe_intervals": 4,
+    "strict_fixed_menu_intervals": 2
+  }
+}

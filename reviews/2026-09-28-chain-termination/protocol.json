@@ -1,0 +1,269 @@
+{
+  "date": "2026-09-28",
+  "baseline": "dd5b3bce9a7a3fb22474a724161438f24e35fb41",
+  "status": "Frozen after analytic derivations and before the new exact replay. These are reused diagnostic cases, not held-out validation.",
+  "question": "Bound nonzero next-safe advances for four residual integer common-start constraints at threshold 1/8 using excess coverage, then decide a supplied closed window.",
+  "threshold": "1/8",
+  "phases": "All zero; positive integer speeds, selected reference 0. Physical cases have n=8 with core 1,4,5; two auxiliary four-constraint fixtures make no full-configuration claim.",
+  "cases": [
+    {
+      "id": "doubling_112",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "small_gcd_113",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "tight_13",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "control_8_11",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "affine_309",
+      "kind": "physical",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "affine_310",
+      "kind": "physical",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "affine_320",
+      "kind": "physical",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "strict_16",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "id": "aux_condition_strict",
+      "kind": "auxiliary",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "core": [],
+      "window": [
+        "7/8",
+        "6/5"
+      ]
+    },
+    {
+      "id": "aux_condition_equality",
+      "kind": "auxiliary",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "core": [],
+      "window": [
+        "0",
+        "1/120"
+      ]
+    },
+    {
+      "id": "common_start_lift_clipped",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "1903173888225289/5709496320675840"
+      ]
+    },
+    {
+      "id": "common_start_lift_extended",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "163489640070647/490466743069080"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "2026-09-28-four-projection/protocol.json": "9e6ef9f4dd7ff80959a66497f5756d916c18a427b7feeb8c82baacfee6537ae4",
+    "2026-09-28-four-projection/follow_on.json": "6a6a0ff590062c370f7a576edf75b641091f70f93c675a253af41febaa68e0c8"
+  },
+  "algorithm": {
+    "round_order": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      3,
+      1,
+      2,
+      3,
+      2,
+      3
+    ],
+    "projection": "m=ceil(v*t-7/8); output=max(t,(m+1/8)/v)",
+    "stopping": "Return L if initially jointly safe. After each call stop empty if t>R; otherwise test joint safety after each complete eleven-call round. A safe terminal t<=R is earliest. No fitted iteration cap: assert the analytic bound on nonzero moves.",
+    "input_contract": "Use only speeds, phases and window; no threshold enumeration or archived outputs in the primary."
+  },
+  "bounds": {
+    "Q": "max pairwise lcm(v_i,v_j)",
+    "eta": "1/(8Q)",
+    "H": "sum h({v_i*t})/v_i with h=blocked primitive minus phase/4",
+    "global_bound": "floor(1+(3Q/2)*sum 1/v_i)",
+    "phase_bound": "number initially blocked + floor((Hmax-H(L))/eta)",
+    "counted_work": "Nonzero scalar moves, full/partial rounds, and all scalar calls are recorded separately. No runtime or bit-complexity claim."
+  },
+  "verification": "Separately tasked implementation enumerates exact threshold events only on the frozen bounded windows, reconstructs feasibility and each projection without the primary ceiling rule, clips selected open intervals, and integrates actual excess on their connected union and from L. Compare potential differences, quantum, chain length and analytic bounds.",
+  "limits": [
+    "No new physical configurations or scan.",
+    "No uniform speed-independent bound claimed.",
+    "The primitives reproduce existing OVERLAP_PLACEMENT Section 8; the new proposed implication charges successive chain occurrences against that budget.",
+    "Unbounded mathematics remains HYPOTHESIS/proof candidate with internal AI review only.",
+    "No full Lonely Runner, all-reference, novelty, global core/window existence or duration result.",
+    "Hourly stays paused; no main merge, paid compute, outreach or +7/+9 work."
+  ]
+}

@@ -1,0 +1,1245 @@
+{
+  "archive_comparison": {
+    "all_cells_match": true,
+    "cell_comparisons": [
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          3
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          3
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "vertices_match": true
+      },
+      {
+        "base_vertices_match": true,
+        "edges_match": true,
+        "labels": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          4
+        ],
+        "vertices_match": true
+      }
+    ],
+    "path": "reviews/2026-09-29-ltcm-spectrum/ambient.json",
+    "read_after_fresh_reconstruction": true,
+    "sha256": "af1a620e08e9407b7d01d0f444a0041f81e5be3e02c673f891f033c3a680f736"
+  },
+  "arithmetic": "Python standard-library fractions.Fraction",
+  "cells": [
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "0.lower",
+          "1.lower",
+          "6.upper"
+        ]
+      ],
+      "dimension": 0,
+      "edges": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "peak_edges": [],
+      "peak_indices": [],
+      "vertices": [
+        [
+          "1/8",
+          "1/8",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "0.lower",
+          "5.upper",
+          "6.lower"
+        ],
+        [
+          "0.lower",
+          "1.lower",
+          "5.upper",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "1.lower",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "1.lower",
+          "5.upper"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-1",
+          "beta": "2",
+          "endpoint_index": 0,
+          "max_loss": "1/24",
+          "peak_index": 1
+        },
+        {
+          "alpha": "1/5",
+          "beta": "-1",
+          "endpoint_index": 2,
+          "max_loss": "1/24",
+          "peak_index": 1
+        },
+        {
+          "alpha": "1",
+          "beta": "-1",
+          "endpoint_index": 3,
+          "max_loss": "1/24",
+          "peak_index": 1
+        }
+      ],
+      "peak_indices": [
+        1
+      ],
+      "vertices": [
+        [
+          "1/8",
+          "1/4",
+          "1/8"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "7/40",
+          "1/8",
+          "1/8"
+        ],
+        [
+          "5/24",
+          "1/8",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "0.lower",
+          "5.lower"
+        ],
+        [
+          "floor",
+          "0.lower",
+          "4.upper"
+        ],
+        [
+          "0.lower",
+          "4.upper",
+          "5.lower"
+        ],
+        [
+          "floor",
+          "4.upper",
+          "5.lower"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-1",
+          "beta": "1",
+          "endpoint_index": 0,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "-1",
+          "beta": "4",
+          "endpoint_index": 1,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "1",
+          "beta": "-2",
+          "endpoint_index": 3,
+          "max_loss": "1/24",
+          "peak_index": 2
+        }
+      ],
+      "peak_indices": [
+        2
+      ],
+      "vertices": [
+        [
+          "1/8",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/8",
+          "1/2",
+          "1/8"
+        ],
+        [
+          "1/6",
+          "1/3",
+          "1/6"
+        ],
+        [
+          "5/24",
+          "1/4",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "1.lower",
+          "3.upper",
+          "6.lower"
+        ]
+      ],
+      "dimension": 0,
+      "edges": [],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "peak_edges": [],
+      "peak_indices": [],
+      "vertices": [
+        [
+          "3/8",
+          "1/8",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "3.lower",
+          "5.upper"
+        ],
+        [
+          "floor",
+          "fold",
+          "1.lower",
+          "3.lower"
+        ],
+        [
+          "fold",
+          "1.lower",
+          "3.lower",
+          "5.upper",
+          "6.upper"
+        ],
+        [
+          "floor",
+          "fold",
+          "5.upper",
+          "6.upper"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-3",
+          "beta": "5",
+          "endpoint_index": 0,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "-1",
+          "endpoint_index": 1,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "1/2",
+          "endpoint_index": 3,
+          "max_loss": "1/24",
+          "peak_index": 2
+        }
+      ],
+      "peak_indices": [
+        2
+      ],
+      "vertices": [
+        [
+          "3/8",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "1/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "3/16",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "2.upper",
+          "5.lower",
+          "6.upper"
+        ]
+      ],
+      "dimension": 0,
+      "edges": [],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "peak_edges": [],
+      "peak_indices": [],
+      "vertices": [
+        [
+          "3/8",
+          "1/2",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "2.upper",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "fold",
+          "5.lower",
+          "6.lower"
+        ],
+        [
+          "fold",
+          "2.upper",
+          "4.upper",
+          "5.lower",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "fold",
+          "2.upper",
+          "4.upper"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-1",
+          "beta": "2",
+          "endpoint_index": 0,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "-1/2",
+          "endpoint_index": 1,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "1",
+          "endpoint_index": 3,
+          "max_loss": "1/24",
+          "peak_index": 2
+        }
+      ],
+      "peak_indices": [
+        2
+      ],
+      "vertices": [
+        [
+          "11/24",
+          "5/12",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "5/16",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "3/8",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "1.upper",
+          "6.lower"
+        ],
+        [
+          "1.upper",
+          "2.lower",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "2.lower",
+          "6.lower"
+        ],
+        [
+          "1.upper",
+          "2.lower",
+          "4.upper"
+        ],
+        [
+          "floor",
+          "1.upper",
+          "4.upper"
+        ],
+        [
+          "floor",
+          "2.lower",
+          "4.upper"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-2",
+          "beta": "1",
+          "endpoint_index": 1,
+          "max_loss": "1/42",
+          "peak_index": 3
+        },
+        {
+          "alpha": "0",
+          "beta": "1",
+          "endpoint_index": 4,
+          "max_loss": "1/24",
+          "peak_index": 3
+        },
+        {
+          "alpha": "1",
+          "beta": "-2",
+          "endpoint_index": 5,
+          "max_loss": "1/24",
+          "peak_index": 3
+        }
+      ],
+      "peak_indices": [
+        3
+      ],
+      "vertices": [
+        [
+          "11/40",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "2/7",
+          "6/7",
+          "1/7"
+        ],
+        [
+          "7/24",
+          "5/6",
+          "1/8"
+        ],
+        [
+          "1/3",
+          "5/6",
+          "1/6"
+        ],
+        [
+          "1/3",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/4",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "4.lower",
+          "5.upper"
+        ],
+        [
+          "floor",
+          "fold",
+          "2.lower",
+          "4.lower"
+        ],
+        [
+          "fold",
+          "2.lower",
+          "4.lower",
+          "5.upper",
+          "6.upper"
+        ],
+        [
+          "floor",
+          "fold",
+          "5.upper",
+          "6.upper"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-1",
+          "beta": "2",
+          "endpoint_index": 0,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "-1",
+          "endpoint_index": 1,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "1/2",
+          "endpoint_index": 3,
+          "max_loss": "1/24",
+          "peak_index": 2
+        }
+      ],
+      "peak_indices": [
+        2
+      ],
+      "vertices": [
+        [
+          "11/24",
+          "3/4",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "5/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "2/3",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "11/16",
+          "1/8"
+        ]
+      ]
+    },
+    {
+      "active_constraints": [
+        [
+          "floor",
+          "1.upper",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "fold",
+          "5.lower",
+          "6.lower"
+        ],
+        [
+          "fold",
+          "1.upper",
+          "3.upper",
+          "5.lower",
+          "6.lower"
+        ],
+        [
+          "floor",
+          "fold",
+          "1.upper",
+          "3.upper"
+        ]
+      ],
+      "dimension": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "peak_edges": [
+        {
+          "alpha": "-3/5",
+          "beta": "1",
+          "endpoint_index": 0,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "-1/2",
+          "endpoint_index": 1,
+          "max_loss": "1/24",
+          "peak_index": 2
+        },
+        {
+          "alpha": "0",
+          "beta": "1",
+          "endpoint_index": 3,
+          "max_loss": "1/24",
+          "peak_index": 2
+        }
+      ],
+      "peak_indices": [
+        2
+      ],
+      "vertices": [
+        [
+          "19/40",
+          "7/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "13/16",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "5/6",
+          "1/6"
+        ],
+        [
+          "1/2",
+          "7/8",
+          "1/8"
+        ]
+      ]
+    }
+  ],
+  "coefficient_rows": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "equality_controls": [
+    {
+      "case": "seed restricted to x=z",
+      "dimension": 2,
+      "vertices": 3
+    },
+    {
+      "case": "also y=z",
+      "dimension": 1,
+      "vertices": 2
+    },
+    {
+      "case": "also z>=1/2",
+      "dimension": 0,
+      "vertices": 1
+    },
+    {
+      "case": "also z>=3/4",
+      "dimension": -1,
+      "vertices": 0
+    },
+    {
+      "case": "seed truncated at z=1/3",
+      "dimension": 3,
+      "vertices": 8
+    }
+  ],
+  "frozen_research_head_from_protocol": "12d08824ead7b772032ba240d0e858250fbd183c",
+  "method": "lap-branch incremental convex-hull clipping; no boundary-plane triple enumeration",
+  "original_mathematical_code_read_or_imported": [],
+  "reconstruction_sha256": "2fa500c35f5ff3c94c31c064199b7cbfb43fd7dcc6e170a00548122011ff669b",
+  "source_sha256": {
+    "geometry_check.py": "29b790b3044afd185a462d93fb64d50d4506fb29723b0dd1acbaf8882b68fe7c",
+    "notes/LTCM_OTHER_RAY_UPPER_BOUND_2026_09_29.md": "1bbbbe1471c3363893bfdb7b1803c597b684022613777d17ad363fe04c7ee8ab"
+  },
+  "stages": [
+    {
+      "attempted_branches": 2,
+      "coefficient": [
+        1,
+        1
+      ],
+      "dimension_counts": {
+        "3": 2
+      },
+      "form_index": 2,
+      "incoming_branches": 1,
+      "lap_range": [
+        0,
+        1
+      ],
+      "nonempty_after_both": 2,
+      "rejected_after_lower": 0,
+      "rejected_after_upper": 0
+    },
+    {
+      "attempted_branches": 6,
+      "coefficient": [
+        2,
+        1
+      ],
+      "dimension_counts": {
+        "3": 3
+      },
+      "form_index": 3,
+      "incoming_branches": 2,
+      "lap_range": [
+        0,
+        2
+      ],
+      "nonempty_after_both": 3,
+      "rejected_after_lower": 2,
+      "rejected_after_upper": 1
+    },
+    {
+      "attempted_branches": 12,
+      "coefficient": [
+        3,
+        1
+      ],
+      "dimension_counts": {
+        "3": 5
+      },
+      "form_index": 4,
+      "incoming_branches": 3,
+      "lap_range": [
+        0,
+        3
+      ],
+      "nonempty_after_both": 5,
+      "rejected_after_lower": 5,
+      "rejected_after_upper": 2
+    },
+    {
+      "attempted_branches": 25,
+      "coefficient": [
+        3,
+        2
+      ],
+      "dimension_counts": {
+        "3": 8
+      },
+      "form_index": 5,
+      "incoming_branches": 5,
+      "lap_range": [
+        0,
+        4
+      ],
+      "nonempty_after_both": 8,
+      "rejected_after_lower": 11,
+      "rejected_after_upper": 6
+    },
+    {
+      "attempted_branches": 56,
+      "coefficient": [
+        5,
+        2
+      ],
+      "dimension_counts": {
+        "0": 3,
+        "3": 7
+      },
+      "form_index": 6,
+      "incoming_branches": 8,
+      "lap_range": [
+        0,
+        6
+      ],
+      "nonempty_after_both": 10,
+      "rejected_after_lower": 29,
+      "rejected_after_upper": 17
+    }
+  ],
+  "status": "PASS: fixed-cell statement reproduced by exact halfspace clipping",
+  "summary": {
+    "ambient_maximum": "1/6",
+    "cell_dimension_counts": {
+      "0": 3,
+      "3": 7
+    },
+    "distinct_vertices": 33,
+    "edge_occurrences": 45,
+    "largest_nonpeak_vertex_height": "1/7",
+    "nonempty_cells": 10,
+    "peak_edges": 21,
+    "peak_vertices": 7,
+    "singleton_points": [
+      [
+        "1/8",
+        "1/8",
+        "1/8"
+      ],
+      [
+        "3/8",
+        "1/8",
+        "1/8"
+      ],
+      [
+        "3/8",
+        "1/2",
+        "1/8"
+      ]
+    ],
+    "vertex_occurrences": 33,
+    "written_directions_and_lengths_match": true
+  }
+}

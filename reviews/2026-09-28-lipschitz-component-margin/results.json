@@ -1,0 +1,3066 @@
+{
+  "baseline": "ad7f51f6d367449d517695aa668f3b71ae63cb7f",
+  "protocol_sha256": "3903410dec2f61deda37c9fe7d03fb6ae24034fc80c78f8426faa9e81f4cae0c",
+  "primary_sha256": "a93e7b477982d3d916a11f01f34f68cf5b6923b49a2c6e06533be2901784d8b1",
+  "source_contract": {
+    "midpoint_protocol": "reviews/2026-09-28-tie-midpoint-discriminator/protocol.json",
+    "midpoint_protocol_sha256": "e62d116b764aa0869788dffb36785935d08e3de1ddb38d3e0ca11ca23ba3f2e3",
+    "midpoint_results": "reviews/2026-09-28-tie-midpoint-discriminator/results.json",
+    "midpoint_results_sha256": "720ef7a31bc933d16b598525cc84a4e928b4cc1dc8bbcd524aa5ecbd1c372eb8",
+    "midpoint_note": "notes/TIE_MIDPOINT_DISCRIMINATOR_2026_09_28.md",
+    "midpoint_note_sha256": "c284aca585e495e85c3acb2ce8c818d62bdaaf21f5e52dd98c54ef91941c9442",
+    "selector_transfer_results": "reviews/2026-09-28-selector-transfer-audit/results.json",
+    "selector_transfer_results_sha256": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+    "floor_sum_results": "reviews/2026-09-28-floor-sum-component-count/results.json",
+    "floor_sum_results_sha256": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "one_query_results": "reviews/2026-09-28-one-containment-selector/results.json",
+    "one_query_results_sha256": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5"
+  },
+  "arithmetic": "integers and fractions.Fraction only; no floating-point decisions",
+  "information_barrier": "The pinned midpoint output was literally projected to ids, speeds, windows, pair-only values, tied pairs, complements, potential slacks and component counts, then deleted. Components and Lipschitz scores were reconstructed before any containment schedule or answer was calculated or reloaded.",
+  "candidate_lemma": "Distance to the nearest integer is 1-Lipschitz, so on closure(I), distance(v*t,Z)-1/8 >= distance(v*mid(I),Z)-1/8-v*width(I)/2.",
+  "cases": {
+    "squares:1,2,5:12": {
+      "id": "squares:1,2,5:12",
+      "role": "development",
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "window": [
+        "43/216",
+        "5/24"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "43/216",
+                "193/968"
+              ],
+              "laps": [
+                5,
+                24
+              ],
+              "left_included": true,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/3267",
+              "midpoint": "5207/26136",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase_at_midpoint": "19919/26136",
+                  "distance_at_midpoint": "6217/26136",
+                  "midpoint_signed_margin": "1475/13068",
+                  "component_width": "1/3267",
+                  "speed_width_product": "49/3267",
+                  "lipschitz_radius_bound": "49/6534",
+                  "lipschitz_lower_margin": "51/484",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 169,
+                  "phase_at_midpoint": "17495/26136",
+                  "distance_at_midpoint": "8641/26136",
+                  "midpoint_signed_margin": "2687/13068",
+                  "component_width": "1/3267",
+                  "speed_width_product": "169/3267",
+                  "lipschitz_radius_bound": "169/6534",
+                  "lipschitz_lower_margin": "87/484",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "51/484",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 16,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 8,
+            "nonempty_comparisons": 8,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "271/1352",
+                "21/104"
+              ],
+              "laps": [
+                5,
+                34
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/676",
+              "midpoint": "34/169",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase_at_midpoint": "145/169",
+                  "distance_at_midpoint": "24/169",
+                  "midpoint_signed_margin": "23/1352",
+                  "component_width": "1/676",
+                  "speed_width_product": "49/676",
+                  "lipschitz_radius_bound": "49/1352",
+                  "lipschitz_lower_margin": "-1/52",
+                  "lower_margin_nonnegative": false,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 121,
+                  "phase_at_midpoint": "58/169",
+                  "distance_at_midpoint": "58/169",
+                  "midpoint_signed_margin": "295/1352",
+                  "component_width": "1/676",
+                  "speed_width_product": "121/676",
+                  "lipschitz_radius_bound": "121/1352",
+                  "lipschitz_lower_margin": "87/676",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "-1/52",
+          "score_nonnegative": false,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "310/3006003"
+        }
+      ],
+      "candidate_selected_pair": [
+        25,
+        121
+      ],
+      "inherited_lexicographic_pair": [
+        25,
+        121
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          25,
+          121
+        ],
+        "selected_pair_score": "51/484",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "1/2028",
+        "counterfactual_bound_if_certificate_held": "1/2028",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "complement": [
+              49,
+              169
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "51/484",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "complement": [
+              49,
+              121
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": false,
+            "violation_count": 1,
+            "first_exact_violation": {
+              "kind": "positive_interval",
+              "interval": [
+                "79/392",
+                "21/104"
+              ],
+              "left_included": false,
+              "right_included": false,
+              "witness": "257/1274",
+              "witness_phase": "23/26",
+              "tested_complement_speed": 49,
+              "base_laps": [
+                5,
+                34
+              ],
+              "complement_lap": 10
+            },
+            "all_exact_violations": [
+              {
+                "kind": "positive_interval",
+                "interval": [
+                  "79/392",
+                  "21/104"
+                ],
+                "left_included": false,
+                "right_included": false,
+                "witness": "257/1274",
+                "witness_phase": "23/26",
+                "tested_complement_speed": 49,
+                "base_laps": [
+                  5,
+                  34
+                ],
+                "complement_lap": 10
+              }
+            ],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "-1/52",
+            "score_nonnegative": false,
+            "audit_class": "negative_score_failed_pair"
+          }
+        ],
+        "containing_pairs": [
+          [
+            25,
+            121
+          ]
+        ],
+        "failed_pairs": [
+          [
+            25,
+            169
+          ]
+        ],
+        "audit_class_counts": {
+          "negative_score_failed_pair": 1,
+          "sufficient_certificate_true_positive": 1
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    },
+    "squares:1,2,5:39": {
+      "id": "squares:1,2,5:39",
+      "role": "development",
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "window": [
+        "19/24",
+        "173/216"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement": [
+            49,
+            169
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "775/968",
+                "173/216"
+              ],
+              "laps": [
+                20,
+                97
+              ],
+              "left_included": false,
+              "right_included": true,
+              "closure_used_by_lemma": true,
+              "width": "1/3267",
+              "midpoint": "20929/26136",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase_at_midpoint": "6217/26136",
+                  "distance_at_midpoint": "6217/26136",
+                  "midpoint_signed_margin": "1475/13068",
+                  "component_width": "1/3267",
+                  "speed_width_product": "49/3267",
+                  "lipschitz_radius_bound": "49/6534",
+                  "lipschitz_lower_margin": "51/484",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 169,
+                  "phase_at_midpoint": "8641/26136",
+                  "distance_at_midpoint": "8641/26136",
+                  "midpoint_signed_margin": "2687/13068",
+                  "component_width": "1/3267",
+                  "speed_width_product": "169/3267",
+                  "lipschitz_radius_bound": "169/6534",
+                  "lipschitz_lower_margin": "87/484",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "51/484",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 16,
+            "distance_computations": 6,
+            "join_advance_comparisons": 4,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 8,
+            "nonempty_comparisons": 8,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement": [
+            49,
+            121
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "83/104",
+                "1081/1352"
+              ],
+              "laps": [
+                20,
+                135
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/676",
+              "midpoint": "135/169",
+              "complement_evaluations": [
+                {
+                  "speed": 49,
+                  "phase_at_midpoint": "24/169",
+                  "distance_at_midpoint": "24/169",
+                  "midpoint_signed_margin": "23/1352",
+                  "component_width": "1/676",
+                  "speed_width_product": "49/676",
+                  "lipschitz_radius_bound": "49/1352",
+                  "lipschitz_lower_margin": "-1/52",
+                  "lower_margin_nonnegative": false,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 121,
+                  "phase_at_midpoint": "111/169",
+                  "distance_at_midpoint": "58/169",
+                  "midpoint_signed_margin": "295/1352",
+                  "component_width": "1/676",
+                  "speed_width_product": "121/676",
+                  "lipschitz_radius_bound": "121/1352",
+                  "lipschitz_lower_margin": "87/676",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "-1/52",
+          "score_nonnegative": false,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 4,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "310/3006003"
+        }
+      ],
+      "candidate_selected_pair": [
+        25,
+        121
+      ],
+      "inherited_lexicographic_pair": [
+        25,
+        121
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          25,
+          121
+        ],
+        "selected_pair_score": "51/484",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "1/2028",
+        "counterfactual_bound_if_certificate_held": "1/2028",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "complement": [
+              49,
+              169
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 4,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "51/484",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "complement": [
+              49,
+              121
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": false,
+            "violation_count": 1,
+            "first_exact_violation": {
+              "kind": "positive_interval",
+              "interval": [
+                "83/104",
+                "313/392"
+              ],
+              "left_included": false,
+              "right_included": false,
+              "witness": "1017/1274",
+              "witness_phase": "3/26",
+              "tested_complement_speed": 49,
+              "base_laps": [
+                20,
+                135
+              ],
+              "complement_lap": 39
+            },
+            "all_exact_violations": [
+              {
+                "kind": "positive_interval",
+                "interval": [
+                  "83/104",
+                  "313/392"
+                ],
+                "left_included": false,
+                "right_included": false,
+                "witness": "1017/1274",
+                "witness_phase": "3/26",
+                "tested_complement_speed": 49,
+                "base_laps": [
+                  20,
+                  135
+                ],
+                "complement_lap": 39
+              }
+            ],
+            "event_ledger": {
+              "raw_in_window_thresholds": 10,
+              "unique_threshold_events_including_window_endpoints": 12,
+              "open_cells": 11
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 4,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "-1/52",
+            "score_nonnegative": false,
+            "audit_class": "negative_score_failed_pair"
+          }
+        ],
+        "containing_pairs": [
+          [
+            25,
+            121
+          ]
+        ],
+        "failed_pairs": [
+          [
+            25,
+            169
+          ]
+        ],
+        "audit_class_counts": {
+          "negative_score_failed_pair": 1,
+          "sufficient_certificate_true_positive": 1
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              25,
+              121
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              25,
+              169
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    },
+    "fibonacci:1,2,4:1": {
+      "id": "fibonacci:1,2,4:1",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "9/272",
+        "15/272"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "23/440",
+                "3/56"
+              ],
+              "laps": [
+                1,
+                3
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/770",
+              "midpoint": "163/3080",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase_at_midpoint": "2187/3080",
+                  "distance_at_midpoint": "893/3080",
+                  "midpoint_signed_margin": "127/770",
+                  "component_width": "1/770",
+                  "speed_width_product": "89/770",
+                  "lipschitz_radius_bound": "89/1540",
+                  "lipschitz_lower_margin": "3/28",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "239/385",
+                  "distance_at_midpoint": "146/385",
+                  "midpoint_signed_margin": "783/3080",
+                  "component_width": "1/770",
+                  "speed_width_product": "72/385",
+                  "lipschitz_radius_bound": "36/385",
+                  "lipschitz_lower_margin": "9/56",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "3/28",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "31/712",
+                "33/712"
+              ],
+              "laps": [
+                1,
+                4
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/356",
+              "midpoint": "4/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase_at_midpoint": "42/89",
+                  "distance_at_midpoint": "42/89",
+                  "midpoint_signed_margin": "247/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "55/356",
+                  "lipschitz_radius_bound": "55/712",
+                  "lipschitz_lower_margin": "24/89",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "42/89",
+                  "distance_at_midpoint": "42/89",
+                  "midpoint_signed_margin": "247/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "36/89",
+                  "lipschitz_radius_bound": "18/89",
+                  "lipschitz_lower_margin": "103/712",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "103/712",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "3001/1879680"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "103/712",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "3001/1879680",
+        "counterfactual_bound_if_certificate_held": "3001/1879680",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "3/28",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "103/712",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          }
+        ],
+        "containing_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ]
+        ],
+        "failed_pairs": [],
+        "audit_class_counts": {
+          "sufficient_certificate_true_positive": 2
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    },
+    "fibonacci:1,2,4:11": {
+      "id": "fibonacci:1,2,4:11",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "89/272",
+        "95/272"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "55/168",
+                "29/88"
+              ],
+              "laps": [
+                7,
+                18
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/462",
+              "midpoint": "607/1848",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase_at_midpoint": "431/1848",
+                  "distance_at_midpoint": "431/1848",
+                  "midpoint_signed_margin": "25/231",
+                  "component_width": "1/462",
+                  "speed_width_product": "89/462",
+                  "lipschitz_radius_bound": "89/924",
+                  "lipschitz_lower_margin": "1/84",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "23/77",
+                  "distance_at_midpoint": "23/77",
+                  "midpoint_signed_margin": "107/616",
+                  "component_width": "1/462",
+                  "speed_width_product": "24/77",
+                  "lipschitz_radius_bound": "12/77",
+                  "lipschitz_lower_margin": "1/56",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "1/84",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "239/712",
+                "241/712"
+              ],
+              "laps": [
+                7,
+                30
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/356",
+              "midpoint": "30/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase_at_midpoint": "48/89",
+                  "distance_at_midpoint": "41/89",
+                  "midpoint_signed_margin": "239/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "55/356",
+                  "lipschitz_radius_bound": "55/712",
+                  "lipschitz_lower_margin": "23/89",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "48/89",
+                  "distance_at_midpoint": "41/89",
+                  "midpoint_signed_margin": "239/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "36/89",
+                  "lipschitz_radius_bound": "18/89",
+                  "lipschitz_lower_margin": "95/712",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "95/712",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "383/1152",
+                "385/1152"
+              ],
+              "laps": [
+                7,
+                48
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/576",
+              "midpoint": "1/3",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase_at_midpoint": "1/3",
+                  "distance_at_midpoint": "1/3",
+                  "midpoint_signed_margin": "5/24",
+                  "component_width": "1/576",
+                  "speed_width_product": "55/576",
+                  "lipschitz_radius_bound": "55/1152",
+                  "lipschitz_lower_margin": "185/1152",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 89,
+                  "phase_at_midpoint": "2/3",
+                  "distance_at_midpoint": "1/3",
+                  "midpoint_signed_margin": "5/24",
+                  "component_width": "1/576",
+                  "speed_width_product": "89/576",
+                  "lipschitz_radius_bound": "89/1152",
+                  "lipschitz_lower_margin": "151/1152",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "151/1152",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 5,
+            "blocking_state_comparisons": 10,
+            "clip_comparisons": 20,
+            "distance_computations": 10,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 10,
+            "nonempty_comparisons": 10,
+            "phase_reductions": 10,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "479/221760"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 2
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "95/712",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "15733/9868320",
+        "counterfactual_bound_if_certificate_held": "15733/9868320",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "1/84",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "95/712",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "complement": [
+              55,
+              89
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 5,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 10,
+              "violation_nonempty_comparisons": 5
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "151/1152",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          }
+        ],
+        "containing_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ],
+          [
+            21,
+            144
+          ]
+        ],
+        "failed_pairs": [],
+        "audit_class_counts": {
+          "sufficient_certificate_true_positive": 3
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    },
+    "fibonacci:1,2,4:22": {
+      "id": "fibonacci:1,2,4:22",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "177/272",
+        "183/272"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "59/88",
+                "113/168"
+              ],
+              "laps": [
+                14,
+                37
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/462",
+              "midpoint": "1241/1848",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase_at_midpoint": "1417/1848",
+                  "distance_at_midpoint": "431/1848",
+                  "midpoint_signed_margin": "25/231",
+                  "component_width": "1/462",
+                  "speed_width_product": "89/462",
+                  "lipschitz_radius_bound": "89/924",
+                  "lipschitz_lower_margin": "1/84",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "54/77",
+                  "distance_at_midpoint": "23/77",
+                  "midpoint_signed_margin": "107/616",
+                  "component_width": "1/462",
+                  "speed_width_product": "24/77",
+                  "lipschitz_radius_bound": "12/77",
+                  "lipschitz_lower_margin": "1/56",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "1/84",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "471/712",
+                "473/712"
+              ],
+              "laps": [
+                14,
+                59
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/356",
+              "midpoint": "59/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase_at_midpoint": "41/89",
+                  "distance_at_midpoint": "41/89",
+                  "midpoint_signed_margin": "239/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "55/356",
+                  "lipschitz_radius_bound": "55/712",
+                  "lipschitz_lower_margin": "23/89",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "41/89",
+                  "distance_at_midpoint": "41/89",
+                  "midpoint_signed_margin": "239/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "36/89",
+                  "lipschitz_radius_bound": "18/89",
+                  "lipschitz_lower_margin": "95/712",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "95/712",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement": [
+            55,
+            89
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "767/1152",
+                "769/1152"
+              ],
+              "laps": [
+                14,
+                96
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/576",
+              "midpoint": "2/3",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase_at_midpoint": "2/3",
+                  "distance_at_midpoint": "1/3",
+                  "midpoint_signed_margin": "5/24",
+                  "component_width": "1/576",
+                  "speed_width_product": "55/576",
+                  "lipschitz_radius_bound": "55/1152",
+                  "lipschitz_lower_margin": "185/1152",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 89,
+                  "phase_at_midpoint": "1/3",
+                  "distance_at_midpoint": "1/3",
+                  "midpoint_signed_margin": "5/24",
+                  "component_width": "1/576",
+                  "speed_width_product": "89/576",
+                  "lipschitz_radius_bound": "89/1152",
+                  "lipschitz_lower_margin": "151/1152",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "151/1152",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 5,
+            "blocking_state_comparisons": 10,
+            "clip_comparisons": 20,
+            "distance_computations": 10,
+            "join_advance_comparisons": 7,
+            "join_clip_comparisons": 8,
+            "join_nonempty_comparisons": 4,
+            "join_steps": 4,
+            "lap_candidates": 10,
+            "nonempty_comparisons": 10,
+            "phase_reductions": 10,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "479/221760"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 2
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "95/712",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "15733/9868320",
+        "counterfactual_bound_if_certificate_held": "15733/9868320",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "1/84",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "95/712",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "complement": [
+              55,
+              89
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 5,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 7,
+              "join_clip_comparisons": 8,
+              "join_nonempty_comparisons": 4,
+              "join_steps": 4,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 10,
+              "violation_nonempty_comparisons": 5
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "151/1152",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          }
+        ],
+        "containing_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ],
+          [
+            21,
+            144
+          ]
+        ],
+        "failed_pairs": [],
+        "audit_class_counts": {
+          "sufficient_certificate_true_positive": 3
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              144
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    },
+    "fibonacci:1,2,4:32": {
+      "id": "fibonacci:1,2,4:32",
+      "role": "archival_control",
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "257/272",
+        "263/272"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement": [
+            89,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "53/56",
+                "417/440"
+              ],
+              "laps": [
+                20,
+                52
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/770",
+              "midpoint": "2917/3080",
+              "complement_evaluations": [
+                {
+                  "speed": 89,
+                  "phase_at_midpoint": "893/3080",
+                  "distance_at_midpoint": "893/3080",
+                  "midpoint_signed_margin": "127/770",
+                  "component_width": "1/770",
+                  "speed_width_product": "89/770",
+                  "lipschitz_radius_bound": "89/1540",
+                  "lipschitz_lower_margin": "3/28",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "146/385",
+                  "distance_at_midpoint": "146/385",
+                  "midpoint_signed_margin": "783/3080",
+                  "component_width": "1/770",
+                  "speed_width_product": "72/385",
+                  "lipschitz_radius_bound": "36/385",
+                  "lipschitz_lower_margin": "9/56",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "3/28",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 18,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement": [
+            55,
+            144
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "679/712",
+                "681/712"
+              ],
+              "laps": [
+                20,
+                85
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/356",
+              "midpoint": "85/89",
+              "complement_evaluations": [
+                {
+                  "speed": 55,
+                  "phase_at_midpoint": "47/89",
+                  "distance_at_midpoint": "42/89",
+                  "midpoint_signed_margin": "247/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "55/356",
+                  "lipschitz_radius_bound": "55/712",
+                  "lipschitz_lower_margin": "24/89",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 144,
+                  "phase_at_midpoint": "47/89",
+                  "distance_at_midpoint": "42/89",
+                  "midpoint_signed_margin": "247/712",
+                  "component_width": "1/356",
+                  "speed_width_product": "36/89",
+                  "lipschitz_radius_bound": "18/89",
+                  "lipschitz_lower_margin": "103/712",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "103/712",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "3001/1879680"
+        }
+      ],
+      "candidate_selected_pair": [
+        21,
+        89
+      ],
+      "inherited_lexicographic_pair": [
+        21,
+        55
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          21,
+          89
+        ],
+        "selected_pair_score": "103/712",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "3001/1879680",
+        "counterfactual_bound_if_certificate_held": "3001/1879680",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "complement": [
+              89,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 7,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 14,
+              "violation_nonempty_comparisons": 7
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "3/28",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "complement": [
+              55,
+              144
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 16,
+              "unique_threshold_events_including_window_endpoints": 18,
+              "open_cells": 17
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 6,
+              "blocking_pieces": 10,
+              "blocking_state_comparisons": 20,
+              "clip_comparisons": 40,
+              "containment_conclusions": 1,
+              "distance_computations": 20,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 20,
+              "nonempty_comparisons": 20,
+              "phase_reductions": 20,
+              "positive_components": 1,
+              "violation_clip_comparisons": 12,
+              "violation_nonempty_comparisons": 6
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "103/712",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          }
+        ],
+        "containing_pairs": [
+          [
+            21,
+            55
+          ],
+          [
+            21,
+            89
+          ]
+        ],
+        "failed_pairs": [],
+        "audit_class_counts": {
+          "sufficient_certificate_true_positive": 2
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              21,
+              55
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              21,
+              89
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    }
+  },
+  "controls": {
+    "strict_16": {
+      "id": "strict_16",
+      "role": "named_control",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "dispatch": "minimum_count_tie_lipschitz_scored",
+      "minimum_component_count": 1,
+      "tied_minimum_pairs": [
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "scored_tied_pairs": [
+        {
+          "base_pair": [
+            6,
+            11
+          ],
+          "complement": [
+            7,
+            16
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "31/88",
+                "17/48"
+              ],
+              "laps": [
+                2,
+                4
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/528",
+              "midpoint": "373/1056",
+              "complement_evaluations": [
+                {
+                  "speed": 7,
+                  "phase_at_midpoint": "499/1056",
+                  "distance_at_midpoint": "499/1056",
+                  "midpoint_signed_margin": "367/1056",
+                  "component_width": "1/528",
+                  "speed_width_product": "7/528",
+                  "lipschitz_radius_bound": "7/1056",
+                  "lipschitz_lower_margin": "15/44",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 16,
+                  "phase_at_midpoint": "43/66",
+                  "distance_at_midpoint": "23/66",
+                  "midpoint_signed_margin": "59/264",
+                  "component_width": "1/528",
+                  "speed_width_product": "1/33",
+                  "lipschitz_radius_bound": "1/66",
+                  "lipschitz_lower_margin": "5/24",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "5/24",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 3,
+            "blocking_state_comparisons": 6,
+            "clip_comparisons": 16,
+            "distance_computations": 6,
+            "join_advance_comparisons": 3,
+            "join_clip_comparisons": 4,
+            "join_nonempty_comparisons": 2,
+            "join_steps": 2,
+            "lap_candidates": 8,
+            "nonempty_comparisons": 8,
+            "phase_reductions": 6,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "1/896"
+        },
+        {
+          "base_pair": [
+            11,
+            16
+          ],
+          "complement": [
+            6,
+            7
+          ],
+          "component_count": 1,
+          "components_and_bounds": [
+            {
+              "component_index": 0,
+              "interval": [
+                "47/128",
+                "3/8"
+              ],
+              "laps": [
+                4,
+                6
+              ],
+              "left_included": false,
+              "right_included": false,
+              "closure_used_by_lemma": true,
+              "width": "1/128",
+              "midpoint": "95/256",
+              "complement_evaluations": [
+                {
+                  "speed": 6,
+                  "phase_at_midpoint": "29/128",
+                  "distance_at_midpoint": "29/128",
+                  "midpoint_signed_margin": "13/128",
+                  "component_width": "1/128",
+                  "speed_width_product": "3/64",
+                  "lipschitz_radius_bound": "3/128",
+                  "lipschitz_lower_margin": "5/64",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                },
+                {
+                  "speed": 7,
+                  "phase_at_midpoint": "153/256",
+                  "distance_at_midpoint": "103/256",
+                  "midpoint_signed_margin": "71/256",
+                  "component_width": "1/128",
+                  "speed_width_product": "7/128",
+                  "lipschitz_radius_bound": "7/256",
+                  "lipschitz_lower_margin": "1/4",
+                  "lower_margin_nonnegative": true,
+                  "numeric_identity_verified": true
+                }
+              ]
+            }
+          ],
+          "pair_score": "5/64",
+          "score_nonnegative": true,
+          "certificate_semantics": "score>=0 is sufficient for full compound containment; score<0 is inconclusive",
+          "reconstruction_cost": {
+            "blocking_pieces": 4,
+            "blocking_state_comparisons": 8,
+            "clip_comparisons": 18,
+            "distance_computations": 8,
+            "join_advance_comparisons": 5,
+            "join_clip_comparisons": 6,
+            "join_nonempty_comparisons": 3,
+            "join_steps": 3,
+            "lap_candidates": 9,
+            "nonempty_comparisons": 9,
+            "phase_reductions": 8,
+            "positive_components": 1
+          },
+          "lipschitz_score_cost": {
+            "certificate_sign_comparisons": 2,
+            "complement_phase_reductions": 2,
+            "component_width_computations": 1,
+            "lower_margin_subtractions": 2,
+            "midpoint_divisions_by_two": 1,
+            "midpoint_margin_subtractions": 2,
+            "midpoint_samples": 1,
+            "minimum_lower_margin_comparisons": 1,
+            "nearest_integer_distances": 2,
+            "radius_divisions_by_two": 2,
+            "speed_width_products": 2
+          },
+          "potential_slack": "1/896"
+        }
+      ],
+      "candidate_selected_pair": [
+        6,
+        11
+      ],
+      "inherited_lexicographic_pair": [
+        6,
+        11
+      ],
+      "choice_cost": {
+        "pair_score_comparisons": 1
+      },
+      "selected_result": {
+        "containment_query_issued_preselection": false,
+        "selected_base_pair": [
+          6,
+          11
+        ],
+        "selected_pair_score": "5/24",
+        "certificate_issued": true,
+        "outcome": "lipschitz_whole_component_certified",
+        "certified_lower_bound": "1/896",
+        "counterfactual_bound_if_certificate_held": "1/896",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [
+          {
+            "base_pair": [
+              6,
+              11
+            ],
+            "complement": [
+              7,
+              16
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 9,
+              "unique_threshold_events_including_window_endpoints": 10,
+              "open_cells": 9
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 3,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 3,
+              "join_clip_comparisons": 4,
+              "join_nonempty_comparisons": 2,
+              "join_steps": 2,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 6,
+              "violation_nonempty_comparisons": 3
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "5/24",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          },
+          {
+            "base_pair": [
+              11,
+              16
+            ],
+            "complement": [
+              6,
+              7
+            ],
+            "base_positive_component_count": 1,
+            "containment_holds": true,
+            "violation_count": 0,
+            "first_exact_violation": null,
+            "all_exact_violations": [],
+            "event_ledger": {
+              "raw_in_window_thresholds": 9,
+              "unique_threshold_events_including_window_endpoints": 10,
+              "open_cells": 9
+            },
+            "operation_cost": {
+              "base_complement_piece_tests": 2,
+              "blocking_pieces": 6,
+              "blocking_state_comparisons": 12,
+              "clip_comparisons": 34,
+              "containment_conclusions": 1,
+              "distance_computations": 12,
+              "join_advance_comparisons": 5,
+              "join_clip_comparisons": 6,
+              "join_nonempty_comparisons": 3,
+              "join_steps": 3,
+              "lap_candidates": 17,
+              "nonempty_comparisons": 17,
+              "phase_reductions": 12,
+              "positive_components": 1,
+              "violation_clip_comparisons": 4,
+              "violation_nonempty_comparisons": 2
+            },
+            "endpoint_semantics": "strict blocker distance<1/8; equality is safe",
+            "lipschitz_pair_score": "5/64",
+            "score_nonnegative": true,
+            "audit_class": "sufficient_certificate_true_positive"
+          }
+        ],
+        "containing_pairs": [
+          [
+            6,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "failed_pairs": [],
+        "audit_class_counts": {
+          "sufficient_certificate_true_positive": 2
+        },
+        "selected_pair_contains": true,
+        "nonnegative_false_positive_count": 0,
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      },
+      "postselection_archive_comparison": {
+        "tied_pair_comparisons": [
+          {
+            "base_pair": [
+              6,
+              11
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          },
+          {
+            "base_pair": [
+              11,
+              16
+            ],
+            "containment_matches_pinned_archive": true,
+            "first_violation_matches_pinned_archive": true
+          }
+        ],
+        "archive_used_to_change_candidate_choice_or_certificate": false
+      }
+    },
+    "doubling_112": {
+      "id": "doubling_112",
+      "role": "dispatch_control",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "pair_only_minimum": "761/32256",
+      "forbidden_preselection_fields_retained": [],
+      "tied_minimum_pairs": [],
+      "scored_tied_pairs": [],
+      "candidate_selected_pair": null,
+      "choice_cost": {},
+      "dispatch": "pair_only_positive_exit_before_tie_scoring",
+      "selected_result": {
+        "certificate_issued": true,
+        "outcome": "pair_only_positive_exit",
+        "certified_lower_bound": "761/32256",
+        "second_or_fallback_query_issued": false
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [],
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      }
+    },
+    "tight_13": {
+      "id": "tight_13",
+      "role": "dispatch_control",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "pair_only_minimum": "0",
+      "forbidden_preselection_fields_retained": [],
+      "tied_minimum_pairs": [],
+      "scored_tied_pairs": [],
+      "candidate_selected_pair": null,
+      "choice_cost": {},
+      "dispatch": "no_eligible_duration_pair",
+      "selected_result": {
+        "certificate_issued": false,
+        "outcome": "no_eligible_pair_no_duration_query",
+        "certified_lower_bound": null,
+        "second_or_fallback_query_issued": false
+      },
+      "isolated_equality_endpoint": {
+        "time": "3/8"
+      },
+      "postselection_tied_pair_audit": {
+        "queries": [],
+        "charged_separately_from_candidate": true,
+        "cannot_change_frozen_choice_or_certificate": true
+      }
+    }
+  },
+  "reflection_audit": [
+    {
+      "record_ids": [
+        "squares:1,2,5:12",
+        "squares:1,2,5:39"
+      ],
+      "role": "development",
+      "scores_choices_certificates_and_audits_match": true,
+      "counted_as_independent_validation": false
+    },
+    {
+      "record_ids": [
+        "fibonacci:1,2,4:1",
+        "fibonacci:1,2,4:32"
+      ],
+      "role": "archival_control",
+      "scores_choices_certificates_and_audits_match": true,
+      "counted_as_independent_validation": false
+    },
+    {
+      "record_ids": [
+        "fibonacci:1,2,4:11",
+        "fibonacci:1,2,4:22"
+      ],
+      "role": "archival_control",
+      "scores_choices_certificates_and_audits_match": true,
+      "counted_as_independent_validation": false
+    }
+  ],
+  "counts": {
+    "development_labels": 2,
+    "development_reflection_mechanisms": 1,
+    "archival_control_labels": 4,
+    "archival_control_reflection_mechanisms": 2,
+    "named_control_labels_and_mechanisms": 1,
+    "active_tie_labels": 7,
+    "active_tie_reflection_mechanisms_including_strict_16": 4,
+    "tied_pair_label_instances": 16,
+    "tied_pair_reflection_mechanism_instances": 9,
+    "selected_lipschitz_certified_labels": 7,
+    "selected_lipschitz_certified_mechanisms": 4,
+    "selected_negative_inconclusive_labels": 0,
+    "preselection_containment_queries": 0,
+    "second_or_fallback_queries": 0,
+    "pair_only_dispatch_exits": 1,
+    "no_eligible_pair_dispatch_exits": 1
+  },
+  "outcomes": {
+    "development_selected_pair_is_25_121": true,
+    "development_selected_certified_labels": 2,
+    "development_failed_25_169_refused_labels": 2,
+    "archival_control_selected_certified_labels": 4,
+    "strict_16_selected_certified": true,
+    "postselection_audit_class_counts": {
+      "negative_score_failed_pair": 2,
+      "sufficient_certificate_true_positive": 14
+    },
+    "nonnegative_score_false_positives": 0,
+    "negative_score_containing_pairs": 0,
+    "all_numeric_identities_verified": true
+  },
+  "aggregate_cost_ledgers": {
+    "candidate_preselection_lipschitz_scores": {
+      "tied_pairs": 16,
+      "reconstructed_positive_components": 16,
+      "component_reconstruction_operations": {
+        "blocking_pieces": 57,
+        "blocking_state_comparisons": 114,
+        "clip_comparisons": 286,
+        "distance_computations": 114,
+        "join_advance_comparisons": 66,
+        "join_clip_comparisons": 80,
+        "join_nonempty_comparisons": 40,
+        "join_steps": 40,
+        "lap_candidates": 143,
+        "nonempty_comparisons": 143,
+        "phase_reductions": 114,
+        "positive_components": 16
+      },
+      "lipschitz_bound_operations": {
+        "certificate_sign_comparisons": 32,
+        "complement_phase_reductions": 32,
+        "component_width_computations": 16,
+        "lower_margin_subtractions": 32,
+        "midpoint_divisions_by_two": 16,
+        "midpoint_margin_subtractions": 32,
+        "midpoint_samples": 16,
+        "minimum_lower_margin_comparisons": 16,
+        "nearest_integer_distances": 32,
+        "radius_divisions_by_two": 32,
+        "speed_width_products": 32
+      },
+      "pair_choice_operations": {
+        "pair_score_comparisons": 9
+      }
+    },
+    "postselection_all_tied_pair_audit_charged_separately": {
+      "base_complement_piece_tests": 79,
+      "blocking_pieces": 136,
+      "blocking_state_comparisons": 272,
+      "clip_comparisons": 604,
+      "containment_conclusions": 16,
+      "distance_computations": 272,
+      "join_advance_comparisons": 66,
+      "join_clip_comparisons": 80,
+      "join_nonempty_comparisons": 40,
+      "join_steps": 40,
+      "lap_candidates": 302,
+      "nonempty_comparisons": 302,
+      "open_cells": 232,
+      "phase_reductions": 272,
+      "positive_components": 16,
+      "raw_in_window_thresholds": 218,
+      "unique_threshold_events_including_window_endpoints": 248,
+      "violation_clip_comparisons": 158,
+      "violation_nonempty_comparisons": 79
+    },
+    "comparison_policy": "Unlike operations are not combined into a synthetic runtime score."
+  },
+  "findings": {
+    "finite_status": "OBSERVED on frozen development and archival controls",
+    "nonnegative_score_is_sufficient_containment_certificate": true,
+    "negative_score_implies_failed_containment": false,
+    "development_fit_is_validation": false,
+    "archival_controls_are_prospective_held_out": false,
+    "general_selector_claim": false,
+    "whole_configuration_claim": false,
+    "new_existence_coverage": false,
+    "runtime_claim": false,
+    "novelty_claim": false,
+    "independent_mathematical_validation": false
+  },
+  "interpretation_limits": [
+    "Squares is fitted development data; success there is not transfer validation.",
+    "Fibonacci and strict_16 are archival controls, not prospective held-out cases.",
+    "A nonnegative corrected score is a sufficient whole-component certificate; a negative score is only inconclusive.",
+    "All currently tied pair-label instances have one component, so multi-component aggregation remains untested unless the pinned data contradict this.",
+    "A failed local certificate is not failed loneliness; isolated equality is not positive duration.",
+    "Selected-reference findings do not imply whole-configuration claims.",
+    "No new existence coverage, general selector, runtime, literature or novelty claim is authorized.",
+    "AI agreement is not independent mathematical validation."
+  ]
+}

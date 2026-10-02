@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "frozen_hashes": "unchanged",
+  "planned_records": 80,
+  "unique_respondent_agents": 80,
+  "recorded_invocations": 144,
+  "raw_messages_matched": 144,
+  "max_active_trial_contexts": 5,
+  "over_150_word_messages": [],
+  "checks": [
+    "Aggregate and individual records agree",
+    "Recorded initial prompts match frozen stimuli",
+    "Source payloads match frozen cards",
+    "Raw responses and transcript text agree",
+    "Request and visible character/word counts recompute",
+    "Invocation hashes, agents and inherited configuration agree with recorder",
+    "Dispatch order, five-context cap and completed-record deadlines hold",
+    "Published terminal-record checkpoints agree with final records"
+  ],
+  "limits": "Record consistency audit, not independent provider telemetry, hidden-context inspection, semantic grading or token accounting."
+}

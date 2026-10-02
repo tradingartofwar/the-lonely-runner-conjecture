@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-28",
+  "baseline_commit": "e76965fa484797c77d2b68411ef5aaa28ceb3e95",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "claims": {
+    "pair": "Earliest safety in4projections under stated speed/threshold condition; uniformdelta<=1/4",
+    "triple": "Post-protocol supplied proof candidate: atthreshold1/8, earliest safety in10nestedprojections",
+    "status": "General claims are HYPOTHESIS/proof candidates; exact bounded records OBSERVED/internally REPRODUCED",
+    "novelty": "No novelty or external proof certification asserted"
+  },
+  "provenance": {
+    "coordinator": "Candidate derivation, primary arithmetic implementation, shared waiting-bound proposal, synthesis, comparison",
+    "separate_agent": "Independent proof challenge and threshold-event reconstruction before reading primary outputs; shorter waiting-bound proof; final review",
+    "follow_on": "Separate protocol/script/results; one reused three-runner diagnostic, no new input cases"
+  },
+  "verification": {
+    "primary_read_only": "pass",
+    "independent_read_only": "pass",
+    "follow_on_read_only": "pass",
+    "bounded_pair_cases_compared": 20,
+    "bounded_physical_cases": 16,
+    "bounded_auxiliary_cases": 4,
+    "empty_windows": 7,
+    "singleton_first_components": 4,
+    "positive_first_components": 9,
+    "large_symbolic_cases": 1,
+    "large_lifted_bands_compared": 7,
+    "negative_scope_controls": 2,
+    "nested_triple_trace_outputs_compared": 10,
+    "final_agent_review": "No blocker; opening threshold qualification corrected as requested"
+  },
+  "scope": {
+    "main_n": 8,
+    "main_reference": 0,
+    "main_threshold": "1/8",
+    "core_window_supplied": true,
+    "full_duration_selected": false,
+    "broad_scan": false,
+    "all_reference_scan": false,
+    "hourly_resumed": false,
+    "main_merge": false
+  },
+  "files_sha256": {
+    "HANDOFF.md": "5baa4a50e148dc3b2d1a91760f21fd7400132b2496b43d8caae123e5245114fb",
+    "LR2_HANDOFF.md": "82e007ce77ac3cdf98dee7b946067d41551e1d257782600edb5aea3a06eb48b4",
+    "README.md": "2ba1b9f396aae7a9acef00bab2a63acaa9550c8da47bcfeeace8ae580cb6ee05",
+    "RESEARCH_PLAN.md": "a7e44e9add21284ec55b0341e4b92e96dd973a2a78784d284ae09485ae80017e",
+    "notes/DIRECT_LAP_PROJECTION_2026_09_28.md": "0685a281266eff51376a67cda070f896be50f73bbaefbd2731835df36dea21d8",
+    "notes/inquiries/2026-09-28-configuration-relational-information.md": "9ca55d1e23d2807824a88bfc7b78b671891388ade83c6be06c9c3018ef86eb31",
+    "reviews/2026-09-28-lap-projection/compare.py": "c6db0a41e58231c5cf4d3af7041a611766024a067eff6fa281b9ffe5f05f5d13",
+    "reviews/2026-09-28-lap-projection/follow_on.json": "1954acbc465bb268b999d2ac0bf9ae90a9c773e6cc19423cbe4b9332e8d54708",
+    "reviews/2026-09-28-lap-projection/follow_on.py": "9c310c87f14e795e3fbd625816b28baee86b12d4ca1d61212e375abe3ec69069",
+    "reviews/2026-09-28-lap-projection/follow_on_protocol.json": "4a2b087173ea0073f2e616e98db9a04e807fbf94ecfdc1e0c70db69f4d31266e",
+    "reviews/2026-09-28-lap-projection/primary.py": "e6c79779c4877e02ccad51e4587401605498add14b456c398093dffde8a3494f",
+    "reviews/2026-09-28-lap-projection/protocol.json": "12071e9b613c707dbe4338331f8d036e2f645349c81c5776097af629cc4400e4",
+    "reviews/2026-09-28-lap-projection/results.json": "8d590ec739abb9f961215cf5a730172626af5734d5af8d1be575a35b2045f2f4",
+    "reviews/2026-09-28-lap-projection/review.md": "1252e824fba34cfdc0b0b6c6e9a2e18f7e75d1d3ebf23dcd8e83c8799b0a3cf8",
+    "reviews/2026-09-28-lap-projection/verification.json": "c8fb2f29481707ce6f6aec4c626b204082945151af148cb83e9ccfaad8007015",
+    "reviews/2026-09-28-lap-projection/verify.py": "6dac67b30384dd0f7216c2d8e553f39b06ea4b9a7c67e4759b2823111b8056d6"
+  }
+}

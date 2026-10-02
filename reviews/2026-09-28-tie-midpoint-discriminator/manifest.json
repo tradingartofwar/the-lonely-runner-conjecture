@@ -1,0 +1,110 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "9ef34894a8657d91f1276a0a6fff32322b3e64da",
+  "question": "Within minimum-component ties, can one exact complement-safety midpoint sample per component distinguish successful and failed containment without another containment query?",
+  "status": "OBSERVED on frozen development and archival controls; fitted ordering succeeds but positive midpoint sign has a false-positive reflection mechanism and is not a containment certificate",
+  "delegation": {
+    "calculation": "midpoint_calc implemented exact projected preselection, component/midpoint scoring, immutable one-query choices, all-tied postselection oracle, controls and costs in primary.py/results.json",
+    "independent_verification": "midpoint_verify implemented exact threshold-event reconstruction in verify.py/verification artifacts without importing primary.py and compared 491 scalar fields directly",
+    "adversarial_review": "midpoint_challenge audited development leakage, disguised-containment risk, strict endpoints, score semantics, reflection dependence, dispatch, oracle separation, cost language and overclaim boundaries in challenge.md",
+    "coordination": "root fetched the live continuation, froze protocol.json before control calculation, integrated dispatch hardening and a required direct verifier-primary comparison, replayed checks, wrote the note, and updated both handoffs and the research queue"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-tie-midpoint-discriminator/primary.py --check",
+    "python -S -B reviews/2026-09-28-tie-midpoint-discriminator/verify.py --check",
+    "python -m unittest discover -s tests -v"
+  ],
+  "scope": {
+    "development_labels": 2,
+    "development_reflection_mechanisms": 1,
+    "archival_control_labels": 4,
+    "archival_control_reflection_mechanisms": 2,
+    "named_control_labels_and_mechanisms": 1,
+    "active_tie_labels": 7,
+    "active_tie_reflection_mechanisms": 4,
+    "tied_pair_label_instances": 16,
+    "tied_pair_reflection_mechanism_instances": 9,
+    "new_speeds": 0,
+    "new_windows": 0,
+    "new_references": 0
+  },
+  "candidate": {
+    "name": "maximin complement midpoint safety margin",
+    "sample": "one exact midpoint per positive base-pair component",
+    "signed_margin": "distance(v*t_I,Z)-1/8",
+    "pair_score": "minimum over both complement speeds and every component midpoint",
+    "direction": "maximize; physical-speed lexicographic fallback",
+    "selected_compound_queries": 7,
+    "second_or_fallback_queries": 0
+  },
+  "results": {
+    "selected_containing_labels": 7,
+    "selected_containing_mechanisms": 4,
+    "development_scores": {
+      "successful_25_121": "1475/13068",
+      "failed_25_169": "23/1352"
+    },
+    "development_choice_equals_inherited_lexicographic_choice": true,
+    "fibonacci_choice_changes_from_21_55_to_21_89_labels": 4,
+    "all_fibonacci_and_strict_tied_pairs_contain": true,
+    "midpoint_sign_classification": {
+      "true_positive_labels": 14,
+      "false_positive_labels": 2,
+      "false_positive_reflection_mechanisms": 1,
+      "false_negative_labels": 0
+    },
+    "score_order_inversion_labels": 0,
+    "all_tied_pair_instances_have_exactly_one_component": true,
+    "conclusion": "The feature orders the fitted success ahead of failure but does not exclude failure; blocking can occur away from a safe midpoint. Controls provide no negative validation."
+  },
+  "dispatch_controls": {
+    "doubling_112": "pair-only exit at 761/32256 before scoring or containment",
+    "tight_13": "no eligible duration query; isolated equality 3/8 retained separately"
+  },
+  "cost_scope": {
+    "candidate_preselection": {
+      "tied_pairs": 16,
+      "reconstructed_positive_components": 16,
+      "midpoint_samples": 16,
+      "complement_phase_and_distance_evaluations": 32,
+      "base_blocking_pieces": 57,
+      "lap_candidates": 143
+    },
+    "selected_query": {
+      "queries": 7,
+      "unique_threshold_events_including_window_endpoints": 106,
+      "open_cells": 99
+    },
+    "postselection_oracle_charged_separately": {
+      "queries": 16,
+      "unique_threshold_events_including_window_endpoints": 248,
+      "open_cells": 232
+    },
+    "comparison_policy": "Unlike operations are not combined into a synthetic runtime score."
+  },
+  "verification_scope": {
+    "primary_scalar_fields_compared": 491,
+    "disagreements": 0,
+    "repository_tests": 25,
+    "adversarial_verdict": "PASS WITH STRONG INTERPRETIVE LIMITS after direct verifier-primary comparison repair"
+  },
+  "interpretation_limits": [
+    "Squares is fitted development data and the candidate adds no certification outcome over inherited lexicographic choice there.",
+    "Fibonacci and strict_16 ties are all-success controls and provide no negative validation.",
+    "Every tied pair-label instance has one component, so multi-component aggregation is untested.",
+    "A positive midpoint score is not a whole-component containment certificate.",
+    "The archive is not prospective held-out evidence; reflections are not independent examples.",
+    "AI agreement is not independent mathematical validation."
+  ],
+  "next_step": "Freeze the Lipschitz-corrected whole-component lower margin distance(v*t_I,Z)-1/8-v*|I|/2 on the same ties; preserve negative/inconclusive outcomes without expanding the domain or query budget.",
+  "sha256": {
+    "reviews/2026-09-28-tie-midpoint-discriminator/protocol.json": "e62d116b764aa0869788dffb36785935d08e3de1ddb38d3e0ca11ca23ba3f2e3",
+    "reviews/2026-09-28-tie-midpoint-discriminator/primary.py": "65cefe76849a46ddfc6538f17e806dd92f6cbb0d33f83bffe038ddc1ad721b0d",
+    "reviews/2026-09-28-tie-midpoint-discriminator/results.json": "720ef7a31bc933d16b598525cc84a4e928b4cc1dc8bbcd524aa5ecbd1c372eb8",
+    "reviews/2026-09-28-tie-midpoint-discriminator/verify.py": "da9928e257de0c0a5ff339b16f2f6f0909550ddd8d5194435b04be25cb8ecf9e",
+    "reviews/2026-09-28-tie-midpoint-discriminator/verification.json": "64996ddd202b27a16cc8287c9c10b3e0193b3b4dcb51fb166d7eaac27d926cd4",
+    "reviews/2026-09-28-tie-midpoint-discriminator/verification.md": "931515479ef49769608bdd085f3e199c97844a523d87a594c5112687b4827426",
+    "reviews/2026-09-28-tie-midpoint-discriminator/challenge.md": "16d501f3327219ccada4067ddf7ce9d967634a5e7d47bbc5e5ae44d604ee6ab7",
+    "notes/TIE_MIDPOINT_DISCRIMINATOR_2026_09_28.md": "c284aca585e495e85c3acb2ce8c818d62bdaaf21f5e52dd98c54ef91941c9442"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "freeze_commit": "afc11e6aae4dad703aac7a587311790572268752",
+  "remote_tree_verified_before_execution": true,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "reviews/2026-10-02-cc-sheet-coverage/run.py",
+        "--freeze",
+        "afc11e6aae4dad703aac7a587311790572268752"
+      ],
+      "started_at": "2026-10-02T03:25:23.332523+00:00",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "stdout": "{\"status\": \"COMPLETED_FROZEN_FINITE_COMPARISON\", \"fresh_cases\": 643, \"coverage\": {\"legacy4\": 639, \"new4\": 640, \"new7\": 641, \"full36\": 643}, \"by_pair_gcd\": {\"d1\": {\"cases\": 481, \"coverage\": {\"legacy4\": 477, \"new4\": 478, \"new7\": 479, \"full36\": 481}}, \"d_at_least_2\": {\"cases\": 162, \"coverage\": {\"legacy4\": 162, \"new4\": 162, \"new7\": 162, \"full36\": 162}}}, \"criterion_counts\": {\"contacts\": 23148, \"residue_count_calls\": 11143, \"floor_sum_calls\": 22286, \"euclidean_iterations\": 41618}}\n",
+      "stderr": "",
+      "ended_at": "2026-10-02T03:25:24.447518+00:00",
+      "elapsed_seconds": 1.1149985769998239
+    },
+    {
+      "command": [
+        "python",
+        "reviews/2026-10-02-cc-sheet-coverage/verify.py"
+      ],
+      "started_at": "2026-10-02T03:25:24.447993+00:00",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "stdout": "{\"status\": \"PASS\", \"fresh_cases\": 643, \"checks\": {\"contact_bits\": 23148, \"witnesses\": 1301, \"source_endpoint_bands\": 576, \"negative_event_decompositions\": 0, \"negative_events_checked\": 0}, \"coverage\": {\"legacy4\": 639, \"new4\": 640, \"new7\": 641, \"full36\": 643}}\n",
+      "stderr": "",
+      "ended_at": "2026-10-02T03:25:30.752847+00:00",
+      "elapsed_seconds": 6.304900106999412
+    }
+  ],
+  "wall_limit_seconds_per_command": 600
+}

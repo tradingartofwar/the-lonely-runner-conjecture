@@ -1,0 +1,105 @@
+{
+  "accessed_on": "2026-09-29",
+  "scope": "Targeted primary-source comparison; no third-party computational proof reproduced; not a complete novelty or frontier audit.",
+  "sources": [
+    {
+      "id": "R",
+      "authors": "Matthieu Rosenfeld",
+      "title": "The lonely runner conjecture holds for eight runners",
+      "urls": [
+        "https://arxiv.org/abs/2509.14111v2",
+        "https://arxiv.org/pdf/2509.14111v2",
+        "https://arxiv.org/html/2509.14111v2"
+      ],
+      "version": "arXiv:2509.14111v2",
+      "revision_date": "2025-10-16",
+      "pdf_title_date": "2025-10-17",
+      "html_title_date_observed": "2026-08-24",
+      "inspected": [
+        "Section 1 positive-speed formulation and Theorem 1",
+        "Section 4 proof",
+        "Section 6 implementation discussion"
+      ],
+      "implication": "Our positive p!=q family is a set of seven distinct positive moving speeds, directly covered by the source's existence assertion.",
+      "limits": "Source computation and dependencies not independently reproduced; journal article not opened.",
+      "publisher_index": {
+        "doi": "10.1090/mcom/4243",
+        "electronic_publication_reported": "2026-08-10",
+        "evidence": "Indexed AMS journal content; direct DOI open inaccessible. Search result routes used older DOI URLs and must not be treated as this article's DOI.",
+        "index_retrieval_urls": [
+          "https://doi.org/10.1090/S0025-5718-08-02109-1",
+          "https://doi.org/10.1090/S0025-5718-05-01778-3"
+        ]
+      }
+    },
+    {
+      "id": "JK",
+      "authors": "Vanshika Jain and Noah Kravitz",
+      "title": "Relative Lonely Runner spectra",
+      "journal": "Combinatorial Theory 6(1), paper 1",
+      "published": "2026-04-20",
+      "doi": "10.5070/C66165688",
+      "urls": [
+        "https://escholarship.org/content/qt3mx8w3js/qt3mx8w3js.pdf",
+        "https://arxiv.org/html/2411.12684v2"
+      ],
+      "inspected": [
+        "Definitions and Theorem 1.1",
+        "Section 2.1-2.2 framework (reviewer)",
+        "Section 6 exact six-form torus",
+        "Proposition 7.1 forward proof, printed page 45"
+      ],
+      "implications": [
+        "Exact first-six coordinate precedent",
+        "Prior segment-intersection mechanism",
+        "General two-dimensional relative-spectrum framework available"
+      ],
+      "limits": "Our threshold segments are not in the ambient optimal locus; spectral finiteness conclusion cannot be inherited. No full-paper audit."
+    },
+    {
+      "id": "C",
+      "authors": "Francesco Cordella",
+      "title": "Odd denominators in the Lonely Runner spectrum for six speeds",
+      "version": "arXiv:2609.03444v2",
+      "revision_date": "2026-09-08",
+      "urls": [
+        "https://arxiv.org/html/2609.03444v2",
+        "https://arxiv.org/abs/2609.03444v2"
+      ],
+      "inspected": [
+        "Theorems A/B",
+        "Section 5 parameter definition, decomposition and Theorem 5.3",
+        "Sections 6.3 and 7 (reviewer)"
+      ],
+      "implication": "Exact first-six family; no appended seventh band in the treated vector.",
+      "limits": "Preprint computational certificate not reproduced. Numerical linear-form appearances are not extra speed coordinates."
+    },
+    {
+      "id": "BHS",
+      "authors": "Matthias Beck, Serkan Hosten and Matthias Schymura",
+      "title": "Lonely Runner Polyhedra",
+      "journal": "Integers 19 (2019), A29",
+      "published": "2019-06-03",
+      "urls": [
+        "https://math.colgate.edu/~integers/t29/t29.pdf"
+      ],
+      "inspected": [
+        "Section 2, equation (5), Proposition 1",
+        "Section 3 Bezout illustration and Section 4 Theorem 2(a) (reviewer)"
+      ],
+      "implication": "Our physical lap vector is an explicit integer point in the established polyhedron.",
+      "limits": "A translation of the same witness is not independent evidence; no other sufficient theorem is imported without checking hypotheses."
+    }
+  ],
+  "original_deductions": [
+    "Direct positivity/distinctness hypothesis check for the family",
+    "Same-witness polyhedral lap translation",
+    "Threshold/positive-direction adaptation of segment-width contact",
+    "Ambient (1/6,1/6) comparison excludes our segments from optimal locus"
+  ],
+  "open": [
+    "Originality of this exact compact certificate",
+    "Independent external review of the local proof candidate"
+  ],
+  "no_new_physical_run": true
+}

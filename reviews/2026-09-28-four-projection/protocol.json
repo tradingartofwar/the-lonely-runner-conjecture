@@ -1,0 +1,154 @@
+{
+  "date": "2026-09-28",
+  "baseline": "b5fbc19457794d3884d758de0833a38b236d3246",
+  "status": "Frozen before new numerical calculations. Analytic boundary fixtures are constructed, not held-out.",
+  "question": "Can the next recursive waiting bound certify four residual runners, and what does its failure mean on the existing controls?",
+  "threshold": "1/8",
+  "reference": 0,
+  "physical_n": 8,
+  "physical_core": [
+    1,
+    4,
+    5
+  ],
+  "physical_window": [
+    "9/32",
+    "3/8"
+  ],
+  "cases": [
+    {
+      "id": "doubling_112",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ]
+    },
+    {
+      "id": "small_gcd_113",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ]
+    },
+    {
+      "id": "tight_13",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ]
+    },
+    {
+      "id": "control_8_11",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "id": "affine_309",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ]
+    },
+    {
+      "id": "affine_310",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ]
+    },
+    {
+      "id": "affine_320",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ]
+    },
+    {
+      "id": "strict_16",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ]
+    }
+  ],
+  "source": "notes/FOUR_BLOCKER_CYCLE_CORRECTIONS.md; same eight physical configurations and old core window",
+  "condition": "For ordered a<=b<=c<=d, W3=1/(4b)+1/(2c)+1/d <=3/(4a).",
+  "algorithm": "Outer order a,S_bcd,a,S_bcd; triple order b,c,d,c,d,b,c,d,c,d. Exactly22 scalar projections for fixed-cost diagnostics; do not retune or change order.",
+  "information_contract": "Primary receives only core,window,speeds and common-start phases. Computes bound/gated verdict and22-step diagnostic before consulting independent full safe sets. No threshold lists or lap scan in primary.",
+  "classifications": [
+    "If condition passes, the supplied proof candidate guarantees final feasibility and earliestness.",
+    "Failed condition is unverified by that sufficient bound.",
+    "Any final iterate beyondR certifies the supplied window empty because every iterate is a lower bound on all joint witnesses.",
+    "A feasible final iterate <=R is independently a certified earliest witness, even if the bound failed.",
+    "An unsafe final iterate <=R is inconclusive; do not call it an empty window."
+  ],
+  "auxiliary_cases": [
+    {
+      "id": "aux_condition_strict",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "window": [
+        "7/8",
+        "6/5"
+      ],
+      "purpose": "Directly chosen four-constraint positive speed-condition fixture; not a new full eight-runner configuration"
+    },
+    {
+      "id": "aux_condition_equality",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "window": [
+        "0",
+        "1/120"
+      ],
+      "purpose": "Constructed equality W3=3/(4a) and closed right endpoint; auxiliary, not an eight-runner existence claim"
+    }
+  ],
+  "verification": "Separate reviewer derives bound and reconstructs full threshold-event safe sets on each bounded case; compare earliest,firstcomponent and22-step trace. Second agent attacks structural/unconditional extension analytically without scanning.",
+  "further_work": "Any analytic counterexample or strengthened bound found after freeze is labelled follow-on and does not replace this condition or these raw outcomes.",
+  "limits": [
+    "No new physical speed domain or broad search; auxiliary fixtures explicitly constructed.",
+    "No hourly restart,all-reference work,paid compute,outreach,main merge or+7/+9.",
+    "No novelty, new family coverage or full Lonely Runner proof claim.",
+    "General implications remain supplied proof candidates pending external review."
+  ]
+}
+

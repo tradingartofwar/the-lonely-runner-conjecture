@@ -1,0 +1,1099 @@
+{
+  "status": "PARTIAL_COLLECTION_CHECKPOINT_NOT_GRADED",
+  "captured_at": "2026-10-01T15:20:26.367139+00:00",
+  "freeze_commit": "c27323948d29c8fb25a6a45726c08bb3fe23b2d7",
+  "planned_trials": 80,
+  "finished_records": 20,
+  "scope": "Next twenty terminal records not already checkpointed; collection continues. Not a result report or early stopping decision.",
+  "trials": [
+    {
+      "trial_id": "R041",
+      "block": 3,
+      "order": 1,
+      "seed": 20261003,
+      "card_id": "V1",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r041",
+      "started_at": "2026-10-01T15:05:43.765362+00:00",
+      "started_epoch": 1790867143.7653718,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nThe day1 report found no failures in tested cases.\n\nHANDOFF\nFacts and scope: The day1 report found no failures in tested cases. Observed failure status in the day1 report.\nAssumptions and limits: A day2 report exists; its contents and current availability are not carried here.\nDated source links: record-v1, day1; record-v2, day2.\nRecommended next action: Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.\n\nSOURCE CATALOG\nrecord-v1 — day1\nrecord-v2 — day2\n\nQUESTION\nDoes current recorded evidence contain a failure?",
+          "recorded_at": "2026-10-01T15:05:43.765372+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:06:13.930879+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v2\"}",
+          "recorded_at": "2026-10-01T15:06:37.862309+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}",
+          "recorded_at": "2026-10-01T15:06:37.862591+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:06:56.545729+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 report’s absence of failures in tested cases does not describe the current recorded evidence.\",\"evidence\":[\"summary\",\"record-v2\"]}",
+          "recorded_at": "2026-10-01T15:08:45.638074+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails. The day1 report’s absence of failures in tested cases does not describe the current recorded evidence.",
+        "evidence": [
+          "summary",
+          "record-v2"
+        ]
+      },
+      "ended_at": "2026-10-01T15:08:45.638126+00:00",
+      "elapsed_seconds": 181.87275648117065,
+      "visible_input_characters": 2311,
+      "visible_output_characters": 313,
+      "visible_input_words": 327,
+      "visible_output_words": 33,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R042",
+      "block": 3,
+      "order": 2,
+      "seed": 20261003,
+      "card_id": "K2",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r042",
+      "started_at": "2026-10-01T15:06:56.756503+00:00",
+      "started_epoch": 1790867216.7565122,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSecurity and performance have each passed on a build.\n\nHANDOFF\nFacts and scope: Security and performance have each passed on a build. Which checks have passed somewhere.\nAssumptions and limits: The summary omits which results belong to the same build.\nDated source links: record-v1, day1.\nRecommended next action: Before deciding joint eligibility, retrieve the build-level record.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs one build eligible, requiring both?",
+          "recorded_at": "2026-10-01T15:06:56.756513+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:07:29.585446+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:08:45.782609+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}",
+          "recorded_at": "2026-10-01T15:08:45.782876+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:08:58.467164+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because both security and performance passed on that build.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:09:34.203277+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because both security and performance passed on that build.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:09:34.203322+00:00",
+      "elapsed_seconds": 157.44681215286255,
+      "visible_input_characters": 2233,
+      "visible_output_characters": 178,
+      "visible_input_words": 312,
+      "visible_output_words": 15,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R043",
+      "block": 3,
+      "order": 3,
+      "seed": 20261003,
+      "card_id": "S1",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r043",
+      "started_at": "2026-10-01T15:07:29.619223+00:00",
+      "started_epoch": 1790867249.6192322,
+      "source_requests": 0,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nBuild C has passed both security and performance.\n\nHANDOFF\nSupported query: Existence of a build with both required checks.\nRetained facts: Build C has passed both security and performance.\nScope and omissions: The summary identifies one joint witness; other builds' results are omitted.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Answer the existence question from the summary; retrieve only if another build's details are required.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs some build eligible, requiring both?",
+          "recorded_at": "2026-10-01T15:07:29.619233+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:07:52.635042+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible: it passed both required checks, security and performance.\",\"evidence\":[\"summary\"]}",
+          "recorded_at": "2026-10-01T15:08:45.711067+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible: it passed both required checks, security and performance.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "ended_at": "2026-10-01T15:08:45.711115+00:00",
+      "elapsed_seconds": 76.09188580513,
+      "visible_input_characters": 2118,
+      "visible_output_characters": 137,
+      "visible_input_words": 299,
+      "visible_output_words": 13,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R044",
+      "block": 3,
+      "order": 4,
+      "seed": 20261003,
+      "card_id": "M2",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r044",
+      "started_at": "2026-10-01T15:07:52.671730+00:00",
+      "started_epoch": 1790867272.671743,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSource class covers all16 cases; training-selected policy covered all training.\n\nHANDOFF\nSupported query: Training coverage and coverage by the entire source class.\nRetained facts: Source class covers all16 cases; training-selected policy covered all training.\nScope and omissions: The unchanged policy's held-out outcomes and evaluation completion are omitted.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nDid unchanged P pass held-out validation?",
+          "recorded_at": "2026-10-01T15:07:52.671743+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:08:16.268063+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:08:58.532161+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}",
+          "recorded_at": "2026-10-01T15:08:58.532366+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:09:14.323424+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Unchanged P has not established a held-out validation pass; evaluation was incomplete. It had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16) when the fixed budget ended. Another policy in the source class covers case16, but that does not establish P’s outcome on it.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:09:34.267103+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unchanged P has not established a held-out validation pass; evaluation was incomplete. It had 7 observed passes (cases9–15), 0 observed failures, and 1 untested case (case16) when the fixed budget ended. Another policy in the source class covers case16, but that does not establish P’s outcome on it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:09:34.267148+00:00",
+      "elapsed_seconds": 101.59540843963623,
+      "visible_input_characters": 2498,
+      "visible_output_characters": 394,
+      "visible_input_words": 343,
+      "visible_output_words": 49,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R045",
+      "block": 3,
+      "order": 5,
+      "seed": 20261003,
+      "card_id": "K2",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r045",
+      "started_at": "2026-10-01T15:08:16.332532+00:00",
+      "started_epoch": 1790867296.3325477,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSecurity and performance have each passed on a build.\n\nHANDOFF\nSupported query: Which checks have passed somewhere.\nRetained facts: Security and performance have each passed on a build.\nScope and omissions: The summary omits which results belong to the same build.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Before deciding joint eligibility, retrieve the build-level record.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs one build eligible, requiring both?",
+          "recorded_at": "2026-10-01T15:08:16.332548+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:08:45.575053+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:09:14.386116+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance PASS. Build B: security FAIL, performance FAIL.\"\n}",
+          "recorded_at": "2026-10-01T15:09:14.386389+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:09:34.141330+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. Build A is eligible because both security and performance passed on that same build.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:11:18.324002+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build A is eligible because both security and performance passed on that same build.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:11:18.324164+00:00",
+      "elapsed_seconds": 181.99162077903748,
+      "visible_input_characters": 2242,
+      "visible_output_characters": 183,
+      "visible_input_words": 312,
+      "visible_output_words": 16,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R046",
+      "block": 3,
+      "order": 6,
+      "seed": 20261003,
+      "card_id": "T1",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r046",
+      "started_at": "2026-10-01T15:09:34.335184+00:00",
+      "started_epoch": 1790867374.3351948,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nEach resource has two units of availability.\n\nHANDOFF\nSupported query: Individual availability durations.\nRetained facts: Each resource has two units of availability.\nScope and omissions: Locations, joint availability and endpoint membership are omitted.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Retrieve the interval record before deciding either joint feasibility question.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs an instantaneous shared event possible, and is a positive-duration joint task possible?",
+          "recorded_at": "2026-10-01T15:09:34.335195+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:09:55.822015+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:11:18.460751+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}",
+          "recorded_at": "2026-10-01T15:11:18.460993+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:11:31.233055+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:12:05.199217+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is impossible: A’s [2,4] and B’s [4,6] overlap only at the single instant 4.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:12:05.199264+00:00",
+      "elapsed_seconds": 150.86407208442688,
+      "visible_input_characters": 2279,
+      "visible_output_characters": 300,
+      "visible_input_words": 310,
+      "visible_output_words": 34,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R047",
+      "block": 3,
+      "order": 7,
+      "seed": 20261003,
+      "card_id": "T2",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r047",
+      "started_at": "2026-10-01T15:09:55.855726+00:00",
+      "started_epoch": 1790867395.855738,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nEach resource has two units of availability.\n\nHANDOFF\nSupported query: Individual availability durations.\nRetained facts: Each resource has two units of availability.\nScope and omissions: Locations, joint availability and endpoint membership are omitted.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Retrieve the interval record before deciding either joint feasibility question.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs an instantaneous shared event possible, and is a positive-duration joint task possible?",
+          "recorded_at": "2026-10-01T15:09:55.855738+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:10:22.300892+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:11:31.297801+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}",
+          "recorded_at": "2026-10-01T15:11:31.298068+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:11:44.627753+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their only candidate meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:12:05.264330+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their only candidate meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:12:05.264373+00:00",
+      "elapsed_seconds": 129.40863800048828,
+      "visible_input_characters": 2321,
+      "visible_output_characters": 302,
+      "visible_input_words": 316,
+      "visible_output_words": 37,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R048",
+      "block": 3,
+      "order": 8,
+      "seed": 20261003,
+      "card_id": "S2",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r048",
+      "started_at": "2026-10-01T15:10:22.335750+00:00",
+      "started_epoch": 1790867422.335763,
+      "source_requests": 0,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nBoth resources are available throughout [2,6], including endpoints.\n\nHANDOFF\nFacts and scope: Both resources are available throughout [2,6], including endpoints. Shared availability throughout a specified closed interval.\nAssumptions and limits: The complete stated interval and its endpoints are retained; no further source detail is needed for this query.\nDated source links: record-v1, day1.\nRecommended next action: Check that the proposed task fits inside the stated interval.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs a shared task of duration1 possible?",
+          "recorded_at": "2026-10-01T15:10:22.335763+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:10:48.145150+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. Schedule the shared task during [2,3], a duration-1 interval within [2,6], when both resources are available.\",\"evidence\":[\"summary\"]}",
+          "recorded_at": "2026-10-01T15:11:18.396995+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Schedule the shared task during [2,3], a duration-1 interval within [2,6], when both resources are available.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "ended_at": "2026-10-01T15:11:18.397042+00:00",
+      "elapsed_seconds": 56.06128144264221,
+      "visible_input_characters": 2151,
+      "visible_output_characters": 168,
+      "visible_input_words": 301,
+      "visible_output_words": 17,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R049",
+      "block": 3,
+      "order": 9,
+      "seed": 20261003,
+      "card_id": "V2",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r049",
+      "started_at": "2026-10-01T15:10:48.180943+00:00",
+      "started_epoch": 1790867448.1809516,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nThe day1 report found no failures in tested cases.\n\nHANDOFF\nFacts and scope: The day1 report found no failures in tested cases. Observed failure status in the day1 report.\nAssumptions and limits: A day2 report exists; its contents and current availability are not carried here.\nDated source links: record-v1, day1; record-v2, day2.\nRecommended next action: Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.\n\nSOURCE CATALOG\nrecord-v1 — day1\nrecord-v2 — day2\n\nQUESTION\nDoes current recorded evidence contain a failure?",
+          "recorded_at": "2026-10-01T15:10:48.180952+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:11:18.257366+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v2\"}",
+          "recorded_at": "2026-10-01T15:11:44.699984+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}",
+          "recorded_at": "2026-10-01T15:11:44.700195+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:12:05.129407+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; it does not establish whether current recorded evidence contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}",
+          "recorded_at": "2026-10-01T15:13:52.807924+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Cannot determine. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; it does not establish whether current recorded evidence contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "ended_at": "2026-10-01T15:13:52.808072+00:00",
+      "elapsed_seconds": 184.62712478637695,
+      "visible_input_characters": 2259,
+      "visible_output_characters": 350,
+      "visible_input_words": 319,
+      "visible_output_words": 36,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R050",
+      "block": 3,
+      "order": 10,
+      "seed": 20261003,
+      "card_id": "V1",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r050",
+      "started_at": "2026-10-01T15:12:05.332455+00:00",
+      "started_epoch": 1790867525.3324678,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nThe day1 report found no failures in tested cases.\n\nHANDOFF\nSupported query: Observed failure status in the day1 report.\nRetained facts: The day1 report found no failures in tested cases.\nScope and omissions: A day2 report exists; its contents and current availability are not carried here.\nRelevant dated source: record-v1, day1; record-v2, day2.\nRecovery trigger: Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.\n\nSOURCE CATALOG\nrecord-v1 — day1\nrecord-v2 — day2\n\nQUESTION\nDoes current recorded evidence contain a failure?",
+          "recorded_at": "2026-10-01T15:12:05.332468+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:12:27.728986+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v2\"}",
+          "recorded_at": "2026-10-01T15:13:52.879787+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"available\",\n  \"text\": \"Source v2, dated day2: case7 fails; first six unchanged.\"\n}",
+          "recorded_at": "2026-10-01T15:13:52.880045+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:14:05.423489+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails.\",\"evidence\":[\"record-v2\"]}",
+          "recorded_at": "2026-10-01T15:14:53.433275+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. The latest listed report, record-v2 dated day2, is available and explicitly records that case7 fails.",
+        "evidence": [
+          "record-v2"
+        ]
+      },
+      "ended_at": "2026-10-01T15:14:53.433321+00:00",
+      "elapsed_seconds": 168.10085654258728,
+      "visible_input_characters": 2320,
+      "visible_output_characters": 200,
+      "visible_input_words": 327,
+      "visible_output_words": 17,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R051",
+      "block": 3,
+      "order": 11,
+      "seed": 20261003,
+      "card_id": "T2",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r051",
+      "started_at": "2026-10-01T15:12:27.769897+00:00",
+      "started_epoch": 1790867547.7699068,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nEach resource has two units of availability.\n\nHANDOFF\nFacts and scope: Each resource has two units of availability. Individual availability durations.\nAssumptions and limits: Locations, joint availability and endpoint membership are omitted.\nDated source links: record-v1, day1.\nRecommended next action: Retrieve the interval record before deciding either joint feasibility question.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs an instantaneous shared event possible, and is a positive-duration joint task possible?",
+          "recorded_at": "2026-10-01T15:12:27.769907+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:12:53.252331+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:14:05.489605+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4); B available [4,6]. Square brackets include the endpoint; parentheses exclude it.\"\n}",
+          "recorded_at": "2026-10-01T15:14:05.489801+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:14:18.154200+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Neither is possible. A is available on [2,4) and B on [4,6]. Their only potential meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:14:53.492702+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Neither is possible. A is available on [2,4) and B on [4,6]. Their only potential meeting point is 4, but A excludes that endpoint, so there is no shared instant and therefore no positive-duration joint task.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:14:53.492745+00:00",
+      "elapsed_seconds": 145.72284078598022,
+      "visible_input_characters": 2312,
+      "visible_output_characters": 302,
+      "visible_input_words": 316,
+      "visible_output_words": 37,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R052",
+      "block": 3,
+      "order": 12,
+      "seed": 20261003,
+      "card_id": "M1",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r052",
+      "started_at": "2026-10-01T15:12:53.289776+00:00",
+      "started_epoch": 1790867573.2897887,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSource class covers all16 cases; training-selected policy covered all training.\n\nHANDOFF\nSupported query: Training coverage and coverage by the entire source class.\nRetained facts: Source class covers all16 cases; training-selected policy covered all training.\nScope and omissions: The unchanged policy's held-out outcomes and evaluation completion are omitted.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nDid unchanged P pass held-out validation?",
+          "recorded_at": "2026-10-01T15:12:53.289789+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:13:15.893817+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:14:18.218791+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}",
+          "recorded_at": "2026-10-01T15:14:18.219027+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:14:32.859722+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Evaluation ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:14:53.554489+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Evaluation ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:14:53.554534+00:00",
+      "elapsed_seconds": 120.26474833488464,
+      "visible_input_characters": 2443,
+      "visible_output_characters": 325,
+      "visible_input_words": 334,
+      "visible_output_words": 40,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R053",
+      "block": 3,
+      "order": 13,
+      "seed": 20261003,
+      "card_id": "K1",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r053",
+      "started_at": "2026-10-01T15:13:15.929406+00:00",
+      "started_epoch": 1790867595.9294174,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSecurity and performance have each passed on a build.\n\nHANDOFF\nSupported query: Which checks have passed somewhere.\nRetained facts: Security and performance have each passed on a build.\nScope and omissions: The summary omits which results belong to the same build.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Before deciding joint eligibility, retrieve the build-level record.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs one build eligible, requiring both?",
+          "recorded_at": "2026-10-01T15:13:15.929418+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:13:52.742032+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:14:32.920196+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}",
+          "recorded_at": "2026-10-01T15:14:32.920482+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:14:53.370678+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"No. Neither listed build passes both required checks: Build A passes security but fails performance; Build B fails security but passes performance.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:16:37.188169+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Neither listed build passes both required checks: Build A passes security but fails performance; Build B fails security but passes performance.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:16:37.188213+00:00",
+      "elapsed_seconds": 201.25879788398743,
+      "visible_input_characters": 2242,
+      "visible_output_characters": 241,
+      "visible_input_words": 312,
+      "visible_output_words": 23,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R054",
+      "block": 3,
+      "order": 14,
+      "seed": 20261003,
+      "card_id": "M1",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r054",
+      "started_at": "2026-10-01T15:14:53.620764+00:00",
+      "started_epoch": 1790867693.6207755,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSource class covers all16 cases; training-selected policy covered all training.\n\nHANDOFF\nFacts and scope: Source class covers all16 cases; training-selected policy covered all training. Training coverage and coverage by the entire source class.\nAssumptions and limits: The unchanged policy's held-out outcomes and evaluation completion are omitted.\nDated source links: record-v1, day1.\nRecommended next action: Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nDid unchanged P pass held-out validation?",
+          "recorded_at": "2026-10-01T15:14:53.620776+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:15:24.332071+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:16:37.324363+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15; misses16. The full source policy class contains a policy covering case16. Search ended normally.\"\n}",
+          "recorded_at": "2026-10-01T15:16:37.324563+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:16:50.811635+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:17:22.846957+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "No. Unchanged P had 7 observed held-out passes (cases 9–15), 1 observed failure (case 16), and 0 untested cases. Search ended normally. Another policy in the source class covers case 16, but that does not make unchanged P pass.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:17:22.847015+00:00",
+      "elapsed_seconds": 149.22624230384827,
+      "visible_input_characters": 2434,
+      "visible_output_characters": 321,
+      "visible_input_words": 334,
+      "visible_output_words": 40,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R055",
+      "block": 3,
+      "order": 15,
+      "seed": 20261003,
+      "card_id": "S1",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r055",
+      "started_at": "2026-10-01T15:15:24.376271+00:00",
+      "started_epoch": 1790867724.3762848,
+      "source_requests": 0,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nBuild C has passed both security and performance.\n\nHANDOFF\nFacts and scope: Build C has passed both security and performance. Existence of a build with both required checks.\nAssumptions and limits: The summary identifies one joint witness; other builds' results are omitted.\nDated source links: record-v1, day1.\nRecommended next action: Answer the existence question from the summary; retrieve only if another build's details are required.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs some build eligible, requiring both?",
+          "recorded_at": "2026-10-01T15:15:24.376285+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:15:46.849891+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.\",\"evidence\":[\"summary\"]}",
+          "recorded_at": "2026-10-01T15:16:37.256964+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. Build C is eligible because it passed both security and performance, satisfying both required checks.",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "ended_at": "2026-10-01T15:16:37.257012+00:00",
+      "elapsed_seconds": 72.88072991371155,
+      "visible_input_characters": 2109,
+      "visible_output_characters": 160,
+      "visible_input_words": 299,
+      "visible_output_words": 16,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R056",
+      "block": 3,
+      "order": 16,
+      "seed": 20261003,
+      "card_id": "V2",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r056",
+      "started_at": "2026-10-01T15:15:46.884616+00:00",
+      "started_epoch": 1790867746.8846295,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nThe day1 report found no failures in tested cases.\n\nHANDOFF\nSupported query: Observed failure status in the day1 report.\nRetained facts: The day1 report found no failures in tested cases.\nScope and omissions: A day2 report exists; its contents and current availability are not carried here.\nRelevant dated source: record-v1, day1; record-v2, day2.\nRecovery trigger: Retrieve the latest report before judging the current state; retain uncertainty if it is unavailable.\n\nSOURCE CATALOG\nrecord-v1 — day1\nrecord-v2 — day2\n\nQUESTION\nDoes current recorded evidence contain a failure?",
+          "recorded_at": "2026-10-01T15:15:46.884630+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:16:09.403222+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v2\"}",
+          "recorded_at": "2026-10-01T15:16:50.872181+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v2\",\n  \"date\": \"day2\",\n  \"status\": \"unavailable\",\n  \"text\": null\n}",
+          "recorded_at": "2026-10-01T15:16:50.872377+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:17:01.963144+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Unknown. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; that does not establish whether current recorded evidence contains a failure.\",\"evidence\":[\"summary\",\"handoff\",\"record-v2\"]}",
+          "recorded_at": "2026-10-01T15:17:22.917380+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unknown. The latest listed report is record-v2 (day2), but its contents are unavailable. The supplied day1 summary reports no failures in tested cases; that does not establish whether current recorded evidence contains a failure.",
+        "evidence": [
+          "summary",
+          "handoff",
+          "record-v2"
+        ]
+      },
+      "ended_at": "2026-10-01T15:17:22.917450+00:00",
+      "elapsed_seconds": 96.03282308578491,
+      "visible_input_characters": 2268,
+      "visible_output_characters": 343,
+      "visible_input_words": 319,
+      "visible_output_words": 35,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R057",
+      "block": 3,
+      "order": 17,
+      "seed": 20261003,
+      "card_id": "T1",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r057",
+      "started_at": "2026-10-01T15:16:09.455615+00:00",
+      "started_epoch": 1790867769.4556293,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nEach resource has two units of availability.\n\nHANDOFF\nFacts and scope: Each resource has two units of availability. Individual availability durations.\nAssumptions and limits: Locations, joint availability and endpoint membership are omitted.\nDated source links: record-v1, day1.\nRecommended next action: Retrieve the interval record before deciding either joint feasibility question.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs an instantaneous shared event possible, and is a positive-duration joint task possible?",
+          "recorded_at": "2026-10-01T15:16:09.455630+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:16:37.112882+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:17:02.025691+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Resource A available [2,4]; B available [4,6]; endpoints included.\"\n}",
+          "recorded_at": "2026-10-01T15:17:02.025977+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:17:22.776006+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is not possible: their joint availability is only {4}, which has zero duration.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:19:09.233439+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "An instantaneous shared event is possible at time 4, because both resources include that endpoint. A positive-duration joint task is not possible: their joint availability is only {4}, which has zero duration.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:19:09.233484+00:00",
+      "elapsed_seconds": 179.77785754203796,
+      "visible_input_characters": 2270,
+      "visible_output_characters": 303,
+      "visible_input_words": 310,
+      "visible_output_words": 33,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R058",
+      "block": 3,
+      "order": 18,
+      "seed": 20261003,
+      "card_id": "M2",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r058",
+      "started_at": "2026-10-01T15:17:22.985498+00:00",
+      "started_epoch": 1790867842.9855092,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSource class covers all16 cases; training-selected policy covered all training.\n\nHANDOFF\nFacts and scope: Source class covers all16 cases; training-selected policy covered all training. Training coverage and coverage by the entire source class.\nAssumptions and limits: The unchanged policy's held-out outcomes and evaluation completion are omitted.\nDated source links: record-v1, day1.\nRecommended next action: Retrieve the evaluation record before declaring a held-out pass, failure or incomplete result.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nDid unchanged P pass held-out validation?",
+          "recorded_at": "2026-10-01T15:17:22.985509+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:17:47.232653+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:19:09.366428+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Frozen policy P covers TRAIN cases1–8 and HOLDOUT cases9–15. HOLDOUT evaluation stopped at a fixed budget after cases9–15; case16 was not evaluated. The full source policy class contains a policy covering case16.\"\n}",
+          "recorded_at": "2026-10-01T15:19:09.366716+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:19:21.560362+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Unchanged P did not establish a held-out validation pass: evaluation was incomplete. It had 7 observed passes (cases 9–15), 0 observed failures, and 1 untested case (case 16), because evaluation stopped at its fixed budget. The source class containing a policy that covers case 16 does not establish that frozen P covers it.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:19:55.941472+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Unchanged P did not establish a held-out validation pass: evaluation was incomplete. It had 7 observed passes (cases 9–15), 0 observed failures, and 1 untested case (case 16), because evaluation stopped at its fixed budget. The source class containing a policy that covers case 16 does not establish that frozen P covers it.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:19:55.941522+00:00",
+      "elapsed_seconds": 152.9560158252716,
+      "visible_input_characters": 2489,
+      "visible_output_characters": 418,
+      "visible_input_words": 343,
+      "visible_output_words": 54,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R059",
+      "block": 3,
+      "order": 19,
+      "seed": 20261003,
+      "card_id": "S2",
+      "arm": "cc_informed",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r059",
+      "started_at": "2026-10-01T15:17:47.277237+00:00",
+      "started_epoch": 1790867867.277248,
+      "source_requests": 0,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nBoth resources are available throughout [2,6], including endpoints.\n\nHANDOFF\nSupported query: Shared availability throughout a specified closed interval.\nRetained facts: Both resources are available throughout [2,6], including endpoints.\nScope and omissions: The complete stated interval and its endpoints are retained; no further source detail is needed for this query.\nRelevant dated source: record-v1, day1.\nRecovery trigger: Check that the proposed task fits inside the stated interval.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs a shared task of duration1 possible?",
+          "recorded_at": "2026-10-01T15:17:47.277249+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:18:11.630824+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"Yes. A shared task can run over [2,3], which has duration 1 and lies entirely within both resources’ availability interval [2,6].\",\"evidence\":[\"summary\"]}",
+          "recorded_at": "2026-10-01T15:19:09.297863+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "Yes. A shared task can run over [2,3], which has duration 1 and lies entirely within both resources’ availability interval [2,6].",
+        "evidence": [
+          "summary"
+        ]
+      },
+      "ended_at": "2026-10-01T15:19:09.297922+00:00",
+      "elapsed_seconds": 82.02067756652832,
+      "visible_input_characters": 2160,
+      "visible_output_characters": 183,
+      "visible_input_words": 301,
+      "visible_output_words": 21,
+      "actual_total_tokens": null
+    },
+    {
+      "trial_id": "R060",
+      "block": 3,
+      "order": 20,
+      "seed": 20261003,
+      "card_id": "K1",
+      "arm": "conventional",
+      "status": "COMPLETED",
+      "agent": "/root/pilot_execution/r060",
+      "started_at": "2026-10-01T15:18:11.669695+00:00",
+      "started_epoch": 1790867891.6697857,
+      "source_requests": 1,
+      "messages": [
+        {
+          "role": "user",
+          "kind": "initial_prompt",
+          "content": "Answer one question using only the supplied summary, handoff and source responses. The records describe the complete listed scenario within their stated scope. Do not use tools, files, browsing, other agents or outside knowledge. Do not guess missing results or unavailable report contents.\n\nYou may request up to two source records. To request one, respond with only a JSON object: {\"action\":\"read\",\"source\":\"record-v1\"}, replacing the alias with one from the catalog. A source response will be supplied in this conversation. Each request, including an unavailable or repeated record, counts toward the limit. You may answer without retrieval when the supplied information suffices.\n\nWhen ready, respond with only {\"action\":\"answer\",\"answer\":\"your concise answer and explanation\",\"evidence\":[\"summary\",\"record-v1\"]}. List only the supplied summary/handoff or source aliases you actually used; omit unused entries. Keep each response under 150 words where possible.\n\nAnswer every part of the question. For an affirmative feasibility or eligibility answer, give a witnessing build, instant or task interval. For held-out validation, state the numbers of observed passes, observed failures and untested cases, and identify a failed or untested case. For a current-evidence question, identify the relevant report version; distinguish the latest listed report from evidence you can actually inspect, and state any uncertainty caused by unavailable contents. Judge only the listed builds, resources, policies and reports. Do not extend a scoped observation into a broader assurance.\n\nSUMMARY\nSecurity and performance have each passed on a build.\n\nHANDOFF\nFacts and scope: Security and performance have each passed on a build. Which checks have passed somewhere.\nAssumptions and limits: The summary omits which results belong to the same build.\nDated source links: record-v1, day1.\nRecommended next action: Before deciding joint eligibility, retrieve the build-level record.\n\nSOURCE CATALOG\nrecord-v1 — day1\n\nQUESTION\nIs one build eligible, requiring both?",
+          "recorded_at": "2026-10-01T15:18:11.669786+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:18:32.911073+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"read\",\"source\":\"record-v1\"}",
+          "recorded_at": "2026-10-01T15:19:21.621188+00:00"
+        },
+        {
+          "role": "user",
+          "kind": "source_response",
+          "content": "SOURCE_RESPONSE\n{\n  \"source\": \"record-v1\",\n  \"date\": \"day1\",\n  \"status\": \"available\",\n  \"text\": \"Build A: security PASS, performance FAIL. Build B: security FAIL, performance PASS.\"\n}",
+          "recorded_at": "2026-10-01T15:19:21.621389+00:00",
+          "delivery_state": "delivered",
+          "delivered_at": "2026-10-01T15:19:34.914678+00:00"
+        },
+        {
+          "role": "assistant",
+          "kind": "respondent_message",
+          "content": "{\"action\":\"answer\",\"answer\":\"No listed build is eligible. Build A passes security but fails performance; Build B fails security but passes performance. Neither passes both required checks.\",\"evidence\":[\"record-v1\"]}",
+          "recorded_at": "2026-10-01T15:19:56.001915+00:00"
+        }
+      ],
+      "final_answer": {
+        "action": "answer",
+        "answer": "No listed build is eligible. Build A passes security but fails performance; Build B fails security but passes performance. Neither passes both required checks.",
+        "evidence": [
+          "record-v1"
+        ]
+      },
+      "ended_at": "2026-10-01T15:19:56.001960+00:00",
+      "elapsed_seconds": 104.33217716217041,
+      "visible_input_characters": 2233,
+      "visible_output_characters": 253,
+      "visible_input_words": 312,
+      "visible_output_words": 25,
+      "actual_total_tokens": null
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Frozen last-runner speed-band and equality audit",
+  "date": "2026-09-29",
+  "parent_commit": "f3c26e709fa1cd8945968dcd585bd012430c7243",
+  "status": "Coordinator-approved before mathematical execution; immutable after freeze",
+  "scope": {
+    "total_runners": 8,
+    "reference": 0,
+    "threshold": "1/8",
+    "core_time_domain": [
+      "0",
+      "1"
+    ],
+    "physical": "Common-start positive distinct integer speeds; final integer d>max(core).",
+    "auxiliary": "Real d and final phase1/2 are explicitly auxiliary one-core-period diagnostics, not a new full shifted-conjecture claim."
+  },
+  "cores": [
+    {
+      "id": "tight_strict_core",
+      "speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11
+      ],
+      "source": "Inherited tight13/strict16 family; previous frozen27 six-core record (6,7,11).",
+      "diagnostic_final_speeds": [
+        13,
+        16
+      ]
+    },
+    {
+      "id": "narrow_core",
+      "speeds": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        24
+      ],
+      "source": "Previous frozen27 six-core record (3,7,24).",
+      "diagnostic_final_speeds": []
+    },
+    {
+      "id": "small_gcd_core",
+      "speeds": [
+        1,
+        4,
+        5,
+        56,
+        64,
+        72
+      ],
+      "source": "Inherited112/113 controls; six-core subset unchanged.",
+      "diagnostic_final_speeds": [
+        112,
+        113
+      ]
+    }
+  ],
+  "final_phases": [
+    "0",
+    "1/2"
+  ],
+  "domain_rule": "Reconstruct complete closed core-safe set inclisolated points. Letc=max(core),w=max positive component width,U=1/(4w). Exact real speed-domain D=(c,U] if U>c; otherwise D empty. No additional d range. For integer d>U, every phase leaves positive duration by width; handle analytically.",
+  "modes": {
+    "F": "Strict final blocking covers every closed core component including isolatedpoints; no full safe point in[0,1].",
+    "P": "Strict final blocking covers every positive-length CLOSED core component; ignore isolatedcorepoints for this diagnostic only.",
+    "Z": "Closed final blocking covers every positive-length core component, equivalent to zero full safe duration; ignore isolatedcorepoints."
+  },
+  "primary_method": "Rational closed-safe-band core reconstruction; per-component rational speed-band unions with explicit open/closed endpoints, then intersections. ForI=[l,r], phase theta, strict coverage iff dr+theta-1/8<m<dl+theta+1/8 forinteger m; use weak signs for Z.",
+  "independent_method": "Reconstruct core by threshold-event modular predicates. Generate exact d-contact events where any coreendpoint orsingleton crosses a final threshold, partition D; evaluate final time-safety directly at each event and open-d-cell midpoint, then reconstruct F/P/Z interval topology. Freeze independent output before primary code/output access.",
+  "outputs": [
+    "Fullcore components inclisolatedpoints, measures, widths,capU andsourcehashes.",
+    "For each core and each of the two fixed phases, complete real-d F/P/Z sets with endpointflags and singletons.",
+    "Exact admissible integer d sets extracted from those real-d bands, without separately scanning outsideD.",
+    "Per-component speed bands and deterministic prefix intersections in canonical increasing-left-endpoint order; refutation bywidth explicitlyrecordedwhenDempty.",
+    "Full final safe components+exactduration ONLYfor designated old diagnosticd13,d16,d112,d113 atphase0. No extra diagnosticdinputs.",
+    "Endpoint arithmetic slack cap perpositivecomponent: reducedendpointdenominatorsq_l,q_r and floor((1/4-1/q_l-1/q_r)/width). This is a necessary integer-strict-coverage cap, not a sufficient criterion.",
+    "Protocol/source/outputSHA256,algorithm andcounts; primary-independentcomparisonforalldeclaredmathoutputs."
+  ],
+  "limits": [
+    "Exactlythreeinheritedsixcores",
+    "Exactlytwoanalyticallymotivatedphases0and1/2; no phasegrid",
+    "No new physicaltupleinput",
+    "No all-referencework",
+    "No broadfinite-regionquadruplescan",
+    "Realnonintegerd bands describeonly[0,1],notglobaltime",
+    "Keepisolatedpointsandallopen/closedflags",
+    "No alteration ofprotocolfollowingresults"
+  ],
+  "stopping_rule": "Complete this frozen domain and independent comparison; no adaptive refinement or added case."
+}

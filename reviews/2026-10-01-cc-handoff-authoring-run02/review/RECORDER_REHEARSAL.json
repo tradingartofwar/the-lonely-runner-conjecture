@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "no restart or overwrite",
+    "ordered dispatch and active cap",
+    "close rejects active",
+    "unique participant identities",
+    "exact envelope capture without newline alteration",
+    "overlength author failure propagation",
+    "first answer precedes source delivery",
+    "first answer immutable through recovery",
+    "full-source no-recovery completion",
+    "terminal checkpoints and phase sealing",
+    "per-response validation and decoded first/recovery word counts",
+    "second recovery prohibited while first answer preserved",
+    "source delivery failure retains first answer",
+    "undelivered prompt excluded from exposure",
+    "undispatched cells remain UNRUN",
+    "late raw response retained without scoring",
+    "dispatch stops at deadline",
+    "unavailable author propagated distinctly",
+    "changed frozen input rejects execution"
+  ],
+  "check_count": 19,
+  "data": "Temporary DUMMY sources only; none of the six study histories or model outputs used.",
+  "model_calls": 0,
+  "limits": "Same-author rehearsal of the local recorder, not provider delivery telemetry."
+}

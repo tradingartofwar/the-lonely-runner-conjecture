@@ -1,0 +1,72 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "60f1665e92b54c3117fd73f5b83542c424dc9f21",
+  "protocol_sha256": "0e418826e58e36b106eb82da9f19754795fb64c76b623e9974635d9984974052",
+  "question": "Does any already archived positive-duration tree miss have pair-only minimum U=0 and zero cover-constrained minimum for all four individual inclusive triples?",
+  "status": "OBSERVED/REPRODUCED for eighteen frozen selected-reference windows; no novelty, new existence coverage, abstract-cover realizability or general selector claim",
+  "delegation": {
+    "calculation": "calculate created primary.py and results.json",
+    "independent_verification": "verify created verify.py, verification.json and verification.md without importing primary functions",
+    "adversarial_review": "challenge created challenge.md and audited quantifiers, archive reconstruction, reflection dependence, endpoints, prior coverage and the final numerical result",
+    "coordination": "root verified the live continuation, froze the protocol, reviewed outputs, wrote the note and updated continuity"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-collective-window-audit/primary.py --check",
+    "python -S -B reviews/2026-09-28-collective-window-audit/verify.py --check"
+  ],
+  "verification": {
+    "source_miss_bearing_cores": 5,
+    "locator_components": 209,
+    "locator_event_cells_independent": 1505,
+    "selected_windows": 18,
+    "reflection_pairs": 9,
+    "selected_window_event_cells_independent": 262,
+    "logical_states_per_problem": 16,
+    "new_exact_primal_dual_certificates": 58,
+    "pair_baseline_minima": 18,
+    "cover_individual_triple_minima": 40,
+    "independently_solved_control_lp_count": 11,
+    "archived_control_certificates_checked": 12,
+    "independent_method": "Exact threshold-event state sweep, endpoint-aware component digests, Kruskal trees and a separately implemented rational two-phase simplex with Bland pivots"
+  },
+  "results": {
+    "pair_only_positive_windows": 8,
+    "pair_zero_with_positive_forced_individual_triple": 8,
+    "collective_only_counterpart_records": 2,
+    "collective_only_reflection_classes": 1,
+    "counterpart_velocities": [0,7,8,15,23,38,61,100],
+    "counterpart_core_speeds": [7,8,23],
+    "counterpart_residual_speeds": [15,38,61,100],
+    "counterpart_windows": [["33/184","39/184"],["145/184","151/184"]],
+    "actual_uncovered_duration_each": "1/600",
+    "pair_only_minimum_each": "0",
+    "cover_triple_minima_each": ["0","0","0","0"],
+    "actual_inclusive_triples": ["0","0","1/48800","119/231800"],
+    "actual_four_way": "0",
+    "actual_H": "99/185440",
+    "pair_constant_C": "6121/2781600"
+  },
+  "dependencies": {
+    "readback": "Python standard library only; both commands pass with python -S",
+    "primary_regeneration": "The archived LP helper may use NumPy/SciPy to propose solutions, but every accepted primal and dual is verified with exact Fraction arithmetic",
+    "independent_verification": "Python standard library only; exact rational optimizer; no primary import"
+  },
+  "scope_limits": [
+    "Reference 0, threshold 1/8 and the eighteen archived labelled windows only",
+    "The two qualifying records are one reflection mechanism, not independent configurations",
+    "Alternative complete-cover distributions are abstract and are not asserted runner-realizable",
+    "The impossibility conclusion concerns one valid inclusive-triple upper bound alone",
+    "No new speed, core, window, reference, broad scan, +7/+9 work, outreach, paid compute, main merge or novelty audit",
+    "AI calculation, separate AI verification and adversarial AI review are not independent human mathematical validation"
+  ],
+  "sha256": {
+    "reviews/2026-09-28-collective-window-audit/protocol.json": "0e418826e58e36b106eb82da9f19754795fb64c76b623e9974635d9984974052",
+    "reviews/2026-09-28-collective-window-audit/primary.py": "001d0ab70fb04dfb14766aaf51505ebb6167cf3acb3de5f399821663f0ed47ea",
+    "reviews/2026-09-28-collective-window-audit/results.json": "daf0dabdfb5ac191d890de801b37c0980a833ce7bab835832da3f8f646cb3d2e",
+    "reviews/2026-09-28-collective-window-audit/verify.py": "3bd04e814584787921b9f0fede91bfb3f68e0db302436dd9e1ac167d376cb267",
+    "reviews/2026-09-28-collective-window-audit/verification.json": "acce0b492738e4a6893654420d5f9c6c0104e08de431eff5a223776d435a36b1",
+    "reviews/2026-09-28-collective-window-audit/verification.md": "335533ed1f2068f37eb34520436e01fcd684ab29558fa93efa0d1111eacc24c0",
+    "reviews/2026-09-28-collective-window-audit/challenge.md": "1a53a7c46c0778e51cd72a9f088c14415c50041ca60e0d4dfaeb6076d8b30126",
+    "notes/COLLECTIVE_WINDOW_AUDIT_2026_09_28.md": "a0dc42d969f0ac3034f62642ad3a6dc0be31ac6a87c96c5480f2ce9e00835fed"
+  }
+}

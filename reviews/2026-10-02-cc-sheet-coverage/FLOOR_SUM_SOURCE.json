@@ -1,0 +1,13 @@
+{
+  "adaptation": "Separate Python implementation with signed reductions and arbitrary-size integers; sheet residue translation and recovery derived here. No code copied from the library and no library binary is a runtime dependency.",
+  "inspected_claims": {
+    "arithmetic_operation_complexity": "O(log m)",
+    "definition": "sum over i=0,...,n-1 of floor((a*i+b)/m)",
+    "library_bounds": "0 <= n < 2^32; 1 <= m < 2^32; overflow answer modulo 2^64"
+  },
+  "inspected_utc_date": "2026-10-02",
+  "limits": "Live production documentation identified by URL and inspection date; this stored factual summary pins what was used, not a full versioned snapshot of the upstream repository.",
+  "primary_url": "https://atcoder.github.io/ac-library/production/document_en/math.html",
+  "retrieval": "Official AtCoder Library documentation retrieved through web search before implementation freeze",
+  "section": "floor_sum"
+}

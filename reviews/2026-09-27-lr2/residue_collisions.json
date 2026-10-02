@@ -1,0 +1,4056 @@
+{
+  "date": "2026-09-27",
+  "baseline_commit": "f4eecb08eeb790064536551b2bbd44706a7c4a38",
+  "status": "Exact physical counterexamples and finite table; unbounded residue classification is a proof candidate awaiting independent review. No novelty claim.",
+  "script_sha256": "fcdd3ee8a4ff7107717ff6ee035b8392ee883c9b639a6ea34df0831e38a48094",
+  "core": [
+    1,
+    4,
+    5
+  ],
+  "fixed_blockers": [
+    6,
+    7,
+    11
+  ],
+  "window": [
+    "9/32",
+    "3/8"
+  ],
+  "threshold": "1/8",
+  "variable_speed_domain": "Every positive integer y outside {1,4,5,6,7,11}; common start; reference 0.",
+  "period": 7392,
+  "regions": [
+    [
+      [
+        "9/32",
+        "3/8"
+      ]
+    ],
+    [
+      [
+        "5/16",
+        "17/48"
+      ]
+    ],
+    [
+      [
+        "9/32",
+        "17/56"
+      ]
+    ],
+    [
+      [
+        "9/32",
+        "25/88"
+      ],
+      [
+        "31/88",
+        "3/8"
+      ]
+    ],
+    [
+      [
+        "17/56",
+        "5/16"
+      ]
+    ],
+    [
+      [
+        "31/88",
+        "17/48"
+      ]
+    ],
+    [
+      [
+        "9/32",
+        "25/88"
+      ]
+    ]
+  ],
+  "region_lengths": [
+    "3/32",
+    "1/24",
+    "5/224",
+    "9/352",
+    "1/112",
+    "1/528",
+    "1/352"
+  ],
+  "coefficient_rows_sha256": "2e96425b6cff392ee822b4d47bec92345c4d3e23727f317b116faed2ba390722",
+  "nonzero_ray_count": 5186,
+  "ray_size_counts": {
+    "1": 3544,
+    "2": 1346,
+    "3": 136,
+    "4": 112,
+    "5": 14,
+    "6": 22,
+    "7": 6,
+    "8": 2,
+    "9": 2,
+    "10": 2
+  },
+  "same_ray_residue_pairs": 3240,
+  "zero_coefficient_rows": [
+    [
+      0,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      3696,
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "zero_class": "All positive multiples of 3696 have the same single/pair summary and U=3/448.",
+  "family_counts": {
+    "all": 118,
+    "different_duration": 62,
+    "equal_duration": 56,
+    "same_blocker_gcds": 46,
+    "same_blocker_gcds_different_duration": 8
+  },
+  "collision_families": [
+    {
+      "residues": [
+        45,
+        90
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 45,
+      "k_modulus": 7392,
+      "first_admissible_k": 45,
+      "first_speeds": [
+        45,
+        90
+      ],
+      "U_z_minus_U_y_times_k": "1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        266,
+        532
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 266,
+      "k_modulus": 7392,
+      "first_admissible_k": 266,
+      "first_speeds": [
+        266,
+        532
+      ],
+      "U_z_minus_U_y_times_k": "1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        620,
+        930
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 310,
+      "k_modulus": 7392,
+      "first_admissible_k": 310,
+      "first_speeds": [
+        620,
+        930
+      ],
+      "U_z_minus_U_y_times_k": "-1/24",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        502,
+        1004
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 502,
+      "k_modulus": 7392,
+      "first_admissible_k": 502,
+      "first_speeds": [
+        502,
+        1004
+      ],
+      "U_z_minus_U_y_times_k": "-1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        359,
+        1077
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 359,
+      "k_modulus": 7392,
+      "first_admissible_k": 359,
+      "first_speeds": [
+        359,
+        1077
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        407,
+        1221
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 407,
+      "k_modulus": 7392,
+      "first_admissible_k": 407,
+      "first_speeds": [
+        407,
+        1221
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        336,
+        1344
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 336,
+      "k_modulus": 7392,
+      "first_admissible_k": 336,
+      "first_speeds": [
+        336,
+        1344
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        717,
+        1434
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 717,
+      "k_modulus": 7392,
+      "first_admissible_k": 717,
+      "first_speeds": [
+        717,
+        1434
+      ],
+      "U_z_minus_U_y_times_k": "1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        601,
+        1803
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 601,
+      "k_modulus": 7392,
+      "first_admissible_k": 601,
+      "first_speeds": [
+        601,
+        1803
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        649,
+        1947
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 649,
+      "k_modulus": 7392,
+      "first_admissible_k": 649,
+      "first_speeds": [
+        649,
+        1947
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        336,
+        2016
+      ],
+      "multipliers": [
+        1,
+        6
+      ],
+      "k_residue": 336,
+      "k_modulus": 7392,
+      "first_admissible_k": 336,
+      "first_speeds": [
+        336,
+        2016
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        1344,
+        2016
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 672,
+      "k_modulus": 7392,
+      "first_admissible_k": 672,
+      "first_speeds": [
+        1344,
+        2016
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        697,
+        2091
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 697,
+      "k_modulus": 7392,
+      "first_admissible_k": 697,
+      "first_speeds": [
+        697,
+        2091
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1203,
+        2406
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1203,
+      "k_modulus": 7392,
+      "first_admissible_k": 1203,
+      "first_speeds": [
+        1203,
+        2406
+      ],
+      "U_z_minus_U_y_times_k": "-1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1346,
+        2692
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1346,
+      "k_modulus": 7392,
+      "first_admissible_k": 1346,
+      "first_speeds": [
+        1346,
+        2692
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        938,
+        2814
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 938,
+      "k_modulus": 7392,
+      "first_admissible_k": 938,
+      "first_speeds": [
+        938,
+        2814
+      ],
+      "U_z_minus_U_y_times_k": "1/6",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        983,
+        2949
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 983,
+      "k_modulus": 7392,
+      "first_admissible_k": 983,
+      "first_speeds": [
+        983,
+        2949
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1056,
+        3168
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 1056,
+      "k_modulus": 7392,
+      "first_admissible_k": 1056,
+      "first_speeds": [
+        1056,
+        3168
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        1610,
+        3220
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1610,
+      "k_modulus": 7392,
+      "first_admissible_k": 1610,
+      "first_speeds": [
+        1610,
+        3220
+      ],
+      "U_z_minus_U_y_times_k": "1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        1846,
+        3692
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1846,
+      "k_modulus": 7392,
+      "first_admissible_k": 1846,
+      "first_speeds": [
+        1846,
+        3692
+      ],
+      "U_z_minus_U_y_times_k": "-1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        1921,
+        3842
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1921,
+      "k_modulus": 7392,
+      "first_admissible_k": 1921,
+      "first_speeds": [
+        1921,
+        3842
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2111,
+        4222
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 2111,
+      "k_modulus": 7392,
+      "first_admissible_k": 2111,
+      "first_speeds": [
+        2111,
+        4222
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2114,
+        4228
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 2114,
+      "k_modulus": 7392,
+      "first_admissible_k": 2114,
+      "first_speeds": [
+        2114,
+        4228
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        1415,
+        4245
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 1415,
+      "k_modulus": 7392,
+      "first_admissible_k": 1415,
+      "first_speeds": [
+        1415,
+        4245
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2157,
+        4314
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 2157,
+      "k_modulus": 7392,
+      "first_admissible_k": 2157,
+      "first_speeds": [
+        2157,
+        4314
+      ],
+      "U_z_minus_U_y_times_k": "1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1657,
+        4971
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 1657,
+      "k_modulus": 7392,
+      "first_admissible_k": 1657,
+      "first_speeds": [
+        1657,
+        4971
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1705,
+        5115
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 1705,
+      "k_modulus": 7392,
+      "first_admissible_k": 1705,
+      "first_speeds": [
+        1705,
+        5115
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1056,
+        5280
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 1056,
+      "k_modulus": 7392,
+      "first_admissible_k": 1056,
+      "first_speeds": [
+        1056,
+        5280
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        3168,
+        5280
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 1056,
+      "k_modulus": 7392,
+      "first_admissible_k": 1056,
+      "first_speeds": [
+        3168,
+        5280
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        2829,
+        5658
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 2829,
+      "k_modulus": 7392,
+      "first_admissible_k": 2829,
+      "first_speeds": [
+        2829,
+        5658
+      ],
+      "U_z_minus_U_y_times_k": "1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1991,
+        5973
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 1991,
+      "k_modulus": 7392,
+      "first_admissible_k": 1991,
+      "first_speeds": [
+        1991,
+        5973
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2039,
+        6117
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 2039,
+      "k_modulus": 7392,
+      "first_admissible_k": 2039,
+      "first_speeds": [
+        2039,
+        6117
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3315,
+        6630
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 3315,
+      "k_modulus": 7392,
+      "first_admissible_k": 3315,
+      "first_speeds": [
+        3315,
+        6630
+      ],
+      "U_z_minus_U_y_times_k": "-1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3359,
+        6718
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 3359,
+      "k_modulus": 7392,
+      "first_admissible_k": 3359,
+      "first_speeds": [
+        3359,
+        6718
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2281,
+        6843
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 2281,
+      "k_modulus": 7392,
+      "first_admissible_k": 2281,
+      "first_speeds": [
+        2281,
+        6843
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3458,
+        6916
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 3458,
+      "k_modulus": 7392,
+      "first_admissible_k": 3458,
+      "first_speeds": [
+        3458,
+        6916
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4844,
+        7266
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 2422,
+      "k_modulus": 7392,
+      "first_admissible_k": 2422,
+      "first_speeds": [
+        4844,
+        7266
+      ],
+      "U_z_minus_U_y_times_k": "-1/24",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3934,
+        476
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 3934,
+      "k_modulus": 7392,
+      "first_admissible_k": 3934,
+      "first_speeds": [
+        3934,
+        7868
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        2640,
+        528
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 2640,
+      "k_modulus": 7392,
+      "first_admissible_k": 2640,
+      "first_speeds": [
+        2640,
+        7920
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4033,
+        674
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 4033,
+      "k_modulus": 7392,
+      "first_admissible_k": 4033,
+      "first_speeds": [
+        4033,
+        8066
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2713,
+        747
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 2713,
+      "k_modulus": 7392,
+      "first_admissible_k": 2713,
+      "first_speeds": [
+        2713,
+        8139
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4077,
+        762
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 4077,
+      "k_modulus": 7392,
+      "first_admissible_k": 4077,
+      "first_speeds": [
+        4077,
+        8154
+      ],
+      "U_z_minus_U_y_times_k": "1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2113,
+        1060
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 2113,
+      "k_modulus": 7392,
+      "first_admissible_k": 2113,
+      "first_speeds": [
+        2113,
+        8452
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2999,
+        1605
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 2999,
+      "k_modulus": 7392,
+      "first_admissible_k": 2999,
+      "first_speeds": [
+        2999,
+        8997
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6048,
+        1680
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 3024,
+      "k_modulus": 7392,
+      "first_admissible_k": 3024,
+      "first_speeds": [
+        6048,
+        9072
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4563,
+        1734
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 4563,
+      "k_modulus": 7392,
+      "first_admissible_k": 4563,
+      "first_speeds": [
+        4563,
+        9126
+      ],
+      "U_z_minus_U_y_times_k": "-1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3047,
+        1749
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 3047,
+      "k_modulus": 7392,
+      "first_admissible_k": 3047,
+      "first_speeds": [
+        3047,
+        9141
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3095,
+        1893
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 3095,
+      "k_modulus": 7392,
+      "first_admissible_k": 3095,
+      "first_speeds": [
+        3095,
+        9285
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3289,
+        2475
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 3289,
+      "k_modulus": 7392,
+      "first_admissible_k": 3289,
+      "first_speeds": [
+        3289,
+        9867
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3337,
+        2619
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 3337,
+      "k_modulus": 7392,
+      "first_admissible_k": 3337,
+      "first_speeds": [
+        3337,
+        10011
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2017,
+        2693
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 2017,
+      "k_modulus": 7392,
+      "first_admissible_k": 2017,
+      "first_speeds": [
+        2017,
+        10085
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        5235,
+        3078
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 5235,
+      "k_modulus": 7392,
+      "first_admissible_k": 5235,
+      "first_speeds": [
+        5235,
+        10470
+      ],
+      "U_z_minus_U_y_times_k": "-1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5278,
+        3164
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 5278,
+      "k_modulus": 7392,
+      "first_admissible_k": 5278,
+      "first_speeds": [
+        5278,
+        10556
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        5281,
+        3170
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 5281,
+      "k_modulus": 7392,
+      "first_admissible_k": 5281,
+      "first_speeds": [
+        5281,
+        10562
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5471,
+        3550
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 5471,
+      "k_modulus": 7392,
+      "first_admissible_k": 5471,
+      "first_speeds": [
+        5471,
+        10942
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5546,
+        3700
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 5546,
+      "k_modulus": 7392,
+      "first_admissible_k": 5546,
+      "first_speeds": [
+        5546,
+        11092
+      ],
+      "U_z_minus_U_y_times_k": "1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        5782,
+        4172
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 5782,
+      "k_modulus": 7392,
+      "first_admissible_k": 5782,
+      "first_speeds": [
+        5782,
+        11564
+      ],
+      "U_z_minus_U_y_times_k": "-1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6046,
+        4700
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 6046,
+      "k_modulus": 7392,
+      "first_admissible_k": 6046,
+      "first_speeds": [
+        6046,
+        12092
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4055,
+        4773
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4055,
+      "k_modulus": 7392,
+      "first_admissible_k": 4055,
+      "first_speeds": [
+        4055,
+        12165
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4103,
+        4917
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4103,
+      "k_modulus": 7392,
+      "first_admissible_k": 4103,
+      "first_speeds": [
+        4103,
+        12309
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6189,
+        4986
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 6189,
+      "k_modulus": 7392,
+      "first_admissible_k": 6189,
+      "first_speeds": [
+        6189,
+        12378
+      ],
+      "U_z_minus_U_y_times_k": "1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4297,
+        5499
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4297,
+      "k_modulus": 7392,
+      "first_admissible_k": 4297,
+      "first_speeds": [
+        4297,
+        12891
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4345,
+        5643
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4345,
+      "k_modulus": 7392,
+      "first_admissible_k": 4345,
+      "first_speeds": [
+        4345,
+        13035
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1344,
+        5712
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 4368,
+      "k_modulus": 7392,
+      "first_admissible_k": 4368,
+      "first_speeds": [
+        8736,
+        13104
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4393,
+        5787
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4393,
+      "k_modulus": 7392,
+      "first_admissible_k": 4393,
+      "first_speeds": [
+        4393,
+        13179
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2640,
+        5808
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 2640,
+      "k_modulus": 7392,
+      "first_admissible_k": 2640,
+      "first_speeds": [
+        2640,
+        13200
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        528,
+        5808
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 2640,
+      "k_modulus": 7392,
+      "first_admissible_k": 2640,
+      "first_speeds": [
+        7920,
+        13200
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6675,
+        5958
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 6675,
+      "k_modulus": 7392,
+      "first_admissible_k": 6675,
+      "first_speeds": [
+        6675,
+        13350
+      ],
+      "U_z_minus_U_y_times_k": "-1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3360,
+        6048
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 3360,
+      "k_modulus": 7392,
+      "first_admissible_k": 3360,
+      "first_speeds": [
+        3360,
+        13440
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6890,
+        6388
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 6890,
+      "k_modulus": 7392,
+      "first_admissible_k": 6890,
+      "first_speeds": [
+        6890,
+        13780
+      ],
+      "U_z_minus_U_y_times_k": "1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4679,
+        6645
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4679,
+      "k_modulus": 7392,
+      "first_admissible_k": 4679,
+      "first_speeds": [
+        4679,
+        14037
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        7126,
+        6860
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 7126,
+      "k_modulus": 7392,
+      "first_admissible_k": 7126,
+      "first_speeds": [
+        7126,
+        14252
+      ],
+      "U_z_minus_U_y_times_k": "-1/8",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4752,
+        6864
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 4752,
+      "k_modulus": 7392,
+      "first_admissible_k": 4752,
+      "first_speeds": [
+        4752,
+        14256
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        7347,
+        7302
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 7347,
+      "k_modulus": 7392,
+      "first_admissible_k": 7347,
+      "first_speeds": [
+        7347,
+        14694
+      ],
+      "U_z_minus_U_y_times_k": "-1/16",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        7390,
+        7388
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 7390,
+      "k_modulus": 7392,
+      "first_admissible_k": 7390,
+      "first_speeds": [
+        7390,
+        14780
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        7391,
+        7390
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 7391,
+      "k_modulus": 7392,
+      "first_admissible_k": 7391,
+      "first_speeds": [
+        7391,
+        14782
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1,
+        2
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 1,
+      "k_modulus": 7392,
+      "first_admissible_k": 7393,
+      "first_speeds": [
+        7393,
+        14786
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        2,
+        4
+      ],
+      "multipliers": [
+        1,
+        2
+      ],
+      "k_residue": 2,
+      "k_modulus": 7392,
+      "first_admissible_k": 7394,
+      "first_speeds": [
+        7394,
+        14788
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        2548,
+        126
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 4970,
+      "k_modulus": 7392,
+      "first_admissible_k": 4970,
+      "first_speeds": [
+        9940,
+        14910
+      ],
+      "U_z_minus_U_y_times_k": "1/24",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5111,
+        549
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 5111,
+      "k_modulus": 7392,
+      "first_admissible_k": 5111,
+      "first_speeds": [
+        5111,
+        15333
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5353,
+        1275
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 5353,
+      "k_modulus": 7392,
+      "first_admissible_k": 5353,
+      "first_speeds": [
+        5353,
+        16059
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4032,
+        1344
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 4032,
+      "k_modulus": 7392,
+      "first_admissible_k": 4032,
+      "first_speeds": [
+        4032,
+        16128
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        5401,
+        1419
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 5401,
+      "k_modulus": 7392,
+      "first_admissible_k": 5401,
+      "first_speeds": [
+        5401,
+        16203
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3359,
+        2011
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 3359,
+      "k_modulus": 7392,
+      "first_admissible_k": 3359,
+      "first_speeds": [
+        3359,
+        16795
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6718,
+        2011
+      ],
+      "multipliers": [
+        2,
+        5
+      ],
+      "k_residue": 3359,
+      "k_modulus": 7392,
+      "first_admissible_k": 3359,
+      "first_speeds": [
+        6718,
+        16795
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5687,
+        2277
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 5687,
+      "k_modulus": 7392,
+      "first_admissible_k": 5687,
+      "first_speeds": [
+        5687,
+        17061
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5735,
+        2421
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 5735,
+      "k_modulus": 7392,
+      "first_admissible_k": 5735,
+      "first_speeds": [
+        5735,
+        17205
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5977,
+        3147
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 5977,
+      "k_modulus": 7392,
+      "first_admissible_k": 5977,
+      "first_speeds": [
+        5977,
+        17931
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6336,
+        4224
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6336,
+      "k_modulus": 7392,
+      "first_admissible_k": 6336,
+      "first_speeds": [
+        6336,
+        19008
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6409,
+        4443
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6409,
+      "k_modulus": 7392,
+      "first_admissible_k": 6409,
+      "first_speeds": [
+        6409,
+        19227
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6454,
+        4578
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6454,
+      "k_modulus": 7392,
+      "first_admissible_k": 6454,
+      "first_speeds": [
+        6454,
+        19362
+      ],
+      "U_z_minus_U_y_times_k": "-1/6",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6695,
+        5301
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6695,
+      "k_modulus": 7392,
+      "first_admissible_k": 6695,
+      "first_speeds": [
+        6695,
+        20085
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        3360,
+        5376
+      ],
+      "multipliers": [
+        1,
+        6
+      ],
+      "k_residue": 3360,
+      "k_modulus": 7392,
+      "first_admissible_k": 3360,
+      "first_speeds": [
+        3360,
+        20160
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6048,
+        5376
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 6720,
+      "k_modulus": 7392,
+      "first_admissible_k": 6720,
+      "first_speeds": [
+        13440,
+        20160
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4033,
+        5381
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 4033,
+      "k_modulus": 7392,
+      "first_admissible_k": 4033,
+      "first_speeds": [
+        4033,
+        20165
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        674,
+        5381
+      ],
+      "multipliers": [
+        2,
+        5
+      ],
+      "k_residue": 4033,
+      "k_modulus": 7392,
+      "first_admissible_k": 4033,
+      "first_speeds": [
+        8066,
+        20165
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6743,
+        5445
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6743,
+      "k_modulus": 7392,
+      "first_admissible_k": 6743,
+      "first_speeds": [
+        6743,
+        20229
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6791,
+        5589
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6791,
+      "k_modulus": 7392,
+      "first_admissible_k": 6791,
+      "first_speeds": [
+        6791,
+        20373
+      ],
+      "U_z_minus_U_y_times_k": "1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6985,
+        6171
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 6985,
+      "k_modulus": 7392,
+      "first_admissible_k": 6985,
+      "first_speeds": [
+        6985,
+        20955
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        7033,
+        6315
+      ],
+      "multipliers": [
+        1,
+        3
+      ],
+      "k_residue": 7033,
+      "k_modulus": 7392,
+      "first_admissible_k": 7033,
+      "first_speeds": [
+        7033,
+        21099
+      ],
+      "U_z_minus_U_y_times_k": "-1/12",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        5279,
+        6332
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 5279,
+      "k_modulus": 7392,
+      "first_admissible_k": 5279,
+      "first_speeds": [
+        5279,
+        21116
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6772,
+        6462
+      ],
+      "multipliers": [
+        2,
+        3
+      ],
+      "k_residue": 7082,
+      "k_modulus": 7392,
+      "first_admissible_k": 7082,
+      "first_speeds": [
+        14164,
+        21246
+      ],
+      "U_z_minus_U_y_times_k": "1/24",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4752,
+        1584
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 4752,
+      "k_modulus": 7392,
+      "first_admissible_k": 4752,
+      "first_speeds": [
+        4752,
+        23760
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        6864,
+        1584
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 4752,
+      "k_modulus": 7392,
+      "first_admissible_k": 4752,
+      "first_speeds": [
+        14256,
+        23760
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4032,
+        2016
+      ],
+      "multipliers": [
+        1,
+        6
+      ],
+      "k_residue": 4032,
+      "k_modulus": 7392,
+      "first_admissible_k": 4032,
+      "first_speeds": [
+        4032,
+        24192
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        5375,
+        4699
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 5375,
+      "k_modulus": 7392,
+      "first_admissible_k": 5375,
+      "first_speeds": [
+        5375,
+        26875
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        7056,
+        6048
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 7056,
+      "k_modulus": 7392,
+      "first_admissible_k": 7056,
+      "first_speeds": [
+        7056,
+        28224
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        7391,
+        7388
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 7391,
+      "k_modulus": 7392,
+      "first_admissible_k": 7391,
+      "first_speeds": [
+        7391,
+        29564
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1,
+        4
+      ],
+      "multipliers": [
+        1,
+        4
+      ],
+      "k_residue": 1,
+      "k_modulus": 7392,
+      "first_admissible_k": 7393,
+      "first_speeds": [
+        7393,
+        29572
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        6336,
+        2112
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 6336,
+      "k_modulus": 7392,
+      "first_admissible_k": 6336,
+      "first_speeds": [
+        6336,
+        31680
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        4224,
+        2112
+      ],
+      "multipliers": [
+        3,
+        5
+      ],
+      "k_residue": 6336,
+      "k_modulus": 7392,
+      "first_admissible_k": 6336,
+      "first_speeds": [
+        19008,
+        31680
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        7391,
+        7387
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 7391,
+      "k_modulus": 7392,
+      "first_admissible_k": 7391,
+      "first_speeds": [
+        7391,
+        36955
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        7390,
+        7387
+      ],
+      "multipliers": [
+        2,
+        5
+      ],
+      "k_residue": 7391,
+      "k_modulus": 7392,
+      "first_admissible_k": 7391,
+      "first_speeds": [
+        14782,
+        36955
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        7388,
+        7387
+      ],
+      "multipliers": [
+        4,
+        5
+      ],
+      "k_residue": 7391,
+      "k_modulus": 7392,
+      "first_admissible_k": 7391,
+      "first_speeds": [
+        29564,
+        36955
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        1,
+        5
+      ],
+      "multipliers": [
+        1,
+        5
+      ],
+      "k_residue": 1,
+      "k_modulus": 7392,
+      "first_admissible_k": 7393,
+      "first_speeds": [
+        7393,
+        36965
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    },
+    {
+      "residues": [
+        2,
+        5
+      ],
+      "multipliers": [
+        2,
+        5
+      ],
+      "k_residue": 1,
+      "k_modulus": 7392,
+      "first_admissible_k": 7393,
+      "first_speeds": [
+        14786,
+        36965
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        4,
+        5
+      ],
+      "multipliers": [
+        4,
+        5
+      ],
+      "k_residue": 1,
+      "k_modulus": 7392,
+      "first_admissible_k": 7393,
+      "first_speeds": [
+        29572,
+        36965
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": false
+    },
+    {
+      "residues": [
+        7056,
+        5376
+      ],
+      "multipliers": [
+        1,
+        6
+      ],
+      "k_residue": 7056,
+      "k_modulus": 7392,
+      "first_admissible_k": 7056,
+      "first_speeds": [
+        7056,
+        42336
+      ],
+      "U_z_minus_U_y_times_k": "0",
+      "same_blocker_pair_gcds": true
+    }
+  ],
+  "physical_controls": [
+    {
+      "speeds": [
+        45,
+        90
+      ],
+      "cases": [
+        {
+          "y": 45,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "1/45"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "1/120",
+            "1/352",
+            "1/180",
+            "1/180"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "1/720",
+            "0"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            3,
+            1,
+            1,
+            1
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "1/45",
+            "1/120",
+            "1/180",
+            "0",
+            "1/180",
+            "1/720",
+            "0",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "1/210",
+            "13/396",
+            "193/13860",
+            "0",
+            "1/60",
+            "1/1980",
+            "1/352",
+            "0",
+            "1/240",
+            "1/144",
+            "1/180",
+            "0",
+            "1/240",
+            "1/720",
+            "0",
+            "0"
+          ],
+          "E": "1999/110880",
+          "R": "361/15840",
+          "clear_duration": "1/210",
+          "components": [
+            [
+              "17/56",
+              "37/120"
+            ],
+            [
+              "3/8",
+              "3/8"
+            ]
+          ],
+          "isolated_contacts": [
+            {
+              "time": "3/8",
+              "controllers": [
+                {
+                  "speed": 5,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                },
+                {
+                  "speed": 11,
+                  "phase": "1/8",
+                  "direction": "enters safety"
+                },
+                {
+                  "speed": 45,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "y": 90,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "1/45"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "1/120",
+            "1/352",
+            "1/180",
+            "1/180"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            6,
+            1,
+            1,
+            1
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "1/45",
+            "1/120",
+            "1/180",
+            "0",
+            "1/180",
+            "0",
+            "0",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "31/5040",
+            "83/2640",
+            "193/13860",
+            "0",
+            "11/720",
+            "1/528",
+            "1/352",
+            "0",
+            "1/360",
+            "1/120",
+            "1/180",
+            "0",
+            "1/180",
+            "0",
+            "0",
+            "0"
+          ],
+          "E": "1999/110880",
+          "R": "383/15840",
+          "clear_duration": "31/5040",
+          "components": [
+            [
+              "17/56",
+              "223/720"
+            ],
+            [
+              "5/16",
+              "5/16"
+            ],
+            [
+              "3/8",
+              "3/8"
+            ]
+          ],
+          "isolated_contacts": [
+            {
+              "time": "5/16",
+              "controllers": [
+                {
+                  "speed": 6,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                },
+                {
+                  "speed": 90,
+                  "phase": "1/8",
+                  "direction": "enters safety"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "controllers": [
+                {
+                  "speed": 5,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                },
+                {
+                  "speed": 11,
+                  "phase": "1/8",
+                  "direction": "enters safety"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "same_all_moments": false
+    },
+    {
+      "speeds": [
+        266,
+        532
+      ],
+      "cases": [
+        {
+          "y": 266,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "25/1064"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "11/1064",
+            "1/352",
+            "3/532",
+            "1/152"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "1/1064",
+            "1/1064"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            2,
+            1,
+            7,
+            1
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "25/1064",
+            "11/1064",
+            "3/532",
+            "0",
+            "1/152",
+            "1/1064",
+            "1/1064",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "13/2128",
+            "711/23408",
+            "173/11704",
+            "0",
+            "103/6384",
+            "67/70224",
+            "89/46816",
+            "0",
+            "3/1064",
+            "5/532",
+            "5/1064",
+            "0",
+            "5/1064",
+            "1/1064",
+            "1/1064",
+            "0"
+          ],
+          "E": "2711/140448",
+          "R": "3569/140448",
+          "clear_duration": "13/2128",
+          "components": [
+            [
+              "17/56",
+              "647/2128"
+            ],
+            [
+              "649/2128",
+              "655/2128"
+            ],
+            [
+              "657/2128",
+              "663/2128"
+            ],
+            [
+              "5/16",
+              "5/16"
+            ],
+            [
+              "3/8",
+              "3/8"
+            ]
+          ],
+          "isolated_contacts": [
+            {
+              "time": "5/16",
+              "controllers": [
+                {
+                  "speed": 6,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                },
+                {
+                  "speed": 266,
+                  "phase": "1/8",
+                  "direction": "enters safety"
+                }
+              ]
+            },
+            {
+              "time": "3/8",
+              "controllers": [
+                {
+                  "speed": 5,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                },
+                {
+                  "speed": 11,
+                  "phase": "1/8",
+                  "direction": "enters safety"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "y": 532,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "25/1064"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "11/1064",
+            "1/352",
+            "3/532",
+            "1/152"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "1/2128",
+            "1/1064"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            2,
+            1,
+            7,
+            1
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "25/1064",
+            "11/1064",
+            "3/532",
+            "0",
+            "1/152",
+            "1/2128",
+            "1/1064",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "1/152",
+            "25/836",
+            "173/11704",
+            "0",
+            "25/1596",
+            "25/17556",
+            "89/46816",
+            "0",
+            "5/2128",
+            "3/304",
+            "5/1064",
+            "0",
+            "11/2128",
+            "1/2128",
+            "1/1064",
+            "0"
+          ],
+          "E": "2711/140448",
+          "R": "3635/140448",
+          "clear_duration": "1/152",
+          "components": [
+            [
+              "17/56",
+              "185/608"
+            ],
+            [
+              "1297/4256",
+              "1303/4256"
+            ],
+            [
+              "1305/4256",
+              "69/224"
+            ],
+            [
+              "1313/4256",
+              "1319/4256"
+            ],
+            [
+              "1321/4256",
+              "1327/4256"
+            ],
+            [
+              "1329/4256",
+              "5/16"
+            ],
+            [
+              "3/8",
+              "3/8"
+            ]
+          ],
+          "isolated_contacts": [
+            {
+              "time": "3/8",
+              "controllers": [
+                {
+                  "speed": 5,
+                  "phase": "7/8",
+                  "direction": "leaves safety"
+                },
+                {
+                  "speed": 11,
+                  "phase": "1/8",
+                  "direction": "enters safety"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "same_all_moments": false
+    },
+    {
+      "speeds": [
+        336,
+        1344
+      ],
+      "cases": [
+        {
+          "y": 336,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "3/128"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "1/96",
+            "1/352",
+            "5/896",
+            "17/2688"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "1/2688",
+            "1/1344"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            6,
+            1,
+            7,
+            1
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "3/128",
+            "1/96",
+            "5/896",
+            "0",
+            "17/2688",
+            "1/2688",
+            "1/1344",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "3/448",
+            "293/9856",
+            "433/29568",
+            "0",
+            "1/64",
+            "15/9856",
+            "31/14784",
+            "0",
+            "1/448",
+            "9/896",
+            "13/2688",
+            "0",
+            "1/192",
+            "1/2688",
+            "1/1344",
+            "0"
+          ],
+          "E": "569/29568",
+          "R": "767/29568",
+          "clear_duration": "3/448",
+          "components": [
+            [
+              "817/2688",
+              "823/2688"
+            ],
+            [
+              "275/896",
+              "277/896"
+            ],
+            [
+              "119/384",
+              "839/2688"
+            ]
+          ],
+          "isolated_contacts": []
+        },
+        {
+          "y": 1344,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "3/128"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "1/96",
+            "1/352",
+            "5/896",
+            "17/2688"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "5/10752",
+            "1/1536"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            6,
+            1,
+            7,
+            1
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "3/128",
+            "1/96",
+            "5/896",
+            "0",
+            "17/2688",
+            "5/10752",
+            "1/1536",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "3/448",
+            "3527/118272",
+            "1721/118272",
+            "0",
+            "1/64",
+            "169/118272",
+            "37/16896",
+            "0",
+            "1/448",
+            "107/10752",
+            "53/10752",
+            "0",
+            "1/192",
+            "5/10752",
+            "1/1536",
+            "0"
+          ],
+          "E": "569/29568",
+          "R": "767/29568",
+          "clear_duration": "3/448",
+          "components": [
+            [
+              "3265/10752",
+              "3271/10752"
+            ],
+            [
+              "1091/3584",
+              "1093/3584"
+            ],
+            [
+              "3281/10752",
+              "3287/10752"
+            ],
+            [
+              "3289/10752",
+              "3295/10752"
+            ],
+            [
+              "157/512",
+              "1101/3584"
+            ],
+            [
+              "3305/10752",
+              "473/1536"
+            ],
+            [
+              "3313/10752",
+              "3319/10752"
+            ],
+            [
+              "1107/3584",
+              "1109/3584"
+            ],
+            [
+              "3329/10752",
+              "3335/10752"
+            ],
+            [
+              "3337/10752",
+              "3343/10752"
+            ],
+            [
+              "1115/3584",
+              "1117/3584"
+            ],
+            [
+              "479/1536",
+              "3359/10752"
+            ]
+          ],
+          "isolated_contacts": []
+        }
+      ],
+      "same_all_moments": false
+    },
+    {
+      "speeds": [
+        3696,
+        7392
+      ],
+      "cases": [
+        {
+          "y": 3696,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "3/128"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "1/96",
+            "1/352",
+            "5/896",
+            "9/1408"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "1/2112",
+            "1/1408"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            6,
+            1,
+            7,
+            11
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "3/128",
+            "1/96",
+            "5/896",
+            "0",
+            "9/1408",
+            "1/2112",
+            "1/1408",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "3/448",
+            "21/704",
+            "9/616",
+            "0",
+            "1/64",
+            "1/704",
+            "3/1408",
+            "0",
+            "1/448",
+            "7/704",
+            "3/616",
+            "0",
+            "1/192",
+            "1/2112",
+            "1/1408",
+            "0"
+          ],
+          "E": "569/29568",
+          "R": "767/29568",
+          "clear_duration": "3/448",
+          "components": [
+            [
+              "8977/29568",
+              "8983/29568"
+            ],
+            [
+              "2995/9856",
+              "2997/9856"
+            ],
+            [
+              "8993/29568",
+              "8999/29568"
+            ],
+            [
+              "9001/29568",
+              "9007/29568"
+            ],
+            [
+              "39/128",
+              "3005/9856"
+            ],
+            [
+              "9017/29568",
+              "1289/4224"
+            ],
+            [
+              "9025/29568",
+              "821/2688"
+            ],
+            [
+              "3011/9856",
+              "3013/9856"
+            ],
+            [
+              "9041/29568",
+              "9047/29568"
+            ],
+            [
+              "9049/29568",
+              "9055/29568"
+            ],
+            [
+              "3019/9856",
+              "3021/9856"
+            ],
+            [
+              "1295/4224",
+              "9071/29568"
+            ],
+            [
+              "9073/29568",
+              "1297/4224"
+            ],
+            [
+              "3027/9856",
+              "3029/9856"
+            ],
+            [
+              "9089/29568",
+              "9095/29568"
+            ],
+            [
+              "827/2688",
+              "9103/29568"
+            ],
+            [
+              "3035/9856",
+              "3037/9856"
+            ],
+            [
+              "9113/29568",
+              "829/2688"
+            ],
+            [
+              "1303/4224",
+              "9127/29568"
+            ],
+            [
+              "3043/9856",
+              "435/1408"
+            ],
+            [
+              "9137/29568",
+              "9143/29568"
+            ],
+            [
+              "9145/29568",
+              "9151/29568"
+            ],
+            [
+              "3051/9856",
+              "3053/9856"
+            ],
+            [
+              "9161/29568",
+              "9167/29568"
+            ],
+            [
+              "9169/29568",
+              "9175/29568"
+            ],
+            [
+              "437/1408",
+              "3061/9856"
+            ],
+            [
+              "835/2688",
+              "1313/4224"
+            ],
+            [
+              "9193/29568",
+              "9199/29568"
+            ],
+            [
+              "3067/9856",
+              "279/896"
+            ],
+            [
+              "9209/29568",
+              "9215/29568"
+            ],
+            [
+              "9217/29568",
+              "9223/29568"
+            ],
+            [
+              "3075/9856",
+              "3077/9856"
+            ],
+            [
+              "1319/4224",
+              "9239/29568"
+            ]
+          ],
+          "isolated_contacts": []
+        },
+        {
+          "y": 7392,
+          "single_durations": [
+            "1/24",
+            "5/224",
+            "9/352",
+            "3/128"
+          ],
+          "pair_durations": [
+            "0",
+            "1/528",
+            "1/96",
+            "1/352",
+            "5/896",
+            "9/1408"
+          ],
+          "triple_durations": [
+            "0",
+            "0",
+            "1/2112",
+            "1/1408"
+          ],
+          "quadruple_duration": "0",
+          "blocker_pair_gcds": [
+            1,
+            1,
+            6,
+            1,
+            7,
+            11
+          ],
+          "moments_by_mask": [
+            "3/32",
+            "1/24",
+            "5/224",
+            "0",
+            "9/352",
+            "1/528",
+            "1/352",
+            "0",
+            "3/128",
+            "1/96",
+            "5/896",
+            "0",
+            "9/1408",
+            "1/2112",
+            "1/1408",
+            "0"
+          ],
+          "state_durations_by_mask": [
+            "3/448",
+            "21/704",
+            "9/616",
+            "0",
+            "1/64",
+            "1/704",
+            "3/1408",
+            "0",
+            "1/448",
+            "7/704",
+            "3/616",
+            "0",
+            "1/192",
+            "1/2112",
+            "1/1408",
+            "0"
+          ],
+          "E": "569/29568",
+          "R": "767/29568",
+          "clear_duration": "3/448",
+          "components": [
+            [
+              "17953/59136",
+              "17959/59136"
+            ],
+            [
+              "5987/19712",
+              "5989/19712"
+            ],
+            [
+              "2567/8448",
+              "17975/59136"
+            ],
+            [
+              "17977/59136",
+              "2569/8448"
+            ],
+            [
+              "545/1792",
+              "5997/19712"
+            ],
+            [
+              "17993/59136",
+              "17999/59136"
+            ],
+            [
+              "18001/59136",
+              "1637/5376"
+            ],
+            [
+              "6003/19712",
+              "6005/19712"
+            ],
+            [
+              "18017/59136",
+              "18023/59136"
+            ],
+            [
+              "2575/8448",
+              "18031/59136"
+            ],
+            [
+              "6011/19712",
+              "859/2816"
+            ],
+            [
+              "18041/59136",
+              "18047/59136"
+            ],
+            [
+              "18049/59136",
+              "18055/59136"
+            ],
+            [
+              "6019/19712",
+              "6021/19712"
+            ],
+            [
+              "18065/59136",
+              "18071/59136"
+            ],
+            [
+              "1643/5376",
+              "18079/59136"
+            ],
+            [
+              "861/2816",
+              "6029/19712"
+            ],
+            [
+              "18089/59136",
+              "235/768"
+            ],
+            [
+              "18097/59136",
+              "18103/59136"
+            ],
+            [
+              "6035/19712",
+              "6037/19712"
+            ],
+            [
+              "18113/59136",
+              "18119/59136"
+            ],
+            [
+              "18121/59136",
+              "18127/59136"
+            ],
+            [
+              "6043/19712",
+              "6045/19712"
+            ],
+            [
+              "2591/8448",
+              "18143/59136"
+            ],
+            [
+              "18145/59136",
+              "2593/8448"
+            ],
+            [
+              "6051/19712",
+              "6053/19712"
+            ],
+            [
+              "1651/5376",
+              "18167/59136"
+            ],
+            [
+              "18169/59136",
+              "18175/59136"
+            ],
+            [
+              "6059/19712",
+              "551/1792"
+            ],
+            [
+              "18185/59136",
+              "18191/59136"
+            ],
+            [
+              "2599/8448",
+              "18199/59136"
+            ],
+            [
+              "6067/19712",
+              "867/2816"
+            ],
+            [
+              "18209/59136",
+              "18215/59136"
+            ],
+            [
+              "18217/59136",
+              "18223/59136"
+            ],
+            [
+              "6075/19712",
+              "6077/19712"
+            ],
+            [
+              "18233/59136",
+              "18239/59136"
+            ],
+            [
+              "18241/59136",
+              "18247/59136"
+            ],
+            [
+              "79/256",
+              "6085/19712"
+            ],
+            [
+              "18257/59136",
+              "2609/8448"
+            ],
+            [
+              "18265/59136",
+              "1661/5376"
+            ],
+            [
+              "6091/19712",
+              "6093/19712"
+            ],
+            [
+              "18281/59136",
+              "18287/59136"
+            ],
+            [
+              "18289/59136",
+              "18295/59136"
+            ],
+            [
+              "6099/19712",
+              "6101/19712"
+            ],
+            [
+              "2615/8448",
+              "18311/59136"
+            ],
+            [
+              "18313/59136",
+              "2617/8448"
+            ],
+            [
+              "6107/19712",
+              "6109/19712"
+            ],
+            [
+              "18329/59136",
+              "18335/59136"
+            ],
+            [
+              "1667/5376",
+              "18343/59136"
+            ],
+            [
+              "6115/19712",
+              "6117/19712"
+            ],
+            [
+              "18353/59136",
+              "1669/5376"
+            ],
+            [
+              "2623/8448",
+              "18367/59136"
+            ],
+            [
+              "6123/19712",
+              "875/2816"
+            ],
+            [
+              "18377/59136",
+              "18383/59136"
+            ],
+            [
+              "18385/59136",
+              "18391/59136"
+            ],
+            [
+              "6131/19712",
+              "6133/19712"
+            ],
+            [
+              "18401/59136",
+              "18407/59136"
+            ],
+            [
+              "18409/59136",
+              "18415/59136"
+            ],
+            [
+              "877/2816",
+              "6141/19712"
+            ],
+            [
+              "1675/5376",
+              "2633/8448"
+            ],
+            [
+              "18433/59136",
+              "18439/59136"
+            ],
+            [
+              "6147/19712",
+              "559/1792"
+            ],
+            [
+              "18449/59136",
+              "18455/59136"
+            ],
+            [
+              "18457/59136",
+              "18463/59136"
+            ],
+            [
+              "6155/19712",
+              "6157/19712"
+            ],
+            [
+              "2639/8448",
+              "18479/59136"
+            ]
+          ],
+          "isolated_contacts": []
+        }
+      ],
+      "same_all_moments": true
+    }
+  ],
+  "zero_duration_cases": [
+    {
+      "y": 3,
+      "single_durations": [
+        "1/24",
+        "5/224",
+        "9/352",
+        "1/12"
+      ],
+      "pair_durations": [
+        "0",
+        "1/528",
+        "1/24",
+        "1/352",
+        "1/84",
+        "1/44"
+      ],
+      "triple_durations": [
+        "0",
+        "0",
+        "1/528",
+        "0"
+      ],
+      "quadruple_duration": "0",
+      "blocker_pair_gcds": [
+        1,
+        1,
+        3,
+        1,
+        1,
+        1
+      ],
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "9/352",
+        "1/528",
+        "1/352",
+        "0",
+        "1/12",
+        "1/24",
+        "1/84",
+        "0",
+        "1/44",
+        "1/528",
+        "0",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "0",
+        "1/132",
+        "0",
+        "0",
+        "0",
+        "1/352",
+        "0",
+        "1/112",
+        "7/176",
+        "1/84",
+        "0",
+        "1/48",
+        "1/528",
+        "0",
+        "0"
+      ],
+      "E": "195/2464",
+      "R": "195/2464",
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "isolated_contacts": [
+        {
+          "time": "3/8",
+          "controllers": [
+            {
+              "speed": 5,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            },
+            {
+              "speed": 11,
+              "phase": "1/8",
+              "direction": "enters safety"
+            },
+            {
+              "speed": 3,
+              "phase": "1/8",
+              "direction": "enters safety"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "y": 10,
+      "single_durations": [
+        "1/24",
+        "5/224",
+        "9/352",
+        "1/40"
+      ],
+      "pair_durations": [
+        "0",
+        "1/528",
+        "0",
+        "1/352",
+        "9/560",
+        "0"
+      ],
+      "triple_durations": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "quadruple_duration": "0",
+      "blocker_pair_gcds": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "9/352",
+        "1/528",
+        "1/352",
+        "0",
+        "1/40",
+        "0",
+        "9/560",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "7/176",
+        "3/880",
+        "0",
+        "1/48",
+        "1/528",
+        "1/352",
+        "0",
+        "1/112",
+        "0",
+        "9/560",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "E": "769/36960",
+      "R": "769/36960",
+      "clear_duration": "0",
+      "components": [
+        [
+          "5/16",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "isolated_contacts": [
+        {
+          "time": "5/16",
+          "controllers": [
+            {
+              "speed": 6,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            },
+            {
+              "speed": 10,
+              "phase": "1/8",
+              "direction": "enters safety"
+            }
+          ]
+        },
+        {
+          "time": "3/8",
+          "controllers": [
+            {
+              "speed": 5,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            },
+            {
+              "speed": 11,
+              "phase": "1/8",
+              "direction": "enters safety"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "y": 13,
+      "single_durations": [
+        "1/24",
+        "5/224",
+        "9/352",
+        "1/52"
+      ],
+      "pair_durations": [
+        "0",
+        "1/528",
+        "1/208",
+        "1/352",
+        "1/182",
+        "0"
+      ],
+      "triple_durations": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "quadruple_duration": "0",
+      "blocker_pair_gcds": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "9/352",
+        "1/528",
+        "1/352",
+        "0",
+        "1/52",
+        "1/208",
+        "1/182",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "5/143",
+        "2/143",
+        "0",
+        "1/48",
+        "1/528",
+        "1/352",
+        "0",
+        "1/112",
+        "1/208",
+        "1/182",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "E": "1445/96096",
+      "R": "1445/96096",
+      "clear_duration": "0",
+      "components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "isolated_contacts": [
+        {
+          "time": "3/8",
+          "controllers": [
+            {
+              "speed": 5,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            },
+            {
+              "speed": 11,
+              "phase": "1/8",
+              "direction": "enters safety"
+            },
+            {
+              "speed": 13,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "y": 26,
+      "single_durations": [
+        "1/24",
+        "5/224",
+        "9/352",
+        "1/52"
+      ],
+      "pair_durations": [
+        "0",
+        "1/528",
+        "1/104",
+        "1/352",
+        "1/1456",
+        "0"
+      ],
+      "triple_durations": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "quadruple_duration": "0",
+      "blocker_pair_gcds": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "moments_by_mask": [
+        "3/32",
+        "1/24",
+        "5/224",
+        "0",
+        "9/352",
+        "1/528",
+        "1/352",
+        "0",
+        "1/52",
+        "1/104",
+        "1/1456",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "state_durations_by_mask": [
+        "0",
+        "69/2288",
+        "43/2288",
+        "0",
+        "1/48",
+        "1/528",
+        "1/352",
+        "0",
+        "1/112",
+        "1/104",
+        "1/1456",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "E": "1445/96096",
+      "R": "1445/96096",
+      "clear_duration": "0",
+      "components": [
+        [
+          "5/16",
+          "5/16"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "isolated_contacts": [
+        {
+          "time": "5/16",
+          "controllers": [
+            {
+              "speed": 6,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            },
+            {
+              "speed": 26,
+              "phase": "1/8",
+              "direction": "enters safety"
+            }
+          ]
+        },
+        {
+          "time": "3/8",
+          "controllers": [
+            {
+              "speed": 5,
+              "phase": "7/8",
+              "direction": "leaves safety"
+            },
+            {
+              "speed": 11,
+              "phase": "1/8",
+              "direction": "enters safety"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "small_check_count": 22,
+  "limits": "Pair durations are local to J. Gcd matches refer to pairs among the four extra blockers, not every core pair or reduced ratios. All matched configurations have positive local duration. No matching empty/contact or positive/zero-duration pair is claimed. All-reference and general-conjecture questions remain separate."
+}

@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "cli_cases": 18,
+    "coefficient_cases": 480,
+    "coefficient_groups": {
+      "baseline": 216,
+      "large": 48,
+      "period_shift": 216
+    },
+    "decisions": {
+      "ACCEPTED": 84,
+      "REJECTED": 396
+    },
+    "invalid_api_cases": 15,
+    "physical_cases": 62,
+    "rejection_branches": {
+      "BOUNDED_DIRECTION": 200,
+      "FALLBACK_COLLISION": 56,
+      "LARGE_SLOPE": 36,
+      "LEADER_START_COLLISION": 54,
+      "OUTWARD_BOUNDARY": 50
+    },
+    "unittest_methods": 5
+  },
+  "independent_field_comparisons": 27401,
+  "input_hashes_verified": 8,
+  "reproduce_script_sha256": "ce746c86cccb46f2a12a56367c39aa1fb71071dae95bfd0680ac67be61fbebc0",
+  "reproduced_byte_for_byte": {
+    "audit.json": "dc7037fb06b6f28082ac58ca60284742bb249f2f753231f9da9e65baec400714",
+    "validation.json": "c5518ae7268438e95a27e740452319f4f2e8487ff22e5005b623f397c6d0f15f"
+  },
+  "runtime_sha256": "ad42e998e49d9fc82f6dc002737c4e8105dab23d09041a4ce6f47340e9ffcde6",
+  "scope": "Frozen checker validation only; no added coefficient/physical trial or old-suite claim.",
+  "status": "PASS"
+}

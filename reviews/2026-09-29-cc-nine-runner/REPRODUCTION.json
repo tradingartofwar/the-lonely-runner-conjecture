@@ -1,0 +1,33 @@
+{
+  "input_hashes_verified": 7,
+  "reproduce_script_sha256": "f22a7dcc1409b35cbfdcd6fd7c1431e594bc4973ac1afadeb08b8e248e30974a",
+  "reproduced_byte_for_byte": {
+    "geometry_review.json": "6b1b1fdae056889546f0e1ff82268e36a2506854715bd1cdbe2799edb627c944",
+    "physical_review.json": "3d66482a489dfcd37328922f9465b9b7398db6e681c0221ef72476502442f33d",
+    "regression.json": "fc3d93221ecb9d4efb0e2372096d93706602a47e2ac6fd0e9ce574a1ae829c3e",
+    "stage8.json": "4b26d4e25f45f8f02ad2f9f745bb811d03754381576d1aa200b44c0fee13e692",
+    "summary.json": "41d5c11c9ef244f12ff914844fa254ee45278fa516f991aac4dbf812598884da"
+  },
+  "scope": "Frozen Stage A and reached paths only; no new coefficients or parameter scans.",
+  "status": "PASS",
+  "summary": {
+    "protocol_sha256": "6ac956e7fd36524c6168dd626548619b5cc07afd28f4ce951de6f4283db9940f",
+    "stage8": {
+      "counts": {
+        "candidates": 36,
+        "chosen": 3,
+        "contacts": 612,
+        "descending": 22,
+        "rectangle_pairs": 49,
+        "residual_pairs": 17
+      },
+      "diagnostic_status": "NOT_TRIGGERED",
+      "primary_status": "PRIMARY_COMPLETE",
+      "status": "COMPLETE_COVER_CERTIFICATE"
+    },
+    "stage9": {
+      "reason": "Stage A primary guarantee already implies 1/9 safety.",
+      "status": "NOT_TRIGGERED"
+    }
+  }
+}

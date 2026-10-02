@@ -1,0 +1,6422 @@
+{
+  "cases": {
+    "fibonacci:1,2,4:1": {
+      "C_0": "340841/95863680",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "event_count": 18,
+      "id": "fibonacci:1,2,4:1",
+      "moments": [
+        "3/136",
+        "1/84",
+        "111/14960",
+        "1/770",
+        "63/12104",
+        "1/356",
+        "371/266288",
+        "0",
+        "37/6528",
+        "1/384",
+        "211/107712",
+        "0",
+        "947/580992",
+        "0",
+        "371/266288",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "3001/1879680"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "137/63360"
+        },
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_speed_tests": 6,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              144
+            ],
+            "interval": [
+              "3/88",
+              "25/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "271/7832"
+          },
+          "potential_slack": "22799/23965920"
+        },
+        {
+          "base_event_points_tested": 3,
+          "base_open_cells_tested": 4,
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_speed_tests": 14,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              89
+            ],
+            "interval": [
+              "3/88",
+              "25/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "271/7832"
+          },
+          "potential_slack": "71561/95863680"
+        },
+        {
+          "base_event_points_tested": 2,
+          "base_open_cells_tested": 3,
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_speed_tests": 10,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              55
+            ],
+            "interval": [
+              "3/88",
+              "25/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "271/7832"
+          },
+          "potential_slack": "1514399/671045760"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "23/440",
+              "3/56"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "31/712",
+              "33/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3001/1879680"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "1/24",
+              "49/1152"
+            ],
+            [
+              "55/1152",
+              "19/384"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "137/63360"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "3/88",
+              "25/712"
+            ],
+            [
+              "39/712",
+              "15/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "22799/23965920"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "3/88",
+              "41/1152"
+            ],
+            [
+              "7/128",
+              "15/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "71561/95863680"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "13/384",
+              "25/712"
+            ],
+            [
+              "39/712",
+              "15/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1514399/671045760"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "61/31680",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            21,
+            55
+          ],
+          "selected_complement": [
+            89,
+            144
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "61/31680"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": null,
+          "containment_holds": false,
+          "failure_classification": "ranking_failure",
+          "first_violation": {
+            "blocking_complement_speeds": [
+              55
+            ],
+            "interval": [
+              "3/88",
+              "25/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "271/7832"
+          },
+          "oracle_classification": "ranking_failure_other_eligible_pair_certifies",
+          "outcome": "failed_no_retune",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            89,
+            144
+          ],
+          "selected_complement": [
+            21,
+            55
+          ],
+          "selected_positive_component_count": 2,
+          "selected_potential_slack": "1514399/671045760"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "9/272",
+        "15/272"
+      ]
+    },
+    "fibonacci:1,2,4:11": {
+      "C_0": "1012763/335522880",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "event_count": 18,
+      "id": "fibonacci:1,2,4:11",
+      "moments": [
+        "3/136",
+        "1/84",
+        "103/14960",
+        "1/462",
+        "63/12104",
+        "1/356",
+        "1143/1331440",
+        "0",
+        "103/19584",
+        "1/576",
+        "767/538560",
+        "0",
+        "2129/1742976",
+        "0",
+        "1143/1331440",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "479/221760"
+        },
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_speed_tests": 6,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              144
+            ],
+            "kind": "included_point",
+            "time": "89/272"
+          },
+          "potential_slack": "215129/167761440"
+        },
+        {
+          "base_event_points_tested": 3,
+          "base_open_cells_tested": 4,
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_speed_tests": 14,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              89
+            ],
+            "kind": "included_point",
+            "time": "89/272"
+          },
+          "potential_slack": "70283/335522880"
+        },
+        {
+          "base_event_points_tested": 2,
+          "base_open_cells_tested": 3,
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_speed_tests": 10,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              55
+            ],
+            "kind": "included_point",
+            "time": "89/272"
+          },
+          "potential_slack": "286523/335522880"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "55/168",
+              "29/88"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "239/712",
+              "241/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "383/1152",
+              "385/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "479/221760"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "89/272",
+              "233/712"
+            ],
+            [
+              "247/712",
+              "153/440"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "215129/167761440"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "89/272",
+              "377/1152"
+            ],
+            [
+              "133/384",
+              "153/440"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "70283/335522880"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "89/272",
+              "233/712"
+            ],
+            [
+              "247/712",
+              "401/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "286523/335522880"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "797/443520",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            21,
+            55
+          ],
+          "selected_complement": [
+            89,
+            144
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "797/443520"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "479/221760",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            21,
+            144
+          ],
+          "selected_complement": [
+            55,
+            89
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "479/221760"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "89/272",
+        "95/272"
+      ]
+    },
+    "fibonacci:1,2,4:14": {
+      "C_0": "6731/1644720",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 18,
+      "id": "fibonacci:1,2,4:14",
+      "moments": [
+        "3/136",
+        "1/84",
+        "7/880",
+        "1/2310",
+        "63/12104",
+        "1/356",
+        "151/78320",
+        "0",
+        "7/1152",
+        "1/288",
+        "79/31680",
+        "0",
+        "209/102528",
+        "0",
+        "151/78320",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "191/440",
+              "73/168"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "911/443520"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "303/712",
+              "305/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "6311/3947328"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "487/1152",
+              "163/384"
+            ],
+            [
+              "55/128",
+              "497/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/462"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "183/440",
+              "297/712"
+            ],
+            [
+              "311/712",
+              "7/16"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "6121/9868320"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "183/440",
+              "481/1152"
+            ],
+            [
+              "503/1152",
+              "7/16"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2111/1644720"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "479/1152",
+              "297/712"
+            ],
+            [
+              "311/712",
+              "7/16"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "6019/1644720"
+        }
+      ],
+      "pair_only_minimum": "527/443520",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "527/443520",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "527/443520",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "113/272",
+        "7/16"
+      ]
+    },
+    "fibonacci:1,2,4:19": {
+      "C_0": "6731/1644720",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 18,
+      "id": "fibonacci:1,2,4:19",
+      "moments": [
+        "3/136",
+        "1/84",
+        "7/880",
+        "1/2310",
+        "63/12104",
+        "1/356",
+        "151/78320",
+        "0",
+        "7/1152",
+        "1/288",
+        "79/31680",
+        "0",
+        "209/102528",
+        "0",
+        "151/78320",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "95/168",
+              "249/440"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "911/443520"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "407/712",
+              "409/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "6311/3947328"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "655/1152",
+              "73/128"
+            ],
+            [
+              "221/384",
+              "665/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/462"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "9/16",
+              "401/712"
+            ],
+            [
+              "415/712",
+              "257/440"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "6121/9868320"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "9/16",
+              "649/1152"
+            ],
+            [
+              "671/1152",
+              "257/440"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2111/1644720"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "9/16",
+              "401/712"
+            ],
+            [
+              "415/712",
+              "673/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "6019/1644720"
+        }
+      ],
+      "pair_only_minimum": "527/443520",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "527/443520",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "527/443520",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "9/16",
+        "159/272"
+      ]
+    },
+    "fibonacci:1,2,4:22": {
+      "C_0": "1012763/335522880",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "event_count": 18,
+      "id": "fibonacci:1,2,4:22",
+      "moments": [
+        "3/136",
+        "1/84",
+        "103/14960",
+        "1/462",
+        "63/12104",
+        "1/356",
+        "1143/1331440",
+        "0",
+        "103/19584",
+        "1/576",
+        "767/538560",
+        "0",
+        "2129/1742976",
+        "0",
+        "1143/1331440",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "479/221760"
+        },
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_speed_tests": 6,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              144
+            ],
+            "interval": [
+              "287/440",
+              "465/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "25559/39160"
+          },
+          "potential_slack": "215129/167761440"
+        },
+        {
+          "base_event_points_tested": 3,
+          "base_open_cells_tested": 4,
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_speed_tests": 14,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              89
+            ],
+            "interval": [
+              "287/440",
+              "465/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "25559/39160"
+          },
+          "potential_slack": "70283/335522880"
+        },
+        {
+          "base_event_points_tested": 2,
+          "base_open_cells_tested": 3,
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_speed_tests": 10,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              55
+            ],
+            "interval": [
+              "287/440",
+              "465/712"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "25559/39160"
+          },
+          "potential_slack": "286523/335522880"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "59/88",
+              "113/168"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "797/443520"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "471/712",
+              "473/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "15733/9868320"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "767/1152",
+              "769/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "479/221760"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "287/440",
+              "465/712"
+            ],
+            [
+              "479/712",
+              "183/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "215129/167761440"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "287/440",
+              "251/384"
+            ],
+            [
+              "775/1152",
+              "183/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "70283/335522880"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "751/1152",
+              "465/712"
+            ],
+            [
+              "479/712",
+              "183/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "286523/335522880"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "797/443520",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            21,
+            55
+          ],
+          "selected_complement": [
+            89,
+            144
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "797/443520"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "479/221760",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            21,
+            144
+          ],
+          "selected_complement": [
+            55,
+            89
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "479/221760"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "177/272",
+        "183/272"
+      ]
+    },
+    "fibonacci:1,2,4:27": {
+      "C_0": "57703/13980120",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 16,
+      "id": "fibonacci:1,2,4:27",
+      "moments": [
+        "3/136",
+        "1/84",
+        "63/7480",
+        "0",
+        "63/12104",
+        "1/356",
+        "29/12104",
+        "0",
+        "7/1088",
+        "1/288",
+        "29/9792",
+        "0",
+        "29/12104",
+        "0",
+        "29/12104",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 15,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2/1155"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "575/712",
+              "577/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "23011/19736640"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "103/128",
+              "929/1152"
+            ],
+            [
+              "935/1152",
+              "937/1152"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2/1155"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "217/272",
+              "569/712"
+            ],
+            [
+              "583/712",
+              "223/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "109931/167761440"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "217/272",
+              "307/384"
+            ],
+            [
+              "943/1152",
+              "223/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "18433/13980120"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "217/272",
+              "569/712"
+            ],
+            [
+              "583/712",
+              "223/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "57703/13980120"
+        }
+      ],
+      "pair_only_minimum": "2/1155",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "2/1155",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "2/1155",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "217/272",
+        "223/272"
+      ]
+    },
+    "fibonacci:1,2,4:32": {
+      "C_0": "340841/95863680",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "event_count": 18,
+      "id": "fibonacci:1,2,4:32",
+      "moments": [
+        "3/136",
+        "1/84",
+        "111/14960",
+        "1/770",
+        "63/12104",
+        "1/356",
+        "371/266288",
+        "0",
+        "37/6528",
+        "1/384",
+        "211/107712",
+        "0",
+        "947/580992",
+        "0",
+        "371/266288",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "3001/1879680"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "137/63360"
+        },
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_speed_tests": 6,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              144
+            ],
+            "kind": "included_point",
+            "time": "257/272"
+          },
+          "potential_slack": "22799/23965920"
+        },
+        {
+          "base_event_points_tested": 3,
+          "base_open_cells_tested": 4,
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_speed_tests": 14,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              89
+            ],
+            "kind": "included_point",
+            "time": "257/272"
+          },
+          "potential_slack": "71561/95863680"
+        },
+        {
+          "base_event_points_tested": 2,
+          "base_open_cells_tested": 3,
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_speed_tests": 10,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              55
+            ],
+            "kind": "included_point",
+            "time": "257/272"
+          },
+          "potential_slack": "1514399/671045760"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "53/56",
+              "417/440"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "61/31680"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "679/712",
+              "681/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3001/1879680"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "365/384",
+              "1097/1152"
+            ],
+            [
+              "1103/1152",
+              "23/24"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "137/63360"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "257/272",
+              "673/712"
+            ],
+            [
+              "687/712",
+              "85/88"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "22799/23965920"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "257/272",
+              "121/128"
+            ],
+            [
+              "1111/1152",
+              "85/88"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "71561/95863680"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "257/272",
+              "673/712"
+            ],
+            [
+              "687/712",
+              "371/384"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1514399/671045760"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "61/31680",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            21,
+            55
+          ],
+          "selected_complement": [
+            89,
+            144
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "61/31680"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": null,
+          "containment_holds": false,
+          "failure_classification": "ranking_failure",
+          "first_violation": {
+            "blocking_complement_speeds": [
+              55
+            ],
+            "kind": "included_point",
+            "time": "257/272"
+          },
+          "oracle_classification": "ranking_failure_other_eligible_pair_certifies",
+          "outcome": "failed_no_retune",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            89,
+            144
+          ],
+          "selected_complement": [
+            21,
+            55
+          ],
+          "selected_positive_component_count": 2,
+          "selected_potential_slack": "1514399/671045760"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "257/272",
+        "263/272"
+      ]
+    },
+    "fibonacci:1,2,4:6": {
+      "C_0": "57703/13980120",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "fibonacci",
+      "diagnostic_positive_slack_pairs": [
+        [
+          21,
+          55
+        ],
+        [
+          21,
+          89
+        ],
+        [
+          21,
+          144
+        ],
+        [
+          55,
+          89
+        ],
+        [
+          55,
+          144
+        ],
+        [
+          89,
+          144
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 16,
+      "id": "fibonacci:1,2,4:6",
+      "moments": [
+        "3/136",
+        "1/84",
+        "63/7480",
+        "0",
+        "63/12104",
+        "1/356",
+        "29/12104",
+        "0",
+        "7/1088",
+        "1/288",
+        "29/9792",
+        "0",
+        "29/12104",
+        "0",
+        "29/12104",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 15,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            21,
+            55
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            89,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2/1155"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            21,
+            89
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            55,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "135/712",
+              "137/712"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "23011/19736640"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            21,
+            144
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            55,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "215/1152",
+              "217/1152"
+            ],
+            [
+              "223/1152",
+              "25/128"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2/1155"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            55,
+            89
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            21,
+            144
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "49/272",
+              "129/712"
+            ],
+            [
+              "143/712",
+              "55/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "109931/167761440"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            55,
+            144
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            21,
+            89
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "49/272",
+              "209/1152"
+            ],
+            [
+              "77/384",
+              "55/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "18433/13980120"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            89,
+            144
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            21,
+            55
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "49/272",
+              "129/712"
+            ],
+            [
+              "143/712",
+              "55/272"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "57703/13980120"
+        }
+      ],
+      "pair_only_minimum": "2/1155",
+      "physical_zero_triples": [
+        [
+          21,
+          55,
+          89
+        ],
+        [
+          21,
+          55,
+          144
+        ],
+        [
+          21,
+          89,
+          144
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "2/1155",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "2/1155",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        21,
+        55,
+        89,
+        144
+      ],
+      "window": [
+        "49/272",
+        "55/272"
+      ]
+    },
+    "perturbed_chain:1,2,4:1": {
+      "C_0": "3499/556320",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "perturbed_chain",
+      "diagnostic_positive_slack_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          15,
+          61
+        ],
+        [
+          15,
+          100
+        ],
+        [
+          38,
+          61
+        ],
+        [
+          38,
+          100
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 18,
+      "id": "perturbed_chain:1,2,4:1",
+      "moments": [
+        "3/92",
+        "1/60",
+        "87/6992",
+        "0",
+        "45/5612",
+        "1/244",
+        "1489/426512",
+        "0",
+        "181/18400",
+        "1/200",
+        "67/15200",
+        "0",
+        "819/224480",
+        "0",
+        "597/185440",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            61,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "277/104880"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            15,
+            61
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            38,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "31/488",
+              "33/488"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2617/1390800"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            15,
+            100
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            38,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "47/800",
+              "49/800"
+            ],
+            [
+              "11/160",
+              "57/800"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "587/209760"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            38,
+            61
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            15,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "15/304",
+              "25/488"
+            ],
+            [
+              "39/488",
+              "15/184"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3587/2781600"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            38,
+            100
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            15,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "15/304",
+              "41/800"
+            ],
+            [
+              "63/800",
+              "13/160"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1219/556320"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            15,
+            38
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "9/184",
+              "25/488"
+            ],
+            [
+              "39/488",
+              "13/160"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3499/556320"
+        }
+      ],
+      "pair_only_minimum": "277/104880",
+      "physical_zero_triples": [
+        [
+          15,
+          38,
+          61
+        ],
+        [
+          15,
+          38,
+          100
+        ],
+        [
+          15,
+          61,
+          100
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "277/104880",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "277/104880",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        15,
+        38,
+        61,
+        100
+      ],
+      "window": [
+        "9/184",
+        "15/184"
+      ]
+    },
+    "perturbed_chain:1,2,4:19": {
+      "C_0": "6121/2781600",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "perturbed_chain",
+      "diagnostic_positive_slack_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "event_count": 18,
+      "id": "perturbed_chain:1,2,4:19",
+      "moments": [
+        "3/92",
+        "1/60",
+        "79/6992",
+        "1/912",
+        "45/5612",
+        "1/244",
+        "1001/426512",
+        "0",
+        "173/18400",
+        "1/400",
+        "43/15200",
+        "0",
+        "473/224480",
+        "1/48800",
+        "119/231800",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "49/524400"
+        },
+        {
+          "base_event_points_tested": 2,
+          "base_open_cells_tested": 4,
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement_speed_tests": 12,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              38
+            ],
+            "interval": [
+              "631/800",
+              "385/488"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "76991/97600"
+          },
+          "potential_slack": "3071/2781600"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          15,
+          38
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            61,
+            100
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "19/24",
+              "241/304"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "49/524400"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            15,
+            61
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            38,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "391/488",
+              "393/488"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-23/36600"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            15,
+            100
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            38,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "639/800",
+              "641/800"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-493/3367200"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            38,
+            61
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            15,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "145/184",
+              "385/488"
+            ],
+            [
+              "399/488",
+              "249/304"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-833/2781600"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            38,
+            100
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            15,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "631/800",
+              "633/800"
+            ],
+            [
+              "131/160",
+              "249/304"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-5279/2781600"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            15,
+            38
+          ],
+          "eligible": true,
+          "positive_component_count": 3,
+          "positive_components": [
+            [
+              "631/800",
+              "385/488"
+            ],
+            [
+              "391/488",
+              "641/800"
+            ],
+            [
+              "131/160",
+              "151/184"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3071/2781600"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          15,
+          38,
+          61
+        ],
+        [
+          15,
+          38,
+          100
+        ]
+      ],
+      "reflection_partner": true,
+      "role": "development",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "49/524400",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            15,
+            38
+          ],
+          "selected_complement": [
+            61,
+            100
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "49/524400"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": null,
+          "containment_holds": false,
+          "failure_classification": "ranking_failure",
+          "first_violation": {
+            "blocking_complement_speeds": [
+              38
+            ],
+            "interval": [
+              "631/800",
+              "385/488"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "76991/97600"
+          },
+          "oracle_classification": "ranking_failure_other_eligible_pair_certifies",
+          "outcome": "failed_no_retune",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            61,
+            100
+          ],
+          "selected_complement": [
+            15,
+            38
+          ],
+          "selected_positive_component_count": 3,
+          "selected_potential_slack": "3071/2781600"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        15,
+        38,
+        61,
+        100
+      ],
+      "window": [
+        "145/184",
+        "151/184"
+      ]
+    },
+    "perturbed_chain:1,2,4:22": {
+      "C_0": "3499/556320",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "perturbed_chain",
+      "diagnostic_positive_slack_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          15,
+          61
+        ],
+        [
+          15,
+          100
+        ],
+        [
+          38,
+          61
+        ],
+        [
+          38,
+          100
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 18,
+      "id": "perturbed_chain:1,2,4:22",
+      "moments": [
+        "3/92",
+        "1/60",
+        "87/6992",
+        "0",
+        "45/5612",
+        "1/244",
+        "1489/426512",
+        "0",
+        "181/18400",
+        "1/200",
+        "67/15200",
+        "0",
+        "819/224480",
+        "0",
+        "597/185440",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            61,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "277/104880"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            15,
+            61
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            38,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "455/488",
+              "457/488"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "2617/1390800"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            15,
+            100
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            38,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "743/800",
+              "149/160"
+            ],
+            [
+              "751/800",
+              "753/800"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "587/209760"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            38,
+            61
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            15,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "169/184",
+              "449/488"
+            ],
+            [
+              "463/488",
+              "289/304"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3587/2781600"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            38,
+            100
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            15,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "147/160",
+              "737/800"
+            ],
+            [
+              "759/800",
+              "289/304"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1219/556320"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            15,
+            38
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "147/160",
+              "449/488"
+            ],
+            [
+              "463/488",
+              "175/184"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3499/556320"
+        }
+      ],
+      "pair_only_minimum": "277/104880",
+      "physical_zero_triples": [
+        [
+          15,
+          38,
+          61
+        ],
+        [
+          15,
+          38,
+          100
+        ],
+        [
+          15,
+          61,
+          100
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "277/104880",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "277/104880",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        15,
+        38,
+        61,
+        100
+      ],
+      "window": [
+        "169/184",
+        "175/184"
+      ]
+    },
+    "perturbed_chain:1,2,4:4": {
+      "C_0": "6121/2781600",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "perturbed_chain",
+      "diagnostic_positive_slack_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          15,
+          38
+        ],
+        [
+          61,
+          100
+        ]
+      ],
+      "event_count": 18,
+      "id": "perturbed_chain:1,2,4:4",
+      "moments": [
+        "3/92",
+        "1/60",
+        "79/6992",
+        "1/912",
+        "45/5612",
+        "1/244",
+        "1001/426512",
+        "0",
+        "173/18400",
+        "1/400",
+        "43/15200",
+        "0",
+        "473/224480",
+        "1/48800",
+        "119/231800",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 17,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "49/524400"
+        },
+        {
+          "base_event_points_tested": 2,
+          "base_open_cells_tested": 4,
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement_speed_tests": 12,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              38
+            ],
+            "interval": [
+              "55/304",
+              "29/160"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "1101/6080"
+          },
+          "potential_slack": "3071/2781600"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          15,
+          38
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            15,
+            38
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            61,
+            100
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "63/304",
+              "5/24"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "49/524400"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            15,
+            61
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            38,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "95/488",
+              "97/488"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-23/36600"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            15,
+            100
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            38,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "159/800",
+              "161/800"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-493/3367200"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            38,
+            61
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            15,
+            100
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "55/304",
+              "89/488"
+            ],
+            [
+              "103/488",
+              "39/184"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-833/2781600"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            38,
+            100
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            15,
+            61
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "55/304",
+              "29/160"
+            ],
+            [
+              "167/800",
+              "169/800"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-5279/2781600"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            61,
+            100
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            15,
+            38
+          ],
+          "eligible": true,
+          "positive_component_count": 3,
+          "positive_components": [
+            [
+              "33/184",
+              "29/160"
+            ],
+            [
+              "159/800",
+              "97/488"
+            ],
+            [
+              "103/488",
+              "169/800"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "3071/2781600"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          15,
+          38,
+          61
+        ],
+        [
+          15,
+          38,
+          100
+        ]
+      ],
+      "reflection_partner": true,
+      "role": "development",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "49/524400",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            15,
+            38
+          ],
+          "selected_complement": [
+            61,
+            100
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "49/524400"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": null,
+          "containment_holds": false,
+          "failure_classification": "ranking_failure",
+          "first_violation": {
+            "blocking_complement_speeds": [
+              38
+            ],
+            "interval": [
+              "55/304",
+              "29/160"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "1101/6080"
+          },
+          "oracle_classification": "ranking_failure_other_eligible_pair_certifies",
+          "outcome": "failed_no_retune",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            61,
+            100
+          ],
+          "selected_complement": [
+            15,
+            38
+          ],
+          "selected_positive_component_count": 3,
+          "selected_potential_slack": "3071/2781600"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        15,
+        38,
+        61,
+        100
+      ],
+      "window": [
+        "33/184",
+        "39/184"
+      ]
+    },
+    "prime_powers:2,3,4:19": {
+      "C_0": "1353/627200",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "prime_powers",
+      "diagnostic_positive_slack_pairs": [
+        [
+          16,
+          64
+        ],
+        [
+          16,
+          81
+        ],
+        [
+          16,
+          125
+        ],
+        [
+          64,
+          81
+        ],
+        [
+          64,
+          125
+        ],
+        [
+          81,
+          125
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 9,
+      "id": "prime_powers:2,3,4:19",
+      "moments": [
+        "1/98",
+        "1/128",
+        "1/512",
+        "1/512",
+        "1/324",
+        "17/10368",
+        "0",
+        "0",
+        "1/250",
+        "1/500",
+        "1/512",
+        "1/512",
+        "17/13500",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 8,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            16,
+            64
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            81,
+            125
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "3/8",
+              "193/512"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "76031/84672000"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            16,
+            81
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            64,
+            125
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "247/648",
+              "49/128"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/4900"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            16,
+            125
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            64,
+            81
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "3/8",
+              "377/1000"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1353/627200"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            64,
+            81
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            16,
+            125
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "493/3136000"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            64,
+            125
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            16,
+            81
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "3/8",
+              "193/512"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "26293/50803200"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            81,
+            125
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            16,
+            64
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "383/1000",
+              "83/216"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/4900"
+        }
+      ],
+      "pair_only_minimum": "493/3136000",
+      "physical_zero_triples": [
+        [
+          16,
+          64,
+          81
+        ],
+        [
+          16,
+          81,
+          125
+        ],
+        [
+          64,
+          81,
+          125
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "493/3136000",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "493/3136000",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        16,
+        64,
+        81,
+        125
+      ],
+      "window": [
+        "3/8",
+        "151/392"
+      ]
+    },
+    "prime_powers:2,3,4:33": {
+      "C_0": "1353/627200",
+      "atoms_match_archive": true,
+      "branch": "pair_only_exit",
+      "case_id": "prime_powers",
+      "diagnostic_positive_slack_pairs": [
+        [
+          16,
+          64
+        ],
+        [
+          16,
+          81
+        ],
+        [
+          16,
+          125
+        ],
+        [
+          64,
+          81
+        ],
+        [
+          64,
+          125
+        ],
+        [
+          81,
+          125
+        ]
+      ],
+      "eligible_base_pairs": [],
+      "event_count": 9,
+      "id": "prime_powers:2,3,4:33",
+      "moments": [
+        "1/98",
+        "1/128",
+        "1/512",
+        "1/512",
+        "1/324",
+        "17/10368",
+        "0",
+        "0",
+        "1/250",
+        "1/500",
+        "1/512",
+        "1/512",
+        "17/13500",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 8,
+      "oracle": [],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            16,
+            64
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            81,
+            125
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "319/512",
+              "5/8"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "76031/84672000"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            16,
+            81
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            64,
+            125
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "79/128",
+              "401/648"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/4900"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            16,
+            125
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            64,
+            81
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "623/1000",
+              "5/8"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1353/627200"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            64,
+            81
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            16,
+            125
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "493/3136000"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            64,
+            125
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            16,
+            81
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "319/512",
+              "5/8"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "26293/50803200"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            81,
+            125
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            16,
+            64
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "133/216",
+              "617/1000"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/4900"
+        }
+      ],
+      "pair_only_minimum": "493/3136000",
+      "physical_zero_triples": [
+        [
+          16,
+          64,
+          81
+        ],
+        [
+          16,
+          81,
+          125
+        ],
+        [
+          64,
+          81,
+          125
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "493/3136000",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "493/3136000",
+          "containment_holds": null,
+          "outcome": "pair_only_positive_exit",
+          "query_issued": false,
+          "second_query_issued": false,
+          "selected_base_pair": null
+        }
+      },
+      "selected_logical_query_count": 0,
+      "selected_unique_physical_query_count": 0,
+      "speeds": [
+        16,
+        64,
+        81,
+        125
+      ],
+      "window": [
+        "241/392",
+        "5/8"
+      ]
+    },
+    "squares:1,2,5:12": {
+      "C_0": "115/99372",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "squares",
+      "diagnostic_positive_slack_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ],
+        [
+          49,
+          169
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ],
+        [
+          49,
+          169
+        ]
+      ],
+      "event_count": 12,
+      "id": "squares:1,2,5:12",
+      "moments": [
+        "1/108",
+        "4/675",
+        "1/196",
+        "17/4900",
+        "31/13068",
+        "1/3267",
+        "25/23716",
+        "0",
+        "1/338",
+        "1/676",
+        "11/16562",
+        "1/2548",
+        "105/81796",
+        "0",
+        "9/33124",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 11,
+      "oracle": [
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement_speed_tests": 6,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              49
+            ],
+            "interval": [
+              "79/392",
+              "21/104"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "257/1274"
+          },
+          "potential_slack": "310/3006003"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            49,
+            169
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              25
+            ],
+            "interval": [
+              "79/392",
+              "21/104"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "257/1274"
+          },
+          "potential_slack": "92111/108216108"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          25,
+          121
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            25,
+            49
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            121,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "79/392",
+              "41/200"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-380/3006003"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            49,
+            169
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "43/216",
+              "193/968"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            49,
+            121
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "271/1352",
+              "21/104"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "310/3006003"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            49,
+            121
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            25,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "199/968",
+              "81/392"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-8/24843"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            49,
+            169
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            25,
+            121
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "79/392",
+              "21/104"
+            ],
+            [
+              "279/1352",
+              "81/392"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "92111/108216108"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            121,
+            169
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            25,
+            49
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "279/1352",
+              "201/968"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-1436/621075"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          25,
+          49,
+          121
+        ],
+        [
+          25,
+          121,
+          169
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "1/2028",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            25,
+            121
+          ],
+          "selected_complement": [
+            49,
+            169
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "1/2028"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": null,
+          "containment_holds": false,
+          "failure_classification": "ranking_failure",
+          "first_violation": {
+            "blocking_complement_speeds": [
+              25
+            ],
+            "interval": [
+              "79/392",
+              "21/104"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "257/1274"
+          },
+          "oracle_classification": "ranking_failure_other_eligible_pair_certifies",
+          "outcome": "failed_no_retune",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            49,
+            169
+          ],
+          "selected_complement": [
+            25,
+            121
+          ],
+          "selected_positive_component_count": 2,
+          "selected_potential_slack": "92111/108216108"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "window": [
+        "43/216",
+        "5/24"
+      ]
+    },
+    "squares:1,2,5:39": {
+      "C_0": "115/99372",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "squares",
+      "diagnostic_positive_slack_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ],
+        [
+          49,
+          169
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          25,
+          121
+        ],
+        [
+          25,
+          169
+        ],
+        [
+          49,
+          169
+        ]
+      ],
+      "event_count": 12,
+      "id": "squares:1,2,5:39",
+      "moments": [
+        "1/108",
+        "4/675",
+        "1/196",
+        "17/4900",
+        "31/13068",
+        "1/3267",
+        "25/23716",
+        "0",
+        "1/338",
+        "1/676",
+        "11/16562",
+        "1/2548",
+        "105/81796",
+        "0",
+        "9/33124",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 11,
+      "oracle": [
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_event_points_tested": 1,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement_speed_tests": 6,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              49
+            ],
+            "interval": [
+              "83/104",
+              "313/392"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "1017/1274"
+          },
+          "potential_slack": "310/3006003"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            49,
+            169
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": false,
+          "first_violation": {
+            "blocking_complement_speeds": [
+              121
+            ],
+            "interval": [
+              "311/392",
+              "1073/1352"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "6571/8281"
+          },
+          "potential_slack": "92111/108216108"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          25,
+          121
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            25,
+            49
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            121,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "159/200",
+              "313/392"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-380/3006003"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            25,
+            121
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            49,
+            169
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "775/968",
+              "173/216"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            25,
+            169
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            49,
+            121
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "83/104",
+              "1081/1352"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "310/3006003"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            49,
+            121
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            25,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "311/392",
+              "769/968"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-8/24843"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            49,
+            169
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            25,
+            121
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "311/392",
+              "1073/1352"
+            ],
+            [
+              "83/104",
+              "313/392"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "92111/108216108"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            121,
+            169
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            25,
+            49
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "767/968",
+              "1073/1352"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-1436/621075"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          25,
+          49,
+          121
+        ],
+        [
+          25,
+          121,
+          169
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "1/2028",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            25,
+            121
+          ],
+          "selected_complement": [
+            49,
+            169
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "1/2028"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": null,
+          "containment_holds": false,
+          "failure_classification": "ranking_failure",
+          "first_violation": {
+            "blocking_complement_speeds": [
+              121
+            ],
+            "interval": [
+              "311/392",
+              "1073/1352"
+            ],
+            "kind": "positive_open_cell",
+            "witness": "6571/8281"
+          },
+          "oracle_classification": "ranking_failure_other_eligible_pair_certifies",
+          "outcome": "failed_no_retune",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            49,
+            169
+          ],
+          "selected_complement": [
+            25,
+            121
+          ],
+          "selected_positive_component_count": 2,
+          "selected_potential_slack": "92111/108216108"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 2,
+      "speeds": [
+        25,
+        49,
+        121,
+        169
+      ],
+      "window": [
+        "19/24",
+        "173/216"
+      ]
+    },
+    "squares:1,3,4:36": {
+      "C_0": "1/2028",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "squares",
+      "diagnostic_positive_slack_pairs": [
+        [
+          9,
+          121
+        ],
+        [
+          9,
+          169
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          9,
+          121
+        ],
+        [
+          9,
+          169
+        ]
+      ],
+      "event_count": 13,
+      "id": "squares:1,3,4:36",
+      "moments": [
+        "3/196",
+        "2/147",
+        "23/5292",
+        "23/5292",
+        "73/23716",
+        "1/484",
+        "0",
+        "0",
+        "69/16562",
+        "1/338",
+        "0",
+        "0",
+        "6/5929",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 12,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            9,
+            121
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            9,
+            169
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "1/2028"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          9,
+          121
+        ],
+        [
+          9,
+          169
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            9,
+            81
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            121,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "305/392",
+              "505/648"
+            ],
+            [
+              "511/648",
+              "19/24"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-6239/12024012"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            9,
+            121
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            81,
+            169
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "69/88",
+              "761/968"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            9,
+            169
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            81,
+            121
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "1055/1352",
+              "1057/1352"
+            ],
+            [
+              "1063/1352",
+              "1065/1352"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            81,
+            121
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            9,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-5/2028"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            81,
+            169
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            9,
+            121
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-193/122694"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            121,
+            169
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            9,
+            81
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "767/968",
+              "311/392"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-1723/447174"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          9,
+          81,
+          121
+        ],
+        [
+          9,
+          81,
+          169
+        ],
+        [
+          9,
+          121,
+          169
+        ],
+        [
+          81,
+          121,
+          169
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "1/2028",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            9,
+            121
+          ],
+          "selected_complement": [
+            81,
+            169
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "1/2028"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "1/2028",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            9,
+            121
+          ],
+          "selected_complement": [
+            81,
+            169
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "1/2028"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 1,
+      "speeds": [
+        9,
+        81,
+        121,
+        169
+      ],
+      "window": [
+        "305/392",
+        "311/392"
+      ]
+    },
+    "squares:1,3,4:9": {
+      "C_0": "1/2028",
+      "atoms_match_archive": true,
+      "branch": "active",
+      "case_id": "squares",
+      "diagnostic_positive_slack_pairs": [
+        [
+          9,
+          121
+        ],
+        [
+          9,
+          169
+        ]
+      ],
+      "eligible_base_pairs": [
+        [
+          9,
+          121
+        ],
+        [
+          9,
+          169
+        ]
+      ],
+      "event_count": 13,
+      "id": "squares:1,3,4:9",
+      "moments": [
+        "3/196",
+        "2/147",
+        "23/5292",
+        "23/5292",
+        "73/23716",
+        "1/484",
+        "0",
+        "0",
+        "69/16562",
+        "1/338",
+        "0",
+        "0",
+        "6/5929",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_match_archive": true,
+      "open_cell_count": 12,
+      "oracle": [
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 1,
+          "base_pair": [
+            9,
+            121
+          ],
+          "complement_speed_tests": 2,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_event_points_tested": 0,
+          "base_open_cells_tested": 2,
+          "base_pair": [
+            9,
+            169
+          ],
+          "complement_speed_tests": 4,
+          "containment_holds": true,
+          "first_violation": null,
+          "potential_slack": "1/2028"
+        }
+      ],
+      "oracle_is_postselection_only": true,
+      "oracle_successful_pairs": [
+        [
+          9,
+          121
+        ],
+        [
+          9,
+          169
+        ]
+      ],
+      "pair_candidates": [
+        {
+          "base_indices": [
+            0,
+            1
+          ],
+          "base_pair": [
+            9,
+            81
+          ],
+          "complement_indices": [
+            2,
+            3
+          ],
+          "complement_pair": [
+            121,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "5/24",
+              "137/648"
+            ],
+            [
+              "143/648",
+              "87/392"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-6239/12024012"
+        },
+        {
+          "base_indices": [
+            0,
+            2
+          ],
+          "base_pair": [
+            9,
+            121
+          ],
+          "complement_indices": [
+            1,
+            3
+          ],
+          "complement_pair": [
+            81,
+            169
+          ],
+          "eligible": true,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "207/968",
+              "19/88"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_indices": [
+            0,
+            3
+          ],
+          "base_pair": [
+            9,
+            169
+          ],
+          "complement_indices": [
+            1,
+            2
+          ],
+          "complement_pair": [
+            81,
+            121
+          ],
+          "eligible": true,
+          "positive_component_count": 2,
+          "positive_components": [
+            [
+              "287/1352",
+              "289/1352"
+            ],
+            [
+              "295/1352",
+              "297/1352"
+            ]
+          ],
+          "positive_slack_diagnostic": true,
+          "potential_slack": "1/2028"
+        },
+        {
+          "base_indices": [
+            1,
+            2
+          ],
+          "base_pair": [
+            81,
+            121
+          ],
+          "complement_indices": [
+            0,
+            3
+          ],
+          "complement_pair": [
+            9,
+            169
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-5/2028"
+        },
+        {
+          "base_indices": [
+            1,
+            3
+          ],
+          "base_pair": [
+            81,
+            169
+          ],
+          "complement_indices": [
+            0,
+            2
+          ],
+          "complement_pair": [
+            9,
+            121
+          ],
+          "eligible": false,
+          "positive_component_count": 0,
+          "positive_components": [],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-193/122694"
+        },
+        {
+          "base_indices": [
+            2,
+            3
+          ],
+          "base_pair": [
+            121,
+            169
+          ],
+          "complement_indices": [
+            0,
+            1
+          ],
+          "complement_pair": [
+            9,
+            81
+          ],
+          "eligible": false,
+          "positive_component_count": 1,
+          "positive_components": [
+            [
+              "81/392",
+              "201/968"
+            ]
+          ],
+          "positive_slack_diagnostic": false,
+          "potential_slack": "-1723/447174"
+        }
+      ],
+      "pair_only_minimum": "0",
+      "physical_zero_triples": [
+        [
+          9,
+          81,
+          121
+        ],
+        [
+          9,
+          81,
+          169
+        ],
+        [
+          9,
+          121,
+          169
+        ],
+        [
+          81,
+          121,
+          169
+        ]
+      ],
+      "reflection_partner": false,
+      "role": "archival_transfer",
+      "rules": {
+        "fewest_components": {
+          "certified_lower_bound": "1/2028",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            9,
+            121
+          ],
+          "selected_complement": [
+            81,
+            169
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "1/2028"
+        },
+        "largest_potential_slack": {
+          "certified_lower_bound": "1/2028",
+          "containment_holds": true,
+          "failure_classification": null,
+          "first_violation": null,
+          "oracle_classification": "selected_pair_certifies",
+          "outcome": "certified",
+          "query_issued": true,
+          "second_query_issued": false,
+          "selected_base_pair": [
+            9,
+            121
+          ],
+          "selected_complement": [
+            81,
+            169
+          ],
+          "selected_positive_component_count": 1,
+          "selected_potential_slack": "1/2028"
+        }
+      },
+      "selected_logical_query_count": 2,
+      "selected_unique_physical_query_count": 1,
+      "speeds": [
+        9,
+        81,
+        121,
+        169
+      ],
+      "window": [
+        "81/392",
+        "87/392"
+      ]
+    }
+  },
+  "controls": {
+    "doubling_112": {
+      "active_query_count": 0,
+      "branch": "pair_only_exit",
+      "eligible_pairs": [
+        [
+          56,
+          64
+        ],
+        [
+          56,
+          72
+        ],
+        [
+          56,
+          112
+        ],
+        [
+          64,
+          72
+        ],
+        [
+          64,
+          112
+        ],
+        [
+          72,
+          112
+        ]
+      ],
+      "fewest_components_selected_pair": null,
+      "pair_only_minimum": "761/32256",
+      "selected_containment_holds": null
+    },
+    "strict_16": {
+      "active_query_count": 1,
+      "branch": "active",
+      "eligible_pairs": [
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "fewest_components_selected_pair": [
+        6,
+        11
+      ],
+      "pair_only_minimum": "0",
+      "selected_containment_holds": true
+    },
+    "tight_13": {
+      "active_query_count": 0,
+      "branch": "no_eligible_pair",
+      "eligible_pairs": [],
+      "fewest_components_selected_pair": null,
+      "isolated_equality": {
+        "positive_duration": false,
+        "time": "3/8",
+        "valid": true
+      },
+      "pair_only_minimum": "0",
+      "selected_containment_holds": null
+    }
+  },
+  "method": "independent exact Fraction threshold-event reconstruction; no primary import, floor-sum reuse, or primary containment helper",
+  "primary_comparison": {
+    "agrees": true,
+    "critical_fields_compared": 848,
+    "failures": []
+  },
+  "primary_results_sha256": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+  "protocol_sha256": "ccfdb403abef15f9c2cd9e08ac086232f4842b450f48308ba5a5992f8c3f9c17",
+  "reflection_checks": [
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "fibonacci:1,2,4:1",
+        "fibonacci:1,2,4:32"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "fibonacci:1,2,4:6",
+        "fibonacci:1,2,4:27"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "fibonacci:1,2,4:11",
+        "fibonacci:1,2,4:22"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "fibonacci:1,2,4:14",
+        "fibonacci:1,2,4:19"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "squares:1,2,5:12",
+        "squares:1,2,5:39"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "squares:1,3,4:9",
+        "squares:1,3,4:36"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "prime_powers:2,3,4:19",
+        "prime_powers:2,3,4:33"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "perturbed_chain:1,2,4:1",
+        "perturbed_chain:1,2,4:22"
+      ]
+    },
+    {
+      "counted_as_independent_examples": false,
+      "exact_outcomes_agree": true,
+      "record_ids": [
+        "perturbed_chain:1,2,4:4",
+        "perturbed_chain:1,2,4:19"
+      ]
+    }
+  ],
+  "semantic_checks": {
+    "development_records_excluded_from_transfer_count": true,
+    "event_points_checked_separately": true,
+    "no_fallback_or_second_query": true,
+    "oracle_is_postselection_only": true,
+    "pair_only_exit_precedes_selector_query": true,
+    "reflections_not_independent_examples": true,
+    "strict_blocking_is_open": true,
+    "threshold_equality_is_safe": true,
+    "tight_isolated_equality_not_positive_duration": true
+  },
+  "source_hashes_verified": {
+    "reviews/2026-09-28-collective-window-audit/results.json": "daf0dabdfb5ac191d890de801b37c0980a833ce7bab835832da3f8f646cb3d2e",
+    "reviews/2026-09-28-cover-obligations/results.json": "c10cd96fc0a92445894146fedc7ea156911b35ccd9474d1ad8916e3977bed62e",
+    "reviews/2026-09-28-floor-sum-component-count/protocol.json": "a398539b747b9510259e5a134090f3eb6430370588d735bdec12f67260ec5724",
+    "reviews/2026-09-28-floor-sum-component-count/results.json": "f50852b82c52fff7dedac640dd82ca32be048db53a6337402dd453e7fbffce8c",
+    "reviews/2026-09-28-one-containment-selector/results.json": "7f84d1dc9b561045648969bd4d1491df66abb7fd53e1908259fdfd42e1f34cb5"
+  },
+  "status": "PASS",
+  "totals": {
+    "active_records": 10,
+    "archival_transfer_records": 16,
+    "development_records": 2,
+    "no_eligible_records": 0,
+    "open_cells": 262,
+    "oracle_queries": 38,
+    "pair_only_exits": 8,
+    "records": 18,
+    "reflection_pairs": 9,
+    "selected_logical_queries": 20,
+    "selected_unique_physical_queries": 18,
+    "threshold_events": 280
+  },
+  "validation_limit": "internal exact AI verification, not independent human mathematical validation"
+}

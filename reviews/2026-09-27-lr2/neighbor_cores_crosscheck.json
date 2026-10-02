@@ -1,0 +1,44 @@
+{
+  "baseline": "af6d0d6f83cfcf3c15e2573ccedd8d023040384a",
+  "script_sha256": "861f05bcc7621e58b211338cc25f795955bf5e01e4fdf42b106e0e8aa243689c",
+  "archive_sha256": "74d55d0778afa33ca3748aa15780df0e071b466f7b79e57b9212cbe9b64e990a",
+  "method": "Interval-intersection moments and Boolean inversion, event-cell closed components, Kruskal, rational primal/dual substitution",
+  "components_checked": 48,
+  "exact_lp_certificates": 48,
+  "positive_actual_zero_pair_bound_windows": 8,
+  "conditional_old_states": 12,
+  "conditional_new_states": 6,
+  "primitive_vertices": [
+    "0",
+    "1/8",
+    "7/8",
+    "1"
+  ],
+  "primitive_corrections": [
+    "0",
+    "3/32",
+    "-3/32",
+    "0"
+  ],
+  "cases": [
+    {
+      "y": 44,
+      "global_duration": "29/1232",
+      "old_positive_tree_windows": 2,
+      "new_positive_tree_windows": 2
+    },
+    {
+      "y": 45,
+      "global_duration": "1/105",
+      "old_positive_tree_windows": 0,
+      "new_positive_tree_windows": 2
+    },
+    {
+      "y": 46,
+      "global_duration": "67/4048",
+      "old_positive_tree_windows": 0,
+      "new_positive_tree_windows": 2
+    }
+  ],
+  "limits": "Three exact inputs, one reference, two cores. Boolean identities and primitive vertices support the separately written general argument; no generic selection theorem or novelty claim."
+}

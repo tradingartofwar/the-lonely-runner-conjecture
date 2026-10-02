@@ -1,0 +1,3246 @@
+{
+  "status": "pass",
+  "protocol_sha256": "f0ddb7b2f82af5e812d1b2c31a012e3119fe90e67d209bf664ea0f2e395f9fa2",
+  "primary_sha256": "619c417114fd46abfbc7127b01e5252a5de02b6a2c8cb3a28561a6fbae5f58be",
+  "cases": [
+    {
+      "tile": "equal",
+      "perturbation": "exact",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "equal",
+      "perturbation": "period_first_up",
+      "periods": [
+        "1001/1000",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "1/4000",
+            "0",
+            "0",
+            "-1/1000"
+          ],
+          "sum": "-3/4000",
+          "expected": "-3/4000",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "-1/1000",
+            "1/800"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "-1/1000",
+            "1/800",
+            "0"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "-1/1000",
+            "1/800",
+            "0",
+            "0"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "equal",
+      "perturbation": "period_last_down",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "999/1000"
+      ],
+      "starts": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "1/4",
+      "selector": {
+        "status": "safe",
+        "time": "1/4",
+        "calls": 22,
+        "rounds": 2,
+        "trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 2,
+            "round": 1,
+            "label": 1,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 3,
+            "round": 1,
+            "label": 2,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "0",
+            "after": "3/4000",
+            "moved": true
+          },
+          {
+            "call": 5,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 6,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 7,
+            "round": 1,
+            "label": 1,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 8,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 9,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 10,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 11,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 12,
+            "round": 2,
+            "label": 0,
+            "before": "3/4000",
+            "after": "1/4",
+            "moved": true
+          },
+          {
+            "call": 13,
+            "round": 2,
+            "label": 1,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 14,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 15,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 16,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 17,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 18,
+            "round": 2,
+            "label": 1,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 19,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 20,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 21,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 22,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          }
+        ],
+        "moving_labels": [
+          3,
+          0
+        ],
+        "nonzero_trace": [
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "0",
+            "after": "3/4000",
+            "moved": true
+          },
+          {
+            "call": 12,
+            "round": 2,
+            "label": 0,
+            "before": "3/4000",
+            "after": "1/4",
+            "moved": true
+          }
+        ],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "-1/4000"
+          ],
+          "sum": "-1/4000",
+          "expected": "-1/4000",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "-1/4000",
+            "0"
+          ],
+          "sum": "-1/4000",
+          "expected": "-1/4000",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "-1/4000",
+            "0",
+            "0"
+          ],
+          "sum": "-1/4000",
+          "expected": "-1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "-1/4000",
+            "0",
+            "0",
+            "1/1000"
+          ],
+          "sum": "3/4000",
+          "expected": "3/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "equal",
+      "perturbation": "start_first_up",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "1/1000",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "1/1000",
+            "0",
+            "0",
+            "-1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "-1/1000",
+            "1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "-1/1000",
+            "1/1000",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "-1/1000",
+            "1/1000",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "equal",
+      "perturbation": "start_first_down",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "starts": [
+        "-1/1000",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "249/1000",
+      "selector": {
+        "status": "safe",
+        "time": "249/1000",
+        "calls": 11,
+        "rounds": 1,
+        "trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "249/1000",
+            "moved": true
+          },
+          {
+            "call": 2,
+            "round": 1,
+            "label": 1,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 3,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 5,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 6,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 7,
+            "round": 1,
+            "label": 1,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 8,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 9,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 10,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 11,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          }
+        ],
+        "moving_labels": [
+          0
+        ],
+        "nonzero_trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "249/1000",
+            "moved": true
+          }
+        ],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "-1/1000",
+            "0",
+            "0",
+            "1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "1/1000",
+            "-1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "0",
+            "1/1000",
+            "-1/1000",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [
+            "1/1000",
+            "-1/1000",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "two_levels",
+      "perturbation": "exact",
+      "periods": [
+        "1",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "0",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/2",
+            "-3/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "two_levels",
+      "perturbation": "period_first_up",
+      "periods": [
+        "1001/1000",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "0",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "1/4000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000"
+          ],
+          "sum": "-3/4000",
+          "expected": "-3/4000",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "-1/1000",
+            "1/800",
+            "0",
+            "0"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/800"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/800",
+            "0"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/2",
+            "-3/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "two_levels",
+      "perturbation": "period_last_down",
+      "periods": [
+        "1",
+        "1",
+        "1/2",
+        "499/1000"
+      ],
+      "starts": [
+        "0",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "1/4",
+      "selector": {
+        "status": "safe",
+        "time": "1/4",
+        "calls": 22,
+        "rounds": 2,
+        "trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 2,
+            "round": 1,
+            "label": 1,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 3,
+            "round": 1,
+            "label": 2,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "0",
+            "after": "3/4000",
+            "moved": true
+          },
+          {
+            "call": 5,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 6,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 7,
+            "round": 1,
+            "label": 1,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 8,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 9,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 10,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 11,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 12,
+            "round": 2,
+            "label": 0,
+            "before": "3/4000",
+            "after": "1/4",
+            "moved": true
+          },
+          {
+            "call": 13,
+            "round": 2,
+            "label": 1,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 14,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 15,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 16,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 17,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 18,
+            "round": 2,
+            "label": 1,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 19,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 20,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 21,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 22,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          }
+        ],
+        "moving_labels": [
+          3,
+          0
+        ],
+        "nonzero_trace": [
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "0",
+            "after": "3/4000",
+            "moved": true
+          },
+          {
+            "call": 12,
+            "round": 2,
+            "label": 0,
+            "before": "3/4000",
+            "after": "1/4",
+            "moved": true
+          }
+        ],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "-1/4000",
+            "0",
+            "1/1000",
+            "-1/800"
+          ],
+          "sum": "-1/2000",
+          "expected": "-1/2000",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "1/1000",
+            "-1/800",
+            "0",
+            "1/500",
+            "-9/4000"
+          ],
+          "sum": "-1/2000",
+          "expected": "-1/2000",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "-1/4000",
+            "0",
+            "1/1000",
+            "-1/800",
+            "0"
+          ],
+          "sum": "-1/2000",
+          "expected": "-1/2000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "-1/4000",
+            "0",
+            "1/1000",
+            "-1/800",
+            "0",
+            "1/500"
+          ],
+          "sum": "3/2000",
+          "expected": "3/2000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/2",
+            "-3/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "two_levels",
+      "perturbation": "start_first_up",
+      "periods": [
+        "1",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "1/1000",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "1/1000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "-1/1000",
+            "1/1000",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/1000",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/2",
+            "-3/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "two_levels",
+      "perturbation": "start_first_down",
+      "periods": [
+        "1",
+        "1",
+        "1/2",
+        "1/2"
+      ],
+      "starts": [
+        "-1/1000",
+        "1/2",
+        "1/4",
+        "3/8"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "249/1000",
+      "selector": {
+        "status": "safe",
+        "time": "249/1000",
+        "calls": 11,
+        "rounds": 1,
+        "trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "249/1000",
+            "moved": true
+          },
+          {
+            "call": 2,
+            "round": 1,
+            "label": 1,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 3,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 5,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 6,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 7,
+            "round": 1,
+            "label": 1,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 8,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 9,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 10,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 11,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          }
+        ],
+        "moving_labels": [
+          0
+        ],
+        "nonzero_trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "249/1000",
+            "moved": true
+          }
+        ],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "-1/1000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "1/1000",
+            "-1/1000",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/1000",
+            "-1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/2",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "1/1000",
+            "-1/1000",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/2",
+            "-3/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "one_fast",
+      "perturbation": "exact",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "0",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-9/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "one_fast",
+      "perturbation": "period_first_up",
+      "periods": [
+        "1001/1000",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "0",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "1/4000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000"
+          ],
+          "sum": "-3/4000",
+          "expected": "-3/4000",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/800",
+            "0"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "-1/1000",
+            "1/800",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/800"
+          ],
+          "sum": "1/4000",
+          "expected": "1/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-9/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "one_fast",
+      "perturbation": "period_last_down",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "997/3000"
+      ],
+      "starts": [
+        "0",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "1/4",
+      "selector": {
+        "status": "safe",
+        "time": "1/4",
+        "calls": 22,
+        "rounds": 2,
+        "trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 2,
+            "round": 1,
+            "label": 1,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 3,
+            "round": 1,
+            "label": 2,
+            "before": "0",
+            "after": "0",
+            "moved": false
+          },
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "0",
+            "after": "3/4000",
+            "moved": true
+          },
+          {
+            "call": 5,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 6,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 7,
+            "round": 1,
+            "label": 1,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 8,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 9,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 10,
+            "round": 1,
+            "label": 2,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 11,
+            "round": 1,
+            "label": 3,
+            "before": "3/4000",
+            "after": "3/4000",
+            "moved": false
+          },
+          {
+            "call": 12,
+            "round": 2,
+            "label": 0,
+            "before": "3/4000",
+            "after": "1/4",
+            "moved": true
+          },
+          {
+            "call": 13,
+            "round": 2,
+            "label": 1,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 14,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 15,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 16,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 17,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 18,
+            "round": 2,
+            "label": 1,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 19,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 20,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 21,
+            "round": 2,
+            "label": 2,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          },
+          {
+            "call": 22,
+            "round": 2,
+            "label": 3,
+            "before": "1/4",
+            "after": "1/4",
+            "moved": false
+          }
+        ],
+        "moving_labels": [
+          3,
+          0
+        ],
+        "nonzero_trace": [
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "0",
+            "after": "3/4000",
+            "moved": true
+          },
+          {
+            "call": 12,
+            "round": 2,
+            "label": 0,
+            "before": "3/4000",
+            "after": "1/4",
+            "moved": true
+          }
+        ],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "-1/4000",
+            "1/1000",
+            "-1/800",
+            "1/500",
+            "-9/4000"
+          ],
+          "sum": "-3/4000",
+          "expected": "-3/4000",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "1/1000",
+            "-1/800",
+            "1/500",
+            "-9/4000",
+            "3/1000",
+            "-13/4000"
+          ],
+          "sum": "-3/4000",
+          "expected": "-3/4000",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "1/500",
+            "-9/4000",
+            "3/1000",
+            "-13/4000",
+            "1/250",
+            "-17/4000"
+          ],
+          "sum": "-3/4000",
+          "expected": "-3/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "-1/4000",
+            "1/1000",
+            "-1/800",
+            "1/500",
+            "-9/4000",
+            "3/1000"
+          ],
+          "sum": "9/4000",
+          "expected": "9/4000",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-9/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "one_fast",
+      "perturbation": "start_first_up",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "1/1000",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "0",
+      "selector": {
+        "status": "safe",
+        "time": "0",
+        "calls": 0,
+        "rounds": 0,
+        "trace": [],
+        "moving_labels": [],
+        "nonzero_trace": [],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "1/1000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/1000",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "-1/1000",
+            "1/1000",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1/1000",
+            "1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-9/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    },
+    {
+      "tile": "one_fast",
+      "perturbation": "start_first_down",
+      "periods": [
+        "1",
+        "1",
+        "1",
+        "1/3"
+      ],
+      "starts": [
+        "-1/1000",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "earliest": "249/1000",
+      "selector": {
+        "status": "safe",
+        "time": "249/1000",
+        "calls": 11,
+        "rounds": 1,
+        "trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "249/1000",
+            "moved": true
+          },
+          {
+            "call": 2,
+            "round": 1,
+            "label": 1,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 3,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 4,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 5,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 6,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 7,
+            "round": 1,
+            "label": 1,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 8,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 9,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 10,
+            "round": 1,
+            "label": 2,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          },
+          {
+            "call": 11,
+            "round": 1,
+            "label": 3,
+            "before": "249/1000",
+            "after": "249/1000",
+            "moved": false
+          }
+        ],
+        "moving_labels": [
+          0
+        ],
+        "nonzero_trace": [
+          {
+            "call": 1,
+            "round": 1,
+            "label": 0,
+            "before": "0",
+            "after": "249/1000",
+            "moved": true
+          }
+        ],
+        "square_free": true,
+        "squares": []
+      },
+      "cycles": [
+        {
+          "anchor": 0,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "-1/1000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "-3/4",
+            "1/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 1,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "1/1000",
+            "-1/1000",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "-3/4",
+            "1/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 2,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "1/1000",
+            "-1/1000",
+            "0",
+            "0",
+            "0"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "-3/4",
+            "3/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        },
+        {
+          "anchor": 3,
+          "q": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "gaps": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/1000",
+            "-1/1000"
+          ],
+          "sum": "0",
+          "expected": "0",
+          "coefficients": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-9/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "identity_ok": true
+        }
+      ],
+      "maximal_cycle_anchor": 0
+    }
+  ],
+  "occupancy": [
+    {
+      "x": "1",
+      "phase": "1/8",
+      "formula": "1/4",
+      "x_over_7": "1/7"
+    },
+    {
+      "x": "7/4",
+      "phase": "1/8",
+      "formula": "1/4",
+      "x_over_7": "1/4"
+    },
+    {
+      "x": "2",
+      "phase": "1/8",
+      "formula": "1/2",
+      "x_over_7": "2/7"
+    },
+    {
+      "x": "11/4",
+      "phase": "1/8",
+      "formula": "1/2",
+      "x_over_7": "11/28"
+    }
+  ],
+  "counts": {
+    "auxiliary_cases": 15,
+    "formal_cycles": 60,
+    "scalar_calls": 99,
+    "nonzero_moves": 9
+  },
+  "limits": "Constructed finite algebra and endpoint checks, not proof of the compactness step or a numerical global step bound."
+}

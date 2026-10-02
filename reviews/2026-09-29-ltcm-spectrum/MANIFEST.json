@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-29",
+  "base_commit": "4c4d370d0bb9b97e47eca9e9260d64beac1502ef",
+  "status": "HYPOTHESIS / complete proof candidate; independent review and novelty pending",
+  "family": "reference0; V(q)=(1,q,q+1,q+2,q+3,2q+3,2q+5); integerq>=2",
+  "scope": {
+    "fixed_ambient_cells": 10,
+    "vertex_occurrences": 33,
+    "edge_occurrences": 45,
+    "boundary_planes": 48,
+    "triple_intersections": 17296,
+    "symbolic_loss_comparisons": 84,
+    "complete_physical_q": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "large_witness_only_q": [
+      100003,
+      100004
+    ],
+    "other_references_or_phases": false
+  },
+  "implementation_authorship": "Same AI coordinator; independently structured code, not independent authorship",
+  "protocol_sha256": "4a74dbd37fdadc0c7a93cdc2b3e1532e230c1235d224f6d34f23b0ff5d08fdb9",
+  "prevalidation_sha256": "24a253e12430d9e824829cc99c35a03676f748c40822e62892c3348932e60b16",
+  "files_sha256": {
+    "reviews/2026-09-29-ltcm-spectrum/PREVALIDATION_DERIVATION.md": "24a253e12430d9e824829cc99c35a03676f748c40822e62892c3348932e60b16",
+    "reviews/2026-09-29-ltcm-spectrum/PROTOCOL.md": "4a74dbd37fdadc0c7a93cdc2b3e1532e230c1235d224f6d34f23b0ff5d08fdb9",
+    "reviews/2026-09-29-ltcm-spectrum/ambient.json": "af1a620e08e9407b7d01d0f444a0041f81e5be3e02c673f891f033c3a680f736",
+    "reviews/2026-09-29-ltcm-spectrum/ambient.py": "88dc61e58fa14cc95a1183aa24387faeccd6df14a2fd181eaf124c59cf9b5b13",
+    "reviews/2026-09-29-ltcm-spectrum/audit.json": "84940999fdc2f053e94bfc7de716f9ec9d0c3b5e1937493cc5acd3fd5e91a093",
+    "reviews/2026-09-29-ltcm-spectrum/audit.py": "8c5c138ecc98100f571f9cc297e85167a37c4566ad7815ad6bca8e322086cd4a",
+    "reviews/2026-09-29-ltcm-spectrum/verification.json": "19d8aaadc34eddac26704d6e9255c7badb1f947ec1ea43e851c897f24affa160",
+    "reviews/2026-09-29-ltcm-spectrum/verify.py": "068b61f5899c70bfdbe3ee00b48503b9e6687b6a0e9ff2d4ac6a9b0a8d102981",
+    "notes/LTCM_EXACT_SPECTRUM_2026_09_29.md": "48e128b75383e36738092b05bb597f0eba1d8ac1dc36f3338815fbfd87785edd"
+  },
+  "commands": [
+    "python3 reviews/2026-09-29-ltcm-spectrum/ambient.py",
+    "python3 reviews/2026-09-29-ltcm-spectrum/verify.py",
+    "python3 reviews/2026-09-29-ltcm-spectrum/audit.py"
+  ]
+}

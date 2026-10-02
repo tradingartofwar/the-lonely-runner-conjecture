@@ -1,0 +1,398 @@
+{
+  "chosen_ids": [
+    "P4:E0-1:K3:L4:M54",
+    "P3:E0-3:K3:L3:M48",
+    "P0:E1-3:K1:L2:M22",
+    "P1:E0-3:K1:L3:M28",
+    "P4:E0-1:K3:L5:M54"
+  ],
+  "compared_sha256": {
+    "adapter": "1e62988a8a12ee2eb7874fd81a5f752783243b62cdfe97e4d61d320f2c871f2e",
+    "audit": "32d71f99add50b43baa4c4f1b6e902f039e2a8e7411d98ad59c06d964e1f0328",
+    "full": "71256886e5cbbfd95a78f25e9e1d3db281dc6f3223e4d5e7cfaf43408f42e459",
+    "hybrid": "a2622ded9bb28c677f380a94b61d8921b5c978dfa9674d29e108b87a6e2a8795",
+    "regression": "ed769cda77e88a1e407958b9908df1fa0389acdcc0b3f967dad7c9fea0aab81b",
+    "screen": "fc18cda1e63b5b41704d2b2c23f49774b2f465580d9c214e20109c00b2bcaea3",
+    "summary": "ab92500f7798aa0d2d46b4c102e7d560242fb0f3d14abd71f1a1c33539ee8c54"
+  },
+  "dispatch_coverage_mismatches": [],
+  "exceptions": [],
+  "field_counts": {
+    "adapter": 133,
+    "audit_geometry": 2502,
+    "full": 17606,
+    "hybrid": 2418,
+    "old_control_geometry": 1196,
+    "old_full": 30125,
+    "old_hybrid": 3689,
+    "regression": 139,
+    "screen": 934,
+    "summary": 72
+  },
+  "full_clipping_counts": {
+    "budget": 256,
+    "candidate_records": 81,
+    "point_records": 4,
+    "source_lap_attempts": 81,
+    "source_records": 36,
+    "status": "PASS"
+  },
+  "full_counts": {
+    "candidates": 81,
+    "chosen": 5,
+    "contacts": 2268,
+    "descending": 42,
+    "rectangle_pairs": 77,
+    "residual_pairs": 28
+  },
+  "independent_new_binding": {
+    "after": {
+      "query_defaults": [
+        [
+          78,
+          50
+        ],
+        false
+      ],
+      "rows": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          78,
+          50
+        ]
+      ],
+      "source_bounds_defaults": [
+        [
+          78,
+          50
+        ]
+      ]
+    },
+    "before": {
+      "query_defaults": [
+        [
+          102,
+          50
+        ],
+        false
+      ],
+      "rows": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          102,
+          50
+        ]
+      ],
+      "source_bounds_defaults": [
+        [
+          102,
+          50
+        ]
+      ]
+    },
+    "bodies_unchanged": true
+  },
+  "independent_old_binding": {
+    "after": {
+      "query_defaults": [
+        [
+          102,
+          50
+        ],
+        false
+      ],
+      "rows": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          102,
+          50
+        ]
+      ],
+      "source_bounds_defaults": [
+        [
+          102,
+          50
+        ]
+      ]
+    },
+    "before": {
+      "query_defaults": [
+        [
+          54,
+          26
+        ],
+        false
+      ],
+      "rows": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          54,
+          26
+        ]
+      ],
+      "source_bounds_defaults": [
+        [
+          54,
+          26
+        ]
+      ]
+    },
+    "bodies_unchanged": true
+  },
+  "inherited_reviewers": {
+    "reviews/2026-09-29-cc-hybrid-recovery/geometry_review.py": "b71826deba765bdaacbacfb30d169572e7554fc2654d91a729970aab2a8ebbf1",
+    "reviews/2026-09-29-cc-hybrid-transfer/geometry_review.py": "b47ef900b6ef71986b3270af127527d0cc327302131acdc311c999948b823d8a"
+  },
+  "leader_record": {
+    "added_laps": [
+      3,
+      4,
+      54
+    ],
+    "edge": [
+      0,
+      1
+    ],
+    "eighth_lap": 4,
+    "endpoints": [
+      [
+        "29/72",
+        "11/24"
+      ],
+      [
+        "35/72",
+        "1/3"
+      ]
+    ],
+    "id": "P4:E0-1:K3:L4:M54",
+    "labels": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      54
+    ],
+    "ninth_lap": 54,
+    "parent": 4,
+    "seventh_lap": 3,
+    "source_parameters": [
+      "2/9",
+      "8/9"
+    ]
+  },
+  "open_diagnostic": {
+    "interpretation": "VACUOUS_EMPTY_DOMAIN; no target open-source contact was tested",
+    "pair_count": 0,
+    "query_count": 0,
+    "raw_status": "COMPLETE_EXCEPTION_RECOVERY"
+  },
+  "preflight": {
+    "budget": 4096,
+    "integer_h_bound": 0,
+    "new_row_raw_ranges": 0,
+    "source_pair_projections": 0,
+    "status": "PASS",
+    "work_bound": 0
+  },
+  "production_adapter_verification": {
+    "attribute_assignments": [
+      "h.TARGET",
+      "h.ROWS",
+      "h.bounds.__defaults__",
+      "h.query.__defaults__",
+      "physical.ROWS",
+      "physical.ADDED"
+    ],
+    "scope": "static source/binding verification; production modules were not imported"
+  },
+  "protocol_sha256": "2ea70d567b25185bbd3bf48b4b53fe78d022e0c70fb9dcdc2f8695ebf8f2be0b",
+  "recovery_counts": {
+    "h_tests": 0,
+    "parallel_band_tests": 0,
+    "point_phase_tests": 0,
+    "source_visits": 0
+  },
+  "relations": [
+    {
+      "c_index": 5,
+      "core_row": [
+        3,
+        2
+      ],
+      "k": 3,
+      "safe_row": [
+        6,
+        2
+      ],
+      "v_index": 6
+    }
+  ],
+  "scope": "Pinned independent primitives with disclosed data/default binding; no production imports, benchmarks, new targets or new fixtures. Physical recovery fields reviewed separately.",
+  "screen_class_lost_pairs": [],
+  "screen_compiler_counts": {
+    "candidates": 10,
+    "chosen": 5,
+    "contacts": 280,
+    "descending": 8,
+    "rectangle_pairs": 77,
+    "residual_pairs": 28
+  },
+  "screen_counts": {
+    "accepted_sources": 10,
+    "boundary_checks": 36,
+    "coefficient_pair_tests": 48,
+    "new_row_lap_attempts": 0,
+    "omitted_sources": 26,
+    "point_records": 2,
+    "relations": 1,
+    "source_records": 36
+  },
+  "screen_leader": {
+    "P_max": 7,
+    "Q_max": 11,
+    "alpha": "1/12",
+    "beta": "1/8",
+    "id": "P4:E0-1:K3:L4:M54",
+    "rectangle_pairs": 77
+  },
+  "script_sha256": "045bfc13c7001a05e25ca0fd05edb66a7c26765a375456fa261b60ff98c5a83c",
+  "status": "PASS",
+  "total_scalar_fields_compared": 58814,
+  "union_pairs": 28,
+  "zero_budget": {
+    "budget": 0,
+    "integer_h_bound": 0,
+    "new_row_raw_ranges": 0,
+    "source_pair_projections": 0,
+    "status": "PASS",
+    "work_bound": 0
+  }
+}

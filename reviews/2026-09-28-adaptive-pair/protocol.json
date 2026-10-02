@@ -1,0 +1,32 @@
+{
+  "question": "Does the existing adaptive common-start witness and its reflection give an all-phase certificate for runner 11?",
+  "baseline_commit": "3ffb0c7b5edb75a81e60de0ceed58f5a40edae7b",
+  "status": "HYPOTHESIS / proof candidate; independent review pending; originality unestablished",
+  "family": [0, 1, 4, 5, 6, 7, 11, "V"],
+  "reference": 0,
+  "total_runners": 8,
+  "threshold": "1/8",
+  "domain": "Positive integer V outside {1,4,5,6,7,11}",
+  "phase_scope": "Only runner 11 has initial phase theta; all other initial phases are zero. Theta=0 is the common-start input.",
+  "rule": [
+    {"condition": "8 does not divide V", "time": "1/8"},
+    {"condition": "8 divides V and 56 does not divide V", "time": "17/56"},
+    {"condition": "56 divides V", "time": "17/56 + 1/(8V)"}
+  ],
+  "pair": ["t(V)", "1-t(V)"],
+  "symbolic_checks": [
+    "Unchanged-runner safety and exact equality controllers in each branch",
+    "Circular phase separation ||22t(V)|| and exact best-of-pair minimum over all theta",
+    "Directed endpoint behavior: whether a certified equality time admits a strict one-sided neighborhood; a sufficient exact radius may be derived without searching new times"
+  ],
+  "finite_diagnostics": [13, 16, 32, 56, 88, 112, 120, 56000000000000],
+  "independence": "The secondary verifier may read protocol, schema, and output but must not read or import primary implementation. Use complete rational phase-cell checks and direct safe-lap endpoint inequalities.",
+  "limits": [
+    "No broad speed scan, time grid, phase grid, new time-template search, all-reference computation, or full safe-set reconstruction",
+    "Finite diagnostics do not establish unbounded quantifiers",
+    "Threshold performance of the pair is distinct from strictness elsewhere or beside its times",
+    "Preserve the V=13 common-start contact-only control and all failed older fixed-menu classes",
+    "Do not promote internally supplied general arguments to established proofs; do not claim novelty",
+    "Small-gcd selection remains a separate priority; +7/+9 remains parked"
+  ]
+}

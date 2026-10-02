@@ -1,0 +1,49 @@
+<section class="intro">
+  <p class="eyebrow">INFORMATION LOSS → A FALSE CONCLUSION → REPAIR</p>
+  <h1>True somewhere.<br> But true together?</h1>
+  <p class="lead">One range contains an actual orbit. Another reaches a safe value. Keeping the two facts while losing their shared point can manufacture a safety conclusion.</p>
+  <div class="badges"><span class="badge">REPRODUCED · exact q = 4 counterexample</span><span class="quiet">One parent region at a closed threshold of 1/8</span></div>
+</section>
+<section class="control-bar" aria-label="A-ray example definition">
+  <span class="tag">A ray · q = 4</span>
+  <div class="clock-map"><span class="quiet">Stationary reference 0; parent P2 from the first six moving runners</span><strong>1, 4, 5, 6, 7, 11 &nbsp; + &nbsp; 13</strong><span>x = {t} &nbsp; y = {4t} &nbsp; H = 4x − y ∈ ℤ &nbsp; t = x</span></div>
+</section>
+<div class="joint-steps" role="group" aria-label="Walk through the compatibility example">
+  <button data-joint-step="0" aria-pressed="true"><span>1</span> Separate ranges</button>
+  <button data-joint-step="1" aria-pressed="false"><span>2</span> Combine the claims</button>
+  <button data-joint-step="2" aria-pressed="false"><span>3</span> Keep the shared point</button>
+</div>
+<section class="joint-layout">
+  <article class="panel joint-picture">
+    <div class="panel-heading"><div><p class="eyebrow">A JOINT MAP OF THE PARENT TRIANGLE</p><h2 id="joint-plot-title">The ranges each pass a test.</h2></div><span class="tag">P2 · z = 1/8</span></div>
+    <svg id="joint-map" role="img" aria-label="Joint image of the safe parent triangle in H and S coordinates"></svg>
+    <div class="legend"><span><i class="key cap-key"></i>Actual joint triangle</span><span><i class="key box-key"></i>Separate-range rectangle</span><span><i class="key slice-key"></i>Same orbit, H = 1</span></div>
+    <p class="caption">Every point in the triangle keeps the first six runners’ phase constraints together. H tracks the actual orbit; S = 5x + 2y tracks the added runner. Independent axis scales; exact values govern the test.</p>
+    <details><summary>Recover the original coordinates</summary><p>At this fixed height, the map is invertible:</p><p class="formula">x = (S + 2H)/13<br>y = (4S − 5H)/13</p><p>These equations return a point in parent P2 only when (H, S) belongs to the joint triangle. A point in its enclosing rectangle is insufficient.</p><div class="table-scroll"><table><thead><tr><th>Vertex</th><th>x</th><th>y</th><th>H</th><th>S</th></tr></thead><tbody id="joint-vertices"></tbody></table></div></details>
+  </article>
+  <article class="panel joint-explanation">
+    <p class="eyebrow" id="joint-stage-label">01 / MARGINAL INFORMATION</p>
+    <h2 id="joint-stage-title">Two correct statements.</h2>
+    <div id="joint-stage-copy" aria-live="polite"></div>
+    <svg id="joint-ranges" role="img" aria-label="Separate or conditional projection ranges and the added runner's safe bands"></svg>
+    <div id="joint-point-control" hidden>
+      <label for="joint-position">Move along the same orbit slice <output id="joint-position-label"></output></label>
+      <input id="joint-position" type="range" min="0" max="13" step="1" value="6">
+      <div class="button-row"><button id="joint-left">Left endpoint</button><button id="joint-collision">Show collision</button><button id="joint-right">Right endpoint</button></div>
+    </div>
+    <div class="joint-conclusion" id="joint-conclusion"></div>
+    <div class="joint-stage-nav"><button id="joint-prev">← Previous</button><button id="joint-next" class="primary">Combine the claims →</button></div>
+  </article>
+</section>
+<section id="joint-physical" class="panel physical-panel" hidden>
+  <div class="panel-heading"><div><p class="eyebrow">CHECK THE SAME TIME IN THE RUNNER MODEL</p><h2 id="joint-physical-title"></h2></div><span id="joint-time" class="tag"></span></div>
+  <div class="joint-physical-grid"><div><div id="joint-physical-copy"></div><dl class="readout"><div><dt>Original x</dt><dd id="joint-x"></dd></div><div><dt>Original y</dt><dd id="joint-y"></dd></div><div><dt>H = 4x − y</dt><dd id="joint-h"></dd></div></dl><svg id="joint-phase" role="img" aria-label="The added runner's phase relative to the closed safe band"></svg></div><div class="phase-wrap"><table><caption class="sr-only">Physical phases at the selected exact time</caption><thead><tr><th>Speed</th><th>Lap</th><th>Phase</th><th>Distance to 0</th></tr></thead><tbody id="joint-phase-rows"></tbody></table></div></div>
+</section>
+<section class="joint-takeaway"><p class="eyebrow">THE DISTINCTION CC PRESERVES</p><p>Both conditions can be true somewhere<br> without being true together.</p><span>The repair keeps the point, the orbit and the added constraint linked.</span></section>
+<section class="scope-grid">
+  <article><p class="eyebrow">WHAT THIS EXAMPLE ESTABLISHES</p><h2>This parent contributes no surviving time.</h2><p>On P2 at z = 1/8, the H range contains only one integer: 1. Its entire conditional S interval lies strictly between 15/8 and 17/8, so the added runner blocks every point on that actual orbit slice.</p><p>The full q=4 system still has exactly four isolated safe times: <strong>1/8, 3/8, 5/8, 7/8</strong>. They come from other compatible states. Rejecting this parent does not reject the whole system.</p></article>
+  <article class="scope"><p class="eyebrow">REPRESENTATION SCOPE</p><h2>Preserve the relation the next test needs.</h2><p><strong>Lost by separate ranges:</strong> which H and S values occur at the same point.</p><p><strong>Restored:</strong> the joint triangle, or the closed S interval conditional on the same H value, with an inverse map back to x, y and time.</p><p><strong>Limited to this scene:</strong> parent P2, A-ray q=4, height 1/8. This differs from the B-ray clock and cap question in section 01.</p></article>
+</section>
+<footer><p>Exact rational data determine the triangle, endpoints, candidate and physical checks. The slider illustrates points on a slice; the closed interval calculation covers the whole slice.</p><details><summary>Sources and claim status</summary><p id="joint-build-info"></p><ul id="joint-source-links"></ul><p>The marginal counterexample is reproduced exact finite data. The candidate obtained by combining the two marginal values is a derived display control, checked directly against all seven speeds. AI-assisted implementation and same-author checks; no new universal or novelty claim.</p></details><a href="#cap">← Return to section 01: from cap to clock</a></footer>
+
+<p class="next-chapter"><a href="#representation">Next: what must the model remember? →</a></p>

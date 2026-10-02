@@ -17,6 +17,29 @@ Inspect the live branch and relevant files before proposing changes. The current
 - Prefer concrete examples, exact calculations, and explicit assumptions over confident prose.
 - Carry routine technical detail when useful, but report the result and uncertainty plainly.
 
+## Information loss and model adequacy
+
+Standing direction, September 29, 2026: periodically check whether our representation is losing consequential information and whether a different or complementary model is needed to hold the work together. Apply this across current and future projects, including scientific and operational work.
+
+Carry a brief check after substantive stages, after significant summarization or translation, before major conclusions or handoffs, and when progress stalls or exceptions accumulate:
+
+1. What facts, distinctions, relationships, assumptions, boundary cases, or uncertainties did we retain, merge, omit, or lose?
+2. Could that loss change the conclusion, decision, prediction, or next action? Recover relevant source detail before relying on the compressed account.
+3. Can the current model express the relationships that matter? If not, compare a richer, different, or complementary representation against a concrete example or counterexample.
+4. Can the proposed representation recover the needed distinctions and produce a checkable result? Preserve the mapping, limits, and reason for changing models.
+
+Use the smallest adequate representation; more detail is not automatically more understanding. The model itself remains testable, including Compatibility Calculus (CC). Carry routine checks on the AI side, surface consequential findings, and record only changes worth preserving. These are checkpoints in active work, without a per-turn quota or a new unattended schedule.
+
+### Representation scope and adaptation
+
+Apply [CC representation and transfer rules](notes/CC_REPRESENTATION_RULES.md) to substantive model, compression and transfer work. Reuse an existing record when its question, domain and operation are unchanged.
+
+- Declare the supported question and next operation. Distinguish existence, optimal value, one witness, every maximizer, the complete safe set, and transfer to another model.
+- Record consequential retained and omitted information, a pinned richer source and recovery map, evidence and limits, and a concrete failure test. Source availability is a recovery route, not a claim that the compressed record is lossless.
+- Preserve same-point compatibility, relevant equality cases and physical recovery. Before adding constraints or changing scope, establish that the current representation supports the new use; otherwise recover, enrich or switch and check the exposed failure.
+- Actively consider existing languages, models and frameworks, including other authors' LTCMs, at any stage where reuse, modification, combination or replacement could help. Do not wait for our approach to fail or privilege it because we developed it. CC itself can be revised or replaced if the evidence warrants it.
+- For adaptations, credit and pin the source, state the exact modification and translation, distinguish inherited guarantees from new proof obligations, and test the revised model against the motivating case. An adapted framework does not inherit claims whose hypotheses no longer hold.
+
 ## Evidence discipline
 
 Use the vocabulary in [CLAIM_STATUS.md](CLAIM_STATUS.md).

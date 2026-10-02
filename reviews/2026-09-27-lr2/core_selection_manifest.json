@@ -1,0 +1,118 @@
+{
+  "baseline_commit": "5c6e7dee3fd096101e5ce759b4a0c84838d0a932",
+  "date": "2026-09-27",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "claim_status": "Exact bounded OBSERVED / REPRODUCED evidence; selection hypotheses remain unproved outside the prescribed inputs.",
+  "provenance": "AI-designed and implemented experiment, independently structured interval and state-sweep computations, exact rational LP certificates; not human referee certification.",
+  "commands": [
+    "python -B reviews/2026-09-27-lr2/check_core_selection.py --check",
+    "python -B reviews/2026-09-27-lr2/crosscheck_core_selection.py --check",
+    "python -B reviews/2026-09-27-lr2/check_core_selection_repair.py --check"
+  ],
+  "verification": "All three commands passed read-only; no older research suite rerun.",
+  "counts": {
+    "configurations": 11,
+    "references": 88,
+    "labelled_cores": 3080,
+    "core_components": 778145,
+    "strict_references": 85,
+    "all_distinct_references": 53,
+    "strict_all_core_failures": 0,
+    "successful_core_choices": 2974
+  },
+  "additional_pair_repair": {
+    "failed_strict_cores": 1,
+    "repaired_pair_bound": "1/1260",
+    "actual_duration": "1/210",
+    "all_strict_core_choices_pair_certified": 2975
+  },
+  "discovery_helper": {
+    "path": "reviews/2026-09-27-ultra/optimization_check.py",
+    "sha256": "b0861e39a1085ad8f78698edbaf3a8f1e5b928f6e0153465dbe440f5e42dcc4f",
+    "scope": "Used only to discover the repair LP optimum; new standalone repair replay requires no optimizer or project import."
+  },
+  "files": {
+    "HANDOFF.md": {
+      "bytes": 130218,
+      "sha256": "b64f41a3d8c1ce60a186aff5893ca38ad0920428327651ef54b660c9a30182f2"
+    },
+    "LR2_HANDOFF.md": {
+      "bytes": 33962,
+      "sha256": "b31cb440ddc068f7776e0bea8101a83d9e720e808259416b12732472e1766016"
+    },
+    "README.md": {
+      "bytes": 6691,
+      "sha256": "f855d11b0e888577744586930e9a76ee06813d0c4ee01047e4d83eb4d62301a7"
+    },
+    "notes/ALL_CORE_SELECTION_2026_09_27.md": {
+      "bytes": 13237,
+      "sha256": "203e3a771d5ee5effdb836e0d0458d01a0849a0e199c363c6aa56420aa4da83a"
+    },
+    "reviews/2026-09-27-lr2/check_core_selection.py": {
+      "bytes": 9226,
+      "sha256": "ee58d0d6cf8184e24416f369360e29c4a9617d9c6d68f3d9bf388c96545c338b"
+    },
+    "reviews/2026-09-27-lr2/crosscheck_core_selection.py": {
+      "bytes": 9414,
+      "sha256": "c37a3289416a87ea10a4aebdc9a8f3704b90aad8932ed23027a5094040308534"
+    },
+    "reviews/2026-09-27-lr2/check_core_selection_repair.py": {
+      "bytes": 5639,
+      "sha256": "9830a2db252406f451af70db8009c28e9381c18517be9d4bac5004cd36b57740"
+    },
+    "reviews/2026-09-27-lr2/core_selection_crosscheck.json": {
+      "bytes": 20331,
+      "sha256": "bbe875642e43825b09eb8d243b1be660966dde78e32bdef1a78ca3f6281ed7ea"
+    },
+    "reviews/2026-09-27-lr2/core_selection_repair.json": {
+      "bytes": 8124,
+      "sha256": "fbb5f4278a834401dc5d21a3dfc01b6d6eb9458a1f9a0793e03bdec28fabbc46"
+    },
+    "reviews/2026-09-27-lr2/core_selection/consecutive.json": {
+      "bytes": 91665,
+      "sha256": "bd2a8e78941533100b56b09fce4812f125e23f5f9d1456f7caa589fbf7d7485b"
+    },
+    "reviews/2026-09-27-lr2/core_selection/contact13.json": {
+      "bytes": 92350,
+      "sha256": "5aefa317bb369a572196f2a94002d08f7023665de0efecea3e982a7ba7b82777"
+    },
+    "reviews/2026-09-27-lr2/core_selection/cycle112.json": {
+      "bytes": 96313,
+      "sha256": "3af57d32fc65e7414637121262c91d0469788d45d9bce488e22460362ce7df85"
+    },
+    "reviews/2026-09-27-lr2/core_selection/cycle113.json": {
+      "bytes": 95899,
+      "sha256": "02ee2018bb40957c1b740fa411793ab26ee1018723a0d353214f3b0555bf34ef"
+    },
+    "reviews/2026-09-27-lr2/core_selection/gcd266.json": {
+      "bytes": 95299,
+      "sha256": "319444c3409932f8abf8f38749b3b899380d52db7a8b4d3201748d5290f6365a"
+    },
+    "reviews/2026-09-27-lr2/core_selection/gcd532.json": {
+      "bytes": 96038,
+      "sha256": "f9725ac92c80f7d8cac1b7c79755f49071d06d7db06dbe652acc19e1771ef4cd"
+    },
+    "reviews/2026-09-27-lr2/core_selection/local1680.json": {
+      "bytes": 97269,
+      "sha256": "941ea76f975747cf2eef687e6807310503b139ddecfe94533d2f72e454133bfd"
+    },
+    "reviews/2026-09-27-lr2/core_selection/local3360.json": {
+      "bytes": 98054,
+      "sha256": "9d465960d9475bcceb813c03c609def008412333759d05be061ec02f01970655"
+    },
+    "reviews/2026-09-27-lr2/core_selection/moment45.json": {
+      "bytes": 94149,
+      "sha256": "a77bca70be1ad0a827d422d804b1001b814d8edeaa3a2c7ef49fd58878517b41"
+    },
+    "reviews/2026-09-27-lr2/core_selection/moment90.json": {
+      "bytes": 94739,
+      "sha256": "207ecddb193c4f9fb17384111f17c80bf6a06b60e251d04d34ccd005b46f03bf"
+    },
+    "reviews/2026-09-27-lr2/core_selection/tree16.json": {
+      "bytes": 93148,
+      "sha256": "8a138cf32dbe72437f04355ee7df39e8e096a99df1665f7aaffcb8ef06fd25fd"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-29",
+  "frozen_source_commit": "8a967b30fcd73abd814e4c8f7f53f216c4b3f61e",
+  "status": "HYPOTHESIS / internally reviewed proof candidate; no result-level defect found; external certification and novelty unresolved",
+  "reviewers": [
+    "geometry",
+    "upper",
+    "selector",
+    "physical",
+    "semantics",
+    "prior_art"
+  ],
+  "scope": {
+    "complete_physical_q": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "large_witness_only_q": [
+      100002,
+      100003,
+      100004,
+      100005,
+      100006,
+      100007
+    ],
+    "ambient_cells": 10,
+    "vertices": 33,
+    "edges": 45,
+    "symbolic_upper_comparisons": 84,
+    "maximizing_times_in_small_cases": 60,
+    "affine_endpoint_inequalities": 56,
+    "hourly_paused": true
+  },
+  "files_sha256": {
+    "reviews/2026-09-29-ltcm-ultra-review/PROTOCOL.md": "f606e3f62fd5f6b306b836c8acbd9552fe81bd9da84e563c7073e2d5e434ebc7",
+    "reviews/2026-09-29-ltcm-ultra-review/SOURCE_INTEGRITY.json": "8ee2452300888cb5a02e49746c0c261e6895d5fa77975de2bcf94700de4e71f7",
+    "reviews/2026-09-29-ltcm-ultra-review/geometry_check.json": "c4d5cf00348fce6e2a162a75379056e13155ccfbf12edee4de5f43727923d793",
+    "reviews/2026-09-29-ltcm-ultra-review/geometry_check.py": "92597d63c0ee975b4f2eab5ec4240c6997366efde6243f68492b2456a25e710c",
+    "reviews/2026-09-29-ltcm-ultra-review/geometry_review.md": "1276c7dc7c50e2f19d9ca53e594f4166d829aaffadfb9e152d6bccef52c3f107",
+    "reviews/2026-09-29-ltcm-ultra-review/physical_check.json": "91f6c289a612f2863ff624a99005e30a0977b919867f46df53bcaed079f6ae16",
+    "reviews/2026-09-29-ltcm-ultra-review/physical_check.py": "973b4fdd35a6e67ca9fe2beb20ddf181a74073efaf4b36aab1fda92ec925ca6e",
+    "reviews/2026-09-29-ltcm-ultra-review/physical_review.md": "bca413e43850aa72444c12c51be75c417edaabd8d3af8374979cdd1945341525",
+    "reviews/2026-09-29-ltcm-ultra-review/prior_art_review.md": "e0503a27b9ad804e0389474c942b14f743663082f732abfd7e418c5479890638",
+    "reviews/2026-09-29-ltcm-ultra-review/selector_review.md": "e7908d24f663e61103ef7b640df0957841181f44a4f51225b02accc872eac21d",
+    "reviews/2026-09-29-ltcm-ultra-review/semantics_check.json": "c9f1221c7dc5554c63c97ce1525f9194d377d455090e68e60eb72faa01e1e9d7",
+    "reviews/2026-09-29-ltcm-ultra-review/semantics_check.py": "432539d5722b05065e7c7cdd2094dd97cf60b53c71f7ec028cd815e0b9f71443",
+    "reviews/2026-09-29-ltcm-ultra-review/semantics_review.md": "4c77e74b4bb11952024acb60aa6430d0ced081096b77f6f50e6f51a77f089eac",
+    "reviews/2026-09-29-ltcm-ultra-review/upper_check.json": "cf2a8f408199499da7b3322df4c44fb3572f9ab172efcccf7201864292f22c33",
+    "reviews/2026-09-29-ltcm-ultra-review/upper_check.py": "7de65a03766825e40ec7617017c64d5f7860f42a4fac5f9913c4259198b40502",
+    "reviews/2026-09-29-ltcm-ultra-review/upper_review.md": "bc619339900a34aeb1928651833997a923b30d6e93129f0c5692f7df10ba88a6",
+    "notes/LTCM_ULTRA_REVIEW_2026_09_29.md": "770c89c87cd1794a3421e989c5f49ea6d9a56541ae0cf15735757b2b2ddaf056"
+  },
+  "commands": [
+    "python3 reviews/2026-09-29-ltcm-ultra-review/geometry_check.py",
+    "python3 reviews/2026-09-29-ltcm-ultra-review/upper_check.py",
+    "python3 reviews/2026-09-29-ltcm-ultra-review/physical_check.py",
+    "python3 reviews/2026-09-29-ltcm-ultra-review/semantics_check.py"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "baseline": "60f1665e92b54c3117fd73f5b83542c424dc9f21",
+  "frozen_before_calculation": true,
+  "question": "Does any already archived tree-missed positive runner window realize the abstract collective-only obstruction: pair-only minimum uncovered duration zero, all four cover-constrained individual inclusive-triple minima zero, but actual positive lonely duration?",
+  "source_contract": {
+    "archive": "reviews/2026-09-27-team/results.json",
+    "archive_sha256": "62a49c217e0334be78d5040c3acf454cd49c103a0e11eca4dad896fc5f53d56f",
+    "reconstruction": "reviews/2026-09-27-team/calculate.py",
+    "reconstruction_sha256": "5b5e4a1d8df315ac80fcca5567acc219b40081b8df3835852a7d0510a7084639",
+    "source_protocol": "reviews/2026-09-27-team/protocol.json",
+    "source_protocol_sha256": "578ad79f2d65ffe7309e3b1ae576de98e24ccaab1c23d3ea2600cedb5a9636a2"
+  },
+  "frozen_domain": "Every source component, without deduplication, whose archived exact actual duration is positive and whose archived reduced optimal tree bound is nonpositive. The source archive fixes six configurations, reference 0, all 35 labelled three-runner cores and every complete closed core-safe component in [0,1]. Its aggregate count is 18. Reconstruct only these records from the pinned source algorithm; add no speeds, cores, windows or subdivisions.",
+  "event_model": "For each selected component use its four labelled residual strict blocking events on the closed window. Retain exact total length, four single durations and all six pair durations. Sixteen nonnegative atom masses represent exact active subsets; atom 0 is uncovered duration. Inclusive triple mass for a three-label set is the sum of its exact-triple atom and the four-way atom.",
+  "frozen_rule": [
+    "Minimize atom 0 subject to the exact total, single and pair moments. Accept an optimum only with exact rational primal and dual certificates.",
+    "Only when that pair-only optimum is zero, impose atom 0=0 and separately minimize each of the four inclusive triple masses. Accept each optimum only with exact rational primal and dual certificates.",
+    "Call a selected physical window a collective-only counterpart exactly when its archived actual duration is positive, its pair-only optimum is zero, and all four cover-constrained individual triple minima are zero.",
+    "Do not retune the rule, add a combined statistic, select a different window, or query physical triple geometry after observing outcomes. Record every negative case and any repeated physical window under distinct labelled cores.",
+    "For diagnostic comparison only, report actual triple/four-way masses already reconstructed on the same selected windows. These data do not enter selection or optimization."
+  ],
+  "controls": {
+    "source": "reviews/2026-09-28-cover-obligations/results.json",
+    "names": ["strict_16", "doubling_112", "tight_13"],
+    "expected_roles": "strict_16 calibrates a positive forced individual triple; doubling_112 calibrates a positive pair-only minimum; tight_13 calibrates zero pair-only and zero individual triple minima with equality-only physical survival. Recheck archived exact certificates read-only; do not count these three controls among the 18-window search."
+  },
+  "verification_contract": "Primary calculation may use numerical LP only to propose rational supports and duals, then must verify feasibility and equal objectives exactly. A separately structured verifier must independently reconstruct the 18 windows from threshold events, solve or derive every claimed optimum without importing primary code, and compare identities. Adversarial review must test quantifier order, duplicate counting, endpoint/equality handling, selected-reference scope and the distinction between abstract compatible covers and runner-realizable arrangements.",
+  "scope": "At most 18 baseline pair LPs, and at most 72 cover-constrained triple LPs if every baseline is zero, plus the three archived controls. Exact rational arithmetic; no new configurations, all-reference scan, alternate windows, +7/+9, broad search, paid compute, outreach, main merge or novelty claim.",
+  "status": "Finite diagnostics are OBSERVED/REPRODUCED. Any general implication remains HYPOTHESIS/proof candidate. Internal AI agreement is not independent mathematical validation."
+}

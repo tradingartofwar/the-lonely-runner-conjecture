@@ -1,0 +1,48 @@
+<section class="intro">
+  <p class="eyebrow">TWO COMPATIBLE SEGMENTS → INTEGER ROUNDING → ONE SAFE TIME</p>
+  <h1>One safe time.<br> At most two tests.</h1>
+  <p class="lead">If the question asks for one witness, we can carry much less geometry. Two closed segments keep all seven safety constraints together; an integer test connects them to the runners.</p>
+  <div class="badges"><span class="badge">HYPOTHESIS · pinned two-segment proof candidate</span><span class="quiet">Five exact finite display controls reproduced</span></div>
+</section>
+<section class="control-bar select-controls" aria-label="Selector example">
+  <label class="field">Choose a control<select id="selector-q"><option value="5">q = 5 · fallback needed</option><option value="3">q = 3 · negative lower bound</option><option value="4">q = 4 · lower endpoint</option><option value="6">q = 6 · upper endpoint</option><option value="10">q = 10 · width exceeds one</option></select></label>
+  <div class="clock-map"><strong id="selector-speeds"></strong><span>A ray · x = {t}, y = {qt}, H = qx − y ∈ ℤ · t = x</span><span>Eight common-start runners · reference 0 · closed safety threshold 1/8</span></div>
+</section>
+<div class="select-action-bar"><div><p class="eyebrow">RUN THE SELECTOR</p><p id="selector-progress" aria-live="polite">No interval tested yet.</p></div><div class="button-row"><button id="selector-next" class="primary">Test E1 →</button><button id="selector-run">Run to a witness</button><button id="selector-reset">Reset</button></div></div>
+<section class="select-layout">
+  <article class="panel select-geometry">
+    <div class="panel-heading"><div><p class="eyebrow">A SMALLER MODEL AT z = 1/8</p><h2>Every point on these segments is ambient-safe.</h2></div><span class="tag">E1 + E2</span></div>
+    <svg id="selector-segments" role="img" aria-label="The two closed safe segments and the tested actual-orbit line"></svg>
+    <div class="legend"><span><i class="key cap-key"></i>Closed safe segments</span><span><i class="key select-orbit-key"></i>Tested integer orbit</span><span><i class="key hit-key"></i>Accepted same-point witness</span></div>
+    <p class="caption" id="selector-geometry-caption"></p>
+    <div class="select-equations"><div><strong>E1 · parent P1</strong><span>y = 7/8 − 3x</span><span>1/8 ≤ x ≤ 5/24</span></div><div><strong>E2 · parent P3</strong><span>y = 9/8 − 2x</span><span>3/8 ≤ x ≤ 1/2</span></div></div>
+    <details><summary>Why an entire segment is safe</summary><p>Each of the seven fractional forms is affine along a segment. Both endpoints lie in [1/8, 7/8], so every point between them does too. Closed endpoints are part of the certificate.</p><p>The fixed form 3x + y = 7/8 on E1, or 2x + y − 1 = 1/8 on E2, keeps the selected minimum at exactly 1/8.</p></details>
+  </article>
+  <div class="select-trials">
+    <article class="panel select-trial" id="selector-trial-0">
+      <div class="panel-heading"><div><p class="eyebrow">FIRST TEST</p><h2>E1 · round up, then check</h2></div><span class="select-status" id="selector-status-0">Not tested</span></div>
+      <p class="select-interval" id="selector-interval-0"></p><svg id="selector-rail-0" role="img" aria-label="E1 orbit interval and its first candidate integer"></svg><p id="selector-test-0" class="select-test"></p>
+    </article>
+    <article class="panel select-trial" id="selector-trial-1">
+      <div class="panel-heading"><div><p class="eyebrow">FALLBACK · ONLY IF E1 FAILS</p><h2>E2 · try the second segment</h2></div><span class="select-status" id="selector-status-1">Waiting</span></div>
+      <p class="select-interval" id="selector-interval-1"></p><svg id="selector-rail-1" role="img" aria-label="E2 orbit interval and its first candidate integer"></svg><p id="selector-test-1" class="select-test"></p>
+    </article>
+    <div id="selector-decision" class="select-decision" aria-live="polite"></div>
+  </div>
+</section>
+<section class="panel select-recovery" id="selector-recovery" hidden>
+  <div class="panel-heading"><div><p class="eyebrow">INVERT THE ACCEPTED ORBIT VALUE</p><h2 id="selector-recovery-title"></h2></div><span class="tag" id="selector-time"></span></div>
+  <div class="select-recovery-grid"><div><p id="selector-recovery-formula" class="formula"></p><p id="selector-recovery-copy"></p></div><dl class="readout"><div><dt>Common point (x, y)</dt><dd id="selector-point"></dd></div><div><dt>Integer H</dt><dd id="selector-H"></dd></div><div><dt>Minimum distance</dt><dd>1/8</dd></div></dl></div>
+</section>
+<section id="selector-physical" class="panel physical-panel" hidden>
+  <div class="panel-heading"><div><p class="eyebrow">CHECK EVERY RUNNER AT THAT SAME TIME</p><h2>One time carries all seven constraints.</h2></div><label class="check"><input id="selector-reflect" type="checkbox"> Reflect time: t → 1 − t</label></div>
+  <div class="physical-grid"><div><svg id="selector-track" role="img" aria-label="Runner phases at the selected or reflected time"></svg><p class="caption" id="selector-reflection-note"></p></div><div class="phase-wrap"><p id="selector-physical-summary" class="physical-summary"></p><table><caption class="sr-only">Exact physical laps, phases and distances at the selected time</caption><thead><tr><th>Speed</th><th>Lap</th><th>Phase</th><th>Distance to 0</th></tr></thead><tbody id="selector-phase-rows"></tbody></table></div></div>
+</section>
+<section class="select-coverage">
+  <div><p class="eyebrow">WHY THE SOURCE CANDIDATE COVERS EVERY q ≥ 2</p><h2>A width bound, seven small cases, one fallback.</h2><p>The primary orbit interval has width <strong>(q + 3)/12</strong>. For q ≥ 9, that is at least one, so it must contain an integer. The complete remaining inputs are q = 2,…,8.</p><p>Only q = 5 fails the primary test. E2 gives [3/2, 19/8], which contains 2. The all-q argument rests on this finite reduction and the segment safety certificate—not on extrapolation from the five interactive examples.</p><p class="caption">At most two roundings and interval tests. Integer bit lengths and arithmetic costs still grow with q; this is not a constant-runtime claim.</p></div>
+  <div class="panel"><p class="eyebrow">THE COMPLETE SMALL-INPUT CHECK FOR E1</p><div class="table-scroll"><table><thead><tr><th>q</th><th>Lower</th><th>Ceil(lower)</th><th>Upper</th><th>Pass?</th></tr></thead><tbody id="selector-coverage-rows"></tbody></table></div><p class="caption">Equality passes at q=4 and q=6. This arithmetic table does not change the declared physical display controls.</p></div>
+</section>
+<section class="joint-takeaway"><p class="eyebrow">THE QUESTION THIS SMALL MODEL ANSWERS</p><p>Find one safe time.<br> Keep the route back to the runners.</p><span id="selector-scope-example">The selected time proves existence in the stated scope. It does not enumerate all witnesses or establish the optimum.</span></section>
+<section class="scope-grid"><article><p class="eyebrow">RETAINED</p><h2>Enough structure to select and recover.</h2><p>Two closed segments, all seven joint bands, torus laps, the integer orbit, the coverage argument, and the inverse time/lap map. The endpoints preserve equality.</p></article><article class="scope"><p class="eyebrow">RECOVERY TRIGGER</p><h2>Return to the atlas when the question changes.</h2><p>The two segments omit other safe points, optimum values and complete maximizing sets. Recover the full parent/child geometry before asking those questions or changing the ray, coefficients, reference or threshold.</p><a href="#representation">Revisit the representation choices →</a></article></section>
+<footer><p>This chapter presents the original pinned E1-then-E2 selector. Later research uses other segment orders and broader certificates; those are separate versions. Five exact controls illustrate this candidate without extending its claim status.</p><details><summary>Sources, evidence and reproducibility</summary><p id="selector-build-info"></p><ul id="selector-source-links"></ul><p>The finite examples, endpoint calculations and physical checks are reproduced. Universal adequacy retains the pinned HYPOTHESIS / complete proof-candidate status, with independent mathematical assessment open. AI-assisted implementation and same-author checking; no novelty or general Lonely Runner claim.</p></details><a href="#transfer">← Return to section 04: what survives the cut</a></footer>
+<p class="next-chapter"><a href="#clock">Next: why separate overlaps need one shared clock →</a></p>

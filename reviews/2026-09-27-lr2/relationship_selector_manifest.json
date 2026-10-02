@@ -1,0 +1,155 @@
+{
+  "baseline_commit": "6c66a3d7727b6ff3ce03d46d58faee86ebac52b5",
+  "date": "2026-09-27",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "0e2d4a37dcd2c0276ca8d7dd68938d1bfe7bdbf1a32012a19a8ac15e39ae7dfb",
+  "scope": {
+    "reference": 0,
+    "total_runners": 8,
+    "threshold": "1/8",
+    "cases": [
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        11,
+        45
+      ],
+      [
+        11,
+        46
+      ],
+      [
+        19,
+        45
+      ]
+    ],
+    "cores": [
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        1,
+        4,
+        6
+      ]
+    ],
+    "windows": 80
+  },
+  "results": {
+    "configurations": 5,
+    "windows": 80,
+    "positive_actual_windows": 30,
+    "positive_tree_windows": 16,
+    "reduced_count_histogram": {
+      "0": 0,
+      "1": 40,
+      "2": 10,
+      "3": 2,
+      "4": 28
+    },
+    "reduced_moment_count": 362,
+    "unreduced_moment_count": 800,
+    "pointwise_ae_map_disagreements": 0,
+    "G_positive_cases": 0,
+    "Q_positive_cases": 4,
+    "Q_endpoint_fallback_cases": 1,
+    "matches": {
+      "map": {
+        "different_duration": 8,
+        "different_existence": 6,
+        "different_status": 8,
+        "different_allowed_set": 8,
+        "groups": 16
+      },
+      "map_singles": {
+        "different_duration": 0,
+        "different_existence": 0,
+        "different_status": 0,
+        "different_allowed_set": 0,
+        "groups": 4
+      },
+      "map_singles_pairs": {
+        "different_duration": 0,
+        "different_existence": 0,
+        "different_status": 0,
+        "different_allowed_set": 0,
+        "groups": 4
+      }
+    }
+  },
+  "claim_status": "OBSERVED / REPRODUCED finite calculations; local map sufficiency and the specified G-success hypothesis have exact counterexamples. General reduction/tree invariance arguments remain proof candidates. No new coverage, novelty, or runtime-speedup claim.",
+  "verification": {
+    "status": "PASS",
+    "read_only_commands": [
+      "python -B reviews/2026-09-27-lr2/check_relationship_selector.py --check",
+      "python -B reviews/2026-09-27-lr2/crosscheck_relationship_selector.py --check"
+    ],
+    "independent_methods": "Strict endpoint interval sets; subset intersections and Boolean inversion; exhaustive representative sets; Kruskal; threshold-cell allowed sets; pairwise summary comparisons.",
+    "documentation_links": "PASS",
+    "broader_regression_rerun": false
+  },
+  "provenance": "AI-assisted protocol, derivation, code and writing. Separate implementations, no outside proof certification. Known controls informed design; no held-out or external preregistration claim.",
+  "unchanged_prior_evidence_sha256": {
+    "notes/FIXED_WINDOW_CONTAINMENT_2026_09_27.md": "269dbd8524c77740625c39567b55fb7657e561a997397e876dd044735cbf7f92",
+    "reviews/2026-09-27-lr2/check_fixed_containment.py": "68252b31ab949f08f079384ca0ceb6d0c16f797e750846f71a8571cbdec4791f",
+    "reviews/2026-09-27-lr2/crosscheck_fixed_containment.py": "1a7cb76472927c2cb85ffb64f3597022b27c96c4c2b7ca702bff74b69370723a",
+    "reviews/2026-09-27-lr2/fixed_containment.json": "441003925bf65990b2a1418cdbf156e8def648a3b6c0b485305f641b2c1d9b7d",
+    "reviews/2026-09-27-lr2/fixed_containment_crosscheck.json": "b7d8f0f779750efc1f26fb4ff07809098abcc0b310f9e9a7691cae7410d3f42a"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 8477,
+      "sha256": "722d7e3bc07297691ef04f262d240f699e4c0480ec9413de8072f9eaa3deb6c8"
+    },
+    "HANDOFF.md": {
+      "bytes": 141427,
+      "sha256": "ee7f331aca8d6cbf42e94eb37c7acf6ef2f308ebd1a5481051879efc400ab5f8"
+    },
+    "LR2_HANDOFF.md": {
+      "bytes": 37963,
+      "sha256": "cfc7c048467142d5513fe7ab1ae711eaea97c9b10d07d191d3e48dccc993af6b"
+    },
+    "notes/inquiries/README.md": {
+      "bytes": 2068,
+      "sha256": "45e87268a7be41a65840d2b5b35f8da755ca970b371cc65b7e98da83b76178a7"
+    },
+    "notes/inquiries/2026-09-27-relationships-and-independence.md": {
+      "bytes": 20979,
+      "sha256": "e1caa10e881ec686e2b95ac28f93860fad33a5f0f63cba218849f7968c4f1fac"
+    },
+    "notes/RELATIONSHIP_SELECTOR_2026_09_27.md": {
+      "bytes": 15635,
+      "sha256": "bde1851aa5c204a1dca7136c1b7e5a413cd88ace2bf19be35461083628f2ea5b"
+    },
+    "reviews/2026-09-27-lr2/relationship_selector_protocol.json": {
+      "bytes": 4110,
+      "sha256": "0e2d4a37dcd2c0276ca8d7dd68938d1bfe7bdbf1a32012a19a8ac15e39ae7dfb"
+    },
+    "reviews/2026-09-27-lr2/check_relationship_selector.py": {
+      "bytes": 12055,
+      "sha256": "bedcc1cd470e4f71f5af9c0203450eb33a30d6838d1e5cf7b6062439f12d2ec3"
+    },
+    "reviews/2026-09-27-lr2/crosscheck_relationship_selector.py": {
+      "bytes": 14699,
+      "sha256": "54fdb8c2d4ca6fbf9dbf09107a632eb3c58b5531f3ae4db22203b94b18c3984c"
+    },
+    "reviews/2026-09-27-lr2/relationship_selector.json": {
+      "bytes": 338778,
+      "sha256": "a83a5a2f134c0d37147baf1cf34a083271cb403134b32267f74533e753f70e76"
+    },
+    "reviews/2026-09-27-lr2/relationship_selector_crosscheck.json": {
+      "bytes": 1642,
+      "sha256": "8256a6cea7bd38cd8b4230ff8ae95f0a7fbe760ea0ff8acbf28a8422b819a55e"
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "speeds": [
+    0,
+    1,
+    4,
+    5,
+    6,
+    7,
+    11,
+    16
+  ],
+  "J": [
+    "9/32",
+    "3/8"
+  ],
+  "clear_interval": [
+    "17/56",
+    "39/128"
+  ],
+  "clear_duration": "1/896",
+  "individual_durations": {
+    "6": "1/24",
+    "7": "5/224",
+    "11": "9/352",
+    "16": "3/128"
+  },
+  "pair_overlaps": [
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "duration": 0
+    },
+    {
+      "pair": [
+        6,
+        11
+      ],
+      "duration": "1/528"
+    },
+    {
+      "pair": [
+        6,
+        16
+      ],
+      "duration": "1/128"
+    },
+    {
+      "pair": [
+        7,
+        11
+      ],
+      "duration": "1/352"
+    },
+    {
+      "pair": [
+        7,
+        16
+      ],
+      "duration": 0
+    },
+    {
+      "pair": [
+        11,
+        16
+      ],
+      "duration": "1/128"
+    }
+  ],
+  "excess": "569/29568",
+  "maximum_tree": [
+    [
+      6,
+      16
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      11,
+      16
+    ]
+  ],
+  "maximum_tree_weight": "13/704",
+  "best_tree_bound": "-23/29568",
+  "tree_gap": "1/528",
+  "status_distribution": [
+    {
+      "active": [],
+      "duration": "1/896"
+    },
+    {
+      "active": [
+        6
+      ],
+      "duration": "45/1408"
+    },
+    {
+      "active": [
+        6,
+        11
+      ],
+      "duration": "1/528"
+    },
+    {
+      "active": [
+        6,
+        16
+      ],
+      "duration": "1/128"
+    },
+    {
+      "active": [
+        7
+      ],
+      "duration": "3/154"
+    },
+    {
+      "active": [
+        7,
+        11
+      ],
+      "duration": "1/352"
+    },
+    {
+      "active": [
+        11
+      ],
+      "duration": "5/384"
+    },
+    {
+      "active": [
+        11,
+        16
+      ],
+      "duration": "1/128"
+    },
+    {
+      "active": [
+        16
+      ],
+      "duration": "1/128"
+    }
+  ],
+  "alternative_zero_clear_distribution": [
+    {
+      "active": [],
+      "duration": "0"
+    },
+    {
+      "active": [
+        6
+      ],
+      "duration": "163/4928"
+    },
+    {
+      "active": [
+        6,
+        11
+      ],
+      "duration": "23/29568"
+    },
+    {
+      "active": [
+        6,
+        11,
+        16
+      ],
+      "duration": "1/896"
+    },
+    {
+      "active": [
+        6,
+        16
+      ],
+      "duration": "3/448"
+    },
+    {
+      "active": [
+        7
+      ],
+      "duration": "3/154"
+    },
+    {
+      "active": [
+        7,
+        11
+      ],
+      "duration": "1/352"
+    },
+    {
+      "active": [
+        11
+      ],
+      "duration": "19/1344"
+    },
+    {
+      "active": [
+        11,
+        16
+      ],
+      "duration": "3/448"
+    },
+    {
+      "active": [
+        16
+      ],
+      "duration": "1/112"
+    }
+  ],
+  "checks": "Exact complete boundary partition, all 16 Prufer trees, and matching first/second moments passed."
+}

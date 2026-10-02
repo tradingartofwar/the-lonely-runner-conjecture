@@ -1,0 +1,122 @@
+{
+  "source_hash_checks": 39,
+  "frozen_phase_sets": 54,
+  "complete_local_schedule_checks": 64,
+  "stored_strict_interval_certificates": 173,
+  "stored_contact_types": 6,
+  "core_endpoint_extreme_witnesses": 16,
+  "core_endpoint_reachable_contact_classifications": 72
+}
+starts_interval {'A': (4, -8, 11, -11), 'x0': Fraction(1, 8), 'q': 21, 't': Fraction(5, 8), 'kind': 'starts_interval', 'active': [(21, Fraction(1, 8)), (85, Fraction(1, 8)), (229, Fraction(1, 8))], 'radius': Fraction(1, 233000), 'local_component': ((Fraction(5, 8), Fraction(72813, 116500)),)}
+ends_interval {'A': (5, -19, 20, -32), 'x0': Fraction(7, 16), 'q': 23, 't': Fraction(1, 16), 'kind': 'ends_interval', 'active': [(46, Fraction(7, 8)), (462, Fraction(7, 8)), (734, Fraction(7, 8))], 'radius': Fraction(1, 734000), 'local_component': ((Fraction(22937, 367000), Fraction(1, 16)),)}
+isolated {'A': (4, 8, 11, 13), 'x0': Fraction(1, 8), 'q': 17, 't': Fraction(1, 8), 'kind': 'isolated', 'active': [(17, Fraction(1, 8)), (137, Fraction(1, 8)), (223, Fraction(7, 8))], 'radius': Fraction(1, 223000), 'local_component': ((Fraction(1, 8), Fraction(1, 8)),)}
+Additional continuum and symbolic checks: {
+  "source_hash_checks": 39,
+  "frozen_phase_sets": 54,
+  "complete_local_schedule_checks": 64,
+  "stored_strict_interval_certificates": 173,
+  "stored_contact_types": 6,
+  "core_endpoint_extreme_witnesses": 16,
+  "core_endpoint_reachable_contact_classifications": 72,
+  "affine_runner_cell_certificates": 864,
+  "recomputed_vertex_phase_checks": 3456,
+  "fixed_family_unbounded_winner_comparisons": 40
+}
+Complete endpoint examples: [
+  {
+    "A": [
+      4,
+      -8,
+      11,
+      -11
+    ],
+    "x0": "1/8",
+    "q": 21,
+    "speeds": [
+      21,
+      42,
+      63,
+      85,
+      167,
+      233,
+      229
+    ],
+    "contact": "5/8",
+    "complete_component": [
+      "5/8",
+      "1167/1864"
+    ]
+  },
+  {
+    "A": [
+      5,
+      -19,
+      20,
+      -32
+    ],
+    "x0": "7/16",
+    "q": 23,
+    "speeds": [
+      23,
+      46,
+      69,
+      116,
+      436,
+      462,
+      734
+    ],
+    "contact": "1/16",
+    "complete_component": [
+      "217/3488",
+      "1/16"
+    ]
+  },
+  {
+    "A": [
+      4,
+      8,
+      11,
+      13
+    ],
+    "x0": "1/8",
+    "q": 17,
+    "speeds": [
+      17,
+      34,
+      51,
+      69,
+      137,
+      189,
+      223
+    ],
+    "contact": "1/8",
+    "complete_component": [
+      "1/8",
+      "1/8"
+    ]
+  },
+  {
+    "A": [
+      4,
+      -32,
+      23,
+      -55
+    ],
+    "x0": "7/24",
+    "q": 35,
+    "speeds": [
+      35,
+      70,
+      105,
+      141,
+      1119,
+      807,
+      1923
+    ],
+    "contact": "5/24",
+    "complete_component": [
+      "5/24",
+      "5/24"
+    ]
+  }
+]

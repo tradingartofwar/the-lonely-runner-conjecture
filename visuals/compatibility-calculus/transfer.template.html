@@ -1,0 +1,47 @@
+<section class="intro">
+  <p class="eyebrow">PARENT GEOMETRY → ONE MORE CONSTRAINT → PHYSICAL SURVIVORS</p>
+  <h1>What survives<br> the cut?</h1>
+  <p class="lead">Adding one runner changes the set of compatible states. An interval can disappear. An isolated point can survive. A new best contact can form inside an old face.</p>
+  <div class="badges"><span class="badge">REPRODUCED · three exact finite controls</span><span class="quiet">Same closed floor z ≥ 1/8 before and after</span></div>
+</section>
+<div class="cut-cases" role="group" aria-label="Choose a parent-to-child transformation">
+  <button data-cut-case="removed" aria-pressed="true"><span>01 / q = 4</span><strong>An interval disappears</strong><small>P2 → C3</small></button>
+  <button data-cut-case="equality" aria-pressed="false"><span>02 / q = 4</span><strong>An isolated point survives</strong><small>P4 → C5 + C6</small></button>
+  <button data-cut-case="face" aria-pressed="false"><span>03 / q = 10</span><strong>A new contact appears</strong><small>P7 → C9</small></button>
+</div>
+<section class="control-bar cut-family" aria-label="Physical family and selected orbit">
+  <span class="tag">A ray · t = x</span><div class="clock-map"><strong id="cut-speeds"></strong><span id="cut-orbit"></span><span>Six moving runners → seven; stationary reference 0. All start together.</span></div>
+</section>
+<div class="cut-stage-bar"><div class="cut-stages" role="group" aria-label="Transformation stage">
+  <button data-cut-stage="0" aria-pressed="true">1 · Six constraints</button><button data-cut-stage="1" aria-pressed="false">2 · Add the seventh</button><button data-cut-stage="2" aria-pressed="false">3 · Recover time</button>
+</div><button id="cut-next" class="primary">Add the seventh →</button></div>
+<section class="cut-layout">
+  <article class="panel cut-volume">
+    <div class="panel-heading"><div><p class="eyebrow">THE FULL PARENT AND ITS CHILDREN</p><h2 id="cut-volume-title"></h2></div><span class="tag" id="cut-parent-tag"></span></div>
+    <svg id="cut-geometry" role="img" aria-label="Exact parent and child geometry with the selected actual-orbit slice"></svg>
+    <div class="camera-controls"><button id="cut-rotate-left" aria-label="Rotate parent geometry left">↶ Rotate</button><button id="cut-rotate-right" aria-label="Rotate parent geometry right">Rotate ↷</button><button id="cut-reset">Reset view</button><label class="check"><input id="cut-show-orbit" type="checkbox" checked> Show actual-orbit slice</label></div>
+    <div class="legend"><span><i class="key cut-parent-key"></i>Six-form parent</span><span><i class="key cap-key"></i>Seven-form child</span><span><i class="key slice-key"></i>Actual orbit</span><span><i class="key section-key"></i>New edge in an old face</span></div>
+    <p class="caption">The parent is ambient geometry. Only points on the selected integer-orbit slice describe the corresponding physical times. The drawing exaggerates height by ×2; exact fractions govern the geometry.</p>
+    <details><summary>Exact child vertices and orbit values</summary><div class="table-scroll"><table><thead><tr><th>Child</th><th>x</th><th>y</th><th>z</th><th>H</th></tr></thead><tbody id="cut-vertex-rows"></tbody></table></div><p class="caption">A noninteger H prevents physical recovery on this ray. An integer vertex on a different H belongs to a different orbit slice.</p></details>
+  </article>
+  <article class="panel cut-slice">
+    <p class="eyebrow">THE SAME GEOMETRY ON ONE PHYSICAL ORBIT</p><h2 id="cut-slice-title"></h2>
+    <p id="cut-slice-copy"></p>
+    <svg id="cut-section" role="img" aria-label="Parent and child feasible sets in physical time and separation coordinates"></svg>
+    <div class="cut-exacts" id="cut-exacts"></div>
+    <div class="cut-band"><p class="eyebrow">THE ADDED CLOSED BAND</p><p id="cut-band-formula" class="formula"></p><p class="caption" id="cut-band-copy"></p></div>
+    <div class="cut-conclusion" aria-live="polite"><p class="eyebrow" id="cut-result-label"></p><p id="cut-result-text"></p></div>
+  </article>
+</section>
+<section id="cut-recovery" class="panel physical-panel" hidden>
+  <div class="panel-heading"><div><p class="eyebrow">RECOVER THE CLOCK AND CHECK THE RUNNERS</p><h2 id="cut-recovery-title"></h2></div><label class="check"><input id="cut-reflect" type="checkbox"> Reflect time: t → 1 − t</label></div>
+  <div class="cut-recovery-grid"><div><p id="cut-recovery-copy"></p><dl class="readout"><div><dt>Physical time</dt><dd id="cut-time"></dd></div><div><dt>First six: minimum</dt><dd id="cut-six-min"></dd></div><div><dt>Added runner: distance</dt><dd id="cut-seven-distance"></dd></div></dl><p id="cut-recovery-map" class="caption"></p></div><div class="phase-wrap"><table><caption class="sr-only">All seven physical phases, laps and distances</caption><thead><tr><th>Speed</th><th>Lap</th><th>Phase</th><th>Distance to 0</th></tr></thead><tbody id="cut-phase-rows"></tbody></table></div></div>
+</section>
+<section id="cut-whole" class="panel cut-whole" hidden>
+  <p class="eyebrow">THIS PARENT IS ONLY PART OF THE SYSTEM</p><h2 id="cut-whole-title"></h2><p id="cut-whole-copy"></p>
+  <svg id="cut-times" role="img" aria-label="Complete whole-system physical time sets for the selected control"></svg><div id="cut-time-chips" class="rep-exact-values"></div>
+  <p class="caption" id="cut-whole-caption"></p>
+</section>
+<section class="scope-grid cut-scope"><article><p class="eyebrow">WHAT THE CUT PRESERVES</p><h2>Every surviving point still meets the old constraints.</h2><p>For each seventh lap k, the child is exactly the parent intersected with <strong>k + z ≤ 5x + 2y ≤ k + 1 − z</strong>. Adding a constraint removes points. It can also create new boundary edges and contacts among the points that remain.</p></article><article class="scope"><p class="eyebrow">WHAT MUST STAY DISTINCT</p><h2>Ambient survival, physical survival, complete survival.</h2><p>A child can be nonempty yet miss the actual orbit. An isolated physical point can be safe despite having zero duration. A surviving optimizer can lie outside all old edges. Each question needs the corresponding information.</p></article></section>
+<footer><p>Exact parent/child vertices and incidences come from the pinned atlas. Orbit slices are constructed by rational edge intersections and checked independently against the sliced inequalities. The three stages show exact before/after states; no interpolated constraint is treated as the actual seven-runner problem.</p><details><summary>Sources, evidence and scope</summary><p id="cut-build-info"></p><ul id="cut-source-links"></ul><p>These are reproduced finite q=4/q=10 controls with the stationary reference fixed. AI-assisted implementation and same-author checks do not promote the general transfer reasoning beyond its pinned proof-candidate status. No new mathematical or novelty claim.</p></details><a href="#representation">← Return to section 03: what the model remembers</a></footer>
+<p class="next-chapter"><a href="#selector">Next: select one safe time with at most two tests →</a></p>

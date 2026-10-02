@@ -1,0 +1,80 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "d578e9f75b73d841c58577c435dfbbcf763f09e4",
+  "protocol_sha256": "52cdd98452f9e47c082bb53703b1a20dc07fa9e47860bc7bbf0e2eb1d00378f3",
+  "question": "Can two selected zero-triple facts on the physical collective-only window be verified from one shared base-pair occurrence table, and what exact work does that require?",
+  "status": "OBSERVED/REPRODUCED for one preselected target pair, its reflection, and three frozen controls; no pair-selection, one-bit, intrinsic-runtime, novelty or new-existence claim",
+  "delegation": {
+    "calculation": "shared_calc created primary.py and results.json and regenerated the final archive after an accidental review invocation",
+    "independent_verification": "shared_verify created verify.py, verification.json and verification.md without importing primary functions or helpers",
+    "adversarial_review": "shared_challenge created challenge.md and delegated two read-only subreviews for prior-art and semantic/cost auditing",
+    "coordination": "root verified the live continuation, froze the protocol, reviewed outputs, replayed both implementations, wrote the note and updated continuity"
+  },
+  "review_process_note": "A semantic-review subagent accidentally invoked primary.py in write mode once. The primary owner later regenerated results.json from the finalized source; all recorded hashes and final read-only checks postdate that event. The accidental invocation is not counted as independent evidence.",
+  "commands": [
+    "python -S -B reviews/2026-09-28-shared-pair-containment/primary.py --check",
+    "python -S -B reviews/2026-09-28-shared-pair-containment/verify.py --check"
+  ],
+  "results": {
+    "target_window": ["33/184","39/184"],
+    "target_base_pair": [15,38],
+    "target_pair_component": ["63/304","5/24"],
+    "target_base_laps": [3,8],
+    "target_complement_phase_ranges": {
+      "61": ["195/304","17/24"],
+      "100": ["55/76","5/6"]
+    },
+    "target_containment": true,
+    "target_implied_zero_triples": [[15,38,61],[15,38,100]],
+    "target_five_edge_lower_bound": "49/524400",
+    "strict16_containment": true,
+    "strict16_five_edge_lower_bound": "1/896",
+    "tight13_containment": true,
+    "tight13_raw_five_edge_bound": "-1/182",
+    "tight13_isolated_equality": "3/8",
+    "doubling112_pair_containments_tested": 6,
+    "doubling112_pair_containments_failed": 6,
+    "reflection_component": ["19/24","241/304"]
+  },
+  "verification": {
+    "original_window_open_cells": 91,
+    "original_window_event_points": 95,
+    "reflection_open_cells": 17,
+    "reflection_event_points": 18,
+    "selected_containments_passed": 3,
+    "doubling_failure_witnesses": 6,
+    "method": "Independent exact rational threshold-event state sweep over every open cell and event point; no primary import"
+  },
+  "cost_observations": {
+    "target_selected_base_blocking_pieces": 3,
+    "target_full_archived_blocking_pieces": 10,
+    "target_shared_method_exact_comparisons": 95,
+    "target_naive_uncached_two_triple_comparisons": 188,
+    "selected_cases_total_exact_comparisons": 279,
+    "six_doubling_diagnostics_total_exact_comparisons": 2322,
+    "interpretation": "Implementation counts only. One cached base occurrence table supports two distinct complement predicates; no one-bit, intrinsic factor-of-two, uniform runtime or pair-selection claim."
+  },
+  "prior_work_boundaries": [
+    "Pair-occurrence phase containment already appears in the 56/113, uniform-triangle, strict16 and fixed-window work",
+    "The five-edge K4-minus-one-edge correction is prior project work",
+    "The sparse arithmetic selector and alternate-window transfer are prior special-family results"
+  ],
+  "scope_limits": [
+    "Reference 0 and threshold 1/8 on exactly the frozen target, reflection and three controls",
+    "The target pair is supplied from the previous coordinate-subset audit, not selected here",
+    "The containment is two logical complement-safety predicates sharing one occurrence table",
+    "Tight13 separates true containment from positive duration; isolated equality remains separate",
+    "No new speed, core, window, reference, broad scan, +7/+9 work, outreach, paid compute, main merge or novelty audit",
+    "AI calculation, separate AI verification and adversarial AI review are not independent human mathematical validation"
+  ],
+  "sha256": {
+    "reviews/2026-09-28-shared-pair-containment/protocol.json": "52cdd98452f9e47c082bb53703b1a20dc07fa9e47860bc7bbf0e2eb1d00378f3",
+    "reviews/2026-09-28-shared-pair-containment/primary.py": "81992c0c9a38c5b5cedea1146dd1a5bea087c950228d10dc795839a7ab319c7d",
+    "reviews/2026-09-28-shared-pair-containment/results.json": "478b6caf2c654af7eef83c1d6f2388933d737df6a78ab0f306b801053fe2ff5b",
+    "reviews/2026-09-28-shared-pair-containment/verify.py": "7912f4432a3a8312a0131ba231488c0e135788d9472ba412b33c695c77b2a87d",
+    "reviews/2026-09-28-shared-pair-containment/verification.json": "8097ff8bc0b81a05a823b710947ffc0fb5a3f2a02e81a306e40325d820aaff84",
+    "reviews/2026-09-28-shared-pair-containment/verification.md": "889bbe2cd7707c1c789914dc44e4fcbb2afd6aa8e521bb02d5fc093742fa7fba",
+    "reviews/2026-09-28-shared-pair-containment/challenge.md": "00dbddf8c2bafcbcbf137b62d2cf30deff26820d6819b8baba3492a02dd7c816",
+    "notes/SHARED_PAIR_CONTAINMENT_2026_09_28.md": "2a28dab2452c374fa8bc944215e02f815c86f72180c36f17c1df7e53f2289413"
+  }
+}

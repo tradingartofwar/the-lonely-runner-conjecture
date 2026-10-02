@@ -1,0 +1,2669 @@
+{
+  "bounded_case_count": 10,
+  "cases": [
+    {
+      "case_id": "doubling_112",
+      "condition_margin": "-103/16128",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "145/512",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "9/32",
+          "runner_index": 0,
+          "speed": 56
+        },
+        {
+          "input": "9/32",
+          "output": "145/512",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 0,
+          "speed": 56
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 3,
+          "speed": 112
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "145/512",
+          "127/448"
+        ],
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "263/896"
+        ],
+        [
+          "153/512",
+          "135/448"
+        ],
+        [
+          "59/192",
+          "159/512"
+        ],
+        [
+          "161/512",
+          "61/192"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "297/896",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "151/448"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "313/896",
+          "159/448"
+        ],
+        [
+          "209/576",
+          "327/896"
+        ],
+        [
+          "47/128",
+          "167/448"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "145/512",
+      "oracle_earliest_equality_labels": [
+        1
+      ],
+      "oracle_first_component": [
+        "145/512",
+        "127/448"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 58,
+      "oracle_total_duration": "53/1792",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "3/224",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "triple_wait_bound": "319/16128",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "small_gcd_113",
+      "condition_margin": "-11495/1822464",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "129/448",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "9/32",
+          "runner_index": 0,
+          "speed": 56
+        },
+        {
+          "input": "9/32",
+          "output": "145/512",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "145/512",
+          "output": "145/512",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "145/512",
+          "output": "257/904",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "257/904",
+          "output": "257/904",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "257/904",
+          "output": "129/448",
+          "runner_index": 0,
+          "speed": 56
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 1,
+          "speed": 64
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 3,
+          "speed": 113
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 2,
+          "speed": 72
+        },
+        {
+          "input": "129/448",
+          "output": "129/448",
+          "runner_index": 3,
+          "speed": 113
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "151/512"
+        ],
+        [
+          "153/512",
+          "271/904"
+        ],
+        [
+          "59/192",
+          "279/904"
+        ],
+        [
+          "161/512",
+          "287/904"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "303/904"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "67/192",
+          "319/904"
+        ],
+        [
+          "329/904",
+          "335/904"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "129/448",
+      "oracle_earliest_equality_labels": [
+        0
+      ],
+      "oracle_first_component": [
+        "129/448",
+        "167/576"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 59,
+      "oracle_total_duration": "6193/260352",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "3/224",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "triple_wait_bound": "5129/260352",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "tight_13",
+      "condition_margin": "-265/8008",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "3/8",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "9/32",
+          "runner_index": 0,
+          "speed": 6
+        },
+        {
+          "input": "9/32",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "33/104",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "33/104",
+          "output": "33/104",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "33/104",
+          "output": "17/48",
+          "runner_index": 0,
+          "speed": 6
+        },
+        {
+          "input": "17/48",
+          "output": "17/48",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/48",
+          "output": "3/8",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 3,
+          "speed": 13
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "3/8",
+          "output": "3/8",
+          "runner_index": 3,
+          "speed": 13
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "3/8",
+          "3/8"
+        ]
+      ],
+      "oracle_any_positive_component": false,
+      "oracle_earliest": "3/8",
+      "oracle_earliest_equality_labels": [
+        2,
+        3
+      ],
+      "oracle_first_component": [
+        "3/8",
+        "3/8"
+      ],
+      "oracle_first_component_positive": false,
+      "oracle_threshold_events": 9,
+      "oracle_total_duration": "0",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "1/8",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "triple_wait_bound": "633/4004",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "control_8_11",
+      "condition_margin": "-79/1232",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "17/56",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "9/32",
+          "runner_index": 0,
+          "speed": 6
+        },
+        {
+          "input": "9/32",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 0,
+          "speed": 6
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 8
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 11
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "17/56",
+      "oracle_earliest_equality_labels": [
+        1
+      ],
+      "oracle_first_component": [
+        "17/56",
+        "5/16"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 8,
+      "oracle_total_duration": "1/112",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "1/8",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "triple_wait_bound": "233/1232",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "affine_309",
+      "condition_margin": "-4998757/3345967360",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "697/2472",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "697/2472",
+          "runner_index": 0,
+          "speed": 309
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 0,
+          "speed": 309
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "697/2472",
+          "output": "697/2472",
+          "runner_index": 3,
+          "speed": 619
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "697/2472",
+          "1399/4952"
+        ],
+        [
+          "1401/4952",
+          "743/2624"
+        ],
+        [
+          "745/2624",
+          "727/2560"
+        ],
+        [
+          "235/824",
+          "1415/4952"
+        ],
+        [
+          "1417/4952",
+          "751/2624"
+        ],
+        [
+          "753/2624",
+          "147/512"
+        ],
+        [
+          "713/2472",
+          "1431/4952"
+        ],
+        [
+          "761/2624",
+          "743/2560"
+        ],
+        [
+          "7/24",
+          "1447/4952"
+        ],
+        [
+          "769/2624",
+          "751/2560"
+        ],
+        [
+          "243/824",
+          "775/2624"
+        ],
+        [
+          "777/2624",
+          "759/2560"
+        ],
+        [
+          "737/2472",
+          "783/2624"
+        ],
+        [
+          "785/2624",
+          "767/2560"
+        ],
+        [
+          "745/2472",
+          "791/2624"
+        ],
+        [
+          "1497/4952",
+          "155/512"
+        ],
+        [
+          "1513/4952",
+          "783/2560"
+        ],
+        [
+          "157/512",
+          "1519/4952"
+        ],
+        [
+          "809/2624",
+          "1527/4952"
+        ],
+        [
+          "1529/4952",
+          "791/2560"
+        ],
+        [
+          "793/2560",
+          "1535/4952"
+        ],
+        [
+          "817/2624",
+          "1543/4952"
+        ],
+        [
+          "1545/4952",
+          "799/2560"
+        ],
+        [
+          "801/2560",
+          "1551/4952"
+        ],
+        [
+          "825/2624",
+          "1559/4952"
+        ],
+        [
+          "1561/4952",
+          "807/2560"
+        ],
+        [
+          "809/2560",
+          "1567/4952"
+        ],
+        [
+          "785/2472",
+          "1575/4952"
+        ],
+        [
+          "817/2560",
+          "1583/4952"
+        ],
+        [
+          "793/2472",
+          "1591/4952"
+        ],
+        [
+          "165/512",
+          "847/2624"
+        ],
+        [
+          "267/824",
+          "1607/4952"
+        ],
+        [
+          "833/2560",
+          "855/2624"
+        ],
+        [
+          "809/2472",
+          "839/2560"
+        ],
+        [
+          "841/2560",
+          "863/2624"
+        ],
+        [
+          "817/2472",
+          "847/2560"
+        ],
+        [
+          "849/2560",
+          "871/2624"
+        ],
+        [
+          "275/824",
+          "171/512"
+        ],
+        [
+          "857/2560",
+          "879/2624"
+        ],
+        [
+          "881/2624",
+          "1663/4952"
+        ],
+        [
+          "833/2472",
+          "863/2560"
+        ],
+        [
+          "173/512",
+          "887/2624"
+        ],
+        [
+          "889/2624",
+          "1679/4952"
+        ],
+        [
+          "841/2472",
+          "871/2560"
+        ],
+        [
+          "1689/4952",
+          "895/2624"
+        ],
+        [
+          "897/2624",
+          "1695/4952"
+        ],
+        [
+          "905/2624",
+          "1711/4952"
+        ],
+        [
+          "913/2624",
+          "1727/4952"
+        ],
+        [
+          "921/2624",
+          "1743/4952"
+        ],
+        [
+          "929/2624",
+          "1759/4952"
+        ],
+        [
+          "1769/4952",
+          "1775/4952"
+        ],
+        [
+          "1785/4952",
+          "1791/4952"
+        ],
+        [
+          "953/2624",
+          "1799/4952"
+        ],
+        [
+          "1801/4952",
+          "1807/4952"
+        ],
+        [
+          "961/2624",
+          "1815/4952"
+        ],
+        [
+          "1817/4952",
+          "1823/4952"
+        ],
+        [
+          "913/2472",
+          "1831/4952"
+        ],
+        [
+          "1833/4952",
+          "1839/4952"
+        ],
+        [
+          "307/824",
+          "1847/4952"
+        ],
+        [
+          "1849/4952",
+          "1855/4952"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "697/2472",
+      "oracle_earliest_equality_labels": [
+        0
+      ],
+      "oracle_first_component": [
+        "697/2472",
+        "1399/4952"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 296,
+      "oracle_total_duration": "516939067/20075804160",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "1/412",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "triple_wait_bound": "127379/32485120",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "affine_310",
+      "condition_margin": "-302399/202058496",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "467/1656",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "9/32",
+          "runner_index": 0,
+          "speed": 310
+        },
+        {
+          "input": "9/32",
+          "output": "721/2560",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "721/2560",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 0,
+          "speed": 310
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 1,
+          "speed": 320
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 2,
+          "speed": 328
+        },
+        {
+          "input": "467/1656",
+          "output": "467/1656",
+          "runner_index": 3,
+          "speed": 621
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "467/1656",
+          "743/2624"
+        ],
+        [
+          "729/2560",
+          "1415/4968"
+        ],
+        [
+          "1417/4968",
+          "751/2624"
+        ],
+        [
+          "737/2560",
+          "53/184"
+        ],
+        [
+          "1433/4968",
+          "759/2624"
+        ],
+        [
+          "149/512",
+          "1447/4968"
+        ],
+        [
+          "7/24",
+          "767/2624"
+        ],
+        [
+          "753/2560",
+          "1463/4968"
+        ],
+        [
+          "1465/4968",
+          "775/2624"
+        ],
+        [
+          "761/2560",
+          "493/1656"
+        ],
+        [
+          "1481/4968",
+          "783/2624"
+        ],
+        [
+          "785/2624",
+          "1487/4968"
+        ],
+        [
+          "149/496",
+          "65/216"
+        ],
+        [
+          "499/1656",
+          "791/2624"
+        ],
+        [
+          "793/2624",
+          "167/552"
+        ],
+        [
+          "753/2480",
+          "1511/4968"
+        ],
+        [
+          "801/2624",
+          "1519/4968"
+        ],
+        [
+          "761/2480",
+          "509/1656"
+        ],
+        [
+          "809/2624",
+          "1535/4968"
+        ],
+        [
+          "769/2480",
+          "1543/4968"
+        ],
+        [
+          "817/2624",
+          "799/2560"
+        ],
+        [
+          "777/2480",
+          "823/2624"
+        ],
+        [
+          "825/2624",
+          "807/2560"
+        ],
+        [
+          "157/496",
+          "831/2624"
+        ],
+        [
+          "833/2624",
+          "163/512"
+        ],
+        [
+          "59/184",
+          "823/2560"
+        ],
+        [
+          "1609/4968",
+          "831/2560"
+        ],
+        [
+          "857/2624",
+          "541/1656"
+        ],
+        [
+          "1625/4968",
+          "839/2560"
+        ],
+        [
+          "865/2624",
+          "1639/4968"
+        ],
+        [
+          "547/1656",
+          "847/2560"
+        ],
+        [
+          "873/2624",
+          "1655/4968"
+        ],
+        [
+          "1657/4968",
+          "171/512"
+        ],
+        [
+          "833/2480",
+          "557/1656"
+        ],
+        [
+          "1673/4968",
+          "863/2560"
+        ],
+        [
+          "173/512",
+          "73/216"
+        ],
+        [
+          "841/2480",
+          "1687/4968"
+        ],
+        [
+          "563/1656",
+          "871/2560"
+        ],
+        [
+          "873/2560",
+          "895/2624"
+        ],
+        [
+          "849/2480",
+          "1703/4968"
+        ],
+        [
+          "1705/4968",
+          "879/2560"
+        ],
+        [
+          "857/2480",
+          "191/552"
+        ],
+        [
+          "1721/4968",
+          "887/2560"
+        ],
+        [
+          "173/496",
+          "1735/4968"
+        ],
+        [
+          "873/2480",
+          "1751/4968"
+        ],
+        [
+          "929/2624",
+          "1759/4968"
+        ],
+        [
+          "881/2480",
+          "589/1656"
+        ],
+        [
+          "937/2624",
+          "1775/4968"
+        ],
+        [
+          "889/2480",
+          "1783/4968"
+        ],
+        [
+          "945/2624",
+          "199/552"
+        ],
+        [
+          "897/2480",
+          "927/2560"
+        ],
+        [
+          "953/2624",
+          "1807/4968"
+        ],
+        [
+          "181/496",
+          "187/512"
+        ],
+        [
+          "961/2624",
+          "1823/4968"
+        ],
+        [
+          "913/2480",
+          "943/2560"
+        ],
+        [
+          "969/2624",
+          "613/1656"
+        ],
+        [
+          "921/2480",
+          "951/2560"
+        ],
+        [
+          "977/2624",
+          "1855/4968"
+        ],
+        [
+          "929/2480",
+          "959/2560"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "467/1656",
+      "oracle_earliest_equality_labels": [
+        3
+      ],
+      "oracle_first_component": [
+        "467/1656",
+        "743/2624"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 297,
+      "oracle_total_duration": "2207/85560",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "3/1240",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "triple_wait_bound": "127621/32590080",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "affine_320",
+      "condition_margin": "-1036057/706433280",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "721/2560",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "721/2560",
+          "runner_index": 0,
+          "speed": 320
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 1,
+          "speed": 328
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 1,
+          "speed": 328
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 0,
+          "speed": 320
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 1,
+          "speed": 328
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 1,
+          "speed": 328
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 2,
+          "speed": 336
+        },
+        {
+          "input": "721/2560",
+          "output": "721/2560",
+          "runner_index": 3,
+          "speed": 641
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "721/2560",
+          "1447/5128"
+        ],
+        [
+          "761/2688",
+          "743/2624"
+        ],
+        [
+          "729/2560",
+          "1463/5128"
+        ],
+        [
+          "769/2688",
+          "751/2624"
+        ],
+        [
+          "737/2560",
+          "775/2688"
+        ],
+        [
+          "37/128",
+          "759/2624"
+        ],
+        [
+          "149/512",
+          "261/896"
+        ],
+        [
+          "785/2688",
+          "767/2624"
+        ],
+        [
+          "769/2624",
+          "1503/5128"
+        ],
+        [
+          "753/2560",
+          "113/384"
+        ],
+        [
+          "1513/5128",
+          "775/2624"
+        ],
+        [
+          "777/2624",
+          "1519/5128"
+        ],
+        [
+          "1529/5128",
+          "783/2624"
+        ],
+        [
+          "785/2624",
+          "1535/5128"
+        ],
+        [
+          "1545/5128",
+          "791/2624"
+        ],
+        [
+          "793/2624",
+          "1551/5128"
+        ],
+        [
+          "817/2688",
+          "1559/5128"
+        ],
+        [
+          "1561/5128",
+          "799/2624"
+        ],
+        [
+          "801/2624",
+          "1567/5128"
+        ],
+        [
+          "275/896",
+          "1575/5128"
+        ],
+        [
+          "1577/5128",
+          "807/2624"
+        ],
+        [
+          "809/2624",
+          "1583/5128"
+        ],
+        [
+          "119/384",
+          "1591/5128"
+        ],
+        [
+          "817/2624",
+          "1599/5128"
+        ],
+        [
+          "801/2560",
+          "1607/5128"
+        ],
+        [
+          "825/2624",
+          "1615/5128"
+        ],
+        [
+          "809/2560",
+          "1623/5128"
+        ],
+        [
+          "833/2624",
+          "1631/5128"
+        ],
+        [
+          "817/2560",
+          "1639/5128"
+        ],
+        [
+          "841/2624",
+          "863/2688"
+        ],
+        [
+          "165/512",
+          "1655/5128"
+        ],
+        [
+          "849/2624",
+          "871/2688"
+        ],
+        [
+          "833/2560",
+          "855/2624"
+        ],
+        [
+          "857/2624",
+          "293/896"
+        ],
+        [
+          "841/2560",
+          "863/2624"
+        ],
+        [
+          "865/2624",
+          "887/2688"
+        ],
+        [
+          "849/2560",
+          "871/2624"
+        ],
+        [
+          "873/2624",
+          "895/2688"
+        ],
+        [
+          "857/2560",
+          "879/2624"
+        ],
+        [
+          "881/2624",
+          "43/128"
+        ],
+        [
+          "905/2688",
+          "1727/5128"
+        ],
+        [
+          "173/512",
+          "887/2624"
+        ],
+        [
+          "889/2624",
+          "911/2688"
+        ],
+        [
+          "913/2688",
+          "1743/5128"
+        ],
+        [
+          "873/2560",
+          "895/2624"
+        ],
+        [
+          "1753/5128",
+          "919/2688"
+        ],
+        [
+          "307/896",
+          "1759/5128"
+        ],
+        [
+          "929/2688",
+          "1775/5128"
+        ],
+        [
+          "937/2688",
+          "1791/5128"
+        ],
+        [
+          "45/128",
+          "1807/5128"
+        ],
+        [
+          "953/2688",
+          "1823/5128"
+        ],
+        [
+          "961/2688",
+          "1839/5128"
+        ],
+        [
+          "1849/5128",
+          "1855/5128"
+        ],
+        [
+          "1865/5128",
+          "1871/5128"
+        ],
+        [
+          "1881/5128",
+          "1887/5128"
+        ],
+        [
+          "331/896",
+          "1895/5128"
+        ],
+        [
+          "1897/5128",
+          "1903/5128"
+        ],
+        [
+          "143/384",
+          "1911/5128"
+        ],
+        [
+          "1913/5128",
+          "1919/5128"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "721/2560",
+      "oracle_earliest_equality_labels": [
+        0
+      ],
+      "oracle_first_component": [
+        "721/2560",
+        "1447/5128"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 306,
+      "oracle_total_duration": "6706841/282573312",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "3/1280",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "triple_wait_bound": "33647/8830416",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "strict_16",
+      "condition_margin": "-23/1232",
+      "condition_pass": false,
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "core_window_certified": true,
+      "delta": "1/8",
+      "fixed22_final": "17/56",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "9/32",
+          "output": "9/32",
+          "runner_index": 0,
+          "speed": 6
+        },
+        {
+          "input": "9/32",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 0,
+          "speed": 6
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 1,
+          "speed": 7
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 2,
+          "speed": 11
+        },
+        {
+          "input": "17/56",
+          "output": "17/56",
+          "runner_index": 3,
+          "speed": 16
+        }
+      ],
+      "gated_condition_verdict": "unverified_by_condition",
+      "kind": "physical",
+      "oracle_all_components": [
+        [
+          "17/56",
+          "39/128"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "17/56",
+      "oracle_earliest_equality_labels": [
+        1
+      ],
+      "oracle_first_component": [
+        "17/56",
+        "39/128"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 10,
+      "oracle_total_duration": "1/896",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "1/8",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "triple_wait_bound": "177/1232",
+      "unsafe_final_labels": [],
+      "window": [
+        "9/32",
+        "3/8"
+      ]
+    },
+    {
+      "case_id": "aux_condition_strict",
+      "condition_margin": "3/8",
+      "condition_pass": true,
+      "core": [],
+      "core_window_certified": false,
+      "delta": "1/8",
+      "fixed22_final": "73/64",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "7/8",
+          "output": "7/8",
+          "runner_index": 0,
+          "speed": 1
+        },
+        {
+          "input": "7/8",
+          "output": "7/8",
+          "runner_index": 1,
+          "speed": 2
+        },
+        {
+          "input": "7/8",
+          "output": "7/8",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "7/8",
+          "output": "57/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 1,
+          "speed": 2
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "57/64",
+          "output": "57/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "57/64",
+          "output": "9/8",
+          "runner_index": 0,
+          "speed": 1
+        },
+        {
+          "input": "9/8",
+          "output": "9/8",
+          "runner_index": 1,
+          "speed": 2
+        },
+        {
+          "input": "9/8",
+          "output": "9/8",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "9/8",
+          "output": "73/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 1,
+          "speed": 2
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 3,
+          "speed": 8
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 2,
+          "speed": 4
+        },
+        {
+          "input": "73/64",
+          "output": "73/64",
+          "runner_index": 3,
+          "speed": 8
+        }
+      ],
+      "gated_condition_verdict": "verified_by_condition",
+      "kind": "auxiliary",
+      "oracle_all_components": [
+        [
+          "73/64",
+          "6/5"
+        ]
+      ],
+      "oracle_any_positive_component": true,
+      "oracle_earliest": "73/64",
+      "oracle_earliest_equality_labels": [
+        3
+      ],
+      "oracle_first_component": [
+        "73/64",
+        "6/5"
+      ],
+      "oracle_first_component_positive": true,
+      "oracle_threshold_events": 12,
+      "oracle_total_duration": "19/320",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "3/4",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "triple_wait_bound": "3/8",
+      "unsafe_final_labels": [],
+      "window": [
+        "7/8",
+        "6/5"
+      ]
+    },
+    {
+      "case_id": "aux_condition_equality",
+      "condition_margin": "0",
+      "condition_pass": true,
+      "core": [],
+      "core_window_certified": false,
+      "delta": "1/8",
+      "fixed22_final": "1/120",
+      "fixed22_final_safe": true,
+      "fixed22_trace": [
+        {
+          "input": "0",
+          "output": "1/120",
+          "runner_index": 0,
+          "speed": 15
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 1,
+          "speed": 20
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 1,
+          "speed": 20
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 0,
+          "speed": 15
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 1,
+          "speed": 20
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 1,
+          "speed": 20
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 2,
+          "speed": 30
+        },
+        {
+          "input": "1/120",
+          "output": "1/120",
+          "runner_index": 3,
+          "speed": 48
+        }
+      ],
+      "gated_condition_verdict": "verified_by_condition",
+      "kind": "auxiliary",
+      "oracle_all_components": [
+        [
+          "1/120",
+          "1/120"
+        ]
+      ],
+      "oracle_any_positive_component": false,
+      "oracle_earliest": "1/120",
+      "oracle_earliest_equality_labels": [
+        0
+      ],
+      "oracle_first_component": [
+        "1/120",
+        "1/120"
+      ],
+      "oracle_first_component_positive": false,
+      "oracle_threshold_events": 5,
+      "oracle_total_duration": "0",
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "raw_verdict": "earliest",
+      "slow_safe_lap_width": "1/20",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "triple_wait_bound": "1/20",
+      "unsafe_final_labels": [],
+      "window": [
+        "0",
+        "1/120"
+      ]
+    }
+  ],
+  "limits": "Finite10inputs; unbounded conditional theorem rests on supplied proof; no unconditional22theorem asserted",
+  "method": "Independent exact threshold events; phase-case22trace; no primary imports",
+  "protocol_sha256": "9e6ef9f4dd7ff80959a66497f5756d916c18a427b7feeb8c82baacfee6537ae4"
+}

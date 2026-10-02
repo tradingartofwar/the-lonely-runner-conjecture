@@ -1,0 +1,4303 @@
+{
+  "T_all_equals_R": true,
+  "T_equals_R": true,
+  "accepted_B_residues_by_delta": {
+    "-1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "-10": [],
+    "-11": [],
+    "-12": [],
+    "-13": [],
+    "-2": [
+      0,
+      1,
+      5,
+      6,
+      7
+    ],
+    "-3": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "-4": [
+      2
+    ],
+    "-5": [
+      0,
+      7
+    ],
+    "-6": [
+      5
+    ],
+    "-7": [],
+    "-8": [],
+    "-9": [],
+    "0": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "1": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "2": [
+      0,
+      1,
+      2,
+      3,
+      7
+    ],
+    "3": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "4": [
+      6
+    ],
+    "5": [
+      0,
+      1
+    ],
+    "6": [
+      3
+    ],
+    "7": [],
+    "8": [],
+    "9": []
+  },
+  "cells": [
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 8,
+      "finite_primary_failures": 8,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "2ea3594678c212e1f2a7b51c132d72622ea9bc6d602d721c0b38c0332db33e71",
+      "representative": [
+        3,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 17,
+      "finite_primary_failures": 16,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "9aabff999928c45e72b00e48b933d775edc916f0bd25c1cec6c58e12b02ba8dc",
+      "representative": [
+        5,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 31,
+      "finite_primary_failures": 30,
+      "first_failure_pair": [
+        1,
+        6
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "69b9de5ca7283533071a821f0382d280c4700a3b0fd61253996e24302f816a16",
+      "representative": [
+        7,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 94,
+      "finite_primary_failures": 94,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "c24859fe49d63f7748c25067d2ae31469a71eb5a760fec0d5be3739b56082cbf",
+      "representative": [
+        9,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 422,
+      "finite_primary_failures": 422,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "f8007f6c9494fdd5bfbd9578bead08903d66dafe7f14033f93fd2b10bf5cf5d9",
+      "representative": [
+        11,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 1047,
+      "finite_primary_failures": 1047,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "cbae2364c1ff0f7feaa9e8399e657ce601d2b5983f604cfe42165e67770c78f6",
+      "representative": [
+        13,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 799,
+      "finite_primary_failures": 799,
+      "first_failure_pair": [
+        2,
+        3
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "bd3e28d1dcb2432577598efd58453363c3ea007da480576ee1768af34f5cf437",
+      "representative": [
+        15,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -13,
+      "finite_all_failures": 5,
+      "finite_primary_failures": 5,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "c86f822b94572c6f7c89a5f2ac887ecbdce3f69d0cbfe338cd8fb1b7627d143d",
+      "representative": [
+        17,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 868,
+      "finite_primary_failures": 868,
+      "first_failure_pair": [
+        2,
+        3
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "d7e52fa87ad5b550caa2156acaf8e1817b143335677179297f8fa24011e040cd",
+      "representative": [
+        4,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 6,
+      "finite_primary_failures": 6,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "79c5ae5c9be1bccedc25ef3606ad3f4b3589f5087d3731a5d05ef189f63c66af",
+      "representative": [
+        6,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 7,
+      "finite_primary_failures": 7,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "1e9c420953cfbd60908aeafbe6a62b76b9d6e5df6d5b5b51b366143ff6fa5fa8",
+      "representative": [
+        8,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 12,
+      "finite_primary_failures": 12,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "02be94bde57c3fd8e5c20cec3c9cf18caeaa43c398e5fce573d5a130ffd81dc7",
+      "representative": [
+        10,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 27,
+      "finite_primary_failures": 26,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "b9a7c7233a104ad13594405b93fc46c0653d57534663569e27ca12ecb9dcdecc",
+      "representative": [
+        12,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 79,
+      "finite_primary_failures": 79,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "e10fd5beb8395e8878917ed95ca7bd5cd3786b58c79d9a86ec1d55a5f66d50f7",
+      "representative": [
+        14,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 359,
+      "finite_primary_failures": 359,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "5adb661098ba0d96f13463f948a51f9bbd3721e5449b0f8d59a7d2e5b8808307",
+      "representative": [
+        16,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -12,
+      "finite_all_failures": 1064,
+      "finite_primary_failures": 1064,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "d064dd43075ae955e01e8a95c163c59182f3462d55c33ce442ddd3f265dadca1",
+      "representative": [
+        18,
+        15
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 303,
+      "finite_primary_failures": 303,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "9f0b45e58e7ea95cef6e1aea2b2b6bf3d5a331cf44726f41fac2f1134d97d97c",
+      "representative": [
+        5,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 1083,
+      "finite_primary_failures": 1083,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "e56caf5c8f0e355d07de87881aec6e2239371380c532b05da1b7ca9dffaa92b2",
+      "representative": [
+        7,
+        9
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 932,
+      "finite_primary_failures": 932,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "cc7b1e1237ddd7c921f6ee2b9b696dcd9a1e0d1f06f506bbea6378f8c65a6dde",
+      "representative": [
+        9,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "2b4abd09cafa12b0be037810614048a31af9fb37bf8cde6593ffec7761def6f8",
+      "representative": [
+        11,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 6,
+      "finite_primary_failures": 6,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "00b69f9a2558e330896e0064f3738de4937b38775d4147041d6d9ff4edb4ff92",
+      "representative": [
+        13,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 10,
+      "finite_primary_failures": 10,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "7cf87337a10a25182b145dbf59b83d46d6b41a5d699bcccbd376da888f0b6620",
+      "representative": [
+        15,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 23,
+      "finite_primary_failures": 22,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "16dabf3a75ad9908424d3c3ff7174ab88dbcb2d8091c27e590f1bb6a1c1150d1",
+      "representative": [
+        17,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -11,
+      "finite_all_failures": 66,
+      "finite_primary_failures": 65,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "598d7ac91cf40a29215ab25173c42f68c8ac4950f757fc788184ab7db5496fbc",
+      "representative": [
+        19,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 18,
+      "finite_primary_failures": 17,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "04e6464146461b43bc325d31397f8f1e0f7ef30eccc98724abd8a8a0fc72ffea",
+      "representative": [
+        6,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 48,
+      "finite_primary_failures": 47,
+      "first_failure_pair": [
+        4,
+        1
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "31de2e6acbae814c8a23c4bb0cd2d44b6b27d4fb31772dd2f53be57017cdf310",
+      "representative": [
+        8,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 250,
+      "finite_primary_failures": 250,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "f9674fe5f6cd60594ab9f296fb745c3ff970aad1b049828d2f476d8ddcea1d85",
+      "representative": [
+        10,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 1098,
+      "finite_primary_failures": 1098,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "2176a87c2598a68565544f7aaf8b0bc4c8eeeacb26528e5f984c19c2cdad81a0",
+      "representative": [
+        12,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 992,
+      "finite_primary_failures": 992,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "eed4562537b7dd79f45c8158942f62a872aa227e28ce110790be3ed4b5b819a3",
+      "representative": [
+        14,
+        12
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "d82b390bb456793abd627c1cdd3c27ce76d73ad288900aa0a1bf7ee4df29c262",
+      "representative": [
+        16,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 5,
+      "finite_primary_failures": 5,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "1f3a2f4fed9e98457af11b09e813f13b60e49e8981a16488c1129be30335097f",
+      "representative": [
+        18,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -10,
+      "finite_all_failures": 9,
+      "finite_primary_failures": 9,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "06b342b3591f66325436b797fc56a87ade4ab8ee985a9af4c5881499909e315c",
+      "representative": [
+        20,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "4514ac3c43bab46a08829c1db86de59c1f67091ef09001dfb2c9272ca41c3d2a",
+      "representative": [
+        7,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 8,
+      "finite_primary_failures": 8,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "39967e4c6be0edf1dcb738ab52a77a50eeb5d6d177c2727dfcf7865a18adad38",
+      "representative": [
+        9,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 14,
+      "finite_primary_failures": 14,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "c1352b2f26913f88981d3f48f02326ea4f305d6f9e42fc8a722f5911b7412569",
+      "representative": [
+        11,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 39,
+      "finite_primary_failures": 38,
+      "first_failure_pair": [
+        1,
+        8
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "c3766e85fac65244a6b6955193386066f83391a7b33b5ce121935353d697bac5",
+      "representative": [
+        13,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 203,
+      "finite_primary_failures": 203,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "d36c949b0d3cf3e5c307dfed02cdbcc2944d378a77d6e983ad41dd424f4cefe1",
+      "representative": [
+        15,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 1114,
+      "finite_primary_failures": 1114,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "0ec2ea530bc71a62954c0bff959590ab4c0a02c99feb8f725f67811dae3e3ff9",
+      "representative": [
+        17,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 1045,
+      "finite_primary_failures": 1045,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "eca82e14f4ecfd028c579ca8b979ce9a69b0c280523d753dc77be0bee3eeea9b",
+      "representative": [
+        19,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -9,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "e7e38a1f81b62f24cbfcb703304ee20f37f5ed4df83d00e957d074d277164cf4",
+      "representative": [
+        21,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 1093,
+      "finite_primary_failures": 1093,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "2269f70357fea804eec15238e5b0aeb6c4b5d93b86788937ffe9f84c835d4013",
+      "representative": [
+        8,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "74e4a7ecd01946e5858f2547e9a60c76d1827a471d04413e29a2a58adef0b2b0",
+      "representative": [
+        10,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "f6bae35636ce6e139b32ff06b985efe0e49920012db3ef1dc8671c9c64ff76e4",
+      "representative": [
+        12,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 5,
+      "finite_primary_failures": 5,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "cc8b7863986f1b07706c8d44b70d803d2d78dfc2280674d01c6e724e44aaff6d",
+      "representative": [
+        14,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 13,
+      "finite_primary_failures": 13,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "4511bf311df62546ede41ea59506c72e64a01ef0fa9013b41b35fe9f6fc61e8d",
+      "representative": [
+        16,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 28,
+      "finite_primary_failures": 27,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "61ff578e7ba9d5dfc0d794c5b11190f3a844d59da63f384b4003bcab3ec69ba8",
+      "representative": [
+        18,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 159,
+      "finite_primary_failures": 158,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "01eaa8851ba60efda053510d9935a90c80aa3183eb7901a77605db1f95aa22b6",
+      "representative": [
+        20,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -8,
+      "finite_all_failures": 1123,
+      "finite_primary_failures": 1123,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "219498c2ce6b4eba8daf23dd5fbc742e21d41e72b58f7c98f00b2754863ec131",
+      "representative": [
+        22,
+        15
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 120,
+      "finite_primary_failures": 119,
+      "first_failure_pair": [
+        4,
+        1
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "4f63d6218d946bda28ae0bc950711d7ed9f15cd6eecf8a5ded32824e7f2322eb",
+      "representative": [
+        9,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 1133,
+      "finite_primary_failures": 1133,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "497374c0c5e476f0b0952f152724f455432a02edd165580abc6573940ff7f83f",
+      "representative": [
+        11,
+        9
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 1136,
+      "finite_primary_failures": 1136,
+      "first_failure_pair": [
+        2,
+        3
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "814748a1fc2b3752ad671b352bb25b5c10cf6551845a1aa9141d30a417bf7211",
+      "representative": [
+        13,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "f4106735908c8b2bbfea329fe98ea6340ca062f98a97c1bfabd52778c8fc9670",
+      "representative": [
+        15,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "aab5b138f90a0db737501331a0db4f1c3b4a23dc4a0af69414e3ba282ebb130e",
+      "representative": [
+        17,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "34573c48d94a644b9ed2e09a0be9e731198db4e378e7035c3ba9ab0ad651328a",
+      "representative": [
+        19,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 10,
+      "finite_primary_failures": 10,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "24bb4826eeea549d533c32c2f9fc1cb7cffe4a39b8fc996d27071eed1b038e0b",
+      "representative": [
+        21,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -7,
+      "finite_all_failures": 25,
+      "finite_primary_failures": 24,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "8a787cb3b0bf01f6a18ec51db4abea5df926038399637ffb1840e9ef5ffa100a",
+      "representative": [
+        23,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 6,
+      "finite_primary_failures": 6,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "5410cd0c3ff2b4e24e7907c2f16888d03c0bbaa4232cc06108e3e9cc77ad03b4",
+      "representative": [
+        10,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 18,
+      "finite_primary_failures": 18,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "1d5deb7c94a89cd948f765222a4fe5008c27dc791c4e8e611197807f5759ac33",
+      "representative": [
+        12,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 89,
+      "finite_primary_failures": 88,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "4e23094858bbe6832d2b2d83228a367cc4f6115da47f96465ffab323af77dab9",
+      "representative": [
+        14,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 1143,
+      "finite_primary_failures": 1143,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "bd817b2c5e119807b9ba7df3c60504e2c8561a7a6befca753456c2e23b4eff8a",
+      "representative": [
+        16,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 1170,
+      "finite_primary_failures": 1170,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "c2def6260b75769c8d776fed8271d89532e4483938434e1135c4d4f20fbf5ca4",
+      "representative": [
+        18,
+        12
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 5,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -6,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "7/8",
+      "phase_vector_sha256": "973f51de561daf386fe381712eb3e0579bc684ddd8824a8ce96bb8b3260cc14c",
+      "representative": [
+        20,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "a7fb707d34d6cef1bb46141100c1cad137c6f6963453b429b5734b2841eb7cb6",
+      "representative": [
+        22,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -6,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "7d94c44211ab3b3badb7132eedfbff372ecef74b56eb1b1078015a1bc06c0661",
+      "representative": [
+        24,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -5,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/4",
+      "phase_vector_sha256": "c558b18904b6e0e69d627aaeb411c81b3f969413e072ec614db61a7e08a8cecb",
+      "representative": [
+        11,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -5,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "07d3ed847e9f0de6fddb5653f4a0d8fdcda45579763d67ffb0502fbfa51c2515",
+      "representative": [
+        13,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -5,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "c10c1aa164fc9a7c3a5190fce3e94fd0aa1bb1f6015311c4202f2de9119108ff",
+      "representative": [
+        15,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -5,
+      "finite_all_failures": 11,
+      "finite_primary_failures": 11,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "bc7f449731f78ced22f40859824fa4f6c5dc978d52fe134c906fa583915128d4",
+      "representative": [
+        17,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -5,
+      "finite_all_failures": 58,
+      "finite_primary_failures": 57,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "64a5f2bb782d13a749d02dd112c045da01fe61c603790a91e66151c2b7d6da9d",
+      "representative": [
+        19,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -5,
+      "finite_all_failures": 1150,
+      "finite_primary_failures": 1149,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "6e02c18fbbff841564bdfeb41d6bca602471a40265c2ab53c43d4c430fb46c27",
+      "representative": [
+        21,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -5,
+      "finite_all_failures": 1205,
+      "finite_primary_failures": 1205,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "09354670d6745c5c48f68216c9c756c81e125d4ed7de078b9bb330253aa0054a",
+      "representative": [
+        23,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -5,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "7/8",
+      "phase_vector_sha256": "31408ad9be42c87dcf26bdb445a6ef7c38d5467b1790f9d78c325ad851e90808",
+      "representative": [
+        25,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 1231,
+      "finite_primary_failures": 1231,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "d2969f262dae4eb0f9a13321070d135584f561495204506626499ca78d46223b",
+      "representative": [
+        12,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "bc07f7d641877e050bb6d4ed50dac24f6082987a3d3d3dea603a8f3d3b89c2c1",
+      "representative": [
+        14,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -4,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/4",
+      "phase_vector_sha256": "2979f7c9f010029e8119beeaadd656b06c2b28f3677886a7de93bf6439b49e8c",
+      "representative": [
+        16,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "97f4a09f87af1b6d1c1e316e102ed12c2c8845f52d02450a326f2cf362e3d796",
+      "representative": [
+        18,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "0f031025ebdceb61d7f4a84bd4aa1baa02fd7f53d6b870d41e425f76f647a459",
+      "representative": [
+        20,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 8,
+      "finite_primary_failures": 8,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "92dc53ec7960483de47da0d5cfd3537b6cbebb4a82cadec2aa617d08c7afc92c",
+      "representative": [
+        22,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 35,
+      "finite_primary_failures": 34,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "9d48ff8c317eeb5239396b28202e0ea62e37191d8578ded7ad2d613ccc090482",
+      "representative": [
+        24,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -4,
+      "finite_all_failures": 1156,
+      "finite_primary_failures": 1155,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "faa508b09e46ce3fa20eb7d28328afafa65860ddbb966d1c139b1c61e8b45ce4",
+      "representative": [
+        26,
+        15
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -3,
+      "finite_all_failures": 20,
+      "finite_primary_failures": 20,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "4dc71e24ec8c172bd3be701984b4f8730234a1285e4591f4452cdc73daf03a35",
+      "representative": [
+        13,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -3,
+      "finite_all_failures": 1162,
+      "finite_primary_failures": 1161,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "4cb36b2ed5258fb9a22a3a31adaac1a74a11fddd068e309b008eb04af3e6d2b6",
+      "representative": [
+        15,
+        9
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -3,
+      "finite_all_failures": 1251,
+      "finite_primary_failures": 1251,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "083cb8ceb4a71707f990fee71a80cffecde24aa453046b45ac85919c9356e821",
+      "representative": [
+        17,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "7/8",
+      "phase_vector_sha256": "55209f6a91da3ba1e715cb106f788c8347acf8edb5cba1a9e2f2ba3f15f1d45a",
+      "representative": [
+        19,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/4",
+      "phase_vector_sha256": "56358840187ad2988ae0e3d2a391ee46299a9aa274dfb54759d884a947e6d6c5",
+      "representative": [
+        21,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "5/8",
+      "phase_vector_sha256": "85dd312a18285561dcf27a61e48e3ded3357b8d1624483b16a20ad1bb667a583",
+      "representative": [
+        23,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/2",
+      "phase_vector_sha256": "a791b9aaaa41c763704c347d5b0d15d8f21d2963f6b7238bd3ee3acae0438eb5",
+      "representative": [
+        25,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -3,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "edf6a5a2e8b700907c74110172f3d29c4d17f1d520d8cccaf86c15f288ba1cde",
+      "representative": [
+        27,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/2",
+      "phase_vector_sha256": "a7f106c825235815ed8e935bbc0e72b24c256448414ab32dec627b946df0d441",
+      "representative": [
+        14,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/8",
+      "phase_vector_sha256": "3996abef1da0cafc0d3092baf60311fecb00637c366f11085bdbcc950e5420c9",
+      "representative": [
+        16,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -2,
+      "finite_all_failures": 9,
+      "finite_primary_failures": 9,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "7cd208d66fc6c79fd22ddd8f1f0aaf4591e28078dfd3ec3199956511a3f75887",
+      "representative": [
+        18,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -2,
+      "finite_all_failures": 1164,
+      "finite_primary_failures": 1163,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "ffc01e512285b2f01f49595da914fea602e0b0b598ad6711e6501cfb485260e8",
+      "representative": [
+        20,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -2,
+      "finite_all_failures": 1263,
+      "finite_primary_failures": 1262,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "207efd225cec3bc2fcb1bab8f12b4acce7fa5fa78cfbbd0b54b865ba0f12ba83",
+      "representative": [
+        22,
+        12
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 5,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "7/8",
+      "phase_vector_sha256": "07eef158b296249e2aebe4bd0b286b5d83b94df09adaf54b740084358e50115b",
+      "representative": [
+        24,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/4",
+      "phase_vector_sha256": "dc0832336c55d9f00a192aeef141afae78aee41e88302cfb48082cf716f29907",
+      "representative": [
+        26,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "5/8",
+      "phase_vector_sha256": "3919b9ccaa9a6375309dcb42a49c816a917d880836a2530579753f0f6873822c",
+      "representative": [
+        28,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/4",
+      "phase_vector_sha256": "61001ecfdf97a91f0179a544bc4c25cb74fbe35e424536eadb4c03ae76811de1",
+      "representative": [
+        15,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "5/8",
+      "phase_vector_sha256": "e3155ea788e040899e6dfe2cc7c276c6fe1885cfc547a082abbd6494f1010ece",
+      "representative": [
+        17,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/2",
+      "phase_vector_sha256": "94d995b9a33ce3b6b1af896a117c838f3f1bbd917fa69d8ed70bc65207c2be74",
+      "representative": [
+        19,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/8",
+      "phase_vector_sha256": "b2b05dbf1ce885d5f6b02eba4d29fc732703c8760d83f689e6de3d5779892283",
+      "representative": [
+        21,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/4",
+      "phase_vector_sha256": "b53305691a766f8b97d47e24217f9392af75c8eadee416155fbd4d6fdb9d7eee",
+      "representative": [
+        23,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -1,
+      "finite_all_failures": 1166,
+      "finite_primary_failures": 1165,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "3655b5cf0e028c2acd7383362674e6b7f0037d212a2b6a5d1a9e72a5063700c9",
+      "representative": [
+        25,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": -1,
+      "finite_all_failures": 1272,
+      "finite_primary_failures": 1271,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "b59c7d1c90ac9f4d515e5d69d1b18a37058a6fea99565bd876d0c517b2144748",
+      "representative": [
+        27,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": -1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "7/8",
+      "phase_vector_sha256": "266b7fb6d401bf9fcd74ff17276f1f1ff2d3c620816434a7ee8f342c9f636206",
+      "representative": [
+        29,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 0,
+      "finite_all_failures": 1275,
+      "finite_primary_failures": 1274,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "70103129e737bf8955dceafcdee0632647e638f923d4542aba1dba2968e30f54",
+      "representative": [
+        16,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 0,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "7/8",
+      "phase_vector_sha256": "f7a7fb3ca87d73831fa72d4ab34ee93c7e7f6a4a13f0554f864ae4bf7f3e0b84",
+      "representative": [
+        18,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 0,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "96d6c0d504b18bc4b82fd438e2bd2ce38f4b47f5d1b99fd61e0dcc91d000679f",
+      "representative": [
+        20,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 0,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "5/8",
+      "phase_vector_sha256": "c7be5a19d187a906031b955cbd0d8c38c31264abd294089461bb4c5568929bdc",
+      "representative": [
+        22,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 0,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "627d8f1b551ab227c1d4bdf17d35626b9226dcaa822bebcb1d319f3655a5614d",
+      "representative": [
+        24,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 0,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/8",
+      "phase_vector_sha256": "678a1facc21b9cc0a6f605a42058b992124ae9f9c55eb25d13b8966f78d45eaf",
+      "representative": [
+        26,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 0,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "a122e31b513aa7c442b2f59d1424117031db8b25575228eb4188889442343b2d",
+      "representative": [
+        28,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 0,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/8",
+      "phase_vector_sha256": "9afe10bfa97555c172148a64a3abea98c2c0b16c1a1310b6fffe34f973a49529",
+      "representative": [
+        30,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/4",
+      "phase_vector_sha256": "4d6cf9b32a52b0a56823ff9d96546ae70452a522515ddc0167832bd40d280ffc",
+      "representative": [
+        17,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/8",
+      "phase_vector_sha256": "dd010b09433e13209e019cdb6f0b504363472997c04af13df1eaa124c556a40d",
+      "representative": [
+        19,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 1,
+      "finite_all_failures": 1272,
+      "finite_primary_failures": 1271,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "cc01d9a91e6842a2752930f98c2c684b53f0722e89c8b2adc04151b899fdbc7e",
+      "representative": [
+        21,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 1,
+      "finite_all_failures": 1166,
+      "finite_primary_failures": 1165,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "2120d021e8381ee53895d5d7cec1f9c08de876f9acc58520d80d849120c08833",
+      "representative": [
+        23,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/4",
+      "phase_vector_sha256": "9c994e5d97c21e2100cfe60d706a08978ea7d701f27850f852c9adc247c49a2d",
+      "representative": [
+        25,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "5/8",
+      "phase_vector_sha256": "3ce40875530efd17445c4cf94fe0c9dc84a1173017b76798874bd1c8f9473d88",
+      "representative": [
+        27,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/2",
+      "phase_vector_sha256": "6e59d23e66358086c89d8ce128e098fca12596612b6676738e166a0e37f26ea6",
+      "representative": [
+        29,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 1,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/8",
+      "phase_vector_sha256": "0198903e2dd3698ec9b9d8fb5e9945a8d96bb437fdea36d253f6e80530debe5a",
+      "representative": [
+        31,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/2",
+      "phase_vector_sha256": "e906c5720d79ba07925b5a0c2eaeab027e16e120aad40716af68a3eeeb83cf12",
+      "representative": [
+        18,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/8",
+      "phase_vector_sha256": "51454edd3a8e0c5de88209691fb1163976c8fa91675f5cab00b7da19e8ab4d31",
+      "representative": [
+        20,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/4",
+      "phase_vector_sha256": "fadb083bdb3dc6afad50b551f119e62c49883b101bd9022467a9e3c9f620d31f",
+      "representative": [
+        22,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/8",
+      "phase_vector_sha256": "f63d9888fcc390292a4fcd18debd620e6a62f152f5fc991a202fa333f73a6282",
+      "representative": [
+        24,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 2,
+      "finite_all_failures": 1263,
+      "finite_primary_failures": 1262,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "80db383f06d86527dfc651bebac9e7500d5c47cc7a34b64cfe320530d7c4bed1",
+      "representative": [
+        26,
+        12
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 2,
+      "finite_all_failures": 1164,
+      "finite_primary_failures": 1163,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "cac093a292777b11512b1377ee704e9d9d6c7917fb0623a3fbab6ea940855dbb",
+      "representative": [
+        28,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 2,
+      "finite_all_failures": 9,
+      "finite_primary_failures": 9,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "8cdfd529a9bd739153cb1621fcd4ad972b62dd0f75546d59a97f7c7d34e297b2",
+      "representative": [
+        30,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 2,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "5/8",
+      "phase_vector_sha256": "e63e873f90a3b1b62f479f3628b9f815eeaea19f2743098824572d8f0531baee",
+      "representative": [
+        32,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 3,
+      "finite_all_failures": 20,
+      "finite_primary_failures": 20,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "7b3e40a35bf5fd44708d099174c102fd65a979c361fc79a1fd724d7ecb454600",
+      "representative": [
+        19,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 3,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "c32a016e8a5bd8e99e92800e20f76eccafad402d1514e21155ce52e742694ad3",
+      "representative": [
+        21,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/2",
+      "phase_vector_sha256": "fc6e062e0c909dcb9f1fe06f96eaede4fa692b38c89b4ffc5518a230326e15b0",
+      "representative": [
+        23,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "3/8",
+      "phase_vector_sha256": "84f49fbe36c14ed2dc922a2a3551d096d2a3d6a60b5e799474ee0ae0f6efaabc",
+      "representative": [
+        25,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/4",
+      "phase_vector_sha256": "68752f09ce565d89309b0756200f7dfb2ac297995b1601ef88ab0460441d9d10",
+      "representative": [
+        27,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 3,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/8",
+      "phase_vector_sha256": "dbe3bc001336eddbfb02eef7b5bf8201d3a1f74469e9d531928be937807f6426",
+      "representative": [
+        29,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 3,
+      "finite_all_failures": 1251,
+      "finite_primary_failures": 1251,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "a5e004d3cd06a207baafa820f5258d79536279e0d1065973c6aa2cd2e0a650b7",
+      "representative": [
+        31,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 3,
+      "finite_all_failures": 1162,
+      "finite_primary_failures": 1161,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "91601f0c78b71ffc80c8add08692263750989325b39dc1894ae58c1a4d7d8343",
+      "representative": [
+        33,
+        15
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 1231,
+      "finite_primary_failures": 1231,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "29a40a2c92ad5b8e40d77482b3f7a0661b6bfbbcf51c3470f38126ff9c029a4e",
+      "representative": [
+        20,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 1156,
+      "finite_primary_failures": 1155,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "3baea2ac30579296c6362b16b726f92378efc2625bcb9ffded45e01697f3bcdf",
+      "representative": [
+        22,
+        9
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 35,
+      "finite_primary_failures": 34,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "ee1d2b67c99eb32114d9000fec3aa797247e15fc6e9af15b4adf6c1c85b65745",
+      "representative": [
+        24,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 8,
+      "finite_primary_failures": 8,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "05363d3b8fa6f0f3a0a8c383188a22fabde6b2c709ba07c79e3541fa386dabe4",
+      "representative": [
+        26,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "30a5f3a8f2a37ce63f482444cdc8147bd74ae00f189047028c0e1cc031e0636c",
+      "representative": [
+        28,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "0948d83df011fa2d1289010f8c44eba33471c3179733f68df6ebdedd3231754d",
+      "representative": [
+        30,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 4,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/4",
+      "phase_vector_sha256": "ca9b0d6a61a15f5c3f9ff26fadac24edae27509992ddf4993fab9abc07797667",
+      "representative": [
+        32,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 4,
+      "finite_all_failures": 1,
+      "finite_primary_failures": 1,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "e00bbc14fe0d6c1bc0a09bce7581ca66c9897e47df457efee18f8cc0bf4051e3",
+      "representative": [
+        34,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 5,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/4",
+      "phase_vector_sha256": "47b08fd3ad3b8d78e49d53e756f6deaa7ae5723c5f1b9eb43eecebbdc474e1c3",
+      "representative": [
+        21,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 5,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/8",
+      "phase_vector_sha256": "6d62080bcf1acf079f215d8f4b43d6f0d8548e0ea8ba73b9301707a3dfd97c8a",
+      "representative": [
+        23,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 5,
+      "finite_all_failures": 1205,
+      "finite_primary_failures": 1205,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "03f43b828b6d107dd530ff01603435b39eee7d9bae183fff89d1b275189cf9bd",
+      "representative": [
+        25,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 5,
+      "finite_all_failures": 1150,
+      "finite_primary_failures": 1149,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "60cb8af311b63917261874419f228bcdc458aed2e568fbc350e1d9f24ae552bf",
+      "representative": [
+        27,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 5,
+      "finite_all_failures": 58,
+      "finite_primary_failures": 57,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "2ee5ddfefdc1847592e29abd2a9ab6e74a548c8157ca3f8a80e20f0f5829afb7",
+      "representative": [
+        29,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 5,
+      "finite_all_failures": 11,
+      "finite_primary_failures": 11,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "03e1faffe01c27dc80a03f7199a21ca6a8d076d062aaef5a9cde6be0e9b817ee",
+      "representative": [
+        31,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 5,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "28eceab9e90f1426554c70ceadf8a9864d3efdae0f158e5874b31cefb723bb6e",
+      "representative": [
+        33,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 5,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "717017b73d657b6f6b42105fbee1f2069ce2c3ab6521d13f8db0d41728e9302f",
+      "representative": [
+        35,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 6,
+      "finite_primary_failures": 6,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "e9c459a58c5c6fa52b39b5b0c61ff9bd06361d781c81b76f5cd5f5511afb18d3",
+      "representative": [
+        22,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "9b0e058ba42f88ec2345e82aa5ffeaf64ce0111fe163c17c518299de90b62203",
+      "representative": [
+        24,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "7561a23f5ad384298dcec88562981de15f41edcb9528bb994999e86f9df0a52b",
+      "representative": [
+        26,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": true,
+      "T": true,
+      "T_all": true,
+      "delta": 6,
+      "finite_all_failures": 0,
+      "finite_primary_failures": 0,
+      "first_failure_pair": null,
+      "left_phase": "1/8",
+      "phase_vector_sha256": "417b033bcd4ee69c8fed54ec2a85b5538f13d84694bd0eebac5c4075181afe8e",
+      "representative": [
+        28,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 1170,
+      "finite_primary_failures": 1170,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "b88e70a1ca0e93b8edc34b066291fcd14ab5becf6d25eaead7c51cd3fad32394",
+      "representative": [
+        30,
+        12
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 1143,
+      "finite_primary_failures": 1143,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "e0de9e2b1a6d5aa96239a125adbe68453da3d12b0bd491d0c04228c68d71ebe9",
+      "representative": [
+        32,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 89,
+      "finite_primary_failures": 88,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "decf8f4683f7ca9cdaee1f25582fd7c9b3899a33f3337b770f722d00e4fdb357",
+      "representative": [
+        34,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 6,
+      "finite_all_failures": 18,
+      "finite_primary_failures": 18,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "4c53f11106a821caea52b306ce2e7a72a3dc9f229367d0cdf7e5ed8d643d0eec",
+      "representative": [
+        36,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 120,
+      "finite_primary_failures": 119,
+      "first_failure_pair": [
+        4,
+        1
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "1bdd269b37b335c2747e1a3aac90119452176693fa5335373e9ecb9659fe35fe",
+      "representative": [
+        23,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 25,
+      "finite_primary_failures": 24,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "ae3df4fe498cb2ac58730fe06eede79daec8c61ec48eb13c725de24a1c52eb82",
+      "representative": [
+        25,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 10,
+      "finite_primary_failures": 10,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "630b9798c78967cc3196abb6297c1ce2c5f5f708101fd80fffe8a4420bd97eb2",
+      "representative": [
+        27,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "b6001d9f18a978ef62e5c7071f46e103f6a3d76f3b2e6ee922ef893b89c26b4d",
+      "representative": [
+        29,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "64156729a6c3041d9058a009c98eb144079fd367ca27924af561e1f9c34aeb7c",
+      "representative": [
+        31,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "796c50a890ddf236919c0f971cd75ef293e3325500488b7add34dd992ea0bd68",
+      "representative": [
+        33,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 1136,
+      "finite_primary_failures": 1136,
+      "first_failure_pair": [
+        2,
+        3
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "940dff34caf0729794cb1cabaef0b2d45fad8dcf1b6fa41498d2dd5e637a0054",
+      "representative": [
+        35,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 7,
+      "finite_all_failures": 1133,
+      "finite_primary_failures": 1133,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "ef6ac06517b257cf5e0eacb172d7781fe98ad9b378097e260bd5bfc8298c0b7f",
+      "representative": [
+        37,
+        15
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 1093,
+      "finite_primary_failures": 1093,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "4c09a1a437ac61373ac2e5c27f0f73ac8e77a4e932f41b866e807fa150f0fea6",
+      "representative": [
+        24,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 1123,
+      "finite_primary_failures": 1123,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "5dfeba1df9b913d5604ef2152a880a8f994b7c02908706da278ca3bba3f414f1",
+      "representative": [
+        26,
+        9
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 159,
+      "finite_primary_failures": 158,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "e7a2736545799a52216908e800f394d670c452c26b9e18c01c7e9f079c5eb898",
+      "representative": [
+        28,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 28,
+      "finite_primary_failures": 27,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "578b4ae4088b23429292f31eac4a54b58de95221c0f89de878f4a9f22dcce7cb",
+      "representative": [
+        30,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 13,
+      "finite_primary_failures": 13,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "c59172d53945287d6b9e2fba6ed76e37023ba1761abbb995698252dc6ad69330",
+      "representative": [
+        32,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 5,
+      "finite_primary_failures": 5,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "ff2888cae244aa82bc7e2c18ff0afb1d59b039d591386af38d0b1d14ec790831",
+      "representative": [
+        34,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "72bc5e74fcc36e0cc7b601a334c5f3351cb91c51b4be7b2a451b36f703704ae2",
+      "representative": [
+        36,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 8,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "baa60bd727a061e57ea12adf8aa6708a61cc4dc53dcd82a01581d347bc55173a",
+      "representative": [
+        38,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 3,
+      "finite_primary_failures": 3,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "d51e5c8926230ac4c63845db749948e826bc1d53500cd6ef9159cc6e491ab337",
+      "representative": [
+        25,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "c868c77b7545c0fb532f6cfac8a3c4f930ea777ac4ed4608507f934c989cbfb8",
+      "representative": [
+        27,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 1045,
+      "finite_primary_failures": 1045,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "057a8a6de64c0dd080b76041cec3c419af6ac7520410c9fd52c21c32bba4e049",
+      "representative": [
+        29,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 1114,
+      "finite_primary_failures": 1114,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "7ecde4649f77ea9b7dc77412051f4431e4f2965af2ca96e952280158655d8a05",
+      "representative": [
+        31,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 203,
+      "finite_primary_failures": 203,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "a262146ea0ec27f62591b1710d87e141f01c81ef25182ad505961c25ec461942",
+      "representative": [
+        33,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 39,
+      "finite_primary_failures": 38,
+      "first_failure_pair": [
+        1,
+        8
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "cd118a57ee45000b75791a8d8c5091e7a1b77284cfefaa04d59182c547f47a56",
+      "representative": [
+        35,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 14,
+      "finite_primary_failures": 14,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "bbf23497339441f248cd78237173e97936dff276d0d2aa7104c9d067396f5d05",
+      "representative": [
+        37,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 9,
+      "finite_all_failures": 8,
+      "finite_primary_failures": 8,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "71fab89b3d45570ac456bcf19a274c380b5b980b36066b97fe73d157e7ed5a06",
+      "representative": [
+        39,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 18,
+      "finite_primary_failures": 17,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "2ef72b1f336e0689e146060e11feee7b4f47af000ffa5726f520e21fcf77dbe6",
+      "representative": [
+        26,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 9,
+      "finite_primary_failures": 9,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "93ed6e4783d1eb830ca2c108b2f95dd14c6bb0556d864e160b3a8c51aaa67ca4",
+      "representative": [
+        28,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 5,
+      "finite_primary_failures": 5,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "21301b94f9d763ca242eeb58b67dd28266865f14baf615938734aab9a829a2a4",
+      "representative": [
+        30,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 2,
+      "finite_primary_failures": 2,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "ebba7aa287a6f85cc413e10ef2f2eadc73cc887e91bea8809138b74a33f71a99",
+      "representative": [
+        32,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 992,
+      "finite_primary_failures": 992,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "fb9b1f0a493fa3be6d4cdb580f58e746c6ea9a56cffd88cb00609bac6c13a928",
+      "representative": [
+        34,
+        12
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 1098,
+      "finite_primary_failures": 1098,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "3000611e56e3b6481d4908bfe2206233d9364e5c17a9ff5650335fa5eed91bfd",
+      "representative": [
+        36,
+        13
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 250,
+      "finite_primary_failures": 250,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "ea57899c25f4376d887adca9fbd0be793f3f5b409b0d4459d235208ad80dad28",
+      "representative": [
+        38,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 10,
+      "finite_all_failures": 48,
+      "finite_primary_failures": 47,
+      "first_failure_pair": [
+        4,
+        1
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "036f02f957018b52bc85422dada078d84a19c837af15441d995861ec745c3bff",
+      "representative": [
+        40,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 303,
+      "finite_primary_failures": 303,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "9a1770bb4c927bc1bd4f7595b7043fe64827d1cd3836edf0c23604fcff68c196",
+      "representative": [
+        27,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 66,
+      "finite_primary_failures": 65,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "6395ed0aeecfe3fcabfa7ad906255063e24d3a04174d17618f133459a18a5270",
+      "representative": [
+        29,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 23,
+      "finite_primary_failures": 22,
+      "first_failure_pair": [
+        2,
+        5
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "d55d926d5b810c228f4eff190c5a2c9456a3198181cc46a52121837583a9ffea",
+      "representative": [
+        31,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 10,
+      "finite_primary_failures": 10,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "ba0947b312547e024544818084b156d57fc9f974c7811f3cd04a60b1317fc4dc",
+      "representative": [
+        33,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 6,
+      "finite_primary_failures": 6,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "46aa66f8d84fc680918af19441009dcd53de1f2ae6f0686da3f751c0b44dcfd6",
+      "representative": [
+        35,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 4,
+      "finite_primary_failures": 4,
+      "first_failure_pair": [
+        3,
+        2
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "fd53d248ca850df78f4f8349978d53ace0ccbd8c556cffd8520f32bade34f367",
+      "representative": [
+        37,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 932,
+      "finite_primary_failures": 932,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "c5ec4788f6420a47c6cd3421ba47ac939d6093ed514a09ba2cf30bf20129e5be",
+      "representative": [
+        39,
+        14
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 11,
+      "finite_all_failures": 1083,
+      "finite_primary_failures": 1083,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "1890fcff2d84fa28f8633594f93533c7fe50c93690c87525af12ad76eb4919bb",
+      "representative": [
+        41,
+        15
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 868,
+      "finite_primary_failures": 868,
+      "first_failure_pair": [
+        2,
+        3
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "0e462d41f831b3e7f967c7652a750995367fc46b6620976121d86dc47022f220",
+      "representative": [
+        28,
+        8
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 1064,
+      "finite_primary_failures": 1064,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "00c986fef1825c8a700ee432188d88442b62e4ecd8574859a2e57cdab25f95be",
+      "representative": [
+        30,
+        9
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 359,
+      "finite_primary_failures": 359,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "4906afb7d319c8b386a9e159b92bcc2b24dba3242ad793db52045274beda5f62",
+      "representative": [
+        32,
+        10
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 79,
+      "finite_primary_failures": 79,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "079dc27dff6c4259b67a83a13031b6ca0a892be6cc3023f113a1d41195c90193",
+      "representative": [
+        34,
+        11
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 27,
+      "finite_primary_failures": 26,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "f2495e526928680bb859e24bcec923bd29c26f0a99a3e2e9fb948853da456760",
+      "representative": [
+        36,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 12,
+      "finite_primary_failures": 12,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "cd2fc7c895b86691163d0e3cbc47af457a432ad79ae0dbd1339c22221f64b01a",
+      "representative": [
+        38,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 7,
+      "finite_primary_failures": 7,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "60af2fafbca757ebb68a181ef2cc56f3684ad36df6ccd7f2752eb6e66dd09c02",
+      "representative": [
+        40,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 12,
+      "finite_all_failures": 6,
+      "finite_primary_failures": 6,
+      "first_failure_pair": [
+        1,
+        2
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "921b866936761ae1d20342e318f30162390c1335afcf22e73c373778a0f1917a",
+      "representative": [
+        42,
+        15
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 0,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 8,
+      "finite_primary_failures": 8,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/4",
+      "phase_vector_sha256": "2b43904c6a37758ed2e016e9e59fde0c3bb6859cef7114aeb92a4eeb35d9df0f",
+      "representative": [
+        29,
+        8
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 1,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 5,
+      "finite_primary_failures": 5,
+      "first_failure_pair": [
+        1,
+        4
+      ],
+      "left_phase": "1/8",
+      "phase_vector_sha256": "60d4b9047384399ef05250cbd8d395e283d3707c6749f231b83514ce4589d0f7",
+      "representative": [
+        31,
+        9
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 2,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 799,
+      "finite_primary_failures": 799,
+      "first_failure_pair": [
+        2,
+        3
+      ],
+      "left_phase": "0",
+      "phase_vector_sha256": "51a995e1818a86778e17391cef7c45f5854b37f6110bf2be465d43f0a3021fd9",
+      "representative": [
+        33,
+        10
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 3,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 1047,
+      "finite_primary_failures": 1047,
+      "first_failure_pair": [
+        1,
+        5
+      ],
+      "left_phase": "7/8",
+      "phase_vector_sha256": "9fbf8c6a87b7f283e7cfd6f9582907c3f82d111e8450f977f2d88890f7375e2a",
+      "representative": [
+        35,
+        11
+      ],
+      "tail_safe": false
+    },
+    {
+      "B_mod8": 4,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 422,
+      "finite_primary_failures": 422,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "3/4",
+      "phase_vector_sha256": "43ec3ade24cf901331b7f72ec9873cb434466b1d59678f5ec5e4183e778a4ca5",
+      "representative": [
+        37,
+        12
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 5,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 94,
+      "finite_primary_failures": 94,
+      "first_failure_pair": [
+        2,
+        1
+      ],
+      "left_phase": "5/8",
+      "phase_vector_sha256": "391b7af9380b20de2a03fdc88aecc6ba8937e3b2125036c656bc3d1780d95d60",
+      "representative": [
+        39,
+        13
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 6,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 31,
+      "finite_primary_failures": 30,
+      "first_failure_pair": [
+        1,
+        6
+      ],
+      "left_phase": "1/2",
+      "phase_vector_sha256": "ea0e05dc6515c6e2eaeb0c992410f98fec105073533323ccd8855eb565435657",
+      "representative": [
+        41,
+        14
+      ],
+      "tail_safe": true
+    },
+    {
+      "B_mod8": 7,
+      "R": false,
+      "T": false,
+      "T_all": false,
+      "delta": 13,
+      "finite_all_failures": 17,
+      "finite_primary_failures": 16,
+      "first_failure_pair": [
+        1,
+        3
+      ],
+      "left_phase": "3/8",
+      "phase_vector_sha256": "7bba2d055688dba3be771536d81d88c62af8ed6dc3e42c0050a2299467f9cb0d",
+      "representative": [
+        43,
+        15
+      ],
+      "tail_safe": true
+    }
+  ],
+  "counts": {
+    "R": 42,
+    "T": 42,
+    "T_all": 42,
+    "cells": 216,
+    "negative_certificates": 174,
+    "outside_R": 0
+  },
+  "provenance": {
+    "input_head": "78c6b25cc4e96d35c6a60595120deb754bd90187",
+    "protocol_sha256": "be10097639d5742d17da199ae34166965e4a5b41af60f4052b4a289c1c0c6594",
+    "script_sha256": "1ef7e9a6516bf299ae9b133dd2ce53d3190a67d68d4edd1eaeb86e7ff2fb2d8a",
+    "source_sha256": {
+      "classification.json": "665dd26bc1c84ec5033d5a3b5ac5784df70c7faa1202e1533e4ff160d07735c0",
+      "witnesses.json": "da9cb5bb4bd588909a667c08e522296733a5ad5a5a617e548d3b01eb99fa0ba6"
+    }
+  },
+  "scope": "Complete delta/residue reduction with analytic |delta|>=14 obstruction and M>=91 tail; primary p!=q and auxiliary-inclusive contracts separated.",
+  "status": "PASS"
+}

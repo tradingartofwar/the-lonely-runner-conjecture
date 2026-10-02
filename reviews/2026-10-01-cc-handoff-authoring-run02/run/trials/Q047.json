@@ -1,0 +1,60 @@
+{
+  "question": "H03-Q3",
+  "history": "H03",
+  "method": "conventional",
+  "author": "A010",
+  "id": "Q047",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q047",
+  "started_at": "2026-10-02T01:11:45.994497+00:00",
+  "started_epoch": 1790903505.9945118,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nIf the project now selects C2 without performing any additional evaluations, what are C2's pass, failure and untested counts for the authorized cohort, and does it pass the acceptance rule?\n\nEVIDENCE\nSTATUS\nAt the Day 12 cutoff, C1 remains selected and does not pass validation: nine passes, two observed failures (A8, B3), and one untested case (B4). Acceptance requires all twelve cohort cases evaluated for the exact candidate and at least eleven passes (J02). Even a B4 pass would leave C1 at ten passes, below threshold.\n\nEVIDENCE\nC1 passes 9/11 evaluated cases (81.8%) and 9/12 authorized cohort cases (75%); B4 enters only the latter denominator. J01 excludes unreadable X1 and X2 from the original fourteen files before evaluation; difficult cases cannot be excluded. J04–J05 establish group A: seven passes, one failure; group B: two passes, one failure, one untested. J06’s nine-of-nine export selects successful examples, hiding failures and missing evaluation; its cropped heading does not change validation. C2’s B3 pass on Day 8 is its only outcome and cannot replace C1’s B3 failure (J08, J12).\n\nNEXT\nThe requested B4 machine slot remains unconfirmed (J10); completing it would resolve missing collection but cannot secure C1 acceptance. If C2 is selected, evaluate its eleven remaining cases: A1–A8, B1, B2, B4. Preserve both X exclusions. C1 evidence cannot transfer across versions; further changes need exact-version evidence. A8 repair remains merely proposed. Recover authoritative case totals and version boundaries from J04–J05, J08, and J12.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T01:11:45.995228+00:00",
+      "sha256": "1d7223c2323491f1db5285cc3bf0c20a2cfb5992f02e31bca53f648fc8fc1cd3",
+      "delivered_at": "2026-10-02T01:12:20.073511+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"C2 has 1 pass (B3), 0 observed failures, and 11 untested cases (A1–A8, B1, B2, B4) in the authorized twelve-case cohort. It does not pass acceptance: all twelve cases must be evaluated for C2, with at least eleven passes. Selecting C2 adds no evaluations, and C1’s results cannot transfer to C2. X1 and X2 remain excluded.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T01:12:51.995902+00:00",
+      "raw_file": "incoming/Q047-01.json",
+      "sha256": "7c7a2b790d49649d7deaf1f54c882f9d42d1e199b0848d560123f8a994389bba",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 56,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "C2 has 1 pass (B3), 0 observed failures, and 11 untested cases (A1–A8, B1, B2, B4) in the authorized twelve-case cohort. It does not pass acceptance: all twelve cases must be evaluated for C2, with at least eleven passes. Selecting C2 adds no evaluations, and C1’s results cannot transfer to C2. X1 and X2 remain excluded.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T01:12:51.996110+00:00",
+  "final_answer": {
+    "answer": "C2 has 1 pass (B3), 0 observed failures, and 11 untested cases (A1–A8, B1, B2, B4) in the authorized twelve-case cohort. It does not pass acceptance: all twelve cases must be evaluated for C2, with at least eleven passes. Selecting C2 adds no evaluations, and C1’s results cannot transfer to C2. X1 and X2 remain excluded.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T01:12:51.996115+00:00",
+  "ended_epoch": 1790903571.9961166,
+  "visible_input_words": 398,
+  "visible_input_characters": 2588,
+  "visible_output_words": 56,
+  "visible_output_characters": 351,
+  "actual_tokens": null
+}

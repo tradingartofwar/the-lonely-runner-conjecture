@@ -1,0 +1,62 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "e94a3a84ba39a8227941d3e5aa2d1d63df149e37",
+  "protocol_sha256": "0f9ca99436288f53989732f4d642992a80e2c7433ec3a8ec897dd52a981d6425",
+  "question": "Can every individual triple have zero cover-constrained minimum while a corrected collective higher-order burden remains compulsory?",
+  "status": "OBSERVED/REPRODUCED for three frozen abstract four-event models; elementary identities are proof-candidate material; no novelty or runner-realizability claim",
+  "delegation": {
+    "calculation": "collective_calc created primary.py and results.json",
+    "independent_verification": "collective_verify created verify.py, verification.json and verification.md without importing primary functions",
+    "adversarial_review": "collective_challenge created challenge.md and audited quantifiers, cost, prior coverage and the final note",
+    "coordination": "root froze the protocol, independently derived the model, wrote the note and updated continuity"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-collective-obligations/primary.py --check",
+    "python -S -B reviews/2026-09-28-collective-obligations/verify.py --check"
+  ],
+  "verification": {
+    "abstract_controls": 3,
+    "logical_states_per_problem": 16,
+    "exact_primal_dual_certificates": 19,
+    "baseline_minima": 3,
+    "cover_individual_triple_minima": 12,
+    "cover_collective_minima": 3,
+    "collective_upper_repair_minima": 1,
+    "main_explicit_open_models": 1,
+    "main_explicit_canonical_covers": 4,
+    "independent_method": "Exact Mobius inversion, complete face parameterization, direct model reconstruction and rational certificate replay",
+    "optimizer_in_readback": false
+  },
+  "results": {
+    "main_pair_minimum_U": "0",
+    "main_four_cover_triple_minima": ["0", "0", "0", "0"],
+    "main_cover_minimum_H": "1/7",
+    "main_repair_under_H_le_0": "1/7",
+    "zero_burden_cover_minimum_H": "0",
+    "quadruple_control_sumT": "1",
+    "quadruple_control_Q": "1/4",
+    "quadruple_control_H": "3/4"
+  },
+  "dependencies": {
+    "readback": "Python standard library only; commands also pass with python -S",
+    "regeneration": "NumPy and SciPy propose LP bases and multipliers; every accepted certificate is checked with exact Fraction arithmetic",
+    "project_imports": []
+  },
+  "scope_limits": [
+    "Abstract event-measure models only; no common-start runner realization",
+    "The collective optimum on the cover face is fixed by U+H=C and is not a cheaper geometric selector",
+    "The proper-subset limitation applies to the frozen inclusive-triple query language",
+    "No speed search, new window, alternate reference, literature novelty audit, external outreach or +7/+9 work",
+    "AI calculation, verification and review are not independent human mathematical validation"
+  ],
+  "sha256": {
+    "reviews/2026-09-28-collective-obligations/protocol.json": "0f9ca99436288f53989732f4d642992a80e2c7433ec3a8ec897dd52a981d6425",
+    "reviews/2026-09-28-collective-obligations/primary.py": "fba2cb579b887a9848064a58dbf489460eec77eab0615116ecc3db8b59f5bfe3",
+    "reviews/2026-09-28-collective-obligations/results.json": "dea12318c1ec54178b8874c3de516ce419737f6c96885fd819973530bbb63555",
+    "reviews/2026-09-28-collective-obligations/verify.py": "7dab157aa82fc5fa11a01f3bd352144bdd6ffe5e51625dc833f24c2c064fe02a",
+    "reviews/2026-09-28-collective-obligations/verification.json": "ecd1dabd9bf8d0c53fffd339fd1ed5d59f76deef3ea2fc76df94312c20046306",
+    "reviews/2026-09-28-collective-obligations/verification.md": "871269642a64bd0863ee050b04f03833ec181815ebd7ddd8e468433ff34f406e",
+    "reviews/2026-09-28-collective-obligations/challenge.md": "86bcbb1c834dbe576fac40e8f8756a5158d7449b3bca06b3b7dd9f9c17d017b5",
+    "notes/COLLECTIVE_COVER_OBLIGATIONS_2026_09_28.md": "5bd790feeb9c21fdf6e24275dff25195ffdbcf7e763220bc83512276be68d6be"
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "status": "pass",
+  "claim_status": "HYPOTHESIS / proof candidate for general implications; bounded rational calculations are OBSERVED",
+  "protocol_sha256": "6d78b53e166441480ab3a4d76484698156615cd7792da6f7bd7a3bbfee10378a",
+  "source_protocol_sha256": "134f1825868d1bde006f3cf7f1d523047fc89410d3acaf8da5add4ec658608c0",
+  "source_results_sha256": "02edb5fe0b579b79a65c900af37d9431bc99ae640db006fb4aca7874fd69145a",
+  "script_sha256": "8a9615927aded77abdc606d0329c46f188066491796aac3293fdeafe5b94de89",
+  "cases": [
+    {
+      "id": "doubling_112",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "227/4032",
+      "H": "251/5376",
+      "width": "3/32",
+      "H_over_width": "251/504",
+      "width_minus_H": "253/5376",
+      "S_sufficient": true,
+      "H_sufficient": true,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "145/512",
+      "archived_final_time": "145/512"
+    },
+    {
+      "id": "small_gcd_113",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "25615/455616",
+      "H": "28327/607488",
+      "width": "3/32",
+      "H_over_width": "28327/56952",
+      "width_minus_H": "28625/607488",
+      "S_sufficient": true,
+      "H_sufficient": true,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "129/448",
+      "archived_final_time": "129/448"
+    },
+    {
+      "id": "tight_13",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "2867/6006",
+      "H": "4801/12012",
+      "width": "3/32",
+      "H_over_width": "38408/9009",
+      "width_minus_H": "-29399/96096",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "3/8",
+      "archived_final_time": "3/8"
+    },
+    {
+      "id": "control_8_11",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "971/1848",
+      "H": "3221/7392",
+      "width": "3/32",
+      "H_over_width": "3221/693",
+      "width_minus_H": "-79/231",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "17/56",
+      "archived_final_time": "17/56"
+    },
+    {
+      "id": "affine_309",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "27668311/2509475520",
+      "H": "91126213/10037902080",
+      "width": "3/32",
+      "H_over_width": "91126213/941053320",
+      "width_minus_H": "849927107/10037902080",
+      "S_sufficient": true,
+      "H_sufficient": true,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "697/2472",
+      "archived_final_time": "697/2472"
+    },
+    {
+      "id": "affine_310",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "2780803/252573120",
+      "H": "3052387/336764160",
+      "width": "3/32",
+      "H_over_width": "3052387/31571640",
+      "width_minus_H": "28519253/336764160",
+      "S_sufficient": true,
+      "H_sufficient": true,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "467/1656",
+      "archived_final_time": "467/1656"
+    },
+    {
+      "id": "affine_320",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "1891481/176608320",
+      "H": "259431/29434720",
+      "width": "3/32",
+      "H_over_width": "86477/919835",
+      "width_minus_H": "1250037/14717360",
+      "S_sufficient": true,
+      "H_sufficient": true,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "721/2560",
+      "archived_final_time": "721/2560"
+    },
+    {
+      "id": "strict_16",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "S": "1711/3696",
+      "H": "5749/14784",
+      "width": "3/32",
+      "H_over_width": "5749/1386",
+      "width_minus_H": "-4363/14784",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "17/56",
+      "archived_final_time": "17/56"
+    },
+    {
+      "id": "aux_condition_strict",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "window": [
+        "7/8",
+        "6/5"
+      ],
+      "S": "15/8",
+      "H": "53/32",
+      "width": "13/40",
+      "H_over_width": "265/52",
+      "width_minus_H": "-213/160",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "73/64",
+      "archived_final_time": "73/64"
+    },
+    {
+      "id": "aux_condition_equality",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "window": [
+        "0",
+        "1/120"
+      ],
+      "S": "41/240",
+      "H": "139/960",
+      "width": "1/120",
+      "H_over_width": "139/8",
+      "width_minus_H": "-131/960",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "1/120",
+      "archived_final_time": "1/120"
+    },
+    {
+      "id": "common_start_lift_clipped",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "1903173888225289/5709496320675840"
+      ],
+      "S": "5309395704738207549929877160490130037/666183571000139088872912946441494386635801414650880",
+      "H": "499442554647104465865370266108542357/76135265257158753014047193879027929901234447388672",
+      "width": "18138392386519/7778661291574374470615019520",
+      "H_over_width": "17480489412648656305287959313798982495/6213665081595192382800680052217286319",
+      "width_minus_H": "-704176520690841495155454953848856011/166545892750034772218228236610373596658950353662720",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "empty",
+      "archived_earliest": null,
+      "archived_final_time": "163489640070647/490466743069080"
+    },
+    {
+      "id": "common_start_lift_extended",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "163489640070647/490466743069080"
+      ],
+      "S": "5309395704738207549929877160490130037/666183571000139088872912946441494386635801414650880",
+      "H": "499442554647104465865370266108542357/76135265257158753014047193879027929901234447388672",
+      "width": "1/343326720148356",
+      "H_over_width": "3496097882529731261057591862759796499/1552302298434033655498327832328592384",
+      "width_minus_H": "-1943795584095697605559264030431204115/532946856800111271098330357153195509308641131720704",
+      "S_sufficient": false,
+      "H_sufficient": false,
+      "newly_sufficient": false,
+      "archived_verdict": "earliest_witness",
+      "archived_earliest": "163489640070647/490466743069080",
+      "archived_final_time": "163489640070647/490466743069080"
+    }
+  ],
+  "summary": {
+    "cases": 12,
+    "S_sufficient": 5,
+    "H_sufficient": 5,
+    "newly_sufficient": 0,
+    "H_equals_width": 0
+  },
+  "strict16": {
+    "occurrences": [
+      {
+        "speed": 6,
+        "lap": 2,
+        "left": "5/16",
+        "right": "17/48"
+      },
+      {
+        "speed": 7,
+        "lap": 2,
+        "left": "15/56",
+        "right": "17/56"
+      },
+      {
+        "speed": 11,
+        "lap": 3,
+        "left": "23/88",
+        "right": "25/88"
+      },
+      {
+        "speed": 11,
+        "lap": 4,
+        "left": "31/88",
+        "right": "3/8"
+      },
+      {
+        "speed": 16,
+        "lap": 5,
+        "left": "39/128",
+        "right": "41/128"
+      },
+      {
+        "speed": 16,
+        "lap": 6,
+        "left": "47/128",
+        "right": "49/128"
+      }
+    ],
+    "events": [
+      "9/32",
+      "25/88",
+      "17/56",
+      "39/128",
+      "5/16",
+      "41/128",
+      "31/88",
+      "17/48",
+      "47/128",
+      "3/8"
+    ],
+    "cells": [
+      {
+        "left": "9/32",
+        "right": "25/88",
+        "f": 1
+      },
+      {
+        "left": "25/88",
+        "right": "17/56",
+        "f": 0
+      },
+      {
+        "left": "17/56",
+        "right": "39/128",
+        "f": -1
+      },
+      {
+        "left": "39/128",
+        "right": "5/16",
+        "f": 0
+      },
+      {
+        "left": "5/16",
+        "right": "41/128",
+        "f": 1
+      },
+      {
+        "left": "41/128",
+        "right": "31/88",
+        "f": 0
+      },
+      {
+        "left": "31/88",
+        "right": "17/48",
+        "f": 1
+      },
+      {
+        "left": "17/48",
+        "right": "47/128",
+        "f": 0
+      },
+      {
+        "left": "47/128",
+        "right": "3/8",
+        "f": 1
+      }
+    ],
+    "positive_intervals": [
+      [
+        "9/32",
+        "25/88"
+      ],
+      [
+        "5/16",
+        "41/128"
+      ],
+      [
+        "31/88",
+        "17/48"
+      ],
+      [
+        "47/128",
+        "3/8"
+      ]
+    ],
+    "negative_intervals": [
+      [
+        "17/56",
+        "39/128"
+      ]
+    ],
+    "total_signed_excess": "569/29568",
+    "prefix_values_at_events": [
+      {
+        "time": "9/32",
+        "value": "0"
+      },
+      {
+        "time": "25/88",
+        "value": "1/352"
+      },
+      {
+        "time": "17/56",
+        "value": "1/352"
+      },
+      {
+        "time": "39/128",
+        "value": "17/9856"
+      },
+      {
+        "time": "5/16",
+        "value": "17/9856"
+      },
+      {
+        "time": "41/128",
+        "value": "47/4928"
+      },
+      {
+        "time": "31/88",
+        "value": "47/4928"
+      },
+      {
+        "time": "17/48",
+        "value": "169/14784"
+      },
+      {
+        "time": "47/128",
+        "value": "169/14784"
+      },
+      {
+        "time": "3/8",
+        "value": "569/29568"
+      }
+    ],
+    "prefix_min": "0",
+    "prefix_max": "569/29568",
+    "suffix_min": "0",
+    "suffix_max": "569/29568",
+    "safe_endpoints": [
+      "17/56",
+      "39/128"
+    ],
+    "safe_interval": [
+      "17/56",
+      "39/128"
+    ],
+    "safe_duration": "1/896",
+    "all_translates_obstruction": "Analytic implication of prefix/suffix signs and box width >= window width; no translate was searched or evaluated."
+  }
+}

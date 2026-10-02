@@ -1,0 +1,90 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "ad7f51f6d367449d517695aa668f3b71ae63cb7f",
+  "question": "Does the frozen Lipschitz-corrected midpoint margin certify whole-component complement safety on the unchanged minimum-component ties without constructing complement threshold schedules?",
+  "status": "Elementary sufficient implication proved; exact finite scores and archive comparisons OBSERVED; no general selector, runtime, whole-configuration, existence-coverage or novelty claim",
+  "delegation": {
+    "calculation": "lipschitz_calc implemented exact projection, base-component reconstruction, frozen scoring/choice, dispatch, separately charged audit and deterministic primary artifacts",
+    "independent_verification": "lipschitz_verify used an independent threshold-event component reconstruction and direct exact closed-interval minimum calculation, comparing 573 scalar fields",
+    "adversarial_review": "lipschitz_challenge attacked the lemma, factor and half-width, cusps, endpoint semantics, information leakage, fit, reflection dependence, dispatch and cost language; verdict PASS WITH STRONG INTERPRETIVE LIMITS",
+    "coordination": "root fetched and reconciled the live PR, froze the protocol before calculation, integrated the conservative note and post-calculation follow-on, updated handoffs/queue, replayed checks, and prepared the save"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-lipschitz-component-margin/primary.py --check",
+    "python -S -B reviews/2026-09-28-lipschitz-component-margin/verify.py --check",
+    "python -m unittest discover -s tests -v"
+  ],
+  "scope": {
+    "active_tie_labels": 7,
+    "active_tie_reflection_mechanisms": 4,
+    "tied_pair_label_instances": 16,
+    "tied_pair_reflection_mechanism_instances": 9,
+    "components": 16,
+    "all_instances_single_component": true,
+    "new_speeds": 0,
+    "new_windows": 0,
+    "new_references": 0
+  },
+  "frozen_candidate": {
+    "lower_margin": "distance(v*t_I,Z)-1/8-v*|I|/2",
+    "pair_score": "minimum over both complement speeds and all positive base-pair components",
+    "choice": "maximum score, then physical-speed lexicographic tie-break",
+    "certificate_rule": "selected score >= 0 certifies compound containment; selected score < 0 is frozen as inconclusive",
+    "fallback_queries": 0,
+    "preselection_containment_queries": 0
+  },
+  "results": {
+    "development_success_25_121": "51/484",
+    "development_failure_25_169": "-1/52",
+    "selected_certified_labels": 7,
+    "selected_certified_reflection_mechanisms": 4,
+    "postselection_nonnegative_containing_labels": 14,
+    "postselection_negative_noncontaining_labels": 2,
+    "postselection_nonnegative_noncontaining_labels": 0,
+    "postselection_negative_containing_labels": 0,
+    "doubling_112": "pair-only exit at 761/32256 before scoring",
+    "tight_13": "no eligible duration pair; isolated equality 3/8 retained separately"
+  },
+  "cost_scope": {
+    "lap_candidates": 143,
+    "base_blocking_pieces": 57,
+    "component_widths_and_midpoints": 16,
+    "complement_lower_bound_evaluations": 32,
+    "pair_choice_comparisons": 9,
+    "postselection_audit_queries": 16,
+    "postselection_unique_threshold_events_including_endpoints": 248,
+    "postselection_open_cells": 232,
+    "comparison_policy": "Unlike operations are not combined into a runtime score."
+  },
+  "verification": {
+    "primary_scalar_fields_compared": 573,
+    "disagreements": 0,
+    "direct_closed_interval_minimum_checks": 32,
+    "numeric_lower_bound_defects": 0,
+    "repository_tests": 25,
+    "adversarial_verdict": "PASS WITH STRONG INTERPRETIVE LIMITS"
+  },
+  "interpretation_limits": [
+    "The only mixed success/failure tie is fitted squares development data.",
+    "All archival tied controls contain and provide no negative validation.",
+    "Reflections are dependent and every tested tied pair has one component.",
+    "The candidate avoids complement threshold schedules but still reconstructs base-pair components.",
+    "Under the frozen protocol a negative score remains inconclusive.",
+    "AI agreement is not independent mathematical validation."
+  ],
+  "post_calculation_follow_on": "Adversarial review observed that min over closure(I) of distance(v*t,Z) equals max(distance(v*t_I,Z)-v*|I|/2,0), suggesting corrected-margin sign is exactly equivalent to component safety. This necessity direction was not in the frozen candidate, was not used to reinterpret results, and is queued for a separate proof/endpoint audit before transfer.",
+  "next_step": "Freeze and independently attack the exact sign-equivalence and excluded-endpoint argument, then apply it unchanged to every minimum-component selection in the archived selector-transfer records without new domain or fallback.",
+  "sha256": {
+    "reviews/2026-09-28-lipschitz-component-margin/protocol.json": "3903410dec2f61deda37c9fe7d03fb6ae24034fc80c78f8426faa9e81f4cae0c",
+    "reviews/2026-09-28-lipschitz-component-margin/primary.py": "a93e7b477982d3d916a11f01f34f68cf5b6923b49a2c6e06533be2901784d8b1",
+    "reviews/2026-09-28-lipschitz-component-margin/results.json": "4f0da78ff72c83d8c230cde18194cffef9af5af882a167d3d5b17e02f2b4cd59",
+    "reviews/2026-09-28-lipschitz-component-margin/verify.py": "ae1f7e39b21361907981a830a3e482a391018c7236fe14f777358d906b1d17c0",
+    "reviews/2026-09-28-lipschitz-component-margin/verification.json": "ec809b3ee1cccd40741c0d0ff4c063c37b1f4884df8a2a2c085ff64dc5a99cba",
+    "reviews/2026-09-28-lipschitz-component-margin/verification.md": "60b3cdf85011cb1605ec8939d4519f16187c401944d785ff37dc4e141d07fbfa",
+    "reviews/2026-09-28-lipschitz-component-margin/challenge.md": "5fb8b209c1874047e96c646306bfc28b1049b9248c114312496cb3bd0e353447",
+    "notes/LIPSCHITZ_COMPONENT_MARGIN_2026_09_28.md": "16b63bab186df0fc0b3f2070261fdb6219fc41790f6a796f44a2a526b5cc46e4",
+    "HANDOFF.md": "fa20b08d618679adf907f042af781f3b0d156e5cf084be7de3649a2bb2903fc0",
+    "LR2_HANDOFF.md": "9b6e1759502bfc385debe1d02ca7d8d869d553c26f61b0934b569e707ed8d537",
+    "RESEARCH_PLAN.md": "32f01e2a5dd088758afb0f37dd29beda9bf78e6ba7fa8cd5cc7941efd9858718"
+  }
+}

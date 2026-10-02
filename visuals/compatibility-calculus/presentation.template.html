@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Compatibility Calculus — visual companion</title>
+<style>/* CC_CSS */</style>
+</head>
+<body>
+<main>
+  <header class="masthead"><a href="https://github.com/tradingartofwar/the-lonely-runner-conjecture">COMPATIBILITY CALCULUS</a><span>RESEARCH COMPANION</span></header>
+  <nav class="chapter-nav" aria-label="Presentation sections"><a href="#opening" id="nav-opening" aria-current="page">00 · One track</a><a href="#cap" id="nav-cap">01 · From cap to clock</a><a href="#joint" id="nav-joint">02 · True together</a><a href="#representation" id="nav-representation">03 · What the model remembers</a><a href="#transfer" id="nav-transfer">04 · What survives the cut</a><a href="#selector" id="nav-selector">05 · One safe time</a><a href="#clock" id="nav-clock">06 · One shared clock</a><a href="#cell" id="nav-cell">07 · From time to shape</a><a href="#story" id="nav-story">08 · Carry it through</a></nav>
+  <div id="opening-chapter"><!-- CC_OPENING --></div>
+  <div id="cap-chapter" hidden>
+  <section class="intro">
+    <p class="eyebrow">GEOMETRY → COMPATIBILITY → PHYSICAL TIME</p>
+    <h1>From a safe shape<br> to a real moment.</h1>
+    <p class="lead">A point can satisfy every safety constraint and still miss the runners’ actual motion. An integer contact is what connects the two.</p>
+    <div class="badges"><span class="badge">HYPOTHESIS · internally reviewed proof candidate</span><span class="quiet">Exact finite geometry reproduced · no general Lonely Runner proof claimed</span></div>
+  </section>
+  <section class="control-bar" aria-label="Example and section controls">
+    <label class="field">B-ray example<select id="q"><option value="6">q = 6 · residue 0</option><option value="2">q = 2 · residue 2</option><option value="5">q = 5 · residue 5</option><option value="3">q = 3 · residue 3</option><option value="4">q = 4 · residue 4</option><option value="7">q = 7 · residue 1</option></select></label>
+    <div class="clock-map"><span class="quiet">Eight runners, stationary reference 0</span><strong id="speed-list"></strong><span>x = {qt} &nbsp; y = {t} &nbsp; H = x − qy ∈ ℤ &nbsp; t = y</span></div>
+    <label class="field" id="cap-field">Winning cap<select id="cap"></select></label>
+  </section>
+  <section class="journey" aria-label="Top cap to physical witness">
+    <article class="geometry-panel panel">
+      <div class="panel-heading"><div><p class="eyebrow">01 / A COMPATIBLE SAFE REGION</p><h2>The cap and its section</h2></div><span id="cap-name" class="tag"></span></div>
+      <svg id="geometry" role="img" aria-label="Exact tetrahedral cap and its horizontal triangular section"></svg>
+      <div class="legend"><span><i class="key cap-key"></i>Closed cap, z ≥ 1/7</span><span><i class="key section-key"></i>Current section</span><span><i class="key hit-key"></i>Integer contact</span></div>
+      <div class="camera-controls"><button id="rotate-left" aria-label="Rotate left">↶ Rotate</button><button id="rotate-right" aria-label="Rotate right">Rotate ↷</button><label>Tilt <input id="tilt" type="range" min="15" max="65" value="35"></label><button id="reset-view">Reset view</button></div>
+      <label class="check"><input id="full-context" type="checkbox"> Show the full 10-cell atlas</label>
+      <p class="caption" id="geometry-caption">The peak is at z = 1/6. Lowering the section opens a triangle of jointly safe points. Vertical scale ×4; this is a coordinate view, not a distance-preserving picture.</p>
+    </article>
+    <div class="right-column">
+      <article class="panel projection-panel">
+        <p class="eyebrow">02 / PROJECT THE SAME SECTION</p><h2>When does the interval touch an integer?</h2>
+        <p>H = x − qy maps the triangle to one closed interval. An integer in that interval means <strong>some point in this very section</strong> lies on the actual orbit.</p>
+        <svg id="projection" role="img" aria-label="Projected section interval on an integer lattice"></svg>
+        <dl class="readout"><div><dt>Loss from peak, e</dt><dd id="loss"></dd></div><div><dt>Section height, z</dt><dd id="height"></dd></div><div><dt>Projected H interval</dt><dd id="interval"></dd></div></dl>
+        <div class="scrubber"><label for="progress">Lower the section <output id="progress-label"></output></label><input id="progress" type="range" min="0" max="100" step="1" value="100"><div class="button-row"><button id="peak">Peak</button><button id="play">Play to contact</button><button id="hit" class="primary">First contact</button></div></div>
+        <p id="contact-status" class="contact-status" aria-live="polite"></p>
+      </article>
+      <article class="panel recovery-panel">
+        <p class="eyebrow">03 / RECOVER THE PHYSICAL CLOCK</p><h2 id="recovery-title">One point. One actual time.</h2>
+        <div id="recovery-values" class="recovery-values"></div>
+        <p id="recovery-text"></p>
+      </article>
+    </div>
+  </section>
+  <section class="panel physical-panel">
+    <div class="panel-heading"><div><p class="eyebrow">04 / CHECK THE RUNNERS AT THAT TIME</p><h2>The geometry returns to the track.</h2></div><label class="check"><input id="reflection" type="checkbox"> Reflect time: t → 1 − t</label></div>
+    <div id="physical-empty" class="empty" hidden>No physical witness is selected before first contact. Continue lowering the section.</div>
+    <div class="physical-grid" id="physical-content"><div><svg id="runners" role="img" aria-label="Runner phases at the recovered exact time"></svg><p class="caption">Solid marks are at their actual phases. Dashed arcs mark the region too close to reference 0. Multiple speeds may share a phase; the exact table preserves each runner.</p></div><div class="phase-wrap"><p id="physical-summary" class="physical-summary"></p><table><caption class="sr-only">Exact physical phases and distances</caption><thead><tr><th>Speed</th><th>Lap</th><th>Phase</th><th>Distance to 0</th></tr></thead><tbody id="phase-rows"></tbody></table></div></div>
+  </section>
+  <section class="scope-grid">
+    <article><p class="eyebrow">WHY THE FIRST CONTACT MATTERS</p><h2>Less loss means more separation.</h2><p>The largest possible separation in the fixed geometry is 1/6. As the section descends, e increases and z = 1/6 − e decreases. The earliest integer contact across the seven caps therefore gives the highest physically compatible separation.</p><p>The pinned proof candidate supplies witnesses strictly above 1/7. That is why geometry below this cut cannot improve the B-ray optimum.</p><details><summary>Compare first contact across all seven caps</summary><div class="table-scroll"><table><thead><tr><th>Cap</th><th>First loss e</th><th>In closed cap?</th><th>Highest z</th></tr></thead><tbody id="cap-comparison"></tbody></table></div><p class="caption">Each row checks the entire section interval. Tied caps can recover the same two physical times; cap counts are not witness counts.</p></details></article>
+    <article class="scope"><p class="eyebrow">REPRESENTATION SCOPE</p><h2>A smaller model for a stated question.</h2><p><strong>Retains:</strong> the seven closed caps, extremal directions, the integer orbit condition, exact phases, lap labels, and reflection.</p><p><strong>Answers here:</strong> how a cap contact recovers a B-ray optimizer, on six canonical examples covering all residues modulo 6.</p><p><strong>Omits from this view:</strong> the complete 1/8-safe set, A-ray controls and parent–child transfer. Full cells, including all three singleton cells, remain in the exact data.</p><p><strong>Return to the richer model</strong> before lowering the threshold, adding a constraint, changing the ray, or asking for every safe time.</p></article>
+  </section>
+  <footer><p>Exact fractions drive the construction and contact controls. Floating-point coordinates draw the picture; animation is illustration, not evidence.</p><details><summary>Sources, claim status and reproducibility</summary><p id="build-info"></p><ul id="source-links"></ul><p>AI-assisted implementation and same-author verification. The universal spectrum remains an internally reviewed proof candidate, with independent mathematical assessment and novelty unresolved.</p><p>Rebuild: <code>python3 visuals/compatibility-calculus/data/build_visual_data.py</code><br>Check: <code>python3 visuals/compatibility-calculus/checks/check_visual_data.py</code></p></details><a href="https://github.com/tradingartofwar/the-lonely-runner-conjecture">Explore the research record ↗</a></footer>
+  <p class="next-chapter"><a href="#joint">Next: when separately true is not true together →</a></p>
+  </div>
+  <div id="joint-chapter" hidden><!-- CC_JOINT --></div>
+  <div id="representation-chapter" hidden><!-- CC_REPRESENTATION --></div>
+  <div id="transfer-chapter" hidden><!-- CC_TRANSFER --></div>
+  <div id="selector-chapter" hidden><!-- CC_SELECTOR --></div>
+  <div id="clock-chapter" hidden><!-- CC_CLOCK --></div>
+  <div id="cell-chapter" hidden><!-- CC_CELL --></div>
+  <div id="story-chapter" hidden><!-- CC_STORY --></div>
+</main>
+<script>/* CC_DATA */</script>
+<script>/* CC_JS */</script>
+</body>
+</html>

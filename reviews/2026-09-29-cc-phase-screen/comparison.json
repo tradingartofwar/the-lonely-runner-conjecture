@@ -1,0 +1,3260 @@
+{
+  "all_subset_checks_pass": true,
+  "both_miss_pairs": [],
+  "complete_reduction_prerequisites": true,
+  "lost_auxiliary_pairs": [],
+  "lost_primary_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "lost_primary_witness": {
+    "failed_screen_decision": {
+      "reasons": [],
+      "source_id": "P0:E0-1:K1:L2",
+      "status": "NO_SCREEN_CERTIFICATE",
+      "tests": [
+        {
+          "c_index": 3,
+          "core_lap": 0,
+          "k": 3,
+          "matching_boundaries": [],
+          "raw_values": [
+            "15/32",
+            "1/2"
+          ],
+          "v_index": 6
+        }
+      ]
+    },
+    "pair": [
+      1,
+      2
+    ],
+    "source_id": "P0:E0-1:K1:L2",
+    "status": "OMITTED_SOURCE_WITNESS",
+    "witness": {
+      "N": 0,
+      "alternate_bezout_time": "1/8",
+      "bezout": [
+        1,
+        0
+      ],
+      "contact": {
+        "first_integer": 0,
+        "hit": true,
+        "interval": [
+          "0",
+          "1/208"
+        ],
+        "parameter": "1",
+        "point": [
+          "1/8",
+          "1/4"
+        ]
+      },
+      "distinct_speed_count": 10,
+      "distinct_speeds": true,
+      "euclid_divisions": 2,
+      "gcd": 1,
+      "h": 0,
+      "minimum": "1/8",
+      "pair": [
+        1,
+        2
+      ],
+      "phases": [
+        "1/8",
+        "1/4",
+        "3/8",
+        "1/2",
+        "5/8",
+        "7/8",
+        "1/4",
+        "3/8",
+        "1/4"
+      ],
+      "physical_laps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        13
+      ],
+      "point": [
+        "1/8",
+        "1/4"
+      ],
+      "primitive": [
+        1,
+        2
+      ],
+      "primitive_time": "1/8",
+      "reflected_laps": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        16,
+        92
+      ],
+      "reflected_phases": [
+        "7/8",
+        "3/4",
+        "5/8",
+        "1/2",
+        "3/8",
+        "1/8",
+        "3/4",
+        "5/8",
+        "3/4"
+      ],
+      "reflected_time": "7/8",
+      "segment": "P0:E0-1:K1:L2:M13",
+      "speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        10,
+        19,
+        106
+      ],
+      "time": "1/8",
+      "torus_laps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        13
+      ],
+      "unwrapped_clock": "1/8"
+    }
+  },
+  "rows": [
+    {
+      "full": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "1/52"
+            ],
+            "parameter": "13/15",
+            "point": [
+              "7/24",
+              "7/24"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        1
+      ],
+      "primary": false,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "1/52"
+            ],
+            "parameter": "13/15",
+            "point": [
+              "7/24",
+              "7/24"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L2:M13",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E1-3:K1:L3:M18",
+          "P5:E0-3:K3:L7:M39",
+          "P5:E2-3:K3:L7:M39"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L2:M13",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "1/208"
+            ],
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        2
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [],
+        "first_contact": null,
+        "hit": false
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-1:K1:L3:M16",
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-2:K3:L7:M38",
+          "P5:E0-3:K3:L7:M37"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-1:K1:L3:M16",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-3/208",
+              "0"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        3
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E1-3:K2:L2:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "37/52",
+              "1"
+            ],
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-1:K1:L4:M19",
+          "P1:E1-3:K1:L4:M19",
+          "P4:E0-1:K3:L5:M33",
+          "P4:E0-3:K3:L5:M33",
+          "P7:E0-1:K4:L8:M47"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-1:K1:L4:M19",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "5/208"
+            ],
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/2"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        4
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [],
+        "first_contact": null,
+        "hit": false
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M39",
+          "P5:E2-3:K3:L7:M40"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-1:K2:L3:M22",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "1",
+              "187/168"
+            ],
+            "parameter": "0",
+            "point": [
+              "17/64",
+              "21/64"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        5
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "7/8",
+              "63/52"
+            ],
+            "parameter": "13/35",
+            "point": [
+              "15/56",
+              "19/56"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M13",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E1-3:K1:L2:M17",
+          "P2:E0-3:K2:L2:M23",
+          "P4:E0-1:K3:L4:M33",
+          "P5:E0-3:K3:L7:M37",
+          "P6:E0-1:K4:L7:M44",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M48"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M13",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "35/36",
+              "19/18"
+            ],
+            "parameter": "1/3",
+            "point": [
+              "3/16",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        6
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "173/104",
+              "17/8"
+            ],
+            "parameter": "35/48",
+            "point": [
+              "23/64",
+              "5/32"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-3:K1:L2:M17",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-2:K3:L7:M37",
+          "P5:E0-3:K3:L7:M36"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-3:K1:L2:M17",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "35/36",
+              "29/24"
+            ],
+            "parameter": "2/17",
+            "point": [
+              "25/136",
+              "39/136"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        7
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "103/52",
+              "5/2"
+            ],
+            "parameter": "1/27",
+            "point": [
+              "23/72",
+              "17/72"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L2:M13",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-3:K2:L3:M23",
+          "P4:E0-3:K3:L4:M34",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E0-1:K4:L8:M47"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L2:M13",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "3/4",
+              "73/72"
+            ],
+            "parameter": "18/19",
+            "point": [
+              "23/152",
+              "4/19"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        8
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "13/8",
+              "219/104"
+            ],
+            "parameter": "39/50",
+            "point": [
+              "23/80",
+              "3/10"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L2:M13",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "7/8",
+              "7/6"
+            ],
+            "parameter": "3/7",
+            "point": [
+              "23/168",
+              "13/56"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        9
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "34/13",
+              "13/4"
+            ],
+            "parameter": "20/33",
+            "point": [
+              "31/88",
+              "15/88"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L2:M13",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-2:K3:L7:M38",
+          "P5:E0-3:K3:L7:M37",
+          "P5:E0-3:K3:L7:M39",
+          "P5:E2-3:K3:L7:M39",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L2:M13",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "1",
+              "209/208"
+            ],
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        10
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "305/104",
+              "29/8"
+            ],
+            "parameter": "7/72",
+            "point": [
+              "31/96",
+              "11/48"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M13",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-1:K1:L3:M16",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L2:M17",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-1:K2:L2:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M33",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M13",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "815/432",
+              "881/432"
+            ],
+            "parameter": "49/66",
+            "point": [
+              "17/88",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        11
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "13/4",
+              "4"
+            ],
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M12",
+          "P1:E0-1:K1:L4:M19",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-1:K3:L5:M33",
+          "P4:E0-3:K3:L4:M35",
+          "P4:E0-3:K3:L5:M33",
+          "P5:E0-3:K3:L7:M38",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E0-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M12",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "133/72",
+              "145/72"
+            ],
+            "parameter": "11/12",
+            "point": [
+              "17/96",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        12
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "371/104",
+              "35/8"
+            ],
+            "parameter": "15/28",
+            "point": [
+              "39/112",
+              "5/28"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M37",
+          "P5:E0-3:K3:L7:M39"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E1-3:K1:L3:M18",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "41/24",
+              "349/168"
+            ],
+            "parameter": "49/62",
+            "point": [
+              "23/128",
+              "43/128"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        13
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "101/26",
+              "19/4"
+            ],
+            "parameter": "2/15",
+            "point": [
+              "13/40",
+              "9/40"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M11",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-2:K3:L7:M37",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E0-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M11",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "23/12",
+              "19/9"
+            ],
+            "parameter": "3/7",
+            "point": [
+              "17/112",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        14
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 5,
+            "hit": true,
+            "interval": [
+              "437/104",
+              "41/8"
+            ],
+            "parameter": "83/96",
+            "point": [
+              "47/128",
+              "9/64"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M14",
+          "P0:E1-3:K1:L1:M14",
+          "P0:E1-3:K1:L2:M13",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-3:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M47"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M14",
+          "contact": {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "139/48",
+              "3"
+            ],
+            "parameter": "1",
+            "point": [
+              "5/24",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        1,
+        15
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 5,
+            "hit": true,
+            "interval": [
+              "235/52",
+              "11/2"
+            ],
+            "parameter": "25/51",
+            "point": [
+              "47/136",
+              "25/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-1:K2:L2:M21",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-19/192",
+              "1/24"
+            ],
+            "parameter": "19/27",
+            "point": [
+              "9/28",
+              "9/56"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        1
+      ],
+      "primary": false,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-17/104",
+              "1/8"
+            ],
+            "parameter": "17/30",
+            "point": [
+              "7/20",
+              "7/40"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L1:M11",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-3:K1:L2:M17",
+          "P2:E0-1:K2:L3:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L1:M11",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "0"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/16"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        3
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "0",
+              "35/104"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/4",
+              "3/8"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-1:K2:L2:M22",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-3:K1:L3:M16",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "3/40"
+            ],
+            "parameter": "5/8",
+            "point": [
+              "9/64",
+              "45/128"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        5
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P3:E0-1:K3:L2:M30",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "207/104",
+              "9/4"
+            ],
+            "parameter": "1/27",
+            "point": [
+              "17/36",
+              "13/72"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-1:K1:L3:M18",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-1:K2:L3:M23",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P4:E0-1:K3:L4:M33",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E0-3:K3:L7:M39"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L1:M14",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "23/24",
+              "29/24"
+            ],
+            "parameter": "1/6",
+            "point": [
+              "3/16",
+              "5/32"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        7
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "181/104",
+              "19/8"
+            ],
+            "parameter": "9/22",
+            "point": [
+              "15/44",
+              "17/88"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P4:E0-3:K3:L4:M34",
+          "P5:E0-3:K3:L7:M37",
+          "P6:E0-1:K4:L6:M43"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E1-3:K1:L3:M18",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "43/64",
+              "57/56"
+            ],
+            "parameter": "147/155",
+            "point": [
+              "11/60",
+              "13/40"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        9
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "19/8",
+              "25/8"
+            ],
+            "parameter": "5/6",
+            "point": [
+              "19/52",
+              "15/104"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L1:M11",
+          "P0:E0-3:K1:L1:M14",
+          "P0:E1-3:K1:L1:M14",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-1:K2:L3:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P6:E0-1:K4:L6:M43"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L1:M11",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "1",
+              "1"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/16"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        11
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "2",
+              "283/104"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/4",
+              "3/8"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M12",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-2:K3:L7:M38",
+          "P5:E0-3:K3:L7:M37",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L6:M43"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M12",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "815/432",
+              "893/432"
+            ],
+            "parameter": "49/78",
+            "point": [
+              "9/52",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        2,
+        13
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 4,
+            "hit": true,
+            "interval": [
+              "379/104",
+              "37/8"
+            ],
+            "parameter": "37/102",
+            "point": [
+              "23/68",
+              "27/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-1:K1:L3:M16",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E1-3:K3:L2:M31",
+          "P5:E0-3:K3:L7:M38",
+          "P7:E1-3:K4:L8:M48"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-1:K1:L3:M16",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-217/208",
+              "-1"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        1
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-21/52",
+              "0"
+            ],
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M13",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-1:K1:L3:M17",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E1-3:K3:L4:M35",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M13",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/108",
+              "1/54"
+            ],
+            "parameter": "1/3",
+            "point": [
+              "3/16",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        2
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-9/104",
+              "3/8"
+            ],
+            "parameter": "3/16",
+            "point": [
+              "21/64",
+              "7/32"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-1:K1:L4:M19",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P4:E0-1:K3:L5:M33",
+          "P4:E0-3:K3:L5:M33",
+          "P4:E1-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-1:K1:L4:M19",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-193/208"
+            ],
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/2"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        4
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "57/104",
+              "9/8"
+            ],
+            "parameter": "47/60",
+            "point": [
+              "29/80",
+              "3/20"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L2:M13",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E1-3:K3:L2:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M37",
+          "P7:E1-3:K4:L8:M48"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L2:M13",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/8",
+              "5/36"
+            ],
+            "parameter": "9/19",
+            "point": [
+              "21/152",
+              "35/152"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        5
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "45/52",
+              "3/2"
+            ],
+            "parameter": "7/33",
+            "point": [
+              "29/88",
+              "19/88"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M13",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P3:E1-3:K3:L2:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L7:M44",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E1-3:K4:L8:M48"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M13",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "391/432",
+              "433/432"
+            ],
+            "parameter": "41/42",
+            "point": [
+              "11/56",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        7
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "3/2",
+              "9/4"
+            ],
+            "parameter": "2/3",
+            "point": [
+              "37/104",
+              "17/104"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M12",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M33",
+          "P4:E1-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M37",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M12",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "203/216",
+              "227/216"
+            ],
+            "parameter": "13/24",
+            "point": [
+              "11/64",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        8
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "189/104",
+              "21/8"
+            ],
+            "parameter": "19/84",
+            "point": [
+              "37/112",
+              "3/14"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-1:K1:L3:M17",
+          "P1:E0-3:K1:L2:M17",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-3:K3:L4:M34",
+          "P4:E1-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M44",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M47"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-1:K1:L3:M17",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-7/208",
+              "11/208"
+            ],
+            "parameter": "11/18",
+            "point": [
+              "1/8",
+              "5/12"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        10
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "255/104",
+              "27/8"
+            ],
+            "parameter": "19/32",
+            "point": [
+              "45/128",
+              "11/64"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L2:M13",
+          "P1:E1-3:K1:L3:M18",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E1-3:K3:L2:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E1-3:K4:L8:M48"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L2:M13",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "5/8",
+              "19/18"
+            ],
+            "parameter": "27/31",
+            "point": [
+              "37/248",
+              "53/248"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        3,
+        11
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 3,
+            "hit": true,
+            "interval": [
+              "36/13",
+              "15/4"
+            ],
+            "parameter": "4/17",
+            "point": [
+              "45/136",
+              "29/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E1-3:K3:L2:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P4:E1-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M37",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M49",
+          "P7:E1-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-1:K2:L3:M22",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-67/64",
+              "-145/168"
+            ],
+            "parameter": "63/247",
+            "point": [
+              "7/26",
+              "33/104"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        4,
+        1
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L3:M23",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-5/4",
+              "-85/104"
+            ],
+            "parameter": "26/45",
+            "point": [
+              "5/18",
+              "23/72"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M12",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P3:E1-3:K3:L2:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P4:E1-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M39",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M49",
+          "P7:E1-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M12",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/144",
+              "5/144"
+            ],
+            "parameter": "1/6",
+            "point": [
+              "1/6",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        4,
+        3
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/104",
+              "5/8"
+            ],
+            "parameter": "1/66",
+            "point": [
+              "7/22",
+              "21/88"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-1:K1:L3:M17",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E1-3:K1:L2:M17",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P3:E1-3:K3:L2:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P4:E1-3:K3:L4:M36",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M49",
+          "P7:E1-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-1:K1:L3:M17",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-113/104",
+              "-101/104"
+            ],
+            "parameter": "1/4",
+            "point": [
+              "1/8",
+              "13/32"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        4,
+        5
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "5/8",
+              "11/8"
+            ],
+            "parameter": "1/2",
+            "point": [
+              "9/26",
+              "19/104"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L2:M12",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E1-3:K1:L3:M18",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E1-3:K3:L2:M30",
+          "P4:E0-1:K3:L4:M33",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P4:E1-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M49",
+          "P7:E1-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L2:M12",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-7/104",
+              "0"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "7/32"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        4,
+        7
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "131/104",
+              "17/8"
+            ],
+            "parameter": "77/90",
+            "point": [
+              "11/30",
+              "17/120"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M12",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-1:K3:L3:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P3:E1-3:K3:L2:M30",
+          "P4:E0-1:K3:L4:M33",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P4:E1-3:K3:L4:M36",
+          "P5:E0-2:K3:L7:M37",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M49",
+          "P7:E1-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M12",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "47/48",
+              "53/48"
+            ],
+            "parameter": "1/6",
+            "point": [
+              "1/6",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        4,
+        9
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "197/104",
+              "23/8"
+            ],
+            "parameter": "11/102",
+            "point": [
+              "11/34",
+              "31/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L2:M12",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-1:K1:L3:M17",
+          "P5:E0-3:K3:L7:M36"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L2:M12",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-219/208",
+              "-31/32"
+            ],
+            "parameter": "13/35",
+            "point": [
+              "1/8",
+              "9/40"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        5,
+        1
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [],
+        "first_contact": null,
+        "hit": false
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L2:M13",
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-3:K1:L2:M17",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M39",
+          "P5:E2-3:K3:L7:M39"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L2:M13",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-203/208"
+            ],
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        5,
+        2
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-59/104",
+              "1/8"
+            ],
+            "parameter": "59/72",
+            "point": [
+              "35/96",
+              "7/48"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M14",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P4:E0-1:K3:L4:M33",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M47"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M14",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/48",
+              "0"
+            ],
+            "parameter": "1",
+            "point": [
+              "5/24",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        5,
+        3
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/4",
+              "1/2"
+            ],
+            "parameter": "1/3",
+            "point": [
+              "35/104",
+              "21/104"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M11",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-1:K1:L4:M19",
+          "P1:E1-3:K1:L3:M18",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-1:K2:L2:M22",
+          "P3:E0-1:K3:L2:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-1:K3:L5:M33",
+          "P4:E0-3:K3:L4:M36",
+          "P4:E0-3:K3:L5:M33",
+          "P5:E0-3:K3:L7:M37"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M11",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/24",
+              "1/72"
+            ],
+            "parameter": "3/4",
+            "point": [
+              "5/32",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        5,
+        4
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P3:E0-1:K3:L2:M30",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "101/104",
+              "11/8"
+            ],
+            "parameter": "1/14",
+            "point": [
+              "53/112",
+              "5/28"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E0-3:K1:L2:M17",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L2:M17",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-1:K4:L7:M44",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E0-3:K1:L2:M17",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-3/8",
+              "0"
+            ],
+            "parameter": "1",
+            "point": [
+              "5/24",
+              "1/4"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        5,
+        6
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "73/104",
+              "13/8"
+            ],
+            "parameter": "31/96",
+            "point": [
+              "43/128",
+              "13/64"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-1:K1:L3:M16",
+          "P1:E0-3:K1:L2:M17",
+          "P1:E0-3:K1:L3:M16",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M37",
+          "P6:E0-1:K4:L6:M43",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E0-3:K4:L8:M48"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L2:M13",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-3/8",
+              "1/36"
+            ],
+            "parameter": "27/29",
+            "point": [
+              "35/232",
+              "49/232"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        5,
+        7
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P2:E1-3:K2:L2:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 2,
+            "hit": true,
+            "interval": [
+              "53/52",
+              "2"
+            ],
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-1:K1:L1:M11",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L3:M18",
+          "P2:E0-1:K2:L3:M23",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P6:E0-1:K4:L7:M44",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-1:K1:L1:M11",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-1",
+              "-1"
+            ],
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/16"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        6,
+        1
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L3:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-9/8",
+              "-3/8"
+            ],
+            "parameter": "1/6",
+            "point": [
+              "17/52",
+              "23/104"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E0-3:K1:L1:M11",
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-1:K1:L3:M18",
+          "P2:E0-1:K2:L2:M22",
+          "P2:E0-1:K2:L3:M23",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P5:E0-2:K3:L7:M36",
+          "P5:E0-3:K3:L7:M36",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-3:K4:L7:M44"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E0-3:K1:L1:M11",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-1/48",
+              "7/144"
+            ],
+            "parameter": "3/10",
+            "point": [
+              "3/20",
+              "1/8"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        6,
+        5
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 1,
+            "hit": true,
+            "interval": [
+              "15/104",
+              "9/8"
+            ],
+            "parameter": "89/102",
+            "point": [
+              "25/68",
+              "19/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-1:K2:L3:M22",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E1-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M39",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-1:K2:L2:M21",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-107/96",
+              "-113/168"
+            ],
+            "parameter": "7/27",
+            "point": [
+              "5/16",
+              "3/16"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        7,
+        1
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-71/52",
+              "-1/2"
+            ],
+            "parameter": "19/45",
+            "point": [
+              "41/120",
+              "23/120"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P1:E1-3:K1:L3:M18",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30",
+          "P3:E1-3:K3:L2:M30",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M38",
+          "P5:E2-3:K3:L7:M40",
+          "P6:E0-3:K4:L7:M44",
+          "P7:E0-1:K4:L8:M47",
+          "P7:E1-3:K4:L8:M49"
+        ],
+        "first_contact": {
+          "candidate_id": "P1:E1-3:K1:L3:M18",
+          "contact": {
+            "first_integer": -2,
+            "hit": true,
+            "interval": [
+              "-463/192",
+              "-79/42"
+            ],
+            "parameter": "553/713",
+            "point": [
+              "33/184",
+              "31/92"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        7,
+        2
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-1:K3:L2:M30"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-109/104",
+              "-1/8"
+            ],
+            "parameter": "5/96",
+            "point": [
+              "41/128",
+              "15/64"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L2:M13",
+          "P1:E0-1:K1:L4:M19",
+          "P1:E0-3:K1:L3:M16",
+          "P1:E1-3:K1:L3:M18",
+          "P1:E1-3:K1:L4:M19",
+          "P2:E0-3:K2:L2:M23",
+          "P3:E0-3:K3:L3:M31",
+          "P4:E0-1:K3:L4:M33",
+          "P4:E0-1:K3:L4:M34",
+          "P4:E1-3:K3:L4:M36",
+          "P5:E0-3:K3:L7:M37",
+          "P6:E0-1:K4:L6:M43",
+          "P6:E1-3:K4:L6:M43"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L2:M13",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-11/8",
+              "-1"
+            ],
+            "parameter": "1",
+            "point": [
+              "11/72",
+              "5/24"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        7,
+        3
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": 0,
+            "hit": true,
+            "interval": [
+              "-19/26",
+              "1/4"
+            ],
+            "parameter": "38/51",
+            "point": [
+              "49/136",
+              "21/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    },
+    {
+      "full": {
+        "contact_ids": [
+          "P0:E1-3:K1:L1:M14",
+          "P1:E0-3:K1:L2:M17",
+          "P2:E0-1:K2:L2:M21",
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23",
+          "P3:E0-3:K3:L3:M30",
+          "P4:E0-3:K3:L4:M35",
+          "P5:E0-3:K3:L7:M38"
+        ],
+        "first_contact": {
+          "candidate_id": "P0:E1-3:K1:L1:M14",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-67/60",
+              "-19/24"
+            ],
+            "parameter": "14/39",
+            "point": [
+              "5/26",
+              "31/208"
+            ]
+          }
+        },
+        "hit": true
+      },
+      "pair": [
+        8,
+        1
+      ],
+      "primary": true,
+      "restricted": {
+        "contact_ids": [
+          "P2:E0-3:K2:L2:M23",
+          "P2:E0-3:K2:L3:M23"
+        ],
+        "first_contact": {
+          "candidate_id": "P2:E0-3:K2:L2:M23",
+          "contact": {
+            "first_integer": -1,
+            "hit": true,
+            "interval": [
+              "-167/104",
+              "-5/8"
+            ],
+            "parameter": "21/34",
+            "point": [
+              "6/17",
+              "23/136"
+            ]
+          }
+        },
+        "hit": true
+      }
+    }
+  ],
+  "scope": "ALL_POSITIVE_PRIMITIVE_DIRECTIONS",
+  "scope_note": "Outside the union, both leaders have width at least one only when both full finite reductions were reached.",
+  "subset_checks": [
+    {
+      "id": "P2:E0-3:K2:L2:M23",
+      "identical_full_candidate": true
+    },
+    {
+      "id": "P2:E0-3:K2:L3:M23",
+      "identical_full_candidate": true
+    },
+    {
+      "id": "P2:E1-3:K2:L2:M23",
+      "identical_full_candidate": true
+    },
+    {
+      "id": "P3:E0-1:K3:L2:M30",
+      "identical_full_candidate": true
+    },
+    {
+      "id": "P3:E0-1:K3:L3:M30",
+      "identical_full_candidate": true
+    }
+  ],
+  "union_pairs": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      1,
+      12
+    ],
+    [
+      1,
+      13
+    ],
+    [
+      1,
+      14
+    ],
+    [
+      1,
+      15
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      1
+    ]
+  ]
+}

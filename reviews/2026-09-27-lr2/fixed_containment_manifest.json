@@ -1,0 +1,93 @@
+{
+  "baseline_commit": "9831bbee22c0e226911eac99e65a0c9624bef963",
+  "date": "2026-09-27",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "scope": {
+    "reference": 0,
+    "total_runners": 8,
+    "threshold": "1/8",
+    "core": [
+      1,
+      4,
+      6
+    ],
+    "J": [
+      "9/32",
+      "5/16"
+    ],
+    "S": [
+      "17/56",
+      "5/16"
+    ],
+    "finite_classification": [
+      1,
+      84
+    ],
+    "extra_failure_control": 85,
+    "raw_safe_values": 35,
+    "admissible_replacements": 30,
+    "largest_replacement": 73,
+    "admissible_endpoint_contacts": [
+      22,
+      38,
+      54,
+      63,
+      70
+    ],
+    "local_certificates": 35
+  },
+  "claim_status": "OBSERVED / REPRODUCED finite evidence; completeness and all-parameter identities/tail remain proof candidates; no novelty or new-family-coverage claim.",
+  "provenance": "AI-assisted derivation, code, and writing; independently structured rational/integer replay; no outside proof certification.",
+  "verification": {
+    "status": "PASS",
+    "read_only_commands": [
+      "python -B reviews/2026-09-27-lr2/check_fixed_containment.py --check",
+      "python -B reviews/2026-09-27-lr2/crosscheck_fixed_containment.py --check"
+    ],
+    "documentation_links": "PASS",
+    "broader_regression_rerun": false
+  },
+  "unchanged_prior_evidence_sha256": {
+    "notes/CORE_EXCHANGE_NEIGHBORS_2026_09_27.md": "0f516b10e49144a740adcb24d158fcaf214f9c2d9a005073c0333a3a6c8bec2c",
+    "reviews/2026-09-27-lr2/check_neighbor_cores.py": "f6c7e4c679caa65ea2f873dd3866cc7e19f75211094dbbd406a37fb9fe064233",
+    "reviews/2026-09-27-lr2/crosscheck_neighbor_cores.py": "861f05bcc7621e58b211338cc25f795955bf5e01e4fdf42b106e0e8aa243689c",
+    "reviews/2026-09-27-lr2/neighbor_cores.json": "74d55d0778afa33ca3748aa15780df0e071b466f7b79e57b9212cbe9b64e990a",
+    "reviews/2026-09-27-lr2/neighbor_cores_crosscheck.json": "e17c9567a3e5fc705cb06b7704fc103270f4fb3aa34ea49ffde4b32bf4e72eeb"
+  },
+  "files": {
+    "HANDOFF.md": {
+      "bytes": 136361,
+      "sha256": "fd2016a369a2807f15bc8561a046d92580c122b802a0ddd8d96ee1b2a15b7421"
+    },
+    "LR2_HANDOFF.md": {
+      "bytes": 36093,
+      "sha256": "0c40734e2c1fc1bf3fc015ce813d6014cceccb7286eadc6e3b8131f8503d3b9d"
+    },
+    "README.md": {
+      "bytes": 7660,
+      "sha256": "f13435716960fd73d9d7fe56493448c72cde86704a850b22c7208b130020c56a"
+    },
+    "notes/FIXED_WINDOW_CONTAINMENT_2026_09_27.md": {
+      "bytes": 12309,
+      "sha256": "269dbd8524c77740625c39567b55fb7657e561a997397e876dd044735cbf7f92"
+    },
+    "reviews/2026-09-27-lr2/check_fixed_containment.py": {
+      "bytes": 6231,
+      "sha256": "68252b31ab949f08f079384ca0ceb6d0c16f797e750846f71a8571cbdec4791f"
+    },
+    "reviews/2026-09-27-lr2/crosscheck_fixed_containment.py": {
+      "bytes": 8825,
+      "sha256": "1a7cb76472927c2cb85ffb64f3597022b27c96c4c2b7ca702bff74b69370723a"
+    },
+    "reviews/2026-09-27-lr2/fixed_containment.json": {
+      "bytes": 57437,
+      "sha256": "441003925bf65990b2a1418cdbf156e8def648a3b6c0b485305f641b2c1d9b7d"
+    },
+    "reviews/2026-09-27-lr2/fixed_containment_crosscheck.json": {
+      "bytes": 1033,
+      "sha256": "b7d8f0f779750efc1f26fb4ff07809098abcc0b310f9e9a7691cae7410d3f42a"
+    }
+  }
+}

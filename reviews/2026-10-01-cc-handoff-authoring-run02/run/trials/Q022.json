@@ -1,0 +1,60 @@
+{
+  "question": "H02-Q2",
+  "history": "H02",
+  "method": "conventional",
+  "author": "A011",
+  "id": "Q022",
+  "phase": "recipients",
+  "freeze_commit": "379403bbc6dfad30e68a02d18d69eabf0dc65404",
+  "status": "COMPLETED",
+  "agent": "/root/collection_run02/q022",
+  "started_at": "2026-10-02T00:52:06.983194+00:00",
+  "started_epoch": 1790902326.9832106,
+  "recovery_requested": false,
+  "recovery_served": false,
+  "messages": [
+    {
+      "role": "user",
+      "kind": "initial",
+      "content": "Answer the supplied question using only the evidence delivered in this message and the question's explicit hypothetical changes. Do not use tools, files, the internet, other agents, outside domain rules, or any other conversation. Supply every requested decision, count, witness, or explanation as far as the evidence supports it. If a needed fact is missing, identify the unresolved part instead of guessing. Do not infer that an untested event failed or that a planned action occurred.\n\nReturn only valid JSON with exactly \"answer\" (a string of at most 160 whitespace-separated words) and \"recover\" (a boolean). Give your best supported answer now before asking for any additional evidence. Do not mention an experiment. Follow the evidence-mode instruction below.\n\nEvidence mode: handoff only. Give a supported first answer now. Set recover to true only if seeing the complete history would help resolve missing evidence; otherwise false. At most one source followup will be served after this answer is saved.\n\nQUESTION\nWere S and T simultaneous at acquisition or at gateway arrival? Give their gateway arrival times on the reference clock under the accepted current calibration.\n\nEVIDENCE\nSTATUS\nAt Day 12, two of three unique samples pass delivery within two seconds: S and T each take 1 second; U takes 3 seconds and fails. Pass rate is 2/3 (66.7%); lateness is 1/3 (33.3%). U-retry is U’s transmission alias, not another sample. Dashboard clock correction and identity grouping remain unreleased (C09).\n\nEVIDENCE\nC03–C05 give acquisition/gateway/database timestamps: S 100/104/111; T 100.5/104.5/111; U 102/108/113. C07 establishes gateway = reference +3 throughout arrivals, replacing the withdrawn +1 guess, with no current uncertainty. Corrected first arrivals are 101, 101.5, 105. Delivery means gateway arrival, not database insertion; equality at two seconds passes. Insertion follows arrival by 10, 9.5, 8 seconds respectively. C08 confirms the complete three-sample catalogue and first-arrival observations. C06’s four late rows describe the uncorrected display, not confirmed unique failures. Shared insertion batching and preview styling supply no new arrival evidence.\n\nNEXT\nUse preserved rows and calibration now; display release is unnecessary for calculation. For a hypothetical closed offset interval [a,b], delay lies in [g−acquisition−b, g−acquisition−a]; the upper endpoint is worst-case delay. For S/T, guaranteed pass requires a≥2, guaranteed failure b<2; for U, a≥4 or b<4 respectively. Otherwise classification is indeterminate (C10). Retain the exact current offset unless explicitly changed. Recover definitions and scope from C01, C11–C12; do not extrapolate to unseen samples or days.",
+      "delivery": "delivered",
+      "recorded_at": "2026-10-02T00:52:06.984024+00:00",
+      "sha256": "f2c63b9e8343084136136ab390044018931748b2f32ca8ab2a27d7d654b0765c",
+      "delivered_at": "2026-10-02T00:52:47.472032+00:00"
+    },
+    {
+      "role": "assistant",
+      "kind": "response",
+      "content": "{\"answer\":\"S and T were simultaneous at neither acquisition nor gateway arrival: T occurred 0.5 seconds after S at both stages. Under the accepted calibration, gateway = reference +3, their gateway arrivals on the reference clock were S = 101 seconds and T = 101.5 seconds. Their shared database insertion timestamp of 111 does not establish simultaneous arrival.\",\"recover\":false}",
+      "recorded_at": "2026-10-02T00:53:17.722015+00:00",
+      "raw_file": "incoming/Q022-01.json",
+      "sha256": "599ab11b1d810087a7dad6f442c0189ba16f9b0562142592168347cf193aa287",
+      "validation": {
+        "json_parse_status": "PASS",
+        "decoded_words": 57,
+        "schema_and_cap_status": "PASS",
+        "mode": "handoff",
+        "error": null
+      }
+    }
+  ],
+  "fork_turns": "none",
+  "model_override": null,
+  "reasoning_override": null,
+  "first_answer": {
+    "answer": "S and T were simultaneous at neither acquisition nor gateway arrival: T occurred 0.5 seconds after S at both stages. Under the accepted calibration, gateway = reference +3, their gateway arrivals on the reference clock were S = 101 seconds and T = 101.5 seconds. Their shared database insertion timestamp of 111 does not establish simultaneous arrival.",
+    "recover": false
+  },
+  "first_answer_recorded_at": "2026-10-02T00:53:17.722203+00:00",
+  "final_answer": {
+    "answer": "S and T were simultaneous at neither acquisition nor gateway arrival: T occurred 0.5 seconds after S at both stages. Under the accepted calibration, gateway = reference +3, their gateway arrivals on the reference clock were S = 101 seconds and T = 101.5 seconds. Their shared database insertion timestamp of 111 does not establish simultaneous arrival.",
+    "recover": false
+  },
+  "ended_at": "2026-10-02T00:53:17.722207+00:00",
+  "ended_epoch": 1790902397.7222087,
+  "visible_input_words": 399,
+  "visible_input_characters": 2717,
+  "visible_output_words": 57,
+  "visible_output_characters": 381,
+  "actual_tokens": null
+}

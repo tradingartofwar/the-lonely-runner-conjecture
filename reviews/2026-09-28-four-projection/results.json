@@ -1,0 +1,3097 @@
+{
+  "status": "pass",
+  "physical_cases": [
+    {
+      "id": "doubling_112",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "319/16128",
+      "slow_safe_width": "3/224",
+      "bound_minus_width": "103/16128",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 56,
+          "phase": "0",
+          "input": "9/32",
+          "output": "9/32",
+          "lap": 15,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "9/32",
+          "output": "145/512",
+          "lap": 18,
+          "advance": "1/512",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 18,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 56,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 15,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 18,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 18,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 31,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "145/512",
+      "final_safe": true,
+      "final_margins": [
+        "1/64",
+        "0",
+        "17/64",
+        "5/32"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "145/512",
+      "first_component": [
+        "145/512",
+        "127/448"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "145/512",
+          "phase_right": "127/448"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "17/128",
+          "phase_right": "15/112"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "213/512",
+          "phase_right": "187/448"
+        },
+        {
+          "speed": 56,
+          "phase": "0",
+          "lap": 15,
+          "phase_left": "55/64",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "lap": 18,
+          "phase_left": "1/8",
+          "phase_right": "1/7"
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "lap": 20,
+          "phase_left": "25/64",
+          "phase_right": "23/56"
+        },
+        {
+          "speed": 112,
+          "phase": "0",
+          "lap": 31,
+          "phase_left": "23/32",
+          "phase_right": "3/4"
+        }
+      ]
+    },
+    {
+      "id": "small_gcd_113",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "5129/260352",
+      "slow_safe_width": "3/224",
+      "bound_minus_width": "11495/1822464",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 56,
+          "phase": "0",
+          "input": "9/32",
+          "output": "9/32",
+          "lap": 15,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "9/32",
+          "output": "145/512",
+          "lap": 18,
+          "advance": "1/512",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "145/512",
+          "output": "145/512",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "145/512",
+          "output": "257/904",
+          "lap": 32,
+          "advance": "63/57856",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 18,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "257/904",
+          "output": "257/904",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 56,
+          "phase": "0",
+          "input": "257/904",
+          "output": "129/448",
+          "lap": 16,
+          "advance": "185/50624",
+          "runner_index": 0
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 18,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 18,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 20,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "input": "129/448",
+          "output": "129/448",
+          "lap": 32,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "129/448",
+      "final_safe": true,
+      "final_margins": [
+        "0",
+        "17/56",
+        "1/7",
+        "151/448"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "129/448",
+      "first_component": [
+        "129/448",
+        "167/576"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "129/448",
+          "phase_right": "167/576"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "17/112",
+          "phase_right": "23/144"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "197/448",
+          "phase_right": "259/576"
+        },
+        {
+          "speed": 56,
+          "phase": "0",
+          "lap": 16,
+          "phase_left": "1/8",
+          "phase_right": "17/72"
+        },
+        {
+          "speed": 64,
+          "phase": "0",
+          "lap": 18,
+          "phase_left": "3/7",
+          "phase_right": "5/9"
+        },
+        {
+          "speed": 72,
+          "phase": "0",
+          "lap": 20,
+          "phase_left": "41/56",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 113,
+          "phase": "0",
+          "lap": 32,
+          "phase_left": "241/448",
+          "phase_right": "439/576"
+        }
+      ]
+    },
+    {
+      "id": "tight_13",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "633/4004",
+      "slow_safe_width": "1/8",
+      "bound_minus_width": "265/8008",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 6,
+          "phase": "0",
+          "input": "9/32",
+          "output": "9/32",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "9/32",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "5/224",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "17/56",
+          "output": "33/104",
+          "lap": 4,
+          "advance": "5/364",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "33/104",
+          "output": "33/104",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 6,
+          "phase": "0",
+          "input": "33/104",
+          "output": "17/48",
+          "lap": 2,
+          "advance": "23/624",
+          "runner_index": 0
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/48",
+          "output": "17/48",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/48",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "1/48",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "input": "3/8",
+          "output": "3/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "3/8",
+      "final_safe": true,
+      "final_margins": [
+        "1/8",
+        "1/4",
+        "0",
+        "0"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "3/8",
+      "first_component": [
+        "3/8",
+        "3/8"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "3/8",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/2",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "7/8",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 6,
+          "phase": "0",
+          "lap": 2,
+          "phase_left": "1/4",
+          "phase_right": "1/4"
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "lap": 2,
+          "phase_left": "5/8",
+          "phase_right": "5/8"
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "lap": 4,
+          "phase_left": "1/8",
+          "phase_right": "1/8"
+        },
+        {
+          "speed": 13,
+          "phase": "0",
+          "lap": 4,
+          "phase_left": "7/8",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "control_8_11",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "233/1232",
+      "slow_safe_width": "1/8",
+      "bound_minus_width": "79/1232",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 6,
+          "phase": "0",
+          "input": "9/32",
+          "output": "9/32",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "9/32",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "5/224",
+          "runner_index": 1
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 6,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "17/56",
+      "final_safe": true,
+      "final_margins": [
+        "3/56",
+        "0",
+        "17/56",
+        "3/14"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "17/56",
+      "first_component": [
+        "17/56",
+        "5/16"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "17/56",
+          "phase_right": "5/16"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "3/14",
+          "phase_right": "1/4"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "29/56",
+          "phase_right": "9/16"
+        },
+        {
+          "speed": 6,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "23/28",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "lap": 2,
+          "phase_left": "1/8",
+          "phase_right": "3/16"
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "lap": 2,
+          "phase_left": "3/7",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "lap": 3,
+          "phase_left": "19/56",
+          "phase_right": "7/16"
+        }
+      ]
+    },
+    {
+      "id": "affine_309",
+      "kind": "physical",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "127379/32485120",
+      "slow_safe_width": "1/412",
+      "bound_minus_width": "4998757/3345967360",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 309,
+          "phase": "0",
+          "input": "9/32",
+          "output": "697/2472",
+          "lap": 87,
+          "advance": "7/9888",
+          "runner_index": 0
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 309,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 87,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "input": "697/2472",
+          "output": "697/2472",
+          "lap": 174,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "697/2472",
+      "final_safe": true,
+      "final_margins": [
+        "0",
+        "251/2472",
+        "883/2472",
+        "106/309"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "697/2472",
+      "first_component": [
+        "697/2472",
+        "1399/4952"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "697/2472",
+          "phase_right": "1399/4952"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "79/618",
+          "phase_right": "161/1238"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1013/2472",
+          "phase_right": "2043/4952"
+        },
+        {
+          "speed": 309,
+          "phase": "0",
+          "lap": 87,
+          "phase_left": "1/8",
+          "phase_right": "1467/4952"
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "lap": 90,
+          "phase_left": "70/309",
+          "phase_right": "250/619"
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "lap": 92,
+          "phase_left": "149/309",
+          "phase_right": "411/619"
+        },
+        {
+          "speed": 619,
+          "phase": "0",
+          "lap": 174,
+          "phase_left": "1315/2472",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "affine_310",
+      "kind": "physical",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "127621/32590080",
+      "slow_safe_width": "3/1240",
+      "bound_minus_width": "302399/202058496",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 310,
+          "phase": "0",
+          "input": "9/32",
+          "output": "9/32",
+          "lap": 87,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "9/32",
+          "output": "721/2560",
+          "lap": 90,
+          "advance": "1/2560",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "193/529920",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 310,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 87,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "input": "467/1656",
+          "output": "467/1656",
+          "lap": 175,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "467/1656",
+      "final_safe": true,
+      "final_margins": [
+        "491/1656",
+        "193/1656",
+        "617/1656",
+        "0"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "467/1656",
+      "first_component": [
+        "467/1656",
+        "743/2624"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "467/1656",
+          "phase_right": "743/2624"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "53/414",
+          "phase_right": "87/656"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "679/1656",
+          "phase_right": "1091/2624"
+        },
+        {
+          "speed": 310,
+          "phase": "0",
+          "lap": 87,
+          "phase_left": "349/828",
+          "phase_right": "1021/1312"
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "lap": 90,
+          "phase_left": "50/207",
+          "phase_right": "25/41"
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "lap": 92,
+          "phase_left": "103/207",
+          "phase_right": "7/8"
+        },
+        {
+          "speed": 621,
+          "phase": "0",
+          "lap": 175,
+          "phase_left": "1/8",
+          "phase_right": "2203/2624"
+        }
+      ]
+    },
+    {
+      "id": "affine_320",
+      "kind": "physical",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "33647/8830416",
+      "slow_safe_width": "3/1280",
+      "bound_minus_width": "1036057/706433280",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "9/32",
+          "output": "721/2560",
+          "lap": 90,
+          "advance": "1/2560",
+          "runner_index": 0
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 90,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 92,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 94,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "input": "721/2560",
+          "output": "721/2560",
+          "lap": 180,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "721/2560",
+      "final_safe": true,
+      "final_margins": [
+        "0",
+        "81/320",
+        "39/160",
+        "879/2560"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "721/2560",
+      "first_component": [
+        "721/2560",
+        "1447/5128"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "721/2560",
+          "phase_right": "1447/5128"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "81/640",
+          "phase_right": "165/1282"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "209/512",
+          "phase_right": "2107/5128"
+        },
+        {
+          "speed": 320,
+          "phase": "0",
+          "lap": 90,
+          "phase_left": "1/8",
+          "phase_right": "190/641"
+        },
+        {
+          "speed": 328,
+          "phase": "0",
+          "lap": 92,
+          "phase_left": "121/320",
+          "phase_right": "355/641"
+        },
+        {
+          "speed": 336,
+          "phase": "0",
+          "lap": 94,
+          "phase_left": "101/160",
+          "phase_right": "520/641"
+        },
+        {
+          "speed": 641,
+          "phase": "0",
+          "lap": 180,
+          "phase_left": "1361/2560",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "strict_16",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [
+        1,
+        4,
+        5
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "core_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ],
+      "triple_wait_bound": "177/1232",
+      "slow_safe_width": "1/8",
+      "bound_minus_width": "23/1232",
+      "condition_passes": false,
+      "gated_policy": "condition_not_met",
+      "diagnostic_trace": [
+        {
+          "speed": 6,
+          "phase": "0",
+          "input": "9/32",
+          "output": "9/32",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "9/32",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "5/224",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 6,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "input": "17/56",
+          "output": "17/56",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "17/56",
+      "final_safe": true,
+      "final_margins": [
+        "3/56",
+        "0",
+        "3/14",
+        "1/56"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "17/56",
+      "first_component": [
+        "17/56",
+        "39/128"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "17/56",
+          "phase_right": "39/128"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "3/14",
+          "phase_right": "7/32"
+        },
+        {
+          "speed": 5,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "29/56",
+          "phase_right": "67/128"
+        },
+        {
+          "speed": 6,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "23/28",
+          "phase_right": "53/64"
+        },
+        {
+          "speed": 7,
+          "phase": "0",
+          "lap": 2,
+          "phase_left": "1/8",
+          "phase_right": "17/128"
+        },
+        {
+          "speed": 11,
+          "phase": "0",
+          "lap": 3,
+          "phase_left": "19/56",
+          "phase_right": "45/128"
+        },
+        {
+          "speed": 16,
+          "phase": "0",
+          "lap": 4,
+          "phase_left": "6/7",
+          "phase_right": "7/8"
+        }
+      ]
+    }
+  ],
+  "auxiliary_cases": [
+    {
+      "id": "aux_condition_strict",
+      "kind": "auxiliary",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [],
+      "window": [
+        "7/8",
+        "6/5"
+      ],
+      "core_certificate": [],
+      "triple_wait_bound": "3/8",
+      "slow_safe_width": "3/4",
+      "bound_minus_width": "-3/8",
+      "condition_passes": true,
+      "gated_policy": "guaranteed_selector",
+      "diagnostic_trace": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "input": "7/8",
+          "output": "7/8",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 2,
+          "phase": "0",
+          "input": "7/8",
+          "output": "7/8",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "7/8",
+          "output": "7/8",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "7/8",
+          "output": "57/64",
+          "lap": 7,
+          "advance": "1/64",
+          "runner_index": 3
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 7,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 2,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 1,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 7,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 3,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "57/64",
+          "output": "57/64",
+          "lap": 7,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 1,
+          "phase": "0",
+          "input": "57/64",
+          "output": "9/8",
+          "lap": 1,
+          "advance": "15/64",
+          "runner_index": 0
+        },
+        {
+          "speed": 2,
+          "phase": "0",
+          "input": "9/8",
+          "output": "9/8",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "9/8",
+          "output": "9/8",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "9/8",
+          "output": "73/64",
+          "lap": 9,
+          "advance": "1/64",
+          "runner_index": 3
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 9,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 2,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 2,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 9,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 4,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "input": "73/64",
+          "output": "73/64",
+          "lap": 9,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "73/64",
+      "final_safe": true,
+      "final_margins": [
+        "1/64",
+        "5/32",
+        "5/16",
+        "0"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "73/64",
+      "first_component": [
+        "73/64",
+        "6/5"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 1,
+          "phase": "0",
+          "lap": 1,
+          "phase_left": "9/64",
+          "phase_right": "1/5"
+        },
+        {
+          "speed": 2,
+          "phase": "0",
+          "lap": 2,
+          "phase_left": "9/32",
+          "phase_right": "2/5"
+        },
+        {
+          "speed": 4,
+          "phase": "0",
+          "lap": 4,
+          "phase_left": "9/16",
+          "phase_right": "4/5"
+        },
+        {
+          "speed": 8,
+          "phase": "0",
+          "lap": 9,
+          "phase_left": "1/8",
+          "phase_right": "3/5"
+        }
+      ]
+    },
+    {
+      "id": "aux_condition_equality",
+      "kind": "auxiliary",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "phases": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "core": [],
+      "window": [
+        "0",
+        "1/120"
+      ],
+      "core_certificate": [],
+      "triple_wait_bound": "1/20",
+      "slow_safe_width": "1/20",
+      "bound_minus_width": "0",
+      "condition_passes": true,
+      "gated_policy": "guaranteed_selector",
+      "diagnostic_trace": [
+        {
+          "speed": 15,
+          "phase": "0",
+          "input": "0",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "1/120",
+          "runner_index": 0
+        },
+        {
+          "speed": 20,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 20,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 15,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 0
+        },
+        {
+          "speed": 20,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 20,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 1
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 2
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "input": "1/120",
+          "output": "1/120",
+          "lap": 0,
+          "advance": "0",
+          "runner_index": 3
+        }
+      ],
+      "final_time": "1/120",
+      "final_safe": true,
+      "final_margins": [
+        "0",
+        "1/24",
+        "1/8",
+        "11/40"
+      ],
+      "diagnostic_verdict": "earliest_witness",
+      "earliest_in_window": "1/120",
+      "first_component": [
+        "1/120",
+        "1/120"
+      ],
+      "first_component_certificate": [
+        {
+          "speed": 15,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "1/8",
+          "phase_right": "1/8"
+        },
+        {
+          "speed": 20,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "1/6",
+          "phase_right": "1/6"
+        },
+        {
+          "speed": 30,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "1/4",
+          "phase_right": "1/4"
+        },
+        {
+          "speed": 48,
+          "phase": "0",
+          "lap": 0,
+          "phase_left": "2/5",
+          "phase_right": "2/5"
+        }
+      ]
+    }
+  ],
+  "physical_count": 8,
+  "auxiliary_count": 2,
+  "projection_calls": 220,
+  "claim_status": "General conditional implication is a supplied proof candidate; raw22step outcomes are bounded observations."
+}

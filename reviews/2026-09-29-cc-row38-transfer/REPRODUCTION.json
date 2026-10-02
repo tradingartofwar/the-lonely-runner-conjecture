@@ -1,0 +1,39 @@
+{
+  "input_hashes_verified": 8,
+  "reproduce_script_sha256": "7289c505695f648f125d57f6b940ae8e13b8089732146acb27237811360f6bb9",
+  "reproduced_byte_for_byte": {
+    "certificate.json": "144510fde9ddf8e46d136bce6c014017fdef474638e8e41fb3df00658e038370",
+    "geometry_review.json": "f7d2606ee06104e174d1c9d3c2d640aa894796f7041466c2f10c35d187ad6727",
+    "physical_review.json": "f3d2f460079f40f000c8b3b6634d50d4a5b38793647a6f8041320c918b3eef65",
+    "regression.json": "b61bf086e6f4321f712f2ab8fb53174904cc4fbe39e87f4d61fc87ecb32f5aef",
+    "run.json": "dc1a7c770a7f8583c779f917dea29a5e6ad2e44e108944784ee813633935b175"
+  },
+  "scope": "One new row, 18 frozen parameter pairs, two archived certificate regressions; no additional trial.",
+  "status": "PASS",
+  "transfer_summary": {
+    "chosen_ids": [
+      "P5:E0-3:K7",
+      "P2:E0-1:K2",
+      "P0:E0-1:K1"
+    ],
+    "clipping": {
+      "candidate_records": 38,
+      "edge_lap_attempts": 38,
+      "floor_edges": 24,
+      "point_records": 5,
+      "status": "PASS"
+    },
+    "coverage_counts": {
+      "candidates": 38,
+      "chosen": 3,
+      "contacts": 646,
+      "descending": 22,
+      "rectangle_pairs": 49,
+      "residual_pairs": 17
+    },
+    "diagnostic": "NOT_TRIGGERED",
+    "repaired_known_pair": true,
+    "status": "COMPLETE_COVER_CERTIFICATE",
+    "uncovered": []
+  }
+}

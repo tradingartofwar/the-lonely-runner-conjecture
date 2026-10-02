@@ -1,0 +1,606 @@
+{
+  "claim_status": "OBSERVED",
+  "freeze_commit": "c27323948d29c8fb25a6a45726c08bb3fe23b2d7",
+  "collection": {
+    "status": "CLOSED",
+    "freeze_commit": "c27323948d29c8fb25a6a45726c08bb3fe23b2d7",
+    "started_at": "2026-10-01T14:40:24.829677+00:00",
+    "started_epoch": 1790865624.8296878,
+    "deadline_seconds": 3600,
+    "next_schedule_index": 80,
+    "provider_model_snapshot": null,
+    "provider_token_usage": null,
+    "ended_at": "2026-10-01T15:33:42.458156+00:00",
+    "elapsed_seconds": 3197.6284852027893,
+    "counts": {
+      "COMPLETED": 80
+    },
+    "source_requests": 64
+  },
+  "overall": {
+    "planned": 80,
+    "statuses": {
+      "COMPLETED": 80
+    },
+    "correct": 75,
+    "incorrect": 5,
+    "requested_outputs_correct_diagnostic": 80,
+    "permissive_interpretation_correct_sensitivity": 80,
+    "missing_scores": 0,
+    "unsupported_approvals": 0,
+    "unsupported_approval_missing": 0,
+    "source_requests": 64,
+    "median_visible_input_words": 314.0,
+    "median_visible_output_words": 33.0
+  },
+  "arms": {
+    "cc_informed": {
+      "planned": 40,
+      "statuses": {
+        "COMPLETED": 40
+      },
+      "correct": 38,
+      "incorrect": 2,
+      "requested_outputs_correct_diagnostic": 40,
+      "permissive_interpretation_correct_sensitivity": 40,
+      "missing_scores": 0,
+      "unsupported_approvals": 0,
+      "unsupported_approval_missing": 0,
+      "source_requests": 32,
+      "median_visible_input_words": 314.0,
+      "median_visible_output_words": 32.5
+    },
+    "conventional": {
+      "planned": 40,
+      "statuses": {
+        "COMPLETED": 40
+      },
+      "correct": 37,
+      "incorrect": 3,
+      "requested_outputs_correct_diagnostic": 40,
+      "permissive_interpretation_correct_sensitivity": 40,
+      "missing_scores": 0,
+      "unsupported_approvals": 0,
+      "unsupported_approval_missing": 0,
+      "source_requests": 32,
+      "median_visible_input_words": 314.0,
+      "median_visible_output_words": 33.0
+    }
+  },
+  "cards": {
+    "K1": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 312.0,
+        "median_visible_output_words": 25.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 312.0,
+        "median_visible_output_words": 25.0
+      }
+    },
+    "K2": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 312.0,
+        "median_visible_output_words": 13.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 312.0,
+        "median_visible_output_words": 15.0
+      }
+    },
+    "T1": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 310.0,
+        "median_visible_output_words": 34.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 310.0,
+        "median_visible_output_words": 33.0
+      }
+    },
+    "T2": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 316.0,
+        "median_visible_output_words": 38.5
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 316.0,
+        "median_visible_output_words": 39.0
+      }
+    },
+    "M1": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 334.0,
+        "median_visible_output_words": 41.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 334.0,
+        "median_visible_output_words": 40.0
+      }
+    },
+    "M2": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 2,
+        "incorrect": 2,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 343.0,
+        "median_visible_output_words": 48.5
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 1,
+        "incorrect": 3,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 343.0,
+        "median_visible_output_words": 50.5
+      }
+    },
+    "V1": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 327.0,
+        "median_visible_output_words": 21.5
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 327.0,
+        "median_visible_output_words": 32.5
+      }
+    },
+    "V2": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 319.0,
+        "median_visible_output_words": 37.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 4,
+        "median_visible_input_words": 319.0,
+        "median_visible_output_words": 40.5
+      }
+    },
+    "S1": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 0,
+        "median_visible_input_words": 299.0,
+        "median_visible_output_words": 14.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 0,
+        "median_visible_input_words": 299.0,
+        "median_visible_output_words": 15.5
+      }
+    },
+    "S2": {
+      "cc_informed": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 0,
+        "median_visible_input_words": 301.0,
+        "median_visible_output_words": 20.0
+      },
+      "conventional": {
+        "planned": 4,
+        "statuses": {
+          "COMPLETED": 4
+        },
+        "correct": 4,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 4,
+        "permissive_interpretation_correct_sensitivity": 4,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 0,
+        "median_visible_input_words": 301.0,
+        "median_visible_output_words": 17.5
+      }
+    }
+  },
+  "blocks": {
+    "1": {
+      "cc_informed": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 9,
+        "incorrect": 1,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 29.0
+      },
+      "conventional": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 9,
+        "incorrect": 1,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 32.0
+      }
+    },
+    "2": {
+      "cc_informed": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 10,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 33.5
+      },
+      "conventional": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 9,
+        "incorrect": 1,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 33.0
+      }
+    },
+    "3": {
+      "cc_informed": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 9,
+        "incorrect": 1,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 28.5
+      },
+      "conventional": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 10,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 33.0
+      }
+    },
+    "4": {
+      "cc_informed": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 10,
+        "incorrect": 0,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 29.0
+      },
+      "conventional": {
+        "planned": 10,
+        "statuses": {
+          "COMPLETED": 10
+        },
+        "correct": 9,
+        "incorrect": 1,
+        "requested_outputs_correct_diagnostic": 10,
+        "permissive_interpretation_correct_sensitivity": 10,
+        "missing_scores": 0,
+        "unsupported_approvals": 0,
+        "unsupported_approval_missing": 0,
+        "source_requests": 8,
+        "median_visible_input_words": 314.0,
+        "median_visible_output_words": 33.0
+      }
+    }
+  },
+  "adequate_summary_controls": {
+    "cc_informed": {
+      "planned": 8,
+      "statuses": {
+        "COMPLETED": 8
+      },
+      "correct": 8,
+      "incorrect": 0,
+      "requested_outputs_correct_diagnostic": 8,
+      "permissive_interpretation_correct_sensitivity": 8,
+      "missing_scores": 0,
+      "unsupported_approvals": 0,
+      "unsupported_approval_missing": 0,
+      "source_requests": 0,
+      "median_visible_input_words": 300.0,
+      "median_visible_output_words": 17.0
+    },
+    "conventional": {
+      "planned": 8,
+      "statuses": {
+        "COMPLETED": 8
+      },
+      "correct": 8,
+      "incorrect": 0,
+      "requested_outputs_correct_diagnostic": 8,
+      "permissive_interpretation_correct_sensitivity": 8,
+      "missing_scores": 0,
+      "unsupported_approvals": 0,
+      "unsupported_approval_missing": 0,
+      "source_requests": 0,
+      "median_visible_input_words": 300.0,
+      "median_visible_output_words": 16.0
+    }
+  },
+  "actual_total_token_cost": null,
+  "original_cost_effectiveness_gate": "UNASSESSABLE",
+  "grading_adjudication": {
+    "record": "ADJUDICATION.md",
+    "initial_primary_correct": 80,
+    "adjudicated_primary_correct": 75,
+    "revised_blind_ids": [
+      "U020",
+      "U025",
+      "U037",
+      "U064",
+      "U070"
+    ],
+    "scope": "Five M2 explanations add unsupported distinct-policy identity under a strict reading; all requested outputs remain correct. Diagnostic and permissive sensitivity counts do not replace the frozen primary endpoint."
+  },
+  "limitations": [
+    "Ten fixed synthetic cards; four repetitions are not eighty independent situations.",
+    "Same information in both arms; only labels, order and grouping differ.",
+    "Instruction-based respondent isolation and inherited model configuration; exact snapshot unknown.",
+    "Visible words/characters are not tokens; elapsed time includes orchestration.",
+    "Internal AI semantic grading, not independent human or formal certification."
+  ]
+}

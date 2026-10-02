@@ -1,0 +1,1837 @@
+{
+  "status": "pass",
+  "claim_status": "OBSERVED for these twelve recycled diagnostics only; general cap39 is a proof candidate",
+  "protocol_sha256": "563cefe2f0d36df46795a598e11a0c73dde1ff1e24e38b0481a9fb2d97b5ac5b",
+  "replay_sha256": "13af61661dd5977f5a2d0ab57cf3d6fd196a201152d7c00eeec2c06717e73a4a",
+  "independent_reference": "reviews/2026-09-28-chain-termination/verification.json",
+  "independent_reference_sha256": "e6a395db885bf8585dee3e2276391a1876f389a7b225f43176c6f980a4ab3295",
+  "counts": {
+    "cases": 12,
+    "calls": 199,
+    "nonzero_moves": 32,
+    "maximum_moves": 7,
+    "width_guaranteed_cases": 5,
+    "exact_top_level_comparisons": 96
+  },
+  "cases": [
+    {
+      "id": "doubling_112",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "145/512",
+      "final_time": "145/512",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 1,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "145/512"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "occurrence": 18,
+          "left": "143/512",
+          "right": "145/512"
+        }
+      ],
+      "union_span": [
+        "143/512",
+        "145/512"
+      ],
+      "reciprocal_sum": "227/4032",
+      "slow_count": 0,
+      "three_label_runs": [
+        1
+      ],
+      "window_width": "3/32",
+      "width_guarantee": true,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "small_gcd_113",
+      "kind": "physical",
+      "speeds": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "129/448",
+      "final_time": "129/448",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "145/512"
+        },
+        {
+          "runner": 2,
+          "input": "145/512",
+          "output": "145/512"
+        },
+        {
+          "runner": 3,
+          "input": "145/512",
+          "output": "257/904"
+        },
+        {
+          "runner": 2,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 3,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 1,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 2,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 3,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 2,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 3,
+          "input": "257/904",
+          "output": "257/904"
+        },
+        {
+          "runner": 0,
+          "input": "257/904",
+          "output": "129/448"
+        },
+        {
+          "runner": 1,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 1,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 2,
+          "input": "129/448",
+          "output": "129/448"
+        },
+        {
+          "runner": 3,
+          "input": "129/448",
+          "output": "129/448"
+        }
+      ],
+      "calls": 22,
+      "started_rounds": 2,
+      "nonzero_moves": 3,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "occurrence": 18,
+          "left": "143/512",
+          "right": "145/512"
+        },
+        {
+          "runner": 3,
+          "occurrence": 32,
+          "left": "255/904",
+          "right": "257/904"
+        },
+        {
+          "runner": 0,
+          "occurrence": 16,
+          "left": "127/448",
+          "right": "129/448"
+        }
+      ],
+      "union_span": [
+        "143/512",
+        "129/448"
+      ],
+      "reciprocal_sum": "25615/455616",
+      "slow_count": 1,
+      "three_label_runs": [
+        2,
+        0
+      ],
+      "window_width": "3/32",
+      "width_guarantee": true,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "tight_13",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "3/8",
+      "final_time": "3/8",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "33/104"
+        },
+        {
+          "runner": 2,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 3,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 1,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 2,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 3,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 2,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 3,
+          "input": "33/104",
+          "output": "33/104"
+        },
+        {
+          "runner": 0,
+          "input": "33/104",
+          "output": "17/48"
+        },
+        {
+          "runner": 1,
+          "input": "17/48",
+          "output": "17/48"
+        },
+        {
+          "runner": 2,
+          "input": "17/48",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 2,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 1,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 2,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 2,
+          "input": "3/8",
+          "output": "3/8"
+        },
+        {
+          "runner": 3,
+          "input": "3/8",
+          "output": "3/8"
+        }
+      ],
+      "calls": 22,
+      "started_rounds": 2,
+      "nonzero_moves": 4,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "occurrence": 2,
+          "left": "15/56",
+          "right": "17/56"
+        },
+        {
+          "runner": 3,
+          "occurrence": 4,
+          "left": "31/104",
+          "right": "33/104"
+        },
+        {
+          "runner": 0,
+          "occurrence": 2,
+          "left": "5/16",
+          "right": "17/48"
+        },
+        {
+          "runner": 2,
+          "occurrence": 4,
+          "left": "31/88",
+          "right": "3/8"
+        }
+      ],
+      "union_span": [
+        "15/56",
+        "3/8"
+      ],
+      "reciprocal_sum": "2867/6006",
+      "slow_count": 1,
+      "three_label_runs": [
+        2,
+        1
+      ],
+      "window_width": "3/32",
+      "width_guarantee": false,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "control_8_11",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "17/56",
+      "final_time": "17/56",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 1,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "occurrence": 2,
+          "left": "15/56",
+          "right": "17/56"
+        }
+      ],
+      "union_span": [
+        "15/56",
+        "17/56"
+      ],
+      "reciprocal_sum": "971/1848",
+      "slow_count": 0,
+      "three_label_runs": [
+        1
+      ],
+      "window_width": "3/32",
+      "width_guarantee": false,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "affine_309",
+      "kind": "physical",
+      "speeds": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "697/2472",
+      "final_time": "697/2472",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "697/2472"
+        },
+        {
+          "runner": 1,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 1,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 2,
+          "input": "697/2472",
+          "output": "697/2472"
+        },
+        {
+          "runner": 3,
+          "input": "697/2472",
+          "output": "697/2472"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 0,
+          "occurrence": 87,
+          "left": "695/2472",
+          "right": "697/2472"
+        }
+      ],
+      "union_span": [
+        "695/2472",
+        "697/2472"
+      ],
+      "reciprocal_sum": "27668311/2509475520",
+      "slow_count": 1,
+      "three_label_runs": [
+        0,
+        0
+      ],
+      "window_width": "3/32",
+      "width_guarantee": true,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "affine_310",
+      "kind": "physical",
+      "speeds": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "467/1656",
+      "final_time": "467/1656",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "467/1656"
+        },
+        {
+          "runner": 2,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 3,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 1,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 2,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 3,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 2,
+          "input": "467/1656",
+          "output": "467/1656"
+        },
+        {
+          "runner": 3,
+          "input": "467/1656",
+          "output": "467/1656"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 2,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "occurrence": 90,
+          "left": "719/2560",
+          "right": "721/2560"
+        },
+        {
+          "runner": 3,
+          "occurrence": 175,
+          "left": "1399/4968",
+          "right": "467/1656"
+        }
+      ],
+      "union_span": [
+        "719/2560",
+        "467/1656"
+      ],
+      "reciprocal_sum": "2780803/252573120",
+      "slow_count": 0,
+      "three_label_runs": [
+        2
+      ],
+      "window_width": "3/32",
+      "width_guarantee": true,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "affine_320",
+      "kind": "physical",
+      "speeds": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "721/2560",
+      "final_time": "721/2560",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "721/2560"
+        },
+        {
+          "runner": 1,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 1,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 2,
+          "input": "721/2560",
+          "output": "721/2560"
+        },
+        {
+          "runner": 3,
+          "input": "721/2560",
+          "output": "721/2560"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 0,
+          "occurrence": 90,
+          "left": "719/2560",
+          "right": "721/2560"
+        }
+      ],
+      "union_span": [
+        "719/2560",
+        "721/2560"
+      ],
+      "reciprocal_sum": "1891481/176608320",
+      "slow_count": 1,
+      "three_label_runs": [
+        0,
+        0
+      ],
+      "window_width": "3/32",
+      "width_guarantee": true,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "strict_16",
+      "kind": "physical",
+      "speeds": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "window": [
+        "9/32",
+        "3/8"
+      ],
+      "verdict": "earliest",
+      "earliest": "17/56",
+      "final_time": "17/56",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "9/32",
+          "output": "9/32"
+        },
+        {
+          "runner": 1,
+          "input": "9/32",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 1,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 2,
+          "input": "17/56",
+          "output": "17/56"
+        },
+        {
+          "runner": 3,
+          "input": "17/56",
+          "output": "17/56"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 1,
+          "occurrence": 2,
+          "left": "15/56",
+          "right": "17/56"
+        }
+      ],
+      "union_span": [
+        "15/56",
+        "17/56"
+      ],
+      "reciprocal_sum": "1711/3696",
+      "slow_count": 0,
+      "three_label_runs": [
+        1
+      ],
+      "window_width": "3/32",
+      "width_guarantee": false,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "9/32",
+          "phase_right": "3/8"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "1/8",
+          "phase_right": "1/2"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "13/32",
+          "phase_right": "7/8"
+        }
+      ]
+    },
+    {
+      "id": "aux_condition_strict",
+      "kind": "auxiliary",
+      "speeds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "window": [
+        "7/8",
+        "6/5"
+      ],
+      "verdict": "earliest",
+      "earliest": "73/64",
+      "final_time": "73/64",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "7/8",
+          "output": "7/8"
+        },
+        {
+          "runner": 1,
+          "input": "7/8",
+          "output": "7/8"
+        },
+        {
+          "runner": 2,
+          "input": "7/8",
+          "output": "7/8"
+        },
+        {
+          "runner": 3,
+          "input": "7/8",
+          "output": "57/64"
+        },
+        {
+          "runner": 2,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 3,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 1,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 2,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 3,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 2,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 3,
+          "input": "57/64",
+          "output": "57/64"
+        },
+        {
+          "runner": 0,
+          "input": "57/64",
+          "output": "9/8"
+        },
+        {
+          "runner": 1,
+          "input": "9/8",
+          "output": "9/8"
+        },
+        {
+          "runner": 2,
+          "input": "9/8",
+          "output": "9/8"
+        },
+        {
+          "runner": 3,
+          "input": "9/8",
+          "output": "73/64"
+        },
+        {
+          "runner": 2,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 3,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 1,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 2,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 3,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 2,
+          "input": "73/64",
+          "output": "73/64"
+        },
+        {
+          "runner": 3,
+          "input": "73/64",
+          "output": "73/64"
+        }
+      ],
+      "calls": 22,
+      "started_rounds": 2,
+      "nonzero_moves": 3,
+      "selected_intervals": [
+        {
+          "runner": 3,
+          "occurrence": 7,
+          "left": "55/64",
+          "right": "57/64"
+        },
+        {
+          "runner": 0,
+          "occurrence": 1,
+          "left": "7/8",
+          "right": "9/8"
+        },
+        {
+          "runner": 3,
+          "occurrence": 9,
+          "left": "71/64",
+          "right": "73/64"
+        }
+      ],
+      "union_span": [
+        "55/64",
+        "73/64"
+      ],
+      "reciprocal_sum": "15/8",
+      "slow_count": 1,
+      "three_label_runs": [
+        1,
+        1
+      ],
+      "window_width": "13/40",
+      "width_guarantee": false,
+      "core_certificate": []
+    },
+    {
+      "id": "aux_condition_equality",
+      "kind": "auxiliary",
+      "speeds": [
+        15,
+        20,
+        30,
+        48
+      ],
+      "window": [
+        "0",
+        "1/120"
+      ],
+      "verdict": "earliest",
+      "earliest": "1/120",
+      "final_time": "1/120",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "0",
+          "output": "1/120"
+        },
+        {
+          "runner": 1,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 1,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 2,
+          "input": "1/120",
+          "output": "1/120"
+        },
+        {
+          "runner": 3,
+          "input": "1/120",
+          "output": "1/120"
+        }
+      ],
+      "calls": 11,
+      "started_rounds": 1,
+      "nonzero_moves": 1,
+      "selected_intervals": [
+        {
+          "runner": 0,
+          "occurrence": 0,
+          "left": "-1/120",
+          "right": "1/120"
+        }
+      ],
+      "union_span": [
+        "-1/120",
+        "1/120"
+      ],
+      "reciprocal_sum": "41/240",
+      "slow_count": 1,
+      "three_label_runs": [
+        0,
+        0
+      ],
+      "window_width": "1/120",
+      "width_guarantee": false,
+      "core_certificate": []
+    },
+    {
+      "id": "common_start_lift_clipped",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "1903173888225289/5709496320675840"
+      ],
+      "verdict": "empty",
+      "earliest": null,
+      "final_time": "163489640070647/490466743069080",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 1,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 2,
+          "input": "1144427480494519/3433267201483560",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 1,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "input": "461375488346795/1384120321040384",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 1,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 2,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "input": "381475826831507/1144422400494520",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 2,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 3,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "input": "225281/675840",
+          "output": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "input": "1153438720377177/3460300801131520",
+          "output": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "input": "1384126465040393/4152360963121152",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 2,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 3,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "input": "1903173888225289/5709496320675840",
+          "output": "163489640070647/490466743069080"
+        }
+      ],
+      "calls": 23,
+      "started_rounds": 3,
+      "nonzero_moves": 7,
+      "selected_intervals": [
+        {
+          "runner": 2,
+          "occurrence": 173015808130048,
+          "left": "1384126465040383/4152360963121152",
+          "right": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "occurrence": 143053435061815,
+          "left": "1144427480494519/3433267201483560",
+          "right": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "occurrence": 237896736028160,
+          "left": "634391296075093/1903165440225280",
+          "right": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "occurrence": 144179840047147,
+          "left": "230687744075435/692060160226304",
+          "right": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "occurrence": 173015808130049,
+          "left": "461375488346797/1384120321040384",
+          "right": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "occurrence": 237896736028161,
+          "left": "1903173888225287/5709496320675840",
+          "right": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "occurrence": 143053435061816,
+          "left": "381475826831509/1144422400494520",
+          "right": "163489640070647/490466743069080"
+        }
+      ],
+      "union_span": [
+        "1384126465040383/4152360963121152",
+        "163489640070647/490466743069080"
+      ],
+      "reciprocal_sum": "5309395704738207549929877160490130037/666183571000139088872912946441494386635801414650880",
+      "slow_count": 2,
+      "three_label_runs": [
+        1,
+        4,
+        0
+      ],
+      "window_width": "18138392386519/7778661291574374470615019520",
+      "width_guarantee": false,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "1144427480494519/3433267201483560",
+          "phase_right": "1903173888225289/5709496320675840"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "286110680123629/858316800370890",
+          "phase_right": "475799808056329/1427374080168960"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "457774040197807/686653440296712",
+          "phase_right": "761274624090121/1141899264135168"
+        }
+      ]
+    },
+    {
+      "id": "common_start_lift_extended",
+      "kind": "physical_reused_lift",
+      "speeds": [
+        429158400185445,
+        432537600141440,
+        519045120390144,
+        713687040084480
+      ],
+      "window": [
+        "1144427480494519/3433267201483560",
+        "163489640070647/490466743069080"
+      ],
+      "verdict": "earliest",
+      "earliest": "163489640070647/490466743069080",
+      "final_time": "163489640070647/490466743069080",
+      "trace": [
+        {
+          "runner": 0,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 1,
+          "input": "1144427480494519/3433267201483560",
+          "output": "1144427480494519/3433267201483560"
+        },
+        {
+          "runner": 2,
+          "input": "1144427480494519/3433267201483560",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 1,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 2,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 3,
+          "input": "461375488346795/1384120321040384",
+          "output": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "input": "461375488346795/1384120321040384",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 1,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 2,
+          "input": "381475826831507/1144422400494520",
+          "output": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "input": "381475826831507/1144422400494520",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 2,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 3,
+          "input": "225281/675840",
+          "output": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "input": "225281/675840",
+          "output": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "input": "1153438720377177/3460300801131520",
+          "output": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "input": "1384126465040393/4152360963121152",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 2,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 3,
+          "input": "1903173888225289/5709496320675840",
+          "output": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "input": "1903173888225289/5709496320675840",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 1,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 1,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 2,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        },
+        {
+          "runner": 3,
+          "input": "163489640070647/490466743069080",
+          "output": "163489640070647/490466743069080"
+        }
+      ],
+      "calls": 33,
+      "started_rounds": 3,
+      "nonzero_moves": 7,
+      "selected_intervals": [
+        {
+          "runner": 2,
+          "occurrence": 173015808130048,
+          "left": "1384126465040383/4152360963121152",
+          "right": "461375488346795/1384120321040384"
+        },
+        {
+          "runner": 0,
+          "occurrence": 143053435061815,
+          "left": "1144427480494519/3433267201483560",
+          "right": "381475826831507/1144422400494520"
+        },
+        {
+          "runner": 3,
+          "occurrence": 237896736028160,
+          "left": "634391296075093/1903165440225280",
+          "right": "225281/675840"
+        },
+        {
+          "runner": 1,
+          "occurrence": 144179840047147,
+          "left": "230687744075435/692060160226304",
+          "right": "1153438720377177/3460300801131520"
+        },
+        {
+          "runner": 2,
+          "occurrence": 173015808130049,
+          "left": "461375488346797/1384120321040384",
+          "right": "1384126465040393/4152360963121152"
+        },
+        {
+          "runner": 3,
+          "occurrence": 237896736028161,
+          "left": "1903173888225287/5709496320675840",
+          "right": "1903173888225289/5709496320675840"
+        },
+        {
+          "runner": 0,
+          "occurrence": 143053435061816,
+          "left": "381475826831509/1144422400494520",
+          "right": "163489640070647/490466743069080"
+        }
+      ],
+      "union_span": [
+        "1384126465040383/4152360963121152",
+        "163489640070647/490466743069080"
+      ],
+      "reciprocal_sum": "5309395704738207549929877160490130037/666183571000139088872912946441494386635801414650880",
+      "slow_count": 2,
+      "three_label_runs": [
+        1,
+        4,
+        0
+      ],
+      "window_width": "1/343326720148356",
+      "width_guarantee": false,
+      "core_certificate": [
+        {
+          "speed": 1,
+          "lap": 0,
+          "phase_left": "1144427480494519/3433267201483560",
+          "phase_right": "163489640070647/490466743069080"
+        },
+        {
+          "speed": 4,
+          "lap": 1,
+          "phase_left": "286110680123629/858316800370890",
+          "phase_right": "40872954303377/122616685767270"
+        },
+        {
+          "speed": 5,
+          "lap": 1,
+          "phase_left": "457774040197807/686653440296712",
+          "phase_right": "65396291456831/98093348613816"
+        }
+      ]
+    }
+  ]
+}

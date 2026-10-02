@@ -1,0 +1,100 @@
+{
+  "date_utc": "2026-09-28",
+  "baseline": "6cb881ad661fd2c268a19c4418a6624e17969326",
+  "question": "Does the unchanged positive-slack/minimum-floor-sum-component one-query rule certify the eighteen archived tree-missed positive windows, and are comparator failures ranking failures or certificate-class failures?",
+  "status": "OBSERVED on a frozen archival domain; perfect minimum-component policy outcome depends on the lexicographic tie-break; no prospective-held-out, general-selector, runtime, novelty, whole-configuration or new-existence claim",
+  "delegation": {
+    "calculation": "transfer_calc implemented primary.py and results.json with exact floor-sum scoring, immutable one-query decisions, exact containments, postselection oracle classifications, controls and cost ledgers",
+    "independent_verification": "transfer_verify implemented verify.py, verification.json and verification.md without importing primary code, using threshold-event reconstruction and independent dispatch/selection checks",
+    "adversarial_review": "transfer_challenge audited leakage, pair-only dispatch, strict endpoints, reflection dependence, development separation, oracle contamination, ranking versus certificate-class failure, costs and prior-work boundaries in challenge.md",
+    "coordination": "root fetched and read the live continuation, froze protocol.json before calculation, integrated a verifier exit-dispatch repair and a primary information-barrier repair found by hostile review, replayed checks, wrote the research note, and updated both handoffs and the research queue"
+  },
+  "commands": [
+    "python -S -B reviews/2026-09-28-selector-transfer-audit/primary.py --check",
+    "python -S -B reviews/2026-09-28-selector-transfer-audit/verify.py --check",
+    "python -m unittest discover -s tests -v"
+  ],
+  "scope": {
+    "archived_labels": 18,
+    "reflection_pairs": 9,
+    "development_labels": 2,
+    "transfer_labels": 16,
+    "transfer_reflection_pairs": 8,
+    "pair_only_positive_exits": 8,
+    "active_labels": 10,
+    "active_transfer_labels": 8,
+    "new_speeds": 0,
+    "new_windows": 0,
+    "new_references": 0
+  },
+  "results": {
+    "fewest_components_transfer": {
+      "pair_only_exits": 8,
+      "active_certified": 8,
+      "active_failed": 0,
+      "reflection_mechanisms": {
+        "pair_only_exits": 4,
+        "active_certified": 4
+      }
+    },
+    "largest_slack_transfer": {
+      "pair_only_exits": 8,
+      "active_certified": 4,
+      "active_failed_no_retune": 4,
+      "ranking_failures": 4,
+      "certificate_class_failures": 0,
+      "reflection_mechanisms": {
+        "pair_only_exits": 4,
+        "active_certified": 2,
+        "active_ranking_failures": 2
+      }
+    },
+    "development": {
+      "labels": 2,
+      "fewest_components_certified": 2,
+      "largest_slack_ranking_failures": 2
+    },
+    "all_largest_slack_ranking_failures": 6,
+    "all_certificate_class_failures": 0,
+    "tie_counterexample": "On squares:1,2,5:12 and its reflection, {25,121} and {25,169} both have component count 1; only {25,121} contains, and physical lexicographic order selects it.",
+    "controls": {
+      "strict_16": "{6,11} containment certifies 1/896",
+      "doubling_112": "pair-only exit at 761/32256 before selector query",
+      "tight_13": "no eligible duration query; isolated equality 3/8 retained separately"
+    }
+  },
+  "query_and_cost_scope": {
+    "eligible_pair_scores": 38,
+    "selected_logical_queries": 20,
+    "selected_unique_physical_queries": 18,
+    "second_or_fallback_queries": 0,
+    "postselection_oracle_queries": 38,
+    "oracle_is_separate_from_policy": true,
+    "comparison_policy": "Unlike exact primitives are not combined and no wall-clock inference is made."
+  },
+  "verification_scope": {
+    "records": 18,
+    "threshold_events": 280,
+    "open_cells": 262,
+    "primary_fields_compared": 848,
+    "disagreements": 0,
+    "repository_tests": 25,
+    "adversarial_verdict": "PASS WITH INTERPRETIVE LIMITS after resolved information-barrier repair"
+  },
+  "resolved_repairs": [
+    "Verifier eligibility now conditions on pair-only minimum zero while retaining exit-record diagnostics.",
+    "Primary immediately projects and deletes the full source archive; full geometry and classifications reload only after both rules and every oracle classification are immutable."
+  ],
+  "prior_work_boundary": "Sparse triple exclusion, alternate-window dispatch, shared-pair containment and the five-edge correction are prior repository results, not new findings here.",
+  "next_step": "Freeze one tie-only lap-label or complement-phase arithmetic discriminator on the archived squares development tie and Fibonacci/strict16 controls, without expanding the domain or containment-query budget.",
+  "sha256": {
+    "reviews/2026-09-28-selector-transfer-audit/protocol.json": "ccfdb403abef15f9c2cd9e08ac086232f4842b450f48308ba5a5992f8c3f9c17",
+    "reviews/2026-09-28-selector-transfer-audit/primary.py": "d8b8984a70d78f805f001bfc7b6d6763eed51f975839cb084c050c48a39ce416",
+    "reviews/2026-09-28-selector-transfer-audit/results.json": "bc6c3c87803057632e80d85f74af40a6a7f83bebce27b19f0dc3fce9e4e11615",
+    "reviews/2026-09-28-selector-transfer-audit/verify.py": "b1ad191aef1df9dd37d3530448a3d9366d0a6b1e9564ab2de5718b1415d4bd38",
+    "reviews/2026-09-28-selector-transfer-audit/verification.json": "4b0a6c49556c524231e555b57593c9b18813f2cf20a5c6dc703623fbe5f82e7a",
+    "reviews/2026-09-28-selector-transfer-audit/verification.md": "12755450f95d31679ad6405d762d03cb2c758608040d6ca1364c9cc5109eee8d",
+    "reviews/2026-09-28-selector-transfer-audit/challenge.md": "859252b295ead0ff41ae5eca9e8d3738bfdc7d9e8d6c4131d13e59b2a92345b8",
+    "notes/SELECTOR_TRANSFER_AUDIT_2026_09_28.md": "772d120dc40fc37e15d9d88822fa1d46b220f825992de2c6cbde15dfbe377e4f"
+  }
+}

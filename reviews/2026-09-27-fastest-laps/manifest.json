@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-27 America/Los_Angeles",
+  "baseline_commit": "f362f54b8f5077f12579076e815d505bf81cf9a6",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "f1d4772133a47a3090c5f9f5f3aa6389b378917c0744a80e3df728790e397d7d",
+  "scope": {
+    "common_start_configurations": 2,
+    "reference_index": 0,
+    "n": 8,
+    "threshold": "1/8",
+    "fastest_laps": 29,
+    "shifted_start_arrangements": 29,
+    "shifted_lap_records": 425,
+    "all_residual_shift_controls": 29,
+    "extra_speed_configurations": false
+  },
+  "results": {
+    "original_tree_exact_laps": 29,
+    "tight13": {
+      "covered": 9,
+      "contact_only": 4,
+      "strict": 0,
+      "duration": "0"
+    },
+    "strict16": {
+      "covered": 12,
+      "contact_only": 0,
+      "strict": 4,
+      "duration": "39/4928"
+    },
+    "qualitative_status_collision_groups": 4,
+    "global_empty_shifted_arrangements": 0
+  },
+  "verification": {
+    "status": "PASS",
+    "read_only_commands": [
+      "python -B reviews/2026-09-27-fastest-laps/calculate.py --check",
+      "python -B reviews/2026-09-27-fastest-laps/phase_experiment.py --check",
+      "python -B reviews/2026-09-27-fastest-laps/verify_independent.py --check",
+      "python -B reviews/2026-09-27-fastest-laps/arithmetic_check.py --check",
+      "python -B reviews/2026-09-27-fastest-laps/challenge_check.py --check"
+    ],
+    "independence": "Separate direct threshold-event/Kruskal reconstruction matches every original and shifted lap record and all controls; verifier did not read/import either primary implementation. Extra arithmetic/challenge checks have their own documented scopes.",
+    "broader_regression_rerun": false,
+    "documentation_links": "PASS"
+  },
+  "proof_candidates": [
+    "D13(theta)>=min(||theta||,1/4)/11 for the declared fixed shifted-start family; original phase uniquely zero-duration",
+    "D16(theta)>=1/176 for every phase of speed11 in its declared fixed family",
+    "Exact P13 phase projection inferred using certified intervals and the previously known tight global allowed set"
+  ],
+  "claim_status": "Finite calculations OBSERVED/REPRODUCED; continuous-phase arguments HYPOTHESIS/proof candidates; no general LRC proof, novelty, or global inventory empty/nonempty collision.",
+  "dependency_policy": "The five reproducible scripts are self-contained standard-library programs. Their complete local input/expected-output closure is included below. Representation review additionally cites a one-off call to the existing checker at the pinned baseline, not part of the independent verification or new script dependency closure.",
+  "python_imports": {
+    "reviews/2026-09-27-fastest-laps/phase_experiment.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-fastest-laps/challenge_check.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-fastest-laps/calculate.py": [
+      "argparse",
+      "bisect",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-fastest-laps/verify_independent.py": [
+      "argparse",
+      "bisect",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-fastest-laps/arithmetic_check.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  "artifact_sha256": {
+    "reviews/2026-09-27-fastest-laps/arithmetic.json": "a4a425aa933881200d262d534f823d2c8e59c7149163407d33a1c008bba54e3b",
+    "reviews/2026-09-27-fastest-laps/arithmetic.md": "d48b20c74ad8105246f0edb10dbf55c42580959de9274bf7d7b805b489678ee9",
+    "reviews/2026-09-27-fastest-laps/arithmetic_check.py": "9051010c1dcfac3ea70fb5bb2e50875ebe972bccfe496ff6e3dc15f752f7d79c",
+    "reviews/2026-09-27-fastest-laps/calculate.py": "3a7ae25a6c46c847ae8664114833d7136269775c9badb8f6614b7d3a23fae715",
+    "reviews/2026-09-27-fastest-laps/challenge.md": "2db2f47e36bd05a46a0593ddf9bccc98c492c4c39951719b318a221890ac3a27",
+    "reviews/2026-09-27-fastest-laps/challenge_check.py": "267add154d9f6b1e78eb2ddb9fb4d9d27790044b65b472aaf69cb74eeaa02e3d",
+    "reviews/2026-09-27-fastest-laps/challenge_checks.json": "01477b64ff72b797df52d93458f19df7cb762edf2e4bf90b34320602b2cea7c6",
+    "reviews/2026-09-27-fastest-laps/phase.md": "71ec0829e877b22e90d19e7f74cd56e0953750c1060490683a7318956adc17d2",
+    "reviews/2026-09-27-fastest-laps/phase_experiment.py": "6a29ff38ebf05732aa34a4715fe7b561ba0be8da6c721832a5c1eee5783a3ee7",
+    "reviews/2026-09-27-fastest-laps/phase_results.json": "612cd4320fc3083476b352f8ce058e345cf2f88a418a36e87228cdbad29c8692",
+    "reviews/2026-09-27-fastest-laps/protocol.json": "f1d4772133a47a3090c5f9f5f3aa6389b378917c0744a80e3df728790e397d7d",
+    "reviews/2026-09-27-fastest-laps/representation.md": "766ec8db545a4fe6ec227ff28582af5dbe9a16daa953d3b98e7f7c30e01c4bc7",
+    "reviews/2026-09-27-fastest-laps/results.json": "00134824c5136a893657895cbbd5c686909a7c54cfe320b3fcaab770a84ffcc4",
+    "reviews/2026-09-27-fastest-laps/schema.md": "438f3e86122c372f9469e66d77349786796b9bcd7cbd0d58abe139980c4c46fa",
+    "reviews/2026-09-27-fastest-laps/verification.json": "0e77abafe6bb7dc843f655f7b141d957d4072f648cb9e8b9c725f2e59ccae07c",
+    "reviews/2026-09-27-fastest-laps/verify_independent.py": "d56ef9ff8e2655a9be9f4a40dd3b330ee51868540b67c5834e4b856bea77ba2b",
+    "notes/FASTEST_LAP_ALIGNMENT_2026_09_27.md": "17c3fe2a292fbdeb4f47895f28a6e5abf5720016d03c4d7331f8afc5e468b3d8",
+    "notes/PHASE_ROBUSTNESS_2026_09_27.md": "051ea6adbd50a0fb1ad60c28c87d37b73eb56b1775d6a9ed88455453c8e2cda3",
+    "README.md": "21e60d212aef790af56c484bedcf34c0d58ffa98a82578afd33da1742a0cdf7b",
+    "HANDOFF.md": "2b606fb13f2f8e421cf3301176ceb18e9b50e841b5a382b0a64269e78f46e070",
+    "LR2_HANDOFF.md": "6974b6d315cbc4a356a45666542e236b91717312269086b9334c1f8078cab817",
+    "notes/inquiries/README.md": "d5c9a81ffbe2cc3e9e5910fd1a0b9e077c745ae0058eadc857265bf4f00bcf15",
+    "notes/inquiries/2026-09-27-relationships-and-independence.md": "7215f1b3dc845c1ce196e11f0d655ead5f36837269af33463b644bee0d2a9d76"
+  }
+}

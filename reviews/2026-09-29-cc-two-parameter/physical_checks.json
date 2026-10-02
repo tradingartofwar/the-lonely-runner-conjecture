@@ -1,0 +1,3249 @@
+{
+  "status": "OBSERVED fixed exact physical controls; general claims remain proof candidates",
+  "scope": "Only the protocol 18 positive integer pairs; stationary reference; one selected time and reflection",
+  "summary": {
+    "pairs": 18,
+    "distinct_speed_configurations": 17,
+    "repeated_speed_auxiliaries": 1,
+    "selected_phase_checks": 126,
+    "reflected_phase_checks": 126,
+    "direct_selected_and_reflected_distance_checks": 252,
+    "selected_lap_formula_checks": 126,
+    "reflected_lap_formula_checks": 126,
+    "alternate_bezout_recoveries": 36,
+    "alternate_bezout_phase_and_lap_checks_each": 252,
+    "independent_congruence_time_recoveries": 18,
+    "wrong_clock_distance_checks": 252,
+    "wrong_x_clock_failing_pairs": 10,
+    "wrong_y_clock_failing_pairs": 15,
+    "P3_cases": 16,
+    "P1_cases": 2,
+    "all_selected_minimum_distances": "1/8"
+  },
+  "cases": [
+    {
+      "p": 1,
+      "q": 1,
+      "d": 1,
+      "P": 1,
+      "Q": 1,
+      "distinct_speed_configuration": false,
+      "segment": "P3",
+      "interval": [
+        "0",
+        "3/8"
+      ],
+      "h": 0,
+      "x": "3/8",
+      "y": "3/8",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 0,
+      "s": 1,
+      "T": "3/8",
+      "N": 0,
+      "tau": "3/8",
+      "speeds": [
+        1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "selected": {
+        "time": "3/8",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "3/8",
+          "3/8",
+          "3/4",
+          "1/8",
+          "1/2",
+          "7/8",
+          "5/8"
+        ],
+        "distances": [
+          "3/8",
+          "3/8",
+          "1/4",
+          "1/8",
+          "1/2",
+          "1/8",
+          "3/8"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "3/8",
+      "reflected": {
+        "time": "5/8",
+        "laps": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          4
+        ],
+        "phases": [
+          "5/8",
+          "5/8",
+          "1/4",
+          "7/8",
+          "1/2",
+          "1/8",
+          "3/8"
+        ],
+        "distances": [
+          "3/8",
+          "3/8",
+          "1/4",
+          "1/8",
+          "1/2",
+          "1/8",
+          "3/8"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -3,
+          "s": 4,
+          "T": "3/8",
+          "N": 0,
+          "time": "3/8",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "k": 2,
+          "r": 2,
+          "s": -1,
+          "T": "3/8",
+          "N": 0,
+          "time": "3/8",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "3/8",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        },
+        "y": {
+          "time": "3/8",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        }
+      }
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "d": 1,
+      "P": 1,
+      "Q": 2,
+      "distinct_speed_configuration": true,
+      "segment": "P1",
+      "interval": [
+        "-1/4",
+        "1/6"
+      ],
+      "h": 0,
+      "x": "7/40",
+      "y": "7/20",
+      "m": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "r": 1,
+      "s": 0,
+      "T": "7/40",
+      "N": 0,
+      "tau": "7/40",
+      "speeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "selected": {
+        "time": "7/40",
+        "laps": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "phases": [
+          "7/40",
+          "7/20",
+          "21/40",
+          "7/10",
+          "7/8",
+          "9/40",
+          "23/40"
+        ],
+        "distances": [
+          "7/40",
+          "7/20",
+          "19/40",
+          "3/10",
+          "1/8",
+          "9/40",
+          "17/40"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "7/40",
+      "reflected": {
+        "time": "33/40",
+        "laps": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7
+        ],
+        "phases": [
+          "33/40",
+          "13/20",
+          "19/40",
+          "3/10",
+          "1/8",
+          "31/40",
+          "17/40"
+        ],
+        "distances": [
+          "7/40",
+          "7/20",
+          "19/40",
+          "3/10",
+          "1/8",
+          "9/40",
+          "17/40"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -5,
+          "s": 3,
+          "T": "7/40",
+          "N": 0,
+          "time": "7/40",
+          "laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "k": 2,
+          "r": 5,
+          "s": -2,
+          "T": "7/40",
+          "N": 0,
+          "time": "7/40",
+          "laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "7/40",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        },
+        "y": {
+          "time": "7/20",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/20",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 3,
+              "phase": "1/20",
+              "distance": "1/20"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 1,
+      "q": 3,
+      "d": 1,
+      "P": 1,
+      "Q": 3,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/4",
+        "11/8"
+      ],
+      "h": 1,
+      "x": "17/40",
+      "y": "11/40",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 1,
+      "s": 0,
+      "T": "17/40",
+      "N": 0,
+      "tau": "17/40",
+      "speeds": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9,
+        11
+      ],
+      "selected": {
+        "time": "17/40",
+        "laps": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          4
+        ],
+        "phases": [
+          "17/40",
+          "11/40",
+          "7/10",
+          "1/8",
+          "11/20",
+          "33/40",
+          "27/40"
+        ],
+        "distances": [
+          "17/40",
+          "11/40",
+          "3/10",
+          "1/8",
+          "9/20",
+          "7/40",
+          "13/40"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "17/40",
+      "reflected": {
+        "time": "23/40",
+        "laps": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          5,
+          6
+        ],
+        "phases": [
+          "23/40",
+          "29/40",
+          "3/10",
+          "7/8",
+          "9/20",
+          "7/40",
+          "13/40"
+        ],
+        "distances": [
+          "17/40",
+          "11/40",
+          "3/10",
+          "1/8",
+          "9/20",
+          "7/40",
+          "13/40"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -8,
+          "s": 3,
+          "T": "-103/40",
+          "N": -3,
+          "time": "17/40",
+          "laps": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "k": 2,
+          "r": 7,
+          "s": -2,
+          "T": "97/40",
+          "N": 2,
+          "time": "17/40",
+          "laps": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "17/40",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        },
+        "y": {
+          "time": "11/40",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/40",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 4,
+              "phase": "1/10",
+              "distance": "1/10"
+            },
+            {
+              "index_1_based": 7,
+              "speed": 11,
+              "phase": "1/40",
+              "distance": "1/40"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 1,
+      "q": 4,
+      "d": 1,
+      "P": 1,
+      "Q": 4,
+      "distinct_speed_configuration": true,
+      "segment": "P1",
+      "interval": [
+        "0",
+        "7/12"
+      ],
+      "h": 0,
+      "x": "1/8",
+      "y": "1/2",
+      "m": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "r": 1,
+      "s": 0,
+      "T": "1/8",
+      "N": 0,
+      "tau": "1/8",
+      "speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "selected": {
+        "time": "1/8",
+        "laps": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "phases": [
+          "1/8",
+          "1/2",
+          "5/8",
+          "3/4",
+          "7/8",
+          "3/8",
+          "5/8"
+        ],
+        "distances": [
+          "1/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8",
+          "3/8"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "1/8",
+      "reflected": {
+        "time": "7/8",
+        "laps": [
+          0,
+          3,
+          4,
+          5,
+          6,
+          9,
+          11
+        ],
+        "phases": [
+          "7/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "5/8",
+          "3/8"
+        ],
+        "distances": [
+          "1/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8",
+          "3/8"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -11,
+          "s": 3,
+          "T": "1/8",
+          "N": 0,
+          "time": "1/8",
+          "laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "k": 2,
+          "r": 9,
+          "s": -2,
+          "T": "1/8",
+          "N": 0,
+          "time": "1/8",
+          "laps": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "1/8",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        },
+        "y": {
+          "time": "1/2",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "0",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 4,
+              "phase": "0",
+              "distance": "0"
+            },
+            {
+              "index_1_based": 4,
+              "speed": 6,
+              "phase": "0",
+              "distance": "0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 1,
+      "q": 5,
+      "d": 1,
+      "P": 1,
+      "Q": 5,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/2",
+        "19/8"
+      ],
+      "h": 2,
+      "x": "25/56",
+      "y": "13/56",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 1,
+      "s": 0,
+      "T": "25/56",
+      "N": 0,
+      "tau": "25/56",
+      "speeds": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        13,
+        15
+      ],
+      "selected": {
+        "time": "25/56",
+        "laps": [
+          0,
+          2,
+          2,
+          3,
+          3,
+          5,
+          6
+        ],
+        "phases": [
+          "25/56",
+          "13/56",
+          "19/28",
+          "1/8",
+          "4/7",
+          "45/56",
+          "39/56"
+        ],
+        "distances": [
+          "25/56",
+          "13/56",
+          "9/28",
+          "1/8",
+          "3/7",
+          "11/56",
+          "17/56"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        5,
+        6
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "25/56",
+      "reflected": {
+        "time": "31/56",
+        "laps": [
+          0,
+          2,
+          3,
+          3,
+          4,
+          7,
+          8
+        ],
+        "phases": [
+          "31/56",
+          "43/56",
+          "9/28",
+          "7/8",
+          "3/7",
+          "11/56",
+          "17/56"
+        ],
+        "distances": [
+          "25/56",
+          "13/56",
+          "9/28",
+          "1/8",
+          "3/7",
+          "11/56",
+          "17/56"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -14,
+          "s": 3,
+          "T": "-311/56",
+          "N": -6,
+          "time": "25/56",
+          "laps": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "k": 2,
+          "r": 11,
+          "s": -2,
+          "T": "249/56",
+          "N": 4,
+          "time": "25/56",
+          "laps": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            6
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "25/56",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        },
+        "y": {
+          "time": "13/56",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/56",
+          "failures": [
+            {
+              "index_1_based": 6,
+              "speed": 13,
+              "phase": "1/56",
+              "distance": "1/56"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "d": 1,
+      "P": 2,
+      "Q": 1,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "-3/8",
+        "1/4"
+      ],
+      "h": 0,
+      "x": "9/20",
+      "y": "9/40",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 0,
+      "s": 1,
+      "T": "9/40",
+      "N": 0,
+      "tau": "9/40",
+      "speeds": [
+        2,
+        1,
+        3,
+        5,
+        7,
+        8,
+        12
+      ],
+      "selected": {
+        "time": "9/40",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "9/20",
+          "9/40",
+          "27/40",
+          "1/8",
+          "23/40",
+          "4/5",
+          "7/10"
+        ],
+        "distances": [
+          "9/20",
+          "9/40",
+          "13/40",
+          "1/8",
+          "17/40",
+          "1/5",
+          "3/10"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "9/40",
+      "reflected": {
+        "time": "31/40",
+        "laps": [
+          1,
+          0,
+          2,
+          3,
+          5,
+          6,
+          9
+        ],
+        "phases": [
+          "11/20",
+          "31/40",
+          "13/40",
+          "7/8",
+          "17/40",
+          "1/5",
+          "3/10"
+        ],
+        "distances": [
+          "9/20",
+          "9/40",
+          "13/40",
+          "1/8",
+          "17/40",
+          "1/5",
+          "3/10"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -3,
+          "s": 7,
+          "T": "9/40",
+          "N": 0,
+          "time": "9/40",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "k": 2,
+          "r": 2,
+          "s": -3,
+          "T": "9/40",
+          "N": 0,
+          "time": "9/40",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "9/20",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/10",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 2,
+              "phase": "9/10",
+              "distance": "1/10"
+            }
+          ]
+        },
+        "y": {
+          "time": "9/40",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        }
+      }
+    },
+    {
+      "p": 2,
+      "q": 3,
+      "d": 1,
+      "P": 2,
+      "Q": 3,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/8",
+        "5/4"
+      ],
+      "h": 1,
+      "x": "13/28",
+      "y": "11/56",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": -1,
+      "s": 1,
+      "T": "-15/56",
+      "N": -1,
+      "tau": "41/56",
+      "speeds": [
+        2,
+        3,
+        5,
+        7,
+        9,
+        12,
+        16
+      ],
+      "selected": {
+        "time": "41/56",
+        "laps": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          11
+        ],
+        "phases": [
+          "13/28",
+          "11/56",
+          "37/56",
+          "1/8",
+          "33/56",
+          "11/14",
+          "5/7"
+        ],
+        "distances": [
+          "13/28",
+          "11/56",
+          "19/56",
+          "1/8",
+          "23/56",
+          "3/14",
+          "2/7"
+        ]
+      },
+      "transferred_laps": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        11
+      ],
+      "congruence_coordinate_lap": 1,
+      "congruence_tau": "41/56",
+      "reflected": {
+        "time": "15/56",
+        "laps": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          4
+        ],
+        "phases": [
+          "15/28",
+          "45/56",
+          "19/56",
+          "7/8",
+          "23/56",
+          "3/14",
+          "2/7"
+        ],
+        "distances": [
+          "13/28",
+          "11/56",
+          "19/56",
+          "1/8",
+          "23/56",
+          "3/14",
+          "2/7"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -10,
+          "s": 7,
+          "T": "-183/56",
+          "N": -4,
+          "time": "41/56",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "k": 2,
+          "r": 5,
+          "s": -3,
+          "T": "97/56",
+          "N": 1,
+          "time": "41/56",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "13/28",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/14",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 2,
+              "phase": "13/14",
+              "distance": "1/14"
+            }
+          ]
+        },
+        "y": {
+          "time": "11/56",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/56",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 5,
+              "phase": "55/56",
+              "distance": "1/56"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 3,
+      "q": 1,
+      "d": 1,
+      "P": 3,
+      "Q": 1,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "-3/4",
+        "1/8"
+      ],
+      "h": 0,
+      "x": "27/56",
+      "y": "9/56",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 0,
+      "s": 1,
+      "T": "9/56",
+      "N": 0,
+      "tau": "9/56",
+      "speeds": [
+        3,
+        1,
+        4,
+        7,
+        10,
+        11,
+        17
+      ],
+      "selected": {
+        "time": "9/56",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "27/56",
+          "9/56",
+          "9/14",
+          "1/8",
+          "17/28",
+          "43/56",
+          "41/56"
+        ],
+        "distances": [
+          "27/56",
+          "9/56",
+          "5/14",
+          "1/8",
+          "11/28",
+          "13/56",
+          "15/56"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "9/56",
+      "reflected": {
+        "time": "47/56",
+        "laps": [
+          2,
+          0,
+          3,
+          5,
+          8,
+          9,
+          14
+        ],
+        "phases": [
+          "29/56",
+          "47/56",
+          "5/14",
+          "7/8",
+          "11/28",
+          "13/56",
+          "15/56"
+        ],
+        "distances": [
+          "27/56",
+          "9/56",
+          "5/14",
+          "1/8",
+          "11/28",
+          "13/56",
+          "15/56"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -3,
+          "s": 10,
+          "T": "9/56",
+          "N": 0,
+          "time": "9/56",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "k": 2,
+          "r": 2,
+          "s": -5,
+          "T": "9/56",
+          "N": 0,
+          "time": "9/56",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "27/56",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/14",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 4,
+              "phase": "13/14",
+              "distance": "1/14"
+            }
+          ]
+        },
+        "y": {
+          "time": "9/56",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        }
+      }
+    },
+    {
+      "p": 1,
+      "q": 6,
+      "d": 1,
+      "P": 1,
+      "Q": 6,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "15/8",
+        "23/8"
+      ],
+      "h": 2,
+      "x": "25/64",
+      "y": "11/32",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 1,
+      "s": 0,
+      "T": "25/64",
+      "N": 0,
+      "tau": "25/64",
+      "speeds": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        15,
+        17
+      ],
+      "selected": {
+        "time": "25/64",
+        "laps": [
+          0,
+          2,
+          2,
+          3,
+          3,
+          5,
+          6
+        ],
+        "phases": [
+          "25/64",
+          "11/32",
+          "47/64",
+          "1/8",
+          "33/64",
+          "55/64",
+          "41/64"
+        ],
+        "distances": [
+          "25/64",
+          "11/32",
+          "17/64",
+          "1/8",
+          "31/64",
+          "9/64",
+          "23/64"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        5,
+        6
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "25/64",
+      "reflected": {
+        "time": "39/64",
+        "laps": [
+          0,
+          3,
+          4,
+          4,
+          5,
+          9,
+          10
+        ],
+        "phases": [
+          "39/64",
+          "21/32",
+          "17/64",
+          "7/8",
+          "31/64",
+          "9/64",
+          "23/64"
+        ],
+        "distances": [
+          "25/64",
+          "11/32",
+          "17/64",
+          "1/8",
+          "31/64",
+          "9/64",
+          "23/64"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -17,
+          "s": 3,
+          "T": "-359/64",
+          "N": -6,
+          "time": "25/64",
+          "laps": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "k": 2,
+          "r": 13,
+          "s": -2,
+          "T": "281/64",
+          "N": 4,
+          "time": "25/64",
+          "laps": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            6
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "25/64",
+          "safe": true,
+          "same_as_selected_time": true,
+          "minimum_distance": "1/8",
+          "failures": []
+        },
+        "y": {
+          "time": "11/32",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/16",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 6,
+              "phase": "1/16",
+              "distance": "1/16"
+            },
+            {
+              "index_1_based": 5,
+              "speed": 9,
+              "phase": "3/32",
+              "distance": "3/32"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 2,
+      "q": 5,
+      "d": 1,
+      "P": 2,
+      "Q": 5,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "9/8",
+        "9/4"
+      ],
+      "h": 2,
+      "x": "17/36",
+      "y": "13/72",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": -2,
+      "s": 1,
+      "T": "-55/72",
+      "N": -1,
+      "tau": "17/72",
+      "speeds": [
+        2,
+        5,
+        7,
+        9,
+        11,
+        16,
+        20
+      ],
+      "selected": {
+        "time": "17/72",
+        "laps": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          4
+        ],
+        "phases": [
+          "17/36",
+          "13/72",
+          "47/72",
+          "1/8",
+          "43/72",
+          "7/9",
+          "13/18"
+        ],
+        "distances": [
+          "17/36",
+          "13/72",
+          "25/72",
+          "1/8",
+          "29/72",
+          "2/9",
+          "5/18"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "17/72",
+      "reflected": {
+        "time": "55/72",
+        "laps": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          12,
+          15
+        ],
+        "phases": [
+          "19/36",
+          "59/72",
+          "25/72",
+          "7/8",
+          "29/72",
+          "2/9",
+          "5/18"
+        ],
+        "distances": [
+          "17/36",
+          "13/72",
+          "25/72",
+          "1/8",
+          "29/72",
+          "2/9",
+          "5/18"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -17,
+          "s": 7,
+          "T": "-487/72",
+          "N": -7,
+          "time": "17/72",
+          "laps": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "k": 2,
+          "r": 8,
+          "s": -3,
+          "T": "233/72",
+          "N": 3,
+          "time": "17/72",
+          "laps": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "17/36",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/18",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 2,
+              "phase": "17/18",
+              "distance": "1/18"
+            }
+          ]
+        },
+        "y": {
+          "time": "13/72",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/72",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 5,
+              "phase": "65/72",
+              "distance": "7/72"
+            },
+            {
+              "index_1_based": 5,
+              "speed": 11,
+              "phase": "71/72",
+              "distance": "1/72"
+            },
+            {
+              "index_1_based": 6,
+              "speed": 16,
+              "phase": "8/9",
+              "distance": "1/9"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 3,
+      "q": 2,
+      "d": 1,
+      "P": 3,
+      "Q": 2,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "-3/8",
+        "5/8"
+      ],
+      "h": 0,
+      "x": "27/64",
+      "y": "9/32",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 1,
+      "s": -1,
+      "T": "9/64",
+      "N": 0,
+      "tau": "9/64",
+      "speeds": [
+        3,
+        2,
+        5,
+        8,
+        11,
+        13,
+        19
+      ],
+      "selected": {
+        "time": "9/64",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "27/64",
+          "9/32",
+          "45/64",
+          "1/8",
+          "35/64",
+          "53/64",
+          "43/64"
+        ],
+        "distances": [
+          "27/64",
+          "9/32",
+          "19/64",
+          "1/8",
+          "29/64",
+          "11/64",
+          "21/64"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "9/64",
+      "reflected": {
+        "time": "55/64",
+        "laps": [
+          2,
+          1,
+          4,
+          6,
+          9,
+          11,
+          16
+        ],
+        "phases": [
+          "37/64",
+          "23/32",
+          "19/64",
+          "7/8",
+          "29/64",
+          "11/64",
+          "21/64"
+        ],
+        "distances": [
+          "27/64",
+          "9/32",
+          "19/64",
+          "1/8",
+          "29/64",
+          "11/64",
+          "21/64"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -5,
+          "s": 8,
+          "T": "9/64",
+          "N": 0,
+          "time": "9/64",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "k": 2,
+          "r": 5,
+          "s": -7,
+          "T": "9/64",
+          "N": 0,
+          "time": "9/64",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "27/64",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/64",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 5,
+              "phase": "7/64",
+              "distance": "7/64"
+            },
+            {
+              "index_1_based": 7,
+              "speed": 19,
+              "phase": "1/64",
+              "distance": "1/64"
+            }
+          ]
+        },
+        "y": {
+          "time": "9/32",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "3/32",
+          "failures": [
+            {
+              "index_1_based": 5,
+              "speed": 11,
+              "phase": "3/32",
+              "distance": "3/32"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 3,
+      "q": 4,
+      "d": 1,
+      "P": 3,
+      "Q": 4,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/8",
+        "13/8"
+      ],
+      "h": 1,
+      "x": "7/16",
+      "y": "1/4",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": -1,
+      "s": 1,
+      "T": "-3/16",
+      "N": -1,
+      "tau": "13/16",
+      "speeds": [
+        3,
+        4,
+        7,
+        10,
+        13,
+        17,
+        23
+      ],
+      "selected": {
+        "time": "13/16",
+        "laps": [
+          2,
+          3,
+          5,
+          8,
+          10,
+          13,
+          18
+        ],
+        "phases": [
+          "7/16",
+          "1/4",
+          "11/16",
+          "1/8",
+          "9/16",
+          "13/16",
+          "11/16"
+        ],
+        "distances": [
+          "7/16",
+          "1/4",
+          "5/16",
+          "1/8",
+          "7/16",
+          "3/16",
+          "5/16"
+        ]
+      },
+      "transferred_laps": [
+        2,
+        3,
+        5,
+        8,
+        10,
+        13,
+        18
+      ],
+      "congruence_coordinate_lap": 2,
+      "congruence_tau": "13/16",
+      "reflected": {
+        "time": "3/16",
+        "laps": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          3,
+          4
+        ],
+        "phases": [
+          "9/16",
+          "3/4",
+          "5/16",
+          "7/8",
+          "7/16",
+          "3/16",
+          "5/16"
+        ],
+        "distances": [
+          "7/16",
+          "1/4",
+          "5/16",
+          "1/8",
+          "7/16",
+          "3/16",
+          "5/16"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -13,
+          "s": 10,
+          "T": "-51/16",
+          "N": -4,
+          "time": "13/16",
+          "laps": [
+            2,
+            3,
+            5,
+            8,
+            10,
+            13,
+            18
+          ]
+        },
+        {
+          "k": 2,
+          "r": 7,
+          "s": -5,
+          "T": "29/16",
+          "N": 1,
+          "time": "13/16",
+          "laps": [
+            2,
+            3,
+            5,
+            8,
+            10,
+            13,
+            18
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "7/16",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/16",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 7,
+              "phase": "1/16",
+              "distance": "1/16"
+            },
+            {
+              "index_1_based": 7,
+              "speed": 23,
+              "phase": "1/16",
+              "distance": "1/16"
+            }
+          ]
+        },
+        "y": {
+          "time": "1/4",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "0",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 4,
+              "phase": "0",
+              "distance": "0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 4,
+      "q": 3,
+      "d": 1,
+      "P": 4,
+      "Q": 3,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "-3/8",
+        "1"
+      ],
+      "h": 0,
+      "x": "9/22",
+      "y": "27/88",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 1,
+      "s": -1,
+      "T": "9/88",
+      "N": 0,
+      "tau": "9/88",
+      "speeds": [
+        4,
+        3,
+        7,
+        11,
+        15,
+        18,
+        26
+      ],
+      "selected": {
+        "time": "9/88",
+        "laps": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "phases": [
+          "9/22",
+          "27/88",
+          "63/88",
+          "1/8",
+          "47/88",
+          "37/44",
+          "29/44"
+        ],
+        "distances": [
+          "9/22",
+          "27/88",
+          "25/88",
+          "1/8",
+          "41/88",
+          "7/44",
+          "15/44"
+        ]
+      },
+      "transferred_laps": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "congruence_coordinate_lap": 0,
+      "congruence_tau": "9/88",
+      "reflected": {
+        "time": "79/88",
+        "laps": [
+          3,
+          2,
+          6,
+          9,
+          13,
+          16,
+          23
+        ],
+        "phases": [
+          "13/22",
+          "61/88",
+          "25/88",
+          "7/8",
+          "41/88",
+          "7/44",
+          "15/44"
+        ],
+        "distances": [
+          "9/22",
+          "27/88",
+          "25/88",
+          "1/8",
+          "41/88",
+          "7/44",
+          "15/44"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -8,
+          "s": 11,
+          "T": "9/88",
+          "N": 0,
+          "time": "9/88",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "k": 2,
+          "r": 7,
+          "s": -9,
+          "T": "9/88",
+          "N": 0,
+          "time": "9/88",
+          "laps": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "9/22",
+          "safe": true,
+          "same_as_selected_time": false,
+          "minimum_distance": "3/22",
+          "failures": []
+        },
+        "y": {
+          "time": "27/88",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/44",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 3,
+              "phase": "81/88",
+              "distance": "7/88"
+            },
+            {
+              "index_1_based": 7,
+              "speed": 26,
+              "phase": "43/44",
+              "distance": "1/44"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 5,
+      "q": 2,
+      "d": 1,
+      "P": 5,
+      "Q": 2,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "-9/8",
+        "3/8"
+      ],
+      "h": -1,
+      "x": "37/96",
+      "y": "17/48",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 1,
+      "s": -2,
+      "T": "-31/96",
+      "N": -1,
+      "tau": "65/96",
+      "speeds": [
+        5,
+        2,
+        7,
+        12,
+        17,
+        19,
+        29
+      ],
+      "selected": {
+        "time": "65/96",
+        "laps": [
+          3,
+          1,
+          4,
+          8,
+          11,
+          12,
+          19
+        ],
+        "phases": [
+          "37/96",
+          "17/48",
+          "71/96",
+          "1/8",
+          "49/96",
+          "83/96",
+          "61/96"
+        ],
+        "distances": [
+          "37/96",
+          "17/48",
+          "25/96",
+          "1/8",
+          "47/96",
+          "13/96",
+          "35/96"
+        ]
+      },
+      "transferred_laps": [
+        3,
+        1,
+        4,
+        8,
+        11,
+        12,
+        19
+      ],
+      "congruence_coordinate_lap": 3,
+      "congruence_tau": "65/96",
+      "reflected": {
+        "time": "31/96",
+        "laps": [
+          1,
+          0,
+          2,
+          3,
+          5,
+          6,
+          9
+        ],
+        "phases": [
+          "59/96",
+          "31/48",
+          "25/96",
+          "7/8",
+          "47/96",
+          "13/96",
+          "35/96"
+        ],
+        "distances": [
+          "37/96",
+          "17/48",
+          "25/96",
+          "1/8",
+          "47/96",
+          "13/96",
+          "35/96"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -5,
+          "s": 13,
+          "T": "257/96",
+          "N": 2,
+          "time": "65/96",
+          "laps": [
+            3,
+            1,
+            4,
+            8,
+            11,
+            12,
+            19
+          ]
+        },
+        {
+          "k": 2,
+          "r": 5,
+          "s": -12,
+          "T": "-223/96",
+          "N": -3,
+          "time": "65/96",
+          "laps": [
+            3,
+            1,
+            4,
+            8,
+            11,
+            12,
+            19
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "37/96",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "7/96",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 5,
+              "phase": "89/96",
+              "distance": "7/96"
+            }
+          ]
+        },
+        "y": {
+          "time": "17/48",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/48",
+          "failures": [
+            {
+              "index_1_based": 5,
+              "speed": 17,
+              "phase": "1/48",
+              "distance": "1/48"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 5,
+      "q": 7,
+      "d": 1,
+      "P": 5,
+      "Q": 7,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/4",
+        "23/8"
+      ],
+      "h": 1,
+      "x": "53/136",
+      "y": "47/136",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 3,
+      "s": -2,
+      "T": "65/136",
+      "N": 0,
+      "tau": "65/136",
+      "speeds": [
+        5,
+        7,
+        12,
+        17,
+        22,
+        29,
+        39
+      ],
+      "selected": {
+        "time": "65/136",
+        "laps": [
+          2,
+          3,
+          5,
+          8,
+          10,
+          13,
+          18
+        ],
+        "phases": [
+          "53/136",
+          "47/136",
+          "25/34",
+          "1/8",
+          "35/68",
+          "117/136",
+          "87/136"
+        ],
+        "distances": [
+          "53/136",
+          "47/136",
+          "9/34",
+          "1/8",
+          "33/68",
+          "19/136",
+          "49/136"
+        ]
+      },
+      "transferred_laps": [
+        2,
+        3,
+        5,
+        8,
+        10,
+        13,
+        18
+      ],
+      "congruence_coordinate_lap": 2,
+      "congruence_tau": "65/136",
+      "reflected": {
+        "time": "71/136",
+        "laps": [
+          2,
+          3,
+          6,
+          8,
+          11,
+          15,
+          20
+        ],
+        "phases": [
+          "83/136",
+          "89/136",
+          "9/34",
+          "7/8",
+          "33/68",
+          "19/136",
+          "49/136"
+        ],
+        "distances": [
+          "53/136",
+          "47/136",
+          "9/34",
+          "1/8",
+          "33/68",
+          "19/136",
+          "49/136"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -18,
+          "s": 13,
+          "T": "-343/136",
+          "N": -3,
+          "time": "65/136",
+          "laps": [
+            2,
+            3,
+            5,
+            8,
+            10,
+            13,
+            18
+          ]
+        },
+        {
+          "k": 2,
+          "r": 17,
+          "s": -12,
+          "T": "337/136",
+          "N": 2,
+          "time": "65/136",
+          "laps": [
+            2,
+            3,
+            5,
+            8,
+            10,
+            13,
+            18
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "53/136",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "7/136",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 5,
+              "phase": "129/136",
+              "distance": "7/136"
+            }
+          ]
+        },
+        "y": {
+          "time": "47/136",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "3/136",
+          "failures": [
+            {
+              "index_1_based": 6,
+              "speed": 29,
+              "phase": "3/136",
+              "distance": "3/136"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 3,
+      "q": 5,
+      "d": 1,
+      "P": 3,
+      "Q": 5,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/4",
+        "17/8"
+      ],
+      "h": 1,
+      "x": "35/88",
+      "y": "29/88",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 2,
+      "s": -1,
+      "T": "41/88",
+      "N": 0,
+      "tau": "41/88",
+      "speeds": [
+        3,
+        5,
+        8,
+        11,
+        14,
+        19,
+        25
+      ],
+      "selected": {
+        "time": "41/88",
+        "laps": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          11
+        ],
+        "phases": [
+          "35/88",
+          "29/88",
+          "8/11",
+          "1/8",
+          "23/44",
+          "75/88",
+          "57/88"
+        ],
+        "distances": [
+          "35/88",
+          "29/88",
+          "3/11",
+          "1/8",
+          "21/44",
+          "13/88",
+          "31/88"
+        ]
+      },
+      "transferred_laps": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        11
+      ],
+      "congruence_coordinate_lap": 1,
+      "congruence_tau": "41/88",
+      "reflected": {
+        "time": "47/88",
+        "laps": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          10,
+          13
+        ],
+        "phases": [
+          "53/88",
+          "59/88",
+          "3/11",
+          "7/8",
+          "21/44",
+          "13/88",
+          "31/88"
+        ],
+        "distances": [
+          "35/88",
+          "29/88",
+          "3/11",
+          "1/8",
+          "21/44",
+          "13/88",
+          "31/88"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -13,
+          "s": 8,
+          "T": "-223/88",
+          "N": -3,
+          "time": "41/88",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "k": 2,
+          "r": 12,
+          "s": -7,
+          "T": "217/88",
+          "N": 2,
+          "time": "41/88",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "35/88",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/88",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 5,
+              "phase": "87/88",
+              "distance": "1/88"
+            },
+            {
+              "index_1_based": 7,
+              "speed": 25,
+              "phase": "83/88",
+              "distance": "5/88"
+            }
+          ]
+        },
+        "y": {
+          "time": "29/88",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/88",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 3,
+              "phase": "87/88",
+              "distance": "1/88"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 4,
+      "q": 6,
+      "d": 2,
+      "P": 2,
+      "Q": 3,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/8",
+        "5/4"
+      ],
+      "h": 1,
+      "x": "13/28",
+      "y": "11/56",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": -1,
+      "s": 1,
+      "T": "-15/56",
+      "N": -1,
+      "tau": "41/56",
+      "speeds": [
+        4,
+        6,
+        10,
+        14,
+        18,
+        24,
+        32
+      ],
+      "selected": {
+        "time": "41/112",
+        "laps": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          11
+        ],
+        "phases": [
+          "13/28",
+          "11/56",
+          "37/56",
+          "1/8",
+          "33/56",
+          "11/14",
+          "5/7"
+        ],
+        "distances": [
+          "13/28",
+          "11/56",
+          "19/56",
+          "1/8",
+          "23/56",
+          "3/14",
+          "2/7"
+        ]
+      },
+      "transferred_laps": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        11
+      ],
+      "congruence_coordinate_lap": 1,
+      "congruence_tau": "41/56",
+      "reflected": {
+        "time": "71/112",
+        "laps": [
+          2,
+          3,
+          6,
+          8,
+          11,
+          15,
+          20
+        ],
+        "phases": [
+          "15/28",
+          "45/56",
+          "19/56",
+          "7/8",
+          "23/56",
+          "3/14",
+          "2/7"
+        ],
+        "distances": [
+          "13/28",
+          "11/56",
+          "19/56",
+          "1/8",
+          "23/56",
+          "3/14",
+          "2/7"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -10,
+          "s": 7,
+          "T": "-183/56",
+          "N": -4,
+          "time": "41/112",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "k": 2,
+          "r": 5,
+          "s": -3,
+          "T": "97/56",
+          "N": 1,
+          "time": "41/112",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "13/28",
+          "safe": true,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/7",
+          "failures": []
+        },
+        "y": {
+          "time": "11/56",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/28",
+          "failures": [
+            {
+              "index_1_based": 3,
+              "speed": 10,
+              "phase": "27/28",
+              "distance": "1/28"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "p": 6,
+      "q": 10,
+      "d": 2,
+      "P": 3,
+      "Q": 5,
+      "distinct_speed_configuration": true,
+      "segment": "P3",
+      "interval": [
+        "3/4",
+        "17/8"
+      ],
+      "h": 1,
+      "x": "35/88",
+      "y": "29/88",
+      "m": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "r": 2,
+      "s": -1,
+      "T": "41/88",
+      "N": 0,
+      "tau": "41/88",
+      "speeds": [
+        6,
+        10,
+        16,
+        22,
+        28,
+        38,
+        50
+      ],
+      "selected": {
+        "time": "41/176",
+        "laps": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          11
+        ],
+        "phases": [
+          "35/88",
+          "29/88",
+          "8/11",
+          "1/8",
+          "23/44",
+          "75/88",
+          "57/88"
+        ],
+        "distances": [
+          "35/88",
+          "29/88",
+          "3/11",
+          "1/8",
+          "21/44",
+          "13/88",
+          "31/88"
+        ]
+      },
+      "transferred_laps": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        11
+      ],
+      "congruence_coordinate_lap": 1,
+      "congruence_tau": "41/88",
+      "reflected": {
+        "time": "135/176",
+        "laps": [
+          4,
+          7,
+          12,
+          16,
+          21,
+          29,
+          38
+        ],
+        "phases": [
+          "53/88",
+          "59/88",
+          "3/11",
+          "7/8",
+          "21/44",
+          "13/88",
+          "31/88"
+        ],
+        "distances": [
+          "35/88",
+          "29/88",
+          "3/11",
+          "1/8",
+          "21/44",
+          "13/88",
+          "31/88"
+        ]
+      },
+      "alternative_bezout": [
+        {
+          "k": -3,
+          "r": -13,
+          "s": 8,
+          "T": "-223/88",
+          "N": -3,
+          "time": "41/176",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "k": 2,
+          "r": 12,
+          "s": -7,
+          "T": "217/88",
+          "N": 2,
+          "time": "41/176",
+          "laps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            11
+          ]
+        }
+      ],
+      "wrong_clocks": {
+        "x": {
+          "time": "35/88",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/44",
+          "failures": [
+            {
+              "index_1_based": 2,
+              "speed": 10,
+              "phase": "43/44",
+              "distance": "1/44"
+            },
+            {
+              "index_1_based": 6,
+              "speed": 38,
+              "phase": "5/44",
+              "distance": "5/44"
+            },
+            {
+              "index_1_based": 7,
+              "speed": 50,
+              "phase": "39/44",
+              "distance": "5/44"
+            }
+          ]
+        },
+        "y": {
+          "time": "29/88",
+          "safe": false,
+          "same_as_selected_time": false,
+          "minimum_distance": "1/44",
+          "failures": [
+            {
+              "index_1_based": 1,
+              "speed": 6,
+              "phase": "43/44",
+              "distance": "1/44"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "negative_fixtures": {
+    "protocol_attempt_preserved": {
+      "p": 2,
+      "q": 4,
+      "d": 2,
+      "x": "7/16",
+      "y": "1/4",
+      "phases": [
+        "7/16",
+        "1/4",
+        "11/16",
+        "1/8",
+        "9/16",
+        "13/16",
+        "11/16"
+      ],
+      "raw_h": "5/4",
+      "primitive_h": "5/8",
+      "naive_integrality_passes": false,
+      "true_compatibility_passes": false,
+      "forced_y_from_first_coordinate": "7/8",
+      "physical_orbit_impossible": true
+    },
+    "corrected_naive_integrality_counterexample": {
+      "p": 2,
+      "q": 4,
+      "d": 2,
+      "x": "13/32",
+      "y": "5/16",
+      "phases": [
+        "13/32",
+        "5/16",
+        "23/32",
+        "1/8",
+        "17/32",
+        "27/32",
+        "21/32"
+      ],
+      "raw_h": "1",
+      "primitive_h": "1/2",
+      "naive_integrality_passes": true,
+      "true_compatibility_passes": false,
+      "forced_y_from_first_coordinate": "13/16",
+      "physical_orbit_impossible": true
+    }
+  },
+  "endpoint_failure": {
+    "primitive_pair": [
+      1,
+      4
+    ],
+    "closed_P1_interval": [
+      "0",
+      "7/12"
+    ],
+    "only_integer": 0,
+    "open_interval_has_integer": false,
+    "lost_point": [
+      "1/8",
+      "1/2"
+    ]
+  },
+  "limits": [
+    "No optimizer, broad scan, all-reference claim, optimality claim, or all-witness enumeration.",
+    "Alternative Bezout checks reuse each physical time; they are recovery invariance checks.",
+    "Separate AI implementation is not human, formal, or externally independent certification."
+  ]
+}

@@ -1,0 +1,2282 @@
+{
+  "authorship": "Separately tasked AI reviewer; no production imports",
+  "counts": {
+    "candidates": 24,
+    "chosen": 2,
+    "contacts": 192,
+    "descending": 14,
+    "rectangle_pairs": 21,
+    "residual_pairs": 8
+  },
+  "diagnostic": {
+    "status": "NOT_TRIGGERED"
+  },
+  "endpoint_band_inequalities": 672,
+  "floor_edges": 24,
+  "input_sha256": {
+    "reviews/2026-09-29-cc-coefficient-transfer/PROTOCOL.md": "3a7b28e8719e3958b9ea494210aadf731378840805814853a2a6c31fec2d6905",
+    "reviews/2026-09-29-cc-coefficient-transfer/certificate.json": "6e62958d0b0f081ee0213054e1ea02f3da4de30de2278812b37d3e938d71431d",
+    "reviews/2026-09-29-cc-coefficient-transfer/run.json": "0c7e680983dde7941022c4b242970fb4678914c34884cdaa5b5f8d679f12e72a",
+    "reviews/2026-09-29-cc-coverage-compiler/certificate.json": "88142d4442d65cb50e8e6068cd1826b5957015ffd2d0742cb6867ab5ab452aa1",
+    "reviews/2026-09-29-cc-segment-discovery/PARENT_INPUT.json": "53779c7cf3303e71635b5ba4dd1d9a4dc485612b6a87e1556df80703438f5f62",
+    "reviews/2026-09-29-cc-segment-discovery/discovery.json": "ecc1d0888fd87848338263ead7f24ef7ed72a10104e2102e3e8b5709adbddd51"
+  },
+  "line_boundary_intersections": 1120,
+  "menu_endpoint_checks": [
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        1,
+        1
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": null,
+      "open_hit": false,
+      "pair": [
+        1,
+        2
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": null,
+      "open_hit": false,
+      "pair": [
+        1,
+        3
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        1,
+        4
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        1,
+        5
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        2,
+        1
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": null,
+      "open_hit": false,
+      "pair": [
+        2,
+        3
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": null,
+      "open_hit": false,
+      "pair": [
+        3,
+        1
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        1,
+        6
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        2,
+        5
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        3,
+        2
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        3,
+        4
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        4,
+        3
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        5,
+        2
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        5,
+        7
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        3,
+        5
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": null,
+      "open_hit": false,
+      "pair": [
+        4,
+        6
+      ]
+    },
+    {
+      "closed_hit": true,
+      "open_candidate": "P2:E0-3:K2",
+      "open_hit": true,
+      "pair": [
+        6,
+        10
+      ]
+    }
+  ],
+  "method": "Exact supporting-line/boundary intersections; explicit integer projection contacts",
+  "preflight": {
+    "box_maximum": "19/4",
+    "box_minimum": "1",
+    "edge_lap_attempt_bound": 96,
+    "laps": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "row": [
+      6,
+      2
+    ]
+  },
+  "regression": {
+    "counts": {
+      "candidates": 27,
+      "chosen": 2,
+      "contacts": 216,
+      "descending": 10,
+      "rectangle_pairs": 21,
+      "residual_pairs": 8
+    },
+    "preflight": {
+      "box_maximum": "17/4",
+      "box_minimum": "7/8",
+      "edge_lap_attempt_bound": 120,
+      "laps": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "row": [
+        5,
+        2
+      ]
+    },
+    "status": "PASS"
+  },
+  "result": {
+    "chosen_ids": [
+      "P2:E0-3:K2",
+      "P0:E0-1:K1"
+    ],
+    "contact_matrix": {
+      "P0:E0-1:K1": [
+        {
+          "contact": null,
+          "interval": [
+            "-1/8",
+            "-1/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          },
+          "interval": [
+            "0",
+            "1/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "3/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/4",
+            "5/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/8",
+            "7/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-1/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/16"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "0"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-7/16"
+          ]
+        }
+      ],
+      "P0:E0-3:K1": [
+        {
+          "contact": null,
+          "interval": [
+            "1/48",
+            "1/12"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/6",
+            "7/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/16",
+            "1/2"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "11/24",
+            "17/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "29/48",
+            "11/12"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/48",
+            "-1/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/16",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-11/48",
+            "-1/6"
+          ]
+        }
+      ],
+      "P0:E1-3:K1": [
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "3/5",
+            "point": [
+              "7/40",
+              "7/40"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/12"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "1/4"
+            ]
+          },
+          "interval": [
+            "0",
+            "7/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "1/2"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/4",
+            "17/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/8",
+            "11/12"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-1/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/4",
+            "point": [
+              "7/48",
+              "7/32"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-1/6"
+          ]
+        }
+      ],
+      "P1:E0-1:K1": [
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-1/4",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "0"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1",
+            "point": [
+              "1/8",
+              "1/2"
+            ]
+          },
+          "interval": [
+            "0",
+            "1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-7/8",
+            "-5/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-3/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "-11/8",
+            "-1"
+          ]
+        }
+      ],
+      "P1:E0-3:K1": [
+        {
+          "contact": null,
+          "interval": [
+            "-1/4",
+            "-1/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "3/7",
+            "point": [
+              "9/56",
+              "9/28"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/6"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "0",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "7/12"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/4",
+            "19/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-7/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "3/4",
+            "point": [
+              "3/16",
+              "9/32"
+            ]
+          },
+          "interval": [
+            "-3/8",
+            "1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "-1",
+            "-13/24"
+          ]
+        }
+      ],
+      "P1:E1-3:K1": [
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-1/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "3/5",
+            "point": [
+              "7/40",
+              "7/20"
+            ]
+          },
+          "interval": [
+            "-1/4",
+            "1/6"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/4",
+            "point": [
+              "7/48",
+              "7/16"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "3/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/8",
+              "1/2"
+            ]
+          },
+          "interval": [
+            "0",
+            "7/12"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "19/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-7/8",
+            "-7/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "5/6",
+            "point": [
+              "7/36",
+              "7/24"
+            ]
+          },
+          "interval": [
+            "-5/8",
+            "1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "9/20",
+            "point": [
+              "13/80",
+              "31/80"
+            ]
+          },
+          "interval": [
+            "-11/8",
+            "-13/24"
+          ]
+        }
+      ],
+      "P2:E0-1:K2": [
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "3/8",
+            "point": [
+              "9/32",
+              "9/32"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "5/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "13/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/8",
+            "7/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "9/14",
+            "point": [
+              "17/56",
+              "3/14"
+            ]
+          },
+          "interval": [
+            "5/8",
+            "29/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "3/16",
+            "point": [
+              "17/64",
+              "21/64"
+            ]
+          },
+          "interval": [
+            "7/8",
+            "37/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "6/7",
+            "point": [
+              "9/28",
+              "9/56"
+            ]
+          },
+          "interval": [
+            "-1/2",
+            "1/12"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/4",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "0",
+            "3/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-7/8",
+            "-1/24"
+          ]
+        }
+      ],
+      "P2:E0-3:K2": [
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/3",
+            "point": [
+              "7/24",
+              "7/24"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "5/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          "interval": [
+            "3/8",
+            "1"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "1/2",
+            "point": [
+              "5/16",
+              "1/4"
+            ]
+          },
+          "interval": [
+            "5/8",
+            "11/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "1/7",
+            "point": [
+              "15/56",
+              "19/56"
+            ]
+          },
+          "interval": [
+            "7/8",
+            "7/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "4/5",
+            "point": [
+              "7/20",
+              "7/40"
+            ]
+          },
+          "interval": [
+            "-1/2",
+            "1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "0",
+            "point": [
+              "1/4",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "0",
+            "7/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          "interval": [
+            "-7/8",
+            "0"
+          ]
+        }
+      ],
+      "P2:E1-3:K2": [
+        {
+          "contact": null,
+          "interval": [
+            "5/24",
+            "1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/24",
+            "5/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          "interval": [
+            "7/8",
+            "1"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "29/24",
+            "11/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "37/24",
+            "7/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/12",
+            "1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/4",
+            "7/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "1/8"
+            ]
+          },
+          "interval": [
+            "-1/24",
+            "0"
+          ]
+        }
+      ],
+      "P3:E0-1:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "3/16",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/8",
+            "7/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "17/16",
+            "11/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/2",
+            "15/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 2,
+            "parameter": "1/7",
+            "point": [
+              "25/56",
+              "13/56"
+            ]
+          },
+          "interval": [
+            "31/16",
+            "19/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/5",
+            "point": [
+              "9/20",
+              "9/40"
+            ]
+          },
+          "interval": [
+            "-1/16",
+            "1/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "3/7",
+            "point": [
+              "13/28",
+              "11/56"
+            ]
+          },
+          "interval": [
+            "13/16",
+            "5/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "5/7",
+            "point": [
+              "27/56",
+              "9/56"
+            ]
+          },
+          "interval": [
+            "-5/16",
+            "1/8"
+          ]
+        }
+      ],
+      "P3:E0-3:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "5/48",
+            "5/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "25/48",
+            "13/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "1/6",
+            "point": [
+              "31/72",
+              "7/24"
+            ]
+          },
+          "interval": [
+            "15/16",
+            "21/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "65/48",
+            "29/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 2,
+            "parameter": "11/26",
+            "point": [
+              "47/104",
+              "27/104"
+            ]
+          },
+          "interval": [
+            "85/48",
+            "37/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "5/8",
+            "point": [
+              "15/32",
+              "15/64"
+            ]
+          },
+          "interval": [
+            "-5/24",
+            "1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "3/4",
+            "point": [
+              "23/48",
+              "7/32"
+            ]
+          },
+          "interval": [
+            "5/8",
+            "9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-25/48",
+            "-1/16"
+          ]
+        }
+      ],
+      "P3:E1-3:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "5/16",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/16",
+            "7/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "21/16",
+            "11/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "29/16",
+            "15/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "37/16",
+            "19/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "9/8",
+            "5/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "2/3",
+            "point": [
+              "1/2",
+              "1/6"
+            ]
+          },
+          "interval": [
+            "-1/16",
+            "1/8"
+          ]
+        }
+      ],
+      "P4:E0-1:K3": [
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "2/5",
+            "point": [
+              "17/40",
+              "17/40"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "3/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/4",
+            "11/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "2/3",
+            "point": [
+              "11/24",
+              "3/8"
+            ]
+          },
+          "interval": [
+            "5/8",
+            "19/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          "interval": [
+            "1",
+            "27/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 2,
+            "parameter": "10/13",
+            "point": [
+              "49/104",
+              "37/104"
+            ]
+          },
+          "interval": [
+            "11/8",
+            "35/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "7/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "2/11",
+            "point": [
+              "35/88",
+              "41/88"
+            ]
+          },
+          "interval": [
+            "-9/8",
+            "-7/16"
+          ]
+        }
+      ],
+      "P4:E0-3:K3": [
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/2",
+            "point": [
+              "7/16",
+              "7/16"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/4",
+            "5/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "3/4",
+            "point": [
+              "15/32",
+              "13/32"
+            ]
+          },
+          "interval": [
+            "5/8",
+            "9/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "0",
+            "point": [
+              "3/8",
+              "1/2"
+            ]
+          },
+          "interval": [
+            "1",
+            "13/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 2,
+            "parameter": "5/6",
+            "point": [
+              "23/48",
+              "19/48"
+            ]
+          },
+          "interval": [
+            "11/8",
+            "17/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "3/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "1/4",
+            "point": [
+              "13/32",
+              "15/32"
+            ]
+          },
+          "interval": [
+            "-9/8",
+            "-5/8"
+          ]
+        }
+      ],
+      "P4:E1-3:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "3/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/8",
+            "11/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "9/8",
+            "19/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/8",
+            "27/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "17/8",
+            "35/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-1/4",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/4",
+            "7/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-7/16"
+          ]
+        }
+      ],
+      "P5:E0-2:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-13/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-5/24"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/2",
+            "point": [
+              "7/24",
+              "7/8"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "11/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "3/8",
+            "19/24"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/2",
+            "-17/12"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "0",
+            "point": [
+              "1/4",
+              "7/8"
+            ]
+          },
+          "interval": [
+            "-1",
+            "-3/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-19/8",
+            "-55/24"
+          ]
+        }
+      ],
+      "P5:E0-3:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "-5/8",
+            "-3/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "3/4"
+            ]
+          },
+          "interval": [
+            "-3/8",
+            "0"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/4",
+            "point": [
+              "9/32",
+              "27/32"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "3/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "5/6",
+            "point": [
+              "17/48",
+              "37/48"
+            ]
+          },
+          "interval": [
+            "3/8",
+            "9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/2",
+            "-9/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "0",
+            "point": [
+              "1/4",
+              "7/8"
+            ]
+          },
+          "interval": [
+            "-1",
+            "-3/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -2,
+            "parameter": "3/4",
+            "point": [
+              "11/32",
+              "25/32"
+            ]
+          },
+          "interval": [
+            "-19/8",
+            "-15/8"
+          ]
+        }
+      ],
+      "P5:E2-3:K3": [
+        {
+          "contact": null,
+          "interval": [
+            "-13/24",
+            "-3/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1",
+            "point": [
+              "3/8",
+              "3/4"
+            ]
+          },
+          "interval": [
+            "-5/24",
+            "0"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "11/24",
+            "3/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "5/8",
+            "point": [
+              "23/64",
+              "51/64"
+            ]
+          },
+          "interval": [
+            "19/24",
+            "9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-17/12",
+            "-9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/4",
+            "-3/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -2,
+            "parameter": "7/10",
+            "point": [
+              "29/80",
+              "63/80"
+            ]
+          },
+          "interval": [
+            "-55/24",
+            "-15/8"
+          ]
+        }
+      ],
+      "P6:E0-1:K4": [
+        {
+          "contact": null,
+          "interval": [
+            "-7/24",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/6",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/8",
+            "7/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/12",
+            "11/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "37/24",
+            "15/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "1/7",
+            "point": [
+              "13/28",
+              "41/56"
+            ]
+          },
+          "interval": [
+            "-25/24",
+            "-3/4"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/3",
+            "point": [
+              "17/36",
+              "17/24"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-43/24",
+            "-11/8"
+          ]
+        }
+      ],
+      "P6:E0-3:K4": [
+        {
+          "contact": null,
+          "interval": [
+            "-7/24",
+            "-3/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/6",
+            "5/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/8",
+            "13/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/12",
+            "21/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "37/24",
+            "29/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": -1,
+            "parameter": "1/4",
+            "point": [
+              "15/32",
+              "47/64"
+            ]
+          },
+          "interval": [
+            "-25/24",
+            "-7/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 0,
+            "parameter": "1/2",
+            "point": [
+              "23/48",
+              "23/32"
+            ]
+          },
+          "interval": [
+            "-1/8",
+            "1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-43/24",
+            "-25/16"
+          ]
+        }
+      ],
+      "P6:E1-3:K4": [
+        {
+          "contact": null,
+          "interval": [
+            "-3/16",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/16",
+            "3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/16",
+            "7/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "21/16",
+            "11/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "29/16",
+            "15/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-7/8",
+            "-3/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-25/16",
+            "-11/8"
+          ]
+        }
+      ],
+      "P7:E0-1:K4": [
+        {
+          "contact": null,
+          "interval": [
+            "-5/12",
+            "-5/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/24",
+            "3/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/2",
+            "11/16"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "2/11",
+            "point": [
+              "41/88",
+              "19/22"
+            ]
+          },
+          "interval": [
+            "23/24",
+            "19/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "17/12",
+            "27/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-31/24",
+            "-9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -2,
+            "parameter": "8/11",
+            "point": [
+              "43/88",
+              "73/88"
+            ]
+          },
+          "interval": [
+            "-13/6",
+            "-31/16"
+          ]
+        }
+      ],
+      "P7:E0-3:K4": [
+        {
+          "contact": null,
+          "interval": [
+            "-5/12",
+            "-3/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/24",
+            "1/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/2",
+            "5/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": 1,
+            "parameter": "1/4",
+            "point": [
+              "15/32",
+              "7/8"
+            ]
+          },
+          "interval": [
+            "23/24",
+            "9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "17/12",
+            "13/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-31/24",
+            "-5/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-1/4"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-13/6",
+            "-17/8"
+          ]
+        }
+      ],
+      "P7:E1-3:K4": [
+        {
+          "contact": null,
+          "interval": [
+            "-3/8",
+            "-5/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "1/8",
+            "3/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "5/8",
+            "11/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "9/8",
+            "19/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "13/8",
+            "27/16"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-5/4",
+            "-9/8"
+          ]
+        },
+        {
+          "contact": null,
+          "interval": [
+            "-1/4",
+            "-1/8"
+          ]
+        },
+        {
+          "contact": {
+            "h": -2,
+            "parameter": "1/3",
+            "point": [
+              "1/2",
+              "5/6"
+            ]
+          },
+          "interval": [
+            "-17/8",
+            "-31/16"
+          ]
+        }
+      ]
+    },
+    "greedy_steps": [
+      {
+        "before": [
+          [
+            1,
+            2
+          ]
+        ],
+        "chosen": "P0:E0-1:K1",
+        "newly_covered": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "leader_misses": [
+      [
+        1,
+        2
+      ]
+    ],
+    "ranking": [
+      {
+        "P_max": 3,
+        "Q_max": 7,
+        "alpha": "1/8",
+        "beta": "1/4",
+        "id": "P2:E0-3:K2",
+        "rectangle_pairs": 21
+      },
+      {
+        "P_max": 3,
+        "Q_max": 11,
+        "alpha": "1/12",
+        "beta": "1/4",
+        "id": "P1:E1-3:K1",
+        "rectangle_pairs": 33
+      },
+      {
+        "P_max": 3,
+        "Q_max": 11,
+        "alpha": "1/12",
+        "beta": "1/4",
+        "id": "P2:E0-1:K2",
+        "rectangle_pairs": 33
+      },
+      {
+        "P_max": 5,
+        "Q_max": 7,
+        "alpha": "1/8",
+        "beta": "3/16",
+        "id": "P4:E0-1:K3",
+        "rectangle_pairs": 35
+      },
+      {
+        "P_max": 7,
+        "Q_max": 7,
+        "alpha": "1/8",
+        "beta": "1/8",
+        "id": "P4:E0-3:K3",
+        "rectangle_pairs": 49
+      },
+      {
+        "P_max": 7,
+        "Q_max": 7,
+        "alpha": "1/8",
+        "beta": "1/8",
+        "id": "P5:E0-3:K3",
+        "rectangle_pairs": 49
+      },
+      {
+        "P_max": 7,
+        "Q_max": 11,
+        "alpha": "1/12",
+        "beta": "1/8",
+        "id": "P0:E1-3:K1",
+        "rectangle_pairs": 77
+      },
+      {
+        "P_max": 7,
+        "Q_max": 11,
+        "alpha": "1/12",
+        "beta": "1/8",
+        "id": "P1:E0-3:K1",
+        "rectangle_pairs": 77
+      },
+      {
+        "P_max": 7,
+        "Q_max": 11,
+        "alpha": "1/12",
+        "beta": "1/8",
+        "id": "P3:E0-3:K3",
+        "rectangle_pairs": 77
+      },
+      {
+        "P_max": 7,
+        "Q_max": 15,
+        "alpha": "1/16",
+        "beta": "1/8",
+        "id": "P3:E0-1:K3",
+        "rectangle_pairs": 105
+      },
+      {
+        "P_max": 7,
+        "Q_max": 23,
+        "alpha": "1/24",
+        "beta": "1/8",
+        "id": "P5:E2-3:K3",
+        "rectangle_pairs": 161
+      },
+      {
+        "P_max": 7,
+        "Q_max": 23,
+        "alpha": "1/24",
+        "beta": "1/8",
+        "id": "P6:E0-1:K4",
+        "rectangle_pairs": 161
+      },
+      {
+        "P_max": 15,
+        "Q_max": 23,
+        "alpha": "1/24",
+        "beta": "1/16",
+        "id": "P6:E0-3:K4",
+        "rectangle_pairs": 345
+      },
+      {
+        "P_max": 15,
+        "Q_max": 23,
+        "alpha": "1/24",
+        "beta": "1/16",
+        "id": "P7:E0-1:K4",
+        "rectangle_pairs": 345
+      }
+    ],
+    "residual_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "uncovered": []
+  },
+  "script_sha256": "42b46495de06f17796c51a353bd010e2d3a043ad6489cb5136b207dfe378831a",
+  "status": "PASS"
+}

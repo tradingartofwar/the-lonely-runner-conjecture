@@ -1,0 +1,257 @@
+{
+  "schema": "compatibility-conformance/v1",
+  "source_commit": "29e54d32e2ff5349bdb0c3db56fab753a0e44c94",
+  "scope": "Five known development regressions; no held-out validation, outside defect or comparative advantage claim. Mutants are intentional teaching examples.",
+  "source_sha256": {
+    "reviews/2026-09-30-cc-three-parameter/discovery.json": "091726fec3fcc58e08c3405b655200bc529352eb984bf320e211f4e515972729",
+    "reviews/2026-10-02-cc-orbit-intervals/run/RESULTS.json": "40a06e6ea078848d289868aa8c5b21fc57ec2a3b94bc13422a46b5e27286ec67",
+    "reviews/2026-10-02-cc-orbit-intervals/run/VERIFICATION.json": "3a341653a5b5bb7b46dec506b8237eaa3281f1215a00547b2147582ba4aab45f"
+  },
+  "cases": [
+    {
+      "id": "same_point",
+      "title": "Separate successes can have no shared solution",
+      "query_kind": "fixed_z_segment",
+      "rates": [
+        1,
+        2,
+        6
+      ],
+      "segment": [
+        [
+          "1/8",
+          "1/4"
+        ],
+        [
+          "11/72",
+          "5/24"
+        ]
+      ],
+      "z": "7/8",
+      "relations": [
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          6,
+          0,
+          -1
+        ]
+      ],
+      "expected_times": [],
+      "mutant": "independent_marginals",
+      "source": {
+        "path": "reviews/2026-09-30-cc-three-parameter/discovery.json",
+        "selector": "diagnostics.false_marginal",
+        "adaptation": "The exact archived segment with its fixed z coordinate."
+      },
+      "question": "Is there one physical time whose phases lie on this exact segment at z=7/8?",
+      "lesson": "Keep the common segment parameter when combining constraints."
+    },
+    {
+      "id": "complete_relations",
+      "title": "Plausible phases may belong to no actual clock",
+      "query_kind": "phase_point",
+      "rates": [
+        2,
+        3,
+        1
+      ],
+      "point": [
+        "1/4",
+        "7/8",
+        "1/8"
+      ],
+      "raw_relations": [
+        [
+          3,
+          -2,
+          0
+        ],
+        [
+          1,
+          0,
+          -2
+        ]
+      ],
+      "complete_relations": [
+        [
+          3,
+          -2,
+          0
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ],
+      "expected_times": [],
+      "mutant": "incomplete_relations",
+      "source": {
+        "path": "reviews/2026-09-30-cc-three-parameter/discovery.json",
+        "selector": "diagnostics.unsaturated_false_point",
+        "adaptation": "Point-membership specialization of the archived false hit on an edge; not the whole edge query."
+      },
+      "question": "Can this exact phase triple occur at one common time?",
+      "lesson": "Validate a complete orbit relation or recover and check the actual time."
+    },
+    {
+      "id": "clock_lifts",
+      "title": "The first clock choice can discard the valid answer",
+      "query_kind": "phase_point",
+      "rates": [
+        2,
+        4,
+        5
+      ],
+      "point": [
+        "3/8",
+        "3/4",
+        "7/16"
+      ],
+      "canonical_time": "3/16",
+      "expected_times": [
+        "11/16"
+      ],
+      "mutant": "first_clock_only",
+      "source": {
+        "path": "reviews/2026-09-30-cc-three-parameter/discovery.json",
+        "selector": "diagnostics.lost_clock_lift",
+        "adaptation": "Exact recovered-phase-point query, stronger than the archived safe-band recovery request."
+      },
+      "question": "Can this exact phase triple occur at one common time?",
+      "lesson": "Keep every relevant clock lift until the added constraint is checked."
+    },
+    {
+      "id": "isolated_points",
+      "title": "Zero duration can still contain valid solutions",
+      "query_kind": "closed_phase_bands",
+      "rates": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        14,
+        35,
+        13
+      ],
+      "pqr": [
+        1,
+        4,
+        13
+      ],
+      "delta": "1/8",
+      "primary_interval": [
+        "17/56",
+        "87/280"
+      ],
+      "expected_intervals": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "mutant": "drop_singletons",
+      "source": {
+        "path": "reviews/2026-10-02-cc-orbit-intervals/run/RESULTS.json",
+        "selector": "cases[pqr=1,4,13]",
+        "adaptation": "Archived complete closed 1/8 safe-time query for this fixed input."
+      },
+      "question": "Is any time in [0,1) simultaneously inside all nine closed phase bands?",
+      "lesson": "Preserve isolated points when the question asks whether any solution exists."
+    },
+    {
+      "id": "widest_only",
+      "title": "The widest interval need not survive a new constraint",
+      "query_kind": "closed_phase_bands",
+      "rates": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        15,
+        18,
+        51,
+        13
+      ],
+      "pqr": [
+        1,
+        6,
+        13
+      ],
+      "delta": "1/8",
+      "primary_interval": [
+        "17/56",
+        "127/408"
+      ],
+      "expected_intervals": [
+        [
+          "3/16",
+          "23/120"
+        ],
+        [
+          "5/24",
+          "5/24"
+        ],
+        [
+          "145/408",
+          "23/64"
+        ],
+        [
+          "49/120",
+          "167/408"
+        ],
+        [
+          "19/40",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "21/40"
+        ],
+        [
+          "241/408",
+          "71/120"
+        ],
+        [
+          "41/64",
+          "263/408"
+        ],
+        [
+          "19/24",
+          "19/24"
+        ],
+        [
+          "97/120",
+          "13/16"
+        ]
+      ],
+      "mutant": "widest_only",
+      "source": {
+        "path": "reviews/2026-10-02-cc-orbit-intervals/run/RESULTS.json",
+        "selector": "cases[pqr=1,6,13]",
+        "adaptation": "Archived complete closed 1/8 safe-time query for this fixed input."
+      },
+      "question": "Is any time in [0,1) simultaneously inside all nine closed phase bands?",
+      "lesson": "A failed candidate is not proof that every candidate fails."
+    }
+  ]
+}

@@ -1,0 +1,6013 @@
+{
+  "status": "OBSERVED exact arithmetic in the two prescribed common-start cases",
+  "protocol_sha256": "f1d4772133a47a3090c5f9f5f3aa6389b378917c0744a80e3df728790e397d7d",
+  "script_sha256": "9051010c1dcfac3ea70fb5bb2e50875ebe972bccfe496ff6e3dc15f752f7d79c",
+  "residual_speeds": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    11
+  ],
+  "residual_allowed_cells": [
+    {
+      "interval": [
+        "1/8",
+        "1/8"
+      ],
+      "duration": "0",
+      "lap_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "1/32",
+          "7/32"
+        ],
+        [
+          "1/40",
+          "7/40"
+        ],
+        [
+          "1/48",
+          "7/48"
+        ],
+        [
+          "1/56",
+          "1/8"
+        ],
+        [
+          "9/88",
+          "15/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          1
+        ],
+        "upper": [
+          7
+        ]
+      },
+      "right_controllers": {
+        "lower": [
+          1
+        ],
+        "upper": [
+          7
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 1,
+          "upper_speed": 7,
+          "lower_lap": 0,
+          "upper_lap": 0,
+          "integer_gap": 0,
+          "width": "0"
+        }
+      ],
+      "witness": {
+        "time": "1/8",
+        "distances": [
+          "1/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8"
+        ],
+        "kind": "equality"
+      }
+    },
+    {
+      "interval": [
+        "17/56",
+        "5/16"
+      ],
+      "duration": "1/112",
+      "lap_vector": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "9/32",
+          "15/32"
+        ],
+        [
+          "9/40",
+          "3/8"
+        ],
+        [
+          "3/16",
+          "5/16"
+        ],
+        [
+          "17/56",
+          "23/56"
+        ],
+        [
+          "25/88",
+          "31/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          7
+        ],
+        "upper": []
+      },
+      "right_controllers": {
+        "lower": [],
+        "upper": [
+          6
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 7,
+          "upper_speed": 6,
+          "lower_lap": 2,
+          "upper_lap": 1,
+          "integer_gap": 3,
+          "width": "1/112"
+        }
+      ],
+      "witness": {
+        "time": "69/224",
+        "distances": [
+          "69/224",
+          "13/56",
+          "103/224",
+          "17/112",
+          "5/32",
+          "87/224"
+        ],
+        "kind": "strict"
+      }
+    },
+    {
+      "interval": [
+        "3/8",
+        "3/8"
+      ],
+      "duration": "0",
+      "lap_vector": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        4
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "9/32",
+          "15/32"
+        ],
+        [
+          "9/40",
+          "3/8"
+        ],
+        [
+          "17/48",
+          "23/48"
+        ],
+        [
+          "17/56",
+          "23/56"
+        ],
+        [
+          "3/8",
+          "39/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          11
+        ],
+        "upper": [
+          5
+        ]
+      },
+      "right_controllers": {
+        "lower": [
+          11
+        ],
+        "upper": [
+          5
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 11,
+          "upper_speed": 5,
+          "lower_lap": 4,
+          "upper_lap": 1,
+          "integer_gap": 0,
+          "width": "0"
+        }
+      ],
+      "witness": {
+        "time": "3/8",
+        "distances": [
+          "3/8",
+          "1/2",
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/8"
+        ],
+        "kind": "equality"
+      }
+    },
+    {
+      "interval": [
+        "41/88",
+        "15/32"
+      ],
+      "duration": "1/352",
+      "lap_vector": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        5
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "9/32",
+          "15/32"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "17/48",
+          "23/48"
+        ],
+        [
+          "25/56",
+          "31/56"
+        ],
+        [
+          "41/88",
+          "47/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          11
+        ],
+        "upper": []
+      },
+      "right_controllers": {
+        "lower": [],
+        "upper": [
+          4
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 11,
+          "upper_speed": 4,
+          "lower_lap": 5,
+          "upper_lap": 1,
+          "integer_gap": 1,
+          "width": "1/352"
+        }
+      ],
+      "witness": {
+        "time": "329/704",
+        "distances": [
+          "329/704",
+          "23/176",
+          "237/704",
+          "69/352",
+          "191/704",
+          "9/64"
+        ],
+        "kind": "strict"
+      }
+    },
+    {
+      "interval": [
+        "17/32",
+        "47/88"
+      ],
+      "duration": "1/352",
+      "lap_vector": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        5
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "17/32",
+          "23/32"
+        ],
+        [
+          "17/40",
+          "23/40"
+        ],
+        [
+          "25/48",
+          "31/48"
+        ],
+        [
+          "25/56",
+          "31/56"
+        ],
+        [
+          "41/88",
+          "47/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          4
+        ],
+        "upper": []
+      },
+      "right_controllers": {
+        "lower": [],
+        "upper": [
+          11
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 4,
+          "upper_speed": 11,
+          "lower_lap": 2,
+          "upper_lap": 5,
+          "integer_gap": 1,
+          "width": "1/352"
+        }
+      ],
+      "witness": {
+        "time": "375/704",
+        "distances": [
+          "329/704",
+          "23/176",
+          "237/704",
+          "69/352",
+          "191/704",
+          "9/64"
+        ],
+        "kind": "strict"
+      }
+    },
+    {
+      "interval": [
+        "5/8",
+        "5/8"
+      ],
+      "duration": "0",
+      "lap_vector": [
+        0,
+        2,
+        3,
+        3,
+        4,
+        6
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "17/32",
+          "23/32"
+        ],
+        [
+          "5/8",
+          "31/40"
+        ],
+        [
+          "25/48",
+          "31/48"
+        ],
+        [
+          "33/56",
+          "39/56"
+        ],
+        [
+          "49/88",
+          "5/8"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          5
+        ],
+        "upper": [
+          11
+        ]
+      },
+      "right_controllers": {
+        "lower": [
+          5
+        ],
+        "upper": [
+          11
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 5,
+          "upper_speed": 11,
+          "lower_lap": 3,
+          "upper_lap": 6,
+          "integer_gap": 0,
+          "width": "0"
+        }
+      ],
+      "witness": {
+        "time": "5/8",
+        "distances": [
+          "3/8",
+          "1/2",
+          "1/8",
+          "1/4",
+          "3/8",
+          "1/8"
+        ],
+        "kind": "equality"
+      }
+    },
+    {
+      "interval": [
+        "11/16",
+        "39/56"
+      ],
+      "duration": "1/112",
+      "lap_vector": [
+        0,
+        2,
+        3,
+        4,
+        4,
+        7
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "17/32",
+          "23/32"
+        ],
+        [
+          "5/8",
+          "31/40"
+        ],
+        [
+          "11/16",
+          "13/16"
+        ],
+        [
+          "33/56",
+          "39/56"
+        ],
+        [
+          "57/88",
+          "63/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          6
+        ],
+        "upper": []
+      },
+      "right_controllers": {
+        "lower": [],
+        "upper": [
+          7
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 6,
+          "upper_speed": 7,
+          "lower_lap": 4,
+          "upper_lap": 4,
+          "integer_gap": 3,
+          "width": "1/112"
+        }
+      ],
+      "witness": {
+        "time": "155/224",
+        "distances": [
+          "69/224",
+          "13/56",
+          "103/224",
+          "17/112",
+          "5/32",
+          "87/224"
+        ],
+        "kind": "strict"
+      }
+    },
+    {
+      "interval": [
+        "7/8",
+        "7/8"
+      ],
+      "duration": "0",
+      "lap_vector": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "lap_bounds": [
+        [
+          "1/8",
+          "7/8"
+        ],
+        [
+          "25/32",
+          "31/32"
+        ],
+        [
+          "33/40",
+          "39/40"
+        ],
+        [
+          "41/48",
+          "47/48"
+        ],
+        [
+          "7/8",
+          "55/56"
+        ],
+        [
+          "73/88",
+          "79/88"
+        ]
+      ],
+      "left_controllers": {
+        "lower": [
+          7
+        ],
+        "upper": [
+          1
+        ]
+      },
+      "right_controllers": {
+        "lower": [
+          7
+        ],
+        "upper": [
+          1
+        ]
+      },
+      "endpoint_determinants": [
+        {
+          "lower_speed": 7,
+          "upper_speed": 1,
+          "lower_lap": 6,
+          "upper_lap": 0,
+          "integer_gap": 0,
+          "width": "0"
+        }
+      ],
+      "witness": {
+        "time": "7/8",
+        "distances": [
+          "1/8",
+          "1/2",
+          "3/8",
+          "1/4",
+          "1/8",
+          "3/8"
+        ],
+        "kind": "equality"
+      }
+    }
+  ],
+  "residual_allowed_duration": "29/1232",
+  "continuous_phase_candidates": {
+    "status": "HYPOTHESIS / proof candidates; exact constants checked, universal phase argument in arithmetic.md",
+    "numerical_phase_scan_performed": false,
+    "tight13": {
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        13
+      ],
+      "unchanged_safe_cells": [
+        {
+          "interval": [
+            "17/48",
+            "3/8"
+          ],
+          "duration": "1/48",
+          "lap_vector": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            4
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "9/32",
+              "15/32"
+            ],
+            [
+              "9/40",
+              "3/8"
+            ],
+            [
+              "17/48",
+              "23/48"
+            ],
+            [
+              "17/56",
+              "23/56"
+            ],
+            [
+              "33/104",
+              "3/8"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              6
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              5,
+              13
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 6,
+              "upper_speed": 5,
+              "lower_lap": 2,
+              "upper_lap": 1,
+              "integer_gap": 5,
+              "width": "1/48"
+            },
+            {
+              "lower_speed": 6,
+              "upper_speed": 13,
+              "lower_lap": 2,
+              "upper_lap": 4,
+              "integer_gap": 13,
+              "width": "1/48"
+            }
+          ],
+          "witness": {
+            "time": "35/96",
+            "distances": [
+              "35/96",
+              "11/24",
+              "17/96",
+              "3/16",
+              "43/96",
+              "25/96"
+            ],
+            "kind": "strict"
+          }
+        },
+        {
+          "interval": [
+            "5/8",
+            "31/48"
+          ],
+          "duration": "1/48",
+          "lap_vector": [
+            0,
+            2,
+            3,
+            3,
+            4,
+            8
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "17/32",
+              "23/32"
+            ],
+            [
+              "5/8",
+              "31/40"
+            ],
+            [
+              "25/48",
+              "31/48"
+            ],
+            [
+              "33/56",
+              "39/56"
+            ],
+            [
+              "5/8",
+              "71/104"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              5,
+              13
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              6
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 5,
+              "upper_speed": 6,
+              "lower_lap": 3,
+              "upper_lap": 3,
+              "integer_gap": 5,
+              "width": "1/48"
+            },
+            {
+              "lower_speed": 13,
+              "upper_speed": 6,
+              "lower_lap": 8,
+              "upper_lap": 3,
+              "integer_gap": 13,
+              "width": "1/48"
+            }
+          ],
+          "witness": {
+            "time": "61/96",
+            "distances": [
+              "35/96",
+              "11/24",
+              "17/96",
+              "3/16",
+              "43/96",
+              "25/96"
+            ],
+            "kind": "strict"
+          }
+        }
+      ],
+      "theta_domain": "0 < theta < 1, modulo one",
+      "speed11_centered_phase_images": [
+        [
+          "-5/48",
+          "1/8"
+        ],
+        [
+          "-1/8",
+          "5/48"
+        ]
+      ],
+      "phase_union": [
+        "-1/8",
+        "1/8"
+      ],
+      "phase_union_length": "1/4",
+      "shifted_blocking_arc_length": "1/4",
+      "circular_distance_d": "min(theta, 1-theta)",
+      "phase_overlap_formula": "max(0, 1/4-d)",
+      "duration_lower_bound": "min(d, 1/4)/11",
+      "secondary_one_sided_duration_bound": "min(1/48, theta/11, (1-theta)/11)",
+      "nonzero_protocol_offset_lower_bound": "1/143"
+    },
+    "strict16": {
+      "unchanged_speeds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        16
+      ],
+      "unchanged_safe_cells": [
+        {
+          "interval": [
+            "25/56",
+            "15/32"
+          ],
+          "duration": "5/224",
+          "lap_vector": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            7
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "9/32",
+              "15/32"
+            ],
+            [
+              "17/40",
+              "23/40"
+            ],
+            [
+              "17/48",
+              "23/48"
+            ],
+            [
+              "25/56",
+              "31/56"
+            ],
+            [
+              "57/128",
+              "63/128"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              7
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              4
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 7,
+              "upper_speed": 4,
+              "lower_lap": 3,
+              "upper_lap": 1,
+              "integer_gap": 5,
+              "width": "5/224"
+            }
+          ],
+          "witness": {
+            "time": "205/448",
+            "distances": [
+              "205/448",
+              "19/112",
+              "129/448",
+              "57/224",
+              "13/64",
+              "9/28"
+            ],
+            "kind": "strict"
+          }
+        },
+        {
+          "interval": [
+            "17/32",
+            "31/56"
+          ],
+          "duration": "5/224",
+          "lap_vector": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            8
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "17/32",
+              "23/32"
+            ],
+            [
+              "17/40",
+              "23/40"
+            ],
+            [
+              "25/48",
+              "31/48"
+            ],
+            [
+              "25/56",
+              "31/56"
+            ],
+            [
+              "65/128",
+              "71/128"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              4
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              7
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 4,
+              "upper_speed": 7,
+              "lower_lap": 2,
+              "upper_lap": 3,
+              "integer_gap": 5,
+              "width": "5/224"
+            }
+          ],
+          "witness": {
+            "time": "243/448",
+            "distances": [
+              "205/448",
+              "19/112",
+              "129/448",
+              "57/224",
+              "13/64",
+              "9/28"
+            ],
+            "kind": "strict"
+          }
+        }
+      ],
+      "speed11_centered_phase_images": [
+        [
+          "-5/56",
+          "5/32"
+        ],
+        [
+          "-5/32",
+          "5/56"
+        ]
+      ],
+      "phase_union": [
+        "-5/32",
+        "5/32"
+      ],
+      "phase_union_length": "5/16",
+      "shifted_blocking_arc_length": "1/4",
+      "clear_phase_lower_bound": "1/16",
+      "duration_lower_bound": "1/176",
+      "sharp_on_restricted_union_at_theta_zero": true,
+      "theta_zero_restricted_survivors": [
+        [
+          "41/88",
+          "15/32"
+        ],
+        [
+          "17/32",
+          "47/88"
+        ]
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "tight13",
+      "fastest_speed": 13,
+      "residue_periods": [
+        [
+          1,
+          13
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "protocol_offset_alignment": [
+        {
+          "offset": 0,
+          "speed11_start_phase": "0",
+          "single_shift_pair_1_11_determinant_mod_V": 0,
+          "common_start_pair_relation_preserved": true,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 1,
+          "speed11_start_phase": "11/13",
+          "single_shift_pair_1_11_determinant_mod_V": 11,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 2,
+          "speed11_start_phase": "9/13",
+          "single_shift_pair_1_11_determinant_mod_V": 9,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 3,
+          "speed11_start_phase": "7/13",
+          "single_shift_pair_1_11_determinant_mod_V": 7,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 4,
+          "speed11_start_phase": "5/13",
+          "single_shift_pair_1_11_determinant_mod_V": 5,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 5,
+          "speed11_start_phase": "3/13",
+          "single_shift_pair_1_11_determinant_mod_V": 3,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 6,
+          "speed11_start_phase": "1/13",
+          "single_shift_pair_1_11_determinant_mod_V": 1,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 7,
+          "speed11_start_phase": "12/13",
+          "single_shift_pair_1_11_determinant_mod_V": 12,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 8,
+          "speed11_start_phase": "10/13",
+          "single_shift_pair_1_11_determinant_mod_V": 10,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 9,
+          "speed11_start_phase": "8/13",
+          "single_shift_pair_1_11_determinant_mod_V": 8,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 10,
+          "speed11_start_phase": "6/13",
+          "single_shift_pair_1_11_determinant_mod_V": 6,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 11,
+          "speed11_start_phase": "4/13",
+          "single_shift_pair_1_11_determinant_mod_V": 4,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 12,
+          "speed11_start_phase": "2/13",
+          "single_shift_pair_1_11_determinant_mod_V": 2,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        }
+      ],
+      "laps": [
+        {
+          "m": 0,
+          "residues": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "next_residues": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              1,
+              7,
+              0
+            ],
+            [
+              1,
+              11,
+              0
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              0
+            ],
+            [
+              4,
+              11,
+              0
+            ],
+            [
+              5,
+              6,
+              0
+            ],
+            [
+              5,
+              7,
+              0
+            ],
+            [
+              5,
+              11,
+              0
+            ],
+            [
+              6,
+              7,
+              0
+            ],
+            [
+              6,
+              11,
+              0
+            ],
+            [
+              7,
+              11,
+              0
+            ]
+          ]
+        },
+        {
+          "m": 1,
+          "residues": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "next_residues": [
+            2,
+            8,
+            10,
+            12,
+            1,
+            9
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              1,
+              7,
+              0
+            ],
+            [
+              1,
+              11,
+              0
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              0
+            ],
+            [
+              4,
+              11,
+              0
+            ],
+            [
+              5,
+              6,
+              0
+            ],
+            [
+              5,
+              7,
+              0
+            ],
+            [
+              5,
+              11,
+              0
+            ],
+            [
+              6,
+              7,
+              0
+            ],
+            [
+              6,
+              11,
+              0
+            ],
+            [
+              7,
+              11,
+              0
+            ]
+          ]
+        },
+        {
+          "m": 2,
+          "residues": [
+            2,
+            8,
+            10,
+            12,
+            1,
+            9
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "next_residues": [
+            3,
+            12,
+            2,
+            5,
+            8,
+            7
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              1,
+              7,
+              -1
+            ],
+            [
+              1,
+              11,
+              -1
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              -4
+            ],
+            [
+              4,
+              11,
+              -4
+            ],
+            [
+              5,
+              6,
+              0
+            ],
+            [
+              5,
+              7,
+              -5
+            ],
+            [
+              5,
+              11,
+              -5
+            ],
+            [
+              6,
+              7,
+              -6
+            ],
+            [
+              6,
+              11,
+              -6
+            ],
+            [
+              7,
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "m": 3,
+          "residues": [
+            3,
+            12,
+            2,
+            5,
+            8,
+            7
+          ],
+          "quotients": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ],
+          "next_residues": [
+            4,
+            3,
+            7,
+            11,
+            2,
+            5
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              -1
+            ],
+            [
+              1,
+              6,
+              -1
+            ],
+            [
+              1,
+              7,
+              -1
+            ],
+            [
+              1,
+              11,
+              -2
+            ],
+            [
+              4,
+              5,
+              -4
+            ],
+            [
+              4,
+              6,
+              -4
+            ],
+            [
+              4,
+              7,
+              -4
+            ],
+            [
+              4,
+              11,
+              -8
+            ],
+            [
+              5,
+              6,
+              1
+            ],
+            [
+              5,
+              7,
+              2
+            ],
+            [
+              5,
+              11,
+              1
+            ],
+            [
+              6,
+              7,
+              1
+            ],
+            [
+              6,
+              11,
+              -1
+            ],
+            [
+              7,
+              11,
+              -3
+            ]
+          ]
+        },
+        {
+          "m": 4,
+          "residues": [
+            4,
+            3,
+            7,
+            11,
+            2,
+            5
+          ],
+          "quotients": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "next_residues": [
+            5,
+            7,
+            12,
+            4,
+            9,
+            3
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -1
+            ],
+            [
+              1,
+              6,
+              -1
+            ],
+            [
+              1,
+              7,
+              -2
+            ],
+            [
+              1,
+              11,
+              -3
+            ],
+            [
+              4,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              2
+            ],
+            [
+              4,
+              7,
+              -1
+            ],
+            [
+              4,
+              11,
+              -1
+            ],
+            [
+              5,
+              6,
+              1
+            ],
+            [
+              5,
+              7,
+              -3
+            ],
+            [
+              5,
+              11,
+              -4
+            ],
+            [
+              6,
+              7,
+              -5
+            ],
+            [
+              6,
+              11,
+              -7
+            ],
+            [
+              7,
+              11,
+              1
+            ]
+          ]
+        },
+        {
+          "m": 5,
+          "residues": [
+            5,
+            7,
+            12,
+            4,
+            9,
+            3
+          ],
+          "quotients": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            4
+          ],
+          "next_residues": [
+            6,
+            11,
+            4,
+            10,
+            3,
+            1
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -1
+            ],
+            [
+              1,
+              6,
+              -2
+            ],
+            [
+              1,
+              7,
+              -2
+            ],
+            [
+              1,
+              11,
+              -4
+            ],
+            [
+              4,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -1
+            ],
+            [
+              4,
+              11,
+              -5
+            ],
+            [
+              5,
+              6,
+              -4
+            ],
+            [
+              5,
+              7,
+              -3
+            ],
+            [
+              5,
+              11,
+              -9
+            ],
+            [
+              6,
+              7,
+              2
+            ],
+            [
+              6,
+              11,
+              -2
+            ],
+            [
+              7,
+              11,
+              -6
+            ]
+          ]
+        },
+        {
+          "m": 6,
+          "residues": [
+            6,
+            11,
+            4,
+            10,
+            3,
+            1
+          ],
+          "quotients": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            5
+          ],
+          "next_residues": [
+            7,
+            2,
+            9,
+            3,
+            10,
+            12
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -2
+            ],
+            [
+              1,
+              6,
+              -2
+            ],
+            [
+              1,
+              7,
+              -3
+            ],
+            [
+              1,
+              11,
+              -5
+            ],
+            [
+              4,
+              5,
+              -3
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -5
+            ],
+            [
+              4,
+              11,
+              -9
+            ],
+            [
+              5,
+              6,
+              2
+            ],
+            [
+              5,
+              7,
+              -1
+            ],
+            [
+              5,
+              11,
+              -3
+            ],
+            [
+              6,
+              7,
+              -4
+            ],
+            [
+              6,
+              11,
+              -8
+            ],
+            [
+              7,
+              11,
+              -2
+            ]
+          ]
+        },
+        {
+          "m": 7,
+          "residues": [
+            7,
+            2,
+            9,
+            3,
+            10,
+            12
+          ],
+          "quotients": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5
+          ],
+          "next_residues": [
+            8,
+            6,
+            1,
+            9,
+            4,
+            10
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -2
+            ],
+            [
+              1,
+              6,
+              -3
+            ],
+            [
+              1,
+              7,
+              -3
+            ],
+            [
+              1,
+              11,
+              -5
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              2
+            ],
+            [
+              4,
+              11,
+              2
+            ],
+            [
+              5,
+              6,
+              -3
+            ],
+            [
+              5,
+              7,
+              -1
+            ],
+            [
+              5,
+              11,
+              -3
+            ],
+            [
+              6,
+              7,
+              3
+            ],
+            [
+              6,
+              11,
+              3
+            ],
+            [
+              7,
+              11,
+              -2
+            ]
+          ]
+        },
+        {
+          "m": 8,
+          "residues": [
+            8,
+            6,
+            1,
+            9,
+            4,
+            10
+          ],
+          "quotients": [
+            0,
+            2,
+            3,
+            3,
+            4,
+            6
+          ],
+          "next_residues": [
+            9,
+            10,
+            6,
+            2,
+            11,
+            8
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -3
+            ],
+            [
+              1,
+              6,
+              -3
+            ],
+            [
+              1,
+              7,
+              -4
+            ],
+            [
+              1,
+              11,
+              -6
+            ],
+            [
+              4,
+              5,
+              -2
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              -2
+            ],
+            [
+              4,
+              11,
+              -2
+            ],
+            [
+              5,
+              6,
+              3
+            ],
+            [
+              5,
+              7,
+              1
+            ],
+            [
+              5,
+              11,
+              3
+            ],
+            [
+              6,
+              7,
+              -3
+            ],
+            [
+              6,
+              11,
+              -3
+            ],
+            [
+              7,
+              11,
+              2
+            ]
+          ]
+        },
+        {
+          "m": 9,
+          "residues": [
+            9,
+            10,
+            6,
+            2,
+            11,
+            8
+          ],
+          "quotients": [
+            0,
+            2,
+            3,
+            4,
+            4,
+            7
+          ],
+          "next_residues": [
+            10,
+            1,
+            11,
+            8,
+            5,
+            6
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -3
+            ],
+            [
+              1,
+              6,
+              -4
+            ],
+            [
+              1,
+              7,
+              -4
+            ],
+            [
+              1,
+              11,
+              -7
+            ],
+            [
+              4,
+              5,
+              -2
+            ],
+            [
+              4,
+              6,
+              -4
+            ],
+            [
+              4,
+              7,
+              -2
+            ],
+            [
+              4,
+              11,
+              -6
+            ],
+            [
+              5,
+              6,
+              -2
+            ],
+            [
+              5,
+              7,
+              1
+            ],
+            [
+              5,
+              11,
+              -2
+            ],
+            [
+              6,
+              7,
+              4
+            ],
+            [
+              6,
+              11,
+              2
+            ],
+            [
+              7,
+              11,
+              -5
+            ]
+          ]
+        },
+        {
+          "m": 10,
+          "residues": [
+            10,
+            1,
+            11,
+            8,
+            5,
+            6
+          ],
+          "quotients": [
+            0,
+            3,
+            3,
+            4,
+            5,
+            8
+          ],
+          "next_residues": [
+            11,
+            5,
+            3,
+            1,
+            12,
+            4
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -3
+            ],
+            [
+              1,
+              6,
+              -4
+            ],
+            [
+              1,
+              7,
+              -5
+            ],
+            [
+              1,
+              11,
+              -8
+            ],
+            [
+              4,
+              5,
+              3
+            ],
+            [
+              4,
+              6,
+              2
+            ],
+            [
+              4,
+              7,
+              1
+            ],
+            [
+              4,
+              11,
+              1
+            ],
+            [
+              5,
+              6,
+              -2
+            ],
+            [
+              5,
+              7,
+              -4
+            ],
+            [
+              5,
+              11,
+              -7
+            ],
+            [
+              6,
+              7,
+              -2
+            ],
+            [
+              6,
+              11,
+              -4
+            ],
+            [
+              7,
+              11,
+              -1
+            ]
+          ]
+        },
+        {
+          "m": 11,
+          "residues": [
+            11,
+            5,
+            3,
+            1,
+            12,
+            4
+          ],
+          "quotients": [
+            0,
+            3,
+            4,
+            5,
+            5,
+            9
+          ],
+          "next_residues": [
+            12,
+            9,
+            8,
+            7,
+            6,
+            2
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -4
+            ],
+            [
+              1,
+              6,
+              -5
+            ],
+            [
+              1,
+              7,
+              -5
+            ],
+            [
+              1,
+              11,
+              -9
+            ],
+            [
+              4,
+              5,
+              -1
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              1
+            ],
+            [
+              4,
+              11,
+              -3
+            ],
+            [
+              5,
+              6,
+              -1
+            ],
+            [
+              5,
+              7,
+              3
+            ],
+            [
+              5,
+              11,
+              -1
+            ],
+            [
+              6,
+              7,
+              5
+            ],
+            [
+              6,
+              11,
+              1
+            ],
+            [
+              7,
+              11,
+              -8
+            ]
+          ]
+        },
+        {
+          "m": 12,
+          "residues": [
+            12,
+            9,
+            8,
+            7,
+            6,
+            2
+          ],
+          "quotients": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            10
+          ],
+          "next_residues": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -4
+            ],
+            [
+              1,
+              6,
+              -5
+            ],
+            [
+              1,
+              7,
+              -6
+            ],
+            [
+              1,
+              11,
+              -10
+            ],
+            [
+              4,
+              5,
+              -1
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -3
+            ],
+            [
+              4,
+              11,
+              -7
+            ],
+            [
+              5,
+              6,
+              -1
+            ],
+            [
+              5,
+              7,
+              -2
+            ],
+            [
+              5,
+              11,
+              -6
+            ],
+            [
+              6,
+              7,
+              -1
+            ],
+            [
+              6,
+              11,
+              -5
+            ],
+            [
+              7,
+              11,
+              -4
+            ]
+          ]
+        }
+      ],
+      "fastest_effect_on_A": [
+        {
+          "residual_cell": [
+            "1/8",
+            "1/8"
+          ],
+          "fastest_image": [
+            "13/8",
+            "13/8"
+          ],
+          "survivors": [
+            [
+              "1/8",
+              "1/8"
+            ]
+          ],
+          "point_phase": "5/8",
+          "point_safe": true
+        },
+        {
+          "residual_cell": [
+            "17/56",
+            "5/16"
+          ],
+          "fastest_image": [
+            "221/56",
+            "65/16"
+          ],
+          "survivors": [],
+          "strict_cover": {
+            "collision_lap": 4,
+            "lower_phase_margin": "1/14",
+            "upper_phase_margin": "1/16"
+          }
+        },
+        {
+          "residual_cell": [
+            "3/8",
+            "3/8"
+          ],
+          "fastest_image": [
+            "39/8",
+            "39/8"
+          ],
+          "survivors": [
+            [
+              "3/8",
+              "3/8"
+            ]
+          ],
+          "point_phase": "7/8",
+          "point_safe": true
+        },
+        {
+          "residual_cell": [
+            "41/88",
+            "15/32"
+          ],
+          "fastest_image": [
+            "533/88",
+            "195/32"
+          ],
+          "survivors": [],
+          "strict_cover": {
+            "collision_lap": 6,
+            "lower_phase_margin": "2/11",
+            "upper_phase_margin": "1/32"
+          }
+        },
+        {
+          "residual_cell": [
+            "17/32",
+            "47/88"
+          ],
+          "fastest_image": [
+            "221/32",
+            "611/88"
+          ],
+          "survivors": [],
+          "strict_cover": {
+            "collision_lap": 7,
+            "lower_phase_margin": "1/32",
+            "upper_phase_margin": "2/11"
+          }
+        },
+        {
+          "residual_cell": [
+            "5/8",
+            "5/8"
+          ],
+          "fastest_image": [
+            "65/8",
+            "65/8"
+          ],
+          "survivors": [
+            [
+              "5/8",
+              "5/8"
+            ]
+          ],
+          "point_phase": "1/8",
+          "point_safe": true
+        },
+        {
+          "residual_cell": [
+            "11/16",
+            "39/56"
+          ],
+          "fastest_image": [
+            "143/16",
+            "507/56"
+          ],
+          "survivors": [],
+          "strict_cover": {
+            "collision_lap": 9,
+            "lower_phase_margin": "1/16",
+            "upper_phase_margin": "1/14"
+          }
+        },
+        {
+          "residual_cell": [
+            "7/8",
+            "7/8"
+          ],
+          "fastest_image": [
+            "91/8",
+            "91/8"
+          ],
+          "survivors": [
+            [
+              "7/8",
+              "7/8"
+            ]
+          ],
+          "point_phase": "3/8",
+          "point_safe": true
+        }
+      ],
+      "allowed_cells": [
+        {
+          "interval": [
+            "1/8",
+            "1/8"
+          ],
+          "duration": "0",
+          "lap_vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "1/32",
+              "7/32"
+            ],
+            [
+              "1/40",
+              "7/40"
+            ],
+            [
+              "1/48",
+              "7/48"
+            ],
+            [
+              "1/56",
+              "1/8"
+            ],
+            [
+              "9/88",
+              "15/88"
+            ],
+            [
+              "9/104",
+              "15/104"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              1
+            ],
+            "upper": [
+              7
+            ]
+          },
+          "right_controllers": {
+            "lower": [
+              1
+            ],
+            "upper": [
+              7
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 1,
+              "upper_speed": 7,
+              "lower_lap": 0,
+              "upper_lap": 0,
+              "integer_gap": 0,
+              "width": "0"
+            }
+          ],
+          "witness": {
+            "time": "1/8",
+            "distances": [
+              "1/8",
+              "1/2",
+              "3/8",
+              "1/4",
+              "1/8",
+              "3/8",
+              "3/8"
+            ],
+            "kind": "equality"
+          },
+          "fastest_lap": 1,
+          "normalized_interval": [
+            "5/8",
+            "5/8"
+          ],
+          "shared_residues": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "interval": [
+            "3/8",
+            "3/8"
+          ],
+          "duration": "0",
+          "lap_vector": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            4,
+            4
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "9/32",
+              "15/32"
+            ],
+            [
+              "9/40",
+              "3/8"
+            ],
+            [
+              "17/48",
+              "23/48"
+            ],
+            [
+              "17/56",
+              "23/56"
+            ],
+            [
+              "3/8",
+              "39/88"
+            ],
+            [
+              "33/104",
+              "3/8"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              11
+            ],
+            "upper": [
+              5,
+              13
+            ]
+          },
+          "right_controllers": {
+            "lower": [
+              11
+            ],
+            "upper": [
+              5,
+              13
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 11,
+              "upper_speed": 5,
+              "lower_lap": 4,
+              "upper_lap": 1,
+              "integer_gap": 0,
+              "width": "0"
+            },
+            {
+              "lower_speed": 11,
+              "upper_speed": 13,
+              "lower_lap": 4,
+              "upper_lap": 4,
+              "integer_gap": 0,
+              "width": "0"
+            }
+          ],
+          "witness": {
+            "time": "3/8",
+            "distances": [
+              "3/8",
+              "1/2",
+              "1/8",
+              "1/4",
+              "3/8",
+              "1/8",
+              "1/8"
+            ],
+            "kind": "equality"
+          },
+          "fastest_lap": 4,
+          "normalized_interval": [
+            "7/8",
+            "7/8"
+          ],
+          "shared_residues": [
+            4,
+            3,
+            7,
+            11,
+            2,
+            5
+          ]
+        },
+        {
+          "interval": [
+            "5/8",
+            "5/8"
+          ],
+          "duration": "0",
+          "lap_vector": [
+            0,
+            2,
+            3,
+            3,
+            4,
+            6,
+            8
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "17/32",
+              "23/32"
+            ],
+            [
+              "5/8",
+              "31/40"
+            ],
+            [
+              "25/48",
+              "31/48"
+            ],
+            [
+              "33/56",
+              "39/56"
+            ],
+            [
+              "49/88",
+              "5/8"
+            ],
+            [
+              "5/8",
+              "71/104"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              5,
+              13
+            ],
+            "upper": [
+              11
+            ]
+          },
+          "right_controllers": {
+            "lower": [
+              5,
+              13
+            ],
+            "upper": [
+              11
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 5,
+              "upper_speed": 11,
+              "lower_lap": 3,
+              "upper_lap": 6,
+              "integer_gap": 0,
+              "width": "0"
+            },
+            {
+              "lower_speed": 13,
+              "upper_speed": 11,
+              "lower_lap": 8,
+              "upper_lap": 6,
+              "integer_gap": 0,
+              "width": "0"
+            }
+          ],
+          "witness": {
+            "time": "5/8",
+            "distances": [
+              "3/8",
+              "1/2",
+              "1/8",
+              "1/4",
+              "3/8",
+              "1/8",
+              "1/8"
+            ],
+            "kind": "equality"
+          },
+          "fastest_lap": 8,
+          "normalized_interval": [
+            "1/8",
+            "1/8"
+          ],
+          "shared_residues": [
+            8,
+            6,
+            1,
+            9,
+            4,
+            10
+          ]
+        },
+        {
+          "interval": [
+            "7/8",
+            "7/8"
+          ],
+          "duration": "0",
+          "lap_vector": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            9,
+            11
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "25/32",
+              "31/32"
+            ],
+            [
+              "33/40",
+              "39/40"
+            ],
+            [
+              "41/48",
+              "47/48"
+            ],
+            [
+              "7/8",
+              "55/56"
+            ],
+            [
+              "73/88",
+              "79/88"
+            ],
+            [
+              "89/104",
+              "95/104"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              7
+            ],
+            "upper": [
+              1
+            ]
+          },
+          "right_controllers": {
+            "lower": [
+              7
+            ],
+            "upper": [
+              1
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 7,
+              "upper_speed": 1,
+              "lower_lap": 6,
+              "upper_lap": 0,
+              "integer_gap": 0,
+              "width": "0"
+            }
+          ],
+          "witness": {
+            "time": "7/8",
+            "distances": [
+              "1/8",
+              "1/2",
+              "3/8",
+              "1/4",
+              "1/8",
+              "3/8",
+              "3/8"
+            ],
+            "kind": "equality"
+          },
+          "fastest_lap": 11,
+          "normalized_interval": [
+            "3/8",
+            "3/8"
+          ],
+          "shared_residues": [
+            11,
+            5,
+            3,
+            1,
+            12,
+            4
+          ]
+        }
+      ],
+      "allowed_duration": "0",
+      "isolated_points": [
+        "1/8",
+        "3/8",
+        "5/8",
+        "7/8"
+      ],
+      "pair_contact_checks": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "gcd": 1,
+          "primitive_sum": 5,
+          "primitive_difference": 3,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "gcd": 1,
+          "primitive_sum": 6,
+          "primitive_difference": 4,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "gcd": 1,
+          "primitive_sum": 7,
+          "primitive_difference": 5,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 8,
+          "primitive_difference": 6,
+          "opposite_contact_possible": true,
+          "same_contact_possible": false,
+          "contacts": [
+            {
+              "time": "1/8",
+              "orientations": [
+                "lower",
+                "upper"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            },
+            {
+              "time": "7/8",
+              "orientations": [
+                "upper",
+                "lower"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            }
+          ]
+        },
+        {
+          "speeds": [
+            1,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 12,
+          "primitive_difference": 10,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            13
+          ],
+          "gcd": 1,
+          "primitive_sum": 14,
+          "primitive_difference": 12,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "gcd": 1,
+          "primitive_sum": 9,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "gcd": 2,
+          "primitive_sum": 5,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 11,
+          "primitive_difference": 3,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 15,
+          "primitive_difference": 7,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            13
+          ],
+          "gcd": 1,
+          "primitive_sum": 17,
+          "primitive_difference": 9,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "gcd": 1,
+          "primitive_sum": 11,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 12,
+          "primitive_difference": 2,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            5,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 16,
+          "primitive_difference": 6,
+          "opposite_contact_possible": true,
+          "same_contact_possible": false,
+          "contacts": [
+            {
+              "time": "3/8",
+              "orientations": [
+                "upper",
+                "lower"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            },
+            {
+              "time": "5/8",
+              "orientations": [
+                "lower",
+                "upper"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            }
+          ]
+        },
+        {
+          "speeds": [
+            5,
+            13
+          ],
+          "gcd": 1,
+          "primitive_sum": 18,
+          "primitive_difference": 8,
+          "opposite_contact_possible": false,
+          "same_contact_possible": true,
+          "contacts": [
+            {
+              "time": "3/8",
+              "orientations": [
+                "upper",
+                "upper"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            },
+            {
+              "time": "5/8",
+              "orientations": [
+                "lower",
+                "lower"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            }
+          ]
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 13,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 17,
+          "primitive_difference": 5,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            6,
+            13
+          ],
+          "gcd": 1,
+          "primitive_sum": 19,
+          "primitive_difference": 7,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 18,
+          "primitive_difference": 4,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            7,
+            13
+          ],
+          "gcd": 1,
+          "primitive_sum": 20,
+          "primitive_difference": 6,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            11,
+            13
+          ],
+          "gcd": 1,
+          "primitive_sum": 24,
+          "primitive_difference": 2,
+          "opposite_contact_possible": true,
+          "same_contact_possible": false,
+          "contacts": [
+            {
+              "time": "3/8",
+              "orientations": [
+                "lower",
+                "upper"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            },
+            {
+              "time": "5/8",
+              "orientations": [
+                "upper",
+                "lower"
+              ],
+              "all_runners_safe": true,
+              "blocking_speeds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strict16",
+      "fastest_speed": 16,
+      "residue_periods": [
+        [
+          1,
+          16
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "protocol_offset_alignment": [
+        {
+          "offset": 0,
+          "speed11_start_phase": "0",
+          "single_shift_pair_1_11_determinant_mod_V": 0,
+          "common_start_pair_relation_preserved": true,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 1,
+          "speed11_start_phase": "11/16",
+          "single_shift_pair_1_11_determinant_mod_V": 11,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 2,
+          "speed11_start_phase": "3/8",
+          "single_shift_pair_1_11_determinant_mod_V": 6,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 3,
+          "speed11_start_phase": "1/16",
+          "single_shift_pair_1_11_determinant_mod_V": 1,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 4,
+          "speed11_start_phase": "3/4",
+          "single_shift_pair_1_11_determinant_mod_V": 12,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 5,
+          "speed11_start_phase": "7/16",
+          "single_shift_pair_1_11_determinant_mod_V": 7,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 6,
+          "speed11_start_phase": "1/8",
+          "single_shift_pair_1_11_determinant_mod_V": 2,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 7,
+          "speed11_start_phase": "13/16",
+          "single_shift_pair_1_11_determinant_mod_V": 13,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 8,
+          "speed11_start_phase": "1/2",
+          "single_shift_pair_1_11_determinant_mod_V": 8,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 9,
+          "speed11_start_phase": "3/16",
+          "single_shift_pair_1_11_determinant_mod_V": 3,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 10,
+          "speed11_start_phase": "7/8",
+          "single_shift_pair_1_11_determinant_mod_V": 14,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 11,
+          "speed11_start_phase": "9/16",
+          "single_shift_pair_1_11_determinant_mod_V": 9,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 12,
+          "speed11_start_phase": "1/4",
+          "single_shift_pair_1_11_determinant_mod_V": 4,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 13,
+          "speed11_start_phase": "15/16",
+          "single_shift_pair_1_11_determinant_mod_V": 15,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 14,
+          "speed11_start_phase": "5/8",
+          "single_shift_pair_1_11_determinant_mod_V": 10,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        },
+        {
+          "offset": 15,
+          "speed11_start_phase": "5/16",
+          "single_shift_pair_1_11_determinant_mod_V": 5,
+          "common_start_pair_relation_preserved": false,
+          "all_runner_shift_pair_relation_preserved": true
+        }
+      ],
+      "laps": [
+        {
+          "m": 0,
+          "residues": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "next_residues": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              1,
+              7,
+              0
+            ],
+            [
+              1,
+              11,
+              0
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              0
+            ],
+            [
+              4,
+              11,
+              0
+            ],
+            [
+              5,
+              6,
+              0
+            ],
+            [
+              5,
+              7,
+              0
+            ],
+            [
+              5,
+              11,
+              0
+            ],
+            [
+              6,
+              7,
+              0
+            ],
+            [
+              6,
+              11,
+              0
+            ],
+            [
+              7,
+              11,
+              0
+            ]
+          ]
+        },
+        {
+          "m": 1,
+          "residues": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            11
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "next_residues": [
+            2,
+            8,
+            10,
+            12,
+            14,
+            6
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              1,
+              7,
+              0
+            ],
+            [
+              1,
+              11,
+              0
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              0
+            ],
+            [
+              4,
+              11,
+              0
+            ],
+            [
+              5,
+              6,
+              0
+            ],
+            [
+              5,
+              7,
+              0
+            ],
+            [
+              5,
+              11,
+              0
+            ],
+            [
+              6,
+              7,
+              0
+            ],
+            [
+              6,
+              11,
+              0
+            ],
+            [
+              7,
+              11,
+              0
+            ]
+          ]
+        },
+        {
+          "m": 2,
+          "residues": [
+            2,
+            8,
+            10,
+            12,
+            14,
+            6
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "next_residues": [
+            3,
+            12,
+            15,
+            2,
+            5,
+            1
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              0
+            ],
+            [
+              1,
+              7,
+              0
+            ],
+            [
+              1,
+              11,
+              -1
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              0
+            ],
+            [
+              4,
+              11,
+              -4
+            ],
+            [
+              5,
+              6,
+              0
+            ],
+            [
+              5,
+              7,
+              0
+            ],
+            [
+              5,
+              11,
+              -5
+            ],
+            [
+              6,
+              7,
+              0
+            ],
+            [
+              6,
+              11,
+              -6
+            ],
+            [
+              7,
+              11,
+              -7
+            ]
+          ]
+        },
+        {
+          "m": 3,
+          "residues": [
+            3,
+            12,
+            15,
+            2,
+            5,
+            1
+          ],
+          "quotients": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "next_residues": [
+            4,
+            0,
+            4,
+            8,
+            12,
+            12
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              5,
+              0
+            ],
+            [
+              1,
+              6,
+              -1
+            ],
+            [
+              1,
+              7,
+              -1
+            ],
+            [
+              1,
+              11,
+              -2
+            ],
+            [
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              6,
+              -4
+            ],
+            [
+              4,
+              7,
+              -4
+            ],
+            [
+              4,
+              11,
+              -8
+            ],
+            [
+              5,
+              6,
+              -5
+            ],
+            [
+              5,
+              7,
+              -5
+            ],
+            [
+              5,
+              11,
+              -10
+            ],
+            [
+              6,
+              7,
+              1
+            ],
+            [
+              6,
+              11,
+              -1
+            ],
+            [
+              7,
+              11,
+              -3
+            ]
+          ]
+        },
+        {
+          "m": 4,
+          "residues": [
+            4,
+            0,
+            4,
+            8,
+            12,
+            12
+          ],
+          "quotients": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "next_residues": [
+            5,
+            4,
+            9,
+            14,
+            3,
+            7
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -1
+            ],
+            [
+              1,
+              6,
+              -1
+            ],
+            [
+              1,
+              7,
+              -1
+            ],
+            [
+              1,
+              11,
+              -2
+            ],
+            [
+              4,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              2
+            ],
+            [
+              4,
+              7,
+              3
+            ],
+            [
+              4,
+              11,
+              3
+            ],
+            [
+              5,
+              6,
+              1
+            ],
+            [
+              5,
+              7,
+              2
+            ],
+            [
+              5,
+              11,
+              1
+            ],
+            [
+              6,
+              7,
+              1
+            ],
+            [
+              6,
+              11,
+              -1
+            ],
+            [
+              7,
+              11,
+              -3
+            ]
+          ]
+        },
+        {
+          "m": 5,
+          "residues": [
+            5,
+            4,
+            9,
+            14,
+            3,
+            7
+          ],
+          "quotients": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "next_residues": [
+            6,
+            8,
+            14,
+            4,
+            10,
+            2
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -1
+            ],
+            [
+              1,
+              6,
+              -1
+            ],
+            [
+              1,
+              7,
+              -2
+            ],
+            [
+              1,
+              11,
+              -3
+            ],
+            [
+              4,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              2
+            ],
+            [
+              4,
+              7,
+              -1
+            ],
+            [
+              4,
+              11,
+              -1
+            ],
+            [
+              5,
+              6,
+              1
+            ],
+            [
+              5,
+              7,
+              -3
+            ],
+            [
+              5,
+              11,
+              -4
+            ],
+            [
+              6,
+              7,
+              -5
+            ],
+            [
+              6,
+              11,
+              -7
+            ],
+            [
+              7,
+              11,
+              1
+            ]
+          ]
+        },
+        {
+          "m": 6,
+          "residues": [
+            6,
+            8,
+            14,
+            4,
+            10,
+            2
+          ],
+          "quotients": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            4
+          ],
+          "next_residues": [
+            7,
+            12,
+            3,
+            10,
+            1,
+            13
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -1
+            ],
+            [
+              1,
+              6,
+              -2
+            ],
+            [
+              1,
+              7,
+              -2
+            ],
+            [
+              1,
+              11,
+              -4
+            ],
+            [
+              4,
+              5,
+              1
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -1
+            ],
+            [
+              4,
+              11,
+              -5
+            ],
+            [
+              5,
+              6,
+              -4
+            ],
+            [
+              5,
+              7,
+              -3
+            ],
+            [
+              5,
+              11,
+              -9
+            ],
+            [
+              6,
+              7,
+              2
+            ],
+            [
+              6,
+              11,
+              -2
+            ],
+            [
+              7,
+              11,
+              -6
+            ]
+          ]
+        },
+        {
+          "m": 7,
+          "residues": [
+            7,
+            12,
+            3,
+            10,
+            1,
+            13
+          ],
+          "quotients": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            4
+          ],
+          "next_residues": [
+            8,
+            0,
+            8,
+            0,
+            8,
+            8
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -1
+            ],
+            [
+              1,
+              5,
+              -2
+            ],
+            [
+              1,
+              6,
+              -2
+            ],
+            [
+              1,
+              7,
+              -3
+            ],
+            [
+              1,
+              11,
+              -4
+            ],
+            [
+              4,
+              5,
+              -3
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -5
+            ],
+            [
+              4,
+              11,
+              -5
+            ],
+            [
+              5,
+              6,
+              2
+            ],
+            [
+              5,
+              7,
+              -1
+            ],
+            [
+              5,
+              11,
+              2
+            ],
+            [
+              6,
+              7,
+              -4
+            ],
+            [
+              6,
+              11,
+              -2
+            ],
+            [
+              7,
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "m": 8,
+          "residues": [
+            8,
+            0,
+            8,
+            0,
+            8,
+            8
+          ],
+          "quotients": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5
+          ],
+          "next_residues": [
+            9,
+            4,
+            13,
+            6,
+            15,
+            3
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -2
+            ],
+            [
+              1,
+              6,
+              -3
+            ],
+            [
+              1,
+              7,
+              -3
+            ],
+            [
+              1,
+              11,
+              -5
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              2
+            ],
+            [
+              4,
+              11,
+              2
+            ],
+            [
+              5,
+              6,
+              -3
+            ],
+            [
+              5,
+              7,
+              -1
+            ],
+            [
+              5,
+              11,
+              -3
+            ],
+            [
+              6,
+              7,
+              3
+            ],
+            [
+              6,
+              11,
+              3
+            ],
+            [
+              7,
+              11,
+              -2
+            ]
+          ]
+        },
+        {
+          "m": 9,
+          "residues": [
+            9,
+            4,
+            13,
+            6,
+            15,
+            3
+          ],
+          "quotients": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            6
+          ],
+          "next_residues": [
+            10,
+            8,
+            2,
+            12,
+            6,
+            14
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -2
+            ],
+            [
+              1,
+              6,
+              -3
+            ],
+            [
+              1,
+              7,
+              -3
+            ],
+            [
+              1,
+              11,
+              -6
+            ],
+            [
+              4,
+              5,
+              2
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              2
+            ],
+            [
+              4,
+              11,
+              -2
+            ],
+            [
+              5,
+              6,
+              -3
+            ],
+            [
+              5,
+              7,
+              -1
+            ],
+            [
+              5,
+              11,
+              -8
+            ],
+            [
+              6,
+              7,
+              3
+            ],
+            [
+              6,
+              11,
+              -3
+            ],
+            [
+              7,
+              11,
+              -9
+            ]
+          ]
+        },
+        {
+          "m": 10,
+          "residues": [
+            10,
+            8,
+            2,
+            12,
+            6,
+            14
+          ],
+          "quotients": [
+            0,
+            2,
+            3,
+            3,
+            4,
+            6
+          ],
+          "next_residues": [
+            11,
+            12,
+            7,
+            2,
+            13,
+            9
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -3
+            ],
+            [
+              1,
+              6,
+              -3
+            ],
+            [
+              1,
+              7,
+              -4
+            ],
+            [
+              1,
+              11,
+              -6
+            ],
+            [
+              4,
+              5,
+              -2
+            ],
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              4,
+              7,
+              -2
+            ],
+            [
+              4,
+              11,
+              -2
+            ],
+            [
+              5,
+              6,
+              3
+            ],
+            [
+              5,
+              7,
+              1
+            ],
+            [
+              5,
+              11,
+              3
+            ],
+            [
+              6,
+              7,
+              -3
+            ],
+            [
+              6,
+              11,
+              -3
+            ],
+            [
+              7,
+              11,
+              2
+            ]
+          ]
+        },
+        {
+          "m": 11,
+          "residues": [
+            11,
+            12,
+            7,
+            2,
+            13,
+            9
+          ],
+          "quotients": [
+            0,
+            2,
+            3,
+            4,
+            4,
+            7
+          ],
+          "next_residues": [
+            12,
+            0,
+            12,
+            8,
+            4,
+            4
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -2
+            ],
+            [
+              1,
+              5,
+              -3
+            ],
+            [
+              1,
+              6,
+              -4
+            ],
+            [
+              1,
+              7,
+              -4
+            ],
+            [
+              1,
+              11,
+              -7
+            ],
+            [
+              4,
+              5,
+              -2
+            ],
+            [
+              4,
+              6,
+              -4
+            ],
+            [
+              4,
+              7,
+              -2
+            ],
+            [
+              4,
+              11,
+              -6
+            ],
+            [
+              5,
+              6,
+              -2
+            ],
+            [
+              5,
+              7,
+              1
+            ],
+            [
+              5,
+              11,
+              -2
+            ],
+            [
+              6,
+              7,
+              4
+            ],
+            [
+              6,
+              11,
+              2
+            ],
+            [
+              7,
+              11,
+              -5
+            ]
+          ]
+        },
+        {
+          "m": 12,
+          "residues": [
+            12,
+            0,
+            12,
+            8,
+            4,
+            4
+          ],
+          "quotients": [
+            0,
+            3,
+            3,
+            4,
+            5,
+            8
+          ],
+          "next_residues": [
+            13,
+            4,
+            1,
+            14,
+            11,
+            15
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -3
+            ],
+            [
+              1,
+              6,
+              -4
+            ],
+            [
+              1,
+              7,
+              -5
+            ],
+            [
+              1,
+              11,
+              -8
+            ],
+            [
+              4,
+              5,
+              3
+            ],
+            [
+              4,
+              6,
+              2
+            ],
+            [
+              4,
+              7,
+              1
+            ],
+            [
+              4,
+              11,
+              1
+            ],
+            [
+              5,
+              6,
+              -2
+            ],
+            [
+              5,
+              7,
+              -4
+            ],
+            [
+              5,
+              11,
+              -7
+            ],
+            [
+              6,
+              7,
+              -2
+            ],
+            [
+              6,
+              11,
+              -4
+            ],
+            [
+              7,
+              11,
+              -1
+            ]
+          ]
+        },
+        {
+          "m": 13,
+          "residues": [
+            13,
+            4,
+            1,
+            14,
+            11,
+            15
+          ],
+          "quotients": [
+            0,
+            3,
+            4,
+            4,
+            5,
+            8
+          ],
+          "next_residues": [
+            14,
+            8,
+            6,
+            4,
+            2,
+            10
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -4
+            ],
+            [
+              1,
+              6,
+              -4
+            ],
+            [
+              1,
+              7,
+              -5
+            ],
+            [
+              1,
+              11,
+              -8
+            ],
+            [
+              4,
+              5,
+              -1
+            ],
+            [
+              4,
+              6,
+              2
+            ],
+            [
+              4,
+              7,
+              1
+            ],
+            [
+              4,
+              11,
+              1
+            ],
+            [
+              5,
+              6,
+              4
+            ],
+            [
+              5,
+              7,
+              3
+            ],
+            [
+              5,
+              11,
+              4
+            ],
+            [
+              6,
+              7,
+              -2
+            ],
+            [
+              6,
+              11,
+              -4
+            ],
+            [
+              7,
+              11,
+              -1
+            ]
+          ]
+        },
+        {
+          "m": 14,
+          "residues": [
+            14,
+            8,
+            6,
+            4,
+            2,
+            10
+          ],
+          "quotients": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            9
+          ],
+          "next_residues": [
+            15,
+            12,
+            11,
+            10,
+            9,
+            5
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -4
+            ],
+            [
+              1,
+              6,
+              -5
+            ],
+            [
+              1,
+              7,
+              -6
+            ],
+            [
+              1,
+              11,
+              -9
+            ],
+            [
+              4,
+              5,
+              -1
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -3
+            ],
+            [
+              4,
+              11,
+              -3
+            ],
+            [
+              5,
+              6,
+              -1
+            ],
+            [
+              5,
+              7,
+              -2
+            ],
+            [
+              5,
+              11,
+              -1
+            ],
+            [
+              6,
+              7,
+              -1
+            ],
+            [
+              6,
+              11,
+              1
+            ],
+            [
+              7,
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "m": 15,
+          "residues": [
+            15,
+            12,
+            11,
+            10,
+            9,
+            5
+          ],
+          "quotients": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            10
+          ],
+          "next_residues": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "pair_determinants_divided_by_V": [
+            [
+              1,
+              4,
+              -3
+            ],
+            [
+              1,
+              5,
+              -4
+            ],
+            [
+              1,
+              6,
+              -5
+            ],
+            [
+              1,
+              7,
+              -6
+            ],
+            [
+              1,
+              11,
+              -10
+            ],
+            [
+              4,
+              5,
+              -1
+            ],
+            [
+              4,
+              6,
+              -2
+            ],
+            [
+              4,
+              7,
+              -3
+            ],
+            [
+              4,
+              11,
+              -7
+            ],
+            [
+              5,
+              6,
+              -1
+            ],
+            [
+              5,
+              7,
+              -2
+            ],
+            [
+              5,
+              11,
+              -6
+            ],
+            [
+              6,
+              7,
+              -1
+            ],
+            [
+              6,
+              11,
+              -5
+            ],
+            [
+              7,
+              11,
+              -4
+            ]
+          ]
+        }
+      ],
+      "fastest_effect_on_A": [
+        {
+          "residual_cell": [
+            "1/8",
+            "1/8"
+          ],
+          "fastest_image": [
+            "2",
+            "2"
+          ],
+          "survivors": [],
+          "point_phase": "0",
+          "point_safe": false
+        },
+        {
+          "residual_cell": [
+            "17/56",
+            "5/16"
+          ],
+          "fastest_image": [
+            "34/7",
+            "5"
+          ],
+          "survivors": [
+            [
+              "17/56",
+              "39/128"
+            ]
+          ]
+        },
+        {
+          "residual_cell": [
+            "3/8",
+            "3/8"
+          ],
+          "fastest_image": [
+            "6",
+            "6"
+          ],
+          "survivors": [],
+          "point_phase": "0",
+          "point_safe": false
+        },
+        {
+          "residual_cell": [
+            "41/88",
+            "15/32"
+          ],
+          "fastest_image": [
+            "82/11",
+            "15/2"
+          ],
+          "survivors": [
+            [
+              "41/88",
+              "15/32"
+            ]
+          ]
+        },
+        {
+          "residual_cell": [
+            "17/32",
+            "47/88"
+          ],
+          "fastest_image": [
+            "17/2",
+            "94/11"
+          ],
+          "survivors": [
+            [
+              "17/32",
+              "47/88"
+            ]
+          ]
+        },
+        {
+          "residual_cell": [
+            "5/8",
+            "5/8"
+          ],
+          "fastest_image": [
+            "10",
+            "10"
+          ],
+          "survivors": [],
+          "point_phase": "0",
+          "point_safe": false
+        },
+        {
+          "residual_cell": [
+            "11/16",
+            "39/56"
+          ],
+          "fastest_image": [
+            "11",
+            "78/7"
+          ],
+          "survivors": [
+            [
+              "89/128",
+              "39/56"
+            ]
+          ]
+        },
+        {
+          "residual_cell": [
+            "7/8",
+            "7/8"
+          ],
+          "fastest_image": [
+            "14",
+            "14"
+          ],
+          "survivors": [],
+          "point_phase": "0",
+          "point_safe": false
+        }
+      ],
+      "allowed_cells": [
+        {
+          "interval": [
+            "17/56",
+            "39/128"
+          ],
+          "duration": "1/896",
+          "lap_vector": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            3,
+            4
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "9/32",
+              "15/32"
+            ],
+            [
+              "9/40",
+              "3/8"
+            ],
+            [
+              "3/16",
+              "5/16"
+            ],
+            [
+              "17/56",
+              "23/56"
+            ],
+            [
+              "25/88",
+              "31/88"
+            ],
+            [
+              "33/128",
+              "39/128"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              7
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              16
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 7,
+              "upper_speed": 16,
+              "lower_lap": 2,
+              "upper_lap": 4,
+              "integer_gap": 1,
+              "width": "1/896"
+            }
+          ],
+          "witness": {
+            "time": "545/1792",
+            "distances": [
+              "545/1792",
+              "97/448",
+              "859/1792",
+              "157/896",
+              "33/256",
+              "619/1792",
+              "15/112"
+            ],
+            "kind": "strict"
+          },
+          "fastest_lap": 4,
+          "normalized_interval": [
+            "6/7",
+            "7/8"
+          ],
+          "shared_residues": [
+            4,
+            0,
+            4,
+            8,
+            12,
+            12
+          ]
+        },
+        {
+          "interval": [
+            "41/88",
+            "15/32"
+          ],
+          "duration": "1/352",
+          "lap_vector": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            5,
+            7
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "9/32",
+              "15/32"
+            ],
+            [
+              "17/40",
+              "23/40"
+            ],
+            [
+              "17/48",
+              "23/48"
+            ],
+            [
+              "25/56",
+              "31/56"
+            ],
+            [
+              "41/88",
+              "47/88"
+            ],
+            [
+              "57/128",
+              "63/128"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              11
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              4
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 11,
+              "upper_speed": 4,
+              "lower_lap": 5,
+              "upper_lap": 1,
+              "integer_gap": 1,
+              "width": "1/352"
+            }
+          ],
+          "witness": {
+            "time": "329/704",
+            "distances": [
+              "329/704",
+              "23/176",
+              "237/704",
+              "69/352",
+              "191/704",
+              "9/64",
+              "21/44"
+            ],
+            "kind": "strict"
+          },
+          "fastest_lap": 7,
+          "normalized_interval": [
+            "5/11",
+            "1/2"
+          ],
+          "shared_residues": [
+            7,
+            12,
+            3,
+            10,
+            1,
+            13
+          ]
+        },
+        {
+          "interval": [
+            "17/32",
+            "47/88"
+          ],
+          "duration": "1/352",
+          "lap_vector": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            5,
+            8
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "17/32",
+              "23/32"
+            ],
+            [
+              "17/40",
+              "23/40"
+            ],
+            [
+              "25/48",
+              "31/48"
+            ],
+            [
+              "25/56",
+              "31/56"
+            ],
+            [
+              "41/88",
+              "47/88"
+            ],
+            [
+              "65/128",
+              "71/128"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              4
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              11
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 4,
+              "upper_speed": 11,
+              "lower_lap": 2,
+              "upper_lap": 5,
+              "integer_gap": 1,
+              "width": "1/352"
+            }
+          ],
+          "witness": {
+            "time": "375/704",
+            "distances": [
+              "329/704",
+              "23/176",
+              "237/704",
+              "69/352",
+              "191/704",
+              "9/64",
+              "21/44"
+            ],
+            "kind": "strict"
+          },
+          "fastest_lap": 8,
+          "normalized_interval": [
+            "1/2",
+            "6/11"
+          ],
+          "shared_residues": [
+            8,
+            0,
+            8,
+            0,
+            8,
+            8
+          ]
+        },
+        {
+          "interval": [
+            "89/128",
+            "39/56"
+          ],
+          "duration": "1/896",
+          "lap_vector": [
+            0,
+            2,
+            3,
+            4,
+            4,
+            7,
+            11
+          ],
+          "lap_bounds": [
+            [
+              "1/8",
+              "7/8"
+            ],
+            [
+              "17/32",
+              "23/32"
+            ],
+            [
+              "5/8",
+              "31/40"
+            ],
+            [
+              "11/16",
+              "13/16"
+            ],
+            [
+              "33/56",
+              "39/56"
+            ],
+            [
+              "57/88",
+              "63/88"
+            ],
+            [
+              "89/128",
+              "95/128"
+            ]
+          ],
+          "left_controllers": {
+            "lower": [
+              16
+            ],
+            "upper": []
+          },
+          "right_controllers": {
+            "lower": [],
+            "upper": [
+              7
+            ]
+          },
+          "endpoint_determinants": [
+            {
+              "lower_speed": 16,
+              "upper_speed": 7,
+              "lower_lap": 11,
+              "upper_lap": 4,
+              "integer_gap": 1,
+              "width": "1/896"
+            }
+          ],
+          "witness": {
+            "time": "1247/1792",
+            "distances": [
+              "545/1792",
+              "97/448",
+              "859/1792",
+              "157/896",
+              "33/256",
+              "619/1792",
+              "15/112"
+            ],
+            "kind": "strict"
+          },
+          "fastest_lap": 11,
+          "normalized_interval": [
+            "1/8",
+            "1/7"
+          ],
+          "shared_residues": [
+            11,
+            12,
+            7,
+            2,
+            13,
+            9
+          ]
+        }
+      ],
+      "allowed_duration": "39/4928",
+      "isolated_points": [],
+      "pair_contact_checks": [
+        {
+          "speeds": [
+            1,
+            4
+          ],
+          "gcd": 1,
+          "primitive_sum": 5,
+          "primitive_difference": 3,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            5
+          ],
+          "gcd": 1,
+          "primitive_sum": 6,
+          "primitive_difference": 4,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            6
+          ],
+          "gcd": 1,
+          "primitive_sum": 7,
+          "primitive_difference": 5,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 8,
+          "primitive_difference": 6,
+          "opposite_contact_possible": true,
+          "same_contact_possible": false,
+          "contacts": [
+            {
+              "time": "1/8",
+              "orientations": [
+                "lower",
+                "upper"
+              ],
+              "all_runners_safe": false,
+              "blocking_speeds": [
+                16
+              ]
+            },
+            {
+              "time": "7/8",
+              "orientations": [
+                "upper",
+                "lower"
+              ],
+              "all_runners_safe": false,
+              "blocking_speeds": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "speeds": [
+            1,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 12,
+          "primitive_difference": 10,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            1,
+            16
+          ],
+          "gcd": 1,
+          "primitive_sum": 17,
+          "primitive_difference": 15,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            5
+          ],
+          "gcd": 1,
+          "primitive_sum": 9,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            6
+          ],
+          "gcd": 2,
+          "primitive_sum": 5,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 11,
+          "primitive_difference": 3,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 15,
+          "primitive_difference": 7,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            4,
+            16
+          ],
+          "gcd": 4,
+          "primitive_sum": 5,
+          "primitive_difference": 3,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            5,
+            6
+          ],
+          "gcd": 1,
+          "primitive_sum": 11,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            5,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 12,
+          "primitive_difference": 2,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            5,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 16,
+          "primitive_difference": 6,
+          "opposite_contact_possible": true,
+          "same_contact_possible": false,
+          "contacts": [
+            {
+              "time": "3/8",
+              "orientations": [
+                "upper",
+                "lower"
+              ],
+              "all_runners_safe": false,
+              "blocking_speeds": [
+                16
+              ]
+            },
+            {
+              "time": "5/8",
+              "orientations": [
+                "lower",
+                "upper"
+              ],
+              "all_runners_safe": false,
+              "blocking_speeds": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "speeds": [
+            5,
+            16
+          ],
+          "gcd": 1,
+          "primitive_sum": 21,
+          "primitive_difference": 11,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            6,
+            7
+          ],
+          "gcd": 1,
+          "primitive_sum": 13,
+          "primitive_difference": 1,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            6,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 17,
+          "primitive_difference": 5,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            6,
+            16
+          ],
+          "gcd": 2,
+          "primitive_sum": 11,
+          "primitive_difference": 5,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            7,
+            11
+          ],
+          "gcd": 1,
+          "primitive_sum": 18,
+          "primitive_difference": 4,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            7,
+            16
+          ],
+          "gcd": 1,
+          "primitive_sum": 23,
+          "primitive_difference": 9,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        },
+        {
+          "speeds": [
+            11,
+            16
+          ],
+          "gcd": 1,
+          "primitive_sum": 27,
+          "primitive_difference": 5,
+          "opposite_contact_possible": false,
+          "same_contact_possible": false,
+          "contacts": []
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "cases": 2,
+    "shared_lap_records": 29,
+    "pair_determinant_checks": 435,
+    "pair_contact_criteria_checks": 42,
+    "residual_components": 8,
+    "final_allowed_components": 8
+  }
+}

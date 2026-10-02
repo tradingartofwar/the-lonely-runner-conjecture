@@ -1,0 +1,140 @@
+{
+  "status": "pass",
+  "scope": "Three declared exact tilings and one inherited rational trace; no scan",
+  "templates": [
+    {
+      "word": "ABCD",
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "formal_edge_identities": 4,
+      "tiling_endpoints": [
+        "0",
+        "1/4",
+        "1/2",
+        "3/4",
+        "1"
+      ],
+      "gamma": "1/4",
+      "rho": "1/1344",
+      "conditional_local_move_bound": 8
+    },
+    {
+      "word": "ACDBCD",
+      "counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "formal_edge_identities": 6,
+      "tiling_endpoints": [
+        "0",
+        "1/8",
+        "1/4",
+        "1/2",
+        "5/8",
+        "3/4",
+        "1"
+      ],
+      "gamma": "1/8",
+      "rho": "1/2688",
+      "conditional_local_move_bound": 12
+    },
+    {
+      "word": "ADBDCD",
+      "counts": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "formal_edge_identities": 6,
+      "tiling_endpoints": [
+        "0",
+        "1/12",
+        "1/3",
+        "5/12",
+        "2/3",
+        "3/4",
+        "1"
+      ],
+      "gamma": "1/12",
+      "rho": "1/4032",
+      "conditional_local_move_bound": 12
+    }
+  ],
+  "inherited_auxiliary_distinct": {
+    "status": "pass",
+    "calls": 33,
+    "moves": [
+      {
+        "call": 3,
+        "runner": "C",
+        "occurrence": 0,
+        "input": "-17995/44704",
+        "output": "-199/528"
+      },
+      {
+        "call": 12,
+        "runner": "A",
+        "occurrence": 0,
+        "input": "-199/528",
+        "output": "-53/352"
+      },
+      {
+        "call": 15,
+        "runner": "D",
+        "occurrence": 0,
+        "input": "-53/352",
+        "output": "0"
+      },
+      {
+        "call": 18,
+        "runner": "B",
+        "occurrence": 1,
+        "input": "0",
+        "output": "263/1056"
+      },
+      {
+        "call": 19,
+        "runner": "C",
+        "occurrence": 1,
+        "input": "263/1056",
+        "output": "241/528"
+      },
+      {
+        "call": 20,
+        "runner": "D",
+        "occurrence": 1,
+        "input": "241/528",
+        "output": "20/33"
+      },
+      {
+        "call": 23,
+        "runner": "A",
+        "occurrence": 1,
+        "input": "20/33",
+        "output": "38325/44704"
+      }
+    ],
+    "final_time": "38325/44704",
+    "all_safe": true
+  },
+  "coordinator_check": {
+    "inherited_seven_move_word": [
+      "C",
+      "A",
+      "D",
+      "B",
+      "C",
+      "D",
+      "A"
+    ],
+    "square_free": true,
+    "scope": "Ancillary exact replay; separate from frozen fifteen-window protocol."
+  }
+}

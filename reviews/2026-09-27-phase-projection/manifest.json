@@ -1,0 +1,357 @@
+{
+  "date": "2026-09-27 America/Los_Angeles; completed September28 UTC",
+  "baseline_commit": "0d67b3077af417f8b3e365b18bb2a6cb92b76189",
+  "repository": "tradingartofwar/the-lonely-runner-conjecture",
+  "branch": "research/near-doubling-overlap-2026-09-24",
+  "draft_pr": 3,
+  "protocol_sha256": "8eba9a06595a2014095f84cc22c6b91d65d6f9fd71771912e0af368293bdff17",
+  "scope": {
+    "velocity_lists": [
+      [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        11,
+        16
+      ]
+    ],
+    "reference_index": 0,
+    "n": 8,
+    "threshold": "1/8",
+    "only_shifted_runner": 11,
+    "original_common_start_phase": "0",
+    "algebraic_theta_cells": 43,
+    "direct_theta_endpoints_including_periodic_closure": 45,
+    "prior_offsets": 29,
+    "prescribed_time_pairs": [
+      [
+        "1/8",
+        "7/8"
+      ],
+      [
+        "7/15",
+        "8/15"
+      ]
+    ],
+    "abstract_nonphysical_time_set_pairs": 1,
+    "extra_speed_search": false,
+    "arbitrary_phase_grid": false
+  },
+  "finite_results": {
+    "tight13": {
+      "duration_extrema": {
+        "minimum": "0",
+        "maximum": "115/2184",
+        "minimizer_set": [
+          [
+            "0",
+            "0",
+            true,
+            true
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "1/4",
+            "3/4",
+            true,
+            true
+          ]
+        ]
+      },
+      "P_metrics": {
+        "measure": "1/4",
+        "maximum_circular_gap": "1/4",
+        "minimum_covering_arc_length": "3/4",
+        "maximal_gap_arcs": [
+          [
+            "1/8",
+            "3/8",
+            "1/4"
+          ],
+          [
+            "3/8",
+            "5/8",
+            "1/4"
+          ],
+          [
+            "5/8",
+            "7/8",
+            "1/4"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "measure": "1/4",
+        "maximum_circular_gap": "3/4",
+        "minimum_covering_arc_length": "1/4",
+        "maximal_gap_arcs": [
+          [
+            "1/8",
+            "7/8",
+            "3/4"
+          ]
+        ]
+      }
+    },
+    "strict16": {
+      "duration_extrema": {
+        "minimum": "39/4928",
+        "maximum": "7/96",
+        "minimizer_set": [
+          [
+            "0",
+            "1/48",
+            true,
+            true
+          ],
+          [
+            "47/48",
+            "1",
+            true,
+            false
+          ]
+        ],
+        "maximizer_set": [
+          [
+            "61/128",
+            "67/128",
+            true,
+            true
+          ]
+        ]
+      },
+      "P_metrics": {
+        "measure": "151/448",
+        "maximum_circular_gap": "19/64",
+        "minimum_covering_arc_length": "45/64",
+        "maximal_gap_arcs": [
+          [
+            "45/128",
+            "83/128",
+            "19/64"
+          ]
+        ]
+      },
+      "B_metrics": {
+        "measure": "151/448",
+        "maximum_circular_gap": "19/64",
+        "minimum_covering_arc_length": "45/64",
+        "maximal_gap_arcs": [
+          [
+            "45/128",
+            "83/128",
+            "19/64"
+          ]
+        ]
+      }
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "read_only_commands": [
+      "python -B reviews/2026-09-27-phase-projection/calculate.py --check",
+      "python -B reviews/2026-09-27-phase-projection/verify_independent.py --check",
+      "python -B reviews/2026-09-27-phase-projection/certificates.py --check",
+      "python -B reviews/2026-09-27-phase-projection/arithmetic_check.py --check",
+      "python -B reviews/2026-09-27-phase-projection/challenge_check.py --check",
+      "python -B reviews/2026-09-27-phase-projection/representation_check.py"
+    ],
+    "independence": "Primary phase-pushforward integration; independent complete direct time-domain reconstruction reads schema/results but neither reads nor imports primary implementation. Separate challenge, arithmetic, prescribed-pair, and abstract-set checks have declared narrower scopes.",
+    "documentation_links": "PASS",
+    "old_checker_or_broad_regression_rerun": false
+  },
+  "proof_candidates": [
+    "Open versus closed covering-arc criteria for all-phase existence and positive duration.",
+    "Two-time triangle-inequality sufficient certificate, with exact fixed-pair margins.",
+    "Compact circle pair completeness for0<a<=1/3; strict variant for0<a<1/3 plus finite nonzero-speed interval assumptions. At delta1/8 these give two-time completeness for one-runner phase robustness, not original common-start feasibility.",
+    "Compact-only duration bounds1/660 and refined1/352 for strict16."
+  ],
+  "claim_limits": "Exact two-case profiles OBSERVED/REPRODUCED; general implications HYPOTHESIS/proof candidates. No general Lonely Runner proof, independent human certification, formal proof-assistant verification, literature novelty audit, or new empirical-world evidence.",
+  "next_proposed_not_run": "Residue classification of the two fixed time templates across the existing positive-integer variable-V family, preserving eight distinct speeds and retaining failures of templates separately from failures of robustness or loneliness.",
+  "dependency_policy": "All six executable checks use Python standard library only. New protocol, scripts, expected archives and reports are hashed below. The only prior data input is the pinned prior phase archive; no historical implementation is imported.",
+  "python_imports": {
+    "reviews/2026-09-27-phase-projection/certificates.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-phase-projection/representation_check.py": [
+      "fractions",
+      "json"
+    ],
+    "reviews/2026-09-27-phase-projection/challenge_check.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-phase-projection/calculate.py": [
+      "argparse",
+      "bisect",
+      "fractions",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-phase-projection/verify_independent.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib"
+    ],
+    "reviews/2026-09-27-phase-projection/arithmetic_check.py": [
+      "argparse",
+      "fractions",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  "prior_dependency": {
+    "path": "reviews/2026-09-27-fastest-laps/phase_results.json",
+    "sha256": "612cd4320fc3083476b352f8ce058e345cf2f88a418a36e87228cdbad29c8692",
+    "bytes": 947401
+  },
+  "artifacts": [
+    {
+      "path": "HANDOFF.md",
+      "sha256": "488fbf1db924076f27bb180dc8c66f649341afd622c21321d598123e9003d028",
+      "bytes": 153209
+    },
+    {
+      "path": "LR2_HANDOFF.md",
+      "sha256": "cba271da7223fb6fdd91a2b2e5f83597694c0b785ab46fe18079beef360d9e67",
+      "bytes": 41661
+    },
+    {
+      "path": "README.md",
+      "sha256": "f664cfc5ecb0cad76b663ac6b0968f8271adc78be4d963127900008c9eb6b820",
+      "bytes": 11122
+    },
+    {
+      "path": "notes/PHASE_PROJECTION_2026_09_27.md",
+      "sha256": "99d8bbde193034660d76b5603cd6723e3369db32fcf04fcc9749ef1b9bec9ee6",
+      "bytes": 13523
+    },
+    {
+      "path": "notes/TWO_TIME_CERTIFICATES_2026_09_27.md",
+      "sha256": "9e908bc37a04fafa215aae6009ed35886030b520b42fc8d7f43755a3507d66ee",
+      "bytes": 9729
+    },
+    {
+      "path": "notes/inquiries/2026-09-27-relationships-and-independence.md",
+      "sha256": "d8a39e3105938427a240b3f7243ee9c5433104c1dde7fbea4562175f07df3f45",
+      "bytes": 28226
+    },
+    {
+      "path": "notes/inquiries/README.md",
+      "sha256": "22774e7ecec7c65104f8d0daa112ae6eb70e652833b53d1ba4caa6ca65662768",
+      "bytes": 2189
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/arithmetic.json",
+      "sha256": "30030e1050a67602aad8d136048125da3ec381f5fd05fd8b0f818b13f749ab46",
+      "bytes": 23174
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/arithmetic.md",
+      "sha256": "a636e1080411bd6813979488e62a0fa05f2f26cda6fccfea6a62b215a2055094",
+      "bytes": 12197
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/arithmetic_check.py",
+      "sha256": "f0a4c640aaf1192f1ee927e2d4517588f21aec77e9d05d3ca8d012d956b51885",
+      "bytes": 13043
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/calculate.py",
+      "sha256": "6a7619b02c19e7141dbb7b8a3015f1e69704365ee6e137020d9972216d535526",
+      "bytes": 14117
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/certificates.json",
+      "sha256": "216b23a603138f40d43275eb0a132c82b2595a4ea781df988619e3eccd2ce0f9",
+      "bytes": 12772
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/certificates.md",
+      "sha256": "cac16ce1255a18045c0a6d1fa2620e29fb7ddef09f952aea1c92efc3822d6556",
+      "bytes": 6561
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/certificates.py",
+      "sha256": "fbd35ea044065e61fe42a44ec49248721e1747bc5624c56b6ffd9b2383a01729",
+      "bytes": 7609
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/challenge.md",
+      "sha256": "3f90378e83c7c741c339216c96069533cb92f6dbed83ca460ef042c1fe5b78d0",
+      "bytes": 11661
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/challenge_check.py",
+      "sha256": "d316aa3ede1e7b8ce8710b7632c2789cdc0edcea02c1065d430f13c111072bd3",
+      "bytes": 7974
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/challenge_checks.json",
+      "sha256": "42592b03cbf82cf76ed3b2020e870b459faa0afe11cc6f74a709673389bc7e28",
+      "bytes": 2640
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/protocol.json",
+      "sha256": "8eba9a06595a2014095f84cc22c6b91d65d6f9fd71771912e0af368293bdff17",
+      "bytes": 3447
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/representation.md",
+      "sha256": "b35866b35fc2c6e9167d0010110dca540739ee461ad2ddaf220ff6396c4bc67e",
+      "bytes": 12143
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/representation_check.py",
+      "sha256": "1b42b68e420393a9f5e65b78cc78e7632a2022f3dead2a954c6f92121146b18e",
+      "bytes": 2286
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/results.json",
+      "sha256": "daf8cadcb6f06bda538c9231f053e37c85fdaeba5fbd4167ca96d442ddc5ba34",
+      "bytes": 56099
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/schema.md",
+      "sha256": "1d05f84f389dcd72294dfdc734fde29f38abbc5471f69a58ae0166eda3652f67",
+      "bytes": 5818
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/verification.json",
+      "sha256": "e24b89dbb38cc3484cad3814348e2ebd66eed36a15afc16a3291acaaa315cfec",
+      "bytes": 8118
+    },
+    {
+      "path": "reviews/2026-09-27-phase-projection/verify_independent.py",
+      "sha256": "c38160200ba606b8e3ccb001726af22251537ebc86a912df64d5342f09843731",
+      "bytes": 21945
+    }
+  ]
+}

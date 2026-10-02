@@ -1,0 +1,184 @@
+{
+  "arithmetic_comparisons": [
+    {
+      "case": "isolated_points",
+      "complete_set": [
+        [
+          "1/8",
+          "1/8"
+        ],
+        [
+          "3/8",
+          "3/8"
+        ],
+        [
+          "5/8",
+          "5/8"
+        ],
+        [
+          "7/8",
+          "7/8"
+        ]
+      ],
+      "equal": true,
+      "method": "successive exact band intersection versus event decomposition"
+    },
+    {
+      "case": "widest_only",
+      "complete_set": [
+        [
+          "3/16",
+          "23/120"
+        ],
+        [
+          "5/24",
+          "5/24"
+        ],
+        [
+          "145/408",
+          "23/64"
+        ],
+        [
+          "49/120",
+          "167/408"
+        ],
+        [
+          "19/40",
+          "23/48"
+        ],
+        [
+          "25/48",
+          "21/40"
+        ],
+        [
+          "241/408",
+          "71/120"
+        ],
+        [
+          "41/64",
+          "263/408"
+        ],
+        [
+          "19/24",
+          "19/24"
+        ],
+        [
+          "97/120",
+          "13/16"
+        ]
+      ],
+      "equal": true,
+      "method": "successive exact band intersection versus event decomposition"
+    },
+    {
+      "candidates": [
+        "1/8"
+      ],
+      "case": "complete_relations",
+      "method": "third-coordinate lap enumeration",
+      "surviving": []
+    },
+    {
+      "candidates": [
+        "7/80",
+        "23/80",
+        "39/80",
+        "11/16",
+        "71/80"
+      ],
+      "case": "clock_lifts",
+      "method": "third-coordinate lap enumeration",
+      "surviving": [
+        "11/16"
+      ]
+    }
+  ],
+  "limits": "Audit controls for this frozen fixture, not independent human certification, a parser security audit, or external solver defect evidence.",
+  "mutation_checks": [
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source changed: reviews/2026-09-30-cc-three-parameter/discovery.json",
+      "mutation": "wrong expected source digest"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: clock_lifts.expected_times",
+      "mutation": "wrong clock expected time"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: isolated_points.expected_intervals",
+      "mutation": "removed isolated point from expected full set"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: same_point.source",
+      "mutation": "wrong source selector"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Wrong source commit",
+      "mutation": "wrong claimed source commit"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: same_point.rates",
+      "mutation": "changed same-point physical rates without source update"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: isolated_points.query_kind",
+      "mutation": "unknown query kind accepted through else branch"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: widest_only.primary_interval",
+      "mutation": "replace widest primary by a different safe core singleton"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Source-binding mismatch: widest_only.mutant",
+      "mutation": "wrong mutant label"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Missing or unexpected source pins",
+      "mutation": "missing source pin"
+    },
+    {
+      "accepted": false,
+      "desired_for_strict_source_contract": "reject",
+      "error": "ValueError: Unexpected or duplicated case IDs",
+      "mutation": "duplicated case identity"
+    }
+  ],
+  "reviewed_checker_sha256": "3b64b495dc323cab7041bfe1a5c4987f6cc0360b3f1bbef0ea2600ea172eae5e",
+  "reviewed_fixture_sha256": "d6b94135aa6e040f96659998bcae394143be085096cce48bef8dd07e3910f0a7",
+  "source_checks": [
+    {
+      "local_equals_git_blob": true,
+      "path": "reviews/2026-09-30-cc-three-parameter/discovery.json",
+      "sha256": "091726fec3fcc58e08c3405b655200bc529352eb984bf320e211f4e515972729"
+    },
+    {
+      "local_equals_git_blob": true,
+      "path": "reviews/2026-10-02-cc-orbit-intervals/run/RESULTS.json",
+      "sha256": "40a06e6ea078848d289868aa8c5b21fc57ec2a3b94bc13422a46b5e27286ec67"
+    },
+    {
+      "local_equals_git_blob": true,
+      "path": "reviews/2026-10-02-cc-orbit-intervals/run/VERIFICATION.json",
+      "sha256": "3a341653a5b5bb7b46dec506b8237eaa3281f1215a00547b2147582ba4aab45f"
+    }
+  ]
+}

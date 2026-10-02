@@ -1,0 +1,9804 @@
+{
+  "date": "2026-09-25",
+  "research_baseline": "91561c35751f1281c5b6920a8022f2f6653672bb",
+  "status": "Eight prescribed cases; graph identities are self-contained proof candidates, no novelty claim or unbounded family conclusion.",
+  "script_sha256": "c917eb55af99330daf46565fe2e2877bb7e12690bc2581f5b611f22b11dcde20",
+  "core": [
+    1,
+    4,
+    5
+  ],
+  "threshold": "1/8",
+  "window": [
+    "9/32",
+    "3/8"
+  ],
+  "mask_convention": "Vertex bits follow sorted extras; edge bits follow lexicographic index pairs (01,02,03,12,13,23).",
+  "verification": "120 nonempty moments crosschecked by interval joins and direct phase partitions; 8192 graph/state identities; every 64 graph corrected gaps in each case; equality endpoints checked directly.",
+  "near_double_phase_exclusion": [
+    {
+      "56_113_laps": [
+        16,
+        32
+      ],
+      "interval": [
+        "127/448",
+        "257/904"
+      ],
+      "64_lap": 18,
+      "64_phase_range": [
+        "1/7",
+        "22/113"
+      ]
+    },
+    {
+      "56_113_laps": [
+        17,
+        34
+      ],
+      "interval": [
+        "135/448",
+        "273/904"
+      ],
+      "64_lap": 19,
+      "64_phase_range": [
+        "2/7",
+        "37/113"
+      ]
+    },
+    {
+      "56_113_laps": [
+        18,
+        36
+      ],
+      "interval": [
+        "143/448",
+        "289/904"
+      ],
+      "64_lap": 20,
+      "64_phase_range": [
+        "3/7",
+        "52/113"
+      ]
+    },
+    {
+      "56_113_laps": [
+        19,
+        38
+      ],
+      "interval": [
+        "151/448",
+        "305/904"
+      ],
+      "64_lap": 21,
+      "64_phase_range": [
+        "4/7",
+        "67/113"
+      ]
+    },
+    {
+      "56_113_laps": [
+        20,
+        40
+      ],
+      "interval": [
+        "159/448",
+        "321/904"
+      ],
+      "64_lap": 22,
+      "64_phase_range": [
+        "5/7",
+        "82/113"
+      ]
+    },
+    {
+      "56_113_laps": [
+        21,
+        42
+      ],
+      "interval": [
+        "167/448",
+        "337/904"
+      ],
+      "64_lap": 23,
+      "64_phase_range": [
+        "6/7",
+        "97/113"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "name": "doubled",
+      "extras": [
+        56,
+        64,
+        72,
+        112
+      ],
+      "occurrence_counts": [
+        6,
+        7,
+        7,
+        11
+      ],
+      "state_mass_by_mask": [
+        "53/1792",
+        "29/3584",
+        "31/2304",
+        "43/32256",
+        "23/1792",
+        "1/448",
+        "5/2304",
+        "5/8064",
+        "29/5376",
+        "277/32256",
+        "1/256",
+        "3/3584",
+        "5/2688",
+        "1/576",
+        "0",
+        "1/896"
+      ],
+      "moments_by_mask": {
+        "1": "11/448",
+        "2": "3/128",
+        "3": "1/256",
+        "4": "13/576",
+        "5": "23/4032",
+        "6": "1/256",
+        "7": "1/576",
+        "8": "3/128",
+        "9": "11/896",
+        "10": "3/512",
+        "11": "1/512",
+        "12": "19/4032",
+        "13": "23/8064",
+        "14": "1/896",
+        "15": "1/896"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "1/256",
+        "23/4032",
+        "11/896",
+        "1/256",
+        "3/512",
+        "19/4032"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            56,
+            64,
+            72
+          ],
+          "duration": "1/576",
+          "lap_intersections": [
+            [
+              "215/576",
+              "3/8",
+              [
+                21,
+                24,
+                27
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            56,
+            64,
+            112
+          ],
+          "duration": "1/512",
+          "lap_intersections": [
+            [
+              "183/512",
+              "321/896",
+              [
+                20,
+                23,
+                40
+              ]
+            ],
+            [
+              "335/896",
+              "3/8",
+              [
+                21,
+                24,
+                42
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            56,
+            72,
+            112
+          ],
+          "duration": "23/8064",
+          "lap_intersections": [
+            [
+              "175/576",
+              "39/128",
+              [
+                17,
+                22,
+                34
+              ]
+            ],
+            [
+              "41/128",
+              "185/576",
+              [
+                18,
+                23,
+                36
+              ]
+            ],
+            [
+              "335/896",
+              "3/8",
+              [
+                21,
+                27,
+                42
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            64,
+            72,
+            112
+          ],
+          "duration": "1/896",
+          "lap_intersections": [
+            [
+              "335/896",
+              "3/8",
+              [
+                24,
+                27,
+                42
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            56,
+            64,
+            72,
+            112
+          ],
+          "duration": "1/896",
+          "lap_intersections": [
+            [
+              "335/896",
+              "3/8",
+              [
+                21,
+                24,
+                27,
+                42
+              ]
+            ]
+          ]
+        }
+      ],
+      "tree": {
+        "graph_mask": 22,
+        "edges": [
+          [
+            56,
+            72
+          ],
+          [
+            56,
+            112
+          ],
+          [
+            64,
+            112
+          ]
+        ],
+        "uncorrected_pair_expression": "761/32256",
+        "correction": "0",
+        "bound": "761/32256"
+      },
+      "compatibility": {
+        "graph_mask": 22,
+        "edges": [
+          [
+            56,
+            72
+          ],
+          [
+            56,
+            112
+          ],
+          [
+            64,
+            112
+          ]
+        ],
+        "uncorrected_pair_expression": "761/32256",
+        "correction": "0",
+        "bound": "761/32256"
+      },
+      "one_cycle": {
+        "graph_mask": 30,
+        "edges": [
+          [
+            56,
+            72
+          ],
+          [
+            56,
+            112
+          ],
+          [
+            64,
+            72
+          ],
+          [
+            64,
+            112
+          ]
+        ],
+        "uncorrected_pair_expression": "887/32256",
+        "correction": "1/896",
+        "bound": "851/32256",
+        "cycle_vertices": [
+          56,
+          64,
+          72,
+          112
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 30,
+        "edges": [
+          [
+            56,
+            72
+          ],
+          [
+            56,
+            112
+          ],
+          [
+            64,
+            72
+          ],
+          [
+            64,
+            112
+          ]
+        ],
+        "uncorrected_pair_expression": "887/32256",
+        "correction": "1/896",
+        "bound": "851/32256",
+        "cycle_vertices": [
+          56,
+          64,
+          72,
+          112
+        ]
+      },
+      "diamond": {
+        "graph_mask": 62,
+        "edges": [
+          [
+            56,
+            72
+          ],
+          [
+            56,
+            112
+          ],
+          [
+            64,
+            72
+          ],
+          [
+            64,
+            112
+          ],
+          [
+            72,
+            112
+          ]
+        ],
+        "uncorrected_pair_expression": "1039/32256",
+        "correction": "1/252",
+        "bound": "911/32256",
+        "missing_edge": [
+          56,
+          64
+        ],
+        "triangles": [
+          [
+            56,
+            72,
+            112
+          ],
+          [
+            64,
+            72,
+            112
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "43/32256"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ]
+          ],
+          "uncorrected_pair_expression": "103/4032",
+          "correction": "1/576",
+          "bound": "1/42",
+          "cycle_vertices": [
+            56,
+            64,
+            72
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "887/32256",
+          "correction": "1/512",
+          "bound": "103/4032",
+          "cycle_vertices": [
+            56,
+            64,
+            112
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "617/32256",
+          "correction": "1/576",
+          "bound": "187/10752",
+          "cycle_vertices": [
+            56,
+            64,
+            72
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "829/32256",
+          "correction": "1/512",
+          "bound": "383/16128",
+          "cycle_vertices": [
+            56,
+            64,
+            112
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "887/32256",
+          "correction": "1/896",
+          "bound": "851/32256",
+          "cycle_vertices": [
+            56,
+            64,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "425/16128",
+          "correction": "23/8064",
+          "bound": "379/16128",
+          "cycle_vertices": [
+            56,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "145/8064",
+          "correction": "1/576",
+          "bound": "131/8064",
+          "cycle_vertices": [
+            56,
+            64,
+            72
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "11/448",
+          "correction": "1/896",
+          "bound": "3/128",
+          "cycle_vertices": [
+            56,
+            64,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "425/16128",
+          "correction": "23/8064",
+          "bound": "379/16128",
+          "cycle_vertices": [
+            56,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "643/32256",
+          "correction": "1/896",
+          "bound": "607/32256",
+          "cycle_vertices": [
+            56,
+            64,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "95/3584",
+          "correction": "1/512",
+          "bound": "11/448",
+          "cycle_vertices": [
+            56,
+            64,
+            112
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "913/32256",
+          "correction": "23/8064",
+          "bound": "821/32256",
+          "cycle_vertices": [
+            56,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "65/3584",
+          "correction": "1/896",
+          "bound": "61/3584",
+          "cycle_vertices": [
+            64,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "643/32256",
+          "correction": "1/896",
+          "bound": "607/32256",
+          "cycle_vertices": [
+            64,
+            72,
+            112
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "95/3584",
+          "correction": "1/896",
+          "bound": "13/512",
+          "cycle_vertices": [
+            64,
+            72,
+            112
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "1039/32256",
+          "correction": "1/252",
+          "bound": "911/32256",
+          "missing_edge": [
+            56,
+            64
+          ],
+          "triangles": [
+            [
+              56,
+              72,
+              112
+            ],
+            [
+              64,
+              72,
+              112
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "43/32256"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "109/3584",
+          "correction": "11/3584",
+          "bound": "7/256",
+          "missing_edge": [
+            56,
+            72
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              112
+            ],
+            [
+              64,
+              72,
+              112
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/448"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "769/32256",
+          "correction": "23/8064",
+          "bound": "677/32256",
+          "missing_edge": [
+            56,
+            112
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              72
+            ],
+            [
+              64,
+              72,
+              112
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "277/32256"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              112
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "1039/32256",
+          "correction": "155/32256",
+          "bound": "221/8064",
+          "missing_edge": [
+            64,
+            72
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              112
+            ],
+            [
+              56,
+              72,
+              112
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "5/2304"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "61/2016",
+          "correction": "37/8064",
+          "bound": "23/896",
+          "missing_edge": [
+            64,
+            112
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              72
+            ],
+            [
+              56,
+              72,
+              112
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/256"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              112
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              112
+            ]
+          ],
+          "uncorrected_pair_expression": "1013/32256",
+          "correction": "17/4608",
+          "bound": "149/5376",
+          "missing_edge": [
+            72,
+            112
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              72
+            ],
+            [
+              56,
+              64,
+              112
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "5/2688"
+        }
+      ],
+      "clear_duration": "53/1792",
+      "clear_cells": [
+        [
+          "145/512",
+          "127/448"
+        ],
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "263/896"
+        ],
+        [
+          "153/512",
+          "135/448"
+        ],
+        [
+          "59/192",
+          "159/512"
+        ],
+        [
+          "161/512",
+          "61/192"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "297/896",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "151/448"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "313/896",
+          "159/448"
+        ],
+        [
+          "209/576",
+          "327/896"
+        ],
+        [
+          "47/128",
+          "167/448"
+        ]
+      ],
+      "valid_boundaries": [
+        "145/512",
+        "127/448",
+        "129/448",
+        "167/576",
+        "169/576",
+        "263/896",
+        "153/512",
+        "135/448",
+        "59/192",
+        "159/512",
+        "161/512",
+        "61/192",
+        "145/448",
+        "167/512",
+        "297/896",
+        "191/576",
+        "193/576",
+        "151/448",
+        "153/448",
+        "175/512",
+        "313/896",
+        "159/448",
+        "209/576",
+        "327/896",
+        "47/128",
+        "167/448"
+      ]
+    },
+    {
+      "name": "near_double_56",
+      "extras": [
+        56,
+        64,
+        72,
+        113
+      ],
+      "occurrence_counts": [
+        6,
+        7,
+        7,
+        11
+      ],
+      "state_mass_by_mask": [
+        "6193/260352",
+        "3823/260352",
+        "355/28928",
+        "5/2304",
+        "34033/3644928",
+        "1583/455616",
+        "1/512",
+        "1/576",
+        "20381/1822464",
+        "101/50624",
+        "1325/260352",
+        "0",
+        "19529/3644928",
+        "25/50624",
+        "1/4608",
+        "0"
+      ],
+      "moments_by_mask": {
+        "1": "11/448",
+        "2": "3/128",
+        "3": "1/256",
+        "4": "13/576",
+        "5": "23/4032",
+        "6": "1/256",
+        "7": "1/576",
+        "8": "11/452",
+        "9": "9/3616",
+        "10": "307/57856",
+        "11": "0",
+        "12": "395/65088",
+        "13": "25/50624",
+        "14": "1/4608",
+        "15": "0"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "1/256",
+        "23/4032",
+        "9/3616",
+        "1/256",
+        "307/57856",
+        "395/65088"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            56,
+            64,
+            72
+          ],
+          "duration": "1/576",
+          "lap_intersections": [
+            [
+              "215/576",
+              "3/8",
+              [
+                21,
+                24,
+                27
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            56,
+            64,
+            113
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            56,
+            72,
+            113
+          ],
+          "duration": "25/50624",
+          "lap_intersections": [
+            [
+              "143/448",
+              "289/904",
+              [
+                18,
+                23,
+                36
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            64,
+            72,
+            113
+          ],
+          "duration": "1/4608",
+          "lap_intersections": [
+            [
+              "199/576",
+              "177/512",
+              [
+                22,
+                25,
+                39
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            56,
+            64,
+            72,
+            113
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        }
+      ],
+      "tree": {
+        "graph_mask": 50,
+        "edges": [
+          [
+            56,
+            72
+          ],
+          [
+            64,
+            113
+          ],
+          [
+            72,
+            113
+          ]
+        ],
+        "uncorrected_pair_expression": "58073/3644928",
+        "correction": "0",
+        "bound": "58073/3644928"
+      },
+      "compatibility": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            56,
+            64
+          ],
+          [
+            56,
+            72
+          ],
+          [
+            64,
+            113
+          ],
+          [
+            72,
+            113
+          ]
+        ],
+        "uncorrected_pair_expression": "72311/3644928",
+        "correction": "0",
+        "bound": "72311/3644928"
+      },
+      "one_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            56,
+            64
+          ],
+          [
+            56,
+            72
+          ],
+          [
+            64,
+            113
+          ],
+          [
+            72,
+            113
+          ]
+        ],
+        "uncorrected_pair_expression": "72311/3644928",
+        "correction": "0",
+        "bound": "72311/3644928",
+        "cycle_vertices": [
+          56,
+          64,
+          72,
+          113
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            56,
+            64
+          ],
+          [
+            56,
+            72
+          ],
+          [
+            64,
+            113
+          ],
+          [
+            72,
+            113
+          ]
+        ],
+        "uncorrected_pair_expression": "72311/3644928",
+        "correction": "0",
+        "bound": "72311/3644928",
+        "cycle_vertices": [
+          56,
+          64,
+          72,
+          113
+        ]
+      },
+      "diamond": {
+        "graph_mask": 55,
+        "edges": [
+          [
+            56,
+            64
+          ],
+          [
+            56,
+            72
+          ],
+          [
+            56,
+            113
+          ],
+          [
+            64,
+            113
+          ],
+          [
+            72,
+            113
+          ]
+        ],
+        "uncorrected_pair_expression": "81383/3644928",
+        "correction": "25/50624",
+        "bound": "11369/520704",
+        "missing_edge": [
+          64,
+          72
+        ],
+        "triangles": [
+          [
+            56,
+            64,
+            113
+          ],
+          [
+            56,
+            72,
+            113
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "1/512"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ]
+          ],
+          "uncorrected_pair_expression": "3385/227808",
+          "correction": "1/576",
+          "bound": "1993/151872",
+          "cycle_vertices": [
+            56,
+            64,
+            72
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "59263/3644928",
+          "correction": "0",
+          "bound": "59263/3644928",
+          "cycle_vertices": [
+            56,
+            64,
+            113
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "64429/3644928",
+          "correction": "1/576",
+          "bound": "19367/1214976",
+          "cycle_vertices": [
+            56,
+            64,
+            72
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "52709/3644928",
+          "correction": "0",
+          "bound": "52709/3644928",
+          "cycle_vertices": [
+            56,
+            64,
+            113
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "59263/3644928",
+          "correction": "0",
+          "bound": "59263/3644928",
+          "cycle_vertices": [
+            56,
+            64,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "31021/1822464",
+          "correction": "25/50624",
+          "bound": "4303/260352",
+          "cycle_vertices": [
+            56,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "8401/455616",
+          "correction": "1/576",
+          "bound": "3805/227808",
+          "cycle_vertices": [
+            56,
+            64,
+            72
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "289/18984",
+          "correction": "0",
+          "bound": "289/18984",
+          "cycle_vertices": [
+            56,
+            64,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "31021/1822464",
+          "correction": "25/50624",
+          "bound": "4303/260352",
+          "cycle_vertices": [
+            56,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "72311/3644928",
+          "correction": "0",
+          "bound": "72311/3644928",
+          "cycle_vertices": [
+            56,
+            64,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "20197/1214976",
+          "correction": "0",
+          "bound": "20197/1214976",
+          "cycle_vertices": [
+            56,
+            64,
+            113
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "67145/3644928",
+          "correction": "25/50624",
+          "bound": "9335/520704",
+          "cycle_vertices": [
+            56,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "21919/1214976",
+          "correction": "1/4608",
+          "bound": "32483/1822464",
+          "cycle_vertices": [
+            64,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "72311/3644928",
+          "correction": "1/4608",
+          "bound": "745/37968",
+          "cycle_vertices": [
+            64,
+            72,
+            113
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "20197/1214976",
+          "correction": "1/4608",
+          "bound": "7475/455616",
+          "cycle_vertices": [
+            64,
+            72,
+            113
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "81383/3644928",
+          "correction": "2591/3644928",
+          "bound": "469/21696",
+          "missing_edge": [
+            56,
+            64
+          ],
+          "triangles": [
+            [
+              56,
+              72,
+              113
+            ],
+            [
+              64,
+              72,
+              113
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "5/2304"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "24943/1214976",
+          "correction": "1/4608",
+          "bound": "37019/1822464",
+          "missing_edge": [
+            56,
+            72
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              113
+            ],
+            [
+              64,
+              72,
+              113
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1583/455616"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "86549/3644928",
+          "correction": "1/512",
+          "bound": "39715/1822464",
+          "missing_edge": [
+            56,
+            113
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              72
+            ],
+            [
+              64,
+              72,
+              113
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "101/50624"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              113
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "81383/3644928",
+          "correction": "25/50624",
+          "bound": "11369/520704",
+          "missing_edge": [
+            64,
+            72
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              113
+            ],
+            [
+              56,
+              72,
+              113
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/512"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              72,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "9535/455616",
+          "correction": "127/56952",
+          "bound": "1217/65088",
+          "missing_edge": [
+            64,
+            113
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              72
+            ],
+            [
+              56,
+              72,
+              113
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1325/260352"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              56,
+              64
+            ],
+            [
+              56,
+              72
+            ],
+            [
+              56,
+              113
+            ],
+            [
+              64,
+              72
+            ],
+            [
+              64,
+              113
+            ]
+          ],
+          "uncorrected_pair_expression": "73501/3644928",
+          "correction": "1/576",
+          "bound": "22391/1214976",
+          "missing_edge": [
+            72,
+            113
+          ],
+          "triangles": [
+            [
+              56,
+              64,
+              72
+            ],
+            [
+              56,
+              64,
+              113
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "19529/3644928"
+        }
+      ],
+      "clear_duration": "6193/260352",
+      "clear_cells": [
+        [
+          "129/448",
+          "167/576"
+        ],
+        [
+          "169/576",
+          "151/512"
+        ],
+        [
+          "153/512",
+          "271/904"
+        ],
+        [
+          "59/192",
+          "279/904"
+        ],
+        [
+          "161/512",
+          "287/904"
+        ],
+        [
+          "145/448",
+          "167/512"
+        ],
+        [
+          "169/512",
+          "191/576"
+        ],
+        [
+          "193/576",
+          "303/904"
+        ],
+        [
+          "153/448",
+          "175/512"
+        ],
+        [
+          "67/192",
+          "319/904"
+        ],
+        [
+          "329/904",
+          "335/904"
+        ]
+      ],
+      "valid_boundaries": [
+        "129/448",
+        "167/576",
+        "169/576",
+        "151/512",
+        "153/512",
+        "271/904",
+        "59/192",
+        "279/904",
+        "161/512",
+        "287/904",
+        "145/448",
+        "167/512",
+        "169/512",
+        "191/576",
+        "193/576",
+        "303/904",
+        "153/448",
+        "175/512",
+        "67/192",
+        "319/904",
+        "329/904",
+        "335/904"
+      ]
+    },
+    {
+      "name": "tight",
+      "extras": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "occurrence_counts": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "state_mass_by_mask": [
+        "0",
+        "5/143",
+        "2/143",
+        "0",
+        "1/48",
+        "1/528",
+        "1/352",
+        "0",
+        "1/112",
+        "1/208",
+        "1/182",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_by_mask": {
+        "1": "1/24",
+        "2": "5/224",
+        "3": "0",
+        "4": "9/352",
+        "5": "1/528",
+        "6": "1/352",
+        "7": "0",
+        "8": "1/52",
+        "9": "1/208",
+        "10": "1/182",
+        "11": "0",
+        "12": "0",
+        "13": "0",
+        "14": "0",
+        "15": "0"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "0",
+        "1/528",
+        "1/208",
+        "1/352",
+        "1/182",
+        "0"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            6,
+            7,
+            11
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            7,
+            13
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            11,
+            13
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            7,
+            11,
+            13
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            7,
+            11,
+            13
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        }
+      ],
+      "tree": {
+        "graph_mask": 28,
+        "edges": [
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "uncorrected_pair_expression": "-1/528",
+        "correction": "0",
+        "bound": "-1/528"
+      },
+      "compatibility": {
+        "graph_mask": 30,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "uncorrected_pair_expression": "0",
+        "correction": "0",
+        "bound": "0"
+      },
+      "one_cycle": {
+        "graph_mask": 30,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "uncorrected_pair_expression": "0",
+        "correction": "0",
+        "bound": "0",
+        "cycle_vertices": [
+          6,
+          7,
+          11,
+          13
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 30,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "uncorrected_pair_expression": "0",
+        "correction": "0",
+        "bound": "0",
+        "cycle_vertices": [
+          6,
+          7,
+          11,
+          13
+        ]
+      },
+      "diamond": {
+        "graph_mask": 31,
+        "edges": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "uncorrected_pair_expression": "0",
+        "correction": "0",
+        "bound": "0",
+        "missing_edge": [
+          11,
+          13
+        ],
+        "triangles": [
+          [
+            6,
+            7,
+            11
+          ],
+          [
+            6,
+            7,
+            13
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "0"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/182",
+          "correction": "0",
+          "bound": "-1/182",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/352",
+          "correction": "0",
+          "bound": "-1/352",
+          "cycle_vertices": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/208",
+          "correction": "0",
+          "bound": "-1/208",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/528",
+          "correction": "0",
+          "bound": "-1/528",
+          "cycle_vertices": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "0",
+          "correction": "0",
+          "bound": "0",
+          "cycle_vertices": [
+            6,
+            7,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-267/32032",
+          "correction": "0",
+          "bound": "-267/32032",
+          "cycle_vertices": [
+            6,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-15/1456",
+          "correction": "0",
+          "bound": "-15/1456",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-355/48048",
+          "correction": "0",
+          "bound": "-355/48048",
+          "cycle_vertices": [
+            6,
+            7,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/182",
+          "correction": "0",
+          "bound": "-1/182",
+          "cycle_vertices": [
+            6,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-35/4576",
+          "correction": "0",
+          "bound": "-35/4576",
+          "cycle_vertices": [
+            6,
+            7,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-5/1056",
+          "correction": "0",
+          "bound": "-5/1056",
+          "cycle_vertices": [
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/352",
+          "correction": "0",
+          "bound": "-1/352",
+          "cycle_vertices": [
+            6,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-23/3432",
+          "correction": "0",
+          "bound": "-23/3432",
+          "cycle_vertices": [
+            7,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/208",
+          "correction": "0",
+          "bound": "-1/208",
+          "cycle_vertices": [
+            7,
+            11,
+            13
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/528",
+          "correction": "0",
+          "bound": "-1/528",
+          "cycle_vertices": [
+            7,
+            11,
+            13
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "0",
+          "correction": "0",
+          "bound": "0",
+          "missing_edge": [
+            6,
+            7
+          ],
+          "triangles": [
+            [
+              6,
+              11,
+              13
+            ],
+            [
+              7,
+              11,
+              13
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/528",
+          "correction": "0",
+          "bound": "-1/528",
+          "missing_edge": [
+            6,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              13
+            ],
+            [
+              7,
+              11,
+              13
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/528"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/208",
+          "correction": "0",
+          "bound": "-1/208",
+          "missing_edge": [
+            6,
+            13
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              7,
+              11,
+              13
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/208"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              13
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/352",
+          "correction": "0",
+          "bound": "-1/352",
+          "missing_edge": [
+            7,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              13
+            ],
+            [
+              6,
+              11,
+              13
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/352"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "-1/182",
+          "correction": "0",
+          "bound": "-1/182",
+          "missing_edge": [
+            7,
+            13
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              6,
+              11,
+              13
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/182"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          "uncorrected_pair_expression": "0",
+          "correction": "0",
+          "bound": "0",
+          "missing_edge": [
+            11,
+            13
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              6,
+              7,
+              13
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        }
+      ],
+      "clear_duration": "0",
+      "clear_cells": [],
+      "valid_boundaries": [
+        "3/8"
+      ]
+    },
+    {
+      "name": "tight_replacement",
+      "extras": [
+        6,
+        7,
+        8,
+        11
+      ],
+      "occurrence_counts": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "state_mass_by_mask": [
+        "1/112",
+        "7/176",
+        "3/154",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/192",
+        "1/528",
+        "1/352",
+        "0",
+        "1/64",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_by_mask": {
+        "1": "1/24",
+        "2": "5/224",
+        "3": "0",
+        "4": "1/64",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "9/352",
+        "9": "1/528",
+        "10": "1/352",
+        "11": "0",
+        "12": "1/64",
+        "13": "0",
+        "14": "0",
+        "15": "0"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "0",
+        "0",
+        "1/528",
+        "0",
+        "1/352",
+        "1/64"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            6,
+            7,
+            8
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            7,
+            11
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            8,
+            11
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            7,
+            8,
+            11
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            7,
+            8,
+            11
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        }
+      ],
+      "tree": {
+        "graph_mask": 52,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "uncorrected_pair_expression": "1/112",
+        "correction": "0",
+        "bound": "1/112"
+      },
+      "compatibility": {
+        "graph_mask": 52,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "uncorrected_pair_expression": "1/112",
+        "correction": "0",
+        "bound": "1/112"
+      },
+      "one_cycle": {
+        "graph_mask": 53,
+        "edges": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "uncorrected_pair_expression": "1/112",
+        "correction": "0",
+        "bound": "1/112",
+        "cycle_vertices": [
+          6,
+          7,
+          11
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "uncorrected_pair_expression": "13/1848",
+        "correction": "0",
+        "bound": "13/1848",
+        "cycle_vertices": [
+          6,
+          7,
+          8,
+          11
+        ]
+      },
+      "diamond": {
+        "graph_mask": 55,
+        "edges": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "uncorrected_pair_expression": "1/112",
+        "correction": "0",
+        "bound": "1/112",
+        "missing_edge": [
+          7,
+          8
+        ],
+        "triangles": [
+          [
+            6,
+            7,
+            11
+          ],
+          [
+            6,
+            8,
+            11
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "0"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "uncorrected_pair_expression": "-47/4928",
+          "correction": "0",
+          "bound": "-47/4928",
+          "cycle_vertices": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-127/14784",
+          "correction": "0",
+          "bound": "-127/14784",
+          "cycle_vertices": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            6,
+            7,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "15/2464",
+          "correction": "0",
+          "bound": "15/2464",
+          "cycle_vertices": [
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "31/7392",
+          "correction": "0",
+          "bound": "31/7392",
+          "cycle_vertices": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "15/2464",
+          "correction": "0",
+          "bound": "15/2464",
+          "cycle_vertices": [
+            6,
+            7,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "15/2464",
+          "correction": "0",
+          "bound": "15/2464",
+          "cycle_vertices": [
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "13/1848",
+          "correction": "0",
+          "bound": "13/1848",
+          "cycle_vertices": [
+            6,
+            7,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "1/112",
+          "correction": "0",
+          "bound": "1/112",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "1/112",
+          "correction": "0",
+          "bound": "1/112",
+          "cycle_vertices": [
+            6,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "13/1848",
+          "correction": "0",
+          "bound": "13/1848",
+          "cycle_vertices": [
+            7,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "13/1848",
+          "correction": "0",
+          "bound": "13/1848",
+          "cycle_vertices": [
+            7,
+            8,
+            11
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "1/112",
+          "correction": "0",
+          "bound": "1/112",
+          "cycle_vertices": [
+            7,
+            8,
+            11
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "1/112",
+          "correction": "0",
+          "bound": "1/112",
+          "missing_edge": [
+            6,
+            7
+          ],
+          "triangles": [
+            [
+              6,
+              8,
+              11
+            ],
+            [
+              7,
+              8,
+              11
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "1/112",
+          "correction": "0",
+          "bound": "1/112",
+          "missing_edge": [
+            6,
+            8
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              7,
+              8,
+              11
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "13/1848",
+          "correction": "0",
+          "bound": "13/1848",
+          "missing_edge": [
+            6,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              8
+            ],
+            [
+              7,
+              8,
+              11
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/528"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "1/112",
+          "correction": "0",
+          "bound": "1/112",
+          "missing_edge": [
+            7,
+            8
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              6,
+              8,
+              11
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "15/2464",
+          "correction": "0",
+          "bound": "15/2464",
+          "missing_edge": [
+            7,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              8
+            ],
+            [
+              6,
+              8,
+              11
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/352"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "missing_edge": [
+            8,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              8
+            ],
+            [
+              6,
+              7,
+              11
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/64"
+        }
+      ],
+      "clear_duration": "1/112",
+      "clear_cells": [
+        [
+          "17/56",
+          "5/16"
+        ]
+      ],
+      "valid_boundaries": [
+        "17/56",
+        "5/16"
+      ]
+    },
+    {
+      "name": "below_old_coarse_cutoff",
+      "extras": [
+        309,
+        320,
+        328,
+        619
+      ],
+      "occurrence_counts": [
+        29,
+        31,
+        31,
+        59
+      ],
+      "state_mass_by_mask": [
+        "516939067/20075804160",
+        "250435859/20075804160",
+        "76074391/6691934720",
+        "20599967/6691934720",
+        "56123353/5018951040",
+        "12988327/4015160832",
+        "1315629/1672983680",
+        "3213283/1338386944",
+        "76769689/6691934720",
+        "208259/163217920",
+        "91313293/20075804160",
+        "262663/489653760",
+        "30639241/6691934720",
+        "22/63757",
+        "4706479/6691934720",
+        "1/63757"
+      ],
+      "moments_by_mask": {
+        "1": "77/3296",
+        "2": "3/128",
+        "3": "4771/791040",
+        "4": "61/2624",
+        "5": "2431/405408",
+        "6": "1/256",
+        "7": "5225/2162176",
+        "8": "465/19808",
+        "9": "13301/6120672",
+        "10": "9197/1584640",
+        "11": "270343/489653760",
+        "12": "9165/1624256",
+        "13": "23/63757",
+        "14": "46713/64970240",
+        "15": "1/63757"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "4771/791040",
+        "2431/405408",
+        "13301/6120672",
+        "1/256",
+        "9197/1584640",
+        "9165/1624256"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            309,
+            320,
+            328
+          ],
+          "duration": "5225/2162176",
+          "lap_intersections": [
+            [
+              "935/2624",
+              "881/2472",
+              [
+                110,
+                114,
+                117
+              ]
+            ],
+            [
+              "23/64",
+              "889/2472",
+              [
+                111,
+                115,
+                118
+              ]
+            ],
+            [
+              "951/2624",
+              "299/824",
+              [
+                112,
+                116,
+                119
+              ]
+            ],
+            [
+              "959/2624",
+              "937/2560",
+              [
+                113,
+                117,
+                120
+              ]
+            ],
+            [
+              "911/2472",
+              "189/512",
+              [
+                114,
+                118,
+                121
+              ]
+            ],
+            [
+              "919/2472",
+              "953/2560",
+              [
+                115,
+                119,
+                122
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            309,
+            320,
+            619
+          ],
+          "duration": "270343/489653760",
+          "lap_intersections": [
+            [
+              "9/32",
+              "1393/4952",
+              [
+                87,
+                90,
+                174
+              ]
+            ],
+            [
+              "703/2472",
+              "1409/4952",
+              [
+                88,
+                91,
+                176
+              ]
+            ],
+            [
+              "237/824",
+              "1425/4952",
+              [
+                89,
+                92,
+                178
+              ]
+            ],
+            [
+              "719/2472",
+              "1441/4952",
+              [
+                90,
+                93,
+                180
+              ]
+            ],
+            [
+              "727/2472",
+              "753/2560",
+              [
+                91,
+                94,
+                182
+              ]
+            ],
+            [
+              "301/824",
+              "1809/4952",
+              [
+                113,
+                117,
+                226
+              ]
+            ],
+            [
+              "911/2472",
+              "1825/4952",
+              [
+                114,
+                118,
+                228
+              ]
+            ],
+            [
+              "919/2472",
+              "1841/4952",
+              [
+                115,
+                119,
+                230
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            309,
+            328,
+            619
+          ],
+          "duration": "23/63757",
+          "lap_intersections": [
+            [
+              "261/824",
+              "1569/4952",
+              [
+                98,
+                104,
+                196
+              ]
+            ],
+            [
+              "791/2472",
+              "1585/4952",
+              [
+                99,
+                105,
+                198
+              ]
+            ],
+            [
+              "799/2472",
+              "1601/4952",
+              [
+                100,
+                106,
+                200
+              ]
+            ],
+            [
+              "269/824",
+              "1617/4952",
+              [
+                101,
+                107,
+                202
+              ]
+            ],
+            [
+              "911/2472",
+              "1825/4952",
+              [
+                114,
+                121,
+                228
+              ]
+            ],
+            [
+              "919/2472",
+              "1841/4952",
+              [
+                115,
+                122,
+                230
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            320,
+            328,
+            619
+          ],
+          "duration": "46713/64970240",
+          "lap_intersections": [
+            [
+              "903/2624",
+              "881/2560",
+              [
+                110,
+                113,
+                213
+              ]
+            ],
+            [
+              "911/2624",
+              "889/2560",
+              [
+                111,
+                114,
+                215
+              ]
+            ],
+            [
+              "1735/4952",
+              "897/2560",
+              [
+                112,
+                115,
+                217
+              ]
+            ],
+            [
+              "967/2624",
+              "1825/4952",
+              [
+                118,
+                121,
+                228
+              ]
+            ],
+            [
+              "975/2624",
+              "1841/4952",
+              [
+                119,
+                122,
+                230
+              ]
+            ],
+            [
+              "983/2624",
+              "3/8",
+              [
+                120,
+                123,
+                232
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            309,
+            320,
+            328,
+            619
+          ],
+          "duration": "1/63757",
+          "lap_intersections": [
+            [
+              "911/2472",
+              "1825/4952",
+              [
+                114,
+                118,
+                121,
+                228
+              ]
+            ],
+            [
+              "919/2472",
+              "1841/4952",
+              [
+                115,
+                119,
+                122,
+                230
+              ]
+            ]
+          ]
+        }
+      ],
+      "tree": {
+        "graph_mask": 19,
+        "edges": [
+          [
+            309,
+            320
+          ],
+          [
+            309,
+            328
+          ],
+          [
+            320,
+            619
+          ]
+        ],
+        "uncorrected_pair_expression": "181285571/10037902080",
+        "correction": "0",
+        "bound": "181285571/10037902080"
+      },
+      "compatibility": {
+        "graph_mask": 19,
+        "edges": [
+          [
+            309,
+            320
+          ],
+          [
+            309,
+            328
+          ],
+          [
+            320,
+            619
+          ]
+        ],
+        "uncorrected_pair_expression": "181285571/10037902080",
+        "correction": "0",
+        "bound": "181285571/10037902080"
+      },
+      "one_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            309,
+            320
+          ],
+          [
+            309,
+            328
+          ],
+          [
+            320,
+            619
+          ],
+          [
+            328,
+            619
+          ]
+        ],
+        "uncorrected_pair_expression": "237925271/10037902080",
+        "correction": "1/63757",
+        "bound": "237767831/10037902080",
+        "cycle_vertices": [
+          309,
+          320,
+          328,
+          619
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            309,
+            320
+          ],
+          [
+            309,
+            328
+          ],
+          [
+            320,
+            619
+          ],
+          [
+            328,
+            619
+          ]
+        ],
+        "uncorrected_pair_expression": "237925271/10037902080",
+        "correction": "1/63757",
+        "bound": "237767831/10037902080",
+        "cycle_vertices": [
+          309,
+          320,
+          328,
+          619
+        ]
+      },
+      "diamond": {
+        "graph_mask": 55,
+        "edges": [
+          [
+            309,
+            320
+          ],
+          [
+            309,
+            328
+          ],
+          [
+            309,
+            619
+          ],
+          [
+            320,
+            619
+          ],
+          [
+            328,
+            619
+          ]
+        ],
+        "uncorrected_pair_expression": "840579/32485120",
+        "correction": "446983/489653760",
+        "bound": "501151519/20075804160",
+        "missing_edge": [
+          320,
+          328
+        ],
+        "triangles": [
+          [
+            309,
+            320,
+            619
+          ],
+          [
+            309,
+            328,
+            619
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "1315629/1672983680"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ]
+          ],
+          "uncorrected_pair_expression": "1191271/64970240",
+          "correction": "5225/2162176",
+          "bound": "53264769/3345967360",
+          "cycle_vertices": [
+            309,
+            320,
+            328
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "657279/32485120",
+          "correction": "270343/489653760",
+          "bound": "395114359/20075804160",
+          "cycle_vertices": [
+            309,
+            320,
+            619
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "110248063/5018951040",
+          "correction": "5225/2162176",
+          "bound": "392478127/20075804160",
+          "cycle_vertices": [
+            309,
+            320,
+            328
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "91059103/5018951040",
+          "correction": "270343/489653760",
+          "bound": "353152349/20075804160",
+          "cycle_vertices": [
+            309,
+            320,
+            619
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "363536323/20075804160",
+          "correction": "1/63757",
+          "bound": "363221443/20075804160",
+          "cycle_vertices": [
+            309,
+            320,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "1304081/64970240",
+          "correction": "23/63757",
+          "bound": "131906263/6691934720",
+          "cycle_vertices": [
+            309,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "437754859/20075804160",
+          "correction": "5225/2162176",
+          "bound": "194620367/10037902080",
+          "cycle_vertices": [
+            309,
+            320,
+            328
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "360999019/20075804160",
+          "correction": "1/63757",
+          "bound": "360684139/20075804160",
+          "cycle_vertices": [
+            309,
+            320,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "36029893/2007580416",
+          "correction": "23/63757",
+          "bound": "35305669/2007580416",
+          "cycle_vertices": [
+            309,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "237925271/10037902080",
+          "correction": "1/63757",
+          "bound": "237767831/10037902080",
+          "cycle_vertices": [
+            309,
+            320,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "199547351/10037902080",
+          "correction": "270343/489653760",
+          "bound": "388010639/20075804160",
+          "cycle_vertices": [
+            309,
+            320,
+            619
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "398394613/20075804160",
+          "correction": "23/63757",
+          "bound": "391152373/20075804160",
+          "cycle_vertices": [
+            309,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "108472133/5018951040",
+          "correction": "46713/64970240",
+          "bound": "83890843/4015160832",
+          "cycle_vertices": [
+            320,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              309,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "433188443/20075804160",
+          "correction": "46713/64970240",
+          "bound": "209377063/10037902080",
+          "cycle_vertices": [
+            320,
+            328,
+            619
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "356432603/20075804160",
+          "correction": "46713/64970240",
+          "bound": "170999143/10037902080",
+          "cycle_vertices": [
+            320,
+            328,
+            619
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "476815723/20075804160",
+          "correction": "7225519/6691934720",
+          "bound": "227569583/10037902080",
+          "missing_edge": [
+            309,
+            320
+          ],
+          "triangles": [
+            [
+              309,
+              328,
+              619
+            ],
+            [
+              320,
+              328,
+              619
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "20599967/6691934720"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "119378953/5018951040",
+          "correction": "1275919/1003790208",
+          "bound": "56499679/2509475520",
+          "missing_edge": [
+            309,
+            328
+          ],
+          "triangles": [
+            [
+              309,
+              320,
+              619
+            ],
+            [
+              320,
+              328,
+              619
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "12988327/4015160832"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "138567913/5018951040",
+          "correction": "10491407/3345967360",
+          "bound": "49132321/2007580416",
+          "missing_edge": [
+            309,
+            619
+          ],
+          "triangles": [
+            [
+              309,
+              320,
+              328
+            ],
+            [
+              320,
+              328,
+              619
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "208259/163217920"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              619
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "840579/32485120",
+          "correction": "446983/489653760",
+          "bound": "501151519/20075804160",
+          "missing_edge": [
+            320,
+            328
+          ],
+          "triangles": [
+            [
+              309,
+              320,
+              619
+            ],
+            [
+              309,
+              328,
+              619
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1315629/1672983680"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "1557871/64970240",
+          "correction": "3717091/1338386944",
+          "bound": "70937629/3345967360",
+          "missing_edge": [
+            320,
+            619
+          ],
+          "triangles": [
+            [
+              309,
+              320,
+              328
+            ],
+            [
+              309,
+              328,
+              619
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "91313293/20075804160"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              309,
+              320
+            ],
+            [
+              309,
+              328
+            ],
+            [
+              309,
+              619
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              619
+            ]
+          ],
+          "uncorrected_pair_expression": "392087/16242560",
+          "correction": "14899547/5018951040",
+          "bound": "13281917/627368880",
+          "missing_edge": [
+            328,
+            619
+          ],
+          "triangles": [
+            [
+              309,
+              320,
+              328
+            ],
+            [
+              309,
+              320,
+              619
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "30639241/6691934720"
+        }
+      ],
+      "clear_duration": "516939067/20075804160",
+      "clear_cells": [
+        [
+          "697/2472",
+          "1399/4952"
+        ],
+        [
+          "1401/4952",
+          "743/2624"
+        ],
+        [
+          "745/2624",
+          "727/2560"
+        ],
+        [
+          "235/824",
+          "1415/4952"
+        ],
+        [
+          "1417/4952",
+          "751/2624"
+        ],
+        [
+          "753/2624",
+          "147/512"
+        ],
+        [
+          "713/2472",
+          "1431/4952"
+        ],
+        [
+          "761/2624",
+          "743/2560"
+        ],
+        [
+          "7/24",
+          "1447/4952"
+        ],
+        [
+          "769/2624",
+          "751/2560"
+        ],
+        [
+          "243/824",
+          "775/2624"
+        ],
+        [
+          "777/2624",
+          "759/2560"
+        ],
+        [
+          "737/2472",
+          "783/2624"
+        ],
+        [
+          "785/2624",
+          "767/2560"
+        ],
+        [
+          "745/2472",
+          "791/2624"
+        ],
+        [
+          "1497/4952",
+          "155/512"
+        ],
+        [
+          "1513/4952",
+          "783/2560"
+        ],
+        [
+          "157/512",
+          "1519/4952"
+        ],
+        [
+          "809/2624",
+          "1527/4952"
+        ],
+        [
+          "1529/4952",
+          "791/2560"
+        ],
+        [
+          "793/2560",
+          "1535/4952"
+        ],
+        [
+          "817/2624",
+          "1543/4952"
+        ],
+        [
+          "1545/4952",
+          "799/2560"
+        ],
+        [
+          "801/2560",
+          "1551/4952"
+        ],
+        [
+          "825/2624",
+          "1559/4952"
+        ],
+        [
+          "1561/4952",
+          "807/2560"
+        ],
+        [
+          "809/2560",
+          "1567/4952"
+        ],
+        [
+          "785/2472",
+          "1575/4952"
+        ],
+        [
+          "817/2560",
+          "1583/4952"
+        ],
+        [
+          "793/2472",
+          "1591/4952"
+        ],
+        [
+          "165/512",
+          "847/2624"
+        ],
+        [
+          "267/824",
+          "1607/4952"
+        ],
+        [
+          "833/2560",
+          "855/2624"
+        ],
+        [
+          "809/2472",
+          "839/2560"
+        ],
+        [
+          "841/2560",
+          "863/2624"
+        ],
+        [
+          "817/2472",
+          "847/2560"
+        ],
+        [
+          "849/2560",
+          "871/2624"
+        ],
+        [
+          "275/824",
+          "171/512"
+        ],
+        [
+          "857/2560",
+          "879/2624"
+        ],
+        [
+          "881/2624",
+          "1663/4952"
+        ],
+        [
+          "833/2472",
+          "863/2560"
+        ],
+        [
+          "173/512",
+          "887/2624"
+        ],
+        [
+          "889/2624",
+          "1679/4952"
+        ],
+        [
+          "841/2472",
+          "871/2560"
+        ],
+        [
+          "1689/4952",
+          "895/2624"
+        ],
+        [
+          "897/2624",
+          "1695/4952"
+        ],
+        [
+          "905/2624",
+          "1711/4952"
+        ],
+        [
+          "913/2624",
+          "1727/4952"
+        ],
+        [
+          "921/2624",
+          "1743/4952"
+        ],
+        [
+          "929/2624",
+          "1759/4952"
+        ],
+        [
+          "1769/4952",
+          "1775/4952"
+        ],
+        [
+          "1785/4952",
+          "1791/4952"
+        ],
+        [
+          "953/2624",
+          "1799/4952"
+        ],
+        [
+          "1801/4952",
+          "1807/4952"
+        ],
+        [
+          "961/2624",
+          "1815/4952"
+        ],
+        [
+          "1817/4952",
+          "1823/4952"
+        ],
+        [
+          "913/2472",
+          "1831/4952"
+        ],
+        [
+          "1833/4952",
+          "1839/4952"
+        ],
+        [
+          "307/824",
+          "1847/4952"
+        ],
+        [
+          "1849/4952",
+          "1855/4952"
+        ]
+      ],
+      "valid_boundaries": [
+        "697/2472",
+        "1399/4952",
+        "1401/4952",
+        "743/2624",
+        "745/2624",
+        "727/2560",
+        "235/824",
+        "1415/4952",
+        "1417/4952",
+        "751/2624",
+        "753/2624",
+        "147/512",
+        "713/2472",
+        "1431/4952",
+        "761/2624",
+        "743/2560",
+        "7/24",
+        "1447/4952",
+        "769/2624",
+        "751/2560",
+        "243/824",
+        "775/2624",
+        "777/2624",
+        "759/2560",
+        "737/2472",
+        "783/2624",
+        "785/2624",
+        "767/2560",
+        "745/2472",
+        "791/2624",
+        "1497/4952",
+        "155/512",
+        "1513/4952",
+        "783/2560",
+        "157/512",
+        "1519/4952",
+        "809/2624",
+        "1527/4952",
+        "1529/4952",
+        "791/2560",
+        "793/2560",
+        "1535/4952",
+        "817/2624",
+        "1543/4952",
+        "1545/4952",
+        "799/2560",
+        "801/2560",
+        "1551/4952",
+        "825/2624",
+        "1559/4952",
+        "1561/4952",
+        "807/2560",
+        "809/2560",
+        "1567/4952",
+        "785/2472",
+        "1575/4952",
+        "817/2560",
+        "1583/4952",
+        "793/2472",
+        "1591/4952",
+        "165/512",
+        "847/2624",
+        "267/824",
+        "1607/4952",
+        "833/2560",
+        "855/2624",
+        "809/2472",
+        "839/2560",
+        "841/2560",
+        "863/2624",
+        "817/2472",
+        "847/2560",
+        "849/2560",
+        "871/2624",
+        "275/824",
+        "171/512",
+        "857/2560",
+        "879/2624",
+        "881/2624",
+        "1663/4952",
+        "833/2472",
+        "863/2560",
+        "173/512",
+        "887/2624",
+        "889/2624",
+        "1679/4952",
+        "841/2472",
+        "871/2560",
+        "1689/4952",
+        "895/2624",
+        "897/2624",
+        "1695/4952",
+        "905/2624",
+        "1711/4952",
+        "913/2624",
+        "1727/4952",
+        "921/2624",
+        "1743/4952",
+        "929/2624",
+        "1759/4952",
+        "1769/4952",
+        "1775/4952",
+        "1785/4952",
+        "1791/4952",
+        "953/2624",
+        "1799/4952",
+        "1801/4952",
+        "1807/4952",
+        "961/2624",
+        "1815/4952",
+        "1817/4952",
+        "1823/4952",
+        "913/2472",
+        "1831/4952",
+        "1833/4952",
+        "1839/4952",
+        "307/824",
+        "1847/4952",
+        "1849/4952",
+        "1855/4952"
+      ]
+    },
+    {
+      "name": "at_old_coarse_cutoff",
+      "extras": [
+        310,
+        320,
+        328,
+        621
+      ],
+      "occurrence_counts": [
+        29,
+        31,
+        31,
+        58
+      ],
+      "state_mass_by_mask": [
+        "2207/85560",
+        "2089403/168382080",
+        "1252747/126286560",
+        "1409/273792",
+        "17623/1642752",
+        "185221/50514624",
+        "17837/6518016",
+        "0",
+        "675821/56127360",
+        "244991/336764160",
+        "59291/16295040",
+        "73/88320",
+        "72991/16838208",
+        "30887/50514624",
+        "953/814752",
+        "0"
+      ],
+      "moments_by_mask": {
+        "1": "29/1240",
+        "2": "3/128",
+        "3": "237/39680",
+        "4": "61/2624",
+        "5": "87/20336",
+        "6": "1/256",
+        "7": "0",
+        "8": "29/1242",
+        "9": "29/13392",
+        "10": "1493/264960",
+        "11": "73/88320",
+        "12": "1661/271584",
+        "13": "30887/50514624",
+        "14": "953/814752",
+        "15": "0"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "237/39680",
+        "87/20336",
+        "29/13392",
+        "1/256",
+        "1493/264960",
+        "1661/271584"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            310,
+            320,
+            328
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            310,
+            320,
+            621
+          ],
+          "duration": "73/88320",
+          "lap_intersections": [
+            [
+              "759/2560",
+              "491/1656",
+              [
+                92,
+                95,
+                184
+              ]
+            ],
+            [
+              "767/2560",
+              "1489/4968",
+              [
+                93,
+                96,
+                186
+              ]
+            ],
+            [
+              "751/2480",
+              "1505/4968",
+              [
+                94,
+                97,
+                188
+              ]
+            ],
+            [
+              "759/2480",
+              "169/552",
+              [
+                95,
+                98,
+                190
+              ]
+            ],
+            [
+              "767/2480",
+              "1537/4968",
+              [
+                96,
+                99,
+                192
+              ]
+            ],
+            [
+              "5/16",
+              "1553/4968",
+              [
+                97,
+                100,
+                194
+              ]
+            ],
+            [
+              "783/2480",
+              "523/1656",
+              [
+                98,
+                101,
+                196
+              ]
+            ],
+            [
+              "791/2480",
+              "1585/4968",
+              [
+                99,
+                102,
+                198
+              ]
+            ],
+            [
+              "799/2480",
+              "1601/4968",
+              [
+                100,
+                103,
+                200
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            310,
+            328,
+            621
+          ],
+          "duration": "30887/50514624",
+          "lap_intersections": [
+            [
+              "703/2480",
+              "1409/4968",
+              [
+                88,
+                93,
+                176
+              ]
+            ],
+            [
+              "711/2480",
+              "475/1656",
+              [
+                89,
+                94,
+                178
+              ]
+            ],
+            [
+              "719/2480",
+              "761/2624",
+              [
+                90,
+                95,
+                180
+              ]
+            ],
+            [
+              "831/2480",
+              "185/552",
+              [
+                104,
+                110,
+                208
+              ]
+            ],
+            [
+              "839/2480",
+              "1681/4968",
+              [
+                105,
+                111,
+                210
+              ]
+            ],
+            [
+              "847/2480",
+              "1697/4968",
+              [
+                106,
+                112,
+                212
+              ]
+            ],
+            [
+              "171/496",
+              "571/1656",
+              [
+                107,
+                113,
+                214
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            320,
+            328,
+            621
+          ],
+          "duration": "953/814752",
+          "lap_intersections": [
+            [
+              "951/2624",
+              "1801/4968",
+              [
+                116,
+                119,
+                225
+              ]
+            ],
+            [
+              "959/2624",
+              "79/216",
+              [
+                117,
+                120,
+                227
+              ]
+            ],
+            [
+              "1831/4968",
+              "611/1656",
+              [
+                118,
+                121,
+                229
+              ]
+            ],
+            [
+              "1847/4968",
+              "1849/4968",
+              [
+                119,
+                122,
+                231
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            310,
+            320,
+            328,
+            621
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        }
+      ],
+      "tree": {
+        "graph_mask": 49,
+        "edges": [
+          [
+            310,
+            320
+          ],
+          [
+            320,
+            621
+          ],
+          [
+            328,
+            621
+          ]
+        ],
+        "uncorrected_pair_expression": "4559597/252573120",
+        "correction": "0",
+        "bound": "4559597/252573120"
+      },
+      "compatibility": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            310,
+            320
+          ],
+          [
+            310,
+            328
+          ],
+          [
+            320,
+            621
+          ],
+          [
+            328,
+            621
+          ]
+        ],
+        "uncorrected_pair_expression": "5640137/252573120",
+        "correction": "0",
+        "bound": "5640137/252573120"
+      },
+      "one_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            310,
+            320
+          ],
+          [
+            310,
+            328
+          ],
+          [
+            320,
+            621
+          ],
+          [
+            328,
+            621
+          ]
+        ],
+        "uncorrected_pair_expression": "5640137/252573120",
+        "correction": "0",
+        "bound": "5640137/252573120",
+        "cycle_vertices": [
+          310,
+          320,
+          328,
+          621
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            310,
+            320
+          ],
+          [
+            310,
+            328
+          ],
+          [
+            320,
+            621
+          ],
+          [
+            328,
+            621
+          ]
+        ],
+        "uncorrected_pair_expression": "5640137/252573120",
+        "correction": "0",
+        "bound": "5640137/252573120",
+        "cycle_vertices": [
+          310,
+          320,
+          328,
+          621
+        ]
+      },
+      "diamond": {
+        "graph_mask": 59,
+        "edges": [
+          [
+            310,
+            320
+          ],
+          [
+            310,
+            328
+          ],
+          [
+            320,
+            328
+          ],
+          [
+            320,
+            621
+          ],
+          [
+            328,
+            621
+          ]
+        ],
+        "uncorrected_pair_expression": "26507003/1010292480",
+        "correction": "953/814752",
+        "bound": "8441761/336764160",
+        "missing_edge": [
+          310,
+          621
+        ],
+        "triangles": [
+          [
+            310,
+            320,
+            328
+          ],
+          [
+            320,
+            328,
+            621
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "244991/336764160"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ]
+          ],
+          "uncorrected_pair_expression": "934613/56127360",
+          "correction": "0",
+          "bound": "934613/56127360",
+          "cycle_vertices": [
+            310,
+            320,
+            328
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "1547449/84191040",
+          "correction": "73/88320",
+          "bound": "5911447/336764160",
+          "cycle_vertices": [
+            310,
+            320,
+            621
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "20328083/1010292480",
+          "correction": "0",
+          "bound": "20328083/1010292480",
+          "cycle_vertices": [
+            310,
+            320,
+            328
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "195631/10863360",
+          "correction": "73/88320",
+          "bound": "46663/2715840",
+          "cycle_vertices": [
+            310,
+            320,
+            621
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "2746931/168382080",
+          "correction": "0",
+          "bound": "2746931/168382080",
+          "cycle_vertices": [
+            310,
+            320,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "6351833/336764160",
+          "correction": "30887/50514624",
+          "bound": "18437759/1010292480",
+          "cycle_vertices": [
+            310,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "10407097/505146240",
+          "correction": "0",
+          "bound": "10407097/505146240",
+          "cycle_vertices": [
+            310,
+            320,
+            328
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "100429/5431680",
+          "correction": "0",
+          "bound": "100429/5431680",
+          "cycle_vertices": [
+            310,
+            320,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "5655899/336764160",
+          "correction": "30887/50514624",
+          "bound": "16349957/1010292480",
+          "cycle_vertices": [
+            310,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "5640137/252573120",
+          "correction": "0",
+          "bound": "5640137/252573120",
+          "cycle_vertices": [
+            310,
+            320,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "6101/301760",
+          "correction": "73/88320",
+          "bound": "3053/157440",
+          "cycle_vertices": [
+            310,
+            320,
+            621
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "693113/37418240",
+          "correction": "30887/50514624",
+          "bound": "18096311/1010292480",
+          "cycle_vertices": [
+            310,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "22184843/1010292480",
+          "correction": "953/814752",
+          "bound": "7001041/336764160",
+          "cycle_vertices": [
+            320,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              310,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "10236373/505146240",
+          "correction": "953/814752",
+          "bound": "3215171/168382080",
+          "cycle_vertices": [
+            320,
+            328,
+            621
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "339599/18709120",
+          "correction": "953/814752",
+          "bound": "8578313/505146240",
+          "cycle_vertices": [
+            320,
+            328,
+            621
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "419639/18709120",
+          "correction": "9997/5612736",
+          "bound": "1229/59520",
+          "missing_edge": [
+            310,
+            320
+          ],
+          "triangles": [
+            [
+              310,
+              328,
+              621
+            ],
+            [
+              320,
+              328,
+              621
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1409/273792"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "29119/1207040",
+          "correction": "65057/32590080",
+          "bound": "180289/8147520",
+          "missing_edge": [
+            310,
+            328
+          ],
+          "triangles": [
+            [
+              310,
+              320,
+              621
+            ],
+            [
+              320,
+              328,
+              621
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "185221/50514624"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "26507003/1010292480",
+          "correction": "953/814752",
+          "bound": "8441761/336764160",
+          "missing_edge": [
+            310,
+            621
+          ],
+          "triangles": [
+            [
+              310,
+              320,
+              328
+            ],
+            [
+              320,
+              328,
+              621
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "244991/336764160"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              621
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "229151/9354560",
+          "correction": "1452787/1010292480",
+          "bound": "23295521/1010292480",
+          "missing_edge": [
+            320,
+            328
+          ],
+          "triangles": [
+            [
+              310,
+              320,
+              621
+            ],
+            [
+              310,
+              328,
+              621
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "17837/6518016"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "3833659/168382080",
+          "correction": "30887/50514624",
+          "bound": "11192107/505146240",
+          "missing_edge": [
+            320,
+            621
+          ],
+          "triangles": [
+            [
+              310,
+              320,
+              328
+            ],
+            [
+              310,
+              328,
+              621
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "59291/16295040"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              310,
+              320
+            ],
+            [
+              310,
+              328
+            ],
+            [
+              310,
+              621
+            ],
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              621
+            ]
+          ],
+          "uncorrected_pair_expression": "7505281/336764160",
+          "correction": "73/88320",
+          "bound": "1806733/84191040",
+          "missing_edge": [
+            328,
+            621
+          ],
+          "triangles": [
+            [
+              310,
+              320,
+              328
+            ],
+            [
+              310,
+              320,
+              621
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "72991/16838208"
+        }
+      ],
+      "clear_duration": "2207/85560",
+      "clear_cells": [
+        [
+          "467/1656",
+          "743/2624"
+        ],
+        [
+          "729/2560",
+          "1415/4968"
+        ],
+        [
+          "1417/4968",
+          "751/2624"
+        ],
+        [
+          "737/2560",
+          "53/184"
+        ],
+        [
+          "1433/4968",
+          "759/2624"
+        ],
+        [
+          "149/512",
+          "1447/4968"
+        ],
+        [
+          "7/24",
+          "767/2624"
+        ],
+        [
+          "753/2560",
+          "1463/4968"
+        ],
+        [
+          "1465/4968",
+          "775/2624"
+        ],
+        [
+          "761/2560",
+          "493/1656"
+        ],
+        [
+          "1481/4968",
+          "783/2624"
+        ],
+        [
+          "785/2624",
+          "1487/4968"
+        ],
+        [
+          "149/496",
+          "65/216"
+        ],
+        [
+          "499/1656",
+          "791/2624"
+        ],
+        [
+          "793/2624",
+          "167/552"
+        ],
+        [
+          "753/2480",
+          "1511/4968"
+        ],
+        [
+          "801/2624",
+          "1519/4968"
+        ],
+        [
+          "761/2480",
+          "509/1656"
+        ],
+        [
+          "809/2624",
+          "1535/4968"
+        ],
+        [
+          "769/2480",
+          "1543/4968"
+        ],
+        [
+          "817/2624",
+          "799/2560"
+        ],
+        [
+          "777/2480",
+          "823/2624"
+        ],
+        [
+          "825/2624",
+          "807/2560"
+        ],
+        [
+          "157/496",
+          "831/2624"
+        ],
+        [
+          "833/2624",
+          "163/512"
+        ],
+        [
+          "59/184",
+          "823/2560"
+        ],
+        [
+          "1609/4968",
+          "831/2560"
+        ],
+        [
+          "857/2624",
+          "541/1656"
+        ],
+        [
+          "1625/4968",
+          "839/2560"
+        ],
+        [
+          "865/2624",
+          "1639/4968"
+        ],
+        [
+          "547/1656",
+          "847/2560"
+        ],
+        [
+          "873/2624",
+          "1655/4968"
+        ],
+        [
+          "1657/4968",
+          "171/512"
+        ],
+        [
+          "833/2480",
+          "557/1656"
+        ],
+        [
+          "1673/4968",
+          "863/2560"
+        ],
+        [
+          "173/512",
+          "73/216"
+        ],
+        [
+          "841/2480",
+          "1687/4968"
+        ],
+        [
+          "563/1656",
+          "871/2560"
+        ],
+        [
+          "873/2560",
+          "895/2624"
+        ],
+        [
+          "849/2480",
+          "1703/4968"
+        ],
+        [
+          "1705/4968",
+          "879/2560"
+        ],
+        [
+          "857/2480",
+          "191/552"
+        ],
+        [
+          "1721/4968",
+          "887/2560"
+        ],
+        [
+          "173/496",
+          "1735/4968"
+        ],
+        [
+          "873/2480",
+          "1751/4968"
+        ],
+        [
+          "929/2624",
+          "1759/4968"
+        ],
+        [
+          "881/2480",
+          "589/1656"
+        ],
+        [
+          "937/2624",
+          "1775/4968"
+        ],
+        [
+          "889/2480",
+          "1783/4968"
+        ],
+        [
+          "945/2624",
+          "199/552"
+        ],
+        [
+          "897/2480",
+          "927/2560"
+        ],
+        [
+          "953/2624",
+          "1807/4968"
+        ],
+        [
+          "181/496",
+          "187/512"
+        ],
+        [
+          "961/2624",
+          "1823/4968"
+        ],
+        [
+          "913/2480",
+          "943/2560"
+        ],
+        [
+          "969/2624",
+          "613/1656"
+        ],
+        [
+          "921/2480",
+          "951/2560"
+        ],
+        [
+          "977/2624",
+          "1855/4968"
+        ],
+        [
+          "929/2480",
+          "959/2560"
+        ]
+      ],
+      "valid_boundaries": [
+        "467/1656",
+        "743/2624",
+        "729/2560",
+        "1415/4968",
+        "1417/4968",
+        "751/2624",
+        "737/2560",
+        "53/184",
+        "1433/4968",
+        "759/2624",
+        "149/512",
+        "1447/4968",
+        "7/24",
+        "767/2624",
+        "753/2560",
+        "1463/4968",
+        "1465/4968",
+        "775/2624",
+        "761/2560",
+        "493/1656",
+        "1481/4968",
+        "783/2624",
+        "785/2624",
+        "1487/4968",
+        "149/496",
+        "65/216",
+        "499/1656",
+        "791/2624",
+        "793/2624",
+        "167/552",
+        "753/2480",
+        "1511/4968",
+        "801/2624",
+        "1519/4968",
+        "761/2480",
+        "509/1656",
+        "809/2624",
+        "1535/4968",
+        "769/2480",
+        "1543/4968",
+        "817/2624",
+        "799/2560",
+        "777/2480",
+        "823/2624",
+        "825/2624",
+        "807/2560",
+        "157/496",
+        "831/2624",
+        "833/2624",
+        "163/512",
+        "59/184",
+        "823/2560",
+        "1609/4968",
+        "831/2560",
+        "857/2624",
+        "541/1656",
+        "1625/4968",
+        "839/2560",
+        "865/2624",
+        "1639/4968",
+        "547/1656",
+        "847/2560",
+        "873/2624",
+        "1655/4968",
+        "1657/4968",
+        "171/512",
+        "833/2480",
+        "557/1656",
+        "1673/4968",
+        "863/2560",
+        "173/512",
+        "73/216",
+        "841/2480",
+        "1687/4968",
+        "563/1656",
+        "871/2560",
+        "873/2560",
+        "895/2624",
+        "849/2480",
+        "1703/4968",
+        "1705/4968",
+        "879/2560",
+        "857/2480",
+        "191/552",
+        "1721/4968",
+        "887/2560",
+        "173/496",
+        "1735/4968",
+        "873/2480",
+        "1751/4968",
+        "929/2624",
+        "1759/4968",
+        "881/2480",
+        "589/1656",
+        "937/2624",
+        "1775/4968",
+        "889/2480",
+        "1783/4968",
+        "945/2624",
+        "199/552",
+        "897/2480",
+        "927/2560",
+        "953/2624",
+        "1807/4968",
+        "181/496",
+        "187/512",
+        "961/2624",
+        "1823/4968",
+        "913/2480",
+        "943/2560",
+        "969/2624",
+        "613/1656",
+        "921/2480",
+        "951/2560",
+        "977/2624",
+        "1855/4968",
+        "929/2480",
+        "959/2560"
+      ]
+    },
+    {
+      "name": "above_old_coarse_cutoff",
+      "extras": [
+        320,
+        328,
+        336,
+        641
+      ],
+      "occurrence_counts": [
+        31,
+        31,
+        32,
+        60
+      ],
+      "state_mass_by_mask": [
+        "6706841/282573312",
+        "4571/328192",
+        "1253541/94191104",
+        "1/512",
+        "2960803/282573312",
+        "1137/328192",
+        "144037/94191104",
+        "1/512",
+        "468929/40367616",
+        "557/328192",
+        "1285/315372",
+        "0",
+        "207589/40367616",
+        "145/328192",
+        "1081/2522976",
+        "0"
+      ],
+      "moments_by_mask": {
+        "1": "3/128",
+        "2": "61/2624",
+        "3": "1/256",
+        "4": "3/128",
+        "5": "3/512",
+        "6": "431/110208",
+        "7": "1/512",
+        "8": "15/641",
+        "9": "351/164096",
+        "10": "3787/840992",
+        "11": "0",
+        "12": "185/30768",
+        "13": "145/328192",
+        "14": "1081/2522976",
+        "15": "0"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "1/256",
+        "3/512",
+        "351/164096",
+        "431/110208",
+        "3787/840992",
+        "185/30768"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            320,
+            328,
+            336
+          ],
+          "duration": "1/512",
+          "lap_intersections": [
+            [
+              "967/2688",
+              "921/2560",
+              [
+                115,
+                118,
+                121
+              ]
+            ],
+            [
+              "325/896",
+              "929/2560",
+              [
+                116,
+                119,
+                122
+              ]
+            ],
+            [
+              "983/2688",
+              "937/2560",
+              [
+                117,
+                120,
+                123
+              ]
+            ],
+            [
+              "991/2688",
+              "189/512",
+              [
+                118,
+                121,
+                124
+              ]
+            ],
+            [
+              "333/896",
+              "953/2560",
+              [
+                119,
+                122,
+                125
+              ]
+            ],
+            [
+              "1007/2688",
+              "3/8",
+              [
+                120,
+                123,
+                126
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            320,
+            328,
+            641
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            320,
+            336,
+            641
+          ],
+          "duration": "145/328192",
+          "lap_intersections": [
+            [
+              "839/2688",
+              "1601/5128",
+              [
+                100,
+                105,
+                200
+              ]
+            ],
+            [
+              "807/2560",
+              "1617/5128",
+              [
+                101,
+                106,
+                202
+              ]
+            ],
+            [
+              "163/512",
+              "1633/5128",
+              [
+                102,
+                107,
+                204
+              ]
+            ],
+            [
+              "823/2560",
+              "1649/5128",
+              [
+                103,
+                108,
+                206
+              ]
+            ],
+            [
+              "831/2560",
+              "1665/5128",
+              [
+                104,
+                109,
+                208
+              ]
+            ],
+            [
+              "839/2560",
+              "881/2688",
+              [
+                105,
+                110,
+                210
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            328,
+            336,
+            641
+          ],
+          "duration": "1081/2522976",
+          "lap_intersections": [
+            [
+              "309/896",
+              "905/2624",
+              [
+                113,
+                116,
+                221
+              ]
+            ],
+            [
+              "935/2688",
+              "913/2624",
+              [
+                114,
+                117,
+                223
+              ]
+            ],
+            [
+              "1799/5128",
+              "921/2624",
+              [
+                115,
+                118,
+                225
+              ]
+            ],
+            [
+              "1815/5128",
+              "929/2624",
+              [
+                116,
+                119,
+                227
+              ]
+            ],
+            [
+              "1831/5128",
+              "937/2624",
+              [
+                117,
+                120,
+                229
+              ]
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            320,
+            328,
+            336,
+            641
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        }
+      ],
+      "tree": {
+        "graph_mask": 50,
+        "edges": [
+          [
+            320,
+            336
+          ],
+          [
+            328,
+            641
+          ],
+          [
+            336,
+            641
+          ]
+        ],
+        "uncorrected_pair_expression": "670193/40367616",
+        "correction": "0",
+        "bound": "670193/40367616"
+      },
+      "compatibility": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            320,
+            328
+          ],
+          [
+            320,
+            336
+          ],
+          [
+            328,
+            641
+          ],
+          [
+            336,
+            641
+          ]
+        ],
+        "uncorrected_pair_expression": "827879/40367616",
+        "correction": "0",
+        "bound": "827879/40367616"
+      },
+      "one_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            320,
+            328
+          ],
+          [
+            320,
+            336
+          ],
+          [
+            328,
+            641
+          ],
+          [
+            336,
+            641
+          ]
+        ],
+        "uncorrected_pair_expression": "827879/40367616",
+        "correction": "0",
+        "bound": "827879/40367616",
+        "cycle_vertices": [
+          320,
+          328,
+          336,
+          641
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 51,
+        "edges": [
+          [
+            320,
+            328
+          ],
+          [
+            320,
+            336
+          ],
+          [
+            328,
+            641
+          ],
+          [
+            336,
+            641
+          ]
+        ],
+        "uncorrected_pair_expression": "827879/40367616",
+        "correction": "0",
+        "bound": "827879/40367616",
+        "cycle_vertices": [
+          320,
+          328,
+          336,
+          641
+        ]
+      },
+      "diamond": {
+        "graph_mask": 55,
+        "edges": [
+          [
+            320,
+            328
+          ],
+          [
+            320,
+            336
+          ],
+          [
+            320,
+            641
+          ],
+          [
+            328,
+            641
+          ],
+          [
+            336,
+            641
+          ]
+        ],
+        "uncorrected_pair_expression": "914225/40367616",
+        "correction": "145/328192",
+        "bound": "448195/20183808",
+        "missing_edge": [
+          328,
+          336
+        ],
+        "triangles": [
+          [
+            320,
+            328,
+            641
+          ],
+          [
+            320,
+            336,
+            641
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "144037/94191104"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ]
+          ],
+          "uncorrected_pair_expression": "4533187/282573312",
+          "correction": "1/512",
+          "bound": "1990643/141286656",
+          "cycle_vertices": [
+            320,
+            328,
+            336
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "223835/13455872",
+          "correction": "0",
+          "bound": "223835/13455872",
+          "cycle_vertices": [
+            320,
+            328,
+            641
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "5201197/282573312",
+          "correction": "1/512",
+          "bound": "290581/17660832",
+          "cycle_vertices": [
+            320,
+            328,
+            336
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "1037479/70643328",
+          "correction": "0",
+          "bound": "1037479/70643328",
+          "cycle_vertices": [
+            320,
+            328,
+            641
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "4701817/282573312",
+          "correction": "0",
+          "bound": "4701817/282573312",
+          "cycle_vertices": [
+            320,
+            328,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "732449/40367616",
+          "correction": "145/328192",
+          "bound": "357307/20183808",
+          "cycle_vertices": [
+            320,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "1875935/94191104",
+          "correction": "1/512",
+          "bound": "26437/1471736",
+          "cycle_vertices": [
+            320,
+            328,
+            336
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "381377/23547776",
+          "correction": "0",
+          "bound": "381377/23547776",
+          "cycle_vertices": [
+            320,
+            328,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "1709475/94191104",
+          "correction": "145/328192",
+          "bound": "416965/23547776",
+          "cycle_vertices": [
+            320,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "827879/40367616",
+          "correction": "0",
+          "bound": "827879/40367616",
+          "cycle_vertices": [
+            320,
+            328,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "10589/630744",
+          "correction": "0",
+          "bound": "10589/630744",
+          "cycle_vertices": [
+            320,
+            328,
+            641
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "756539/40367616",
+          "correction": "145/328192",
+          "bound": "46169/2522976",
+          "cycle_vertices": [
+            320,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "874089/47095552",
+          "correction": "1081/2522976",
+          "bound": "2561731/141286656",
+          "cycle_vertices": [
+            328,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              320,
+              336
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "1932145/94191104",
+          "correction": "1081/2522976",
+          "bound": "5675363/282573312",
+          "cycle_vertices": [
+            328,
+            336,
+            641
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "790859/47095552",
+          "correction": "1081/2522976",
+          "bound": "2312041/141286656",
+          "cycle_vertices": [
+            328,
+            336,
+            641
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "2133619/94191104",
+          "correction": "35131/40367616",
+          "bound": "1538735/70643328",
+          "missing_edge": [
+            320,
+            328
+          ],
+          "triangles": [
+            [
+              320,
+              336,
+              641
+            ],
+            [
+              328,
+              336,
+              641
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/512"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "487413/23547776",
+          "correction": "1081/2522976",
+          "bound": "1431971/70643328",
+          "missing_edge": [
+            320,
+            336
+          ],
+          "triangles": [
+            [
+              320,
+              328,
+              641
+            ],
+            [
+              328,
+              336,
+              641
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1137/328192"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "2300079/94191104",
+          "correction": "96139/40367616",
+          "bound": "97301/4415208",
+          "missing_edge": [
+            320,
+            641
+          ],
+          "triangles": [
+            [
+              320,
+              328,
+              336
+            ],
+            [
+              328,
+              336,
+              641
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "557/328192"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              641
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "914225/40367616",
+          "correction": "145/328192",
+          "bound": "448195/20183808",
+          "missing_edge": [
+            328,
+            336
+          ],
+          "triangles": [
+            [
+              320,
+              328,
+              641
+            ],
+            [
+              320,
+              336,
+              641
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "144037/94191104"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              336,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "2077409/94191104",
+          "correction": "393/164096",
+          "bound": "1851827/94191104",
+          "missing_edge": [
+            328,
+            641
+          ],
+          "triangles": [
+            [
+              320,
+              328,
+              336
+            ],
+            [
+              320,
+              336,
+              641
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1285/315372"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              320,
+              328
+            ],
+            [
+              320,
+              336
+            ],
+            [
+              320,
+              641
+            ],
+            [
+              328,
+              336
+            ],
+            [
+              328,
+              641
+            ]
+          ],
+          "uncorrected_pair_expression": "5805619/282573312",
+          "correction": "1/512",
+          "bound": "2626859/141286656",
+          "missing_edge": [
+            336,
+            641
+          ],
+          "triangles": [
+            [
+              320,
+              328,
+              336
+            ],
+            [
+              320,
+              328,
+              641
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "207589/40367616"
+        }
+      ],
+      "clear_duration": "6706841/282573312",
+      "clear_cells": [
+        [
+          "721/2560",
+          "1447/5128"
+        ],
+        [
+          "761/2688",
+          "743/2624"
+        ],
+        [
+          "729/2560",
+          "1463/5128"
+        ],
+        [
+          "769/2688",
+          "751/2624"
+        ],
+        [
+          "737/2560",
+          "775/2688"
+        ],
+        [
+          "37/128",
+          "759/2624"
+        ],
+        [
+          "149/512",
+          "261/896"
+        ],
+        [
+          "785/2688",
+          "767/2624"
+        ],
+        [
+          "769/2624",
+          "1503/5128"
+        ],
+        [
+          "753/2560",
+          "113/384"
+        ],
+        [
+          "1513/5128",
+          "775/2624"
+        ],
+        [
+          "777/2624",
+          "1519/5128"
+        ],
+        [
+          "1529/5128",
+          "783/2624"
+        ],
+        [
+          "785/2624",
+          "1535/5128"
+        ],
+        [
+          "1545/5128",
+          "791/2624"
+        ],
+        [
+          "793/2624",
+          "1551/5128"
+        ],
+        [
+          "817/2688",
+          "1559/5128"
+        ],
+        [
+          "1561/5128",
+          "799/2624"
+        ],
+        [
+          "801/2624",
+          "1567/5128"
+        ],
+        [
+          "275/896",
+          "1575/5128"
+        ],
+        [
+          "1577/5128",
+          "807/2624"
+        ],
+        [
+          "809/2624",
+          "1583/5128"
+        ],
+        [
+          "119/384",
+          "1591/5128"
+        ],
+        [
+          "817/2624",
+          "1599/5128"
+        ],
+        [
+          "801/2560",
+          "1607/5128"
+        ],
+        [
+          "825/2624",
+          "1615/5128"
+        ],
+        [
+          "809/2560",
+          "1623/5128"
+        ],
+        [
+          "833/2624",
+          "1631/5128"
+        ],
+        [
+          "817/2560",
+          "1639/5128"
+        ],
+        [
+          "841/2624",
+          "863/2688"
+        ],
+        [
+          "165/512",
+          "1655/5128"
+        ],
+        [
+          "849/2624",
+          "871/2688"
+        ],
+        [
+          "833/2560",
+          "855/2624"
+        ],
+        [
+          "857/2624",
+          "293/896"
+        ],
+        [
+          "841/2560",
+          "863/2624"
+        ],
+        [
+          "865/2624",
+          "887/2688"
+        ],
+        [
+          "849/2560",
+          "871/2624"
+        ],
+        [
+          "873/2624",
+          "895/2688"
+        ],
+        [
+          "857/2560",
+          "879/2624"
+        ],
+        [
+          "881/2624",
+          "43/128"
+        ],
+        [
+          "905/2688",
+          "1727/5128"
+        ],
+        [
+          "173/512",
+          "887/2624"
+        ],
+        [
+          "889/2624",
+          "911/2688"
+        ],
+        [
+          "913/2688",
+          "1743/5128"
+        ],
+        [
+          "873/2560",
+          "895/2624"
+        ],
+        [
+          "1753/5128",
+          "919/2688"
+        ],
+        [
+          "307/896",
+          "1759/5128"
+        ],
+        [
+          "929/2688",
+          "1775/5128"
+        ],
+        [
+          "937/2688",
+          "1791/5128"
+        ],
+        [
+          "45/128",
+          "1807/5128"
+        ],
+        [
+          "953/2688",
+          "1823/5128"
+        ],
+        [
+          "961/2688",
+          "1839/5128"
+        ],
+        [
+          "1849/5128",
+          "1855/5128"
+        ],
+        [
+          "1865/5128",
+          "1871/5128"
+        ],
+        [
+          "1881/5128",
+          "1887/5128"
+        ],
+        [
+          "331/896",
+          "1895/5128"
+        ],
+        [
+          "1897/5128",
+          "1903/5128"
+        ],
+        [
+          "143/384",
+          "1911/5128"
+        ],
+        [
+          "1913/5128",
+          "1919/5128"
+        ]
+      ],
+      "valid_boundaries": [
+        "721/2560",
+        "1447/5128",
+        "761/2688",
+        "743/2624",
+        "729/2560",
+        "1463/5128",
+        "769/2688",
+        "751/2624",
+        "737/2560",
+        "775/2688",
+        "37/128",
+        "759/2624",
+        "149/512",
+        "261/896",
+        "785/2688",
+        "767/2624",
+        "769/2624",
+        "1503/5128",
+        "753/2560",
+        "113/384",
+        "1513/5128",
+        "775/2624",
+        "777/2624",
+        "1519/5128",
+        "1529/5128",
+        "783/2624",
+        "785/2624",
+        "1535/5128",
+        "1545/5128",
+        "791/2624",
+        "793/2624",
+        "1551/5128",
+        "817/2688",
+        "1559/5128",
+        "1561/5128",
+        "799/2624",
+        "801/2624",
+        "1567/5128",
+        "275/896",
+        "1575/5128",
+        "1577/5128",
+        "807/2624",
+        "809/2624",
+        "1583/5128",
+        "119/384",
+        "1591/5128",
+        "817/2624",
+        "1599/5128",
+        "801/2560",
+        "1607/5128",
+        "825/2624",
+        "1615/5128",
+        "809/2560",
+        "1623/5128",
+        "833/2624",
+        "1631/5128",
+        "817/2560",
+        "1639/5128",
+        "841/2624",
+        "863/2688",
+        "165/512",
+        "1655/5128",
+        "849/2624",
+        "871/2688",
+        "833/2560",
+        "855/2624",
+        "857/2624",
+        "293/896",
+        "841/2560",
+        "863/2624",
+        "865/2624",
+        "887/2688",
+        "849/2560",
+        "871/2624",
+        "873/2624",
+        "895/2688",
+        "857/2560",
+        "879/2624",
+        "881/2624",
+        "43/128",
+        "905/2688",
+        "1727/5128",
+        "173/512",
+        "887/2624",
+        "889/2624",
+        "911/2688",
+        "913/2688",
+        "1743/5128",
+        "873/2560",
+        "895/2624",
+        "1753/5128",
+        "919/2688",
+        "307/896",
+        "1759/5128",
+        "929/2688",
+        "1775/5128",
+        "937/2688",
+        "1791/5128",
+        "45/128",
+        "1807/5128",
+        "953/2688",
+        "1823/5128",
+        "961/2688",
+        "1839/5128",
+        "1849/5128",
+        "1855/5128",
+        "1865/5128",
+        "1871/5128",
+        "1881/5128",
+        "1887/5128",
+        "331/896",
+        "1895/5128",
+        "1897/5128",
+        "1903/5128",
+        "143/384",
+        "1911/5128",
+        "1913/5128",
+        "1919/5128"
+      ]
+    },
+    {
+      "name": "original_missed_window",
+      "extras": [
+        6,
+        7,
+        11,
+        16
+      ],
+      "occurrence_counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "state_mass_by_mask": [
+        "1/896",
+        "45/1408",
+        "3/154",
+        "0",
+        "5/384",
+        "1/528",
+        "1/352",
+        "0",
+        "1/128",
+        "1/128",
+        "0",
+        "0",
+        "1/128",
+        "0",
+        "0",
+        "0"
+      ],
+      "moments_by_mask": {
+        "1": "1/24",
+        "2": "5/224",
+        "3": "0",
+        "4": "9/352",
+        "5": "1/528",
+        "6": "1/352",
+        "7": "0",
+        "8": "3/128",
+        "9": "1/128",
+        "10": "0",
+        "11": "0",
+        "12": "1/128",
+        "13": "0",
+        "14": "0",
+        "15": "0"
+      },
+      "pair_weights_in_lexicographic_order": [
+        "0",
+        "1/528",
+        "1/128",
+        "1/352",
+        "0",
+        "1/128"
+      ],
+      "triple_and_quad_intersections": [
+        {
+          "vertices": [
+            6,
+            7,
+            11
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            7,
+            16
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            11,
+            16
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            7,
+            11,
+            16
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        },
+        {
+          "vertices": [
+            6,
+            7,
+            11,
+            16
+          ],
+          "duration": "0",
+          "lap_intersections": []
+        }
+      ],
+      "tree": {
+        "graph_mask": 44,
+        "edges": [
+          [
+            6,
+            16
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "uncorrected_pair_expression": "-23/29568",
+        "correction": "0",
+        "bound": "-23/29568"
+      },
+      "compatibility": {
+        "graph_mask": 46,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "uncorrected_pair_expression": "1/896",
+        "correction": "0",
+        "bound": "1/896"
+      },
+      "one_cycle": {
+        "graph_mask": 46,
+        "edges": [
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "uncorrected_pair_expression": "1/896",
+        "correction": "0",
+        "bound": "1/896",
+        "cycle_vertices": [
+          6,
+          11,
+          16
+        ]
+      },
+      "four_cycle": {
+        "graph_mask": 45,
+        "edges": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "uncorrected_pair_expression": "-23/29568",
+        "correction": "0",
+        "bound": "-23/29568",
+        "cycle_vertices": [
+          6,
+          7,
+          11,
+          16
+        ]
+      },
+      "diamond": {
+        "graph_mask": 47,
+        "edges": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            11,
+            16
+          ]
+        ],
+        "uncorrected_pair_expression": "1/896",
+        "correction": "0",
+        "bound": "1/896",
+        "missing_edge": [
+          7,
+          16
+        ],
+        "triangles": [
+          [
+            6,
+            7,
+            11
+          ],
+          [
+            6,
+            11,
+            16
+          ]
+        ],
+        "gap_equals_missing_pair_only_mass": "0"
+      },
+      "all_one_cycle_options": [
+        {
+          "graph_mask": 15,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 23,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-47/4928",
+          "correction": "0",
+          "bound": "-47/4928",
+          "cycle_vertices": [
+            6,
+            7,
+            16
+          ]
+        },
+        {
+          "graph_mask": 27,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-13/896",
+          "correction": "0",
+          "bound": "-13/896",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 29,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-127/14784",
+          "correction": "0",
+          "bound": "-127/14784",
+          "cycle_vertices": [
+            6,
+            7,
+            16
+          ]
+        },
+        {
+          "graph_mask": 30,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            6,
+            7,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 39,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-17/9856",
+          "correction": "0",
+          "bound": "-17/9856",
+          "cycle_vertices": [
+            6,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 43,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "graph_mask": 45,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-23/29568",
+          "correction": "0",
+          "bound": "-23/29568",
+          "cycle_vertices": [
+            6,
+            7,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 46,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "1/896",
+          "correction": "0",
+          "bound": "1/896",
+          "cycle_vertices": [
+            6,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 51,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-47/4928",
+          "correction": "0",
+          "bound": "-47/4928",
+          "cycle_vertices": [
+            6,
+            7,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 53,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-107/29568",
+          "correction": "0",
+          "bound": "-107/29568",
+          "cycle_vertices": [
+            6,
+            7,
+            16
+          ]
+        },
+        {
+          "graph_mask": 54,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-17/9856",
+          "correction": "0",
+          "bound": "-17/9856",
+          "cycle_vertices": [
+            6,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 57,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-127/14784",
+          "correction": "0",
+          "bound": "-127/14784",
+          "cycle_vertices": [
+            7,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 58,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "cycle_vertices": [
+            7,
+            11,
+            16
+          ]
+        },
+        {
+          "graph_mask": 60,
+          "edges": [
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-23/29568",
+          "correction": "0",
+          "bound": "-23/29568",
+          "cycle_vertices": [
+            7,
+            11,
+            16
+          ]
+        }
+      ],
+      "all_diamond_options": [
+        {
+          "graph_mask": 62,
+          "edges": [
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "1/896",
+          "correction": "0",
+          "bound": "1/896",
+          "missing_edge": [
+            6,
+            7
+          ],
+          "triangles": [
+            [
+              6,
+              11,
+              16
+            ],
+            [
+              7,
+              11,
+              16
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        },
+        {
+          "graph_mask": 61,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-23/29568",
+          "correction": "0",
+          "bound": "-23/29568",
+          "missing_edge": [
+            6,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              16
+            ],
+            [
+              7,
+              11,
+              16
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/528"
+        },
+        {
+          "graph_mask": 59,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "missing_edge": [
+            6,
+            16
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              7,
+              11,
+              16
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/128"
+        },
+        {
+          "graph_mask": 55,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              16
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-17/9856",
+          "correction": "0",
+          "bound": "-17/9856",
+          "missing_edge": [
+            7,
+            11
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              16
+            ],
+            [
+              6,
+              11,
+              16
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/352"
+        },
+        {
+          "graph_mask": 47,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "1/896",
+          "correction": "0",
+          "bound": "1/896",
+          "missing_edge": [
+            7,
+            16
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              6,
+              11,
+              16
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "0"
+        },
+        {
+          "graph_mask": 31,
+          "edges": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              16
+            ]
+          ],
+          "uncorrected_pair_expression": "-3/448",
+          "correction": "0",
+          "bound": "-3/448",
+          "missing_edge": [
+            11,
+            16
+          ],
+          "triangles": [
+            [
+              6,
+              7,
+              11
+            ],
+            [
+              6,
+              7,
+              16
+            ]
+          ],
+          "gap_equals_missing_pair_only_mass": "1/128"
+        }
+      ],
+      "clear_duration": "1/896",
+      "clear_cells": [
+        [
+          "17/56",
+          "39/128"
+        ]
+      ],
+      "valid_boundaries": [
+        "17/56",
+        "39/128"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8603 @@
+{
+  "date": "2026-09-25",
+  "research_baseline": "c1cc625a2ee77d6a85da17dffb427c1ac2024e77",
+  "status": "Restricted selected-reference certificate; analytic tail awaits independent review; no new-family or novelty claim.",
+  "script_sha256": "ba0bc21631ad9f04108e8beb73f031b651315eeea485a93d578a692f105809c0",
+  "fixed_relative_speeds": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    11
+  ],
+  "window": [
+    "9/32",
+    "3/8"
+  ],
+  "threshold": "1/8",
+  "finite_domain": "1 <= w <= 298, w not in {1,4,5,6,7,11}",
+  "finite_cases": 292,
+  "positive_lower_bounds": 288,
+  "exact_duration_cases": 79,
+  "zero_duration_replacements": [
+    3,
+    10,
+    13,
+    26
+  ],
+  "tail_start": 299,
+  "tail_uniform_bound_at_299": "29/2946944",
+  "finite_results": [
+    {
+      "replacement": 2,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      "selected_pair_weight": "5/1056",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "1/112",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-4589/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 3,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "selected_pair_weight": "195/2464",
+      "clear_lower_bound": "0",
+      "best_runner_tree_bound": "-1/352",
+      "fast_runner_star_bound": "-1/352",
+      "uniform_star_lower_bound": "-3049/9856",
+      "actual_clear_duration": "0",
+      "exact_duration_recovered": true,
+      "valid_times": [
+        "3/8"
+      ]
+    },
+    {
+      "replacement": 8,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          11,
+          8
+        ]
+      ],
+      "selected_pair_weight": "43/2112",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "1/112",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-281/2464",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 9,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "selected_pair_weight": "103/3168",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "1/112",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-2987/29568",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 10,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "selected_pair_weight": "769/36960",
+      "clear_lower_bound": "0",
+      "best_runner_tree_bound": "0",
+      "fast_runner_star_bound": "-5/1056",
+      "uniform_star_lower_bound": "-893/9856",
+      "actual_clear_duration": "0",
+      "exact_duration_recovered": true,
+      "valid_times": [
+        "5/16",
+        "3/8"
+      ]
+    },
+    {
+      "replacement": 12,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "1/112",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-739/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 13,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "selected_pair_weight": "1445/96096",
+      "clear_lower_bound": "0",
+      "best_runner_tree_bound": "-1/528",
+      "fast_runner_star_bound": "-5/1056",
+      "uniform_star_lower_bound": "-8837/128128",
+      "actual_clear_duration": "0",
+      "exact_duration_recovered": true,
+      "valid_times": [
+        "3/8"
+      ]
+    },
+    {
+      "replacement": 14,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          11,
+          14
+        ]
+      ],
+      "selected_pair_weight": "19/528",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "1/112",
+      "fast_runner_star_bound": "1/112",
+      "uniform_star_lower_bound": "-629/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 15,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          15
+        ]
+      ],
+      "selected_pair_weight": "113/5280",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "1/112",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-585/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 16,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          11,
+          16
+        ]
+      ],
+      "selected_pair_weight": "43/2112",
+      "clear_lower_bound": "1/896",
+      "best_runner_tree_bound": "-23/29568",
+      "fast_runner_star_bound": "-107/29568",
+      "uniform_star_lower_bound": "-1093/19712",
+      "actual_clear_duration": "1/896",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 17,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          11,
+          17
+        ]
+      ],
+      "selected_pair_weight": "613/17952",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "15/2464",
+      "fast_runner_star_bound": "15/2464",
+      "uniform_star_lower_bound": "-8713/167552",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 18,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          7,
+          18
+        ]
+      ],
+      "selected_pair_weight": "35/1584",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "13/1848",
+      "fast_runner_star_bound": "13/1848",
+      "uniform_star_lower_bound": "-1447/29568",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 19,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          11,
+          19
+        ]
+      ],
+      "selected_pair_weight": "557/20064",
+      "clear_lower_bound": "3/532",
+      "best_runner_tree_bound": "263/70224",
+      "fast_runner_star_bound": "127/140448",
+      "uniform_star_lower_bound": "-8651/187264",
+      "actual_clear_duration": "3/532",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 20,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "selected_pair_weight": "25/924",
+      "clear_lower_bound": "1/160",
+      "best_runner_tree_bound": "3/880",
+      "fast_runner_star_bound": "3/880",
+      "uniform_star_lower_bound": "-431/9856",
+      "actual_clear_duration": "1/160",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 21,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          21
+        ],
+        [
+          7,
+          21
+        ]
+      ],
+      "selected_pair_weight": "25/924",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "13/1848",
+      "fast_runner_star_bound": "13/1848",
+      "uniform_star_lower_bound": "-409/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 22,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          22
+        ],
+        [
+          11,
+          22
+        ]
+      ],
+      "selected_pair_weight": "29/1056",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "13/1848",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-389/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 23,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          23
+        ],
+        [
+          7,
+          23
+        ]
+      ],
+      "selected_pair_weight": "3445/170016",
+      "clear_lower_bound": "1/368",
+      "best_runner_tree_bound": "5/6072",
+      "fast_runner_star_bound": "-25/24288",
+      "uniform_star_lower_bound": "-8527/226688",
+      "actual_clear_duration": "1/368",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 24,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          7,
+          24
+        ],
+        [
+          11,
+          24
+        ]
+      ],
+      "selected_pair_weight": "65/2112",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-177/4928",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 25,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          25
+        ],
+        [
+          7,
+          25
+        ],
+        [
+          11,
+          25
+        ]
+      ],
+      "selected_pair_weight": "47/1650",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "13/1848",
+      "fast_runner_star_bound": "13/1848",
+      "uniform_star_lower_bound": "-1693/49280",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 26,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          26
+        ],
+        [
+          7,
+          26
+        ]
+      ],
+      "selected_pair_weight": "1445/96096",
+      "clear_lower_bound": "0",
+      "best_runner_tree_bound": "-1/1456",
+      "fast_runner_star_bound": "-5/1056",
+      "uniform_star_lower_bound": "-4217/128128",
+      "actual_clear_duration": "0",
+      "exact_duration_recovered": true,
+      "valid_times": [
+        "5/16",
+        "3/8"
+      ]
+    },
+    {
+      "replacement": 27,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          27
+        ],
+        [
+          7,
+          27
+        ],
+        [
+          11,
+          27
+        ]
+      ],
+      "selected_pair_weight": "103/3168",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-2801/88704",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 28,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          28
+        ],
+        [
+          7,
+          28
+        ],
+        [
+          11,
+          28
+        ]
+      ],
+      "selected_pair_weight": "115/3696",
+      "clear_lower_bound": "3/352",
+      "best_runner_tree_bound": "3/352",
+      "fast_runner_star_bound": "3/352",
+      "uniform_star_lower_bound": "-299/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 29,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          29
+        ]
+      ],
+      "selected_pair_weight": "475/30624",
+      "clear_lower_bound": "1/406",
+      "best_runner_tree_bound": "1/406",
+      "fast_runner_star_bound": "-487/214368",
+      "uniform_star_lower_bound": "-8341/285824",
+      "actual_clear_duration": "1/406",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 30,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          30
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          11,
+          30
+        ]
+      ],
+      "selected_pair_weight": "359/12320",
+      "clear_lower_bound": "1/120",
+      "best_runner_tree_bound": "19/5280",
+      "fast_runner_star_bound": "19/5280",
+      "uniform_star_lower_bound": "-277/9856",
+      "actual_clear_duration": "1/120",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 31,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          31
+        ],
+        [
+          7,
+          31
+        ],
+        [
+          11,
+          31
+        ]
+      ],
+      "selected_pair_weight": "947/32736",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "15/2464",
+      "fast_runner_star_bound": "15/2464",
+      "uniform_star_lower_bound": "-8279/305536",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 32,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          32
+        ],
+        [
+          7,
+          32
+        ],
+        [
+          11,
+          32
+        ]
+      ],
+      "selected_pair_weight": "205/8448",
+      "clear_lower_bound": "9/1792",
+      "best_runner_tree_bound": "185/59136",
+      "fast_runner_star_bound": "185/59136",
+      "uniform_star_lower_bound": "-1031/39424",
+      "actual_clear_duration": "9/1792",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 33,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          33
+        ],
+        [
+          7,
+          33
+        ],
+        [
+          11,
+          33
+        ]
+      ],
+      "selected_pair_weight": "179/7392",
+      "clear_lower_bound": "1/176",
+      "best_runner_tree_bound": "1/1056",
+      "fast_runner_star_bound": "1/1056",
+      "uniform_star_lower_bound": "-249/9856",
+      "actual_clear_duration": "1/176",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 34,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          34
+        ],
+        [
+          7,
+          34
+        ],
+        [
+          11,
+          34
+        ]
+      ],
+      "selected_pair_weight": "481/17952",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "15/2464",
+      "fast_runner_star_bound": "15/2464",
+      "uniform_star_lower_bound": "-4093/167552",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 35,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          35
+        ],
+        [
+          7,
+          35
+        ],
+        [
+          11,
+          35
+        ]
+      ],
+      "selected_pair_weight": "283/9240",
+      "clear_lower_bound": "1/160",
+      "best_runner_tree_bound": "23/5280",
+      "fast_runner_star_bound": "23/5280",
+      "uniform_star_lower_bound": "-233/9856",
+      "actual_clear_duration": "1/140",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 36,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          36
+        ],
+        [
+          7,
+          36
+        ],
+        [
+          11,
+          36
+        ]
+      ],
+      "selected_pair_weight": "223/11088",
+      "clear_lower_bound": "1/288",
+      "best_runner_tree_bound": "1/11088",
+      "fast_runner_star_bound": "-1/792",
+      "uniform_star_lower_bound": "-677/29568",
+      "actual_clear_duration": "1/288",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 37,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          37
+        ],
+        [
+          7,
+          37
+        ],
+        [
+          11,
+          37
+        ]
+      ],
+      "selected_pair_weight": "977/39072",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "295/45584",
+      "fast_runner_star_bound": "15/2464",
+      "uniform_star_lower_bound": "-8093/364672",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 38,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          38
+        ],
+        [
+          7,
+          38
+        ],
+        [
+          11,
+          38
+        ]
+      ],
+      "selected_pair_weight": "623/20064",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-4031/187264",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 39,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          39
+        ],
+        [
+          7,
+          39
+        ],
+        [
+          11,
+          39
+        ]
+      ],
+      "selected_pair_weight": "37/1716",
+      "clear_lower_bound": "11/4368",
+      "best_runner_tree_bound": "5/8008",
+      "fast_runner_star_bound": "5/8008",
+      "uniform_star_lower_bound": "-2677/128128",
+      "actual_clear_duration": "11/4368",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 40,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          40
+        ],
+        [
+          7,
+          40
+        ],
+        [
+          11,
+          40
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "53/6720",
+      "best_runner_tree_bound": "373/73920",
+      "fast_runner_star_bound": "373/73920",
+      "uniform_star_lower_bound": "-25/1232",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 41,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          41
+        ],
+        [
+          7,
+          41
+        ],
+        [
+          11,
+          41
+        ]
+      ],
+      "selected_pair_weight": "1261/43296",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-7969/404096",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 42,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          42
+        ],
+        [
+          7,
+          42
+        ],
+        [
+          11,
+          42
+        ]
+      ],
+      "selected_pair_weight": "13/616",
+      "clear_lower_bound": "1/672",
+      "best_runner_tree_bound": "-1/2464",
+      "fast_runner_star_bound": "-1/2464",
+      "uniform_star_lower_bound": "-27/1408",
+      "actual_clear_duration": "1/336",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 43,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          43
+        ],
+        [
+          7,
+          43
+        ],
+        [
+          11,
+          43
+        ]
+      ],
+      "selected_pair_weight": "991/39732",
+      "clear_lower_bound": "39/7568",
+      "best_runner_tree_bound": "37/11352",
+      "fast_runner_star_bound": "37/11352",
+      "uniform_star_lower_bound": "-7907/423808",
+      "actual_clear_duration": "5/688",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 44,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          44
+        ],
+        [
+          7,
+          44
+        ],
+        [
+          11,
+          44
+        ]
+      ],
+      "selected_pair_weight": "29/1056",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-179/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 45,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          45
+        ],
+        [
+          7,
+          45
+        ],
+        [
+          11,
+          45
+        ]
+      ],
+      "selected_pair_weight": "353/15840",
+      "clear_lower_bound": "59/13860",
+      "best_runner_tree_bound": "157/110880",
+      "fast_runner_star_bound": "157/110880",
+      "uniform_star_lower_bound": "-523/29568",
+      "actual_clear_duration": "1/210",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 46,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          7,
+          46
+        ],
+        [
+          11,
+          46
+        ]
+      ],
+      "selected_pair_weight": "25/924",
+      "clear_lower_bound": "1/184",
+      "best_runner_tree_bound": "43/12144",
+      "fast_runner_star_bound": "43/12144",
+      "uniform_star_lower_bound": "-3907/226688",
+      "actual_clear_duration": "1/184",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 47,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          47
+        ],
+        [
+          7,
+          47
+        ],
+        [
+          11,
+          47
+        ]
+      ],
+      "selected_pair_weight": "1291/49632",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-7783/463232",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 48,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          48
+        ],
+        [
+          7,
+          48
+        ],
+        [
+          11,
+          48
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "17/2688",
+      "best_runner_tree_bound": "103/29568",
+      "fast_runner_star_bound": "103/29568",
+      "uniform_star_lower_bound": "-323/19712",
+      "actual_clear_duration": "17/2688",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 49,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          49
+        ],
+        [
+          7,
+          49
+        ],
+        [
+          11,
+          49
+        ]
+      ],
+      "selected_pair_weight": "601/25872",
+      "clear_lower_bound": "3/1568",
+      "best_runner_tree_bound": "1/51744",
+      "fast_runner_star_bound": "1/51744",
+      "uniform_star_lower_bound": "-1103/68992",
+      "actual_clear_duration": "3/784",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 50,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          50
+        ],
+        [
+          7,
+          50
+        ],
+        [
+          11,
+          50
+        ]
+      ],
+      "selected_pair_weight": "161/6600",
+      "clear_lower_bound": "113/15400",
+      "best_runner_tree_bound": "503/92400",
+      "fast_runner_star_bound": "503/92400",
+      "uniform_star_lower_bound": "-769/49280",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 51,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          51
+        ],
+        [
+          7,
+          51
+        ],
+        [
+          11,
+          51
+        ]
+      ],
+      "selected_pair_weight": "503/17952",
+      "clear_lower_bound": "11/1428",
+      "best_runner_tree_bound": "611/125664",
+      "fast_runner_star_bound": "611/125664",
+      "uniform_star_lower_bound": "-2553/167552",
+      "actual_clear_duration": "11/1428",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 52,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          7,
+          52
+        ],
+        [
+          11,
+          52
+        ]
+      ],
+      "selected_pair_weight": "329/13728",
+      "clear_lower_bound": "3/728",
+      "best_runner_tree_bound": "-59/96096",
+      "fast_runner_star_bound": "-59/96096",
+      "uniform_star_lower_bound": "-1907/128128",
+      "actual_clear_duration": "3/728",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 53,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          53
+        ],
+        [
+          7,
+          53
+        ],
+        [
+          11,
+          53
+        ]
+      ],
+      "selected_pair_weight": "25/924",
+      "clear_lower_bound": "7/848",
+      "best_runner_tree_bound": "89/13992",
+      "fast_runner_star_bound": "89/13992",
+      "uniform_star_lower_bound": "-7597/522368",
+      "actual_clear_duration": "7/848",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 54,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          54
+        ],
+        [
+          7,
+          54
+        ],
+        [
+          11,
+          54
+        ]
+      ],
+      "selected_pair_weight": "265/9504",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "15/2464",
+      "fast_runner_star_bound": "15/2464",
+      "uniform_star_lower_bound": "-1261/88704",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 55,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          55
+        ],
+        [
+          7,
+          55
+        ],
+        [
+          11,
+          55
+        ]
+      ],
+      "selected_pair_weight": "11/480",
+      "clear_lower_bound": "27/6160",
+      "best_runner_tree_bound": "-13/36960",
+      "fast_runner_star_bound": "-13/36960",
+      "uniform_star_lower_bound": "-137/9856",
+      "actual_clear_duration": "27/6160",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 56,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          56
+        ],
+        [
+          7,
+          56
+        ],
+        [
+          11,
+          56
+        ]
+      ],
+      "selected_pair_weight": "367/14784",
+      "clear_lower_bound": "1/224",
+      "best_runner_tree_bound": "19/7392",
+      "fast_runner_star_bound": "19/7392",
+      "uniform_star_lower_bound": "-67/4928",
+      "actual_clear_duration": "3/448",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 57,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          57
+        ],
+        [
+          7,
+          57
+        ],
+        [
+          11,
+          57
+        ]
+      ],
+      "selected_pair_weight": "87/3344",
+      "clear_lower_bound": "233/35112",
+      "best_runner_tree_bound": "233/35112",
+      "fast_runner_star_bound": "233/35112",
+      "uniform_star_lower_bound": "-2491/187264",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 58,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          58
+        ],
+        [
+          7,
+          58
+        ],
+        [
+          11,
+          58
+        ]
+      ],
+      "selected_pair_weight": "673/30624",
+      "clear_lower_bound": "15/3248",
+      "best_runner_tree_bound": "-25/214368",
+      "fast_runner_star_bound": "-25/214368",
+      "uniform_star_lower_bound": "-3721/285824",
+      "actual_clear_duration": "15/3248",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 59,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          59
+        ],
+        [
+          7,
+          59
+        ],
+        [
+          11,
+          59
+        ]
+      ],
+      "selected_pair_weight": "10897/436128",
+      "clear_lower_bound": "39/10384",
+      "best_runner_tree_bound": "19/20768",
+      "fast_runner_star_bound": "19/20768",
+      "uniform_star_lower_bound": "-7411/581504",
+      "actual_clear_duration": "5/944",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 60,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          60
+        ],
+        [
+          7,
+          60
+        ],
+        [
+          11,
+          60
+        ]
+      ],
+      "selected_pair_weight": "157/5280",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "13/1848",
+      "fast_runner_star_bound": "13/1848",
+      "uniform_star_lower_bound": "-123/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 61,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          11,
+          61
+        ]
+      ],
+      "selected_pair_weight": "1427/64416",
+      "clear_lower_bound": "5/854",
+      "best_runner_tree_bound": "505/450912",
+      "fast_runner_star_bound": "505/450912",
+      "uniform_star_lower_bound": "-7349/601216",
+      "actual_clear_duration": "5/854",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 62,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          7,
+          62
+        ],
+        [
+          11,
+          62
+        ]
+      ],
+      "selected_pair_weight": "797/32736",
+      "clear_lower_bound": "83/19096",
+      "best_runner_tree_bound": "115/76384",
+      "fast_runner_star_bound": "115/76384",
+      "uniform_star_lower_bound": "-3659/305536",
+      "actual_clear_duration": "17/3472",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 63,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          63
+        ],
+        [
+          7,
+          63
+        ],
+        [
+          11,
+          63
+        ]
+      ],
+      "selected_pair_weight": "289/11088",
+      "clear_lower_bound": "13/2016",
+      "best_runner_tree_bound": "101/22176",
+      "fast_runner_star_bound": "101/22176",
+      "uniform_star_lower_bound": "-347/29568",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 64,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          64
+        ],
+        [
+          7,
+          64
+        ],
+        [
+          11,
+          64
+        ]
+      ],
+      "selected_pair_weight": "107/4224",
+      "clear_lower_bound": "15/2464",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-907/78848",
+      "actual_clear_duration": "25/3584",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 65,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          65
+        ],
+        [
+          7,
+          65
+        ],
+        [
+          11,
+          65
+        ]
+      ],
+      "selected_pair_weight": "329/13728",
+      "clear_lower_bound": "37/7280",
+      "best_runner_tree_bound": "359/160160",
+      "fast_runner_star_bound": "359/160160",
+      "uniform_star_lower_bound": "-1445/128128",
+      "actual_clear_duration": "37/7280",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 66,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          66
+        ],
+        [
+          7,
+          66
+        ],
+        [
+          11,
+          66
+        ]
+      ],
+      "selected_pair_weight": "193/7392",
+      "clear_lower_bound": "1/132",
+      "best_runner_tree_bound": "1/352",
+      "fast_runner_star_bound": "1/352",
+      "uniform_star_lower_bound": "-109/9856",
+      "actual_clear_duration": "1/132",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 67,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          67
+        ],
+        [
+          7,
+          67
+        ],
+        [
+          11,
+          67
+        ]
+      ],
+      "selected_pair_weight": "521/17688",
+      "clear_lower_bound": "113/15008",
+      "best_runner_tree_bound": "2791/495264",
+      "fast_runner_star_bound": "2791/495264",
+      "uniform_star_lower_bound": "-7163/660352",
+      "actual_clear_duration": "15/1876",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 68,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          68
+        ],
+        [
+          7,
+          68
+        ],
+        [
+          11,
+          68
+        ]
+      ],
+      "selected_pair_weight": "415/17952",
+      "clear_lower_bound": "5/952",
+      "best_runner_tree_bound": "101/41888",
+      "fast_runner_star_bound": "101/41888",
+      "uniform_star_lower_bound": "-1783/167552",
+      "actual_clear_duration": "5/952",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 69,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          69
+        ],
+        [
+          7,
+          69
+        ],
+        [
+          11,
+          69
+        ]
+      ],
+      "selected_pair_weight": "4061/170016",
+      "clear_lower_bound": "7/1104",
+      "best_runner_tree_bound": "13/8096",
+      "fast_runner_star_bound": "13/8096",
+      "uniform_star_lower_bound": "-2367/226688",
+      "actual_clear_duration": "7/1104",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 70,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          70
+        ],
+        [
+          7,
+          70
+        ],
+        [
+          11,
+          70
+        ]
+      ],
+      "selected_pair_weight": "25/924",
+      "clear_lower_bound": "1/160",
+      "best_runner_tree_bound": "23/5280",
+      "fast_runner_star_bound": "23/5280",
+      "uniform_star_lower_bound": "-101/9856",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 71,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          71
+        ],
+        [
+          7,
+          71
+        ],
+        [
+          11,
+          71
+        ]
+      ],
+      "selected_pair_weight": "295/12496",
+      "clear_lower_bound": "587/131208",
+      "best_runner_tree_bound": "587/131208",
+      "fast_runner_star_bound": "587/131208",
+      "uniform_star_lower_bound": "-7039/699776",
+      "actual_clear_duration": "43/7952",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 72,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          72
+        ],
+        [
+          7,
+          72
+        ],
+        [
+          11,
+          72
+        ]
+      ],
+      "selected_pair_weight": "151/6336",
+      "clear_lower_bound": "11/2016",
+      "best_runner_tree_bound": "1/1386",
+      "fast_runner_star_bound": "1/1386",
+      "uniform_star_lower_bound": "-73/7392",
+      "actual_clear_duration": "11/2016",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 73,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          73
+        ],
+        [
+          7,
+          73
+        ],
+        [
+          11,
+          73
+        ]
+      ],
+      "selected_pair_weight": "2213/77088",
+      "clear_lower_bound": "1/112",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-6977/719488",
+      "actual_clear_duration": "1/112",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 74,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          74
+        ],
+        [
+          7,
+          74
+        ],
+        [
+          11,
+          74
+        ]
+      ],
+      "selected_pair_weight": "75/3256",
+      "clear_lower_bound": "89/24864",
+      "best_runner_tree_bound": "89/24864",
+      "fast_runner_star_bound": "89/24864",
+      "uniform_star_lower_bound": "-3473/364672",
+      "actual_clear_duration": "23/4144",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 75,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          75
+        ],
+        [
+          7,
+          75
+        ],
+        [
+          11,
+          75
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "293/92400",
+      "best_runner_tree_bound": "59/46200",
+      "fast_runner_star_bound": "59/46200",
+      "uniform_star_lower_bound": "-461/49280",
+      "actual_clear_duration": "47/8400",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 76,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          76
+        ],
+        [
+          7,
+          76
+        ],
+        [
+          11,
+          76
+        ]
+      ],
+      "selected_pair_weight": "3611/140448",
+      "clear_lower_bound": "23/3344",
+      "best_runner_tree_bound": "27/6688",
+      "fast_runner_star_bound": "27/6688",
+      "uniform_star_lower_bound": "-1721/187264",
+      "actual_clear_duration": "5/608",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 77,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          77
+        ],
+        [
+          7,
+          77
+        ],
+        [
+          11,
+          77
+        ]
+      ],
+      "selected_pair_weight": "185/7392",
+      "clear_lower_bound": "1/154",
+      "best_runner_tree_bound": "13/7392",
+      "fast_runner_star_bound": "13/7392",
+      "uniform_star_lower_bound": "-89/9856",
+      "actual_clear_duration": "1/154",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 78,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          78
+        ],
+        [
+          7,
+          78
+        ],
+        [
+          11,
+          78
+        ]
+      ],
+      "selected_pair_weight": "89/3432",
+      "clear_lower_bound": "127/24024",
+      "best_runner_tree_bound": "163/48048",
+      "fast_runner_star_bound": "163/48048",
+      "uniform_star_lower_bound": "-1137/128128",
+      "actual_clear_duration": "25/4368",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 79,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          79
+        ],
+        [
+          7,
+          79
+        ],
+        [
+          11,
+          79
+        ]
+      ],
+      "selected_pair_weight": "14309/583968",
+      "clear_lower_bound": "91/13904",
+      "best_runner_tree_bound": "103/27808",
+      "fast_runner_star_bound": "103/27808",
+      "uniform_star_lower_bound": "-6791/778624",
+      "actual_clear_duration": "9/1264",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 80,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          80
+        ],
+        [
+          7,
+          80
+        ],
+        [
+          11,
+          80
+        ]
+      ],
+      "selected_pair_weight": "281/10560",
+      "clear_lower_bound": "33/4480",
+      "best_runner_tree_bound": "389/147840",
+      "fast_runner_star_bound": "389/147840",
+      "uniform_star_lower_bound": "-169/19712",
+      "actual_clear_duration": "33/4480",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 81,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          81
+        ],
+        [
+          7,
+          81
+        ],
+        [
+          11,
+          81
+        ]
+      ],
+      "selected_pair_weight": "359/14256",
+      "clear_lower_bound": "85/18144",
+      "best_runner_tree_bound": "557/199584",
+      "fast_runner_star_bound": "557/199584",
+      "uniform_star_lower_bound": "-2243/266112",
+      "actual_clear_duration": "53/9072",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 82,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          82
+        ],
+        [
+          7,
+          82
+        ],
+        [
+          11,
+          82
+        ]
+      ],
+      "selected_pair_weight": "3323/151536",
+      "clear_lower_bound": "29/7216",
+      "best_runner_tree_bound": "29/7216",
+      "fast_runner_star_bound": "29/7216",
+      "uniform_star_lower_bound": "-3349/404096",
+      "actual_clear_duration": "1/164",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 83,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          83
+        ],
+        [
+          7,
+          83
+        ],
+        [
+          11,
+          83
+        ]
+      ],
+      "selected_pair_weight": "2461/87648",
+      "clear_lower_bound": "19/2324",
+      "best_runner_tree_bound": "2111/613536",
+      "fast_runner_star_bound": "2111/613536",
+      "uniform_star_lower_bound": "-6667/818048",
+      "actual_clear_duration": "19/2324",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 84,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          84
+        ],
+        [
+          7,
+          84
+        ],
+        [
+          11,
+          84
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "1/168",
+      "best_runner_tree_bound": "3/2464",
+      "fast_runner_star_bound": "3/2464",
+      "uniform_star_lower_bound": "-79/9856",
+      "actual_clear_duration": "1/168",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 85,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          85
+        ],
+        [
+          7,
+          85
+        ],
+        [
+          11,
+          85
+        ]
+      ],
+      "selected_pair_weight": "277/11220",
+      "clear_lower_bound": "599/104720",
+      "best_runner_tree_bound": "599/104720",
+      "fast_runner_star_bound": "599/104720",
+      "uniform_star_lower_bound": "-1321/167552",
+      "actual_clear_duration": "57/9520",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 86,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          86
+        ],
+        [
+          7,
+          86
+        ],
+        [
+          11,
+          86
+        ]
+      ],
+      "selected_pair_weight": "8831/317856",
+      "clear_lower_bound": "3/344",
+      "best_runner_tree_bound": "181/45408",
+      "fast_runner_star_bound": "181/45408",
+      "uniform_star_lower_bound": "-3287/423808",
+      "actual_clear_duration": "3/344",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 87,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          87
+        ],
+        [
+          7,
+          87
+        ],
+        [
+          11,
+          87
+        ]
+      ],
+      "selected_pair_weight": "761/30624",
+      "clear_lower_bound": "59/9744",
+      "best_runner_tree_bound": "283/214368",
+      "fast_runner_star_bound": "283/214368",
+      "uniform_star_lower_bound": "-2181/285824",
+      "actual_clear_duration": "59/9744",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 88,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          88
+        ],
+        [
+          7,
+          88
+        ],
+        [
+          11,
+          88
+        ]
+      ],
+      "selected_pair_weight": "17/704",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-37/4928",
+      "actual_clear_duration": "15/2464",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 89,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          89
+        ],
+        [
+          7,
+          89
+        ],
+        [
+          11,
+          89
+        ]
+      ],
+      "selected_pair_weight": "1039/41118",
+      "clear_lower_bound": "93/15664",
+      "best_runner_tree_bound": "95/23496",
+      "fast_runner_star_bound": "95/23496",
+      "uniform_star_lower_bound": "-6481/877184",
+      "actual_clear_duration": "11/1424",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 90,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          90
+        ],
+        [
+          7,
+          90
+        ],
+        [
+          11,
+          90
+        ]
+      ],
+      "selected_pair_weight": "383/15840",
+      "clear_lower_bound": "31/5040",
+      "best_runner_tree_bound": "157/110880",
+      "fast_runner_star_bound": "157/110880",
+      "uniform_star_lower_bound": "-215/29568",
+      "actual_clear_duration": "31/5040",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 91,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          91
+        ],
+        [
+          7,
+          91
+        ],
+        [
+          11,
+          91
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "11/2184",
+      "best_runner_tree_bound": "211/96096",
+      "fast_runner_star_bound": "211/96096",
+      "uniform_star_lower_bound": "-131/18304",
+      "actual_clear_duration": "9/1456",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 92,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          92
+        ],
+        [
+          7,
+          92
+        ],
+        [
+          11,
+          92
+        ]
+      ],
+      "selected_pair_weight": "4579/170016",
+      "clear_lower_bound": "27/4048",
+      "best_runner_tree_bound": "29/6072",
+      "fast_runner_star_bound": "29/6072",
+      "uniform_star_lower_bound": "-1597/226688",
+      "actual_clear_duration": "5/736",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 93,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          93
+        ],
+        [
+          7,
+          93
+        ],
+        [
+          11,
+          93
+        ]
+      ],
+      "selected_pair_weight": "251/10912",
+      "clear_lower_bound": "163/28644",
+      "best_runner_tree_bound": "653/229152",
+      "fast_runner_star_bound": "653/229152",
+      "uniform_star_lower_bound": "-2119/305536",
+      "actual_clear_duration": "3/434",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 94,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          94
+        ],
+        [
+          7,
+          94
+        ],
+        [
+          11,
+          94
+        ]
+      ],
+      "selected_pair_weight": "401/16544",
+      "clear_lower_bound": "71/15792",
+      "best_runner_tree_bound": "575/347424",
+      "fast_runner_star_bound": "575/347424",
+      "uniform_star_lower_bound": "-3163/463232",
+      "actual_clear_duration": "33/5264",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 95,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          95
+        ],
+        [
+          7,
+          95
+        ],
+        [
+          11,
+          95
+        ]
+      ],
+      "selected_pair_weight": "1211/50160",
+      "clear_lower_bound": "99/21280",
+      "best_runner_tree_bound": "1937/702240",
+      "fast_runner_star_bound": "1937/702240",
+      "uniform_star_lower_bound": "-1259/187264",
+      "actual_clear_duration": "67/10640",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 96,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          96
+        ],
+        [
+          7,
+          96
+        ],
+        [
+          11,
+          96
+        ]
+      ],
+      "selected_pair_weight": "19/768",
+      "clear_lower_bound": "325/59136",
+      "best_runner_tree_bound": "325/59136",
+      "fast_runner_star_bound": "325/59136",
+      "uniform_star_lower_bound": "-261/39424",
+      "actual_clear_duration": "41/5376",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 97,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          97
+        ],
+        [
+          7,
+          97
+        ],
+        [
+          11,
+          97
+        ]
+      ],
+      "selected_pair_weight": "2597/102432",
+      "clear_lower_bound": "69/10864",
+      "best_runner_tree_bound": "1159/717024",
+      "fast_runner_star_bound": "1159/717024",
+      "uniform_star_lower_bound": "-6233/956032",
+      "actual_clear_duration": "69/10864",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 98,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          98
+        ],
+        [
+          7,
+          98
+        ],
+        [
+          11,
+          98
+        ]
+      ],
+      "selected_pair_weight": "1301/51744",
+      "clear_lower_bound": "5/784",
+      "best_runner_tree_bound": "85/51744",
+      "fast_runner_star_bound": "85/51744",
+      "uniform_star_lower_bound": "-443/68992",
+      "actual_clear_duration": "5/784",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 99,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          99
+        ],
+        [
+          7,
+          99
+        ],
+        [
+          11,
+          99
+        ]
+      ],
+      "selected_pair_weight": "157/5544",
+      "clear_lower_bound": "23/3168",
+      "best_runner_tree_bound": "23/3168",
+      "fast_runner_star_bound": "23/3168",
+      "uniform_star_lower_bound": "-17/2688",
+      "actual_clear_duration": "1/132",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 100,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          100
+        ],
+        [
+          7,
+          100
+        ],
+        [
+          11,
+          100
+        ]
+      ],
+      "selected_pair_weight": "653/26400",
+      "clear_lower_bound": "9/1400",
+      "best_runner_tree_bound": "313/184800",
+      "fast_runner_star_bound": "313/184800",
+      "uniform_star_lower_bound": "-307/49280",
+      "actual_clear_duration": "9/1400",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 101,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          101
+        ],
+        [
+          7,
+          101
+        ],
+        [
+          11,
+          101
+        ]
+      ],
+      "selected_pair_weight": "2617/106656",
+      "clear_lower_bound": "73/11312",
+      "best_runner_tree_bound": "1283/746592",
+      "fast_runner_star_bound": "1283/746592",
+      "uniform_star_lower_bound": "-6109/995456",
+      "actual_clear_duration": "73/11312",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 102,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          102
+        ],
+        [
+          7,
+          102
+        ],
+        [
+          11,
+          102
+        ]
+      ],
+      "selected_pair_weight": "541/20944",
+      "clear_lower_bound": "3/544",
+      "best_runner_tree_bound": "3/544",
+      "fast_runner_star_bound": "3/544",
+      "uniform_star_lower_bound": "-1013/167552",
+      "actual_clear_duration": "1/136",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 103,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          103
+        ],
+        [
+          7,
+          103
+        ],
+        [
+          11,
+          103
+        ]
+      ],
+      "selected_pair_weight": "331/13596",
+      "clear_lower_bound": "657/126896",
+      "best_runner_tree_bound": "625/190344",
+      "fast_runner_star_bound": "625/190344",
+      "uniform_star_lower_bound": "-6047/1015168",
+      "actual_clear_duration": "75/11536",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 104,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          104
+        ],
+        [
+          7,
+          104
+        ],
+        [
+          11,
+          104
+        ]
+      ],
+      "selected_pair_weight": "691/27456",
+      "clear_lower_bound": "19/2912",
+      "best_runner_tree_bound": "43/24024",
+      "fast_runner_star_bound": "43/24024",
+      "uniform_star_lower_bound": "-47/8008",
+      "actual_clear_duration": "19/2912",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 105,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          105
+        ],
+        [
+          7,
+          105
+        ],
+        [
+          11,
+          105
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "1/168",
+      "best_runner_tree_bound": "23/7392",
+      "fast_runner_star_bound": "23/7392",
+      "uniform_star_lower_bound": "-57/9856",
+      "actual_clear_duration": "11/1680",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 106,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          106
+        ],
+        [
+          7,
+          106
+        ],
+        [
+          11,
+          106
+        ]
+      ],
+      "selected_pair_weight": "355/13992",
+      "clear_lower_bound": "71/11872",
+      "best_runner_tree_bound": "1601/391776",
+      "fast_runner_star_bound": "1601/391776",
+      "uniform_star_lower_bound": "-2977/522368",
+      "actual_clear_duration": "39/5936",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 107,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          107
+        ],
+        [
+          7,
+          107
+        ],
+        [
+          11,
+          107
+        ]
+      ],
+      "selected_pair_weight": "7/321",
+      "clear_lower_bound": "309/131824",
+      "best_runner_tree_bound": "309/131824",
+      "fast_runner_star_bound": "309/131824",
+      "uniform_star_lower_bound": "-5923/1054592",
+      "actual_clear_duration": "79/11984",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 108,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          108
+        ],
+        [
+          7,
+          108
+        ],
+        [
+          11,
+          108
+        ]
+      ],
+      "selected_pair_weight": "29/1188",
+      "clear_lower_bound": "11/2016",
+      "best_runner_tree_bound": "29/11088",
+      "fast_runner_star_bound": "29/11088",
+      "uniform_star_lower_bound": "-491/88704",
+      "actual_clear_duration": "5/756",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 109,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          109
+        ],
+        [
+          7,
+          109
+        ],
+        [
+          11,
+          109
+        ]
+      ],
+      "selected_pair_weight": "4757/201432",
+      "clear_lower_bound": "17/3488",
+      "best_runner_tree_bound": "343/115104",
+      "fast_runner_star_bound": "343/115104",
+      "uniform_star_lower_bound": "-5861/1074304",
+      "actual_clear_duration": "3/436",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 110,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          110
+        ],
+        [
+          7,
+          110
+        ],
+        [
+          11,
+          110
+        ]
+      ],
+      "selected_pair_weight": "13/528",
+      "clear_lower_bound": "27/6160",
+      "best_runner_tree_bound": "27/6160",
+      "fast_runner_star_bound": "27/6160",
+      "uniform_star_lower_bound": "-53/9856",
+      "actual_clear_duration": "41/6160",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 111,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          111
+        ],
+        [
+          7,
+          111
+        ],
+        [
+          11,
+          111
+        ]
+      ],
+      "selected_pair_weight": "911/39072",
+      "clear_lower_bound": "31/6216",
+      "best_runner_tree_bound": "587/273504",
+      "fast_runner_star_bound": "587/273504",
+      "uniform_star_lower_bound": "-1933/364672",
+      "actual_clear_duration": "83/12432",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 112,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          112
+        ],
+        [
+          7,
+          112
+        ],
+        [
+          11,
+          112
+        ]
+      ],
+      "selected_pair_weight": "767/29568",
+      "clear_lower_bound": "3/448",
+      "best_runner_tree_bound": "29/14784",
+      "fast_runner_star_bound": "29/14784",
+      "uniform_star_lower_bound": "-103/19712",
+      "actual_clear_duration": "3/448",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 113,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          113
+        ],
+        [
+          7,
+          113
+        ],
+        [
+          11,
+          113
+        ]
+      ],
+      "selected_pair_weight": "1517/59664",
+      "clear_lower_bound": "1471/278432",
+      "best_runner_tree_bound": "1471/278432",
+      "fast_runner_star_bound": "1471/278432",
+      "uniform_star_lower_bound": "-5737/1113728",
+      "actual_clear_duration": "85/12656",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 114,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          114
+        ],
+        [
+          7,
+          114
+        ],
+        [
+          11,
+          114
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "13/2926",
+      "best_runner_tree_bound": "179/70224",
+      "fast_runner_star_bound": "179/70224",
+      "uniform_star_lower_bound": "-951/187264",
+      "actual_clear_duration": "43/6384",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 115,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          115
+        ],
+        [
+          7,
+          115
+        ],
+        [
+          11,
+          115
+        ]
+      ],
+      "selected_pair_weight": "22307/850080",
+      "clear_lower_bound": "3/460",
+      "best_runner_tree_bound": "217/121440",
+      "fast_runner_star_bound": "217/121440",
+      "uniform_star_lower_bound": "-1135/226688",
+      "actual_clear_duration": "3/460",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 116,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          116
+        ],
+        [
+          7,
+          116
+        ],
+        [
+          11,
+          116
+        ]
+      ],
+      "selected_pair_weight": "23/957",
+      "clear_lower_bound": "323/71456",
+      "best_runner_tree_bound": "323/71456",
+      "fast_runner_star_bound": "323/71456",
+      "uniform_star_lower_bound": "-1411/285824",
+      "actual_clear_duration": "11/1624",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 117,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          117
+        ],
+        [
+          7,
+          117
+        ],
+        [
+          11,
+          117
+        ]
+      ],
+      "selected_pair_weight": "32/1287",
+      "clear_lower_bound": "839/144144",
+      "best_runner_tree_bound": "283/72072",
+      "fast_runner_star_bound": "283/72072",
+      "uniform_star_lower_bound": "-1871/384384",
+      "actual_clear_duration": "89/13104",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 118,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          118
+        ],
+        [
+          7,
+          118
+        ],
+        [
+          11,
+          118
+        ]
+      ],
+      "selected_pair_weight": "1615/62304",
+      "clear_lower_bound": "45/6608",
+      "best_runner_tree_bound": "905/436128",
+      "fast_runner_star_bound": "905/436128",
+      "uniform_star_lower_bound": "-2791/581504",
+      "actual_clear_duration": "45/6608",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 119,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          119
+        ],
+        [
+          7,
+          119
+        ],
+        [
+          11,
+          119
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "19/2856",
+      "best_runner_tree_bound": "479/125664",
+      "fast_runner_star_bound": "479/125664",
+      "uniform_star_lower_bound": "-793/167552",
+      "actual_clear_duration": "13/1904",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 120,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          120
+        ],
+        [
+          7,
+          120
+        ],
+        [
+          11,
+          120
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "13/2240",
+      "best_runner_tree_bound": "289/73920",
+      "fast_runner_star_bound": "289/73920",
+      "uniform_star_lower_bound": "-23/4928",
+      "actual_clear_duration": "23/3360",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 121,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          121
+        ],
+        [
+          7,
+          121
+        ],
+        [
+          11,
+          121
+        ]
+      ],
+      "selected_pair_weight": "35/1452",
+      "clear_lower_bound": "65/13552",
+      "best_runner_tree_bound": "59/20328",
+      "fast_runner_star_bound": "59/20328",
+      "uniform_star_lower_bound": "-499/108416",
+      "actual_clear_duration": "93/13552",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 122,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          122
+        ],
+        [
+          7,
+          122
+        ],
+        [
+          11,
+          122
+        ]
+      ],
+      "selected_pair_weight": "3579/150304",
+      "clear_lower_bound": "1/183",
+      "best_runner_tree_bound": "169/64416",
+      "fast_runner_star_bound": "169/64416",
+      "uniform_star_lower_bound": "-2729/601216",
+      "actual_clear_duration": "3/488",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 123,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          123
+        ],
+        [
+          7,
+          123
+        ],
+        [
+          11,
+          123
+        ]
+      ],
+      "selected_pair_weight": "179/7216",
+      "clear_lower_bound": "127/27552",
+      "best_runner_tree_bound": "823/303072",
+      "fast_runner_star_bound": "823/303072",
+      "uniform_star_lower_bound": "-1809/404096",
+      "actual_clear_duration": "95/13776",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 124,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          124
+        ],
+        [
+          7,
+          124
+        ],
+        [
+          11,
+          124
+        ]
+      ],
+      "selected_pair_weight": "73/2976",
+      "clear_lower_bound": "173/38192",
+      "best_runner_tree_bound": "173/38192",
+      "fast_runner_star_bound": "173/38192",
+      "uniform_star_lower_bound": "-1349/305536",
+      "actual_clear_duration": "3/434",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 125,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          125
+        ],
+        [
+          7,
+          125
+        ],
+        [
+          11,
+          125
+        ]
+      ],
+      "selected_pair_weight": "6973/308000",
+      "clear_lower_bound": "29/6000",
+      "best_runner_tree_bound": "263/132000",
+      "fast_runner_star_bound": "263/132000",
+      "uniform_star_lower_bound": "-1073/246400",
+      "actual_clear_duration": "3/500",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 126,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          126
+        ],
+        [
+          7,
+          126
+        ],
+        [
+          11,
+          126
+        ]
+      ],
+      "selected_pair_weight": "589/22176",
+      "clear_lower_bound": "1/144",
+      "best_runner_tree_bound": "7/3168",
+      "fast_runner_star_bound": "7/3168",
+      "uniform_star_lower_bound": "-127/29568",
+      "actual_clear_duration": "1/144",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 127,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          127
+        ],
+        [
+          7,
+          127
+        ],
+        [
+          11,
+          127
+        ]
+      ],
+      "selected_pair_weight": "1615/67056",
+      "clear_lower_bound": "1457/312928",
+      "best_runner_tree_bound": "1457/312928",
+      "fast_runner_star_bound": "1457/312928",
+      "uniform_star_lower_bound": "-5303/1251712",
+      "actual_clear_duration": "99/14224",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 128,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          128
+        ],
+        [
+          7,
+          128
+        ],
+        [
+          11,
+          128
+        ]
+      ],
+      "selected_pair_weight": "245/11264",
+      "clear_lower_bound": "593/236544",
+      "best_runner_tree_bound": "593/236544",
+      "fast_runner_star_bound": "593/236544",
+      "uniform_star_lower_bound": "-659/157696",
+      "actual_clear_duration": "43/7168",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 129,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          129
+        ],
+        [
+          7,
+          129
+        ],
+        [
+          11,
+          129
+        ]
+      ],
+      "selected_pair_weight": "1183/45408",
+      "clear_lower_bound": "101/14448",
+      "best_runner_tree_bound": "239/105952",
+      "fast_runner_star_bound": "239/105952",
+      "uniform_star_lower_bound": "-1747/423808",
+      "actual_clear_duration": "101/14448",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 130,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          130
+        ],
+        [
+          7,
+          130
+        ],
+        [
+          11,
+          130
+        ]
+      ],
+      "selected_pair_weight": "157/6864",
+      "clear_lower_bound": "639/160160",
+      "best_runner_tree_bound": "639/160160",
+      "fast_runner_star_bound": "639/160160",
+      "uniform_star_lower_bound": "-521/128128",
+      "actual_clear_duration": "51/7280",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 131,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          131
+        ],
+        [
+          7,
+          131
+        ],
+        [
+          11,
+          131
+        ]
+      ],
+      "selected_pair_weight": "907/34584",
+      "clear_lower_bound": "1811/322784",
+      "best_runner_tree_bound": "3599/968352",
+      "fast_runner_star_bound": "3599/968352",
+      "uniform_star_lower_bound": "-5179/1291136",
+      "actual_clear_duration": "6/917",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 132,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          132
+        ],
+        [
+          7,
+          132
+        ],
+        [
+          11,
+          132
+        ]
+      ],
+      "selected_pair_weight": "31/1232",
+      "clear_lower_bound": "7/1056",
+      "best_runner_tree_bound": "1/528",
+      "fast_runner_star_bound": "1/528",
+      "uniform_star_lower_bound": "-39/9856",
+      "actual_clear_duration": "7/1056",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 133,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          133
+        ],
+        [
+          7,
+          133
+        ],
+        [
+          11,
+          133
+        ]
+      ],
+      "selected_pair_weight": "3545/140448",
+      "clear_lower_bound": "23/3344",
+      "best_runner_tree_bound": "27/6688",
+      "fast_runner_star_bound": "27/6688",
+      "uniform_star_lower_bound": "-731/187264",
+      "actual_clear_duration": "15/2128",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 134,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          134
+        ],
+        [
+          7,
+          134
+        ],
+        [
+          11,
+          134
+        ]
+      ],
+      "selected_pair_weight": "455/17688",
+      "clear_lower_bound": "85/15008",
+      "best_runner_tree_bound": "1867/495264",
+      "fast_runner_star_bound": "1867/495264",
+      "uniform_star_lower_bound": "-2543/660352",
+      "actual_clear_duration": "53/7504",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 135,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          135
+        ],
+        [
+          7,
+          135
+        ],
+        [
+          11,
+          135
+        ]
+      ],
+      "selected_pair_weight": "163/6930",
+      "clear_lower_bound": "103/23760",
+      "best_runner_tree_bound": "29/11880",
+      "fast_runner_star_bound": "29/11880",
+      "uniform_star_lower_bound": "-337/88704",
+      "actual_clear_duration": "13/2160",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 136,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          136
+        ],
+        [
+          7,
+          136
+        ],
+        [
+          11,
+          136
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "155/22848",
+      "best_runner_tree_bound": "991/251328",
+      "fast_runner_star_bound": "991/251328",
+      "uniform_star_lower_bound": "-157/41888",
+      "actual_clear_duration": "27/3808",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 137,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          137
+        ],
+        [
+          7,
+          137
+        ],
+        [
+          11,
+          137
+        ]
+      ],
+      "selected_pair_weight": "1745/72336",
+      "clear_lower_bound": "141/30688",
+      "best_runner_tree_bound": "2735/1012704",
+      "fast_runner_star_bound": "2735/1012704",
+      "uniform_star_lower_bound": "-4993/1350272",
+      "actual_clear_duration": "109/15344",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 138,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          138
+        ],
+        [
+          7,
+          138
+        ],
+        [
+          11,
+          138
+        ]
+      ],
+      "selected_pair_weight": "505/21252",
+      "clear_lower_bound": "107/24288",
+      "best_runner_tree_bound": "61/24288",
+      "fast_runner_star_bound": "61/24288",
+      "uniform_star_lower_bound": "-827/226688",
+      "actual_clear_duration": "1/184",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 139,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          139
+        ],
+        [
+          7,
+          139
+        ],
+        [
+          11,
+          139
+        ]
+      ],
+      "selected_pair_weight": "567/24464",
+      "clear_lower_bound": "967/256872",
+      "best_runner_tree_bound": "967/256872",
+      "fast_runner_star_bound": "967/256872",
+      "uniform_star_lower_bound": "-4931/1369984",
+      "actual_clear_duration": "111/15568",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 140,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          140
+        ],
+        [
+          7,
+          140
+        ],
+        [
+          11,
+          140
+        ]
+      ],
+      "selected_pair_weight": "967/36960",
+      "clear_lower_bound": "1/140",
+      "best_runner_tree_bound": "89/36960",
+      "fast_runner_star_bound": "89/36960",
+      "uniform_star_lower_bound": "-5/1408",
+      "actual_clear_duration": "1/140",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 141,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          141
+        ],
+        [
+          7,
+          141
+        ],
+        [
+          11,
+          141
+        ]
+      ],
+      "selected_pair_weight": "269/12408",
+      "clear_lower_bound": "327/115808",
+      "best_runner_tree_bound": "327/115808",
+      "fast_runner_star_bound": "327/115808",
+      "uniform_star_lower_bound": "-1623/463232",
+      "actual_clear_duration": "23/3948",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 142,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          142
+        ],
+        [
+          7,
+          142
+        ],
+        [
+          11,
+          142
+        ]
+      ],
+      "selected_pair_weight": "2131/87472",
+      "clear_lower_bound": "163/37488",
+      "best_runner_tree_bound": "163/37488",
+      "fast_runner_star_bound": "163/37488",
+      "uniform_star_lower_bound": "-2419/699776",
+      "actual_clear_duration": "1/142",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 143,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          143
+        ],
+        [
+          7,
+          143
+        ],
+        [
+          11,
+          143
+        ]
+      ],
+      "selected_pair_weight": "353/13728",
+      "clear_lower_bound": "115/16016",
+      "best_runner_tree_bound": "235/96096",
+      "fast_runner_star_bound": "235/96096",
+      "uniform_star_lower_bound": "-437/128128",
+      "actual_clear_duration": "115/16016",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 144,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          144
+        ],
+        [
+          7,
+          144
+        ],
+        [
+          11,
+          144
+        ]
+      ],
+      "selected_pair_weight": "139/6336",
+      "clear_lower_bound": "239/88704",
+      "best_runner_tree_bound": "239/88704",
+      "fast_runner_star_bound": "239/88704",
+      "uniform_star_lower_bound": "-199/59136",
+      "actual_clear_duration": "17/2688",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 145,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          145
+        ],
+        [
+          7,
+          145
+        ],
+        [
+          11,
+          145
+        ]
+      ],
+      "selected_pair_weight": "1059/44660",
+      "clear_lower_bound": "577/153120",
+      "best_runner_tree_bound": "577/153120",
+      "fast_runner_star_bound": "577/153120",
+      "uniform_star_lower_bound": "-949/285824",
+      "actual_clear_duration": "3/464",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 146,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          146
+        ],
+        [
+          7,
+          146
+        ],
+        [
+          11,
+          146
+        ]
+      ],
+      "selected_pair_weight": "449/19272",
+      "clear_lower_bound": "27/5621",
+      "best_runner_tree_bound": "785/269808",
+      "fast_runner_star_bound": "785/269808",
+      "uniform_star_lower_bound": "-2357/719488",
+      "actual_clear_duration": "59/8176",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 147,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          147
+        ],
+        [
+          7,
+          147
+        ],
+        [
+          11,
+          147
+        ]
+      ],
+      "selected_pair_weight": "445/17248",
+      "clear_lower_bound": "10/1617",
+      "best_runner_tree_bound": "173/51744",
+      "fast_runner_star_bound": "173/51744",
+      "uniform_star_lower_bound": "-223/68992",
+      "actual_clear_duration": "1/147",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 148,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          148
+        ],
+        [
+          7,
+          148
+        ],
+        [
+          11,
+          148
+        ]
+      ],
+      "selected_pair_weight": "1619/68376",
+      "clear_lower_bound": "5/1184",
+      "best_runner_tree_bound": "91/39072",
+      "fast_runner_star_bound": "91/39072",
+      "uniform_star_lower_bound": "-1163/364672",
+      "actual_clear_duration": "7/1184",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 149,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          149
+        ],
+        [
+          7,
+          149
+        ],
+        [
+          11,
+          149
+        ]
+      ],
+      "selected_pair_weight": "491/19668",
+      "clear_lower_bound": "1079/183568",
+      "best_runner_tree_bound": "1097/275352",
+      "fast_runner_star_bound": "1097/275352",
+      "uniform_star_lower_bound": "-4621/1468544",
+      "actual_clear_duration": "121/16688",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 150,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          150
+        ],
+        [
+          7,
+          150
+        ],
+        [
+          11,
+          150
+        ]
+      ],
+      "selected_pair_weight": "691/26400",
+      "clear_lower_bound": "13/1848",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-153/49280",
+      "actual_clear_duration": "61/8400",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 151,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          151
+        ],
+        [
+          7,
+          151
+        ],
+        [
+          11,
+          151
+        ]
+      ],
+      "selected_pair_weight": "1747/79728",
+      "clear_lower_bound": "99/33824",
+      "best_runner_tree_bound": "1153/1116192",
+      "fast_runner_star_bound": "1153/1116192",
+      "uniform_star_lower_bound": "-4559/1488256",
+      "actual_clear_duration": "95/16912",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 152,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          152
+        ],
+        [
+          7,
+          152
+        ],
+        [
+          11,
+          152
+        ]
+      ],
+      "selected_pair_weight": "1033/40128",
+      "clear_lower_bound": "15/2464",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-283/93632",
+      "actual_clear_duration": "31/4256",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 153,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          153
+        ],
+        [
+          7,
+          153
+        ],
+        [
+          11,
+          153
+        ]
+      ],
+      "selected_pair_weight": "215/8976",
+      "clear_lower_bound": "439/94248",
+      "best_runner_tree_bound": "439/94248",
+      "fast_runner_star_bound": "439/94248",
+      "uniform_star_lower_bound": "-1499/502656",
+      "actual_clear_duration": "125/17136",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 154,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          154
+        ],
+        [
+          7,
+          154
+        ],
+        [
+          11,
+          154
+        ]
+      ],
+      "selected_pair_weight": "179/7392",
+      "clear_lower_bound": "1/176",
+      "best_runner_tree_bound": "1/1056",
+      "fast_runner_star_bound": "1/1056",
+      "uniform_star_lower_bound": "-29/9856",
+      "actual_clear_duration": "1/176",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 155,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          155
+        ],
+        [
+          7,
+          155
+        ],
+        [
+          11,
+          155
+        ]
+      ],
+      "selected_pair_weight": "13337/572880",
+      "clear_lower_bound": "179/54560",
+      "best_runner_tree_bound": "179/54560",
+      "fast_runner_star_bound": "179/54560",
+      "uniform_star_lower_bound": "-887/305536",
+      "actual_clear_duration": "17/2480",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 156,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          156
+        ],
+        [
+          7,
+          156
+        ],
+        [
+          11,
+          156
+        ]
+      ],
+      "selected_pair_weight": "115/4576",
+      "clear_lower_bound": "127/24024",
+      "best_runner_tree_bound": "127/24024",
+      "fast_runner_star_bound": "127/24024",
+      "uniform_star_lower_bound": "-367/128128",
+      "actual_clear_duration": "2/273",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 157,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          157
+        ],
+        [
+          7,
+          157
+        ],
+        [
+          11,
+          157
+        ]
+      ],
+      "selected_pair_weight": "4019/165792",
+      "clear_lower_bound": "27/4396",
+      "best_runner_tree_bound": "1633/1160544",
+      "fast_runner_star_bound": "1633/1160544",
+      "uniform_star_lower_bound": "-4373/1547392",
+      "actual_clear_duration": "27/4396",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 158,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          158
+        ],
+        [
+          7,
+          158
+        ],
+        [
+          11,
+          158
+        ]
+      ],
+      "selected_pair_weight": "3173/145992",
+      "clear_lower_bound": "61/27808",
+      "best_runner_tree_bound": "61/27808",
+      "fast_runner_star_bound": "61/27808",
+      "uniform_star_lower_bound": "-2171/778624",
+      "actual_clear_duration": "1/158",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 159,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          159
+        ],
+        [
+          7,
+          159
+        ],
+        [
+          11,
+          159
+        ]
+      ],
+      "selected_pair_weight": "85/3498",
+      "clear_lower_bound": "641/130592",
+      "best_runner_tree_bound": "641/130592",
+      "fast_runner_star_bound": "641/130592",
+      "uniform_star_lower_bound": "-1437/522368",
+      "actual_clear_duration": "131/17808",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 160,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          160
+        ],
+        [
+          7,
+          160
+        ],
+        [
+          11,
+          160
+        ]
+      ],
+      "selected_pair_weight": "251/10560",
+      "clear_lower_bound": "223/49280",
+      "best_runner_tree_bound": "389/147840",
+      "fast_runner_star_bound": "389/147840",
+      "uniform_star_lower_bound": "-107/39424",
+      "actual_clear_duration": "59/8960",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 161,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          161
+        ],
+        [
+          7,
+          161
+        ],
+        [
+          11,
+          161
+        ]
+      ],
+      "selected_pair_weight": "4069/170016",
+      "clear_lower_bound": "137/28336",
+      "best_runner_tree_bound": "113/56672",
+      "fast_runner_star_bound": "113/56672",
+      "uniform_star_lower_bound": "-607/226688",
+      "actual_clear_duration": "15/2576",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 162,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          162
+        ],
+        [
+          7,
+          162
+        ],
+        [
+          11,
+          162
+        ]
+      ],
+      "selected_pair_weight": "163/7128",
+      "clear_lower_bound": "71/18144",
+      "best_runner_tree_bound": "71/18144",
+      "fast_runner_star_bound": "71/18144",
+      "uniform_star_lower_bound": "-703/266112",
+      "actual_clear_duration": "67/9072",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 163,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          163
+        ],
+        [
+          7,
+          163
+        ],
+        [
+          11,
+          163
+        ]
+      ],
+      "selected_pair_weight": "1121/43032",
+      "clear_lower_bound": "2291/401632",
+      "best_runner_tree_bound": "4591/1204896",
+      "fast_runner_star_bound": "4591/1204896",
+      "uniform_star_lower_bound": "-4187/1606528",
+      "actual_clear_duration": "8/1141",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 164,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          164
+        ],
+        [
+          7,
+          164
+        ],
+        [
+          11,
+          164
+        ]
+      ],
+      "selected_pair_weight": "259/10824",
+      "clear_lower_bound": "531/101024",
+      "best_runner_tree_bound": "61/25256",
+      "fast_runner_star_bound": "61/25256",
+      "uniform_star_lower_bound": "-1039/404096",
+      "actual_clear_duration": "27/4592",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 165,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          165
+        ],
+        [
+          7,
+          165
+        ],
+        [
+          11,
+          165
+        ]
+      ],
+      "selected_pair_weight": "317/12320",
+      "clear_lower_bound": "19/2640",
+      "best_runner_tree_bound": "13/5280",
+      "fast_runner_star_bound": "13/5280",
+      "uniform_star_lower_bound": "-25/9856",
+      "actual_clear_duration": "19/2640",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 166,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          166
+        ],
+        [
+          7,
+          166
+        ],
+        [
+          11,
+          166
+        ]
+      ],
+      "selected_pair_weight": "1139/43824",
+      "clear_lower_bound": "15/2464",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-2047/818048",
+      "actual_clear_duration": "69/9296",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 167,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          167
+        ],
+        [
+          7,
+          167
+        ],
+        [
+          11,
+          167
+        ]
+      ],
+      "selected_pair_weight": "61/2672",
+      "clear_lower_bound": "1121/308616",
+      "best_runner_tree_bound": "1121/308616",
+      "fast_runner_star_bound": "1121/308616",
+      "uniform_star_lower_bound": "-4063/1645952",
+      "actual_clear_duration": "111/18704",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 168,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          168
+        ],
+        [
+          7,
+          168
+        ],
+        [
+          11,
+          168
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "3/448",
+      "best_runner_tree_bound": "29/14784",
+      "fast_runner_star_bound": "29/14784",
+      "uniform_star_lower_bound": "-3/1232",
+      "actual_clear_duration": "3/448",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 169,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          169
+        ],
+        [
+          7,
+          169
+        ],
+        [
+          11,
+          169
+        ]
+      ],
+      "selected_pair_weight": "2221/89232",
+      "clear_lower_bound": "205/37856",
+      "best_runner_tree_bound": "4399/1249248",
+      "fast_runner_star_bound": "4399/1249248",
+      "uniform_star_lower_bound": "-4001/1665664",
+      "actual_clear_duration": "141/18928",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 170,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          170
+        ],
+        [
+          7,
+          170
+        ],
+        [
+          11,
+          170
+        ]
+      ],
+      "selected_pair_weight": "351/14960",
+      "clear_lower_bound": "2593/628320",
+      "best_runner_tree_bound": "2593/628320",
+      "fast_runner_star_bound": "2593/628320",
+      "uniform_star_lower_bound": "-397/167552",
+      "actual_clear_duration": "57/9520",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 171,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          171
+        ],
+        [
+          7,
+          171
+        ],
+        [
+          11,
+          171
+        ]
+      ],
+      "selected_pair_weight": "302/13167",
+      "clear_lower_bound": "107/30096",
+      "best_runner_tree_bound": "25/15048",
+      "fast_runner_star_bound": "25/15048",
+      "uniform_star_lower_bound": "-1313/561792",
+      "actual_clear_duration": "17/2736",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 172,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          172
+        ],
+        [
+          7,
+          172
+        ],
+        [
+          11,
+          172
+        ]
+      ],
+      "selected_pair_weight": "565/22704",
+      "clear_lower_bound": "617/105952",
+      "best_runner_tree_bound": "79/26488",
+      "fast_runner_star_bound": "79/26488",
+      "uniform_star_lower_bound": "-977/423808",
+      "actual_clear_duration": "9/1204",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 173,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          173
+        ],
+        [
+          7,
+          173
+        ],
+        [
+          11,
+          173
+        ]
+      ],
+      "selected_pair_weight": "703/30448",
+      "clear_lower_bound": "5321/1278816",
+      "best_runner_tree_bound": "5321/1278816",
+      "fast_runner_star_bound": "5321/1278816",
+      "uniform_star_lower_bound": "-3877/1705088",
+      "actual_clear_duration": "31/4844",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 174,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          174
+        ],
+        [
+          7,
+          174
+        ],
+        [
+          11,
+          174
+        ]
+      ],
+      "selected_pair_weight": "185/7656",
+      "clear_lower_bound": "115/26796",
+      "best_runner_tree_bound": "257/107184",
+      "fast_runner_star_bound": "257/107184",
+      "uniform_star_lower_bound": "-641/285824",
+      "actual_clear_duration": "59/9744",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 175,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          175
+        ],
+        [
+          7,
+          175
+        ],
+        [
+          11,
+          175
+        ]
+      ],
+      "selected_pair_weight": "919/36960",
+      "clear_lower_bound": "191/30800",
+      "best_runner_tree_bound": "207/61600",
+      "fast_runner_star_bound": "207/61600",
+      "uniform_star_lower_bound": "-109/49280",
+      "actual_clear_duration": "3/400",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 176,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          176
+        ],
+        [
+          7,
+          176
+        ],
+        [
+          11,
+          176
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "103/29568",
+      "best_runner_tree_bound": "103/29568",
+      "fast_runner_star_bound": "103/29568",
+      "uniform_star_lower_bound": "-43/19712",
+      "actual_clear_duration": "67/9856",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 177,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          177
+        ],
+        [
+          7,
+          177
+        ],
+        [
+          11,
+          177
+        ]
+      ],
+      "selected_pair_weight": "763/31152",
+      "clear_lower_bound": "2039/436128",
+      "best_runner_tree_bound": "1213/436128",
+      "fast_runner_star_bound": "1213/436128",
+      "uniform_star_lower_bound": "-1251/581504",
+      "actual_clear_duration": "121/19824",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 178,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          178
+        ],
+        [
+          7,
+          178
+        ],
+        [
+          11,
+          178
+        ]
+      ],
+      "selected_pair_weight": "83/3738",
+      "clear_lower_bound": "7/1958",
+      "best_runner_tree_bound": "7/1958",
+      "fast_runner_star_bound": "7/1958",
+      "uniform_star_lower_bound": "-1861/877184",
+      "actual_clear_duration": "5/712",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 179,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          179
+        ],
+        [
+          7,
+          179
+        ],
+        [
+          11,
+          179
+        ]
+      ],
+      "selected_pair_weight": "1589/63008",
+      "clear_lower_bound": "341/60144",
+      "best_runner_tree_bound": "3743/1323168",
+      "fast_runner_star_bound": "3743/1323168",
+      "uniform_star_lower_bound": "-3691/1764224",
+      "actual_clear_duration": "9/1253",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 180,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          180
+        ],
+        [
+          7,
+          180
+        ],
+        [
+          11,
+          180
+        ]
+      ],
+      "selected_pair_weight": "191/7920",
+      "clear_lower_bound": "521/110880",
+      "best_runner_tree_bound": "311/110880",
+      "fast_runner_star_bound": "311/110880",
+      "uniform_star_lower_bound": "-61/29568",
+      "actual_clear_duration": "31/5040",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 181,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          181
+        ],
+        [
+          7,
+          181
+        ],
+        [
+          11,
+          181
+        ]
+      ],
+      "selected_pair_weight": "89/3801",
+      "clear_lower_bound": "137/31856",
+      "best_runner_tree_bound": "137/31856",
+      "fast_runner_star_bound": "137/31856",
+      "uniform_star_lower_bound": "-3629/1783936",
+      "actual_clear_duration": "19/2896",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 182,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          182
+        ],
+        [
+          7,
+          182
+        ],
+        [
+          11,
+          182
+        ]
+      ],
+      "selected_pair_weight": "797/32032",
+      "clear_lower_bound": "25/4368",
+      "best_runner_tree_bound": "277/96096",
+      "fast_runner_star_bound": "277/96096",
+      "uniform_star_lower_bound": "-257/128128",
+      "actual_clear_duration": "11/1456",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 183,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          183
+        ],
+        [
+          7,
+          183
+        ],
+        [
+          11,
+          183
+        ]
+      ],
+      "selected_pair_weight": "247/10736",
+      "clear_lower_bound": "163/40992",
+      "best_runner_tree_bound": "313/150304",
+      "fast_runner_star_bound": "313/150304",
+      "uniform_star_lower_bound": "-1189/601216",
+      "actual_clear_duration": "127/20496",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 184,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          184
+        ],
+        [
+          7,
+          184
+        ],
+        [
+          11,
+          184
+        ]
+      ],
+      "selected_pair_weight": "35/1472",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-221/113344",
+      "actual_clear_duration": "1/161",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 185,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          185
+        ],
+        [
+          7,
+          185
+        ],
+        [
+          11,
+          185
+        ]
+      ],
+      "selected_pair_weight": "599/24420",
+      "clear_lower_bound": "239/45584",
+      "best_runner_tree_bound": "229/68376",
+      "fast_runner_star_bound": "229/68376",
+      "uniform_star_lower_bound": "-701/364672",
+      "actual_clear_duration": "157/20720",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 186,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          186
+        ],
+        [
+          7,
+          186
+        ],
+        [
+          11,
+          186
+        ]
+      ],
+      "selected_pair_weight": "815/32736",
+      "clear_lower_bound": "65/10416",
+      "best_runner_tree_bound": "115/76384",
+      "fast_runner_star_bound": "115/76384",
+      "uniform_star_lower_bound": "-579/305536",
+      "actual_clear_duration": "65/10416",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 187,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          187
+        ],
+        [
+          7,
+          187
+        ],
+        [
+          11,
+          187
+        ]
+      ],
+      "selected_pair_weight": "9/374",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-313/167552",
+      "actual_clear_duration": "131/20944",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 188,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          188
+        ],
+        [
+          7,
+          188
+        ],
+        [
+          11,
+          188
+        ]
+      ],
+      "selected_pair_weight": "8875/347424",
+      "clear_lower_bound": "3/517",
+      "best_runner_tree_bound": "97/24816",
+      "fast_runner_star_bound": "97/24816",
+      "uniform_star_lower_bound": "-853/463232",
+      "actual_clear_duration": "11/1504",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 189,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          189
+        ],
+        [
+          7,
+          189
+        ],
+        [
+          11,
+          189
+        ]
+      ],
+      "selected_pair_weight": "1553/66528",
+      "clear_lower_bound": "1/198",
+      "best_runner_tree_bound": "7/3168",
+      "fast_runner_star_bound": "7/3168",
+      "uniform_star_lower_bound": "-23/12672",
+      "actual_clear_duration": "5/756",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 190,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          190
+        ],
+        [
+          7,
+          190
+        ],
+        [
+          11,
+          190
+        ]
+      ],
+      "selected_pair_weight": "189/8360",
+      "clear_lower_bound": "199/63840",
+      "best_runner_tree_bound": "199/63840",
+      "fast_runner_star_bound": "199/63840",
+      "uniform_star_lower_bound": "-335/187264",
+      "actual_clear_duration": "67/10640",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 191,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          191
+        ],
+        [
+          7,
+          191
+        ],
+        [
+          11,
+          191
+        ]
+      ],
+      "selected_pair_weight": "17441/705936",
+      "clear_lower_bound": "359/67232",
+      "best_runner_tree_bound": "695/201696",
+      "fast_runner_star_bound": "695/201696",
+      "uniform_star_lower_bound": "-3319/1882496",
+      "actual_clear_duration": "21/3056",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 192,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          192
+        ],
+        [
+          7,
+          192
+        ],
+        [
+          11,
+          192
+        ]
+      ],
+      "selected_pair_weight": "35/1536",
+      "clear_lower_bound": "419/118272",
+      "best_runner_tree_bound": "419/118272",
+      "fast_runner_star_bound": "419/118272",
+      "uniform_star_lower_bound": "-137/78848",
+      "actual_clear_duration": "25/3584",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 193,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          193
+        ],
+        [
+          7,
+          193
+        ],
+        [
+          11,
+          193
+        ]
+      ],
+      "selected_pair_weight": "1649/67936",
+      "clear_lower_bound": "167/32424",
+      "best_runner_tree_bound": "3295/1426656",
+      "fast_runner_star_bound": "3295/1426656",
+      "uniform_star_lower_bound": "-3257/1902208",
+      "actual_clear_duration": "137/21616",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 194,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          194
+        ],
+        [
+          7,
+          194
+        ],
+        [
+          11,
+          194
+        ]
+      ],
+      "selected_pair_weight": "8545/358512",
+      "clear_lower_bound": "15/3104",
+      "best_runner_tree_bound": "301/102432",
+      "fast_runner_star_bound": "301/102432",
+      "uniform_star_lower_bound": "-1613/956032",
+      "actual_clear_duration": "5/776",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 195,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          195
+        ],
+        [
+          7,
+          195
+        ],
+        [
+          11,
+          195
+        ]
+      ],
+      "selected_pair_weight": "1/40",
+      "clear_lower_bound": "2323/480480",
+      "best_runner_tree_bound": "2323/480480",
+      "fast_runner_star_bound": "2323/480480",
+      "uniform_star_lower_bound": "-213/128128",
+      "actual_clear_duration": "2/273",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 196,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          196
+        ],
+        [
+          7,
+          196
+        ],
+        [
+          11,
+          196
+        ]
+      ],
+      "selected_pair_weight": "51/2156",
+      "clear_lower_bound": "23/4704",
+      "best_runner_tree_bound": "53/25872",
+      "fast_runner_star_bound": "53/25872",
+      "uniform_star_lower_bound": "-113/68992",
+      "actual_clear_duration": "5/784",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 197,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          197
+        ],
+        [
+          7,
+          197
+        ],
+        [
+          11,
+          197
+        ]
+      ],
+      "selected_pair_weight": "2357/104016",
+      "clear_lower_bound": "177/44128",
+      "best_runner_tree_bound": "3083/1456224",
+      "fast_runner_star_bound": "3083/1456224",
+      "uniform_star_lower_bound": "-3133/1941632",
+      "actual_clear_duration": "141/22064",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 198,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          198
+        ],
+        [
+          7,
+          198
+        ],
+        [
+          11,
+          198
+        ]
+      ],
+      "selected_pair_weight": "31/1232",
+      "clear_lower_bound": "17/3168",
+      "best_runner_tree_bound": "17/3168",
+      "fast_runner_star_bound": "17/3168",
+      "uniform_star_lower_bound": "-47/29568",
+      "actual_clear_duration": "1/132",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 199,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          199
+        ],
+        [
+          7,
+          199
+        ],
+        [
+          11,
+          199
+        ]
+      ],
+      "selected_pair_weight": "763/35024",
+      "clear_lower_bound": "949/367752",
+      "best_runner_tree_bound": "949/367752",
+      "fast_runner_star_bound": "949/367752",
+      "uniform_star_lower_bound": "-3071/1961344",
+      "actual_clear_duration": "143/22288",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 200,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          200
+        ],
+        [
+          7,
+          200
+        ],
+        [
+          11,
+          200
+        ]
+      ],
+      "selected_pair_weight": "1339/52800",
+      "clear_lower_bound": "9/1400",
+      "best_runner_tree_bound": "313/184800",
+      "fast_runner_star_bound": "313/184800",
+      "uniform_star_lower_bound": "-19/12320",
+      "actual_clear_duration": "9/1400",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 201,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          201
+        ],
+        [
+          7,
+          201
+        ],
+        [
+          11,
+          201
+        ]
+      ],
+      "selected_pair_weight": "125/5159",
+      "clear_lower_bound": "113/23584",
+      "best_runner_tree_bound": "113/23584",
+      "fast_runner_star_bound": "113/23584",
+      "uniform_star_lower_bound": "-1003/660352",
+      "actual_clear_duration": "23/3216",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 202,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          202
+        ],
+        [
+          7,
+          202
+        ],
+        [
+          11,
+          202
+        ]
+      ],
+      "selected_pair_weight": "1289/53328",
+      "clear_lower_bound": "1207/248864",
+      "best_runner_tree_bound": "2207/746592",
+      "fast_runner_star_bound": "2207/746592",
+      "uniform_star_lower_bound": "-1489/995456",
+      "actual_clear_duration": "73/11312",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 203,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          203
+        ],
+        [
+          7,
+          203
+        ],
+        [
+          11,
+          203
+        ]
+      ],
+      "selected_pair_weight": "13/609",
+      "clear_lower_bound": "71/35728",
+      "best_runner_tree_bound": "71/35728",
+      "fast_runner_star_bound": "71/35728",
+      "uniform_star_lower_bound": "-421/285824",
+      "actual_clear_duration": "3/464",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 204,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          204
+        ],
+        [
+          7,
+          204
+        ],
+        [
+          11,
+          204
+        ]
+      ],
+      "selected_pair_weight": "1427/62832",
+      "clear_lower_bound": "65/17952",
+      "best_runner_tree_bound": "65/17952",
+      "fast_runner_star_bound": "65/17952",
+      "uniform_star_lower_bound": "-243/167552",
+      "actual_clear_duration": "11/1632",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 205,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          205
+        ],
+        [
+          7,
+          205
+        ],
+        [
+          11,
+          205
+        ]
+      ],
+      "selected_pair_weight": "1307/54120",
+      "clear_lower_bound": "2613/505120",
+      "best_runner_tree_bound": "4969/1515360",
+      "fast_runner_star_bound": "4969/1515360",
+      "uniform_star_lower_bound": "-577/404096",
+      "actual_clear_duration": "39/5740",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 206,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          206
+        ],
+        [
+          7,
+          206
+        ],
+        [
+          11,
+          206
+        ]
+      ],
+      "selected_pair_weight": "113/4944",
+      "clear_lower_bound": "391/126896",
+      "best_runner_tree_bound": "391/126896",
+      "fast_runner_star_bound": "391/126896",
+      "uniform_star_lower_bound": "-1427/1015168",
+      "actual_clear_duration": "75/11536",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 207,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          207
+        ],
+        [
+          7,
+          207
+        ],
+        [
+          11,
+          207
+        ]
+      ],
+      "selected_pair_weight": "1775/72864",
+      "clear_lower_bound": "65/11592",
+      "best_runner_tree_bound": "1411/510048",
+      "fast_runner_star_bound": "1411/510048",
+      "uniform_star_lower_bound": "-941/680064",
+      "actual_clear_duration": "151/23184",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 208,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          208
+        ],
+        [
+          7,
+          208
+        ],
+        [
+          11,
+          208
+        ]
+      ],
+      "selected_pair_weight": "1349/54912",
+      "clear_lower_bound": "31/5824",
+      "best_runner_tree_bound": "659/192192",
+      "fast_runner_star_bound": "659/192192",
+      "uniform_star_lower_bound": "-349/256256",
+      "actual_clear_duration": "83/11648",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 209,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          209
+        ],
+        [
+          7,
+          209
+        ],
+        [
+          11,
+          209
+        ]
+      ],
+      "selected_pair_weight": "235/10032",
+      "clear_lower_bound": "173/46816",
+      "best_runner_tree_bound": "173/46816",
+      "fast_runner_star_bound": "173/46816",
+      "uniform_star_lower_bound": "-251/187264",
+      "actual_clear_duration": "153/23408",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 210,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          210
+        ],
+        [
+          7,
+          210
+        ],
+        [
+          11,
+          210
+        ]
+      ],
+      "selected_pair_weight": "199/9240",
+      "clear_lower_bound": "13/4620",
+      "best_runner_tree_bound": "13/4620",
+      "fast_runner_star_bound": "13/4620",
+      "uniform_star_lower_bound": "-13/9856",
+      "actual_clear_duration": "11/1680",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 211,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          211
+        ],
+        [
+          7,
+          211
+        ],
+        [
+          11,
+          211
+        ]
+      ],
+      "selected_pair_weight": "9395/389928",
+      "clear_lower_bound": "31/6752",
+      "best_runner_tree_bound": "601/222816",
+      "fast_runner_star_bound": "601/222816",
+      "uniform_star_lower_bound": "-2699/2079616",
+      "actual_clear_duration": "3/422",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 212,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          212
+        ],
+        [
+          7,
+          212
+        ],
+        [
+          11,
+          212
+        ]
+      ],
+      "selected_pair_weight": "119/5088",
+      "clear_lower_bound": "261/65296",
+      "best_runner_tree_bound": "261/65296",
+      "fast_runner_star_bound": "261/65296",
+      "uniform_star_lower_bound": "-667/522368",
+      "actual_clear_duration": "39/5936",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 213,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          213
+        ],
+        [
+          7,
+          213
+        ],
+        [
+          11,
+          213
+        ]
+      ],
+      "selected_pair_weight": "841/37488",
+      "clear_lower_bound": "433/131208",
+      "best_runner_tree_bound": "433/131208",
+      "fast_runner_star_bound": "433/131208",
+      "uniform_star_lower_bound": "-879/699776",
+      "actual_clear_duration": "157/23856",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 214,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          214
+        ],
+        [
+          7,
+          214
+        ],
+        [
+          11,
+          214
+        ]
+      ],
+      "selected_pair_weight": "20707/790944",
+      "clear_lower_bound": "3/428",
+      "best_runner_tree_bound": "257/112992",
+      "fast_runner_star_bound": "257/112992",
+      "uniform_star_lower_bound": "-1303/1054592",
+      "actual_clear_duration": "3/428",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 215,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          215
+        ],
+        [
+          7,
+          215
+        ],
+        [
+          11,
+          215
+        ]
+      ],
+      "selected_pair_weight": "109/4730",
+      "clear_lower_bound": "6329/1589280",
+      "best_runner_tree_bound": "6329/1589280",
+      "fast_runner_star_bound": "6329/1589280",
+      "uniform_star_lower_bound": "-515/423808",
+      "actual_clear_duration": "159/24080",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 216,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          216
+        ],
+        [
+          7,
+          216
+        ],
+        [
+          11,
+          216
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "425/133056",
+      "best_runner_tree_bound": "425/133056",
+      "fast_runner_star_bound": "425/133056",
+      "uniform_star_lower_bound": "-53/44352",
+      "actual_clear_duration": "5/756",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 217,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          217
+        ],
+        [
+          7,
+          217
+        ],
+        [
+          11,
+          217
+        ]
+      ],
+      "selected_pair_weight": "673/28644",
+      "clear_lower_bound": "23/5456",
+      "best_runner_tree_bound": "19/8184",
+      "fast_runner_star_bound": "19/8184",
+      "uniform_star_lower_bound": "-359/305536",
+      "actual_clear_duration": "23/3472",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 218,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          218
+        ],
+        [
+          7,
+          218
+        ],
+        [
+          11,
+          218
+        ]
+      ],
+      "selected_pair_weight": "423/19184",
+      "clear_lower_bound": "2665/805728",
+      "best_runner_tree_bound": "2665/805728",
+      "fast_runner_star_bound": "2665/805728",
+      "uniform_star_lower_bound": "-1241/1074304",
+      "actual_clear_duration": "81/12208",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 219,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          219
+        ],
+        [
+          7,
+          219
+        ],
+        [
+          11,
+          219
+        ]
+      ],
+      "selected_pair_weight": "953/38544",
+      "clear_lower_bound": "2669/539616",
+      "best_runner_tree_bound": "549/179872",
+      "fast_runner_star_bound": "549/179872",
+      "uniform_star_lower_bound": "-817/719488",
+      "actual_clear_duration": "163/24528",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 220,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          220
+        ],
+        [
+          7,
+          220
+        ],
+        [
+          11,
+          220
+        ]
+      ],
+      "selected_pair_weight": "11/480",
+      "clear_lower_bound": "1/308",
+      "best_runner_tree_bound": "1/308",
+      "fast_runner_star_bound": "1/308",
+      "uniform_star_lower_bound": "-1/896",
+      "actual_clear_duration": "41/6160",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 221,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          221
+        ],
+        [
+          7,
+          221
+        ],
+        [
+          11,
+          221
+        ]
+      ],
+      "selected_pair_weight": "13317/544544",
+      "clear_lower_bound": "703/116688",
+      "best_runner_tree_bound": "743/233376",
+      "fast_runner_star_bound": "743/233376",
+      "uniform_star_lower_bound": "-2389/2178176",
+      "actual_clear_duration": "3/442",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 222,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          222
+        ],
+        [
+          7,
+          222
+        ],
+        [
+          11,
+          222
+        ]
+      ],
+      "selected_pair_weight": "59/2442",
+      "clear_lower_bound": "39/8288",
+      "best_runner_tree_bound": "769/273504",
+      "fast_runner_star_bound": "769/273504",
+      "uniform_star_lower_bound": "-393/364672",
+      "actual_clear_duration": "83/12432",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 223,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          223
+        ],
+        [
+          7,
+          223
+        ],
+        [
+          11,
+          223
+        ]
+      ],
+      "selected_pair_weight": "245/10704",
+      "clear_lower_bound": "1945/549472",
+      "best_runner_tree_bound": "1945/549472",
+      "fast_runner_star_bound": "1945/549472",
+      "uniform_star_lower_bound": "-2327/2197888",
+      "actual_clear_duration": "167/24976",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 224,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          224
+        ],
+        [
+          7,
+          224
+        ],
+        [
+          11,
+          224
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "103/29568",
+      "best_runner_tree_bound": "103/29568",
+      "fast_runner_star_bound": "103/29568",
+      "uniform_star_lower_bound": "-41/39424",
+      "actual_clear_duration": "3/448",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 225,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          225
+        ],
+        [
+          7,
+          225
+        ],
+        [
+          11,
+          225
+        ]
+      ],
+      "selected_pair_weight": "919/39600",
+      "clear_lower_bound": "41/10080",
+      "best_runner_tree_bound": "241/110880",
+      "fast_runner_star_bound": "241/110880",
+      "uniform_star_lower_bound": "-151/147840",
+      "actual_clear_duration": "169/25200",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 226,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          226
+        ],
+        [
+          7,
+          226
+        ],
+        [
+          11,
+          226
+        ]
+      ],
+      "selected_pair_weight": "31/1356",
+      "clear_lower_bound": "1065/278432",
+      "best_runner_tree_bound": "1065/278432",
+      "fast_runner_star_bound": "1065/278432",
+      "uniform_star_lower_bound": "-1117/1113728",
+      "actual_clear_duration": "85/12656",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 227,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          227
+        ],
+        [
+          7,
+          227
+        ],
+        [
+          11,
+          227
+        ]
+      ],
+      "selected_pair_weight": "6631/279664",
+      "clear_lower_bound": "881/239712",
+      "best_runner_tree_bound": "881/239712",
+      "fast_runner_star_bound": "881/239712",
+      "uniform_star_lower_bound": "-2203/2237312",
+      "actual_clear_duration": "3/454",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 228,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          228
+        ],
+        [
+          7,
+          228
+        ],
+        [
+          11,
+          228
+        ]
+      ],
+      "selected_pair_weight": "9/352",
+      "clear_lower_bound": "43/6384",
+      "best_runner_tree_bound": "281/140448",
+      "fast_runner_star_bound": "281/140448",
+      "uniform_star_lower_bound": "-181/187264",
+      "actual_clear_duration": "43/6384",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 229,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          229
+        ],
+        [
+          7,
+          229
+        ],
+        [
+          11,
+          229
+        ]
+      ],
+      "selected_pair_weight": "2725/120912",
+      "clear_lower_bound": "2147/564256",
+      "best_runner_tree_bound": "2147/564256",
+      "fast_runner_star_bound": "2147/564256",
+      "uniform_star_lower_bound": "-2141/2257024",
+      "actual_clear_duration": "173/25648",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 230,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          230
+        ],
+        [
+          7,
+          230
+        ],
+        [
+          11,
+          230
+        ]
+      ],
+      "selected_pair_weight": "471/20240",
+      "clear_lower_bound": "3019/850080",
+      "best_runner_tree_bound": "3019/850080",
+      "fast_runner_star_bound": "3019/850080",
+      "uniform_star_lower_bound": "-211/226688",
+      "actual_clear_duration": "87/12880",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 231,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          231
+        ],
+        [
+          7,
+          231
+        ],
+        [
+          11,
+          231
+        ]
+      ],
+      "selected_pair_weight": "1/42",
+      "clear_lower_bound": "17/3696",
+      "best_runner_tree_bound": "5/1848",
+      "fast_runner_star_bound": "5/1848",
+      "uniform_star_lower_bound": "-9/9856",
+      "actual_clear_duration": "25/3696",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 232,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          232
+        ],
+        [
+          7,
+          232
+        ],
+        [
+          11,
+          232
+        ]
+      ],
+      "selected_pair_weight": "227/10208",
+      "clear_lower_bound": "1399/428736",
+      "best_runner_tree_bound": "1399/428736",
+      "fast_runner_star_bound": "1399/428736",
+      "uniform_star_lower_bound": "-2/2233",
+      "actual_clear_duration": "11/1624",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 233,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          233
+        ],
+        [
+          7,
+          233
+        ],
+        [
+          11,
+          233
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "5711/1722336",
+      "best_runner_tree_bound": "5711/1722336",
+      "fast_runner_star_bound": "5711/1722336",
+      "uniform_star_lower_bound": "-2017/2296448",
+      "actual_clear_duration": "177/26096",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 234,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          234
+        ],
+        [
+          7,
+          234
+        ],
+        [
+          11,
+          234
+        ]
+      ],
+      "selected_pair_weight": "863/36036",
+      "clear_lower_bound": "191/41184",
+      "best_runner_tree_bound": "113/41184",
+      "fast_runner_star_bound": "113/41184",
+      "uniform_star_lower_bound": "-331/384384",
+      "actual_clear_duration": "1/156",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 235,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          235
+        ],
+        [
+          7,
+          235
+        ],
+        [
+          11,
+          235
+        ]
+      ],
+      "selected_pair_weight": "17/752",
+      "clear_lower_bound": "1417/434280",
+      "best_runner_tree_bound": "1417/434280",
+      "fast_runner_star_bound": "1417/434280",
+      "uniform_star_lower_bound": "-391/463232",
+      "actual_clear_duration": "179/26320",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 236,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          236
+        ],
+        [
+          7,
+          236
+        ],
+        [
+          11,
+          236
+        ]
+      ],
+      "selected_pair_weight": "1483/62304",
+      "clear_lower_bound": "31/6608",
+      "best_runner_tree_bound": "305/109032",
+      "fast_runner_star_bound": "305/109032",
+      "uniform_star_lower_bound": "-481/581504",
+      "actual_clear_duration": "45/6608",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 237,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          237
+        ],
+        [
+          7,
+          237
+        ],
+        [
+          11,
+          237
+        ]
+      ],
+      "selected_pair_weight": "97/4424",
+      "clear_lower_bound": "81/27808",
+      "best_runner_tree_bound": "81/27808",
+      "fast_runner_star_bound": "81/27808",
+      "uniform_star_lower_bound": "-631/778624",
+      "actual_clear_duration": "1/158",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 238,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          238
+        ],
+        [
+          7,
+          238
+        ],
+        [
+          11,
+          238
+        ]
+      ],
+      "selected_pair_weight": "45/1904",
+      "clear_lower_bound": "247/62832",
+      "best_runner_tree_bound": "247/62832",
+      "fast_runner_star_bound": "247/62832",
+      "uniform_star_lower_bound": "-19/23936",
+      "actual_clear_duration": "13/1904",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 239,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          239
+        ],
+        [
+          7,
+          239
+        ],
+        [
+          11,
+          239
+        ]
+      ],
+      "selected_pair_weight": "2891/126192",
+      "clear_lower_bound": "219/53536",
+      "best_runner_tree_bound": "3881/1766688",
+      "fast_runner_star_bound": "3881/1766688",
+      "uniform_star_lower_bound": "-1831/2355584",
+      "actual_clear_duration": "183/26768",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 240,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          240
+        ],
+        [
+          7,
+          240
+        ],
+        [
+          11,
+          240
+        ]
+      ],
+      "selected_pair_weight": "43/1920",
+      "clear_lower_bound": "233/73920",
+      "best_runner_tree_bound": "233/73920",
+      "fast_runner_star_bound": "233/73920",
+      "uniform_star_lower_bound": "-15/19712",
+      "actual_clear_duration": "17/2688",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 241,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          241
+        ],
+        [
+          7,
+          241
+        ],
+        [
+          11,
+          241
+        ]
+      ],
+      "selected_pair_weight": "63/2651",
+      "clear_lower_bound": "7303/1781472",
+      "best_runner_tree_bound": "7303/1781472",
+      "fast_runner_star_bound": "7303/1781472",
+      "uniform_star_lower_bound": "-1769/2375296",
+      "actual_clear_duration": "185/26992",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 242,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          242
+        ],
+        [
+          7,
+          242
+        ],
+        [
+          11,
+          242
+        ]
+      ],
+      "selected_pair_weight": "67/2904",
+      "clear_lower_bound": "29/6776",
+      "best_runner_tree_bound": "97/40656",
+      "fast_runner_star_bound": "97/40656",
+      "uniform_star_lower_bound": "-79/108416",
+      "actual_clear_duration": "93/13552",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 243,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          243
+        ],
+        [
+          7,
+          243
+        ],
+        [
+          11,
+          243
+        ]
+      ],
+      "selected_pair_weight": "487/21384",
+      "clear_lower_bound": "1979/598752",
+      "best_runner_tree_bound": "1979/598752",
+      "fast_runner_star_bound": "1979/598752",
+      "uniform_star_lower_bound": "-569/798336",
+      "actual_clear_duration": "5/756",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 244,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          244
+        ],
+        [
+          7,
+          244
+        ],
+        [
+          11,
+          244
+        ]
+      ],
+      "selected_pair_weight": "865/37576",
+      "clear_lower_bound": "235/64416",
+      "best_runner_tree_bound": "235/64416",
+      "fast_runner_star_bound": "235/64416",
+      "uniform_star_lower_bound": "-419/601216",
+      "actual_clear_duration": "13/1952",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 245,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          245
+        ],
+        [
+          7,
+          245
+        ],
+        [
+          11,
+          245
+        ]
+      ],
+      "selected_pair_weight": "779/32340",
+      "clear_lower_bound": "213/43120",
+      "best_runner_tree_bound": "197/64680",
+      "fast_runner_star_bound": "197/64680",
+      "uniform_star_lower_bound": "-47/68992",
+      "actual_clear_duration": "27/3920",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 246,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          246
+        ],
+        [
+          7,
+          246
+        ],
+        [
+          11,
+          246
+        ]
+      ],
+      "selected_pair_weight": "485/21648",
+      "clear_lower_bound": "977/303072",
+      "best_runner_tree_bound": "977/303072",
+      "fast_runner_star_bound": "977/303072",
+      "uniform_star_lower_bound": "-269/404096",
+      "actual_clear_duration": "95/13776",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 247,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          247
+        ],
+        [
+          7,
+          247
+        ],
+        [
+          11,
+          247
+        ]
+      ],
+      "selected_pair_weight": "1685/76076",
+      "clear_lower_bound": "799/260832",
+      "best_runner_tree_bound": "799/260832",
+      "fast_runner_star_bound": "799/260832",
+      "uniform_star_lower_bound": "-1583/2434432",
+      "actual_clear_duration": "25/3952",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 248,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          248
+        ],
+        [
+          7,
+          248
+        ],
+        [
+          11,
+          248
+        ]
+      ],
+      "selected_pair_weight": "1609/65472",
+      "clear_lower_bound": "97/19096",
+      "best_runner_tree_bound": "365/114576",
+      "fast_runner_star_bound": "365/114576",
+      "uniform_star_lower_bound": "-97/152768",
+      "actual_clear_duration": "3/434",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 249,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          249
+        ],
+        [
+          7,
+          249
+        ],
+        [
+          11,
+          249
+        ]
+      ],
+      "selected_pair_weight": "91/3984",
+      "clear_lower_bound": "547/153384",
+      "best_runner_tree_bound": "547/153384",
+      "fast_runner_star_bound": "547/153384",
+      "uniform_star_lower_bound": "-507/818048",
+      "actual_clear_duration": "193/27888",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 250,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          250
+        ],
+        [
+          7,
+          250
+        ],
+        [
+          11,
+          250
+        ]
+      ],
+      "selected_pair_weight": "3217/154000",
+      "clear_lower_bound": "1/480",
+      "best_runner_tree_bound": "1/480",
+      "fast_runner_star_bound": "1/480",
+      "uniform_star_lower_bound": "-149/246400",
+      "actual_clear_duration": "3/500",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 251,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          251
+        ],
+        [
+          7,
+          251
+        ],
+        [
+          11,
+          251
+        ]
+      ],
+      "selected_pair_weight": "277/12048",
+      "clear_lower_bound": "2029/618464",
+      "best_runner_tree_bound": "2029/618464",
+      "fast_runner_star_bound": "2029/618464",
+      "uniform_star_lower_bound": "-1459/2473856",
+      "actual_clear_duration": "195/28112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 252,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          252
+        ],
+        [
+          7,
+          252
+        ],
+        [
+          11,
+          252
+        ]
+      ],
+      "selected_pair_weight": "1/42",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-17/29568",
+      "actual_clear_duration": "1/144",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 253,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          253
+        ],
+        [
+          7,
+          253
+        ],
+        [
+          11,
+          253
+        ]
+      ],
+      "selected_pair_weight": "601/24288",
+      "clear_lower_bound": "1/161",
+      "best_runner_tree_bound": "251/170016",
+      "fast_runner_star_bound": "251/170016",
+      "uniform_star_lower_bound": "-127/226688",
+      "actual_clear_duration": "1/161",
+      "exact_duration_recovered": true
+    },
+    {
+      "replacement": 254,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          254
+        ],
+        [
+          7,
+          254
+        ],
+        [
+          11,
+          254
+        ]
+      ],
+      "selected_pair_weight": "977/42672",
+      "clear_lower_bound": "155/44704",
+      "best_runner_tree_bound": "155/44704",
+      "fast_runner_star_bound": "155/44704",
+      "uniform_star_lower_bound": "-683/1251712",
+      "actual_clear_duration": "7/1016",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 255,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          255
+        ],
+        [
+          7,
+          255
+        ],
+        [
+          11,
+          255
+        ]
+      ],
+      "selected_pair_weight": "2/85",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-89/167552",
+      "actual_clear_duration": "199/28560",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 256,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          256
+        ],
+        [
+          7,
+          256
+        ],
+        [
+          11,
+          256
+        ]
+      ],
+      "selected_pair_weight": "395/16896",
+      "clear_lower_bound": "163/39424",
+      "best_runner_tree_bound": "265/118272",
+      "fast_runner_star_bound": "265/118272",
+      "uniform_star_lower_bound": "-163/315392",
+      "actual_clear_duration": "93/14336",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 257,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          257
+        ],
+        [
+          7,
+          257
+        ],
+        [
+          11,
+          257
+        ]
+      ],
+      "selected_pair_weight": "20975/949872",
+      "clear_lower_bound": "265/90464",
+      "best_runner_tree_bound": "265/90464",
+      "fast_runner_star_bound": "265/90464",
+      "uniform_star_lower_bound": "-1273/2532992",
+      "actual_clear_duration": "27/4112",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 258,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          258
+        ],
+        [
+          7,
+          258
+        ],
+        [
+          11,
+          258
+        ]
+      ],
+      "selected_pair_weight": "527/22704",
+      "clear_lower_bound": "1319/317856",
+      "best_runner_tree_bound": "1319/317856",
+      "fast_runner_star_bound": "1319/317856",
+      "uniform_star_lower_bound": "-207/423808",
+      "actual_clear_duration": "101/14448",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 259,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          259
+        ],
+        [
+          7,
+          259
+        ],
+        [
+          11,
+          259
+        ]
+      ],
+      "selected_pair_weight": "1697/68376",
+      "clear_lower_bound": "445/91168",
+      "best_runner_tree_bound": "817/273504",
+      "fast_runner_star_bound": "817/273504",
+      "uniform_star_lower_bound": "-173/364672",
+      "actual_clear_duration": "1/148",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 260,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": false,
+      "selected_edges": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          260
+        ],
+        [
+          7,
+          260
+        ],
+        [
+          11,
+          260
+        ]
+      ],
+      "selected_pair_weight": "11551/480480",
+      "clear_lower_bound": "59/11440",
+      "best_runner_tree_bound": "53/22880",
+      "fast_runner_star_bound": "53/22880",
+      "uniform_star_lower_bound": "-59/128128",
+      "actual_clear_duration": "1/160",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 261,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          261
+        ],
+        [
+          7,
+          261
+        ],
+        [
+          11,
+          261
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "281/71456",
+      "best_runner_tree_bound": "281/71456",
+      "fast_runner_star_bound": "281/71456",
+      "uniform_star_lower_bound": "-383/857472",
+      "actual_clear_duration": "205/29232",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 262,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          262
+        ],
+        [
+          7,
+          262
+        ],
+        [
+          11,
+          262
+        ]
+      ],
+      "selected_pair_weight": "1715/69168",
+      "clear_lower_bound": "1657/322784",
+      "best_runner_tree_bound": "3137/968352",
+      "fast_runner_star_bound": "3137/968352",
+      "uniform_star_lower_bound": "-559/1291136",
+      "actual_clear_duration": "103/14672",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 263,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          263
+        ],
+        [
+          7,
+          263
+        ],
+        [
+          11,
+          263
+        ]
+      ],
+      "selected_pair_weight": "93/4208",
+      "clear_lower_bound": "1403/486024",
+      "best_runner_tree_bound": "1403/486024",
+      "fast_runner_star_bound": "1403/486024",
+      "uniform_star_lower_bound": "-1087/2592128",
+      "actual_clear_duration": "179/29456",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 264,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          264
+        ],
+        [
+          7,
+          264
+        ],
+        [
+          11,
+          264
+        ]
+      ],
+      "selected_pair_weight": "47/2112",
+      "clear_lower_bound": "1/308",
+      "best_runner_tree_bound": "1/308",
+      "fast_runner_star_bound": "1/308",
+      "uniform_star_lower_bound": "-1/2464",
+      "actual_clear_duration": "13/1848",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 265,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          265
+        ],
+        [
+          7,
+          265
+        ],
+        [
+          11,
+          265
+        ]
+      ],
+      "selected_pair_weight": "3433/139920",
+      "clear_lower_bound": "3359/652960",
+      "best_runner_tree_bound": "6367/1958880",
+      "fast_runner_star_bound": "6367/1958880",
+      "uniform_star_lower_bound": "-205/522368",
+      "actual_clear_duration": "209/29680",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 266,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          266
+        ],
+        [
+          7,
+          266
+        ],
+        [
+          11,
+          266
+        ]
+      ],
+      "selected_pair_weight": "3/133",
+      "clear_lower_bound": "457/140448",
+      "best_runner_tree_bound": "457/140448",
+      "fast_runner_star_bound": "457/140448",
+      "uniform_star_lower_bound": "-71/187264",
+      "actual_clear_duration": "13/2128",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 267,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          267
+        ],
+        [
+          7,
+          267
+        ],
+        [
+          11,
+          267
+        ]
+      ],
+      "selected_pair_weight": "7157/328944",
+      "clear_lower_bound": "19/7832",
+      "best_runner_tree_bound": "19/7832",
+      "fast_runner_star_bound": "19/7832",
+      "uniform_star_lower_bound": "-321/877184",
+      "actual_clear_duration": "29/4272",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 268,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          268
+        ],
+        [
+          7,
+          268
+        ],
+        [
+          11,
+          268
+        ]
+      ],
+      "selected_pair_weight": "145/6432",
+      "clear_lower_bound": "141/41272",
+      "best_runner_tree_bound": "141/41272",
+      "fast_runner_star_bound": "141/41272",
+      "uniform_star_lower_bound": "-233/660352",
+      "actual_clear_duration": "53/7504",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 269,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          269
+        ],
+        [
+          7,
+          269
+        ],
+        [
+          11,
+          269
+        ]
+      ],
+      "selected_pair_weight": "97/4304",
+      "clear_lower_bound": "6953/1988448",
+      "best_runner_tree_bound": "6953/1988448",
+      "fast_runner_star_bound": "6953/1988448",
+      "uniform_star_lower_bound": "-901/2651264",
+      "actual_clear_duration": "12/1883",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 270,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          270
+        ],
+        [
+          7,
+          270
+        ],
+        [
+          11,
+          270
+        ]
+      ],
+      "selected_pair_weight": "409/18480",
+      "clear_lower_bound": "59/23760",
+      "best_runner_tree_bound": "59/23760",
+      "fast_runner_star_bound": "59/23760",
+      "uniform_star_lower_bound": "-29/88704",
+      "actual_clear_duration": "7/1080",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 271,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          271
+        ],
+        [
+          7,
+          271
+        ],
+        [
+          11,
+          271
+        ]
+      ],
+      "selected_pair_weight": "3151/143088",
+      "clear_lower_bound": "2105/667744",
+      "best_runner_tree_bound": "2105/667744",
+      "fast_runner_star_bound": "2105/667744",
+      "uniform_star_lower_bound": "-839/2670976",
+      "actual_clear_duration": "215/30352",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 272,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          272
+        ],
+        [
+          7,
+          272
+        ],
+        [
+          11,
+          272
+        ]
+      ],
+      "selected_pair_weight": "25/1088",
+      "clear_lower_bound": "1877/502656",
+      "best_runner_tree_bound": "1877/502656",
+      "fast_runner_star_bound": "1877/502656",
+      "uniform_star_lower_bound": "-101/335104",
+      "actual_clear_duration": "101/15232",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 273,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          273
+        ],
+        [
+          7,
+          273
+        ],
+        [
+          11,
+          273
+        ]
+      ],
+      "selected_pair_weight": "1147/48048",
+      "clear_lower_bound": "409/96096",
+      "best_runner_tree_bound": "227/96096",
+      "fast_runner_star_bound": "227/96096",
+      "uniform_star_lower_bound": "-37/128128",
+      "actual_clear_duration": "9/1456",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 274,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          274
+        ],
+        [
+          7,
+          274
+        ],
+        [
+          11,
+          274
+        ]
+      ],
+      "selected_pair_weight": "145/6576",
+      "clear_lower_bound": "541/168784",
+      "best_runner_tree_bound": "541/168784",
+      "fast_runner_star_bound": "541/168784",
+      "uniform_star_lower_bound": "-373/1350272",
+      "actual_clear_duration": "109/15344",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 275,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          275
+        ],
+        [
+          7,
+          275
+        ],
+        [
+          11,
+          275
+        ]
+      ],
+      "selected_pair_weight": "103/4400",
+      "clear_lower_bound": "733/184800",
+      "best_runner_tree_bound": "733/184800",
+      "fast_runner_star_bound": "733/184800",
+      "uniform_star_lower_bound": "-13/49280",
+      "actual_clear_duration": "53/7700",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 276,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          276
+        ],
+        [
+          7,
+          276
+        ],
+        [
+          11,
+          276
+        ]
+      ],
+      "selected_pair_weight": "287/12144",
+      "clear_lower_bound": "727/170016",
+      "best_runner_tree_bound": "135/56672",
+      "fast_runner_star_bound": "135/56672",
+      "uniform_star_lower_bound": "-57/226688",
+      "actual_clear_duration": "1/161",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 277,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          277
+        ],
+        [
+          7,
+          277
+        ],
+        [
+          11,
+          277
+        ]
+      ],
+      "selected_pair_weight": "134/5817",
+      "clear_lower_bound": "189/48752",
+      "best_runner_tree_bound": "189/48752",
+      "fast_runner_star_bound": "189/48752",
+      "uniform_star_lower_bound": "-653/2730112",
+      "actual_clear_duration": "31/4432",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 278,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          278
+        ],
+        [
+          7,
+          278
+        ],
+        [
+          11,
+          278
+        ]
+      ],
+      "selected_pair_weight": "277/12232",
+      "clear_lower_bound": "323/93408",
+      "best_runner_tree_bound": "323/93408",
+      "fast_runner_star_bound": "323/93408",
+      "uniform_star_lower_bound": "-311/1369984",
+      "actual_clear_duration": "111/15568",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 279,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          279
+        ],
+        [
+          7,
+          279
+        ],
+        [
+          11,
+          279
+        ]
+      ],
+      "selected_pair_weight": "383/16368",
+      "clear_lower_bound": "2953/687456",
+      "best_runner_tree_bound": "1651/687456",
+      "fast_runner_star_bound": "1651/687456",
+      "uniform_star_lower_bound": "-197/916608",
+      "actual_clear_duration": "65/10416",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 280,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          280
+        ],
+        [
+          7,
+          280
+        ],
+        [
+          11,
+          280
+        ]
+      ],
+      "selected_pair_weight": "13/560",
+      "clear_lower_bound": "277/73920",
+      "best_runner_tree_bound": "277/73920",
+      "fast_runner_star_bound": "277/73920",
+      "uniform_star_lower_bound": "-1/4928",
+      "actual_clear_duration": "3/448",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 281,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          281
+        ],
+        [
+          7,
+          281
+        ],
+        [
+          11,
+          281
+        ]
+      ],
+      "selected_pair_weight": "1113/49456",
+      "clear_lower_bound": "1679/519288",
+      "best_runner_tree_bound": "1679/519288",
+      "fast_runner_star_bound": "1679/519288",
+      "uniform_star_lower_bound": "-529/2769536",
+      "actual_clear_duration": "225/31472",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 282,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          282
+        ],
+        [
+          7,
+          282
+        ],
+        [
+          11,
+          282
+        ]
+      ],
+      "selected_pair_weight": "287/12408",
+      "clear_lower_bound": "45/10528",
+      "best_runner_tree_bound": "827/347424",
+      "fast_runner_star_bound": "827/347424",
+      "uniform_star_lower_bound": "-83/463232",
+      "actual_clear_duration": "33/5264",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 283,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          283
+        ],
+        [
+          7,
+          283
+        ],
+        [
+          11,
+          283
+        ]
+      ],
+      "selected_pair_weight": "183/7924",
+      "clear_lower_bound": "1027/298848",
+      "best_runner_tree_bound": "1027/298848",
+      "fast_runner_star_bound": "1027/298848",
+      "uniform_star_lower_bound": "-467/2789248",
+      "actual_clear_duration": "29/4528",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 284,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          284
+        ],
+        [
+          7,
+          284
+        ],
+        [
+          11,
+          284
+        ]
+      ],
+      "selected_pair_weight": "579/24992",
+      "clear_lower_bound": "943/262416",
+      "best_runner_tree_bound": "943/262416",
+      "fast_runner_star_bound": "943/262416",
+      "uniform_star_lower_bound": "-109/699776",
+      "actual_clear_duration": "57/7952",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 285,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          285
+        ],
+        [
+          7,
+          285
+        ],
+        [
+          11,
+          285
+        ]
+      ],
+      "selected_pair_weight": "35/1672",
+      "clear_lower_bound": "543/234080",
+      "best_runner_tree_bound": "543/234080",
+      "fast_runner_star_bound": "543/234080",
+      "uniform_star_lower_bound": "-27/187264",
+      "actual_clear_duration": "13/1995",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 286,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          286
+        ],
+        [
+          7,
+          286
+        ],
+        [
+          11,
+          286
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "29/8736",
+      "best_runner_tree_bound": "29/8736",
+      "fast_runner_star_bound": "29/8736",
+      "uniform_star_lower_bound": "-17/128128",
+      "actual_clear_duration": "101/16016",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 287,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          287
+        ],
+        [
+          7,
+          287
+        ],
+        [
+          11,
+          287
+        ]
+      ],
+      "selected_pair_weight": "1/44",
+      "clear_lower_bound": "1031/303072",
+      "best_runner_tree_bound": "1031/303072",
+      "fast_runner_star_bound": "1031/303072",
+      "uniform_star_lower_bound": "-7/57728",
+      "actual_clear_duration": "33/4592",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 288,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          288
+        ],
+        [
+          7,
+          288
+        ],
+        [
+          11,
+          288
+        ]
+      ],
+      "selected_pair_weight": "17/768",
+      "clear_lower_bound": "57/19712",
+      "best_runner_tree_bound": "57/19712",
+      "fast_runner_star_bound": "57/19712",
+      "uniform_star_lower_bound": "-13/118272",
+      "actual_clear_duration": "109/16128",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 289,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          289
+        ],
+        [
+          7,
+          289
+        ],
+        [
+          11,
+          289
+        ]
+      ],
+      "selected_pair_weight": "285/12716",
+      "clear_lower_bound": "6943/2136288",
+      "best_runner_tree_bound": "6943/2136288",
+      "fast_runner_star_bound": "6943/2136288",
+      "uniform_star_lower_bound": "-281/2848384",
+      "actual_clear_duration": "205/32368",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 290,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          290
+        ],
+        [
+          7,
+          290
+        ],
+        [
+          11,
+          290
+        ]
+      ],
+      "selected_pair_weight": "6431/267960",
+      "clear_lower_bound": "251/51040",
+      "best_runner_tree_bound": "463/153120",
+      "fast_runner_star_bound": "463/153120",
+      "uniform_star_lower_bound": "-25/285824",
+      "actual_clear_duration": "1/145",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 291,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          291
+        ],
+        [
+          7,
+          291
+        ],
+        [
+          11,
+          291
+        ]
+      ],
+      "selected_pair_weight": "55/2328",
+      "clear_lower_bound": "2699/717024",
+      "best_runner_tree_bound": "2699/717024",
+      "fast_runner_star_bound": "2699/717024",
+      "uniform_star_lower_bound": "-73/956032",
+      "actual_clear_duration": "19/2716",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 292,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          292
+        ],
+        [
+          7,
+          292
+        ],
+        [
+          11,
+          292
+        ]
+      ],
+      "selected_pair_weight": "557/25696",
+      "clear_lower_bound": "743/269808",
+      "best_runner_tree_bound": "743/269808",
+      "fast_runner_star_bound": "743/269808",
+      "uniform_star_lower_bound": "-47/719488",
+      "actual_clear_duration": "13/2044",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 293,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          293
+        ],
+        [
+          7,
+          293
+        ],
+        [
+          11,
+          293
+        ]
+      ],
+      "selected_pair_weight": "25415/1082928",
+      "clear_lower_bound": "477/103136",
+      "best_runner_tree_bound": "845/309408",
+      "fast_runner_star_bound": "845/309408",
+      "uniform_star_lower_bound": "-157/2887808",
+      "actual_clear_duration": "31/4688",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 294,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          294
+        ],
+        [
+          7,
+          294
+        ],
+        [
+          11,
+          294
+        ]
+      ],
+      "selected_pair_weight": "1/42",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-3/68992",
+      "actual_clear_duration": "17/2352",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 295,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          295
+        ],
+        [
+          7,
+          295
+        ],
+        [
+          11,
+          295
+        ]
+      ],
+      "selected_pair_weight": "1147/51920",
+      "clear_lower_bound": "1567/545160",
+      "best_runner_tree_bound": "1567/545160",
+      "fast_runner_star_bound": "1567/545160",
+      "uniform_star_lower_bound": "-19/581504",
+      "actual_clear_duration": "211/33040",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 296,
+      "triple_6_11_w_possible": false,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          296
+        ],
+        [
+          7,
+          296
+        ],
+        [
+          11,
+          296
+        ]
+      ],
+      "selected_pair_weight": "911/39072",
+      "clear_lower_bound": "71/16576",
+      "best_runner_tree_bound": "1307/547008",
+      "fast_runner_star_bound": "1307/547008",
+      "uniform_star_lower_bound": "-1/45584",
+      "actual_clear_duration": "53/8288",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 297,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          297
+        ],
+        [
+          7,
+          297
+        ],
+        [
+          11,
+          297
+        ]
+      ],
+      "selected_pair_weight": "7/297",
+      "clear_lower_bound": "31/7392",
+      "best_runner_tree_bound": "31/7392",
+      "fast_runner_star_bound": "31/7392",
+      "uniform_star_lower_bound": "-1/88704",
+      "actual_clear_duration": "241/33264",
+      "exact_duration_recovered": false
+    },
+    {
+      "replacement": 298,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          298
+        ],
+        [
+          7,
+          298
+        ],
+        [
+          11,
+          298
+        ]
+      ],
+      "selected_pair_weight": "585/26224",
+      "clear_lower_bound": "3317/1101408",
+      "best_runner_tree_bound": "3317/1101408",
+      "fast_runner_star_bound": "3317/1101408",
+      "uniform_star_lower_bound": "-1/1468544",
+      "actual_clear_duration": "107/16688",
+      "exact_duration_recovered": false
+    }
+  ],
+  "large_formula_controls": [
+    {
+      "replacement": 299,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          299
+        ],
+        [
+          7,
+          299
+        ],
+        [
+          11,
+          299
+        ]
+      ],
+      "selected_pair_weight": "65/3036",
+      "clear_lower_bound": "769/368368",
+      "best_runner_tree_bound": "769/368368",
+      "fast_runner_star_bound": "769/368368",
+      "uniform_star_lower_bound": "29/2946944",
+      "separately_checked_existing_family_witness": "1/8",
+      "direct_partition_performed": false
+    },
+    {
+      "replacement": 1000000000000,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          1000000000000
+        ],
+        [
+          7,
+          1000000000000
+        ],
+        [
+          11,
+          1000000000000
+        ]
+      ],
+      "selected_pair_weight": "394047619047/17600000000000",
+      "clear_lower_bound": "1162499999987/369600000000000",
+      "best_runner_tree_bound": "1162499999987/369600000000000",
+      "fast_runner_star_bound": "1162499999987/369600000000000",
+      "uniform_star_lower_bound": "774999999769/246400000000000",
+      "separately_checked_existing_family_witness": "17/56",
+      "direct_partition_performed": false
+    },
+    {
+      "replacement": 56000000000000,
+      "triple_6_11_w_possible": true,
+      "triple_7_11_w_possible": true,
+      "selected_edges": [
+        [
+          6,
+          56000000000000
+        ],
+        [
+          7,
+          56000000000000
+        ],
+        [
+          11,
+          56000000000000
+        ]
+      ],
+      "selected_pair_weight": "13791666666667/616000000000000",
+      "clear_lower_bound": "5812500000001/1848000000000000",
+      "best_runner_tree_bound": "5812500000001/1848000000000000",
+      "fast_runner_star_bound": "5812500000001/1848000000000000",
+      "uniform_star_lower_bound": "6199999999967/1971200000000000",
+      "separately_checked_existing_family_witness": "136000000000001/448000000000000",
+      "direct_partition_performed": false
+    }
+  ]
+}

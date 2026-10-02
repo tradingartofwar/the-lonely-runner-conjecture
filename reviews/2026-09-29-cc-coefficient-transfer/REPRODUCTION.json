@@ -1,0 +1,37 @@
+{
+  "input_hashes_verified": 6,
+  "reproduce_script_sha256": "21ce5e3bb033aa70726a6e40a08e662200f1802603343ab5d7fd3f687308a51b",
+  "reproduced_byte_for_byte": {
+    "certificate.json": "6e62958d0b0f081ee0213054e1ea02f3da4de30de2278812b37d3e938d71431d",
+    "geometry_review.json": "a223027e5fbfa2a9d927752520c365ad8a2d926bd73a73ba67debd8d6d34acd9",
+    "physical_review.json": "2cf18ba964af93a4547546697a60e76b8f79137976ad7fa9c87dae3b44242a11",
+    "regression.json": "a12f81ea6990ccdb26d8f8eb7a6092401f369f4a6b34f4d63f32e41da8aa9631",
+    "run.json": "0c7e680983dde7941022c4b242970fb4678914c34884cdaa5b5f8d679f12e72a"
+  },
+  "scope": "One changed row and the frozen controls; old-row regression. No added trial or broad scan.",
+  "status": "PASS",
+  "transfer_summary": {
+    "chosen_ids": [
+      "P2:E0-3:K2",
+      "P0:E0-1:K1"
+    ],
+    "clipping": {
+      "candidate_records": 24,
+      "edge_lap_attempts": 24,
+      "floor_edges": 24,
+      "point_records": 0,
+      "status": "PASS"
+    },
+    "coverage_counts": {
+      "candidates": 24,
+      "chosen": 2,
+      "contacts": 192,
+      "descending": 14,
+      "rectangle_pairs": 21,
+      "residual_pairs": 8
+    },
+    "diagnostic": "NOT_TRIGGERED",
+    "status": "COMPLETE_COVER_CERTIFICATE",
+    "uncovered": []
+  }
+}
