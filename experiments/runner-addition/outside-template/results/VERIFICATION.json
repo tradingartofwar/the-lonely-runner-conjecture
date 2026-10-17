@@ -1,0 +1,112 @@
+{
+  "counts": {
+    "child_sets": 107,
+    "constructor_contacts": 125,
+    "core_sets": 8,
+    "minimum_subsets": 256,
+    "optional_sets": 7,
+    "physical_witnesses": 383,
+    "reference_contacts": 5165
+  },
+  "families": [
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "consecutive",
+      "optional_status": "NOT_ATTEMPTED",
+      "route": "LEADER_ONLY",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        6
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "odd",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        6
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "primes",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        18
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "squares",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        1,
+        3
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "powers_two",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        5
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "fibonacci",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        2
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "clustered",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        15
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "irregular",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    }
+  ],
+  "freeze_commit": "e72faca03468bb2e4a5aa284b098a6dfe15791f9",
+  "limits": "Same-author alternate event/subset algorithms with inherited trace audits. DP counters are instrumentation. This tests only eight explicit stationary-reference cores and their added-speed reductions; no independent human or formal proof review.",
+  "results_sha256": "021dc797d191b5b5d2d5c40004b0944d45872c6878058d9af45a35c7a8d46f4c",
+  "status": "PASS"
+}
