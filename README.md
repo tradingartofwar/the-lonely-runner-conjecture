@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Runner-addition results](experiments/runner-addition/RESULTS.md) | October 17 exact study, matched thresholds, family certificates, and reproduction |
 | [LR4_HANDOFF.md](LR4_HANDOFF.md) | Concise October 2 resumption, completed studies, active research branch, and recommended next work |
 | [HANDOFF.md](HANDOFF.md) | Detailed current research state, evidence pointers, and next questions |
 | [Broader inquiries](notes/inquiries/README.md) | Reflections, thought experiments, and possible connections to other problems |
@@ -42,7 +43,11 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [notes/SOURCES.md](notes/SOURCES.md) | Dated literature starting points and verification limits |
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
-## Current state — October 2, 2026 UTC
+## Current state — October 17, 2026 UTC
+
+**Completed runner-addition study — two components at 1/8, one at 1/10.** On the new `research/runner-addition-2026-10-17` branch, the [frozen study and results](experiments/runner-addition/RESULTS.md) complete the pending (1,4,r) and (1,6,r) decisions alongside the exposed (1,2,r) control. Minimum menus containing the fixed widest core component have size two at 1/8 and one at 1/10 for each family. Exact finite coverage plus a width tail supplies all-admissible-r proof candidates for reference 0. Alternate algorithms agree on 134 complete child sets, 1,888 contacts, and 291 witness records; one replay is byte-identical. Complete cores become more detailed at 1/10 while one-witness menus become smaller. These are same-author implementation checks, not independent proof review, novelty, intrinsic complexity, or general LRC claims. **Next proposed:** derive an interval-placement criterion for single-source coverage at the actual threshold before choosing any new validation domain.
+
+### Prior state — October 2, 2026 UTC
 
 **Completed Ultra value review — a working conformance demonstration and a sharper small theorem candidate.** The [team synthesis](notes/ULTRA_VALUE_REVIEW_2026_10_02.md) compares nine framework families, preserves the handoff nulls, and separates useful artifacts from unmeasured external impact. The [offline demo](examples/compatibility-conformance/index.html) exposes five source-bound mathematical regressions and a ten-case SymPy periodic-set adapter. All ten complete sets and 120 exact original-predicate checks agree; final outputs reproduce, eleven fixture corruptions reject, and development corrections are preserved. A separately checked core gives minimum exactly two fixed connected-component sources for the entire admissible (1,2,r) family; this remains an internally reviewed proof candidate, with no novelty claim. **Next:** obtain one concrete consumer task and compare against competent ordinary period expansion/direct intervals; mathematical work can instead make the two predeclared leader-constrained source decisions. No broader scan, repeated handoff study, deployment or outreach was launched.
 

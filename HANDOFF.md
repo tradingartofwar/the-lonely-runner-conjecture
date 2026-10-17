@@ -1,14 +1,25 @@
 # Lonely Runner — research handoff
 
 **Prepared:** September 27, 2026
+**Latest research update:** October 17, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
 **Canonical branch:** `main`  
-**Active research branch:** `research/near-doubling-overlap-2026-09-24` (not yet merged into `main` at the October 1 continuity audit)
+**Active study branch:** `research/runner-addition-2026-10-17`, based on `research/near-doubling-overlap-2026-09-24` at `f2126bfe929aae4eda77b4ea3418a4c38b47f0f5`; this study has not been merged into `main`.
 
 This file is a detailed research-continuity record. The live repository remains authoritative if a copied version becomes old. Public contributors should begin with README.md and CONTRIBUTING.md, then use this file for the deeper current state.
 
-## Current resumption — October 2, 2026
+## Current resumption — October 17, 2026
+
+**Completed runner-addition study.** [Results and reproduction](experiments/runner-addition/RESULTS.md) record the two pending leader-constrained decisions for (1,4,r),(1,6,r), plus the exposed (1,2,r) control, at thresholds 1/8 and 1/10. The protocol/inputs and execution code were committed before evaluation. All six complete cores cover the matched finite domains; exact minimum menus containing the widest core component have size two at 1/8 and one at 1/10. The widths supply a finite reduction for all admissible positive integer added speeds, with reference 0 and ten distinct common-start speeds. Universal claims remain proof candidates; no novelty or all-reference claim follows.
+
+Alternate code verifies 6 core sets, 134 child sets, 1,888 contacts, 291 witness records, and all six minima. Three semantic controls pass and one primary replay is byte-identical. Both algorithms share the same AI author; no independent human or formal proof review occurred. Frozen execution: `91c2cbafa358c98502e7b26648fd05fcc9605c5e`. No post-execution code changes or wider search occurred.
+
+**Information/model check:** positive-width-only sources lose (1,2,6),(1,2,12),(1,4,13) at 1/8. Preserve isolated components and closed boundaries in the full cores. At 1/10 complete component counts rise while the sufficient one-witness menu shrinks to one. This distinguishes complete-detail cost from witness-description cost; it establishes no incompressibility or general AI advantage. Menus do not answer optimum, complete-set, new-pair, or other-reference questions without recovery/rechecking.
+
+**Next proposed:** derive an interval-placement criterion explaining when one source covers all admissible added speeds at the actual threshold. Use these cases as development evidence; state the rule before selecting fresh validation. Do not expand into a broad scan or new language without an operation that requires it. The prior general parameterized compiler/dispatcher and external-consumer tasks remain separate open work.
+
+## Prior resumption — October 2, 2026
 
 **Completed Ultra value review — a working conformance demonstration and a sharper small theorem candidate.** The [team synthesis](notes/ULTRA_VALUE_REVIEW_2026_10_02.md) compares nine framework families, preserves the handoff nulls, and separates useful artifacts from unmeasured external impact. The [offline demo](examples/compatibility-conformance/index.html) exposes five source-bound mathematical regressions and a ten-case SymPy periodic-set adapter. All ten complete sets and 120 exact original-predicate checks agree; final outputs reproduce, eleven fixture corruptions reject, and development corrections are preserved. A separately checked core gives minimum exactly two fixed connected-component sources for the entire admissible (1,2,r) family; this remains an internally reviewed proof candidate, with no novelty claim. **Next:** obtain one concrete consumer task and compare against competent ordinary period expansion/direct intervals; mathematical work can instead make the two predeclared leader-constrained source decisions. No broader scan, repeated handoff study, deployment or outreach was launched.
 
