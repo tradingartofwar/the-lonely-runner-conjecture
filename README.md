@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Gap-selection transfer](experiments/runner-addition/gap-selection/RESULTS.md) | Four frozen cases: exception-focused selectors match exact minima; no advantage over the simple interval baseline |
 | [Menu and representation results](experiments/runner-addition/menu-views/RESULTS.md) | Two-component minima, exact exception repair, and a checked limit of Boolean composition |
 | [Shared exact model and views](experiments/runner-addition/menu-views/MODEL.md) | Meaning, supported operations, omissions and recovery for each representation |
 | [Interval-placement results](experiments/runner-addition/placement/RESULTS.md) | Rational-anchor witness rule, two additional cores, and the exact limit of a fixed single interval |
@@ -47,6 +48,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Latest completed — exception-focused selection transfers.** The [four-case comparison](experiments/runner-addition/gap-selection/RESULTS.md) freezes a common-repair gap rule before q=16,17,18,19 at 1/10. It and a conventional lazy interval selector find the same minimum two-component menus containing the fixed widest component as exact cover, despite new exception lists including {7,20}. After 124 leader tests, gap search uses 24 point probes and the lazy selector 23 interval contacts; the full reference has 6,966 contacts. These are operation counts, not runtime claims, and complete core construction is charged. All common repair times are component left endpoints; no gap-search advantage over the competent baseline is demonstrated. Alternate algorithms verify 124 child sets and 680 physical witness records; one replay matches. **Next proposed:** an exact exception-only menu constructor with a lazy two-component first step, residual-cover fallback, and optional common-point certificate. All-r conclusions remain same-author proof candidates; earlier next steps below are preserved history.
 
 **Latest completed — minimum menus and representation choice.** The [menu/view study](experiments/runner-addition/menu-views/RESULTS.md) incorporates the proposal to compare views of one exact model. Both (1,8,r) and (1,10,r) require two fixed connected-component sources at 1/10, including when the widest-component requirement is removed. Each widest interval has the sole admissible exception r=3, repaired at a fixed time in the second component. Gap centers explain the complementary failures. Exact examples show why two existential coverage bits cannot certify simultaneous satisfaction of two added constraints; the saved surviving intervals recover that distinction. One complete time-state trace identifies which runner conditions open and close the repair interval. Alternate algorithms verify 31 complete child sets, 942 contacts and 5,283 time predicates; replay is byte-identical. Family-wide implications remain same-author proof candidates. **Next proposed:** formulate a placement-based menu-selection rule, then freeze a different validation domain and compare with exact minimum cover. Earlier next-step statements below are preserved history.
 
