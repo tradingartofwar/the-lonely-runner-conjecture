@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Exact exception-only constructor](experiments/runner-addition/exception-cover/RESULTS.md) | Cached discovery, exact residual fallback, scope-checked dispatch and four family certificates |
 | [Gap-selection transfer](experiments/runner-addition/gap-selection/RESULTS.md) | Four frozen cases: exception-focused selectors match exact minima; no advantage over the simple interval baseline |
 | [Menu and representation results](experiments/runner-addition/menu-views/RESULTS.md) | Two-component minima, exact exception repair, and a checked limit of Boolean composition |
 | [Shared exact model and views](experiments/runner-addition/menu-views/MODEL.md) | Meaning, supported operations, omissions and recovery for each representation |
@@ -48,6 +49,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Latest completed — an exact exception-only constructor.** The [constructor study](experiments/runner-addition/exception-cover/RESULTS.md) implements cached lazy selection, residual exact cover when needed, optional common repair and a guarded dispatcher. On (1,20),(1,21),(2,21),(3,20), it matches the full reference's two-component minima and tie choices using 216 contacts versus 11,052 full-matrix contacts; core construction and optional probes are separately charged, with no runtime claim. All four families take the two-component path. Seven finite supplied-interval controls verify a three-component fallback with cache reuse, ties and singleton witnesses, no-cover, budget stops, and valid recovery without a shared repair point. Alternate verification and one identical replay pass; [compact family certificates](experiments/runner-addition/exception-cover/results/CERTIFICATES.json) are saved. All-r implications remain same-author proof candidates. **Next proposed:** a frozen test of eight-speed cores outside the current p,q template to challenge the apparent two-component pattern. Earlier next-step statements remain preserved history.
 
 **Latest completed — exception-focused selection transfers.** The [four-case comparison](experiments/runner-addition/gap-selection/RESULTS.md) freezes a common-repair gap rule before q=16,17,18,19 at 1/10. It and a conventional lazy interval selector find the same minimum two-component menus containing the fixed widest component as exact cover, despite new exception lists including {7,20}. After 124 leader tests, gap search uses 24 point probes and the lazy selector 23 interval contacts; the full reference has 6,966 contacts. These are operation counts, not runtime claims, and complete core construction is charged. All common repair times are component left endpoints; no gap-search advantage over the competent baseline is demonstrated. Alternate algorithms verify 124 child sets and 680 physical witness records; one replay matches. **Next proposed:** an exact exception-only menu constructor with a lazy two-component first step, residual-cover fallback, and optional common-point certificate. All-r conclusions remain same-author proof candidates; earlier next steps below are preserved history.
 

@@ -1,0 +1,128 @@
+{
+  "controls": [
+    {
+      "constructor_status": "EXACT",
+      "name": "leader_only",
+      "reference_minimum_status": "EXACT_VERIFIED",
+      "route": "LEADER_ONLY",
+      "status": "PASS"
+    },
+    {
+      "constructor_status": "EXACT",
+      "name": "three_with_tie",
+      "reference_minimum_status": "EXACT_VERIFIED",
+      "route": "RESIDUAL_DP",
+      "status": "PASS"
+    },
+    {
+      "constructor_status": "EXACT",
+      "name": "separate_not_joint",
+      "reference_minimum_status": "EXACT_VERIFIED",
+      "route": "LAZY_TWO",
+      "status": "PASS"
+    },
+    {
+      "constructor_status": "NO_SUFFICIENT_MENU",
+      "name": "no_cover",
+      "reference_minimum_status": "NO_SUFFICIENT_MENU",
+      "route": "RESIDUAL_NO_COVER",
+      "status": "PASS"
+    },
+    {
+      "constructor_status": "UNKNOWN_BUDGET",
+      "name": "contact_budget",
+      "reference_minimum_status": "EXACT_VERIFIED",
+      "route": "LEADER",
+      "status": "PASS"
+    },
+    {
+      "constructor_status": "UNKNOWN_BUDGET",
+      "name": "dp_budget",
+      "reference_minimum_status": "EXACT_VERIFIED",
+      "route": "RESIDUAL_DP",
+      "status": "PASS"
+    },
+    {
+      "constructor_status": "EXACT",
+      "name": "optional_budget",
+      "reference_minimum_status": "EXACT_VERIFIED",
+      "route": "LAZY_TWO",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "child_sets": 163,
+    "constructor_contacts": 245,
+    "core_sets": 4,
+    "minimum_subsets": 296,
+    "optional_sets": 6,
+    "physical_witnesses": 526,
+    "reference_contacts": 11089
+  },
+  "families": [
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        3,
+        17
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "optional_status": "FOUND",
+      "pair": [
+        1,
+        20
+      ],
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        7,
+        16
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "optional_status": "FOUND",
+      "pair": [
+        1,
+        21
+      ],
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        1,
+        29
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "optional_status": "FOUND",
+      "pair": [
+        2,
+        21
+      ],
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        1,
+        4
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "optional_status": "FOUND",
+      "pair": [
+        3,
+        20
+      ],
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    }
+  ],
+  "freeze_commit": "8a4f84dfd11afa63bbbb32993bc8c63b3acc203f",
+  "limits": "Same-author alternate algorithms. Query-order accounting replays the specification; minimum proof uses independent subset enumeration. DP counters are instrumentation. No independent human or formal proof review.",
+  "results_sha256": "6d9d2a17e22729c3be82833d263c9ada0a567d654dc0bbac4fcc5eb81433bb81",
+  "status": "PASS"
+}
