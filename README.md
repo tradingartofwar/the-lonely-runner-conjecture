@@ -31,6 +31,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Menu and representation results](experiments/runner-addition/menu-views/RESULTS.md) | Two-component minima, exact exception repair, and a checked limit of Boolean composition |
+| [Shared exact model and views](experiments/runner-addition/menu-views/MODEL.md) | Meaning, supported operations, omissions and recovery for each representation |
 | [Interval-placement results](experiments/runner-addition/placement/RESULTS.md) | Rational-anchor witness rule, two additional cores, and the exact limit of a fixed single interval |
 | [Runner-addition results](experiments/runner-addition/RESULTS.md) | October 17 exact study, matched thresholds, family certificates, and reproduction |
 | [LR4_HANDOFF.md](LR4_HANDOFF.md) | Concise October 2 resumption, completed studies, active research branch, and recommended next work |
@@ -45,6 +47,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Latest completed — minimum menus and representation choice.** The [menu/view study](experiments/runner-addition/menu-views/RESULTS.md) incorporates the proposal to compare views of one exact model. Both (1,8,r) and (1,10,r) require two fixed connected-component sources at 1/10, including when the widest-component requirement is removed. Each widest interval has the sole admissible exception r=3, repaired at a fixed time in the second component. Gap centers explain the complementary failures. Exact examples show why two existential coverage bits cannot certify simultaneous satisfaction of two added constraints; the saved surviving intervals recover that distinction. One complete time-state trace identifies which runner conditions open and close the repair interval. Alternate algorithms verify 31 complete child sets, 942 contacts and 5,283 time predicates; replay is byte-identical. Family-wide implications remain same-author proof candidates. **Next proposed:** formulate a placement-based menu-selection rule, then freeze a different validation domain and compare with exact minimum cover. Earlier next-step statements below are preserved history.
 
 **Completed interval-placement study — a short rule with an exact boundary.** The [placement results](experiments/runner-addition/placement/RESULTS.md) explain the three prior 1/10 families by a rational anchor plus a divisibility-dependent time adjustment. Residue conditions give broader sufficient core families. On (1,8,r) and (1,10,r), however, every one of 26 and 34 complete core components has an explicit blocking speed: no fixed single connected interval can work for all r. The full cores still supply witnesses at all 13 recorded blocking-speed inputs. Alternate algorithms verify the geometry, 270 new contacts and 108 anchor witnesses; replay is byte-identical. Universal implications remain same-author proof candidates, with no novelty claim. **Next proposed:** decide minimum menus containing each new core's fixed widest interval through a separately frozen finite reduction.
 
