@@ -1,0 +1,195 @@
+{
+  "lower_bound": {
+    "half_components": [
+      {
+        "blocking_integer": 0,
+        "component": 0,
+        "interval": [
+          "11/170",
+          "9/130"
+        ],
+        "r": 1
+      },
+      {
+        "blocking_integer": 0,
+        "component": 1,
+        "interval": [
+          "11/130",
+          "9/100"
+        ],
+        "r": 1
+      },
+      {
+        "blocking_integer": 1,
+        "component": 2,
+        "interval": [
+          "21/190",
+          "19/170"
+        ],
+        "r": 9
+      },
+      {
+        "blocking_integer": 1,
+        "component": 3,
+        "interval": [
+          "21/170",
+          "9/70"
+        ],
+        "r": 8
+      },
+      {
+        "blocking_integer": 1,
+        "component": 4,
+        "interval": [
+          "31/190",
+          "29/170"
+        ],
+        "r": 6
+      },
+      {
+        "blocking_integer": 2,
+        "component": 5,
+        "interval": [
+          "11/50",
+          "29/130"
+        ],
+        "r": 9
+      },
+      {
+        "blocking_integer": 1,
+        "component": 6,
+        "interval": [
+          "41/170",
+          "49/190"
+        ],
+        "r": 4
+      },
+      {
+        "blocking_integer": 1,
+        "component": 7,
+        "interval": [
+          "51/190",
+          "19/70"
+        ],
+        "r": 4
+      },
+      {
+        "blocking_integer": 3,
+        "component": 8,
+        "interval": [
+          "71/190",
+          "49/130"
+        ],
+        "r": 8
+      },
+      {
+        "blocking_integer": 4,
+        "component": 9,
+        "interval": [
+          "31/70",
+          "9/20"
+        ],
+        "r": 9
+      }
+    ],
+    "recorded_blocker_speeds": [
+      1,
+      4,
+      6,
+      8,
+      9
+    ],
+    "reflection": "component i maps to 19-i; [a,b] maps to [1-b,1-a]; blocking integer m maps to r-m"
+  },
+  "scope": {
+    "added_speed": "positive integer absent from core",
+    "common_start": true,
+    "core_speeds": [
+      2,
+      3,
+      5,
+      7,
+      10,
+      13,
+      17,
+      19
+    ],
+    "period": [
+      "0",
+      "1"
+    ],
+    "reference": 0,
+    "source_class": "fixed connected core-safe subsets of the period; witness may depend on added speed",
+    "threshold": "1/10",
+    "total_runners": 10
+  },
+  "semantic_checks": {
+    "fixed_endpoint_failure_speed": 170,
+    "interval_only_failure_speed": 4,
+    "repair_only_failure_speed": 1,
+    "tail_example_time": "411/1700"
+  },
+  "source_commit": "f7f87f7dd59b4809397730550fb0fd1a48eab2a1",
+  "sources": {
+    "experiments/runner-addition/unrestricted-single/results/CERTIFICATES.json": "d1e310808087f0280a2dc4e1e1dbf74b8fa1b8ed05d7f4ec50b8b8be0b1d961e",
+    "experiments/runner-addition/unrestricted-single/results/RESULTS.json": "d3d967249534079d0f1f27d2a03bd7f1cb38c9598f115b6c5de0d46e1ed4a9cd"
+  },
+  "status": "Retrospective proof candidate; independent review pending",
+  "study": "primes-two-source-explanation",
+  "upper_bound": {
+    "core_laps": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    "exceptions": [
+      4,
+      8
+    ],
+    "finite_witnesses": [
+      {
+        "r": 1,
+        "time": "41/170"
+      },
+      {
+        "r": 4,
+        "time": "11/170"
+      },
+      {
+        "r": 6,
+        "time": "41/170"
+      },
+      {
+        "r": 8,
+        "time": "11/170"
+      },
+      {
+        "r": 9,
+        "time": "41/170"
+      },
+      {
+        "r": 11,
+        "time": "41/170"
+      }
+    ],
+    "interval": [
+      "41/170",
+      "49/190"
+    ],
+    "interval_component": 6,
+    "repair_component": 0,
+    "repair_component_interval": [
+      "11/170",
+      "9/130"
+    ],
+    "repair_time": "11/170",
+    "tail_from": 12,
+    "tail_rule": "For x=r*a, m=floor(x), f=x-m: a if d<=f<=1-d; (m+d)/r if f<d; (m+1+d)/r otherwise.",
+    "width": "27/1615"
+  }
+}

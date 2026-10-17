@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Why the primes-derived core needs two sources](experiments/runner-addition/primes-two-source/ARGUMENT.md) | Ten reflected obstruction rows, one interval plus a repair point, and an explicit witness rule |
 | [Unrestricted single-component decisions](experiments/runner-addition/unrestricted-single/RESULTS.md) | One required-widest restriction imposed an unnecessary source; five two-source lower bounds remain |
 | [Paired anchor-removal study](experiments/runner-addition/anchor-removal/RESULTS.md) | Small menus survive removal of time 1/10; paired geometry and witness-transfer limits |
 | [Exact exception-only constructor](experiments/runner-addition/exception-cover/RESULTS.md) | Cached discovery, exact residual fallback, scope-checked dispatch and four family certificates |
@@ -51,6 +52,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Latest completed — a reviewable two-source argument.** The [primes-derived explanation](experiments/runner-addition/primes-two-source/ARGUMENT.md) turns the existing minimum-two result into ten first-half component rows plus reflection, each with a strict blocking gap. The interval [41/170,49/190] handles every admissible added speed except 4 and 8; the single core-safe time 11/170 repairs both. An explicit move-to-the-next-safe-boundary rule supplies the infinite tail from r=12. Keeping only the two fixed endpoints would fail at r=170, where the interval rule recovers 411/1700 instead. A standalone exact checker reconstructs all 20 components through 148 threshold events and passes all blockers, six finite witnesses and 170 admissible residue controls, including both equality boundaries. This is retrospective explanatory compression of exposed results, not new predictive validation; the minimum remains a same-author proof candidate. **Next proposed:** use this compact argument as a review target, then consider constructing a suitable interval and repair point directly from core constraints, with a separately frozen domain before any generalization claim.
 
 **Latest completed — testing the question changes one answer.** The [unrestricted decision](experiments/runner-addition/unrestricted-single/RESULTS.md) classifies all 226 components in the six altered cores whose required-widest minimum was two. The odd-derived core needs only one when that requirement is removed: its former repair interval [11/100,19/150] is sufficient alone, as is its reflection. Every component in the other five cores has an exact blocker, giving unrestricted two-source minimum candidates together with the prior upper bounds. All 38 blocker child sets remain physically feasible elsewhere. Alternate verification and replay pass; family-wide minimum claims remain same-author proof candidates within fixed connected component menus. **Next proposed:** make the primes-derived case's five-speed obstruction and complementary pair into a short reviewable explanation. No broader search or new argument has run; earlier next steps remain preserved history.
 
