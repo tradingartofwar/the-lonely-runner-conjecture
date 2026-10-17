@@ -1,0 +1,114 @@
+{
+  "baseline_results_sha256": "021dc797d191b5b5d2d5c40004b0944d45872c6878058d9af45a35c7a8d46f4c",
+  "counts": {
+    "child_sets": 92,
+    "constructor_contacts": 115,
+    "core_sets": 8,
+    "minimum_subsets": 228,
+    "optional_sets": 6,
+    "paired_union_events": 2626,
+    "paired_union_sets": 8,
+    "physical_witnesses": 336,
+    "reference_contacts": 4380
+  },
+  "families": [
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "consecutive",
+      "optional_status": "NOT_ATTEMPTED",
+      "route": "LEADER_ONLY",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        3
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "odd",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        6
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "primes",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        19
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "squares",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        2
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "powers_two",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        5
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "fibonacci",
+      "optional_status": "NOT_ATTEMPTED",
+      "route": "LEADER_ONLY",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        0,
+        2
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "clustered",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    },
+    {
+      "constructor_status": "EXACT",
+      "ids": [
+        4,
+        28
+      ],
+      "minimum_status": "EXACT_VERIFIED",
+      "name": "irregular",
+      "optional_status": "FOUND",
+      "route": "LAZY_TWO",
+      "status": "VERIFIED"
+    }
+  ],
+  "freeze_commit": "b98c55e6bb3ef84d410d26754be5597d60058af2",
+  "limits": "Same-author alternate event/subset algorithms; baseline evidence reused, not rerun. Paired core intersections separately checked via union-speed events. No independent human/formal proof review, causal isolation, or general LRC claim.",
+  "results_sha256": "06f4fb8f4f9de3cc18250863c947ceccc180024f818e306cae352c8954bde01b",
+  "status": "PASS"
+}

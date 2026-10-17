@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Paired anchor-removal study](experiments/runner-addition/anchor-removal/RESULTS.md) | Small menus survive removal of time 1/10; paired geometry and witness-transfer limits |
 | [Exact exception-only constructor](experiments/runner-addition/exception-cover/RESULTS.md) | Cached discovery, exact residual fallback, scope-checked dispatch and four family certificates |
 | [Gap-selection transfer](experiments/runner-addition/gap-selection/RESULTS.md) | Four frozen cases: exception-focused selectors match exact minima; no advantage over the simple interval baseline |
 | [Menu and representation results](experiments/runner-addition/menu-views/RESULTS.md) | Two-component minima, exact exception repair, and a checked limit of Boolean composition |
@@ -49,6 +50,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Latest completed — removing the shared anchor preserves small menus.** The [paired test](experiments/runner-addition/anchor-removal/RESULTS.md) replaces one speed in each of eight cores by a nearby multiple of 10, using a frozen arithmetic rule. Time 1/10 becomes unsafe in all eight, yet required-widest minima are one in two cases and two in six. The Fibonacci-derived core improves from two to one because its widest interval expands. All 84 common-domain child sets change while seven menu sizes remain stable; the primes pair also loses isolated witnesses without losing old safe-set measure. Alternate verification passes 92 new child sets and eight full core intersections; replay matches. Discovery uses 115 contacts versus 4,380 full reference contacts, with other work charged separately. All-r conclusions remain same-author proof candidates. **Next proposed:** remove the forced-widest requirement and decide whether any single component suffices in the six current two-component cases, using each component's own tail reduction. That decision has not run; earlier next steps remain preserved history.
 
 **Latest completed — eight cores outside the old template.** The [explicit-core study](experiments/runner-addition/outside-template/RESULTS.md) finds a required-widest minimum of one component for consecutive speeds and two for seven other specified cores. All exact p,q-template membership checks fail, all 107 finite child sets are nonempty, alternate verification passes, and replay matches. Discovery uses 125 contacts versus 5,165 full reference contacts, with other work separately charged. A retrospective residue check exposes a limitation: all eight cores share safe time 1/10, which repairs six of seven nonempty exception lists. Powers of two needs a different repair time because added speed 10 blocks that anchor. Three selected menus use an isolated safe point. These are bounded results and all-r proof candidates, not a general two-component theorem. **Next proposed:** freeze a paired test that removes this shared anchor by including a speed divisible by 10. No new paired inputs have been selected or evaluated; earlier next steps below remain preserved history.
 
