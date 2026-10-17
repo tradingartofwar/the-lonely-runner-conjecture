@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Interval-placement results](experiments/runner-addition/placement/RESULTS.md) | Rational-anchor witness rule, two additional cores, and the exact limit of a fixed single interval |
 | [Runner-addition results](experiments/runner-addition/RESULTS.md) | October 17 exact study, matched thresholds, family certificates, and reproduction |
 | [LR4_HANDOFF.md](LR4_HANDOFF.md) | Concise October 2 resumption, completed studies, active research branch, and recommended next work |
 | [HANDOFF.md](HANDOFF.md) | Detailed current research state, evidence pointers, and next questions |
@@ -44,6 +45,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Completed interval-placement study — a short rule with an exact boundary.** The [placement results](experiments/runner-addition/placement/RESULTS.md) explain the three prior 1/10 families by a rational anchor plus a divisibility-dependent time adjustment. Residue conditions give broader sufficient core families. On (1,8,r) and (1,10,r), however, every one of 26 and 34 complete core components has an explicit blocking speed: no fixed single connected interval can work for all r. The full cores still supply witnesses at all 13 recorded blocking-speed inputs. Alternate algorithms verify the geometry, 270 new contacts and 108 anchor witnesses; replay is byte-identical. Universal implications remain same-author proof candidates, with no novelty claim. **Next proposed:** decide minimum menus containing each new core's fixed widest interval through a separately frozen finite reduction.
 
 **Completed runner-addition study — two components at 1/8, one at 1/10.** On the new `research/runner-addition-2026-10-17` branch, the [frozen study and results](experiments/runner-addition/RESULTS.md) complete the pending (1,4,r) and (1,6,r) decisions alongside the exposed (1,2,r) control. Minimum menus containing the fixed widest core component have size two at 1/8 and one at 1/10 for each family. Exact finite coverage plus a width tail supplies all-admissible-r proof candidates for reference 0. Alternate algorithms agree on 134 complete child sets, 1,888 contacts, and 291 witness records; one replay is byte-identical. Complete cores become more detailed at 1/10 while one-witness menus become smaller. These are same-author implementation checks, not independent proof review, novelty, intrinsic complexity, or general LRC claims. **Next proposed:** derive an interval-placement criterion for single-source coverage at the actual threshold before choosing any new validation domain.
 

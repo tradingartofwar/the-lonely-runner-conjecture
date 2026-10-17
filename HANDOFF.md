@@ -11,6 +11,16 @@ This file is a detailed research-continuity record. The live repository remains 
 
 ## Current resumption — October 17, 2026
 
+**Latest completed: interval placement and rational anchors.** [Results and reproduction](experiments/runner-addition/placement/RESULTS.md) derive the exact predicate `||r*c||+r*h>=d` for a closed interval with midpoint c and half-width h. A rational-anchor construction explains the prior three 1/10 families: keep time u/v unless v divides the added speed, then adjust by a fixed-direction d/r within a certified core-safe interval. Modular inequalities give sets of 28,36,36 individual speeds from which any eight distinct core speeds may be chosen for the same reference-0 family argument. Universal statements remain proof candidates; novelty unassessed.
+
+The intentionally difficult q=8 and q=10 follow-ups have 26 and 34 complete components, each with an exact blocking added speed. All 60 decisions resolve, so no choice of a single connected core-safe interval repairs the pattern. At all 13 distinct recorded blocking inputs (counted per pair), the complete core supplies a physical witness elsewhere. This proves neither nonexistence nor complete all-r core coverage. The two-case anchor rule's failure was predicted by its own width/divisibility limits; the all-component failure is the stronger computational finding.
+
+Rule freeze `8ecfaae521f80eca72fb137549d67f019452fbd2`; execution freeze `bf1c84c84bad2a0b1afd2172b9c71a6acd25c854`. Same-author alternate verification matches 1,888 prior contacts, 108 anchor witnesses, 216 palette decisions, 60 core components, 270 new contacts and 13 complete child sets. Five semantic controls and one byte-identical replay pass; no post-execution code changes.
+
+**Current next proposed:** freeze a minimum-menu decision for q=8,q=10 at 1/10 with each core's predetermined widest component required, using its tail and its complete finite remainder. A small collection may repair the fixed-single-interval limit, but that has not been evaluated. Keep the complete geometry and distinguish `for each component, some blocker` from `one blocker defeats the entire core`. Do not interpret this as intrinsic incompressibility or a general LRC result.
+
+### Earlier completed study — preserved
+
 **Completed runner-addition study.** [Results and reproduction](experiments/runner-addition/RESULTS.md) record the two pending leader-constrained decisions for (1,4,r),(1,6,r), plus the exposed (1,2,r) control, at thresholds 1/8 and 1/10. The protocol/inputs and execution code were committed before evaluation. All six complete cores cover the matched finite domains; exact minimum menus containing the widest core component have size two at 1/8 and one at 1/10. The widths supply a finite reduction for all admissible positive integer added speeds, with reference 0 and ten distinct common-start speeds. Universal claims remain proof candidates; no novelty or all-reference claim follows.
 
 Alternate code verifies 6 core sets, 134 child sets, 1,888 contacts, 291 witness records, and all six minima. Three semantic controls pass and one primary replay is byte-identical. Both algorithms share the same AI author; no independent human or formal proof review occurred. Frozen execution: `91c2cbafa358c98502e7b26648fd05fcc9605c5e`. No post-execution code changes or wider search occurred.
