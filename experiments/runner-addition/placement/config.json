@@ -1,0 +1,18 @@
+{
+  "study": "interval-placement-v1",
+  "rule_commit": "8ecfaae521f80eca72fb137549d67f019452fbd2",
+  "prior_commit": "b76f57855c1bcd8d1e350bda807848cd0f7987b4",
+  "threshold": "1/10",
+  "pairs": [[1,8], [1,10]],
+  "anchors": [
+    {"pair": [1,2], "u": 1, "v": 8, "direction": -1},
+    {"pair": [1,4], "u": 1, "v": 9, "direction": -1},
+    {"pair": [1,6], "u": 3, "v": 10, "direction": 1}
+  ],
+  "max_r": 128,
+  "max_core_speed_sum": 600,
+  "max_components": 600,
+  "max_denominator": 10,
+  "command_seconds": 60,
+  "primary_replays": 1
+}
