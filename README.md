@@ -31,6 +31,7 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 
 | File | Purpose |
 | --- | --- |
+| [Unrestricted single-component decisions](experiments/runner-addition/unrestricted-single/RESULTS.md) | One required-widest restriction imposed an unnecessary source; five two-source lower bounds remain |
 | [Paired anchor-removal study](experiments/runner-addition/anchor-removal/RESULTS.md) | Small menus survive removal of time 1/10; paired geometry and witness-transfer limits |
 | [Exact exception-only constructor](experiments/runner-addition/exception-cover/RESULTS.md) | Cached discovery, exact residual fallback, scope-checked dispatch and four family certificates |
 | [Gap-selection transfer](experiments/runner-addition/gap-selection/RESULTS.md) | Four frozen cases: exception-focused selectors match exact minima; no advantage over the simple interval baseline |
@@ -50,6 +51,8 @@ No animation, sampled plot, optimizer output, large finite search, or language-m
 | [AGENTS.md](AGENTS.md) | Instructions for AI collaborators |
 
 ## Current state — October 17, 2026 UTC
+
+**Latest completed — testing the question changes one answer.** The [unrestricted decision](experiments/runner-addition/unrestricted-single/RESULTS.md) classifies all 226 components in the six altered cores whose required-widest minimum was two. The odd-derived core needs only one when that requirement is removed: its former repair interval [11/100,19/150] is sufficient alone, as is its reflection. Every component in the other five cores has an exact blocker, giving unrestricted two-source minimum candidates together with the prior upper bounds. All 38 blocker child sets remain physically feasible elsewhere. Alternate verification and replay pass; family-wide minimum claims remain same-author proof candidates within fixed connected component menus. **Next proposed:** make the primes-derived case's five-speed obstruction and complementary pair into a short reviewable explanation. No broader search or new argument has run; earlier next steps remain preserved history.
 
 **Latest completed — removing the shared anchor preserves small menus.** The [paired test](experiments/runner-addition/anchor-removal/RESULTS.md) replaces one speed in each of eight cores by a nearby multiple of 10, using a frozen arithmetic rule. Time 1/10 becomes unsafe in all eight, yet required-widest minima are one in two cases and two in six. The Fibonacci-derived core improves from two to one because its widest interval expands. All 84 common-domain child sets change while seven menu sizes remain stable; the primes pair also loses isolated witnesses without losing old safe-set measure. Alternate verification passes 92 new child sets and eight full core intersections; replay matches. Discovery uses 115 contacts versus 4,380 full reference contacts, with other work charged separately. All-r conclusions remain same-author proof candidates. **Next proposed:** remove the forced-widest requirement and decide whether any single component suffices in the six current two-component cases, using each component's own tail reduction. That decision has not run; earlier next steps remain preserved history.
 
