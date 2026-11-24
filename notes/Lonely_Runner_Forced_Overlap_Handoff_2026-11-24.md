@@ -32,7 +32,7 @@ This already excludes a family. If $v_i\ge15M_i$, each open blocking interval of
 In the proposed grid experiment, retain the identity of the omitted runner, the numerator and denominator, and the threshold at which each subsystem works. On each grid record residues where exactly one runner blocks along with those where none blocks. Compare what the speed classes predict in advance against the exact intersections. Use the consecutive, all-odd, and fast-runner examples as three controls. For the representation-science return, identify which information about a smaller solution survives adding a constraint, and whether it predicts a common time before the exhaustive scan.
 
 
-### Sharper fast-runner bound from the two ends of an interval
+### Two-Endpoint Fast-Runner Lemma
 
 **November 24, 2026. Proof candidate for the selected stationary reference.** Let $L<M<V$ be the three largest of the fifteen distinct positive integer relative speeds. Assuming the cited 15-runner result, the full tuple has a time at clearance $1/16$ whenever
 $$
