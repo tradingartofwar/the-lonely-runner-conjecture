@@ -1,6 +1,6 @@
-# Fast-runner extensions for two families of lonely runners
+# Two-Endpoint Fast-Runner Lemma
 
-Vance Williams, Lonely Runner Project. Working paper for independent mathematical review, November 24, 2026.
+Troy Vance Williams, Lonely Runner Project. Working paper for independent mathematical review, November 24, 2026.
 
 ## Read or edit
 

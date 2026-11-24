@@ -14,7 +14,7 @@
 
 **Transfer to a second sixteen-speed core.** With fixed speeds $0,1,\ldots,14,105$, all eighteen references again have a lonely time for any two distinct new positive integer speeds. The old clock fails on a named pair. Balancing the relative motion repairs it and gives a diameter bound that can be tested on other cores. [Proof, negative control, and verifier](experiments/forced-overlap/EIGHTEEN_TRANSFER.md)
 
-**Working paper for review.** [Fast-runner extensions for two families of lonely runners](experiments/forced-overlap/paper/runner-additions/Fast_Runner_Extensions.pdf) brings the endpoint lemma, the 17-runner family, both 18-runner families and the failed clock into one manuscript. The [Overleaf project and offline tests](experiments/forced-overlap/paper/runner-additions/Lonely_Runner_Overleaf.zip) contain the editable source, exact certificates, archived inputs and reproduction commands.
+**Working paper for review.** [Two-Endpoint Fast-Runner Lemma](experiments/forced-overlap/paper/runner-additions/Fast_Runner_Extensions.pdf) brings the endpoint lemma, the 17-runner family, both 18-runner families and the failed clock into one manuscript. The [Overleaf project and offline tests](experiments/forced-overlap/paper/runner-additions/Lonely_Runner_Overleaf.zip) contain the editable source, exact certificates, archived inputs and reproduction commands.
 
 **Prepared:** September 24, 2026
 
