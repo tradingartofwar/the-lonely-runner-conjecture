@@ -1,5 +1,7 @@
 # Lonely Runner — research handoff
 
+**November 24, 2026 — [Forced overlap on candidate times](notes/Lonely_Runner_Forced_Overlap_Handoff_2026-11-24.md).** This continuation connects the earlier duration studies to pair-sum grids, including isolated equality witnesses. It gives an exact counting rule, a three-speed counterexample to its sufficiency, and a bounded experiment for the next session.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
