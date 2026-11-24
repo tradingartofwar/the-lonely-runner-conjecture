@@ -6,6 +6,8 @@
 
 **November 24 implementation.** The Two-Endpoint Fast-Runner Lemma now has an exact [endpoint-pair test and reproducible study](experiments/forced-overlap/ENDPOINT_RESULTS.md). Integer endpoint positions improve the cutoff for 117 of 131 tested cores and explain exactly when the rational cutoff improves.
 
+**Working paper for independent review.** [When a Fast Runner Can Block Both Endpoints](experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.pdf) gives the pair-level equivalence, the sufficient full-core rule, and a fresh holdout with a rational-time benchmark. [Accessible manuscript](experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.md) · [Archived counts](experiments/forced-overlap/same_pass_results.json)
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  

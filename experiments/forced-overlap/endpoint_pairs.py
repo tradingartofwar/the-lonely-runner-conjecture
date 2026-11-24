@@ -7,6 +7,7 @@ from itertools import combinations
 from math import gcd
 
 from lonely_runner.checker import ComputationLimitError, feasible_intervals
+from same_pass import can_trap_pair
 
 TARGET = Fraction(1, 16)
 STRONG = Fraction(1, 15)
@@ -71,6 +72,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("core", type=int, nargs=14, metavar="SPEED")
     parser.add_argument("--fastest", type=int, required=True)
+    parser.add_argument("--same-pass", action="store_true",
+                        help="require both endpoints to fit inside one blocking pass")
     parser.add_argument("--witness", action="store_true",
                         help="also search the retained intervals using the bounded exact solver")
     args = parser.parse_args()
@@ -87,6 +90,11 @@ def main():
         "pairs_setting_refined_cutoff": [[p.u, p.w] for p in pairs if p.cutoff == refined],
         "remaining_endpoint_pairs": [[p.u, p.w] for p in candidates],
     }
+    if args.same_pass:
+        compatible = [p for p in candidates if can_trap_pair(p, args.fastest)]
+        report["same_pass_prediction"] = ("unresolved" if compatible else
+                                          "certified under the 15-runner result")
+        report["same_pass_pairs"] = [[p.u, p.w] for p in compatible]
     if args.witness:
         witness = None
         try:

@@ -52,6 +52,8 @@ If one speed $u$ sets both ends, these are the two ends of one of its own safe i
 
 **Endpoint arithmetic and implementation.** Each candidate pair can set only certain interval widths. Rounding the width up to the first allowed value gives an exact rule for when the two-endpoint cutoff improves. On 131 specified cores, the refined test certified 6,005 additional configurations. A speed-90 control traps a whole component while a different component contains a witness. [Proof candidate, executable tool and exact comparison](../experiments/forced-overlap/ENDPOINT_RESULTS.md)
 
+**Working paper for independent review.** The same-pass test asks whether the fastest runner can block both endpoints in one pass. On 7,602 fresh configurations it certified 5,397, up from 1,941 for width alone. Short clocks found 7,474 witnesses and missed 80 configurations certified by the pass test. Kravitz's Proposition 6.1 already gives the original $15M$ cutoff directly. The proposed contribution for review is the endpoint-width and phase criterion. [Three-page working paper](../experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.pdf) · [Frozen comparison](../experiments/forced-overlap/SAME_PASS_PROTOCOL.md)
+
 ## The clock and the counting rule
 
 Use the project's convention of $n$ total runners with a common start, one selected stationary reference, and $k=n-1$ moving constraints. For this experiment use $k\ge2$ distinct positive integer relative speeds $V$. Time is modulo one. Write $\|x\|$ for distance to the nearest integer. A runner blocks if $\|vt\|<1/n$. Equality is safe.
