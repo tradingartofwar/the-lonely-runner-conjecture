@@ -24,6 +24,8 @@
 
 **Three fast additions, including arbitrarily close speeds.** For $Q=\{0,1,\ldots,14,105\}$, the [19-runner fast-triples proof candidate](experiments/forced-overlap/NINETEEN_FAST_TRIPLES.md) covers every triple $1680\le u<v<w$ with no gap restriction. The close-speed certificate uses 46 rational centers, and duration estimates cover the unbounded gaps. The argument for an individual newcomer also allows its two fellow newcomers to be slower.
 
+**Nineteen runners with three completely free additions.** The [full three-addition proof candidate and audit](experiments/forced-overlap/NINETEEN_THREE_ADDITIONS.md) cover every reference in $Q\cup\{u,v,w\}$ for $Q=\{0,1,\ldots,14,105\}$ and every admissible positive integer triple. A blocking-duration argument reduces the remaining references to finite branches. The audit checks all candidate lists by direct integration and all 2,416,526 terminal witnesses against their opponents. The sixteen-speed core remains prescribed. Independent review is pending.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
