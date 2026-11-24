@@ -12,6 +12,8 @@
 
 **Eighteen runners with two free speeds.** Keeping the same sixteen speeds, every pair of distinct new positive integer speeds gives a configuration in which all eighteen runners have a lonely time at distance $1/18$. This computer-assisted proof candidate combines a bound for large speed gaps, an explicit time for nearly tied fast runners, and 298,188 finite role checks. [Proof, certificate, and standalone verifier](experiments/forced-overlap/EIGHTEEN_RESULTS.md)
 
+**Transfer to a second sixteen-speed core.** With fixed speeds $0,1,\ldots,14,105$, all eighteen references again have a lonely time for any two distinct new positive integer speeds. The old clock fails on a named pair. Balancing the relative motion repairs it and gives a diameter bound that can be tested on other cores. [Proof, negative control, and verifier](experiments/forced-overlap/EIGHTEEN_TRANSFER.md)
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
