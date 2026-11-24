@@ -1,4 +1,4 @@
-"""Test whether a faster integer runner preserves clearance for 16 or 17 total runners."""
+"""Test whether a faster integer runner preserves clearance for 16, 17 or 18 total runners."""
 import argparse
 import json
 from dataclasses import dataclass
@@ -89,7 +89,7 @@ def component_at_strong_time(core, time, total):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("core", type=int, nargs="+", metavar="SPEED")
-    parser.add_argument("--runners", type=int, choices=(16, 17), default=16,
+    parser.add_argument("--runners", type=int, choices=(16, 17, 18), default=16,
                         help="total runners including the stationary reference")
     parser.add_argument("--fastest", type=int, required=True)
     parser.add_argument("--core-time", type=Fraction,
@@ -110,15 +110,15 @@ def main():
     report = {}
     success = "certified under the 15-runner result"
     core_time = args.core_time
-    if n == 17:
-        success = "conditional on a 1/16 core witness"
+    if n > 16:
+        success = f"conditional on a 1/{n - 1} core witness"
         if core_time is None:
             try:
-                strong = feasible_intervals(args.core, Fraction(1, 16))
+                strong = feasible_intervals(args.core, Fraction(1, n - 1))
                 if strong:
                     core_time = strong[0][0]
                 else:
-                    success = "inapplicable: the core has no 1/16 witness"
+                    success = f"inapplicable: the core has no 1/{n - 1} witness"
             except ComputationLimitError as e:
                 report["core_search_error"] = str(e)
     component = None

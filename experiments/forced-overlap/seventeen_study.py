@@ -35,21 +35,27 @@ def verify(speeds, t, n=N):
     assert all(n*min(a*v % q, -a*v % q) >= q for v in speeds)
 
 
-def clock_menu(core):
-    return [(a, q) for q in range(2, N+1) for a in range(1, q//2+1)
-            if gcd(a, q) == 1 and all(N*min(v*a % q, -v*a % q) >= q for v in core)]
+def clock_menu(core, n=N):
+    return [(a, q) for q in range(2, n+1) for a in range(1, q//2+1)
+            if gcd(a, q) == 1 and all(n*min(v*a % q, -v*a % q) >= q for v in core)]
 
 
-def independent_checks():
+def pair_oracle(n):
+    target = Q(1, n)
     count = 0
     for u, w in combinations(range(1, 30), 2):
-        pair = pair_bound(u, w, N)
-        components = strong_components((u, w), N)
+        pair = pair_bound(u, w, n)
+        components = strong_components((u, w), n)
         for v in range(w+1, 31):
-            full = feasible_intervals((u, w, v), TARGET)
+            full = feasible_intervals((u, w, v), target)
             trapped = any(not any(a <= d and c <= b for c, d in full) for a, b in components)
             assert trapped == can_trap_pair(pair, v), (u, w, v)
             count += 1
+    return count
+
+
+def independent_checks():
+    count = pair_oracle(N)
     pair = pair_bound(7, 9, N)
     assert can_trap_pair(pair, 96) and not can_trap_pair(pair, 126)
     assert component_at_strong_time(range(1, 16), Q(7, 16), N) == (Q(52,119), Q(67,153))
@@ -59,49 +65,52 @@ def independent_checks():
     return count
 
 
-def check_core(core):
+def check_core(core, n=N):
+    target, stronger = Q(1, n), Q(1, n-1)
     m = core[-1]
-    _, cutoff, pairs = core_bounds(core, N)
-    _, _, prior_pairs = core_bounds(core[:-1], N-1)
+    _, cutoff, pairs = core_bounds(core, n)
+    _, _, prior_pairs = core_bounds(core[:-1], n-1)
     chained_core = not any(can_trap_pair(p, m) for p in prior_pairs)
-    strong = feasible_intervals(core, STRONG)
+    if chained_core and n > 17:
+        chained_core = bool(feasible_intervals(core[:-1], Q(1, n-2)))
+    strong = feasible_intervals(core, stronger)
     if chained_core:
         assert strong
     core_time = strong[0][0] if strong else None
     if strong:
-        verify(core, core_time, N-1)
-    components = strong_components(core, N, strong)
+        verify(core, core_time, n-1)
+    components = strong_components(core, n, strong)
     assert bool(components) == bool(strong)
     if strong:
-        assert component_at_strong_time(core, core_time, N) in components
-    menu = clock_menu(core)
+        assert component_at_strong_time(core, core_time, n) in components
+    menu = clock_menu(core, n)
     counts, examples = Counter(), {}
-    for v in range(m+1, 16*m+1):
+    for v in range(m+1, (n-1)*m+1):
         width = bool(strong) and v >= cutoff
         phase = bool(strong) and (width or not any(can_trap_pair(p, v) for p in pairs))
-        clock = any(N*min(v*a % q, -v*a % q) >= q for a, q in menu)
+        clock = any(n*min(v*a % q, -v*a % q) >= q for a, q in menu)
         counts.update({"tuples": 1, "width": width, "same_pass": phase,
                        "gain": phase and not width, "short_clock": clock,
                        "both": phase and clock, "same_pass_only": phase and not clock,
                        "chained": chained_core and phase, "neither": not phase and not clock})
         found = None
         for a, b in components:
-            t = witness_on_component(a, b, v, TARGET)
+            t = witness_on_component(a, b, v, target)
             if phase:
                 assert t is not None, (core, v, a, b)
                 counts["certified_component_checks"] += 1
             if t is not None:
                 assert a <= t <= b
-                verify((*core, v), t)
+                verify((*core, v), t, n)
                 if found is None:
                     found = t
                 if not phase:
                     break
         if found is None:
-            full = feasible_intervals((*core, v), TARGET)
+            full = feasible_intervals((*core, v), target)
             if full:
                 found = full[0][0]
-                verify((*core, v), found)
+                verify((*core, v), found, n)
             counts["full_solver_fallback"] += 1
         counts["witnessed"] += found is not None
         if found is None:

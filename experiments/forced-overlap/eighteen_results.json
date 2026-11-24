@@ -1,0 +1,751 @@
+{
+  "oracle_triples": 4060,
+  "consecutive_control": [
+    "1/18",
+    "5/18",
+    "7/18",
+    "11/18",
+    "13/18",
+    "17/18"
+  ],
+  "panels": {
+    "sparse": {
+      "counts": {
+        "tuples": 10016,
+        "width": 2045,
+        "same_pass": 6933,
+        "gain": 4888,
+        "short_clock": 9713,
+        "both": 6752,
+        "same_pass_only": 181,
+        "chained": 0,
+        "neither": 122,
+        "witnessed": 10016,
+        "certified_component_checks": 710018
+      },
+      "rows": [
+        {
+          "core": [
+            3,
+            8,
+            12,
+            16,
+            21,
+            27,
+            35,
+            40,
+            41,
+            46,
+            55,
+            59,
+            61,
+            70,
+            72,
+            77
+          ],
+          "strong_time": "1/51",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1232,
+            "width": 174,
+            "same_pass": 869,
+            "gain": 695,
+            "short_clock": 1232,
+            "both": 869,
+            "same_pass_only": 0,
+            "chained": 0,
+            "neither": 0,
+            "witnessed": 1232,
+            "certified_component_checks": 104280
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              78,
+              "19/990"
+            ]
+          }
+        },
+        {
+          "core": [
+            3,
+            6,
+            15,
+            18,
+            22,
+            29,
+            35,
+            39,
+            42,
+            50,
+            53,
+            60,
+            65,
+            66,
+            72,
+            80
+          ],
+          "strong_time": "9/425",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1280,
+            "width": 361,
+            "same_pass": 926,
+            "gain": 565,
+            "short_clock": 1204,
+            "both": 898,
+            "same_pass_only": 28,
+            "chained": 0,
+            "neither": 48,
+            "witnessed": 1280,
+            "certified_component_checks": 100008
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              81,
+              "19/900"
+            ],
+            "same_pass_gain_without_short_clock": [
+              901,
+              "343/16218"
+            ]
+          }
+        },
+        {
+          "core": [
+            2,
+            10,
+            14,
+            20,
+            25,
+            30,
+            31,
+            40,
+            42,
+            46,
+            53,
+            57,
+            62,
+            66,
+            73,
+            79
+          ],
+          "strong_time": "1/34",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1264,
+            "width": 190,
+            "same_pass": 892,
+            "gain": 702,
+            "short_clock": 1264,
+            "both": 892,
+            "same_pass_only": 0,
+            "chained": 0,
+            "neither": 0,
+            "witnessed": 1264,
+            "certified_component_checks": 99904
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              80,
+              "37/1314"
+            ]
+          }
+        },
+        {
+          "core": [
+            4,
+            8,
+            12,
+            18,
+            23,
+            27,
+            34,
+            37,
+            41,
+            49,
+            51,
+            59,
+            62,
+            69,
+            72,
+            77
+          ],
+          "strong_time": "18/1003",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1232,
+            "width": 174,
+            "same_pass": 857,
+            "gain": 683,
+            "short_clock": 1232,
+            "both": 857,
+            "same_pass_only": 0,
+            "chained": 0,
+            "neither": 0,
+            "witnessed": 1232,
+            "certified_component_checks": 92556
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              78,
+              "19/1062"
+            ]
+          }
+        },
+        {
+          "core": [
+            4,
+            9,
+            13,
+            17,
+            22,
+            27,
+            33,
+            38,
+            45,
+            47,
+            54,
+            56,
+            61,
+            69,
+            71,
+            80
+          ],
+          "strong_time": "6/391",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1280,
+            "width": 241,
+            "same_pass": 791,
+            "gain": 550,
+            "short_clock": 1173,
+            "both": 713,
+            "same_pass_only": 78,
+            "chained": 0,
+            "neither": 29,
+            "witnessed": 1280,
+            "certified_component_checks": 79100
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              81,
+              "19/1242"
+            ],
+            "same_pass_gain_without_short_clock": [
+              180,
+              "19/1242"
+            ]
+          }
+        },
+        {
+          "core": [
+            1,
+            9,
+            13,
+            20,
+            21,
+            29,
+            32,
+            38,
+            45,
+            47,
+            51,
+            57,
+            61,
+            66,
+            74,
+            78
+          ],
+          "strong_time": "23/323",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1248,
+            "width": 323,
+            "same_pass": 924,
+            "gain": 601,
+            "short_clock": 1243,
+            "both": 920,
+            "same_pass_only": 4,
+            "chained": 0,
+            "neither": 1,
+            "witnessed": 1248,
+            "certified_component_checks": 72072
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              79,
+              "73/1026"
+            ],
+            "same_pass_gain_without_short_clock": [
+              504,
+              "73/1026"
+            ]
+          }
+        },
+        {
+          "core": [
+            4,
+            8,
+            14,
+            17,
+            21,
+            30,
+            32,
+            37,
+            43,
+            48,
+            54,
+            58,
+            61,
+            68,
+            74,
+            78
+          ],
+          "strong_time": "1/51",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1248,
+            "width": 196,
+            "same_pass": 857,
+            "gain": 661,
+            "short_clock": 1135,
+            "both": 787,
+            "same_pass_only": 70,
+            "chained": 0,
+            "neither": 43,
+            "witnessed": 1248,
+            "certified_component_checks": 77130
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              79,
+              "19/972"
+            ],
+            "same_pass_gain_without_short_clock": [
+              308,
+              "109/5544"
+            ]
+          }
+        },
+        {
+          "core": [
+            2,
+            6,
+            11,
+            17,
+            23,
+            30,
+            35,
+            40,
+            42,
+            49,
+            54,
+            56,
+            61,
+            66,
+            71,
+            77
+          ],
+          "strong_time": "35/1122",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1232,
+            "width": 386,
+            "same_pass": 817,
+            "gain": 431,
+            "short_clock": 1230,
+            "both": 816,
+            "same_pass_only": 1,
+            "chained": 0,
+            "neither": 1,
+            "witnessed": 1232,
+            "certified_component_checks": 84968
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              78,
+              "37/1188"
+            ]
+          }
+        }
+      ]
+    },
+    "challenge": {
+      "counts": {
+        "tuples": 11744,
+        "width": 2187,
+        "same_pass": 7056,
+        "gain": 4869,
+        "short_clock": 0,
+        "both": 0,
+        "same_pass_only": 7056,
+        "chained": 0,
+        "neither": 4688,
+        "witnessed": 11744,
+        "certified_component_checks": 753626
+      },
+      "rows": [
+        {
+          "core": [
+            4,
+            11,
+            13,
+            16,
+            17,
+            33,
+            44,
+            47,
+            53,
+            60,
+            63,
+            70,
+            73,
+            74,
+            75,
+            90
+          ],
+          "strong_time": "3/170",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1440,
+            "width": 271,
+            "same_pass": 853,
+            "gain": 582,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 853,
+            "chained": 0,
+            "neither": 587,
+            "witnessed": 1440,
+            "certified_component_checks": 98948
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              91,
+              "19/1080"
+            ],
+            "same_pass_gain_without_short_clock": [
+              260,
+              "19/1080"
+            ]
+          }
+        },
+        {
+          "core": [
+            11,
+            13,
+            16,
+            17,
+            18,
+            31,
+            35,
+            53,
+            60,
+            62,
+            63,
+            70,
+            72,
+            75,
+            90,
+            92
+          ],
+          "strong_time": "1/187",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1472,
+            "width": 305,
+            "same_pass": 905,
+            "gain": 600,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 905,
+            "chained": 0,
+            "neither": 567,
+            "witnessed": 1472,
+            "certified_component_checks": 110410
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              93,
+              "1/198"
+            ],
+            "same_pass_gain_without_short_clock": [
+              126,
+              "1/198"
+            ]
+          }
+        },
+        {
+          "core": [
+            4,
+            6,
+            11,
+            13,
+            15,
+            16,
+            17,
+            24,
+            31,
+            46,
+            56,
+            60,
+            63,
+            70,
+            86,
+            90
+          ],
+          "strong_time": "9/476",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1440,
+            "width": 271,
+            "same_pass": 840,
+            "gain": 569,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 840,
+            "chained": 0,
+            "neither": 600,
+            "witnessed": 1440,
+            "certified_component_checks": 73920
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              91,
+              "19/1008"
+            ],
+            "same_pass_gain_without_short_clock": [
+              126,
+              "19/1008"
+            ]
+          }
+        },
+        {
+          "core": [
+            4,
+            6,
+            11,
+            13,
+            16,
+            17,
+            24,
+            31,
+            44,
+            52,
+            60,
+            63,
+            70,
+            78,
+            90,
+            94
+          ],
+          "strong_time": "3/170",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1504,
+            "width": 339,
+            "same_pass": 971,
+            "gain": 632,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 971,
+            "chained": 0,
+            "neither": 533,
+            "witnessed": 1504,
+            "certified_component_checks": 102926
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              95,
+              "19/1080"
+            ],
+            "same_pass_gain_without_short_clock": [
+              126,
+              "19/1080"
+            ]
+          }
+        },
+        {
+          "core": [
+            4,
+            7,
+            11,
+            13,
+            16,
+            17,
+            21,
+            37,
+            51,
+            60,
+            63,
+            70,
+            74,
+            79,
+            80,
+            90
+          ],
+          "strong_time": "3/170",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1440,
+            "width": 91,
+            "same_pass": 706,
+            "gain": 615,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 706,
+            "chained": 0,
+            "neither": 734,
+            "witnessed": 1440,
+            "certified_component_checks": 74836
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              91,
+              "19/1080"
+            ],
+            "same_pass_gain_without_short_clock": [
+              180,
+              "19/1080"
+            ]
+          }
+        },
+        {
+          "core": [
+            10,
+            11,
+            13,
+            16,
+            17,
+            29,
+            32,
+            54,
+            60,
+            63,
+            70,
+            71,
+            77,
+            84,
+            85,
+            90
+          ],
+          "strong_time": "1/170",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1440,
+            "width": 232,
+            "same_pass": 852,
+            "gain": 620,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 852,
+            "chained": 0,
+            "neither": 588,
+            "witnessed": 1440,
+            "certified_component_checks": 107352
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              91,
+              "1/180"
+            ],
+            "same_pass_gain_without_short_clock": [
+              126,
+              "1/180"
+            ]
+          }
+        },
+        {
+          "core": [
+            9,
+            11,
+            13,
+            16,
+            17,
+            29,
+            37,
+            43,
+            48,
+            53,
+            60,
+            62,
+            63,
+            70,
+            90,
+            95
+          ],
+          "strong_time": "1/153",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1520,
+            "width": 356,
+            "same_pass": 952,
+            "gain": 596,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 952,
+            "chained": 0,
+            "neither": 568,
+            "witnessed": 1520,
+            "certified_component_checks": 89488
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              96,
+              "1/162"
+            ],
+            "same_pass_gain_without_short_clock": [
+              258,
+              "1/162"
+            ]
+          }
+        },
+        {
+          "core": [
+            2,
+            11,
+            12,
+            13,
+            16,
+            17,
+            29,
+            34,
+            45,
+            48,
+            60,
+            63,
+            70,
+            78,
+            90,
+            93
+          ],
+          "strong_time": "18/493",
+          "chained_core": false,
+          "counts": {
+            "tuples": 1488,
+            "width": 322,
+            "same_pass": 977,
+            "gain": 655,
+            "short_clock": 0,
+            "both": 0,
+            "same_pass_only": 977,
+            "chained": 0,
+            "neither": 511,
+            "witnessed": 1488,
+            "certified_component_checks": 95746
+          },
+          "examples": {
+            "same_pass_unresolved": [
+              94,
+              "19/522"
+            ],
+            "same_pass_gain_without_short_clock": [
+              182,
+              "19/522"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

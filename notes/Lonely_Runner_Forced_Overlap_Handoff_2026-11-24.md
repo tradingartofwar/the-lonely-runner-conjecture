@@ -56,6 +56,10 @@ If one speed $u$ sets both ends, these are the two ends of one of its own safe i
 
 **Seventeen-runner continuation.** The same-pass test transferred with an explicitly verified 1/16 core time. It certified 44,092 of 53,805 configurations for the selected reference. The exact computation found a time in all 53,805. A separate fixed-core proof candidate covers every reference for every distinct positive integer added speed. The saved finite witnesses and sixteen safe intervals have a standalone checker. [17-runner results and certificates](../experiments/forced-overlap/SEVENTEEN_RESULTS.md)
 
+## Eighteen runners with two independent added speeds
+
+The sixteen physical speeds from the seventeen-runner study can be kept fixed while both additional positive integer speeds vary independently, including speeds inserted among the original sixteen. For each allowed pair, each of the eighteen runners has its own time with clearance at least $1/18$. For two large speeds, a duration bound protects each original runner. A short rational time with a small shift separates nearly tied fast runners. For smaller additions, a standalone checker verified 404 infinite ranges and checked 298,188 exact times across 16,566 remaining pairs. The separate endpoint test certified 13,989 of 21,760 fresh configurations for one selected reference. Independent mathematical review remains open. [Evidence and reproduction](../experiments/forced-overlap/EIGHTEEN_RESULTS.md)
+
 ## The clock and the counting rule
 
 Use the project's convention of $n$ total runners with a common start, one selected stationary reference, and $k=n-1$ moving constraints. For this experiment use $k\ge2$ distinct positive integer relative speeds $V$. Time is modulo one. Write $\|x\|$ for distance to the nearest integer. A runner blocks if $\|vt\|<1/n$. Equality is safe.

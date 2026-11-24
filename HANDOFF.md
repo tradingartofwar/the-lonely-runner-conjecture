@@ -10,6 +10,8 @@
 
 **17-runner transfer.** [Frozen comparison and fixed-core proof candidate](experiments/forced-overlap/SEVENTEEN_RESULTS.md). The result covers all 17 references for one fixed set of 16 speeds and any distinct positive integer added speed. The finite certificates and infinite-tail intervals can be checked with Python's standard library.
 
+**Eighteen runners with two free speeds.** Keeping the same sixteen speeds, every pair of distinct new positive integer speeds gives a configuration in which all eighteen runners have a lonely time at distance $1/18$. This computer-assisted proof candidate combines a bound for large speed gaps, an explicit time for nearly tied fast runners, and 298,188 finite role checks. [Proof, certificate, and standalone verifier](experiments/forced-overlap/EIGHTEEN_RESULTS.md)
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
