@@ -50,6 +50,8 @@ If one speed $u$ sets both ends, these are the two ends of one of its own safe i
 
 **Question to carry forward.** In a failing tuple, every interval through a $1/15$ witness after deletion of $V$ would need distinct runners at its two ends and width strictly less than $1/(8V)$. In particular, their speeds $u,w$ would have to satisfy $1/u+1/w<30/V$. Which pairs can satisfy that inequality *and* reach the two endpoints on opposite sides of the same witness? This is a necessary restriction. The ordering and phase alignment at the same witness still need to be established for any proposed pair.
 
+**Endpoint arithmetic and implementation.** Each candidate pair can set only certain interval widths. Rounding the width up to the first allowed value gives an exact rule for when the two-endpoint cutoff improves. On 131 specified cores, the refined test certified 6,005 additional configurations. A speed-90 control traps a whole component while a different component contains a witness. [Proof candidate, executable tool and exact comparison](../experiments/forced-overlap/ENDPOINT_RESULTS.md)
+
 ## The clock and the counting rule
 
 Use the project's convention of $n$ total runners with a common start, one selected stationary reference, and $k=n-1$ moving constraints. For this experiment use $k\ge2$ distinct positive integer relative speeds $V$. Time is modulo one. Write $\|x\|$ for distance to the nearest integer. A runner blocks if $\|vt\|<1/n$. Equality is safe.

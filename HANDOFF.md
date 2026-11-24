@@ -4,6 +4,8 @@
 
 **November 24 continuation.** A [parity argument for two arbitrary added speeds](experiments/forced-overlap/TWO_EXTRAS.md) gives a proof candidate for a sharp uniform distance of $1/6$ with the entire dyadic core. It explains the denominator required by the hardest bounded case and identifies a necessary change of witness for three extras.
 
+**November 24 implementation.** The Two-Endpoint Fast-Runner Lemma now has an exact [endpoint-pair test and reproducible study](experiments/forced-overlap/ENDPOINT_RESULTS.md). Integer endpoint positions improve the cutoff for 117 of 131 tested cores and explain exactly when the rational cutoff improves.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
