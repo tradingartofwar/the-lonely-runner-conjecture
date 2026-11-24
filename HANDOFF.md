@@ -8,6 +8,8 @@
 
 **Working paper for independent review.** [When a Fast Runner Can Block Both Endpoints](experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.pdf) gives the pair-level equivalence, the sufficient full-core rule, and a fresh holdout with a rational-time benchmark. [Accessible manuscript](experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.md) · [Archived counts](experiments/forced-overlap/same_pass_results.json)
 
+**17-runner transfer.** [Frozen comparison and fixed-core proof candidate](experiments/forced-overlap/SEVENTEEN_RESULTS.md). The result covers all 17 references for one fixed set of 16 speeds and any distinct positive integer added speed. The finite certificates and infinite-tail intervals can be checked with Python's standard library.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
