@@ -44,7 +44,7 @@ Kravitz studies how to adjoin one very fast runner, starting from an existing ti
 
 \newpage
 \section{The two-endpoint fast-runner lemma}
-Fix \(n\in\{17,18\}\), a stationary reference, a retained set \(C\) of \(n-2\) distinct positive relative speeds, and an added integer speed \(V>\max C\). Put \(\delta=1/n\), \(\sigma=1/(n-1)\), and \(h=\sigma-\delta\). Suppose \(C\) has a time \(t_0\) at clearance \(\sigma\). A \emph{strong component} is a connected component \([a,b]\) of the times safe for \(C\) at \(\delta\) containing such a time. Work on the real line, with times identified modulo one.
+Fix \(n\in\{17,18\}\), a stationary reference, a retained set \(C\) of \(n-2\) distinct positive integer relative speeds, and an added integer speed \(V>\max C\). Put \(\delta=1/n\), \(\sigma=1/(n-1)\), and \(h=\sigma-\delta\). Suppose \(C\) has a time \(t_0\) at clearance \(\sigma\). A \emph{strong component} is a connected component \([a,b]\) of the times safe for \(C\) at \(\delta\) containing such a time. Work on the real line, with times identified modulo one.
 
 \begin{lemma}[Two-endpoint fast-runner lemma]\label{lem:width}
 Let \(L<M\) be the two largest speeds in \(C\). If
@@ -85,7 +85,7 @@ To check that \([a,b]\) is safe for a given reference \(r\), for each fixed oppo
 For each \(r\in P\), the certificate gives a \(1/16\)-safe time and a surrounding closed interval of width \(L_r>0\) safe at \(1/17\). For all \(v\ge391\), the checker verifies the sufficient bound \((v-r)L_r\ge2/17\) at the lower endpoint \(v=391\). Runner \(v\) can use \(t=1/(2v-70)\): its phases against \(P\) lie between \((v-70)/(2v-70)\) and \(v/(2v-70)\), both inside the safe arc when \(15v\ge16\cdot70\). The frozen test used the more conservative cutoff 964 and checked all 948 admissible speeds below it in all seventeen roles. The overlap with the shorter tail supplies a further check.
 
 \paragraph{Two additions, both large.}
-Write \(F=P\) or \(Q\), \(M=\max F\), \(x<y\), \(d=y-x\), \(\delta=1/18\). On a time interval of length \(L\), a speed \(z>0\) spends between \(\beta(L-1/z)\) and \(\beta(L+1/z)\) in a phase arc of length \(\beta\). Split into complete periods and one remaining piece. That piece contributes at most one period's occupation of the arc. For fixed reference \(r\), the two added speeds therefore leave a positive length of its safe interval clear whenever
+Write \(F=P\) or \(Q\), \(M=\max F\), \(x<y\), \(d=y-x\), \(\delta=1/18\). On a time interval of length \(L\), a speed \(z>0\) spends between \(\beta(L-1/z)\) and \(\beta(L+1/z)\) in a phase arc of length \(\beta\). Split into complete periods and one remaining piece. That piece contributes at most one period's occupation of the arc. For each fixed reference \(r\in F\), let \(L_r\) be the width of its certified \(1/18\)-safe interval against the other fixed runners. The two additions leave some of this interval clear whenever
 \begin{equation}\label{eq:fixed}
 7L_r>\frac1{x-r}+\frac1{y-r},\qquad x>M .
 \end{equation}
@@ -112,7 +112,7 @@ t_0=\frac17+\frac{1}{2\cdot7\cdot420}=\frac{841}{5880}.
 Runner 105 is closest to 420 at this time. Their circular distance is \(3/56\), short of \(1/18\) by \(1/504\). The frozen test covers the configuration through its smaller-\(x\) case. The failure concerns this particular clock.
 
 \begin{proposition}[Balancing the clock shift]\label{prop:balance}
-Let sixteen distinct integer fixed speeds lie in \([0,M]\) with extremes \(0,M\), and let \(M\le157\). If \(y>x\ge4M\), each of the two new runners has a time at distance at least \(1/18\) from all seventeen opponents.
+Let sixteen distinct integer fixed speeds lie in \([0,M]\) with extremes \(0,M\), and let \(M\le157\). For integer added speeds \(y>x\ge4M\), each of the two new runners has a time at distance at least \(1/18\) from all seventeen opponents.
 \end{proposition}
 \begin{proof}
 For \(d>\lfloor 8M/3\rfloor\), \eqref{eq:duration} is positive. Otherwise \(1\le d\le419\). Take \(2\le q\le7\) with \(q\nmid d\). At \(1/q\) each relative phase of \(R\in\{x,y\}\) against the fixed speeds is a multiple of \(1/q\). After a positive shift \(\varepsilon\), its displacement lies between \((R-M)\varepsilon\) and \(R\varepsilon\). Balance the two possible edge losses by solving
@@ -137,7 +137,7 @@ Proposition~\ref{prop:balance} concerns the two newcomers. Applying it to all ei
 \newpage
 \section{Numerical evidence and reproduction}\label{sec:data}
 \paragraph{Selected-reference experiments.}
-For each retained core with maximum \(M_C\) we verified a \(1/(n-1)\) time before testing every \(M_C<V\le(n-1)M_C\). Width and same-pass tests say whether every strong component yields a witness. A short clock checks reduced denominators up to \(n\) for one witness. Exact recovery checks the resulting time on every original relative speed.
+For each retained core with maximum \(M_C\) we verified a \(1/(n-1)\) time before testing every \(M_C<V\le(n-1)M_C\). A successful width or same-pass test certifies a witness in every strong component. An inconclusive test leaves the question open. A short clock checks reduced denominators up to \(n\) for one witness. Exact recovery checks the resulting time on every original relative speed.
 \begin{center}\small
 \begin{tabular}{lrrrrr}\toprule
 Panel & Inputs & Width & Same pass & Short clock & Verified\\\midrule
@@ -160,7 +160,7 @@ Family & Primary cutoff & Smaller \(x\) tails & Finite inputs & Role checks\\\mi
 \end{center}
 
 \paragraph{Reproduction.}
-Unzip the \href{https://raw.githubusercontent.com/tradingartofwar/the-lonely-runner-conjecture/8ca9bb160a37040519ff9ed3728dd25d397a1f00/experiments/forced-overlap/paper/runner-additions/Lonely_Runner_Overleaf.zip}{archived test package}. Run \texttt{python reproduce.py} with Python 3.11 or later. This checks all three certificates with the standard library. Add \texttt{--panels} to regenerate and compare both panel outputs, or \texttt{--regenerate} to reconstruct the certificates. The package contains code, compressed certificates, the 17-runner witness ledger, the frozen protocols and archived results. The \href{\snap}{versioned research snapshot} identifies the underlying files. Independent mathematical and priority review remain open.
+Unzip the \href{https://raw.githubusercontent.com/tradingartofwar/the-lonely-runner-conjecture/a956325b709e41e25067ff742b215ca2a2dc1f3a/experiments/forced-overlap/paper/runner-additions/Runner_Addition_Tests.zip}{archived test package}. Run \texttt{python reproduce.py} with Python 3.11 or later. This checks all three certificates with the standard library. Add \verb|--panels| to regenerate and compare both panel outputs, or \verb|--regenerate| to reconstruct the certificates. The package contains code, compressed certificates, the 17-runner witness ledger, the frozen protocols and archived results. The \href{\snap}{versioned research snapshot} identifies the underlying files. Independent mathematical and priority review remain open.
 
 \paragraph{Contributions.}
 Troy Vance Williams directed the investigation and the transfer tests. AI assistance contributed to the derivations, software implementation, computational checks and drafting.
