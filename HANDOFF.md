@@ -20,6 +20,8 @@
 
 **Nineteen runners with one free speed.** For the fixed eighteen speeds $0,1,\ldots,14,105,420,480$, the [19-runner proof candidate and exact checks](experiments/forced-overlap/NINETEEN_FIXED_CORE.md) cover every admissible positive integer addition in all nineteen roles. The question for three freely chosen speeds over the sixteen-speed core remains open.
 
+**Nineteen runners with two free speeds.** For the seventeen fixed speeds $0,1,\ldots,14,105,420$, the [two-addition proof candidate and verifier](experiments/forced-overlap/NINETEEN_TWO_ADDITIONS.md) cover all nineteen references for every pair of distinct positive additions outside the core. Dropping the fixed 420 also gives a three-addition result when all three speeds are at least 1680 and successive gaps are at least 420. Arbitrary triples over the sixteen-speed core remain open.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
