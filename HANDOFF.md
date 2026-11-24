@@ -18,6 +18,8 @@
 
 **Follow-up to Proposition 2, November 24.** The [diameter-420 research note](experiments/forced-overlap/NEWCOMER_DIAMETER_420.md) gives a proof candidate for the two added runners on any sixteen-speed integer core of diameter $M\le420$ when $y>x\ge4M$. It includes a common time for both newcomers at the paper’s $M=158$ boundary and exact checks at equality. Independent review is open.
 
+**Nineteen runners with one free speed.** For the fixed eighteen speeds $0,1,\ldots,14,105,420,480$, the [19-runner proof candidate and exact checks](experiments/forced-overlap/NINETEEN_FIXED_CORE.md) cover every admissible positive integer addition in all nineteen roles. The question for three freely chosen speeds over the sixteen-speed core remains open.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
