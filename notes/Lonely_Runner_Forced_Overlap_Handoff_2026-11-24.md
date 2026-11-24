@@ -31,6 +31,25 @@ This already excludes a family. If $v_i\ge15M_i$, each open blocking interval of
 
 In the proposed grid experiment, retain the identity of the omitted runner, the numerator and denominator, and the threshold at which each subsystem works. On each grid record residues where exactly one runner blocks along with those where none blocks. Compare what the speed classes predict in advance against the exact intersections. Use the consecutive, all-odd, and fast-runner examples as three controls. For the representation-science return, identify which information about a smaller solution survives adding a constraint, and whether it predicts a common time before the exhaustive scan.
 
+
+### Sharper fast-runner bound from the two ends of an interval
+
+**November 24, 2026. Proof candidate for the selected stationary reference.** Let $L<M<V$ be the three largest of the fifteen distinct positive integer relative speeds. Assuming the cited 15-runner result, the full tuple has a time at clearance $1/16$ whenever
+$
+V\ge \frac{30LM}{L+M}.
+$
+This improves the $15M$ cutoff above. For $L=13$ and $M=26$, the sufficient cutoff drops from 390 to 260, with equality included. Independent review and literature priority remain open.
+
+**Argument.** Delete $V$ and choose any time $t_0$ when the other fourteen speeds have clearance at least $1/15$. On the real time axis let $[a,b]$ be the whole closed interval containing $t_0$ on which all fourteen stay at least $1/16$ clear. The slack at $t_0$ is at least $1/240$, so $t_0$ lies in the interior. Some retained speed reaches the threshold at each endpoint. If different speeds $u,w$ set the two ends, their distance functions can change by at most $u$ and $w$ per unit time, respectively. Hence
+$
+b-a\ge \frac{1}{240u}+\frac{1}{240w}\ge\frac{1}{240}\left(\frac{1}{L}+\frac{1}{M}\right).
+$
+If one speed $u$ sets both ends, these are the two ends of one of its own safe intervals, of length $7/(8u)$. This length exceeds $1/(8V)$ because $V>u$. In the different-speed case the displayed cutoff gives $b-a\ge 1/(8V)$. Each blocking interval of $V$ is open and has length $1/(8V)$, so it cannot contain this entire closed interval, including when the lengths are equal.
+
+**Exact controls.** For retained speeds $1,\ldots,14$, the component through $t_0=1/15$ is exactly $[1/16,15/224]$. Speed 1 sets the left end and speed 14 sets the right. Both speeds 15 and 210 collide with the reference at $t_0$. Restoring 15 works at the left endpoint. Restoring 210 works at the right endpoint, where 14 and 210 both have distance exactly $1/16$. The full consecutive tuple has exactly eight witnesses modulo one, the odd sixteenths. At each of these times two runners are exactly $1/16$ away, so every single deletion still misses the stronger $1/15$ threshold there. The all-odd control attains $1/2$ at time $1/2$.
+
+**Question to carry forward.** In a failing tuple, every interval through a $1/15$ witness after deletion of $V$ would need distinct runners at its two ends and width strictly less than $1/(8V)$. In particular, their speeds $u,w$ would have to satisfy $1/u+1/w<30/V$. Which pairs can satisfy that inequality *and* reach the two endpoints on opposite sides of the same witness? This is a necessary restriction. The ordering and phase alignment at the same witness still need to be established for any proposed pair.
+
 ## The clock and the counting rule
 
 Use the project's convention of $n$ total runners with a common start, one selected stationary reference, and $k=n-1$ moving constraints. For this experiment use $k\ge2$ distinct positive integer relative speeds $V$. Time is modulo one. Write $\|x\|$ for distance to the nearest integer. A runner blocks if $\|vt\|<1/n$. Equality is safe.
