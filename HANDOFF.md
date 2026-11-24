@@ -16,6 +16,8 @@
 
 **Working paper for review.** [Two-Endpoint Fast-Runner Lemma](experiments/forced-overlap/paper/runner-additions/Fast_Runner_Extensions.pdf) brings the endpoint lemma, the 17-runner family, both 18-runner families and the failed clock into one manuscript. The [Overleaf project and offline tests](experiments/forced-overlap/paper/runner-additions/Lonely_Runner_Overleaf.zip) contain the editable source, exact certificates, archived inputs and reproduction commands.
 
+**Follow-up to Proposition 2, November 24.** The [diameter-420 research note](experiments/forced-overlap/NEWCOMER_DIAMETER_420.md) gives a proof candidate for the two added runners on any sixteen-speed integer core of diameter $M\le420$ when $y>x\ge4M$. It includes a common time for both newcomers at the paper’s $M=158$ boundary and exact checks at equality. Independent review is open.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  
