@@ -1,0 +1,4055 @@
+{
+  "fresh_forecast": {
+    "at_least_one_valid_signed_gain_over_direct": true,
+    "qualifying_rows": [
+      "fresh-06"
+    ],
+    "also_missed_by_earlier": [
+      "fresh-06"
+    ],
+    "selected_multi_collider_gains": []
+  },
+  "cohorts": {
+    "original": {
+      "methods": {
+        "escape": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "direct": {
+          "valid": 10,
+          "unsafe": 0,
+          "abstain": 2
+        },
+        "earlier": {
+          "valid": 11,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "archived_four": {
+          "valid": 1,
+          "unsafe": 0,
+          "abstain": 11
+        },
+        "grid": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "branches": {
+        "direct": 10,
+        "shift": 2
+      },
+      "selection_work": {
+        "distinct_residue_tables": 146,
+        "signed_headrooms": 12,
+        "preselection_clearance_evaluations": 0
+      },
+      "grid_trials": 374,
+      "comparisons": {
+        "direct": {
+          "both_valid": [
+            "original-01",
+            "original-02",
+            "original-04",
+            "original-05",
+            "original-06",
+            "original-07",
+            "original-08",
+            "original-10",
+            "original-11",
+            "original-12"
+          ],
+          "escape_only": [
+            "original-03",
+            "original-09"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "earlier": {
+          "both_valid": [
+            "original-01",
+            "original-02",
+            "original-04",
+            "original-05",
+            "original-06",
+            "original-07",
+            "original-08",
+            "original-09",
+            "original-10",
+            "original-11",
+            "original-12"
+          ],
+          "escape_only": [
+            "original-03"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "archived_four": {
+          "both_valid": [
+            "original-04"
+          ],
+          "escape_only": [
+            "original-01",
+            "original-02",
+            "original-03",
+            "original-05",
+            "original-06",
+            "original-07",
+            "original-08",
+            "original-09",
+            "original-10",
+            "original-11",
+            "original-12"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "grid": {
+          "both_valid": [
+            "original-01",
+            "original-02",
+            "original-03",
+            "original-04",
+            "original-05",
+            "original-06",
+            "original-07",
+            "original-08",
+            "original-09",
+            "original-10",
+            "original-11",
+            "original-12"
+          ],
+          "escape_only": [],
+          "baseline_only": [],
+          "neither_valid": []
+        }
+      }
+    },
+    "previous": {
+      "methods": {
+        "escape": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "direct": {
+          "valid": 11,
+          "unsafe": 0,
+          "abstain": 1
+        },
+        "earlier": {
+          "valid": 11,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "archived_four": {
+          "valid": 1,
+          "unsafe": 0,
+          "abstain": 11
+        },
+        "grid": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "branches": {
+        "direct": 11,
+        "shift": 1
+      },
+      "selection_work": {
+        "distinct_residue_tables": 138,
+        "signed_headrooms": 1,
+        "preselection_clearance_evaluations": 0
+      },
+      "grid_trials": 334,
+      "comparisons": {
+        "direct": {
+          "both_valid": [
+            "previous-01",
+            "previous-02",
+            "previous-03",
+            "previous-05",
+            "previous-06",
+            "previous-07",
+            "previous-08",
+            "previous-09",
+            "previous-10",
+            "previous-11",
+            "previous-12"
+          ],
+          "escape_only": [
+            "previous-04"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "earlier": {
+          "both_valid": [
+            "previous-01",
+            "previous-02",
+            "previous-03",
+            "previous-05",
+            "previous-06",
+            "previous-07",
+            "previous-08",
+            "previous-09",
+            "previous-10",
+            "previous-11",
+            "previous-12"
+          ],
+          "escape_only": [
+            "previous-04"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "archived_four": {
+          "both_valid": [
+            "previous-06"
+          ],
+          "escape_only": [
+            "previous-01",
+            "previous-02",
+            "previous-03",
+            "previous-04",
+            "previous-05",
+            "previous-07",
+            "previous-08",
+            "previous-09",
+            "previous-10",
+            "previous-11",
+            "previous-12"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "grid": {
+          "both_valid": [
+            "previous-01",
+            "previous-02",
+            "previous-03",
+            "previous-04",
+            "previous-05",
+            "previous-06",
+            "previous-07",
+            "previous-08",
+            "previous-09",
+            "previous-10",
+            "previous-11",
+            "previous-12"
+          ],
+          "escape_only": [],
+          "baseline_only": [],
+          "neither_valid": []
+        }
+      }
+    },
+    "fresh": {
+      "methods": {
+        "escape": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "direct": {
+          "valid": 11,
+          "unsafe": 0,
+          "abstain": 1
+        },
+        "earlier": {
+          "valid": 11,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "archived_four": {
+          "valid": 2,
+          "unsafe": 0,
+          "abstain": 10
+        },
+        "grid": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "branches": {
+        "direct": 11,
+        "shift": 1
+      },
+      "selection_work": {
+        "distinct_residue_tables": 135,
+        "signed_headrooms": 17,
+        "preselection_clearance_evaluations": 0
+      },
+      "grid_trials": 319,
+      "comparisons": {
+        "direct": {
+          "both_valid": [
+            "fresh-01",
+            "fresh-02",
+            "fresh-03",
+            "fresh-04",
+            "fresh-05",
+            "fresh-07",
+            "fresh-08",
+            "fresh-09",
+            "fresh-10",
+            "fresh-11",
+            "fresh-12"
+          ],
+          "escape_only": [
+            "fresh-06"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "earlier": {
+          "both_valid": [
+            "fresh-01",
+            "fresh-02",
+            "fresh-03",
+            "fresh-04",
+            "fresh-05",
+            "fresh-07",
+            "fresh-08",
+            "fresh-09",
+            "fresh-10",
+            "fresh-11",
+            "fresh-12"
+          ],
+          "escape_only": [
+            "fresh-06"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "archived_four": {
+          "both_valid": [
+            "fresh-01",
+            "fresh-05"
+          ],
+          "escape_only": [
+            "fresh-02",
+            "fresh-03",
+            "fresh-04",
+            "fresh-06",
+            "fresh-07",
+            "fresh-08",
+            "fresh-09",
+            "fresh-10",
+            "fresh-11",
+            "fresh-12"
+          ],
+          "baseline_only": [],
+          "neither_valid": []
+        },
+        "grid": {
+          "both_valid": [
+            "fresh-01",
+            "fresh-02",
+            "fresh-03",
+            "fresh-04",
+            "fresh-05",
+            "fresh-06",
+            "fresh-07",
+            "fresh-08",
+            "fresh-09",
+            "fresh-10",
+            "fresh-11",
+            "fresh-12"
+          ],
+          "escape_only": [],
+          "baseline_only": [],
+          "neither_valid": []
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "original-01",
+      "cohort": "original",
+      "weights": [
+        2,
+        3,
+        17,
+        42
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        2,
+        3,
+        5,
+        17,
+        19,
+        20,
+        22,
+        42,
+        44,
+        45,
+        47,
+        59,
+        61,
+        62,
+        64
+      ],
+      "clear_denominators": [
+        12,
+        13
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid",
+          "grid_trials": 22
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 11,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 7,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "original-02",
+      "cohort": "original",
+      "weights": [
+        3,
+        6,
+        31,
+        72
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        3,
+        6,
+        9,
+        31,
+        34,
+        37,
+        40,
+        72,
+        75,
+        78,
+        81,
+        103,
+        106,
+        109,
+        112
+      ],
+      "clear_denominators": [
+        11
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid",
+          "grid_trials": 17
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 10,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 7,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "original-03",
+      "cohort": "original",
+      "weights": [
+        3,
+        5,
+        28,
+        60
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        3,
+        5,
+        8,
+        28,
+        31,
+        33,
+        36,
+        60,
+        63,
+        65,
+        68,
+        88,
+        91,
+        93,
+        96
+      ],
+      "clear_denominators": [],
+      "methods": {
+        "escape": {
+          "time": "65/448",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            28
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "earlier": {
+          "time": "97/1536",
+          "clearance": "11/512",
+          "limiting_speeds": [
+            63
+          ],
+          "status": "unsafe"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "2/23",
+          "clearance": "2/23",
+          "limiting_speeds": [
+            68,
+            91,
+            93
+          ],
+          "status": "valid",
+          "grid_trials": 77
+        }
+      },
+      "branch": "shift",
+      "selection_work": {
+        "distinct_residue_tables": 15,
+        "signed_headrooms": 9,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 30,
+      "certified_directions": 9,
+      "safe_endpoints_outside_first_arc": 0,
+      "selected_shift": {
+        "q": 7,
+        "sign": 1,
+        "anchor": "1/7",
+        "time": "65/448",
+        "escape": "1/448",
+        "colliders": [
+          28,
+          63,
+          91
+        ],
+        "room": "25/10752",
+        "room_speeds": [
+          96
+        ],
+        "outside_first_arc": [],
+        "first_safe_window": {
+          "endpoints": [
+            "65/448",
+            "223/1536"
+          ],
+          "width": "1/10752",
+          "limiting_speeds": [
+            [
+              28
+            ],
+            [
+              96
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "original-04",
+      "cohort": "original",
+      "weights": [
+        14,
+        28,
+        105,
+        157
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        14,
+        28,
+        42,
+        105,
+        119,
+        133,
+        147,
+        157,
+        171,
+        185,
+        199,
+        262,
+        276,
+        290,
+        304
+      ],
+      "clear_denominators": [
+        11,
+        13
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": "33/224",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            14
+          ],
+          "status": "valid"
+        },
+        "grid": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid",
+          "grid_trials": 17
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 10,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 7,
+      "safe_endpoints_outside_first_arc": 2
+    },
+    {
+      "id": "original-05",
+      "cohort": "original",
+      "weights": [
+        16,
+        25,
+        144,
+        215
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        16,
+        25,
+        41,
+        144,
+        160,
+        169,
+        185,
+        215,
+        231,
+        240,
+        256,
+        359,
+        375,
+        384,
+        400
+      ],
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid",
+          "grid_trials": 30
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 13,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 4,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "original-06",
+      "cohort": "original",
+      "weights": [
+        9,
+        10,
+        58,
+        83
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        9,
+        10,
+        19,
+        58,
+        67,
+        68,
+        77,
+        83,
+        92,
+        93,
+        102,
+        141,
+        150,
+        151,
+        160
+      ],
+      "clear_denominators": [
+        12,
+        13,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid",
+          "grid_trials": 22
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 11,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 10,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "original-07",
+      "cohort": "original",
+      "weights": [
+        43,
+        74,
+        322,
+        441
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        43,
+        74,
+        117,
+        322,
+        365,
+        396,
+        439,
+        441,
+        484,
+        515,
+        558,
+        763,
+        806,
+        837,
+        880
+      ],
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid",
+          "grid_trials": 33
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 14,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 11,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "original-08",
+      "cohort": "original",
+      "weights": [
+        28,
+        29,
+        177,
+        262
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        28,
+        29,
+        57,
+        177,
+        205,
+        206,
+        234,
+        262,
+        290,
+        291,
+        319,
+        439,
+        467,
+        468,
+        496
+      ],
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid",
+          "grid_trials": 33
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 14,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 3,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "original-09",
+      "cohort": "original",
+      "weights": [
+        41,
+        80,
+        435,
+        564
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        41,
+        80,
+        121,
+        435,
+        476,
+        515,
+        556,
+        564,
+        605,
+        644,
+        685,
+        999,
+        1040,
+        1079,
+        1120
+      ],
+      "clear_denominators": [],
+      "methods": {
+        "escape": {
+          "time": "2321/6960",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            435
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "earlier": {
+          "time": "1775/15984",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            999
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "2/19",
+          "clearance": "2/19",
+          "limiting_speeds": [
+            476,
+            685,
+            1120
+          ],
+          "status": "valid",
+          "grid_trials": 53
+        }
+      },
+      "branch": "shift",
+      "selection_work": {
+        "distinct_residue_tables": 15,
+        "signed_headrooms": 3,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 30,
+      "certified_directions": 6,
+      "safe_endpoints_outside_first_arc": 5,
+      "selected_shift": {
+        "q": 3,
+        "sign": 1,
+        "anchor": "1/3",
+        "time": "2321/6960",
+        "escape": "1/6960",
+        "colliders": [
+          435,
+          564,
+          999
+        ],
+        "room": "1/3984",
+        "room_speeds": [
+          1079
+        ],
+        "outside_first_arc": [],
+        "first_safe_window": {
+          "endpoints": [
+            "2321/6960",
+            "443/1328"
+          ],
+          "width": "31/288840",
+          "limiting_speeds": [
+            [
+              435
+            ],
+            [
+              1079
+            ]
+          ]
+        }
+      },
+      "first_skipped_safe": {
+        "q": 4,
+        "sign": 1,
+        "anchor": "1/4",
+        "time": "321/1280",
+        "escape": "1/1280",
+        "colliders": [
+          80,
+          476,
+          556,
+          564,
+          644,
+          1040,
+          1120
+        ],
+        "room": "3/17264",
+        "room_speeds": [
+          1079
+        ],
+        "outside_first_arc": [
+          435,
+          515,
+          999,
+          1079
+        ],
+        "score": {
+          "time": "321/1280",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            80
+          ],
+          "status": "valid"
+        }
+      }
+    },
+    {
+      "id": "original-10",
+      "cohort": "original",
+      "weights": [
+        218,
+        411,
+        2222,
+        2861
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        218,
+        411,
+        629,
+        2222,
+        2440,
+        2633,
+        2851,
+        2861,
+        3079,
+        3272,
+        3490,
+        5083,
+        5301,
+        5494,
+        5712
+      ],
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid",
+          "grid_trials": 33
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 14,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 13,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "original-11",
+      "cohort": "original",
+      "weights": [
+        220,
+        233,
+        1491,
+        2136
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        220,
+        233,
+        453,
+        1491,
+        1711,
+        1724,
+        1944,
+        2136,
+        2356,
+        2369,
+        2589,
+        3627,
+        3847,
+        3860,
+        4080
+      ],
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid",
+          "grid_trials": 30
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 13,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 4,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "original-12",
+      "cohort": "original",
+      "weights": [
+        177,
+        197,
+        1618,
+        2024
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        177,
+        197,
+        374,
+        1618,
+        1795,
+        1815,
+        1992,
+        2024,
+        2201,
+        2221,
+        2398,
+        3642,
+        3819,
+        3839,
+        4016
+      ],
+      "clear_denominators": [
+        7,
+        9,
+        10,
+        13,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid",
+          "grid_trials": 7
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 6,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 20,
+      "certified_directions": 4,
+      "safe_endpoints_outside_first_arc": 2
+    },
+    {
+      "id": "previous-01",
+      "cohort": "previous",
+      "weights": [
+        2,
+        3,
+        15,
+        44
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        2,
+        3,
+        5,
+        15,
+        17,
+        18,
+        20,
+        44,
+        46,
+        47,
+        49,
+        59,
+        61,
+        62,
+        64
+      ],
+      "clear_denominators": [
+        12,
+        13,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid",
+          "grid_trials": 22
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 11,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 6,
+      "safe_endpoints_outside_first_arc": 1
+    },
+    {
+      "id": "previous-02",
+      "cohort": "previous",
+      "weights": [
+        3,
+        6,
+        33,
+        70
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        3,
+        6,
+        9,
+        33,
+        36,
+        39,
+        42,
+        70,
+        73,
+        76,
+        79,
+        103,
+        106,
+        109,
+        112
+      ],
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid",
+          "grid_trials": 33
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 14,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 7,
+      "safe_endpoints_outside_first_arc": 2
+    },
+    {
+      "id": "previous-03",
+      "cohort": "previous",
+      "weights": [
+        1,
+        2,
+        10,
+        35
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        13,
+        35,
+        36,
+        37,
+        38,
+        45,
+        46,
+        47,
+        48
+      ],
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid",
+          "grid_trials": 30
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 13,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 6,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "previous-04",
+      "cohort": "previous",
+      "weights": [
+        14,
+        17,
+        103,
+        154
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        14,
+        17,
+        31,
+        103,
+        117,
+        120,
+        134,
+        154,
+        168,
+        171,
+        185,
+        257,
+        271,
+        274,
+        288
+      ],
+      "clear_denominators": [],
+      "methods": {
+        "escape": {
+          "time": "625/1872",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            117
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "earlier": {
+          "time": "289/4608",
+          "clearance": "17/4608",
+          "limiting_speeds": [
+            271
+          ],
+          "status": "unsafe"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "8/23",
+          "clearance": "2/23",
+          "limiting_speeds": [
+            17
+          ],
+          "status": "valid",
+          "grid_trials": 83
+        }
+      },
+      "branch": "shift",
+      "selection_work": {
+        "distinct_residue_tables": 15,
+        "signed_headrooms": 1,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 30,
+      "certified_directions": 6,
+      "safe_endpoints_outside_first_arc": 2,
+      "selected_shift": {
+        "q": 3,
+        "sign": 1,
+        "anchor": "1/3",
+        "time": "625/1872",
+        "escape": "1/1872",
+        "colliders": [
+          117,
+          120,
+          168,
+          171,
+          288
+        ],
+        "room": "13/12336",
+        "room_speeds": [
+          257
+        ],
+        "outside_first_arc": [],
+        "first_safe_window": {
+          "endpoints": [
+            "625/1872",
+            "1375/4112"
+          ],
+          "width": "125/240552",
+          "limiting_speeds": [
+            [
+              117
+            ],
+            [
+              257
+            ]
+          ]
+        }
+      },
+      "first_skipped_safe": {
+        "q": 7,
+        "sign": 1,
+        "anchor": "1/7",
+        "time": "33/224",
+        "escape": "1/224",
+        "colliders": [
+          14,
+          154,
+          168
+        ],
+        "room": "25/30352",
+        "room_speeds": [
+          271
+        ],
+        "outside_first_arc": [
+          103,
+          117,
+          171,
+          185,
+          257,
+          271,
+          274,
+          288
+        ],
+        "score": {
+          "time": "33/224",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            14
+          ],
+          "status": "valid"
+        }
+      }
+    },
+    {
+      "id": "previous-05",
+      "cohort": "previous",
+      "weights": [
+        15,
+        28,
+        163,
+        226
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        15,
+        28,
+        43,
+        163,
+        178,
+        191,
+        206,
+        226,
+        241,
+        254,
+        269,
+        389,
+        404,
+        417,
+        432
+      ],
+      "clear_denominators": [
+        10,
+        11,
+        13
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid",
+          "grid_trials": 15
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 9,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 5,
+      "safe_endpoints_outside_first_arc": 1
+    },
+    {
+      "id": "previous-06",
+      "cohort": "previous",
+      "weights": [
+        13,
+        23,
+        133,
+        199
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        13,
+        23,
+        36,
+        133,
+        146,
+        156,
+        169,
+        199,
+        212,
+        222,
+        235,
+        332,
+        345,
+        355,
+        368
+      ],
+      "clear_denominators": [
+        10,
+        11,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": "551/1380",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            368
+          ],
+          "status": "valid"
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid",
+          "grid_trials": 15
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 9,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 10,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "previous-07",
+      "cohort": "previous",
+      "weights": [
+        51,
+        71,
+        454,
+        608
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        51,
+        71,
+        122,
+        454,
+        505,
+        525,
+        576,
+        608,
+        659,
+        679,
+        730,
+        1062,
+        1113,
+        1133,
+        1184
+      ],
+      "clear_denominators": [
+        13,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid",
+          "grid_trials": 24
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 12,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 9,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "previous-08",
+      "cohort": "previous",
+      "weights": [
+        33,
+        41,
+        238,
+        344
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        33,
+        41,
+        74,
+        238,
+        271,
+        279,
+        312,
+        344,
+        377,
+        385,
+        418,
+        582,
+        615,
+        623,
+        656
+      ],
+      "clear_denominators": [
+        10
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid",
+          "grid_trials": 15
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 9,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 7,
+      "safe_endpoints_outside_first_arc": 2
+    },
+    {
+      "id": "previous-09",
+      "cohort": "previous",
+      "weights": [
+        64,
+        101,
+        461,
+        686
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        64,
+        101,
+        165,
+        461,
+        525,
+        562,
+        626,
+        686,
+        750,
+        787,
+        851,
+        1147,
+        1211,
+        1248,
+        1312
+      ],
+      "clear_denominators": [
+        9
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid",
+          "grid_trials": 12
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 8,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 5,
+      "safe_endpoints_outside_first_arc": 4
+    },
+    {
+      "id": "previous-10",
+      "cohort": "previous",
+      "weights": [
+        191,
+        377,
+        1847,
+        2545
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        191,
+        377,
+        568,
+        1847,
+        2038,
+        2224,
+        2415,
+        2545,
+        2736,
+        2922,
+        3113,
+        4392,
+        4583,
+        4769,
+        4960
+      ],
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid",
+          "grid_trials": 30
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 13,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 10,
+      "safe_endpoints_outside_first_arc": 1
+    },
+    {
+      "id": "previous-11",
+      "cohort": "previous",
+      "weights": [
+        128,
+        236,
+        913,
+        1411
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        128,
+        236,
+        364,
+        913,
+        1041,
+        1149,
+        1277,
+        1411,
+        1539,
+        1647,
+        1775,
+        2324,
+        2452,
+        2560,
+        2688
+      ],
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid",
+          "grid_trials": 33
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 14,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 8,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "previous-12",
+      "cohort": "previous",
+      "weights": [
+        202,
+        352,
+        1879,
+        2591
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        202,
+        352,
+        554,
+        1879,
+        2081,
+        2231,
+        2433,
+        2591,
+        2793,
+        2943,
+        3145,
+        4470,
+        4672,
+        4822,
+        5024
+      ],
+      "clear_denominators": [
+        12,
+        13,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid",
+          "grid_trials": 22
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 11,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 10,
+      "safe_endpoints_outside_first_arc": 5
+    },
+    {
+      "id": "fresh-01",
+      "cohort": "fresh",
+      "weights": [
+        3,
+        4,
+        21,
+        52
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        3,
+        4,
+        7,
+        21,
+        24,
+        25,
+        28,
+        52,
+        55,
+        56,
+        59,
+        73,
+        76,
+        77,
+        80
+      ],
+      "clear_denominators": [
+        9,
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            28,
+            55,
+            73,
+            80
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            28,
+            55,
+            73,
+            80
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            28,
+            55,
+            73,
+            80
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": "173/7680",
+          "clearance": "173/2560",
+          "limiting_speeds": [
+            3
+          ],
+          "status": "valid"
+        },
+        "grid": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            28,
+            55,
+            73,
+            80
+          ],
+          "status": "valid",
+          "grid_trials": 12
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 8,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 3,
+      "safe_endpoints_outside_first_arc": 5
+    },
+    {
+      "id": "fresh-02",
+      "cohort": "fresh",
+      "weights": [
+        4,
+        6,
+        27,
+        43
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        4,
+        6,
+        10,
+        27,
+        31,
+        33,
+        37,
+        43,
+        47,
+        49,
+        53,
+        70,
+        74,
+        76,
+        80
+      ],
+      "clear_denominators": [
+        12,
+        13,
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            37,
+            47,
+            49
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            37,
+            47,
+            49
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            37,
+            47,
+            49
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            37,
+            47,
+            49
+          ],
+          "status": "valid",
+          "grid_trials": 22
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 11,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 4,
+      "safe_endpoints_outside_first_arc": 4
+    },
+    {
+      "id": "fresh-03",
+      "cohort": "fresh",
+      "weights": [
+        3,
+        6,
+        25,
+        62
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "speeds": [
+        3,
+        6,
+        9,
+        25,
+        28,
+        31,
+        34,
+        62,
+        65,
+        68,
+        71,
+        87,
+        90,
+        93,
+        96
+      ],
+      "clear_denominators": [
+        11
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            65,
+            87
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            65,
+            87
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            65,
+            87
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            65,
+            87
+          ],
+          "status": "valid",
+          "grid_trials": 17
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 10,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 7,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "fresh-04",
+      "cohort": "fresh",
+      "weights": [
+        16,
+        31,
+        133,
+        188
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        16,
+        31,
+        47,
+        133,
+        149,
+        164,
+        180,
+        188,
+        204,
+        219,
+        235,
+        321,
+        337,
+        352,
+        368
+      ],
+      "clear_denominators": [
+        13,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            235,
+            337,
+            352
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            235,
+            337,
+            352
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            235,
+            337,
+            352
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            235,
+            337,
+            352
+          ],
+          "status": "valid",
+          "grid_trials": 24
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 12,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 6,
+      "safe_endpoints_outside_first_arc": 1
+    },
+    {
+      "id": "fresh-05",
+      "cohort": "fresh",
+      "weights": [
+        6,
+        7,
+        48,
+        83
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        6,
+        7,
+        13,
+        48,
+        54,
+        55,
+        61,
+        83,
+        89,
+        90,
+        96,
+        131,
+        137,
+        138,
+        144
+      ],
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            13,
+            55,
+            83
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            13,
+            55,
+            83
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            13,
+            55,
+            83
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": "17/1328",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid"
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            13,
+            55,
+            83
+          ],
+          "status": "valid",
+          "grid_trials": 30
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 13,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 3,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "fresh-06",
+      "cohort": "fresh",
+      "weights": [
+        12,
+        20,
+        121,
+        183
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "speeds": [
+        12,
+        20,
+        32,
+        121,
+        133,
+        141,
+        153,
+        183,
+        195,
+        203,
+        215,
+        304,
+        316,
+        324,
+        336
+      ],
+      "clear_denominators": [],
+      "methods": {
+        "escape": {
+          "time": "209/3120",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            195
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "earlier": {
+          "time": "383/5376",
+          "clearance": "67/1792",
+          "limiting_speeds": [
+            183
+          ],
+          "status": "unsafe"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "7/23",
+          "clearance": "2/23",
+          "limiting_speeds": [
+            20,
+            141
+          ],
+          "status": "valid",
+          "grid_trials": 82
+        }
+      },
+      "branch": "shift",
+      "selection_work": {
+        "distinct_residue_tables": 15,
+        "signed_headrooms": 17,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 30,
+      "certified_directions": 1,
+      "safe_endpoints_outside_first_arc": 7,
+      "selected_shift": {
+        "q": 15,
+        "sign": 1,
+        "anchor": "1/15",
+        "time": "209/3120",
+        "escape": "1/3120",
+        "colliders": [
+          195
+        ],
+        "room": "17/31920",
+        "room_speeds": [
+          133
+        ],
+        "outside_first_arc": [],
+        "first_safe_window": {
+          "endpoints": [
+            "209/3120",
+            "143/2128"
+          ],
+          "width": "11/51870",
+          "limiting_speeds": [
+            [
+              195
+            ],
+            [
+              133
+            ]
+          ]
+        }
+      },
+      "first_skipped_safe": {
+        "q": 2,
+        "sign": 1,
+        "anchor": "1/2",
+        "time": "97/192",
+        "escape": "1/192",
+        "colliders": [
+          12,
+          20,
+          32,
+          304,
+          316,
+          324,
+          336
+        ],
+        "room": "7/3440",
+        "room_speeds": [
+          215
+        ],
+        "outside_first_arc": [
+          121,
+          133,
+          141,
+          153,
+          183,
+          195,
+          203,
+          215,
+          304,
+          316,
+          324,
+          336
+        ],
+        "score": {
+          "time": "97/192",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            12
+          ],
+          "status": "valid"
+        }
+      }
+    },
+    {
+      "id": "fresh-07",
+      "cohort": "fresh",
+      "weights": [
+        53,
+        63,
+        487,
+        677
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        53,
+        63,
+        116,
+        487,
+        540,
+        550,
+        603,
+        677,
+        730,
+        740,
+        793,
+        1164,
+        1217,
+        1227,
+        1280
+      ],
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            603,
+            1217
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            603,
+            1217
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            603,
+            1217
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            603,
+            1217
+          ],
+          "status": "valid",
+          "grid_trials": 30
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 13,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 8,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "fresh-08",
+      "cohort": "fresh",
+      "weights": [
+        47,
+        88,
+        358,
+        531
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        47,
+        88,
+        135,
+        358,
+        405,
+        446,
+        493,
+        531,
+        578,
+        619,
+        666,
+        889,
+        936,
+        977,
+        1024
+      ],
+      "clear_denominators": [
+        10,
+        14
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            531,
+            619,
+            889
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            531,
+            619,
+            889
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            531,
+            619,
+            889
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            531,
+            619,
+            889
+          ],
+          "status": "valid",
+          "grid_trials": 15
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 9,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 6,
+      "safe_endpoints_outside_first_arc": 3
+    },
+    {
+      "id": "fresh-09",
+      "cohort": "fresh",
+      "weights": [
+        43,
+        59,
+        389,
+        549
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "speeds": [
+        43,
+        59,
+        102,
+        389,
+        432,
+        448,
+        491,
+        549,
+        592,
+        608,
+        651,
+        938,
+        981,
+        997,
+        1040
+      ],
+      "clear_denominators": [
+        11,
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            43,
+            549
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            43,
+            549
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            43,
+            549
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            43,
+            549
+          ],
+          "status": "valid",
+          "grid_trials": 17
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 10,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 26,
+      "certified_directions": 12,
+      "safe_endpoints_outside_first_arc": 2
+    },
+    {
+      "id": "fresh-10",
+      "cohort": "fresh",
+      "weights": [
+        103,
+        148,
+        962,
+        1315
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        103,
+        148,
+        251,
+        962,
+        1065,
+        1110,
+        1213,
+        1315,
+        1418,
+        1463,
+        1566,
+        2277,
+        2380,
+        2425,
+        2528
+      ],
+      "clear_denominators": [
+        12
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            251,
+            1213,
+            1463,
+            2425
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            251,
+            1213,
+            1463,
+            2425
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            251,
+            1213,
+            1463,
+            2425
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            251,
+            1213,
+            1463,
+            2425
+          ],
+          "status": "valid",
+          "grid_trials": 22
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 11,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 13,
+      "safe_endpoints_outside_first_arc": 0
+    },
+    {
+      "id": "fresh-11",
+      "cohort": "fresh",
+      "weights": [
+        124,
+        207,
+        1225,
+        1692
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        124,
+        207,
+        331,
+        1225,
+        1349,
+        1432,
+        1556,
+        1692,
+        1816,
+        1899,
+        2023,
+        2917,
+        3041,
+        3124,
+        3248
+      ],
+      "clear_denominators": [
+        10,
+        13,
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            331,
+            1349,
+            1899,
+            3041
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            331,
+            1349,
+            1899,
+            3041
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            331,
+            1349,
+            1899,
+            3041
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            331,
+            1349,
+            1899,
+            3041
+          ],
+          "status": "valid",
+          "grid_trials": 15
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 9,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 24,
+      "certified_directions": 5,
+      "safe_endpoints_outside_first_arc": 2
+    },
+    {
+      "id": "fresh-12",
+      "cohort": "fresh",
+      "weights": [
+        228,
+        437,
+        1643,
+        2508
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "speeds": [
+        228,
+        437,
+        665,
+        1643,
+        1871,
+        2080,
+        2308,
+        2508,
+        2736,
+        2945,
+        3173,
+        4151,
+        4379,
+        4588,
+        4816
+      ],
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "escape": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            4379,
+            4816
+          ],
+          "status": "valid"
+        },
+        "direct": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            4379,
+            4816
+          ],
+          "status": "valid"
+        },
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            4379,
+            4816
+          ],
+          "status": "valid"
+        },
+        "archived_four": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain"
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            4379,
+            4816
+          ],
+          "status": "valid",
+          "grid_trials": 33
+        }
+      },
+      "branch": "direct",
+      "selection_work": {
+        "distinct_residue_tables": 14,
+        "signed_headrooms": 0,
+        "preselection_clearance_evaluations": 0
+      },
+      "blocked_anchor_directions_checked": 28,
+      "certified_directions": 3,
+      "safe_endpoints_outside_first_arc": 1
+    }
+  ],
+  "opened_controls": [
+    {
+      "id": "previous-04",
+      "q": 3,
+      "sign": 1,
+      "anchor": "1/3",
+      "time": "625/1872",
+      "escape": "1/1872",
+      "colliders": [
+        117,
+        120,
+        168,
+        171,
+        288
+      ],
+      "room": "13/12336",
+      "room_speeds": [
+        257
+      ],
+      "outside_first_arc": [],
+      "score": {
+        "time": "625/1872",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          117
+        ],
+        "status": "valid"
+      },
+      "first_safe_window": {
+        "endpoints": [
+          "625/1872",
+          "1375/4112"
+        ],
+        "width": "125/240552",
+        "limiting_speeds": [
+          [
+            117
+          ],
+          [
+            257
+          ]
+        ]
+      }
+    },
+    {
+      "id": "original-03",
+      "q": 16,
+      "sign": 1,
+      "anchor": "1/16",
+      "time": "97/1536",
+      "escape": "1/1536",
+      "colliders": [
+        96
+      ],
+      "room": "0",
+      "room_speeds": [
+        31,
+        63
+      ],
+      "outside_first_arc": [
+        31,
+        63
+      ],
+      "score": {
+        "time": "97/1536",
+        "clearance": "11/512",
+        "limiting_speeds": [
+          63
+        ],
+        "status": "unsafe"
+      }
+    },
+    {
+      "id": "original-03",
+      "q": 16,
+      "sign": -1,
+      "anchor": "1/16",
+      "time": "95/1536",
+      "escape": "1/1536",
+      "colliders": [
+        96
+      ],
+      "room": "0",
+      "room_speeds": [
+        33,
+        65
+      ],
+      "outside_first_arc": [
+        33,
+        65
+      ],
+      "score": {
+        "time": "95/1536",
+        "clearance": "31/1536",
+        "limiting_speeds": [
+          65
+        ],
+        "status": "unsafe"
+      }
+    },
+    {
+      "id": "original-02",
+      "q": 10,
+      "sign": 1,
+      "anchor": "1/10",
+      "time": "13/128",
+      "escape": "1/640",
+      "colliders": [
+        40
+      ],
+      "room": "3/8720",
+      "room_speeds": [
+        109
+      ],
+      "outside_first_arc": [
+        109
+      ],
+      "score": {
+        "time": "13/128",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          40
+        ],
+        "status": "valid"
+      }
+    }
+  ],
+  "challenger_abstention": {
+    "weights": [
+      260,
+      264,
+      1567,
+      2101
+    ],
+    "included_in_cohorts": false,
+    "escape_status": "abstain",
+    "safe_skipped_directions": [
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        10,
+        -1
+      ],
+      [
+        12,
+        -1
+      ]
+    ],
+    "first_skipped": {
+      "q": 3,
+      "sign": 1,
+      "anchor": "1/3",
+      "time": "1409/4224",
+      "escape": "1/4224",
+      "colliders": [
+        264,
+        1827,
+        2091,
+        2361,
+        2625
+      ],
+      "room": "13/188736",
+      "room_speeds": [
+        3932
+      ],
+      "outside_first_arc": [
+        3668,
+        3928,
+        3932,
+        4192
+      ],
+      "score": {
+        "time": "1409/4224",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          264
+        ],
+        "status": "valid"
+      }
+    }
+  }
+}
