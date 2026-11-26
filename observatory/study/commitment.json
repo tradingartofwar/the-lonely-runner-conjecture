@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "raw_seed_sha256": "10d8882313145053e44f4ae71433b2e2118d26dd1a0ca12344727503d7aee290",
+  "panel_sha256": "a259333da4d9b039689bd6560d223c3c502ad554bcbb8ee73ce0a2fbc1e52eee",
+  "recipe": {
+    "generator": "experiments/subset-sum-prediction/generate.py:draw_weights",
+    "pattern": "stretch_middle",
+    "ordered_bands": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        17,
+        64
+      ],
+      [
+        65,
+        256
+      ]
+    ],
+    "accept_per_band": 3,
+    "rng": "CPython random.Random(int.from_bytes(raw_32_byte_seed, 'big')), one stream",
+    "reject": [
+      "gcd of weights exceeds one",
+      "weights in exclusions.json",
+      "repeat accepted weights"
+    ],
+    "panel_encoding": "sorted keys, compact JSON, UTF-8, trailing LF; arrays retain draw order",
+    "exclusion_scope": "Versioned 60-case panel, both complement controls, 15 three-prefix controls, consecutive-speed control. Also check speed sets in the 240-case one-time panel, 2048 count-invariant random lineups for n=16, and integer arrays in prior experiment JSON; retain four-weight decompositions only when all 15 physical speeds coincide."
+  },
+  "recipe_sha256": "e2043d198c9fc0ddf18548ea40be54c1abc45562caf519fdcf401919c46e7981",
+  "sampling_code_sha256": "899787517752d520630c6532ecd6f77b618426d4fa38b0b01c58a1f284dfb698",
+  "original_generator_sha256": "9e2d5701b771ba0b52273a6e34db2d91754134c05fa275fe871ebd529d3ed8c0",
+  "exclusions_sha256": "73a1f068756ecebc28d17eb90c44c612c54cbe5d3180feb83a44a0459d5fe7de",
+  "excluded_lineups": 80
+}
