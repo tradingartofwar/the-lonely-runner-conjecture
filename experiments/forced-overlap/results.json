@@ -1,0 +1,535 @@
+{
+  "handoff_controls": 8,
+  "pair_size_audit_unordered_cases": 20828,
+  "four_speed_box": {
+    "tuples": {
+      "all": {
+        "examined": 1325,
+        "base": 1225,
+        "three_residues": 1249,
+        "point_one": 867,
+        "three_or_point": 1305,
+        "tree": 1325,
+        "exact": 1325
+      },
+      "internal": {
+        "examined": 1325,
+        "base": 937,
+        "three_residues": 989,
+        "point_one": 680,
+        "three_or_point": 1133,
+        "tree": 1289,
+        "exact": 1290
+      },
+      "crossing": {
+        "examined": 1263,
+        "base": 981,
+        "three_residues": 1025,
+        "point_one": 704,
+        "three_or_point": 1146,
+        "tree": 1263,
+        "exact": 1263
+      },
+      "external": {
+        "examined": 625,
+        "base": 212,
+        "three_residues": 247,
+        "point_one": 201,
+        "three_or_point": 351,
+        "tree": 578,
+        "exact": 589
+      }
+    },
+    "grids": {
+      "all": {
+        "examined": 7763,
+        "base": 2603,
+        "three_residues": 2902,
+        "point_one": 2418,
+        "three_or_point": 4234,
+        "tree": 6697,
+        "exact": 6807
+      },
+      "internal": {
+        "examined": 4142,
+        "base": 1500,
+        "three_residues": 1625,
+        "point_one": 1330,
+        "three_or_point": 2293,
+        "tree": 3365,
+        "exact": 3429
+      },
+      "crossing": {
+        "examined": 4987,
+        "base": 1732,
+        "three_residues": 1924,
+        "point_one": 1493,
+        "three_or_point": 2743,
+        "tree": 4477,
+        "exact": 4549
+      },
+      "external": {
+        "examined": 680,
+        "base": 226,
+        "three_residues": 266,
+        "point_one": 203,
+        "three_or_point": 372,
+        "tree": 625,
+        "exact": 636
+      }
+    },
+    "cost": {
+      "generating_pairs": 7950,
+      "grids": 7763,
+      "class_sizes": 22107,
+      "named_residue_locations": 23289,
+      "named_class_tests_without_symmetry": 66321,
+      "pair_sizes": 20991,
+      "full_grid_locations": 124154,
+      "full_grid_class_tests_without_short_circuit": 362017
+    },
+    "number_of_tied_minimizers_up_to_sign": {
+      "1": 846,
+      "2": 328,
+      "3": 128,
+      "4": 19,
+      "5": 2,
+      "6": 1,
+      "7": 1
+    },
+    "among_internal_exact_failures": {
+      "all": {
+        "base": 35,
+        "three_residues": 35,
+        "point_one": 9,
+        "three_or_point": 35,
+        "tree": 35,
+        "exact": 35
+      },
+      "internal": {
+        "base": 0,
+        "three_residues": 0,
+        "point_one": 0,
+        "three_or_point": 0,
+        "tree": 0,
+        "exact": 0
+      },
+      "crossing": {
+        "base": 34,
+        "three_residues": 35,
+        "point_one": 9,
+        "three_or_point": 35,
+        "tree": 35,
+        "exact": 35
+      },
+      "external": {
+        "base": 11,
+        "three_residues": 16,
+        "point_one": 0,
+        "three_or_point": 16,
+        "tree": 35,
+        "exact": 35
+      }
+    }
+  },
+  "sixteen_runner_panel": [
+    {
+      "shape": "j^2",
+      "shift": 1,
+      "speeds": [
+        2,
+        5,
+        10,
+        17,
+        26,
+        37,
+        50,
+        65,
+        82,
+        101,
+        122,
+        145,
+        170,
+        197,
+        226
+      ],
+      "grids": {
+        "examined": 95,
+        "base": 11,
+        "three_residues": 11,
+        "point_one": 4,
+        "three_or_point": 11,
+        "tree": 22,
+        "exact": 94
+      },
+      "cost": {
+        "generating_pairs": 105,
+        "grids": 95,
+        "class_sizes": 1197,
+        "named_residue_locations": 285,
+        "named_class_tests_without_symmetry": 3591,
+        "pair_sizes": 7203,
+        "full_grid_locations": 15969,
+        "full_grid_class_tests_without_short_circuit": 216050
+      },
+      "physical_witness": {
+        "pair": [
+          2,
+          5
+        ],
+        "d": 7,
+        "a": 1,
+        "distances_in_numerator_units": [
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          1,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "shape": "j^2",
+      "shift": 5,
+      "speeds": [
+        6,
+        9,
+        14,
+        21,
+        30,
+        41,
+        54,
+        69,
+        86,
+        105,
+        126,
+        149,
+        174,
+        201,
+        230
+      ],
+      "grids": {
+        "examined": 95,
+        "base": 3,
+        "three_residues": 3,
+        "point_one": 5,
+        "three_or_point": 8,
+        "tree": 15,
+        "exact": 87
+      },
+      "cost": {
+        "generating_pairs": 105,
+        "grids": 95,
+        "class_sizes": 1216,
+        "named_residue_locations": 285,
+        "named_class_tests_without_symmetry": 3648,
+        "pair_sizes": 7371,
+        "full_grid_locations": 16729,
+        "full_grid_class_tests_without_short_circuit": 226847
+      },
+      "physical_witness": {
+        "pair": [
+          6,
+          14
+        ],
+        "d": 20,
+        "a": 3,
+        "distances_in_numerator_units": [
+          2,
+          7,
+          2,
+          3,
+          10,
+          3,
+          2,
+          7,
+          2,
+          5,
+          2,
+          7,
+          2,
+          3,
+          10
+        ]
+      }
+    },
+    {
+      "shape": "j^2+3j",
+      "shift": 1,
+      "speeds": [
+        5,
+        11,
+        19,
+        29,
+        41,
+        55,
+        71,
+        89,
+        109,
+        131,
+        155,
+        181,
+        209,
+        239,
+        271
+      ],
+      "grids": {
+        "examined": 91,
+        "base": 10,
+        "three_residues": 10,
+        "point_one": 2,
+        "three_or_point": 10,
+        "tree": 22,
+        "exact": 91
+      },
+      "cost": {
+        "generating_pairs": 105,
+        "grids": 91,
+        "class_sizes": 1109,
+        "named_residue_locations": 273,
+        "named_class_tests_without_symmetry": 3327,
+        "pair_sizes": 6507,
+        "full_grid_locations": 19724,
+        "full_grid_class_tests_without_short_circuit": 261094
+      },
+      "physical_witness": {
+        "pair": [
+          5,
+          11
+        ],
+        "d": 16,
+        "a": 1,
+        "distances_in_numerator_units": [
+          5,
+          5,
+          3,
+          3,
+          7,
+          7,
+          7,
+          7,
+          3,
+          3,
+          5,
+          5,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "shape": "j^2+3j",
+      "shift": 5,
+      "speeds": [
+        9,
+        15,
+        23,
+        33,
+        45,
+        59,
+        75,
+        93,
+        113,
+        135,
+        159,
+        185,
+        213,
+        243,
+        275
+      ],
+      "grids": {
+        "examined": 91,
+        "base": 8,
+        "three_residues": 8,
+        "point_one": 6,
+        "three_or_point": 10,
+        "tree": 17,
+        "exact": 91
+      },
+      "cost": {
+        "generating_pairs": 105,
+        "grids": 91,
+        "class_sizes": 1135,
+        "named_residue_locations": 273,
+        "named_class_tests_without_symmetry": 3405,
+        "pair_sizes": 6703,
+        "full_grid_locations": 20452,
+        "full_grid_class_tests_without_short_circuit": 271620
+      },
+      "physical_witness": {
+        "pair": [
+          9,
+          15
+        ],
+        "d": 24,
+        "a": 2,
+        "distances_in_numerator_units": [
+          6,
+          6,
+          2,
+          6,
+          6,
+          2,
+          6,
+          6,
+          10,
+          6,
+          6,
+          10,
+          6,
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "shape": "j^3",
+      "shift": 1,
+      "speeds": [
+        2,
+        9,
+        28,
+        65,
+        126,
+        217,
+        344,
+        513,
+        730,
+        1001,
+        1332,
+        1729,
+        2198,
+        2745,
+        3376
+      ],
+      "grids": {
+        "examined": 104,
+        "base": 0,
+        "three_residues": 0,
+        "point_one": 1,
+        "three_or_point": 1,
+        "tree": 3,
+        "exact": 100
+      },
+      "cost": {
+        "generating_pairs": 105,
+        "grids": 104,
+        "class_sizes": 1418,
+        "named_residue_locations": 312,
+        "named_class_tests_without_symmetry": 4254,
+        "pair_sizes": 9028,
+        "full_grid_locations": 200079,
+        "full_grid_class_tests_without_short_circuit": 2793646
+      },
+      "physical_witness": {
+        "pair": [
+          2,
+          28
+        ],
+        "d": 30,
+        "a": 1,
+        "distances_in_numerator_units": [
+          2,
+          9,
+          2,
+          5,
+          6,
+          7,
+          14,
+          3,
+          10,
+          11,
+          12,
+          11,
+          8,
+          15,
+          14
+        ]
+      }
+    },
+    {
+      "shape": "j^3",
+      "shift": 5,
+      "speeds": [
+        6,
+        13,
+        32,
+        69,
+        130,
+        221,
+        348,
+        517,
+        734,
+        1005,
+        1336,
+        1733,
+        2202,
+        2749,
+        3380
+      ],
+      "grids": {
+        "examined": 104,
+        "base": 3,
+        "three_residues": 3,
+        "point_one": 2,
+        "three_or_point": 3,
+        "tree": 7,
+        "exact": 104
+      },
+      "cost": {
+        "generating_pairs": 105,
+        "grids": 104,
+        "class_sizes": 1419,
+        "named_residue_locations": 312,
+        "named_class_tests_without_symmetry": 4257,
+        "pair_sizes": 9047,
+        "full_grid_locations": 200911,
+        "full_grid_class_tests_without_short_circuit": 2804374
+      },
+      "physical_witness": {
+        "pair": [
+          6,
+          13
+        ],
+        "d": 19,
+        "a": 1,
+        "distances_in_numerator_units": [
+          6,
+          6,
+          6,
+          7,
+          3,
+          7,
+          6,
+          4,
+          7,
+          2,
+          6,
+          4,
+          2,
+          6,
+          2
+        ]
+      }
+    }
+  ],
+  "exploratory_grid_controls": {
+    "paired_grid_controls": 2,
+    "sparse_counting_family_controls": 32
+  },
+  "exploratory_dyadic_controls": {
+    "added_speeds": 4111,
+    "finite_prefix_exact_maximum_controls": 10
+  }
+}

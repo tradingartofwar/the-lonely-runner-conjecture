@@ -1,0 +1,7 @@
+# One fixed core and any added positive integer speed
+
+Exploratory follow-up, November 24, 2026. The seventeen-runner panel has been examined. Before computing all-reference tail cutoffs or remaining cases, select its seed-zero short-clock challenge, the first core by the existing protocol. Include its stationary runner, giving 16 fixed physical speeds. Ask whether each of the 17 runners has clearance 1/17 for every added positive integer speed V distinct from them. Times may depend on the runner and V.
+
+For each old reference r independently find and verify one rational time of clearance 1/16 on all other fixed runners. Compute the 1/17 pair-width cutoff H_r from distinct positive relative speeds, and the largest relative speed m_r. For new V above every fixed speed, V-r is fastest and the endpoint proof applies whenever V-r>m_r and V-r>=H_r. For the new runner itself try t=1/(2V-M), where M is the largest fixed speed and the smallest is zero. Choose the smallest integer B simultaneously meeting these stated sufficient inequalities, V>M, and (V-M)/(2V-M)>=1/17. The argument above B must be symbolic.
+
+Check every positive integer V<B outside the fixed set and all seventeen choices of reference. Save an exact rational time for each finite case and verify every time on the original signed differences. Report any missing premise, failed case or resource limit; do not substitute a different core. Summarize the finite range, the infinite tail, and the reason independent mathematical review is still required.

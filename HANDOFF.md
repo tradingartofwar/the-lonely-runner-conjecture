@@ -1,5 +1,31 @@
 # Lonely Runner — research handoff
 
+**November 24, 2026 — [Forced overlap on candidate times](notes/Lonely_Runner_Forced_Overlap_Handoff_2026-11-24.md).** This continuation connects the earlier duration studies to pair-sum grids, including isolated equality witnesses. It gives an exact counting rule, a three-speed counterexample to its sufficiency, and the original four-speed test. [Results and reproduction](experiments/forced-overlap/RESULTS.md) document the completed test, the 16-runner comparison, an infinite family that defeats sparse overlap counts, and the next proof question. The [dyadic extension](experiments/forced-overlap/DYADIC_EXTENSION.md) gives a sharp distance for all powers of two with one additional integer speed.
+
+**November 24 continuation.** A [parity argument for two arbitrary added speeds](experiments/forced-overlap/TWO_EXTRAS.md) gives a proof candidate for a sharp uniform distance of $1/6$ with the entire dyadic core. It explains the denominator required by the hardest bounded case and identifies a necessary change of witness for three extras.
+
+**November 24 implementation.** The Two-Endpoint Fast-Runner Lemma now has an exact [endpoint-pair test and reproducible study](experiments/forced-overlap/ENDPOINT_RESULTS.md). Integer endpoint positions improve the cutoff for 117 of 131 tested cores and explain exactly when the rational cutoff improves.
+
+**Working paper for independent review.** [When a Fast Runner Can Block Both Endpoints](experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.pdf) gives the pair-level equivalence, the sufficient full-core rule, and a fresh holdout with a rational-time benchmark. [Accessible manuscript](experiments/forced-overlap/paper/Two_Endpoint_Fast_Runner.md) · [Archived counts](experiments/forced-overlap/same_pass_results.json)
+
+**17-runner transfer.** [Frozen comparison and fixed-core proof candidate](experiments/forced-overlap/SEVENTEEN_RESULTS.md). The result covers all 17 references for one fixed set of 16 speeds and any distinct positive integer added speed. The finite certificates and infinite-tail intervals can be checked with Python's standard library.
+
+**Eighteen runners with two free speeds.** Keeping the same sixteen speeds, every pair of distinct new positive integer speeds gives a configuration in which all eighteen runners have a lonely time at distance $1/18$. This computer-assisted proof candidate combines a bound for large speed gaps, an explicit time for nearly tied fast runners, and 298,188 finite role checks. [Proof, certificate, and standalone verifier](experiments/forced-overlap/EIGHTEEN_RESULTS.md)
+
+**Transfer to a second sixteen-speed core.** With fixed speeds $0,1,\ldots,14,105$, all eighteen references again have a lonely time for any two distinct new positive integer speeds. The old clock fails on a named pair. Balancing the relative motion repairs it and gives a diameter bound that can be tested on other cores. [Proof, negative control, and verifier](experiments/forced-overlap/EIGHTEEN_TRANSFER.md)
+
+**Working paper for review.** [Two-Endpoint Fast-Runner Lemma](experiments/forced-overlap/paper/runner-additions/Fast_Runner_Extensions.pdf) brings the endpoint lemma, the 17-runner family, both 18-runner families and the failed clock into one manuscript. The [Overleaf project and offline tests](experiments/forced-overlap/paper/runner-additions/Lonely_Runner_Overleaf.zip) contain the editable source, exact certificates, archived inputs and reproduction commands.
+
+**Follow-up to Proposition 2, November 24.** The [diameter-420 research note](experiments/forced-overlap/NEWCOMER_DIAMETER_420.md) gives a proof candidate for the two added runners on any sixteen-speed integer core of diameter $M\le420$ when $y>x\ge4M$. It includes a common time for both newcomers at the paper’s $M=158$ boundary and exact checks at equality. Independent review is open.
+
+**Nineteen runners with one free speed.** For the fixed eighteen speeds $0,1,\ldots,14,105,420,480$, the [19-runner proof candidate and exact checks](experiments/forced-overlap/NINETEEN_FIXED_CORE.md) cover every admissible positive integer addition in all nineteen roles. The question for three freely chosen speeds over the sixteen-speed core remains open.
+
+**Nineteen runners with two free speeds.** For the seventeen fixed speeds $0,1,\ldots,14,105,420$, the [two-addition proof candidate and verifier](experiments/forced-overlap/NINETEEN_TWO_ADDITIONS.md) cover all nineteen references for every pair of distinct positive additions outside the core. Dropping the fixed 420 also gives a three-addition result when all three speeds are at least 1680 and successive gaps are at least 420. Arbitrary triples over the sixteen-speed core remain open.
+
+**Three fast additions, including arbitrarily close speeds.** For $Q=\{0,1,\ldots,14,105\}$, the [19-runner fast-triples proof candidate](experiments/forced-overlap/NINETEEN_FAST_TRIPLES.md) covers every triple $1680\le u<v<w$ with no gap restriction. The close-speed certificate uses 46 rational centers, and duration estimates cover the unbounded gaps. The argument for an individual newcomer also allows its two fellow newcomers to be slower.
+
+**Nineteen runners with three completely free additions.** The [full three-addition proof candidate and audit](experiments/forced-overlap/NINETEEN_THREE_ADDITIONS.md) cover every reference in $Q\cup\{u,v,w\}$ for $Q=\{0,1,\ldots,14,105\}$ and every admissible positive integer triple. A blocking-duration argument reduces the remaining references to finite branches. The audit checks all candidate lists by direct integration and all 2,416,526 terminal witnesses against their opponents. The sixteen-speed core remains prescribed. Independent review is pending.
+
 **Prepared:** September 24, 2026
 
 **Repository:** https://github.com/tradingartofwar/the-lonely-runner-conjecture  

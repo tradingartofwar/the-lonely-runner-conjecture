@@ -1,0 +1,173 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[margin=0.92in,top=0.84in,bottom=0.84in]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=teal]{hyperref}
+\hypersetup{pdftitle={Two-Endpoint Fast-Runner Lemma},pdfauthor={Troy Vance Williams}}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}[lemma]{Proposition}
+\newtheorem*{claim}{Main result (computer-assisted proof candidate)}
+\newcommand{\dist}[1]{\left\lVert #1\right\rVert}
+\newcommand{\snap}{https://github.com/tradingartofwar/the-lonely-runner-conjecture/tree/b693d00938d0f320eab9c8c0349c08e8bb8b10cb}
+\setlength{\parindent}{1.15em}
+\setlength{\parskip}{2pt}
+\raggedbottom
+\begin{document}
+\begin{center}
+{\LARGE\bfseries Two-Endpoint Fast-Runner Lemma\par}
+\vspace{7pt}
+{\large Exact certificates for two families of 17 and 18 lonely runners\par}
+\vspace{12pt}
+{\large Troy Vance Williams}\\
+Lonely Runner Project\\
+Working paper for independent review \(\cdot\) November 24, 2026
+\end{center}
+
+\begin{abstract}\noindent
+Given a group of runners for which lonely times are known, what happens when one or two further speeds are prescribed? We give an endpoint test for whether one faster runner can block an entire safe interval. For a specified core of sixteen integer speeds, we give exact certificates that every runner has a lonely time after adding any one or any two distinct positive integer speeds outside the core. We obtain the two-addition result for a second core consisting of fifteen consecutive speeds and one outlier. This second test exposes a failure of a previously chosen time and leads to a modified time valid for both new runners under a diameter bound. The proofs combine interval estimates over unbounded speeds with finite certificates checked by a standalone program. The choice of sixteen fixed speeds remains a hypothesis of the all-runner conclusions.
+\end{abstract}
+
+\section{Problem and results}
+Runners start together on the unit circle. Write \(\dist{z}=\min_{k\in\mathbb Z}|z-k|\). For a set \(S\) of \(n\) distinct integer speeds, runner \(r\in S\) is lonely at time \(t\) if \(\dist{(s-r)t}\ge 1/n\) for every \(s\in S\setminus\{r\}\). Times can differ between runners. Our \(n\) counts the reference runner. All computations use exact fractions and allow equality. Define
+\[
+\begin{split}
+P&=\{0,11,13,16,17,20,28,38,39,42,43,52,56,60,63,70\},\\
+Q&=\{0,1,\ldots,14,105\}.
+\end{split}
+\]
+\begin{claim}
+Every runner in \(P\cup\{v\}\) has a lonely time at clearance \(1/17\), for every positive integer \(v\notin P\). For either \(F=P\) or \(F=Q\), every runner in \(F\cup\{x,y\}\) has a lonely time at clearance \(1/18\), for all positive integers \(x<y\) outside \(F\). This includes added speeds lying between fixed speeds.
+\end{claim}
+
+Kravitz studies how to adjoin one very fast runner, starting from an existing time with clearance to spare \cite[\S6, especially Proposition 6.1]{kravitz}. We use this idea and track the two ends of the safe interval. The survey of Perarnau and Serra gives broader context \cite{survey}. Allikvere's preprint treats fourteen and fifteen runners \cite{allikvere}. Our family certificates verify the required core intervals directly. We make no priority claim for the endpoint or clock formulations.
+
+\newpage
+\section{The two-endpoint fast-runner lemma}
+Fix \(n\in\{17,18\}\), a stationary reference, a retained set \(C\) of \(n-2\) distinct positive integer relative speeds, and an added integer speed \(V>\max C\). Put \(\delta=1/n\), \(\sigma=1/(n-1)\), and \(h=\sigma-\delta\). Suppose \(C\) has a time \(t_0\) at clearance \(\sigma\). A \emph{strong component} is a connected component \([a,b]\) of the times safe for \(C\) at \(\delta\) containing such a time. Work on the real line, with times identified modulo one.
+
+\begin{lemma}[Two-endpoint fast-runner lemma]\label{lem:width}
+Let \(L<M\) be the two largest speeds in \(C\). If
+\[
+V\ \ge\ \frac{2(n-1)LM}{L+M},
+\]
+every strong component contains a time safe for the reference after \(V\) is added.
+\end{lemma}
+\begin{proof}
+If distinct speeds \(u,w\) set the left and right endpoints, then
+\(t_0-a\ge h/u\) and \(b-t_0\ge h/w\), since the distance functions are Lipschitz with constants \(u,w\). Thus \(b-a\ge h(1/L+1/M)\). If the same speed \(u\) sets both ends, the width is \((1-2\delta)/u\). In either case the component is at least as wide as a single open blocking pass of \(V\), whose width is \(2\delta/V\). A closed interval of equal length already contains a safe endpoint.
+\end{proof}
+
+\paragraph{Using the positions of both endpoints.}
+Order two distinct candidate speeds \(u<w\). Reflection exchanges their endpoint roles, so take \(u\) on the left. For integers \(i,j\) write
+\[
+a=\frac{ni+1}{nu},\quad b=\frac{nj-1}{nw},\quad
+S=u+w,\quad g=\gcd(u,w),\quad D=nuw(b-a).
+\]
+The slack bound gives \(D\ge S/(n-1)\), and \(D+S=n(uj-wi)\). Consequently the possible widths have the form
+\[
+D=D_0+ng\ell,\qquad D_0=ng\left\lceil\frac{S}{(n-1)g}\right\rceil-S,\qquad \ell\ge0 .
+\]
+Only \(VD<2uw\) can give a trapped component. For each such width, solve \(uj-wi=(D+S)/n\) once. All placements translate \((a,b)\) by multiples of \(1/g\). Put \(q=g/\gcd(g,V)\). A placement fits in one open pass precisely when
+\begin{equation}\label{eq:samepass}
+q(Vb-\delta)< k <q(Va+\delta)\quad\text{for some }k\in\mathbb Z .
+\end{equation}
+Indeed, the possible integer pass centers relative to one placement lie in \((1/q)\mathbb Z\). If every candidate pair and width fails \eqref{eq:samepass}, no strong component of the full core can be trapped. The width-only column on page~\pageref{sec:data} uses \(D_0\); the same-pass column also checks \eqref{eq:samepass}. A compatible pair can be obstructed by a third speed. Finding such a pair leaves the full configuration undecided.
+
+\paragraph{A 17-runner control.}
+For speeds \(1,\ldots,15\), the component containing \(7/16\) is \([52/119,67/153]\). Speeds 7 and 9 set its endpoints. Speed 96 blocks it in a single pass. At speed 126 the blocking width equals the component width, and an endpoint survives. A positive example is \(P\setminus\{0\}\) with added speed 84: the same-pass test certifies this case, and \(1/187\) is a time for reference zero. Speed 11 is then exactly \(1/17\) of a lap away. Every reduced denominator at most 17 fails on this core since each divides at least one retained speed.
+
+\newpage
+\section{Certifying all reference runners}\label{sec:cert}
+To check that \([a,b]\) is safe for a given reference \(r\), for each fixed opponent \(s\) set \(u=|s-r|\). Verify that \([ua,ub]\) lies in some \([k+\delta,k+1-\delta]\). This certifies every time in the interval. At a recorded rational time \(p/q\), the individual check is simply that the residue of \((s-r)p\) modulo \(q\) lies between \(q/n\) and \((n-1)q/n\).
+
+\paragraph{One addition to \(P\).}
+For each \(r\in P\), the certificate gives a \(1/16\)-safe time and a surrounding closed interval of width \(L_r>0\) safe at \(1/17\). For all \(v\ge391\), the checker verifies the sufficient bound \((v-r)L_r\ge2/17\) at the lower endpoint \(v=391\). Runner \(v\) can use \(t=1/(2v-70)\): its phases against \(P\) lie between \((v-70)/(2v-70)\) and \(v/(2v-70)\), both inside the safe arc when \(15v\ge16\cdot70\). The frozen test used the more conservative cutoff 964 and checked all 948 admissible speeds below it in all seventeen roles. The overlap with the shorter tail supplies a further check.
+
+\paragraph{Two additions, both large.}
+Write \(F=P\) or \(Q\), \(M=\max F\), \(x<y\), \(d=y-x\), \(\delta=1/18\). On a time interval of length \(L\), a speed \(z>0\) spends between \(\beta(L-1/z)\) and \(\beta(L+1/z)\) in a phase arc of length \(\beta\). Split into complete periods and one remaining piece. That piece contributes at most one period's occupation of the arc. For each fixed reference \(r\in F\), let \(L_r\) be the width of its certified \(1/18\)-safe interval against the other fixed runners. The two additions leave some of this interval clear whenever
+\begin{equation}\label{eq:fixed}
+7L_r>\frac1{x-r}+\frac1{y-r},\qquad x>M .
+\end{equation}
+For \(R=x\) or \(R=y\), use \(0\le t\le 1/(2M)\). Fixed runners have phases in \([0,1/2]\). If \(R\) has phase in \([1/2+\delta,1-\delta]\), it clears them all. Subtract the time blocked by the other newcomer. A lower bound on the surviving duration is
+\begin{equation}\label{eq:duration}
+\frac1{18}\left(\frac5{2M}-\frac7R-\frac2d\right).
+\end{equation}
+This is positive for \(R\ge6M\), \(d\ge\lceil12M/7\rceil\). For smaller gaps on these two cores choose \(q\in\{2,\ldots,7\}\) with \(q\nmid d\). At \(t=1/q+1/(2qR)\) the fixed runners are clear by at least \((1-M/R)/(2q)\), and the other added runner by at least \(\dist{d/q}-d/(2qR)\). Here \(d<12M/7\), \(M\le105\); such \(q\) exists since the least common multiple is 420. The bounds are at least \(5/84\) and \(6/49\), respectively. With the checked intervals in \eqref{eq:fixed}, this proves the primary tails starting at \(K=420\) for \(P\) and \(630\) for \(Q\).
+
+\paragraph{The remaining speeds.}
+For each \(x<K\) outside \(F\) the certificate gives \(B_x>m=\max(M,x)\) and safe intervals of width \(L_{x,r}\) for every \(r\in F\cup\{x\}\). Verify \((B_x-r)L_{x,r}\ge1/9\) and \(16B_x\ge17m\). For all \(y\ge B_x\) one blocking pass cannot cover the old runner's interval, and the new runner uses \(1/(2y-m)\). All remaining admissible \(x<y<B_x\) are verified individually on the signed physical speeds. These disjoint ranges exhaust both additions.
+
+For a finite case and an old reference, the checker takes a stored interval and finds a lap of the added relative speed whose closed safe arc meets that interval. It then checks the resulting time directly against all seventeen opponents. For reference \(y\) it uses the formula above when available, or a stored rational witness. Thus a reviewer can verify the compressed certificate without trusting the program that discovered the intervals.
+
+\newpage
+\section{A failed clock and its repair}
+The second core was chosen to test whether the first proof could survive a different arrangement of speeds. The change to \(Q=\{0,\ldots,14,105\}\) places an outlier on the seventh-denominator grid. The protocol specified the following negative control in advance.
+
+\paragraph{The control.}
+Let \(x=420\), \(y=480\), \(R=x\). The gap is \(60\), and the first integer \(q\) between 2 and 7 not dividing it is 7. Reusing the first core's clock gives
+\[
+t_0=\frac17+\frac{1}{2\cdot7\cdot420}=\frac{841}{5880}.
+\]
+Runner 105 is closest to 420 at this time. Their circular distance is \(3/56\), short of \(1/18\) by \(1/504\). The frozen test covers the configuration through its smaller-\(x\) case. The failure concerns this particular clock.
+
+\begin{proposition}[Balancing the clock shift]\label{prop:balance}
+Let sixteen distinct integer fixed speeds lie in \([0,M]\) with extremes \(0,M\), and let \(M\le157\). For integer added speeds \(y>x\ge4M\), each of the two new runners has a time at distance at least \(1/18\) from all seventeen opponents.
+\end{proposition}
+\begin{proof}
+For \(d>\lfloor 8M/3\rfloor\), \eqref{eq:duration} is positive. Otherwise \(1\le d\le419\). Take \(2\le q\le7\) with \(q\nmid d\). At \(1/q\) each relative phase of \(R\in\{x,y\}\) against the fixed speeds is a multiple of \(1/q\). After a positive shift \(\varepsilon\), its displacement lies between \((R-M)\varepsilon\) and \(R\varepsilon\). Balance the two possible edge losses by solving
+\[
+(R-M)\varepsilon=1/q-R\varepsilon,\qquad
+t=\frac1q+\frac1{q(2R-M)}.
+\]
+The resulting clearance from each fixed runner is at least
+\((R-M)/(q(2R-M))\ge3/49\). Against the other newcomer the clearance is at least
+\[
+\dist{d/q}-\frac{d}{q(2R-M)}
+\ \ge\ \frac17\left(1-\frac8{21}\right)=\frac{13}{147}.
+\]
+Both exceed \(1/18\).
+\end{proof}
+
+For the failed control the new time is \(736/5145\); its exact minimum distance is \(3/49\), attained against runner 105. This refinement was developed after the primary protocol was fixed. For \(Q\) the fixed-reference intervals also satisfy \eqref{eq:fixed} at \(x=420\), so the analytic range starts at 420 under the refinement; the original certificate retains all cases prescribed at cutoff 630.
+
+\paragraph{Where the proof stops.}
+Proposition~\ref{prop:balance} concerns the two newcomers. Applying it to all eighteen still requires an interval for each old reference and checks at smaller speeds. At \(M=158\), \(R=632\), \(d=420\), all six candidate denominators divide the gap, while the parentheses in \eqref{eq:duration} equal \(-1/66360\). This identifies an exact boundary case for the argument at cutoff \(4M\). It leaves the configuration itself undecided by that argument.
+
+\newpage
+\section{Numerical evidence and reproduction}\label{sec:data}
+\paragraph{Selected-reference experiments.}
+For each retained core with maximum \(M_C\) we verified a \(1/(n-1)\) time before testing every \(M_C<V\le(n-1)M_C\). A successful width or same-pass test certifies a witness in every strong component. An inconclusive test leaves the question open. A short clock checks reduced denominators up to \(n\) for one witness. Exact recovery checks the resulting time on every original relative speed.
+\begin{center}\small
+\begin{tabular}{lrrrrr}\toprule
+Panel & Inputs & Width & Same pass & Short clock & Verified\\\midrule
+17 runners, 154 cores & 53,805 & 11,493 & 44,092 & 36,371 & 53,805\\
+18 runners, 8 sparse cores & 10,016 & 2,045 & 6,933 & 9,713 & 10,016\\
+18 runners, 8 challenge cores & 11,744 & 2,187 & 7,056 & 0 & 11,744\\\bottomrule
+\end{tabular}
+\end{center}
+The 18-runner challenge cores were designed to defeat short clocks. In total, the same-pass test certified 13,989 of 21,760 cases at 18 runners. At 17 runners, a separate all-reference panel checked 32 groups in all 544 roles; the same-pass rule alone certified 47 roles. These counts describe the chosen inputs. The pair test also agreed with exact interval intersection on all 4,060 triples \(1\le u<w<V\le30\) at each of the two clearances.
+
+\paragraph{All-reference family certificates.}
+One role check verifies one runner against every opponent. Infinite coverage follows from the bounds on page~\pageref{sec:cert} together with these finite counts.
+\begin{center}\small
+\begin{tabular}{lrrrr}\toprule
+Family & Primary cutoff & Smaller \(x\) tails & Finite inputs & Role checks\\\midrule
+\(P+\) one speed, 17 runners & 964 & --- & 948 & 16,116\\
+\(P+\) two speeds, 18 runners & 420 & 404 & 16,566 & 298,188\\
+\(Q+\) two speeds, 18 runners & 630 & 614 & 30,386 & 546,948\\\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Reproduction.}
+Unzip the \href{https://raw.githubusercontent.com/tradingartofwar/the-lonely-runner-conjecture/a956325b709e41e25067ff742b215ca2a2dc1f3a/experiments/forced-overlap/paper/runner-additions/Runner_Addition_Tests.zip}{archived test package}. Run \texttt{python reproduce.py} with Python 3.11 or later. This checks all three certificates with the standard library. Add \verb|--panels| to regenerate and compare both panel outputs, or \verb|--regenerate| to reconstruct the certificates. The package contains code, compressed certificates, the 17-runner witness ledger, the frozen protocols and archived results. The \href{\snap}{versioned research snapshot} identifies the underlying files. Independent mathematical and priority review remain open.
+
+\paragraph{Contributions.}
+Troy Vance Williams directed the investigation and the transfer tests. AI assistance contributed to the derivations, software implementation, computational checks and drafting.
+
+\begin{thebibliography}{3}\small
+\bibitem{kravitz} N. Kravitz. \emph{Barely lonely runners and very lonely runners: a refined approach to the Lonely Runner Problem}. Combinatorial Theory 1 (2021), paper 17. \href{https://doi.org/10.5070/C61055383}{doi:10.5070/C61055383}.
+\bibitem{survey} G. Perarnau and O. Serra. \emph{The Lonely Runner Conjecture turns 60}. Computer Science Review 58 (2025), 100798. \href{https://arxiv.org/abs/2409.20160}{arXiv:2409.20160}.
+\bibitem{allikvere} J. Allikvere. \emph{Fourteen and fifteen lonely runners}. Preprint, September 2026. \href{https://arxiv.org/abs/2609.02604v2}{arXiv:2609.02604v2}.
+\end{thebibliography}
+\end{document}
