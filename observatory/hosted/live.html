@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#18352f">
+  <meta name="description" content="Follow the Observatory’s current research question, worker returns and evidence.">
+  <title>Research desk · Lonely Runner Observatory</title>
+  <meta name="referrer" content="no-referrer">
+  <script async src="/live.js"></script>
+  <link rel="stylesheet" href="/live.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to research desk</a>
+  <header class="mast">
+    <div class="wrap mast-inner">
+      <a class="brand" aria-label="Lonely Runner Observatory home" href="/">
+        <svg aria-hidden="true" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="17.5" stroke="currentColor" stroke-width="1.5"/><circle cx="22" cy="22" r="11.5" stroke="currentColor" stroke-width="1.5"/><circle cx="22" cy="22" r="5" fill="currentColor"/><circle cx="34.4" cy="9.6" r="4.5" fill="#c57153" stroke="#f8f8f0" stroke-width="1.7"/></svg>
+        <span>Lonely Runner<small>Observatory</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary"><a href="/" aria-current="page">Research desk</a><a href="/archive/">Archive <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <div class="feed-row"><span id="connection" class="indicator" role="status">Connecting</span><span id="feed-time" class="stamp"></span><button type="button" id="refresh">Refresh</button></div>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <aside class="box import-plan" id="allowance-import" aria-labelledby="import-heading" hidden>
+      <h2 id="import-heading">Import WSL plan reading</h2>
+      <p id="import-description"></p><p id="import-windows" class="meta"></p>
+      <button id="confirm-import" type="button" hidden>Save reading</button>
+      <button id="cancel-import" type="button" hidden>Discard</button>
+      <p id="import-message" role="status"></p>
+    </aside>
+    <section class="question" aria-labelledby="question">
+      <div class="question-copy">
+        <p class="label">Current research question</p>
+        <h1 id="question">Waiting for the research desk</h1>
+        <p id="question-meta"></p>
+      </div>
+      <div class="operation">
+        <p class="label">Operating state</p>
+        <strong id="pilot-state">Awaiting record</strong>
+        <p id="pilot-detail"></p>
+        <button id="control" type="button" hidden></button>
+        <small id="control-feedback" role="status"></small>
+      </div>
+    </section>
+    <noscript><p class="notice">JavaScript is needed to refresh the research desk and operate the pilot. <a href="/api/pilot">Read the raw pilot record</a>.</p></noscript>
+    <div class="section-nav" aria-label="On this page"><a href="#team">Team</a><a href="#lineage">Evidence</a><a href="#pilot">Pilot</a><a href="#usage">Usage</a><a href="#history">History</a></div>
+    <div id="desk" hidden>
+      <section id="team" class="section" aria-labelledby="team-title">
+        <div class="section-title"><h2 id="team-title">Research team</h2><span id="team-count" class="stamp"></span></div>
+        <div id="roles" class="cards"></div>
+      </section>
+      <section id="lineage" class="section" aria-labelledby="lineage-title">
+        <div class="section-title"><h2 id="lineage-title">What changed the question?</h2></div>
+        <div id="findings"></div>
+      </section>
+      <section id="decision-section" class="decision" aria-labelledby="decision-title"><h2 id="decision-title">Open decision</h2><div id="decision"></div></section>
+      <section id="pilot" class="section" aria-labelledby="pilot-title">
+        <div class="section-title"><h2 id="pilot-title">24-hour pilot</h2></div>
+        <div id="measurement" class="box"></div>
+      </section>
+      <section id="usage" class="section" aria-labelledby="usage-title">
+        <div class="section-title"><h2 id="usage-title">Usage</h2></div>
+        <div class="usage-grid"><article class="box"><h3>Codex plan</h3><div id="plan"></div><details id="connect-meter"><summary>Connect the WSL meter</summary>
+          <p class="muted">From the project checkout in the WSL account signed in to Codex, run this command. Review and save the reading on the private Observatory page it opens.</p>
+          <code id="meter-command">python3 observatory/plan_usage.py link --open</code></details></article><article class="box"><h3>Observatory activity</h3><div id="activity-usage"></div></article></div>
+      </section>
+      <section id="history" class="section" aria-labelledby="history-title">
+        <div class="section-title"><h2 id="history-title">Research history</h2><a href="/archive/">Open archive ↗</a></div>
+        <div class="box"><div id="studies"></div><details id="event-details"><summary>Activity log</summary><ol id="events" class="log"></ol></details></div>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap"><span>Lonely Runner Observatory</span><a href="/api/pilot">Pilot record (JSON)</a></footer>
+</body>
+</html>

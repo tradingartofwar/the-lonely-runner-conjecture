@@ -1,0 +1,3925 @@
+{
+  "schema_version": 1,
+  "source_revision": "3316b381ca3386476c2bfda45a6584d6049838b3",
+  "seal_revision": "5694845cd501f8083e6286be61650e900a66f513",
+  "rule_revision": "69249249feeb9798ac143ab6417e6341e4725ea2",
+  "candidate_name": "four-weight-direct-residues-v1",
+  "replay_command": "python observatory/study/verify.py",
+  "scope": "Stationary reference 0, common start, 16 runners. Twelve opened and twelve fresh stretch_middle lineups; three per scale band in each panel.",
+  "threshold": "1/16",
+  "historical_baseline": {
+    "cases": 60,
+    "earlier_valid": 56,
+    "four_weight_valid": 39,
+    "four_weight_abstain": 21,
+    "grid_valid": 60,
+    "ledger_sha256": "4f7f9f4a158cd3a51229897f8d2799051331917247a7849731cfa04848e885f1"
+  },
+  "historical_diagnostic": {
+    "earlier_only": [
+      "historical-01",
+      "historical-02",
+      "historical-05",
+      "historical-06",
+      "historical-07",
+      "historical-08",
+      "historical-09",
+      "historical-10",
+      "historical-11",
+      "historical-12"
+    ],
+    "direct": [
+      "historical-01",
+      "historical-02",
+      "historical-05",
+      "historical-06",
+      "historical-07",
+      "historical-08",
+      "historical-10",
+      "historical-11",
+      "historical-12"
+    ],
+    "shifted": [
+      "historical-09"
+    ]
+  },
+  "summaries": {
+    "historical": {
+      "cases": 12,
+      "methods": {
+        "earlier": {
+          "valid": 11,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "four_weight": {
+          "valid": 1,
+          "unsafe": 0,
+          "abstain": 11
+        },
+        "candidate": {
+          "valid": 10,
+          "unsafe": 0,
+          "abstain": 2
+        },
+        "grid": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "overlaps": {
+        "earlier_vs_four_weight": {
+          "both": 1,
+          "left_only": 10,
+          "right_only": 0,
+          "neither": 1,
+          "row_ids": {
+            "both": [
+              "historical-04"
+            ],
+            "left_only": [
+              "historical-01",
+              "historical-02",
+              "historical-05",
+              "historical-06",
+              "historical-07",
+              "historical-08",
+              "historical-09",
+              "historical-10",
+              "historical-11",
+              "historical-12"
+            ],
+            "right_only": [],
+            "neither": [
+              "historical-03"
+            ]
+          }
+        },
+        "earlier_vs_candidate": {
+          "both": 10,
+          "left_only": 1,
+          "right_only": 0,
+          "neither": 1,
+          "row_ids": {
+            "both": [
+              "historical-01",
+              "historical-02",
+              "historical-04",
+              "historical-05",
+              "historical-06",
+              "historical-07",
+              "historical-08",
+              "historical-10",
+              "historical-11",
+              "historical-12"
+            ],
+            "left_only": [
+              "historical-09"
+            ],
+            "right_only": [],
+            "neither": [
+              "historical-03"
+            ]
+          }
+        },
+        "earlier_vs_grid": {
+          "both": 11,
+          "left_only": 0,
+          "right_only": 1,
+          "neither": 0,
+          "row_ids": {
+            "both": [
+              "historical-01",
+              "historical-02",
+              "historical-04",
+              "historical-05",
+              "historical-06",
+              "historical-07",
+              "historical-08",
+              "historical-09",
+              "historical-10",
+              "historical-11",
+              "historical-12"
+            ],
+            "left_only": [],
+            "right_only": [
+              "historical-03"
+            ],
+            "neither": []
+          }
+        },
+        "four_weight_vs_candidate": {
+          "both": 1,
+          "left_only": 0,
+          "right_only": 9,
+          "neither": 2,
+          "row_ids": {
+            "both": [
+              "historical-04"
+            ],
+            "left_only": [],
+            "right_only": [
+              "historical-01",
+              "historical-02",
+              "historical-05",
+              "historical-06",
+              "historical-07",
+              "historical-08",
+              "historical-10",
+              "historical-11",
+              "historical-12"
+            ],
+            "neither": [
+              "historical-03",
+              "historical-09"
+            ]
+          }
+        },
+        "four_weight_vs_grid": {
+          "both": 1,
+          "left_only": 0,
+          "right_only": 11,
+          "neither": 0,
+          "row_ids": {
+            "both": [
+              "historical-04"
+            ],
+            "left_only": [],
+            "right_only": [
+              "historical-01",
+              "historical-02",
+              "historical-03",
+              "historical-05",
+              "historical-06",
+              "historical-07",
+              "historical-08",
+              "historical-09",
+              "historical-10",
+              "historical-11",
+              "historical-12"
+            ],
+            "neither": []
+          }
+        },
+        "candidate_vs_grid": {
+          "both": 10,
+          "left_only": 0,
+          "right_only": 2,
+          "neither": 0,
+          "row_ids": {
+            "both": [
+              "historical-01",
+              "historical-02",
+              "historical-04",
+              "historical-05",
+              "historical-06",
+              "historical-07",
+              "historical-08",
+              "historical-10",
+              "historical-11",
+              "historical-12"
+            ],
+            "left_only": [],
+            "right_only": [
+              "historical-03",
+              "historical-09"
+            ],
+            "neither": []
+          }
+        }
+      },
+      "work": {
+        "earlier": {
+          "physical_speeds_read": 180,
+          "denominators_ranked": 180,
+          "speed_divisibility_tests_for_ranking": 2700,
+          "anchor_divisibility_tests": 180,
+          "shift_noncollider_membership_tests": 30,
+          "directional_headrooms_compared": 56,
+          "times_emitted": 12,
+          "preselection_clearance_evaluations": 0,
+          "postselection_clearance_evaluations": 12
+        },
+        "four_weight": {
+          "weights_read": 48,
+          "certificate_branches_considered": 81,
+          "times_emitted": 1,
+          "preselection_clearance_evaluations": 0,
+          "postselection_clearance_evaluations": 1
+        },
+        "candidate": {
+          "weights_read": 48,
+          "denominators_tested": 146,
+          "mask_updates": 584,
+          "times_emitted": 10,
+          "preselection_clearance_evaluations": 0,
+          "postselection_clearance_evaluations": 10
+        },
+        "grid": {
+          "physical_speeds_read": 180,
+          "grid_capacity": 1944,
+          "preselection_clearance_evaluations": 374,
+          "times_emitted": 12,
+          "postselection_clearance_evaluations": 0
+        }
+      }
+    },
+    "fresh": {
+      "cases": 12,
+      "methods": {
+        "earlier": {
+          "valid": 11,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "four_weight": {
+          "valid": 1,
+          "unsafe": 0,
+          "abstain": 11
+        },
+        "candidate": {
+          "valid": 11,
+          "unsafe": 0,
+          "abstain": 1
+        },
+        "grid": {
+          "valid": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "overlaps": {
+        "earlier_vs_four_weight": {
+          "both": 1,
+          "left_only": 10,
+          "right_only": 0,
+          "neither": 1,
+          "row_ids": {
+            "both": [
+              "fresh-06"
+            ],
+            "left_only": [
+              "fresh-01",
+              "fresh-02",
+              "fresh-03",
+              "fresh-05",
+              "fresh-07",
+              "fresh-08",
+              "fresh-09",
+              "fresh-10",
+              "fresh-11",
+              "fresh-12"
+            ],
+            "right_only": [],
+            "neither": [
+              "fresh-04"
+            ]
+          }
+        },
+        "earlier_vs_candidate": {
+          "both": 11,
+          "left_only": 0,
+          "right_only": 0,
+          "neither": 1,
+          "row_ids": {
+            "both": [
+              "fresh-01",
+              "fresh-02",
+              "fresh-03",
+              "fresh-05",
+              "fresh-06",
+              "fresh-07",
+              "fresh-08",
+              "fresh-09",
+              "fresh-10",
+              "fresh-11",
+              "fresh-12"
+            ],
+            "left_only": [],
+            "right_only": [],
+            "neither": [
+              "fresh-04"
+            ]
+          }
+        },
+        "earlier_vs_grid": {
+          "both": 11,
+          "left_only": 0,
+          "right_only": 1,
+          "neither": 0,
+          "row_ids": {
+            "both": [
+              "fresh-01",
+              "fresh-02",
+              "fresh-03",
+              "fresh-05",
+              "fresh-06",
+              "fresh-07",
+              "fresh-08",
+              "fresh-09",
+              "fresh-10",
+              "fresh-11",
+              "fresh-12"
+            ],
+            "left_only": [],
+            "right_only": [
+              "fresh-04"
+            ],
+            "neither": []
+          }
+        },
+        "four_weight_vs_candidate": {
+          "both": 1,
+          "left_only": 0,
+          "right_only": 10,
+          "neither": 1,
+          "row_ids": {
+            "both": [
+              "fresh-06"
+            ],
+            "left_only": [],
+            "right_only": [
+              "fresh-01",
+              "fresh-02",
+              "fresh-03",
+              "fresh-05",
+              "fresh-07",
+              "fresh-08",
+              "fresh-09",
+              "fresh-10",
+              "fresh-11",
+              "fresh-12"
+            ],
+            "neither": [
+              "fresh-04"
+            ]
+          }
+        },
+        "four_weight_vs_grid": {
+          "both": 1,
+          "left_only": 0,
+          "right_only": 11,
+          "neither": 0,
+          "row_ids": {
+            "both": [
+              "fresh-06"
+            ],
+            "left_only": [],
+            "right_only": [
+              "fresh-01",
+              "fresh-02",
+              "fresh-03",
+              "fresh-04",
+              "fresh-05",
+              "fresh-07",
+              "fresh-08",
+              "fresh-09",
+              "fresh-10",
+              "fresh-11",
+              "fresh-12"
+            ],
+            "neither": []
+          }
+        },
+        "candidate_vs_grid": {
+          "both": 11,
+          "left_only": 0,
+          "right_only": 1,
+          "neither": 0,
+          "row_ids": {
+            "both": [
+              "fresh-01",
+              "fresh-02",
+              "fresh-03",
+              "fresh-05",
+              "fresh-06",
+              "fresh-07",
+              "fresh-08",
+              "fresh-09",
+              "fresh-10",
+              "fresh-11",
+              "fresh-12"
+            ],
+            "left_only": [],
+            "right_only": [
+              "fresh-04"
+            ],
+            "neither": []
+          }
+        }
+      },
+      "work": {
+        "earlier": {
+          "physical_speeds_read": 180,
+          "denominators_ranked": 180,
+          "speed_divisibility_tests_for_ranking": 2700,
+          "anchor_divisibility_tests": 180,
+          "shift_noncollider_membership_tests": 15,
+          "directional_headrooms_compared": 28,
+          "times_emitted": 12,
+          "preselection_clearance_evaluations": 0,
+          "postselection_clearance_evaluations": 12
+        },
+        "four_weight": {
+          "weights_read": 48,
+          "certificate_branches_considered": 78,
+          "times_emitted": 1,
+          "preselection_clearance_evaluations": 0,
+          "postselection_clearance_evaluations": 1
+        },
+        "candidate": {
+          "weights_read": 48,
+          "denominators_tested": 138,
+          "mask_updates": 552,
+          "times_emitted": 11,
+          "preselection_clearance_evaluations": 0,
+          "postselection_clearance_evaluations": 11
+        },
+        "grid": {
+          "physical_speeds_read": 180,
+          "grid_capacity": 1944,
+          "preselection_clearance_evaluations": 334,
+          "times_emitted": 12,
+          "postselection_clearance_evaluations": 0
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "historical-01",
+      "panel": "historical",
+      "weights": [
+        2,
+        3,
+        17,
+        42
+      ],
+      "speeds": [
+        2,
+        3,
+        5,
+        17,
+        19,
+        20,
+        22,
+        42,
+        44,
+        45,
+        47,
+        59,
+        61,
+        62,
+        64
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        12,
+        13
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/12",
+            "denominator": 12,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 11,
+            "mask_updates": 44,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            59,
+            61
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 22,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-02",
+      "panel": "historical",
+      "weights": [
+        3,
+        6,
+        31,
+        72
+      ],
+      "speeds": [
+        3,
+        6,
+        9,
+        31,
+        34,
+        37,
+        40,
+        72,
+        75,
+        78,
+        81,
+        103,
+        106,
+        109,
+        112
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        11
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/11",
+            "denominator": 11,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 10,
+            "mask_updates": 40,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            34,
+            78,
+            109
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 17,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-03",
+      "panel": "historical",
+      "weights": [
+        3,
+        5,
+        28,
+        60
+      ],
+      "speeds": [
+        3,
+        5,
+        8,
+        28,
+        31,
+        33,
+        36,
+        60,
+        63,
+        65,
+        68,
+        88,
+        91,
+        93,
+        96
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [],
+      "methods": {
+        "earlier": {
+          "time": "97/1536",
+          "clearance": "11/512",
+          "limiting_speeds": [
+            63
+          ],
+          "status": "unsafe",
+          "branch": "shifted",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 15,
+            "directional_headrooms_compared": 28,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/16",
+            "denominator": 16,
+            "colliding_speeds": [
+              96
+            ],
+            "shift": "1/1536"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 15,
+            "mask_updates": 60,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "grid": {
+          "time": "2/23",
+          "clearance": "2/23",
+          "limiting_speeds": [
+            68,
+            91,
+            93
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 77,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      },
+      "exploratory_witness": {
+        "time": "97/960",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          60
+        ],
+        "status": "valid",
+        "anchor": "1/10",
+        "colliding_speeds": [
+          60
+        ],
+        "shift": "1/960",
+        "branch": "post-hoc alternate anchor, forward shift",
+        "claim_status": "OBSERVED",
+        "included_in_comparison": false
+      },
+      "exploratory_checks": {
+        "opposite_shift": {
+          "time": "95/1536",
+          "clearance": "31/1536",
+          "limiting_speeds": [
+            65
+          ],
+          "status": "unsafe",
+          "branch": "reverse shift at the original anchor",
+          "claim_status": "OBSERVED",
+          "included_in_comparison": false
+        }
+      }
+    },
+    {
+      "id": "historical-04",
+      "panel": "historical",
+      "weights": [
+        14,
+        28,
+        105,
+        157
+      ],
+      "speeds": [
+        14,
+        28,
+        42,
+        105,
+        119,
+        133,
+        147,
+        157,
+        171,
+        185,
+        199,
+        262,
+        276,
+        290,
+        304
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        11,
+        13
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/11",
+            "denominator": 11,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": "33/224",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            14
+          ],
+          "status": "valid",
+          "branch": "fixed_lower_phases",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 4,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "candidate": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 10,
+            "mask_updates": 40,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/11",
+          "clearance": "1/11",
+          "limiting_speeds": [
+            133,
+            199,
+            276
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 17,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-05",
+      "panel": "historical",
+      "weights": [
+        16,
+        25,
+        144,
+        215
+      ],
+      "speeds": [
+        16,
+        25,
+        41,
+        144,
+        160,
+        169,
+        185,
+        215,
+        231,
+        240,
+        256,
+        359,
+        375,
+        384,
+        400
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/14",
+            "denominator": 14,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 13,
+            "mask_updates": 52,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            41,
+            169
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 30,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-06",
+      "panel": "historical",
+      "weights": [
+        9,
+        10,
+        58,
+        83
+      ],
+      "speeds": [
+        9,
+        10,
+        19,
+        58,
+        67,
+        68,
+        77,
+        83,
+        92,
+        93,
+        102,
+        141,
+        150,
+        151,
+        160
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        12,
+        13,
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/12",
+            "denominator": 12,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 11,
+            "mask_updates": 44,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            83
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 22,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-07",
+      "panel": "historical",
+      "weights": [
+        43,
+        74,
+        322,
+        441
+      ],
+      "speeds": [
+        43,
+        74,
+        117,
+        322,
+        365,
+        396,
+        439,
+        441,
+        484,
+        515,
+        558,
+        763,
+        806,
+        837,
+        880
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/15",
+            "denominator": 15,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 14,
+            "mask_updates": 56,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            74
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 33,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-08",
+      "panel": "historical",
+      "weights": [
+        28,
+        29,
+        177,
+        262
+      ],
+      "speeds": [
+        28,
+        29,
+        57,
+        177,
+        205,
+        206,
+        234,
+        262,
+        290,
+        291,
+        319,
+        439,
+        467,
+        468,
+        496
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/15",
+            "denominator": 15,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 14,
+            "mask_updates": 56,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            29,
+            496
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 33,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-09",
+      "panel": "historical",
+      "weights": [
+        41,
+        80,
+        435,
+        564
+      ],
+      "speeds": [
+        41,
+        80,
+        121,
+        435,
+        476,
+        515,
+        556,
+        564,
+        605,
+        644,
+        685,
+        999,
+        1040,
+        1079,
+        1120
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [],
+      "methods": {
+        "earlier": {
+          "time": "1775/15984",
+          "clearance": "1/16",
+          "limiting_speeds": [
+            999
+          ],
+          "status": "valid",
+          "branch": "shifted",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 15,
+            "directional_headrooms_compared": 28,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/9",
+            "denominator": 9,
+            "colliding_speeds": [
+              999
+            ],
+            "shift": "-1/15984"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 15,
+            "mask_updates": 60,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "grid": {
+          "time": "2/19",
+          "clearance": "2/19",
+          "limiting_speeds": [
+            476,
+            685,
+            1120
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 53,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-10",
+      "panel": "historical",
+      "weights": [
+        218,
+        411,
+        2222,
+        2861
+      ],
+      "speeds": [
+        218,
+        411,
+        629,
+        2222,
+        2440,
+        2633,
+        2851,
+        2861,
+        3079,
+        3272,
+        3490,
+        5083,
+        5301,
+        5494,
+        5712
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/15",
+            "denominator": 15,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 14,
+            "mask_updates": 56,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            629,
+            2851
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 33,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-11",
+      "panel": "historical",
+      "weights": [
+        220,
+        233,
+        1491,
+        2136
+      ],
+      "speeds": [
+        220,
+        233,
+        453,
+        1491,
+        1711,
+        1724,
+        1944,
+        2136,
+        2356,
+        2369,
+        2589,
+        3627,
+        3847,
+        3860,
+        4080
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/14",
+            "denominator": 14,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 13,
+            "mask_updates": 52,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            2589,
+            3627
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 30,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "historical-12",
+      "panel": "historical",
+      "weights": [
+        177,
+        197,
+        1618,
+        2024
+      ],
+      "speeds": [
+        177,
+        197,
+        374,
+        1618,
+        1795,
+        1815,
+        1992,
+        2024,
+        2201,
+        2221,
+        2398,
+        3642,
+        3819,
+        3839,
+        4016
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "REPRODUCED",
+      "clear_denominators": [
+        7,
+        9,
+        10,
+        13,
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/7",
+            "denominator": 7,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 6,
+            "mask_updates": 24,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/7",
+          "clearance": "1/7",
+          "limiting_speeds": [
+            197,
+            1618,
+            2024
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 7,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-01",
+      "panel": "fresh",
+      "weights": [
+        2,
+        3,
+        15,
+        44
+      ],
+      "speeds": [
+        2,
+        3,
+        5,
+        15,
+        17,
+        18,
+        20,
+        44,
+        46,
+        47,
+        49,
+        59,
+        61,
+        62,
+        64
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        12,
+        13,
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/12",
+            "denominator": 12,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 11,
+            "mask_updates": 44,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            47,
+            49,
+            59,
+            61
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 22,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-02",
+      "panel": "fresh",
+      "weights": [
+        3,
+        6,
+        33,
+        70
+      ],
+      "speeds": [
+        3,
+        6,
+        9,
+        33,
+        36,
+        39,
+        42,
+        70,
+        73,
+        76,
+        79,
+        103,
+        106,
+        109,
+        112
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/15",
+            "denominator": 15,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 14,
+            "mask_updates": 56,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            76,
+            106
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 33,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-03",
+      "panel": "fresh",
+      "weights": [
+        1,
+        2,
+        10,
+        35
+      ],
+      "speeds": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        13,
+        35,
+        36,
+        37,
+        38,
+        45,
+        46,
+        47,
+        48
+      ],
+      "scale": [
+        1,
+        4
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/14",
+            "denominator": 14,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 13,
+            "mask_updates": 52,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            1,
+            13
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 30,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-04",
+      "panel": "fresh",
+      "weights": [
+        14,
+        17,
+        103,
+        154
+      ],
+      "speeds": [
+        14,
+        17,
+        31,
+        103,
+        117,
+        120,
+        134,
+        154,
+        168,
+        171,
+        185,
+        257,
+        271,
+        274,
+        288
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [],
+      "methods": {
+        "earlier": {
+          "time": "289/4608",
+          "clearance": "17/4608",
+          "limiting_speeds": [
+            271
+          ],
+          "status": "unsafe",
+          "branch": "shifted",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 15,
+            "directional_headrooms_compared": 28,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/16",
+            "denominator": 16,
+            "colliding_speeds": [
+              288
+            ],
+            "shift": "1/4608"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 15,
+            "mask_updates": 60,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "grid": {
+          "time": "8/23",
+          "clearance": "2/23",
+          "limiting_speeds": [
+            17
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 83,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      },
+      "exploratory_witness": {
+        "time": "625/1872",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          117
+        ],
+        "status": "valid",
+        "anchor": "1/3",
+        "colliding_speeds": [
+          117,
+          120,
+          168,
+          171,
+          288
+        ],
+        "shift": "1/1872",
+        "branch": "post-hoc alternate anchor, forward shift",
+        "claim_status": "OBSERVED",
+        "included_in_comparison": false
+      }
+    },
+    {
+      "id": "fresh-05",
+      "panel": "fresh",
+      "weights": [
+        15,
+        28,
+        163,
+        226
+      ],
+      "speeds": [
+        15,
+        28,
+        43,
+        163,
+        178,
+        191,
+        206,
+        226,
+        241,
+        254,
+        269,
+        389,
+        404,
+        417,
+        432
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        10,
+        11,
+        13
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/10",
+            "denominator": 10,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 9,
+            "mask_updates": 36,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            191,
+            241,
+            269,
+            389
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 15,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-06",
+      "panel": "fresh",
+      "weights": [
+        13,
+        23,
+        133,
+        199
+      ],
+      "speeds": [
+        13,
+        23,
+        36,
+        133,
+        146,
+        156,
+        169,
+        199,
+        212,
+        222,
+        235,
+        332,
+        345,
+        355,
+        368
+      ],
+      "scale": [
+        5,
+        16
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        10,
+        11,
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/10",
+            "denominator": 10,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": "551/1380",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            368
+          ],
+          "status": "valid",
+          "branch": "complements",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 1,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "candidate": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 9,
+            "mask_updates": 36,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            169,
+            199
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 15,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-07",
+      "panel": "fresh",
+      "weights": [
+        51,
+        71,
+        454,
+        608
+      ],
+      "speeds": [
+        51,
+        71,
+        122,
+        454,
+        505,
+        525,
+        576,
+        608,
+        659,
+        679,
+        730,
+        1062,
+        1113,
+        1133,
+        1184
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        13,
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/13",
+            "denominator": 13,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 12,
+            "mask_updates": 48,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/13",
+          "clearance": "1/13",
+          "limiting_speeds": [
+            51,
+            454,
+            1184
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 24,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-08",
+      "panel": "fresh",
+      "weights": [
+        33,
+        41,
+        238,
+        344
+      ],
+      "speeds": [
+        33,
+        41,
+        74,
+        238,
+        271,
+        279,
+        312,
+        344,
+        377,
+        385,
+        418,
+        582,
+        615,
+        623,
+        656
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        10
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/10",
+            "denominator": 10,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 9,
+            "mask_updates": 36,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/10",
+          "clearance": "1/10",
+          "limiting_speeds": [
+            41,
+            271,
+            279
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 15,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-09",
+      "panel": "fresh",
+      "weights": [
+        64,
+        101,
+        461,
+        686
+      ],
+      "speeds": [
+        64,
+        101,
+        165,
+        461,
+        525,
+        562,
+        626,
+        686,
+        750,
+        787,
+        851,
+        1147,
+        1211,
+        1248,
+        1312
+      ],
+      "scale": [
+        17,
+        64
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        9
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/9",
+            "denominator": 9,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 8,
+            "mask_updates": 32,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/9",
+          "clearance": "1/9",
+          "limiting_speeds": [
+            64
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 12,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-10",
+      "panel": "fresh",
+      "weights": [
+        191,
+        377,
+        1847,
+        2545
+      ],
+      "speeds": [
+        191,
+        377,
+        568,
+        1847,
+        2038,
+        2224,
+        2415,
+        2545,
+        2736,
+        2922,
+        3113,
+        4392,
+        4583,
+        4769,
+        4960
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/14",
+            "denominator": 14,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 13,
+            "mask_updates": 52,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/14",
+          "clearance": "1/14",
+          "limiting_speeds": [
+            377,
+            1847
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 30,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-11",
+      "panel": "fresh",
+      "weights": [
+        128,
+        236,
+        913,
+        1411
+      ],
+      "speeds": [
+        128,
+        236,
+        364,
+        913,
+        1041,
+        1149,
+        1277,
+        1411,
+        1539,
+        1647,
+        1775,
+        2324,
+        2452,
+        2560,
+        2688
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        15
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/15",
+            "denominator": 15,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 14,
+            "mask_updates": 56,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1411,
+            2324
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 33,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fresh-12",
+      "panel": "fresh",
+      "weights": [
+        202,
+        352,
+        1879,
+        2591
+      ],
+      "speeds": [
+        202,
+        352,
+        554,
+        1879,
+        2081,
+        2231,
+        2433,
+        2591,
+        2793,
+        2943,
+        3145,
+        4470,
+        4672,
+        4822,
+        5024
+      ],
+      "scale": [
+        65,
+        256
+      ],
+      "pattern": "stretch_middle",
+      "claim_status": "OBSERVED",
+      "clear_denominators": [
+        12,
+        13,
+        14
+      ],
+      "methods": {
+        "earlier": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "physical_speeds_read": 15,
+            "denominators_ranked": 15,
+            "speed_divisibility_tests_for_ranking": 225,
+            "anchor_divisibility_tests": 15,
+            "shift_noncollider_membership_tests": 0,
+            "directional_headrooms_compared": 0,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          },
+          "choices": {
+            "anchor": "1/12",
+            "denominator": 12,
+            "colliding_speeds": [],
+            "shift": "0"
+          }
+        },
+        "four_weight": {
+          "time": null,
+          "clearance": null,
+          "limiting_speeds": [],
+          "status": "abstain",
+          "branch": "abstain",
+          "work": {
+            "weights_read": 4,
+            "certificate_branches_considered": 7,
+            "times_emitted": 0,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 0
+          }
+        },
+        "candidate": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid",
+          "branch": "direct",
+          "work": {
+            "weights_read": 4,
+            "denominators_tested": 11,
+            "mask_updates": 44,
+            "times_emitted": 1,
+            "preselection_clearance_evaluations": 0,
+            "postselection_clearance_evaluations": 1
+          }
+        },
+        "grid": {
+          "time": "1/12",
+          "clearance": "1/12",
+          "limiting_speeds": [
+            2231,
+            2591,
+            3145
+          ],
+          "status": "valid",
+          "branch": "first valid in denominator order",
+          "work": {
+            "physical_speeds_read": 15,
+            "grid_capacity": 162,
+            "preselection_clearance_evaluations": 22,
+            "times_emitted": 1,
+            "postselection_clearance_evaluations": 0
+          }
+        }
+      }
+    }
+  ],
+  "equality_control": {
+    "time": "1/16",
+    "clearance": "1/16",
+    "limiting_speeds": [
+      1,
+      15
+    ],
+    "status": "valid",
+    "speeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "threshold": "1/16",
+    "reference": 0,
+    "claim_status": "REPRODUCED"
+  },
+  "archived_controls": [
+    {
+      "weights": [
+        1,
+        6,
+        11,
+        144403552893582
+      ],
+      "branch": "complements",
+      "time": "433210658680801/2166053293404000",
+      "clearance": "1/15",
+      "limiting_speeds": [
+        144403552893600
+      ],
+      "status": "valid"
+    },
+    {
+      "weights": [
+        114,
+        139,
+        359,
+        1100
+      ],
+      "branch": "complements",
+      "time": "20551/25680",
+      "clearance": "1/15",
+      "limiting_speeds": [
+        1712
+      ],
+      "status": "valid"
+    },
+    {
+      "weights": [
+        1,
+        2,
+        13,
+        96
+      ],
+      "branch": "three-prefix control",
+      "time": "43/512",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        96
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "winding",
+        "time": "619/7168",
+        "clearance": "619/7168",
+        "limiting_speeds": [
+          1
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        3,
+        8,
+        100
+      ],
+      "branch": "three-prefix control",
+      "time": "113/1600",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        100
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "113/1600",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          100
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        4,
+        6,
+        101
+      ],
+      "branch": "three-prefix control",
+      "time": "113/1616",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        101
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "113/1616",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          101
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        2,
+        13,
+        112
+      ],
+      "branch": "three-prefix control",
+      "time": "23/256",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        112
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "winding",
+        "time": "4451/53248",
+        "clearance": "4451/53248",
+        "limiting_speeds": [
+          1
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        3,
+        8,
+        116
+      ],
+      "branch": "three-prefix control",
+      "time": "129/1856",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        116
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "129/1856",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          116
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        4,
+        6,
+        117
+      ],
+      "branch": "three-prefix control",
+      "time": "43/624",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        117
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "43/624",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          117
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        2,
+        13,
+        128
+      ],
+      "branch": "three-prefix control",
+      "time": "177/2048",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        128
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "winding",
+        "time": "4931/59904",
+        "clearance": "323/4608",
+        "limiting_speeds": [
+          13
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        3,
+        8,
+        132
+      ],
+      "branch": "three-prefix control",
+      "time": "145/2112",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        132
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "145/2112",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          132
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        4,
+        6,
+        133
+      ],
+      "branch": "three-prefix control",
+      "time": "145/2128",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        133
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "145/2128",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          133
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        2,
+        13,
+        144
+      ],
+      "branch": "three-prefix control",
+      "time": "193/2304",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        144
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "winding",
+        "time": "3937/46080",
+        "clearance": "3937/46080",
+        "limiting_speeds": [
+          1
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        3,
+        8,
+        148
+      ],
+      "branch": "three-prefix control",
+      "time": "161/2368",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        148
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "161/2368",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          148
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        4,
+        6,
+        149
+      ],
+      "branch": "three-prefix control",
+      "time": "161/2384",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        149
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "161/2384",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          149
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        2,
+        13,
+        15999999984
+      ],
+      "branch": "three-prefix control",
+      "time": "21333333313/255999999744",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        15999999984
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "winding",
+        "time": "544000000051/6656000000000",
+        "clearance": "32000000051/512000000000",
+        "limiting_speeds": [
+          13
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        3,
+        8,
+        15999999988
+      ],
+      "branch": "three-prefix control",
+      "time": "16000000001/255999999808",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        15999999988
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "16000000001/255999999808",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          15999999988
+        ],
+        "status": "valid"
+      }
+    },
+    {
+      "weights": [
+        1,
+        4,
+        6,
+        15999999989
+      ],
+      "branch": "three-prefix control",
+      "time": "16000000001/255999999824",
+      "clearance": "1/16",
+      "limiting_speeds": [
+        15999999989
+      ],
+      "status": "valid",
+      "four_weight_prediction": {
+        "branch": "fast_wrap",
+        "time": "16000000001/255999999824",
+        "clearance": "1/16",
+        "limiting_speeds": [
+          15999999989
+        ],
+        "status": "valid"
+      }
+    }
+  ],
+  "reduced_record": {
+    "shared": {
+      "reference": 0,
+      "n": 16,
+      "threshold": "1/16",
+      "minimum_moving_speed": 1,
+      "maximum_moving_speed": 112,
+      "family": "All nonempty subset sums of four positive superincreasing weights, gcd one and total divisible by 16; common start."
+    },
+    "at_1_15": "underdetermined",
+    "at_1_16": "no",
+    "cases": [
+      {
+        "weights": [
+          1,
+          2,
+          13,
+          96
+        ],
+        "speeds": [
+          1,
+          2,
+          3,
+          13,
+          14,
+          15,
+          16,
+          96,
+          97,
+          98,
+          99,
+          109,
+          110,
+          111,
+          112
+        ],
+        "at_1_15": {
+          "time": "1/15",
+          "clearance": "0",
+          "limiting_speeds": [
+            15
+          ],
+          "status": "unsafe"
+        },
+        "at_1_16": {
+          "time": "1/16",
+          "clearance": "0",
+          "limiting_speeds": [
+            16,
+            96,
+            112
+          ],
+          "status": "unsafe"
+        }
+      },
+      {
+        "weights": [
+          1,
+          3,
+          8,
+          100
+        ],
+        "speeds": [
+          1,
+          3,
+          4,
+          8,
+          9,
+          11,
+          12,
+          100,
+          101,
+          103,
+          104,
+          108,
+          109,
+          111,
+          112
+        ],
+        "at_1_15": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1,
+            104
+          ],
+          "status": "valid"
+        },
+        "at_1_16": {
+          "time": "1/16",
+          "clearance": "0",
+          "limiting_speeds": [
+            112
+          ],
+          "status": "unsafe"
+        }
+      }
+    ],
+    "additional_cases": [
+      {
+        "weights": [
+          1,
+          16,
+          32,
+          63
+        ],
+        "speeds": [
+          1,
+          16,
+          17,
+          32,
+          33,
+          48,
+          49,
+          63,
+          64,
+          79,
+          80,
+          95,
+          96,
+          111,
+          112
+        ],
+        "at_1_15": {
+          "time": "1/15",
+          "clearance": "1/15",
+          "limiting_speeds": [
+            1,
+            16
+          ],
+          "status": "valid"
+        },
+        "at_1_16": {
+          "time": "1/16",
+          "clearance": "0",
+          "limiting_speeds": [
+            16,
+            32,
+            48,
+            64,
+            80,
+            96,
+            112
+          ],
+          "status": "unsafe"
+        }
+      },
+      {
+        "weights": [
+          1,
+          15,
+          20,
+          76
+        ],
+        "speeds": [
+          1,
+          15,
+          16,
+          20,
+          21,
+          35,
+          36,
+          76,
+          77,
+          91,
+          92,
+          96,
+          97,
+          111,
+          112
+        ],
+        "at_1_15": {
+          "time": "1/15",
+          "clearance": "0",
+          "limiting_speeds": [
+            15
+          ],
+          "status": "unsafe"
+        },
+        "at_1_16": {
+          "time": "1/16",
+          "clearance": "0",
+          "limiting_speeds": [
+            16,
+            96,
+            112
+          ],
+          "status": "unsafe"
+        }
+      }
+    ],
+    "claim_status": "REPRODUCED"
+  }
+}
