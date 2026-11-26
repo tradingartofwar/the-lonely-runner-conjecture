@@ -1,0 +1,9 @@
+# Frozen paired anchor swap
+
+**Hypothesis.** For first-arc abstentions on one fresh panel, replacing the last denominator 7 with 4 will recover strictly more lineups than it loses. The original order is (3,5,7), the proposed order (3,5,4). Both try positive then negative, use identical within-residue membership including the four-lap limit, and emit at most one time in at most six choices. The target is inclusive clearance 1/16 for the stationary reference and all fifteen nonempty subset sums of four common-start weights. The opened sole q=4 recovery (59,112,540,745) motivated selection. Replay only this opened control with `python3 observatory/escape_trial/anchor_swap/rule.py`.
+
+## Prospective verifier protocol
+
+Use a fresh, independently drawn secret seed, commit its SHA-256 before sampling, then commit the complete input panel before scoring. Use the preceding membership audit selection procedure and caps (256 accepted or 4096 raw draws per band, 1–4, 5–16, 17–64, 65–256). Change the stream domain to "anchor-swap-v1". In addition to the published exclusions and all preceding hosted cohort and wrap inputs, exclude the entire 774-row membership panel, opened challenge examples and any other identified opened inputs. Keep each band's shortfall. No topping up, reseeding, or conditioning on either arm's outcome.
+
+For all original first-arc abstentions on the frozen panel, compute both outputs. Independently expand the 15 physical speeds, evaluate all 30 q=2..16 signed endpoints by exact modular clearance, and check each issued time. Report per-band counts, original-only, swapped-only, both, neither, and full-scan recoverable. Archive the exact paired returns, clearances and benchmark endpoints. Reject soundness for any unsafe output; reject the gain forecast when swapped-only minus original-only is zero or negative, including empty denominators. Any different anchor-selection policy requires a separate freeze.
