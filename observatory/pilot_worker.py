@@ -286,6 +286,14 @@ def drain(service, scheduled_run=None):
 
 
 def observed_work(service, scheduled_run):
+    state = service.request()
+    pilot = state["pilot"]
+    if pilot["status"] == "ended" and not pilot["paused"]:
+        prior_end = pilot["ends_at"]
+        close_id = "close-" + hashlib.sha256(prior_end.encode()).hexdigest()[:24]
+        receipt = service.post("advance", close_id, expected_ends_at=prior_end)
+        if not receipt.get("advanced"):
+            return dict(window_close=receipt, **compact(service.request()))
     if not scheduled_run:
         return drain(service)
     body = dict(run_id=scheduled_run, worker="native-observatory-coordinator", mode="model",
