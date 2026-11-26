@@ -290,8 +290,9 @@ def observed_work(service, scheduled_run):
     pilot = state["pilot"]
     if pilot["status"] == "ended" and not pilot["paused"]:
         prior_end = pilot["ends_at"]
-        close_id = "close-" + hashlib.sha256(prior_end.encode()).hexdigest()[:24]
-        receipt = service.post("advance", close_id, expected_ends_at=prior_end)
+        # The deadline fences retries across windows. Use a fresh request per wake
+        # so a transient hold on an earlier wake can be reconsidered.
+        receipt = service.post("advance", expected_ends_at=prior_end)
         if not receipt.get("advanced"):
             return dict(window_close=receipt, **compact(service.request()))
     if not scheduled_run:

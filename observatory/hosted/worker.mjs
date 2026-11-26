@@ -47,12 +47,12 @@ const pick = (value, choices, field) => {
   return value;
 };
 function empty() {
-  return {started_at:null, ends_at:null, paused:false, pause_reason:null, provider_hold:null, auth_hold:false, quota_hold:false,
+  return {started_at:null, ends_at:null, window_number:1, windows:[], idle_decision:null, paused:false, pause_reason:null, provider_hold:null, auth_hold:false, quota_hold:false,
     jobs:[], events:[], findings:[], decisions:[], receipts:{}, meter:[],
     plan:{captured_at:null, source:null, windows:[]}, last_plan_attempt:null};
 }
 function event(s, time, fields) {
-  s.events.push({id:s.events.length + 1, time, source:"hosted-queue", ...fields});
+  s.events.push({id:s.events.length + 1, time, window_number:s.window_number ?? 1, source:"hosted-queue", ...fields});
 }
 function addDecision(s, now, text, job_id = null) {
   const d = {id:"decision-" + crypto.randomUUID(), time:now, text, state:"open", job_id};
@@ -99,11 +99,14 @@ function gate(s, now, mode) {
   return null;
 }
 const modelClaims = s => s.events.filter(e => e.kind === "claimed" && e.mode === "model" && e.source === "hosted-queue");
-function modelBudget(s) {
-  const claims = modelClaims(s);
+function windowEvents(s, number=s.window_number ?? 1) {
+  return s.events.filter(e => (e.window_number ?? 1)===number);
+}
+function modelBudget(s, events=windowEvents(s)) {
+  const claims = events.filter(e=>e.kind==="claimed" && e.mode==="model" && e.source==="hosted-queue");
   const jobRuns = new Set(claims.map(e => e.run_id));
-  const controllerRuns = new Set(s.events.filter(e => e.mode === "model" && e.kind === "controller_observation").map(e => e.run_id));
-  const overBudget = new Set(s.events.filter(e => e.mode === "model" && e.kind === "controller_over_budget").map(e => e.run_id));
+  const controllerRuns = new Set(events.filter(e => e.mode === "model" && e.kind === "controller_observation").map(e => e.run_id));
+  const overBudget = new Set(events.filter(e => e.mode === "model" && e.kind === "controller_over_budget").map(e => e.run_id));
   const reserved = new Set([...jobRuns,...controllerRuns]);
   // Older ledger versions allowed a second job attempt under the same run ID.
   // Each such retry remains charged when the already-persisted pilot is upgraded.
@@ -264,7 +267,8 @@ function dispatch(s,b,now) {
         s.ends_at = iso(Date.parse(now) + DAY);
         event(s,now,{kind:"pilot_started",role:"coordinator",state:"started",task:"Opened the 24-hour research pilot."});
       }
-      return {started_at:s.started_at,ends_at:s.ends_at};
+      return {started_at:s.windows?.[0]?.started_at ?? s.started_at,ends_at:s.windows?.[0]?.ends_at ?? s.ends_at};
+    case "advance": return advance(s,b,now);
     case "record": return recordHistory(s,b,now);
     case "observe": {
       const run_id=id(b.run_id,"run_id");
@@ -273,10 +277,13 @@ function dispatch(s,b,now) {
       const state=pick(b.state,["running","completed","failed"],"controller state");
       const prior=s.events.filter(e=>["controller_observation","controller_over_budget"].includes(e.kind) && e.run_id===run_id);
       requireThat(!prior.some(e=>e.state===state || e.state!=="running" || e.mode!==mode || e.worker!==worker), "Controller observation conflicts with a previous state",409);
-      const budget=modelBudget(s);
+      // A terminal report can arrive after the day-end coordinator has opened
+      // the next window. Keep both events on the original invocation's window.
+      const number=prior.length ? (prior[0].window_number ?? 1) : (s.window_number ?? 1);
+      const budget=modelBudget(s,windowEvents(s,number));
       const overBudget=mode==="model" && !budget.reserved.has(run_id) && budget.used>=MODEL_LIMIT;
       const kind=overBudget ? "controller_over_budget" : "controller_observation";
-      event(s,now,{kind,source:"hosted-controller",role:"coordinator",state,run_id,worker,mode,task:str(b.task,"task"),admitted:!overBudget});
+      event(s,now,{kind,window_number:number,source:"hosted-controller",role:"coordinator",state,run_id,worker,mode,task:str(b.task,"task"),admitted:!overBudget});
       if (overBudget) return {run_id,state,recorded_at:now,admitted:false,reason:"model_call_limit",error:"Model call cap reached. Stop this wake before research."};
       return {run_id,state,recorded_at:now,admitted:true};
     }
@@ -358,33 +365,96 @@ function usage(s,now) {
     coverage:measured === 0 ? "unknown" : measured === runs ? "all recorded runs" : "partial",
     measured_at:measuredAt ?? null,source:measuredAt ? [...new Set(rows.filter(x=>x.input_tokens!=null || x.output_tokens!=null).map(x=>x.source))].join(", ") : null};
 }
+function windowMetrics(s,now) {
+  const events=windowEvents(s);
+  const budget=modelBudget(s,events);
+  const claimed=events.filter(e=>e.kind==="claimed" && e.source==="hosted-queue");
+  const countedPickups=new Set(claimed.filter(e=>e.attempt===1).map(e=>e.job_id));
+  const findings=new Map(s.findings.filter(f=>f.source==="hosted-queue").map(f=>[f.id,f]));
+  const decision=[...s.decisions].reverse().find(d=>d.state==="open");
+  const runIds=new Set([...budget.reserved,...budget.overBudget]);
+  let measuredRuns=0;
+  let input=0,output=0,cached=0,cachedMeasured=false;
+  for (const run of runIds) {
+    const receipts=s.meter.filter(r=>r.run_id===run && r.input_tokens!=null && r.output_tokens!=null);
+    // A provider's unallocated whole-run count can overlap daily slices.
+    const whole=receipts.find(r=>r.day==null);
+    const rows=whole ? [whole] : receipts;
+    if (!rows.length) continue;
+    measuredRuns++;
+    for (const r of rows) {
+      input+=r.input_tokens; output+=r.output_tokens;
+      if (r.cached_input_tokens!=null) { cached+=r.cached_input_tokens; cachedMeasured=true; }
+    }
+  }
+  const coverage=measuredRuns===0 ? "unknown" : measuredRuns===runIds.size ? "all recorded runs" : "partial";
+  const usage={runs:runIds.size,measured_runs:measuredRuns,coverage,input_tokens:measuredRuns ? input : null,
+    output_tokens:measuredRuns ? output : null,cached_input_tokens:cachedMeasured ? cached : null,tokens_used:measuredRuns ? input+output : null};
+  const evaluation={elapsed_hours:s.started_at ? Math.max(0,Math.min(24,(Date.parse(now)-Date.parse(s.started_at))/3_600_000)) : 0,
+    model_dispatches:budget.jobClaims,controller_runs:budget.controllerRuns.size+budget.overBudget.size,over_budget_controller_runs:budget.overBudget.size,
+    model_calls_reserved:budget.used,model_calls_remaining:Math.max(0,MODEL_LIMIT-budget.used),
+    model_jobs_remaining:Math.max(0,Math.min(MODEL_JOB_LIMIT-budget.jobClaims,MODEL_LIMIT-budget.used)),
+    deterministic_dispatches:claimed.filter(e=>e.mode==="deterministic").length,
+    completed_jobs:new Set(events.filter(e=>e.kind==="proposal_returned" || e.kind==="review_returned").map(e=>e.job_id)).size,
+    verified_findings:events.filter(e=>e.kind==="verified" && e.source==="hosted-queue").length,
+    followups_claimed:s.jobs.filter(j=>{
+      const f=findings.get(j.source_finding_id);
+      return f && countedPickups.has(j.id) && j.role!=="verifier" && j.parent_id===f.verifier_job_id &&
+        (j.origin==="review-followup" || (!j.origin && j.queued_at===f.time));
+    }).length,
+    retries:claimed.filter(e=>e.attempt>1).length,decision:decision?.text ?? null,coverage};
+  return {evaluation,usage};
+}
+function advance(s,b,now) {
+  const expected=stamp(b.expected_ends_at,"expected_ends_at");
+  const current=()=>({window_number:s.window_number ?? 1,started_at:s.started_at,ends_at:s.ends_at});
+  const blocked=reason=>({advanced:false,reason,...current()});
+  if (!s.started_at) return blocked("pilot_not_started");
+  if (s.ends_at!==expected) return blocked("window_mismatch");
+  if (now<s.ends_at) return blocked("window_still_active");
+  if (s.paused) return blocked("paused");
+  if (s.provider_hold) return blocked(s.provider_hold);
+  if (s.jobs.some(j=>j.state==="running" && j.lease_expires>now)) return blocked("active_lease");
+  const liveFindings=new Set(s.findings.filter(f=>f.source==="hosted-queue").map(f=>f.id));
+  const eligible=s.jobs.find(j=>{
+    if (j.state!=="queued" || !liveFindings.has(j.source_finding_id)) return false;
+    if (j.role!=="verifier") return true;
+    const proposal=s.jobs.find(p=>p.id===j.verification_of);
+    return proposal?.state==="submitted" && proposal.source_finding_id===j.source_finding_id;
+  });
+  s.windows ??= [];
+  if (!eligible && !s.idle_decision) s.idle_decision=addDecision(s,now,"Research is idle. Identify a worthwhile next question grounded in a hosted verified finding.");
+  if (!s.windows.some(w=>w.ends_at===s.ends_at)) {
+    s.windows.push({...current(),closed_at:now,...windowMetrics(s,now)});
+    event(s,now,{kind:"window_closed",role:"coordinator",state:"closed",task:"Saved the completed 24-hour measurement."});
+  }
+  if (!eligible) return {...blocked("no_verified_followup"),decision_id:s.idle_decision};
+  if (s.idle_decision) {
+    const prior=s.decisions.find(d=>d.id===s.idle_decision);
+    if (prior) {prior.state="resolved";prior.resolved_at=now;}
+    s.idle_decision=null;
+  }
+  s.window_number=(s.window_number ?? 1)+1;
+  s.started_at=now;
+  s.ends_at=iso(Date.parse(now)+DAY);
+  event(s,now,{kind:"window_started",role:"coordinator",state:"started",job_id:eligible.id,source_finding_id:eligible.source_finding_id,
+    task:"Opened the next research window for the queued follow-up: " + eligible.task});
+  return {advanced:true,reason:"verified_followup_queued",qualifying_job_id:eligible.id,...current()};
+}
 function project(s,now,owner) {
-  const events = [...s.events].sort((a,b) => a.time.localeCompare(b.time) || a.id-b.id);
-  const jobs = s.jobs.map(j => ({...jobPublic(j),stale:j.state === "running" && j.lease_expires <= now}));
-  const decision = [...s.decisions].reverse().find(d => d.state === "open");
-  const budget = modelBudget(s);
-  const liveFindings = new Map(s.findings.filter(f=>f.source==="hosted-queue").map(f=>[f.id,f]));
-  const status = !s.started_at ? "not_started" : now >= s.ends_at ? "ended" : s.paused ? "paused" : s.provider_hold ? "plan_hold" : budget.used >= MODEL_LIMIT ? "model_limit" : "active";
-  const measured = usage(s,now);
-  const researchQuestion = jobs.find(j => j.state === "running" && !j.stale) || jobs.find(j => j.state === "queued");
+  const events=[...s.events].sort((a,b)=>a.time.localeCompare(b.time) || a.id-b.id);
+  const jobs=s.jobs.map(j=>({...jobPublic(j),stale:j.state==="running" && j.lease_expires<=now}));
+  const metrics=windowMetrics(s,now);
+  const status=!s.started_at ? "not_started" : now>=s.ends_at ? "ended" : s.paused ? "paused" : s.provider_hold ? "plan_hold" :
+    metrics.evaluation.model_calls_reserved>=MODEL_LIMIT ? "model_limit" : "active";
+  const researchQuestion=jobs.find(j=>j.state==="running" && !j.stale) || jobs.find(j=>j.state==="queued");
   return {project:{name:"Lonely Runner Observatory"},generated_at:now,current_question:researchQuestion?.task ?? null,
     pilot:{status,paused:s.paused,pause_reason:s.pause_reason,started_at:s.started_at,ends_at:s.ends_at,provider_hold:s.provider_hold,
+      window_number:s.window_number ?? 1,first_started_at:s.windows?.[0]?.started_at ?? s.started_at,first_ends_at:s.windows?.[0]?.ends_at ?? s.ends_at,
+      idle_reason:s.idle_decision ? "no_verified_followup" : null,
       model_call_limit:MODEL_LIMIT,model_dispatch_limit:MODEL_JOB_LIMIT,scheduled_controller_slots:SCHEDULED_COORDINATORS,active_lease_limit:ACTIVE_LIMIT,lease_minutes:LEASE/60000},
-    usage:measured,plan:{...s.plan,last_attempt:s.last_plan_attempt},operator:{can_control:owner},
-    events,jobs,findings:s.findings,decisions:s.decisions,
-    evaluation:{elapsed_hours:s.started_at ? Math.min(24,(Date.parse(now)-Date.parse(s.started_at))/3_600_000) : 0,model_dispatches:budget.jobClaims,
-      controller_runs:budget.controllerRuns.size + budget.overBudget.size,over_budget_controller_runs:budget.overBudget.size,
-      model_calls_reserved:budget.used,model_calls_remaining:Math.max(0,MODEL_LIMIT-budget.used),
-      model_jobs_remaining:Math.max(0,Math.min(MODEL_JOB_LIMIT-budget.jobClaims,MODEL_LIMIT-budget.used)),
-      deterministic_dispatches:s.events.filter(e => e.kind === "claimed" && e.mode === "deterministic").length,
-      completed_jobs:jobs.filter(j => j.state === "completed" || j.state === "submitted").length,
-      verified_findings:s.findings.filter(f => f.source === "hosted-queue").length,
-      followups_claimed:jobs.filter(j => {
-        const f=liveFindings.get(j.source_finding_id);
-        return f && j.role!=="verifier" && j.attempt>0 && j.parent_id===f.verifier_job_id &&
-          (j.origin==="review-followup" || (!j.origin && j.queued_at===f.time));
-      }).length,
-      retries:s.events.filter(e=>e.kind==="claimed" && e.attempt>1).length,decision:decision?.text ?? null,coverage:measured.coverage}};
+    usage:usage(s,now),plan:{...s.plan,last_attempt:s.last_plan_attempt},operator:{can_control:owner},
+    windows:s.windows ?? [],window_usage:metrics.usage,events,jobs,findings:s.findings,decisions:s.decisions,evaluation:metrics.evaluation};
 }
 function canonical(v) {
   if (v && typeof v === "object" && !Array.isArray(v)) return Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])]));

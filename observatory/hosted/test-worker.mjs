@@ -184,3 +184,80 @@ test("18 distinct model reservations include controllers and retried jobs; seven
     assert.equal(board.pilot.model_dispatch_limit,11);
   } finally { await h.close(); }
 });
+
+async function endWindow(h) {
+  const ended=Date.now()-2000;
+  await h.clock(s=>{
+    s.ends_at=new Date(ended).toISOString();
+    s.started_at=new Date(ended-86400000).toISOString();
+  });
+  return new Date(ended).toISOString();
+}
+test("day-end advances only for verified follow-up work and freezes the previous research and usage measures",async()=>{
+  const h=await createHarness();
+  try {
+    const initial=await h.act("begin");
+    assert.equal((await h.act("advance",{expected_ends_at:initial.ends_at})).reason,"window_still_active");
+    await h.act("seed",{id:"root",role:"researcher",task:"Bounded proposal"});
+    const p=await h.act("claim",{id:"root",worker:"r-first",mode:"model"});
+    const submitted=await h.act("complete",{...workerFields(p),...evidence});
+    const a=await h.act("claim",{id:submitted.next_job_id,worker:"audit-first",mode:"deterministic"});
+    const verified=await h.act("complete",{...workerFields(a),...evidence,verdict:"verified",next_question:"Check the verified result on a different family."});
+    const controller={worker:"day-end",run_id:"closeout-1",mode:"model",task:"Measure the original window."};
+    await h.act("observe",{...controller,state:"running"});
+    await h.act("telemetry",{run_id:"closeout-1",measured_at:now(),source:"Actual final receipt",input_tokens:8,output_tokens:2});
+    await h.act("seed",{id:"other",role:"researcher",task:"A separate outstanding assignment"});
+    const busy=await h.act("claim",{id:"other",worker:"outstanding",mode:"deterministic"});
+    const end=await endWindow(h);
+    const seal={expected_ends_at:end};
+    assert.equal((await h.act("claim",{worker:"another"})).reason,"pilot_ended");
+    assert.equal((await h.act("advance",seal)).reason,"active_lease");
+    await h.act("release",{...workerFields(busy),reason:"Stop before closeout"});
+    await h.post("/api/operator",{action:"pause"},ownerHeaders);
+    assert.equal((await h.act("advance",seal)).reason,"paused");
+    await h.post("/api/operator",{action:"resume"},ownerHeaders);
+    await h.act("telemetry",{source:"Actual provider",measured_at:now(),limit_reached:true});
+    assert.equal((await h.act("advance",seal)).reason,"plan_limit_reached");
+    await h.act("telemetry",{source:"Actual provider",measured_at:now(),plan_available:true});
+    const [one,two]=await Promise.all([h.act("advance",seal,"day-end-A"),h.act("advance",seal,"day-end-B")]);
+    const result=one.advanced ? one : two;
+    assert.equal([one,two].filter(r=>r.advanced).length,1);
+    assert.equal(result.window_number,2);assert.equal(result.qualifying_job_id,verified.next_job_id);
+    assert.deepEqual(await h.act("advance",seal,one.advanced?"day-end-A":"day-end-B"),result);
+    assert.equal((await h.act("advance",seal)).reason,"window_mismatch");
+    let board=await h.board();
+    const snapshot=board.windows[0];
+    assert.equal(snapshot.ends_at,end);assert.equal(snapshot.window_number,1);assert.equal(snapshot.evaluation.verified_findings,1);
+    assert.equal(snapshot.evaluation.model_calls_reserved,2);assert.equal(snapshot.usage.tokens_used,10);assert.equal(snapshot.usage.coverage,"partial");
+    assert.equal(board.evaluation.model_calls_remaining,18);assert.equal(board.evaluation.model_jobs_remaining,11);assert.equal(board.evaluation.verified_findings,0);
+    assert.equal((await h.act("begin")).ends_at,end);
+    await h.act("observe",{...controller,state:"completed"});
+    await h.act("telemetry",{run_id:"r-first",measured_at:now(),source:"Late actual receipt",input_tokens:2,output_tokens:1});
+    const follow=await h.act("claim",{id:verified.next_job_id,worker:"new-solver",mode:"model"});
+    assert.equal(follow.status,200);
+    const review=await h.act("complete",{...workerFields(follow),...evidence});
+    board=await h.board();
+    assert.equal(board.evaluation.followups_claimed,1);assert.equal(board.evaluation.model_calls_reserved,1);
+    assert.deepEqual(board.windows[0],snapshot);
+    const secondEnd=await endWindow(h);
+    const third=await h.act("advance",{expected_ends_at:secondEnd});
+    assert.equal(third.advanced,true);assert.equal(third.qualifying_job_id,review.next_job_id);assert.equal(third.window_number,3);
+    assert.equal((await h.board()).windows.length,2);
+  } finally {await h.close();}
+});
+test("idle closeout records one decision, excludes historical leads and cannot refresh the allowance",async()=>{
+  const h=await createHarness();
+  try {
+    await h.act("begin");
+    await h.act("record",{source:"Prior reviewed record",finding:{id:"old",...evidence,verifier:"previous",verified_at:now()}});
+    await h.act("seed",{id:"historic-seed",role:"researcher",task:"Follow a historical result",source_finding_id:"old"});
+    const end=await endWindow(h);
+    const one=await h.act("advance",{expected_ends_at:end});
+    const two=await h.act("advance",{expected_ends_at:end});
+    assert.equal(one.advanced,false);assert.equal(one.reason,"no_verified_followup");assert.equal(one.decision_id,two.decision_id);
+    const board=await h.board();
+    assert.equal(board.pilot.status,"ended");assert.equal(board.pilot.window_number,1);assert.equal(board.pilot.idle_reason,"no_verified_followup");
+    assert.equal(board.decisions.length,1);assert.equal(board.windows.length,1);
+    assert.equal((await h.act("claim",{worker:"after-idle"})).reason,"pilot_ended");
+  } finally {await h.close();}
+});

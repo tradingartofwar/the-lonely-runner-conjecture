@@ -139,19 +139,35 @@ function decisions(data) {
   return open.map(item => '<p>' + esc(item.text) + '</p><p class="meta">' + timeTag(item.time) + '</p>').join('') || empty('No open decision is recorded.');
 }
 
+function closedWindows(windows) {
+  return [...list(windows)].reverse().map(w => {
+    const e = w.evaluation || {}, u = w.usage || {};
+    const label = 'Window ' + number(w.window_number) + ' · completed measurement';
+    return details('window-' + w.window_number, label,
+      '<p class="meta">Start ' + timeTag(w.started_at) + ' · End ' + timeTag(w.ends_at) + ' · Saved ' + timeTag(w.closed_at) + '</p><dl class="metrics">' +
+      metric('Model reservations',number(e.model_calls_reserved)) + metric('Coordinator runs',number(e.controller_runs)) +
+      metric('Model job grants',number(e.model_dispatches)) + metric('Exact computation grants',number(e.deterministic_dispatches)) +
+      metric('Completed jobs',number(e.completed_jobs)) + metric('Verified findings',number(e.verified_findings)) +
+      metric('Verified follow-ups claimed',number(e.followups_claimed)) + metric('Retries',number(e.retries)) +
+      metric('Measured model runs',number(u.measured_runs)) + metric('Total measured tokens',number(u.tokens_used)) +
+      '</dl><p class="muted">Token coverage · ' + esc(text(u.coverage,'Unknown')) + '</p>' +
+      (e.decision ? '<p>Decision · ' + esc(e.decision) + '</p>' : ''));
+  }).join('');
+}
+
 function measurement(data) {
   const p = data.pilot || {}, e = data.evaluation || {};
   const hours = typeof e.elapsed_hours === 'number' ? number(e.elapsed_hours) + ' h' : 'Unknown';
   const calls = typeof p.model_call_limit === 'number' ? number(e.model_calls_reserved) + ' / ' + number(p.model_call_limit) : number(e.model_calls_reserved);
   const dispatch = typeof p.model_dispatch_limit === 'number' ? number(e.model_dispatches) + ' / ' + number(p.model_dispatch_limit) : number(e.model_dispatches);
-  return '<p class="meta">Start ' + timeTag(p.started_at) + ' · End ' + timeTag(p.ends_at) + '</p><dl class="metrics">' +
+  return '<p class="meta">Window ' + number(p.window_number) + ' · Start ' + timeTag(p.started_at) + ' · End ' + timeTag(p.ends_at) + '</p><dl class="metrics">' +
     metric('Elapsed',hours) + metric('Model call reservations',calls) + metric('Model calls remaining',number(e.model_calls_remaining)) +
     metric('Model job grants',dispatch) + metric('Coordinator runs',number(e.controller_runs)) +
     (e.over_budget_controller_runs ? metric('Over-cap wakes stopped',number(e.over_budget_controller_runs)) : '') +
     metric('Deterministic dispatches',number(e.deterministic_dispatches)) +
     metric('Completed jobs',number(e.completed_jobs)) + metric('Verified findings',number(e.verified_findings)) + metric('Hosted verified follow-ups claimed',number(e.followups_claimed)) +
     metric('Retries',number(e.retries)) + '</dl><p class="muted">Coverage · ' + esc(text(e.coverage,'Unknown')) +
-    '</p>' + (e.decision ? '<p>Decision · ' + esc(e.decision) + '</p>' : '');
+    '</p>' + (e.decision ? '<p>Decision · ' + esc(e.decision) + '</p>' : '') + closedWindows(data.windows);
 }
 
 function planUsage(data) {
