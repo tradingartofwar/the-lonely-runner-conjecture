@@ -39,3 +39,5 @@ for n in range(4, 43):
     check_maximum(speeds, clearance)
 check_maximum([3, 8, 11, 19], Fraction(7, 30))
 ```
+
+[Two replacements and the growth of their speeds](../two-replacements/README.md). A candidate polynomial bound for every runner count from five onward, all-speed checks at five counts, and all sixteen physical roles in the two-replacement family at 16.
