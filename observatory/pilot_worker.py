@@ -182,11 +182,11 @@ def meter_payload(reading):
                               for row in reading["windows"]]
     else:
         reasons = {"cli_not_found", "read_timed_out", "initialize_refused", "app_server_closed",
-                   "app_server_unavailable", "no_account", "no_codex_windows", "rate_read_refused"}
+                   "app_server_unavailable", "no_account", "no_codex_windows", "rate_read_refused", "meter_has_no_local_account", "non_chatgpt_account"}
         reason = reading.get("reason")
         payload["plan_error"] = reason if reason in reasons else "allowance_read_unavailable"
-        if reason == "no_account":
-            payload["auth_unavailable"] = True
+        # Local client credentials can differ from those of the scheduled Work executor.
+        # Only its actual executor can report a plan authorization failure.
     payload["request_id"] = "meter-" + hashlib.sha256(canonical(payload)).hexdigest()[:32]
     return payload
 
@@ -216,12 +216,13 @@ def next_action(result, stage, seed):
     return dict(decision=result["decision"])
 
 
-def run_role(service, job_id):
+def run_role(service, job_id, scheduled_run=None):
     check_freeze()
     pid = os.getpid()
     identity = f"python-{pid}-{uuid.uuid4().hex[:12]}"
     run_id = f"process-{pid}-{time.time_ns()}"
-    response = service.post("claim", id=job_id, worker=identity, run_id=run_id, mode="deterministic")
+    origin = {"controller_run_id": scheduled_run} if scheduled_run else {}
+    response = service.post("claim", id=job_id, worker=identity, run_id=run_id, mode="deterministic", **origin)
     if not response.get("job"):
         return dict(claimed=False, reason=response.get("reason"))
     job = response["job"]
@@ -257,7 +258,7 @@ def run_role(service, job_id):
         raise
 
 
-def drain(service):
+def drain(service, scheduled_run=None):
     finished = []
     while True:
         state = service.request()
@@ -268,7 +269,10 @@ def drain(service):
         if job is None:
             break
         # Each claim and its exact replay execute under a separate real process identity.
-        child = subprocess.run([sys.executable, str(Path(__file__).resolve()), "_one", job["id"]],
+        command = [sys.executable, str(Path(__file__).resolve()), "_one", job["id"]]
+        if scheduled_run:
+            command.extend(["--scheduled-run", scheduled_run])
+        child = subprocess.run(command,
                                input=service.bearer + "\n", text=True, capture_output=True, timeout=360)
         if child.returncode:
             raise RuntimeError("Deterministic worker failed; inspect the queue release or lease expiry")
@@ -289,7 +293,14 @@ def observed_work(service, scheduled_run):
     key = "wake-" + hashlib.sha256(scheduled_run.encode()).hexdigest()[:32]
     service.post("observe", key + "-start", state="running", **body)
     try:
-        result = drain(service)
+        import asyncio
+        from plan_usage import allowance_probe
+        observation = asyncio.run(allowance_probe())
+        if observation.get("reason") == "no_account":
+            # The local meter may have different credentials from the native Work executor.
+            observation["reason"] = "meter_has_no_local_account"
+        service.request(meter_payload(observation))
+        result = drain(service, scheduled_run)
     except BaseException:
         service.post("observe", key + "-failed", state="failed", **body)
         raise
@@ -315,7 +326,9 @@ def main():
     post = subs.add_parser("post")
     post.add_argument("json_file", type=Path)
     post.add_argument("--receipt", type=Path, help="Create a new owner-only file for the full service response")
-    subs.add_parser("_one", help=argparse.SUPPRESS).add_argument("job_id")
+    one = subs.add_parser("_one", help=argparse.SUPPRESS)
+    one.add_argument("job_id")
+    one.add_argument("--scheduled-run")
     args = parser.parse_args()
     service = Service(bearer_input())
     if args.operation == "status":
@@ -325,7 +338,7 @@ def main():
     elif args.operation == "work":
         result = observed_work(service, args.scheduled_run)
     elif args.operation == "_one":
-        result = run_role(service, args.job_id)
+        result = run_role(service, args.job_id, args.scheduled_run)
     else:
         data = json.loads(args.json_file.read_bytes())
         if not isinstance(data, dict) or not data.get("request_id") or not data.get("action"):
