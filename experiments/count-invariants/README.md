@@ -103,3 +103,7 @@ The first checker brackets the cubic root by rational bisection, bounds integer 
 [Second-time follow-up](SECOND_TIME.md). The adaptive repair handles up to four freely wrapping opponents at 16 and tightens the conditional log-product ceiling to 495.218.
 
 [Team review of runner relationships](RELATIONSHIPS.md). Matched 16-runner lineups, lap and equality controls, and a comparison of shared safe windows on different laps.
+
+[Two independent short relations](TWO_RELATIONS.md). A Fourier argument for the first open count and exact controls on how much two relations can distinguish.
+
+[Fixed observation times and a shared adjustment](FIXED_CLOCKS.md). An exact four-time lower and upper bound for a selected runner, and a proof for all sixteen roles in varying parity classes.
