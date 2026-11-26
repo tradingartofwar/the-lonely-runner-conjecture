@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "raw_seed_sha256": "ad17ed48616d62fb2aaae23eaeccb55162393bfbd379f0c3ed80522bb60269ce",
+  "panel_sha256": "d291826aef060bf042b6d0e7ed1f0fc55367e2dcc85c61752696f420fc6585f9",
+  "recipe": {
+    "generator": "experiments/subset-sum-prediction/generate.py:draw_weights",
+    "pattern": "stretch_middle",
+    "ordered_bands": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        17,
+        64
+      ],
+      [
+        65,
+        256
+      ]
+    ],
+    "accept_per_band": 3,
+    "rng": "CPython random.Random(int.from_bytes(raw_32_byte_seed, 'big')), one stream",
+    "reject": [
+      "gcd of weights exceeds one",
+      "weights in exclusions.json",
+      "repeat accepted weights"
+    ],
+    "panel_encoding": "sorted keys, compact JSON, UTF-8, trailing LF; arrays retain draw order",
+    "exclusion_scope": "All exclusions in observatory/study/exclusions.json, every lineup in its revealed 12-row panel and every four-weight control in its results.json."
+  },
+  "exclusions_sha256": "7b0231c9124d23d38de8fd3e6cadd461f1f9ddbe65f82e11e4edfe871688624c",
+  "excluded_lineups": 94,
+  "source_sha256": {
+    "observatory/escape_trial/seal.py": "0c3405c6d505d0d2820458f6a27032c2b75b0fe06d2a214c991c02c99c4b093f",
+    "observatory/study/panel.py": "899787517752d520630c6532ecd6f77b618426d4fa38b0b01c58a1f284dfb698",
+    "experiments/subset-sum-prediction/generate.py": "9e2d5701b771ba0b52273a6e34db2d91754134c05fa275fe871ebd529d3ed8c0",
+    "observatory/study/exclusions.json": "73a1f068756ecebc28d17eb90c44c612c54cbe5d3180feb83a44a0459d5fe7de",
+    "observatory/study/reveal/panel.json": "a259333da4d9b039689bd6560d223c3c502ad554bcbb8ee73ce0a2fbc1e52eee",
+    "observatory/study/results.json": "040a46419edb195de142297abafb4772acf22a496f3b3af8ac2bedf81ca2c59e"
+  }
+}
