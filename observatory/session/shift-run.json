@@ -1,0 +1,116 @@
+{
+  "jobs": [
+    {
+      "id": "fresh-04-shift",
+      "role": "researcher",
+      "task": "For fresh-04, derive the common safe shift interval at the five-collider anchor and locate the reported endpoint.",
+      "state": "completed",
+      "attempt": 1,
+      "dependencies": [],
+      "started_at": "2026-11-26T17:43:53.748037+00:00",
+      "updated_at": "2026-11-26T17:44:28.893079+00:00",
+      "finished_at": "2026-11-26T17:44:28.893079+00:00",
+      "lease_expires": null,
+      "elapsed_seconds": 35,
+      "stale": false,
+      "artifact": "observatory/study/shift-derivation.md",
+      "source": "operator-assignment",
+      "input_revision": "dab4ab22f301c442fa597fc8d77046135a9083f0",
+      "code_revision": "69249249feeb9798ac143ab6417e6341e4725ea2",
+      "verified_by": [
+        "fresh-04-audit"
+      ],
+      "claim_status": "verified return"
+    },
+    {
+      "id": "fresh-04-audit",
+      "role": "verifier",
+      "task": "Independently reconstruct the safe interval at 1/3 from all fifteen physical trajectories and check both equality endpoints.",
+      "state": "completed",
+      "attempt": 1,
+      "dependencies": [
+        "fresh-04-shift"
+      ],
+      "started_at": "2026-11-26T17:44:30.228229+00:00",
+      "updated_at": "2026-11-26T17:45:16.255641+00:00",
+      "finished_at": "2026-11-26T17:45:16.255641+00:00",
+      "lease_expires": null,
+      "elapsed_seconds": 46,
+      "stale": false,
+      "artifact": "observatory/study/shift-verification.md",
+      "source": "operator-assignment",
+      "input_revision": "dab4ab22f301c442fa597fc8d77046135a9083f0",
+      "code_revision": "69249249feeb9798ac143ab6417e6341e4725ea2",
+      "verified_by": [],
+      "claim_status": "audit completed"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "time": "2026-11-26T17:43:42.364403+00:00",
+      "role": "researcher",
+      "state": "queued",
+      "task": "For fresh-04, derive the common safe shift interval at the five-collider anchor and locate the reported endpoint.",
+      "job_id": "fresh-04-shift",
+      "attempt": 0,
+      "artifact": null,
+      "source": "operator-assignment"
+    },
+    {
+      "id": 2,
+      "time": "2026-11-26T17:43:42.481244+00:00",
+      "role": "verifier",
+      "state": "queued",
+      "task": "Independently reconstruct the safe interval at 1/3 from all fifteen physical trajectories and check both equality endpoints.",
+      "job_id": "fresh-04-audit",
+      "attempt": 0,
+      "artifact": null,
+      "source": "operator-assignment"
+    },
+    {
+      "id": 20,
+      "time": "2026-11-26T17:43:53.748037+00:00",
+      "role": "researcher",
+      "state": "running",
+      "task": "For fresh-04, derive the common safe shift interval at the five-collider anchor and locate the reported endpoint.",
+      "job_id": "fresh-04-shift",
+      "attempt": 1,
+      "artifact": null,
+      "source": "operator-assignment"
+    },
+    {
+      "id": 21,
+      "time": "2026-11-26T17:44:28.893079+00:00",
+      "role": "researcher",
+      "state": "completed",
+      "task": "For fresh-04, derive the common safe shift interval at the five-collider anchor and locate the reported endpoint.",
+      "job_id": "fresh-04-shift",
+      "attempt": 1,
+      "artifact": "observatory/study/shift-derivation.md",
+      "source": "operator-assignment"
+    },
+    {
+      "id": 22,
+      "time": "2026-11-26T17:44:30.228229+00:00",
+      "role": "verifier",
+      "state": "running",
+      "task": "Independently reconstruct the safe interval at 1/3 from all fifteen physical trajectories and check both equality endpoints.",
+      "job_id": "fresh-04-audit",
+      "attempt": 1,
+      "artifact": null,
+      "source": "operator-assignment"
+    },
+    {
+      "id": 23,
+      "time": "2026-11-26T17:45:16.255641+00:00",
+      "role": "verifier",
+      "state": "completed",
+      "task": "Independently reconstruct the safe interval at 1/3 from all fifteen physical trajectories and check both equality endpoints.",
+      "job_id": "fresh-04-audit",
+      "attempt": 1,
+      "artifact": "observatory/study/shift-verification.md",
+      "source": "operator-assignment"
+    }
+  ]
+}

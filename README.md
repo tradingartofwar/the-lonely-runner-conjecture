@@ -70,6 +70,10 @@ python -m unittest discover -s tests -v
 
 Inputs are exact integers or fractions such as `3/2`; floats and decimal strings are rejected. Large normalized inputs fail explicitly rather than being reported as mathematical counterexamples.
 
+## Lonely Runner Observatory
+
+Start the local research board with `python -m observatory serve`. The [Observatory](observatory/README.md) contains the sealed middle-gap comparison, exact replay commands and the operating guide.
+
 ## Visual demonstration
 
 Open [demo/index.html](demo/index.html) locally after cloning or downloading the repository. It works offline and uses exact precomputed cases for its verified peak labels.
