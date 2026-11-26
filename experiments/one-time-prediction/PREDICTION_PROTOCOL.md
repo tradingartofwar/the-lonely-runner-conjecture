@@ -1,0 +1,11 @@
+# Prospective test of choosing one time
+
+The designated runner is stationary and there are fifteen distinct positive integer speed differences. Success means that the predicted time clears every opponent by at least $1/16$. The panel generator was given four sampling descriptions and did not evaluate the lineups. The rule designer knew those descriptions and could not see the individual draws. The generator committed to the panel and script with SHA-256 digests printed below before the predictor was frozen. This was a within-team split.
+
+For each denominator $q=2,\ldots,16$ count the speeds divisible by $q$. Choose the fewest, breaking ties first by the largest slowest divisible speed and then by the smallest $q$. With no divisible speeds, return $1/q$. Otherwise let $b$ be the smallest divisible speed and set the shift length to $1/(16b)$. For each direction, compute how long every runner initially clear at $1/q$ stays in its current safe arc. Use the direction with the longer guaranteed time, preferring forward on ties. Return that single time, regardless of whether any speed wraps around or the predicted time passes. No retries. The rule as implemented is in predictor.py.
+
+Compare three outputs with exact arithmetic: the chosen anchor alone, the same shift always forward (one nominated time), and the predicted time. Report total hits, per-bucket hits, genuinely shifted cases, forward-only/prediction-only successes, and the number of trials solved by the prediction but missed by every reduced time of denominator through 32. The denominator scan has a larger time budget. Generate the predictions before verifying them or running that scan. Verify all 240 lineups at threshold with the independent interval checker, after predictions are fixed. The comparison of directions gives both methods the same final-time budget; it does not equate preprocessing costs. Cases already clear at the anchor earn no credit for the directional idea. Failure to beat always-forward on the shifted cases is a negative outcome for the direction rule on this panel. A higher hit count alone does not establish a new family theorem or research priority.
+
+Panel SHA-256: 252b6097cb35188e0fc16de321b64aaa172714390f0dc64b9660c97ac438a167
+Generator SHA-256: 9c61fbc6fcbbf091ec465a2b515cb23a64f98667f5ecb5c9c43af139e2b7e560
+
