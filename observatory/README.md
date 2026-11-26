@@ -2,7 +2,17 @@
 
 Why did the predictors disagree on stretched middle-gap lineups? The four weights specify all fifteen moving speeds. The archived four-weight predictor tried seven sufficient conditions. It could abstain even when a simple reciprocal time was already clear. The new rule takes the four weights and tracks which residues their nonempty subset sums can reach. If zero is absent modulo a denominator from 2 through 16, its reciprocal works. The rule emits the first such reciprocal and otherwise abstains.
 
-## Open the board or replay the calculation
+## Private live board
+
+[Open the Observatory](https://lonely-runner-observatory.senthein.chatgpt.site). The hosted board reads a durable queue, shows each claim and its verified parent, timestamps Pacific-day usage and provides an owner pause button. The original foreground session is preserved in its historical archive. [Unattended pilot](PILOT.md) · [Hosted service and controls](hosted/PROTOCOL.md).
+
+The [frozen signed-escape rule](escape_trial/RULE.md) cleared all 12 independently held fresh lineups. Its one success beyond both baselines had a single collider. The [challenger's five-collider example](escape_trial/CHALLENGE.md) shows how a runner can leave safety and return during a successful displacement. The [fresh verification](escape_trial/VERIFICATION.md) distinguishes the measured gain from the open multiple-collider question. The hosted worker takes that question into unconditioned and collision-enriched cohorts with independently checked physical speeds.
+
+```sh
+python observatory/escape_trial/check.py --case fresh-06
+```
+
+## Replay the original foreground study
 
 Run from the repository root with CPython 3.11 or newer. The implementation uses the standard library.
 
@@ -10,7 +20,7 @@ Run from the repository root with CPython 3.11 or newer. The implementation uses
 python -m observatory serve
 ```
 
-Open <http://127.0.0.1:8765>. The host serves its actual SQLite queue, worker leases, events and results. The hosted phone edition is a timestamped read-only export. The [operating guide](OPERATIONS.md) covers authenticated phone access, recovery and the capped pilot. The existing [Compatibility Calculus explorer](https://compatibility-calculus.senthein.chatgpt.site) remains available.
+Open <http://127.0.0.1:8765>. The host serves its actual SQLite queue, worker leases, events and results. The original foreground export is available in the hosted archive. The [operating guide](OPERATIONS.md) covers authenticated phone access, recovery and the capped pilot. The existing [Compatibility Calculus explorer](https://compatibility-calculus.senthein.chatgpt.site) remains available.
 
 ```sh
 python observatory/study/verify.py --case fresh-04
@@ -39,7 +49,7 @@ After scoring, the coordinator tried an anchor with *more* collisions. At 1/3, s
 
 The researcher and verifier then took separate assignments through the live queue. The first safe interval reached going forward from 1/3 is **[625/1872, 1375/4112]**. Speed 117 is the last to enter safety and 257 is the first to leave. The verifier recovered both endpoints by sweeping exact threshold-crossing events on the physical trajectories. Run `python observatory/study/verify_shift.py` to replay this result. [Derivation](study/shift-derivation.md) · [Independent endpoint check](study/shift-verification.md) · [Queue record](session/shift-run.json).
 
-**OPEN.** The next assignment is to freeze a rule that asks, for each anchor, whether all colliders can escape before an initially clear runner reaches its nearest unsafe arc. Keep the smallest and largest speed in each residue class. Return at most one certified time. Compare with the earlier ranking and the reciprocal rule on a new independently sealed panel. A runner can leave and re-enter its safe arc, so a failed sufficient check must remain an abstention. Vance's decision is whether to prioritize this anchor-selection question for the pilot.
+**Original handoff.** This assignment led to the signed-escape study above. At each anchor, could all colliders escape before an initially clear runner reached its nearest unsafe arc? Keep the smallest and largest speed in each residue class. Return at most one certified time. Compare with the earlier ranking and the reciprocal rule on a new independently sealed panel. A runner can leave and re-enter its safe arc, so a failed sufficient check must remain an abstention. The pilot began with this question.
 
 ## Timing, independence and reproducibility
 
